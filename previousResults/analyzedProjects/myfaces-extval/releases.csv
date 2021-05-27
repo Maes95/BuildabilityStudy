@@ -1,0 +1,5 @@
+commitID;commit-type;time-to-next-release;commit-message
+47cbfd62504876e0651885c5d1adbf316564fd35;BREAKING_CHANGES;150;initial import of MyFaces-Extensions-Validator git-svn-id: https://svn.apache.org/repos/asf/myfaces/extensions/validator/trunk@676664 13f79535-47bb-0310-9956-ffa450edef68
+3159484ef09a56da38974c1a4096aa4683dda881;BREAKING_FIX;0;get rid of the extra parent module, because it makes problems with the new apache release procedure git-svn-id: https://svn.apache.org/repos/asf/myfaces/extensions/validator/trunk@1038237 13f79535-47bb-0310-9956-ffa450edef68
+ab4727e3139e39c16ff0f10bf2c3a25794d2ec89;BREAKING_CHANGES;200;EXTVAL-133: Removed ExtValMockApplication and MockELHelper to keep trunk and branch20 as much as possible in sync. git-svn-id: https://svn.apache.org/repos/asf/myfaces/extensions/validator/trunk@1129062 13f79535-47bb-0310-9956-ffa450edef68
+1f67e34419e4d69a19b3440101303854394cc2b6;BREAKING_FIX;114;updated myfaces test dependency git-svn-id: https://svn.apache.org/repos/asf/myfaces/extensions/validator/trunk@1161047 13f79535-47bb-0310-9956-ffa450edef68

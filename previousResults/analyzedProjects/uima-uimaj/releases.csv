@@ -1,0 +1,2 @@
+commitID;commit-type;time-to-next-release;commit-message
+f121d3673a882ee3a94cebe3df2e93de872b9c06;BREAKING_CHANGES;104;[UIMA-1967] move uimaj project up one level  merge uimaj-distr into it.  Change uimaj-parent to use version 3-SNAPSHOT of the UIMA -wide parent.  (This will be converted to version 3 once we release build parent-pom at that level).git-svn-id: https://svn.apache.org/repos/asf/uima/uimaj/trunk@1159331 13f79535-47bb-0310-9956-ffa450edef68

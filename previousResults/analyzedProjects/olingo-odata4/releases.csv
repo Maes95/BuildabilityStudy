@@ -1,0 +1,19 @@
+commitID;commit-type;time-to-next-release;commit-message
+9c6e200edbeb1165b333cd698d51647d5a7184b8;BREAKING_FIX;195;initial pom 
+aa80231bcaf9275c747c35df0a301d7bfc888fc8;BREAKING_CHANGES;67;WIP commits before merge 
+381b41703576dd08f04bca911f4b07d2fe2c3196;BREAKING_FIX;63;[OLINGO-200] New StAX (replacing DOM) (de)serializers in place - still IT to check 
+2e33a68bf4b52a8e573c8505c1199e99ae89f8f5;BREAKING_CHANGES;56;[OLINGO-205] pruned merge for v4 
+2f77689c720ad48f29a060364c7f476de98ad619;BREAKING_FIX;56;[OLINGO-205] pruned merge for v4 
+259eb07851593ba863ac820c2fa2e40d5e792b56;BREAKING_CHANGES;112;[OLINGO-286] fixed: provided intengration test for '13.2 Interoperable OData Clients' 
+f57c9f041cf31a861d0999df98c1988b5d4bac4e;BREAKING_FIX;112;Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/olingo-odata4 
+70afb2acc50aef1270858bad75eb8dc125b08c3f;BREAKING_CHANGES;92;[OLINGO-317] Finished DeSerializer refactoring 
+634d75b7993d0b4ec6221ac6b2e13e6edd9d31de;BREAKING_FIX;91;Removing unnecessary dependency - looks like a refuse 
+6383ab0b12ccc6a7caca0382d92980c8a524946c;BREAKING_CHANGES;69;Fixing checkstyle errors 
+aff42fcee5e189d5cc506ff1cdc05421528fbeb5;BREAKING_FIX;65;[OLINGO-337] more tests and fixes 
+811fff545c64364d66af0d8f4ba6e57f585479d3;BREAKING_CHANGES;65;[OLINGO-337] merger origin/master 
+233651a8bf9512592a1904f74c05d4b6071af0ba;BREAKING_FIX;65;[OLINGO-337] merge origin/master 
+aa0c5713c78385c633c1d2e4c144c0790e3b45de;BREAKING_CHANGES;53;[OLINGO-366] provides stream lazy loading 
+95a13a4bb50017039e35a754074e5a36579edaea;BREAKING_FIX;53;[OLINGO-366] provides stream lazy loading (missing something) 
+984ca3412b5fccc63c749b1a9f3fd8771e8342bf;BREAKING_CHANGES;51;[OLINGO-348] Exceptionhandling on server side and message texts 
+c58109466fec654dde0b29567d2b213a90a57b80;BREAKING_FIX;51;[OLINGO-348] Exception refactoring on server side 
+5ab4bdc922720e45e26b126bc3979183ba7007eb;BREAKING_CHANGES;50;[OLINGO-377] Replaced cargo with embedded tomcat 

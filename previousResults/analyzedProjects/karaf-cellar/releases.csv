@@ -1,0 +1,8 @@
+commitID;commit-type;time-to-next-release;commit-message
+b3b410b8f06794aacb709c0c9bb9f8a8dd02f961;BREAKING_CHANGES;61;[KARAF-615] Create Cellar subproject git-svn-id: https://svn.apache.org/repos/asf/karaf/cellar/trunk@1100302 13f79535-47bb-0310-9956-ffa450edef68
+3981153801e38ad165dd960aa788c865b6a8de19;BREAKING_FIX;147;[KARAF-844] Removed all karaf related dynamic imports from cellar. git-svn-id: https://svn.apache.org/repos/asf/karaf/cellar/trunk@1164251 13f79535-47bb-0310-9956-ffa450edef68
+c265fcc7087a199f877c9408ae6ffc8225e9652c;BREAKING_CHANGES;147;[KARAF-844] Fixed karaf.version property. git-svn-id: https://svn.apache.org/repos/asf/karaf/cellar/trunk@1164253 13f79535-47bb-0310-9956-ffa450edef68
+e7a50a89ee90bb96471da54ebb5f32e85ced69b2;BREAKING_FIX;54;[KARAF-1081] Refactored Group to implement MultiNode interface used by the merge policy. git-svn-id: https://svn.apache.org/repos/asf/karaf/cellar/trunk@1209977 13f79535-47bb-0310-9956-ffa450edef68
+e3e01b4df8956a99f27ff93db33ad6b2d29bf9ec;BREAKING_CHANGES;103;Update itests in order to use "dynamic" version for Cellar feature git-svn-id: https://svn.apache.org/repos/asf/karaf/cellar/trunk@1239703 13f79535-47bb-0310-9956-ffa450edef68
+98e419549cf9102842be84f04550e0b24c4d1d8f;BREAKING_FIX;141;[maven-release-plugin] prepare release cellar-3.0.0 
+6c02eda8839ef4ce86613085297af744242a1a9a;BREAKING_CHANGES;141;[maven-release-plugin] prepare for next development iteration 

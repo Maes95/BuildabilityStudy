@@ -1,0 +1,4468 @@
+{
+    "project": "wink",
+    "git_url": "https://github.com/apache/wink.git",
+    "last_commit": "598af989",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "2280a076",
+            "date": "2009-06-08 17:20:10 +0000",
+            "comment": "create directories"
+        },
+        {
+            "c_hash": "f265ce9e",
+            "date": "2009-06-29 06:56:27 +0000",
+            "comment": "moving sandbox to trunk"
+        },
+        {
+            "c_hash": "95fe0e89",
+            "date": "2009-06-29 09:55:22 +0000",
+            "comment": "svn ignore target folder"
+        },
+        {
+            "c_hash": "f9af1bc3",
+            "date": "2009-06-29 10:34:15 +0000",
+            "comment": "See https://issues.apache.org/jira/browse/WINK-15"
+        },
+        {
+            "c_hash": "4d9aa8c2",
+            "date": "2009-06-29 10:34:53 +0000",
+            "comment": "See https://issues.apache.org/jira/browse/WINK-17"
+        },
+        {
+            "c_hash": "4639e70d",
+            "date": "2009-06-29 12:10:48 +0000",
+            "comment": "Use SLF4J instead of JCL for logging facade. NOTE: Wink is shipped with slf4j-simple bridge."
+        },
+        {
+            "c_hash": "a2557e8d",
+            "date": "2009-06-29 13:25:48 +0000",
+            "comment": "Remove client dependency on server from client pom.xml"
+        },
+        {
+            "c_hash": "63e7a5f1",
+            "date": "2009-06-29 14:29:32 +0000",
+            "comment": "1) Added howToBuild.txt file with description of how to  build the wink distribution and the site. 2) Adjust the poms to better build the site"
+        },
+        {
+            "c_hash": "83fb904d",
+            "date": "2009-06-29 15:30:37 +0000",
+            "comment": "Update name in pom.xml files to be more readable and show hierarchy https://issues.apache.org/jira/browse/WINK-12"
+        },
+        {
+            "c_hash": "ed7da113",
+            "date": "2009-06-30 08:29:13 +0000",
+            "comment": "https://issues.apache.org/jira/browse/WINK-18"
+        },
+        {
+            "c_hash": "c09b02aa",
+            "date": "2009-06-30 10:37:07 +0000",
+            "comment": "https://issues.apache.org/jira/browse/WINK-18"
+        },
+        {
+            "c_hash": "6181f8dc",
+            "date": "2009-06-30 11:35:27 +0000",
+            "comment": "add toString() method"
+        },
+        {
+            "c_hash": "12c2ccc3",
+            "date": "2009-06-30 11:47:55 +0000",
+            "comment": "https://issues.apache.org/jira/browse/WINK-19"
+        },
+        {
+            "c_hash": "2e09bfef",
+            "date": "2009-06-30 13:25:33 +0000",
+            "comment": "https://issues.apache.org/jira/browse/WINK-20"
+        },
+        {
+            "c_hash": "c1188563",
+            "date": "2009-07-01 00:55:02 +0000",
+            "comment": "fix JAXBElementProviderTest"
+        },
+        {
+            "c_hash": "a2e69d61",
+            "date": "2009-07-01 00:57:23 +0000",
+            "comment": "test framework with geronimo and jetty for WINK-16"
+        },
+        {
+            "c_hash": "366ab83c",
+            "date": "2009-07-01 01:03:31 +0000",
+            "comment": "attempt to remove executable property"
+        },
+        {
+            "c_hash": "bbde0e15",
+            "date": "2009-07-01 02:31:27 +0000",
+            "comment": "port some readerexception tests to fill providers"
+        },
+        {
+            "c_hash": "a084fb9a",
+            "date": "2009-07-01 06:41:26 +0000",
+            "comment": "Added UnitTests for Location Header Validation JIRA issue - https://issues.apache.org/jira/browse/WINK-13"
+        },
+        {
+            "c_hash": "91ca7c5a",
+            "date": "2009-07-01 08:55:18 +0000",
+            "comment": "https://issues.apache.org/jira/browse/WINK-24"
+        },
+        {
+            "c_hash": "ee9446fd",
+            "date": "2009-07-01 11:03:25 +0000",
+            "comment": "remove occurrences of com.hp See https://issues.apache.org/jira/browse/WINK-21"
+        },
+        {
+            "c_hash": "72e82367",
+            "date": "2009-07-01 11:54:01 +0000",
+            "comment": "Add unit test for UriBuilderImpl"
+        },
+        {
+            "c_hash": "47fe251b",
+            "date": "2009-07-01 12:47:12 +0000",
+            "comment": "Fix JIRA #14 - \"Change the properties names to start with \"wink\" instead of \"symphony\" https://issues.apache.org/jira/browse/WINK-14"
+        },
+        {
+            "c_hash": "b6e76e24",
+            "date": "2009-07-01 14:00:14 +0000",
+            "comment": "WINK-7 \\n Patch from Jason.  Adding ASF headers to non-Java src files"
+        },
+        {
+            "c_hash": "f7c477a1",
+            "date": "2009-07-02 03:31:43 +0000",
+            "comment": "WINK-9  Initial changes to use SLF4J."
+        },
+        {
+            "c_hash": "43dd5492",
+            "date": "2009-07-02 05:58:51 +0000",
+            "comment": "Allow Injectables to throw IOExceptions. See https://issues.apache.org/jira/browse/WINK-31"
+        },
+        {
+            "c_hash": "afeaf382",
+            "date": "2009-07-02 07:28:49 +0000",
+            "comment": "applying patch for issue https://issues.apache.org/jira/browse/WINK-33 \"FlushHeadersOutputStream should override OutputStream.flush() as well\""
+        },
+        {
+            "c_hash": "896ec2d3",
+            "date": "2009-07-02 11:14:47 +0000",
+            "comment": "Refactoring of unit tests as part of [WINK-30]"
+        },
+        {
+            "c_hash": "e67e05d3",
+            "date": "2009-07-02 12:34:01 +0000",
+            "comment": "JUnit tests refactoring: 1. Throw ServletException from invoke method. 2. Simplify SpringMockServletInvocationTest"
+        },
+        {
+            "c_hash": "9360d770",
+            "date": "2009-07-02 14:45:31 +0000",
+            "comment": "Fix JIRA [WINK-32] - support for JavaBeans Activation Framework DataContentHandler"
+        },
+        {
+            "c_hash": "2368acce",
+            "date": "2009-07-05 07:47:34 +0000",
+            "comment": "fix copyrights"
+        },
+        {
+            "c_hash": "398f27f6",
+            "date": "2009-07-05 11:09:21 +0000",
+            "comment": "Fix issue [WINK-36]"
+        },
+        {
+            "c_hash": "72686b4f",
+            "date": "2009-07-05 11:42:31 +0000",
+            "comment": "Replaced the \"Symphony\" references in the maven site with \"Wink\" issue [WINK-27]"
+        },
+        {
+            "c_hash": "778b4ff2",
+            "date": "2009-07-06 05:29:09 +0000",
+            "comment": "Adding support of @Encoded on methods and class. See [WINK-38]"
+        },
+        {
+            "c_hash": "96d01809",
+            "date": "2009-07-06 06:19:29 +0000",
+            "comment": "1. Fix JIRA [WINK-8] - \"Use the remote-resources plugin to include the std legal bits in all artifacts as required by ASF\" 2. Delete XMLBeans patch - 1.6 leftover"
+        },
+        {
+            "c_hash": "09641853",
+            "date": "2009-07-06 06:27:54 +0000",
+            "comment": "[WINK-19] - fix for ResponseBuilderImpl variants"
+        },
+        {
+            "c_hash": "2cb655ca",
+            "date": "2009-07-06 06:34:43 +0000",
+            "comment": "Fix  JIRA [WINK-41] - ASF Legal header will be validated maven install phase during build process."
+        },
+        {
+            "c_hash": "29bd877c",
+            "date": "2009-07-06 06:45:57 +0000",
+            "comment": "Remove log file"
+        },
+        {
+            "c_hash": "9cc4e316",
+            "date": "2009-07-06 10:41:46 +0000",
+            "comment": "[WINK-11] -  improve error message when no resource can be found to include the name of the resource that was searched"
+        },
+        {
+            "c_hash": "946b912c",
+            "date": "2009-07-06 12:31:45 +0000",
+            "comment": "eliminate \"symphony\" See [WINK-42]"
+        },
+        {
+            "c_hash": "a9f3ae9b",
+            "date": "2009-07-06 14:47:35 +0000",
+            "comment": "eliminate \"symphony\" See [WINK-42]"
+        },
+        {
+            "c_hash": "1cbd5d5f",
+            "date": "2009-07-06 14:54:50 +0000",
+            "comment": "eliminate \"symphony\" See [WINK-42]"
+        },
+        {
+            "c_hash": "2ff5dbb2",
+            "date": "2009-07-07 03:42:44 +0000",
+            "comment": "add Jetty standalone plugin for [WINK-50]"
+        },
+        {
+            "c_hash": "d105124f",
+            "date": "2009-07-07 04:07:57 +0000",
+            "comment": "update with messagebodywriter tests for [WINK-51]"
+        },
+        {
+            "c_hash": "e030e413",
+            "date": "2009-07-07 07:53:54 +0000",
+            "comment": "Fix JIRA [WINK-43] - \"Configure maven-license-plugin to run only during WInk release\" Maven build failed to run maven-license-plugin from Wink modules (server, common)"
+        },
+        {
+            "c_hash": "1d60a21e",
+            "date": "2009-07-07 09:02:23 +0000",
+            "comment": "[WINK-52] - if a WebApplicationException is thrown, then print it to the log as an ERROR only if it is a 500 family status error, and for other status codes, print it to the log as an INFO message"
+        },
+        {
+            "c_hash": "4e7c0d71",
+            "date": "2009-07-07 10:48:53 +0000",
+            "comment": "Issue [WINK-44] - add distribution configuration to WINK build"
+        },
+        {
+            "c_hash": "1fd3b1b4",
+            "date": "2009-07-07 21:46:13 +0000",
+            "comment": "Fix for exception handling in writers [WINK-32]"
+        },
+        {
+            "c_hash": "b08c65e2",
+            "date": "2009-07-07 22:26:48 +0000",
+            "comment": "Fix genericType when Response obj used [WINK-48]"
+        },
+        {
+            "c_hash": "bb190543",
+            "date": "2009-07-08 05:05:09 +0000",
+            "comment": "Using published org.json version 20080701 instead of duplicating sources [WINK-28]"
+        },
+        {
+            "c_hash": "7a81d786",
+            "date": "2009-07-08 05:11:51 +0000",
+            "comment": "moved json.org version from wink-common pom to parent pom and added dependency on json.org to wink-server [WINK-28]"
+        },
+        {
+            "c_hash": "6bc81f0e",
+            "date": "2009-07-08 07:37:21 +0000",
+            "comment": "[WINK-44] - Set up the automatic build environment"
+        },
+        {
+            "c_hash": "4d4b05cf",
+            "date": "2009-07-08 09:00:51 +0000",
+            "comment": "Modified InvocationTargetException according to the Coding Guidelines. See also [WINK-36]"
+        },
+        {
+            "c_hash": "fba40aab",
+            "date": "2009-07-08 10:10:11 +0000",
+            "comment": "[WINK-44] - Set up the automatic build environment - add assembly plugin to create main dist zip"
+        },
+        {
+            "c_hash": "ae7f801d",
+            "date": "2009-07-08 10:31:50 +0000",
+            "comment": "throw NPE explicitly, when required parameters are null See [WINK-37]"
+        },
+        {
+            "c_hash": "28d36821",
+            "date": "2009-07-08 12:37:02 +0000",
+            "comment": "Fix for a few source files contain illegal UTF-8 characters that the compiler warns about [WINK-58]"
+        },
+        {
+            "c_hash": "473e82eb",
+            "date": "2009-07-08 14:22:16 +0000",
+            "comment": "rename OFFactory to LifecycleManager See [WINK-57]"
+        },
+        {
+            "c_hash": "ef8fe80f",
+            "date": "2009-07-08 21:03:17 +0000",
+            "comment": "Use == for isReadable instead of isAssignable"
+        },
+        {
+            "c_hash": "32f39251",
+            "date": "2009-07-08 21:50:56 +0000",
+            "comment": "Fix so Source can be a valid entity parameter"
+        },
+        {
+            "c_hash": "5497759d",
+            "date": "2009-07-08 22:10:22 +0000",
+            "comment": "add Provider standard tests"
+        },
+        {
+            "c_hash": "4980a006",
+            "date": "2009-07-09 11:07:29 +0000",
+            "comment": "Updating the Wink features guide [WINK-25] + some more \u201cSymphony\u201d cleanup [WINK-27]"
+        },
+        {
+            "c_hash": "8fb2620f",
+            "date": "2009-07-09 11:24:12 +0000",
+            "comment": "remove redundant batch"
+        },
+        {
+            "c_hash": "9379aac5",
+            "date": "2009-07-09 11:38:05 +0000",
+            "comment": "move xsd to etc folder See [WINK-29] and [WINK-64]"
+        },
+        {
+            "c_hash": "7792ad17",
+            "date": "2009-07-09 11:43:52 +0000",
+            "comment": "remove redundant xsds"
+        },
+        {
+            "c_hash": "bb49f3bb",
+            "date": "2009-07-09 11:47:35 +0000",
+            "comment": "redundant file"
+        },
+        {
+            "c_hash": "9bb946c8",
+            "date": "2009-07-09 11:48:46 +0000",
+            "comment": "move all xsds to the same folder under etc"
+        },
+        {
+            "c_hash": "5baaeeb2",
+            "date": "2009-07-09 11:49:38 +0000",
+            "comment": "delete empty folder"
+        },
+        {
+            "c_hash": "362482ab",
+            "date": "2009-07-09 11:51:29 +0000",
+            "comment": "Fix [WINK-66] - Do not build source jars during default build Fix [WINK-65] - Keep the default build test output quiet"
+        },
+        {
+            "c_hash": "964d9c15",
+            "date": "2009-07-09 13:14:21 +0000",
+            "comment": "Updating pdf name in dist ant"
+        },
+        {
+            "c_hash": "e72e0556",
+            "date": "2009-07-09 13:15:36 +0000",
+            "comment": "Update bean names in the Spring context to start with Wink See [WINK-26]"
+        },
+        {
+            "c_hash": "d7cf9e01",
+            "date": "2009-07-09 14:48:19 +0000",
+            "comment": "Update documentation"
+        },
+        {
+            "c_hash": "be1007c4",
+            "date": "2009-07-09 19:13:45 +0000",
+            "comment": "Fix License Header to be more normal"
+        },
+        {
+            "c_hash": "f6301750",
+            "date": "2009-07-12 01:22:25 +0000",
+            "comment": "Fix for Annotations[] null on error path"
+        },
+        {
+            "c_hash": "f89e01a0",
+            "date": "2009-07-12 03:34:31 +0000",
+            "comment": "Add exception mapper tests"
+        },
+        {
+            "c_hash": "d7801c9b",
+            "date": "2009-07-12 03:52:59 +0000",
+            "comment": "Fixes for GoogleDocsClient example"
+        },
+        {
+            "c_hash": "bd2fc908",
+            "date": "2009-07-12 04:35:36 +0000",
+            "comment": "Do not use maven-license-plugin in submodules"
+        },
+        {
+            "c_hash": "29d22937",
+            "date": "2009-07-12 07:21:39 +0000",
+            "comment": "Added support for searching providers using Wildcards. See [WINK-47]"
+        },
+        {
+            "c_hash": "9078c70c",
+            "date": "2009-07-12 11:03:42 +0000",
+            "comment": "[WINK-39] -  Wink client - add support for Apache Http Client. Wink client integrates with new version of Apache Http Client 4.0 http://hc.apache.org/httpcomponents-client/index.html"
+        },
+        {
+            "c_hash": "ad4c4265",
+            "date": "2009-07-12 11:58:51 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/incubator/wink/trunk@793337 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "702a58f9",
+            "date": "2009-07-12 12:02:02 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/incubator/wink/trunk@793338 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "3ecb6be7",
+            "date": "2009-07-13 17:25:49 +0000",
+            "comment": "Use string constant for media type search"
+        },
+        {
+            "c_hash": "91ec2986",
+            "date": "2009-07-13 17:26:06 +0000",
+            "comment": "Update reverse isAssignableFrom for readers"
+        },
+        {
+            "c_hash": "4771ae54",
+            "date": "2009-07-13 21:04:08 +0000",
+            "comment": "Use HttpServlet*Wrapper to comply w/ Servlet spec"
+        },
+        {
+            "c_hash": "6a0f4f28",
+            "date": "2009-07-13 21:06:45 +0000",
+            "comment": "Silly executable bit"
+        },
+        {
+            "c_hash": "1b02168f",
+            "date": "2009-07-14 05:21:10 +0000",
+            "comment": "Fix for inconsistent behavior for mis-quoted etag header values [WINK-72]"
+        },
+        {
+            "c_hash": "a8f7e942",
+            "date": "2009-07-14 06:02:31 +0000",
+            "comment": "Remove redundant packages"
+        },
+        {
+            "c_hash": "d1895e96",
+            "date": "2009-07-14 06:47:36 +0000",
+            "comment": "[WINK-89] -  Publish Cobertura Coverage Report in Hudson build"
+        },
+        {
+            "c_hash": "c44c1fa5",
+            "date": "2009-07-14 07:29:58 +0000",
+            "comment": "Fixing sort algorithm [WINK-82]"
+        },
+        {
+            "c_hash": "33ec3e87",
+            "date": "2009-07-14 08:33:04 +0000",
+            "comment": "Rename wink-apache-client to wink-client-apache-httpclient Move wink-client-apache-httpclient to the level of wink-client [WINK-39]"
+        },
+        {
+            "c_hash": "70c5cd47",
+            "date": "2009-07-14 10:44:03 +0000",
+            "comment": "change build profile properrty name"
+        },
+        {
+            "c_hash": "2d1792c3",
+            "date": "2009-07-14 11:38:19 +0000",
+            "comment": "Hudson fails with obertura-maven-plugin. Comment it out"
+        },
+        {
+            "c_hash": "ffa3c486",
+            "date": "2009-07-14 12:39:40 +0000",
+            "comment": "Remove symphony namespace from administration object model"
+        },
+        {
+            "c_hash": "f19c5a9e",
+            "date": "2009-07-14 13:26:06 +0000",
+            "comment": "Rename wink-apache-client to wink-client-apache-httpclient Move wink-client-apache-httpclient to the level of wink-client [WINK-39]"
+        },
+        {
+            "c_hash": "776d25e2",
+            "date": "2009-07-14 14:51:59 +0000",
+            "comment": "More changes to license headers scanning."
+        },
+        {
+            "c_hash": "c00e2dde",
+            "date": "2009-07-14 15:16:12 +0000",
+            "comment": "removing \"Symphony\" references [WINK-27]"
+        },
+        {
+            "c_hash": "1d3c382d",
+            "date": "2009-07-14 19:47:00 +0000",
+            "comment": "[WINK-59] Drop params integration test suite"
+        },
+        {
+            "c_hash": "ca2684b0",
+            "date": "2009-07-14 20:26:21 +0000",
+            "comment": "[WINK-59] Remove unused index.jsp"
+        },
+        {
+            "c_hash": "286203d5",
+            "date": "2009-07-15 06:24:39 +0000",
+            "comment": "Fix for Singletons should be injected [WINK-83]"
+        },
+        {
+            "c_hash": "063b4e0a",
+            "date": "2009-07-15 07:32:11 +0000",
+            "comment": "Rename Wink Features List to User Guide"
+        },
+        {
+            "c_hash": "9be7fdf9",
+            "date": "2009-07-15 08:05:27 +0000",
+            "comment": "Updating the client apt"
+        },
+        {
+            "c_hash": "1b782e6f",
+            "date": "2009-07-15 08:37:45 +0000",
+            "comment": "Documentation - add Apache Http client information"
+        },
+        {
+            "c_hash": "5ccb4f6c",
+            "date": "2009-07-15 08:39:01 +0000",
+            "comment": "Documentation - add Apache Http client information"
+        },
+        {
+            "c_hash": "dae9d8ca",
+            "date": "2009-07-15 10:03:25 +0000",
+            "comment": "Fix application processing so that it won't stop if the processing of a resource/provider throws an exception [WINK-101]"
+        },
+        {
+            "c_hash": "9407af16",
+            "date": "2009-07-15 11:58:59 +0000",
+            "comment": "Apply @DefaultValue also to methods [WINK-98]"
+        },
+        {
+            "c_hash": "13874fe9",
+            "date": "2009-07-15 12:51:40 +0000",
+            "comment": "Fix JIRA [WINK-94] and [WINK-96]"
+        },
+        {
+            "c_hash": "0bf275ce",
+            "date": "2009-07-15 13:06:43 +0000",
+            "comment": "don't allow multiple HttpMethod annotations on the same resource method [WINK-95]"
+        },
+        {
+            "c_hash": "ccef2809",
+            "date": "2009-07-15 13:17:44 +0000",
+            "comment": "Documentation - add Apache Http client information"
+        },
+        {
+            "c_hash": "259b9eba",
+            "date": "2009-07-15 13:18:18 +0000",
+            "comment": "Fix missing incoming Content-Type to be application/octet-stream instead of */* [WINK-85]"
+        },
+        {
+            "c_hash": "ee310cae",
+            "date": "2009-07-15 14:14:11 +0000",
+            "comment": "updating Apache_Wink_0.1_Features_List to Apache_Wink_User_Guide to fix the build"
+        },
+        {
+            "c_hash": "bc6b5348",
+            "date": "2009-07-15 15:51:47 +0000",
+            "comment": "[WINK 93] Drop the inheritance integration test suite"
+        },
+        {
+            "c_hash": "7a044804",
+            "date": "2009-07-16 03:51:24 +0000",
+            "comment": "Update some pom configuration"
+        },
+        {
+            "c_hash": "9766a20c",
+            "date": "2009-07-16 06:19:17 +0000",
+            "comment": "rename unit tests See [WINK-105]"
+        },
+        {
+            "c_hash": "ac108591",
+            "date": "2009-07-16 06:22:19 +0000",
+            "comment": "changing Symphony logo to Apache Wink"
+        },
+        {
+            "c_hash": "7f0ff62d",
+            "date": "2009-07-16 06:26:59 +0000",
+            "comment": "Fix for method is invoked but no HttpMethod [WINK-103]"
+        },
+        {
+            "c_hash": "f369b1d4",
+            "date": "2009-07-16 13:11:31 +0000",
+            "comment": "handle q=0 on Accept http header See [WINK-104]"
+        },
+        {
+            "c_hash": "c27c5f59",
+            "date": "2009-07-16 20:01:58 +0000",
+            "comment": "Update for wink-targetting-tests"
+        },
+        {
+            "c_hash": "87278ef3",
+            "date": "2009-07-16 20:02:12 +0000",
+            "comment": "Add simple NewCookies test"
+        },
+        {
+            "c_hash": "69b5a59d",
+            "date": "2009-07-16 20:02:28 +0000",
+            "comment": "Add environment context test"
+        },
+        {
+            "c_hash": "b9bee439",
+            "date": "2009-07-16 20:03:06 +0000",
+            "comment": "Update for wink-integration-test for JDK issues"
+        },
+        {
+            "c_hash": "3f36e19a",
+            "date": "2009-07-17 21:59:19 +0000",
+            "comment": "[WINK-110] Allow server hostname and port number to be configurable for integration tests"
+        },
+        {
+            "c_hash": "201e22a2",
+            "date": "2009-07-18 23:11:07 +0000",
+            "comment": "Fix for Tomcat integration test issues"
+        },
+        {
+            "c_hash": "842c7a9c",
+            "date": "2009-07-19 02:46:11 +0000",
+            "comment": "Wink Validation Integration Tests"
+        },
+        {
+            "c_hash": "26ea1813",
+            "date": "2009-07-19 03:08:51 +0000",
+            "comment": "Fix wrong import in integration-test"
+        },
+        {
+            "c_hash": "fb04918b",
+            "date": "2009-07-19 10:16:15 +0000",
+            "comment": "Use OutputStream instead Writer for Atom model [WINK-111]"
+        },
+        {
+            "c_hash": "e5fc014e",
+            "date": "2009-07-19 10:39:51 +0000",
+            "comment": "Add unit test. See [WINK-106]"
+        },
+        {
+            "c_hash": "2670ad5e",
+            "date": "2009-07-20 02:49:20 +0000",
+            "comment": "Allow writer to close stream, always flush headers"
+        },
+        {
+            "c_hash": "fca8abae",
+            "date": "2009-07-20 10:04:29 +0000",
+            "comment": "JIRA issue [WINK-108] - Update version in poms to use \"-incubating\" suffix per incubator release rules"
+        },
+        {
+            "c_hash": "6a9d8458",
+            "date": "2009-07-20 14:13:53 +0000",
+            "comment": "Trigger a automatic Hudson build"
+        },
+        {
+            "c_hash": "7c917201",
+            "date": "2009-07-20 23:01:02 +0000",
+            "comment": "dos2unix the tree, code reformat"
+        },
+        {
+            "c_hash": "33f4b3cc",
+            "date": "2009-07-21 00:27:59 +0000",
+            "comment": "Use OutputStream instead of Writer for performance"
+        },
+        {
+            "c_hash": "a2c43755",
+            "date": "2009-07-21 01:07:21 +0000",
+            "comment": "Remove unneeded bits from pom.xml"
+        },
+        {
+            "c_hash": "f8004beb",
+            "date": "2009-07-21 01:45:53 +0000",
+            "comment": "Context integration tests"
+        },
+        {
+            "c_hash": "fa9d1a21",
+            "date": "2009-07-21 01:59:17 +0000",
+            "comment": "Use resource property in case servlet name changes"
+        },
+        {
+            "c_hash": "c30b1b64",
+            "date": "2009-07-21 07:37:17 +0000",
+            "comment": "make http method override configurable"
+        },
+        {
+            "c_hash": "5d184972",
+            "date": "2009-07-22 16:01:59 +0000",
+            "comment": "fix the OpenSearch description in the QADefect example. bug [WINK-116]"
+        },
+        {
+            "c_hash": "a666e0a3",
+            "date": "2009-07-23 10:17:55 +0000",
+            "comment": "Generate Wink sources archives (zip, tar). To generate Wink sources archives, run mvn assembly:single from main pom.xml"
+        },
+        {
+            "c_hash": "2a5e8d83",
+            "date": "2009-07-23 12:11:18 +0000",
+            "comment": "Add notice & disclaimer for distribution"
+        },
+        {
+            "c_hash": "8b1a93f0",
+            "date": "2009-07-23 12:44:22 +0000",
+            "comment": "Generate Wink sources archives (zip, tar). To generate Wink sources archives, run mvn assembly:single from main pom.xml"
+        },
+        {
+            "c_hash": "5dbd1de7",
+            "date": "2009-07-23 12:51:23 +0000",
+            "comment": "Generate Wink sources archives (zip, tar). To generate Wink sources archives, run mvn assembly:single from main pom.xml"
+        },
+        {
+            "c_hash": "5d06ee13",
+            "date": "2009-07-23 13:08:56 +0000",
+            "comment": "Add notice & disclaimer for distribution"
+        },
+        {
+            "c_hash": "af80d01f",
+            "date": "2009-07-26 08:38:52 +0000",
+            "comment": "Build Wink sources and binaries archives from distribution module, that will be deployed under new artifact called apache-wink"
+        },
+        {
+            "c_hash": "289552ec",
+            "date": "2009-07-27 07:23:50 +0000",
+            "comment": "Modify Wink distribution"
+        },
+        {
+            "c_hash": "1120e34c",
+            "date": "2009-07-27 13:02:45 +0000",
+            "comment": "1. Remove patches directory 2. Fix apache wink source distribution archive 3. Fix readme.txt distributed with wink binaries distribution"
+        },
+        {
+            "c_hash": "c37e4532",
+            "date": "2009-07-27 19:13:14 +0000",
+            "comment": "[WINK-92]: Add tests for atom model code"
+        },
+        {
+            "c_hash": "bc36c034",
+            "date": "2009-07-28 07:34:53 +0000",
+            "comment": "Fix for Root Resources at \"/\" with Subresource Locators/Methods does not work [WINK-119]"
+        },
+        {
+            "c_hash": "97b0bf9e",
+            "date": "2009-07-28 12:23:51 +0000",
+            "comment": "Tabs - > spaces"
+        },
+        {
+            "c_hash": "2a7ce26d",
+            "date": "2009-07-29 10:30:36 +0000",
+            "comment": "Add legal headers to application files"
+        },
+        {
+            "c_hash": "ae547cfa",
+            "date": "2009-07-29 10:47:28 +0000",
+            "comment": "delete redundant assembly and site"
+        },
+        {
+            "c_hash": "cc63caee",
+            "date": "2009-07-29 12:32:04 +0000",
+            "comment": "Modify distribution archive"
+        },
+        {
+            "c_hash": "fb032665",
+            "date": "2009-07-29 16:49:53 +0000",
+            "comment": "Modify distribution archive"
+        },
+        {
+            "c_hash": "ab4d981e",
+            "date": "2009-07-30 10:02:04 +0000",
+            "comment": "Modify distribution archive. Remove wink-site-deploy"
+        },
+        {
+            "c_hash": "cb448b78",
+            "date": "2009-07-30 10:05:51 +0000",
+            "comment": "Add KEYS file"
+        },
+        {
+            "c_hash": "674c6d42",
+            "date": "2009-07-30 10:25:22 +0000",
+            "comment": "Move KEYS file under pks directory"
+        },
+        {
+            "c_hash": "c8b34f42",
+            "date": "2009-07-30 10:27:00 +0000",
+            "comment": "Modify KEYS file"
+        },
+        {
+            "c_hash": "88a88652",
+            "date": "2009-07-30 10:39:35 +0000",
+            "comment": "Adding Michael Elman public key signatures to KEYS file"
+        },
+        {
+            "c_hash": "84c82d3b",
+            "date": "2009-08-02 06:30:32 +0000",
+            "comment": "Fix for Error reading an Atom feed that has text directly under xhtml root div element [WINK-123]"
+        },
+        {
+            "c_hash": "e1ac2ea8",
+            "date": "2009-08-02 08:48:55 +0000",
+            "comment": "[maven-release-plugin] prepare release wink-0.1-incubating"
+        },
+        {
+            "c_hash": "72454a73",
+            "date": "2009-08-02 11:19:15 +0000",
+            "comment": "Rollback release (change back to snapshot)"
+        },
+        {
+            "c_hash": "dcbc190a",
+            "date": "2009-08-02 11:54:36 +0000",
+            "comment": "Rollback release (change back to snapshot)"
+        },
+        {
+            "c_hash": "50b508f3",
+            "date": "2009-08-02 12:27:21 +0000",
+            "comment": "Rollback release (change back to snapshot)"
+        },
+        {
+            "c_hash": "f613a320",
+            "date": "2009-08-02 12:34:04 +0000",
+            "comment": "Remove WebDav example from release (maven-dependencies-plugin fails)"
+        },
+        {
+            "c_hash": "ccff8d76",
+            "date": "2009-08-02 12:42:28 +0000",
+            "comment": "[maven-release-plugin] prepare release wink-0.1-incubating"
+        },
+        {
+            "c_hash": "83795132",
+            "date": "2009-08-02 12:43:32 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "3688e427",
+            "date": "2009-08-02 13:25:52 +0000",
+            "comment": "Remove deploy configuration"
+        },
+        {
+            "c_hash": "178845a2",
+            "date": "2009-08-02 13:48:50 +0000",
+            "comment": "Run CIBuild profile during release"
+        },
+        {
+            "c_hash": "cbda298d",
+            "date": "2009-08-02 14:51:38 +0000",
+            "comment": "include WebDAV example into release"
+        },
+        {
+            "c_hash": "6a4e2573",
+            "date": "2009-08-02 15:03:50 +0000",
+            "comment": "Rollback to snapshot 0.1"
+        },
+        {
+            "c_hash": "ace5f90c",
+            "date": "2009-08-02 15:16:52 +0000",
+            "comment": "Add version of QADefect example used in WebDAV"
+        },
+        {
+            "c_hash": "984e1f17",
+            "date": "2009-08-02 16:04:29 +0000",
+            "comment": "Fix maven-javadoc-plugin to use javadoc:aggregate"
+        },
+        {
+            "c_hash": "a0f42730",
+            "date": "2009-08-03 05:51:27 +0000",
+            "comment": "1. Move maven-javadoc-plugin to install phase 2. COnfigure maven-release-plugin to run CIBuild profile during release:perform"
+        },
+        {
+            "c_hash": "53063126",
+            "date": "2009-08-03 05:59:52 +0000",
+            "comment": "[maven-release-plugin] prepare release wink-0.1-incubating"
+        },
+        {
+            "c_hash": "12155233",
+            "date": "2009-08-03 06:01:36 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "8d042dcc",
+            "date": "2009-08-03 06:53:18 +0000",
+            "comment": "[maven-release-plugin] rollback the release of wink-0.1-incubating"
+        },
+        {
+            "c_hash": "bd66253c",
+            "date": "2009-08-03 07:06:30 +0000",
+            "comment": "Fix maven-javadoc-plugin <releaseProfile> CIBuild profile"
+        },
+        {
+            "c_hash": "17bb4459",
+            "date": "2009-08-03 07:17:09 +0000",
+            "comment": "Fix maven-javadoc-plugin <arguments> CIBuild profile"
+        },
+        {
+            "c_hash": "52234fd6",
+            "date": "2009-08-03 07:25:27 +0000",
+            "comment": "Fix maven-javadoc-plugin <releaseProfile> CIBuild profile"
+        },
+        {
+            "c_hash": "d0fa4916",
+            "date": "2009-08-03 07:34:42 +0000",
+            "comment": "Comment out   <releaseProfiles>CIBuild</releaseProfiles> from maven-release-plugin Path CIBuild to mvn release:perform -P CIBuild explicitly. Change to below, after http://jira.codehaus.org/browse/MRELEASE-459 is fixed"
+        },
+        {
+            "c_hash": "0bda368a",
+            "date": "2009-08-03 07:42:54 +0000",
+            "comment": "[maven-release-plugin] prepare release wink-0.1-incubating"
+        },
+        {
+            "c_hash": "6e34dca0",
+            "date": "2009-08-03 07:44:01 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "08a0a175",
+            "date": "2009-08-03 08:20:44 +0000",
+            "comment": "[maven-release-plugin] rollback the release of wink-0.1-incubating"
+        },
+        {
+            "c_hash": "1f524a2d",
+            "date": "2009-08-03 08:43:38 +0000",
+            "comment": "[maven-release-plugin] prepare release wink-0.1-incubating"
+        },
+        {
+            "c_hash": "ab576dc9",
+            "date": "2009-08-03 08:45:10 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "020da12a",
+            "date": "2009-08-03 08:51:27 +0000",
+            "comment": "[maven-release-plugin] rollback the release of wink-0.1-incubating"
+        },
+        {
+            "c_hash": "94dd4306",
+            "date": "2009-08-03 10:21:25 +0000",
+            "comment": "[maven-release-plugin] rollback the release of wink-0.1-incubating"
+        },
+        {
+            "c_hash": "6418b671",
+            "date": "2009-08-03 10:33:31 +0000",
+            "comment": "Move javadoc plugin from CIBuild profile"
+        },
+        {
+            "c_hash": "542cdd4d",
+            "date": "2009-08-03 10:39:46 +0000",
+            "comment": "Remove <releaseProfiles> from maven-release-plugin"
+        },
+        {
+            "c_hash": "9794b652",
+            "date": "2009-08-03 10:51:12 +0000",
+            "comment": "[maven-release-plugin] prepare release wink-0.1-incubating"
+        },
+        {
+            "c_hash": "e86db285",
+            "date": "2009-08-03 10:52:59 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "68c85c5c",
+            "date": "2009-08-03 11:05:30 +0000",
+            "comment": "[maven-release-plugin] rollback the release of wink-0.1-incubating"
+        },
+        {
+            "c_hash": "e2aea93e",
+            "date": "2009-08-03 11:40:32 +0000",
+            "comment": "[maven-release-plugin] prepare release wink-0.1-incubating"
+        },
+        {
+            "c_hash": "13812343",
+            "date": "2009-08-03 11:41:43 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "562d7cae",
+            "date": "2009-08-03 11:45:38 +0000",
+            "comment": "[maven-release-plugin] rollback the release of wink-0.1-incubating"
+        },
+        {
+            "c_hash": "49e6be4b",
+            "date": "2009-08-03 12:59:01 +0000",
+            "comment": "Move javadoc plugin to package phase & assembley plugin to integration-test phase, so javadoc will be executed before assembley"
+        },
+        {
+            "c_hash": "a3d3ee4a",
+            "date": "2009-08-03 13:13:51 +0000",
+            "comment": "Comment out ianal-maven-plugin"
+        },
+        {
+            "c_hash": "4bd56eb1",
+            "date": "2009-08-03 17:35:13 +0000",
+            "comment": "Bringing back ianal-maven-plugin - new configuration added (now it checks sources/binaries distribution archives)"
+        },
+        {
+            "c_hash": "827157b9",
+            "date": "2009-08-03 17:44:23 +0000",
+            "comment": "[maven-release-plugin] prepare release wink-0.1-incubating"
+        },
+        {
+            "c_hash": "0ec30cd3",
+            "date": "2009-08-03 17:47:53 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "0f1ebda8",
+            "date": "2009-08-03 19:20:40 +0000",
+            "comment": "Changes for [WINK-124].  Don't add empty strings to the list of http method override keys."
+        },
+        {
+            "c_hash": "749cd874",
+            "date": "2009-08-03 19:38:07 +0000",
+            "comment": "[maven-release-plugin] rollback the release of wink-0.1-incubating"
+        },
+        {
+            "c_hash": "dbee8e91",
+            "date": "2009-08-04 05:41:32 +0000",
+            "comment": "[maven-release-plugin] prepare release wink-0.1-incubating"
+        },
+        {
+            "c_hash": "9589e5d4",
+            "date": "2009-08-04 05:42:29 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "3af3c024",
+            "date": "2009-08-04 08:16:05 +0000",
+            "comment": "Bring trunk to a pristine condition (0.1 snapshot)"
+        },
+        {
+            "c_hash": "1b20e7eb",
+            "date": "2009-08-04 12:29:56 +0000",
+            "comment": "[maven-release-plugin] prepare release wink-0.1-incubating"
+        },
+        {
+            "c_hash": "f5d81acc",
+            "date": "2009-08-04 12:30:40 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "4291f34f",
+            "date": "2009-08-04 12:31:58 +0000",
+            "comment": "[maven-release-plugin] rollback the release of wink-0.1-incubating"
+        },
+        {
+            "c_hash": "a6c4bf2b",
+            "date": "2009-08-04 12:37:19 +0000",
+            "comment": "Bring back tags"
+        },
+        {
+            "c_hash": "4089d03c",
+            "date": "2009-08-04 12:50:02 +0000",
+            "comment": "[maven-release-plugin] prepare branch apache-wink-0.1-incubating-branch"
+        },
+        {
+            "c_hash": "daa2602b",
+            "date": "2009-08-04 12:53:49 +0000",
+            "comment": "[maven-release-plugin] prepare branch apache-wink-0.1-incubating"
+        },
+        {
+            "c_hash": "c87bde95",
+            "date": "2009-08-04 12:54:29 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-wink-0.1-incubating"
+        },
+        {
+            "c_hash": "26c597c7",
+            "date": "2009-08-04 13:37:28 +0000",
+            "comment": "Bring trunk to a pristine condition (0.1 snapshot)"
+        },
+        {
+            "c_hash": "d3a76395",
+            "date": "2009-08-05 05:31:06 +0000",
+            "comment": "[maven-release-plugin] prepare release wink-0.1-incubating"
+        },
+        {
+            "c_hash": "92f32cde",
+            "date": "2009-08-05 05:31:45 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "ee8cbc6f",
+            "date": "2009-08-06 15:20:47 +0000",
+            "comment": "Apache License on wink-jaxrs-optional-providers"
+        },
+        {
+            "c_hash": "157941a1",
+            "date": "2009-08-06 19:04:58 +0000",
+            "comment": "Rollback changes done to POMs temporarily"
+        },
+        {
+            "c_hash": "4e78b3b1",
+            "date": "2009-08-06 19:14:16 +0000",
+            "comment": "Changing SVN property for PDF mime-type on trunk."
+        },
+        {
+            "c_hash": "604a7193",
+            "date": "2009-08-06 19:16:26 +0000",
+            "comment": "Changing SVN property for EOL."
+        },
+        {
+            "c_hash": "f6676b76",
+            "date": "2009-08-06 19:22:56 +0000",
+            "comment": "More SVN property EOL changes."
+        },
+        {
+            "c_hash": "e62cd595",
+            "date": "2009-08-06 19:31:33 +0000",
+            "comment": "Changing SVN property for EOL on trunk."
+        },
+        {
+            "c_hash": "bc656ec9",
+            "date": "2009-08-07 03:10:22 +0000",
+            "comment": "Shorten the path of the integration test dirs"
+        },
+        {
+            "c_hash": "37d6af5b",
+            "date": "2009-08-08 19:19:57 +0000",
+            "comment": "Move LICENSE, NOTICE, DISCLAIMER, notes to root"
+        },
+        {
+            "c_hash": "96280d05",
+            "date": "2009-08-08 20:35:34 +0000",
+            "comment": "Remove JAXB sources from distribution"
+        },
+        {
+            "c_hash": "0901a7bc",
+            "date": "2009-08-08 22:11:12 +0000",
+            "comment": "Do not exclude site, assembly, and src directories"
+        },
+        {
+            "c_hash": "f83f8cd3",
+            "date": "2009-08-09 01:38:12 +0000",
+            "comment": "Delete empty directories."
+        },
+        {
+            "c_hash": "acb88fdd",
+            "date": "2009-08-09 01:45:07 +0000",
+            "comment": "Re-add svn:eol-style property to missing files"
+        },
+        {
+            "c_hash": "3b89129e",
+            "date": "2009-08-09 05:13:11 +0000",
+            "comment": "site under the modules is redundant"
+        },
+        {
+            "c_hash": "c60052af",
+            "date": "2009-08-09 05:24:10 +0000",
+            "comment": "remove QADefectWithSpring example, it's too complex right now"
+        },
+        {
+            "c_hash": "4177ef90",
+            "date": "2009-08-09 05:35:12 +0000",
+            "comment": "rollback to 802440 See https://issues.apache.org/jira/browse/WINK-131?focusedCommentId=12741021"
+        },
+        {
+            "c_hash": "e39d67bb",
+            "date": "2009-08-09 05:52:07 +0000",
+            "comment": "[WINK-131]: remove JAXB source jars from source distribution"
+        },
+        {
+            "c_hash": "864ad4c8",
+            "date": "2009-08-09 07:50:27 +0000",
+            "comment": "refactor DynamicResource. See [WINK-134]"
+        },
+        {
+            "c_hash": "4df21d16",
+            "date": "2009-08-09 11:19:26 +0000",
+            "comment": "Fixing WINK-127 - unit test failure in case of daylight saving timezone"
+        },
+        {
+            "c_hash": "8794650a",
+            "date": "2009-08-09 11:42:37 +0000",
+            "comment": "Fix the following release issues: * Sources/binaries distributions now include RELEASE-NOTES * Licenses of the included binaries (lib/*.jar) are added to sources & binaries distributions * sources/javadoc jars are missing default implementation and specification entries in manifest * move KYES to root directory * update BUILDING notes"
+        },
+        {
+            "c_hash": "cebd87d7",
+            "date": "2009-08-09 13:35:40 +0000",
+            "comment": "Update Integration Test names in pom.xml"
+        },
+        {
+            "c_hash": "8df0d50e",
+            "date": "2009-08-10 10:25:03 +0000",
+            "comment": "[maven-release-plugin] prepare release wink-0.1-incubating"
+        },
+        {
+            "c_hash": "23138f29",
+            "date": "2009-08-10 10:25:45 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "61335daa",
+            "date": "2009-08-13 15:33:42 +0000",
+            "comment": "Only adjust time if TimeZone is GMT"
+        },
+        {
+            "c_hash": "75d88de0",
+            "date": "2009-08-13 15:34:16 +0000",
+            "comment": "Fix Ant build for client examples"
+        },
+        {
+            "c_hash": "98678f96",
+            "date": "2009-08-13 20:07:51 +0000",
+            "comment": "Remove svn executable bit and rename test"
+        },
+        {
+            "c_hash": "62160449",
+            "date": "2009-08-13 20:20:35 +0000",
+            "comment": "Update NOTICE with sebb's comments"
+        },
+        {
+            "c_hash": "910361a1",
+            "date": "2009-08-13 21:21:33 +0000",
+            "comment": "Update LICENSE with all licenses"
+        },
+        {
+            "c_hash": "2561ea95",
+            "date": "2009-08-14 00:12:48 +0000",
+            "comment": "No need to create licenses directory anymore"
+        },
+        {
+            "c_hash": "f2789e97",
+            "date": "2009-08-14 00:12:52 +0000",
+            "comment": "Add maven-remote-resources plugin"
+        },
+        {
+            "c_hash": "3f1c7332",
+            "date": "2009-08-14 00:54:41 +0000",
+            "comment": "Add Apache to all pom name elements"
+        },
+        {
+            "c_hash": "157348c0",
+            "date": "2009-08-15 00:36:48 +0000",
+            "comment": "Include correct MANIFEST props in main jar"
+        },
+        {
+            "c_hash": "c4bd8c08",
+            "date": "2009-08-15 14:16:31 +0000",
+            "comment": "Add X-Compile-Source-JDK, X-Compile-Target-JDK"
+        },
+        {
+            "c_hash": "a222a984",
+            "date": "2009-08-16 07:24:46 +0000",
+            "comment": "Release rollback - change version back to 0.1 snapshot"
+        },
+        {
+            "c_hash": "9a8e584d",
+            "date": "2009-08-16 08:07:57 +0000",
+            "comment": "[maven-release-plugin] prepare release wink-0.1-incubating"
+        },
+        {
+            "c_hash": "be024c09",
+            "date": "2009-08-16 08:08:42 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "7eb1ab9d",
+            "date": "2009-08-17 01:26:05 +0000",
+            "comment": "Fix aggregate JAR's META-INF files for Apache Wink"
+        },
+        {
+            "c_hash": "621f9147",
+            "date": "2009-08-21 18:39:45 +0000",
+            "comment": "Update integration tests for 0.2-incubating"
+        },
+        {
+            "c_hash": "4c0b4514",
+            "date": "2009-08-21 18:39:57 +0000",
+            "comment": "Cache Java class and MediaType for getProvider"
+        },
+        {
+            "c_hash": "8334c74d",
+            "date": "2009-08-21 19:02:35 +0000",
+            "comment": "Update HelloWorld JavaDoc to correct URLs"
+        },
+        {
+            "c_hash": "a60618c6",
+            "date": "2009-08-21 19:24:50 +0000",
+            "comment": "Correct property name for root service doc"
+        },
+        {
+            "c_hash": "22fd3388",
+            "date": "2009-08-21 20:28:34 +0000",
+            "comment": "Cache determination of XML annotations"
+        },
+        {
+            "c_hash": "9bbed1d8",
+            "date": "2009-08-21 21:11:25 +0000",
+            "comment": "Allow for multiple Accept* headers"
+        },
+        {
+            "c_hash": "47e6fc21",
+            "date": "2009-08-21 21:41:20 +0000",
+            "comment": "Reset PathParams when using subresource locators"
+        },
+        {
+            "c_hash": "a888905f",
+            "date": "2009-08-24 11:44:07 +0000",
+            "comment": "Adding Multipart support issue # [WINK-137]"
+        },
+        {
+            "c_hash": "89ca36d9",
+            "date": "2009-08-24 12:09:54 +0000",
+            "comment": "Updating MP example test"
+        },
+        {
+            "c_hash": "9ba6160e",
+            "date": "2009-08-24 12:12:37 +0000",
+            "comment": "Add Apache to the MP pom name"
+        },
+        {
+            "c_hash": "3b7e55c3",
+            "date": "2009-08-24 18:48:31 +0000",
+            "comment": "Request#selectVariant use Accept* request headers"
+        },
+        {
+            "c_hash": "975fb769",
+            "date": "2009-08-24 21:30:14 +0000",
+            "comment": "Externalize strings into resource.properties file"
+        },
+        {
+            "c_hash": "c07210cb",
+            "date": "2009-08-25 17:22:53 +0000",
+            "comment": "RSS JAXB model and tests"
+        },
+        {
+            "c_hash": "ea225599",
+            "date": "2009-08-25 17:29:37 +0000",
+            "comment": "Fixing ProviderUtils - as already discussed the IOException should propagate to container."
+        },
+        {
+            "c_hash": "9f030a01",
+            "date": "2009-08-25 19:27:00 +0000",
+            "comment": "RSS client example with Wink"
+        },
+        {
+            "c_hash": "d1581e89",
+            "date": "2009-08-26 05:27:40 +0000",
+            "comment": "remove warnings by adding parameters for generic types"
+        },
+        {
+            "c_hash": "6963dca5",
+            "date": "2009-08-26 08:08:18 +0000",
+            "comment": "Make RuntimeContext public. See [WINK-151]"
+        },
+        {
+            "c_hash": "069e1fe3",
+            "date": "2009-08-26 08:25:46 +0000",
+            "comment": "Add more javadoc to multipart"
+        },
+        {
+            "c_hash": "47988b60",
+            "date": "2009-08-27 02:52:04 +0000",
+            "comment": "Add Jettison provider code"
+        },
+        {
+            "c_hash": "375760d7",
+            "date": "2009-08-27 16:14:09 +0000",
+            "comment": "Allow null as MediaType in ContextResolver"
+        },
+        {
+            "c_hash": "328fb03c",
+            "date": "2009-08-27 20:32:21 +0000",
+            "comment": "Use OutputStream instead of Writer for JAXBElement"
+        },
+        {
+            "c_hash": "3a570654",
+            "date": "2009-08-30 07:13:22 +0000",
+            "comment": "Add API for handlers configuration. See [WINK-151]"
+        },
+        {
+            "c_hash": "e6970e5b",
+            "date": "2009-08-30 09:48:46 +0000",
+            "comment": "Cache parsed Accept header content where possible See [WINK-114]"
+        },
+        {
+            "c_hash": "07198dbc",
+            "date": "2009-08-31 05:38:20 +0000",
+            "comment": "fix slf versions to 1.5.8"
+        },
+        {
+            "c_hash": "44528a95",
+            "date": "2009-08-31 07:22:44 +0000",
+            "comment": "small fixes: 1. use SoftConcurrentMap instead of WeakHashMap 2. use Class instead of String for cache maps 3. remove redundant getPackageName() method"
+        },
+        {
+            "c_hash": "ee68d2ff",
+            "date": "2009-08-31 13:30:03 +0000",
+            "comment": "fix issue WINK-117 , \"Missing \"/\" before sub resource in the Admin Console\""
+        },
+        {
+            "c_hash": "94ab8c3c",
+            "date": "2009-08-31 13:31:31 +0000",
+            "comment": "Add additional tests to multipart"
+        },
+        {
+            "c_hash": "63ca0ccd",
+            "date": "2009-09-01 17:03:13 +0000",
+            "comment": "Add Apache Abdera Provider"
+        },
+        {
+            "c_hash": "4bd1a632",
+            "date": "2009-09-01 17:03:28 +0000",
+            "comment": "Should use octet-stream for content type when null"
+        },
+        {
+            "c_hash": "8d259275",
+            "date": "2009-09-01 20:45:19 +0000",
+            "comment": "Add JSON read/write capabilities with JSONArray"
+        },
+        {
+            "c_hash": "2432a0a5",
+            "date": "2009-09-02 16:11:46 +0000",
+            "comment": "Add support for differing @Consumes based on param"
+        },
+        {
+            "c_hash": "a10ffa22",
+            "date": "2009-09-05 16:29:30 +0000",
+            "comment": "Support servlet and filter in integration tests"
+        },
+        {
+            "c_hash": "a9a4f151",
+            "date": "2009-09-05 16:29:42 +0000",
+            "comment": "Add RestFilter"
+        },
+        {
+            "c_hash": "851eebdb",
+            "date": "2009-09-05 16:30:17 +0000",
+            "comment": "Add specific RestFilter integration test"
+        },
+        {
+            "c_hash": "298d5593",
+            "date": "2009-09-07 10:26:44 +0000",
+            "comment": "load server side wink-providers See [WINK-165]"
+        },
+        {
+            "c_hash": "ecabe1ba",
+            "date": "2009-09-07 10:39:13 +0000",
+            "comment": "load providers from 'wink-providers' file using the ApplicationFileLoader See [WINK-164]"
+        },
+        {
+            "c_hash": "1810fa15",
+            "date": "2009-09-07 11:29:29 +0000",
+            "comment": "remove asset provider from common"
+        },
+        {
+            "c_hash": "774b0b8b",
+            "date": "2009-09-07 11:30:10 +0000",
+            "comment": "add AssetProvider to server"
+        },
+        {
+            "c_hash": "93a7add3",
+            "date": "2009-09-07 14:33:49 +0000",
+            "comment": "fix NPE see [WINK-166]"
+        },
+        {
+            "c_hash": "8908e84c",
+            "date": "2009-09-08 13:09:56 +0000",
+            "comment": "Making SyndContent/AtomContent support Object values instead of String. See [WINK-161]"
+        },
+        {
+            "c_hash": "c24f2d53",
+            "date": "2009-09-08 20:33:06 +0000",
+            "comment": "Add Wink Apache HTTP Client to integration tests"
+        },
+        {
+            "c_hash": "1ff195d5",
+            "date": "2009-09-08 20:40:07 +0000",
+            "comment": "Fix wink integration Atom tests"
+        },
+        {
+            "c_hash": "2f3c97dc",
+            "date": "2009-09-08 20:40:23 +0000",
+            "comment": "Add AcceptHeaderHandler to client."
+        },
+        {
+            "c_hash": "813a943d",
+            "date": "2009-09-08 20:40:50 +0000",
+            "comment": "Add integration test for wink client Accept header"
+        },
+        {
+            "c_hash": "785012e8",
+            "date": "2009-09-08 21:09:43 +0000",
+            "comment": "Add integration tests for empty body content"
+        },
+        {
+            "c_hash": "d83eb15a",
+            "date": "2009-09-09 02:57:12 +0000",
+            "comment": "Tolerate \"*\" Accept header value"
+        },
+        {
+            "c_hash": "c15cd93e",
+            "date": "2009-09-09 07:02:47 +0000",
+            "comment": "Move AtomJaxbUtils to internal. See [WINK-168]"
+        },
+        {
+            "c_hash": "6cde5d06",
+            "date": "2009-09-09 11:58:33 +0000",
+            "comment": "remove redundant providers and fix JAXBProvider. See [WINK-169]"
+        },
+        {
+            "c_hash": "598c8671",
+            "date": "2009-09-09 12:13:17 +0000",
+            "comment": "More redundant providers. See [WINK-169]"
+        },
+        {
+            "c_hash": "50d3c37f",
+            "date": "2009-09-09 16:27:54 +0000",
+            "comment": "Init the HashMap in AbstractRuntimeContext to 32"
+        },
+        {
+            "c_hash": "0e37152c",
+            "date": "2009-09-09 16:28:06 +0000",
+            "comment": "Skip path normalization if there are no evil paths"
+        },
+        {
+            "c_hash": "dbdf9822",
+            "date": "2009-09-09 16:28:16 +0000",
+            "comment": "Delay build of all HTTP request headers"
+        },
+        {
+            "c_hash": "a72564ee",
+            "date": "2009-09-09 21:15:16 +0000",
+            "comment": "Send a 400 when Accept header has invalid types"
+        },
+        {
+            "c_hash": "0b9287f4",
+            "date": "2009-09-09 21:15:40 +0000",
+            "comment": "Update tests to compare without formatting diffs"
+        },
+        {
+            "c_hash": "544c7a71",
+            "date": "2009-09-10 06:50:31 +0000",
+            "comment": "JAXBNamespacePrefixMapper is not used anymore. See [WINK-169]"
+        },
+        {
+            "c_hash": "09effd34",
+            "date": "2009-09-10 12:06:56 +0000",
+            "comment": "Refactoring of XmlFormattingOptions. Related to [WINK-169]"
+        },
+        {
+            "c_hash": "56fdcab4",
+            "date": "2009-09-10 12:45:57 +0000",
+            "comment": "add javadoc"
+        },
+        {
+            "c_hash": "bc2037ab",
+            "date": "2009-09-10 13:34:18 +0000",
+            "comment": "more redundant providers. See [WINK-169]"
+        },
+        {
+            "c_hash": "7c16a7b8",
+            "date": "2009-09-11 00:41:03 +0000",
+            "comment": "Switch to tomcat for default geronimo plugin"
+        },
+        {
+            "c_hash": "acae6b94",
+            "date": "2009-09-11 00:41:30 +0000",
+            "comment": "Update ProvidersRegistry with ConcurrentHashMap"
+        },
+        {
+            "c_hash": "a31ae675",
+            "date": "2009-09-11 19:36:07 +0000",
+            "comment": "Adding Jackson provider test"
+        },
+        {
+            "c_hash": "acedb73c",
+            "date": "2009-09-12 00:59:31 +0000",
+            "comment": "Fix JSON comparisions to use JSONUtils"
+        },
+        {
+            "c_hash": "0d0cffab",
+            "date": "2009-09-13 22:27:33 +0000",
+            "comment": "Add debug log option to save server logs"
+        },
+        {
+            "c_hash": "42adebb0",
+            "date": "2009-09-15 11:02:48 +0000",
+            "comment": "move json.org providers to a separate module. See [WINK-182]"
+        },
+        {
+            "c_hash": "6838bad2",
+            "date": "2009-09-15 11:36:31 +0000",
+            "comment": "revert to 801788"
+        },
+        {
+            "c_hash": "f1f2b9a2",
+            "date": "2009-09-15 11:54:15 +0000",
+            "comment": "remove JSON providers. See [WINK-182]"
+        },
+        {
+            "c_hash": "48536239",
+            "date": "2009-09-15 12:52:52 +0000",
+            "comment": "add json junit test"
+        },
+        {
+            "c_hash": "8a5c3ad9",
+            "date": "2009-09-15 13:13:07 +0000",
+            "comment": "add json provider and web ui"
+        },
+        {
+            "c_hash": "d668230a",
+            "date": "2009-09-15 20:31:32 +0000",
+            "comment": "Reorder wink-providers packages"
+        },
+        {
+            "c_hash": "46619792",
+            "date": "2009-09-16 01:19:57 +0000",
+            "comment": "Update integration tests for JSON changes"
+        },
+        {
+            "c_hash": "15ec04c8",
+            "date": "2009-09-16 01:52:38 +0000",
+            "comment": "Consumes/Produces can contain , separated values"
+        },
+        {
+            "c_hash": "ae232904",
+            "date": "2009-09-16 02:10:31 +0000",
+            "comment": "Test to ensure map types in ProvidersRegistry"
+        },
+        {
+            "c_hash": "3ead0267",
+            "date": "2009-09-16 10:08:18 +0000",
+            "comment": "automatic registration of wink-application See [WINK-181]"
+        },
+        {
+            "c_hash": "1feb636d",
+            "date": "2009-09-16 10:59:55 +0000",
+            "comment": "add logging message"
+        },
+        {
+            "c_hash": "13e7d4f4",
+            "date": "2009-09-16 14:04:54 +0000",
+            "comment": "Check for null return values from headers"
+        },
+        {
+            "c_hash": "097c1e17",
+            "date": "2009-09-16 15:09:33 +0000",
+            "comment": "Fix for size() > 0 issue"
+        },
+        {
+            "c_hash": "09f0fe95",
+            "date": "2009-09-16 16:59:50 +0000",
+            "comment": "Fix some imports for integration tests"
+        },
+        {
+            "c_hash": "26f4e9cb",
+            "date": "2009-09-16 17:00:02 +0000",
+            "comment": "Removed decoding from file loading"
+        },
+        {
+            "c_hash": "295742b0",
+            "date": "2009-09-17 06:54:59 +0000",
+            "comment": "fix [WINK-191]"
+        },
+        {
+            "c_hash": "69fddf1d",
+            "date": "2009-09-17 16:04:00 +0000",
+            "comment": "Volatile copy on write map for SoftConcurrentMap"
+        },
+        {
+            "c_hash": "631774cd",
+            "date": "2009-09-17 16:08:17 +0000",
+            "comment": "Performance improvement to FindRootResourceHandler"
+        },
+        {
+            "c_hash": "a63c9fd4",
+            "date": "2009-09-17 19:51:56 +0000",
+            "comment": "Use the client config to stop auto loading"
+        },
+        {
+            "c_hash": "a66ceea0",
+            "date": "2009-09-17 23:04:31 +0000",
+            "comment": "Add fromString capabilities"
+        },
+        {
+            "c_hash": "4f202fb5",
+            "date": "2009-09-17 23:04:53 +0000",
+            "comment": "Give constructors precedence over valueOf"
+        },
+        {
+            "c_hash": "60fb21c6",
+            "date": "2009-09-17 23:27:32 +0000",
+            "comment": "Move package name for other wink-providers"
+        },
+        {
+            "c_hash": "5bbbd27c",
+            "date": "2009-09-18 20:17:23 +0000",
+            "comment": "XmlFormatting options should do nothing by default"
+        },
+        {
+            "c_hash": "df32cf52",
+            "date": "2009-09-18 20:50:18 +0000",
+            "comment": "Use empty input stream for HTTPClient behavior"
+        },
+        {
+            "c_hash": "33997777",
+            "date": "2009-09-18 21:39:03 +0000",
+            "comment": "ResourceRegistry thread safety"
+        },
+        {
+            "c_hash": "b2a6a9e8",
+            "date": "2009-09-18 22:02:37 +0000",
+            "comment": "Revert HttpClient pom.xml version change"
+        },
+        {
+            "c_hash": "dcec6d43",
+            "date": "2009-09-19 19:38:24 +0000",
+            "comment": "Port tests to use Wink RestClient"
+        },
+        {
+            "c_hash": "34fa204c",
+            "date": "2009-09-19 19:38:38 +0000",
+            "comment": "Port wink-itest-filter to use RestClient"
+        },
+        {
+            "c_hash": "58f46631",
+            "date": "2009-09-19 19:38:50 +0000",
+            "comment": "Add general info messages to client"
+        },
+        {
+            "c_hash": "fd6ed1a3",
+            "date": "2009-09-19 19:38:59 +0000",
+            "comment": "Port wink-itest-inheritance to RestClient"
+        },
+        {
+            "c_hash": "50e5a3c9",
+            "date": "2009-09-22 06:00:17 +0000",
+            "comment": "move wink-providers before examples. See [WINK-204]"
+        },
+        {
+            "c_hash": "aadfe9d9",
+            "date": "2009-09-22 13:30:04 +0000",
+            "comment": "small bug: overriding equals() requires overriding hashCode()."
+        },
+        {
+            "c_hash": "79ca13bc",
+            "date": "2009-09-22 23:10:46 +0000",
+            "comment": "wink-jettison-provider use BadgerFish by default"
+        },
+        {
+            "c_hash": "143a4c80",
+            "date": "2009-09-23 02:27:10 +0000",
+            "comment": "Change info message for client for OOM error"
+        },
+        {
+            "c_hash": "9833e263",
+            "date": "2009-09-23 13:18:42 +0000",
+            "comment": "Added support of declared generic type on providers. See [WINK-193]"
+        },
+        {
+            "c_hash": "378a617d",
+            "date": "2009-09-23 23:14:49 +0000",
+            "comment": "Make the system priority explicit when adding"
+        },
+        {
+            "c_hash": "891d9404",
+            "date": "2009-09-23 23:15:15 +0000",
+            "comment": "Always choose user providers over system"
+        },
+        {
+            "c_hash": "dda2383a",
+            "date": "2009-09-23 23:15:39 +0000",
+            "comment": "Make the MediaTypeMap more thread safe"
+        },
+        {
+            "c_hash": "fbabfbc2",
+            "date": "2009-09-24 00:05:28 +0000",
+            "comment": "Change Providers unit test to setup priorities"
+        },
+        {
+            "c_hash": "1516dfef",
+            "date": "2009-09-24 01:38:23 +0000",
+            "comment": "Add debug statements to ProvidersRegistry"
+        },
+        {
+            "c_hash": "b3bd2602",
+            "date": "2009-09-24 22:39:30 +0000",
+            "comment": "Add debug statements to server handlers"
+        },
+        {
+            "c_hash": "dc249790",
+            "date": "2009-09-25 02:15:26 +0000",
+            "comment": "Add general config debug statements in wink-server"
+        },
+        {
+            "c_hash": "5bb08b9f",
+            "date": "2009-09-25 02:15:39 +0000",
+            "comment": "Add debug statements to servlet/filters in server"
+        },
+        {
+            "c_hash": "96155507",
+            "date": "2009-09-25 18:53:38 +0000",
+            "comment": "Remove some redundant messages"
+        },
+        {
+            "c_hash": "58815b62",
+            "date": "2009-09-25 20:58:48 +0000",
+            "comment": "Add example to itests to gather trace temporarily"
+        },
+        {
+            "c_hash": "c82815db",
+            "date": "2009-09-26 19:21:10 +0000",
+            "comment": "Port wink-itest-targeting to RestClient"
+        },
+        {
+            "c_hash": "5d3bdc9f",
+            "date": "2009-09-26 19:21:23 +0000",
+            "comment": "Guard against null keys in MultivaluedMap"
+        },
+        {
+            "c_hash": "d95e3cd6",
+            "date": "2009-09-26 19:21:32 +0000",
+            "comment": "If entity is null, return the null directly"
+        },
+        {
+            "c_hash": "33ac13db",
+            "date": "2009-09-26 19:21:40 +0000",
+            "comment": "If request has no Content-Type, use application/octet-stream"
+        },
+        {
+            "c_hash": "6e1791f4",
+            "date": "2009-09-26 20:47:09 +0000",
+            "comment": "Removed reader/writer locks from ProvidersRegistry"
+        },
+        {
+            "c_hash": "e5cdcedd",
+            "date": "2009-09-26 20:47:21 +0000",
+            "comment": "Change ProvidersRegistry to use SoftConcurrentMap"
+        },
+        {
+            "c_hash": "0d2440ce",
+            "date": "2009-09-26 20:47:30 +0000",
+            "comment": "Change XmlFormattingOptions to use properties"
+        },
+        {
+            "c_hash": "d4afc532",
+            "date": "2009-09-26 20:47:49 +0000",
+            "comment": "Remove service doc from default XmlFormattingOptions"
+        },
+        {
+            "c_hash": "37ab1409",
+            "date": "2009-09-26 20:48:19 +0000",
+            "comment": "Remove default XmlFormattingOptions"
+        },
+        {
+            "c_hash": "b36cee2a",
+            "date": "2009-09-26 23:37:52 +0000",
+            "comment": "Make MediaTypeMapperFactory public"
+        },
+        {
+            "c_hash": "d1785543",
+            "date": "2009-09-27 19:18:16 +0000",
+            "comment": "Add @Override to RestFilter"
+        },
+        {
+            "c_hash": "b34ac13f",
+            "date": "2009-09-27 19:18:25 +0000",
+            "comment": "Change debug to identify actual resource instance"
+        },
+        {
+            "c_hash": "2e886732",
+            "date": "2009-09-27 19:18:33 +0000",
+            "comment": "Add more debug statements to FlushResultHandler"
+        },
+        {
+            "c_hash": "5dc00edb",
+            "date": "2009-09-27 19:18:42 +0000",
+            "comment": "Add debug statements to Contexts"
+        },
+        {
+            "c_hash": "1809ca69",
+            "date": "2009-09-29 19:28:37 +0000",
+            "comment": "ArrayIndexOutOfBoundsEx for international chars"
+        },
+        {
+            "c_hash": "5031cba9",
+            "date": "2009-09-30 08:46:37 +0000",
+            "comment": "update distribution scripts according to WINK-183"
+        },
+        {
+            "c_hash": "06c2b46f",
+            "date": "2009-09-30 10:00:07 +0000",
+            "comment": "reformat using spaces"
+        },
+        {
+            "c_hash": "4aa3a4ce",
+            "date": "2009-09-30 13:52:23 +0000",
+            "comment": "modify wink.jar according to [WINK-183]"
+        },
+        {
+            "c_hash": "3741ec01",
+            "date": "2009-10-01 02:57:21 +0000",
+            "comment": "Fix StringProvider getSize when different charset"
+        },
+        {
+            "c_hash": "43bacd59",
+            "date": "2009-10-02 01:28:59 +0000",
+            "comment": "Stop the sort during multivalued params"
+        },
+        {
+            "c_hash": "af837d5b",
+            "date": "2009-10-02 01:38:40 +0000",
+            "comment": "Return 400 for invalid FormParam"
+        },
+        {
+            "c_hash": "b1de4d0d",
+            "date": "2009-10-02 01:49:04 +0000",
+            "comment": "Fallback to servlet request params for form params"
+        },
+        {
+            "c_hash": "4fd19c78",
+            "date": "2009-10-02 02:09:23 +0000",
+            "comment": "Enforce value conversion"
+        },
+        {
+            "c_hash": "b00bcda8",
+            "date": "2009-10-03 00:57:52 +0000",
+            "comment": "Make loggers static for performance"
+        },
+        {
+            "c_hash": "edd0f5bb",
+            "date": "2009-10-03 00:58:01 +0000",
+            "comment": "Add better formatting for toString() MediaTypeMap"
+        },
+        {
+            "c_hash": "6a00a940",
+            "date": "2009-10-03 00:58:08 +0000",
+            "comment": "Add wink-application for Abdera JAX-RS provider"
+        },
+        {
+            "c_hash": "d6bbec1f",
+            "date": "2009-10-03 01:17:39 +0000",
+            "comment": "Make internal types specific for ProvidersRegistry"
+        },
+        {
+            "c_hash": "38ae6211",
+            "date": "2009-10-03 16:39:42 +0000",
+            "comment": "Use SoftConcurrentMap in AbstractJAXBProvider"
+        },
+        {
+            "c_hash": "acf570f7",
+            "date": "2009-10-03 16:40:07 +0000",
+            "comment": "Make distinction between user and system providers"
+        },
+        {
+            "c_hash": "3af192c7",
+            "date": "2009-10-04 09:51:01 +0000",
+            "comment": "Remove json related code."
+        },
+        {
+            "c_hash": "ffd4dab5",
+            "date": "2009-10-04 12:25:01 +0000",
+            "comment": "fix ant to match new distribution format"
+        },
+        {
+            "c_hash": "b8d82811",
+            "date": "2009-10-04 12:26:46 +0000",
+            "comment": "Remove json related code."
+        },
+        {
+            "c_hash": "f6a0c71c",
+            "date": "2009-10-04 12:28:31 +0000",
+            "comment": "Remove json related code."
+        },
+        {
+            "c_hash": "8b24ced7",
+            "date": "2009-10-04 12:30:35 +0000",
+            "comment": "Remove json related code."
+        },
+        {
+            "c_hash": "5b3d912f",
+            "date": "2009-10-04 12:32:30 +0000",
+            "comment": "cleanup redundant \"spring\" exclude"
+        },
+        {
+            "c_hash": "722678f1",
+            "date": "2009-10-04 12:35:30 +0000",
+            "comment": "Remove json related code and redundant \"spring\" exclude."
+        },
+        {
+            "c_hash": "a32c5de9",
+            "date": "2009-10-04 19:46:08 +0000",
+            "comment": "Consider Accept-Charset header in selectVariant"
+        },
+        {
+            "c_hash": "c7def523",
+            "date": "2009-10-07 11:25:31 +0000",
+            "comment": "move to version 4.0 instead of beta-2"
+        },
+        {
+            "c_hash": "3261043b",
+            "date": "2009-10-07 11:34:14 +0000",
+            "comment": "fix scripts according to a new zip distribution format. See [WINK-183] for more details about the new format."
+        },
+        {
+            "c_hash": "280d69e7",
+            "date": "2009-10-07 12:16:12 +0000",
+            "comment": "try a workaround for jcip related problem. See https://issues.apache.org/jira/browse/HTTPCLIENT-866 for more details about the problem."
+        },
+        {
+            "c_hash": "636b2f24",
+            "date": "2009-10-07 12:23:59 +0000",
+            "comment": "add comment"
+        },
+        {
+            "c_hash": "9279d584",
+            "date": "2009-10-07 12:28:49 +0000",
+            "comment": "fix scripts according to a new zip distribution format. See [WINK-183] for more details about the new format."
+        },
+        {
+            "c_hash": "2b6bfc6c",
+            "date": "2009-10-07 12:47:13 +0000",
+            "comment": "fix scripts according to a new zip distribution format. See [WINK-183] for more details about the new format."
+        },
+        {
+            "c_hash": "700e58f1",
+            "date": "2009-10-08 01:30:41 +0000",
+            "comment": "Insert the ProvidersRegistry into RuntimeContext"
+        },
+        {
+            "c_hash": "9e4ef9b9",
+            "date": "2009-10-08 01:30:55 +0000",
+            "comment": "Update JSON provider to avoid client exception"
+        },
+        {
+            "c_hash": "38ea5ee1",
+            "date": "2009-10-08 14:38:31 +0000",
+            "comment": "[WINK-211]"
+        },
+        {
+            "c_hash": "2f3a8af8",
+            "date": "2009-10-09 15:17:23 +0000",
+            "comment": "Adding personal key to list"
+        },
+        {
+            "c_hash": "332a2437",
+            "date": "2009-10-09 16:34:47 +0000",
+            "comment": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>     <!--         Licensed to the Apache Software Foundation (ASF) under one or         more contributor license agreements. See the NOTICE file         distributed with this work for additional information regarding         copyright ownership. The ASF licenses this file to you under the         Apache License, Version 2.0 (the \"License\"); you may not use         this file except in compliance with the License. You may obtain         a copy of the License at"
+        },
+        {
+            "c_hash": "9ea28f3c",
+            "date": "2009-10-09 17:10:43 +0000",
+            "comment": "Use only required dependencies for Abdera"
+        },
+        {
+            "c_hash": "79f82c9d",
+            "date": "2009-10-09 17:10:56 +0000",
+            "comment": "Fix DEPENDENCIES and NOTICE in combined wink.jar"
+        },
+        {
+            "c_hash": "b999c38f",
+            "date": "2009-10-09 17:11:05 +0000",
+            "comment": "Add Abdera dependencies that are included to legal"
+        },
+        {
+            "c_hash": "83fa0122",
+            "date": "2009-10-09 17:14:54 +0000",
+            "comment": "Add notice for Jettison since including binary"
+        },
+        {
+            "c_hash": "047501fa",
+            "date": "2009-10-09 18:08:08 +0000",
+            "comment": "Unexclude Woodstox and add them in NOTICE"
+        },
+        {
+            "c_hash": "37ea8c01",
+            "date": "2009-10-09 19:48:54 +0000",
+            "comment": "Update release notes to add more info"
+        },
+        {
+            "c_hash": "d8d92559",
+            "date": "2009-10-09 19:49:21 +0000",
+            "comment": "Tolerate empty @PathParam segments"
+        },
+        {
+            "c_hash": "cbeea7b1",
+            "date": "2009-10-09 20:44:41 +0000",
+            "comment": "Change Wink client User-Agent to 1.0"
+        },
+        {
+            "c_hash": "81febe31",
+            "date": "2009-10-09 21:06:02 +0000",
+            "comment": "Exclude the NOTICE,DISCLAIMER,LICENSE explicitly"
+        },
+        {
+            "c_hash": "d318757e",
+            "date": "2009-10-10 14:58:09 +0000",
+            "comment": "Set the eol-style properties on trunk"
+        },
+        {
+            "c_hash": "02da9373",
+            "date": "2009-10-12 21:39:42 +0000",
+            "comment": "Fix empty path annotation issue"
+        },
+        {
+            "c_hash": "2776fc66",
+            "date": "2009-10-13 20:28:15 +0000",
+            "comment": "Add maven target directories and eclipse .settings, .project, and .classpath files to svn ignore"
+        },
+        {
+            "c_hash": "375332a4",
+            "date": "2009-10-15 14:36:06 +0000",
+            "comment": "Updated last documentation version for wink 1.0"
+        },
+        {
+            "c_hash": "12af33a8",
+            "date": "2009-10-17 12:29:31 +0000",
+            "comment": "Remove invalid lib directory from GoogleDocsClient"
+        },
+        {
+            "c_hash": "bd09b72d",
+            "date": "2009-10-17 12:29:41 +0000",
+            "comment": "Fix NPE in ModelUtils"
+        },
+        {
+            "c_hash": "89735186",
+            "date": "2009-10-19 13:34:49 +0000",
+            "comment": "Last documentation version of 1.0"
+        },
+        {
+            "c_hash": "d640710c",
+            "date": "2009-10-19 15:22:13 +0000",
+            "comment": "Add try catch for JSONArray uriinfo for client"
+        },
+        {
+            "c_hash": "7dbc9313",
+            "date": "2009-10-20 14:57:22 +0000",
+            "comment": "Update ResourceRegistry for cache outside reader"
+        },
+        {
+            "c_hash": "7ac5d2b3",
+            "date": "2009-10-22 00:16:38 +0000",
+            "comment": "Add wink-assembly to use maven-assembly-plugin"
+        },
+        {
+            "c_hash": "3d47361e",
+            "date": "2009-10-23 14:44:18 +0000",
+            "comment": "Fix test for different versions of JAXB"
+        },
+        {
+            "c_hash": "bc3423d0",
+            "date": "2009-10-23 18:56:00 +0000",
+            "comment": "Update readme to get rid of character"
+        },
+        {
+            "c_hash": "1deeedb7",
+            "date": "2009-10-23 18:56:13 +0000",
+            "comment": "wink-assembly distbin to only filter build.xml"
+        },
+        {
+            "c_hash": "2be14d9f",
+            "date": "2009-10-25 12:37:40 +0000",
+            "comment": "Add consumeContent functionality. See [WINK-220]"
+        },
+        {
+            "c_hash": "5417fb1e",
+            "date": "2009-10-28 15:07:38 +0000",
+            "comment": "Be more lenient in isJAXBElement"
+        },
+        {
+            "c_hash": "8068207f",
+            "date": "2009-10-28 18:33:35 +0000",
+            "comment": "Add target directory and eclipse files to svn ignore for itest modules"
+        },
+        {
+            "c_hash": "dd9840d9",
+            "date": "2009-10-28 18:34:51 +0000",
+            "comment": "Update itest pom.xml so that an assemblyId is required to run the tests. Default is to just build so that we can integrate with the main wink pom.xml"
+        },
+        {
+            "c_hash": "e0b15e25",
+            "date": "2009-10-28 20:32:42 +0000",
+            "comment": "Add winki-itests to main pom.xml. The default for this module will be to run no tests unless an assemblyId is set. This is so we can run them in Hudson"
+        },
+        {
+            "c_hash": "db463ee1",
+            "date": "2009-10-28 21:15:00 +0000",
+            "comment": "Add target directory and eclipse files to svn ignore for wink-assembly modules"
+        },
+        {
+            "c_hash": "9dfd7d84",
+            "date": "2009-10-30 16:44:32 +0000",
+            "comment": "LICENSE and NOTICE updates (minus xml-apis)"
+        },
+        {
+            "c_hash": "d36ed6f9",
+            "date": "2009-10-30 16:44:43 +0000",
+            "comment": "Remove xml-api dependency"
+        },
+        {
+            "c_hash": "60d37283",
+            "date": "2009-10-30 16:46:59 +0000",
+            "comment": "Remove json notice"
+        },
+        {
+            "c_hash": "f469a6bf",
+            "date": "2009-10-30 20:49:40 +0000",
+            "comment": "Move LICENSE/NOTICE files around"
+        },
+        {
+            "c_hash": "2c475661",
+            "date": "2009-10-30 20:49:52 +0000",
+            "comment": "Use pools for Unmarshallers/Marshallers for JAXB"
+        },
+        {
+            "c_hash": "130fa3a8",
+            "date": "2009-11-02 16:29:06 +0000",
+            "comment": "Exclude not required xerces from Abdera provider"
+        },
+        {
+            "c_hash": "eed83f80",
+            "date": "2009-11-02 16:29:13 +0000",
+            "comment": "Get rid of :compile and :runtime from LICENSE"
+        },
+        {
+            "c_hash": "5e5cfe17",
+            "date": "2009-11-02 16:29:20 +0000",
+            "comment": "Update to not include StaX for Jettison"
+        },
+        {
+            "c_hash": "f0774dc7",
+            "date": "2009-11-02 16:29:26 +0000",
+            "comment": "Update wink-assembly for new NOTICE/LICENSE"
+        },
+        {
+            "c_hash": "65995093",
+            "date": "2009-11-02 18:11:23 +0000",
+            "comment": "Remove Jettison from NOTICE since no NOTICE for it"
+        },
+        {
+            "c_hash": "cd924cd2",
+            "date": "2009-11-02 18:11:32 +0000",
+            "comment": "Remove StaX from NOTICE since no NOTICE"
+        },
+        {
+            "c_hash": "8a8ea0e9",
+            "date": "2009-11-02 18:11:55 +0000",
+            "comment": "Do not redistribute Abdera"
+        },
+        {
+            "c_hash": "8206390f",
+            "date": "2009-11-02 18:42:22 +0000",
+            "comment": "Use SLF4J for HttpClient as well"
+        },
+        {
+            "c_hash": "2f2c03b3",
+            "date": "2009-11-02 18:42:27 +0000",
+            "comment": "Updates to LICENSE to point out ASL 2.0 licensed"
+        },
+        {
+            "c_hash": "7b3dd151",
+            "date": "2009-11-02 18:43:51 +0000",
+            "comment": "Copy and paste error with JavaBeans Activation Framework"
+        },
+        {
+            "c_hash": "b6c81216",
+            "date": "2009-11-02 18:53:32 +0000",
+            "comment": "Move around dependencies for wink-assembly httpclient"
+        },
+        {
+            "c_hash": "57251f44",
+            "date": "2009-11-02 22:00:21 +0000",
+            "comment": "Clarify Jettison and StAX license"
+        },
+        {
+            "c_hash": "d74db95f",
+            "date": "2009-11-02 22:15:12 +0000",
+            "comment": "Add HttpClient and HttpCore to LICENSE"
+        },
+        {
+            "c_hash": "524f1873",
+            "date": "2009-11-03 13:59:28 +0000",
+            "comment": "WINK-223: reduce debug log output for sub-500 return codes"
+        },
+        {
+            "c_hash": "c6b9247b",
+            "date": "2009-11-04 21:17:37 +0000",
+            "comment": "WINK-226: need fallback for Class.forName in J2EE environments"
+        },
+        {
+            "c_hash": "338841e1",
+            "date": "2009-11-06 20:38:43 +0000",
+            "comment": "WINK-229: tolerate user's JAXBContext resolver"
+        },
+        {
+            "c_hash": "2d0e0793",
+            "date": "2009-11-06 21:15:14 +0000",
+            "comment": "WINK-229:  fix incorrect namespace"
+        },
+        {
+            "c_hash": "06b8fbe9",
+            "date": "2009-11-09 17:22:43 +0000",
+            "comment": "WINK-229: tolerate XmlRootElement in JAXB objects, but JAXBContext created with package string, causing it to use xjc-generated ObjectFactory"
+        },
+        {
+            "c_hash": "c06ae9c1",
+            "date": "2009-11-09 19:30:44 +0000",
+            "comment": "WINK-227: use thread context classloader over system classloader in J2EE environments"
+        },
+        {
+            "c_hash": "14ba5c04",
+            "date": "2009-11-30 22:23:09 +0000",
+            "comment": "Use HeaderUtils when converting Locale to language"
+        },
+        {
+            "c_hash": "aa1cbe61",
+            "date": "2009-12-03 08:15:56 +0000",
+            "comment": "Fix issue WINK-230 \"NullPointerException occurs when Content type in MultiPart isn't sent\""
+        },
+        {
+            "c_hash": "9856bdd5",
+            "date": "2009-12-07 20:38:44 +0000",
+            "comment": "WINK-234: improve debug and processing for no writer found in providers"
+        },
+        {
+            "c_hash": "8cde4b13",
+            "date": "2009-12-08 21:49:37 +0000",
+            "comment": "Update the version numbers in the pom.xml to 1.1-incubating-SNAPSHOT"
+        },
+        {
+            "c_hash": "82c656b2",
+            "date": "2009-12-09 16:10:19 +0000",
+            "comment": "Update tests with new version"
+        },
+        {
+            "c_hash": "6260817f",
+            "date": "2009-12-09 19:38:24 +0000",
+            "comment": "Add a basic auth client handler"
+        },
+        {
+            "c_hash": "8dd6aebb",
+            "date": "2009-12-11 21:37:39 +0000",
+            "comment": "Clean up the JavaDoc output to ignore more tests"
+        },
+        {
+            "c_hash": "31ae41b4",
+            "date": "2009-12-14 16:40:53 +0000",
+            "comment": "Reduce logging in error path case"
+        },
+        {
+            "c_hash": "5fd412e2",
+            "date": "2009-12-17 17:12:37 +0000",
+            "comment": "[Wink-291] Add wink-jaxbcollection-provider to version control"
+        },
+        {
+            "c_hash": "b0ca692d",
+            "date": "2009-12-17 18:14:57 +0000",
+            "comment": "[#Wink-239] Check in wink-jaxbcollection-provider source"
+        },
+        {
+            "c_hash": "eacdf4f7",
+            "date": "2009-12-17 18:36:31 +0000",
+            "comment": "[#WINK-239] Add wink-jaxbcollection-provider module to wink-providers pom"
+        },
+        {
+            "c_hash": "e64b4aa1",
+            "date": "2009-12-17 18:49:26 +0000",
+            "comment": "[#Wink-239] Add wink jaxbcollection provider integration tests to wink-itest-extra-providers module"
+        },
+        {
+            "c_hash": "7719d2f5",
+            "date": "2009-12-17 20:02:55 +0000",
+            "comment": "Don't use a new Marshaller for every Object in the Collection"
+        },
+        {
+            "c_hash": "d4c4fb60",
+            "date": "2009-12-17 23:20:44 +0000",
+            "comment": "support usage of custom providers during AtomEntry->AtomContent->value retrieval when outside the scope of the thread local store of the client-server thread."
+        },
+        {
+            "c_hash": "ade3601d",
+            "date": "2010-01-05 19:11:11 +0000",
+            "comment": "Refactore JAXB Collection Provider into wink-common module"
+        },
+        {
+            "c_hash": "8d07c647",
+            "date": "2010-01-05 19:13:00 +0000",
+            "comment": "Delete wink-jaxbcollection-provider module"
+        },
+        {
+            "c_hash": "955ceaf4",
+            "date": "2010-01-05 20:22:06 +0000",
+            "comment": "Add woodstox test dependency which is needed for the JAXB collection unit tests using JDK 1.5"
+        },
+        {
+            "c_hash": "eec8e4d9",
+            "date": "2010-01-28 00:40:54 +0000",
+            "comment": "Inject proxies for context objects if object not available"
+        },
+        {
+            "c_hash": "cce80fd5",
+            "date": "2010-01-28 03:55:10 +0000",
+            "comment": "Do not emit warning when property method"
+        },
+        {
+            "c_hash": "c1bddde8",
+            "date": "2010-01-28 04:07:29 +0000",
+            "comment": "Move BasicAuthSecurityHandler to public"
+        },
+        {
+            "c_hash": "29169e26",
+            "date": "2010-01-28 04:07:51 +0000",
+            "comment": "Use correct response class when populating Content-Type"
+        },
+        {
+            "c_hash": "f656b3be",
+            "date": "2010-01-28 04:55:33 +0000",
+            "comment": "Throw IllegalArgException in UriBuilder port/host"
+        },
+        {
+            "c_hash": "414e9239",
+            "date": "2010-01-28 05:02:19 +0000",
+            "comment": "Fix error in messages log"
+        },
+        {
+            "c_hash": "7af924ae",
+            "date": "2010-01-28 05:30:30 +0000",
+            "comment": "Fix for missing Allow header in 405 responses"
+        },
+        {
+            "c_hash": "4d2bb9db",
+            "date": "2010-02-01 13:43:17 +0000",
+            "comment": "Add Google Guice enabled Apache Wink server"
+        },
+        {
+            "c_hash": "d81915e4",
+            "date": "2010-02-10 23:53:23 +0000",
+            "comment": "Add support for inheritable annotations"
+        },
+        {
+            "c_hash": "453876bf",
+            "date": "2010-02-11 16:03:23 +0000",
+            "comment": "WINK-254: fix SyndContent to support use of providers during client call to getValue"
+        },
+        {
+            "c_hash": "07614402",
+            "date": "2010-02-11 17:23:05 +0000",
+            "comment": "some environments throw malformed URL exception for relative paths that do not begin with forward slash"
+        },
+        {
+            "c_hash": "d9cff34c",
+            "date": "2010-02-11 18:03:08 +0000",
+            "comment": "revert RestServlet change until Tomcat issue is resolved - see testcase in this commit"
+        },
+        {
+            "c_hash": "6c03a9ad",
+            "date": "2010-02-11 22:54:34 +0000",
+            "comment": "protect against MalformedURLException when properties file path does not start with slash - sorry for the churn on this one"
+        },
+        {
+            "c_hash": "4f2989b8",
+            "date": "2010-02-16 16:33:12 +0000",
+            "comment": "Add debugging to UriBuilderImpl and make fixes in UriBuilder and UriEncoder to conform to the JSR311 1.0 javadoc."
+        },
+        {
+            "c_hash": "69675171",
+            "date": "2010-02-20 19:58:07 +0000",
+            "comment": "WINK-255: protect against ConcurrentModificationException when garbage collector thread tries to clean up SoftReferences in the WeakHashMap"
+        },
+        {
+            "c_hash": "9708d4c3",
+            "date": "2010-02-22 02:26:26 +0000",
+            "comment": "Use a build.properties file to prevent bad filters"
+        },
+        {
+            "c_hash": "152a956a",
+            "date": "2010-02-22 02:26:34 +0000",
+            "comment": "Update wink-assembly-dist to be like wink-dist"
+        },
+        {
+            "c_hash": "9a923eab",
+            "date": "2010-02-22 20:52:41 +0000",
+            "comment": "WINK-174: allow pluggable and JVM property overrides"
+        },
+        {
+            "c_hash": "ad12a54d",
+            "date": "2010-02-23 21:20:25 +0000",
+            "comment": "change test file to have ASL license"
+        },
+        {
+            "c_hash": "551bc542",
+            "date": "2010-02-23 21:55:04 +0000",
+            "comment": "log warnings for NoClassDefFoundErrors during init"
+        },
+        {
+            "c_hash": "e396f984",
+            "date": "2010-02-24 03:56:10 +0000",
+            "comment": "Update to use Apache HttpClient 4.0.1"
+        },
+        {
+            "c_hash": "8bf47008",
+            "date": "2010-02-24 03:56:16 +0000",
+            "comment": "Update SLF4J from 1.5.8 to 1.5.10"
+        },
+        {
+            "c_hash": "fbfbaab4",
+            "date": "2010-02-24 16:16:29 +0000",
+            "comment": "give meaningful exception message in UriBuilderImpl"
+        },
+        {
+            "c_hash": "12b8be2a",
+            "date": "2010-02-24 18:19:13 +0000",
+            "comment": "use server time and timezone to set last modified date in itests, also ensure servernames match up by .toLowerCase on strings"
+        },
+        {
+            "c_hash": "a2c269be",
+            "date": "2010-02-24 18:42:22 +0000",
+            "comment": "correct error messages for ClassNotFound in DeploymentConfiguration"
+        },
+        {
+            "c_hash": "c5f310f8",
+            "date": "2010-02-24 20:04:03 +0000",
+            "comment": "give meaningful message in UrlBuilderImpl exceptions"
+        },
+        {
+            "c_hash": "da19741e",
+            "date": "2010-02-24 20:18:26 +0000",
+            "comment": "Fix issue in OPTIONS request.  If a response entity is set (due to a subresource locator being used), and the test is running in a JDK which uses a DataContentHandler, then theDataContentHandler will throw an exception that it cannot write the response entity (because it is a subresource class).  Unset the response entity if it's an automatic OPTIONS request"
+        },
+        {
+            "c_hash": "85af104f",
+            "date": "2010-02-24 20:25:34 +0000",
+            "comment": "add forgotten Apache license header"
+        },
+        {
+            "c_hash": "6afec971",
+            "date": "2010-02-24 20:58:00 +0000",
+            "comment": "reduce logger noise"
+        },
+        {
+            "c_hash": "a5ddf38d",
+            "date": "2010-02-24 21:30:40 +0000",
+            "comment": "reduce log noise in client"
+        },
+        {
+            "c_hash": "fea415d1",
+            "date": "2010-02-25 19:36:12 +0000",
+            "comment": "improve error messages"
+        },
+        {
+            "c_hash": "c8a6d626",
+            "date": "2010-02-25 20:40:36 +0000",
+            "comment": "externalize strings for logging"
+        },
+        {
+            "c_hash": "a066aeed",
+            "date": "2010-02-25 20:49:16 +0000",
+            "comment": "externalize strings for logging"
+        },
+        {
+            "c_hash": "6e98defc",
+            "date": "2010-02-25 21:53:26 +0000",
+            "comment": "externalize more strings"
+        },
+        {
+            "c_hash": "e6944e08",
+            "date": "2010-02-28 20:53:45 +0000",
+            "comment": "Add ability to inject @Context Application class"
+        },
+        {
+            "c_hash": "b93ad9ce",
+            "date": "2010-02-28 20:53:52 +0000",
+            "comment": "Update test for new error message"
+        },
+        {
+            "c_hash": "64f4143c",
+            "date": "2010-03-01 01:47:39 +0000",
+            "comment": "Wrap stream closing in finally blocks to make sure"
+        },
+        {
+            "c_hash": "50e474b9",
+            "date": "2010-03-01 02:06:22 +0000",
+            "comment": "Response.location(URI) should check relative URI"
+        },
+        {
+            "c_hash": "8391784c",
+            "date": "2010-03-01 02:22:51 +0000",
+            "comment": "Revert change for WINK-235 first"
+        },
+        {
+            "c_hash": "b3cdd766",
+            "date": "2010-03-02 16:01:41 +0000",
+            "comment": "WINK-257:  allow Application subclass control over provider priority"
+        },
+        {
+            "c_hash": "b3d8844a",
+            "date": "2010-03-02 21:52:51 +0000",
+            "comment": "JAXB context-to-unmarshaller cache should not be static due to possible conflict between different Applications"
+        },
+        {
+            "c_hash": "2a05120f",
+            "date": "2010-03-02 22:26:29 +0000",
+            "comment": "jackson configuration tests - thanks to Jesse Ramos for the contribution"
+        },
+        {
+            "c_hash": "1360ae2a",
+            "date": "2010-03-02 22:48:45 +0000",
+            "comment": "Jackson polymorphic tests and provider priority test"
+        },
+        {
+            "c_hash": "7388fbce",
+            "date": "2010-03-03 16:19:27 +0000",
+            "comment": "Update messages to use Messages.getMessage()"
+        },
+        {
+            "c_hash": "3add919a",
+            "date": "2010-03-03 16:38:40 +0000",
+            "comment": "Update resource.properties messages"
+        },
+        {
+            "c_hash": "c3401ec4",
+            "date": "2010-03-03 17:16:37 +0000",
+            "comment": "add instructions for itests in top-level BUILDING.txt"
+        },
+        {
+            "c_hash": "c7b079b6",
+            "date": "2010-03-03 19:24:50 +0000",
+            "comment": "Update to SLF4J 1.5.11"
+        },
+        {
+            "c_hash": "0ff6d8f3",
+            "date": "2010-03-03 21:21:51 +0000",
+            "comment": "Add NON-NLS comments to lines of code that contain Strings that do not need to be NLS translated"
+        },
+        {
+            "c_hash": "a27e9b35",
+            "date": "2010-03-03 21:23:57 +0000",
+            "comment": "Delete ibm-jaxrs-server directories"
+        },
+        {
+            "c_hash": "b05cb15d",
+            "date": "2010-03-03 21:46:00 +0000",
+            "comment": "A couple of final NLS updates"
+        },
+        {
+            "c_hash": "7c326905",
+            "date": "2010-03-03 23:31:32 +0000",
+            "comment": "Remove wink-itests from main pom.xml"
+        },
+        {
+            "c_hash": "cb08b51d",
+            "date": "2010-03-04 00:48:58 +0000",
+            "comment": "Allow \"If-Match: *\" and \"If-None-Match: *\""
+        },
+        {
+            "c_hash": "c4bb3de4",
+            "date": "2010-03-04 00:49:09 +0000",
+            "comment": "Add Request.evaluatePreconditions() and JAX-RS 1.1"
+        },
+        {
+            "c_hash": "500812c0",
+            "date": "2010-03-04 16:15:46 +0000",
+            "comment": "Made a profile for wink-itests to be run in build"
+        },
+        {
+            "c_hash": "7810a1c6",
+            "date": "2010-03-05 19:49:38 +0000",
+            "comment": "WINK-259: process application subclass in much the same way as providers and resources so future injection requirements in the jsr311 spec can be more easily made"
+        },
+        {
+            "c_hash": "8e70c5a1",
+            "date": "2010-03-12 18:48:11 +0000",
+            "comment": "WINK-261: enable logging for mvn builds if desired.  Also add util class(es) to capture log output in a junit test method to unittest log output if desired"
+        },
+        {
+            "c_hash": "868853e7",
+            "date": "2010-03-16 16:28:57 +0000",
+            "comment": "Fix issue with assembly build"
+        },
+        {
+            "c_hash": "101fc6d7",
+            "date": "2010-03-16 17:51:11 +0000",
+            "comment": "[Wink-260] Add ability to set client readTimeout and connectTimeout values via system properties: wink.client.readTimeout and wink.client.connectTimeout. Check in associated integration tests"
+        },
+        {
+            "c_hash": "927d4cc3",
+            "date": "2010-03-16 17:52:14 +0000",
+            "comment": "Add resources for wink-itest-client-timeout module to svn ignore"
+        },
+        {
+            "c_hash": "8f55c2d0",
+            "date": "2010-03-16 18:09:02 +0000",
+            "comment": "Add Apache HTTP client version of client system property timeout tests"
+        },
+        {
+            "c_hash": "0a3afb78",
+            "date": "2010-03-16 18:29:49 +0000",
+            "comment": "Update client version"
+        },
+        {
+            "c_hash": "70a39906",
+            "date": "2010-03-17 20:08:49 +0000",
+            "comment": "Add resources for wink-guice-server to svn ignore"
+        },
+        {
+            "c_hash": "8730a3d1",
+            "date": "2010-03-24 14:56:52 +0000",
+            "comment": "[WINK-264]: Don't include path templates in scheme portion of path"
+        },
+        {
+            "c_hash": "2799a176",
+            "date": "2010-03-24 22:25:27 +0000",
+            "comment": "cache JAXBContexts from custom context resolvers in cases where the context resolver does not itself cache it"
+        },
+        {
+            "c_hash": "2d131af6",
+            "date": "2010-03-25 15:58:08 +0000",
+            "comment": "WINK-219: best-effort to support JAXB inherited types"
+        },
+        {
+            "c_hash": "b5102353",
+            "date": "2010-03-29 14:22:08 +0000",
+            "comment": "Add wink-guice-server by default to build"
+        },
+        {
+            "c_hash": "d227d502",
+            "date": "2010-03-29 21:25:51 +0000",
+            "comment": "Remove duplicate junit for apache-wink-httpclient"
+        },
+        {
+            "c_hash": "f0cd7a81",
+            "date": "2010-03-29 22:37:46 +0000",
+            "comment": "Add OSGi metadata to JARs"
+        },
+        {
+            "c_hash": "790bcc90",
+            "date": "2010-03-30 03:45:56 +0000",
+            "comment": "WINK-262: set default charset=UTF-8 when necessary"
+        },
+        {
+            "c_hash": "8f776a97",
+            "date": "2010-03-30 04:41:02 +0000",
+            "comment": "WINK-262: followup - consolidate duplicate code into utility method"
+        },
+        {
+            "c_hash": "200d45d7",
+            "date": "2010-03-31 17:41:59 +0000",
+            "comment": "WINK-266: make some fields in RestServlet public"
+        },
+        {
+            "c_hash": "11b2751d",
+            "date": "2010-03-31 18:59:43 +0000",
+            "comment": "WINK-267: make RestServlet.service non-final so subclasses can override it"
+        },
+        {
+            "c_hash": "88d7fc01",
+            "date": "2010-04-06 15:41:26 +0000",
+            "comment": "Add ClientResponse.getStatusType()"
+        },
+        {
+            "c_hash": "3785fcf7",
+            "date": "2010-04-09 17:24:09 +0000",
+            "comment": "Update StringProvider to increase performance"
+        },
+        {
+            "c_hash": "f74b0a73",
+            "date": "2010-04-13 13:55:44 +0000",
+            "comment": "Fix UriBuilderImpl clone() to use right instance"
+        },
+        {
+            "c_hash": "d776ab46",
+            "date": "2010-04-17 15:29:23 +0000",
+            "comment": "Clean up message formatting in ClientResponseImpl"
+        },
+        {
+            "c_hash": "833d1e04",
+            "date": "2010-04-17 15:29:27 +0000",
+            "comment": "Correct wink-itest-client-timeout pom.xml version"
+        },
+        {
+            "c_hash": "28178aef",
+            "date": "2010-04-17 15:29:31 +0000",
+            "comment": "Fix api version"
+        },
+        {
+            "c_hash": "02196446",
+            "date": "2010-04-17 15:29:50 +0000",
+            "comment": "Update itests for charset output"
+        },
+        {
+            "c_hash": "87f608e6",
+            "date": "2010-04-17 20:38:09 +0000",
+            "comment": "Fix dependency issue in wink-itest-extra-providers"
+        },
+        {
+            "c_hash": "233d82e8",
+            "date": "2010-04-17 20:38:18 +0000",
+            "comment": "Update UriTemplateProcessor encoding"
+        },
+        {
+            "c_hash": "8fdcc4a6",
+            "date": "2010-04-17 21:10:01 +0000",
+            "comment": "Update to add versions for reporting plugins"
+        },
+        {
+            "c_hash": "2cd8c2dc",
+            "date": "2010-04-17 21:24:43 +0000",
+            "comment": "Add createModules to GuiceDeploymentConfiguration"
+        },
+        {
+            "c_hash": "0a7da4ed",
+            "date": "2010-04-17 22:04:38 +0000",
+            "comment": "Simplify the BasicAuthSecurityHandler"
+        },
+        {
+            "c_hash": "710a1de9",
+            "date": "2010-04-18 14:44:52 +0000",
+            "comment": "Add JAXBUnmarshalOption to set properties"
+        },
+        {
+            "c_hash": "9d354287",
+            "date": "2010-04-18 21:54:30 +0000",
+            "comment": "UriBuilder fix when query param has no value"
+        },
+        {
+            "c_hash": "488f0943",
+            "date": "2010-04-18 22:04:04 +0000",
+            "comment": "Fix an ordering problem in the AcceptCharset"
+        },
+        {
+            "c_hash": "05028e13",
+            "date": "2010-04-18 22:30:57 +0000",
+            "comment": "Code formatting changes"
+        },
+        {
+            "c_hash": "d7f9e5d7",
+            "date": "2010-04-18 22:31:14 +0000",
+            "comment": "Change mediatype with a charset for text providers"
+        },
+        {
+            "c_hash": "1b60d83c",
+            "date": "2010-04-18 23:05:31 +0000",
+            "comment": "Update wink-itest for charset change"
+        },
+        {
+            "c_hash": "1ae09ed3",
+            "date": "2010-04-19 02:47:37 +0000",
+            "comment": "Add caching for charsets"
+        },
+        {
+            "c_hash": "fc5cc40d",
+            "date": "2010-04-19 17:24:11 +0000",
+            "comment": "Update LICENSE for binarydist"
+        },
+        {
+            "c_hash": "e246d91d",
+            "date": "2010-04-19 17:24:32 +0000",
+            "comment": "Update assembly bits"
+        },
+        {
+            "c_hash": "9f76b76f",
+            "date": "2010-04-19 17:24:49 +0000",
+            "comment": "Only run wink-assembly bits if CIBuild profile"
+        },
+        {
+            "c_hash": "ef0a50f1",
+            "date": "2010-04-19 17:25:05 +0000",
+            "comment": "Update OSGi output to output servlet specifically"
+        },
+        {
+            "c_hash": "5c3de475",
+            "date": "2010-04-19 20:30:23 +0000",
+            "comment": "Remove unnecessary Javadoc packages"
+        },
+        {
+            "c_hash": "2f3ae89f",
+            "date": "2010-04-19 20:30:29 +0000",
+            "comment": "Fixes to the wink-assembly so matches wink-scripts"
+        },
+        {
+            "c_hash": "fc0fc4a9",
+            "date": "2010-04-19 20:31:40 +0000",
+            "comment": "Remove wink-scripts to use wink-assembly"
+        },
+        {
+            "c_hash": "5b53f868",
+            "date": "2010-04-19 20:51:06 +0000",
+            "comment": "Add resources to svn ignore"
+        },
+        {
+            "c_hash": "d1e24b38",
+            "date": "2010-04-19 21:03:37 +0000",
+            "comment": "Commit Shiva's code to map the RSS Object model to the Syndication model minus the wink-providers change"
+        },
+        {
+            "c_hash": "43fc9cab",
+            "date": "2010-04-19 22:06:06 +0000",
+            "comment": "Update to use single goal in wink-assembly"
+        },
+        {
+            "c_hash": "23e5c4a1",
+            "date": "2010-04-20 14:22:36 +0000",
+            "comment": "Update copyright date"
+        },
+        {
+            "c_hash": "dab40b5b",
+            "date": "2010-04-20 15:47:26 +0000",
+            "comment": "Delete empty directories"
+        },
+        {
+            "c_hash": "b8a7ee3c",
+            "date": "2010-04-20 16:30:04 +0000",
+            "comment": "Remove wink Office doc since not updated"
+        },
+        {
+            "c_hash": "bde2ddaf",
+            "date": "2010-04-20 16:48:08 +0000",
+            "comment": "[WINK-149] Apply patches from WINK-149 (1, 3, and 4; patch 2 was not applied). Thanks to Shiva for the contributions"
+        },
+        {
+            "c_hash": "2deb91bf",
+            "date": "2010-04-20 20:07:34 +0000",
+            "comment": "update release notes to 1.1"
+        },
+        {
+            "c_hash": "41c2b51d",
+            "date": "2010-04-22 03:58:38 +0000",
+            "comment": "Update Apache Wink User Guide doc"
+        },
+        {
+            "c_hash": "fcbdeed2",
+            "date": "2010-04-22 15:53:19 +0000",
+            "comment": "WINK-262: followup for perf improvements, make default response Content-Type header charset attribute concatenation behavior configurable"
+        },
+        {
+            "c_hash": "df470b9d",
+            "date": "2010-04-22 18:36:37 +0000",
+            "comment": "update KEYS with Rheinheimer"
+        },
+        {
+            "c_hash": "0fff0ab9",
+            "date": "2010-04-22 20:52:23 +0000",
+            "comment": "change release_notes.txt in prep for 1.1"
+        },
+        {
+            "c_hash": "46fa9332",
+            "date": "2010-04-26 14:05:15 +0000",
+            "comment": "[WINK-238]: Set the content type on the outgoing request automatically if not already set by the user"
+        },
+        {
+            "c_hash": "df4875f2",
+            "date": "2010-04-26 14:36:13 +0000",
+            "comment": "Update readme to mention multipart"
+        },
+        {
+            "c_hash": "50033cd5",
+            "date": "2010-04-26 14:51:49 +0000",
+            "comment": "Try to rename the distribution files"
+        },
+        {
+            "c_hash": "36572728",
+            "date": "2010-04-26 15:02:48 +0000",
+            "comment": "[WINK-275] Ingore interfaces and abstract classes with Provider annotation. Handle interface implemntations without NPE"
+        },
+        {
+            "c_hash": "8cb132db",
+            "date": "2010-04-26 15:07:26 +0000",
+            "comment": "[WINK-275] Add license on unit test"
+        },
+        {
+            "c_hash": "f28acd9e",
+            "date": "2010-04-26 16:03:55 +0000",
+            "comment": "Move wink-assembly-dist around to apache-wink"
+        },
+        {
+            "c_hash": "7da2d117",
+            "date": "2010-04-26 16:04:01 +0000",
+            "comment": "Update copyright on NOTICE"
+        },
+        {
+            "c_hash": "8e11c843",
+            "date": "2010-04-26 16:05:04 +0000",
+            "comment": "Update binary dist copyright and license"
+        },
+        {
+            "c_hash": "4196874d",
+            "date": "2010-04-26 16:22:42 +0000",
+            "comment": "Remove empty directories"
+        },
+        {
+            "c_hash": "673ccfcf",
+            "date": "2010-04-26 16:38:52 +0000",
+            "comment": "[WINK-275] Add similar check in ResourceMetadataCollector"
+        },
+        {
+            "c_hash": "aab364f2",
+            "date": "2010-04-26 19:59:00 +0000",
+            "comment": "Create a view in HttpHeaders for getRequestHeaders()"
+        },
+        {
+            "c_hash": "427a3183",
+            "date": "2010-04-30 17:37:29 +0000",
+            "comment": "Fix some line ending corrections"
+        },
+        {
+            "c_hash": "9c913200",
+            "date": "2010-04-30 17:37:37 +0000",
+            "comment": "Add a test condition in case run on old JVM"
+        },
+        {
+            "c_hash": "9fa0657f",
+            "date": "2010-04-30 17:37:46 +0000",
+            "comment": "Update Request tests to hopefully simplify"
+        },
+        {
+            "c_hash": "597572dd",
+            "date": "2010-04-30 17:37:59 +0000",
+            "comment": "Fixes for running in different JDK 5s"
+        },
+        {
+            "c_hash": "4893ba0d",
+            "date": "2010-04-30 19:37:04 +0000",
+            "comment": "[WINK-279] Adjust ServerMediaTypeCharsetAdjuster to set charset on MultiValuedMap parameter rather than on the HttpServletResponse; do not define a default charset by default; update unit and itests affected by changes"
+        },
+        {
+            "c_hash": "dca400a6",
+            "date": "2010-05-03 19:42:38 +0000",
+            "comment": "Disable wink-itest-osgi for now"
+        },
+        {
+            "c_hash": "edcd2d36",
+            "date": "2010-05-03 20:36:56 +0000",
+            "comment": "correction to LICENSE file to include dual CDDL+GPL, and to NOTICE file to declare which license to use in cases where it matters"
+        },
+        {
+            "c_hash": "a9e7e36b",
+            "date": "2010-05-04 15:10:57 +0000",
+            "comment": "use GMT in itest to accommodate different systems a little better"
+        },
+        {
+            "c_hash": "5ccd53dd",
+            "date": "2010-05-04 20:33:36 +0000",
+            "comment": "correction to some doubled text in LICENSE"
+        },
+        {
+            "c_hash": "9c089f30",
+            "date": "2010-05-17 19:49:53 +0000",
+            "comment": "Message fix for ResourceImpl"
+        },
+        {
+            "c_hash": "478111e1",
+            "date": "2010-05-17 20:15:25 +0000",
+            "comment": "Return -1 for the StringProvider size."
+        },
+        {
+            "c_hash": "b6a7bdcc",
+            "date": "2010-05-19 15:22:13 +0000",
+            "comment": "Update line endings and svn:eol-style"
+        },
+        {
+            "c_hash": "67365557",
+            "date": "2010-05-19 16:53:06 +0000",
+            "comment": "Remove explicit ServerMessageContext in LinkBuilder"
+        },
+        {
+            "c_hash": "439de59e",
+            "date": "2010-05-19 18:05:44 +0000",
+            "comment": "Update JavaDocs for ClientRuntimeException"
+        },
+        {
+            "c_hash": "1829d8b1",
+            "date": "2010-05-30 12:38:49 +0000",
+            "comment": "Update pom.xml to 1.1.1 version"
+        },
+        {
+            "c_hash": "4f2a3cbf",
+            "date": "2010-05-30 13:03:19 +0000",
+            "comment": "Do not include SLF4J implementation by default"
+        },
+        {
+            "c_hash": "9436bb76",
+            "date": "2010-05-30 13:21:49 +0000",
+            "comment": "Remove unnecessary String.valueOf() calls"
+        },
+        {
+            "c_hash": "43da10c0",
+            "date": "2010-05-31 16:29:45 +0000",
+            "comment": "Fixes to the single Messages.getMessage(\"\") method"
+        },
+        {
+            "c_hash": "de1e8bc6",
+            "date": "2010-06-01 16:53:38 +0000",
+            "comment": "Use Response.Status in ClientResponseImpl.getStatusType"
+        },
+        {
+            "c_hash": "cf997d26",
+            "date": "2010-06-01 18:19:16 +0000",
+            "comment": "[WINK-289] Use URI.getRawSchemeSpecificPart() when getting informatin from a URI"
+        },
+        {
+            "c_hash": "c095a082",
+            "date": "2010-06-03 20:48:03 +0000",
+            "comment": "Add AcceptEncoding debug"
+        },
+        {
+            "c_hash": "19155ae2",
+            "date": "2010-06-03 20:48:11 +0000",
+            "comment": "Fix a problem with GzipHandler in some JDKs"
+        },
+        {
+            "c_hash": "d5fe1b2f",
+            "date": "2010-06-03 20:48:17 +0000",
+            "comment": "Change RequestImpl.selectVariant() to process *"
+        },
+        {
+            "c_hash": "2218679b",
+            "date": "2010-06-03 20:48:42 +0000",
+            "comment": "Add Content Encode itests for gzip/deflate filter"
+        },
+        {
+            "c_hash": "0a4e1543",
+            "date": "2010-06-03 21:35:54 +0000",
+            "comment": "Update pom.xml version numbers that were different"
+        },
+        {
+            "c_hash": "8f803133",
+            "date": "2010-06-07 00:20:05 +0000",
+            "comment": "Add ObjectFactory.release() and releaseAll()"
+        },
+        {
+            "c_hash": "2c32bc0b",
+            "date": "2010-06-07 00:20:20 +0000",
+            "comment": "Use LifecycleManager for Application lifecycle"
+        },
+        {
+            "c_hash": "e888d3b1",
+            "date": "2010-06-07 00:36:03 +0000",
+            "comment": "Set ServletContext/Config is not set"
+        },
+        {
+            "c_hash": "1a8fb926",
+            "date": "2010-06-07 01:58:04 +0000",
+            "comment": "Remove Content-Encoding from ContentEncodingRequestFilter"
+        },
+        {
+            "c_hash": "531771e5",
+            "date": "2010-06-07 19:34:42 +0000",
+            "comment": "WINK-291:  disable support for DTD expansion in XML payloads"
+        },
+        {
+            "c_hash": "fe82718b",
+            "date": "2010-06-09 02:36:03 +0000",
+            "comment": "Update NPE with actual variable to help debug"
+        },
+        {
+            "c_hash": "84416747",
+            "date": "2010-06-09 02:36:11 +0000",
+            "comment": "Fix test due to variability of garbage collector"
+        },
+        {
+            "c_hash": "a6de2c2b",
+            "date": "2010-06-09 02:38:42 +0000",
+            "comment": "Make client message a debug due to exception thrown"
+        },
+        {
+            "c_hash": "7e91ea4c",
+            "date": "2010-06-09 02:38:48 +0000",
+            "comment": "Remove unused WinkSystemProperties"
+        },
+        {
+            "c_hash": "81dacac3",
+            "date": "2010-06-09 02:39:02 +0000",
+            "comment": "Fixes to some easy warnings"
+        },
+        {
+            "c_hash": "d3834e2e",
+            "date": "2010-06-10 12:04:28 +0000",
+            "comment": "Update Wink Client user agent string"
+        },
+        {
+            "c_hash": "15309236",
+            "date": "2010-06-11 22:21:15 +0000",
+            "comment": "Add gpg key to KEYS file"
+        },
+        {
+            "c_hash": "6e92cb7a",
+            "date": "2010-06-14 14:31:54 +0000",
+            "comment": "Update release_notes"
+        },
+        {
+            "c_hash": "54820aac",
+            "date": "2010-06-14 17:53:55 +0000",
+            "comment": "Update version number in release notes."
+        },
+        {
+            "c_hash": "c15e6415",
+            "date": "2010-06-14 18:41:20 +0000",
+            "comment": "[WINK-293] Set eol-style property"
+        },
+        {
+            "c_hash": "b8037532",
+            "date": "2010-06-18 18:24:16 +0000",
+            "comment": "Add updated gpg key"
+        },
+        {
+            "c_hash": "4f74222f",
+            "date": "2010-06-18 22:36:05 +0000",
+            "comment": "Add new gpg key"
+        },
+        {
+            "c_hash": "4f940a6c",
+            "date": "2010-06-25 14:10:20 +0000",
+            "comment": "Add license header to wink-itest-content-encode/pom.xml"
+        },
+        {
+            "c_hash": "cb7145a7",
+            "date": "2010-06-25 15:52:42 +0000",
+            "comment": "Remove test file"
+        },
+        {
+            "c_hash": "2746525c",
+            "date": "2010-06-25 15:52:49 +0000",
+            "comment": "Re-add JSON test"
+        },
+        {
+            "c_hash": "e26030fe",
+            "date": "2010-06-25 15:52:59 +0000",
+            "comment": "Update files with license"
+        },
+        {
+            "c_hash": "365d8295",
+            "date": "2010-06-25 15:53:04 +0000",
+            "comment": "Update with exclusions for license checking"
+        },
+        {
+            "c_hash": "0d060226",
+            "date": "2010-06-25 16:24:32 +0000",
+            "comment": "Update gpg keys"
+        },
+        {
+            "c_hash": "4704caba",
+            "date": "2010-06-25 17:49:52 +0000",
+            "comment": "Fix the LICENSE formatting"
+        },
+        {
+            "c_hash": "a08f0b3a",
+            "date": "2010-07-06 15:36:47 +0000",
+            "comment": "WINK-297: externalize all hard-coded strings for translation, ensure all key/value pairs are used, formatting is correct, add a test"
+        },
+        {
+            "c_hash": "46e2b164",
+            "date": "2010-07-06 15:40:30 +0000",
+            "comment": "WINK-298:  improve tests for xml security vulnerability"
+        },
+        {
+            "c_hash": "da602013",
+            "date": "2010-07-06 16:42:27 +0000",
+            "comment": "security advisory CVE-2010-2245.docx documentation"
+        },
+        {
+            "c_hash": "a9aae29d",
+            "date": "2010-07-06 19:52:49 +0000",
+            "comment": "WINK-298 followup: fix hudson build break, handle Sun JDK5 NPE bug in DocumentBuilder.parse when DTD is present"
+        },
+        {
+            "c_hash": "6042ffbc",
+            "date": "2010-07-06 20:19:36 +0000",
+            "comment": "change CVE security disclosure doc to PDF format"
+        },
+        {
+            "c_hash": "214b51c8",
+            "date": "2010-07-06 21:05:19 +0000",
+            "comment": "fix security vulnerabilty PDF"
+        },
+        {
+            "c_hash": "28539d5d",
+            "date": "2010-07-07 22:13:07 +0000",
+            "comment": "Update pom.xml version numbers 1.1.2-incubating-SNAPSHOT"
+        },
+        {
+            "c_hash": "07ae920d",
+            "date": "2010-07-08 16:12:52 +0000",
+            "comment": "WINK-296: change debug calls to trace calls where appropriate, add wire trace, change MessagesTest to accommodate change"
+        },
+        {
+            "c_hash": "c7cc78bc",
+            "date": "2010-07-08 19:51:57 +0000",
+            "comment": "upgrade to jsr311 1.1.1.  Version 1.1 of the api jar has a bug in that they did not fix it to comply with C011:  http://jcp.org/aboutJava/communityprocess/maintenance/jsr311/311changelog.1.1.html.  Version 1.1.1 has the fix."
+        },
+        {
+            "c_hash": "2fe20e51",
+            "date": "2010-07-08 20:06:08 +0000",
+            "comment": "use Eclipse organize imports to clean up imports in all .java files.  This may help performance, and certainly helps clean up the code within IDEs."
+        },
+        {
+            "c_hash": "e0614e8b",
+            "date": "2010-07-22 13:29:52 +0000",
+            "comment": "WINK-304: improve serviceability log message output, add tests"
+        },
+        {
+            "c_hash": "1309d295",
+            "date": "2010-07-22 18:56:55 +0000",
+            "comment": "WINK-305: improve SSL configuration options to allow properties file config"
+        },
+        {
+            "c_hash": "a0519c74",
+            "date": "2010-07-22 20:07:08 +0000",
+            "comment": "revert WINK-305 per Bryant's suggestion.  End-users will be responsible for providing and maintaining their own properties file for username/pw HTTP Authorization header credentials, if they desire it."
+        },
+        {
+            "c_hash": "b5ec628b",
+            "date": "2010-07-23 14:52:43 +0000",
+            "comment": "fix typos in resource.properties file"
+        },
+        {
+            "c_hash": "870ad0e9",
+            "date": "2010-07-23 15:17:47 +0000",
+            "comment": "WINK-242: support SSL hostname verifier bypass"
+        },
+        {
+            "c_hash": "0cc9b3d4",
+            "date": "2010-07-26 18:29:58 +0000",
+            "comment": "WINK-292: add ProxyAuthSecurityHandler, refactor auth code, refactor MockHttpServer, add several tests"
+        },
+        {
+            "c_hash": "e3c42490",
+            "date": "2010-07-26 19:16:13 +0000",
+            "comment": "small change to pom.xml to put wink-component-test-support first for convenience when doing mvn eclipse:eclipse"
+        },
+        {
+            "c_hash": "5e72b1f9",
+            "date": "2010-07-27 13:48:26 +0000",
+            "comment": "add test to ensure legacy code lives on"
+        },
+        {
+            "c_hash": "977da683",
+            "date": "2010-07-27 14:45:43 +0000",
+            "comment": "non-functional code cleanup to *AuthSecurityHandler code"
+        },
+        {
+            "c_hash": "4b57248b",
+            "date": "2010-07-28 15:01:03 +0000",
+            "comment": "non-functional changes:  add NON-NLS markers for eclipse message externalization, clean up code comment format, remove unused test"
+        },
+        {
+            "c_hash": "39082ad3",
+            "date": "2010-07-28 15:07:46 +0000",
+            "comment": "java2security support"
+        },
+        {
+            "c_hash": "0d951efa",
+            "date": "2010-07-28 15:34:40 +0000",
+            "comment": "add some trace for app processor when we hit interface or abstract class"
+        },
+        {
+            "c_hash": "94c4cd8b",
+            "date": "2010-07-30 16:46:46 +0000",
+            "comment": "WINK-303   Set the response code first or the AdminServlet content will not be returned in some servlet containers."
+        },
+        {
+            "c_hash": "b777f2fa",
+            "date": "2010-08-12 18:46:17 +0000",
+            "comment": "WINK-302: add API call to encode URLs for client when desired"
+        },
+        {
+            "c_hash": "b85365a9",
+            "date": "2010-08-30 16:09:41 +0000",
+            "comment": "Export the META-INF directories."
+        },
+        {
+            "c_hash": "5f7f13d8",
+            "date": "2010-09-03 14:32:37 +0000",
+            "comment": "WINK-310: support inheritance for method signatures whose parent uses generic types"
+        },
+        {
+            "c_hash": "ae80b8fb",
+            "date": "2010-09-09 22:12:34 +0000",
+            "comment": "Fix GenericsUtils.isAssignable() to handle primitives"
+        },
+        {
+            "c_hash": "b66fbe60",
+            "date": "2010-09-09 22:43:03 +0000",
+            "comment": "Upgrade to SLF4J 1.6.1"
+        },
+        {
+            "c_hash": "865f047a",
+            "date": "2010-09-09 22:43:21 +0000",
+            "comment": "Smarter interpretation of @Consumes/@Produces"
+        },
+        {
+            "c_hash": "dad6f7f4",
+            "date": "2010-09-09 23:14:47 +0000",
+            "comment": "Add JCDI extension support for Wink"
+        },
+        {
+            "c_hash": "a6678286",
+            "date": "2010-09-15 21:59:34 +0000",
+            "comment": "Improve the tolerance of malformed media types"
+        },
+        {
+            "c_hash": "fa160f6d",
+            "date": "2010-09-15 21:59:50 +0000",
+            "comment": "Fix issue with PathParam not resolving last value"
+        },
+        {
+            "c_hash": "bd17f41f",
+            "date": "2010-09-15 22:46:18 +0000",
+            "comment": "Update to use Jackson 1.6.0"
+        },
+        {
+            "c_hash": "d3fc9904",
+            "date": "2010-09-16 21:06:36 +0000",
+            "comment": "Fix issue with metadata collector"
+        },
+        {
+            "c_hash": "6dd0165b",
+            "date": "2010-09-22 16:45:49 +0000",
+            "comment": "InjectableFactory receives all the attributes"
+        },
+        {
+            "c_hash": "4b7c72bb",
+            "date": "2010-09-22 16:46:11 +0000",
+            "comment": "Simple WADLGenerator using JAXB"
+        },
+        {
+            "c_hash": "3f4b6394",
+            "date": "2010-09-27 17:21:16 +0000",
+            "comment": "[WINK-299] Add WinkJacksonJaxbJsonProvider provider and corresponding wink-aplication file"
+        },
+        {
+            "c_hash": "80d41de4",
+            "date": "2010-09-30 14:23:03 +0000",
+            "comment": "Allow interfaces to be used"
+        },
+        {
+            "c_hash": "b8964be4",
+            "date": "2010-09-30 14:23:20 +0000",
+            "comment": "Build simple WADL responses"
+        },
+        {
+            "c_hash": "0de1c1a9",
+            "date": "2010-09-30 14:23:26 +0000",
+            "comment": "Produce WADL information for subresources"
+        },
+        {
+            "c_hash": "04597272",
+            "date": "2010-09-30 14:29:40 +0000",
+            "comment": "Fix generator for null fields and fix test"
+        },
+        {
+            "c_hash": "1ebfe876",
+            "date": "2010-09-30 16:44:24 +0000",
+            "comment": "Fix the Resource.header() to follow JavaDoc"
+        },
+        {
+            "c_hash": "1a851934",
+            "date": "2010-10-06 14:30:20 +0000",
+            "comment": "Fix AdminServlet to process query parameters correctly"
+        },
+        {
+            "c_hash": "e8f50043",
+            "date": "2010-10-06 16:27:18 +0000",
+            "comment": "Fix issue with multiple cookies in single header"
+        },
+        {
+            "c_hash": "d2deba5b",
+            "date": "2010-10-12 21:30:30 +0000",
+            "comment": "WINK-318 Initial drop of JSON4J to Wink."
+        },
+        {
+            "c_hash": "6888d255",
+            "date": "2010-10-15 15:50:59 +0000",
+            "comment": "WINK-320 \\nFixing build issues with some JSON4J test.  Thanks to Luciano Resende for the patch."
+        },
+        {
+            "c_hash": "94512d32",
+            "date": "2010-10-15 17:31:58 +0000",
+            "comment": "Fix issue with the merging of metadata"
+        },
+        {
+            "c_hash": "90f4ac1f",
+            "date": "2010-10-15 17:57:18 +0000",
+            "comment": "Simplify addition of Request/Response handlers"
+        },
+        {
+            "c_hash": "abadce6b",
+            "date": "2010-10-15 18:08:48 +0000",
+            "comment": "Fix another issue with resource method inheritance"
+        },
+        {
+            "c_hash": "8640fe10",
+            "date": "2010-10-15 18:14:33 +0000",
+            "comment": "Fix issue with user handler method signature"
+        },
+        {
+            "c_hash": "11f05cdd",
+            "date": "2010-10-18 14:24:32 +0000",
+            "comment": "add svn:ignore to target folders"
+        },
+        {
+            "c_hash": "4c500437",
+            "date": "2010-10-18 17:42:46 +0000",
+            "comment": "WINK-321: update dependency to JAXB 2.2 and add support for @XmlJavaTypeAdapter and @XmlElement on JAX-RS resource method params and return types"
+        },
+        {
+            "c_hash": "b0893f6b",
+            "date": "2010-10-18 17:43:27 +0000",
+            "comment": "WINK-321: update dependency to JAXB 2.2 and add support for @XmlJavaTypeAdapter and @XmlElement on JAX-RS resource method params and return types"
+        },
+        {
+            "c_hash": "899bf4ba",
+            "date": "2010-10-18 18:24:56 +0000",
+            "comment": "remove empty directory"
+        },
+        {
+            "c_hash": "d4dfcf15",
+            "date": "2010-10-18 18:25:19 +0000",
+            "comment": "remove empty directory"
+        },
+        {
+            "c_hash": "9702050d",
+            "date": "2010-10-18 18:27:14 +0000",
+            "comment": "remove unused directory"
+        },
+        {
+            "c_hash": "d72f6d45",
+            "date": "2010-10-18 18:52:59 +0000",
+            "comment": "remove unused directory"
+        },
+        {
+            "c_hash": "575fc775",
+            "date": "2010-10-18 20:11:31 +0000",
+            "comment": "move @XmlElement annotation scanning to ResourceMetadataCollector from AbstractJAXBProvider to improve performance, simplify JAXB path"
+        },
+        {
+            "c_hash": "4a9d5357",
+            "date": "2010-10-20 16:36:40 +0000",
+            "comment": "Fix for JSONArray's write method"
+        },
+        {
+            "c_hash": "ab472ec0",
+            "date": "2010-10-20 16:37:06 +0000",
+            "comment": "Add JSON4J providers for JSON4JArray/Object"
+        },
+        {
+            "c_hash": "dadcf163",
+            "date": "2010-10-20 17:55:57 +0000",
+            "comment": "Fix bad scope in pom.xml"
+        },
+        {
+            "c_hash": "d64804f0",
+            "date": "2010-10-21 20:59:10 +0000",
+            "comment": "[WINK-322] Add JSR250 lifecycle management support"
+        },
+        {
+            "c_hash": "d0ab9680",
+            "date": "2010-10-21 20:59:50 +0000",
+            "comment": "Add itests for JSR250 lifecycle management"
+        },
+        {
+            "c_hash": "8efa892f",
+            "date": "2010-10-22 14:25:57 +0000",
+            "comment": "add svn:ignore properties for eclipse files"
+        },
+        {
+            "c_hash": "3c41b37e",
+            "date": "2010-10-22 15:06:40 +0000",
+            "comment": "[WINK-322] Add JSR250 lifecycle manager to DeploymentConfiguration"
+        },
+        {
+            "c_hash": "9c9295e0",
+            "date": "2010-10-22 18:59:39 +0000",
+            "comment": "[Wink-322] Fix JDK 1.5 build"
+        },
+        {
+            "c_hash": "eed3b666",
+            "date": "2010-10-22 19:36:38 +0000",
+            "comment": "Add resources to svn ignore"
+        },
+        {
+            "c_hash": "a9fd7397",
+            "date": "2010-10-22 19:37:15 +0000",
+            "comment": "Add resources to svn ignore"
+        },
+        {
+            "c_hash": "dc59a086",
+            "date": "2010-10-22 20:38:05 +0000",
+            "comment": "Attempt to once again fix the 1.5 build"
+        },
+        {
+            "c_hash": "cde8aab6",
+            "date": "2010-10-25 14:54:08 +0000",
+            "comment": "[WINK-323] Improve logging and serviceability for Providers"
+        },
+        {
+            "c_hash": "e734477b",
+            "date": "2010-10-25 15:03:23 +0000",
+            "comment": "Add eclipse resources to svn ignore"
+        },
+        {
+            "c_hash": "3ae44faa",
+            "date": "2010-10-25 15:17:53 +0000",
+            "comment": "Minor logging updates for wink-client"
+        },
+        {
+            "c_hash": "238a39ff",
+            "date": "2010-10-25 16:32:45 +0000",
+            "comment": "[Wink-323] Logging improvements for wink-common"
+        },
+        {
+            "c_hash": "1da27e00",
+            "date": "2010-10-25 16:48:21 +0000",
+            "comment": "[Wink-323] More minor logging updates"
+        },
+        {
+            "c_hash": "c4dbeb67",
+            "date": "2010-10-26 19:52:54 +0000",
+            "comment": "[Wink-323] Logging improvements for wink-server. This includes improved logging, debug, and trace for providers, resources, requests, and response. Also some additional messages and improvements to existing messages in the messages file."
+        },
+        {
+            "c_hash": "55302c19",
+            "date": "2010-10-27 14:54:43 +0000",
+            "comment": "Update client user agent version number to 1.1.2"
+        },
+        {
+            "c_hash": "5705ccc1",
+            "date": "2010-10-27 15:07:19 +0000",
+            "comment": "Error handling code in case proxy's are called out context"
+        },
+        {
+            "c_hash": "b40a75bb",
+            "date": "2010-10-27 15:18:49 +0000",
+            "comment": "Fix a number of bugs in the WADLGenerator"
+        },
+        {
+            "c_hash": "9de9f7e6",
+            "date": "2010-10-27 15:21:46 +0000",
+            "comment": "Update WADL unit test"
+        },
+        {
+            "c_hash": "72cec475",
+            "date": "2010-10-27 15:35:39 +0000",
+            "comment": "Add new unit test for encoded characters in query params"
+        },
+        {
+            "c_hash": "c90dcb48",
+            "date": "2010-10-27 16:11:42 +0000",
+            "comment": "Add some unit tests to test interoperability between Jackson and new JSON4J code"
+        },
+        {
+            "c_hash": "f69fb12b",
+            "date": "2010-10-27 16:53:54 +0000",
+            "comment": "A few performance related changes"
+        },
+        {
+            "c_hash": "42a82765",
+            "date": "2010-10-27 17:13:27 +0000",
+            "comment": "Fix a CTS failure when using a List parameter annotated with PathParam"
+        },
+        {
+            "c_hash": "16ff734d",
+            "date": "2010-10-27 17:19:15 +0000",
+            "comment": "Re-implement fix in AdminServlet that was accidentally removed"
+        },
+        {
+            "c_hash": "695c190c",
+            "date": "2010-10-27 17:22:42 +0000",
+            "comment": "Add JAXB logging test"
+        },
+        {
+            "c_hash": "f19afeb1",
+            "date": "2010-10-27 19:24:08 +0000",
+            "comment": "Performance fix in AbstractJAXBProvider"
+        },
+        {
+            "c_hash": "ecf99e34",
+            "date": "2010-10-28 23:14:06 +0000",
+            "comment": "Update wink-json4j for OSGi metadata"
+        },
+        {
+            "c_hash": "e2d9b292",
+            "date": "2010-10-28 23:14:16 +0000",
+            "comment": "Add json4j and jackson packages to distribution"
+        },
+        {
+            "c_hash": "10c51a60",
+            "date": "2010-10-28 23:17:02 +0000",
+            "comment": "Update LICENSE for new versions of dependencies"
+        },
+        {
+            "c_hash": "88923607",
+            "date": "2010-10-28 23:19:05 +0000",
+            "comment": "Update JAXB version"
+        },
+        {
+            "c_hash": "03cbf8f1",
+            "date": "2010-10-29 14:47:01 +0000",
+            "comment": "Update dependency management in the poms"
+        },
+        {
+            "c_hash": "c06cc31f",
+            "date": "2010-11-01 14:10:50 +0000",
+            "comment": "Correct changed error message in test"
+        },
+        {
+            "c_hash": "dbb68069",
+            "date": "2010-11-01 14:25:36 +0000",
+            "comment": "Don't run wink-itest-client-timeout unless assembly specified"
+        },
+        {
+            "c_hash": "b554ba46",
+            "date": "2010-11-01 17:58:06 +0000",
+            "comment": "Remove duplicate declaration of wink-jackson-provider"
+        },
+        {
+            "c_hash": "7c59ea85",
+            "date": "2010-11-01 17:58:15 +0000",
+            "comment": "Lazily initialize AtomCommonAttributes(SimpleContent)"
+        },
+        {
+            "c_hash": "3af1ded2",
+            "date": "2010-11-01 18:19:51 +0000",
+            "comment": "Update security handler with constructor"
+        },
+        {
+            "c_hash": "ec7c580b",
+            "date": "2010-11-01 18:19:58 +0000",
+            "comment": "Cache the encoded string credential"
+        },
+        {
+            "c_hash": "36a58cd2",
+            "date": "2010-11-01 22:00:54 +0000",
+            "comment": "configure @Produces on resources for java5 support.  The order of providers might be different in each JVM due to the unordered set in which they are stored.  Configuring a specific @Produces helps Wink choose the right provider.  Incomplete test code, in other words."
+        },
+        {
+            "c_hash": "7cde8dcf",
+            "date": "2010-11-03 16:33:26 +0000",
+            "comment": "Update HeadMethodHandler for ServletWrapper code"
+        },
+        {
+            "c_hash": "11c672a0",
+            "date": "2010-11-03 18:42:07 +0000",
+            "comment": "Use versions in all dependent bundles"
+        },
+        {
+            "c_hash": "f537e749",
+            "date": "2010-11-03 18:56:28 +0000",
+            "comment": "Revert META-INF and META-INF/server OSGi exports"
+        },
+        {
+            "c_hash": "3fa5cad4",
+            "date": "2010-11-03 18:56:35 +0000",
+            "comment": "wink-json fixes"
+        },
+        {
+            "c_hash": "2d32c85f",
+            "date": "2010-11-03 19:27:22 +0000",
+            "comment": "Fix issue where json media types were being used by default for the accept header when the user did not specify one and a ClientResponse is being returned by the RestClient"
+        },
+        {
+            "c_hash": "6ba238c8",
+            "date": "2010-11-03 21:38:09 +0000",
+            "comment": "Add Wink asynchronous HTTP client support"
+        },
+        {
+            "c_hash": "6393131a",
+            "date": "2010-11-03 21:38:19 +0000",
+            "comment": "Rename packages to org.apache.wink.client"
+        },
+        {
+            "c_hash": "512e4804",
+            "date": "2010-11-03 21:38:25 +0000",
+            "comment": "Add slf4j for testing and super.tearDown()"
+        },
+        {
+            "c_hash": "fb4e9222",
+            "date": "2010-11-03 22:02:10 +0000",
+            "comment": "Remove empty directories"
+        },
+        {
+            "c_hash": "8c1c40df",
+            "date": "2010-11-04 20:24:15 +0000",
+            "comment": "Add @WADLDoc so you can document elements easier"
+        },
+        {
+            "c_hash": "a95487b2",
+            "date": "2010-11-04 20:24:23 +0000",
+            "comment": "Add an OptionsMethodWADLHandler"
+        },
+        {
+            "c_hash": "368678d4",
+            "date": "2010-11-04 20:44:29 +0000",
+            "comment": "Update binary LICENSE for different codec version"
+        },
+        {
+            "c_hash": "d1828046",
+            "date": "2010-11-04 20:44:34 +0000",
+            "comment": "Add async client to binary distribution"
+        },
+        {
+            "c_hash": "4acdeba6",
+            "date": "2010-11-05 01:22:31 +0000",
+            "comment": "Revert \"Add async client to binary distribution\""
+        },
+        {
+            "c_hash": "9d8a3685",
+            "date": "2010-11-05 13:28:07 +0000",
+            "comment": "add svn:ignore property"
+        },
+        {
+            "c_hash": "ccd35dbc",
+            "date": "2010-11-05 13:28:41 +0000",
+            "comment": "add svn:ignore properties"
+        },
+        {
+            "c_hash": "e37caafb",
+            "date": "2010-11-05 16:04:42 +0000",
+            "comment": "Revert \"Revert \"Add async client to binary distribution\"\""
+        },
+        {
+            "c_hash": "78e0f080",
+            "date": "2010-11-05 16:10:07 +0000",
+            "comment": "Put the wink json4j lib in the corresponding provider lib directory"
+        },
+        {
+            "c_hash": "e523819a",
+            "date": "2010-12-07 19:42:07 +0000",
+            "comment": "Fix support for SSL Hostname Verifier Bypass"
+        },
+        {
+            "c_hash": "55f923ff",
+            "date": "2010-12-07 19:42:41 +0000",
+            "comment": "Fix some logging formatting"
+        },
+        {
+            "c_hash": "bce33fae",
+            "date": "2011-01-10 15:28:23 +0000",
+            "comment": "Change slf4j-api import to a range"
+        },
+        {
+            "c_hash": "4060f5fc",
+            "date": "2011-01-12 17:15:57 +0000",
+            "comment": "Fix a stackoverflow in UriBuilder"
+        },
+        {
+            "c_hash": "02599939",
+            "date": "2011-01-20 20:24:54 +0000",
+            "comment": "Fix JSON put of null elements during copy"
+        },
+        {
+            "c_hash": "a76437d3",
+            "date": "2011-02-16 16:09:24 +0000",
+            "comment": "Update WADLGenerator to handle DynamicResources"
+        },
+        {
+            "c_hash": "bc8b2e1a",
+            "date": "2011-02-16 16:10:03 +0000",
+            "comment": "Update dependency version information"
+        },
+        {
+            "c_hash": "5a0d7cca",
+            "date": "2011-02-16 17:43:56 +0000",
+            "comment": "WINK-334 - Applying patch from Raymong Feng to enhance support for java generics"
+        },
+        {
+            "c_hash": "ce214957",
+            "date": "2011-02-23 04:34:29 +0000",
+            "comment": "Add JAX-RS Google Protocol Buffer provider"
+        },
+        {
+            "c_hash": "5e2b30c8",
+            "date": "2011-02-23 05:44:49 +0000",
+            "comment": "Fixing header validation issue with the build in mac-os environment"
+        },
+        {
+            "c_hash": "7746f190",
+            "date": "2011-02-23 05:45:12 +0000",
+            "comment": "WINK-337 - Applying patch from Raymond Feng to provide thrift provider"
+        },
+        {
+            "c_hash": "1e3f22a9",
+            "date": "2011-02-23 05:45:17 +0000",
+            "comment": "Fixing header validation issue with the build in mac-os environment"
+        },
+        {
+            "c_hash": "6f8cc182",
+            "date": "2011-02-24 00:36:04 +0000",
+            "comment": "WINK-337 - Moving the new thrift providing to proper providers directory, and adding it to the maven build"
+        },
+        {
+            "c_hash": "cd64adbd",
+            "date": "2011-02-24 00:36:51 +0000",
+            "comment": "Removing empty folder"
+        },
+        {
+            "c_hash": "eadc183f",
+            "date": "2011-02-24 08:52:27 +0000",
+            "comment": "WINK-337 - Temporarly disable provider build to investigate JDK 5 build"
+        },
+        {
+            "c_hash": "79495435",
+            "date": "2011-03-05 18:09:45 +0000",
+            "comment": "update to 1.1.3-incubating-SNAPSHOT"
+        },
+        {
+            "c_hash": "82183031",
+            "date": "2011-03-07 05:55:03 +0000",
+            "comment": "WINK-339 - Applying patch from Raymond Feng to enhance MockHttpServletRequestWrapper to handle getContentType and parameter related methods"
+        },
+        {
+            "c_hash": "ee7bb2be",
+            "date": "2011-03-11 04:23:59 +0000",
+            "comment": "Apply the patch for WINK-339 from myself as the first commit"
+        },
+        {
+            "c_hash": "8147a5f3",
+            "date": "2011-03-11 04:25:36 +0000",
+            "comment": "Include the thrift provider in the build of JDK6"
+        },
+        {
+            "c_hash": "ff44a9c6",
+            "date": "2011-03-12 06:51:10 +0000",
+            "comment": "Clean up imports to remove unused imports and sort the imports by order"
+        },
+        {
+            "c_hash": "7846a1be",
+            "date": "2011-03-12 07:12:02 +0000",
+            "comment": "Clean up the code to avoid compiler warnings"
+        },
+        {
+            "c_hash": "cc40c9e2",
+            "date": "2011-03-12 07:20:01 +0000",
+            "comment": "WINK-340 - Applying patch from Jason Dilon to update AHC integration to use lates 1.6.2 release"
+        },
+        {
+            "c_hash": "aead5f63",
+            "date": "2011-03-17 06:48:27 +0000",
+            "comment": "WINK-341 - Removing e.printStackTrace()"
+        },
+        {
+            "c_hash": "a6e34197",
+            "date": "2011-03-17 14:37:52 +0000",
+            "comment": "need slf4j-simple or some slf4j impl in the pom"
+        },
+        {
+            "c_hash": "e5380e45",
+            "date": "2011-03-17 14:43:47 +0000",
+            "comment": "set correct scope on slf4j-simple dependency in pom.xml"
+        },
+        {
+            "c_hash": "5aee8bda",
+            "date": "2011-03-22 18:05:38 +0000",
+            "comment": "Allow query paraemters in the mock"
+        },
+        {
+            "c_hash": "7c63ca04",
+            "date": "2011-03-26 23:54:09 +0000",
+            "comment": "Updating maven-assembly-plugin version"
+        },
+        {
+            "c_hash": "33ca179b",
+            "date": "2011-03-26 23:54:13 +0000",
+            "comment": "Updating to 1.1.3 release"
+        },
+        {
+            "c_hash": "87b8305a",
+            "date": "2011-04-03 20:04:42 +0000",
+            "comment": "Minor formatting"
+        },
+        {
+            "c_hash": "5d124280",
+            "date": "2011-04-03 20:04:45 +0000",
+            "comment": "Updating to latest apache parent pom"
+        },
+        {
+            "c_hash": "599498bb",
+            "date": "2011-04-03 20:04:47 +0000",
+            "comment": "Various plugins updates preparing for the new release"
+        },
+        {
+            "c_hash": "eebbab55",
+            "date": "2011-04-03 20:04:50 +0000",
+            "comment": "Updating assembly plugin to latest release"
+        },
+        {
+            "c_hash": "711f6496",
+            "date": "2011-04-03 20:04:53 +0000",
+            "comment": "Tweaking the invocation of assembly-plugin as the latest release have strict requirements regarding the assembly 'id'"
+        },
+        {
+            "c_hash": "48cbb043",
+            "date": "2011-04-03 20:04:56 +0000",
+            "comment": "Removing useStrictFiltering from fileSets plus tweaking the include of stax-api"
+        },
+        {
+            "c_hash": "5ba91039",
+            "date": "2011-04-03 20:04:59 +0000",
+            "comment": "Investigating issues with Jenkins deploy build"
+        },
+        {
+            "c_hash": "97ff2bae",
+            "date": "2011-04-04 03:10:14 +0000",
+            "comment": "WINK-342 - Refactoring current types to have prefix as _TYPE, and also providing missing entries"
+        },
+        {
+            "c_hash": "45097cb6",
+            "date": "2011-04-04 14:53:49 +0000",
+            "comment": "Temporarily disable wink-assembly-aggregatejar-osgi"
+        },
+        {
+            "c_hash": "39cbd9b2",
+            "date": "2011-04-04 16:27:45 +0000",
+            "comment": "Temporarily disable all the aggregate JARs first"
+        },
+        {
+            "c_hash": "66572c6f",
+            "date": "2011-04-04 18:31:22 +0000",
+            "comment": "Re-add the aggregate JAR"
+        },
+        {
+            "c_hash": "c0af7986",
+            "date": "2011-04-04 19:42:04 +0000",
+            "comment": "Add back the general apache-wink distribution"
+        },
+        {
+            "c_hash": "26677816",
+            "date": "2011-04-04 21:44:34 +0000",
+            "comment": "Re-add OSGi module"
+        },
+        {
+            "c_hash": "3721fdaa",
+            "date": "2011-04-06 05:06:17 +0000",
+            "comment": "Fixing RAT issues"
+        },
+        {
+            "c_hash": "6d6a7c65",
+            "date": "2011-04-06 05:06:21 +0000",
+            "comment": "Adding protocol buffer extension to distribution"
+        },
+        {
+            "c_hash": "50022589",
+            "date": "2011-04-06 05:06:26 +0000",
+            "comment": "Adding protocol buffers legal files to distribution"
+        },
+        {
+            "c_hash": "a1fe2b85",
+            "date": "2011-04-07 04:00:06 +0000",
+            "comment": "Adding Trhift extension to distribution"
+        },
+        {
+            "c_hash": "923118bb",
+            "date": "2011-04-12 15:28:23 +0000",
+            "comment": "Capture variables could be different in subresource methods"
+        },
+        {
+            "c_hash": "35971feb",
+            "date": "2011-04-12 15:46:26 +0000",
+            "comment": "SimpleDateFormat is not thread safe so create new instance"
+        },
+        {
+            "c_hash": "44153a04",
+            "date": "2011-04-18 18:25:18 +0000",
+            "comment": "Once marshaller is released, don't re-use"
+        },
+        {
+            "c_hash": "f7f35871",
+            "date": "2011-04-28 16:54:45 +0000",
+            "comment": "Update dependencies"
+        },
+        {
+            "c_hash": "c2f8476f",
+            "date": "2011-04-28 21:52:36 +0000",
+            "comment": "Update to GBP 2.4.0a"
+        },
+        {
+            "c_hash": "f7a1e945",
+            "date": "2011-05-02 16:59:18 +0000",
+            "comment": "Adding version to dependency to avoid build complaints"
+        },
+        {
+            "c_hash": "be84012d",
+            "date": "2011-05-03 16:22:54 +0000",
+            "comment": "Fix CIBuild issues"
+        },
+        {
+            "c_hash": "7dad4321",
+            "date": "2011-05-04 06:44:48 +0000",
+            "comment": "Updating version id after 1.1.3 release"
+        },
+        {
+            "c_hash": "4ac3cfe3",
+            "date": "2011-05-31 17:29:13 +0000",
+            "comment": "Temporarily disable wink-assembly-aggregatejar-osgi module"
+        },
+        {
+            "c_hash": "6da97778",
+            "date": "2011-05-31 17:35:56 +0000",
+            "comment": "Also disable apache-wink submodule temporarily for builds"
+        },
+        {
+            "c_hash": "9bbda5f5",
+            "date": "2011-05-31 18:58:45 +0000",
+            "comment": "Add osgi module back to build"
+        },
+        {
+            "c_hash": "563ec493",
+            "date": "2011-05-31 20:10:27 +0000",
+            "comment": "Add back the apache-wink module for build"
+        },
+        {
+            "c_hash": "f5b60626",
+            "date": "2011-07-08 04:06:07 +0000",
+            "comment": "WINK-347 - Applying patch from Varesh Tapadia to avoid NPE in logging statement"
+        },
+        {
+            "c_hash": "3369b586",
+            "date": "2011-09-08 20:53:59 +0000",
+            "comment": "Adding more error logs for BAD_REQUEST (400)"
+        },
+        {
+            "c_hash": "88b447ae",
+            "date": "2011-09-29 04:29:10 +0000",
+            "comment": "Enhance the Date conversion for headers/parameters"
+        },
+        {
+            "c_hash": "6490a45b",
+            "date": "2011-09-29 04:46:44 +0000",
+            "comment": "Should be java.util.Date"
+        },
+        {
+            "c_hash": "6fb16ca6",
+            "date": "2011-10-10 23:10:34 +0000",
+            "comment": "Apply the patch from Seshu Pasam for WINK-352. Thanks."
+        },
+        {
+            "c_hash": "2a0b32cb",
+            "date": "2011-10-10 23:10:40 +0000",
+            "comment": "Apply the patch from Seshu Pasam for WINK-353. Thanks."
+        },
+        {
+            "c_hash": "8cc86078",
+            "date": "2012-01-11 18:47:23 +0000",
+            "comment": "WINK-356 - Applying patch from Gentaro Oka to fix issue around guice server when custom application class was in use"
+        },
+        {
+            "c_hash": "6d5f3d74",
+            "date": "2012-02-21 22:25:50 +0000",
+            "comment": "Upgrade the httpclient version"
+        },
+        {
+            "c_hash": "bd7ba6e8",
+            "date": "2012-02-21 22:41:02 +0000",
+            "comment": "Fix the multipart format based on the http specs"
+        },
+        {
+            "c_hash": "3bd8157a",
+            "date": "2012-02-21 22:47:28 +0000",
+            "comment": "Add svn:ignore"
+        },
+        {
+            "c_hash": "bafc2324",
+            "date": "2012-02-21 22:48:01 +0000",
+            "comment": "Add generics support for collections"
+        },
+        {
+            "c_hash": "50c938af",
+            "date": "2012-02-21 22:48:30 +0000",
+            "comment": "Upgrade to the latest jackson version"
+        },
+        {
+            "c_hash": "db21f1b6",
+            "date": "2012-02-21 22:49:47 +0000",
+            "comment": "Use constants to reference the http status code"
+        },
+        {
+            "c_hash": "d2a98058",
+            "date": "2012-02-21 22:53:00 +0000",
+            "comment": "Change the output folder to be under target"
+        },
+        {
+            "c_hash": "09f9a73f",
+            "date": "2012-03-30 16:47:19 +0000",
+            "comment": "Apply the patch for https://issues.apache.org/jira/browse/WINK-364. Thanks, Seshu."
+        },
+        {
+            "c_hash": "03775032",
+            "date": "2012-03-30 17:23:28 +0000",
+            "comment": "Move to org.apache.wink.client.httpclient to avoid OSGi split packages against the wink-client"
+        },
+        {
+            "c_hash": "f416e2e3",
+            "date": "2012-03-30 17:23:31 +0000",
+            "comment": "Move the handler too"
+        },
+        {
+            "c_hash": "c900f414",
+            "date": "2012-04-22 02:09:09 +0000",
+            "comment": "Updating to latest Apache parent pom release"
+        },
+        {
+            "c_hash": "a0b8e9f2",
+            "date": "2012-04-22 02:09:30 +0000",
+            "comment": "WINK-351 - Applying patch from Reto Bachmann-Gmur to provide Felix OSGi integration/extension"
+        },
+        {
+            "c_hash": "8c74535a",
+            "date": "2012-04-22 02:09:35 +0000",
+            "comment": "Excluding files that are causing build warnings"
+        },
+        {
+            "c_hash": "084899f2",
+            "date": "2012-04-22 02:09:43 +0000",
+            "comment": "Fixing up AL headers to follow same pattern of other files and to avoid license check warnings/errors"
+        },
+        {
+            "c_hash": "8ed18720",
+            "date": "2012-04-22 02:09:50 +0000",
+            "comment": "Fixing up build issue related to resource externalization"
+        },
+        {
+            "c_hash": "67f1edc9",
+            "date": "2012-04-22 02:09:57 +0000",
+            "comment": "Fixing up build issue related to resource externalization"
+        },
+        {
+            "c_hash": "2c5784f3",
+            "date": "2012-04-22 02:10:00 +0000",
+            "comment": "Upgrading maven surefire plugin to workaround SUREFIRE-704"
+        },
+        {
+            "c_hash": "3e1c207c",
+            "date": "2012-04-22 02:19:13 +0000",
+            "comment": "WINK-360 - Applying patch from gentaro oka to allow injection of members of Handler with Guice when using custom handlers"
+        },
+        {
+            "c_hash": "ff007ef0",
+            "date": "2012-04-22 04:09:48 +0000",
+            "comment": "Updating version number"
+        },
+        {
+            "c_hash": "98b64a12",
+            "date": "2012-04-22 04:09:52 +0000",
+            "comment": "Adding async client"
+        },
+        {
+            "c_hash": "cb03c65e",
+            "date": "2012-04-22 04:30:12 +0000",
+            "comment": "svn propset"
+        },
+        {
+            "c_hash": "de10f5d4",
+            "date": "2012-04-22 04:48:54 +0000",
+            "comment": "Updating copyright dates in NOTICE files"
+        },
+        {
+            "c_hash": "ae728e53",
+            "date": "2012-04-22 05:23:49 +0000",
+            "comment": "Fixing artifacts version"
+        },
+        {
+            "c_hash": "ceb5d68c",
+            "date": "2012-04-22 07:02:16 +0000",
+            "comment": "Allow the RestClient to use non-chunked transfer encoding"
+        },
+        {
+            "c_hash": "f8bb825e",
+            "date": "2012-04-22 07:02:19 +0000",
+            "comment": "Allow the injected context proxy to use context resolvers"
+        },
+        {
+            "c_hash": "dc4270d9",
+            "date": "2012-04-22 07:02:23 +0000",
+            "comment": "Set the chunked mode as the default"
+        },
+        {
+            "c_hash": "be93781c",
+            "date": "2012-04-22 18:15:45 +0000",
+            "comment": "WINK-351 - Additional changes from Reto to properly set root resource to none"
+        },
+        {
+            "c_hash": "828a3dbe",
+            "date": "2012-05-11 15:06:53 +0000",
+            "comment": "Bumping pom version to 1.3.0-incubating-SNAPSHOT"
+        },
+        {
+            "c_hash": "0f2d5110",
+            "date": "2012-05-31 14:06:31 +0000",
+            "comment": "WINK-366 - Applying patch from gentaro oka to properly propagate exceptions"
+        },
+        {
+            "c_hash": "ba703fe7",
+            "date": "2012-08-02 00:35:23 +0000",
+            "comment": "WINK-363 - Applying Patch from Georg Sander to fix generic related issues"
+        },
+        {
+            "c_hash": "c29d00c5",
+            "date": "2012-08-15 20:06:45 +0000",
+            "comment": "WINK-369 update license/notice for wink-osgi module. Thanks Michael Fiedler! Adapted his contribution to use maven appended-resources"
+        },
+        {
+            "c_hash": "bfc1bc4a",
+            "date": "2012-10-23 16:36:21 +0000",
+            "comment": "Removing deprecated code from Jackson integration"
+        },
+        {
+            "c_hash": "a09b6bea",
+            "date": "2012-10-23 16:36:23 +0000",
+            "comment": "Adding thrift provider to build"
+        },
+        {
+            "c_hash": "c822d1ce",
+            "date": "2012-10-23 16:36:25 +0000",
+            "comment": "Updating to apache pom version 11"
+        },
+        {
+            "c_hash": "7aa01e44",
+            "date": "2012-11-30 21:55:24 +0000",
+            "comment": "WINK-372 - Add Support for WADL Doc text content when using @WADLDoc annotation in Resource class"
+        },
+        {
+            "c_hash": "288af071",
+            "date": "2012-11-30 22:25:36 +0000",
+            "comment": "Update Apache parent pom to version 12"
+        },
+        {
+            "c_hash": "be158eee",
+            "date": "2012-12-01 07:41:49 +0000",
+            "comment": "Update maven-bundle-plugin to version 2.3.7"
+        },
+        {
+            "c_hash": "b45debf8",
+            "date": "2012-12-01 07:41:54 +0000",
+            "comment": "Update maven-jar-plugin version to 2.4"
+        },
+        {
+            "c_hash": "a11e607f",
+            "date": "2012-12-01 07:59:15 +0000",
+            "comment": "WINK-373 - Fix NPE when EntityType is null"
+        },
+        {
+            "c_hash": "b1a6b772",
+            "date": "2012-12-11 07:12:25 +0000",
+            "comment": "Remove duplicate plugin that was causing build warnings"
+        },
+        {
+            "c_hash": "367bdede",
+            "date": "2012-12-11 07:12:54 +0000",
+            "comment": "WINK-375 - Applying patch from Reto Bachmann-Gm\u00fcr to re-register previously unregistered service in a OSGi environment"
+        },
+        {
+            "c_hash": "3bcff85a",
+            "date": "2012-12-12 02:42:26 +0000",
+            "comment": "Fix exception handling in Thrift provider to be compatible with JDK 5.0"
+        },
+        {
+            "c_hash": "67134560",
+            "date": "2012-12-12 04:56:35 +0000",
+            "comment": "Fix exception handling in Thrift provider to be compatible with JDK 5.0"
+        },
+        {
+            "c_hash": "045d10bd",
+            "date": "2012-12-18 22:19:10 +0000",
+            "comment": "WINK-377 - Add support for registering root resources with classes (rather then with instances)"
+        },
+        {
+            "c_hash": "a38b2f24",
+            "date": "2013-01-05 01:41:05 +0000",
+            "comment": "Wink has become a TLP"
+        },
+        {
+            "c_hash": "5d06aeed",
+            "date": "2013-02-08 05:15:45 +0000",
+            "comment": "Remove incubator references from repository configuration"
+        },
+        {
+            "c_hash": "a66c6903",
+            "date": "2013-02-08 05:23:37 +0000",
+            "comment": "Remove incubator disclaimers"
+        },
+        {
+            "c_hash": "52a4b419",
+            "date": "2013-02-08 06:06:39 +0000",
+            "comment": "Remove 'incubating' from maven artifacts"
+        },
+        {
+            "c_hash": "159d706a",
+            "date": "2013-03-17 15:54:40 +0000",
+            "comment": "WINK-381 - Fix link about OSGiification"
+        },
+        {
+            "c_hash": "b7aea866",
+            "date": "2013-03-17 16:20:25 +0000",
+            "comment": "WINK-380 - Add support for structured syntax suffix in media types (e.g. application/vnd.custom+json)"
+        },
+        {
+            "c_hash": "07ae8d5d",
+            "date": "2013-03-17 18:55:19 +0000",
+            "comment": "Update year in notice files"
+        },
+        {
+            "c_hash": "2b78c188",
+            "date": "2013-03-18 03:31:18 +0000",
+            "comment": "Update apache parent pom to version 13"
+        },
+        {
+            "c_hash": "8ae3a1ed",
+            "date": "2013-03-18 04:19:28 +0000",
+            "comment": "Remove disclaimer from aggregates"
+        },
+        {
+            "c_hash": "d63bf5b4",
+            "date": "2013-04-02 23:01:02 +0000",
+            "comment": "Update trunk pom version to 1.4.0-SNAPSHOT"
+        },
+        {
+            "c_hash": "6469e98c",
+            "date": "2013-04-12 03:14:41 +0000",
+            "comment": "Minor formattings"
+        },
+        {
+            "c_hash": "e8180cbd",
+            "date": "2013-04-24 16:36:39 +0000",
+            "comment": "WINK-379 - Return HttpStatus.NOT_ACCEPTABLE (406) if no methods support one of the acceptable response entity body media types"
+        },
+        {
+            "c_hash": "3d490e09",
+            "date": "2013-06-22 06:29:25 +0000",
+            "comment": "Fixing release version in release notes"
+        },
+        {
+            "c_hash": "aca18073",
+            "date": "2013-07-11 06:29:38 +0000",
+            "comment": "WINK-389 - Patch from Gerhard Petracek configuring .gitignore to be used by git"
+        },
+        {
+            "c_hash": "d91c4567",
+            "date": "2013-07-11 06:29:39 +0000",
+            "comment": "WINK-389 - Add mac files to .gitignore"
+        },
+        {
+            "c_hash": "7c0c15fb",
+            "date": "2013-07-11 07:04:06 +0000",
+            "comment": "WINK-392 - Applying patch from Gerhard Petracek to remove unecessary depedency"
+        },
+        {
+            "c_hash": "53ec0396",
+            "date": "2013-07-23 05:47:38 +0000",
+            "comment": "Minor blank line change to test auth"
+        },
+        {
+            "c_hash": "b8298958",
+            "date": "2013-07-24 00:50:29 +0000",
+            "comment": "WINK-394 - Applying patch from Gerhard Petracek to start using Apache Geronimo version of the JSR311 API jar"
+        },
+        {
+            "c_hash": "e32f9489",
+            "date": "2013-07-24 00:53:01 +0000",
+            "comment": "WINK-388 - Applying patch from Gerhard Petracek that reworks cdi integration"
+        },
+        {
+            "c_hash": "d8fbd144",
+            "date": "2013-07-24 02:43:17 +0000",
+            "comment": "WINK-388 - Applying patch part 2 from Gerhard Petracek that reworks cdi integration"
+        },
+        {
+            "c_hash": "8e0663d6",
+            "date": "2013-07-24 03:05:24 +0000",
+            "comment": "Update Google Guice dependency to version 3.0"
+        },
+        {
+            "c_hash": "5227663c",
+            "date": "2013-08-26 02:44:10 +0000",
+            "comment": "WINK-409 - Use bundle plugin to create manifest file"
+        },
+        {
+            "c_hash": "6a9e06b5",
+            "date": "2013-08-26 02:52:09 +0000",
+            "comment": "Minor updates on release notes, preparing for the release"
+        },
+        {
+            "c_hash": "2122284d",
+            "date": "2013-08-26 03:30:21 +0000",
+            "comment": "WINK-412 - Add @Ignore to the CDI server test"
+        },
+        {
+            "c_hash": "598af989",
+            "date": "2013-11-03 11:31:09 +0000",
+            "comment": "WINK-418 fixed file name"
+        }
+    ]
+}

@@ -1,0 +1,3 @@
+commitID;commit-type;time-to-next-release;commit-message
+e4f15dae795fc5030bc9e83746adfe9ad4ea9067;BREAKING_CHANGES;111;https://issues.apache.org/jira/browse/MYFACES-1664 (MYFACES-1664): JSR-301 Implementation, initial commit git-svn-id: https://svn.apache.org/repos/asf/myfaces/portlet-bridge/trunk@588233 13f79535-47bb-0310-9956-ffa450edef68
+46880b8b6ad1163e0c62256d1a40ada4ada2305c;BREAKING_FIX;111;PORTLETBRIDGE-9 added the missing source, to have at least the build working ...thx (as always!) Scott for his patchgit-svn-id: https://svn.apache.org/repos/asf/myfaces/portlet-bridge/trunk@588256 13f79535-47bb-0310-9956-ffa450edef68

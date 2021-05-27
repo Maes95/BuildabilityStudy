@@ -1,0 +1,4398 @@
+{
+    "project": "rampart",
+    "git_url": "https://github.com/apache/rampart.git",
+    "last_commit": "d263b63d",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "278f2a0e",
+            "date": "2007-01-03 05:58:13 +0000",
+            "comment": "Creating the top level dir structure"
+        },
+        {
+            "c_hash": "84ddfdf0",
+            "date": "2007-01-03 06:02:32 +0000",
+            "comment": "Importing docs from axis2 security module"
+        },
+        {
+            "c_hash": "f401f9b0",
+            "date": "2007-01-03 06:10:19 +0000",
+            "comment": "Created the maven modules' dir structure"
+        },
+        {
+            "c_hash": "5f75f8af",
+            "date": "2007-01-03 07:07:37 +0000",
+            "comment": "importing code from the axis2 security maven module"
+        },
+        {
+            "c_hash": "4c5d5ddc",
+            "date": "2007-01-03 07:17:34 +0000",
+            "comment": "Importing code from the axis2 secpolicy module"
+        },
+        {
+            "c_hash": "1f8bae46",
+            "date": "2007-01-03 07:54:20 +0000",
+            "comment": "Importing code from the rahas axis2 module"
+        },
+        {
+            "c_hash": "5b0b8d30",
+            "date": "2007-01-10 11:01:43 +0000",
+            "comment": "Adding maven2 build files"
+        },
+        {
+            "c_hash": "4ddd8666",
+            "date": "2007-01-11 08:46:04 +0000",
+            "comment": "adding sanka to the dev list ... he worked on the secpolicy builders"
+        },
+        {
+            "c_hash": "b2a552fb",
+            "date": "2007-01-12 05:58:21 +0000",
+            "comment": "removed empty dirs"
+        },
+        {
+            "c_hash": "7ef5d9d6",
+            "date": "2007-01-12 07:47:02 +0000",
+            "comment": "Added the mvn build to build the test suite"
+        },
+        {
+            "c_hash": "f49b3989",
+            "date": "2007-01-12 07:58:27 +0000",
+            "comment": "Getting rid of comented sections"
+        },
+        {
+            "c_hash": "71ffdaf0",
+            "date": "2007-01-26 13:44:56 +0000",
+            "comment": "Applying Dimuthu's patch to RAMPART-1"
+        },
+        {
+            "c_hash": "d1e47af3",
+            "date": "2007-01-27 18:45:04 +0000",
+            "comment": "Added mailing list info and playing around to figure out how to create the web site properly :-)"
+        },
+        {
+            "c_hash": "0663c092",
+            "date": "2007-02-01 14:10:57 +0000",
+            "comment": "get maven2 based build working"
+        },
+        {
+            "c_hash": "268aefd3",
+            "date": "2007-02-05 03:12:09 +0000",
+            "comment": "Committing integrated tests and the build."
+        },
+        {
+            "c_hash": "b9a8dcea",
+            "date": "2007-02-05 10:56:49 +0000",
+            "comment": "Deleting the generated files"
+        },
+        {
+            "c_hash": "a55c46f9",
+            "date": "2007-02-05 11:01:06 +0000",
+            "comment": "Deleted wsdl2java generated code"
+        },
+        {
+            "c_hash": "550ec506",
+            "date": "2007-02-05 11:02:37 +0000",
+            "comment": "removing these files out."
+        },
+        {
+            "c_hash": "31836039",
+            "date": "2007-02-05 11:07:03 +0000",
+            "comment": "Reverting the renamed test case"
+        },
+        {
+            "c_hash": "e1465a9e",
+            "date": "2007-02-05 11:09:11 +0000",
+            "comment": "Removing jars and arrs. These are not necessary"
+        },
+        {
+            "c_hash": "b244dbb7",
+            "date": "2007-02-05 11:14:46 +0000",
+            "comment": "The resources needed to perfom wsdl2java"
+        },
+        {
+            "c_hash": "1de012fb",
+            "date": "2007-02-05 11:24:25 +0000",
+            "comment": "Automating code generation."
+        },
+        {
+            "c_hash": "5e3ead1a",
+            "date": "2007-02-05 11:59:01 +0000",
+            "comment": "Adding rampart-integration to the main build"
+        },
+        {
+            "c_hash": "95adb968",
+            "date": "2007-02-05 12:33:26 +0000",
+            "comment": "Minor clean up"
+        },
+        {
+            "c_hash": "5d4d90aa",
+            "date": "2007-02-05 14:25:26 +0000",
+            "comment": "Getting rid of the org.apache.axis2.rpc stuff"
+        },
+        {
+            "c_hash": "1a2df781",
+            "date": "2007-02-06 08:25:18 +0000",
+            "comment": "Cleanup"
+        },
+        {
+            "c_hash": "b4416460",
+            "date": "2007-02-06 08:32:45 +0000",
+            "comment": "Moving codegen resources from to proper resources dir in src/main"
+        },
+        {
+            "c_hash": "1d694137",
+            "date": "2007-02-06 09:24:05 +0000",
+            "comment": "removing the addressing-1.1.mar from the svn ... added the dependancy and copy it from the local repo"
+        },
+        {
+            "c_hash": "7e65a638",
+            "date": "2007-02-06 10:32:07 +0000",
+            "comment": "moving resources to src/test/resources"
+        },
+        {
+            "c_hash": "ba56f7b7",
+            "date": "2007-02-06 10:37:57 +0000",
+            "comment": "removing empty dir"
+        },
+        {
+            "c_hash": "45c2a304",
+            "date": "2007-02-06 11:02:01 +0000",
+            "comment": "Got the rahas tests working"
+        },
+        {
+            "c_hash": "78832c70",
+            "date": "2007-02-06 17:30:21 +0000",
+            "comment": "Updated deps and added the ws.zones maven2 repo"
+        },
+        {
+            "c_hash": "19e5bcbe",
+            "date": "2007-02-07 03:52:18 +0000",
+            "comment": "- Getting RampartTest (policy based) to work (Two more test scenarios to go - SecConv - and we'r done !!!:-) ) - Added the stub class for the codegen'ed tests to work around a bug in Axis2 codegen where it doesn't recognise the soapAction specified in the WSDL"
+        },
+        {
+            "c_hash": "aeea5420",
+            "date": "2007-02-07 05:30:45 +0000",
+            "comment": " - We cannot have two modules called rampart and rampart-sts. Therefore changing rampart-sts to rampart_sts  - Got the SecConv tests working !!! - All test run successfully now :-)"
+        },
+        {
+            "c_hash": "b8cc4f46",
+            "date": "2007-02-08 13:22:42 +0000",
+            "comment": "Applied Hans' patch to RAMPART-8 with some modifications"
+        },
+        {
+            "c_hash": "4eb586c0",
+            "date": "2007-02-09 01:59:04 +0000",
+            "comment": "Fixed RAMPART-21. Thanks Hans for the patch"
+        },
+        {
+            "c_hash": "9dd47faf",
+            "date": "2007-02-10 00:01:03 +0000",
+            "comment": "Applied the patch from Hans to fix https://issues.apache.org/jira/browse/RAMPART-4 Thanks Hans!"
+        },
+        {
+            "c_hash": "ce45bbbd",
+            "date": "2007-02-14 15:30:01 +0000",
+            "comment": "Don't use the m1 repos & update dependencies"
+        },
+        {
+            "c_hash": "47e7d6bb",
+            "date": "2007-02-14 15:42:11 +0000",
+            "comment": "switch to m2 built version of wss4j"
+        },
+        {
+            "c_hash": "f7a3f910",
+            "date": "2007-02-16 09:16:08 +0000",
+            "comment": "If MTOM Policy Assertion is present, MTOM serialize the message"
+        },
+        {
+            "c_hash": "80486767",
+            "date": "2007-02-16 14:37:34 +0000",
+            "comment": "add support for deploying snapshots"
+        },
+        {
+            "c_hash": "5fbb1955",
+            "date": "2007-02-16 15:05:52 +0000",
+            "comment": "add support for deploying snapshots"
+        },
+        {
+            "c_hash": "c70458e3",
+            "date": "2007-02-21 03:25:27 +0000",
+            "comment": "Use the axis service to hold the fact whether we are operating in client side or not"
+        },
+        {
+            "c_hash": "d0b2fdff",
+            "date": "2007-02-21 07:28:19 +0000",
+            "comment": "s/isClientside/isInitiator makesure we always use isInitiator() and not msgCtx.isServerside()"
+        },
+        {
+            "c_hash": "b79ef15d",
+            "date": "2007-02-28 06:56:18 +0000",
+            "comment": "Obtain parts to be signed form SignatureParts"
+        },
+        {
+            "c_hash": "71ed291c",
+            "date": "2007-02-28 15:45:34 +0000",
+            "comment": "Enable picking up message level policies at the client side"
+        },
+        {
+            "c_hash": "1425a374",
+            "date": "2007-03-08 15:00:53 +0000",
+            "comment": "Fixed the build break, there's no wsa:MessageId header in the response to sign"
+        },
+        {
+            "c_hash": "eb2673f2",
+            "date": "2007-03-08 16:02:19 +0000",
+            "comment": "Handle AlwaysToRecipient properly in the signature case. We should only send the token from the initiator to the recipient, NOT from recipeint to initiator - Instead use thumbprint ref or SKI ref depending on wss11 or wss10 suport."
+        },
+        {
+            "c_hash": "3b3a05ba",
+            "date": "2007-03-09 11:12:44 +0000",
+            "comment": "Commiting Claims support"
+        },
+        {
+            "c_hash": "c085e990",
+            "date": "2007-03-09 11:40:23 +0000",
+            "comment": "Fixing build faliour problem. Cleanup the poms. This's my first commit to the Rampart.:)"
+        },
+        {
+            "c_hash": "9c547523",
+            "date": "2007-03-09 11:44:27 +0000",
+            "comment": "Dialect is not optional. So I am doing a check and throwing a Trust exception."
+        },
+        {
+            "c_hash": "4f744213",
+            "date": "2007-03-19 09:51:16 +0000",
+            "comment": "Using the axis2-SNAPSHOT and getting rid of specific deps"
+        },
+        {
+            "c_hash": "6461e60f",
+            "date": "2007-03-19 11:47:12 +0000",
+            "comment": "Cleaning up the dependencies"
+        },
+        {
+            "c_hash": "bbdcdcd2",
+            "date": "2007-03-19 14:44:44 +0000",
+            "comment": "s/rampart_sts.mar/rahas.mar"
+        },
+        {
+            "c_hash": "7aedfe3c",
+            "date": "2007-03-20 13:23:49 +0000",
+            "comment": "Removing the module.xml files from the rampart-core and rampart-trust jar files"
+        },
+        {
+            "c_hash": "519c7619",
+            "date": "2007-03-20 14:53:27 +0000",
+            "comment": "Fixed the build break"
+        },
+        {
+            "c_hash": "b2cc8bf0",
+            "date": "2007-03-23 10:26:30 +0000",
+            "comment": "Get Rampart to compile against the axis2 trunk, still there are some stuff to be fixed in Axis2 w.r.t. the QName to String change"
+        },
+        {
+            "c_hash": "76aeadad",
+            "date": "2007-03-25 11:50:30 +0000",
+            "comment": "Fix build"
+        },
+        {
+            "c_hash": "79153952",
+            "date": "2007-03-29 13:16:46 +0000",
+            "comment": "Updating rahas to comply with the latest axiom changes"
+        },
+        {
+            "c_hash": "3de653ba",
+            "date": "2007-04-17 07:14:49 +0000",
+            "comment": "getting rampart to compile against the latest axis2"
+        },
+        {
+            "c_hash": "98f6f2af",
+            "date": "2007-04-17 07:38:46 +0000",
+            "comment": "now we see the actual tests that fail ..."
+        },
+        {
+            "c_hash": "66512410",
+            "date": "2007-04-17 07:40:16 +0000",
+            "comment": "oops"
+        },
+        {
+            "c_hash": "59a293fb",
+            "date": "2007-04-17 09:28:46 +0000",
+            "comment": "Build failure seems to be due to the bug mentioned here : http://issues.apache.org/bugzilla/show_bug.cgi?id=38655 This is fixed in xmlsec-1.4.0"
+        },
+        {
+            "c_hash": "0215b291",
+            "date": "2007-04-20 09:43:13 +0000",
+            "comment": "Imported the samples from the axis2 repo and updated deps"
+        },
+        {
+            "c_hash": "10f0683e",
+            "date": "2007-04-23 06:50:44 +0000",
+            "comment": "updated teh group IDs of axis2 maven2 plugins"
+        },
+        {
+            "c_hash": "cb01c405",
+            "date": "2007-04-23 17:16:59 +0000",
+            "comment": "Updated the xml-sec group id"
+        },
+        {
+            "c_hash": "7e1aa219",
+            "date": "2007-05-02 23:32:42 +0000",
+            "comment": "setting the axis2 and axiom versions to latest released versions"
+        },
+        {
+            "c_hash": "195dbcf4",
+            "date": "2007-05-08 11:16:22 +0000",
+            "comment": "applied Hans' patch in RAMPART-8 - Thanks Hans. Added maven-site-plugin config into pom.xmls"
+        },
+        {
+            "c_hash": "fa884b17",
+            "date": "2007-05-14 14:33:26 +0000",
+            "comment": "Fix from Aaron Gourley to make sure all signed/encrypted parts are added, thanks Aron"
+        },
+        {
+            "c_hash": "7927a65e",
+            "date": "2007-05-15 09:03:41 +0000",
+            "comment": "Rampart - 36 fixed"
+        },
+        {
+            "c_hash": "4509b66c",
+            "date": "2007-05-18 20:04:41 +0000",
+            "comment": "Adding an ant build script to build the rampart release, it will be great is someone who speak mvn can translate this :-)"
+        },
+        {
+            "c_hash": "ceeb527e",
+            "date": "2007-05-18 21:47:04 +0000",
+            "comment": "minor code clean up and updates to the dist build"
+        },
+        {
+            "c_hash": "8729e99f",
+            "date": "2007-05-18 22:13:17 +0000",
+            "comment": "Updated to create the src dist"
+        },
+        {
+            "c_hash": "7475f5f3",
+            "date": "2007-05-19 16:01:03 +0000",
+            "comment": "release distro build is ready"
+        },
+        {
+            "c_hash": "5527f990",
+            "date": "2007-05-19 17:27:46 +0000",
+            "comment": "Exclude bin distro's README from other distros"
+        },
+        {
+            "c_hash": "994de62f",
+            "date": "2007-05-23 01:48:58 +0000",
+            "comment": "switch addressing mar to the 1.2 released version as well"
+        },
+        {
+            "c_hash": "28e21761",
+            "date": "2007-05-24 05:49:59 +0000",
+            "comment": "Fixing Jira Rampart-42"
+        },
+        {
+            "c_hash": "2ffacd6f",
+            "date": "2007-05-24 05:51:59 +0000",
+            "comment": "Test case to verify Rampart-43 issue"
+        },
+        {
+            "c_hash": "b7f68042",
+            "date": "2007-05-25 08:29:13 +0000",
+            "comment": "Fixed the samples' build files Added Angel's patches from RAMPART-40 Updated the older rampart config to be able to disable DOOM"
+        },
+        {
+            "c_hash": "8bf682da",
+            "date": "2007-05-25 08:39:23 +0000",
+            "comment": "oops :-)"
+        },
+        {
+            "c_hash": "2cf70613",
+            "date": "2007-05-25 09:23:36 +0000",
+            "comment": "typo"
+        },
+        {
+            "c_hash": "4ffff5ed",
+            "date": "2007-05-25 09:42:31 +0000",
+            "comment": "Adding policy and services.xml file for the XPath(RAMPART-40) testcase"
+        },
+        {
+            "c_hash": "13022b89",
+            "date": "2007-05-25 16:11:25 +0000",
+            "comment": "Committing the fix from RAMPART-38 and the testcase for both RAMPART-38 and RAMPART-40"
+        },
+        {
+            "c_hash": "d610fc9a",
+            "date": "2007-05-27 13:10:28 +0000",
+            "comment": "Setting SNAPSHOTS to released versions"
+        },
+        {
+            "c_hash": "7579d5a6",
+            "date": "2007-05-28 05:48:28 +0000",
+            "comment": "Updated the docs"
+        },
+        {
+            "c_hash": "0e3cc436",
+            "date": "2007-05-28 06:02:44 +0000",
+            "comment": "Samples' README updated to add info about the keys dir and the ant script"
+        },
+        {
+            "c_hash": "a2c14966",
+            "date": "2007-05-28 07:20:52 +0000",
+            "comment": "Update release versions"
+        },
+        {
+            "c_hash": "5a64ef6a",
+            "date": "2007-05-28 07:21:55 +0000",
+            "comment": "no rahas zip only the mar"
+        },
+        {
+            "c_hash": "622367ac",
+            "date": "2007-05-29 13:49:37 +0000",
+            "comment": "Merged chnages from the 1.2 tag"
+        },
+        {
+            "c_hash": "4fc0495d",
+            "date": "2007-05-31 09:39:52 +0000",
+            "comment": "Changed the axis2 version to SNAPSHOT"
+        },
+        {
+            "c_hash": "817171e6",
+            "date": "2007-06-16 18:08:42 +0000",
+            "comment": "The EPR contained in the AppliesTo can take different forms. We should hold on to the EndpointReference element in such cases."
+        },
+        {
+            "c_hash": "ae7107c5",
+            "date": "2007-06-16 19:32:38 +0000",
+            "comment": "In the case where we don't have a standard wst:Claims element we can hold on to the element and expect the Issuer to handle it."
+        },
+        {
+            "c_hash": "90846272",
+            "date": "2007-06-24 08:00:15 +0000",
+            "comment": "Merge changes in the 1_2 barnch into the trunk ... Still the build fails due to the properties that we set in the options object not being available for the inflow handler at the client."
+        },
+        {
+            "c_hash": "1b5a1285",
+            "date": "2007-06-24 17:16:36 +0000",
+            "comment": "fixed the build break  - Got rid of the deprecated sec-conv prototype work  - Updated the tests to deal with axis2 changes"
+        },
+        {
+            "c_hash": "dc1646a0",
+            "date": "2007-06-24 20:56:39 +0000",
+            "comment": "Removing commented out sections"
+        },
+        {
+            "c_hash": "39b5ca9e",
+            "date": "2007-07-04 06:46:22 +0000",
+            "comment": "Set properties to be shared with both flows in a parent context of the message context Handle soap actor properly Added scenario 12 policy for RampartTest Make sure we don't cache policy"
+        },
+        {
+            "c_hash": "51769b1a",
+            "date": "2007-07-04 08:11:34 +0000",
+            "comment": "Adding the folders"
+        },
+        {
+            "c_hash": "be9a2ea6",
+            "date": "2007-07-04 08:14:33 +0000",
+            "comment": "Adding the developer guide"
+        },
+        {
+            "c_hash": "77c0f4ab",
+            "date": "2007-07-04 08:14:53 +0000",
+            "comment": "Fixed a compilation failure with the latest axis2 codebase."
+        },
+        {
+            "c_hash": "0fbcfbf6",
+            "date": "2007-07-04 09:00:46 +0000",
+            "comment": "Fixed minor typos"
+        },
+        {
+            "c_hash": "259d11bd",
+            "date": "2007-07-04 10:52:56 +0000",
+            "comment": "Doing suggested changes"
+        },
+        {
+            "c_hash": "7cf0f23a",
+            "date": "2007-07-04 10:56:13 +0000",
+            "comment": "As suggested removing this image"
+        },
+        {
+            "c_hash": "e245b185",
+            "date": "2007-07-04 11:35:59 +0000",
+            "comment": "Doing suggested changes on images."
+        },
+        {
+            "c_hash": "2ba1abb9",
+            "date": "2007-07-04 12:28:42 +0000",
+            "comment": "Making sure rampart compiles with axis2 trunk"
+        },
+        {
+            "c_hash": "ac0bc00d",
+            "date": "2007-07-05 11:33:56 +0000",
+            "comment": "Fixed RAMPART-52"
+        },
+        {
+            "c_hash": "6e91a9fc",
+            "date": "2007-07-05 11:54:12 +0000",
+            "comment": "Fixed RAMPART-49, Thanks Hans"
+        },
+        {
+            "c_hash": "9adaad6e",
+            "date": "2007-07-05 12:36:04 +0000",
+            "comment": "Fixed RAMPART-48, thanks Glen Mazza for the patch!"
+        },
+        {
+            "c_hash": "db0fbb67",
+            "date": "2007-07-05 13:10:31 +0000",
+            "comment": "fixed typo"
+        },
+        {
+            "c_hash": "2570defb",
+            "date": "2007-07-05 14:39:38 +0000",
+            "comment": "Fixed some typos"
+        },
+        {
+            "c_hash": "16865461",
+            "date": "2007-07-06 04:31:14 +0000",
+            "comment": "Patch applied. Thanks Nencho. This will fix Rampart-42"
+        },
+        {
+            "c_hash": "dd136111",
+            "date": "2007-07-06 06:05:30 +0000",
+            "comment": "Removing \"Future Development\""
+        },
+        {
+            "c_hash": "1843a23e",
+            "date": "2007-07-06 06:12:15 +0000",
+            "comment": "Correcting a small typo"
+        },
+        {
+            "c_hash": "79cfab09",
+            "date": "2007-07-06 06:46:56 +0000",
+            "comment": "changed file name for better representation and also giving name options for other htmls to be committed"
+        },
+        {
+            "c_hash": "8936c6b3",
+            "date": "2007-07-06 11:48:04 +0000",
+            "comment": "Applying patch for Rampart-42 bug. Adding the new classes"
+        },
+        {
+            "c_hash": "40995b85",
+            "date": "2007-07-06 12:47:31 +0000",
+            "comment": "feature to let you specify an allow timeskew https://issues.apache.org/jira/browse/RAMPART-4"
+        },
+        {
+            "c_hash": "510262c4",
+            "date": "2007-07-07 05:45:57 +0000",
+            "comment": "Added a missing builder"
+        },
+        {
+            "c_hash": "a6fe8062",
+            "date": "2007-07-07 07:52:54 +0000",
+            "comment": "Getting rid of the SSLConfigBuilder ... this caused tast failures"
+        },
+        {
+            "c_hash": "0a2480b6",
+            "date": "2007-07-07 08:33:33 +0000",
+            "comment": "Applied a patch from Amila on policy validation - Thanks Amila Fixed a typo Updated the neethi version to SNAPSHOT"
+        },
+        {
+            "c_hash": "c88e4dc5",
+            "date": "2007-07-07 14:45:27 +0000",
+            "comment": "Updated SAML token issuer to pick the certificate by the username when requesting for a SAML token that includes the requestor's cert authenticated by a UsernameToken Got rid of the depreceated message receiver that STSMessageReceiver extended"
+        },
+        {
+            "c_hash": "1aae18cd",
+            "date": "2007-07-08 15:31:43 +0000",
+            "comment": "Updated org.apache.rahas.impl.SAMLTokenIssuerConfig to be able to generate an axis2 param that carries the configuration"
+        },
+        {
+            "c_hash": "8a219d99",
+            "date": "2007-07-08 16:37:22 +0000",
+            "comment": "Allow creating SAMLTokenIssuerConfig instances to generate config params"
+        },
+        {
+            "c_hash": "e4449bfe",
+            "date": "2007-07-09 11:49:11 +0000",
+            "comment": "Removing the null and adding the correct QName"
+        },
+        {
+            "c_hash": "330caa28",
+            "date": "2007-07-09 14:55:22 +0000",
+            "comment": "Updated rampart to handle changes in WSS4J (r554665)"
+        },
+        {
+            "c_hash": "10e21628",
+            "date": "2007-07-09 21:48:19 +0000",
+            "comment": "Switch integration tests to pertest mode to try to get continuum working."
+        },
+        {
+            "c_hash": "ad26099c",
+            "date": "2007-07-10 03:35:48 +0000",
+            "comment": "trying to up the timeout"
+        },
+        {
+            "c_hash": "8c39e752",
+            "date": "2007-07-10 07:58:48 +0000",
+            "comment": "Added an NPE check"
+        },
+        {
+            "c_hash": "403a8e22",
+            "date": "2007-07-11 02:33:25 +0000",
+            "comment": "Adding a sample for Username token over HTTPS. This sample uses tomcat."
+        },
+        {
+            "c_hash": "1f09c43b",
+            "date": "2007-07-11 04:20:35 +0000",
+            "comment": "Adding the SSLConfig as an assertion"
+        },
+        {
+            "c_hash": "cdc176fd",
+            "date": "2007-07-11 04:53:58 +0000",
+            "comment": "Applying Marietta's patch. Thanks Marietta."
+        },
+        {
+            "c_hash": "cec20afb",
+            "date": "2007-07-11 07:47:06 +0000",
+            "comment": "Fixed some typos Got rid of usages of deprecated style of module engagement Added a way to obtain the token storage instance from config context Fixed a copy-paste error in IssuedTokenBuilder to make sure we get hold of the RST Template assertion information properly"
+        },
+        {
+            "c_hash": "17172ecf",
+            "date": "2007-07-11 08:00:55 +0000",
+            "comment": "oops ... fixed the build break ... careless mistake :P"
+        },
+        {
+            "c_hash": "ffa46478",
+            "date": "2007-07-11 09:35:59 +0000",
+            "comment": "Fixing Rampart-57 Now we can put nightly builds!"
+        },
+        {
+            "c_hash": "8cb63591",
+            "date": "2007-07-11 11:17:28 +0000",
+            "comment": "Fixed a policy serialization NPE Getting the policy within an IssuedToken properly"
+        },
+        {
+            "c_hash": "67611a3e",
+            "date": "2007-07-12 09:43:54 +0000",
+            "comment": "Getting rid off usage of deprecated methods"
+        },
+        {
+            "c_hash": "02a214f0",
+            "date": "2007-07-12 09:49:49 +0000",
+            "comment": "Updated Token to hold the issuer epr address"
+        },
+        {
+            "c_hash": "bfd1463b",
+            "date": "2007-07-12 10:41:04 +0000",
+            "comment": "Adding times log"
+        },
+        {
+            "c_hash": "fd81c3a1",
+            "date": "2007-07-12 11:10:52 +0000",
+            "comment": "Adding the message logging"
+        },
+        {
+            "c_hash": "a94e6380",
+            "date": "2007-07-12 11:37:56 +0000",
+            "comment": "Adding logs to trust"
+        },
+        {
+            "c_hash": "bc9c5f86",
+            "date": "2007-07-12 11:41:16 +0000",
+            "comment": "Changing the name."
+        },
+        {
+            "c_hash": "4c01b09d",
+            "date": "2007-07-13 08:02:03 +0000",
+            "comment": "Adding the Rampart site. Adding the site to the build.xml."
+        },
+        {
+            "c_hash": "2e747ca7",
+            "date": "2007-07-13 10:51:09 +0000",
+            "comment": "Fixing the index.html"
+        },
+        {
+            "c_hash": "ec1109a9",
+            "date": "2007-07-14 09:35:56 +0000",
+            "comment": "Fixed a few typos and updated rampart to support latest WSS4J chanegs"
+        },
+        {
+            "c_hash": "2abfabe9",
+            "date": "2007-07-14 09:42:02 +0000",
+            "comment": "Got rid of a sysout"
+        },
+        {
+            "c_hash": "61d68a10",
+            "date": "2007-07-14 11:51:22 +0000",
+            "comment": "Fixed some typos Got rid of hardcoded key alias for the trusted service's cert in SAMLTokenIssuer"
+        },
+        {
+            "c_hash": "b5d33194",
+            "date": "2007-07-14 13:59:58 +0000",
+            "comment": "We should be able to access these externally"
+        },
+        {
+            "c_hash": "45fcabd3",
+            "date": "2007-07-14 16:17:25 +0000",
+            "comment": "more cleanup"
+        },
+        {
+            "c_hash": "0314a128",
+            "date": "2007-07-14 19:33:22 +0000",
+            "comment": "minor cleanup"
+        },
+        {
+            "c_hash": "411abed8",
+            "date": "2007-07-15 15:54:33 +0000",
+            "comment": "fixed an issue with SAMLTokenIssuerConfig's parameter generation and a few typos"
+        },
+        {
+            "c_hash": "b24d84cb",
+            "date": "2007-07-15 16:13:08 +0000",
+            "comment": "fixed futher issues with saml token config generation"
+        },
+        {
+            "c_hash": "52784fc5",
+            "date": "2007-07-15 20:56:42 +0000",
+            "comment": "Added a small hack to solve the tokens' refid issue and make sure we fisrt check the token storage whether we have a given token's secret befor tryign to extract it"
+        },
+        {
+            "c_hash": "c53e1f40",
+            "date": "2007-07-16 03:18:54 +0000",
+            "comment": "1) Fully tested tomcat sample 2) Adding the xdoc directory 3) Adding the site build to the pom"
+        },
+        {
+            "c_hash": "2566d9a0",
+            "date": "2007-07-16 03:21:25 +0000",
+            "comment": "Adding the Security Token Service sample"
+        },
+        {
+            "c_hash": "c8924b34",
+            "date": "2007-07-16 05:50:45 +0000",
+            "comment": "Adding quick start guide"
+        },
+        {
+            "c_hash": "9e1651f1",
+            "date": "2007-07-16 08:02:17 +0000",
+            "comment": "Removing 0.90 - because this is invalid"
+        },
+        {
+            "c_hash": "a4b2c617",
+            "date": "2007-07-16 08:06:43 +0000",
+            "comment": "Adding the releases"
+        },
+        {
+            "c_hash": "e3b19479",
+            "date": "2007-07-16 08:34:07 +0000",
+            "comment": "Fixing the styles"
+        },
+        {
+            "c_hash": "8b913b63",
+            "date": "2007-07-18 11:17:41 +0000",
+            "comment": "Fixing the build break mentioned by dims - Build break - MU processing"
+        },
+        {
+            "c_hash": "bc86aeb7",
+            "date": "2007-07-19 12:27:25 +0000",
+            "comment": "Adding the schema and rampart configs"
+        },
+        {
+            "c_hash": "26dd7a35",
+            "date": "2007-07-19 12:45:43 +0000",
+            "comment": "Adding the schema"
+        },
+        {
+            "c_hash": "90a8e162",
+            "date": "2007-07-19 13:37:18 +0000",
+            "comment": "Fixed the build issue in JDK 1.5"
+        },
+        {
+            "c_hash": "d427b22a",
+            "date": "2007-07-19 14:08:26 +0000",
+            "comment": "Fixed issues with in using an issued token with a transport binding"
+        },
+        {
+            "c_hash": "4be96e8f",
+            "date": "2007-07-19 18:46:04 +0000",
+            "comment": "changed the wss4j version to SNAPSHOT"
+        },
+        {
+            "c_hash": "10eeaef6",
+            "date": "2007-07-23 03:47:33 +0000",
+            "comment": "Reading optimizeParts element"
+        },
+        {
+            "c_hash": "34d6bbd4",
+            "date": "2007-07-23 06:01:30 +0000",
+            "comment": "Setting the default max time skew to 300 seconds"
+        },
+        {
+            "c_hash": "1faaa770",
+            "date": "2007-07-24 02:19:41 +0000",
+            "comment": "Fixing issues in the site"
+        },
+        {
+            "c_hash": "45b54efb",
+            "date": "2007-07-24 03:24:03 +0000",
+            "comment": "Fixing Rampart - 61"
+        },
+        {
+            "c_hash": "e61ca4ee",
+            "date": "2007-07-25 11:21:41 +0000",
+            "comment": "fixing the security build fail"
+        },
+        {
+            "c_hash": "0303d6f9",
+            "date": "2007-07-25 11:30:00 +0000",
+            "comment": "fixing the security build fail"
+        },
+        {
+            "c_hash": "67a2a48b",
+            "date": "2007-07-26 11:04:00 +0000",
+            "comment": "SAML improvements"
+        },
+        {
+            "c_hash": "2361e89b",
+            "date": "2007-07-30 14:52:11 +0000",
+            "comment": "We don't need this empty test"
+        },
+        {
+            "c_hash": "62279b32",
+            "date": "2007-07-30 15:38:19 +0000",
+            "comment": "Got clover reports working ... but it is yet to be configured properly"
+        },
+        {
+            "c_hash": "b77d7da9",
+            "date": "2007-08-01 04:24:38 +0000",
+            "comment": "Enabling SAML to get different Assertions and NameIdentifiers."
+        },
+        {
+            "c_hash": "cf4c9660",
+            "date": "2007-08-01 04:27:04 +0000",
+            "comment": "Adding a test case that uses the DataCallback"
+        },
+        {
+            "c_hash": "c5b1948c",
+            "date": "2007-08-07 16:16:33 +0000",
+            "comment": "Don't bring in the boat :) - just use what we need"
+        },
+        {
+            "c_hash": "bf08492f",
+            "date": "2007-08-07 20:52:27 +0000",
+            "comment": "Set the axis2 versions to 1.3-SNAPSHOT"
+        },
+        {
+            "c_hash": "b3cbdb8b",
+            "date": "2007-08-07 21:14:49 +0000",
+            "comment": "Reverted the trunk deps versions to SNAPSHOT and created the 1.3 branch"
+        },
+        {
+            "c_hash": "f18af768",
+            "date": "2007-08-07 22:13:20 +0000",
+            "comment": "Trying to get rid of hardcoded versions"
+        },
+        {
+            "c_hash": "0887fb3e",
+            "date": "2007-08-07 22:58:37 +0000",
+            "comment": "using correct versions"
+        },
+        {
+            "c_hash": "c73f14cb",
+            "date": "2007-08-07 23:59:35 +0000",
+            "comment": "Fixed RAMPART-66"
+        },
+        {
+            "c_hash": "cb61b533",
+            "date": "2007-08-08 00:10:35 +0000",
+            "comment": "getting rid of unused methods"
+        },
+        {
+            "c_hash": "ec3dcb8b",
+            "date": "2007-08-08 00:13:54 +0000",
+            "comment": "We never use the reqTokenCanceledEle elem"
+        },
+        {
+            "c_hash": "26644e50",
+            "date": "2007-08-08 01:19:36 +0000",
+            "comment": "Fixed RAMPART-62"
+        },
+        {
+            "c_hash": "5f7998e7",
+            "date": "2007-08-08 01:55:24 +0000",
+            "comment": "Fixed RAMPART-50"
+        },
+        {
+            "c_hash": "9d7b70b8",
+            "date": "2007-08-08 08:30:15 +0000",
+            "comment": "Fixed RAMPART-64"
+        },
+        {
+            "c_hash": "f03cd104",
+            "date": "2007-08-10 12:21:49 +0000",
+            "comment": "fixed an issue with incorrect policy usage at the receipient"
+        },
+        {
+            "c_hash": "fb750b61",
+            "date": "2007-08-15 05:12:08 +0000",
+            "comment": "Merged changes in http://svn.apache.org/viewvc?view=rev&rev=566014 to the trunk"
+        },
+        {
+            "c_hash": "7d9d7fa9",
+            "date": "2007-08-15 05:33:00 +0000",
+            "comment": "Changing the namespace to http://sample03.samples.rampart.apache.org"
+        },
+        {
+            "c_hash": "30a46dc9",
+            "date": "2007-08-16 07:44:38 +0000",
+            "comment": "Fixed RAMPART-71"
+        },
+        {
+            "c_hash": "a0e8fe14",
+            "date": "2007-08-19 18:38:58 +0000",
+            "comment": "Added a feature where we can use the username and password available in the Options object in creating a UsernameToken. Added a test case into the RampartTest to test the above case (#13)"
+        },
+        {
+            "c_hash": "788d2a21",
+            "date": "2007-08-20 05:31:55 +0000",
+            "comment": "Added some missing javadoc and code format"
+        },
+        {
+            "c_hash": "ab8ec41d",
+            "date": "2007-08-20 10:41:21 +0000",
+            "comment": "Updated the keys"
+        },
+        {
+            "c_hash": "c6c46709",
+            "date": "2007-08-22 04:54:07 +0000",
+            "comment": "Fixing one bug in build file. And updating it to fix 1.3 release."
+        },
+        {
+            "c_hash": "7ca10a21",
+            "date": "2007-08-23 11:40:04 +0000",
+            "comment": "Added and NPE check"
+        },
+        {
+            "c_hash": "0fb96bb7",
+            "date": "2007-08-31 11:24:17 +0000",
+            "comment": "Fixed an issue in encrypting signature when EncryptBeforeSigning"
+        },
+        {
+            "c_hash": "4d608f45",
+            "date": "2007-09-06 14:17:17 +0000",
+            "comment": "Fixed some policy serialization issues Encrypted parts validation is buggy :-( ... we have to fix it"
+        },
+        {
+            "c_hash": "950604a4",
+            "date": "2007-09-08 14:19:46 +0000",
+            "comment": "Endorsing tokens will sign the timestamp even when the signatureParts are missing No need to validate protection order when TransportBinding is used"
+        },
+        {
+            "c_hash": "5ff765ba",
+            "date": "2007-09-11 10:54:05 +0000",
+            "comment": "Fixed RAMPART-82, thanks Nandana"
+        },
+        {
+            "c_hash": "baa04867",
+            "date": "2007-09-11 10:56:12 +0000",
+            "comment": "Applied patch in RAMPART-85, Thanks Nandana"
+        },
+        {
+            "c_hash": "54eb6517",
+            "date": "2007-09-17 08:56:34 +0000",
+            "comment": "Adding Nandana's patches to RAMPART-86, Thanks Nandana"
+        },
+        {
+            "c_hash": "e92ca3c6",
+            "date": "2007-09-21 05:20:02 +0000",
+            "comment": "Added a sec conv test where we establish the context using UT auth"
+        },
+        {
+            "c_hash": "204652b1",
+            "date": "2007-09-29 17:28:40 +0000",
+            "comment": "Sometime we have only a SAML token to identify the requester and leaving it to the issuer to to handle"
+        },
+        {
+            "c_hash": "4a094899",
+            "date": "2007-10-05 11:18:46 +0000",
+            "comment": "Removing the incorrect keyValue element"
+        },
+        {
+            "c_hash": "ac25143b",
+            "date": "2007-10-05 11:31:25 +0000",
+            "comment": "Fixed RAMPART-91, RAMPART-92 and RAMPART-93 with Nandana's patches. Thanks Nandana!"
+        },
+        {
+            "c_hash": "fa5d32b0",
+            "date": "2007-10-10 06:40:24 +0000",
+            "comment": "Fixed an issue in policy serialization, thanks Nandana"
+        },
+        {
+            "c_hash": "b100670c",
+            "date": "2007-10-13 07:14:57 +0000",
+            "comment": "Added an NPE check"
+        },
+        {
+            "c_hash": "77be0fa9",
+            "date": "2007-10-26 08:42:05 +0000",
+            "comment": "Applied patche in RAMPART-94 Thanks Nandana"
+        },
+        {
+            "c_hash": "c388db75",
+            "date": "2007-10-30 07:44:35 +0000",
+            "comment": "Missed these files in my previous commit"
+        },
+        {
+            "c_hash": "92d0a080",
+            "date": "2007-10-31 09:00:35 +0000",
+            "comment": "Namespace and Name are not qualified in the specification. Thanks Sanka and Nandana!"
+        },
+        {
+            "c_hash": "f93aa054",
+            "date": "2007-11-06 06:22:23 +0000",
+            "comment": "Applied patch in RAMPART-102"
+        },
+        {
+            "c_hash": "3fb7e9ed",
+            "date": "2007-11-06 21:49:00 +0000",
+            "comment": "Applied patch in RAMPART-104, Thanks Nandana"
+        },
+        {
+            "c_hash": "87065836",
+            "date": "2007-11-06 22:34:00 +0000",
+            "comment": "Applied patch in RAMPART-99 Thanks Nandana"
+        },
+        {
+            "c_hash": "0b7abfd1",
+            "date": "2007-11-07 18:34:33 +0000",
+            "comment": "Applied patch in RAMPART-106. Thanks Nandana"
+        },
+        {
+            "c_hash": "a2e04a54",
+            "date": "2007-11-08 01:05:18 +0000",
+            "comment": "Fixed an EncryptedKeySHA1 reference issue Updated to set the correct value type in the reference of derived key token Made sure we don't add empty reference lists"
+        },
+        {
+            "c_hash": "09a283ac",
+            "date": "2007-11-08 17:14:47 +0000",
+            "comment": "In triple DES max symm keysize is 192"
+        },
+        {
+            "c_hash": "15fcb5d1",
+            "date": "2007-11-08 18:38:57 +0000",
+            "comment": "We have to make sure we use the correct length key to encrypt when using different symm encr algos"
+        },
+        {
+            "c_hash": "98def238",
+            "date": "2007-11-08 18:59:53 +0000",
+            "comment": "Applied patch in RAMPART-107. Thanks Nandana"
+        },
+        {
+            "c_hash": "ef6091f8",
+            "date": "2007-11-08 20:59:09 +0000",
+            "comment": "- Updated STSClient to be able to set a custom addression version - Updated rampart to be able to override the addressing version of RST when making sec conv requests - Updated to use the latest wss4j and makeing usre we use only standard namespaces"
+        },
+        {
+            "c_hash": "73a0329e",
+            "date": "2007-11-09 08:51:07 +0000",
+            "comment": "A SecurityContextToken can be used without derived keys in WS-SecureConversation... This is when the policy doesn't specify requireDerivedKeys in the SecureConversation assertion. Updated Rampart to this and this depends on teh latest WSS4J"
+        },
+        {
+            "c_hash": "c870750e",
+            "date": "2007-11-14 15:07:01 +0000",
+            "comment": "Applied patch in RAMPART-109. Thanks Nandana"
+        },
+        {
+            "c_hash": "62794339",
+            "date": "2007-11-21 09:31:17 +0000",
+            "comment": "Applied Nandana's patches in RAMPART-110 and RAMPART-111 Thanks Nandana."
+        },
+        {
+            "c_hash": "c49184ae",
+            "date": "2007-11-21 09:42:29 +0000",
+            "comment": "Applied patch to fix RAMPART-113 Thanks Nandana"
+        },
+        {
+            "c_hash": "d73a1e31",
+            "date": "2007-11-23 05:19:21 +0000",
+            "comment": "Fixing woden version"
+        },
+        {
+            "c_hash": "d7a58ebd",
+            "date": "2007-11-23 05:20:12 +0000",
+            "comment": "Updating woden dependancy to pick the new jars"
+        },
+        {
+            "c_hash": "d89bb899",
+            "date": "2007-11-23 14:02:40 +0000",
+            "comment": "Updating versions to be able to build with the latest Axis2 trunk"
+        },
+        {
+            "c_hash": "0667ed5c",
+            "date": "2007-11-24 14:34:08 +0000",
+            "comment": "Make sure we aviod running into EncryptedKey instances within EncryptedData/KeyInfo elements, check for the existance of an id value"
+        },
+        {
+            "c_hash": "b2bc483d",
+            "date": "2007-12-14 08:10:41 +0000",
+            "comment": "Fixed the issue RAMPART-78"
+        },
+        {
+            "c_hash": "99f6b5e3",
+            "date": "2007-12-14 08:28:14 +0000",
+            "comment": "Corrected typo encryptionCypto/encryptionCrypto"
+        },
+        {
+            "c_hash": "44bd63b0",
+            "date": "2007-12-14 13:32:18 +0000",
+            "comment": "fixed issue https://issues.apache.org/jira/browse/RAMPART-114."
+        },
+        {
+            "c_hash": "3a0b6074",
+            "date": "2007-12-14 13:41:37 +0000",
+            "comment": "Fixed issue https://issues.apache.org/jira/browse/RAMPART-115."
+        },
+        {
+            "c_hash": "2a423a77",
+            "date": "2007-12-14 13:43:21 +0000",
+            "comment": "Fixed issue https://issues.apache.org/jira/browse/RAMPART-115."
+        },
+        {
+            "c_hash": "33758007",
+            "date": "2007-12-14 13:49:26 +0000",
+            "comment": "Fixed the error in checking the signed parts."
+        },
+        {
+            "c_hash": "bd426720",
+            "date": "2007-12-14 13:52:39 +0000",
+            "comment": "Policy for Rampart test scenario 15."
+        },
+        {
+            "c_hash": "9e46c8c1",
+            "date": "2007-12-14 13:53:37 +0000",
+            "comment": "Policy for Rampart test scenario 16."
+        },
+        {
+            "c_hash": "44b86ba2",
+            "date": "2007-12-14 13:54:25 +0000",
+            "comment": "services.xml for Rampart test scenario 15."
+        },
+        {
+            "c_hash": "76b26732",
+            "date": "2007-12-14 13:54:53 +0000",
+            "comment": "services.xml for Rampart test scenario 16."
+        },
+        {
+            "c_hash": "a87047c1",
+            "date": "2007-12-14 13:57:18 +0000",
+            "comment": "Fixed the pom.xml to include scenario 15 and 16."
+        },
+        {
+            "c_hash": "d90a8e26",
+            "date": "2007-12-14 14:04:30 +0000",
+            "comment": "Edited Rampart Test include scenario 15 and 16."
+        },
+        {
+            "c_hash": "49d0caf7",
+            "date": "2007-12-14 14:20:21 +0000",
+            "comment": "removed unnecessary  encr.setEphemeralKey(encrTok.getSecret()); line."
+        },
+        {
+            "c_hash": "7e8fe0d0",
+            "date": "2007-12-19 11:44:31 +0000",
+            "comment": "Fixed RAMPART-127"
+        },
+        {
+            "c_hash": "bb46c3df",
+            "date": "2008-01-04 05:06:49 +0000",
+            "comment": "Added the information about provision of unlimited security jurisdiction"
+        },
+        {
+            "c_hash": "401a1452",
+            "date": "2008-01-04 08:47:49 +0000",
+            "comment": "Added an callback handler to authenticate users against *nix PAM using JPAM"
+        },
+        {
+            "c_hash": "8ad3f843",
+            "date": "2008-01-10 10:10:18 +0000",
+            "comment": "Fixing issues RAMPART-131, RAMPART-125, RAMPART-90."
+        },
+        {
+            "c_hash": "da7919aa",
+            "date": "2008-01-11 10:40:49 +0000",
+            "comment": "Fixing RAMPART-132 issue."
+        },
+        {
+            "c_hash": "e921df81",
+            "date": "2008-01-14 03:21:31 +0000",
+            "comment": "Adding the details about how to modify the axis2.xml to add security phase"
+        },
+        {
+            "c_hash": "0ae48adb",
+            "date": "2008-01-14 04:57:10 +0000",
+            "comment": "Added supporting tokens processing"
+        },
+        {
+            "c_hash": "19b3fcb3",
+            "date": "2008-01-14 04:58:08 +0000",
+            "comment": "Added supporting tokens processing"
+        },
+        {
+            "c_hash": "091044e8",
+            "date": "2008-01-14 05:02:25 +0000",
+            "comment": "Checking the presence of supporting tokens"
+        },
+        {
+            "c_hash": "3feb4fb0",
+            "date": "2008-01-14 05:03:29 +0000",
+            "comment": "Added new error messages for SAML token / Binary token missing scenarios"
+        },
+        {
+            "c_hash": "e1c1a02f",
+            "date": "2008-01-14 07:34:15 +0000",
+            "comment": "1. Fixed the disbribution 2. Fixed poms 3. Inorder to build the distribtuion use mvn clean install -Drelease"
+        },
+        {
+            "c_hash": "1bcb6158",
+            "date": "2008-01-14 07:47:28 +0000",
+            "comment": "Moved documentation resources to documentation module."
+        },
+        {
+            "c_hash": "b13b7d4b",
+            "date": "2008-01-14 08:22:49 +0000",
+            "comment": "Supporting tokens only have to be present in the incoming message when it is not the initiator"
+        },
+        {
+            "c_hash": "828b3a7c",
+            "date": "2008-01-15 10:12:40 +0000",
+            "comment": "Allowing the rampart parent version to come to rampart.version property"
+        },
+        {
+            "c_hash": "c6f2b36d",
+            "date": "2008-01-17 06:13:32 +0000",
+            "comment": "Added security phase to axis2.xml s of samples"
+        },
+        {
+            "c_hash": "827eb837",
+            "date": "2008-01-17 06:25:33 +0000",
+            "comment": "Fixed JIRA [1] [1] - https://issues.apache.org/jira/browse/RAMPART-123"
+        },
+        {
+            "c_hash": "bccd94ce",
+            "date": "2008-01-17 06:31:39 +0000",
+            "comment": "Check for null header name ( Header name is optional )"
+        },
+        {
+            "c_hash": "2a06a31b",
+            "date": "2008-01-18 08:28:52 +0000",
+            "comment": "Cleaning up the distribution"
+        },
+        {
+            "c_hash": "69129db1",
+            "date": "2008-01-18 14:28:36 +0000",
+            "comment": "Extended the sample 05 to make a service request using the issued token"
+        },
+        {
+            "c_hash": "34472001",
+            "date": "2008-01-18 14:32:37 +0000",
+            "comment": "Added information about adding the STS address details in the client"
+        },
+        {
+            "c_hash": "d68a483f",
+            "date": "2008-01-21 08:05:54 +0000",
+            "comment": "Fixed some path issues"
+        },
+        {
+            "c_hash": "0fb97b8f",
+            "date": "2008-01-21 10:17:56 +0000",
+            "comment": "Updated the custom axis2.xml files of client's with latest ones"
+        },
+        {
+            "c_hash": "b41d81c6",
+            "date": "2008-01-21 10:53:16 +0000",
+            "comment": "Changed the port to 8080"
+        },
+        {
+            "c_hash": "573f7b0d",
+            "date": "2008-01-23 17:56:01 +0000",
+            "comment": "Fixed the build break Updated the token class to make sure we intern namespace strgin objects of the token xml Added verification to check for an empty security header"
+        },
+        {
+            "c_hash": "7b7ba9e0",
+            "date": "2008-01-28 09:06:01 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "691e71d1",
+            "date": "2008-01-28 09:06:29 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "75d0d543",
+            "date": "2008-01-28 09:07:13 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "9a8c409d",
+            "date": "2008-01-28 09:07:39 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "a5ec5dd1",
+            "date": "2008-01-28 09:09:09 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "7b854377",
+            "date": "2008-01-28 09:09:37 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "2e102fd2",
+            "date": "2008-01-28 09:10:10 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "26e80df7",
+            "date": "2008-01-28 09:10:39 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "b8e87ae1",
+            "date": "2008-01-28 09:11:10 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "a620cc61",
+            "date": "2008-01-28 09:11:36 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "6a2a6076",
+            "date": "2008-01-28 09:12:01 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "2022c10a",
+            "date": "2008-01-28 09:12:24 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "ffac8bfd",
+            "date": "2008-01-28 09:13:01 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "f401aeb1",
+            "date": "2008-01-28 09:13:23 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "46d33c46",
+            "date": "2008-01-28 09:15:37 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "37e1c590",
+            "date": "2008-01-28 09:16:07 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "59e141e7",
+            "date": "2008-01-28 09:16:57 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "56076d7d",
+            "date": "2008-01-28 09:17:58 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "63668460",
+            "date": "2008-01-28 09:18:32 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "d9a63288",
+            "date": "2008-01-28 09:18:58 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "58e0ae27",
+            "date": "2008-01-28 09:19:56 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "ed6cf2fe",
+            "date": "2008-01-28 09:20:53 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "667004b1",
+            "date": "2008-01-28 09:21:24 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "c9120df3",
+            "date": "2008-01-28 09:26:34 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "ba8080ad",
+            "date": "2008-01-28 09:27:00 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "bf4e7a41",
+            "date": "2008-01-28 09:32:28 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "b5b9c6f6",
+            "date": "2008-01-28 09:36:01 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "54c55b01",
+            "date": "2008-01-28 09:36:24 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "c67994a8",
+            "date": "2008-01-28 09:37:21 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "c8589ecd",
+            "date": "2008-01-28 09:37:47 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "6f028cb6",
+            "date": "2008-01-28 09:40:33 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "93868764",
+            "date": "2008-01-28 09:41:01 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "cdd5299c",
+            "date": "2008-01-28 09:44:15 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "fb4f39d3",
+            "date": "2008-01-28 09:44:44 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "9cb0c14c",
+            "date": "2008-01-28 09:45:05 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "0f9ca23a",
+            "date": "2008-01-28 09:45:21 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "d156464c",
+            "date": "2008-01-28 09:45:49 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "897c9c97",
+            "date": "2008-01-28 09:46:10 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "ab2532c8",
+            "date": "2008-01-28 09:46:37 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "ba7c8be1",
+            "date": "2008-01-28 09:46:55 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "8a8c5785",
+            "date": "2008-01-28 09:47:17 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "9f26f4cb",
+            "date": "2008-01-28 09:47:40 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "093fa6f5",
+            "date": "2008-01-28 09:47:58 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "880ddb86",
+            "date": "2008-01-28 09:48:24 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "57d701b9",
+            "date": "2008-01-28 09:48:43 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "ed7f48e4",
+            "date": "2008-01-28 09:49:07 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "05f365ae",
+            "date": "2008-01-28 09:49:26 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "e7f98181",
+            "date": "2008-01-28 09:49:46 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "47708088",
+            "date": "2008-01-28 09:50:03 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "cec72387",
+            "date": "2008-01-28 09:52:18 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "4b5af011",
+            "date": "2008-01-28 09:53:41 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "24003e7f",
+            "date": "2008-01-28 09:54:32 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "df32ce76",
+            "date": "2008-01-28 09:55:27 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/webservices/rampart/trunk/java@615841 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "aa7223c1",
+            "date": "2008-01-29 14:28:52 +0000",
+            "comment": "Changed the Username token building to cater the NoPassword and HashPassword scenarios"
+        },
+        {
+            "c_hash": "f3a5f5bc",
+            "date": "2008-01-29 14:29:56 +0000",
+            "comment": "Changed the Username token building to cater the NoPassword and HashPassword scenarios"
+        },
+        {
+            "c_hash": "ef8d7685",
+            "date": "2008-01-29 14:30:42 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "537a46be",
+            "date": "2008-01-29 14:31:17 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "c0fd5709",
+            "date": "2008-01-29 14:32:15 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "882bef80",
+            "date": "2008-01-29 14:33:11 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "140a661d",
+            "date": "2008-01-29 14:33:39 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "a0e06a96",
+            "date": "2008-01-29 14:34:22 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "43558e21",
+            "date": "2008-01-29 14:40:03 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "5125e2ff",
+            "date": "2008-01-29 14:43:30 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "f110680d",
+            "date": "2008-01-30 04:01:52 +0000",
+            "comment": "fixing the issue https://issues.apache.org/jira/browse/RAMPART-135"
+        },
+        {
+            "c_hash": "dc1c4c1f",
+            "date": "2008-01-30 04:43:13 +0000",
+            "comment": "Added two custom policy validator related error messages"
+        },
+        {
+            "c_hash": "d87a4012",
+            "date": "2008-01-30 06:43:50 +0000",
+            "comment": "1.0-SNAPSHOT"
+        },
+        {
+            "c_hash": "6a44d3d9",
+            "date": "2008-01-31 01:57:35 +0000",
+            "comment": "Fixed build break"
+        },
+        {
+            "c_hash": "862819a9",
+            "date": "2008-02-01 16:38:37 +0000",
+            "comment": "remove unnecessary log4j properties. it gets into the jar :("
+        },
+        {
+            "c_hash": "84f5da9b",
+            "date": "2008-02-05 05:33:24 +0000",
+            "comment": "Fixing https://issues.apache.org/jira/browse/RAMPART-136."
+        },
+        {
+            "c_hash": "f9f4e0c0",
+            "date": "2008-02-05 05:47:56 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "20ea3678",
+            "date": "2008-02-05 05:54:29 +0000",
+            "comment": "This check is unnecessary. It prevents checking the password call back ref set using options when there is no Rampart config."
+        },
+        {
+            "c_hash": "52da9d0d",
+            "date": "2008-02-08 13:24:01 +0000",
+            "comment": "Fixing issue https://issues.apache.org/jira/browse/RAMPART-138."
+        },
+        {
+            "c_hash": "01fc6cb3",
+            "date": "2008-02-08 13:25:08 +0000",
+            "comment": "adding encrypted supporting token support"
+        },
+        {
+            "c_hash": "a30b544e",
+            "date": "2008-02-08 13:26:29 +0000",
+            "comment": "adding encrypted supporting token support"
+        },
+        {
+            "c_hash": "dfab59a0",
+            "date": "2008-02-08 13:27:05 +0000",
+            "comment": "adding encrypted supporting token support"
+        },
+        {
+            "c_hash": "bf6c0680",
+            "date": "2008-02-08 13:27:40 +0000",
+            "comment": "adding encrypted supporting token support"
+        },
+        {
+            "c_hash": "d0b09dbb",
+            "date": "2008-02-08 13:28:06 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "bdcd3bb7",
+            "date": "2008-02-08 13:31:10 +0000",
+            "comment": "adding encrypted supporting token support"
+        },
+        {
+            "c_hash": "4fa88272",
+            "date": "2008-02-08 13:31:50 +0000",
+            "comment": "adding encrypted supporting token support"
+        },
+        {
+            "c_hash": "5d5f72cf",
+            "date": "2008-02-08 13:34:34 +0000",
+            "comment": "Fixing issue https://issues.apache.org/jira/browse/RAMPART-137"
+        },
+        {
+            "c_hash": "c6f16bc4",
+            "date": "2008-02-08 13:38:03 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "41cfd810",
+            "date": "2008-02-12 07:14:10 +0000",
+            "comment": "Fixing issue http://issues.apache.org/jira/browse/RAMPART-140."
+        },
+        {
+            "c_hash": "b65fb12b",
+            "date": "2008-02-12 07:18:21 +0000",
+            "comment": "Fixing the issue http://issues.apache.org/jira/browse/RAMPART-139."
+        },
+        {
+            "c_hash": "977ca143",
+            "date": "2008-02-12 07:19:35 +0000",
+            "comment": "rampart-policy related changes to support WS Security Policy 1.2"
+        },
+        {
+            "c_hash": "7973b5fa",
+            "date": "2008-02-13 03:39:13 +0000",
+            "comment": "Update dependencies to latest versions"
+        },
+        {
+            "c_hash": "4e08d96b",
+            "date": "2008-02-13 12:35:55 +0000",
+            "comment": "Added the crypto notice"
+        },
+        {
+            "c_hash": "512e4653",
+            "date": "2008-02-15 10:04:10 +0000",
+            "comment": "Applied patch in RAMPART-141, Thanks Narayan"
+        },
+        {
+            "c_hash": "35942d4a",
+            "date": "2008-02-18 07:54:56 +0000",
+            "comment": "Fixed a bug in the key length derivation"
+        },
+        {
+            "c_hash": "99b93a18",
+            "date": "2008-02-19 06:27:58 +0000",
+            "comment": "Fixed build break : Set a default type and version value of X509Token assertion"
+        },
+        {
+            "c_hash": "938bd75e",
+            "date": "2008-02-26 05:55:20 +0000",
+            "comment": "Extending Trust to exchange policies via WS - Metadata Exchange"
+        },
+        {
+            "c_hash": "ac3315c5",
+            "date": "2008-02-26 05:56:11 +0000",
+            "comment": "Extending Trust to exchange policies via WS - Metadata Exchange"
+        },
+        {
+            "c_hash": "a315ea54",
+            "date": "2008-02-26 05:56:50 +0000",
+            "comment": "Extending Trust to exchange policies via WS - Metadata Exchange"
+        },
+        {
+            "c_hash": "bf59f691",
+            "date": "2008-02-26 05:57:36 +0000",
+            "comment": "Extending Trust to exchange policies via WS - Metadata Exchange"
+        },
+        {
+            "c_hash": "41b2bb21",
+            "date": "2008-02-26 06:00:16 +0000",
+            "comment": "Corrected an error in key size"
+        },
+        {
+            "c_hash": "cda16a38",
+            "date": "2008-02-26 06:01:16 +0000",
+            "comment": "Added a default addressing namespace ( Final )"
+        },
+        {
+            "c_hash": "0d91f484",
+            "date": "2008-02-26 06:03:41 +0000",
+            "comment": "Extending Trust to exchange policies via WS - Metadata Exchange"
+        },
+        {
+            "c_hash": "73bdffa4",
+            "date": "2008-02-26 06:04:34 +0000",
+            "comment": "Extending Trust to exchange policies via WS - Metadata Exchange"
+        },
+        {
+            "c_hash": "83944227",
+            "date": "2008-02-26 06:09:48 +0000",
+            "comment": "Added Axis2 MEX module and added my name as a developer :)"
+        },
+        {
+            "c_hash": "58079e2b",
+            "date": "2008-02-26 06:11:59 +0000",
+            "comment": "Created a key store for STS and included STS certificate in the client.jks and server.jks"
+        },
+        {
+            "c_hash": "77eaf262",
+            "date": "2008-02-26 06:18:36 +0000",
+            "comment": "Changed the key type"
+        },
+        {
+            "c_hash": "c5e54212",
+            "date": "2008-02-26 06:20:35 +0000",
+            "comment": "Sample demonstrating the usage of WS - Metadata Exchange with WS - Trust"
+        },
+        {
+            "c_hash": "e0850c27",
+            "date": "2008-02-26 07:11:11 +0000",
+            "comment": "Modified the ant build to suit trust scenarios"
+        },
+        {
+            "c_hash": "05f651cd",
+            "date": "2008-03-02 13:40:04 +0000",
+            "comment": "some issues found using findbugs"
+        },
+        {
+            "c_hash": "f1e6c39e",
+            "date": "2008-03-02 14:34:06 +0000",
+            "comment": "More fixes using findbugs"
+        },
+        {
+            "c_hash": "295a7ee4",
+            "date": "2008-03-02 14:44:00 +0000",
+            "comment": "We don't need this check"
+        },
+        {
+            "c_hash": "d37bace6",
+            "date": "2008-03-02 15:08:37 +0000",
+            "comment": "Some more fixes using findbugs ... Nandana please review the sec policy changes"
+        },
+        {
+            "c_hash": "bd3cc9bf",
+            "date": "2008-03-03 07:02:19 +0000",
+            "comment": "Moving the content of .html file from resources to .xml source files for the site"
+        },
+        {
+            "c_hash": "d95347e7",
+            "date": "2008-03-03 09:23:52 +0000",
+            "comment": "Adding download pages"
+        },
+        {
+            "c_hash": "e1b9b1ee",
+            "date": "2008-03-03 09:27:59 +0000",
+            "comment": "Working on the download pages"
+        },
+        {
+            "c_hash": "83f34c4d",
+            "date": "2008-03-03 11:20:37 +0000",
+            "comment": "fixed a broken link and some formatting"
+        },
+        {
+            "c_hash": "02d72c77",
+            "date": "2008-03-04 14:27:27 +0000",
+            "comment": "Added the WS Sec scenario 1 test"
+        },
+        {
+            "c_hash": "fb76a917",
+            "date": "2008-03-04 14:35:53 +0000",
+            "comment": "Commented out https token as we use http transport in Simple Axis server"
+        },
+        {
+            "c_hash": "aca0e125",
+            "date": "2008-03-04 14:36:16 +0000",
+            "comment": "Commented out https token as we use http transport in Simple Axis server"
+        },
+        {
+            "c_hash": "5dfc3cc6",
+            "date": "2008-03-05 05:18:07 +0000",
+            "comment": "Fixed an error extracting the address element"
+        },
+        {
+            "c_hash": "2b6db0f2",
+            "date": "2008-03-05 05:20:46 +0000",
+            "comment": "Fixed an error extracting the address element"
+        },
+        {
+            "c_hash": "2c994b0b",
+            "date": "2008-03-07 05:35:50 +0000",
+            "comment": "getting rid  of some unwanted imports"
+        },
+        {
+            "c_hash": "85561a2e",
+            "date": "2008-03-10 08:55:25 +0000",
+            "comment": "Included secure conversation token in supporting token processing"
+        },
+        {
+            "c_hash": "dca30184",
+            "date": "2008-03-12 05:51:26 +0000",
+            "comment": "Removed some hardcoded version numbers from the integration pom.xml"
+        },
+        {
+            "c_hash": "b0209fe8",
+            "date": "2008-03-17 06:50:19 +0000",
+            "comment": "Commented WS Secure Conversation 2 for the moment, will fix it before release"
+        },
+        {
+            "c_hash": "0c4f34cd",
+            "date": "2008-03-17 06:57:59 +0000",
+            "comment": "Fixed some issues found by FindBugs"
+        },
+        {
+            "c_hash": "39871179",
+            "date": "2008-03-17 07:04:43 +0000",
+            "comment": "Added Encrypted Supporting token processing"
+        },
+        {
+            "c_hash": "bdbed6b3",
+            "date": "2008-03-17 07:07:21 +0000",
+            "comment": "Fixing Encrypted supporting tokens"
+        },
+        {
+            "c_hash": "6f91f65b",
+            "date": "2008-03-17 07:08:05 +0000",
+            "comment": "Fixed some issues found by FindBugs"
+        },
+        {
+            "c_hash": "75b6f65c",
+            "date": "2008-03-17 07:18:38 +0000",
+            "comment": "Fixed some issues found by FindBugs"
+        },
+        {
+            "c_hash": "a381d69d",
+            "date": "2008-03-17 07:19:56 +0000",
+            "comment": "Fixed some issues found by FindBugs"
+        },
+        {
+            "c_hash": "61e618d6",
+            "date": "2008-03-17 07:21:43 +0000",
+            "comment": "Fixed some issues found by FindBugs"
+        },
+        {
+            "c_hash": "7c20da7e",
+            "date": "2008-03-17 07:22:40 +0000",
+            "comment": "Fixed some issues found by FindBugs"
+        },
+        {
+            "c_hash": "e1d11579",
+            "date": "2008-03-17 07:25:07 +0000",
+            "comment": "Fixed some issues found by FindBugs"
+        },
+        {
+            "c_hash": "61125175",
+            "date": "2008-03-17 07:25:32 +0000",
+            "comment": "Fixed some issues found by FindBugs"
+        },
+        {
+            "c_hash": "acb2cf4f",
+            "date": "2008-03-17 07:26:01 +0000",
+            "comment": "Fixed some issues found by FindBugs"
+        },
+        {
+            "c_hash": "d9b0d669",
+            "date": "2008-03-17 08:29:33 +0000",
+            "comment": "Fixed some issues found by FindBugs"
+        },
+        {
+            "c_hash": "7e659c24",
+            "date": "2008-03-17 08:30:39 +0000",
+            "comment": "Fixed some issues found by FindBugs"
+        },
+        {
+            "c_hash": "718aea41",
+            "date": "2008-03-17 08:31:33 +0000",
+            "comment": "Fixed some issues found by FindBugs"
+        },
+        {
+            "c_hash": "0f1deb86",
+            "date": "2008-03-17 08:38:40 +0000",
+            "comment": "Fixed some issues found by FindBugs"
+        },
+        {
+            "c_hash": "f71787fa",
+            "date": "2008-03-17 08:42:29 +0000",
+            "comment": "Changed encrypted elements"
+        },
+        {
+            "c_hash": "6b48bcf4",
+            "date": "2008-03-17 08:42:58 +0000",
+            "comment": "Changed encrypted elements"
+        },
+        {
+            "c_hash": "5dded886",
+            "date": "2008-03-17 10:10:06 +0000",
+            "comment": "Improvements to the site"
+        },
+        {
+            "c_hash": "d8c2f0c5",
+            "date": "2008-03-17 10:11:04 +0000",
+            "comment": "Improvements to the site"
+        },
+        {
+            "c_hash": "dec2d71b",
+            "date": "2008-03-17 10:12:17 +0000",
+            "comment": "Improvements to the site"
+        },
+        {
+            "c_hash": "855a5932",
+            "date": "2008-03-17 10:13:42 +0000",
+            "comment": "Improvements to the site"
+        },
+        {
+            "c_hash": "0dbd7de9",
+            "date": "2008-03-17 10:14:26 +0000",
+            "comment": "Improvements to the site"
+        },
+        {
+            "c_hash": "138708bf",
+            "date": "2008-03-17 10:14:54 +0000",
+            "comment": "Improvements to the site"
+        },
+        {
+            "c_hash": "d2e31b9e",
+            "date": "2008-03-17 10:15:41 +0000",
+            "comment": "Improvements to the site"
+        },
+        {
+            "c_hash": "6869379e",
+            "date": "2008-03-17 10:17:28 +0000",
+            "comment": "Improvements to the site"
+        },
+        {
+            "c_hash": "ba8b145b",
+            "date": "2008-03-18 12:28:34 +0000",
+            "comment": "Removed a mistakenly committed sys out :("
+        },
+        {
+            "c_hash": "2c311601",
+            "date": "2008-03-19 15:11:04 +0000",
+            "comment": "validation binding issues"
+        },
+        {
+            "c_hash": "3619ab0d",
+            "date": "2008-03-28 08:46:46 +0000",
+            "comment": "Changed the httpcore version to be syn with Axis2"
+        },
+        {
+            "c_hash": "e30beb39",
+            "date": "2008-04-03 11:00:25 +0000",
+            "comment": "Fix for Rampart 146 issue"
+        },
+        {
+            "c_hash": "325f079d",
+            "date": "2008-04-03 11:07:26 +0000",
+            "comment": "Renew and Validation bindings for WS Trust"
+        },
+        {
+            "c_hash": "a1c95cb0",
+            "date": "2008-04-03 11:12:26 +0000",
+            "comment": "Removed two commented out lines"
+        },
+        {
+            "c_hash": "0d2115ef",
+            "date": "2008-04-03 11:13:45 +0000",
+            "comment": "Added default renewer"
+        },
+        {
+            "c_hash": "7f22df0b",
+            "date": "2008-04-07 05:11:14 +0000",
+            "comment": "Applied patch RAMPART-151, thanks leon"
+        },
+        {
+            "c_hash": "f675dc97",
+            "date": "2008-04-07 05:34:07 +0000",
+            "comment": "Fixed RAMPART-148."
+        },
+        {
+            "c_hash": "22277323",
+            "date": "2008-04-07 06:03:17 +0000",
+            "comment": "Changed the xmlsec version to 1.4.1"
+        },
+        {
+            "c_hash": "f1b05b52",
+            "date": "2008-04-07 08:23:42 +0000",
+            "comment": "Added the license files for the jars we ship"
+        },
+        {
+            "c_hash": "4e9209b7",
+            "date": "2008-04-07 08:24:47 +0000",
+            "comment": "Copying license files"
+        },
+        {
+            "c_hash": "bf56d59b",
+            "date": "2008-04-07 08:28:09 +0000",
+            "comment": "bouncy castle license"
+        },
+        {
+            "c_hash": "eb456cbc",
+            "date": "2008-04-07 10:40:42 +0000",
+            "comment": "Reverted the xmlsec version to 1.4.0 for now"
+        },
+        {
+            "c_hash": "7d7afb4f",
+            "date": "2008-04-07 12:13:29 +0000",
+            "comment": "changed the mex-impl dependency to mex (Axis2 metadata)"
+        },
+        {
+            "c_hash": "71be67a4",
+            "date": "2008-04-08 12:45:02 +0000",
+            "comment": "removed irrelevant content"
+        },
+        {
+            "c_hash": "8160d67c",
+            "date": "2008-04-17 14:53:57 +0000",
+            "comment": "Fix from WSS-52"
+        },
+        {
+            "c_hash": "abc12f43",
+            "date": "2008-04-17 15:17:46 +0000",
+            "comment": "RAMPART-146 fixing the issue"
+        },
+        {
+            "c_hash": "1e887184",
+            "date": "2008-04-18 05:26:07 +0000",
+            "comment": "RAMPART-152 Applied Alexandre's patch with some changes * Changed the behavior to apply timestamp precision in milliseconds configuration only to relevant message (not globally) * Included check for possible null pointer values"
+        },
+        {
+            "c_hash": "3ae0908e",
+            "date": "2008-04-18 06:11:29 +0000",
+            "comment": "Added WS zones repository"
+        },
+        {
+            "c_hash": "d3f9eb74",
+            "date": "2008-04-18 16:31:09 +0000",
+            "comment": "UT Builder always used the default WSSConfig"
+        },
+        {
+            "c_hash": "cb2ab3e9",
+            "date": "2008-04-21 03:45:17 +0000",
+            "comment": "Adding <classifier>impl</classifier> to the axis2 mex dependancy as mentioned by Dims (http://www.nabble.com/Mex-jar-missing-in-maven-repo-td16794069.html)"
+        },
+        {
+            "c_hash": "d433975b",
+            "date": "2008-04-22 11:01:49 +0000",
+            "comment": "Removed three builders which should be in rampart core jar"
+        },
+        {
+            "c_hash": "59dab7da",
+            "date": "2008-04-30 04:03:27 +0000",
+            "comment": "Removed UtilsJMSServer class which is not used"
+        },
+        {
+            "c_hash": "2ff2cff1",
+            "date": "2008-05-07 05:30:24 +0000",
+            "comment": "Removed jms transport from custom axis2.xml"
+        },
+        {
+            "c_hash": "3659dc6a",
+            "date": "2008-05-07 05:34:54 +0000",
+            "comment": "RAMPART-157 Applied the patch from Stefan Vladov. Thanks Stefan."
+        },
+        {
+            "c_hash": "746d53f8",
+            "date": "2008-05-07 08:11:15 +0000",
+            "comment": "RAMPART-160 Fixing the issue, excludes java files from created jar file"
+        },
+        {
+            "c_hash": "08d98f7a",
+            "date": "2008-05-07 09:10:00 +0000",
+            "comment": "When SOAP Message contain a security header and Rampart is engaged, it has to be processed. We must throw a specific error not just a must understand failure error."
+        },
+        {
+            "c_hash": "90ef66ea",
+            "date": "2008-05-07 10:52:45 +0000",
+            "comment": "RAMPART-162 Throws an exception if an invalid algorithm suite is provided"
+        },
+        {
+            "c_hash": "1040296f",
+            "date": "2008-05-08 08:29:17 +0000",
+            "comment": "RAMPART-161 preventing concurrent modification exceptions"
+        },
+        {
+            "c_hash": "20cabd46",
+            "date": "2008-05-09 06:40:02 +0000",
+            "comment": "Removed xbeans dependency"
+        },
+        {
+            "c_hash": "bee3f2f0",
+            "date": "2008-05-09 13:37:33 +0000",
+            "comment": "Removed the JDK 1.5 specific stuff"
+        },
+        {
+            "c_hash": "ad037184",
+            "date": "2008-05-18 14:36:25 +0000",
+            "comment": "RAMPART-166 Fault code value in SOAP 1.2 in invalid security messages should be Sender , not Receiver"
+        },
+        {
+            "c_hash": "474e5c3b",
+            "date": "2008-05-18 15:58:53 +0000",
+            "comment": "RAMPART-167 Removed bouncy castle from the distribution"
+        },
+        {
+            "c_hash": "bc1f9ed2",
+            "date": "2008-05-18 16:13:41 +0000",
+            "comment": "RAMPART-167 Removed bouncy castle license as we don't ship it anymore"
+        },
+        {
+            "c_hash": "417525d8",
+            "date": "2008-05-18 16:51:29 +0000",
+            "comment": "RAMPART-167 Added info about downloading bouncy castle jars to the README.txt"
+        },
+        {
+            "c_hash": "b6978a6a",
+            "date": "2008-05-18 17:34:42 +0000",
+            "comment": "RAMPART-165 doing the proper null check for axis service"
+        },
+        {
+            "c_hash": "c302a839",
+            "date": "2008-05-19 04:14:11 +0000",
+            "comment": "we are trying to find the token using both attached and unattached references"
+        },
+        {
+            "c_hash": "1079f7c7",
+            "date": "2008-05-19 05:44:42 +0000",
+            "comment": "RAMPART-168 using the attached and unattached references according to policy"
+        },
+        {
+            "c_hash": "ac011549",
+            "date": "2008-05-19 05:48:15 +0000",
+            "comment": "RAMPART-145 using the attached and unattached references according to policy"
+        },
+        {
+            "c_hash": "801ed062",
+            "date": "2008-05-22 18:54:22 +0000",
+            "comment": "Updated the README"
+        },
+        {
+            "c_hash": "cff1d243",
+            "date": "2008-05-27 09:12:14 +0000",
+            "comment": "RAMPART-103 added a note about how to add bouncycastle as security provider"
+        },
+        {
+            "c_hash": "7a68ee3f",
+            "date": "2008-05-30 11:03:40 +0000",
+            "comment": "Fixing an issue in capitalization"
+        },
+        {
+            "c_hash": "820cb8a6",
+            "date": "2008-05-30 11:03:58 +0000",
+            "comment": "Fixing an issue in capitalization"
+        },
+        {
+            "c_hash": "27e7b493",
+            "date": "2008-06-02 15:27:53 +0000",
+            "comment": "RAMPART-170 fixing a serialization issue"
+        },
+        {
+            "c_hash": "837cb05e",
+            "date": "2008-06-05 04:33:06 +0000",
+            "comment": "Fixing rampart 171"
+        },
+        {
+            "c_hash": "f229388a",
+            "date": "2008-06-09 10:53:25 +0000",
+            "comment": "RAMPART-173 fixing the serialization issue"
+        },
+        {
+            "c_hash": "28fa29d6",
+            "date": "2008-06-11 08:36:33 +0000",
+            "comment": "RAMPART-169 Applying Stefan's patch, thanks Stefan"
+        },
+        {
+            "c_hash": "44e2153d",
+            "date": "2008-06-11 08:36:59 +0000",
+            "comment": "RAMPART-169 Applying Stefan's patch, thanks Stefan"
+        },
+        {
+            "c_hash": "36999b0f",
+            "date": "2008-06-11 08:37:21 +0000",
+            "comment": "RAMPART-169 Applying Stefan's patch, thanks Stefan"
+        },
+        {
+            "c_hash": "d4a59389",
+            "date": "2008-06-11 08:37:43 +0000",
+            "comment": "RAMPART-169 Applying Stefan's patch, thanks Stefan"
+        },
+        {
+            "c_hash": "54cbcfa7",
+            "date": "2008-06-11 08:39:07 +0000",
+            "comment": "RAMPART-169 Applying Stefan's patch, thanks Stefan"
+        },
+        {
+            "c_hash": "a1a4a807",
+            "date": "2008-06-11 08:39:47 +0000",
+            "comment": "RAMPART-169 Applying Stefan's patch, thanks Stefan"
+        },
+        {
+            "c_hash": "45c37481",
+            "date": "2008-06-12 12:56:56 +0000",
+            "comment": "RAMPART-175 Allow ability to specify message level policies using client's options"
+        },
+        {
+            "c_hash": "86be36d5",
+            "date": "2008-06-23 13:59:18 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "dbfe6452",
+            "date": "2008-06-23 13:59:43 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "10eb5313",
+            "date": "2008-06-23 14:00:04 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "df9d679a",
+            "date": "2008-06-23 14:00:25 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "c8f65c02",
+            "date": "2008-06-23 14:00:49 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "17f10725",
+            "date": "2008-06-23 14:01:11 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "aff56dbb",
+            "date": "2008-06-23 14:01:31 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "78c53665",
+            "date": "2008-06-23 14:02:34 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "7cee4c78",
+            "date": "2008-06-23 14:02:56 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "9c81b506",
+            "date": "2008-06-23 14:03:18 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "d8bc5a71",
+            "date": "2008-06-23 14:03:48 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "17ffadee",
+            "date": "2008-06-23 14:04:14 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "1ca4546c",
+            "date": "2008-06-23 14:04:42 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "7dd098a0",
+            "date": "2008-06-23 14:05:08 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "f2f3cffc",
+            "date": "2008-06-23 14:05:31 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "ac5a3fbc",
+            "date": "2008-06-23 14:05:55 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "e15e6f2c",
+            "date": "2008-06-23 14:06:19 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "24ce5091",
+            "date": "2008-06-23 14:06:40 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "68ffc3e2",
+            "date": "2008-06-23 14:07:18 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "8fc7a9e6",
+            "date": "2008-06-23 14:07:41 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "1dcbd75e",
+            "date": "2008-06-23 14:08:03 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "722dde48",
+            "date": "2008-06-23 14:08:27 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "a5674f01",
+            "date": "2008-06-23 14:08:51 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "6465fa5c",
+            "date": "2008-06-23 14:09:24 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "cfc91bf2",
+            "date": "2008-06-23 14:09:45 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "542c4e4f",
+            "date": "2008-06-23 14:10:06 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "fd824ac7",
+            "date": "2008-06-23 14:16:17 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "c8364679",
+            "date": "2008-06-23 14:16:37 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "ab689d0f",
+            "date": "2008-06-23 14:17:02 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "bc2767d3",
+            "date": "2008-06-23 14:20:45 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "1835bb14",
+            "date": "2008-06-23 14:21:17 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "012ab390",
+            "date": "2008-06-23 14:23:04 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "4bde57f3",
+            "date": "2008-06-23 14:23:43 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "f5c21557",
+            "date": "2008-06-23 14:24:49 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "75d0a35c",
+            "date": "2008-06-23 14:25:23 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "49e4e404",
+            "date": "2008-06-23 14:25:46 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "b6005c7d",
+            "date": "2008-06-23 14:27:25 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "a0b4d815",
+            "date": "2008-06-23 14:31:35 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "12bb04a2",
+            "date": "2008-06-23 14:31:57 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "23a9d2bc",
+            "date": "2008-06-23 14:32:26 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "6a66239e",
+            "date": "2008-06-23 14:32:47 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "f67b01b8",
+            "date": "2008-06-23 14:33:09 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "ef175e50",
+            "date": "2008-06-23 14:33:38 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "34a28514",
+            "date": "2008-06-23 14:34:01 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "0d027433",
+            "date": "2008-06-23 14:34:23 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "fee174f3",
+            "date": "2008-06-23 14:34:42 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "af21eedc",
+            "date": "2008-06-23 14:34:59 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "920b1c27",
+            "date": "2008-06-23 14:36:34 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "d1db0745",
+            "date": "2008-06-23 14:36:54 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "a7215002",
+            "date": "2008-06-23 14:37:14 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "f2cd683b",
+            "date": "2008-06-23 14:38:34 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "760254ec",
+            "date": "2008-06-23 14:38:54 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "4b9e8fa3",
+            "date": "2008-06-23 14:39:41 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "37fd2324",
+            "date": "2008-06-23 14:41:03 +0000",
+            "comment": "Giving Rampart site a new look :)"
+        },
+        {
+            "c_hash": "17431587",
+            "date": "2008-06-26 06:22:22 +0000",
+            "comment": "RAMPART-177 Call the RampartConfigCallbackHandler if it is given in the configuration"
+        },
+        {
+            "c_hash": "ddd4bc2d",
+            "date": "2008-06-26 06:24:05 +0000",
+            "comment": "RAMPART-177 adding new error properties"
+        },
+        {
+            "c_hash": "141ff96b",
+            "date": "2008-06-26 06:25:02 +0000",
+            "comment": "RAMPART-177 RampartConfigCallbackHandler interface"
+        },
+        {
+            "c_hash": "0b2ca4eb",
+            "date": "2008-06-26 06:25:49 +0000",
+            "comment": "RAMPART-177 fixing issue"
+        },
+        {
+            "c_hash": "27a4109a",
+            "date": "2008-06-26 06:26:13 +0000",
+            "comment": "RAMPART-177 fixing issue"
+        },
+        {
+            "c_hash": "c3fd263c",
+            "date": "2008-06-26 06:26:46 +0000",
+            "comment": "RAMPART-177 fixing issue"
+        },
+        {
+            "c_hash": "307aeceb",
+            "date": "2008-06-26 06:29:48 +0000",
+            "comment": "RAMPART-177 Adding a test case for issue"
+        },
+        {
+            "c_hash": "8dc0c331",
+            "date": "2008-06-26 13:43:22 +0000",
+            "comment": "RAMPART-178 defining the constant to hold the username"
+        },
+        {
+            "c_hash": "37a79971",
+            "date": "2008-06-26 13:44:18 +0000",
+            "comment": "RAMPART-178 setting the username as a message context property"
+        },
+        {
+            "c_hash": "1ef67a5c",
+            "date": "2008-07-04 09:19:42 +0000",
+            "comment": "RAMPART-176 fixing the issue, thanks Predrag Knezevic."
+        },
+        {
+            "c_hash": "7f6f5f2e",
+            "date": "2008-07-11 02:55:46 +0000",
+            "comment": "Added missing properties"
+        },
+        {
+            "c_hash": "50c41793",
+            "date": "2008-07-16 11:25:59 +0000",
+            "comment": "RAMPART-184 copying the property HTTPConstants.CUSTOM_PROTOCOL_HANDLER"
+        },
+        {
+            "c_hash": "503ba415",
+            "date": "2008-07-16 11:32:22 +0000",
+            "comment": "RAMPART-186 Added a parameter map to STSClient so we can keep parameters there and set them once Axis service is created. Made sure that we set the original exception when throwing exception"
+        },
+        {
+            "c_hash": "f8c17dc7",
+            "date": "2008-07-16 11:33:27 +0000",
+            "comment": "RAMPART-186 Copying the WSHandlerConstants.PW_CALLBACK_REF"
+        },
+        {
+            "c_hash": "261ae43b",
+            "date": "2008-07-16 12:11:50 +0000",
+            "comment": "RAMPART-187 copying the username and password from options"
+        },
+        {
+            "c_hash": "061da505",
+            "date": "2008-07-16 12:46:23 +0000",
+            "comment": "RAMPART-174 added a TODO to make sure we fix this"
+        },
+        {
+            "c_hash": "af5a0159",
+            "date": "2008-08-05 09:33:29 +0000",
+            "comment": "RAMPART-182 Applying the patch from Stefan. Thanks Stefan."
+        },
+        {
+            "c_hash": "06af09d4",
+            "date": "2008-08-05 09:33:56 +0000",
+            "comment": "RAMPART-182 Applying the patch from Stefan. Thanks Stefan."
+        },
+        {
+            "c_hash": "c57ec704",
+            "date": "2008-08-13 09:19:52 +0000",
+            "comment": "Adding axis2 transport module"
+        },
+        {
+            "c_hash": "4830786a",
+            "date": "2008-09-17 10:43:07 +0000",
+            "comment": "Using the service class loader to load the class."
+        },
+        {
+            "c_hash": "23205018",
+            "date": "2008-10-02 04:00:49 +0000",
+            "comment": "Adding the security phase to custom axis2.xml"
+        },
+        {
+            "c_hash": "b17f3457",
+            "date": "2008-10-02 04:09:53 +0000",
+            "comment": "RAMPART-183 Fixing the error in validating signed parts / elements"
+        },
+        {
+            "c_hash": "74d55fd6",
+            "date": "2008-10-02 04:14:54 +0000",
+            "comment": "removing the unwanted import"
+        },
+        {
+            "c_hash": "3f40509d",
+            "date": "2008-10-02 04:18:08 +0000",
+            "comment": "Fixing the namespace problem, Trust13 assertion should have the security policy 1.2 namespace"
+        },
+        {
+            "c_hash": "2e2e23c0",
+            "date": "2008-10-02 04:20:53 +0000",
+            "comment": "Setting the correct trust version according to the WS Security Policy version"
+        },
+        {
+            "c_hash": "9577b6ea",
+            "date": "2008-10-02 06:21:43 +0000",
+            "comment": "Trust13 related fixes"
+        },
+        {
+            "c_hash": "d78e068a",
+            "date": "2008-10-02 06:45:02 +0000",
+            "comment": "Making mar modules produce jar artifacts as well according to this discussing http://markmail.org/message/cohip63k6azigfnu?q=list:org%2Eapache%2Ews%2Erampart-dev&page=4"
+        },
+        {
+            "c_hash": "857c247a",
+            "date": "2008-10-27 14:12:39 +0000",
+            "comment": "RAMPART-202 fixing the class cast issue"
+        },
+        {
+            "c_hash": "d146ee30",
+            "date": "2008-11-18 13:28:27 +0000",
+            "comment": "null check for header"
+        },
+        {
+            "c_hash": "c965d68b",
+            "date": "2008-11-18 17:07:02 +0000",
+            "comment": "switch to 1.4-SNAPSHOT for xmlschema"
+        },
+        {
+            "c_hash": "38235db8",
+            "date": "2008-11-19 15:28:06 +0000",
+            "comment": "don't fail if -Dtest=false is set"
+        },
+        {
+            "c_hash": "b6ff7451",
+            "date": "2008-12-11 21:21:09 +0000",
+            "comment": "switch off unique versions in the snapshot repo"
+        },
+        {
+            "c_hash": "4ac1a1aa",
+            "date": "2008-12-22 12:58:49 +0000",
+            "comment": "Fixed a build failure caused by the change in r727413 in Axis2: wsdl2java now requires an -lcmn option to generate lower case method names."
+        },
+        {
+            "c_hash": "dced4aa7",
+            "date": "2009-01-12 15:10:39 +0000",
+            "comment": "Use separate variable for transport version now that it's decoupled."
+        },
+        {
+            "c_hash": "04c175b4",
+            "date": "2009-02-04 19:15:37 +0000",
+            "comment": "RAMPART-214 fixing the typo in RequireKeyIdentifierReference constant"
+        },
+        {
+            "c_hash": "0d37c23d",
+            "date": "2009-02-25 06:21:49 +0000",
+            "comment": "RAMPART-214 proper validationg for HTTPs token when we have clientAuth property"
+        },
+        {
+            "c_hash": "64052bc2",
+            "date": "2009-02-25 06:24:19 +0000",
+            "comment": "Using java 1.5 concurrent features (dropping backport concurrent stuff)"
+        },
+        {
+            "c_hash": "1d42dfa9",
+            "date": "2009-02-25 06:36:15 +0000",
+            "comment": "Adding logging files"
+        },
+        {
+            "c_hash": "388ab834",
+            "date": "2009-02-25 07:06:39 +0000",
+            "comment": "Adding bouncycastle to the distribution and upgrading to new version , adding OpenSAML2 dependancy and OpenSAML repo ,"
+        },
+        {
+            "c_hash": "f6173f64",
+            "date": "2009-03-06 21:36:27 +0000",
+            "comment": "Added relativePath to POM files."
+        },
+        {
+            "c_hash": "bc1a4d0d",
+            "date": "2009-03-07 10:20:28 +0000",
+            "comment": "Moved the axis2-transports dependency from the parent POM to rampart-integration."
+        },
+        {
+            "c_hash": "76cffcac",
+            "date": "2009-03-07 12:10:48 +0000",
+            "comment": "Stripped dependencies that would impose a particular logging implementation on Maven projects depending on Rampart."
+        },
+        {
+            "c_hash": "52099ca6",
+            "date": "2009-03-07 20:28:48 +0000",
+            "comment": "1. Removed the ModulePolicyExtension interface from the Rampart module. Rationale: * ModulePolicyExtension is not really implemented since Rampart#getPolicyExtension() only throws an UnsupportedOperationException. * The UnsupportedOperationException causes a misleading error message in wsdl2java (cf. http://markmail.org/thread/3kcjha2fxo2tksey and r748704). * ModulePolicyExtension is part of axis2-codegen and therefore requires a corresponding Maven dependency. Since it is not really used, this is an unnecessary annoyance for Maven projects depending on Rampart. * It causes troubles at runtime. See AXIS2-3213 and AXIS2-4265."
+        },
+        {
+            "c_hash": "cbbbe911",
+            "date": "2009-03-11 04:46:49 +0000",
+            "comment": "Applying patch for RAMPART-219, thanks Clom"
+        },
+        {
+            "c_hash": "74bf6bd0",
+            "date": "2009-03-15 11:56:20 +0000",
+            "comment": "RAMPART-219: Set WSS4J version to 1.5.6, which is now available."
+        },
+        {
+            "c_hash": "e162bfef",
+            "date": "2009-03-27 23:00:39 +0000",
+            "comment": "Clean up of rampart-tests POM: * src/test/java was specified both as sourceDirectory and testSourceDirectory; it should be a testSourceDirectory only. * The test-resources directory should be declared as testResource."
+        },
+        {
+            "c_hash": "fb90bb7c",
+            "date": "2009-03-28 00:35:47 +0000",
+            "comment": "Dependency cleanup (1st part): * junit dependency should have test scope. Exception: in rampart-integration, the code in src/main/java also depends on junit. * Added exclusions for transitive dependencies from jaxen. * Removed dependencies on annogen, ant-nodeps and xalan. * Replaced dependency on axis2-transports by dependencies on individual transport implementations so that maven can add the right transitive dependencies. * Removed the explicit dependency on httpcore. This is now a transitive dependency contributed by axis2-transport-http. * The dependency on org.opensaml:opensaml was declared twice: first using version 2.2.3 and then using version 1.1. Since Maven only keeps the last declared version, removed the dependency on 2.2.3. * Removed dependencies on xml-apis and xercesImpl since the target platform is now Java 5. (Note that they still remain transitive dependencies)"
+        },
+        {
+            "c_hash": "e2cf8e0d",
+            "date": "2009-03-28 00:43:34 +0000",
+            "comment": "Compiling the code twice doesn't make it better: removed testSourceDirectory in those modules where it had the same value as sourceDirectory."
+        },
+        {
+            "c_hash": "6d177d37",
+            "date": "2009-03-28 03:32:29 +0000",
+            "comment": "removing dependancies inherited from Axis2"
+        },
+        {
+            "c_hash": "150d9697",
+            "date": "2009-03-28 10:51:36 +0000",
+            "comment": "removing properties not used any more"
+        },
+        {
+            "c_hash": "15962fc2",
+            "date": "2009-03-30 13:09:35 +0000",
+            "comment": "checking for possible # as the first char of id"
+        },
+        {
+            "c_hash": "cf516bad",
+            "date": "2009-03-31 16:11:00 +0000",
+            "comment": "using ThumbprintReference for key referencing in samples"
+        },
+        {
+            "c_hash": "6e729923",
+            "date": "2009-03-31 16:23:18 +0000",
+            "comment": "Serializing the namespaces"
+        },
+        {
+            "c_hash": "4e9ca613",
+            "date": "2009-03-31 16:27:39 +0000",
+            "comment": "changing source version 1.5"
+        },
+        {
+            "c_hash": "dc20fa13",
+            "date": "2009-03-31 16:28:09 +0000",
+            "comment": "changing source version 1.5"
+        },
+        {
+            "c_hash": "1f3cf975",
+            "date": "2009-04-02 18:19:11 +0000",
+            "comment": "RAMPART-220 applying patch. Thanks Thilina"
+        },
+        {
+            "c_hash": "8004d100",
+            "date": "2009-04-03 20:02:18 +0000",
+            "comment": "Changed Axis2 version from SNAPSHOT to 1.5-SNAPSHOT to make sure the next release of Rampart works with the next Axis2 release."
+        },
+        {
+            "c_hash": "e1015158",
+            "date": "2009-04-03 20:18:18 +0000",
+            "comment": "Changed scope of log4j dependency to test."
+        },
+        {
+            "c_hash": "4334e293",
+            "date": "2009-04-10 22:23:43 +0000",
+            "comment": "Added a profile that allows to specify a different Axiom version."
+        },
+        {
+            "c_hash": "a0fe4f2d",
+            "date": "2009-04-16 14:44:26 +0000",
+            "comment": "Updated my info"
+        },
+        {
+            "c_hash": "2e562bf4",
+            "date": "2009-06-03 13:09:38 +0000",
+            "comment": "Fix the way OMFactory.createOMNamespace(...) method was used into getDefaultPrefixNamespaces(OMFactory factory) method. The order of \"prefix\" and \"uri\" parameters passed was wrong. The first parameter should be the \"uri\" and the second one the \"prefix\". Now it is fixed and tested."
+        },
+        {
+            "c_hash": "5503a40e",
+            "date": "2009-06-16 10:54:18 +0000",
+            "comment": "Applying the patch for RAMPART-204. Thanks Bob."
+        },
+        {
+            "c_hash": "89ccde51",
+            "date": "2009-07-02 12:55:43 +0000",
+            "comment": "changing the axis2 version and wss4j version"
+        },
+        {
+            "c_hash": "ddcce231",
+            "date": "2009-07-07 10:00:47 +0000",
+            "comment": "changing wss4j version to 1.5.8-SNAPSHOT"
+        },
+        {
+            "c_hash": "86781a43",
+            "date": "2009-07-07 10:43:31 +0000",
+            "comment": "RAMPART-232 Applying the patch from Stefan with some minor modifications. Some of the fixes in the patch are already available on the trunk"
+        },
+        {
+            "c_hash": "49d9351e",
+            "date": "2009-07-07 11:03:03 +0000",
+            "comment": "adding a test case for RAMPART-232"
+        },
+        {
+            "c_hash": "03fdb2e6",
+            "date": "2009-08-03 11:09:21 +0000",
+            "comment": "fixing RAMPART-230"
+        },
+        {
+            "c_hash": "35180161",
+            "date": "2009-08-03 11:10:39 +0000",
+            "comment": "moving to WSS4J 1.5.8"
+        },
+        {
+            "c_hash": "2d34d111",
+            "date": "2009-08-04 12:09:03 +0000",
+            "comment": "Applying the patch for RAMPART-233, Thanks Thilina"
+        },
+        {
+            "c_hash": "30279f5d",
+            "date": "2009-08-27 14:48:29 +0000",
+            "comment": "Fixes the https://issues.apache.org/jira/browse/RAMPART-244 \"Invalid behavior when empty <sp:EncryptedParts/> element present in the policy\""
+        },
+        {
+            "c_hash": "f79fb172",
+            "date": "2009-08-27 18:40:34 +0000",
+            "comment": "RAMPART-231 Applying Thilina's patch for SAML 2.0 support. Thanks Thilina"
+        },
+        {
+            "c_hash": "869e5853",
+            "date": "2009-08-27 21:52:44 +0000",
+            "comment": "RAMPART-242 Applying the patch. Thanks Thilina."
+        },
+        {
+            "c_hash": "ac37bdf4",
+            "date": "2009-08-27 21:53:59 +0000",
+            "comment": "RAMPART-242 Applying the patch. Thanks Thilina."
+        },
+        {
+            "c_hash": "ae1f0a22",
+            "date": "2009-08-27 22:12:54 +0000",
+            "comment": "RAMPART-231 Applying Thilina's patch for SAML 2.0 support. Thanks Thilina"
+        },
+        {
+            "c_hash": "729d2493",
+            "date": "2009-08-27 22:40:49 +0000",
+            "comment": "RAMPART-243 Applying the patch. Thanks Thilina."
+        },
+        {
+            "c_hash": "8ebc1fc1",
+            "date": "2009-08-28 08:00:48 +0000",
+            "comment": "RAMPART-200 Applying the patch. Thanks Prabath"
+        },
+        {
+            "c_hash": "0f292604",
+            "date": "2009-08-28 08:06:16 +0000",
+            "comment": "RAMPART-200 Applying the patch. Thanks Prabath"
+        },
+        {
+            "c_hash": "30218969",
+            "date": "2009-08-28 18:22:44 +0000",
+            "comment": "RAMPART-246 Applying the patch. Thanks Prabath."
+        },
+        {
+            "c_hash": "82a9c90f",
+            "date": "2009-08-28 19:38:41 +0000",
+            "comment": "RAMPART-247 Applying the patch. Thanks Prabath"
+        },
+        {
+            "c_hash": "c8870c71",
+            "date": "2009-08-28 20:09:22 +0000",
+            "comment": "RAMPART-249 Applying the patch. Thanks Prabath"
+        },
+        {
+            "c_hash": "3a030319",
+            "date": "2009-08-28 21:46:49 +0000",
+            "comment": "RAMPART-250 Applying the patch. Thanks Prabath"
+        },
+        {
+            "c_hash": "9eb5b72c",
+            "date": "2009-08-29 09:38:11 +0000",
+            "comment": "RAMPART-251 Applying the patch. Thanks Prabath"
+        },
+        {
+            "c_hash": "f0e56dd1",
+            "date": "2009-08-29 10:54:36 +0000",
+            "comment": "RAMPART-244 Applying the patch. Thanks Thilina"
+        },
+        {
+            "c_hash": "06c6ee91",
+            "date": "2009-08-30 18:40:43 +0000",
+            "comment": "RAMPART-191 Adding a test case for the scenario mentioned the issue"
+        },
+        {
+            "c_hash": "3b4a0c9a",
+            "date": "2009-08-31 13:24:05 +0000",
+            "comment": "adding the two new files I missed in the commit :)"
+        },
+        {
+            "c_hash": "2969df6c",
+            "date": "2009-08-31 19:34:36 +0000",
+            "comment": "RAMPART-256 Adding new sample. Thanks Prabath"
+        },
+        {
+            "c_hash": "bbad765b",
+            "date": "2009-09-01 06:25:04 +0000",
+            "comment": "RAMPART-255 Applying the patch for sample 05. Thanks Thilina"
+        },
+        {
+            "c_hash": "4c5670cf",
+            "date": "2009-09-01 06:43:55 +0000",
+            "comment": "RAMPART-248 Applying the patch. Thanks Thilina"
+        },
+        {
+            "c_hash": "699fa053",
+            "date": "2009-09-01 17:05:02 +0000",
+            "comment": "RAMPART-189 Using the correct token"
+        },
+        {
+            "c_hash": "201156f6",
+            "date": "2009-09-18 07:01:31 +0000",
+            "comment": "adding the change log and adding installation instructions"
+        },
+        {
+            "c_hash": "de3306ce",
+            "date": "2009-12-15 18:34:52 +0000",
+            "comment": "Applying patch for https://issues.apache.org/jira/browse/RAMPART-271 - thanks Thilina..!"
+        },
+        {
+            "c_hash": "c0be3cf0",
+            "date": "2010-01-03 12:07:36 +0000",
+            "comment": "Fixed the client axis2.xml files so that the samples work with a stock Axis2 (trunk) distribution."
+        },
+        {
+            "c_hash": "9ab88996",
+            "date": "2010-02-13 01:35:15 +0000",
+            "comment": "Moving axis svn, part of TLP move INFRA-2441"
+        },
+        {
+            "c_hash": "ba4dee43",
+            "date": "2010-02-23 03:31:14 +0000",
+            "comment": "Fixing https://issues.apache.org/jira/browse/RAMPART-286"
+        },
+        {
+            "c_hash": "072bd319",
+            "date": "2010-02-23 08:52:51 +0000",
+            "comment": "Fixing https://issues.apache.org/jira/browse/RAMPART-286"
+        },
+        {
+            "c_hash": "2b323e02",
+            "date": "2010-04-21 09:54:21 +0000",
+            "comment": "Validator to allow missing UsernameToken and X509Token if they are optional"
+        },
+        {
+            "c_hash": "83d71d97",
+            "date": "2010-05-11 06:28:50 +0000",
+            "comment": "Fix for https://issues.apache.org/jira/browse/RAMPART-294 - thanks AmilaJ for the patch"
+        },
+        {
+            "c_hash": "17a440e0",
+            "date": "2010-05-11 08:53:52 +0000",
+            "comment": "Fixing https://issues.apache.org/jira/browse/RAMPART-279 - Thanks Thilina for the patch"
+        },
+        {
+            "c_hash": "961bbbec",
+            "date": "2010-05-11 09:13:23 +0000",
+            "comment": "Fixing https://issues.apache.org/jira/browse/RAMPART-285 - Thanks Thilina for the patch"
+        },
+        {
+            "c_hash": "cab61aeb",
+            "date": "2010-05-11 09:16:48 +0000",
+            "comment": "Fixing issue https://issues.apache.org/jira/browse/RAMPART-291 - Thanks Thilina for the patch"
+        },
+        {
+            "c_hash": "cef382dc",
+            "date": "2010-05-19 10:09:52 +0000",
+            "comment": "patch for RAMPART-294"
+        },
+        {
+            "c_hash": "d4480468",
+            "date": "2010-05-31 09:05:27 +0000",
+            "comment": "Fixed transport version"
+        },
+        {
+            "c_hash": "77f649eb",
+            "date": "2010-06-27 19:05:10 +0000",
+            "comment": "down grading the key size of the policy files, so that we don't need to patch the JDK with unlimited policy files to run the test cases"
+        },
+        {
+            "c_hash": "68e2bd19",
+            "date": "2010-07-03 20:18:36 +0000",
+            "comment": "Use an addressing module version consistent with the Axis2 version."
+        },
+        {
+            "c_hash": "c7cb0a0c",
+            "date": "2010-07-03 20:25:15 +0000",
+            "comment": "Use org.apache:apache:7 as parent POM, so that the build has access to the new Apache snapshot repository. This also makes sure that all artifacts include the appropriate LICENSE and NOTICE files."
+        },
+        {
+            "c_hash": "d2c81849",
+            "date": "2010-07-03 20:56:40 +0000",
+            "comment": "Removed the dependency on the transports project. The TCP transport is actually never used in the integration tests. It is only loaded in axis2.xml for historical reasons."
+        },
+        {
+            "c_hash": "5ab91e87",
+            "date": "2010-07-04 10:09:36 +0000",
+            "comment": "Set up svn:ignore."
+        },
+        {
+            "c_hash": "69dbf8f7",
+            "date": "2010-07-17 21:34:28 +0000",
+            "comment": "Attempt to fix conflicting dependencies between wss4j and opensaml. This in particular should avoid the double dependency on serializer, which I believe is the root cause of the build failures seen in Hudson."
+        },
+        {
+            "c_hash": "89a901aa",
+            "date": "2010-08-22 17:21:18 +0000",
+            "comment": "Eliminated the old snapshot repository (on people.apache.org; all snapshot dependencies are now available at repository.apache.org) as well as ws.zones.apache.org. The OpenSAML 1.1 release is available from Maven central, although with a different groupId/artifactId."
+        },
+        {
+            "c_hash": "0daba075",
+            "date": "2010-09-05 19:24:21 +0000",
+            "comment": "Added missing call to ServiceClient#cleanupTransport in STSClient."
+        },
+        {
+            "c_hash": "345f2915",
+            "date": "2010-09-05 21:03:31 +0000",
+            "comment": "The MARs distributed with Axis2 now always use the same Maven version as the other artifacts. Therefore there is no need anymore for the addressing.mar.version property."
+        },
+        {
+            "c_hash": "eccebc20",
+            "date": "2010-09-20 06:23:35 +0000",
+            "comment": "RAMPART-304 Applying the patch. Thanks Amila"
+        },
+        {
+            "c_hash": "db582a90",
+            "date": "2010-09-28 11:59:08 +0000",
+            "comment": "Applied two fixes to the changes done for RAMPART-304: * Eliminated an unnecessary conversion from character stream to byte stream. * Made the code compatible with Java 1.5."
+        },
+        {
+            "c_hash": "acc703ab",
+            "date": "2010-09-28 21:03:26 +0000",
+            "comment": "Set WSS4J version to 1.5.10-SNAPSHOT to enable continuous integration."
+        },
+        {
+            "c_hash": "0315f5e9",
+            "date": "2010-11-14 12:01:26 +0000",
+            "comment": "Added axiom-dom as a direct dependency since it is no longer a transitive dependency (via axis2-kernel)."
+        },
+        {
+            "c_hash": "7e3becc9",
+            "date": "2010-12-21 09:51:10 +0000",
+            "comment": "Fixing issue RAMPART-307"
+        },
+        {
+            "c_hash": "8f9e719b",
+            "date": "2010-12-21 10:16:31 +0000",
+            "comment": "Applying patch from RAMPART-306"
+        },
+        {
+            "c_hash": "272c4203",
+            "date": "2010-12-21 11:07:07 +0000",
+            "comment": "Applying patch from RAMPART-280"
+        },
+        {
+            "c_hash": "a375b60d",
+            "date": "2010-12-21 11:14:14 +0000",
+            "comment": "Applying patch from RAMPART-258"
+        },
+        {
+            "c_hash": "a09f8696",
+            "date": "2010-12-21 12:37:24 +0000",
+            "comment": "Fixed the problem of org.apache.rahas.client.STSClient.org.apache.rahas.processIssueResponse failing if SamlAssertion is issued - RAMPART-154"
+        },
+        {
+            "c_hash": "837d0160",
+            "date": "2010-12-21 12:44:56 +0000",
+            "comment": "Fixing RAMPART-310"
+        },
+        {
+            "c_hash": "85556dd9",
+            "date": "2010-12-21 13:06:19 +0000",
+            "comment": "Applying patch from RAMPART-119"
+        },
+        {
+            "c_hash": "b05db51c",
+            "date": "2010-12-21 14:03:03 +0000",
+            "comment": "Fixing issue RAMPART-290"
+        },
+        {
+            "c_hash": "a4ac007d",
+            "date": "2010-12-21 14:12:30 +0000",
+            "comment": "Fixed the problem of all security exceptions reported as wsse:InvalidSecurity - RAMPART-308"
+        },
+        {
+            "c_hash": "590d2eb7",
+            "date": "2010-12-21 14:23:59 +0000",
+            "comment": "Fixed the problem of NPE in RampartMessageData that prevents fault being returned to service consumer - RAMPART-293"
+        },
+        {
+            "c_hash": "de5bb6dd",
+            "date": "2010-12-21 14:32:04 +0000",
+            "comment": "Fixing RAMPART-276"
+        },
+        {
+            "c_hash": "b4125a2e",
+            "date": "2010-12-21 15:28:17 +0000",
+            "comment": "Fixed wrong NameIdentifier format - RAMPART-180"
+        },
+        {
+            "c_hash": "e6a55250",
+            "date": "2010-12-21 15:42:45 +0000",
+            "comment": "Fixed the problem of renewing a STS token not working - RAMPART-274"
+        },
+        {
+            "c_hash": "c6ce6189",
+            "date": "2010-12-21 16:01:05 +0000",
+            "comment": "Fixed NPE in RampartMessageData - RAMPART-270"
+        },
+        {
+            "c_hash": "36db4c38",
+            "date": "2010-12-21 16:35:08 +0000",
+            "comment": "Fixed the problem of TTL not serialized in to saml-issuer-config from SAMLTokenIssuerConfig - RAMPART-253"
+        },
+        {
+            "c_hash": "8c3affa7",
+            "date": "2010-12-21 23:17:52 +0000",
+            "comment": "Fixed the problem of having SupportingToken UsernameToken always encrypted - RAMPART-225"
+        },
+        {
+            "c_hash": "c1ba881c",
+            "date": "2010-12-21 23:43:17 +0000",
+            "comment": "Fixed the problem of supporting Tokens not encrypted when protection order is sign before encrypting - RAMPART-288"
+        },
+        {
+            "c_hash": "cb1c2e0d",
+            "date": "2010-12-22 00:15:32 +0000",
+            "comment": "Fixed the problem of sp:ProtectTokens assertion being ignored w/ transport security binding - RAMPART-283"
+        },
+        {
+            "c_hash": "ec303206",
+            "date": "2010-12-22 03:09:40 +0000",
+            "comment": "Adding a comment."
+        },
+        {
+            "c_hash": "ac232e95",
+            "date": "2010-12-22 06:10:09 +0000",
+            "comment": "Fixed some bugs found with find-bugs"
+        },
+        {
+            "c_hash": "baba18f0",
+            "date": "2010-12-22 06:12:40 +0000",
+            "comment": "Fixing issue RAMPART-224"
+        },
+        {
+            "c_hash": "8b83315e",
+            "date": "2010-12-22 06:26:27 +0000",
+            "comment": "Applying patch from RAMPART-314"
+        },
+        {
+            "c_hash": "45323fec",
+            "date": "2010-12-22 06:38:05 +0000",
+            "comment": "Applying patch from RAMPART-313"
+        },
+        {
+            "c_hash": "175119f1",
+            "date": "2010-12-22 07:07:05 +0000",
+            "comment": "Applying patch from RAMPART-277"
+        },
+        {
+            "c_hash": "d1a145ac",
+            "date": "2010-12-22 07:14:06 +0000",
+            "comment": "Fixed some bugs found with find-bugs"
+        },
+        {
+            "c_hash": "2197f400",
+            "date": "2010-12-22 08:15:09 +0000",
+            "comment": "Applying patch from RAMPART-254"
+        },
+        {
+            "c_hash": "549a51eb",
+            "date": "2010-12-22 08:56:40 +0000",
+            "comment": "Fixing a logic error."
+        },
+        {
+            "c_hash": "4b2c8c30",
+            "date": "2010-12-22 09:09:11 +0000",
+            "comment": "Fixing issue RAMPART-273"
+        },
+        {
+            "c_hash": "89480ac6",
+            "date": "2010-12-22 10:56:01 +0000",
+            "comment": "Fixed the issue of RampartEngine throwing ClassCastException retrieving SOAPHeaderBlocks - RAMPART-202"
+        },
+        {
+            "c_hash": "986d6de5",
+            "date": "2010-12-22 11:10:43 +0000",
+            "comment": "Fixing build error in trunk."
+        },
+        {
+            "c_hash": "9ef9154e",
+            "date": "2010-12-22 11:17:52 +0000",
+            "comment": "RAMPART-174 Rampart should only return true for WS-Security Policy and Rampart config assertions"
+        },
+        {
+            "c_hash": "38d11ba4",
+            "date": "2010-12-22 11:20:21 +0000",
+            "comment": "Fixed the links on site"
+        },
+        {
+            "c_hash": "5af74dc7",
+            "date": "2010-12-22 11:23:48 +0000",
+            "comment": "Fixed svn locations to those of Axis project from WS project"
+        },
+        {
+            "c_hash": "33fa3cb9",
+            "date": "2010-12-22 11:35:59 +0000",
+            "comment": "Updated download page for next 1.5.1 release"
+        },
+        {
+            "c_hash": "79692261",
+            "date": "2010-12-22 11:38:46 +0000",
+            "comment": "Applying patch from RAMPART-181"
+        },
+        {
+            "c_hash": "e8af9f43",
+            "date": "2010-12-22 11:46:33 +0000",
+            "comment": "Fixed documentation to include next release information, 1.5.1"
+        },
+        {
+            "c_hash": "5aabfd0a",
+            "date": "2010-12-22 11:50:45 +0000",
+            "comment": "Applying patch from RAMPART-315"
+        },
+        {
+            "c_hash": "054bec9b",
+            "date": "2010-12-22 12:05:51 +0000",
+            "comment": "Fixed the versions for next release as well as dependency versions"
+        },
+        {
+            "c_hash": "747c2180",
+            "date": "2010-12-22 12:08:43 +0000",
+            "comment": "Fixed mar versions to be 1.5.1"
+        },
+        {
+            "c_hash": "12c0da95",
+            "date": "2010-12-22 12:26:30 +0000",
+            "comment": "Fixed the typo in Axis2 version and Sandesha version"
+        },
+        {
+            "c_hash": "1bee06bb",
+            "date": "2010-12-22 13:39:35 +0000",
+            "comment": "Applying patch from RAMPART-316"
+        },
+        {
+            "c_hash": "eeb66df4",
+            "date": "2010-12-22 13:43:12 +0000",
+            "comment": "Fixing version on trunk back to snapshot"
+        },
+        {
+            "c_hash": "6e479e08",
+            "date": "2010-12-22 14:20:42 +0000",
+            "comment": "Added release dates and also 1.5.1 Jira fix info"
+        },
+        {
+            "c_hash": "c2d7cda6",
+            "date": "2010-12-22 14:33:14 +0000",
+            "comment": "Fixed the typos in release version info and link info"
+        },
+        {
+            "c_hash": "043a80e8",
+            "date": "2010-12-22 14:52:33 +0000",
+            "comment": "Applying patch from RAMPART-313 (rampart-site-newupdate.patch)"
+        },
+        {
+            "c_hash": "70c101f7",
+            "date": "2010-12-22 15:20:00 +0000",
+            "comment": "Adding License header"
+        },
+        {
+            "c_hash": "06a5c73d",
+            "date": "2010-12-22 17:19:14 +0000",
+            "comment": "adding download documents"
+        },
+        {
+            "c_hash": "1ad053aa",
+            "date": "2010-12-22 17:28:17 +0000",
+            "comment": "changing the archive location"
+        },
+        {
+            "c_hash": "4831e270",
+            "date": "2010-12-22 17:31:26 +0000",
+            "comment": "Removing link for document pack"
+        },
+        {
+            "c_hash": "4240a128",
+            "date": "2010-12-22 17:42:42 +0000",
+            "comment": "Linking to svn.html"
+        },
+        {
+            "c_hash": "57a7f432",
+            "date": "2010-12-22 22:17:39 +0000",
+            "comment": "RAMPART-136 now the XPath expression is evaluated against the SOAP header"
+        },
+        {
+            "c_hash": "bb2e8e6d",
+            "date": "2010-12-22 22:21:59 +0000",
+            "comment": "RAMPART-136 test case to verify the fix"
+        },
+        {
+            "c_hash": "620309eb",
+            "date": "2010-12-22 22:29:07 +0000",
+            "comment": "adding the license header"
+        },
+        {
+            "c_hash": "87497f6f",
+            "date": "2010-12-23 00:37:47 +0000",
+            "comment": "RAMPART-218 a test case to verify the fix"
+        },
+        {
+            "c_hash": "af789f8c",
+            "date": "2010-12-23 05:49:51 +0000",
+            "comment": "Applying the patch by Todd Wolff to fix RAMPART-278. Thank you Todd."
+        },
+        {
+            "c_hash": "5bb06edc",
+            "date": "2010-12-23 05:50:47 +0000",
+            "comment": "Testcase to ensure that RAMPART-278 is fixed."
+        },
+        {
+            "c_hash": "8b584d79",
+            "date": "2010-12-23 06:02:30 +0000",
+            "comment": "Adding a more meaningful id to the policy."
+        },
+        {
+            "c_hash": "1830084a",
+            "date": "2010-12-23 14:15:35 +0000",
+            "comment": "Switching back trunk dependencies to snapshot versions, so that the Hudson build can be used to detect integration issues with upstream projects."
+        },
+        {
+            "c_hash": "8b825964",
+            "date": "2010-12-23 22:17:10 +0000",
+            "comment": "Fixed a couple of incorrect/outdated URLs that I discovered while reviewing the 1.5.1 site."
+        },
+        {
+            "c_hash": "61a61c8e",
+            "date": "2011-01-03 12:15:10 +0000",
+            "comment": "(1) changing opensaml version and removing unwanted repos (2) Modifications to use nexus"
+        },
+        {
+            "c_hash": "738ca28d",
+            "date": "2011-01-03 12:37:23 +0000",
+            "comment": "Modifying to use org.apache.apache version 8 as the parent"
+        },
+        {
+            "c_hash": "4104a517",
+            "date": "2011-01-04 04:03:42 +0000",
+            "comment": "Adding LICENSE header"
+        },
+        {
+            "c_hash": "023a4e2a",
+            "date": "2011-01-04 04:38:30 +0000",
+            "comment": "Removing unwanted version numbers"
+        },
+        {
+            "c_hash": "88d447a4",
+            "date": "2011-01-04 06:10:53 +0000",
+            "comment": "Adding LICENSE header and removing unwanted version numbers"
+        },
+        {
+            "c_hash": "58bee8c4",
+            "date": "2011-01-04 06:18:13 +0000",
+            "comment": "Adding LICENSE header"
+        },
+        {
+            "c_hash": "2bae35a3",
+            "date": "2011-01-04 07:13:52 +0000",
+            "comment": "adding license comment"
+        },
+        {
+            "c_hash": "37e825b2",
+            "date": "2011-01-04 12:51:21 +0000",
+            "comment": "fixing svn url"
+        },
+        {
+            "c_hash": "886fc584",
+            "date": "2011-01-05 09:39:40 +0000",
+            "comment": "Removing contradicting releaseManagement properties"
+        },
+        {
+            "c_hash": "41f6e431",
+            "date": "2011-01-06 06:39:42 +0000",
+            "comment": "Including opensaml libraries"
+        },
+        {
+            "c_hash": "4c0b04e3",
+            "date": "2011-01-06 10:28:05 +0000",
+            "comment": "Applying patch from RAMPART-298"
+        },
+        {
+            "c_hash": "204f7e35",
+            "date": "2011-01-10 06:47:47 +0000",
+            "comment": "Documentation changes for 1.5.1"
+        },
+        {
+            "c_hash": "07330c4e",
+            "date": "2011-01-10 09:01:15 +0000",
+            "comment": "Changing binary, source artifact links"
+        },
+        {
+            "c_hash": "309b8d3b",
+            "date": "2011-01-11 02:07:41 +0000",
+            "comment": "Fixing the mirror sites functionality"
+        },
+        {
+            "c_hash": "636568d7",
+            "date": "2011-02-05 12:55:11 +0000",
+            "comment": "Updated Axiom snapshot version."
+        },
+        {
+            "c_hash": "f563a877",
+            "date": "2011-02-06 08:39:38 +0000",
+            "comment": "Upgraded WSS4j version to latest."
+        },
+        {
+            "c_hash": "28558773",
+            "date": "2011-02-15 05:50:45 +0000",
+            "comment": "Including myself as a Rampart developer."
+        },
+        {
+            "c_hash": "c733c105",
+            "date": "2011-02-15 12:23:02 +0000",
+            "comment": "Enabling crypto caching by default when Merlin is used as the Crypto implementation. Old parameters used to enable crypto caching are still valid. If someone wants to disable crypto caching, it can be done by setting the value of attribute 'enableCryptoCaching' to false. (This new attribute needs to included to the documentation)"
+        },
+        {
+            "c_hash": "60e70bcc",
+            "date": "2011-02-15 12:53:55 +0000",
+            "comment": "Updating the RampartConfig documentation to cover the disable caching option."
+        },
+        {
+            "c_hash": "eef4ee80",
+            "date": "2011-02-18 22:37:27 +0000",
+            "comment": "Replaced tabs by spaces."
+        },
+        {
+            "c_hash": "060ab2a6",
+            "date": "2011-02-18 22:40:26 +0000",
+            "comment": "Added an 'everything' profile that includes all modules."
+        },
+        {
+            "c_hash": "6e1bafc5",
+            "date": "2011-02-18 22:47:06 +0000",
+            "comment": "Set autoVersionSubmodules=true; submodules always have the same version as the root POM."
+        },
+        {
+            "c_hash": "133d64b7",
+            "date": "2011-02-18 23:06:08 +0000",
+            "comment": "Applied r1054918 also to the trunk (was applied only to the 1_5_x branch)."
+        },
+        {
+            "c_hash": "02af26bf",
+            "date": "2011-02-18 23:12:17 +0000",
+            "comment": "[maven-release-plugin] prepare branch 1_6"
+        },
+        {
+            "c_hash": "f1198165",
+            "date": "2011-02-18 23:12:49 +0000",
+            "comment": "[maven-release-plugin] prepare release 1_6"
+        },
+        {
+            "c_hash": "b9fd00fa",
+            "date": "2011-02-19 08:18:32 +0000",
+            "comment": "improving logging in Rampart Core and Rampart Policy moduels."
+        },
+        {
+            "c_hash": "a279b254",
+            "date": "2011-02-19 10:36:00 +0000",
+            "comment": "RAMPART-322: Applied Dan Kulp's patch to update Rampart to Neethi 3.0.0-SNAPSHOT."
+        },
+        {
+            "c_hash": "520fd490",
+            "date": "2011-02-19 10:49:10 +0000",
+            "comment": "Changed the trunk version number to match the new conventions."
+        },
+        {
+            "c_hash": "ddf070e2",
+            "date": "2011-02-19 11:24:41 +0000",
+            "comment": "Replaced tabs by spaces."
+        },
+        {
+            "c_hash": "0fa6e65b",
+            "date": "2011-02-19 11:39:24 +0000",
+            "comment": "Improving logging in Rampart-Trust module."
+        },
+        {
+            "c_hash": "bec2e8da",
+            "date": "2011-02-19 11:49:49 +0000",
+            "comment": "Updated the MAR plugin to a more recent version and removed some unused plugin repositories."
+        },
+        {
+            "c_hash": "9d204940",
+            "date": "2011-02-19 13:04:52 +0000",
+            "comment": "Removing unnecessary isDebugEnabled checks and using isDebugEnabled() instead of the static variable."
+        },
+        {
+            "c_hash": "4a8ba4ac",
+            "date": "2011-02-19 13:29:49 +0000",
+            "comment": "Applying patch for RAMPART-305 provided by AmilaJ"
+        },
+        {
+            "c_hash": "fdda3bc1",
+            "date": "2011-02-19 18:56:26 +0000",
+            "comment": "Updated Axis2 version."
+        },
+        {
+            "c_hash": "26675420",
+            "date": "2011-02-23 14:00:38 +0000",
+            "comment": "Applying the patch provided by AmilaJ for RAMPART-299."
+        },
+        {
+            "c_hash": "8eeaa370",
+            "date": "2011-02-24 05:05:24 +0000",
+            "comment": "Fixing RAMPART-317 : Fixing an error when handling bearer subject confirmation."
+        },
+        {
+            "c_hash": "59c3c6d2",
+            "date": "2011-02-25 09:14:38 +0000",
+            "comment": "- Fixing some issues related to Bearer subject confirmation method in SAML 1.1. - Adding support for bearer subject confirmation in SAML 2.0. - Adding a new integration test to cover bearer subject confirmation with SAML 2.0 - Improving the existing SAML 1.0 bearer subject confirmation test."
+        },
+        {
+            "c_hash": "9b3ddbbc",
+            "date": "2011-02-25 14:26:19 +0000",
+            "comment": "Adding alias of the certificate used for the signature[in asymmetric binding scenarios] as a msg.ctx property. This also a fix for RAMPART-201"
+        },
+        {
+            "c_hash": "e6c7ad7c",
+            "date": "2011-03-01 06:45:01 +0000",
+            "comment": "Adding a test case to validate ContentEncryptedElements support."
+        },
+        {
+            "c_hash": "3e70d14b",
+            "date": "2011-03-01 06:59:15 +0000",
+            "comment": "- Registering HttpsTokenBuilder as a neethi assertion builder. - Adding a null check before processing policy alternatives defined for HttpsTokens to support the <HttpsToken/> assertion."
+        },
+        {
+            "c_hash": "94419404",
+            "date": "2011-03-01 07:02:27 +0000",
+            "comment": "Fixing the policy file to be compliant with HttpsToken definition of WS-Security Policy 1.2"
+        },
+        {
+            "c_hash": "31e43b73",
+            "date": "2011-03-21 07:07:02 +0000",
+            "comment": "Fixed a couple of Maven 3 warnings."
+        },
+        {
+            "c_hash": "f529175b",
+            "date": "2011-04-01 06:52:26 +0000",
+            "comment": "Adding support for digest methods != SHA1. Enabled one policy(scenario 3) with Basic256 algo suit (Also set basic256Supported in RampartTest so builds without unlimitted strength key policy won't fail. When wss4j version is updated we can fix derived key signatures to set the correct digest algo"
+        },
+        {
+            "c_hash": "fe5e6078",
+            "date": "2011-04-02 11:11:28 +0000",
+            "comment": "Eliminated a couple of instances of the catch-and-fail JUnit anti-pattern."
+        },
+        {
+            "c_hash": "54541669",
+            "date": "2011-04-02 12:06:43 +0000",
+            "comment": "Replaced usages of Axiom implementation classes by invocations of the public API."
+        },
+        {
+            "c_hash": "4f7dd46c",
+            "date": "2011-04-04 11:19:40 +0000",
+            "comment": "Replaced usages of Axiom implementation classes by invocations of the public API."
+        },
+        {
+            "c_hash": "d3fd31d4",
+            "date": "2011-04-04 11:57:24 +0000",
+            "comment": "Make use of the API defined by AXIOM-353."
+        },
+        {
+            "c_hash": "1d2e81ef",
+            "date": "2011-04-06 19:43:25 +0000",
+            "comment": "Attempt to get out of the SLF4J dependency hell and to make logging in the integration tests predictable. There is really no sense in having commons-logging, jcl-over-slf4j, log4j-over-slf4j, log4j and slf4j-jdk14 in the class path at the same time and then to configure commons-logging.properties to use SimpleLog. rampart-integration is now set up so that commons-logging and SLF4J both send logs to log4j."
+        },
+        {
+            "c_hash": "d5515847",
+            "date": "2011-04-09 06:52:17 +0000",
+            "comment": "Moved the DOOM dependency to the right module(s)."
+        },
+        {
+            "c_hash": "29c89296",
+            "date": "2011-04-09 08:18:17 +0000",
+            "comment": "Fixed an issue that occurs in the outflow when the Axiom implementation also supports DOM."
+        },
+        {
+            "c_hash": "dd7fcbc5",
+            "date": "2011-04-09 11:33:05 +0000",
+            "comment": "Avoid the DOM->Axiom conversion if the underlying Axiom implementation supports DOM. Note that this doesn't apply to DOOM (because DOOM is an incomplete implementation of the Axiom API), but to implementations such as DDOM [http://code.google.com/p/ddom/]."
+        },
+        {
+            "c_hash": "f8ea9131",
+            "date": "2011-05-31 06:59:22 +0000",
+            "comment": "Applied patch for RAMPART-326."
+        },
+        {
+            "c_hash": "805a0a7f",
+            "date": "2011-05-31 08:11:07 +0000",
+            "comment": "Applied patch for RAMPART-327."
+        },
+        {
+            "c_hash": "206f4154",
+            "date": "2011-06-02 14:21:49 +0000",
+            "comment": "Setting correct svn:eol-style on POM files (to avoid spurious changes caused by the maven-release-plugin)."
+        },
+        {
+            "c_hash": "c486d426",
+            "date": "2011-06-03 22:48:07 +0000",
+            "comment": "Pushing back r1130011,1130020 from 1.6 branch to the trunk so that site changes will not be lost during the next major release."
+        },
+        {
+            "c_hash": "c2200a60",
+            "date": "2011-06-06 08:38:03 +0000",
+            "comment": "Added missing license files and updated release docs."
+        },
+        {
+            "c_hash": "476a3954",
+            "date": "2011-06-06 09:53:52 +0000",
+            "comment": "Updated site for 1.6.0 release"
+        },
+        {
+            "c_hash": "0e7e01ea",
+            "date": "2011-06-10 21:32:53 +0000",
+            "comment": "Moved CGI scripts to the right location. They are not XDoc files."
+        },
+        {
+            "c_hash": "625b2c0a",
+            "date": "2011-06-11 16:28:21 +0000",
+            "comment": "Fixed a problematic Axiom iterator usage."
+        },
+        {
+            "c_hash": "9047b23b",
+            "date": "2011-06-19 18:10:20 +0000",
+            "comment": "Removed redundant distributionManagement entries. On the 1.5 branch, this was done in r1055352, but the corresponding commit on the trunk (r1055376) didn't remove it."
+        },
+        {
+            "c_hash": "01714d97",
+            "date": "2011-07-08 19:37:24 +0000",
+            "comment": "Updated Axiom version."
+        },
+        {
+            "c_hash": "d50e5a22",
+            "date": "2011-07-09 08:10:14 +0000",
+            "comment": "Fixed a couple of incorrect policy documents."
+        },
+        {
+            "c_hash": "5b2187c5",
+            "date": "2011-08-14 19:46:21 +0000",
+            "comment": "Removed xmlsec as a direct dependency so that it is retrieved as a transitive dependency of WSS4J with the correct version (WSS4J currently uses xmlsec 1.4.5, but Rampart trunk was still at 1.4.2)."
+        },
+        {
+            "c_hash": "adcbed4d",
+            "date": "2011-08-14 21:16:00 +0000",
+            "comment": "Set up log4j to make the unit tests less verbose."
+        },
+        {
+            "c_hash": "e93e4293",
+            "date": "2011-08-14 21:19:25 +0000",
+            "comment": "Removed uniqueVersion=false because that option is no longer supported in Maven 3.0."
+        },
+        {
+            "c_hash": "531e013c",
+            "date": "2011-08-14 21:42:26 +0000",
+            "comment": "Removed the unnecessary profile for JDK 1.4."
+        },
+        {
+            "c_hash": "6c0ec01d",
+            "date": "2011-08-15 07:02:41 +0000",
+            "comment": "Removed bcprov-jdk14 from the distribution."
+        },
+        {
+            "c_hash": "6d9b686f",
+            "date": "2011-08-15 07:29:00 +0000",
+            "comment": "Removed the rampart.mar.version and rahas.mar.version properties. Starting with version 1.5.1, Axis2 supports version numbers with multiple components so that there is no need anymore to have different version numbers for MARs."
+        },
+        {
+            "c_hash": "aadbf5bb",
+            "date": "2011-09-06 15:34:54 +0000",
+            "comment": "Updated dependencies."
+        },
+        {
+            "c_hash": "a41e639f",
+            "date": "2011-09-07 16:43:02 +0000",
+            "comment": "Prefer adoptNode over importNode in order to avoid making unnecessary copies of DOM trees."
+        },
+        {
+            "c_hash": "bb305fb7",
+            "date": "2011-09-19 21:26:32 +0000",
+            "comment": "Fixed typo in artifactId of the documentation module."
+        },
+        {
+            "c_hash": "980e1e54",
+            "date": "2011-09-24 22:03:19 +0000",
+            "comment": "Prepared the site for the 1.5.2 and 1.6.1 releases."
+        },
+        {
+            "c_hash": "d5adaecf",
+            "date": "2011-09-25 08:11:16 +0000",
+            "comment": "Attempt to fix a failure in release:prepare with Maven 2.2.1."
+        },
+        {
+            "c_hash": "ae6e0c49",
+            "date": "2011-09-29 11:06:11 +0000",
+            "comment": "Committing the patch provided by AmilaJ for RAMPART-336."
+        },
+        {
+            "c_hash": "5eb53689",
+            "date": "2011-09-29 12:13:56 +0000",
+            "comment": "Applying the patch provided by AmilaJ for RAMPART-334/"
+        },
+        {
+            "c_hash": "05489f15",
+            "date": "2011-09-29 19:55:59 +0000",
+            "comment": "Reverted r1177260 because that change actually depends on a bug in DOOM that is now fixed (see r1177407). With that change in Axiom, the problem described in RAMPART-336 no longer occurs."
+        },
+        {
+            "c_hash": "9c4e2ba0",
+            "date": "2011-10-02 14:37:25 +0000",
+            "comment": "RAMPART-324: Added the test case provided by Amila Jayasekara, but implemented a proper fix based on the feature added by AXIOM-388."
+        },
+        {
+            "c_hash": "d2a1c99c",
+            "date": "2011-10-09 21:24:30 +0000",
+            "comment": "Eliminated a couple of direct references to DOOM."
+        },
+        {
+            "c_hash": "414b01ae",
+            "date": "2011-10-19 21:05:12 +0000",
+            "comment": "Use filtering to automatically replace the version number and build date in the README file. This eliminates a manual step in the release process."
+        },
+        {
+            "c_hash": "a8dff445",
+            "date": "2011-10-28 20:09:11 +0000",
+            "comment": "Fixed an incorrect usage of the Axiom API that caused Rampart to depend on the issue described in AXIOM-385."
+        },
+        {
+            "c_hash": "b6cb672f",
+            "date": "2011-10-28 21:41:15 +0000",
+            "comment": "Fixed the build on older JDK 1.5 versions."
+        },
+        {
+            "c_hash": "89d04490",
+            "date": "2011-10-29 09:21:45 +0000",
+            "comment": "Bootstrap OpenSAML when the Rampart module is initialized, so that the success of the test suite no longer depends on the order in which the tests are executed."
+        },
+        {
+            "c_hash": "cfafcb2f",
+            "date": "2011-10-29 19:41:14 +0000",
+            "comment": "Moved the OpenSAML initialization to the right place, i.e. the init method of the Rahas module."
+        },
+        {
+            "c_hash": "4fb77d80",
+            "date": "2011-10-29 21:40:27 +0000",
+            "comment": "Replaced tabs by spaces and fixed some other formatting issues."
+        },
+        {
+            "c_hash": "0f23004f",
+            "date": "2011-10-30 08:18:31 +0000",
+            "comment": "Use a less hacky solution to make OpenSAML 1 use DOOM: register a custom XML.ParserPool that uses DOOMDocumentBuilderFactory."
+        },
+        {
+            "c_hash": "5dbf8389",
+            "date": "2011-11-29 19:15:00 +0000",
+            "comment": "Replacing deprecated DOOMAbstractFactory with OMAbstractFactory"
+        },
+        {
+            "c_hash": "ae2e9ef2",
+            "date": "2011-12-19 13:49:05 +0000",
+            "comment": "Applying Amila's patch for RAMPART-347"
+        },
+        {
+            "c_hash": "d582993f",
+            "date": "2011-12-19 19:42:33 +0000",
+            "comment": "Fixing the incorrect prefix issue, reported in some complaints about working with generated code"
+        },
+        {
+            "c_hash": "3e3d5ae8",
+            "date": "2011-12-20 02:44:58 +0000",
+            "comment": "Fix suggested in RAMPART-350"
+        },
+        {
+            "c_hash": "0739e8d9",
+            "date": "2011-12-20 05:12:59 +0000",
+            "comment": "Getting rid of a possible NPE : Caused when someone forgets to setup RampartConfig"
+        },
+        {
+            "c_hash": "662a1a05",
+            "date": "2011-12-21 22:55:49 +0000",
+            "comment": "RAMPART-338: Avoid hardcoded module version numbers."
+        },
+        {
+            "c_hash": "2e92365c",
+            "date": "2011-12-21 23:35:59 +0000",
+            "comment": "Include an SLF4J binding in the distribution so that the setup task is able to configure Axis2 to support OpenSAML."
+        },
+        {
+            "c_hash": "126aafc7",
+            "date": "2011-12-21 23:37:41 +0000",
+            "comment": "Include the Axis2 conf directory in the class path so that log4j is properly configured."
+        },
+        {
+            "c_hash": "37870269",
+            "date": "2011-12-22 09:49:14 +0000",
+            "comment": "Include the Xerces version expected by OpenSAML in the distribution."
+        },
+        {
+            "c_hash": "e4208b4d",
+            "date": "2011-12-22 20:12:47 +0000",
+            "comment": "Fixed and simplified some code obviously written by people who lack understanding of the StAX API, and in particular about how XMLStreamWriter#setPrefix works and is supposed to be used."
+        },
+        {
+            "c_hash": "93062000",
+            "date": "2012-01-08 15:34:56 +0000",
+            "comment": "Fixing issue RAMPART-269. Also added an integration test case"
+        },
+        {
+            "c_hash": "83bfb789",
+            "date": "2012-01-10 05:30:07 +0000",
+            "comment": "Fixing a build failure with a temperorary code change"
+        },
+        {
+            "c_hash": "7a8a5b1a",
+            "date": "2012-01-23 23:24:13 +0000",
+            "comment": "Fixed an issue in Rampart that occured because it was implicitly relying on a non-conformance of DOOM's DOM implementation."
+        },
+        {
+            "c_hash": "34c14882",
+            "date": "2012-01-24 04:39:03 +0000",
+            "comment": "Fixing issue RAMPART-354. Upgraded OpenSAML version to 2.5.1-1. Added more unit tests to trust module"
+        },
+        {
+            "c_hash": "55910e7e",
+            "date": "2012-02-03 18:06:39 +0000",
+            "comment": "Fixing issue RAMPART-355. Upgraded WSS4J version to 1.6.4. Fixed all unit tests and integration tests. Also removed opensaml 1.1 dependency."
+        },
+        {
+            "c_hash": "1244e49f",
+            "date": "2012-02-03 21:06:09 +0000",
+            "comment": "Eliminated some direct (compile time) dependencies on DOOM."
+        },
+        {
+            "c_hash": "4803b7dc",
+            "date": "2012-02-03 21:08:48 +0000",
+            "comment": "Removed unused imports."
+        },
+        {
+            "c_hash": "7ac95797",
+            "date": "2012-02-03 21:18:32 +0000",
+            "comment": "Formatting changes. In particular, eliminate unwanted tab characters."
+        },
+        {
+            "c_hash": "be4d9a4f",
+            "date": "2012-02-03 22:16:22 +0000",
+            "comment": "Fixed the logging configuration used by the tests."
+        },
+        {
+            "c_hash": "76f9ff17",
+            "date": "2012-02-03 22:54:35 +0000",
+            "comment": "Set up svn:ignore for Eclipse."
+        },
+        {
+            "c_hash": "dabc9e4d",
+            "date": "2012-02-04 11:05:45 +0000",
+            "comment": "Get rid of the remaining direct references to DOOM. In particular, removed the DocumentBuilderFactory hacks. Since Amila ported the AxiomParserPool to OpenSAML 2, these hacks are no longer necessary."
+        },
+        {
+            "c_hash": "66e466a3",
+            "date": "2012-02-04 11:06:52 +0000",
+            "comment": "Fixed outdated Javadoc."
+        },
+        {
+            "c_hash": "49b54c30",
+            "date": "2012-02-13 11:42:19 +0000",
+            "comment": "Refactored SAMLTokenIssuerConfig usages. Reduce code duplication and moved code to a central place. Added tests for SAMLTokenIssuerConfig"
+        },
+        {
+            "c_hash": "e940a98f",
+            "date": "2012-02-14 12:16:18 +0000",
+            "comment": "Fixing issue RAMPART-357. Applying the patch provided"
+        },
+        {
+            "c_hash": "cff4479c",
+            "date": "2012-02-22 16:25:17 +0000",
+            "comment": "Propagate exception cause."
+        },
+        {
+            "c_hash": "2f0d5956",
+            "date": "2012-02-22 16:30:06 +0000",
+            "comment": "Use new Axiom APIs."
+        },
+        {
+            "c_hash": "1bdef20c",
+            "date": "2012-03-04 12:40:47 +0000",
+            "comment": "Avoid direct references to Axiom implementation classes."
+        },
+        {
+            "c_hash": "6ca52538",
+            "date": "2012-03-04 16:23:55 +0000",
+            "comment": "Avoid direct references to Axiom implementation classes."
+        },
+        {
+            "c_hash": "99750174",
+            "date": "2012-03-08 08:11:32 +0000",
+            "comment": "Refactored SAML2TokenIssuer and cleaned up code. Created a test framework to write unit tests for trust scenarios. Fixed documentation errors. Reduced code duplication. Added more tests."
+        },
+        {
+            "c_hash": "480cd3c8",
+            "date": "2012-03-08 08:30:19 +0000",
+            "comment": "Fixed few typos and removed unnecessary constant"
+        },
+        {
+            "c_hash": "685fc742",
+            "date": "2012-03-10 15:30:57 +0000",
+            "comment": "Avoid unnecessary serialization/deserialization and instead use DOOM directly."
+        },
+        {
+            "c_hash": "2ca5c773",
+            "date": "2012-03-11 09:10:27 +0000",
+            "comment": "Code simplification: the iterator produced by getChildElements always returns OMElement objects."
+        },
+        {
+            "c_hash": "39bc9f56",
+            "date": "2012-03-11 16:28:08 +0000",
+            "comment": "Fixed an issue in STSClient: the comment on the code says \"Copy over the elements from the template\", but it was actually _moving_ the elements."
+        },
+        {
+            "c_hash": "36c5a770",
+            "date": "2012-03-11 16:28:56 +0000",
+            "comment": "Fixed unsupported iterator usage."
+        },
+        {
+            "c_hash": "5ffbc9a5",
+            "date": "2012-03-11 22:09:50 +0000",
+            "comment": "Fixed invalid resource keys."
+        },
+        {
+            "c_hash": "20f692d4",
+            "date": "2012-03-12 21:47:58 +0000",
+            "comment": "Instead of randomly add the assertion to the SOAP envelope (it is later moved to the right place), just specify the owner document, but no parent."
+        },
+        {
+            "c_hash": "83ec2ec5",
+            "date": "2012-03-12 22:31:02 +0000",
+            "comment": "Avoid direct references to Axiom implementation classes."
+        },
+        {
+            "c_hash": "9981ba3e",
+            "date": "2012-03-20 23:10:37 +0000",
+            "comment": "Eliminated an instance of the catch-and-fail JUnit anti-pattern."
+        },
+        {
+            "c_hash": "d671da74",
+            "date": "2012-04-09 14:23:28 +0000",
+            "comment": "Switched the Rampart trunk to Axiom 1.2.14-SNAPSHOT."
+        },
+        {
+            "c_hash": "cbd8c633",
+            "date": "2012-04-09 14:25:30 +0000",
+            "comment": "Reverted a change included by mistake in r1311248."
+        },
+        {
+            "c_hash": "f923f9e0",
+            "date": "2012-04-09 20:00:32 +0000",
+            "comment": "Removing unwanted files from distribution and adding missing dependencies"
+        },
+        {
+            "c_hash": "342b71fc",
+            "date": "2012-04-19 08:20:40 +0000",
+            "comment": "Applied patch for RAMPART-363."
+        },
+        {
+            "c_hash": "62bb8131",
+            "date": "2012-04-19 09:42:21 +0000",
+            "comment": "* Fixed compilation issue due to SAML improvements. * Removed unused imports."
+        },
+        {
+            "c_hash": "1d24eaa3",
+            "date": "2012-04-19 10:03:42 +0000",
+            "comment": "Mavenized Rampart samples so that sample codes will compile during the build, this helps to detect compilation failures on sample."
+        },
+        {
+            "c_hash": "2963edea",
+            "date": "2012-04-23 09:46:07 +0000",
+            "comment": "Replaced tabs by spaces."
+        },
+        {
+            "c_hash": "69b8fdf0",
+            "date": "2012-04-23 09:49:46 +0000",
+            "comment": "Added plugin version to ensure that the build is repeatable."
+        },
+        {
+            "c_hash": "25d725b1",
+            "date": "2012-04-26 07:08:30 +0000",
+            "comment": "Added OWASP ESAPI as a dependency to the bin distribution."
+        },
+        {
+            "c_hash": "a402ee46",
+            "date": "2012-04-26 07:17:24 +0000",
+            "comment": "Remove license with incorrect name."
+        },
+        {
+            "c_hash": "10545f33",
+            "date": "2012-04-26 07:20:17 +0000",
+            "comment": "Added ESAPI license with correct name."
+        },
+        {
+            "c_hash": "3e1108d3",
+            "date": "2012-04-26 08:16:00 +0000",
+            "comment": "Updated site for 1.6.2 release."
+        },
+        {
+            "c_hash": "fed17408",
+            "date": "2012-05-15 20:28:47 +0000",
+            "comment": "Fixed SOAP version mismatch."
+        },
+        {
+            "c_hash": "7082145d",
+            "date": "2012-06-09 10:30:02 +0000",
+            "comment": "Eliminated reference to DOOMAbstractFactory."
+        },
+        {
+            "c_hash": "eb21871b",
+            "date": "2012-06-11 15:32:59 +0000",
+            "comment": "Changes required for AXIS2-5340."
+        },
+        {
+            "c_hash": "0acb59df",
+            "date": "2012-06-13 05:27:54 +0000",
+            "comment": "Changes introduced by AXIS2-5315 in r1349635 [1]"
+        },
+        {
+            "c_hash": "683177d5",
+            "date": "2012-06-15 11:03:40 +0000",
+            "comment": "AXIS2-5315 - Changes according to R1350570."
+        },
+        {
+            "c_hash": "520bd3fd",
+            "date": "2012-06-15 12:04:10 +0000",
+            "comment": "RAMPART-375 - Improved Ant script to download xercesImpl-2.9.1.jar and set it as jvmarg to fulfill endorsed requirements."
+        },
+        {
+            "c_hash": "43e57656",
+            "date": "2012-06-22 09:07:19 +0000",
+            "comment": "AXIS2-5334 - required changes for r1352812."
+        },
+        {
+            "c_hash": "fdd5d247",
+            "date": "2012-06-25 19:52:18 +0000",
+            "comment": "Fixing Jira RAMPART-376"
+        },
+        {
+            "c_hash": "1def7daa",
+            "date": "2012-06-25 19:59:09 +0000",
+            "comment": "Fixing issue RAMPART-377"
+        },
+        {
+            "c_hash": "f59093f6",
+            "date": "2012-06-30 13:36:40 +0000",
+            "comment": "Fixed shibboleth repository location."
+        },
+        {
+            "c_hash": "da1274fa",
+            "date": "2012-07-05 19:21:16 +0000",
+            "comment": "Permanently ban non Apache repositories. The shibboleth repository was moved and this broke the build. Don't allow this to happen again in the future. Note that all required artifacts are in Maven central (thanks to the efforts of the WSS4J project)."
+        },
+        {
+            "c_hash": "2c9d2d78",
+            "date": "2012-08-25 07:33:18 +0000",
+            "comment": "RAMPART-358: Fixed the security fault detection code."
+        },
+        {
+            "c_hash": "4630f7e2",
+            "date": "2012-09-10 19:09:01 +0000",
+            "comment": "Removed two image files (logos) that are not used (and that are missing the TM)."
+        },
+        {
+            "c_hash": "9dd78f7c",
+            "date": "2012-09-10 19:15:13 +0000",
+            "comment": "Added TM to the Rampart logo."
+        },
+        {
+            "c_hash": "0bdc6235",
+            "date": "2012-11-14 12:16:05 +0000",
+            "comment": "Eliminated usage of deprecated Axiom class."
+        },
+        {
+            "c_hash": "f3f18efb",
+            "date": "2012-12-16 16:21:02 +0000",
+            "comment": "Moved to new Axiom snapshot version."
+        },
+        {
+            "c_hash": "07e7922f",
+            "date": "2013-01-25 02:22:28 +0000",
+            "comment": "Fixed RAMPART-384"
+        },
+        {
+            "c_hash": "c6bfb0c6",
+            "date": "2013-01-30 04:22:33 +0000",
+            "comment": "- sample01 now runs with the axis2server as expected to demonstrate the use of a UsernameToken. - Added some more documentation into README.txt including some that I found in [1] to make things clearer to the user."
+        },
+        {
+            "c_hash": "729fa9f4",
+            "date": "2013-01-30 06:12:39 +0000",
+            "comment": "Fixed the issue raised in this [1] discussion. RampartUsernameTokenValidator overrides the verifyPlaintextPassword method of org.apache.ws.security.validate.UsernameTokenValidator The default implementation expects the callback handler to supply the plain text password (when a username token with a plain text password is used), which should not be possible in practice."
+        },
+        {
+            "c_hash": "e4135df8",
+            "date": "2013-01-30 06:30:48 +0000",
+            "comment": "The user exception here is simply used as a flag to indicate success or failure of authentication. There's no need to associate any information that the user includes in the user's exception, in the exception generated by Rampart."
+        },
+        {
+            "c_hash": "4421ab0c",
+            "date": "2013-01-30 20:03:41 +0000",
+            "comment": "Validating password type included in the username token"
+        },
+        {
+            "c_hash": "0f8dc194",
+            "date": "2013-01-30 21:54:46 +0000",
+            "comment": "Validate the NoPassword case"
+        },
+        {
+            "c_hash": "248c5551",
+            "date": "2013-02-01 02:54:05 +0000",
+            "comment": "Removing the deprecated basic configuration (This was deprecated since version 1.1). Excluded the Rahas tests from the integration tests to update them to work with policy configuration. Removed basic configuration test cases. Added WS-SecurityPolicy 1.2 namespace to supported policy namespaces in the module.xml"
+        },
+        {
+            "c_hash": "36b9c3ff",
+            "date": "2013-02-04 22:08:24 +0000",
+            "comment": "Small change to make JaCoCo work."
+        },
+        {
+            "c_hash": "7d65c4dd",
+            "date": "2013-02-05 00:41:11 +0000",
+            "comment": "Additional check and avoiding an NPE"
+        },
+        {
+            "c_hash": "1cfa0a77",
+            "date": "2013-02-26 22:17:10 +0000",
+            "comment": "Reverting changes in revision 1441298"
+        },
+        {
+            "c_hash": "59cf5406",
+            "date": "2013-03-11 20:35:56 +0000",
+            "comment": "Instrument the tests with JaCoCo to get code coverage reports. Note that this is not yet working as expected because the root/parent POM declares dependencies; they interfere with the code-coverage module."
+        },
+        {
+            "c_hash": "95dfa7b2",
+            "date": "2013-03-11 21:21:45 +0000",
+            "comment": "Eliminate the dependencies from the root/parent POM and move them to the appropriate modules."
+        },
+        {
+            "c_hash": "a479f91c",
+            "date": "2013-03-12 20:12:09 +0000",
+            "comment": "Use axis2-repo-maven-plugin to build the test repositories; it does a better job of handling dependencies."
+        },
+        {
+            "c_hash": "e4444cf2",
+            "date": "2013-03-13 18:09:19 +0000",
+            "comment": "Also copy the axis2.xml file using axis2-repo-maven-plugin."
+        },
+        {
+            "c_hash": "2e94ecad",
+            "date": "2013-03-13 18:24:42 +0000",
+            "comment": "Applied patch provided in RAMPART-400 by Nathan Clement"
+        },
+        {
+            "c_hash": "b3032537",
+            "date": "2013-03-15 22:00:23 +0000",
+            "comment": "1.) Added support in security policy processing for EncryptedToken and SignatureToken : http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702/ws-securitypolicy-1.2-spec-os.html#_Toc161826559"
+        },
+        {
+            "c_hash": "4f3df740",
+            "date": "2013-03-15 22:45:26 +0000",
+            "comment": "license header added to the new files."
+        },
+        {
+            "c_hash": "bb986e2b",
+            "date": "2013-03-16 19:18:32 +0000",
+            "comment": "1.) Removed the deprecated basic configuration from Rahas (WS-Trust) test cases and updated them to work with policy 2.) Minor code fixes to use generics"
+        },
+        {
+            "c_hash": "a1b04591",
+            "date": "2013-03-16 19:37:26 +0000",
+            "comment": "These files are not required anymore since we use the policy config with rahas tests"
+        },
+        {
+            "c_hash": "18633640",
+            "date": "2013-03-17 15:23:27 +0000",
+            "comment": "Removed the deprecated basic configuration"
+        },
+        {
+            "c_hash": "4acb07ad",
+            "date": "2013-03-22 04:16:43 +0000",
+            "comment": "- Making sure UsernameTokens are only encrypted when required. - Removed some deprecated methods. - Some more code fixes to use generics."
+        },
+        {
+            "c_hash": "212a1c1c",
+            "date": "2013-04-16 17:15:50 +0000",
+            "comment": "Switch to Basic128 algo suite to make sure the build won't fail without unlimitted strength crypto policy"
+        },
+        {
+            "c_hash": "f5449d24",
+            "date": "2013-04-20 09:27:08 +0000",
+            "comment": "Committed a change that was missing in r1455697."
+        },
+        {
+            "c_hash": "9dba4355",
+            "date": "2013-04-20 09:41:34 +0000",
+            "comment": "Use standard Maven project layout (with resources in src/main/resources)."
+        },
+        {
+            "c_hash": "6614716b",
+            "date": "2013-04-21 10:20:48 +0000",
+            "comment": "Added the Apache snapshot repository as a plugin repository to allow the build to load the expected version of the axis2-repo-maven-plugin."
+        },
+        {
+            "c_hash": "8f7469d4",
+            "date": "2013-05-01 19:40:55 +0000",
+            "comment": "Upgraded to a recent version of the maven-site-plugin to make it work with Maven 3."
+        },
+        {
+            "c_hash": "14bcf188",
+            "date": "2013-05-04 10:04:18 +0000",
+            "comment": "Added missing content."
+        },
+        {
+            "c_hash": "e96a1241",
+            "date": "2013-05-04 10:13:08 +0000",
+            "comment": "Fixed download pages for archived released (or releases that are expected to be archived: 1.6.1 should have been archived, but it wasn't). In particular, mirror selection is not relevant for archived releases."
+        },
+        {
+            "c_hash": "0e9e6ef8",
+            "date": "2013-05-04 19:42:16 +0000",
+            "comment": "Use a more standard approach to generate the site: * Generate the site from the root POM, not from a submodule. * Avoid using antrun plugin to generate Javadocs."
+        },
+        {
+            "c_hash": "74b8833a",
+            "date": "2013-05-04 21:35:34 +0000",
+            "comment": "Set up configuration for maven-scm-publish-plugin."
+        },
+        {
+            "c_hash": "92ba26f7",
+            "date": "2013-05-04 21:46:16 +0000",
+            "comment": "Use the feather logo/banner from www.apache.org instead of our own copy, which doesn't have the TM sign."
+        },
+        {
+            "c_hash": "219ea7bb",
+            "date": "2013-05-05 11:31:42 +0000",
+            "comment": "Some changes to ensure that the Rampart site conforms to the Apache branding guidelines."
+        },
+        {
+            "c_hash": "71dea3bb",
+            "date": "2014-02-09 17:46:43 +0000",
+            "comment": "RAMPART-409: Download page must not link to snapshots / nightly builds."
+        },
+        {
+            "c_hash": "cfc5ea18",
+            "date": "2014-07-13 15:36:04 +0000",
+            "comment": "RAMPART-415: Apply Detelin Yordanov's patch to make Rampart compatible with WSS4J 1.6.16."
+        },
+        {
+            "c_hash": "11b7a02f",
+            "date": "2014-07-15 19:16:28 +0000",
+            "comment": "RAMPART-415: Applied Detelin Yordanov's patch to update Bouncy Castle to 1.49."
+        },
+        {
+            "c_hash": "1ea01bf6",
+            "date": "2014-07-16 18:14:24 +0000",
+            "comment": "RAMPART-415: Applied Detelin Yordanov's patch to restore support for UsernameToken assertions with no password requirement."
+        },
+        {
+            "c_hash": "7bac46ed",
+            "date": "2014-07-20 10:13:28 +0000",
+            "comment": "Set svn:ignore."
+        },
+        {
+            "c_hash": "f0d641fc",
+            "date": "2014-07-20 10:56:50 +0000",
+            "comment": "RAMPART-416: Applied Detelin Yordanov's patch to enable Rampart transport binding integration tests."
+        },
+        {
+            "c_hash": "d263b63d",
+            "date": "2014-07-20 18:08:22 +0000",
+            "comment": "Prevent SimpleTokenStoreTest from writing a file into the root directory of the Maven module."
+        }
+    ]
+}

@@ -1,0 +1,488 @@
+{
+    "project": "log4j-receivers",
+    "git_url": "https://github.com/apache/log4j-receivers.git",
+    "last_commit": "e3410d73",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "1cf5eaf0",
+            "date": "2007-04-12 15:49:32 +0000",
+            "comment": "Bug 42102: log4j 1.3 receivers for log4j 1.2"
+        },
+        {
+            "c_hash": "504b0282",
+            "date": "2007-04-12 16:37:09 +0000",
+            "comment": "Bug 42102: Copy log4j 1.3 implementation to sandbox"
+        },
+        {
+            "c_hash": "914ceeca",
+            "date": "2007-04-12 16:51:07 +0000",
+            "comment": "Bug 42102: Change to reflective invocation of LoggingEvent.setProperty"
+        },
+        {
+            "c_hash": "c4d12a3f",
+            "date": "2007-04-12 17:07:46 +0000",
+            "comment": "Bug 42102: Make SocketNode inner class to avoid conflict with 1.2's implementation"
+        },
+        {
+            "c_hash": "e7407df7",
+            "date": "2007-04-12 17:28:44 +0000",
+            "comment": "Bug 42102: Forgot to copy SocketReceiver.java over from log4j 1.3"
+        },
+        {
+            "c_hash": "9c5766ba",
+            "date": "2007-04-12 20:14:05 +0000",
+            "comment": "Bug 42102: Copy decoders from log4j 1.3, bump to require log4j 1.2.15"
+        },
+        {
+            "c_hash": "d5e6b90e",
+            "date": "2007-04-12 22:22:34 +0000",
+            "comment": "Bug 42102: Should be functional with current SVN log4j 1.2"
+        },
+        {
+            "c_hash": "c5c955bf",
+            "date": "2007-04-17 22:09:54 +0000",
+            "comment": "Coping log4j trunk (1.3) version of LogFilePatternReceiver.java over to sandbox receiver area in readiness for combining with Chainsaw."
+        },
+        {
+            "c_hash": "570d5947",
+            "date": "2007-04-17 22:10:49 +0000",
+            "comment": "Coping log4j trunk (1.3) version of LogFilePatternReceiverBeanInfo.java over to sandbox receiver area in readiness for combining with Chainsaw."
+        },
+        {
+            "c_hash": "55f7268c",
+            "date": "2007-04-17 22:19:31 +0000",
+            "comment": "* Fixed up LoggingEvent constructor usage to comply with log4j 1.2. * Changed pom.xml to reference expression-filter project due to the LogFilePatternRecevier dependency on Rule schtuff"
+        },
+        {
+            "c_hash": "edf554f1",
+            "date": "2007-04-18 19:39:39 +0000",
+            "comment": "Bug 42102: Add LICENSE and NOTICE to jar's META-INF"
+        },
+        {
+            "c_hash": "4435374c",
+            "date": "2007-04-19 03:25:33 +0000",
+            "comment": "Final tidy up of addition of other receivers from log4j 1.3."
+        },
+        {
+            "c_hash": "408d5d36",
+            "date": "2007-04-21 01:39:57 +0000",
+            "comment": "Bug 42102: Added site content and build.xml"
+        },
+        {
+            "c_hash": "001395c4",
+            "date": "2007-04-24 20:02:21 +0000",
+            "comment": "Bug 42102: Remove ref for o.a.l.h.Constants, use javaee dependency to eliminate manual download, add test"
+        },
+        {
+            "c_hash": "ab97b7c7",
+            "date": "2007-04-25 04:32:25 +0000",
+            "comment": "Bug 42102: Fixed reports macro, CR to LF"
+        },
+        {
+            "c_hash": "4b96b1ca",
+            "date": "2007-04-25 10:38:41 +0000",
+            "comment": "Switching report macro to menu ref='reports'"
+        },
+        {
+            "c_hash": "9fb9cd36",
+            "date": "2007-05-11 17:43:05 +0000",
+            "comment": "Bug 42102: Fix build.xml copied from filters"
+        },
+        {
+            "c_hash": "9a8b5669",
+            "date": "2007-06-04 20:01:55 +0000",
+            "comment": "Moving log4j companions out of sandbox"
+        },
+        {
+            "c_hash": "ff4e1194",
+            "date": "2007-06-05 04:42:16 +0000",
+            "comment": "Bug 42102: Change version to 1.0, productization fixes"
+        },
+        {
+            "c_hash": "6d28eaec",
+            "date": "2007-06-05 13:55:19 +0000",
+            "comment": "Bug 42102: Remove specification section from manifest in ant build"
+        },
+        {
+            "c_hash": "c3338cd5",
+            "date": "2007-06-05 22:07:58 +0000",
+            "comment": "Bug 42102: Added missing parseUnrecElement's for DBAppender, UDP and MulticastAppender ports"
+        },
+        {
+            "c_hash": "5e13d0cc",
+            "date": "2007-06-06 12:55:25 +0000",
+            "comment": "Bug 42102: Add hsqldb dependency to build.xml, stale code in CustomSQLDBReceiver"
+        },
+        {
+            "c_hash": "181b97b4",
+            "date": "2007-06-18 03:30:49 +0000",
+            "comment": "Adds an option that determines whether a new thread, or the existing thread is used to import the events into the Receiver. By default the behaviour remains unchanged with a new Thread created to manage the import."
+        },
+        {
+            "c_hash": "e58166e9",
+            "date": "2007-06-18 03:44:40 +0000",
+            "comment": "Added new property 'useCurrentThread' to the BeanInfo class for introspection purposes."
+        },
+        {
+            "c_hash": "dff335c0",
+            "date": "2007-06-27 22:45:23 +0000",
+            "comment": "Bug 42102: Harmonization of companions"
+        },
+        {
+            "c_hash": "286d052a",
+            "date": "2007-06-27 23:45:01 +0000",
+            "comment": "[maven-release-plugin] prepare release v1_0_rc1"
+        },
+        {
+            "c_hash": "938feff7",
+            "date": "2007-06-27 23:45:14 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "3b8646a7",
+            "date": "2007-07-04 17:46:41 +0000",
+            "comment": "Bug 42783: Remove companions that were rolled into extras"
+        },
+        {
+            "c_hash": "8cea5337",
+            "date": "2007-07-21 01:03:04 +0000",
+            "comment": "Bug 37930: web site staging to SVN repo"
+        },
+        {
+            "c_hash": "189382c7",
+            "date": "2007-07-21 17:51:19 +0000",
+            "comment": "Bug 42102: Set mime-type on staged web content"
+        },
+        {
+            "c_hash": "b4bc8443",
+            "date": "2007-08-07 06:49:27 +0000",
+            "comment": "- added logger.dtd to support processing of java.util.logging dtd-formatted events - added locationInfo support to multicastappender (note: no support for MDC or event properties in XMLLayout/1.2 log4j.dtd, so application/hostname properties won't be sent for udp/multicastappender)"
+        },
+        {
+            "c_hash": "0e86f08d",
+            "date": "2007-08-10 05:29:41 +0000",
+            "comment": "Make LEVEL optional for logfilepatternreceiver (see http://issues.apache.org/bugzilla/show_bug.cgi?id=43075)"
+        },
+        {
+            "c_hash": "32cc8b43",
+            "date": "2007-08-10 06:01:18 +0000",
+            "comment": "Adding sybase dialect (http://issues.apache.org/bugzilla/show_bug.cgi?id=42991)"
+        },
+        {
+            "c_hash": "dd87d5ba",
+            "date": "2007-08-10 06:16:16 +0000",
+            "comment": "Apply suggested fix to prevent NPE if generated keys supported."
+        },
+        {
+            "c_hash": "65c3651e",
+            "date": "2007-08-11 04:11:27 +0000",
+            "comment": "Bug 41483: Add RewriteAppender and policies to replace MapFilter, etc"
+        },
+        {
+            "c_hash": "ce5fd06b",
+            "date": "2007-08-13 00:37:51 +0000",
+            "comment": "Prevent npe"
+        },
+        {
+            "c_hash": "8447ff00",
+            "date": "2007-08-13 05:17:52 +0000",
+            "comment": "Remove all Javadoc @since 1.3 references (1.3 is obsoleted) - see http://issues.apache.org/bugzilla/show_bug.cgi?id=43101"
+        },
+        {
+            "c_hash": "9d10fef6",
+            "date": "2007-08-15 17:21:17 +0000",
+            "comment": "Bug 43131: Remove dummy: protocol from XMLDecoder"
+        },
+        {
+            "c_hash": "7f01ff38",
+            "date": "2007-08-15 23:30:58 +0000",
+            "comment": "Bug 42102: Remove unnecessary dependency on jakarta-oro"
+        },
+        {
+            "c_hash": "25134585",
+            "date": "2007-08-16 05:11:04 +0000",
+            "comment": "Fix for issue http://issues.apache.org/bugzilla/show_bug.cgi?id=43140"
+        },
+        {
+            "c_hash": "26ba966f",
+            "date": "2007-08-16 19:28:23 +0000",
+            "comment": "Bug 42102: Restore jakarta-oro dependency"
+        },
+        {
+            "c_hash": "def140ad",
+            "date": "2007-08-21 04:26:42 +0000",
+            "comment": "Added 'useCurrentThread' property to this receiver.  This is the same as the other Log-file based receiver."
+        },
+        {
+            "c_hash": "f43b88b3",
+            "date": "2007-08-23 06:42:19 +0000",
+            "comment": "Add javadoc for propertyrewritepolicy describing the name/value pair format For multicast/udp appenders, always set the hostname as a property"
+        },
+        {
+            "c_hash": "d93b3026",
+            "date": "2007-08-23 13:39:08 +0000",
+            "comment": "Removed unused 'overrideproperties' fields & methods in multicast/udp appenders"
+        },
+        {
+            "c_hash": "1307d645",
+            "date": "2007-08-23 17:06:59 +0000",
+            "comment": "Eliminate need to resolve logger.dtd"
+        },
+        {
+            "c_hash": "c4b6fe25",
+            "date": "2007-08-23 17:30:00 +0000",
+            "comment": "- removed hostname property creation from socketappender - added hostname property creation to socketnode13 (used by socketreceiver) - made same change to xmlsocketnode (used by xmlsocketreceiver)"
+        },
+        {
+            "c_hash": "19eebd08",
+            "date": "2007-08-23 17:49:03 +0000",
+            "comment": "- Move helpers/Constants out of log4j and back to component - Remove reference to Constants from socketappender - Use Constants for hostname key in socketnode13"
+        },
+        {
+            "c_hash": "90abd5ba",
+            "date": "2007-08-29 19:42:15 +0000",
+            "comment": "Bug 42102: Remove prospective release date and downloads from receivers"
+        },
+        {
+            "c_hash": "da11aefa",
+            "date": "2007-08-29 21:36:35 +0000",
+            "comment": "Adjust pom for log4j 1.2.15 release"
+        },
+        {
+            "c_hash": "5ce6879c",
+            "date": "2007-09-05 17:17:41 +0000",
+            "comment": "Bug 43312: Mangled source-repository.html"
+        },
+        {
+            "c_hash": "0814359b",
+            "date": "2007-09-18 18:11:34 +0000",
+            "comment": "Bug 41483: Use TreeMap for reproducable order in RewriteAppenderTest"
+        },
+        {
+            "c_hash": "1524dc83",
+            "date": "2007-11-03 05:16:19 +0000",
+            "comment": "Bug 43736 applied patch provided by Curt with extraction to a constant to indicate that XMLDecoder only deals with UTF-8 encoded log files."
+        },
+        {
+            "c_hash": "25bd6588",
+            "date": "2008-06-06 17:25:23 +0000",
+            "comment": "Update ASL headers"
+        },
+        {
+            "c_hash": "7b5c604d",
+            "date": "2008-07-03 02:43:47 +0000",
+            "comment": "Update JavaDocs to clarify receiver params"
+        },
+        {
+            "c_hash": "4170d732",
+            "date": "2008-07-03 17:49:08 +0000",
+            "comment": "Update the customsqldbreceiver javadoc to make it even more clear that the user's db columns don't have to have the same name/contain all of the same columns (can be ALIASed)."
+        },
+        {
+            "c_hash": "5b2201cc",
+            "date": "2008-07-22 03:16:25 +0000",
+            "comment": "changed logfilepatternreceiver parsing to use .*? and .* instead of .+? and .+"
+        },
+        {
+            "c_hash": "78f4a3fe",
+            "date": "2008-09-04 04:57:11 +0000",
+            "comment": "Bug 42171 Applied patch supplied by ray@ that resolves a bug where by duplicate events are received after a SocketHubReceiver is shutdown and then restartedi such as when used under Chainsaw."
+        },
+        {
+            "c_hash": "20053bc7",
+            "date": "2008-09-10 10:16:52 +0000",
+            "comment": "Replace the dependency on the Sun Java JMS spec jar with the Geronimo one.  This aligns this module with the log4j main one."
+        },
+        {
+            "c_hash": "3c69141f",
+            "date": "2009-05-13 05:54:49 +0000",
+            "comment": "Added two new parameters to LogFilePatternReceiver:  - waitmillis (configurable delay between checks for updates to a file - used when tailing=true)  - appendNonMatches (if true, append non-matching lines to the log, associated with the logger 'Unknown')"
+        },
+        {
+            "c_hash": "becdb610",
+            "date": "2009-05-20 16:15:24 +0000",
+            "comment": "Fix for Bugzilla issue 47209: Color Filter rule level==info broken"
+        },
+        {
+            "c_hash": "d25d60d6",
+            "date": "2009-09-28 00:13:06 +0000",
+            "comment": "Update LogFilePatternReceivers  - fix bugs in regular & VFS receiver's activateOptions & shutdown code to ensure the tailing thread is shut down when appropriate  - For VFS receiver, release the file during the sleep interval, allowing the file to be deleted/renamed during tailing if necessary"
+        },
+        {
+            "c_hash": "a9cdb31b",
+            "date": "2009-10-03 06:33:30 +0000",
+            "comment": "Chainsaw UI updates  - improve event load performance by holding off on tablemodel update notification until the entire batch is processed (50K+ events loaded in just a few seconds on a fast machine) VFS/LogFilePatternReceiver changes  - improve event parsing by assuming logger and level must not contain spaces  - rework logFormat parsing to beter support properties (when the property name contains part of a keyword name, or vice versa: PROP(TIME), PROP(LOGGER1), etc)"
+        },
+        {
+            "c_hash": "5c99f77d",
+            "date": "2009-10-03 17:06:45 +0000",
+            "comment": "Commit patches provided by Antonio Petrelli - thanks Antonio"
+        },
+        {
+            "c_hash": "cc994c7f",
+            "date": "2009-10-05 23:09:32 +0000",
+            "comment": "For a non-matching event when appendNonMatches=true, use the timestamp of the last matching event, to try to maintain time-based ordering even though we were unable to parse the event"
+        },
+        {
+            "c_hash": "2aab152f",
+            "date": "2009-10-25 21:22:43 +0000",
+            "comment": "modify xml decoders so additionalProperties override existing properties (allows, for example, the ability to load a set of saved events into a new tab in chainsaw, because chainsaw can modify the application/hostname properties that control event routing)."
+        },
+        {
+            "c_hash": "70c6d90f",
+            "date": "2009-10-27 04:32:34 +0000",
+            "comment": "If level value couldn't be parsed as a known level, append that text to the message field"
+        },
+        {
+            "c_hash": "9298a5ec",
+            "date": "2010-03-17 07:16:06 +0000",
+            "comment": "Added ZeroConf support to most of the network-based appenders and receivers."
+        },
+        {
+            "c_hash": "4fde3203",
+            "date": "2010-04-04 08:41:32 +0000",
+            "comment": "Chainsaw updates  - It's now possible to directly load events stored in a zip file created when saving events to a file with a zip extension  - Now hiding the receivers panel by default  - Reduced the default size of the details pane  - Updated logpanel details, welcome tab and release notes panes to use system fonts and size"
+        },
+        {
+            "c_hash": "ce5bdfb7",
+            "date": "2010-04-16 05:32:34 +0000",
+            "comment": "Chainsaw UI updates (feedback appreciated)  - instead of the default row selection rendering of changing the row's background color, the selected row color is preserved but a border around the selected row is displayed  - removed table row and column margin (border around cells in the selected row had gaps without making this change)  - updated widths of fields in status bar  - performance tweak: tree node selection no longer triggers unnecessary calculations (only currently displayed rows are recalculated for highlighting)  - removed bevel border around ID field"
+        },
+        {
+            "c_hash": "4ab7ec88",
+            "date": "2010-04-30 20:31:42 +0000",
+            "comment": "Fix case sensitive property loading issue in Chainsaw Fix bug in logFormat regexp creation logic in logfilepatternreceiver"
+        },
+        {
+            "c_hash": "cdcfd20b",
+            "date": "2010-04-30 20:36:39 +0000",
+            "comment": "Undo last regexp build change to logfilepatternreceiver (was correct)"
+        },
+        {
+            "c_hash": "1bdedc90",
+            "date": "2010-05-05 07:17:00 +0000",
+            "comment": "added support for 'custom level definitions' in LogFilePatternReceiver, which allows the user to map strings in the log file to Log4j levels if there are extra spaces that would prevent a pattern from matching, strip them out exclude empty lines (if appendNonMatches was false, would add an empty line to the log)"
+        },
+        {
+            "c_hash": "c80ac157",
+            "date": "2010-05-09 08:30:00 +0000",
+            "comment": "Added ability to highlight search match text in the table (per-log panel preference, enabled by default)  - modified the Rule.evaluate method to accept a Map argument.  If the map argument is not null, the map will be populated with text matches resulting from the rule evaluation - the keys are the field names containing text matches discovered during rule evaluation, the values are the (possibly multiple) text matches - updated Chainsaw & receivers pom.xml to require log4j-extras 1.1 snapshot due to the change to the Rule API  - renamed JEditorPaneFormatter to JTextComponentFormatter  - modified the Search match color in the table from black background to grey background, from white foreground to black foreground - reworked concurrency & use of event lists in ChainsawCyclicBufferTableModel - added search matches to extendedloggingevent (used during rendering) - updated findnext/previous logic to handle no selected row, better handling of wrapping forward & back - reworked tablecellrenderer logic to support bolding of search-match text in the table (required changing multiline fields to use a jtextpane) - updated all Rules to accept a Map which is populated by String keys representing the fields providing a text match, and Set values containing the one or more text matches for that field (if the map is null, no collection of results is performed) - updated And, Or and Not rules to correctly aggregate text match results of their child rules - updated ExpressionRule to allow definition of expressions containing keywords as text (must be single-quoted)"
+        },
+        {
+            "c_hash": "258fad14",
+            "date": "2010-05-18 06:22:21 +0000",
+            "comment": "Maven and build fixes to allow log4j, Chainsaw and companions (minus ZeroConf) to be built without requiring manual installation of any maven depdencies  - replaced log4j 1.2.16-SNAPSHOT references with log4j 1.2.16  - added java.net repository information to automatically provide javamail maven dependency (java.net repo provide javamail 1.4.3, so all javamail refs were updated to 1.4.3)  - added openejb maven dependency information to support javaee class dependencies  - updated 'version' property to 1.2.16  - removed zeroconf maven dependency from Chainsaw, added jmdns 1.0 maven dependency"
+        },
+        {
+            "c_hash": "8447616d",
+            "date": "2010-06-08 04:18:10 +0000",
+            "comment": "Bug 42102: Missing source headers, pom.xml tweaks"
+        },
+        {
+            "c_hash": "1d1fd939",
+            "date": "2010-06-12 06:20:57 +0000",
+            "comment": "Fix Bug 49421:  Chainsaw don't show Logger for SocketReceiver and SocketHubReceiver"
+        },
+        {
+            "c_hash": "2976c565",
+            "date": "2010-06-15 07:16:28 +0000",
+            "comment": "Clarify configuration options on NoReceiversWarningPanel dialog"
+        },
+        {
+            "c_hash": "98bb897f",
+            "date": "2010-06-19 07:39:58 +0000",
+            "comment": "Added rat maven plugin support to chainsaw, component, extras, receivers and zeroconf"
+        },
+        {
+            "c_hash": "cdb23dc1",
+            "date": "2010-06-19 23:50:05 +0000",
+            "comment": "Bug 49078: javadoc.jar was missing NOTICE and LICENSE"
+        },
+        {
+            "c_hash": "11b17685",
+            "date": "2010-07-22 06:44:06 +0000",
+            "comment": "Update receivers to set the 'active' member on activateoptions & shutdown"
+        },
+        {
+            "c_hash": "e0b43183",
+            "date": "2010-07-27 06:25:24 +0000",
+            "comment": "Updating meta char replacement to ensure all regexp characters are escaped properly"
+        },
+        {
+            "c_hash": "10ae8653",
+            "date": "2010-07-29 00:35:30 +0000",
+            "comment": "Some locales represent simpledateformatted-text with characters other than alpha/numeric (dot in French locales for the month)..use /S when building the pattern that can parse the timestamp format instead of /w to account for that situation"
+        },
+        {
+            "c_hash": "f015bbd1",
+            "date": "2010-08-14 07:42:54 +0000",
+            "comment": "Support non-pattern characters in SimpleDateFormat (for example the T in  2010-08-12T13:58:50.729)"
+        },
+        {
+            "c_hash": "5feb5941",
+            "date": "2010-08-16 06:14:38 +0000",
+            "comment": "Minor bug fixes  - Fixed bug preventing non-blank receiver properties from being set to blank (except for 'name' field)  - Now only logging in VFS receiver panel if the file size grows or the file is truncated (not every time the file is examined for changes)  - Fixed bug causing a specified receiver configuration to be loaded twice if loaded from the receiver configuration/selection screen  - Updated LogFilePatternReceiver timestamp regexp support to escape dots in timestamps"
+        },
+        {
+            "c_hash": "1fb31455",
+            "date": "2010-09-11 08:42:09 +0000",
+            "comment": "Removed use of now-in-the-attic Jakarta ORO.  Now using java.util.regex package in LogFilePatternReceiver (java 1.4).  Also removed ORO from receivers pom."
+        },
+        {
+            "c_hash": "7d20e843",
+            "date": "2010-09-11 19:49:21 +0000",
+            "comment": "Bug 43148: Add change notice for move to java.util.regex"
+        },
+        {
+            "c_hash": "7439fd11",
+            "date": "2011-08-03 16:35:56 +0000",
+            "comment": "depend to 1.1 stable, not snapshot"
+        },
+        {
+            "c_hash": "80b15340",
+            "date": "2011-08-09 08:33:09 +0000",
+            "comment": "added poms to parent pom"
+        },
+        {
+            "c_hash": "2020217b",
+            "date": "2011-08-15 10:49:13 +0000",
+            "comment": "upgraded to maven 3"
+        },
+        {
+            "c_hash": "82a44e0f",
+            "date": "2011-08-16 09:26:07 +0000",
+            "comment": "maven logo for new branding"
+        },
+        {
+            "c_hash": "5bb38760",
+            "date": "2011-08-16 09:27:03 +0000",
+            "comment": "moved build plugin configuration to parent project"
+        },
+        {
+            "c_hash": "b8f6d686",
+            "date": "2011-08-16 09:40:51 +0000",
+            "comment": "removed build targets from build file"
+        },
+        {
+            "c_hash": "1405feca",
+            "date": "2011-08-16 10:26:02 +0000",
+            "comment": "cleaned up pom files, moved plugins to parent pom, formatting etc"
+        },
+        {
+            "c_hash": "6deb9709",
+            "date": "2011-08-17 08:09:09 +0000",
+            "comment": "completed branding requirements"
+        },
+        {
+            "c_hash": "184c44a1",
+            "date": "2011-08-17 08:14:52 +0000",
+            "comment": "Update relative path to companions parent"
+        },
+        {
+            "c_hash": "e3410d73",
+            "date": "2012-05-26 15:48:32 +0000",
+            "comment": "moved components to extras"
+        }
+    ]
+}

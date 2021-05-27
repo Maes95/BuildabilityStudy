@@ -1,0 +1,7 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Jan 22 16:05:34 EST 2015
+http\://repository.jboss.org/maven2/.lastUpdated=1421960734327
+@legacy-http\://download.java.net/maven/1/.lastUpdated=1421960734329
+http\://repository.jboss.org/maven2/.error=
+https\://repo.maven.apache.org/maven2/.lastUpdated=1421960734572
+http\://download.java.net/maven/1/.error=Could not transfer artifact org.apache.geronimo.specs\:geronimo-atinject_1.0_spec\:jar\:1.0 from/to maven2-repository.dev.java.net (http\://download.java.net/maven/1/)\: No connector available to access repository maven2-repository.dev.java.net (http\://download.java.net/maven/1/) of type legacy using the available factories WagonRepositoryConnectorFactory

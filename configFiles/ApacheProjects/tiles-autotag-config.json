@@ -1,0 +1,558 @@
+{
+    "project": "tiles-autotag",
+    "git_url": "https://github.com/apache/tiles-autotag.git",
+    "last_commit": "b83685e6",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "5c03a5b2",
+            "date": "2010-01-09 13:28:40 +0000",
+            "comment": "TILESSB-20 Creating main project directory for Autotag."
+        },
+        {
+            "c_hash": "8ecab9a6",
+            "date": "2010-01-09 13:29:45 +0000",
+            "comment": "Initial import."
+        },
+        {
+            "c_hash": "34f68ef4",
+            "date": "2010-01-09 13:30:38 +0000",
+            "comment": "Removed useless directory."
+        },
+        {
+            "c_hash": "21586bb4",
+            "date": "2010-01-09 13:32:43 +0000",
+            "comment": "TILESSB-20 First files for Autotag."
+        },
+        {
+            "c_hash": "b48a6d96",
+            "date": "2010-01-09 13:38:26 +0000",
+            "comment": "TILESSB-20 Added core module."
+        },
+        {
+            "c_hash": "470c3ed4",
+            "date": "2010-01-09 19:29:26 +0000",
+            "comment": "TILESSB-21 Added ANTLR generation of Java parser."
+        },
+        {
+            "c_hash": "10dacef4",
+            "date": "2010-02-02 10:36:27 +0000",
+            "comment": "TILESSB-21 Added code that uses QDox to create the model. Removed Antlr stuff and dependency on Java compiler tools."
+        },
+        {
+            "c_hash": "dd61aa37",
+            "date": "2010-02-02 16:51:03 +0000",
+            "comment": "TILESSB-21 Added base code for generation of code."
+        },
+        {
+            "c_hash": "5c4adfbb",
+            "date": "2010-02-02 20:33:23 +0000",
+            "comment": "TILESSB-22 Added autotag-jsp module."
+        },
+        {
+            "c_hash": "6fe9149f",
+            "date": "2010-02-10 10:05:06 +0000",
+            "comment": "TILESSB-22 Added creation of TLD."
+        },
+        {
+            "c_hash": "ae294945",
+            "date": "2010-02-21 19:26:25 +0000",
+            "comment": "TILESSB-24 Added Autotag core runtime module."
+        },
+        {
+            "c_hash": "127fcf0d",
+            "date": "2010-02-21 19:42:51 +0000",
+            "comment": "TILESSB-24 Moved code form tiles-template to tiles-autotag-core-runtime."
+        },
+        {
+            "c_hash": "c66dd2a7",
+            "date": "2010-02-23 13:29:04 +0000",
+            "comment": "TILESSB-24 Moved ComposeStackUtil and NullWriter test case into autotag core runtime."
+        },
+        {
+            "c_hash": "0accefad",
+            "date": "2010-02-27 12:20:21 +0000",
+            "comment": "TILESSB-21 TILESSB-22 Adapted changes to template model style to autotag-core and autotag-jsp."
+        },
+        {
+            "c_hash": "c847cb08",
+            "date": "2010-02-27 12:33:39 +0000",
+            "comment": "TILESSB-21 Added TemplateSuite parameter to TemplateClassGenerator."
+        },
+        {
+            "c_hash": "ec6897f1",
+            "date": "2010-02-27 16:51:40 +0000",
+            "comment": "TILESSB-21 Renamed AbstractTemplateGenerator in BasicTemplateGenerator."
+        },
+        {
+            "c_hash": "ad921bb9",
+            "date": "2010-02-27 17:01:49 +0000",
+            "comment": "TILESSB-22 Added generation of tag classes."
+        },
+        {
+            "c_hash": "bc18e376",
+            "date": "2010-02-27 18:04:25 +0000",
+            "comment": "TILESSB-22 Extrapolated abstract classes. Allowed the use of multi-line documentation."
+        },
+        {
+            "c_hash": "64df2f61",
+            "date": "2010-02-28 14:01:04 +0000",
+            "comment": "TILESSB-25 Added Maven plugin for Autotag."
+        },
+        {
+            "c_hash": "f2158836",
+            "date": "2010-03-02 19:59:56 +0000",
+            "comment": "TILESSB-25 Created CreateDescriptorMojo. Added to tiles-template to test it."
+        },
+        {
+            "c_hash": "d5704bc5",
+            "date": "2010-03-03 20:46:25 +0000",
+            "comment": "TILESSB-25 Added generation of JSP code. Fixed other places accordingly."
+        },
+        {
+            "c_hash": "d2abbfea",
+            "date": "2010-03-07 14:47:38 +0000",
+            "comment": "TILESSB-25 Created Mojo for JSP support."
+        },
+        {
+            "c_hash": "5383422e",
+            "date": "2010-03-07 19:08:50 +0000",
+            "comment": "TILESSB-26 Added Autotag JSP runtime module."
+        },
+        {
+            "c_hash": "29c61663",
+            "date": "2010-03-07 19:30:17 +0000",
+            "comment": "TILESSB-26 Moved code from tiles-jsp to tiles-autotag-jsp-runtime. Modified tiles-autotag-jsp accordingly."
+        },
+        {
+            "c_hash": "4597be86",
+            "date": "2010-03-08 20:24:45 +0000",
+            "comment": "TILESSB-27 Added Autotag Freemarker module."
+        },
+        {
+            "c_hash": "4bbd7ef6",
+            "date": "2010-03-13 13:30:47 +0000",
+            "comment": "TILESSB-21 Moved velocity.properties in autotag-core. Added support for default value. Prepared StringTool to allow management of default parameter values."
+        },
+        {
+            "c_hash": "070ceaf8",
+            "date": "2010-03-13 13:32:32 +0000",
+            "comment": "TILESSB-27 Added code generation of FreeMarker directive models."
+        },
+        {
+            "c_hash": "2b9814db",
+            "date": "2010-03-13 13:33:58 +0000",
+            "comment": "TILESSB21 TILESSB24 Added defaultValue to Parameter annotation."
+        },
+        {
+            "c_hash": "75f8ee9e",
+            "date": "2010-03-17 20:11:59 +0000",
+            "comment": "TILESSB21 Moved velocity.properties."
+        },
+        {
+            "c_hash": "a5b415f3",
+            "date": "2010-03-17 20:13:18 +0000",
+            "comment": "TILESSB-27 Fixed some bugs in the velocity template."
+        },
+        {
+            "c_hash": "86a9c6f3",
+            "date": "2010-03-17 20:21:00 +0000",
+            "comment": "TILESSB-25 Created mojo for autotag-freemarker."
+        },
+        {
+            "c_hash": "d8dc927c",
+            "date": "2010-03-17 20:27:41 +0000",
+            "comment": "TILESSB-28 Added autotag-freemarker-runtime module."
+        },
+        {
+            "c_hash": "4dd3ca87",
+            "date": "2010-03-17 20:53:19 +0000",
+            "comment": "TILESSB-28 Moved classes from Tiles-Freemarker to Autotag-Freemarker runtime module."
+        },
+        {
+            "c_hash": "5f7ef632",
+            "date": "2010-03-19 19:15:19 +0000",
+            "comment": "TILESSB-28 Removed useless code."
+        },
+        {
+            "c_hash": "c9fa8481",
+            "date": "2010-03-19 20:37:25 +0000",
+            "comment": "TILESSB-29 Created Autotag Velocity module."
+        },
+        {
+            "c_hash": "d6185099",
+            "date": "2010-03-20 12:46:21 +0000",
+            "comment": "TILESSB-29 Created generators for velocity classes and properties."
+        },
+        {
+            "c_hash": "37016f2e",
+            "date": "2010-03-20 12:56:47 +0000",
+            "comment": "TILESSB-30 Created autotag-velocity-runtime module. Attached to tiles-velocity."
+        },
+        {
+            "c_hash": "7895dc49",
+            "date": "2010-03-20 13:27:56 +0000",
+            "comment": "TILESSB-30 Moved code from tiles-velocity to tiles-autotag-velocity-runtime."
+        },
+        {
+            "c_hash": "b9d69982",
+            "date": "2010-03-21 19:59:32 +0000",
+            "comment": "TILESSB-29 Fixed generator for Velocity directive."
+        },
+        {
+            "c_hash": "55486908",
+            "date": "2010-03-21 20:00:31 +0000",
+            "comment": "TILESSB-25 Created Velocity mojo."
+        },
+        {
+            "c_hash": "31a106fe",
+            "date": "2010-06-01 18:39:07 +0000",
+            "comment": "TILES-508 Merge from trunk to sandboxed Tiles 3. Removed repository configuration. Fixed release plugin configuration. Fixed some artifact and plugin versions."
+        },
+        {
+            "c_hash": "6f934d95",
+            "date": "2010-08-04 19:42:49 +0000",
+            "comment": "Updated to the latest tiles-master."
+        },
+        {
+            "c_hash": "7105985b",
+            "date": "2010-11-20 13:49:55 +0000",
+            "comment": "TILESSB-37 Added the use of VelocityEngine. TILESSB-11 Added some tests."
+        },
+        {
+            "c_hash": "d654355a",
+            "date": "2010-11-20 21:17:31 +0000",
+            "comment": "TILESSB-11 Completed tests for tiles-autotag-core."
+        },
+        {
+            "c_hash": "dda6bdc8",
+            "date": "2010-11-21 13:49:26 +0000",
+            "comment": "TILESSB-11 Completed tests for tiles-autotag-core-runtime."
+        },
+        {
+            "c_hash": "57182ba3",
+            "date": "2010-11-25 20:07:17 +0000",
+            "comment": "TILESSB-11 Completed tests for tiles-autotag-freemarker (and runtime too)."
+        },
+        {
+            "c_hash": "af674e0b",
+            "date": "2010-11-25 20:48:18 +0000",
+            "comment": "TILESSB-11 Completed tests for tiles-autotag-jsp-runtime."
+        },
+        {
+            "c_hash": "126719fb",
+            "date": "2010-11-26 19:54:10 +0000",
+            "comment": "TILESSB-11 Completed tests for tiles-autotag-velocity-runtime."
+        },
+        {
+            "c_hash": "04b1def2",
+            "date": "2010-12-05 15:34:21 +0000",
+            "comment": "TILESSB-11 Refactoring to ease testing of the Autotag plugin."
+        },
+        {
+            "c_hash": "c8b21256",
+            "date": "2010-12-06 21:09:33 +0000",
+            "comment": "TILESSB-11 Added tests for maven-autotag-plugin."
+        },
+        {
+            "c_hash": "8556412b",
+            "date": "2010-12-07 19:19:40 +0000",
+            "comment": "TILESSB-11 Finished maven-autotag-plugin testing and finished testing of all Tiles!"
+        },
+        {
+            "c_hash": "23293b05",
+            "date": "2010-12-11 13:53:42 +0000",
+            "comment": "TILESSB-38 Fixed checkstyle problems, as much as possible."
+        },
+        {
+            "c_hash": "0ff46017",
+            "date": "2010-12-11 20:35:57 +0000",
+            "comment": "TILESSB-38 Fixed tiles-autotag-core main code checkstyle."
+        },
+        {
+            "c_hash": "32d2cdab",
+            "date": "2010-12-12 12:50:53 +0000",
+            "comment": "TILESSB-38 Added missing license headers in maven-autotag-plugin."
+        },
+        {
+            "c_hash": "9a1a3878",
+            "date": "2010-12-12 13:06:26 +0000",
+            "comment": "TILESSB-38 Fixed tiles-autotag-core checkstyle."
+        },
+        {
+            "c_hash": "cca53fcc",
+            "date": "2010-12-12 13:22:01 +0000",
+            "comment": "TILESSB-38 Fixed tiles-autotag-core-runtime checkstyle."
+        },
+        {
+            "c_hash": "1b91776e",
+            "date": "2010-12-12 13:29:34 +0000",
+            "comment": "TILESSB-38 Fixed tiles-autotag-freemarker checkstyle."
+        },
+        {
+            "c_hash": "fcc8bb22",
+            "date": "2010-12-13 19:28:37 +0000",
+            "comment": "TILESSB-38 Fixed tiles-autotag-freemarker-runtime checkstyle."
+        },
+        {
+            "c_hash": "632e15c0",
+            "date": "2010-12-13 19:40:43 +0000",
+            "comment": "TILESSB-38 Fixed tiles-autotag-jsp checkstyle."
+        },
+        {
+            "c_hash": "4e38f5df",
+            "date": "2010-12-13 19:48:27 +0000",
+            "comment": "TILESSB-38 Fixed tiles-autotag-jsp-runtime checkstyle."
+        },
+        {
+            "c_hash": "22fe3ae1",
+            "date": "2010-12-13 19:58:23 +0000",
+            "comment": "TILESSB-38 Fixed tiles-autotag-velocity checkstyle."
+        },
+        {
+            "c_hash": "faf6df5c",
+            "date": "2010-12-13 20:03:56 +0000",
+            "comment": "TILESSB-38 Fixed tiles-autotag-velocity-runtime checkstyle."
+        },
+        {
+            "c_hash": "bd29bc25",
+            "date": "2010-12-15 21:04:06 +0000",
+            "comment": "TILESSB-38 Sacrified checkstyle for testing: TemplateGeneratorBuilder should not be final."
+        },
+        {
+            "c_hash": "4d0800ed",
+            "date": "2011-06-29 14:43:34 +0000",
+            "comment": "sandbox moved to trunk  http://thread.gmane.org/gmane.comp.apache.tiles.devel/187"
+        },
+        {
+            "c_hash": "13797918",
+            "date": "2011-07-01 07:25:33 +0000",
+            "comment": "AUTOTAG-13 Using workaround to force enhanced mode for XStream for all JVM."
+        },
+        {
+            "c_hash": "c56b3a4a",
+            "date": "2011-07-01 07:30:01 +0000",
+            "comment": "Fixed urls of projects."
+        },
+        {
+            "c_hash": "649e8373",
+            "date": "2011-07-01 17:29:18 +0000",
+            "comment": "http://mail-archives.apache.org/mod_mbox/tiles-dev/201107.mbox/%3CCAHTRnezgac2runeLzvvX_3Ya69=nLVKTN1SAmaCs4k2CXf8h8A@mail.gmail.com%3E  fix urls (any available documentation is better than none)."
+        },
+        {
+            "c_hash": "a86c6cbc",
+            "date": "2011-07-03 12:05:03 +0000",
+            "comment": "Reverted r1141998. The urls were fine."
+        },
+        {
+            "c_hash": "da0a9d8c",
+            "date": "2011-07-04 20:35:40 +0000",
+            "comment": "correct distributionManagement urls"
+        },
+        {
+            "c_hash": "772f2281",
+            "date": "2011-08-26 11:35:47 +0000",
+            "comment": "site building for tiles-autotag and tiles-eval (and submodules)"
+        },
+        {
+            "c_hash": "db4bda2c",
+            "date": "2011-08-27 21:39:36 +0000",
+            "comment": "http://thread.gmane.org/gmane.comp.apache.tiles.devel/233"
+        },
+        {
+            "c_hash": "fb9f8c06",
+            "date": "2011-08-28 11:24:50 +0000",
+            "comment": "http://thread.gmane.org/gmane.comp.apache.tiles.devel/233"
+        },
+        {
+            "c_hash": "bc24b0a0",
+            "date": "2011-11-10 11:49:50 +0000",
+            "comment": "re-add (see r1141610) scm details. these projects don't inherit from tiles-reactor but from tiles-master so scm needs to be redeclared for each."
+        },
+        {
+            "c_hash": "2d169271",
+            "date": "2011-11-14 10:01:43 +0000",
+            "comment": "Decoupling the generator from the runtime in autotag"
+        },
+        {
+            "c_hash": "85fb26b5",
+            "date": "2012-01-09 10:35:14 +0000",
+            "comment": "> http://thread.gmane.org/gmane.comp.apache.tiles.devel/329 Refactor: remove \"util\" package in tiles-request"
+        },
+        {
+            "c_hash": "e204fc74",
+            "date": "2012-03-17 22:19:31 +0000",
+            "comment": "cleaning up the poms: - removed tiles-eval (now out of scope) - updated the poms to use tiles-master-4-SNAPSHOT    (including reference to snapshot repository) - Regrouped the reporting plugins into tiles-master    and updated them with current versions - Moved issue management from tiles master into the projects - Fixed missing licence headers in the poms"
+        },
+        {
+            "c_hash": "1b9d65d8",
+            "date": "2012-03-20 01:22:25 +0000",
+            "comment": "changed the URLs of autotag and request to match JIRA"
+        },
+        {
+            "c_hash": "db626ce5",
+            "date": "2012-03-26 19:27:30 +0000",
+            "comment": "site documentation for tiles-request"
+        },
+        {
+            "c_hash": "951f9eb0",
+            "date": "2012-03-26 20:34:37 +0000",
+            "comment": "merged the autotag-runtime projects into the matching request implementations, as discussed here: http://mail-archives.apache.org/mod_mbox/tiles-dev/201110.mbox/%3CCAHTRnew8sEF+GrT_4PC7_OQcoaJo8zpo592bJSgTTdCo3edE0Q@mail.gmail.com%3E"
+        },
+        {
+            "c_hash": "4b2472e8",
+            "date": "2012-03-27 18:14:50 +0000",
+            "comment": "documentation for autotag"
+        },
+        {
+            "c_hash": "73389377",
+            "date": "2012-03-27 18:15:15 +0000",
+            "comment": "moved ComposeStackUtil out of autotag because it is tiles-specific"
+        },
+        {
+            "c_hash": "631d104c",
+            "date": "2012-03-28 15:39:11 +0000",
+            "comment": "removed misleading @since in tiles-request and tiles-autotag, since the project restarts at version 1.0"
+        },
+        {
+            "c_hash": "c61a8199",
+            "date": "2012-03-28 22:53:04 +0000",
+            "comment": "fixes: - replaced deprecated pom.version with project.version everywhere - fixed some syntax errors in the docs - fixed the missing tld docs"
+        },
+        {
+            "c_hash": "3367e7b6",
+            "date": "2012-04-07 21:00:34 +0000",
+            "comment": "Add missing OSGI manifests and use dependencyManagement to achieve convergence"
+        },
+        {
+            "c_hash": "d64eef04",
+            "date": "2012-05-01 21:09:05 +0000",
+            "comment": "add missing licence headers or autogenerated notices where needed"
+        },
+        {
+            "c_hash": "5e7a0608",
+            "date": "2012-05-03 16:47:24 +0000",
+            "comment": "Moved tiles-request and tiles-autotag into their own versionning structures"
+        },
+        {
+            "c_hash": "14d123ce",
+            "date": "2012-05-03 17:31:43 +0000",
+            "comment": "updated the poms with the new SCM URLs"
+        },
+        {
+            "c_hash": "51210a65",
+            "date": "2012-05-04 22:00:47 +0000",
+            "comment": "[maven-release-plugin] prepare branch AUTOTAG_1_0_X"
+        },
+        {
+            "c_hash": "117c1322",
+            "date": "2012-05-04 22:00:59 +0000",
+            "comment": "[maven-release-plugin] prepare release AUTOTAG_1_0_X"
+        },
+        {
+            "c_hash": "1aafd211",
+            "date": "2012-05-04 22:03:59 +0000",
+            "comment": "moved to non-snapshot version of the Request API"
+        },
+        {
+            "c_hash": "b82f5a2c",
+            "date": "2012-06-13 17:18:51 +0000",
+            "comment": "AUTOTAG-16: use generics to remove the dependency on tiles-request-api, remove the need for casting in generated classes"
+        },
+        {
+            "c_hash": "b01d917d",
+            "date": "2012-06-27 15:34:01 +0000",
+            "comment": "AUTOTAG-15: Add an assembly project to deploy autotag artifacts and sources"
+        },
+        {
+            "c_hash": "44a88206",
+            "date": "2012-06-27 21:40:20 +0000",
+            "comment": "TILES-552: Update the poms and the documentation on the release process"
+        },
+        {
+            "c_hash": "9ae50e67",
+            "date": "2012-07-11 15:02:53 +0000",
+            "comment": "TILES-548: mvn release:perfom fails on Maven 3.0.4"
+        },
+        {
+            "c_hash": "c7c6e5f9",
+            "date": "2012-07-11 15:35:15 +0000",
+            "comment": "Missing License Headers"
+        },
+        {
+            "c_hash": "aca4bb9f",
+            "date": "2012-07-11 15:40:45 +0000",
+            "comment": "[maven-release-plugin] prepare release tiles-autotag-1.1.0"
+        },
+        {
+            "c_hash": "c0e7a110",
+            "date": "2012-07-11 15:41:11 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "9804b073",
+            "date": "2012-07-11 16:24:53 +0000",
+            "comment": "revert failed release TILES-548: mvn release:perfom fails on Maven 3.0.4"
+        },
+        {
+            "c_hash": "b61516f5",
+            "date": "2012-07-11 16:28:21 +0000",
+            "comment": "[maven-release-plugin] prepare release tiles-autotag-1.1.0"
+        },
+        {
+            "c_hash": "6d5d6928",
+            "date": "2012-07-11 16:28:53 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "bf152af4",
+            "date": "2012-07-11 16:51:09 +0000",
+            "comment": "AUTOTAG-15: Add an assembly project to deploy autotag artifacts and sources"
+        },
+        {
+            "c_hash": "73b920b6",
+            "date": "2012-07-11 17:24:00 +0000",
+            "comment": "revert failed release (again) and fix the empty doc distribution"
+        },
+        {
+            "c_hash": "7d1f25f4",
+            "date": "2012-07-11 17:27:10 +0000",
+            "comment": "[maven-release-plugin] prepare release tiles-autotag-1.1.0"
+        },
+        {
+            "c_hash": "7eb75360",
+            "date": "2012-07-11 17:27:37 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "c8c9d7d4",
+            "date": "2013-05-27 10:24:04 +0000",
+            "comment": "add link to Download page on each microsite"
+        },
+        {
+            "c_hash": "69181044",
+            "date": "2013-11-03 11:04:04 +0000",
+            "comment": "Use the new tiles-master-6 \u2013 http://thread.gmane.org/gmane.comp.apache.tiles.devel/595 upgrade to svnpubsub system using maven-scm-publish-plugin. update the release and building pages for devs (svnpubsub, and referencing existing apache docs). Update release documentation: build requires Java7, and build requires maven-3.0.5+"
+        },
+        {
+            "c_hash": "2e778a19",
+            "date": "2013-11-03 15:55:08 +0000",
+            "comment": "lessons learnt from tiles-3.0.2 release"
+        },
+        {
+            "c_hash": "8d544717",
+            "date": "2013-11-05 18:48:24 +0000",
+            "comment": "add dev@tiles.apache.org into a top-level file so that github pull requests are forwarded to our dev mailing list.  as described in INFRA-3329"
+        },
+        {
+            "c_hash": "2547dcb8",
+            "date": "2013-11-27 21:23:29 +0000",
+            "comment": "TILES-576 \u2013\u00a0Please delete old releases from mirroring system"
+        },
+        {
+            "c_hash": "b83685e6",
+            "date": "2014-12-07 06:47:59 +0000",
+            "comment": "AUTOTAG-20 Add support for Eclipse's M2E plugin"
+        }
+    ]
+}

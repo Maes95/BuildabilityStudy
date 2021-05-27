@@ -1,0 +1,7 @@
+commitID;commit-type;time-to-next-release;commit-message
+129ce9cca6ded5dafaca6131b8a4ce3482ece967;BREAKING_CHANGES;97;moved initial implementations git-svn-id: https://svn.apache.org/repos/asf/myfaces/extensions/cdi/trunk@927642 13f79535-47bb-0310-9956-ffa450edef68
+7bda6a6d3ddc259629dbba12be29cb323aec8b69;BREAKING_FIX;4;upgrade owb to 1.0.0-alpha-1 git-svn-id: https://svn.apache.org/repos/asf/myfaces/extensions/cdi/trunk@964262 13f79535-47bb-0310-9956-ffa450edef68
+a91edecc7f8203c30cafd613f9878276414b454c;BREAKING_CHANGES;3;drop 'config' folder and move all to standard maven resource handling git-svn-id: https://svn.apache.org/repos/asf/myfaces/extensions/cdi/trunk@964397 13f79535-47bb-0310-9956-ffa450edef68
+ea77b76b64b29eb7936ce318645bb1d584858cbb;BREAKING_FIX;3;updated svn:ignore rules for eclipse git-svn-id: https://svn.apache.org/repos/asf/myfaces/extensions/cdi/trunk@964399 13f79535-47bb-0310-9956-ffa450edef68
+76515e65b8f662f07e31ff7e1ff487a83d389314;BREAKING_CHANGES;3;move resource handling back to maven default resource handling git-svn-id: https://svn.apache.org/repos/asf/myfaces/extensions/cdi/trunk@964404 13f79535-47bb-0310-9956-ffa450edef68
+734c69d39333e7a7baaa0f0624233bfc7634bfcf;BREAKING_CHANGES;6;EXTCDI-35 initial draft git-svn-id: https://svn.apache.org/repos/asf/myfaces/extensions/cdi/trunk@980541 13f79535-47bb-0310-9956-ffa450edef68

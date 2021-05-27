@@ -1,0 +1,9 @@
+commitID;commit-type;time-to-next-release;commit-message
+8367900baf07705ec24e45e31a43c268c312bf14;BREAKING_CHANGES;371;Oozie1 drop01 From: Alejandro Abdelnur <tucu00@gmail.com>git-svn-id: https://svn.apache.org/repos/asf/incubator/oozie/trunk@1168560 13f79535-47bb-0310-9956-ffa450edef68
+e7ef9b8de75287c98bc1e0738b0c9115e10b64a6;BREAKING_FIX;296;OOZIE-602 Update the Hadoop version to be an Apache Hadoop version. git-svn-id: https://svn.apache.org/repos/asf/incubator/oozie/trunk@1202452 13f79535-47bb-0310-9956-ffa450edef68
+0570455f4c582f4efe4e10ecf9dcd142c2f4b259;BREAKING_CHANGES;282;OOZIE-68 Add Hive action. (tucu) git-svn-id: https://svn.apache.org/repos/asf/incubator/oozie/trunk@1208126 13f79535-47bb-0310-9956-ffa450edef68
+9639fd51720c1c3460fe81c7d9f488b2cbb79f4a;BREAKING_FIX;129;OOZIE-825 Update oozie-sharelib-hive to use Hive 0.9.0 (virag via tucu) git-svn-id: https://svn.apache.org/repos/asf/incubator/oozie/trunk@1332329 13f79535-47bb-0310-9956-ffa450edef68
+73721f723e31379b9b9bd2a963db8be3a13f2a7b;BREAKING_CHANGES;127;OOZIE-815: Remove select * from queries related to coord action (Virag via Mohammad) git-svn-id: https://svn.apache.org/repos/asf/incubator/oozie/trunk@1332940 13f79535-47bb-0310-9956-ffa450edef68
+a061f5815f9776b69725ce77bacf292ccd69cec3;BREAKING_FIX;127;Adding new files for OOZIE-815: Remove select * from queries related to coord action (Virag via Mohammad) git-svn-id: https://svn.apache.org/repos/asf/incubator/oozie/trunk@1333119 13f79535-47bb-0310-9956-ffa450edef68
+72dfa8906ebab4dcec5bcd4600e5d9d486870968;BREAKING_CHANGES;68;OOZIE-1373 Oozie compilation fails with jdk7 (tucu, rohini via rohini) git-svn-id: https://svn.apache.org/repos/asf/oozie/trunk@1487551 13f79535-47bb-0310-9956-ffa450edef68
+af825bb06e9beb857db269376f3da1dccf0db64e;BREAKING_FIX;95;OOZIE-1961 Remove requireJavaVersion from enforcer rules (lars_francke via rkanter) 

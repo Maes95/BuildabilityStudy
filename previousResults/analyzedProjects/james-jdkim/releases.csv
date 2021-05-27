@@ -1,0 +1,5 @@
+commitID;commit-type;time-to-next-release;commit-message
+7049cf68c84703c4cf8e6331d248824c4df8fbef;BREAKING_CHANGES;656;Main pom for the jDKIM project git-svn-id: https://svn.apache.org/repos/asf/james/jdkim/trunk@822365 13f79535-47bb-0310-9956-ffa450edef68
+83a84c4fc318db5ca420a2a9f69fe7851c999d42;BREAKING_FIX;-;[maven-release-plugin] prepare release apache-jdkim-project-0.2 git-svn-id: https://svn.apache.org/repos/asf/james/jdkim/trunk@1150787 13f79535-47bb-0310-9956-ffa450edef68
+7c83feb5b279f2e19d65f98039a8b6279e7195a6;BREAKING_CHANGES;-;JDKIM-32 Upgraded to apache mailet 2.5.0 git-svn-id: https://svn.apache.org/repos/asf/james/jdkim/trunk@1426171 13f79535-47bb-0310-9956-ffa450edef68
+1ddc138383dbdeccc7ecae94485dfd1314ebabe4;BREAKING_FIX;-;JDKIM-33 Updated libraries * geronimo-activation -> 1.1* commons-codec -> 1.7* apache mailet -> 2.5.0 release* apache mime4j -> 0.7.2git-svn-id: https://svn.apache.org/repos/asf/james/jdkim/trunk@1426174 13f79535-47bb-0310-9956-ffa450edef68

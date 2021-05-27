@@ -1,0 +1,3713 @@
+{
+    "project": "oltu",
+    "git_url": "https://github.com/apache/oltu.git",
+    "last_commit": "f10663be",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "efb14cdc",
+            "date": "2010-01-27 16:34:31 +0000",
+            "comment": "created the Apache Amber Lab"
+        },
+        {
+            "c_hash": "0fbe776a",
+            "date": "2010-01-27 16:39:55 +0000",
+            "comment": "first checkin of LICENSE and doap files"
+        },
+        {
+            "c_hash": "41024206",
+            "date": "2010-01-27 19:55:04 +0000",
+            "comment": "replaced tabs with spaces"
+        },
+        {
+            "c_hash": "aa264924",
+            "date": "2010-01-27 19:57:46 +0000",
+            "comment": "first checkin of NOTICE file"
+        },
+        {
+            "c_hash": "579f5a16",
+            "date": "2010-01-27 20:25:08 +0000",
+            "comment": "first checkin of the project dirs structure"
+        },
+        {
+            "c_hash": "581a3a7f",
+            "date": "2010-01-27 20:57:05 +0000",
+            "comment": "first checkin of modules packages"
+        },
+        {
+            "c_hash": "28f9e468",
+            "date": "2010-01-27 21:04:27 +0000",
+            "comment": "the terminology is different in IETF spec"
+        },
+        {
+            "c_hash": "faf5a061",
+            "date": "2010-01-27 21:04:57 +0000",
+            "comment": "the terminology is different in IETF spec"
+        },
+        {
+            "c_hash": "2729c1bf",
+            "date": "2010-01-27 21:08:44 +0000",
+            "comment": "modules renamed according to IETF terminology"
+        },
+        {
+            "c_hash": "6358a15b",
+            "date": "2010-01-27 21:10:01 +0000",
+            "comment": "removed wrong named modules"
+        },
+        {
+            "c_hash": "b1c51535",
+            "date": "2010-01-27 21:13:51 +0000",
+            "comment": "modules name refactored according to last version of IETF spec"
+        },
+        {
+            "c_hash": "0fb45ee6",
+            "date": "2010-01-28 07:33:47 +0000",
+            "comment": "first checkin of OAuthParameter annotation"
+        },
+        {
+            "c_hash": "d4200579",
+            "date": "2010-01-28 07:39:27 +0000",
+            "comment": "added 'optional' property on OAuthParameter to mark a protocol parameter required or not"
+        },
+        {
+            "c_hash": "31e25dd4",
+            "date": "2010-01-28 07:44:17 +0000",
+            "comment": "added missing javadoc"
+        },
+        {
+            "c_hash": "77922cb9",
+            "date": "2010-01-28 08:06:26 +0000",
+            "comment": "first checkin of OAuthRequestMessage class"
+        },
+        {
+            "c_hash": "e9104e76",
+            "date": "2010-01-28 08:12:04 +0000",
+            "comment": "first checkin of OAuthTokenRequestMessage class"
+        },
+        {
+            "c_hash": "15cb9590",
+            "date": "2010-01-28 08:21:26 +0000",
+            "comment": "commented that the message classes are not thread-safety."
+        },
+        {
+            "c_hash": "b7a2777e",
+            "date": "2010-01-28 08:41:31 +0000",
+            "comment": "first checkin of AbstractOAuthMessageBeanInfo class"
+        },
+        {
+            "c_hash": "bab628f2",
+            "date": "2010-01-28 08:47:19 +0000",
+            "comment": "first checkin of OAuthRequestMessageBeanInfo class"
+        },
+        {
+            "c_hash": "e0e74df2",
+            "date": "2010-01-28 08:48:47 +0000",
+            "comment": "first checkin of OAuthTokenRequestMessageBeanInfo class"
+        },
+        {
+            "c_hash": "45f3e765",
+            "date": "2010-01-28 09:40:35 +0000",
+            "comment": "first checkin of Parameter class"
+        },
+        {
+            "c_hash": "3878091e",
+            "date": "2010-01-28 14:49:20 +0000",
+            "comment": "added commons-codec dependency, will be used for Base64 and URL encoding"
+        },
+        {
+            "c_hash": "c46af459",
+            "date": "2010-01-28 16:07:10 +0000",
+            "comment": "first checkin of HTTPMethod enumeration"
+        },
+        {
+            "c_hash": "3371c20c",
+            "date": "2010-01-28 16:23:40 +0000",
+            "comment": "first checkin of Service class"
+        },
+        {
+            "c_hash": "7fda4653",
+            "date": "2010-01-28 19:56:05 +0000",
+            "comment": "added flag to mark a message field excluded in the signature calculation"
+        },
+        {
+            "c_hash": "19876b5c",
+            "date": "2010-01-29 07:50:17 +0000",
+            "comment": "first checkin of SignatureException class"
+        },
+        {
+            "c_hash": "0c2ca11e",
+            "date": "2010-01-29 08:50:00 +0000",
+            "comment": "first checkin of Credential class"
+        },
+        {
+            "c_hash": "a2b3166e",
+            "date": "2010-01-29 08:53:38 +0000",
+            "comment": "first checkin of TemporaryCredential class"
+        },
+        {
+            "c_hash": "216d030a",
+            "date": "2010-01-29 08:57:41 +0000",
+            "comment": "no need to prefix classes with 'OAuth'"
+        },
+        {
+            "c_hash": "ae8bebb9",
+            "date": "2010-01-29 09:02:43 +0000",
+            "comment": "first checkin of CredentialParameter class"
+        },
+        {
+            "c_hash": "0692956f",
+            "date": "2010-01-29 09:04:21 +0000",
+            "comment": "annotated interested fields with @CredentialParameter on Credential classes"
+        },
+        {
+            "c_hash": "98055c04",
+            "date": "2010-01-30 17:13:32 +0000",
+            "comment": "added beanutils-core dependency"
+        },
+        {
+            "c_hash": "a41b0516",
+            "date": "2010-01-30 17:26:02 +0000",
+            "comment": "first checkin of AbstractAliasBeanInfo class"
+        },
+        {
+            "c_hash": "522ed182",
+            "date": "2010-01-30 17:30:07 +0000",
+            "comment": "added support for default 'value' property"
+        },
+        {
+            "c_hash": "813d593b",
+            "date": "2010-01-30 17:31:09 +0000",
+            "comment": "using the common AbstractAliasBeanInfo instead of the custom one"
+        },
+        {
+            "c_hash": "9752ad9e",
+            "date": "2010-01-30 17:35:42 +0000",
+            "comment": "first checkin of CredentialBeanInfo class"
+        },
+        {
+            "c_hash": "3fbe3474",
+            "date": "2010-01-30 17:36:51 +0000",
+            "comment": "first checkin of TemporaryCredentialBeanInfo class"
+        },
+        {
+            "c_hash": "9ad37b2a",
+            "date": "2010-01-30 17:53:34 +0000",
+            "comment": "first checkin of Key interface"
+        },
+        {
+            "c_hash": "5ea1d648",
+            "date": "2010-01-30 17:55:22 +0000",
+            "comment": "first checkin of SigningKey interface"
+        },
+        {
+            "c_hash": "58ad6c01",
+            "date": "2010-01-30 17:55:55 +0000",
+            "comment": "first checkin of VerifyingKey interface"
+        },
+        {
+            "c_hash": "09bdc4c3",
+            "date": "2010-01-30 18:04:16 +0000",
+            "comment": "first checkin of SignatureMethod class"
+        },
+        {
+            "c_hash": "71be5ff1",
+            "date": "2010-01-30 18:07:49 +0000",
+            "comment": "minor javadoc"
+        },
+        {
+            "c_hash": "d9f74b54",
+            "date": "2010-01-30 18:09:54 +0000",
+            "comment": "first checkin of AbstractKey class"
+        },
+        {
+            "c_hash": "a309ba5f",
+            "date": "2010-01-30 18:12:04 +0000",
+            "comment": "minor javadoc"
+        },
+        {
+            "c_hash": "2513877d",
+            "date": "2010-01-30 18:15:11 +0000",
+            "comment": "minor javadoc"
+        },
+        {
+            "c_hash": "54881689",
+            "date": "2010-01-30 18:16:45 +0000",
+            "comment": "first checkin of HmacSha1Key class"
+        },
+        {
+            "c_hash": "c4af0fc4",
+            "date": "2010-01-30 18:19:10 +0000",
+            "comment": "first checkin of PlaintextKey class"
+        },
+        {
+            "c_hash": "f31b4ee6",
+            "date": "2010-01-30 19:53:06 +0000",
+            "comment": "first checkin of AbstractRsaSha1Key class"
+        },
+        {
+            "c_hash": "ab2591e6",
+            "date": "2010-01-30 20:07:08 +0000",
+            "comment": "no need to make the buffered certificate as class field"
+        },
+        {
+            "c_hash": "bcba47a7",
+            "date": "2010-01-30 20:18:25 +0000",
+            "comment": "reading the buffered byte array could throw an exception"
+        },
+        {
+            "c_hash": "20935aa3",
+            "date": "2010-01-30 20:20:49 +0000",
+            "comment": "first checkin of AbstractRsaSha1SigningKey class"
+        },
+        {
+            "c_hash": "55c221ed",
+            "date": "2010-01-30 20:29:34 +0000",
+            "comment": "first checkin of AbstractRsaSha1VerifyingKey class"
+        },
+        {
+            "c_hash": "174d76af",
+            "date": "2010-01-30 20:34:59 +0000",
+            "comment": "first checkin of DerRsaSha1SigningKey class"
+        },
+        {
+            "c_hash": "ded219da",
+            "date": "2010-01-30 20:37:18 +0000",
+            "comment": "first checkin of DerRsaSha1VeryfingKey class"
+        },
+        {
+            "c_hash": "346138db",
+            "date": "2010-01-30 20:50:58 +0000",
+            "comment": "first checkin of PemCertificateParser parser"
+        },
+        {
+            "c_hash": "1b8bd788",
+            "date": "2010-01-30 20:53:42 +0000",
+            "comment": "svn properties up"
+        },
+        {
+            "c_hash": "27e7222d",
+            "date": "2010-01-30 21:02:13 +0000",
+            "comment": "added javacc plugin to generate the PEM certificates parser"
+        },
+        {
+            "c_hash": "67a40729",
+            "date": "2010-01-30 21:09:24 +0000",
+            "comment": "first checkin of PemRsaSha1SigningKey class"
+        },
+        {
+            "c_hash": "b60e658a",
+            "date": "2010-01-30 21:13:19 +0000",
+            "comment": "first checkin of PemRsaSha1VeryfingKey class"
+        },
+        {
+            "c_hash": "9c872077",
+            "date": "2010-01-30 21:22:31 +0000",
+            "comment": "no need to have abstract implementations, DERs are enough"
+        },
+        {
+            "c_hash": "2bda5483",
+            "date": "2010-02-12 15:47:16 +0000",
+            "comment": "first checkin of SignatureMethodAlgorithm interface"
+        },
+        {
+            "c_hash": "a721f247",
+            "date": "2010-02-12 16:21:39 +0000",
+            "comment": "first checkin of AbstractMethodAlgorithm class"
+        },
+        {
+            "c_hash": "977121e9",
+            "date": "2010-02-16 16:55:35 +0000",
+            "comment": "started building the base string, retrieving the method and the rquest URL"
+        },
+        {
+            "c_hash": "105264ec",
+            "date": "2010-02-16 19:55:39 +0000",
+            "comment": "added percent encoding algorithm implementation"
+        },
+        {
+            "c_hash": "a1d9b4da",
+            "date": "2010-02-16 20:00:50 +0000",
+            "comment": "refactored variable name according to the spec"
+        },
+        {
+            "c_hash": "4ed0fe4f",
+            "date": "2010-02-16 20:03:33 +0000",
+            "comment": "If two or more parameters share the same name, they are compared by their value."
+        },
+        {
+            "c_hash": "506ae81f",
+            "date": "2010-02-21 15:58:07 +0000",
+            "comment": "added Parameters Normalization algorithm implementation"
+        },
+        {
+            "c_hash": "e3caf86c",
+            "date": "2010-02-24 17:36:00 +0000",
+            "comment": "added the message parameters for base string building TODO: oauth parameters extraction must be optimized"
+        },
+        {
+            "c_hash": "6243a9f4",
+            "date": "2010-02-24 17:37:12 +0000",
+            "comment": "reduced field visibility in the finally statement"
+        },
+        {
+            "c_hash": "5768e3a8",
+            "date": "2010-02-24 17:44:58 +0000",
+            "comment": "percent encode algorithm will be used also in concrete algorithms implementation"
+        },
+        {
+            "c_hash": "dede792e",
+            "date": "2010-02-24 17:57:38 +0000",
+            "comment": "better delegating to beanutils the reflection stuff"
+        },
+        {
+            "c_hash": "ee737184",
+            "date": "2010-02-24 18:01:31 +0000",
+            "comment": "first checkin of HmacSha1MethodAlgorithm class"
+        },
+        {
+            "c_hash": "7be14d57",
+            "date": "2010-02-24 18:07:08 +0000",
+            "comment": "added logger"
+        },
+        {
+            "c_hash": "aa85afee",
+            "date": "2010-02-24 18:10:01 +0000",
+            "comment": "minor format"
+        },
+        {
+            "c_hash": "f7f41690",
+            "date": "2010-02-24 18:14:02 +0000",
+            "comment": "constants first when comparing"
+        },
+        {
+            "c_hash": "e3df9d4c",
+            "date": "2010-02-24 18:19:17 +0000",
+            "comment": "first checkin of PlaintextMethodAlgorithm class"
+        },
+        {
+            "c_hash": "a2aaaf33",
+            "date": "2010-02-24 19:44:48 +0000",
+            "comment": "first checkin of AbstractMethodAlgorithmTestCase"
+        },
+        {
+            "c_hash": "7fb91741",
+            "date": "2010-02-24 19:52:36 +0000",
+            "comment": "first working test case of HMAC-SHA1 method algorithm"
+        },
+        {
+            "c_hash": "f7f68909",
+            "date": "2010-02-25 19:18:55 +0000",
+            "comment": "added toString implementation"
+        },
+        {
+            "c_hash": "3adfb3f3",
+            "date": "2010-02-25 19:19:59 +0000",
+            "comment": "added missing parenthesis on toString method"
+        },
+        {
+            "c_hash": "a0332e7a",
+            "date": "2010-02-25 19:22:59 +0000",
+            "comment": "added missing javadoc"
+        },
+        {
+            "c_hash": "35c1efe8",
+            "date": "2010-02-25 19:24:08 +0000",
+            "comment": "added toString implementation"
+        },
+        {
+            "c_hash": "3321b475",
+            "date": "2010-02-25 19:41:20 +0000",
+            "comment": "assert doesn't work with junit"
+        },
+        {
+            "c_hash": "2f1c54bd",
+            "date": "2010-02-25 19:49:12 +0000",
+            "comment": "version included in the signature"
+        },
+        {
+            "c_hash": "ca0bb3fd",
+            "date": "2010-02-25 19:58:11 +0000",
+            "comment": "when encoding, string has not be chuncked"
+        },
+        {
+            "c_hash": "5a30a16a",
+            "date": "2010-02-25 20:44:25 +0000",
+            "comment": "first checkin of PlaintextMethodAlgorithmTestCase class"
+        },
+        {
+            "c_hash": "a2be70de",
+            "date": "2010-02-25 20:49:22 +0000",
+            "comment": "fixed test method name"
+        },
+        {
+            "c_hash": "985085bf",
+            "date": "2010-02-26 07:45:58 +0000",
+            "comment": "added missing interface implementation"
+        },
+        {
+            "c_hash": "a45a7050",
+            "date": "2010-02-26 07:49:21 +0000",
+            "comment": "first checkin of RsaSha1MethodAlgorithm skeleton class"
+        },
+        {
+            "c_hash": "9b13cb32",
+            "date": "2010-02-26 07:59:23 +0000",
+            "comment": "string to UTF-8 bytes algorithm extracted as a method to be reused in subclasses"
+        },
+        {
+            "c_hash": "b0c12f88",
+            "date": "2010-02-26 08:01:25 +0000",
+            "comment": "implemented the RSA encode method"
+        },
+        {
+            "c_hash": "2029503e",
+            "date": "2010-02-26 08:05:13 +0000",
+            "comment": "improved exception message if any error occurs while signing using RSA-SHA1"
+        },
+        {
+            "c_hash": "55b75c43",
+            "date": "2010-02-26 08:10:34 +0000",
+            "comment": "byte sequence to (not chunked) Base64 encoded string algorithm extracted as a method to be reused in subclasses"
+        },
+        {
+            "c_hash": "514a26ea",
+            "date": "2010-02-26 08:27:27 +0000",
+            "comment": "implemented toString method to debug the certificate location"
+        },
+        {
+            "c_hash": "c405b9a9",
+            "date": "2010-02-26 08:29:52 +0000",
+            "comment": "toString() method finalized and return value modified according to used pattern"
+        },
+        {
+            "c_hash": "79ab2066",
+            "date": "2010-02-26 08:31:44 +0000",
+            "comment": "implemented RSA-SHA1 encode method"
+        },
+        {
+            "c_hash": "11eef23c",
+            "date": "2010-02-26 21:41:06 +0000",
+            "comment": "first checkin of TokenCredentialsGenerator class"
+        },
+        {
+            "c_hash": "9de7b2ca",
+            "date": "2010-02-26 21:43:51 +0000",
+            "comment": "first checkin of TemporaryCredentialsGenerator class"
+        },
+        {
+            "c_hash": "7bcc6d0f",
+            "date": "2010-02-26 21:51:18 +0000",
+            "comment": "first checkin of AccessStorageException class"
+        },
+        {
+            "c_hash": "091f23ce",
+            "date": "2010-02-26 22:03:49 +0000",
+            "comment": "first checkin of Access class"
+        },
+        {
+            "c_hash": "c8a71d42",
+            "date": "2010-02-26 22:06:12 +0000",
+            "comment": "first checkin of AccessStorage class"
+        },
+        {
+            "c_hash": "1ebd1a27",
+            "date": "2010-02-26 22:09:39 +0000",
+            "comment": "minor javadoc format"
+        },
+        {
+            "c_hash": "05af103b",
+            "date": "2010-02-26 22:11:02 +0000",
+            "comment": "a generic storage exception for all storages is enough"
+        },
+        {
+            "c_hash": "331c68d6",
+            "date": "2010-02-26 22:22:30 +0000",
+            "comment": "added the signature APIs as dependency"
+        },
+        {
+            "c_hash": "70d01a96",
+            "date": "2010-02-26 22:29:04 +0000",
+            "comment": "first checkin of CredentialsStorage class"
+        },
+        {
+            "c_hash": "7d2d4a63",
+            "date": "2010-02-26 22:30:09 +0000",
+            "comment": "minor javadoc"
+        },
+        {
+            "c_hash": "d0e23531",
+            "date": "2010-06-03 10:24:35 +0000",
+            "comment": "imported initial Amber codebase from Lab to Incubator"
+        },
+        {
+            "c_hash": "bc293707",
+            "date": "2010-06-03 10:48:04 +0000",
+            "comment": "upgrated pom metadata from lab to new incubator infra"
+        },
+        {
+            "c_hash": "89fc2880",
+            "date": "2010-06-03 11:04:40 +0000",
+            "comment": "refactored packages removing the lab part"
+        },
+        {
+            "c_hash": "2c1569bf",
+            "date": "2010-06-03 11:08:35 +0000",
+            "comment": "removed useless and deprecated packages"
+        },
+        {
+            "c_hash": "0127689c",
+            "date": "2010-06-03 11:16:00 +0000",
+            "comment": "defined plugins version added 'release' profile with release and gpg plugin"
+        },
+        {
+            "c_hash": "f3270d4b",
+            "date": "2010-06-15 10:31:54 +0000",
+            "comment": "Trying out SVN"
+        },
+        {
+            "c_hash": "7019690b",
+            "date": "2010-06-17 11:17:57 +0000",
+            "comment": "Partial API proposal"
+        },
+        {
+            "c_hash": "f287ff8c",
+            "date": "2010-06-17 13:52:14 +0000",
+            "comment": "Corrections to layout and source."
+        },
+        {
+            "c_hash": "c4888aa6",
+            "date": "2010-06-17 13:53:01 +0000",
+            "comment": "Add spec-api module"
+        },
+        {
+            "c_hash": "f2cee83e",
+            "date": "2010-06-17 16:01:27 +0000",
+            "comment": "removed unresolved and useless dependency"
+        },
+        {
+            "c_hash": "3cb31d97",
+            "date": "2010-06-17 16:03:54 +0000",
+            "comment": "just renamed artifactId and description"
+        },
+        {
+            "c_hash": "2526ae41",
+            "date": "2010-06-17 16:07:41 +0000",
+            "comment": "svn properties up"
+        },
+        {
+            "c_hash": "f798291f",
+            "date": "2010-06-17 16:08:28 +0000",
+            "comment": "added missing license header"
+        },
+        {
+            "c_hash": "d0bd93c9",
+            "date": "2010-06-17 16:13:13 +0000",
+            "comment": "upgrated plugins versions fixed attach javadoc/source phase"
+        },
+        {
+            "c_hash": "4aeb669b",
+            "date": "2010-06-18 08:12:23 +0000",
+            "comment": "removed deprecated dir"
+        },
+        {
+            "c_hash": "b39add09",
+            "date": "2010-06-18 09:10:09 +0000",
+            "comment": "upgrated the maven-project-info-reports-plugin version"
+        },
+        {
+            "c_hash": "18637fd2",
+            "date": "2010-06-18 10:28:57 +0000",
+            "comment": "fixed svn properties files"
+        },
+        {
+            "c_hash": "57bb98fa",
+            "date": "2010-06-22 18:16:23 +0000",
+            "comment": "first checkin of HTTPMethod enumeration, imported from the signature-api"
+        },
+        {
+            "c_hash": "764990dc",
+            "date": "2010-06-22 18:35:30 +0000",
+            "comment": "added missing license header fields made final extracted constants chained StringBuffer methods"
+        },
+        {
+            "c_hash": "420d769a",
+            "date": "2010-06-25 14:41:16 +0000",
+            "comment": "Java compiler upgrated to Java6 upgrated compiler-plugin version"
+        },
+        {
+            "c_hash": "ea4166e7",
+            "date": "2010-06-25 14:42:00 +0000",
+            "comment": "removed test resource"
+        },
+        {
+            "c_hash": "870a5a04",
+            "date": "2010-07-05 09:42:54 +0000",
+            "comment": "minor javadoc"
+        },
+        {
+            "c_hash": "098c98d7",
+            "date": "2010-07-05 09:52:01 +0000",
+            "comment": "minor javadoc format"
+        },
+        {
+            "c_hash": "ccb83364",
+            "date": "2010-07-05 10:23:31 +0000",
+            "comment": "The Token can be represented as a final entity rather than an interface."
+        },
+        {
+            "c_hash": "c0a40e6b",
+            "date": "2010-07-05 10:28:22 +0000",
+            "comment": "first checkin of signature package"
+        },
+        {
+            "c_hash": "63841a57",
+            "date": "2010-07-05 10:32:01 +0000",
+            "comment": "first checkin of generic Key interface"
+        },
+        {
+            "c_hash": "e40fd36a",
+            "date": "2010-07-05 10:33:44 +0000",
+            "comment": "first checkin of Signing/Verifying keys used by signing algorithms"
+        },
+        {
+            "c_hash": "e3b748c1",
+            "date": "2010-07-05 10:35:38 +0000",
+            "comment": "first checkin of SignatureException class"
+        },
+        {
+            "c_hash": "01c64bf5",
+            "date": "2010-07-05 10:41:52 +0000",
+            "comment": "first checkin of SignatureMethodAlgorithm interface"
+        },
+        {
+            "c_hash": "267900f6",
+            "date": "2010-07-05 10:51:19 +0000",
+            "comment": "the OAuthSigner replaced by the the one defined in the 'signature' package"
+        },
+        {
+            "c_hash": "99655732",
+            "date": "2010-07-05 10:52:55 +0000",
+            "comment": "the same key can be used to sign the request with more than one algorithm, ie the same key is valid for PLAINTEXT and HMAC_SHA1"
+        },
+        {
+            "c_hash": "21a2d189",
+            "date": "2010-07-05 14:40:57 +0000",
+            "comment": "reverting it as interface makes it compatible with 3rd part frameworks (ie JPA)"
+        },
+        {
+            "c_hash": "0ce3400a",
+            "date": "2010-07-05 14:42:08 +0000",
+            "comment": "added missing serialVersionUID"
+        },
+        {
+            "c_hash": "2b4ad6e6",
+            "date": "2010-07-06 07:44:37 +0000",
+            "comment": "[AMBER-4] - added hashCode and equals methods"
+        },
+        {
+            "c_hash": "ab74d6c5",
+            "date": "2010-07-06 08:03:04 +0000",
+            "comment": "[AMBER-4] - minor javadoc fix"
+        },
+        {
+            "c_hash": "bd4b9785",
+            "date": "2010-07-06 11:15:11 +0000",
+            "comment": "Add serialVersionUID"
+        },
+        {
+            "c_hash": "93b8c250",
+            "date": "2010-07-07 08:38:06 +0000",
+            "comment": "Initial commit of KEYS file"
+        },
+        {
+            "c_hash": "899d9447",
+            "date": "2010-07-08 18:46:13 +0000",
+            "comment": "started migrating server stuff"
+        },
+        {
+            "c_hash": "8f7f1255",
+            "date": "2010-07-08 18:56:07 +0000",
+            "comment": "first checkin of ConsumerStorage class"
+        },
+        {
+            "c_hash": "bcecf718",
+            "date": "2010-07-08 19:07:47 +0000",
+            "comment": "minor format"
+        },
+        {
+            "c_hash": "08f331e2",
+            "date": "2010-07-08 19:11:40 +0000",
+            "comment": "first checkin of TokenStorage interface"
+        },
+        {
+            "c_hash": "adae888a",
+            "date": "2010-07-08 19:27:46 +0000",
+            "comment": "prototyping the server interface"
+        },
+        {
+            "c_hash": "e404db71",
+            "date": "2010-07-08 19:30:47 +0000",
+            "comment": "minor format"
+        },
+        {
+            "c_hash": "a410f3a8",
+            "date": "2010-07-08 19:55:08 +0000",
+            "comment": "added OAuth request message and aux request message implementation"
+        },
+        {
+            "c_hash": "8955b20c",
+            "date": "2010-07-08 20:03:10 +0000",
+            "comment": "adding metadata to OAuthParameter, such if it is optional or if it is required in the base string calculation"
+        },
+        {
+            "c_hash": "433e1846",
+            "date": "2010-07-08 20:05:03 +0000",
+            "comment": "fixed values for missed parameters"
+        },
+        {
+            "c_hash": "2e45d26d",
+            "date": "2010-07-08 20:11:12 +0000",
+            "comment": "Minor cosmetic change to simplify name"
+        },
+        {
+            "c_hash": "5af7e705",
+            "date": "2010-07-08 20:43:00 +0000",
+            "comment": "I think this was a typo, minor fix."
+        },
+        {
+            "c_hash": "e8fa8df9",
+            "date": "2010-07-08 20:48:12 +0000",
+            "comment": "Changes to OAuthServer API, to separate authentication (authn) from authorization (authz)"
+        },
+        {
+            "c_hash": "eb9ab2ae",
+            "date": "2010-07-08 20:52:27 +0000",
+            "comment": "Set properties, because I'm an idiot and forgot"
+        },
+        {
+            "c_hash": "b0bb5b80",
+            "date": "2010-07-08 21:16:34 +0000",
+            "comment": "Incorporate storage mechanisms into the server API, (protected methods will be hidden from users but accessible to the implementation)"
+        },
+        {
+            "c_hash": "06552e4c",
+            "date": "2010-07-09 07:47:04 +0000",
+            "comment": "Correct @version tag to common standard."
+        },
+        {
+            "c_hash": "0d906bd0",
+            "date": "2010-07-09 08:05:17 +0000",
+            "comment": "Adding more methods to interface"
+        },
+        {
+            "c_hash": "331f7e22",
+            "date": "2010-07-09 08:28:46 +0000",
+            "comment": "Alternative interface proposal - without generics"
+        },
+        {
+            "c_hash": "a911847c",
+            "date": "2010-07-09 08:33:40 +0000",
+            "comment": "replaced the map with collections of already defined comparable objects that will simply the sorting task according to OAuth sorting requirements"
+        },
+        {
+            "c_hash": "c0abd8de",
+            "date": "2010-07-09 09:02:27 +0000",
+            "comment": "Rollback changes"
+        },
+        {
+            "c_hash": "00efb3f1",
+            "date": "2010-07-09 09:13:37 +0000",
+            "comment": "minor format"
+        },
+        {
+            "c_hash": "e75d7372",
+            "date": "2010-07-09 09:14:46 +0000",
+            "comment": "realm is not required neither included in the signature"
+        },
+        {
+            "c_hash": "d1907346",
+            "date": "2010-07-09 09:23:43 +0000",
+            "comment": "added spec APIs dependency"
+        },
+        {
+            "c_hash": "ccb3323b",
+            "date": "2010-07-09 09:28:14 +0000",
+            "comment": "removed \"deprecated\" *Algorithm stuff"
+        },
+        {
+            "c_hash": "8a3e300c",
+            "date": "2010-07-09 10:49:55 +0000",
+            "comment": "Revert previous commit adding storage methods"
+        },
+        {
+            "c_hash": "2670849a",
+            "date": "2010-07-09 10:51:30 +0000",
+            "comment": "Incorporate storage methods in a configuration interface, more config will be added here"
+        },
+        {
+            "c_hash": "c3885b22",
+            "date": "2010-07-09 10:52:26 +0000",
+            "comment": "Utilise the configuration object on initialisation"
+        },
+        {
+            "c_hash": "e17b27f9",
+            "date": "2010-07-09 10:55:16 +0000",
+            "comment": "Forgot the svn props again."
+        },
+        {
+            "c_hash": "007af495",
+            "date": "2010-07-09 12:47:43 +0000",
+            "comment": "dropped generics to improve the ServiceLoader-based engine"
+        },
+        {
+            "c_hash": "c8226180",
+            "date": "2010-07-09 12:54:57 +0000",
+            "comment": "added missing token in the methods signature"
+        },
+        {
+            "c_hash": "764a592b",
+            "date": "2010-07-09 13:40:19 +0000",
+            "comment": "equals/hashcode for parameters have to work depending on the parameter type: - if it is an oauth_* parameter, it is name-centric (has to be unique) - for aux parameter, can work with both name/value"
+        },
+        {
+            "c_hash": "86aa773a",
+            "date": "2010-07-09 13:41:17 +0000",
+            "comment": "classes are already final, no needs to define final methods as well"
+        },
+        {
+            "c_hash": "78280f4d",
+            "date": "2010-07-09 13:43:15 +0000",
+            "comment": "no needs to keep it private, it can be used when normalizing the parameters during the base string calculation"
+        },
+        {
+            "c_hash": "c5fccdb1",
+            "date": "2010-07-09 13:57:41 +0000",
+            "comment": "reverted latest change, not a good idea"
+        },
+        {
+            "c_hash": "b9f41449",
+            "date": "2010-07-09 13:58:57 +0000",
+            "comment": "the expected value first, when asserting"
+        },
+        {
+            "c_hash": "86af89cc",
+            "date": "2010-07-09 14:01:09 +0000",
+            "comment": "fixed potential NPE when comparing objects"
+        },
+        {
+            "c_hash": "035f04f3",
+            "date": "2010-07-09 14:32:23 +0000",
+            "comment": "removed unneeded methods"
+        },
+        {
+            "c_hash": "482c48bd",
+            "date": "2010-07-09 15:38:33 +0000",
+            "comment": "fixed license txt URL"
+        },
+        {
+            "c_hash": "26c5b639",
+            "date": "2010-07-09 16:05:20 +0000",
+            "comment": "fixed parameters have to be included in the base string calculation"
+        },
+        {
+            "c_hash": "1f795c4d",
+            "date": "2010-07-09 16:08:19 +0000",
+            "comment": "successfully integrated the API specifications in the concrete implementation tests started working -YAHOOOOOO!!!"
+        },
+        {
+            "c_hash": "6ec73aa2",
+            "date": "2010-07-09 16:09:53 +0000",
+            "comment": "removed useless packages"
+        },
+        {
+            "c_hash": "50502bb5",
+            "date": "2010-07-09 17:52:47 +0000",
+            "comment": "Type erasure should mean that we can package the core/client spec API and implementation without the server spec API sub-package - the factory object impl will check the class is present before proceeding"
+        },
+        {
+            "c_hash": "150bb728",
+            "date": "2010-07-10 12:07:32 +0000",
+            "comment": "Minor: added javadoc"
+        },
+        {
+            "c_hash": "61f08a54",
+            "date": "2010-07-10 12:09:34 +0000",
+            "comment": "Add accessor methods for parameters; code will be duplicated in various places otherwise"
+        },
+        {
+            "c_hash": "a0a7de8f",
+            "date": "2010-07-10 12:10:08 +0000",
+            "comment": "Fix test case (side effect of OAuthRequest modification)"
+        },
+        {
+            "c_hash": "c05844e0",
+            "date": "2010-07-11 07:51:55 +0000",
+            "comment": "removed no more existent generic class types from javadoc"
+        },
+        {
+            "c_hash": "7c8f6631",
+            "date": "2010-07-11 08:04:01 +0000",
+            "comment": "added method to block sign/verify operations with unsupported keys"
+        },
+        {
+            "c_hash": "1d105807",
+            "date": "2010-07-11 08:06:15 +0000",
+            "comment": "IAE converted to SignatureException"
+        },
+        {
+            "c_hash": "e7e8c9bc",
+            "date": "2010-07-11 08:10:22 +0000",
+            "comment": "minor format - tabs replaced with 4 spaces removed unused imports"
+        },
+        {
+            "c_hash": "769a32d8",
+            "date": "2010-07-11 08:14:17 +0000",
+            "comment": "fixed broken tests: no need to expose a specific data structure, Collection is enough minor format - tabs replaced by 4 spaces removed unused imports"
+        },
+        {
+            "c_hash": "ea7c26a4",
+            "date": "2010-07-11 08:23:32 +0000",
+            "comment": "no needs to reinvent the wheel, List<?> and binarySearch() replaced by the simple use of TreeSet"
+        },
+        {
+            "c_hash": "72808548",
+            "date": "2010-07-11 08:37:45 +0000",
+            "comment": "no needs to keep that interface package private"
+        },
+        {
+            "c_hash": "53dd52ee",
+            "date": "2010-07-11 08:48:38 +0000",
+            "comment": "first checkin of AbstractRsaSha1Key class"
+        },
+        {
+            "c_hash": "cd493960",
+            "date": "2010-07-11 09:06:06 +0000",
+            "comment": "added methods to load a key from classpath, file or URL"
+        },
+        {
+            "c_hash": "1f7f0094",
+            "date": "2010-07-11 09:09:34 +0000",
+            "comment": "fixed version tag minor format - tabs replaced with 4 spaces, removed trailing spaces and empty lines"
+        },
+        {
+            "c_hash": "4e55f054",
+            "date": "2010-07-11 09:43:20 +0000",
+            "comment": "fixed target package"
+        },
+        {
+            "c_hash": "2b007d9c",
+            "date": "2010-07-11 09:55:22 +0000",
+            "comment": "first checkin of private/public test certificates"
+        },
+        {
+            "c_hash": "236b0a30",
+            "date": "2010-07-11 09:55:54 +0000",
+            "comment": "fixed certificates headers"
+        },
+        {
+            "c_hash": "b97459ff",
+            "date": "2010-07-11 10:10:22 +0000",
+            "comment": "first checkin of PemRsaSha1SigningKey class"
+        },
+        {
+            "c_hash": "8d693256",
+            "date": "2010-07-11 11:38:01 +0000",
+            "comment": "first checkin of PemRsaSha1VeifyingKey class"
+        },
+        {
+            "c_hash": "cfa71744",
+            "date": "2010-07-11 11:52:38 +0000",
+            "comment": "modified test structure to prepare RSA test"
+        },
+        {
+            "c_hash": "59e39171",
+            "date": "2010-07-11 12:08:32 +0000",
+            "comment": "request url type switched to URI instead of URL"
+        },
+        {
+            "c_hash": "3b321745",
+            "date": "2010-07-11 12:27:40 +0000",
+            "comment": "added spec dependencies to client impl"
+        },
+        {
+            "c_hash": "a0e05cec",
+            "date": "2010-07-11 12:44:49 +0000",
+            "comment": "defined a default toString() method"
+        },
+        {
+            "c_hash": "247ac94c",
+            "date": "2010-07-11 13:40:52 +0000",
+            "comment": "removed useless beanutils dependencies"
+        },
+        {
+            "c_hash": "493876bc",
+            "date": "2010-07-11 13:47:41 +0000",
+            "comment": "added missing commons-logging dependency"
+        },
+        {
+            "c_hash": "8d9c76b7",
+            "date": "2010-07-11 13:57:47 +0000",
+            "comment": "the parser returns directly the private/public RSA key"
+        },
+        {
+            "c_hash": "3293fb63",
+            "date": "2010-07-11 14:03:14 +0000",
+            "comment": "at some point, the type is needed..."
+        },
+        {
+            "c_hash": "8cef55a5",
+            "date": "2010-07-11 14:05:42 +0000",
+            "comment": "fixed methods name consistency (encode|decode)base64"
+        },
+        {
+            "c_hash": "cdd2face",
+            "date": "2010-07-11 14:11:02 +0000",
+            "comment": "renamed local key variable to a meaningful name"
+        },
+        {
+            "c_hash": "e47d385b",
+            "date": "2010-07-11 14:13:36 +0000",
+            "comment": "first checkin of RsaSha1Method class"
+        },
+        {
+            "c_hash": "416970b3",
+            "date": "2010-07-11 14:49:54 +0000",
+            "comment": "moved test certificates in the proper package"
+        },
+        {
+            "c_hash": "ba587cce",
+            "date": "2010-07-11 14:51:47 +0000",
+            "comment": "fixed typo in he class name"
+        },
+        {
+            "c_hash": "34f9ac21",
+            "date": "2010-07-11 14:53:21 +0000",
+            "comment": "fixed VerifyingKey implementation, not SigningKey"
+        },
+        {
+            "c_hash": "501245ff",
+            "date": "2010-07-11 14:53:53 +0000",
+            "comment": "fixed javadoc"
+        },
+        {
+            "c_hash": "ebec6082",
+            "date": "2010-07-11 14:55:18 +0000",
+            "comment": "first checkin of RsaSha1MethodTestCase class"
+        },
+        {
+            "c_hash": "7ae5be45",
+            "date": "2010-07-11 14:56:01 +0000",
+            "comment": "properly renamed abstract that implements the test case"
+        },
+        {
+            "c_hash": "93f8fe41",
+            "date": "2010-07-11 15:01:41 +0000",
+            "comment": "patched broken test, please see TODOs"
+        },
+        {
+            "c_hash": "1d73964f",
+            "date": "2010-07-11 16:26:48 +0000",
+            "comment": "added DISCLAIMER file"
+        },
+        {
+            "c_hash": "bd81f2b3",
+            "date": "2010-07-11 16:27:38 +0000",
+            "comment": "removed trailing spaces"
+        },
+        {
+            "c_hash": "87494d46",
+            "date": "2010-07-11 16:52:01 +0000",
+            "comment": "added simonetripodi's gpg key"
+        },
+        {
+            "c_hash": "3489666b",
+            "date": "2010-07-12 14:44:52 +0000",
+            "comment": "added the parameter location (header|get|body) in the Request"
+        },
+        {
+            "c_hash": "ee35a30f",
+            "date": "2010-07-12 14:47:46 +0000",
+            "comment": "minor format fixed typo fixed svn tag removed trailing spaces"
+        },
+        {
+            "c_hash": "cf66c19d",
+            "date": "2010-07-12 14:58:50 +0000",
+            "comment": "first checkin of NonceGenerator interface"
+        },
+        {
+            "c_hash": "5a53fac4",
+            "date": "2010-07-12 15:04:26 +0000",
+            "comment": "added the nonce generator minor format - removed trailing spaces fixed svn tag"
+        },
+        {
+            "c_hash": "651f3178",
+            "date": "2010-09-01 07:17:08 +0000",
+            "comment": "[AMBER-5]\u00a0Removing unused stale CredentialsStorage class"
+        },
+        {
+            "c_hash": "59058dc5",
+            "date": "2010-09-29 16:22:46 +0000",
+            "comment": "Maven site basic configuration"
+        },
+        {
+            "c_hash": "5bc2886f",
+            "date": "2010-09-30 08:08:08 +0000",
+            "comment": "Refactoring, moving client and server related classes inside proper packages"
+        },
+        {
+            "c_hash": "c53b36b2",
+            "date": "2010-09-30 09:51:11 +0000",
+            "comment": "added 30sec tutorial at the beginning, updated simonetripodi PGP key"
+        },
+        {
+            "c_hash": "a75f0c88",
+            "date": "2010-09-30 10:39:38 +0000",
+            "comment": "ServiceLoader configurations are the same of ServiceLoader's default calling ServiceLoader#reload() means calling reload() twice safetly closed the input stream"
+        },
+        {
+            "c_hash": "f2fe9760",
+            "date": "2010-09-30 10:41:17 +0000",
+            "comment": "calling ServiceLoader#reload() means calling reload() twice"
+        },
+        {
+            "c_hash": "c5623dbb",
+            "date": "2010-09-30 10:44:50 +0000",
+            "comment": "extracted method to close quietly Cloaseable instances"
+        },
+        {
+            "c_hash": "b58ed138",
+            "date": "2010-09-30 10:45:45 +0000",
+            "comment": "fixed class headers"
+        },
+        {
+            "c_hash": "a9f80f06",
+            "date": "2010-10-18 10:11:57 +0000",
+            "comment": "removed properties already defined in the parent pom"
+        },
+        {
+            "c_hash": "906168de",
+            "date": "2010-10-18 10:14:13 +0000",
+            "comment": "updated jar/compiler maven plugins"
+        },
+        {
+            "c_hash": "79d7d974",
+            "date": "2010-10-18 10:18:01 +0000",
+            "comment": "all plugins updated to latest version added pmd-plugin"
+        },
+        {
+            "c_hash": "7778d035",
+            "date": "2010-10-20 08:57:02 +0000",
+            "comment": "[AMBER-8] - fixed findbugs version and configuration for site generation, added fluido-skin as a skin, removed reporting plugin in spec-api module that is already defined in parent"
+        },
+        {
+            "c_hash": "73def7ca",
+            "date": "2010-11-14 15:38:17 +0000",
+            "comment": "[AMBER-8]\u00a0- Fix site plugin version, distributionManagement and aggregating of javadocs"
+        },
+        {
+            "c_hash": "94a7c6e9",
+            "date": "2010-11-19 16:50:22 +0000",
+            "comment": "[AMBER-8] - first site version"
+        },
+        {
+            "c_hash": "849fc4b2",
+            "date": "2010-12-15 08:26:04 +0000",
+            "comment": "[AMBER-10] refactoring amber structure"
+        },
+        {
+            "c_hash": "23fcd5e9",
+            "date": "2010-12-18 16:14:04 +0000",
+            "comment": "[AMBER-11]\u00a0- import of Leelo OAuth 2.0 implementation - oauth2-client module"
+        },
+        {
+            "c_hash": "40d59727",
+            "date": "2010-12-18 16:34:41 +0000",
+            "comment": "[AMBER-11]\u00a0- import of Leelo OAuth 2.0 implementation - oauth2-client-demo module"
+        },
+        {
+            "c_hash": "aa4efa36",
+            "date": "2010-12-18 16:38:36 +0000",
+            "comment": "[AMBER-11]\u00a0- import of Leelo OAuth 2.0 implementation - oauth2-common module"
+        },
+        {
+            "c_hash": "5f6dd35a",
+            "date": "2010-12-18 16:41:14 +0000",
+            "comment": "[AMBER-11]\u00a0- import of Leelo OAuth 2.0 implementation - oauth2-dynamicreg-client module"
+        },
+        {
+            "c_hash": "0d892d47",
+            "date": "2010-12-18 16:42:06 +0000",
+            "comment": "[AMBER-11]\u00a0- import of Leelo OAuth 2.0 implementation - oauth2-dynamicreg-common module"
+        },
+        {
+            "c_hash": "1cbeed35",
+            "date": "2010-12-18 16:42:51 +0000",
+            "comment": "[AMBER-11]\u00a0- import of Leelo OAuth 2.0 implementation - oauth2-httpclient4 module"
+        },
+        {
+            "c_hash": "fdbb5e25",
+            "date": "2010-12-18 16:43:29 +0000",
+            "comment": "[AMBER-11]\u00a0- import of Leelo OAuth 2.0 implementation - basic pom"
+        },
+        {
+            "c_hash": "0fab49cf",
+            "date": "2010-12-18 16:58:49 +0000",
+            "comment": "[AMBER-12]\u00a0- import of Leelo OAuth 2.0 implementation - oauthzserver module"
+        },
+        {
+            "c_hash": "7f1ba8cc",
+            "date": "2010-12-18 17:00:28 +0000",
+            "comment": "[AMBER-12]\u00a0- import of Leelo OAuth 2.0 implementation - dynamicreg-server module"
+        },
+        {
+            "c_hash": "33bfc888",
+            "date": "2010-12-18 17:02:42 +0000",
+            "comment": "[AMBER-12]\u00a0- import of Leelo OAuth 2.0 implementation - integration-tests module"
+        },
+        {
+            "c_hash": "ffeedcd1",
+            "date": "2010-12-18 17:06:20 +0000",
+            "comment": "[AMBER-12]\u00a0- import of Leelo OAuth 2.0 implementation - resourceserver module"
+        },
+        {
+            "c_hash": "e82572a5",
+            "date": "2010-12-18 17:08:44 +0000",
+            "comment": "[AMBER-12]\u00a0- import of Leelo OAuth 2.0 implementation - rs-filter module"
+        },
+        {
+            "c_hash": "3c6dbb6b",
+            "date": "2010-12-18 17:09:11 +0000",
+            "comment": "[AMBER-11]\u00a0- import of Leelo OAuth 2.0 implementation - basic pom modified for server modules"
+        },
+        {
+            "c_hash": "2b1e7628",
+            "date": "2010-12-18 20:44:19 +0000",
+            "comment": "[AMBER-11][AMBER-12] - added oauth-2.0 parent pom (Amber parent)"
+        },
+        {
+            "c_hash": "138ffbee",
+            "date": "2011-02-18 13:37:17 +0000",
+            "comment": "[AMBER-13] - add methods signatures from Leelo class to OAuthResponse interface"
+        },
+        {
+            "c_hash": "59badd84",
+            "date": "2011-03-03 16:57:30 +0000",
+            "comment": "[AMBER-14] - applied patch provided by Ben Noordhuis"
+        },
+        {
+            "c_hash": "ac83e587",
+            "date": "2011-03-14 08:41:06 +0000",
+            "comment": "[AMBER-16] - applied patch by Ben Noordhuis"
+        },
+        {
+            "c_hash": "1aa5db5a",
+            "date": "2011-04-27 06:22:20 +0000",
+            "comment": "added svn ignores for intellij files and target directory"
+        },
+        {
+            "c_hash": "9aaa3506",
+            "date": "2011-04-27 06:27:46 +0000",
+            "comment": "added svn ignores for intellij files and target directory"
+        },
+        {
+            "c_hash": "980364c0",
+            "date": "2011-04-27 06:28:12 +0000",
+            "comment": "added svn ignores for intellij files and target directory"
+        },
+        {
+            "c_hash": "795b80f9",
+            "date": "2011-05-08 20:21:14 +0000",
+            "comment": "Temporary fix removes ref to, and inappropriate file contents"
+        },
+        {
+            "c_hash": "baf046e4",
+            "date": "2011-06-09 08:58:47 +0000",
+            "comment": "- added two new developers to the main project pom"
+        },
+        {
+            "c_hash": "aee65dd8",
+            "date": "2011-06-09 12:55:48 +0000",
+            "comment": "[AMBER-21] - Update dynamic client registration module to be compliant with the OAuth Dynamic Client Registration Protocol - PUSHED metadata"
+        },
+        {
+            "c_hash": "e7b6e759",
+            "date": "2011-07-14 09:04:57 +0000",
+            "comment": "[AMBER-26] - OAuthAuthzRequest does not contain getState() method"
+        },
+        {
+            "c_hash": "37524c99",
+            "date": "2011-07-14 09:40:39 +0000",
+            "comment": "- added OAuthToken class for access token response from AS"
+        },
+        {
+            "c_hash": "b2905609",
+            "date": "2011-07-14 10:02:23 +0000",
+            "comment": "[AMBER-27] Remove unnecessary AbstractJettyServerTest"
+        },
+        {
+            "c_hash": "992bef61",
+            "date": "2011-07-14 10:21:33 +0000",
+            "comment": "- new constructors in the OAuthToken class"
+        },
+        {
+            "c_hash": "cafe252c",
+            "date": "2011-08-03 18:48:33 +0000",
+            "comment": "- added public key block"
+        },
+        {
+            "c_hash": "f2babb05",
+            "date": "2011-08-04 10:00:56 +0000",
+            "comment": "- added domain classes used by dynamic registration"
+        },
+        {
+            "c_hash": "4058de46",
+            "date": "2011-08-04 14:51:13 +0000",
+            "comment": "- added new fields to the dynamic registration domain classes"
+        },
+        {
+            "c_hash": "cc19363f",
+            "date": "2011-10-25 03:56:00 +0000",
+            "comment": "[AMBER-23] Update svn:ignore property to ignore target folder and eclipse project files"
+        },
+        {
+            "c_hash": "28a4aa30",
+            "date": "2011-10-25 04:38:30 +0000",
+            "comment": "[AMBER-34] Fix the pom.xml so that we can run mvn eclipse:eclipse"
+        },
+        {
+            "c_hash": "1a668567",
+            "date": "2011-11-08 02:49:57 +0000",
+            "comment": "[AMBER-35] Add a shutdown method to OAuthClient/HttpClient to allow graceful release of resources"
+        },
+        {
+            "c_hash": "cb3b5a28",
+            "date": "2011-11-08 03:36:40 +0000",
+            "comment": "[AMBER-43] Missing OAuth parameter is ambiguous for a resource request"
+        },
+        {
+            "c_hash": "9565bb82",
+            "date": "2011-11-16 21:29:18 +0000",
+            "comment": "[AMBER-40] - set the current trunk to a same version 0.10-incubating-SNAPSHOT"
+        },
+        {
+            "c_hash": "cf2b24c2",
+            "date": "2011-11-16 21:45:07 +0000",
+            "comment": "[AMBER-39] - new version is now 0.22-incubating-SNAPSHOT for all the POMs"
+        },
+        {
+            "c_hash": "a423244f",
+            "date": "2011-11-24 13:59:20 +0000",
+            "comment": "[AMBER-44] Add method to OAuthClient that allows sending GET request to OAuth token endpoint"
+        },
+        {
+            "c_hash": "4c76c26a",
+            "date": "2011-12-06 20:42:22 +0000",
+            "comment": "[AMBER-36] - applied patch from Raymond Feng plus updated oauth2-common version used in authzserver to 0.22-incubating-SNAPSHOT"
+        },
+        {
+            "c_hash": "9d6fd7f9",
+            "date": "2011-12-06 21:02:54 +0000",
+            "comment": "[AMBER-31] - applied patch from Antonio Sanso"
+        },
+        {
+            "c_hash": "629a4f9d",
+            "date": "2011-12-06 21:07:59 +0000",
+            "comment": "[AMBER-30] - applied patch from Antonio Sanso"
+        },
+        {
+            "c_hash": "970f3173",
+            "date": "2012-01-11 12:08:31 +0000",
+            "comment": "removed my affiliation"
+        },
+        {
+            "c_hash": "cd2c76d6",
+            "date": "2012-01-11 12:09:22 +0000",
+            "comment": "podling PMC Members are PPMC Member"
+        },
+        {
+            "c_hash": "1699c1e0",
+            "date": "2012-01-11 12:50:41 +0000",
+            "comment": "switching to maven-fluido-skin"
+        },
+        {
+            "c_hash": "6f375baf",
+            "date": "2012-01-11 12:52:29 +0000",
+            "comment": "linked project descriptor XSD"
+        },
+        {
+            "c_hash": "0988421d",
+            "date": "2012-01-11 12:53:43 +0000",
+            "comment": "added trademark footer"
+        },
+        {
+            "c_hash": "8e5ec696",
+            "date": "2012-01-11 13:06:01 +0000",
+            "comment": "reorganized stuff according to http://maven.apache.org/developers/conventions/code.html"
+        },
+        {
+            "c_hash": "c47aa7e8",
+            "date": "2012-01-11 13:07:13 +0000",
+            "comment": "trailing spaces/empty lines"
+        },
+        {
+            "c_hash": "2114b5b9",
+            "date": "2012-01-11 13:08:02 +0000",
+            "comment": "latest junit release is 4.10"
+        },
+        {
+            "c_hash": "c97d22dd",
+            "date": "2012-01-11 13:13:19 +0000",
+            "comment": "added Antonio Sanso as committer added missing Pablo Fernandez id"
+        },
+        {
+            "c_hash": "97169c14",
+            "date": "2012-01-11 13:17:09 +0000",
+            "comment": "enhancing the build number via buildnumber-maven-plugin"
+        },
+        {
+            "c_hash": "641fcb7d",
+            "date": "2012-01-11 13:19:04 +0000",
+            "comment": "removed implementation.build property"
+        },
+        {
+            "c_hash": "0f2e8018",
+            "date": "2012-01-11 13:22:00 +0000",
+            "comment": "release-plugin moved to pluginsManagement section"
+        },
+        {
+            "c_hash": "75a84838",
+            "date": "2012-01-11 13:24:10 +0000",
+            "comment": "deploying sources/javadocs when releasing, otherwise Nexus won't let close the staging repository"
+        },
+        {
+            "c_hash": "3a755922",
+            "date": "2012-01-11 13:25:16 +0000",
+            "comment": "updated gpg plugin to latest version"
+        },
+        {
+            "c_hash": "df5c0a9e",
+            "date": "2012-01-11 13:27:16 +0000",
+            "comment": "declaring build first, then reporting"
+        },
+        {
+            "c_hash": "6879fc28",
+            "date": "2012-01-11 13:30:18 +0000",
+            "comment": "added the index page (with ASF disclaimer)"
+        },
+        {
+            "c_hash": "1e7687a2",
+            "date": "2012-01-11 13:32:29 +0000",
+            "comment": "package javadoc jar just when deploying a release"
+        },
+        {
+            "c_hash": "e7394858",
+            "date": "2012-01-11 13:33:05 +0000",
+            "comment": "package sources jar just when deploying a release"
+        },
+        {
+            "c_hash": "dbb48601",
+            "date": "2012-01-11 13:33:33 +0000",
+            "comment": "no need to specify the output encoding, taken automatically"
+        },
+        {
+            "c_hash": "678bd270",
+            "date": "2012-01-11 13:33:57 +0000",
+            "comment": "empty line"
+        },
+        {
+            "c_hash": "0101c09c",
+            "date": "2012-01-11 13:34:25 +0000",
+            "comment": "no need to specify the source encoding, taken automatically"
+        },
+        {
+            "c_hash": "3fde22f6",
+            "date": "2012-01-11 13:38:41 +0000",
+            "comment": "managed javadoc-plugin"
+        },
+        {
+            "c_hash": "c4817713",
+            "date": "2012-01-11 13:44:54 +0000",
+            "comment": "plugged the apache-rat-plugin"
+        },
+        {
+            "c_hash": "cbddf863",
+            "date": "2012-01-11 13:46:03 +0000",
+            "comment": "rat exclude list made coherent"
+        },
+        {
+            "c_hash": "5714a5f7",
+            "date": "2012-01-11 13:55:20 +0000",
+            "comment": "updated maven-enforcer-plugin"
+        },
+        {
+            "c_hash": "b3bdc00c",
+            "date": "2012-01-11 13:59:03 +0000",
+            "comment": "clean, deploy, install and resources plugin moved to the managed section (they don't need to be explicitly configured)"
+        },
+        {
+            "c_hash": "d97b5385",
+            "date": "2012-01-11 13:59:58 +0000",
+            "comment": "updated resources plugin version no needs to specify the source encoding (taken automatically)"
+        },
+        {
+            "c_hash": "e8219bf3",
+            "date": "2012-01-11 14:07:31 +0000",
+            "comment": "ASF projects won't be deployed on Sonatype repo"
+        },
+        {
+            "c_hash": "f3a526e4",
+            "date": "2012-01-11 14:09:12 +0000",
+            "comment": "removed inherited elements"
+        },
+        {
+            "c_hash": "93241c8c",
+            "date": "2012-01-11 14:14:39 +0000",
+            "comment": "reorganized XML elements"
+        },
+        {
+            "c_hash": "7e2f8e0a",
+            "date": "2012-01-11 14:16:46 +0000",
+            "comment": "managed cobertura-maven-plugin"
+        },
+        {
+            "c_hash": "ecacb608",
+            "date": "2012-01-11 14:17:39 +0000",
+            "comment": "removed unused build elements"
+        },
+        {
+            "c_hash": "d41e8e34",
+            "date": "2012-01-11 14:18:20 +0000",
+            "comment": "switched to 2spaces identation"
+        },
+        {
+            "c_hash": "f56e3568",
+            "date": "2012-01-11 14:18:57 +0000",
+            "comment": "replaced license header"
+        },
+        {
+            "c_hash": "6dec00d9",
+            "date": "2012-01-11 14:19:39 +0000",
+            "comment": "no needs to override the version, inherited"
+        },
+        {
+            "c_hash": "803d8ad7",
+            "date": "2012-01-11 14:26:33 +0000",
+            "comment": "replaced old codebase header with ASF header"
+        },
+        {
+            "c_hash": "ecff605a",
+            "date": "2012-01-11 14:52:42 +0000",
+            "comment": "updated spring framework version"
+        },
+        {
+            "c_hash": "f6584738",
+            "date": "2012-01-11 14:57:47 +0000",
+            "comment": "managed surefire-plugin"
+        },
+        {
+            "c_hash": "e103da97",
+            "date": "2012-01-11 14:58:35 +0000",
+            "comment": "removed overriding maven-surefire-plugin version"
+        },
+        {
+            "c_hash": "12b94f73",
+            "date": "2012-01-11 15:02:37 +0000",
+            "comment": "moved the rap-plugin in the release profile - there are currently too many unapproved licenses that make the build failing"
+        },
+        {
+            "c_hash": "43bf61e8",
+            "date": "2012-01-11 15:04:37 +0000",
+            "comment": "cleaned up oauth 2.0 POMs"
+        },
+        {
+            "c_hash": "6ba5de18",
+            "date": "2012-01-11 15:53:40 +0000",
+            "comment": "removed unneeded property"
+        },
+        {
+            "c_hash": "a2026774",
+            "date": "2012-01-11 15:56:03 +0000",
+            "comment": "include also the build branch in build number, not just the revision"
+        },
+        {
+            "c_hash": "1cf27c81",
+            "date": "2012-01-11 15:59:38 +0000",
+            "comment": "removed tommaso affiliation, under his authorization"
+        },
+        {
+            "c_hash": "2ed5e889",
+            "date": "2012-01-11 16:02:41 +0000",
+            "comment": "double logo in homepage just makes some noise, dropped it"
+        },
+        {
+            "c_hash": "36fed021",
+            "date": "2012-01-11 16:09:43 +0000",
+            "comment": "added the ASF menu, as required by the Foundation"
+        },
+        {
+            "c_hash": "c6668bde",
+            "date": "2012-01-11 16:14:37 +0000",
+            "comment": "updated image logo with TM as per ASF requirement"
+        },
+        {
+            "c_hash": "64899d5d",
+            "date": "2012-01-11 16:17:41 +0000",
+            "comment": "added the wagon-ssh plugin, Maven3 doesn't handle ssh/scp by default"
+        },
+        {
+            "c_hash": "2a0f92c2",
+            "date": "2012-01-11 16:18:48 +0000",
+            "comment": "no needs to redefine the groupId"
+        },
+        {
+            "c_hash": "252ab8d0",
+            "date": "2012-01-11 16:19:22 +0000",
+            "comment": "removed unneeded property"
+        },
+        {
+            "c_hash": "f4f99665",
+            "date": "2012-01-11 16:43:22 +0000",
+            "comment": "added Google Doclava as Javadoc Doclet"
+        },
+        {
+            "c_hash": "a768e399",
+            "date": "2012-01-11 21:41:58 +0000",
+            "comment": "upgraded apache parent, enabled profile to deploy on Nexus when releasing"
+        },
+        {
+            "c_hash": "dd622a23",
+            "date": "2012-01-12 09:34:46 +0000",
+            "comment": "added MLs archives"
+        },
+        {
+            "c_hash": "34fc9bff",
+            "date": "2012-01-12 09:45:50 +0000",
+            "comment": "site distribution management id not really useful (ssh pwd is always prompted, so even if configuring it in settings.xml it has no effects)"
+        },
+        {
+            "c_hash": "28b44041",
+            "date": "2012-01-12 09:49:13 +0000",
+            "comment": "wagon-ssh plugged as site-plugin dependency, no needs to have it globally (artifacts are deployed via http on Nexus)"
+        },
+        {
+            "c_hash": "3daa6786",
+            "date": "2012-01-12 09:49:48 +0000",
+            "comment": "made resource path coherent"
+        },
+        {
+            "c_hash": "66ea67e5",
+            "date": "2012-01-12 09:53:01 +0000",
+            "comment": "updated maven-project-info-reports-plugin version"
+        },
+        {
+            "c_hash": "fb2a48b8",
+            "date": "2012-01-12 09:55:06 +0000",
+            "comment": "looks like id is required to deploy the site"
+        },
+        {
+            "c_hash": "2fd0deae",
+            "date": "2012-01-12 10:18:20 +0000",
+            "comment": "dropped broken javadoc parameter"
+        },
+        {
+            "c_hash": "1c80e049",
+            "date": "2012-01-12 10:19:36 +0000",
+            "comment": "no more needs to version the site, it can be deployed via meven using ssh on people.apache.org"
+        },
+        {
+            "c_hash": "bc532e2f",
+            "date": "2012-01-19 10:08:39 +0000",
+            "comment": "update personal information on the team page"
+        },
+        {
+            "c_hash": "a340e695",
+            "date": "2012-01-19 11:32:22 +0000",
+            "comment": "added incubator banner on right"
+        },
+        {
+            "c_hash": "a3784487",
+            "date": "2012-01-25 09:01:50 +0000",
+            "comment": "AMBER-42 : Update amber based on the latest oauth 2.0 draft v22 . Apply patch from Raymond Feng. Thanks!"
+        },
+        {
+            "c_hash": "c8fdabdd",
+            "date": "2012-01-26 16:27:04 +0000",
+            "comment": "AMBER-47 : Update OAuthError class using the error code as for version 22 of the spec"
+        },
+        {
+            "c_hash": "f5880e1d",
+            "date": "2012-01-30 13:37:51 +0000",
+            "comment": "AMBER-37 : Specify the CI url inside the Maven POM"
+        },
+        {
+            "c_hash": "bb0e0f38",
+            "date": "2012-01-30 13:55:06 +0000",
+            "comment": "AMBER-37 : Specify the CI url inside the Maven POM (revised)"
+        },
+        {
+            "c_hash": "51e78ba2",
+            "date": "2012-01-30 14:07:13 +0000",
+            "comment": "AMBER-37 : Specify the CI url inside the Maven POM (added notifiers)"
+        },
+        {
+            "c_hash": "c76ce784",
+            "date": "2012-01-30 14:11:01 +0000",
+            "comment": "AMBER-45 : Authorization Response needs to be updated to latest spec"
+        },
+        {
+            "c_hash": "de2d37f9",
+            "date": "2012-02-12 22:21:11 +0000",
+            "comment": "plugged not-yet-commons-ssl to resolve Rsa signature issue looks like pem resources in test are not valid PKCS8 nor OpenSSL keys"
+        },
+        {
+            "c_hash": "2a2d1b0f",
+            "date": "2012-02-12 22:30:37 +0000",
+            "comment": "restrict using keys in different methods using generics"
+        },
+        {
+            "c_hash": "bb5c0709",
+            "date": "2012-02-13 19:51:49 +0000",
+            "comment": "Configure the maven eclipse and war plugin so that we can run \"mvn eclipse:eclipse\""
+        },
+        {
+            "c_hash": "c719a765",
+            "date": "2012-02-13 20:24:15 +0000",
+            "comment": "AMBER-28 OAuthAccessResourceRequest and extractors using old version of spec to find access token"
+        },
+        {
+            "c_hash": "db87fa96",
+            "date": "2012-02-13 20:46:51 +0000",
+            "comment": "AMBER-29 OAUTH_HEADER_NAME needs to be updated to latest spec"
+        },
+        {
+            "c_hash": "89dc67ce",
+            "date": "2012-02-15 09:17:12 +0000",
+            "comment": "AMBER-28 fix OAuthAccessResourceRequest and extractors using old version of spec to find access token"
+        },
+        {
+            "c_hash": "ac45bb68",
+            "date": "2012-03-01 10:59:40 +0000",
+            "comment": "AMBER-48 : Resource Server module extension"
+        },
+        {
+            "c_hash": "2511e0a8",
+            "date": "2012-03-01 11:02:13 +0000",
+            "comment": "AMBER-48 : Resource Server module extension"
+        },
+        {
+            "c_hash": "3d6aa4e5",
+            "date": "2012-03-13 13:24:31 +0000",
+            "comment": "moving forward the SvnPubSub, modified site distribution management URL and replaced wagon"
+        },
+        {
+            "c_hash": "f43b8052",
+            "date": "2012-03-14 07:55:24 +0000",
+            "comment": "fixed project info issue with submodules - didn't understand why, but when generating the site with older config, it occasionally raised an issue"
+        },
+        {
+            "c_hash": "0b7f441b",
+            "date": "2012-04-23 09:10:31 +0000",
+            "comment": "AMBER-15 : adding new unit test"
+        },
+        {
+            "c_hash": "fb894f09",
+            "date": "2012-05-01 03:34:41 +0000",
+            "comment": "Fix the code to not mess up with HTTP POST body"
+        },
+        {
+            "c_hash": "c7b9ddbe",
+            "date": "2012-05-01 05:24:09 +0000",
+            "comment": "Fix more code to handle query parameters"
+        },
+        {
+            "c_hash": "6268b517",
+            "date": "2012-05-11 11:41:00 +0000",
+            "comment": "no Jira, addming missing AL header"
+        },
+        {
+            "c_hash": "a97df3dd",
+            "date": "2012-05-14 11:41:33 +0000",
+            "comment": "no Jira, adding missing AL header"
+        },
+        {
+            "c_hash": "793e5f82",
+            "date": "2012-05-15 04:50:13 +0000",
+            "comment": "FIX for AMBER-53: Make sure the expires_in is a number"
+        },
+        {
+            "c_hash": "ccfd98d9",
+            "date": "2012-06-07 07:07:09 +0000",
+            "comment": "[AMBER-54] - excluding .idea directory from RAT check in release profile"
+        },
+        {
+            "c_hash": "6ca96f81",
+            "date": "2012-06-07 07:37:42 +0000",
+            "comment": "[AMBER-54] - adding my gpg key to KEYS"
+        },
+        {
+            "c_hash": "549d6562",
+            "date": "2012-06-07 07:38:39 +0000",
+            "comment": "[AMBER-54] - adding my gpg key to KEYS"
+        },
+        {
+            "c_hash": "21a17536",
+            "date": "2012-06-07 07:52:12 +0000",
+            "comment": "[AMBER-54] - added missing license headers, starting removing @author tags"
+        },
+        {
+            "c_hash": "cd318580",
+            "date": "2012-06-07 16:38:56 +0000",
+            "comment": "[AMBER-54] - removed all @author tags"
+        },
+        {
+            "c_hash": "b00eae8d",
+            "date": "2012-06-19 16:12:08 +0000",
+            "comment": "[AMBER-54] - adding json files to RAT exclusions"
+        },
+        {
+            "c_hash": "199a8e0d",
+            "date": "2012-06-19 17:38:48 +0000",
+            "comment": "[AMBER-54] - removing empty CodeTokenValidatorTest stale file"
+        },
+        {
+            "c_hash": "20f6befd",
+            "date": "2012-06-27 15:44:38 +0000",
+            "comment": "[AMBER-55] - moving oauth-1.0 to sandbox"
+        },
+        {
+            "c_hash": "fa43b00b",
+            "date": "2012-06-27 15:47:58 +0000",
+            "comment": "[AMBER-55] - moving server module to sandbox"
+        },
+        {
+            "c_hash": "b0ab7a4d",
+            "date": "2012-06-27 15:50:25 +0000",
+            "comment": "[AMBER-55][AMBER-15] - moving signature and server modules to sandbox"
+        },
+        {
+            "c_hash": "f2bdd896",
+            "date": "2012-06-27 16:20:33 +0000",
+            "comment": "[AMBER-54] - fixing warning about missing javadoc maven plugin version (inside the reporting section)"
+        },
+        {
+            "c_hash": "1e7ac8c0",
+            "date": "2012-07-03 09:37:38 +0000",
+            "comment": "Brian went emeritus :("
+        },
+        {
+            "c_hash": "33cfbb70",
+            "date": "2012-07-03 09:40:50 +0000",
+            "comment": "trailing spaces"
+        },
+        {
+            "c_hash": "04b89ea7",
+            "date": "2012-07-03 09:45:09 +0000",
+            "comment": "initial checkin of (empty) CHANGES file"
+        },
+        {
+            "c_hash": "1d0a0c43",
+            "date": "2012-07-03 09:50:56 +0000",
+            "comment": "added the module to create the sources distribution package (merely copied from Any23, not added in the reactor list yet for that reason :P)"
+        },
+        {
+            "c_hash": "9798a38a",
+            "date": "2012-07-03 09:56:40 +0000",
+            "comment": "initial checkin of the release guide (could contain typos or refused from copy'n'paste...)"
+        },
+        {
+            "c_hash": "42a79d7b",
+            "date": "2012-07-03 10:01:28 +0000",
+            "comment": "release guide linked in the sidebar menu"
+        },
+        {
+            "c_hash": "2b485db0",
+            "date": "2012-07-03 10:02:15 +0000",
+            "comment": "fluido upgrade"
+        },
+        {
+            "c_hash": "b5e8c463",
+            "date": "2012-07-03 10:08:24 +0000",
+            "comment": "generate the site in a proper profile, avoid automatic procedure that is incredibly slow with wagon-svn, the manual procedure is incredibly faster"
+        },
+        {
+            "c_hash": "621249df",
+            "date": "2012-07-03 10:18:15 +0000",
+            "comment": "fixed wrong resources management  * global declaration of root resources was wrong  * include src/main/resources only if really have to"
+        },
+        {
+            "c_hash": "21515797",
+            "date": "2012-07-03 10:27:22 +0000",
+            "comment": "the `apache-release` profile enables the assembly-plugin at all level, which is undesired behavior enable the `apache` profile instead - described in the release guide - that has the info to deploy correctly the artifacts on Nexus"
+        },
+        {
+            "c_hash": "cfdce37c",
+            "date": "2012-07-03 10:28:40 +0000",
+            "comment": "managed the assembly plugin"
+        },
+        {
+            "c_hash": "e2bb393c",
+            "date": "2012-07-03 10:29:21 +0000",
+            "comment": "`sources-dist` module can now be managed"
+        },
+        {
+            "c_hash": "4c595a76",
+            "date": "2012-07-03 10:30:52 +0000",
+            "comment": "added the name format for tagged code (amber-parent looks not good)"
+        },
+        {
+            "c_hash": "8693d139",
+            "date": "2012-07-03 10:35:51 +0000",
+            "comment": "no automatic changes report by Maven, JIRA manages it in a better way"
+        },
+        {
+            "c_hash": "61d73753",
+            "date": "2012-07-03 10:36:35 +0000",
+            "comment": "exclude the CHANGES list from the RAT check"
+        },
+        {
+            "c_hash": "f44d388a",
+            "date": "2012-07-04 08:01:49 +0000",
+            "comment": "add the staging distribution assemblies staging repo to be evaluated in the VOTE thread"
+        },
+        {
+            "c_hash": "8ff03667",
+            "date": "2012-07-04 08:06:17 +0000",
+            "comment": "first checkin of download page - still misses bin packages will be distribuited not just as mvn artifacts"
+        },
+        {
+            "c_hash": "5b9cda4e",
+            "date": "2012-07-04 08:12:04 +0000",
+            "comment": "added Download page link in the sidebar menu"
+        },
+        {
+            "c_hash": "4aa3f833",
+            "date": "2012-07-04 08:16:08 +0000",
+            "comment": "code format, no functional modifications"
+        },
+        {
+            "c_hash": "06947490",
+            "date": "2012-07-04 08:19:05 +0000",
+            "comment": "produces coherent assembly archive name/extracted base directory name"
+        },
+        {
+            "c_hash": "d8e5e648",
+            "date": "2012-07-04 08:50:02 +0000",
+            "comment": "updated JIRA project ID in the message template for vote"
+        },
+        {
+            "c_hash": "8d6de8e0",
+            "date": "2012-07-04 08:52:19 +0000",
+            "comment": "added 0.22 change list generated by JIRA"
+        },
+        {
+            "c_hash": "c161ad76",
+            "date": "2012-07-04 08:53:30 +0000",
+            "comment": "trivial format"
+        },
+        {
+            "c_hash": "1f6dc864",
+            "date": "2012-07-05 13:22:04 +0000",
+            "comment": "fixed assembly version - thanks Antonio"
+        },
+        {
+            "c_hash": "443d42b4",
+            "date": "2012-07-09 08:53:35 +0000",
+            "comment": "changing assemblies name is a hell when deploying - they will be renamed by install plugin (and caused headache in Any23, so better taking advantage from past experiences...)"
+        },
+        {
+            "c_hash": "b50a4f4b",
+            "date": "2012-07-09 08:55:26 +0000",
+            "comment": "sources module renamed as 'amber-sources' assembly ID (-src) removed from artifact name"
+        },
+        {
+            "c_hash": "7afa80f8",
+            "date": "2012-07-09 09:02:53 +0000",
+            "comment": "omit assembly ID by default from zip/tgz artifacts dropped finalName refuse"
+        },
+        {
+            "c_hash": "db752fe6",
+            "date": "2012-07-09 09:19:29 +0000",
+            "comment": "added client assemblies packaging"
+        },
+        {
+            "c_hash": "97782a7c",
+            "date": "2012-07-09 09:25:23 +0000",
+            "comment": "added missing Amber copyright 'header' in NOTICE files"
+        },
+        {
+            "c_hash": "233a4384",
+            "date": "2012-07-09 09:26:44 +0000",
+            "comment": "added authzserver assemblies packaging"
+        },
+        {
+            "c_hash": "a7dc2497",
+            "date": "2012-07-09 09:38:17 +0000",
+            "comment": "added 'amber-' prefix in each artifact"
+        },
+        {
+            "c_hash": "f5967774",
+            "date": "2012-07-09 09:47:19 +0000",
+            "comment": "added dynamicreg-client assembly packaging"
+        },
+        {
+            "c_hash": "50f7a13d",
+            "date": "2012-07-09 10:02:30 +0000",
+            "comment": "added dynamicreg-server assembly packaging"
+        },
+        {
+            "c_hash": "6d312fbb",
+            "date": "2012-07-09 10:02:57 +0000",
+            "comment": "test-utils must be scoped as test dependencies"
+        },
+        {
+            "c_hash": "521679f3",
+            "date": "2012-07-09 10:06:56 +0000",
+            "comment": "added resourceserver assembly packaging"
+        },
+        {
+            "c_hash": "f02dba3f",
+            "date": "2012-07-09 10:17:31 +0000",
+            "comment": "added httpclient4 assembly packaging"
+        },
+        {
+            "c_hash": "3cc37ad0",
+            "date": "2012-07-09 10:22:29 +0000",
+            "comment": "added rs-filter assembly packaging"
+        },
+        {
+            "c_hash": "4c1068bb",
+            "date": "2012-07-09 10:37:49 +0000",
+            "comment": "added war plugin to build the target war that will be redistributed better resources inclusions in war assembly added client-demo assembly packaging"
+        },
+        {
+            "c_hash": "56bdeb90",
+            "date": "2012-07-09 10:46:53 +0000",
+            "comment": "fixed assemblies base directory"
+        },
+        {
+            "c_hash": "d4f4e0d4",
+            "date": "2012-07-09 10:48:47 +0000",
+            "comment": "stripped the 'oauth2-' prefix in physical dir modules under 'oauth2' directory"
+        },
+        {
+            "c_hash": "77463071",
+            "date": "2012-07-09 10:49:57 +0000",
+            "comment": "updated ignore list"
+        },
+        {
+            "c_hash": "85d0cd66",
+            "date": "2012-07-09 10:52:03 +0000",
+            "comment": "s/SLF4J component/SLF4J components (it brings slf4j-jcl as well)"
+        },
+        {
+            "c_hash": "1fb8bfb3",
+            "date": "2012-07-09 11:10:42 +0000",
+            "comment": "more 3rd party licenses in the demo distribution module"
+        },
+        {
+            "c_hash": "a6b18fc0",
+            "date": "2012-07-09 11:17:31 +0000",
+            "comment": "committers' GPG KEYS moved to the committers space on SVN"
+        },
+        {
+            "c_hash": "14772182",
+            "date": "2012-07-09 11:27:11 +0000",
+            "comment": "renamed rs-filter artifactId as resourceserver-filter"
+        },
+        {
+            "c_hash": "864c9795",
+            "date": "2012-07-09 11:48:18 +0000",
+            "comment": "updated doc on the release procedure mode"
+        },
+        {
+            "c_hash": "514c1f41",
+            "date": "2012-07-09 11:50:35 +0000",
+            "comment": "sync'd the soruces package artifact ID"
+        },
+        {
+            "c_hash": "28fd4d63",
+            "date": "2012-07-09 12:21:33 +0000",
+            "comment": "fixed sources path"
+        },
+        {
+            "c_hash": "f8e3f5a6",
+            "date": "2012-07-09 12:36:54 +0000",
+            "comment": "added all downloadable modules list in the download page"
+        },
+        {
+            "c_hash": "7e6c0402",
+            "date": "2012-07-09 12:39:44 +0000",
+            "comment": "Added documentation link on sidebar menu"
+        },
+        {
+            "c_hash": "22639ef9",
+            "date": "2012-07-09 12:43:57 +0000",
+            "comment": "added Documentation and Download advice on  homepage"
+        },
+        {
+            "c_hash": "b86f5a79",
+            "date": "2012-07-09 12:44:41 +0000",
+            "comment": "added missing XML encoding"
+        },
+        {
+            "c_hash": "d2b0c576",
+            "date": "2012-07-09 12:45:02 +0000",
+            "comment": "removed empty unused apt dir"
+        },
+        {
+            "c_hash": "a2265006",
+            "date": "2012-07-09 12:47:03 +0000",
+            "comment": "added APIs documentation link fixed link to stats page"
+        },
+        {
+            "c_hash": "39a4d0a5",
+            "date": "2012-07-09 12:48:10 +0000",
+            "comment": "added an advice also to APIs doc on homepage"
+        },
+        {
+            "c_hash": "b962e226",
+            "date": "2012-07-09 13:05:05 +0000",
+            "comment": "added link to main page in the sidebar menu"
+        },
+        {
+            "c_hash": "cf0dfb73",
+            "date": "2012-07-09 13:05:29 +0000",
+            "comment": "side effect of copy'n paste"
+        },
+        {
+            "c_hash": "38686425",
+            "date": "2012-07-09 13:08:06 +0000",
+            "comment": "added link to maven search service for mvn artifacts"
+        },
+        {
+            "c_hash": "95000e73",
+            "date": "2012-07-09 13:09:18 +0000",
+            "comment": "KEYS file no longer on /trunk"
+        },
+        {
+            "c_hash": "9a9f685e",
+            "date": "2012-07-09 13:09:55 +0000",
+            "comment": "upgraded PMD jdk target"
+        },
+        {
+            "c_hash": "a4101a63",
+            "date": "2012-07-09 13:10:45 +0000",
+            "comment": "updgaded surefire report plugin"
+        },
+        {
+            "c_hash": "0d5b5070",
+            "date": "2012-07-09 13:11:50 +0000",
+            "comment": "updgaded maven-jar-plugin"
+        },
+        {
+            "c_hash": "8301e071",
+            "date": "2012-07-09 13:12:25 +0000",
+            "comment": "it is good practice to set plugins groupId even when implicit..."
+        },
+        {
+            "c_hash": "f5b8beab",
+            "date": "2012-07-09 13:13:14 +0000",
+            "comment": "updated maven-compiler-plugin version - the latest one is faster especially with multi-module projects"
+        },
+        {
+            "c_hash": "c9cb99e6",
+            "date": "2012-07-09 13:15:13 +0000",
+            "comment": "compiler-plugin settings  - optimize code when compiling  - show deprecations  - show warnings"
+        },
+        {
+            "c_hash": "57511684",
+            "date": "2012-07-09 13:15:35 +0000",
+            "comment": "rearrangig stuff"
+        },
+        {
+            "c_hash": "39993f41",
+            "date": "2012-07-09 13:26:36 +0000",
+            "comment": "exclude any NOTICE file by rat checking (assemblies ship their NOTICE version)"
+        },
+        {
+            "c_hash": "58c8e984",
+            "date": "2012-07-09 13:28:40 +0000",
+            "comment": "exclude eclipse files from RAT checking as well"
+        },
+        {
+            "c_hash": "027fed62",
+            "date": "2012-07-09 13:33:40 +0000",
+            "comment": "[maven-release-plugin] prepare release amber-0.22-incubating"
+        },
+        {
+            "c_hash": "245d55c3",
+            "date": "2012-07-09 13:34:01 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "48fc83b8",
+            "date": "2012-07-25 06:56:18 +0000",
+            "comment": "typo, thanks Jason Millard"
+        },
+        {
+            "c_hash": "f9a3c771",
+            "date": "2012-08-02 13:48:17 +0000",
+            "comment": "change the pom version in order to be aligned with the latest version of OAuth 2 spec we aim for"
+        },
+        {
+            "c_hash": "6b19d596",
+            "date": "2012-09-06 13:48:11 +0000",
+            "comment": "NullPointerException in the OAuth2 client demo"
+        },
+        {
+            "c_hash": "6837603e",
+            "date": "2012-09-14 15:36:13 +0000",
+            "comment": "Fix for https://issues.apache.org/jira/browse/AMBER-60"
+        },
+        {
+            "c_hash": "4eaa7227",
+            "date": "2012-10-18 17:48:59 +0000",
+            "comment": "AMBER-62 - Add Extra fields to OAuthProblemException for easier spec compliant error handling. Thanks Stein Welberg for the patch!!"
+        },
+        {
+            "c_hash": "477c4fd1",
+            "date": "2012-11-29 11:55:23 +0000",
+            "comment": "AMBER-61 - Client defined HTTP headers in OAuthClientRequest"
+        },
+        {
+            "c_hash": "e0b2e991",
+            "date": "2012-12-06 15:14:03 +0000",
+            "comment": "fluido skin version upgrade"
+        },
+        {
+            "c_hash": "09dfe54f",
+            "date": "2012-12-13 22:41:50 +0000",
+            "comment": "started plugging the scm-plugin to automate manual operations"
+        },
+        {
+            "c_hash": "33902453",
+            "date": "2012-12-13 22:42:48 +0000",
+            "comment": "updated maven-project-info-reports-plugin version"
+        },
+        {
+            "c_hash": "d7356f90",
+            "date": "2012-12-13 22:48:42 +0000",
+            "comment": "added Raymond in the committers list"
+        },
+        {
+            "c_hash": "11f37859",
+            "date": "2012-12-13 22:53:21 +0000",
+            "comment": "site profile already exist, so - dropped useless site distribution management; - modified new properties name with old naming, it warranties site-deployment backward compatibility"
+        },
+        {
+            "c_hash": "22a8d3c5",
+            "date": "2013-01-09 09:28:23 +0000",
+            "comment": "AMBER-68 - Add integration with Google  OAuth 2.0 for Web Server Applications to client-demo webapp"
+        },
+        {
+            "c_hash": "e5914632",
+            "date": "2013-01-10 13:12:08 +0000",
+            "comment": "AMBER-58 - Add generic flow to client-demo webapp"
+        },
+        {
+            "c_hash": "408b6407",
+            "date": "2013-01-11 15:27:55 +0000",
+            "comment": "AMBER-64 - QueryParameterApplier needs to include the scope parameter in the fragment"
+        },
+        {
+            "c_hash": "c0eccac4",
+            "date": "2013-01-14 12:25:53 +0000",
+            "comment": "AMBER-69 - Client code generates wrong header for Bearer Token"
+        },
+        {
+            "c_hash": "47e789c4",
+            "date": "2013-01-14 12:52:52 +0000",
+            "comment": "AMBER-70 -  Extend the client library in order to easily handle bearer token request"
+        },
+        {
+            "c_hash": "4bc72a13",
+            "date": "2013-01-16 09:21:53 +0000",
+            "comment": "AMBER-73 - Update the client demo web app in order to leverage the new API in AMBER-70"
+        },
+        {
+            "c_hash": "a5dfead3",
+            "date": "2013-01-18 12:33:30 +0000",
+            "comment": "Oltu has become a TLP"
+        },
+        {
+            "c_hash": "efa80818",
+            "date": "2013-01-21 10:19:02 +0000",
+            "comment": "[AMBER-77] - update website from incubating-amber to oltu"
+        },
+        {
+            "c_hash": "3c384305",
+            "date": "2013-01-23 15:10:04 +0000",
+            "comment": "[AMBER-77] Update the Oltu website"
+        },
+        {
+            "c_hash": "3490ccb9",
+            "date": "2013-01-23 15:10:43 +0000",
+            "comment": "[AMBER-77] Update the Oltu website"
+        },
+        {
+            "c_hash": "968c155d",
+            "date": "2013-01-23 15:11:42 +0000",
+            "comment": "[AMBER-77] Update the Oltu website"
+        },
+        {
+            "c_hash": "417dbda8",
+            "date": "2013-01-23 15:16:21 +0000",
+            "comment": "[AMBER-77] Update the Oltu website"
+        },
+        {
+            "c_hash": "6f5b5cd9",
+            "date": "2013-01-23 15:18:04 +0000",
+            "comment": "[AMBER-77] Update the Oltu website"
+        },
+        {
+            "c_hash": "4d4adef4",
+            "date": "2013-01-23 15:22:26 +0000",
+            "comment": "[AMBER-77] Update the Oltu website"
+        },
+        {
+            "c_hash": "878f1400",
+            "date": "2013-01-23 15:25:35 +0000",
+            "comment": "[AMBER-77] Update the Oltu website"
+        },
+        {
+            "c_hash": "7112b2f3",
+            "date": "2013-01-23 15:26:59 +0000",
+            "comment": "[AMBER-77] Update the Oltu website"
+        },
+        {
+            "c_hash": "ba56f14d",
+            "date": "2013-01-23 15:28:57 +0000",
+            "comment": "[AMBER-77] Update the Oltu website"
+        },
+        {
+            "c_hash": "5b4c1ee1",
+            "date": "2013-01-23 15:29:46 +0000",
+            "comment": "[AMBER-77] Update the Oltu website"
+        },
+        {
+            "c_hash": "f697ae02",
+            "date": "2013-01-23 15:30:31 +0000",
+            "comment": "[AMBER-77] Update the Oltu website"
+        },
+        {
+            "c_hash": "9b9b05cb",
+            "date": "2013-01-23 15:37:53 +0000",
+            "comment": "[AMBER-77] Update the Oltu website"
+        },
+        {
+            "c_hash": "2af85ad9",
+            "date": "2013-01-23 15:48:59 +0000",
+            "comment": "[AMBER-77] Update the Oltu website"
+        },
+        {
+            "c_hash": "0e90a024",
+            "date": "2013-01-23 15:50:11 +0000",
+            "comment": "[AMBER-77] Update the Oltu website"
+        },
+        {
+            "c_hash": "7bf29b56",
+            "date": "2013-01-23 15:52:00 +0000",
+            "comment": "[AMBER-77] Update the Oltu website"
+        },
+        {
+            "c_hash": "bf6c5e86",
+            "date": "2013-01-23 16:32:25 +0000",
+            "comment": "[AMBER-77] Update the Oltu website"
+        },
+        {
+            "c_hash": "6b09a237",
+            "date": "2013-01-23 16:38:17 +0000",
+            "comment": "[AMBER-77] Update the Oltu website"
+        },
+        {
+            "c_hash": "1bea43bd",
+            "date": "2013-01-24 10:16:09 +0000",
+            "comment": "upgrading the team list according to the discussion in http://amber.markmail.org/message/llw4wz7nqgwf226t"
+        },
+        {
+            "c_hash": "eb99d8c6",
+            "date": "2013-01-24 14:27:22 +0000",
+            "comment": "[AMBER-77] Update the Oltu website"
+        },
+        {
+            "c_hash": "f0150879",
+            "date": "2013-01-24 15:25:18 +0000",
+            "comment": "code format: no tabs, dropped empty lines"
+        },
+        {
+            "c_hash": "f5c4a664",
+            "date": "2013-01-24 15:29:08 +0000",
+            "comment": "[AMBER-77] Update the Oltu website"
+        },
+        {
+            "c_hash": "ef1018d7",
+            "date": "2013-01-24 15:30:05 +0000",
+            "comment": "[AMBER-77] Update the Oltu website"
+        },
+        {
+            "c_hash": "5398645c",
+            "date": "2013-01-24 15:31:40 +0000",
+            "comment": "[AMBER-77] Update the Oltu website"
+        },
+        {
+            "c_hash": "3a0bd598",
+            "date": "2013-01-24 17:01:42 +0000",
+            "comment": "[AMBER-77] Update the Oltu website"
+        },
+        {
+            "c_hash": "35199cda",
+            "date": "2013-01-24 17:12:45 +0000",
+            "comment": "[AMBER-77] Update the Oltu website"
+        },
+        {
+            "c_hash": "c71b27e4",
+            "date": "2013-01-24 17:35:35 +0000",
+            "comment": "[AMBER-77] Update the Oltu website"
+        },
+        {
+            "c_hash": "590b3d2c",
+            "date": "2013-01-26 13:10:05 +0000",
+            "comment": "[AMBER-78] Remove Incubator DISCLAIMER file and relative inclusion in packages"
+        },
+        {
+            "c_hash": "6d9f8c70",
+            "date": "2013-01-26 13:17:36 +0000",
+            "comment": "[AMBER-79] drop the -incubating suffix in the version"
+        },
+        {
+            "c_hash": "e45b62e9",
+            "date": "2013-01-26 13:29:41 +0000",
+            "comment": "[AMBER-75] Change packages, artifact names, etc. to Oltu"
+        },
+        {
+            "c_hash": "391c6ef2",
+            "date": "2013-01-26 18:59:59 +0000",
+            "comment": "[AMBER-75] Change packages, artifact names, etc. to Oltu"
+        },
+        {
+            "c_hash": "173847da",
+            "date": "2013-01-26 20:04:48 +0000",
+            "comment": "[AMBER-75] Change packages, artifact names, etc. to Oltu"
+        },
+        {
+            "c_hash": "6e42387a",
+            "date": "2013-01-30 15:43:41 +0000",
+            "comment": "(re)configured ciManagement for configured modules"
+        },
+        {
+            "c_hash": "1d118995",
+            "date": "2013-02-25 10:24:37 +0000",
+            "comment": "AMBER-64 - QueryParameterApplier needs to include the scope parameter in the fragment :"
+        },
+        {
+            "c_hash": "9605974a",
+            "date": "2013-03-11 21:49:52 +0000",
+            "comment": "Add myself as committer :-)"
+        },
+        {
+            "c_hash": "3a22f530",
+            "date": "2013-03-11 21:50:23 +0000",
+            "comment": "Formatting"
+        },
+        {
+            "c_hash": "1bcf8b6b",
+            "date": "2013-03-11 21:52:32 +0000",
+            "comment": "Add extra svn:ignores for IntelliJ"
+        },
+        {
+            "c_hash": "f75e553f",
+            "date": "2013-03-20 16:55:32 +0000",
+            "comment": "added contributors information"
+        },
+        {
+            "c_hash": "e40c20d7",
+            "date": "2013-03-20 17:42:56 +0000",
+            "comment": "updated website links for Jira and wiki"
+        },
+        {
+            "c_hash": "7692681e",
+            "date": "2013-03-20 18:22:15 +0000",
+            "comment": "updated website links for Jira and wiki"
+        },
+        {
+            "c_hash": "b51811e2",
+            "date": "2013-03-21 17:22:06 +0000",
+            "comment": "trivial: no tabs, no trailing spaces, dropped empty lines"
+        },
+        {
+            "c_hash": "52167bfe",
+            "date": "2013-03-21 17:36:40 +0000",
+            "comment": "[OLTU-86] Make Oltu artifacts valid OSGi bundles"
+        },
+        {
+            "c_hash": "38a4eefb",
+            "date": "2013-03-22 17:15:18 +0000",
+            "comment": "[OLTU-87] Migrate OAuth2 modules groupId to org.apache.oltu.oauth2"
+        },
+        {
+            "c_hash": "7bad60af",
+            "date": "2013-03-22 17:16:32 +0000",
+            "comment": "[OLTU-87] Migrate OAuth2 modules groupId to org.apache.oltu.oauth2"
+        },
+        {
+            "c_hash": "36d06d5a",
+            "date": "2013-03-22 21:01:25 +0000",
+            "comment": "trivial: relocated groupId/artifactId order in parent declaration"
+        },
+        {
+            "c_hash": "f153671c",
+            "date": "2013-03-25 15:41:23 +0000",
+            "comment": "[OLTU-88] Extract the parent pom from the reactor one"
+        },
+        {
+            "c_hash": "aa513ed6",
+            "date": "2013-03-25 15:41:57 +0000",
+            "comment": "trivial: updated ignore list"
+        },
+        {
+            "c_hash": "0c2992ae",
+            "date": "2013-03-25 15:47:31 +0000",
+            "comment": "[OLTU-89] move artifactId to OSGi-alike taxonomy"
+        },
+        {
+            "c_hash": "f7efd4f9",
+            "date": "2013-03-25 15:59:27 +0000",
+            "comment": "[OLTU-89] move artifactId to OSGi-alike taxonomy"
+        },
+        {
+            "c_hash": "05ae9f1b",
+            "date": "2013-03-25 19:56:53 +0000",
+            "comment": "Remove default IntelliJ comments"
+        },
+        {
+            "c_hash": "90bb115e",
+            "date": "2013-03-25 20:00:02 +0000",
+            "comment": "Add all fields to toString method. use StringBuilder instead of StringBuffer for speed."
+        },
+        {
+            "c_hash": "1e71c6aa",
+            "date": "2013-03-25 20:06:47 +0000",
+            "comment": "Add IntelliJ ignore"
+        },
+        {
+            "c_hash": "a499379c",
+            "date": "2013-03-25 21:14:36 +0000",
+            "comment": "Fix build."
+        },
+        {
+            "c_hash": "097e87ef",
+            "date": "2013-03-28 10:44:52 +0000",
+            "comment": "trivial: added missing description"
+        },
+        {
+            "c_hash": "0102cdeb",
+            "date": "2013-03-28 11:03:24 +0000",
+            "comment": "[OLTU-90] #comment plugged the doap-plugin to attach DOAP descriptors in each component #resolve"
+        },
+        {
+            "c_hash": "e713b191",
+            "date": "2013-03-28 11:24:45 +0000",
+            "comment": "releng: added missing apache parent reference in main oltu parent"
+        },
+        {
+            "c_hash": "6a9ccb86",
+            "date": "2013-03-28 11:27:39 +0000",
+            "comment": "[OLTU-90] #comment The <doapOptions><created/></doapOptions> parameter should be in YYYY-MM-DD."
+        },
+        {
+            "c_hash": "daf79142",
+            "date": "2013-03-28 12:03:04 +0000",
+            "comment": "[OLTU-90] #comment A <doapOptions><downloadPage/></doapOptions> parameter is required by ASF."
+        },
+        {
+            "c_hash": "11f90069",
+            "date": "2013-03-28 12:12:50 +0000",
+            "comment": "releng: dropped incorrect and no longer needed distributionManagement for site"
+        },
+        {
+            "c_hash": "afc5f50e",
+            "date": "2013-03-28 12:14:23 +0000",
+            "comment": "[OLTU-91] #comment main site moved as a separate module #resolve"
+        },
+        {
+            "c_hash": "1f1a8a5a",
+            "date": "2013-03-28 14:01:12 +0000",
+            "comment": "[OLTU-92] #comment dropped the sources-dist module, adjusted the mvn-assembly-plugin to produce sources at root and still valid distribution packages #resolve"
+        },
+        {
+            "c_hash": "9e407a46",
+            "date": "2013-03-28 14:06:48 +0000",
+            "comment": "trivial: don't show the version in the main site, since we are going to have oauth2 and OpenIDConnect modules, both with their different release lifecycles"
+        },
+        {
+            "c_hash": "2d32de25",
+            "date": "2013-03-28 14:07:36 +0000",
+            "comment": "[OLTU-92] missed from r1462097"
+        },
+        {
+            "c_hash": "0f80d346",
+            "date": "2013-03-28 14:09:56 +0000",
+            "comment": "releng: apache-rat-plugin version updated to 0.8"
+        },
+        {
+            "c_hash": "861e4c35",
+            "date": "2013-03-28 14:13:32 +0000",
+            "comment": "[OLTU-92] #comment sources-dist module can now be completely removed from SCM"
+        },
+        {
+            "c_hash": "2b284508",
+            "date": "2013-03-28 14:17:04 +0000",
+            "comment": "trivial: added Simone Tripodi (myself) organization"
+        },
+        {
+            "c_hash": "9f0729f8",
+            "date": "2013-03-28 14:18:04 +0000",
+            "comment": "releng: there's no longer site on root dir, moved the script inside the oauth2 submodule"
+        },
+        {
+            "c_hash": "30f6b817",
+            "date": "2013-03-28 14:20:12 +0000",
+            "comment": "trivial: Stein moved upside, in the active committers, and not between the emeritus"
+        },
+        {
+            "c_hash": "5ad1c48e",
+            "date": "2013-03-28 15:10:49 +0000",
+            "comment": "no Jira - updated organization for myself"
+        },
+        {
+            "c_hash": "840438ee",
+            "date": "2013-04-07 15:06:18 +0000",
+            "comment": "OLTU-93 - Add OpenIdConnect flow to client demo :"
+        },
+        {
+            "c_hash": "53244e5a",
+            "date": "2013-04-07 15:13:21 +0000",
+            "comment": "OLTU-78 - Implement Plaintext JWT :"
+        },
+        {
+            "c_hash": "c27a8292",
+            "date": "2013-04-07 15:14:26 +0000",
+            "comment": "OLTU-78 - Implement Plaintext JWT :"
+        },
+        {
+            "c_hash": "159ffe01",
+            "date": "2013-04-07 15:41:44 +0000",
+            "comment": "OLTU-37 - Implement OpenID Connect :"
+        },
+        {
+            "c_hash": "c98d8a6e",
+            "date": "2013-04-07 15:54:53 +0000",
+            "comment": "OLTU-37 - Implement OpenID Connect :"
+        },
+        {
+            "c_hash": "ec808377",
+            "date": "2013-04-07 16:21:32 +0000",
+            "comment": "OLTU-95 - Add OpenIdConnect client module"
+        },
+        {
+            "c_hash": "691a0296",
+            "date": "2013-04-07 16:36:37 +0000",
+            "comment": "OLTU-93 - Add OpenIdConnect flow to client demo"
+        },
+        {
+            "c_hash": "dc29b462",
+            "date": "2013-04-08 07:41:16 +0000",
+            "comment": "trivial: declaring empty elements has no effect, see help:effective-pom"
+        },
+        {
+            "c_hash": "9975ce7f",
+            "date": "2013-04-08 07:42:24 +0000",
+            "comment": "releng: created the Oltu-OpenID-Conect job on builds.apache.org"
+        },
+        {
+            "c_hash": "dd1cc406",
+            "date": "2013-04-08 07:43:44 +0000",
+            "comment": "trivial: no tabs, trailing spaces - no functional modifications"
+        },
+        {
+            "c_hash": "83c11845",
+            "date": "2013-04-08 07:44:19 +0000",
+            "comment": "trivial: declaring empty elements has no effect, see help:effective-pom"
+        },
+        {
+            "c_hash": "bdcc7637",
+            "date": "2013-04-08 07:45:36 +0000",
+            "comment": "trivial: declaring empty elements has no effect, see help:effective-pom"
+        },
+        {
+            "c_hash": "1645074d",
+            "date": "2013-04-08 07:46:36 +0000",
+            "comment": "trivial: trailing spaces - no functional modifications"
+        },
+        {
+            "c_hash": "eaef74ca",
+            "date": "2013-04-08 07:53:15 +0000",
+            "comment": "trivial: trailing spaces on empty lines - no functional modifications"
+        },
+        {
+            "c_hash": "ecc537c7",
+            "date": "2013-04-08 07:54:11 +0000",
+            "comment": "releng: added openid-connect module in the reactor list"
+        },
+        {
+            "c_hash": "81045364",
+            "date": "2013-04-08 19:08:35 +0000",
+            "comment": "Add svn:ignores for IntelliJ"
+        },
+        {
+            "c_hash": "e78bef3e",
+            "date": "2013-04-09 07:55:23 +0000",
+            "comment": "[OLTU-97] #comment demos moved in a separated module #resolve"
+        },
+        {
+            "c_hash": "a6913e1f",
+            "date": "2013-04-09 07:56:35 +0000",
+            "comment": "releng: updated ignore list"
+        },
+        {
+            "c_hash": "095f5c16",
+            "date": "2013-04-17 10:15:06 +0000",
+            "comment": "OLTU-78 - Implement Plaintext JWT :"
+        },
+        {
+            "c_hash": "ebacec4c",
+            "date": "2013-04-17 13:14:00 +0000",
+            "comment": "OLTU-78 - Implement Plaintext JWT :"
+        },
+        {
+            "c_hash": "226f1954",
+            "date": "2013-04-17 13:16:19 +0000",
+            "comment": "OLTU-78 - Implement Plaintext JWT :"
+        },
+        {
+            "c_hash": "c0a8ab6d",
+            "date": "2013-04-17 13:58:14 +0000",
+            "comment": "OLTU-78 - Implement Plaintext JWT :"
+        },
+        {
+            "c_hash": "761f0a01",
+            "date": "2013-04-17 14:08:09 +0000",
+            "comment": "OLTU-99 - Add a decode JWT  to the demo"
+        },
+        {
+            "c_hash": "33504360",
+            "date": "2013-04-17 14:37:27 +0000",
+            "comment": "OLTU-99 - Add a decode JWT  to the demo :"
+        },
+        {
+            "c_hash": "50ab889e",
+            "date": "2013-04-18 07:31:25 +0000",
+            "comment": "OLTU-100 - Add Linkedin flow in the demo webapp :"
+        },
+        {
+            "c_hash": "0111a97a",
+            "date": "2013-04-19 08:06:05 +0000",
+            "comment": "OLTU-96 - Improve client API in order to support known Provider"
+        },
+        {
+            "c_hash": "8152eac8",
+            "date": "2013-04-25 13:11:13 +0000",
+            "comment": "OLTU-96 - Improve client API in order to support known Provider"
+        },
+        {
+            "c_hash": "ee1f0070",
+            "date": "2013-05-03 14:57:32 +0000",
+            "comment": "OLTU-78 - Implement Plaintext JWT : * starting applying the patch from Suresh Attanayake"
+        },
+        {
+            "c_hash": "cb3f9885",
+            "date": "2013-05-07 06:13:19 +0000",
+            "comment": "OLTU-16 OLTU-31 OLTU-5 Refactoring. Add support for unauthenticated token request. Update authorization code validator and refresh token validator."
+        },
+        {
+            "c_hash": "5237f41f",
+            "date": "2013-05-09 06:59:06 +0000",
+            "comment": "adjusted ML archives according to Oltu (TLP) and Amber (Incubating)"
+        },
+        {
+            "c_hash": "7a2b425a",
+            "date": "2013-05-09 07:33:26 +0000",
+            "comment": "releng: added missing AL header"
+        },
+        {
+            "c_hash": "c9ee6d09",
+            "date": "2013-05-09 07:34:05 +0000",
+            "comment": "releng: updated plugins to latest stable released version"
+        },
+        {
+            "c_hash": "3f2c68ab",
+            "date": "2013-05-09 07:38:54 +0000",
+            "comment": "[maven-release-plugin] prepare release org.apache.oltu.parent-1"
+        },
+        {
+            "c_hash": "ba49b2c2",
+            "date": "2013-05-09 07:39:03 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "4aea6d2a",
+            "date": "2013-05-09 08:35:10 +0000",
+            "comment": "releng: updated httpclient dependency to latest stable release version"
+        },
+        {
+            "c_hash": "2c04517f",
+            "date": "2013-05-09 08:37:10 +0000",
+            "comment": "code format: no tabs, dropped trailing spaces, dropped empty lines"
+        },
+        {
+            "c_hash": "01d19778",
+            "date": "2013-05-09 08:39:13 +0000",
+            "comment": "JWT class constructor made private - utility classes shall not be instantiated"
+        },
+        {
+            "c_hash": "9e4ffee4",
+            "date": "2013-05-09 08:44:27 +0000",
+            "comment": "extracted constants"
+        },
+        {
+            "c_hash": "8d7440d2",
+            "date": "2013-05-09 08:44:52 +0000",
+            "comment": "code format: no tabs, dropped trailing spaces, dropped empty lines, dropped empty elements"
+        },
+        {
+            "c_hash": "c77e7170",
+            "date": "2013-05-09 08:45:31 +0000",
+            "comment": "trivial: trailing spaces and empty lines"
+        },
+        {
+            "c_hash": "32de7e70",
+            "date": "2013-05-09 08:49:01 +0000",
+            "comment": "updated ignore list"
+        },
+        {
+            "c_hash": "34f384e2",
+            "date": "2013-05-09 08:53:04 +0000",
+            "comment": "releng: commons-codec updated to latest stable released version"
+        },
+        {
+            "c_hash": "a08fe5ac",
+            "date": "2013-05-09 09:30:55 +0000",
+            "comment": "releng: better dependencies management via <dependenciesmanagement/> section"
+        },
+        {
+            "c_hash": "6068dc05",
+            "date": "2013-05-09 09:32:56 +0000",
+            "comment": "releng: no needs to redefine the jettison exclusion section, since it is defined in the dependencies management"
+        },
+        {
+            "c_hash": "5707cb6e",
+            "date": "2013-05-09 13:16:12 +0000",
+            "comment": "OLTU-78 - Implement Plaintext JWT"
+        },
+        {
+            "c_hash": "6809e8a2",
+            "date": "2013-05-09 13:28:42 +0000",
+            "comment": "releng: no needs to redefine the jettison exclusion section, since it is defined in the dependencies management"
+        },
+        {
+            "c_hash": "8bf4c98b",
+            "date": "2013-05-09 13:39:26 +0000",
+            "comment": "OLTU-78 - Implement Plaintext JWT : *  adapt the client demo to the latest changes"
+        },
+        {
+            "c_hash": "d5be8cda",
+            "date": "2013-05-09 14:08:12 +0000",
+            "comment": "OLTU-78 - Implement Plaintext JWT : *  adapt the client demo to the latest changes"
+        },
+        {
+            "c_hash": "71225bd9",
+            "date": "2013-05-09 14:08:51 +0000",
+            "comment": "OLTU-78 - Implement Plaintext JWT : *  adapt the client demo to the latest changes"
+        },
+        {
+            "c_hash": "cccfabf1",
+            "date": "2013-05-09 14:09:55 +0000",
+            "comment": "OLTU-78 - Implement Plaintext JWT : *  adapt the client demo to the latest changes"
+        },
+        {
+            "c_hash": "f73d8ffe",
+            "date": "2013-05-09 14:12:03 +0000",
+            "comment": "OLTU-78 - Implement Plaintext JWT : *  adapt the client demo to the latest changes"
+        },
+        {
+            "c_hash": "e29aef2b",
+            "date": "2013-05-09 14:15:54 +0000",
+            "comment": "add svn:ignore"
+        },
+        {
+            "c_hash": "ab840ff0",
+            "date": "2013-05-09 14:42:57 +0000",
+            "comment": "added missing JWT raw string"
+        },
+        {
+            "c_hash": "2bf8f2cd",
+            "date": "2013-05-09 15:00:46 +0000",
+            "comment": "OLTU-37 - Implement OpenID Connect"
+        },
+        {
+            "c_hash": "17c2d334",
+            "date": "2013-05-14 09:20:20 +0000",
+            "comment": "OLTU-78 - Implement Plaintext JWT :"
+        },
+        {
+            "c_hash": "f35d9956",
+            "date": "2013-05-15 15:05:33 +0000",
+            "comment": "OLTU-37 - Implement OpenID Connect"
+        },
+        {
+            "c_hash": "3a135402",
+            "date": "2013-05-15 20:15:25 +0000",
+            "comment": "Also response code 401 can be returned by an authorization server"
+        },
+        {
+            "c_hash": "e3123c5b",
+            "date": "2013-05-15 20:56:34 +0000",
+            "comment": "OLTU-16 OLTU-31 OLTU-5 Update integration tests. Add unauthenticated token endpoint"
+        },
+        {
+            "c_hash": "168fa117",
+            "date": "2013-05-15 21:49:41 +0000",
+            "comment": "OLTU-3 Update integration tests to include the state parameter"
+        },
+        {
+            "c_hash": "ab293ad8",
+            "date": "2013-05-16 17:51:14 +0000",
+            "comment": "OLTU-107 - ResourceHeaderEndpoint should use e.getUri():"
+        },
+        {
+            "c_hash": "3fd3f126",
+            "date": "2013-05-17 13:59:43 +0000",
+            "comment": "OLTU-78 - Implement Plaintext JWT"
+        },
+        {
+            "c_hash": "1da25c12",
+            "date": "2013-05-17 14:00:33 +0000",
+            "comment": "OLTU-78 - Implement Plaintext JWT"
+        },
+        {
+            "c_hash": "5ccbf689",
+            "date": "2013-05-17 15:21:52 +0000",
+            "comment": "parent v1 already available on Maven"
+        },
+        {
+            "c_hash": "660f56cc",
+            "date": "2013-05-18 10:41:30 +0000",
+            "comment": "small improvements in introspection utils to avoid explicit casts when instantiating classes and obtain back the created instances"
+        },
+        {
+            "c_hash": "021660ae",
+            "date": "2013-06-18 15:33:59 +0000",
+            "comment": "@releng taking out temporatly the jwt module in order to perform a release"
+        },
+        {
+            "c_hash": "54dd6157",
+            "date": "2013-06-18 15:42:11 +0000",
+            "comment": "@releng changing jwt module in order to perform a release"
+        },
+        {
+            "c_hash": "ad268ca7",
+            "date": "2013-06-20 16:02:02 +0000",
+            "comment": "[maven-release-plugin] prepare release org.apache.oltu.oauth2.parent-0.31"
+        },
+        {
+            "c_hash": "a3a30cde",
+            "date": "2013-06-20 16:04:52 +0000",
+            "comment": "[maven-release-plugin] rollback the release of org.apache.oltu.oauth2.parent-0.31"
+        },
+        {
+            "c_hash": "abf90f7d",
+            "date": "2013-06-20 16:07:41 +0000",
+            "comment": "[maven-release-plugin] prepare release org.apache.oltu.oauth2.parent-0.31"
+        },
+        {
+            "c_hash": "bde223a4",
+            "date": "2013-06-20 16:28:33 +0000",
+            "comment": "[maven-release-plugin] rollback the release of org.apache.oltu.oauth2.parent-0.31"
+        },
+        {
+            "c_hash": "8b634446",
+            "date": "2013-06-20 16:34:10 +0000",
+            "comment": "[maven-release-plugin] prepare release org.apache.oltu.oauth2.parent-0.31"
+        },
+        {
+            "c_hash": "c138f563",
+            "date": "2013-06-20 16:48:09 +0000",
+            "comment": "prepare for next iteration development"
+        },
+        {
+            "c_hash": "c59a00b2",
+            "date": "2013-06-24 08:44:27 +0000",
+            "comment": "added svn:ignore"
+        },
+        {
+            "c_hash": "e2496527",
+            "date": "2013-06-24 08:44:53 +0000",
+            "comment": "added svn:ignore"
+        },
+        {
+            "c_hash": "87b701e0",
+            "date": "2013-08-16 14:00:01 +0000",
+            "comment": "OLTU-112 - Error while building Oltu"
+        },
+        {
+            "c_hash": "d9f5c8f1",
+            "date": "2013-09-17 12:34:20 +0000",
+            "comment": "added svn ignore"
+        },
+        {
+            "c_hash": "3c2dff76",
+            "date": "2013-09-17 12:37:28 +0000",
+            "comment": "OLTU-114 - JWT header/claimsset don't support custom fields OLTU-115 - JWTUtils#parse() method does not support multi-lines token OLTU-116 - JWTUtils does not have a method to serialize a JWT entity to a token"
+        },
+        {
+            "c_hash": "9971b4ea",
+            "date": "2013-09-17 12:55:15 +0000",
+            "comment": "releng: JWT re-enabled for deploy"
+        },
+        {
+            "c_hash": "44dfa34f",
+            "date": "2013-09-17 17:06:46 +0000",
+            "comment": "trivial: added missing org.apache.oltu.oauth2.jwt package documentation"
+        },
+        {
+            "c_hash": "91da7581",
+            "date": "2013-09-17 17:35:47 +0000",
+            "comment": "[OLTU-117] Replace JWTUtils with JWT(Reader|Writer)"
+        },
+        {
+            "c_hash": "cbeb8f38",
+            "date": "2013-09-18 07:28:55 +0000",
+            "comment": "[OLTU-117] Replace JWTUtils with JWT(Reader|Writer)"
+        },
+        {
+            "c_hash": "bed7f2a0",
+            "date": "2013-09-18 07:30:51 +0000",
+            "comment": "trivial: code format"
+        },
+        {
+            "c_hash": "f3e1f3a3",
+            "date": "2013-09-18 07:32:06 +0000",
+            "comment": "trivial: no needs to extends Assert class for test cases, just import the needed methods"
+        },
+        {
+            "c_hash": "cfd6a416",
+            "date": "2013-09-18 07:43:03 +0000",
+            "comment": "[OLTU-117] Replace JWTUtils with JWT(Reader|Writer)"
+        },
+        {
+            "c_hash": "c363aed1",
+            "date": "2013-09-18 07:44:54 +0000",
+            "comment": "trivial: code format"
+        },
+        {
+            "c_hash": "e1bb72e4",
+            "date": "2013-09-18 08:10:48 +0000",
+            "comment": "trivial: updated ignore list"
+        },
+        {
+            "c_hash": "be0359dd",
+            "date": "2013-09-18 08:26:02 +0000",
+            "comment": "trivial: updated ignore list"
+        },
+        {
+            "c_hash": "622b772c",
+            "date": "2013-09-18 13:09:02 +0000",
+            "comment": "OLTU-118 - Implement JWS of the JOSE working group"
+        },
+        {
+            "c_hash": "d4159d42",
+            "date": "2013-09-18 13:10:54 +0000",
+            "comment": "fixed potential NPE when users pass a null type to cast the custom field value"
+        },
+        {
+            "c_hash": "2e545390",
+            "date": "2013-09-18 13:22:41 +0000",
+            "comment": "OLTU-118 - Implement JWS of the JOSE working group"
+        },
+        {
+            "c_hash": "f1417809",
+            "date": "2013-09-18 13:28:26 +0000",
+            "comment": "OLTU-118 - Implement JWS of the JOSE working group"
+        },
+        {
+            "c_hash": "001b0708",
+            "date": "2013-09-18 13:52:06 +0000",
+            "comment": "OLTU-118 - Implement JWS of the JOSE working group"
+        },
+        {
+            "c_hash": "352adf2e",
+            "date": "2013-09-18 13:52:46 +0000",
+            "comment": "OLTU-118 - Implement JWS of the JOSE working group"
+        },
+        {
+            "c_hash": "465d8856",
+            "date": "2013-09-19 08:29:14 +0000",
+            "comment": "OLTU-118 - Implement JWS of the JOSE working group"
+        },
+        {
+            "c_hash": "f1214c7c",
+            "date": "2013-09-19 09:30:24 +0000",
+            "comment": "OLTU-118 - Implement JWS of the JOSE working group"
+        },
+        {
+            "c_hash": "17fd5428",
+            "date": "2013-09-19 09:45:20 +0000",
+            "comment": "OLTU-118 - Implement JWS of the JOSE working group"
+        },
+        {
+            "c_hash": "d32fbb61",
+            "date": "2013-09-19 11:35:30 +0000",
+            "comment": "trivial: typo"
+        },
+        {
+            "c_hash": "b94fd7b0",
+            "date": "2013-09-19 13:03:16 +0000",
+            "comment": "trivial: improved toString() representation"
+        },
+        {
+            "c_hash": "d06c56b6",
+            "date": "2013-09-19 13:26:07 +0000",
+            "comment": "trivial: improved toString() representation"
+        },
+        {
+            "c_hash": "9453a06f",
+            "date": "2013-09-19 13:26:33 +0000",
+            "comment": "OLTU-118 - Implement JWS of the JOSE working group"
+        },
+        {
+            "c_hash": "c8eddfa5",
+            "date": "2013-09-20 06:50:31 +0000",
+            "comment": "OLTU-118 - Implement JWS of the JOSE working group"
+        },
+        {
+            "c_hash": "81371d35",
+            "date": "2013-09-20 07:24:55 +0000",
+            "comment": "OLTU-118 - Implement JWS of the JOSE working group"
+        },
+        {
+            "c_hash": "013729a9",
+            "date": "2013-09-20 08:39:12 +0000",
+            "comment": "trivial: just inverted authentication header order"
+        },
+        {
+            "c_hash": "a7a49bc5",
+            "date": "2013-09-20 14:42:33 +0000",
+            "comment": "@releng updating the website"
+        },
+        {
+            "c_hash": "e0e5c38c",
+            "date": "2013-09-20 14:42:59 +0000",
+            "comment": "@releng updating the website"
+        },
+        {
+            "c_hash": "0f422c31",
+            "date": "2013-09-20 14:43:23 +0000",
+            "comment": "@releng updating the website"
+        },
+        {
+            "c_hash": "e19bfc93",
+            "date": "2013-09-24 10:39:11 +0000",
+            "comment": "trivial: no tabs"
+        },
+        {
+            "c_hash": "afa0bc1e",
+            "date": "2013-09-24 12:35:35 +0000",
+            "comment": "releng: updated spring FW to latest released version"
+        },
+        {
+            "c_hash": "ed4dbb24",
+            "date": "2013-09-24 12:36:03 +0000",
+            "comment": "trivial: code format"
+        },
+        {
+            "c_hash": "b74da212",
+            "date": "2013-09-24 13:10:16 +0000",
+            "comment": "OLTU-119 Add a css to demo application"
+        },
+        {
+            "c_hash": "7b1f9083",
+            "date": "2013-09-24 15:15:32 +0000",
+            "comment": "OLTU-119 Add a css to demo application"
+        },
+        {
+            "c_hash": "7974fb8b",
+            "date": "2013-09-25 08:54:45 +0000",
+            "comment": "OLTU-119 Add a css to demo application"
+        },
+        {
+            "c_hash": "31d05aec",
+            "date": "2013-09-25 14:48:49 +0000",
+            "comment": "OLTU-120 - Invalid URL for Microsoft token endpoint in OAuthProviderType"
+        },
+        {
+            "c_hash": "333478c7",
+            "date": "2013-09-25 14:49:12 +0000",
+            "comment": "OLTU-119 Add a css to demo application"
+        },
+        {
+            "c_hash": "40957981",
+            "date": "2013-09-25 14:53:01 +0000",
+            "comment": "OLTU-118 - Implement JWS of the JOSE working group"
+        },
+        {
+            "c_hash": "cf19988c",
+            "date": "2013-09-26 08:34:03 +0000",
+            "comment": "OLTU-118 - Implement JWS of the JOSE working group"
+        },
+        {
+            "c_hash": "cd472002",
+            "date": "2013-10-01 11:53:27 +0000",
+            "comment": "OLTU-121 Make OAuthProblemException extensible"
+        },
+        {
+            "c_hash": "31ec1f31",
+            "date": "2013-10-14 12:05:34 +0000",
+            "comment": "OLTU-122 - Broken Authorization Endpoint error page"
+        },
+        {
+            "c_hash": "abba9ab0",
+            "date": "2013-10-28 16:19:43 +0000",
+            "comment": "OLTU-124 - Replace Jettison with org.json"
+        },
+        {
+            "c_hash": "36fa9a8e",
+            "date": "2013-10-28 16:22:16 +0000",
+            "comment": "releng: updated ignore list"
+        },
+        {
+            "c_hash": "c8d6d4b9",
+            "date": "2013-10-29 12:45:49 +0000",
+            "comment": "OLTU-125 - Create a 'commons' module for JSON reader/writer"
+        },
+        {
+            "c_hash": "b5b58abb",
+            "date": "2013-10-29 12:51:29 +0000",
+            "comment": "@releng: updated ignore list"
+        },
+        {
+            "c_hash": "019b8b23",
+            "date": "2013-10-29 13:12:33 +0000",
+            "comment": "OLTU-123 - logo for Apache Oltu"
+        },
+        {
+            "c_hash": "2e3fca10",
+            "date": "2013-10-30 09:32:28 +0000",
+            "comment": "OLTU-124 - Replace Jettison with org.json"
+        },
+        {
+            "c_hash": "39f602ca",
+            "date": "2013-10-30 10:01:00 +0000",
+            "comment": "OLTU-123 - logo for Apache Oltu"
+        },
+        {
+            "c_hash": "b9e8afc9",
+            "date": "2013-12-20 10:52:01 +0000",
+            "comment": "@releng added svn:ignore"
+        },
+        {
+            "c_hash": "45154267",
+            "date": "2013-12-20 10:52:36 +0000",
+            "comment": "@releng added svn:ignore"
+        },
+        {
+            "c_hash": "1d5c3b5a",
+            "date": "2013-12-20 10:55:48 +0000",
+            "comment": "@releng added svn:ignore"
+        },
+        {
+            "c_hash": "79e40b3f",
+            "date": "2013-12-20 14:52:58 +0000",
+            "comment": "OLTU-131 - Signature parsing from access token is broken for character encodings that are not single-byte"
+        },
+        {
+            "c_hash": "c34ed825",
+            "date": "2013-12-20 14:58:05 +0000",
+            "comment": "OLTU-132 - SignatureMethod should take in consideration also the header"
+        },
+        {
+            "c_hash": "6c12a696",
+            "date": "2013-12-20 14:59:08 +0000",
+            "comment": "OLTU-132 - SignatureMethod should take in consideration also the header"
+        },
+        {
+            "c_hash": "784a843c",
+            "date": "2013-12-20 15:11:24 +0000",
+            "comment": "OLTU-133 - Add HS256 implementation of SignatureMethod"
+        },
+        {
+            "c_hash": "175ae086",
+            "date": "2013-12-20 15:33:36 +0000",
+            "comment": "OLTU-131 - Signature parsing from access token is broken for character encodings that are not single-byte"
+        },
+        {
+            "c_hash": "cf501d3a",
+            "date": "2013-12-20 15:33:56 +0000",
+            "comment": "OLTU-131 - Signature parsing from access token is broken for character encodings that are not single-byte"
+        },
+        {
+            "c_hash": "e6a370f9",
+            "date": "2013-12-20 15:48:21 +0000",
+            "comment": "OLTU-131 - Signature parsing from access token is broken for character encodings that are not single-byte"
+        },
+        {
+            "c_hash": "dc632578",
+            "date": "2013-12-20 15:59:21 +0000",
+            "comment": "OLTU-131 - Signature parsing from access token is broken for character encodings that are not single-byte"
+        },
+        {
+            "c_hash": "6579a1c2",
+            "date": "2014-01-08 13:50:24 +0000",
+            "comment": "@releng minor fix (moving the unit test to the correct package)"
+        },
+        {
+            "c_hash": "70ca793a",
+            "date": "2014-01-08 13:50:29 +0000",
+            "comment": "@releng minor fix (moving the unit test to the correct package)"
+        },
+        {
+            "c_hash": "2fa9b7c7",
+            "date": "2014-02-03 12:58:40 +0000",
+            "comment": "[maven-release-plugin] prepare release org.apache.oltu.commons.parent-1"
+        },
+        {
+            "c_hash": "9aef4419",
+            "date": "2014-02-03 13:07:02 +0000",
+            "comment": "[maven-release-plugin] rollback the release of org.apache.oltu.commons.parent-1"
+        },
+        {
+            "c_hash": "e3c5a516",
+            "date": "2014-02-03 13:07:29 +0000",
+            "comment": "[maven-release-plugin] prepare release org.apache.oltu.commons.parent-1"
+        },
+        {
+            "c_hash": "05c831cf",
+            "date": "2014-02-03 14:29:24 +0000",
+            "comment": "[maven-release-plugin] rollback the release of org.apache.oltu.commons.parent-1"
+        },
+        {
+            "c_hash": "46ab5481",
+            "date": "2014-02-03 14:37:57 +0000",
+            "comment": "added missing SCM info, that drive SCM in a wrong path and release fails"
+        },
+        {
+            "c_hash": "532f5c11",
+            "date": "2014-02-03 14:38:25 +0000",
+            "comment": "[maven-release-plugin] prepare release org.apache.oltu.commons.parent-1"
+        },
+        {
+            "c_hash": "68f07341",
+            "date": "2014-02-03 14:38:33 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "5a5a1479",
+            "date": "2014-02-03 14:48:32 +0000",
+            "comment": "all modules vesion rollback, release failed"
+        },
+        {
+            "c_hash": "d5e52739",
+            "date": "2014-02-03 14:49:03 +0000",
+            "comment": "[maven-release-plugin] prepare release org.apache.oltu.commons.parent-1"
+        },
+        {
+            "c_hash": "ab07bf7e",
+            "date": "2014-02-03 14:49:12 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "fda2aed6",
+            "date": "2014-02-03 15:37:17 +0000",
+            "comment": "all modules vesion rollback, release failed (again)"
+        },
+        {
+            "c_hash": "978fe374",
+            "date": "2014-02-03 21:13:49 +0000",
+            "comment": "using autoVersionSubmodules=true forces the submodules to inherit the root version, rather than the one specified in the module pom"
+        },
+        {
+            "c_hash": "26c17cee",
+            "date": "2014-02-03 21:21:05 +0000",
+            "comment": "releng: plugins update"
+        },
+        {
+            "c_hash": "f872ea92",
+            "date": "2014-02-03 21:21:37 +0000",
+            "comment": "[maven-release-plugin] prepare release org.apache.oltu.parent-2"
+        },
+        {
+            "c_hash": "d923a181",
+            "date": "2014-02-03 21:22:27 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "247959ec",
+            "date": "2014-02-03 21:55:07 +0000",
+            "comment": "maven-bundle-plugin:2.4.0 has issues with current oltu build, back to previous stable release"
+        },
+        {
+            "c_hash": "77f84150",
+            "date": "2014-02-03 21:55:32 +0000",
+            "comment": "[maven-release-plugin] prepare release org.apache.oltu.parent-2"
+        },
+        {
+            "c_hash": "a8a76da9",
+            "date": "2014-02-03 21:55:42 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "c652b53f",
+            "date": "2014-02-03 21:57:53 +0000",
+            "comment": "preparing metadata for next release"
+        },
+        {
+            "c_hash": "06cf9616",
+            "date": "2014-02-03 21:58:34 +0000",
+            "comment": "[maven-release-plugin] prepare release org.apache.oltu.commons.parent-1"
+        },
+        {
+            "c_hash": "58b85980",
+            "date": "2014-02-03 21:58:43 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "9d765379",
+            "date": "2014-02-03 22:09:21 +0000",
+            "comment": "preparing next release metadata"
+        },
+        {
+            "c_hash": "6dd380d0",
+            "date": "2014-02-03 22:11:58 +0000",
+            "comment": "fixed RAT violation - license header"
+        },
+        {
+            "c_hash": "baa0a26b",
+            "date": "2014-02-03 22:12:19 +0000",
+            "comment": "[maven-release-plugin] prepare release org.apache.oltu.jose.parent-1"
+        },
+        {
+            "c_hash": "112dcc5b",
+            "date": "2014-02-03 22:12:29 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "54dd935d",
+            "date": "2014-02-23 17:44:56 +0000",
+            "comment": "releng: export all subpackages in each bundle"
+        },
+        {
+            "c_hash": "16dcc07d",
+            "date": "2014-02-23 17:47:33 +0000",
+            "comment": "[maven-release-plugin] prepare release org.apache.oltu.oauth2.parent-1.0.0"
+        },
+        {
+            "c_hash": "38937d54",
+            "date": "2014-02-23 17:56:36 +0000",
+            "comment": "[maven-release-plugin] rollback the release of org.apache.oltu.oauth2.parent-1.0.0"
+        },
+        {
+            "c_hash": "335bdc96",
+            "date": "2014-02-23 18:00:10 +0000",
+            "comment": "fixing broken SCM info"
+        },
+        {
+            "c_hash": "6b3e821c",
+            "date": "2014-02-23 18:01:49 +0000",
+            "comment": "[maven-release-plugin] prepare release org.apache.oltu.oauth2.parent-1.0.0"
+        },
+        {
+            "c_hash": "94b578ea",
+            "date": "2014-02-23 18:01:57 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "f20857b5",
+            "date": "2014-02-23 18:08:59 +0000",
+            "comment": "[maven-release-plugin] rollback the release of org.apache.oltu.oauth2.parent-1.0.0"
+        },
+        {
+            "c_hash": "51d9c0a4",
+            "date": "2014-02-24 14:02:04 +0000",
+            "comment": "releng: updated parent to latest stable released version"
+        },
+        {
+            "c_hash": "5fcc7dd8",
+            "date": "2014-02-24 14:22:30 +0000",
+            "comment": "releng: dependencies updated to latest released version"
+        },
+        {
+            "c_hash": "425b9880",
+            "date": "2014-02-24 15:19:22 +0000",
+            "comment": "releng: relaxing restrictions, authzserver doesn't respect the conventions"
+        },
+        {
+            "c_hash": "7ee324f8",
+            "date": "2014-03-05 14:19:59 +0000",
+            "comment": "releng: it doesn't have anymore sense to maintain a single file with global changes file, since Oltu hosts multiple specs implementations and not only OAuth 2.0"
+        },
+        {
+            "c_hash": "0b3950d4",
+            "date": "2014-03-05 14:21:54 +0000",
+            "comment": "[maven-release-plugin] prepare release org.apache.oltu.oauth2.parent-1.0.0"
+        },
+        {
+            "c_hash": "e2f7061e",
+            "date": "2014-03-05 14:22:06 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "10b57dd4",
+            "date": "2014-03-05 15:42:22 +0000",
+            "comment": "simplified download page"
+        },
+        {
+            "c_hash": "a0ee19a9",
+            "date": "2014-03-06 10:22:01 +0000",
+            "comment": "OLTU-138 Fix possible index out of bounds exception. Remove duplicate test class"
+        },
+        {
+            "c_hash": "16197b76",
+            "date": "2014-03-07 12:04:56 +0000",
+            "comment": "releng: updated OpenID Connect parent & modules versions"
+        },
+        {
+            "c_hash": "8973f10d",
+            "date": "2014-03-07 13:39:57 +0000",
+            "comment": "OLTU-139 - Publish all Javadocs - preparing the main site in order to host all modules javadoc"
+        },
+        {
+            "c_hash": "990b87c4",
+            "date": "2014-03-07 13:43:28 +0000",
+            "comment": "OLTU-139 - Publish all Javadocs - use the 'site' profile to publish the documentation"
+        },
+        {
+            "c_hash": "5b7a0046",
+            "date": "2014-03-07 16:36:07 +0000",
+            "comment": "OLTU-139 - Publish all Javadocs: all Oltu modules now support APIs doc deployment"
+        },
+        {
+            "c_hash": "cc79690d",
+            "date": "2014-04-01 10:55:05 +0000",
+            "comment": "OLTU-143 - Add support for public key signature algorithm to the JWS module"
+        },
+        {
+            "c_hash": "3505c774",
+            "date": "2014-04-01 10:56:28 +0000",
+            "comment": "OLTU-143 - Add support for public key signature algorithm to the JWS module"
+        },
+        {
+            "c_hash": "e5707da5",
+            "date": "2014-04-01 11:41:15 +0000",
+            "comment": "https://issues.apache.org/jira/browse/OLTU-143"
+        },
+        {
+            "c_hash": "7951f071",
+            "date": "2014-04-02 06:40:23 +0000",
+            "comment": "OLTU-144 - increase unit test code coverage of the JWS module"
+        },
+        {
+            "c_hash": "9ab7011b",
+            "date": "2014-04-02 08:13:54 +0000",
+            "comment": "@releng minor fix"
+        },
+        {
+            "c_hash": "a695a3f1",
+            "date": "2014-04-04 14:44:39 +0000",
+            "comment": "@releng minor fix"
+        },
+        {
+            "c_hash": "68889908",
+            "date": "2014-04-04 14:50:41 +0000",
+            "comment": "@releng minor fix"
+        },
+        {
+            "c_hash": "f40f9ee4",
+            "date": "2014-06-03 06:48:23 +0000",
+            "comment": "OLTU-152 - Wrong usage of Base64 in TokenDecoder"
+        },
+        {
+            "c_hash": "b1f7fc0b",
+            "date": "2014-06-25 12:30:29 +0000",
+            "comment": "OLTU-105 - Android 4.1 expects \"realm\" as first parameter in www-authenticate header"
+        },
+        {
+            "c_hash": "f9562c73",
+            "date": "2014-06-25 15:43:48 +0000",
+            "comment": "trivial: code format"
+        },
+        {
+            "c_hash": "ca1de9ec",
+            "date": "2014-06-26 09:05:16 +0000",
+            "comment": "OLTU-153 - Parent POM should have URL of user mailing list archive"
+        },
+        {
+            "c_hash": "f9aec9ac",
+            "date": "2014-06-26 11:29:01 +0000",
+            "comment": "OLTU-147 - Upgrade commons-codec 1.8 to 1.9"
+        },
+        {
+            "c_hash": "d093ec05",
+            "date": "2014-06-26 12:34:54 +0000",
+            "comment": "OLTU-148 - Upgrade json 20131018 to 20140107"
+        },
+        {
+            "c_hash": "6b5f4466",
+            "date": "2014-06-26 12:38:00 +0000",
+            "comment": "OLTU-146 - Upgrade JUnit 4.10 to 4.11"
+        },
+        {
+            "c_hash": "acd6c2cc",
+            "date": "2014-06-26 12:40:10 +0000",
+            "comment": "OLTU-145 - Upgrade the underlying logging frameworks"
+        },
+        {
+            "c_hash": "e6369965",
+            "date": "2014-07-07 09:19:13 +0000",
+            "comment": "OLTU-134 - Broken OSGi metadata"
+        },
+        {
+            "c_hash": "afe28646",
+            "date": "2014-07-08 08:48:56 +0000",
+            "comment": "OLTU-134 - Broken OSGi metadata"
+        },
+        {
+            "c_hash": "1a6bbe8c",
+            "date": "2014-09-12 11:19:26 +0000",
+            "comment": "OLTU-160 Add the implicit grant type"
+        },
+        {
+            "c_hash": "f0ec1dcd",
+            "date": "2014-10-07 09:04:08 +0000",
+            "comment": "OLTU-161 - JWTClaimsSetParser fails when aud is an array"
+        },
+        {
+            "c_hash": "558bcf0b",
+            "date": "2014-11-03 17:20:46 +0000",
+            "comment": "OLTU-147 - Upgrade commons-codec 1.8 to 1.9"
+        },
+        {
+            "c_hash": "f763aa38",
+            "date": "2014-11-04 13:49:13 +0000",
+            "comment": "OLTU-147 - Upgrade commons-codec 1.8 to 1.9"
+        },
+        {
+            "c_hash": "c99b87d0",
+            "date": "2014-12-05 17:57:35 +0000",
+            "comment": "releng: replaced deprecated Assert class"
+        },
+        {
+            "c_hash": "28443ee7",
+            "date": "2014-12-05 18:14:05 +0000",
+            "comment": "releng: suppressed type inference warning by fixing them"
+        },
+        {
+            "c_hash": "41d8a28b",
+            "date": "2014-12-05 18:14:48 +0000",
+            "comment": "releng: muted test, suppressed syserr print"
+        },
+        {
+            "c_hash": "f10663be",
+            "date": "2014-12-05 18:23:38 +0000",
+            "comment": "trivial: static Assert.assertEquals import rather than static method invocation"
+        }
+    ]
+}

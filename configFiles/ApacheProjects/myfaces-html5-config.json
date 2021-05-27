@@ -1,0 +1,393 @@
+{
+    "project": "myfaces-html5",
+    "git_url": "https://github.com/apache/myfaces-html5.git",
+    "last_commit": "a41da370",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "9eced2ad",
+            "date": "2010-07-30 22:32:50 +0000",
+            "comment": "Creating /gsoc folder and html5-comp-lib-project"
+        },
+        {
+            "c_hash": "bb8152f1",
+            "date": "2010-07-30 22:37:29 +0000",
+            "comment": "The progress on html5-comp-lib so far goes into MyFaces repository"
+        },
+        {
+            "c_hash": "08720368",
+            "date": "2010-08-06 21:35:08 +0000",
+            "comment": "Improved client-side validation by driving JSF validators/converters. Added an example. Added TODOs"
+        },
+        {
+            "c_hash": "db87c1b5",
+            "date": "2010-08-06 21:37:31 +0000",
+            "comment": "Added missing license for new interface, and some formatting."
+        },
+        {
+            "c_hash": "c225005f",
+            "date": "2010-08-07 22:02:22 +0000",
+            "comment": "Added example of driving client-side pattern by custom JSF validator"
+        },
+        {
+            "c_hash": "10803f00",
+            "date": "2010-08-11 23:08:38 +0000",
+            "comment": "Moving documentation of behaviors to their handlers. So, myfaces-build-plugin can create the correct doc."
+        },
+        {
+            "c_hash": "f1b81c76",
+            "date": "2010-08-12 20:42:37 +0000",
+            "comment": "Use myfaces builder annotations for behaviors"
+        },
+        {
+            "c_hash": "d38e8185",
+            "date": "2010-08-12 20:51:33 +0000",
+            "comment": "+Maven config to generate website of the project. +Updated velocitiy templates"
+        },
+        {
+            "c_hash": "a4068077",
+            "date": "2010-08-12 21:04:08 +0000",
+            "comment": "Added missing documentation for some properties"
+        },
+        {
+            "c_hash": "7cddbd84",
+            "date": "2010-08-12 21:36:37 +0000",
+            "comment": "Removed project site generation. Moved facelets doc generation to install phase and generate-site profile for now"
+        },
+        {
+            "c_hash": "050d4ce3",
+            "date": "2010-08-13 22:35:24 +0000",
+            "comment": "Added project site"
+        },
+        {
+            "c_hash": "9ea124fd",
+            "date": "2010-08-13 22:38:31 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/myfaces/gsoc/html5-comp-lib/trunk@985389 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "23e9357b",
+            "date": "2010-08-13 22:53:26 +0000",
+            "comment": "Html5 - Adding empty apt pages"
+        },
+        {
+            "c_hash": "89c83b0d",
+            "date": "2010-08-13 23:00:53 +0000",
+            "comment": "Html5 - Migrate to commons-lang 2.5"
+        },
+        {
+            "c_hash": "f7d1250d",
+            "date": "2010-08-13 23:39:24 +0000",
+            "comment": "Html5 - Moving project site to parent project"
+        },
+        {
+            "c_hash": "3713cb40",
+            "date": "2010-08-14 00:12:19 +0000",
+            "comment": "Html5- Moving project site generation -back- to site phase"
+        },
+        {
+            "c_hash": "65241776",
+            "date": "2010-08-14 23:10:22 +0000",
+            "comment": "Html5 - Added an example of driving client-side validation with custom validator"
+        },
+        {
+            "c_hash": "801dfadf",
+            "date": "2010-08-14 23:10:54 +0000",
+            "comment": "Html5 - Formatting for a better documentation"
+        },
+        {
+            "c_hash": "f79f494e",
+            "date": "2010-08-14 23:11:33 +0000",
+            "comment": "Html5 - Updated project website and documentation"
+        },
+        {
+            "c_hash": "238da0cb",
+            "date": "2010-08-22 19:34:36 +0000",
+            "comment": "Some documentation and some todo removal"
+        },
+        {
+            "c_hash": "616d2ce2",
+            "date": "2010-08-22 19:35:12 +0000",
+            "comment": "Use macros while creating facelets taglib.xml"
+        },
+        {
+            "c_hash": "0d4bfbf7",
+            "date": "2010-08-27 21:33:45 +0000",
+            "comment": "Html5 - Rename \"placeHolder\" property to \"placeholder\""
+        },
+        {
+            "c_hash": "4e00d4f0",
+            "date": "2010-08-27 21:34:44 +0000",
+            "comment": "Html5 - Found some bugs, added todos"
+        },
+        {
+            "c_hash": "daea8f32",
+            "date": "2010-08-27 21:36:00 +0000",
+            "comment": "Html5 Fixed a bug in DragSourceBehaviorHandler which was causing to ignore the dropTargetType"
+        },
+        {
+            "c_hash": "570cfed7",
+            "date": "2010-08-31 21:22:55 +0000",
+            "comment": "Html5 - Make myfaces shared as provided dependency Fix the bugs related to old dependency scope"
+        },
+        {
+            "c_hash": "666e13de",
+            "date": "2010-11-24 21:02:45 +0000",
+            "comment": "Html5 - Some documentation"
+        },
+        {
+            "c_hash": "dd436f32",
+            "date": "2010-11-24 21:05:38 +0000",
+            "comment": "Html5 Update to myfaces builder plugin 1.0.8-SNAPSHOT"
+        },
+        {
+            "c_hash": "13c7fcd4",
+            "date": "2010-11-24 21:07:25 +0000",
+            "comment": "Html5 Use new delegation of textarea rendering, instead of rendering it directly Needed to update to a newer version of myfaces shared project."
+        },
+        {
+            "c_hash": "d3573d4f",
+            "date": "2010-11-24 21:16:42 +0000",
+            "comment": "Html5 Some TODO removal and documentation"
+        },
+        {
+            "c_hash": "45bfd715",
+            "date": "2010-11-27 23:54:04 +0000",
+            "comment": "Html5 DropTarget behavior to recognize \"*\" as accept all mime types"
+        },
+        {
+            "c_hash": "5cf1556d",
+            "date": "2010-11-28 23:02:02 +0000",
+            "comment": "Html5 Removed some unnecessary mvn config"
+        },
+        {
+            "c_hash": "a6c94a12",
+            "date": "2010-11-28 23:04:35 +0000",
+            "comment": "Html5 Removed some done TODO comments"
+        },
+        {
+            "c_hash": "d61de007",
+            "date": "2010-12-12 22:33:20 +0000",
+            "comment": "Html5 Meter and progress components"
+        },
+        {
+            "c_hash": "53855065",
+            "date": "2010-12-13 22:19:37 +0000",
+            "comment": "Html5 Refactoring the JS file stucture and code"
+        },
+        {
+            "c_hash": "d2880ca8",
+            "date": "2010-12-13 22:21:08 +0000",
+            "comment": "Html5 Refactoring the JS file stucture and code"
+        },
+        {
+            "c_hash": "388c05b8",
+            "date": "2010-12-13 22:28:59 +0000",
+            "comment": "Html5 Refactoring the JS file stucture and code"
+        },
+        {
+            "c_hash": "9ac6f081",
+            "date": "2010-12-13 22:55:46 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/myfaces/gsoc/html5-comp-lib/trunk@1045407 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "7a524f25",
+            "date": "2010-12-19 21:53:29 +0000",
+            "comment": "Html5 Fixing the script resource definition for dragSource and dropTarget behaviors"
+        },
+        {
+            "c_hash": "db382131",
+            "date": "2010-12-19 22:02:14 +0000",
+            "comment": "Html5 Write descriptions of tags in taglib.xml as well"
+        },
+        {
+            "c_hash": "682b356e",
+            "date": "2010-12-19 22:10:33 +0000",
+            "comment": "Html5 Removed wrong class javadoc and added license notice"
+        },
+        {
+            "c_hash": "739e5d8e",
+            "date": "2010-12-24 23:41:51 +0000",
+            "comment": "Html5 Effect behavior and pulse effect"
+        },
+        {
+            "c_hash": "55cebb33",
+            "date": "2010-12-25 00:16:43 +0000",
+            "comment": "Html5 Shake effect"
+        },
+        {
+            "c_hash": "ecca810b",
+            "date": "2011-01-06 23:44:28 +0000",
+            "comment": "Html5 Refactored effects to animations."
+        },
+        {
+            "c_hash": "13da1780",
+            "date": "2011-01-06 23:45:06 +0000",
+            "comment": "Html5 Refactored effects to animations."
+        },
+        {
+            "c_hash": "d35d8925",
+            "date": "2011-01-08 01:15:04 +0000",
+            "comment": "Html5 Added initial drop of effects. Improved animations"
+        },
+        {
+            "c_hash": "45df701b",
+            "date": "2011-01-09 23:32:07 +0000",
+            "comment": "Html5 Simplified effect behaviors."
+        },
+        {
+            "c_hash": "92a0cd5e",
+            "date": "2011-01-11 22:46:30 +0000",
+            "comment": "Html5 Animations and effects: Some documentation to show up in IDE auto-complete, some refactoring"
+        },
+        {
+            "c_hash": "2b07c571",
+            "date": "2011-01-17 22:55:28 +0000",
+            "comment": "Html5 Refactored effect and animation components"
+        },
+        {
+            "c_hash": "530259a3",
+            "date": "2011-01-24 21:39:45 +0000",
+            "comment": "Html5 SlideView and Slide components"
+        },
+        {
+            "c_hash": "e2ca1d0a",
+            "date": "2011-01-27 00:36:07 +0000",
+            "comment": "Html5 New functionality to enable/disable navigation with arrow keys and mouse wheel scroll"
+        },
+        {
+            "c_hash": "4936f8d3",
+            "date": "2011-01-28 01:02:02 +0000",
+            "comment": "Html5 New animation component to support custom keyframes"
+        },
+        {
+            "c_hash": "573bada5",
+            "date": "2011-01-30 19:13:24 +0000",
+            "comment": "Html5 PrependId properties added to SlideView and Slide components"
+        },
+        {
+            "c_hash": "13590fe1",
+            "date": "2011-01-30 22:40:44 +0000",
+            "comment": "Html5 Added goBySlideId functionality to SlideView JS side"
+        },
+        {
+            "c_hash": "7aa247df",
+            "date": "2011-01-30 23:17:55 +0000",
+            "comment": "Html5 Fixed goBySlideId bug of SlideView. The navigation was not working for the first slide."
+        },
+        {
+            "c_hash": "449b971d",
+            "date": "2011-03-10 21:24:56 +0000",
+            "comment": "Moving html5 component library to /html5 folder : Step1"
+        },
+        {
+            "c_hash": "e0eba675",
+            "date": "2011-03-10 21:32:33 +0000",
+            "comment": "Moved shared-html5 project to /shared"
+        },
+        {
+            "c_hash": "e6490b2d",
+            "date": "2011-03-10 22:30:51 +0000",
+            "comment": "MyFaces Html5 : pom refactoring after changing of project location"
+        },
+        {
+            "c_hash": "5ca44806",
+            "date": "2011-03-10 22:32:22 +0000",
+            "comment": "Renamed \"html5-comp-lib-core\" folder to \"myfaces-html5-core\""
+        },
+        {
+            "c_hash": "29000a0f",
+            "date": "2011-03-10 22:33:56 +0000",
+            "comment": "Renamed \"html5-comp-lib-examples\" to \"myfaces-html5-examples\""
+        },
+        {
+            "c_hash": "0f3217c9",
+            "date": "2011-03-13 13:52:54 +0000",
+            "comment": "MyFaces Html5 : pom refactoring for repositories and dependencies"
+        },
+        {
+            "c_hash": "89ecb2d4",
+            "date": "2011-03-13 21:58:13 +0000",
+            "comment": "MyFaces Html5 : Adding new module, \"demo\""
+        },
+        {
+            "c_hash": "01fc3c67",
+            "date": "2011-03-13 22:05:31 +0000",
+            "comment": "Myfaces Html5 : Removed outdated module \"examples\""
+        },
+        {
+            "c_hash": "c15429eb",
+            "date": "2011-03-13 22:08:00 +0000",
+            "comment": "MyFaces Html5 : Remove pom definition for outdated module \"examples\""
+        },
+        {
+            "c_hash": "2755d7f8",
+            "date": "2011-03-13 23:00:00 +0000",
+            "comment": "MyFaces Html5 Demo : Changed sport teams with Apache Projects"
+        },
+        {
+            "c_hash": "f94d8fd1",
+            "date": "2011-03-20 00:10:10 +0000",
+            "comment": "MyFaces Html5 : Versioning as 1.0.0-alpha-SNAPSHOT"
+        },
+        {
+            "c_hash": "11056e5c",
+            "date": "2011-03-20 00:11:15 +0000",
+            "comment": "MyFaces Html5 : Modified some site files and added NOTICE files"
+        },
+        {
+            "c_hash": "f6de620d",
+            "date": "2011-05-15 22:14:19 +0000",
+            "comment": "MFHTML5-1 - Get rid of myfaces-shared-html5 dependency"
+        },
+        {
+            "c_hash": "410893f3",
+            "date": "2011-05-20 23:44:40 +0000",
+            "comment": "MFHTML5-3 create site for html5 project"
+        },
+        {
+            "c_hash": "7c18dbfc",
+            "date": "2011-05-23 17:03:16 +0000",
+            "comment": "update site links"
+        },
+        {
+            "c_hash": "491793cd",
+            "date": "2011-05-23 17:06:41 +0000",
+            "comment": "update myfaces-site-skin to v 3"
+        },
+        {
+            "c_hash": "a3f8ffc1",
+            "date": "2011-08-27 15:56:35 +0000",
+            "comment": "MFHTML5-6"
+        },
+        {
+            "c_hash": "63a4fe53",
+            "date": "2011-08-27 16:06:20 +0000",
+            "comment": "MFHTML5-2"
+        },
+        {
+            "c_hash": "ce88b7b5",
+            "date": "2011-08-29 19:47:48 +0000",
+            "comment": "MFHTML5-14 MyFaces HTML5 should be jdk 1.5 compatible"
+        },
+        {
+            "c_hash": "13fd3c73",
+            "date": "2011-09-02 20:45:14 +0000",
+            "comment": "MYFACES-3297 fix transitive dependency over myfaces api"
+        },
+        {
+            "c_hash": "6deb8d6a",
+            "date": "2011-09-11 17:51:06 +0000",
+            "comment": "MFHTML5-5"
+        },
+        {
+            "c_hash": "d0c16027",
+            "date": "2011-09-13 19:30:38 +0000",
+            "comment": "fix folder name"
+        },
+        {
+            "c_hash": "a41da370",
+            "date": "2011-10-21 17:01:33 +0000",
+            "comment": "MFHTML5-18 Use myfaces commons utils 1.0.2 to prevent duplicated code"
+        }
+    ]
+}

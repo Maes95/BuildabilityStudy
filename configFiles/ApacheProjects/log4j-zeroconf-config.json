@@ -1,0 +1,133 @@
+{
+    "project": "log4j-zeroconf",
+    "git_url": "https://github.com/apache/log4j-zeroconf.git",
+    "last_commit": "d1ca62d0",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "f857c250",
+            "date": "2007-06-11 05:09:57 +0000",
+            "comment": "Adding basic project structure for the log4j-zeroconf companion module."
+        },
+        {
+            "c_hash": "e7d064f0",
+            "date": "2007-06-11 05:12:56 +0000",
+            "comment": "Relocating the zeroconf to a seperate companion module."
+        },
+        {
+            "c_hash": "9eae253a",
+            "date": "2007-06-11 05:14:36 +0000",
+            "comment": "Removed mvn archetype test."
+        },
+        {
+            "c_hash": "dfc35b99",
+            "date": "2007-06-11 05:28:05 +0000",
+            "comment": "updating src folders for test case move."
+        },
+        {
+            "c_hash": "190dc03c",
+            "date": "2007-06-11 05:29:22 +0000",
+            "comment": "Relocating zeroconf tests to companion module."
+        },
+        {
+            "c_hash": "e2d8457d",
+            "date": "2007-06-28 22:18:01 +0000",
+            "comment": "Bug 42773: Harmonization of zeroconf with other companions"
+        },
+        {
+            "c_hash": "d8e1d73b",
+            "date": "2007-06-28 22:19:22 +0000",
+            "comment": "[maven-release-plugin] prepare release v1_0_rc1"
+        },
+        {
+            "c_hash": "f2ce77f2",
+            "date": "2007-06-28 22:20:39 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "4eefd3f3",
+            "date": "2007-07-21 01:03:55 +0000",
+            "comment": "Bug 37930: web site staging to SVN repo"
+        },
+        {
+            "c_hash": "a62394c6",
+            "date": "2007-07-21 17:59:21 +0000",
+            "comment": "Bug 42773: Set mime-type on staged web content"
+        },
+        {
+            "c_hash": "92f719aa",
+            "date": "2007-08-29 19:52:53 +0000",
+            "comment": "Bug 42773: Remove prospective release downloads and date from zeroconf"
+        },
+        {
+            "c_hash": "f8a68f67",
+            "date": "2007-08-29 21:03:27 +0000",
+            "comment": "Restoring 1.0-SNAPSHOT version for zeroconf"
+        },
+        {
+            "c_hash": "7269a179",
+            "date": "2007-09-05 17:18:41 +0000",
+            "comment": "Bug 43312: Mangled source-repository.html"
+        },
+        {
+            "c_hash": "697dcd47",
+            "date": "2008-03-07 06:07:58 +0000",
+            "comment": "Now that log4j 1.2.16 has the new createSocket method, we can trap this, store the details of the port/address, and use that in the broadcast of what the SocketHubAppender is listening on."
+        },
+        {
+            "c_hash": "94b32139",
+            "date": "2010-03-17 07:16:06 +0000",
+            "comment": "Added ZeroConf support to most of the network-based appenders and receivers."
+        },
+        {
+            "c_hash": "07fbaf06",
+            "date": "2010-05-18 06:23:35 +0000",
+            "comment": "updated log4j dependency from 1.2.16 snapshot to 1.2.16"
+        },
+        {
+            "c_hash": "a3b7e745",
+            "date": "2010-06-19 07:39:58 +0000",
+            "comment": "Added rat maven plugin support to chainsaw, component, extras, receivers and zeroconf"
+        },
+        {
+            "c_hash": "6cdccda2",
+            "date": "2011-08-09 08:33:09 +0000",
+            "comment": "added poms to parent pom"
+        },
+        {
+            "c_hash": "9b2f40d5",
+            "date": "2011-08-15 10:49:56 +0000",
+            "comment": "upgraded to maven 3"
+        },
+        {
+            "c_hash": "71ba978d",
+            "date": "2011-08-16 09:26:07 +0000",
+            "comment": "maven logo for new branding"
+        },
+        {
+            "c_hash": "dd7619a0",
+            "date": "2011-08-16 09:27:03 +0000",
+            "comment": "moved build plugin configuration to parent project"
+        },
+        {
+            "c_hash": "e247df92",
+            "date": "2011-08-16 09:40:51 +0000",
+            "comment": "removed build targets from build file"
+        },
+        {
+            "c_hash": "a26bf298",
+            "date": "2011-08-16 10:26:02 +0000",
+            "comment": "cleaned up pom files, moved plugins to parent pom, formatting etc"
+        },
+        {
+            "c_hash": "d0c4a4bb",
+            "date": "2011-08-17 16:15:23 +0000",
+            "comment": "trademarked logos even for an dead project"
+        },
+        {
+            "c_hash": "d1ca62d0",
+            "date": "2011-08-18 05:20:38 +0000",
+            "comment": "fixing relative path to companions parent"
+        }
+    ]
+}

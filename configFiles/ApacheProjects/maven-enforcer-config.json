@@ -1,0 +1,2063 @@
+{
+    "project": "maven-enforcer",
+    "git_url": "https://github.com/apache/maven-enforcer.git",
+    "last_commit": "4d891f10",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "8bc1dee3",
+            "date": "2007-09-01 00:16:55 +0000",
+            "comment": "trunk/tags/branches structure"
+        },
+        {
+            "c_hash": "518c657d",
+            "date": "2007-09-01 00:20:54 +0000",
+            "comment": "Moved remotely"
+        },
+        {
+            "c_hash": "16b9240d",
+            "date": "2007-09-01 00:21:34 +0000",
+            "comment": "Moved remotely"
+        },
+        {
+            "c_hash": "efd609b3",
+            "date": "2007-09-01 01:47:36 +0000",
+            "comment": "refactored to new folder layout"
+        },
+        {
+            "c_hash": "23e0a760",
+            "date": "2007-09-01 01:59:22 +0000",
+            "comment": "more refactor"
+        },
+        {
+            "c_hash": "9a4a22e6",
+            "date": "2007-09-01 02:15:28 +0000",
+            "comment": "more refactor"
+        },
+        {
+            "c_hash": "ad86af5a",
+            "date": "2007-09-01 02:17:16 +0000",
+            "comment": "more refactor"
+        },
+        {
+            "c_hash": "c69f04d0",
+            "date": "2007-09-01 02:57:05 +0000",
+            "comment": "more refactor"
+        },
+        {
+            "c_hash": "f05ee417",
+            "date": "2007-09-01 03:04:24 +0000",
+            "comment": "more refactor"
+        },
+        {
+            "c_hash": "7c91e14d",
+            "date": "2007-09-01 03:25:54 +0000",
+            "comment": "more refactor"
+        },
+        {
+            "c_hash": "c9258138",
+            "date": "2007-09-01 03:28:56 +0000",
+            "comment": "more refactor"
+        },
+        {
+            "c_hash": "100dca18",
+            "date": "2007-09-01 03:30:08 +0000",
+            "comment": "more refactor"
+        },
+        {
+            "c_hash": "9621cb9f",
+            "date": "2007-09-26 20:19:55 +0000",
+            "comment": "MENFORCER-16 applied site patch from Paul Gier"
+        },
+        {
+            "c_hash": "7e9adb22",
+            "date": "2007-09-28 02:26:19 +0000",
+            "comment": "new rule to enforce no repositories in the poms."
+        },
+        {
+            "c_hash": "74d13cea",
+            "date": "2007-10-28 11:40:35 +0000",
+            "comment": "[MENFORCER-20] add XML encoding support for POM reading"
+        },
+        {
+            "c_hash": "c7bde0e9",
+            "date": "2007-11-05 12:32:31 +0000",
+            "comment": "MENFORCER-21: allow includes"
+        },
+        {
+            "c_hash": "f9df17cb",
+            "date": "2007-11-05 12:52:04 +0000",
+            "comment": "encoding changes require new p:u and thus maven > 2.0.6"
+        },
+        {
+            "c_hash": "55e41603",
+            "date": "2007-11-05 12:57:17 +0000",
+            "comment": "MENFORCER-11"
+        },
+        {
+            "c_hash": "781edb41",
+            "date": "2007-11-07 12:01:44 +0000",
+            "comment": "MENFORCER-18: beanshell swallows exceptions"
+        },
+        {
+            "c_hash": "442ad354",
+            "date": "2007-11-07 21:24:35 +0000",
+            "comment": "MENFORCER-12: new rule caching system to improve rule performance on multi-module builds"
+        },
+        {
+            "c_hash": "f7fce38d",
+            "date": "2007-11-07 22:20:15 +0000",
+            "comment": "MENFORCER-10: refactored api to allow better access to the container. Also added contextualize to get the real plugin container to load plugin dependencies."
+        },
+        {
+            "c_hash": "c1c9cd9c",
+            "date": "2007-11-07 22:55:00 +0000",
+            "comment": "MENFORCER-15: added the ability to declare the phases used to lookup lifecycles"
+        },
+        {
+            "c_hash": "5b2b76bf",
+            "date": "2007-11-07 23:17:38 +0000",
+            "comment": "drop junit back to be jdk1.4 compatible"
+        },
+        {
+            "c_hash": "6c6e71a4",
+            "date": "2007-11-08 09:20:20 +0000",
+            "comment": "aligned versions"
+        },
+        {
+            "c_hash": "f95e8db4",
+            "date": "2007-11-09 14:33:34 +0000",
+            "comment": "enhancements to plugin versions rule."
+        },
+        {
+            "c_hash": "33feb16a",
+            "date": "2007-11-14 10:28:30 +0000",
+            "comment": "MENFORCER-22: new RequireReleaseVersion rule"
+        },
+        {
+            "c_hash": "cb7e416a",
+            "date": "2007-11-14 10:49:02 +0000",
+            "comment": "add banning of plugin snapshots"
+        },
+        {
+            "c_hash": "8d5e2ed4",
+            "date": "2007-11-14 13:26:34 +0000",
+            "comment": "add banning of plugin snapshots"
+        },
+        {
+            "c_hash": "90b9a5ec",
+            "date": "2007-11-14 14:45:02 +0000",
+            "comment": "MENFORCER-24 new rule to check active profiles"
+        },
+        {
+            "c_hash": "d8860215",
+            "date": "2007-11-16 09:38:04 +0000",
+            "comment": "renamed rule"
+        },
+        {
+            "c_hash": "d84c735e",
+            "date": "2007-11-27 01:24:40 +0000",
+            "comment": "site updates"
+        },
+        {
+            "c_hash": "065f1c32",
+            "date": "2007-11-27 01:25:08 +0000",
+            "comment": "more unit tests for the plugin version rule"
+        },
+        {
+            "c_hash": "0b5b62a4",
+            "date": "2007-12-17 15:23:04 +0000",
+            "comment": "small site update"
+        },
+        {
+            "c_hash": "58e9ab2d",
+            "date": "2007-12-17 15:23:31 +0000",
+            "comment": "fixed distroMgt"
+        },
+        {
+            "c_hash": "9daefefa",
+            "date": "2007-12-17 15:24:43 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/maven/enforcer/trunk@604897 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "d32d9f47",
+            "date": "2007-12-17 15:36:17 +0000",
+            "comment": "fix distro"
+        },
+        {
+            "c_hash": "4469039a",
+            "date": "2007-12-28 16:16:09 +0000",
+            "comment": "o Set eol style to Native. o Add svn keywords where they were missing."
+        },
+        {
+            "c_hash": "f3b097d9",
+            "date": "2007-12-28 16:23:00 +0000",
+            "comment": "o Add xml declaration. o Replace tabs with spaces and fix indentation."
+        },
+        {
+            "c_hash": "4cf437a0",
+            "date": "2007-12-28 17:30:57 +0000",
+            "comment": "o Minor tweaks to the documentation."
+        },
+        {
+            "c_hash": "e0cad109",
+            "date": "2007-12-28 17:32:55 +0000",
+            "comment": "o Copy some configuration from plugins-parent. This plugin used to inherit that configuration from the plugin-parent before the move."
+        },
+        {
+            "c_hash": "31307cbc",
+            "date": "2008-02-14 03:22:41 +0000",
+            "comment": "Configure the site plugin staging url."
+        },
+        {
+            "c_hash": "14b9cb00",
+            "date": "2008-02-14 03:28:35 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/maven/enforcer/trunk@627646 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "f8ee58d8",
+            "date": "2008-03-02 23:33:49 +0000",
+            "comment": "MENFORCER-33 remove unused code in beanshell rule"
+        },
+        {
+            "c_hash": "13e36f13",
+            "date": "2008-03-02 23:36:03 +0000",
+            "comment": "MENFORCER-34 restore jdk 1.4 compatibility"
+        },
+        {
+            "c_hash": "6333b91d",
+            "date": "2008-03-02 23:41:23 +0000",
+            "comment": "MENFORCER-32 fixed eol property"
+        },
+        {
+            "c_hash": "73aec5c8",
+            "date": "2008-03-18 09:47:42 +0000",
+            "comment": "o Added bin to svn:ignore"
+        },
+        {
+            "c_hash": "64c811ad",
+            "date": "2008-03-18 09:57:20 +0000",
+            "comment": "o Added svn:keywords"
+        },
+        {
+            "c_hash": "9cd74ae8",
+            "date": "2008-03-19 21:42:56 +0000",
+            "comment": "bump to latest parent"
+        },
+        {
+            "c_hash": "26f3deb2",
+            "date": "2008-03-23 02:48:24 +0000",
+            "comment": "fixing the deprecated property syntax"
+        },
+        {
+            "c_hash": "a2069d49",
+            "date": "2008-04-23 10:51:34 +0000",
+            "comment": "MENFORCER-45 : plugins declared in profiles are not detected for version check"
+        },
+        {
+            "c_hash": "fdb20981",
+            "date": "2008-04-23 11:11:09 +0000",
+            "comment": "MENFORCER-44 banTimestamps to enable timestamp SNAPSHOT (as release plugin does)"
+        },
+        {
+            "c_hash": "98fb69bb",
+            "date": "2008-04-26 12:52:01 +0000",
+            "comment": "o continuum is now a TLP"
+        },
+        {
+            "c_hash": "58d49b28",
+            "date": "2008-05-14 15:16:40 +0000",
+            "comment": "Put this message in debug. It's too annoying to have it for each module."
+        },
+        {
+            "c_hash": "7354ffc4",
+            "date": "2008-05-14 15:22:55 +0000",
+            "comment": "cleanup xml indent"
+        },
+        {
+            "c_hash": "15da8cea",
+            "date": "2008-05-14 15:24:49 +0000",
+            "comment": "Cleanup imports"
+        },
+        {
+            "c_hash": "9140b8a7",
+            "date": "2008-05-16 19:59:52 +0000",
+            "comment": "o Use site.xml inheritance. o Connect the different sites. o Set proper license headers."
+        },
+        {
+            "c_hash": "78b84514",
+            "date": "2008-05-16 20:29:14 +0000",
+            "comment": "o Fix links and indentation."
+        },
+        {
+            "c_hash": "cafe75f6",
+            "date": "2008-05-29 01:54:37 +0000",
+            "comment": "MENFORCER-46 turned mojo donation from Roman Stumm into a rule"
+        },
+        {
+            "c_hash": "54e9ad09",
+            "date": "2008-05-29 01:55:11 +0000",
+            "comment": "update the license headers with jAutoDoc"
+        },
+        {
+            "c_hash": "6c866ecd",
+            "date": "2008-05-29 02:07:01 +0000",
+            "comment": "javadocs"
+        },
+        {
+            "c_hash": "ccbd6f7c",
+            "date": "2008-05-29 02:26:57 +0000",
+            "comment": "new abstract class to eliminate redundant methods for rules that aren't cacheable"
+        },
+        {
+            "c_hash": "e20d5d57",
+            "date": "2008-05-29 02:27:54 +0000",
+            "comment": "MENFORCER-38 new rules from Ben Lidgey - Always Fail and Always Pass"
+        },
+        {
+            "c_hash": "38c4f82b",
+            "date": "2008-05-29 02:46:40 +0000",
+            "comment": "MENFORCER-43 patch from Jacob Robertson to make the snapshots rule able to be applied when the main artifact is a release only."
+        },
+        {
+            "c_hash": "326a7861",
+            "date": "2008-05-29 02:54:15 +0000",
+            "comment": "convert the non-cacheable rules to use the new abstract class"
+        },
+        {
+            "c_hash": "96ac0ac6",
+            "date": "2008-05-29 03:07:20 +0000",
+            "comment": "renamed the rule and refactored it to work like the other file rules and take an array of files to check."
+        },
+        {
+            "c_hash": "a2f34e5d",
+            "date": "2008-06-03 20:11:34 +0000",
+            "comment": "o Move the documentation for the implemented rules up one level and change the links accordingly."
+        },
+        {
+            "c_hash": "909309fb",
+            "date": "2008-06-08 02:21:40 +0000",
+            "comment": "start of ITs to find the site plugin issue"
+        },
+        {
+            "c_hash": "d43e9daa",
+            "date": "2008-07-03 16:39:57 +0000",
+            "comment": "remove ITs for now."
+        },
+        {
+            "c_hash": "6c78b15a",
+            "date": "2008-07-10 16:54:23 +0000",
+            "comment": "o upgraded maven-site-plugin to 2.0-beta-7 o upgraded plexus-utils to 1.5.1 o added Maven 2.0.6 prerequisite"
+        },
+        {
+            "c_hash": "94eb4a93",
+            "date": "2008-07-11 09:30:49 +0000",
+            "comment": "replaced tabs with spaces"
+        },
+        {
+            "c_hash": "95a4e2d5",
+            "date": "2008-07-11 15:42:48 +0000",
+            "comment": "o improved javadoc o removed unused imports"
+        },
+        {
+            "c_hash": "6e5feec1",
+            "date": "2008-07-17 03:25:54 +0000",
+            "comment": "allow some plugins to be skipped in the check (make it easier to use an snapshot of the enforcer)"
+        },
+        {
+            "c_hash": "b77c1de5",
+            "date": "2008-08-05 23:19:53 +0000",
+            "comment": "workaround for site report plugins tripping up the check."
+        },
+        {
+            "c_hash": "df026190",
+            "date": "2008-08-06 00:13:22 +0000",
+            "comment": "MENFORCER-37: optionally enforce that the parent is not a snapshot. Adapted from patch by Nick Stolwijk"
+        },
+        {
+            "c_hash": "9264ec06",
+            "date": "2008-08-06 00:30:49 +0000",
+            "comment": "couple of test fixes"
+        },
+        {
+            "c_hash": "c36b3c9b",
+            "date": "2008-08-06 01:09:24 +0000",
+            "comment": "updated site docs"
+        },
+        {
+            "c_hash": "52331879",
+            "date": "2008-08-06 21:53:33 +0000",
+            "comment": "Check that maven-parent 9 works with all projects"
+        },
+        {
+            "c_hash": "dbd3bea8",
+            "date": "2008-08-09 09:02:40 +0000",
+            "comment": "o Tweaked the POM to workaround a deficiency in the Release Plugin which causes loss of the license header"
+        },
+        {
+            "c_hash": "ab4fa371",
+            "date": "2008-08-24 21:44:16 +0000",
+            "comment": "o Updated index page of plugin site"
+        },
+        {
+            "c_hash": "b9c15a37",
+            "date": "2008-08-28 16:35:28 +0000",
+            "comment": "o Explicitly stated UTF-8 as file encoding"
+        },
+        {
+            "c_hash": "13fae882",
+            "date": "2008-08-29 11:05:55 +0000",
+            "comment": "o Updated index page of plugin site"
+        },
+        {
+            "c_hash": "62c29b30",
+            "date": "2008-09-03 19:55:51 +0000",
+            "comment": "added some tests to probe MENFORCER-50"
+        },
+        {
+            "c_hash": "d203fd93",
+            "date": "2008-09-04 17:58:15 +0000",
+            "comment": "prepare for release of alpha-4"
+        },
+        {
+            "c_hash": "0a866a2f",
+            "date": "2008-09-04 19:02:44 +0000",
+            "comment": "update the sample and make the zip generated during the site build"
+        },
+        {
+            "c_hash": "faf170bd",
+            "date": "2008-09-08 19:23:45 +0000",
+            "comment": "use new parent in preparation for release"
+        },
+        {
+            "c_hash": "ca337314",
+            "date": "2008-09-08 20:26:43 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "b84c930f",
+            "date": "2008-09-08 20:29:39 +0000",
+            "comment": "rollback"
+        },
+        {
+            "c_hash": "444f66a4",
+            "date": "2008-09-08 20:32:33 +0000",
+            "comment": "[maven-release-plugin] prepare release enforcer-1.0-alpha-4"
+        },
+        {
+            "c_hash": "c002eaa6",
+            "date": "2008-09-08 20:32:44 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "d0ea93cf",
+            "date": "2008-09-11 20:54:46 +0000",
+            "comment": "fix the links because they are in the menu section from the parent now"
+        },
+        {
+            "c_hash": "5523b3cf",
+            "date": "2008-09-11 23:55:34 +0000",
+            "comment": "rollback release, fix the poms and site urls"
+        },
+        {
+            "c_hash": "47de8c97",
+            "date": "2008-09-12 00:01:20 +0000",
+            "comment": "[maven-release-plugin] prepare release enforcer-1.0-alpha-4"
+        },
+        {
+            "c_hash": "7bcb7a43",
+            "date": "2008-09-12 00:01:37 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "a4b80c26",
+            "date": "2008-09-12 14:32:16 +0000",
+            "comment": "pages were reversed"
+        },
+        {
+            "c_hash": "891959de",
+            "date": "2008-09-15 16:41:04 +0000",
+            "comment": "o Add missing breadcrumbs."
+        },
+        {
+            "c_hash": "a24621ce",
+            "date": "2008-09-15 16:42:38 +0000",
+            "comment": "o Add relative path to parent POM."
+        },
+        {
+            "c_hash": "ae29f724",
+            "date": "2008-09-21 21:49:22 +0000",
+            "comment": "o Updated mailing lists"
+        },
+        {
+            "c_hash": "8980e483",
+            "date": "2008-09-29 10:52:27 +0000",
+            "comment": "[MENFORCER-53] fixed unCheckedPlugins parameter case"
+        },
+        {
+            "c_hash": "1cac0b5c",
+            "date": "2008-12-23 00:43:04 +0000",
+            "comment": "[MENFORCER-59] add the ability to be more selective about banned repositories"
+        },
+        {
+            "c_hash": "9d59098a",
+            "date": "2008-12-23 00:51:29 +0000",
+            "comment": "remove empty directory"
+        },
+        {
+            "c_hash": "27b87fb1",
+            "date": "2008-12-23 02:14:35 +0000",
+            "comment": "[MENFORCER-60] throw an error if beanshell is invalid instead of evaluating to false. Improve tests for beanshell."
+        },
+        {
+            "c_hash": "aa001579",
+            "date": "2008-12-23 02:26:21 +0000",
+            "comment": "rename test for RequireReleaseDeps and test compatibility of deprecated NoSnapshots"
+        },
+        {
+            "c_hash": "403368d4",
+            "date": "2008-12-23 03:07:31 +0000",
+            "comment": "[MENFORCER-59] add stub test class to fill in for new \"no repositories\" use cases"
+        },
+        {
+            "c_hash": "90dfd07f",
+            "date": "2008-12-23 10:33:52 +0000",
+            "comment": "[MENFORCER-59] test cases for \"no repositories\" use cases"
+        },
+        {
+            "c_hash": "25c04f01",
+            "date": "2008-12-23 10:37:19 +0000",
+            "comment": "o Replaced <classifier>tests</classifier> with <type>test-jar</type> to enable successful reactor build of phases before \"install\" (cf. MJAR-75 and MNG-2045)"
+        },
+        {
+            "c_hash": "651a7ecf",
+            "date": "2008-12-23 10:39:34 +0000",
+            "comment": "o Set svn:eol-style=native"
+        },
+        {
+            "c_hash": "d205b937",
+            "date": "2008-12-23 13:52:15 +0000",
+            "comment": "[MENFORCER-30] RequirePluginVersions breaks when using project.parent.groupId and project.parent.version"
+        },
+        {
+            "c_hash": "475d08f6",
+            "date": "2008-12-23 14:29:04 +0000",
+            "comment": "add tests for the \"require files exist\" rule"
+        },
+        {
+            "c_hash": "75d0354d",
+            "date": "2008-12-23 14:36:29 +0000",
+            "comment": "[MENFORCER-56] handle empty filenames"
+        },
+        {
+            "c_hash": "6008bad3",
+            "date": "2008-12-23 15:46:33 +0000",
+            "comment": "o order pom"
+        },
+        {
+            "c_hash": "d3f58f8b",
+            "date": "2008-12-23 15:49:17 +0000",
+            "comment": "o fixed formatting"
+        },
+        {
+            "c_hash": "3ea947ea",
+            "date": "2008-12-23 15:55:43 +0000",
+            "comment": "o using maven-stylus-skin snap due to r728944"
+        },
+        {
+            "c_hash": "15a657b7",
+            "date": "2008-12-23 23:59:25 +0000",
+            "comment": "[MENFORCER-57] properly locate a parent POM from the source directory when the relativePath is a directory and not a pom.xml file"
+        },
+        {
+            "c_hash": "73f7c8ca",
+            "date": "2008-12-24 02:54:13 +0000",
+            "comment": "MENFORCER-30: a couple of small clean ups"
+        },
+        {
+            "c_hash": "fc00d5d4",
+            "date": "2008-12-24 04:51:14 +0000",
+            "comment": "MENFORCER-56 - enhanced to cover the RequireFilesDontExist and RequireFilesSize rules. Also MENFORCER-46: added ITs for the RequireFilesSize rule (it was completely broken before)"
+        },
+        {
+            "c_hash": "f8f875b0",
+            "date": "2008-12-24 05:06:17 +0000",
+            "comment": "MENFORCER-55: skip the rule when the version is not compatible."
+        },
+        {
+            "c_hash": "325a54a7",
+            "date": "2008-12-29 11:55:34 +0000",
+            "comment": "o Put back breadcrumbs that were removed in r729010."
+        },
+        {
+            "c_hash": "a55ba28e",
+            "date": "2009-01-16 13:55:37 +0000",
+            "comment": "o bump to maven-stylus-skin:1.1"
+        },
+        {
+            "c_hash": "f828ad74",
+            "date": "2009-02-05 05:37:12 +0000",
+            "comment": "[maven-release-plugin] prepare release enforcer-2"
+        },
+        {
+            "c_hash": "c7842e3a",
+            "date": "2009-02-05 05:37:23 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "96f50b28",
+            "date": "2009-02-06 01:23:46 +0000",
+            "comment": "rollback release"
+        },
+        {
+            "c_hash": "0871f440",
+            "date": "2009-02-13 23:56:32 +0000",
+            "comment": "use the new parent"
+        },
+        {
+            "c_hash": "f5e573b8",
+            "date": "2009-02-21 09:37:46 +0000",
+            "comment": "o Inherited from maven-parent:11"
+        },
+        {
+            "c_hash": "8e719ca3",
+            "date": "2009-02-22 01:33:49 +0000",
+            "comment": "change the versions over to 1.0-beta-1"
+        },
+        {
+            "c_hash": "07884db8",
+            "date": "2009-02-22 01:36:18 +0000",
+            "comment": "MENFORCER-58 - typos"
+        },
+        {
+            "c_hash": "2bdf20c5",
+            "date": "2009-02-22 01:46:03 +0000",
+            "comment": "MENFORCER-48 - add docs to show how to check the java.vendor property"
+        },
+        {
+            "c_hash": "4af6d881",
+            "date": "2009-02-22 03:13:03 +0000",
+            "comment": "MENFORCER-62, convert the uncheckedPlugins from a list to comma separated string"
+        },
+        {
+            "c_hash": "74447423",
+            "date": "2009-02-22 03:13:45 +0000",
+            "comment": "change the versions over to 1.0-beta-1, bump to p-u-1.5.8"
+        },
+        {
+            "c_hash": "0e2633cb",
+            "date": "2009-02-23 02:06:05 +0000",
+            "comment": "MENFORCER-62, convert the uncheckedPlugins from a list to comma separated string -- update the test project"
+        },
+        {
+            "c_hash": "18bee132",
+            "date": "2009-02-23 02:08:19 +0000",
+            "comment": "[maven-release-plugin] prepare release enforcer-1.0-beta-1"
+        },
+        {
+            "c_hash": "81539cb6",
+            "date": "2009-02-23 02:08:34 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "9a1cd6bb",
+            "date": "2009-02-23 17:48:38 +0000",
+            "comment": "o Added missing version for cobertura-maven-plugin"
+        },
+        {
+            "c_hash": "470be2a3",
+            "date": "2009-03-01 11:08:01 +0000",
+            "comment": "o Used http://maven.apache.org/xsd/* for schema location"
+        },
+        {
+            "c_hash": "e2659e96",
+            "date": "2009-03-29 18:26:58 +0000",
+            "comment": "MENFORCER-70 fixes to sample id tags"
+        },
+        {
+            "c_hash": "638c6f2a",
+            "date": "2009-03-29 19:13:39 +0000",
+            "comment": "[maven-release-plugin] prepare release enforcer-1.0-beta-2"
+        },
+        {
+            "c_hash": "f41f48ba",
+            "date": "2009-03-29 19:13:53 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "fc9b01fb",
+            "date": "2009-03-29 19:21:18 +0000",
+            "comment": "rollback"
+        },
+        {
+            "c_hash": "c1edb048",
+            "date": "2009-04-21 22:42:24 +0000",
+            "comment": "o Fixed mojo parameter annotation"
+        },
+        {
+            "c_hash": "280f0bf1",
+            "date": "2009-06-13 21:02:59 +0000",
+            "comment": "remove extra quotes"
+        },
+        {
+            "c_hash": "7b7f39a9",
+            "date": "2009-07-12 17:59:41 +0000",
+            "comment": "o Used filtering to include current plugin version in site docs"
+        },
+        {
+            "c_hash": "345ef9b3",
+            "date": "2009-08-04 19:06:05 +0000",
+            "comment": "MENFORCER-81 banned plugins, patch from Marvin Froeder"
+        },
+        {
+            "c_hash": "f8971c2a",
+            "date": "2009-08-08 11:30:20 +0000",
+            "comment": "o Improved readability"
+        },
+        {
+            "c_hash": "409ca27a",
+            "date": "2009-08-08 11:53:25 +0000",
+            "comment": "o Enabled filtering of version"
+        },
+        {
+            "c_hash": "1fd60fb6",
+            "date": "2009-08-08 13:51:32 +0000",
+            "comment": "o fixed ambiguous links o added Doxia xsd"
+        },
+        {
+            "c_hash": "3fa3cb05",
+            "date": "2009-08-14 22:45:28 +0000",
+            "comment": "o Fixed typos"
+        },
+        {
+            "c_hash": "018549c4",
+            "date": "2009-08-14 22:48:00 +0000",
+            "comment": "o Added ITs to smoke check with different Maven versions"
+        },
+        {
+            "c_hash": "c32b5500",
+            "date": "2009-08-17 11:06:51 +0000",
+            "comment": "[MENFORCER-82] : Project site does not provide valid examples - Submitted by Stephen Connolly"
+        },
+        {
+            "c_hash": "f337dc9c",
+            "date": "2009-08-17 15:56:02 +0000",
+            "comment": "o removed unused import o added an @since tag to unCheckedPluginList attribute's javadoc"
+        },
+        {
+            "c_hash": "ee68eb89",
+            "date": "2009-08-17 21:48:52 +0000",
+            "comment": "fixed errors reported by Checkstyle"
+        },
+        {
+            "c_hash": "7bea8b82",
+            "date": "2009-08-17 22:30:49 +0000",
+            "comment": "o fixed errors reported by Checkstyle o added missing license headers"
+        },
+        {
+            "c_hash": "ca7f5b86",
+            "date": "2009-08-18 11:16:21 +0000",
+            "comment": "o Ensured temp files gets removed"
+        },
+        {
+            "c_hash": "256bb6cc",
+            "date": "2009-09-14 18:09:36 +0000",
+            "comment": "o Added another IT to test handling of packagings provided by extensions"
+        },
+        {
+            "c_hash": "2879e924",
+            "date": "2009-09-25 09:07:59 +0000",
+            "comment": "o Updated to maven-invoker-plugin:1.4"
+        },
+        {
+            "c_hash": "f90c9caf",
+            "date": "2009-11-21 12:40:35 +0000",
+            "comment": "[MENFORCER-87] Adding two new parameters to requireNoRepositories which can allow the permission of repositories which are only enabled for snapshots"
+        },
+        {
+            "c_hash": "ac576f24",
+            "date": "2009-11-28 17:46:12 +0000",
+            "comment": "use the latest parent"
+        },
+        {
+            "c_hash": "37eae548",
+            "date": "2009-11-28 17:46:42 +0000",
+            "comment": "MENFORCER-71 fixed doc error"
+        },
+        {
+            "c_hash": "528a84f2",
+            "date": "2009-11-28 18:38:45 +0000",
+            "comment": "MENFORCER-77 fixed require release version docs"
+        },
+        {
+            "c_hash": "b8af649a",
+            "date": "2009-11-28 18:51:23 +0000",
+            "comment": "MENFORCER-73 added suggestion to use dependency:tree to locate the source."
+        },
+        {
+            "c_hash": "ba9cb0d6",
+            "date": "2009-11-28 18:56:24 +0000",
+            "comment": "MENFORCER-76 doc fix"
+        },
+        {
+            "c_hash": "7bae7d1c",
+            "date": "2009-12-02 20:01:16 +0000",
+            "comment": "o Fixed version"
+        },
+        {
+            "c_hash": "a32a5dc9",
+            "date": "2010-04-11 12:44:09 +0000",
+            "comment": "o Extended tests to check both version syntaxes"
+        },
+        {
+            "c_hash": "8a68662e",
+            "date": "2010-04-11 12:46:31 +0000",
+            "comment": "o Fixed mailing list links"
+        },
+        {
+            "c_hash": "be7414af",
+            "date": "2010-04-11 12:56:37 +0000",
+            "comment": "o Inherited from maven-parent:16 o Updated to maven-plugin-plugin:2.5.1 o Updated to maven-invoker-plugin:1.5"
+        },
+        {
+            "c_hash": "bda6a3a6",
+            "date": "2010-04-15 05:48:07 +0000",
+            "comment": "use a valid family value"
+        },
+        {
+            "c_hash": "6dbf83dd",
+            "date": "2010-08-20 22:23:51 +0000",
+            "comment": "[MENFORCER-102] Several minor site-bugs Submitted by: Robert Scholte Reviewed by: Dennis Lundberg"
+        },
+        {
+            "c_hash": "c7fc112d",
+            "date": "2010-08-20 22:53:29 +0000",
+            "comment": "[MENFORCER-104] Specifying a message with an alwaysFail rule doesn't work"
+        },
+        {
+            "c_hash": "f534d253",
+            "date": "2010-08-21 16:23:40 +0000",
+            "comment": "o Fix errors in Javadoc."
+        },
+        {
+            "c_hash": "013b5a55",
+            "date": "2010-08-21 16:27:42 +0000",
+            "comment": "o Ignore IDEA files."
+        },
+        {
+            "c_hash": "8714c438",
+            "date": "2010-08-26 16:52:46 +0000",
+            "comment": "[MENFORCER-85] Allow includes/excludes when banning snapshot dependencies."
+        },
+        {
+            "c_hash": "11f749b8",
+            "date": "2010-08-26 19:49:00 +0000",
+            "comment": "Fix svn properties"
+        },
+        {
+            "c_hash": "bf655812",
+            "date": "2010-08-26 20:36:34 +0000",
+            "comment": "[MENFORCER-72] Allow banned deps to be filtered by type and/or scope"
+        },
+        {
+            "c_hash": "919fb059",
+            "date": "2010-10-27 23:21:29 +0000",
+            "comment": "MENFORCER-108 fix typos in parameter list"
+        },
+        {
+            "c_hash": "682cd4dd",
+            "date": "2010-10-27 23:25:46 +0000",
+            "comment": "MENFORCER-98"
+        },
+        {
+            "c_hash": "415bd97b",
+            "date": "2010-10-27 23:28:12 +0000",
+            "comment": "MENFORCER-105"
+        },
+        {
+            "c_hash": "6102bb2f",
+            "date": "2010-10-28 00:10:58 +0000",
+            "comment": "MENFORCER-105"
+        },
+        {
+            "c_hash": "25f3f249",
+            "date": "2010-10-28 01:27:14 +0000",
+            "comment": "these tests aren't used"
+        },
+        {
+            "c_hash": "e7cadf87",
+            "date": "2010-10-28 01:28:31 +0000",
+            "comment": "update parents and plugins"
+        },
+        {
+            "c_hash": "7d963b1b",
+            "date": "2010-10-28 01:30:16 +0000",
+            "comment": "MENFORCER-107 - dependencies_converge rule based on patch from Rex Hoffman"
+        },
+        {
+            "c_hash": "be13baa8",
+            "date": "2010-10-28 01:40:06 +0000",
+            "comment": "MENFORCER-101"
+        },
+        {
+            "c_hash": "43ebcf17",
+            "date": "2010-10-28 23:56:58 +0000",
+            "comment": "moved the its to the plugin project."
+        },
+        {
+            "c_hash": "94944479",
+            "date": "2010-10-29 10:30:42 +0000",
+            "comment": "o Fixed typos o Cleaned up code base"
+        },
+        {
+            "c_hash": "d70be223",
+            "date": "2010-10-29 10:31:05 +0000",
+            "comment": "o Fixed typo"
+        },
+        {
+            "c_hash": "0df84fb0",
+            "date": "2010-11-01 21:56:34 +0000",
+            "comment": "use the latest released parent."
+        },
+        {
+            "c_hash": "9a983722",
+            "date": "2010-11-01 21:58:21 +0000",
+            "comment": "[maven-release-plugin] prepare release enforcer-1.0"
+        },
+        {
+            "c_hash": "78b627bf",
+            "date": "2010-11-01 21:58:30 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "6872ec86",
+            "date": "2010-11-02 21:03:29 +0000",
+            "comment": "revert the release"
+        },
+        {
+            "c_hash": "0863b829",
+            "date": "2010-11-02 21:16:24 +0000",
+            "comment": "MENFORCER-109 applied patch to fix output from Rex Hoffman"
+        },
+        {
+            "c_hash": "1c9663e9",
+            "date": "2010-11-02 21:17:54 +0000",
+            "comment": "[maven-release-plugin] prepare release enforcer-1.0"
+        },
+        {
+            "c_hash": "2236755e",
+            "date": "2010-11-02 21:18:04 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "36f4c598",
+            "date": "2010-11-04 23:31:09 +0000",
+            "comment": "o Polished mojo annos"
+        },
+        {
+            "c_hash": "bfc8815c",
+            "date": "2010-11-08 02:44:28 +0000",
+            "comment": "Temporarily change parent to version 18-SNAPSHOT until version 17 is released and available in the repository"
+        },
+        {
+            "c_hash": "c213ec34",
+            "date": "2011-02-02 20:41:20 +0000",
+            "comment": "use last SNAPSHOT parent"
+        },
+        {
+            "c_hash": "1af536d9",
+            "date": "2011-02-21 06:59:27 +0000",
+            "comment": "use released version"
+        },
+        {
+            "c_hash": "4764cef4",
+            "date": "2011-05-15 20:30:37 +0000",
+            "comment": "Add ciManagement for Jenkins."
+        },
+        {
+            "c_hash": "7358ceb8",
+            "date": "2011-05-25 19:24:38 +0000",
+            "comment": "[MENFORCER-106] @threadSafe"
+        },
+        {
+            "c_hash": "7783b985",
+            "date": "2011-06-14 18:45:13 +0000",
+            "comment": "[maven-release-plugin] prepare release 1.0.1"
+        },
+        {
+            "c_hash": "aea03cfb",
+            "date": "2011-06-14 18:45:44 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "5680e51a",
+            "date": "2011-06-16 15:54:25 +0000",
+            "comment": "o Upgraded site plugin, made site deploy consitently"
+        },
+        {
+            "c_hash": "a09f8b33",
+            "date": "2012-01-21 11:31:26 +0000",
+            "comment": "format code, no changes"
+        },
+        {
+            "c_hash": "aa5f0f0f",
+            "date": "2012-01-21 11:48:12 +0000",
+            "comment": "format code, no changes"
+        },
+        {
+            "c_hash": "12b32600",
+            "date": "2012-01-21 20:50:50 +0000",
+            "comment": "Replace easymock with mockito"
+        },
+        {
+            "c_hash": "ade79b96",
+            "date": "2012-02-10 14:52:40 +0000",
+            "comment": "[MENFORCER-128] Add new rule to check for incompatible versions in the dependency tree. Submitted By: Geoffrey De Smet"
+        },
+        {
+            "c_hash": "bb11799b",
+            "date": "2012-02-10 14:58:43 +0000",
+            "comment": "[MENFORCER-125] Improve site docs on require property rule Submitted By: Mirko Friedenhagen"
+        },
+        {
+            "c_hash": "58a4fd55",
+            "date": "2012-02-10 15:29:49 +0000",
+            "comment": "[MENFORCER-114] Site doc fix for requirePluginVersions rule Submitted By: D-Rep"
+        },
+        {
+            "c_hash": "a574b901",
+            "date": "2012-02-12 15:52:42 +0000",
+            "comment": "[MENFORCER-128] Rename new goal IncompatibleDependencyOverwrite -> RequireUpperBoundDeps"
+        },
+        {
+            "c_hash": "d5eb6042",
+            "date": "2012-02-12 15:53:19 +0000",
+            "comment": "[MENFORCER-128] Rename new goal IncompatibleDependencyOverwrite -> RequireUpperBoundDeps"
+        },
+        {
+            "c_hash": "4b9a1d55",
+            "date": "2012-02-13 15:13:16 +0000",
+            "comment": "[MENFORCER-128] Minor improvements to site doc for requireUpperBoundDeps."
+        },
+        {
+            "c_hash": "2ecadc30",
+            "date": "2012-05-08 19:59:04 +0000",
+            "comment": "Update to latest maven-parent pom"
+        },
+        {
+            "c_hash": "cf559ca1",
+            "date": "2012-05-08 20:29:39 +0000",
+            "comment": "skin is inherited"
+        },
+        {
+            "c_hash": "51c02638",
+            "date": "2012-05-08 20:36:33 +0000",
+            "comment": "Use inherited version of site plugin, upgrade version of javadoc plugin"
+        },
+        {
+            "c_hash": "d1878573",
+            "date": "2012-05-08 20:45:41 +0000",
+            "comment": "not needed it's inherited"
+        },
+        {
+            "c_hash": "7decb56b",
+            "date": "2012-05-08 20:56:27 +0000",
+            "comment": "Fix MENFORCER-118: DependencyConvergence gets better if it doesn't fail on snapshots of same baseVersion"
+        },
+        {
+            "c_hash": "dea4be7d",
+            "date": "2012-05-08 22:04:31 +0000",
+            "comment": "Describe usage DependencyConvergence.uniqueVersions"
+        },
+        {
+            "c_hash": "06d7690e",
+            "date": "2012-05-08 22:08:30 +0000",
+            "comment": "Prefer maven-stylus-skin-1.4 instead of older inherited version from parent"
+        },
+        {
+            "c_hash": "d607d00c",
+            "date": "2012-05-09 00:07:59 +0000",
+            "comment": "[MENFORCER-98] Check for API differences between Maven 2 and 3 Patch Submitted by: Jeff Maury"
+        },
+        {
+            "c_hash": "c5a761aa",
+            "date": "2012-05-09 00:42:58 +0000",
+            "comment": "[maven-release-plugin] prepare release enforcer-1.1"
+        },
+        {
+            "c_hash": "e55973df",
+            "date": "2012-05-09 00:43:09 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "909d0537",
+            "date": "2012-05-10 20:27:44 +0000",
+            "comment": "formatting"
+        },
+        {
+            "c_hash": "83e2f8b6",
+            "date": "2012-06-01 17:34:35 +0000",
+            "comment": "Apply generics"
+        },
+        {
+            "c_hash": "0d615e43",
+            "date": "2012-06-01 18:34:39 +0000",
+            "comment": "Fix MENFORCER-132: Add missing rules to standard rules page and reorder them"
+        },
+        {
+            "c_hash": "9777cddd",
+            "date": "2012-06-01 20:14:13 +0000",
+            "comment": "Apply generics"
+        },
+        {
+            "c_hash": "ae6547b2",
+            "date": "2012-06-01 20:18:58 +0000",
+            "comment": "Code formatting add description add @since"
+        },
+        {
+            "c_hash": "82913343",
+            "date": "2012-06-02 15:12:58 +0000",
+            "comment": "Apply generics and java5 for-loops"
+        },
+        {
+            "c_hash": "d9bc3752",
+            "date": "2012-06-02 15:16:33 +0000",
+            "comment": "Apply generics"
+        },
+        {
+            "c_hash": "0d439253",
+            "date": "2012-06-02 15:20:36 +0000",
+            "comment": "Apply generics and java5 for-loops"
+        },
+        {
+            "c_hash": "cee44523",
+            "date": "2012-07-04 08:00:43 +0000",
+            "comment": "[MENFORCER-117] RequirePluginVersions doesn't handle new lifecycles properly"
+        },
+        {
+            "c_hash": "48e5414a",
+            "date": "2012-07-06 00:15:28 +0000",
+            "comment": "[maven-release-plugin] prepare release enforcer-1.2"
+        },
+        {
+            "c_hash": "454cee06",
+            "date": "2012-07-06 00:16:00 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "98bad81b",
+            "date": "2012-07-08 23:53:03 +0000",
+            "comment": "[MENFORCER-132] Fix documentation"
+        },
+        {
+            "c_hash": "6d58587f",
+            "date": "2012-07-08 23:56:17 +0000",
+            "comment": "[MENFORCER-132] Fix documentation"
+        },
+        {
+            "c_hash": "920f3949",
+            "date": "2012-07-09 00:07:53 +0000",
+            "comment": "[maven-release-plugin] prepare release enforcer-1.1.1"
+        },
+        {
+            "c_hash": "a33641b0",
+            "date": "2012-07-09 00:08:39 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "17c07227",
+            "date": "2012-07-10 22:04:37 +0000",
+            "comment": "removed redundant pom configuration"
+        },
+        {
+            "c_hash": "bf830b26",
+            "date": "2012-07-10 22:09:48 +0000",
+            "comment": "removed separate site publication from other enforcer content"
+        },
+        {
+            "c_hash": "e7cef5a9",
+            "date": "2012-07-15 23:42:09 +0000",
+            "comment": "[MENFORCER-135] Remove log.info in DependencyVersionMap.getVersion"
+        },
+        {
+            "c_hash": "9872c8b7",
+            "date": "2012-08-13 21:02:51 +0000",
+            "comment": "use last parent pom"
+        },
+        {
+            "c_hash": "d2932042",
+            "date": "2012-08-13 21:04:42 +0000",
+            "comment": "ignore .idea directory"
+        },
+        {
+            "c_hash": "971fb1c1",
+            "date": "2012-09-05 21:00:34 +0000",
+            "comment": "[MENFORCER-136] New enforcer for environment variables. Submitted by Marvin Froeder."
+        },
+        {
+            "c_hash": "90ba178d",
+            "date": "2012-09-08 21:35:02 +0000",
+            "comment": "MENFORCER-136] New enforcer for environment variables. Submitted by Marvin Froeder. Missed to add files."
+        },
+        {
+            "c_hash": "65e90e36",
+            "date": "2012-09-08 21:47:45 +0000",
+            "comment": "code format"
+        },
+        {
+            "c_hash": "8714d13f",
+            "date": "2012-09-08 21:47:58 +0000",
+            "comment": "add missing license header"
+        },
+        {
+            "c_hash": "ec6e8a4f",
+            "date": "2012-09-08 21:48:06 +0000",
+            "comment": "simple .gitignore"
+        },
+        {
+            "c_hash": "813a2cc6",
+            "date": "2012-09-08 21:49:57 +0000",
+            "comment": "removed unused plugin"
+        },
+        {
+            "c_hash": "2745b697",
+            "date": "2012-09-08 22:05:38 +0000",
+            "comment": "removed unused plugin"
+        },
+        {
+            "c_hash": "059de8ad",
+            "date": "2012-09-21 18:50:04 +0000",
+            "comment": "Fix MENFORCER-141: Show correct version of the enforcer api / plugin in example"
+        },
+        {
+            "c_hash": "ba95cb28",
+            "date": "2012-09-21 21:18:55 +0000",
+            "comment": "Fix MENFORCER-140: upgrade maven-dependency-tree dependency to 2.0 for better Maven 3 support"
+        },
+        {
+            "c_hash": "64afd663",
+            "date": "2012-09-21 21:24:49 +0000",
+            "comment": "Add requireEnvironmentVariable to list of available rules"
+        },
+        {
+            "c_hash": "c6287e99",
+            "date": "2012-09-21 21:28:43 +0000",
+            "comment": "fix typo"
+        },
+        {
+            "c_hash": "f9f94c76",
+            "date": "2012-10-08 22:29:51 +0000",
+            "comment": "[MENFORCER-138] Add new enforcer rule to ban transitive dependencies Submitted by: Jakub Senko"
+        },
+        {
+            "c_hash": "85a53677",
+            "date": "2012-11-20 18:43:07 +0000",
+            "comment": "removed configuration inherited from parents"
+        },
+        {
+            "c_hash": "552940b9",
+            "date": "2012-11-20 20:29:54 +0000",
+            "comment": "[MENFORCER-145] use maven-plugin-tools' java 5 annotations"
+        },
+        {
+            "c_hash": "6c9a4481",
+            "date": "2012-11-20 23:49:09 +0000",
+            "comment": "updated mpir to 2.6"
+        },
+        {
+            "c_hash": "ae427176",
+            "date": "2012-11-21 00:13:29 +0000",
+            "comment": "fixed relative links"
+        },
+        {
+            "c_hash": "73489e99",
+            "date": "2012-11-23 15:11:10 +0000",
+            "comment": "Add basic site docs for the bannedPlugins rule."
+        },
+        {
+            "c_hash": "c60ec149",
+            "date": "2012-11-23 15:33:41 +0000",
+            "comment": "[MENFORCER-137] Log dependency convergence errors at warn level instead of error level. Patch submitted by: Mirko Friedenhagen"
+        },
+        {
+            "c_hash": "2f863e6a",
+            "date": "2012-11-23 15:48:01 +0000",
+            "comment": "[MENFORCER-139] Improve site docs for requireProperty rule."
+        },
+        {
+            "c_hash": "bb9ae089",
+            "date": "2012-11-24 15:57:59 +0000",
+            "comment": "[MENFORCER-139] Grammar fix in site doc."
+        },
+        {
+            "c_hash": "3fb4e14f",
+            "date": "2012-11-28 21:31:06 +0000",
+            "comment": "[maven-release-plugin] prepare release enforcer-1.2"
+        },
+        {
+            "c_hash": "460b4a9d",
+            "date": "2012-11-28 21:31:18 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "f188aef0",
+            "date": "2013-04-07 12:35:04 +0000",
+            "comment": "use last parent"
+        },
+        {
+            "c_hash": "6135931d",
+            "date": "2013-04-07 12:35:13 +0000",
+            "comment": "inherit developpers list from parent"
+        },
+        {
+            "c_hash": "f11322fd",
+            "date": "2013-04-07 12:35:24 +0000",
+            "comment": "remove section inherited from last parent"
+        },
+        {
+            "c_hash": "463a5597",
+            "date": "2013-04-07 12:35:33 +0000",
+            "comment": "cobertura report is available in sonar instance"
+        },
+        {
+            "c_hash": "2fe15d3f",
+            "date": "2013-04-07 12:35:44 +0000",
+            "comment": "we are now 1.5 java"
+        },
+        {
+            "c_hash": "8d89c0c7",
+            "date": "2013-04-07 12:35:55 +0000",
+            "comment": "inherit assembly plugin version from parent"
+        },
+        {
+            "c_hash": "c37b342b",
+            "date": "2013-04-07 12:36:06 +0000",
+            "comment": "remove cobertura clean"
+        },
+        {
+            "c_hash": "afe0e93a",
+            "date": "2013-04-07 12:36:17 +0000",
+            "comment": "configure site deployment with svnpubsub"
+        },
+        {
+            "c_hash": "a5a39953",
+            "date": "2013-04-07 12:56:38 +0000",
+            "comment": "add aggregated javadoc"
+        },
+        {
+            "c_hash": "a36b6d7a",
+            "date": "2013-04-07 13:17:26 +0000",
+            "comment": "[MENFORCER-149] Broken links to properties of \"Require OS Version\" of Maven Enforcer Plugin"
+        },
+        {
+            "c_hash": "5226e4a7",
+            "date": "2013-06-02 20:55:44 +0000",
+            "comment": "[MENFORCER-152] Add Rule: BanDuplicatePomDependencyVersions See also MNG-5091: Add option to fail build if WARNING's appear in POM"
+        },
+        {
+            "c_hash": "80dba751",
+            "date": "2013-06-02 21:12:41 +0000",
+            "comment": "[MENFORCER-152] Refactor code, there are more spots with dependencies"
+        },
+        {
+            "c_hash": "35ce5484",
+            "date": "2013-06-02 21:41:15 +0000",
+            "comment": "[MENFORCER-152] also check depManagement and profiles"
+        },
+        {
+            "c_hash": "b6f2f38c",
+            "date": "2013-06-03 20:05:21 +0000",
+            "comment": "[MENFORCER-153] prepare new folder structure"
+        },
+        {
+            "c_hash": "0d399104",
+            "date": "2013-06-03 20:09:16 +0000",
+            "comment": "Move ITs to projects-folder, next to mrm-folder"
+        },
+        {
+            "c_hash": "db58cf75",
+            "date": "2013-06-03 20:18:38 +0000",
+            "comment": "[MENFORCER-153] adjust projectsDirectory"
+        },
+        {
+            "c_hash": "f0ead728",
+            "date": "2013-06-03 20:31:46 +0000",
+            "comment": "[MENFORCER-154] Update maven-dependency-tree to 2.1 to make it work with Maven-3.1+"
+        },
+        {
+            "c_hash": "0523145c",
+            "date": "2013-06-03 21:01:15 +0000",
+            "comment": "[MENFORCER-15] Use Mock Repository Manager for ITs"
+        },
+        {
+            "c_hash": "171877d6",
+            "date": "2013-06-04 18:41:51 +0000",
+            "comment": "[MENFORCER-15] Use Mock Repository Manager for ITs"
+        },
+        {
+            "c_hash": "3a590b44",
+            "date": "2013-06-04 19:32:41 +0000",
+            "comment": "[MENFORCER-15] Use Mock Repository Manager for ITs"
+        },
+        {
+            "c_hash": "a813984e",
+            "date": "2013-06-04 21:45:03 +0000",
+            "comment": "[MENFORCER-83] Banned dependencies should support regular expressions"
+        },
+        {
+            "c_hash": "7b1345d0",
+            "date": "2013-06-05 18:49:55 +0000",
+            "comment": "[MENFORCER-74] The bannedDependencies rule should support classifier [MENFORCER-75] The bannedDependencies rule should support scope condition"
+        },
+        {
+            "c_hash": "87645fbb",
+            "date": "2013-06-05 21:03:51 +0000",
+            "comment": "[MENFORCER-122] Adding repository causes NPE during mvn install Add IT, can't reproduce issue although found a potential NPE when Repository.getReleases() == null"
+        },
+        {
+            "c_hash": "f44d9b83",
+            "date": "2013-06-06 21:40:45 +0000",
+            "comment": "[MENFORCER-148] Broken hyperlink on Enforcer plugin usage page"
+        },
+        {
+            "c_hash": "17316b1d",
+            "date": "2013-06-06 22:31:20 +0000",
+            "comment": "[MENFORCER-123] BannedDependencies version number not taken into account Update docs"
+        },
+        {
+            "c_hash": "2a2a2e3b",
+            "date": "2013-06-07 17:30:09 +0000",
+            "comment": "Apply generics"
+        },
+        {
+            "c_hash": "40f27147",
+            "date": "2013-06-08 14:17:03 +0000",
+            "comment": "Skip for current Maven3.1 release, until tychoteam has fixed the plugin. With every newer Maven-version this test should be active again, since it should test for regression"
+        },
+        {
+            "c_hash": "9e27cde9",
+            "date": "2013-06-08 14:21:48 +0000",
+            "comment": "[MENFORCER-42] Maven-Enforcer-Plugin fails in multimodule project when artifacts not in repository"
+        },
+        {
+            "c_hash": "8d7f9f1b",
+            "date": "2013-06-08 17:58:54 +0000",
+            "comment": "[MENFORCER-153] Use Mock Repository Manager for ITs"
+        },
+        {
+            "c_hash": "2cc46a65",
+            "date": "2013-06-08 19:52:01 +0000",
+            "comment": "[MENFORCER-134] Require Upper Bound Dependencies and matching Snapshot Dependencies"
+        },
+        {
+            "c_hash": "feecc4fc",
+            "date": "2013-06-09 10:42:01 +0000",
+            "comment": "[MENFORCER-134] Require Upper Bound Dependencies and matching Snapshot Dependencies Improve IT"
+        },
+        {
+            "c_hash": "67ff22f7",
+            "date": "2013-06-09 12:35:19 +0000",
+            "comment": "[MENFORCER-126] requirePluginVersions misreports plugins with artifactIds defined through properties"
+        },
+        {
+            "c_hash": "56e11c37",
+            "date": "2013-06-09 12:58:39 +0000",
+            "comment": "[MENFORCER-92] RequirePluginVersions fails when POM artifactId contains an expression referring to a POM property"
+        },
+        {
+            "c_hash": "b13e5a7f",
+            "date": "2013-06-09 20:56:00 +0000",
+            "comment": "Add deploySite script for Windows users like me"
+        },
+        {
+            "c_hash": "1e7dca6b",
+            "date": "2013-06-09 21:11:21 +0000",
+            "comment": "Avoid inefficient String Buffering"
+        },
+        {
+            "c_hash": "4a923b38",
+            "date": "2013-06-09 21:12:45 +0000",
+            "comment": "Avoid using if statements without curly braces"
+        },
+        {
+            "c_hash": "abdb7847",
+            "date": "2013-06-13 21:45:07 +0000",
+            "comment": "[MENFORCER-147] Add RequireSameVersions"
+        },
+        {
+            "c_hash": "966887c3",
+            "date": "2013-06-15 11:53:58 +0000",
+            "comment": "rename to match naming standards of other ITs"
+        },
+        {
+            "c_hash": "200562ce",
+            "date": "2013-06-15 11:54:55 +0000",
+            "comment": "rename to match naming standards of other ITs"
+        },
+        {
+            "c_hash": "b4d56c12",
+            "date": "2013-06-15 14:07:22 +0000",
+            "comment": "[MENFORCER-153] Use Mock Repository Manager for ITs"
+        },
+        {
+            "c_hash": "9bb0426c",
+            "date": "2013-06-16 14:33:52 +0000",
+            "comment": "[MENFORCER-155] Add rule RequirePrerequisites"
+        },
+        {
+            "c_hash": "31a7bc45",
+            "date": "2013-06-16 17:56:13 +0000",
+            "comment": "[MENFORCER-146] requireUpperBoundDeps inneffective when DependencyManagement is used"
+        },
+        {
+            "c_hash": "a0ebb06a",
+            "date": "2013-06-16 18:21:32 +0000",
+            "comment": "Fix checkstyle errors"
+        },
+        {
+            "c_hash": "5f2bc7cb",
+            "date": "2013-06-16 18:53:12 +0000",
+            "comment": "Fix checkstyle errors"
+        },
+        {
+            "c_hash": "f630b481",
+            "date": "2013-06-16 19:23:51 +0000",
+            "comment": "Fix checkstyle errors"
+        },
+        {
+            "c_hash": "8a4253d1",
+            "date": "2013-06-16 20:10:59 +0000",
+            "comment": "Fix checkstyle errors"
+        },
+        {
+            "c_hash": "11bb60e1",
+            "date": "2013-06-16 20:39:52 +0000",
+            "comment": "upgrade maven-common-artifact-filters to 1.4"
+        },
+        {
+            "c_hash": "47e1fb0c",
+            "date": "2013-06-17 21:04:13 +0000",
+            "comment": "Fix for M2, which already succeeds for M3"
+        },
+        {
+            "c_hash": "6fb28849",
+            "date": "2013-06-21 15:17:56 +0000",
+            "comment": "Restrict IT to Maven 3.0+, since Maven-2.2.1 (core) fails to download the file, so the rule is never tested."
+        },
+        {
+            "c_hash": "d8c7d566",
+            "date": "2013-06-21 21:50:46 +0000",
+            "comment": "Make AbstractBanDependencies M2 proof"
+        },
+        {
+            "c_hash": "424d28df",
+            "date": "2013-06-22 10:03:08 +0000",
+            "comment": "Restrict Maven version, plugin can only be used with M3+"
+        },
+        {
+            "c_hash": "e02c560f",
+            "date": "2013-06-22 10:05:58 +0000",
+            "comment": "Always use DependencyGraphBuilder to get the dependencies Default lookup fails with M2, so when component lookup fails, fall back to Maven2DependencyGraphBuilder"
+        },
+        {
+            "c_hash": "f6cca0e8",
+            "date": "2013-06-22 10:08:27 +0000",
+            "comment": "[maven-release-plugin] prepare release enforcer-1.3"
+        },
+        {
+            "c_hash": "134b46d1",
+            "date": "2013-06-22 10:08:36 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "3c94ae3c",
+            "date": "2013-06-24 18:42:58 +0000",
+            "comment": "Release dropped, set version back to 1.3-SNAPSHOT"
+        },
+        {
+            "c_hash": "4a07f80d",
+            "date": "2013-06-24 20:55:46 +0000",
+            "comment": "Revert visibility of fields, so external projects can still use them, even though they should use the getters/setters"
+        },
+        {
+            "c_hash": "db86d3a8",
+            "date": "2013-06-24 21:43:56 +0000",
+            "comment": "Deprecate all public fields"
+        },
+        {
+            "c_hash": "bbefb753",
+            "date": "2013-06-25 19:47:46 +0000",
+            "comment": "[maven-release-plugin] prepare release enforcer-1.3"
+        },
+        {
+            "c_hash": "22a9bb4c",
+            "date": "2013-06-25 19:48:35 +0000",
+            "comment": "[maven-release-plugin] rollback the release of enforcer-1.3"
+        },
+        {
+            "c_hash": "bf0dfb0e",
+            "date": "2013-06-25 19:51:19 +0000",
+            "comment": "[maven-release-plugin] prepare release enforcer-1.3"
+        },
+        {
+            "c_hash": "8b3b9b59",
+            "date": "2013-06-25 19:51:49 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "cce59318",
+            "date": "2013-06-30 21:45:33 +0000",
+            "comment": "Add site-release profile + README.txt for the next release manager"
+        },
+        {
+            "c_hash": "ae7d79b3",
+            "date": "2013-06-30 21:48:39 +0000",
+            "comment": "Fix copy/paste URLs"
+        },
+        {
+            "c_hash": "1c986ab6",
+            "date": "2013-07-04 19:59:42 +0000",
+            "comment": "[MENFORCER-156] Upgrading maven-enforcer-plugin from 1.2 to 1.3 breaks maven-assembly-plugin Remove requiresDependencyCollection from @Mojo annotation; this is covered by  the DependecyGraphBuilder"
+        },
+        {
+            "c_hash": "6974cf63",
+            "date": "2013-07-04 20:07:57 +0000",
+            "comment": "Adjust project name to better reflect its origin"
+        },
+        {
+            "c_hash": "77d87577",
+            "date": "2013-07-04 21:01:04 +0000",
+            "comment": "Fix invalid copy/paste of NOTICE file"
+        },
+        {
+            "c_hash": "78b253e6",
+            "date": "2013-07-06 20:36:28 +0000",
+            "comment": "[MENFORCER-157][MENFORCER-158] Move LICENSE and notice to root folder of enforcer project (http://www.apache.org/dev/licensing-howto.html#source-tree-location) Fix content of NOTICE and LICENSE (now in sync with the files bundled in the jars)"
+        },
+        {
+            "c_hash": "6fc1ba1b",
+            "date": "2013-07-06 20:55:47 +0000",
+            "comment": "Lock version of maven-javadoc plugin to trigger security fix"
+        },
+        {
+            "c_hash": "73569867",
+            "date": "2013-07-06 22:00:03 +0000",
+            "comment": "Set version to 1.3.1-SNAPSHOT"
+        },
+        {
+            "c_hash": "4c507a06",
+            "date": "2013-07-06 22:04:07 +0000",
+            "comment": "Remove floating comment Remove @version"
+        },
+        {
+            "c_hash": "a4a9cb02",
+            "date": "2013-07-07 10:41:01 +0000",
+            "comment": "[MENFORCER-157] NOTICE file bad indentation & references software which is not actually included"
+        },
+        {
+            "c_hash": "21e0a217",
+            "date": "2013-07-07 10:43:12 +0000",
+            "comment": "[MENFORCER-157] NOTICE file bad indentation & references software which is not actually included"
+        },
+        {
+            "c_hash": "a5e084f7",
+            "date": "2013-07-08 21:12:52 +0000",
+            "comment": "Add license to file headers"
+        },
+        {
+            "c_hash": "2071953a",
+            "date": "2013-07-12 20:25:58 +0000",
+            "comment": "[maven-release-plugin] prepare release enforcer-1.3.1"
+        },
+        {
+            "c_hash": "233fa078",
+            "date": "2013-07-12 20:26:08 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "a8b192f2",
+            "date": "2013-07-25 11:17:01 +0000",
+            "comment": "Add recommend mojo. In contrast to enforce, this will never fail the build but only display a warning."
+        },
+        {
+            "c_hash": "c87bc416",
+            "date": "2013-07-25 11:17:23 +0000",
+            "comment": "Use alternative solution for never failing the build when recommend is executed."
+        },
+        {
+            "c_hash": "8cacfb54",
+            "date": "2013-07-25 11:17:41 +0000",
+            "comment": "Use Apache formatting rules."
+        },
+        {
+            "c_hash": "b3934ae5",
+            "date": "2013-07-25 11:18:01 +0000",
+            "comment": "Change the displayed message for recommendations."
+        },
+        {
+            "c_hash": "b62b71b8",
+            "date": "2013-07-25 11:18:19 +0000",
+            "comment": "Add invoker test."
+        },
+        {
+            "c_hash": "1f7fb8ff",
+            "date": "2013-07-25 11:18:51 +0000",
+            "comment": "Add new interface which includes level."
+        },
+        {
+            "c_hash": "15eeb313",
+            "date": "2013-07-25 11:19:09 +0000",
+            "comment": "Implement switching between warnings and errors."
+        },
+        {
+            "c_hash": "f2091843",
+            "date": "2013-07-25 11:19:24 +0000",
+            "comment": "Add an integration test, which only warns but does not fail the build."
+        },
+        {
+            "c_hash": "5701a007",
+            "date": "2013-07-25 11:19:43 +0000",
+            "comment": "Apache formatting :-)."
+        },
+        {
+            "c_hash": "de9f6ad5",
+            "date": "2013-07-25 11:19:57 +0000",
+            "comment": "bump to 2.0-SNAPSHOT version"
+        },
+        {
+            "c_hash": "7f40e426",
+            "date": "2014-01-05 14:11:22 +0000",
+            "comment": "[MENFORCER-170]   - Refactored the unit test code a little bit."
+        },
+        {
+            "c_hash": "30d98484",
+            "date": "2014-01-06 21:05:08 +0000",
+            "comment": "[MENFORCER-170]  - Undone the changes in r1555513 to    analyze the root cause of the build failure."
+        },
+        {
+            "c_hash": "51665e27",
+            "date": "2014-01-07 11:22:24 +0000",
+            "comment": "[MENFORCER-171]   - Added documentation for requireEnvironmentVariable     and fixed link from index page."
+        },
+        {
+            "c_hash": "f7391a6a",
+            "date": "2014-01-08 23:13:04 +0000",
+            "comment": "[MENFORCER-169]  - Added unit test for requireActiveProfile  - Added link to docs."
+        },
+        {
+            "c_hash": "554cb6f6",
+            "date": "2014-01-08 23:17:49 +0000",
+            "comment": "[MENFORCER-143]  - Using code snippet to activate correct handling    of all option."
+        },
+        {
+            "c_hash": "09a438e9",
+            "date": "2014-01-08 23:40:55 +0000",
+            "comment": "- Fixed unit test problem with mockito"
+        },
+        {
+            "c_hash": "7b93a049",
+            "date": "2014-01-08 23:48:48 +0000",
+            "comment": "[MENFORCER-170]  - Refactoring."
+        },
+        {
+            "c_hash": "2bb974dc",
+            "date": "2014-01-10 16:34:40 +0000",
+            "comment": "[MENFORCER-175]  - Fixed typos in using requirePrerequisite    instead of requirePrerequisites in accordance    with the rule name."
+        },
+        {
+            "c_hash": "400cefed",
+            "date": "2014-01-12 20:02:08 +0000",
+            "comment": "[MENFORCER-143]  - Follow up. Added two integration tests.    One is especially to check if profiles    which are activated via settings.xml    also work in accordance with requireActiveProfile.    The second integration test is to    check the all rule as well."
+        },
+        {
+            "c_hash": "ab2aa9a1",
+            "date": "2014-01-18 16:54:55 +0000",
+            "comment": "[MENFORCER-177] Support packagings for RequirePrerequisite rule, always ignore pom"
+        },
+        {
+            "c_hash": "f77453e2",
+            "date": "2014-01-18 18:59:58 +0000",
+            "comment": "[MENFORCER-167]   - Fixed the code to work in accordance with the documented     behaviour."
+        },
+        {
+            "c_hash": "ffe14a75",
+            "date": "2014-01-19 17:53:18 +0000",
+            "comment": "[MENFORCER-167]  - Refactored test code.  - ArtifactMatcher Replaced hard coded value with existing constant."
+        },
+        {
+            "c_hash": "afe62790",
+            "date": "2014-01-24 18:32:33 +0000",
+            "comment": "[MENFORCER-180]  - Changed the rules name first letter to lower case."
+        },
+        {
+            "c_hash": "d6973860",
+            "date": "2014-01-24 18:39:34 +0000",
+            "comment": "[MENFORCER-179]   - Added the default of searchTransitive   - Added an other plugin configuration example."
+        },
+        {
+            "c_hash": "1072f41f",
+            "date": "2014-01-25 10:27:47 +0000",
+            "comment": "removed obsolete profile for site publish: instructions are to do a svn copy from -archives/xxx-LATEST"
+        },
+        {
+            "c_hash": "cbc6a3ef",
+            "date": "2014-01-25 10:30:53 +0000",
+            "comment": "fixed site publication scripts: need reporting profile for site generation, and scm-publish requires to be run in a second run to benefit from site staging done in first run"
+        },
+        {
+            "c_hash": "48a3df25",
+            "date": "2014-01-25 13:15:40 +0000",
+            "comment": "[MENFORCER-181] fixed IT by using a Tycho version with Maven 3.1.x support"
+        },
+        {
+            "c_hash": "0bb6a2e1",
+            "date": "2014-01-25 21:57:43 +0000",
+            "comment": "[MENFORCER-183] site fails with Maven 3.1.1"
+        },
+        {
+            "c_hash": "77520712",
+            "date": "2014-01-27 20:57:10 +0000",
+            "comment": "[MENFORCER-182]   - Added documentation for WARN/ERROR     Patch applied by Mirko Friedenhagen"
+        },
+        {
+            "c_hash": "471ab426",
+            "date": "2014-03-14 21:03:29 +0000",
+            "comment": "[MENFORCER-186]  - First working implementation of the RequireSameVersionsReactor    rule."
+        },
+        {
+            "c_hash": "a0766b97",
+            "date": "2014-03-16 12:02:10 +0000",
+            "comment": "[MENFORCER-187]   - Fixed links to API Docs."
+        },
+        {
+            "c_hash": "73aaa8af",
+            "date": "2014-03-16 17:36:52 +0000",
+            "comment": "[MENFORCER-186]  - Enhanced documentation"
+        },
+        {
+            "c_hash": "f88c3c7a",
+            "date": "2014-03-17 20:56:06 +0000",
+            "comment": "[MENFORCER-186]  - Renamed rule into ReactorModuleConvergence    in accordance with the discussion on the mailing list.  - Added ignoreModuleDependencies option."
+        },
+        {
+            "c_hash": "13f8c21e",
+            "date": "2014-03-19 20:15:40 +0000",
+            "comment": "[MENFORCER-188]  - Fixed missing message output."
+        },
+        {
+            "c_hash": "d3310ef4",
+            "date": "2014-04-06 22:23:30 +0000",
+            "comment": "Add missing license headers, and one exclusion for RAT."
+        },
+        {
+            "c_hash": "d9d25d10",
+            "date": "2014-04-12 20:07:51 +0000",
+            "comment": "updated parent pom"
+        },
+        {
+            "c_hash": "04d8f500",
+            "date": "2014-04-13 10:03:55 +0000",
+            "comment": "simplified configuration: values are either inherited or default values"
+        },
+        {
+            "c_hash": "09a99ba3",
+            "date": "2014-04-13 10:05:23 +0000",
+            "comment": "avoid copy/paste: use property"
+        },
+        {
+            "c_hash": "97d8e673",
+            "date": "2014-04-20 12:19:41 +0000",
+            "comment": "- Small code clean ups. - Fixed typos. - Added JavaDoc"
+        },
+        {
+            "c_hash": "7de23f76",
+            "date": "2014-04-20 15:24:22 +0000",
+            "comment": "- Removed unused class."
+        },
+        {
+            "c_hash": "9868f251",
+            "date": "2014-06-15 18:35:23 +0000",
+            "comment": "[MENFORCER-193]  - Add new rule: BannedRepositories to ban specified repositories for    whole maven session  - Added Simon Wang as contributor."
+        },
+        {
+            "c_hash": "967ca568",
+            "date": "2014-06-24 21:03:06 +0000",
+            "comment": "[MNGSITE-152] added license and download links"
+        },
+        {
+            "c_hash": "d31bc3d8",
+            "date": "2014-06-25 16:14:02 +0000",
+            "comment": "[MNGSITE-152] moved license and download links to release root"
+        },
+        {
+            "c_hash": "8705320e",
+            "date": "2014-06-28 20:47:25 +0000",
+            "comment": "[MENFORCER-174]  - Added banDistributionManagement rule."
+        },
+        {
+            "c_hash": "af32e232",
+            "date": "2014-06-29 12:22:33 +0000",
+            "comment": "[MENFORCER-174]  - Follow up improved unit tests.  - Fixed typos  - Cleaned up docs."
+        },
+        {
+            "c_hash": "2c1f5130",
+            "date": "2014-07-12 13:02:09 +0000",
+            "comment": "update examples to more reasonable values"
+        },
+        {
+            "c_hash": "b9a2986f",
+            "date": "2014-07-21 09:38:29 +0000",
+            "comment": "[MENFORCER-192]  - Updated all @since entries according to the current version."
+        },
+        {
+            "c_hash": "fd07f5de",
+            "date": "2014-07-21 16:24:40 +0000",
+            "comment": "[MENFORCER-186]  - Enhanced docs."
+        },
+        {
+            "c_hash": "5f47a460",
+            "date": "2014-07-21 21:24:54 +0000",
+            "comment": "- Improved unit test code."
+        },
+        {
+            "c_hash": "1321687c",
+            "date": "2014-08-08 18:59:10 +0000",
+            "comment": "[MENFORCER-200]  - Upgrade to Maven 2.2.1 as minimun version."
+        },
+        {
+            "c_hash": "20ef4375",
+            "date": "2014-08-08 20:15:03 +0000",
+            "comment": "[MENFORCER-201]  - MavenProject, MavenSession must be injected    as parameters and not as Components."
+        },
+        {
+            "c_hash": "a4bdfc6e",
+            "date": "2014-08-08 21:00:46 +0000",
+            "comment": "[MENFORCER-202]  - Get rid of WARNING's."
+        },
+        {
+            "c_hash": "6515c9d4",
+            "date": "2014-09-14 12:21:33 +0000",
+            "comment": "- Removed explicit packaging jar in pom - ReactorModuleConvergence, ReactorModuleConvergenceTest   - Cleaned up code, Fixed typos etc."
+        },
+        {
+            "c_hash": "7d60e282",
+            "date": "2014-09-20 20:24:35 +0000",
+            "comment": "Add missing license header."
+        },
+        {
+            "c_hash": "19590ddd",
+            "date": "2014-09-20 21:00:25 +0000",
+            "comment": "code simplification"
+        },
+        {
+            "c_hash": "020ce875",
+            "date": "2014-09-20 21:03:05 +0000",
+            "comment": "fixed code style"
+        },
+        {
+            "c_hash": "67a51677",
+            "date": "2014-10-10 10:22:31 +0000",
+            "comment": "- Fixed typos in names. - Added NOTE in documentation of reactorModuleConvergence"
+        },
+        {
+            "c_hash": "15d31dc1",
+            "date": "2014-10-10 16:35:26 +0000",
+            "comment": "- Fixed several Checkstyle errors."
+        },
+        {
+            "c_hash": "d43bc90a",
+            "date": "2014-10-11 23:27:06 +0000",
+            "comment": "- Improved code style to reduce number of checkstyle warnings. - Reduced the visibility of variables and added appropriate   set/get methods in RequireFilesSize"
+        },
+        {
+            "c_hash": "d779bd69",
+            "date": "2014-10-11 23:38:10 +0000",
+            "comment": "- Fixing checkstyle reported issues   - making variables private and add appropriate get/set methods."
+        },
+        {
+            "c_hash": "f4e5b39a",
+            "date": "2014-10-12 00:20:36 +0000",
+            "comment": "- Fixing checkstyle reported issues   - making variables private and add appropriate get/set methods."
+        },
+        {
+            "c_hash": "5e3c2746",
+            "date": "2014-10-18 13:25:48 +0000",
+            "comment": "[MENFORCER-205]  - Fixed wrong link in documentation."
+        },
+        {
+            "c_hash": "63dce326",
+            "date": "2014-10-18 13:34:27 +0000",
+            "comment": "[MENFORCER-206]  - Upgraded maven-invoker-plugin to version 1.9"
+        },
+        {
+            "c_hash": "1221d02e",
+            "date": "2014-10-24 21:23:01 +0000",
+            "comment": "- Upgrade to maven-parent version 25. - Fixed a large number of checkstyle reported issues."
+        },
+        {
+            "c_hash": "221b6a8f",
+            "date": "2014-10-24 23:59:07 +0000",
+            "comment": "[MENFORCER-208]  - Removed deprecated goal enforce-one."
+        },
+        {
+            "c_hash": "bbc93bbb",
+            "date": "2014-10-25 00:07:33 +0000",
+            "comment": "[MENFORCER-209]  - Upgraded of plexus-utils from 1.5.8 to 3.0.20"
+        },
+        {
+            "c_hash": "840b3d6d",
+            "date": "2014-11-04 19:19:08 +0000",
+            "comment": "[MENFORCER-212] Upgrade maven-plugin-plugin from 3.2 to 3.3"
+        },
+        {
+            "c_hash": "9de7b660",
+            "date": "2014-11-13 20:37:06 +0000",
+            "comment": "- Removed reference to old Maven issue."
+        },
+        {
+            "c_hash": "f490fa98",
+            "date": "2014-11-13 20:37:38 +0000",
+            "comment": "- Removed mailing list entries, cause they are inherited from parent."
+        },
+        {
+            "c_hash": "1ed258a6",
+            "date": "2014-11-13 21:36:21 +0000",
+            "comment": "[MENFORCER-214] Add prerequisites to maven-enforcer-plugin"
+        },
+        {
+            "c_hash": "3c9d4177",
+            "date": "2014-11-18 15:02:30 +0000",
+            "comment": "- Fixed some typos."
+        },
+        {
+            "c_hash": "0c41d1bb",
+            "date": "2014-11-20 17:23:49 +0000",
+            "comment": "- Added more debug output for analysis."
+        },
+        {
+            "c_hash": "a8a2dbb8",
+            "date": "2014-11-20 18:03:01 +0000",
+            "comment": "- Fixed checkstyle reported issues."
+        },
+        {
+            "c_hash": "c5907be9",
+            "date": "2014-11-27 18:29:51 +0000",
+            "comment": "[MENFORCER-216] Upgrade to maven-parent version 26  - Enhanced excludes in maven-enforcer-plugin to add    the excludes instead of replacing them."
+        },
+        {
+            "c_hash": "5c4c1913",
+            "date": "2014-11-27 19:35:51 +0000",
+            "comment": "Removed part of the pom which has been mentioned to fail the build if removed which i can't reproduce."
+        },
+        {
+            "c_hash": "c025cb5f",
+            "date": "2014-12-06 21:31:01 +0000",
+            "comment": "[MENFORCER-217] Upgrade maven-plugin-testing-harness to 1.3"
+        },
+        {
+            "c_hash": "4d891f10",
+            "date": "2014-12-07 18:40:12 +0000",
+            "comment": "[MENFORCER-218] Upgrade maven-dependency-tree to 2.2"
+        }
+    ]
+}

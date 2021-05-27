@@ -1,0 +1,978 @@
+{
+    "project": "servicemix",
+    "git_url": "https://github.com/apache/servicemix.git",
+    "last_commit": "4c4e3571",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "1925087d",
+            "date": "2011-06-29 12:04:27 +0000",
+            "comment": "Add smx5 svn area"
+        },
+        {
+            "c_hash": "ef57fd77",
+            "date": "2011-06-29 21:42:00 +0000",
+            "comment": "Add basic project layout with manual and console for smx5"
+        },
+        {
+            "c_hash": "7e6bdc96",
+            "date": "2011-07-08 07:55:37 +0000",
+            "comment": "[smx5] Experiment with a camel profiling strategy"
+        },
+        {
+            "c_hash": "d2726742",
+            "date": "2011-07-21 14:39:19 +0000",
+            "comment": "Add bread crumb strategy implementation"
+        },
+        {
+            "c_hash": "23063efe",
+            "date": "2011-07-21 14:39:39 +0000",
+            "comment": "Allow InterceptStrategy instances to be added/removed at runtime"
+        },
+        {
+            "c_hash": "699bd22d",
+            "date": "2011-07-21 17:23:59 +0000",
+            "comment": "Use a global ProcessorFactory instead of a global InterceptStrategy"
+        },
+        {
+            "c_hash": "3be3af39",
+            "date": "2011-07-22 11:49:30 +0000",
+            "comment": "Fix maven build warning."
+        },
+        {
+            "c_hash": "4075df10",
+            "date": "2011-07-22 15:48:43 +0000",
+            "comment": "Support multiple bread crumbs and wrap the AggregationStrategy accordingly"
+        },
+        {
+            "c_hash": "501eadb7",
+            "date": "2011-07-27 12:40:47 +0000",
+            "comment": "Allow enabling / disabling of some strategies globally or at the CamelContext or Route level"
+        },
+        {
+            "c_hash": "35b17c62",
+            "date": "2013-02-05 11:31:46 +0000",
+            "comment": "Remove old code for ServiceMix 5"
+        },
+        {
+            "c_hash": "e7e6e7c5",
+            "date": "2013-02-05 11:35:22 +0000",
+            "comment": "Copy of codebase at smx4/features/trunk"
+        },
+        {
+            "c_hash": "69766aa0",
+            "date": "2013-02-06 12:57:51 +0000",
+            "comment": "Upgrade version to 5.0.0-SNAPSHOT"
+        },
+        {
+            "c_hash": "4555ac3e",
+            "date": "2013-02-06 13:02:56 +0000",
+            "comment": "Remove support for NMR and JBI"
+        },
+        {
+            "c_hash": "3da8ded5",
+            "date": "2013-02-06 13:03:39 +0000",
+            "comment": "Update POM group IDs and descriptions"
+        },
+        {
+            "c_hash": "329328f3",
+            "date": "2013-02-06 13:03:49 +0000",
+            "comment": "Update SCM locations"
+        },
+        {
+            "c_hash": "f3150cb9",
+            "date": "2013-02-06 13:03:57 +0000",
+            "comment": "Remove a few more references to JBI from the README and the POMs"
+        },
+        {
+            "c_hash": "8eb01181",
+            "date": "2013-02-06 13:19:38 +0000",
+            "comment": "Removing empty directories"
+        },
+        {
+            "c_hash": "5ba73fb9",
+            "date": "2013-02-06 13:51:22 +0000",
+            "comment": "Add OPS4J snapshot repository"
+        },
+        {
+            "c_hash": "30187d5b",
+            "date": "2013-02-06 20:35:18 +0000",
+            "comment": "Remove empty directory osgi-logging"
+        },
+        {
+            "c_hash": "f443b8fc",
+            "date": "2013-02-08 20:37:02 +0000",
+            "comment": "Remove a set of unused properties"
+        },
+        {
+            "c_hash": "1722ca69",
+            "date": "2013-02-22 15:08:43 +0000",
+            "comment": "SM-2174: Upgrade to ActiveMQ 5.8.0"
+        },
+        {
+            "c_hash": "adfd2e4f",
+            "date": "2013-02-22 20:30:46 +0000",
+            "comment": "SM-2174 / SM-2175: ActiveMQ 5.8.0 integration"
+        },
+        {
+            "c_hash": "951d3a28",
+            "date": "2013-03-06 21:48:41 +0000",
+            "comment": "Use servicemix-utils 1.6.0 instead of 1.7.0-SNAPSHOT"
+        },
+        {
+            "c_hash": "e0fba931",
+            "date": "2013-03-06 21:48:51 +0000",
+            "comment": "SM-2173: Upgrade to Karaf 2.3.1"
+        },
+        {
+            "c_hash": "c7bd6b7d",
+            "date": "2013-03-11 14:17:29 +0000",
+            "comment": "SM-2177: Remove servicemix-utils as dependency"
+        },
+        {
+            "c_hash": "850c6a04",
+            "date": "2013-03-12 03:09:59 +0000",
+            "comment": "[SMX4-1399]incorrect readme.txt files in cxf examples"
+        },
+        {
+            "c_hash": "48e0ca39",
+            "date": "2013-03-12 11:05:56 +0000",
+            "comment": "[SMX4-1401]cxf-ws-security-blueprint log4j warning + wrong README info"
+        },
+        {
+            "c_hash": "f5fee309",
+            "date": "2013-03-12 11:11:33 +0000",
+            "comment": "[SMX4-1401]add log4j.properties for cxf-ws-security-osgi"
+        },
+        {
+            "c_hash": "1ddc7600",
+            "date": "2013-03-19 16:01:46 +0000",
+            "comment": "Remove a few left-over references to the features project name"
+        },
+        {
+            "c_hash": "bd4cded8",
+            "date": "2013-03-19 16:03:24 +0000",
+            "comment": "SM-2171: Add support for Akka"
+        },
+        {
+            "c_hash": "e44d6242",
+            "date": "2013-03-25 11:15:17 +0000",
+            "comment": "[SM-2179]can't install camel-cxf feature"
+        },
+        {
+            "c_hash": "28ac761b",
+            "date": "2013-03-26 00:14:29 +0000",
+            "comment": "SM-2180 - upgrade aries transaction version"
+        },
+        {
+            "c_hash": "70d04c71",
+            "date": "2013-03-26 00:19:11 +0000",
+            "comment": "SM-2181 - Fix activemq reference in jms-appender"
+        },
+        {
+            "c_hash": "38eb2b5c",
+            "date": "2013-03-29 19:30:28 +0000",
+            "comment": "remove unused jruby property and dep to avoid confusion"
+        },
+        {
+            "c_hash": "ec19b687",
+            "date": "2013-04-02 01:39:53 +0000",
+            "comment": "[SM-2184]upgrade to cxf 2.7.4"
+        },
+        {
+            "c_hash": "126a8a48",
+            "date": "2013-04-03 11:08:26 +0000",
+            "comment": "SM-2186: Add a new example: drools-camel Thanks to Wim Verreydt for the patch!"
+        },
+        {
+            "c_hash": "288eedb8",
+            "date": "2013-04-10 01:38:21 +0000",
+            "comment": "[SM-2193]Configfiles of jbi and nmr still included in assembly"
+        },
+        {
+            "c_hash": "66d1724e",
+            "date": "2013-04-10 13:18:57 +0000",
+            "comment": "SM-2195: Rewrite features itests using pax-exam-karaf"
+        },
+        {
+            "c_hash": "e2668f06",
+            "date": "2013-04-24 03:16:47 +0000",
+            "comment": "[SM-2196]need also endorse activation-api spec jar"
+        },
+        {
+            "c_hash": "861b6bc3",
+            "date": "2013-04-26 12:12:48 +0000",
+            "comment": "SM-2195: Add integration tests for CXF examples"
+        },
+        {
+            "c_hash": "f2f3278d",
+            "date": "2013-04-30 13:08:56 +0000",
+            "comment": "SMX4-1448: Add Activiti repo url to Pax Url Maven configuration"
+        },
+        {
+            "c_hash": "360e9d78",
+            "date": "2013-04-30 13:09:18 +0000",
+            "comment": "SM-2195: Add integration tests for ActiveMQ and Activiti"
+        },
+        {
+            "c_hash": "34e20448",
+            "date": "2013-04-30 14:44:00 +0000",
+            "comment": "SM-2195: Remove test timeout"
+        },
+        {
+            "c_hash": "34aa94cc",
+            "date": "2013-04-30 16:38:14 +0000",
+            "comment": "SM-2197: Fix integration tests on Hudson Thanks to Hans Couder for the patch!"
+        },
+        {
+            "c_hash": "b98c114f",
+            "date": "2013-05-01 22:40:20 +0000",
+            "comment": "Fix CI build: switch to released Drools bundle version"
+        },
+        {
+            "c_hash": "8d25aff7",
+            "date": "2013-05-10 03:48:42 +0000",
+            "comment": "[SM-2199]Add a new example: cxf-wsn"
+        },
+        {
+            "c_hash": "67ca3faf",
+            "date": "2013-05-14 07:39:14 +0000",
+            "comment": "[SM-2199]JAAS Auth and pom name fixed"
+        },
+        {
+            "c_hash": "aba4215e",
+            "date": "2013-05-16 08:32:17 +0000",
+            "comment": "SM-2194: Add a Blueprint camel-drools example"
+        },
+        {
+            "c_hash": "3911f9bc",
+            "date": "2013-05-16 08:32:27 +0000",
+            "comment": "Fix build: Set CXF version to 2.7.4"
+        },
+        {
+            "c_hash": "81dced6a",
+            "date": "2013-05-16 23:32:32 +0000",
+            "comment": "SM-2189: Add camel-sql example and update maven bundle plugin version"
+        },
+        {
+            "c_hash": "a8b700cd",
+            "date": "2013-05-23 04:52:23 +0000",
+            "comment": "[SM-2202]examples-activemq-camel-blueprint need to have camel-jms has feature dependency"
+        },
+        {
+            "c_hash": "9327e279",
+            "date": "2013-06-13 07:05:55 +0000",
+            "comment": "[SM-2204]a couple of cxf related examples which use spring-dm configuration doesn't work due to regression in CXF 2.7.4"
+        },
+        {
+            "c_hash": "4f289399",
+            "date": "2013-06-13 07:18:08 +0000",
+            "comment": "[SM-2205]add identifier for the org.ops4j.pax.url.mvn.repositories"
+        },
+        {
+            "c_hash": "3194fa98",
+            "date": "2013-06-20 06:27:25 +0000",
+            "comment": "[SM-2203]Intermittent itest failures"
+        },
+        {
+            "c_hash": "b68703bb",
+            "date": "2013-06-21 08:16:43 +0000",
+            "comment": "[SM-2190]A REST example with camel-cxf"
+        },
+        {
+            "c_hash": "e8e508f2",
+            "date": "2013-08-05 05:52:53 +0000",
+            "comment": "SM-2211/SM-2212: Container SPI POC with statistics and MongoDB auditor"
+        },
+        {
+            "c_hash": "2d43f712",
+            "date": "2013-08-05 05:53:07 +0000",
+            "comment": "SM-2210: Fix intermittent itest failures and disables CXF WS-RM itest"
+        },
+        {
+            "c_hash": "460c6a4e",
+            "date": "2013-10-31 11:15:38 +0000",
+            "comment": "[SM-2216]adapt cxf-jaxrs-blueprint example to support swagger"
+        },
+        {
+            "c_hash": "dcbffab9",
+            "date": "2013-10-31 11:31:06 +0000",
+            "comment": "[SM-2216]add swagger feature"
+        },
+        {
+            "c_hash": "2110f871",
+            "date": "2013-12-31 04:37:35 +0000",
+            "comment": "[SM-2219]Compilation failure due to non-existing SNAPSHOT of servicemix bundles"
+        },
+        {
+            "c_hash": "f7eb0d74",
+            "date": "2013-12-31 06:20:13 +0000",
+            "comment": "[SM-2219]use correct jackson-module-scala bundle version"
+        },
+        {
+            "c_hash": "a5e82645",
+            "date": "2013-12-31 06:46:28 +0000",
+            "comment": "[SM-2220]Integration Tests - Feature named 'examples-cxf-jaxrs-blueprint' is not installed"
+        },
+        {
+            "c_hash": "a801a774",
+            "date": "2013-12-31 07:42:50 +0000",
+            "comment": "[SM-2210]CXF WS-RM itest fails with NPE"
+        },
+        {
+            "c_hash": "5b4e63e3",
+            "date": "2014-01-17 04:33:07 +0000",
+            "comment": "[SM-2225]align cxf version"
+        },
+        {
+            "c_hash": "7b30b659",
+            "date": "2014-01-20 01:23:56 +0000",
+            "comment": "[SM-2227]fix cxf-jaxrs-blueprint example compilation"
+        },
+        {
+            "c_hash": "41bb75ce",
+            "date": "2014-02-13 14:14:33 +0000",
+            "comment": "SM-2230 - Update to latest releases"
+        },
+        {
+            "c_hash": "6eca58e3",
+            "date": "2014-02-13 14:33:24 +0000",
+            "comment": "SM-2232 - Ignore CXF itests that hang"
+        },
+        {
+            "c_hash": "f3a694ac",
+            "date": "2014-02-13 20:07:25 +0000",
+            "comment": "Remove core and audit modules"
+        },
+        {
+            "c_hash": "73c95f72",
+            "date": "2014-02-13 21:30:23 +0000",
+            "comment": "SM-2195: Upgrade to Pax Exam 3.4.0"
+        },
+        {
+            "c_hash": "6ed2b22a",
+            "date": "2014-02-13 22:59:51 +0000",
+            "comment": "Remove a few unused properties"
+        },
+        {
+            "c_hash": "e98e801b",
+            "date": "2014-02-14 03:38:57 +0000",
+            "comment": "SM-2178 - Upgrade to Spring 3.2.4.RELEASE"
+        },
+        {
+            "c_hash": "07ffe156",
+            "date": "2014-02-15 22:44:44 +0000",
+            "comment": "SM-2237: Fix build problems after upgrade to Spring 3.2.4.RELEASE Thanks to Krzysztof for the patch!"
+        },
+        {
+            "c_hash": "9902ea4d",
+            "date": "2014-02-16 20:35:57 +0000",
+            "comment": "SM-2238: Remove overwritten activemq features from our own features.xml Thanks to Krzysztof for the patch!"
+        },
+        {
+            "c_hash": "78d5ccae",
+            "date": "2014-02-18 02:57:08 +0000",
+            "comment": "SM-2236: Some additional version upgrades Thanks to Krzysztof for the patch!"
+        },
+        {
+            "c_hash": "a414cb32",
+            "date": "2014-02-20 06:31:11 +0000",
+            "comment": "[SM-2242]Remove minimal and full assembly"
+        },
+        {
+            "c_hash": "575cd983",
+            "date": "2014-02-20 07:32:38 +0000",
+            "comment": "[SM-2241]Upgrade to Karaf 2.3.4"
+        },
+        {
+            "c_hash": "9e1b2d9e",
+            "date": "2014-02-20 08:04:57 +0000",
+            "comment": "[SM-2243]remove jbi related stuff from SMX5"
+        },
+        {
+            "c_hash": "ec2d9b3f",
+            "date": "2014-02-20 13:55:13 +0000",
+            "comment": "SM-2234: Workaround for Activiti itest failure Thanks to Bart for providing the patch!"
+        },
+        {
+            "c_hash": "a9ce33c2",
+            "date": "2014-02-21 14:32:49 +0000",
+            "comment": "SM-2239: Set file.encoding to get itests working on Jenkins Thanks to Bart Horr\u00e9 for providing the patch!"
+        },
+        {
+            "c_hash": "d69b1c7c",
+            "date": "2014-02-24 04:21:18 +0000",
+            "comment": "[SM-2246]Merge apache-servicemix and shared into a single assembly module"
+        },
+        {
+            "c_hash": "b01c2562",
+            "date": "2014-02-24 04:44:54 +0000",
+            "comment": "[SM-2247]add @id for the org.ops4j.pax.url.mvn.repositories in etc/org.ops4j.pax.url.mvn.cfg"
+        },
+        {
+            "c_hash": "9bee6dc7",
+            "date": "2014-02-24 05:00:51 +0000",
+            "comment": "[SM-2247]add @id for the org.ops4j.pax.url.mvn.repositories in etc/org.ops4j.pax.url.mvn.cfg"
+        },
+        {
+            "c_hash": "052c48f2",
+            "date": "2014-02-24 05:05:22 +0000",
+            "comment": "[SM-2247]add @id for the org.ops4j.pax.url.mvn.repositories in etc/org.ops4j.pax.url.mvn.cfg"
+        },
+        {
+            "c_hash": "15b9d2bd",
+            "date": "2014-02-25 08:05:21 +0000",
+            "comment": "[SM-2231]Logging error on startup"
+        },
+        {
+            "c_hash": "e46ddd88",
+            "date": "2014-02-25 15:30:15 +0000",
+            "comment": "SM-2249: Upgrade to Camel 2.12.3 Thanks to Bart for the patch!"
+        },
+        {
+            "c_hash": "3f988c29",
+            "date": "2014-02-26 20:01:37 +0000",
+            "comment": "SM-2253: Upgrade to Akka 2.2.3 SM-2254: Remove akka-osgi-aries and switch to Akka's own OSGi support"
+        },
+        {
+            "c_hash": "da05bc80",
+            "date": "2014-02-27 08:10:41 +0000",
+            "comment": "[SM-2233]Single assembly for Windows and other OS's"
+        },
+        {
+            "c_hash": "77aac0fa",
+            "date": "2014-02-27 08:17:01 +0000",
+            "comment": "[SM-2233]Single assembly for Windows and other OS's"
+        },
+        {
+            "c_hash": "d408d73e",
+            "date": "2014-02-28 12:48:12 +0000",
+            "comment": "SM-2183: Provide JMS ConnectionFactory in the OSGi Service Registry"
+        },
+        {
+            "c_hash": "33d4e51f",
+            "date": "2014-02-28 13:06:21 +0000",
+            "comment": "Change name on assembly module POM"
+        },
+        {
+            "c_hash": "f4dfab67",
+            "date": "2014-02-28 13:41:19 +0000",
+            "comment": "SM-2257: Delay console startup until bundles have been propertly started"
+        },
+        {
+            "c_hash": "f0de74c8",
+            "date": "2014-03-01 09:54:56 +0000",
+            "comment": "Remove a few unused dependencies and properties"
+        },
+        {
+            "c_hash": "0e0e49cd",
+            "date": "2014-03-03 07:08:02 +0000",
+            "comment": "[SM-2258]Upgrade to Drools 5.6.0.Final"
+        },
+        {
+            "c_hash": "eebd0c76",
+            "date": "2014-03-03 13:57:23 +0000",
+            "comment": "SM-2259: Improve development using Eclipse Thanks to Krzysztof for the patch!"
+        },
+        {
+            "c_hash": "1a40d34f",
+            "date": "2014-03-03 14:19:23 +0000",
+            "comment": "SM-2260: Refactor POMs - optimize dependencyManagement and pluginManagement Thanks to Krzysztof for the patches!"
+        },
+        {
+            "c_hash": "63c97931",
+            "date": "2014-03-03 16:03:01 +0000",
+            "comment": "SM-2183: Enable ActiveMQ example integration test"
+        },
+        {
+            "c_hash": "4ce6ff4f",
+            "date": "2014-03-04 09:39:21 +0000",
+            "comment": "[SM-2261]antrun-plugin enable-obr runs multiple times"
+        },
+        {
+            "c_hash": "b8622df2",
+            "date": "2014-03-04 12:44:07 +0000",
+            "comment": "[SM-2187]Increase default PermGen size to 256MB"
+        },
+        {
+            "c_hash": "70e15568",
+            "date": "2014-03-06 02:06:17 +0000",
+            "comment": "[SM-2262]Split features file in multiple parts"
+        },
+        {
+            "c_hash": "9151a5de",
+            "date": "2014-03-06 05:28:46 +0000",
+            "comment": "[SM-2264]Decouple examples from our own parent POMs"
+        },
+        {
+            "c_hash": "8ee07a9f",
+            "date": "2014-03-10 21:13:16 +0000",
+            "comment": "SM-2258: Upgrade to the released Drools bundle"
+        },
+        {
+            "c_hash": "4962c547",
+            "date": "2014-03-11 20:35:05 +0000",
+            "comment": "SM-2263: Switch to org.apache:apache:14 parent POM Thanks to Bart for the patch!"
+        },
+        {
+            "c_hash": "8f1f98b5",
+            "date": "2014-03-14 08:34:26 +0000",
+            "comment": "SM-2265: Remove unnecessary external repositories"
+        },
+        {
+            "c_hash": "76f9a5d5",
+            "date": "2014-03-14 10:03:09 +0000",
+            "comment": "SM-2266: Fix a few issues with the binary/source assembly"
+        },
+        {
+            "c_hash": "5943a64a",
+            "date": "2014-03-14 11:54:38 +0000",
+            "comment": "Prepare for release: Update README and BUILDING files"
+        },
+        {
+            "c_hash": "62663c4f",
+            "date": "2014-03-14 11:55:30 +0000",
+            "comment": "Add missing license headers"
+        },
+        {
+            "c_hash": "a8b99478",
+            "date": "2014-03-14 11:55:36 +0000",
+            "comment": "Prepare for release: Update RELEASE-NOTES"
+        },
+        {
+            "c_hash": "d6a070cd",
+            "date": "2014-03-14 13:16:18 +0000",
+            "comment": "SM-2265: Replace one more external repository definition to fix build issue with invalid Felix Gogo POM"
+        },
+        {
+            "c_hash": "6e0b36c0",
+            "date": "2014-03-14 13:37:23 +0000",
+            "comment": "[maven-release-plugin] prepare release servicemix-5.0.0"
+        },
+        {
+            "c_hash": "4b23dd92",
+            "date": "2014-03-14 13:37:38 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "2e8cc3de",
+            "date": "2014-03-16 20:59:26 +0000",
+            "comment": "SM-2268: Error on startup: invalid run level for wrap bundle Thanks to Raul for the patch!"
+        },
+        {
+            "c_hash": "e27d9f16",
+            "date": "2014-03-17 07:57:26 +0000",
+            "comment": "Prepare for release: Update release notes"
+        },
+        {
+            "c_hash": "a6446830",
+            "date": "2014-03-17 13:15:21 +0000",
+            "comment": "[maven-release-plugin] prepare release servicemix-5.0.0"
+        },
+        {
+            "c_hash": "1dd8c1f6",
+            "date": "2014-03-17 13:15:39 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "35e5787a",
+            "date": "2014-03-27 04:44:07 +0000",
+            "comment": "SM-2269: Install camel-jms component out-of-the-box"
+        },
+        {
+            "c_hash": "707d1584",
+            "date": "2014-03-28 11:07:55 +0100",
+            "comment": "Update SCM URLs"
+        },
+        {
+            "c_hash": "904689d5",
+            "date": "2014-03-28 14:22:34 +0100",
+            "comment": "SM-2275: Set up master branch for working on 6.0.0 release"
+        },
+        {
+            "c_hash": "111751f5",
+            "date": "2014-03-31 16:09:57 +0200",
+            "comment": "SM-2255: Add logging to troubleshoot intermittent test failure"
+        },
+        {
+            "c_hash": "9a139ced",
+            "date": "2014-03-28 15:32:55 +0100",
+            "comment": "SM-2256: make jms appender async Thanks to Bart for the pull request!"
+        },
+        {
+            "c_hash": "f7f0a603",
+            "date": "2014-04-05 13:18:43 +0200",
+            "comment": "SM-2274: Upgrade to Camel 2.13.0 Thanks to  Wim Verreydt for the pull request!"
+        },
+        {
+            "c_hash": "e7e375da",
+            "date": "2014-04-11 21:01:51 +0200",
+            "comment": "SM-2229 Upgrade to activiti version 5.15.1 Thanks to Filippo Balicchia for the patch!"
+        },
+        {
+            "c_hash": "48de4db5",
+            "date": "2014-04-11 21:03:51 +0200",
+            "comment": "SM-2277 activiti-camel thrown ActivitiException when put document in delivery folder Thanks to Filippo Balicchia for the patch!"
+        },
+        {
+            "c_hash": "f9f79666",
+            "date": "2014-04-11 23:21:37 +0200",
+            "comment": "SM-2280 Activiti test case fails after upgrade to 5.15.1"
+        },
+        {
+            "c_hash": "78f9aea3",
+            "date": "2014-04-14 00:35:43 +0200",
+            "comment": "SM-2282 Installation of the eventadmin feature fails"
+        },
+        {
+            "c_hash": "4ca3c680",
+            "date": "2014-04-14 22:50:24 +0200",
+            "comment": "SM-2281 Upgrade to Karaf 2.3.5"
+        },
+        {
+            "c_hash": "fff80c9d",
+            "date": "2014-04-16 21:50:43 +0200",
+            "comment": "SM-2283 Align some versions duplicated after the Activiti upgrade"
+        },
+        {
+            "c_hash": "c6cb8ad0",
+            "date": "2014-05-02 17:10:31 +0200",
+            "comment": "SM-2269 ActiveMQ quick start doesn't work due to the missing activemq component"
+        },
+        {
+            "c_hash": "bf9f30d7",
+            "date": "2014-05-02 22:45:51 +0200",
+            "comment": "SM-2279 The jndi feature can not be installed"
+        },
+        {
+            "c_hash": "337486fd",
+            "date": "2014-05-06 17:51:14 +0200",
+            "comment": "SM-2278 Upgrade to Karaf 3.0.1 (closes #6) Thanks to Wim Verreydt for the pull request!!"
+        },
+        {
+            "c_hash": "f55eaf81",
+            "date": "2014-05-06 20:40:49 +0200",
+            "comment": "SM-2276 Upgrade to Karaf 3.0.1"
+        },
+        {
+            "c_hash": "d55bc5ed",
+            "date": "2014-05-07 10:42:08 +0200",
+            "comment": "SM-2286: Fix Await trait logic to actually check again after the final wait"
+        },
+        {
+            "c_hash": "592b1126",
+            "date": "2014-05-07 21:00:55 +0200",
+            "comment": "SM-2294 Cleanup nonexisting cxf dependencies from dependency management (closes #3) Thanks to Wim Verreydt for the patch"
+        },
+        {
+            "c_hash": "d71da2ad",
+            "date": "2014-05-07 23:29:46 +0200",
+            "comment": "SM-2295 Change the target/source level in compiler plugin to 1.6"
+        },
+        {
+            "c_hash": "e04e5a20",
+            "date": "2014-05-08 19:55:44 +0200",
+            "comment": "SM-2296 Add the boot features added in ServiceMix 6 to the system repository"
+        },
+        {
+            "c_hash": "df42014d",
+            "date": "2014-05-09 23:58:35 +0200",
+            "comment": "SM-2296 Add the boot features to the system repository"
+        },
+        {
+            "c_hash": "8aadedf6",
+            "date": "2014-05-13 15:00:36 +0200",
+            "comment": "SM-2299: Add itest for cxf-wsn example (closes #10) Thanks to Wim Verreydt for the pull request!"
+        },
+        {
+            "c_hash": "18664fe8",
+            "date": "2014-05-06 14:17:29 +0200",
+            "comment": "SM-2288: Add drools feature (closes #7) Thanks to Wim Verreydt for the pull request!"
+        },
+        {
+            "c_hash": "9297055f",
+            "date": "2014-05-05 10:00:20 +0200",
+            "comment": "SM-2267: Provide working configuration for activemq-web-console"
+        },
+        {
+            "c_hash": "c9dd9178",
+            "date": "2014-05-05 10:00:20 +0200",
+            "comment": "SM-2267: Provide working configuration for activemq-web-console (part 2) Thanks to Wim Verreydt for the pull request!"
+        },
+        {
+            "c_hash": "fb557e26",
+            "date": "2014-05-22 22:35:36 +0200",
+            "comment": "SM-2301 Problem installing activiti feature after upgrade to Camel 2.13.1"
+        },
+        {
+            "c_hash": "8ca299c5",
+            "date": "2014-05-22 22:36:52 +0200",
+            "comment": "SM-2292 Upgrade to Camel 2.13.1"
+        },
+        {
+            "c_hash": "61b3dcd4",
+            "date": "2014-05-22 22:40:31 +0200",
+            "comment": "SM-2303 ActiveMQ web console not installable after upgrade to 5.9.1"
+        },
+        {
+            "c_hash": "cd3deb9b",
+            "date": "2014-05-23 23:13:38 +0200",
+            "comment": "SM-2305: Access to ActiveMQ web console fails"
+        },
+        {
+            "c_hash": "4b5330c1",
+            "date": "2014-05-23 23:43:06 +0200",
+            "comment": "SM-2303: ActiveMQ web console not installable after upgrade to 5.9.1"
+        },
+        {
+            "c_hash": "9aaca8f3",
+            "date": "2014-05-19 11:20:02 +0200",
+            "comment": "SM-2298: Add a CXF SOAP with Camel example (Closes #11) Thanks to Wim Verreydt for the pull request"
+        },
+        {
+            "c_hash": "e8e38931",
+            "date": "2014-05-24 18:18:09 +0200",
+            "comment": "SM-2308: Add itest for camel-drools-blueprint example"
+        },
+        {
+            "c_hash": "7e244c73",
+            "date": "2014-05-09 12:44:58 +0200",
+            "comment": "SM-2270: Add archetypes to code base Thanks to  Wim Verreydt for the pull request"
+        },
+        {
+            "c_hash": "8731c2bb",
+            "date": "2014-05-26 16:00:18 +0200",
+            "comment": "SM-2310 cxf-wsn example doens't compile with maven 3.0.4"
+        },
+        {
+            "c_hash": "97c37532",
+            "date": "2014-05-26 16:00:18 +0200",
+            "comment": "SM-2310 cxf-wsn example doens't compile with maven 3.0.4"
+        },
+        {
+            "c_hash": "0a95f1b4",
+            "date": "2014-05-13 12:54:43 +0200",
+            "comment": "SM-2245: Upgrade to Pax Exam 3.5.0 (Closes #9) Thanks to Wim Verreydt for the pull request"
+        },
+        {
+            "c_hash": "2ab8478e",
+            "date": "2014-05-26 21:25:51 +0200",
+            "comment": "SM-2245: Upgrade to Pax Exam 3.5.0"
+        },
+        {
+            "c_hash": "0e01564d",
+            "date": "2014-05-28 10:34:46 +0200",
+            "comment": "SM-2307 SM-2309: Add itests for camel-cxf-soap example and camel-cxf-rest example (closes #12) Thanks to Wim Verreydt for the pull request!"
+        },
+        {
+            "c_hash": "090a619e",
+            "date": "2014-05-28 12:28:31 +0200",
+            "comment": "SM-2312 Remove placeholder configuration from the activemq-camel blueprint"
+        },
+        {
+            "c_hash": "9fa36afb",
+            "date": "2014-05-28 12:36:34 +0200",
+            "comment": "SM-2306: Update the README file for ServiceMix 6"
+        },
+        {
+            "c_hash": "4facc778",
+            "date": "2014-05-14 16:19:59 +0200",
+            "comment": "Prepare for release: Upgrade to maven-release-plugin 2.5"
+        },
+        {
+            "c_hash": "075ba7c0",
+            "date": "2014-06-03 22:30:14 -0400",
+            "comment": "SM-2314: Avoid IndexOutOfBoundsException in service operations (Closes #13)"
+        },
+        {
+            "c_hash": "ec46de65",
+            "date": "2014-06-12 20:56:11 +0200",
+            "comment": "SM-2328 Upgrade to ActiveMQ 5.10.0"
+        },
+        {
+            "c_hash": "d164720e",
+            "date": "2014-06-10 21:46:58 -0400",
+            "comment": "SM-2327: Refactor camel-cxf-rest example code (closes #14)"
+        },
+        {
+            "c_hash": "71a92c6c",
+            "date": "2014-06-16 14:58:45 +0200",
+            "comment": "SM-2316: Add ksession configuration to camel-drools examples"
+        },
+        {
+            "c_hash": "01535abf",
+            "date": "2014-06-16 10:53:45 +0200",
+            "comment": "SM-2313: Add error handling to camel-cxf-soap example"
+        },
+        {
+            "c_hash": "37fa5ac2",
+            "date": "2014-06-16 20:43:37 +0200",
+            "comment": "SM-2313: Add error handling to camel-cxf-soap example"
+        },
+        {
+            "c_hash": "02aeb58b",
+            "date": "2014-06-18 20:40:36 +0200",
+            "comment": "SM-2332: Remove Alfresco repository from org.ops4j.pax.url.mvn.cfg"
+        },
+        {
+            "c_hash": "b3bd4750",
+            "date": "2014-07-08 09:27:38 +0800",
+            "comment": "[SM-2341]Improve WS-Security demos"
+        },
+        {
+            "c_hash": "8c300b33",
+            "date": "2014-07-07 20:46:19 +0200",
+            "comment": "SM-2340: Upgrade to Camel 2.13.2"
+        },
+        {
+            "c_hash": "a041239b",
+            "date": "2014-07-14 15:24:17 +0200",
+            "comment": "[SM-2319] Remove the connector feature (now provided by Karaf) [SM-2321] Upgrade to Karaf 3.0.2-SNAPSHOT"
+        },
+        {
+            "c_hash": "9881d7b2",
+            "date": "2014-07-15 22:48:54 +0200",
+            "comment": "SM-2324: Use JcaPooledConnectionFactory instead of XaPooledConnectionFactory"
+        },
+        {
+            "c_hash": "9ee693e8",
+            "date": "2014-07-17 16:43:22 +0800",
+            "comment": "[SM-2337]fix incorrect sonatype maven repo url"
+        },
+        {
+            "c_hash": "dbe59b35",
+            "date": "2014-07-18 17:37:57 +0200",
+            "comment": "Fix broken build: Add Apache snapshots plugin repository"
+        },
+        {
+            "c_hash": "74e2f96a",
+            "date": "2014-07-18 18:04:50 +0200",
+            "comment": "SM-2255: Enforce English locale in Stats report"
+        },
+        {
+            "c_hash": "e014a76d",
+            "date": "2014-08-02 23:32:56 +0200",
+            "comment": "SM-2354: Upgrade to maven-bundle-plugin 2.5.0"
+        },
+        {
+            "c_hash": "2b9d0ec4",
+            "date": "2014-08-02 23:34:02 +0200",
+            "comment": "SM-2359: Upgrade to Pax Exam 4.1.0"
+        },
+        {
+            "c_hash": "2bcfe6af",
+            "date": "2014-08-03 10:26:30 +0200",
+            "comment": "Revert \"SM-2359: Upgrade to Pax Exam 4.1.0\""
+        },
+        {
+            "c_hash": "5ea4412e",
+            "date": "2014-08-07 18:34:58 +0200",
+            "comment": "SM-2359: Upgrade to Pax Exam 4.1.0"
+        },
+        {
+            "c_hash": "86ca1c54",
+            "date": "2014-08-07 18:40:00 +0200",
+            "comment": "SM-2362: Require JDK 7 for build"
+        },
+        {
+            "c_hash": "3f55c31d",
+            "date": "2014-09-06 23:18:42 +0200",
+            "comment": "SM-2361: cxf feature should be present as a boot feature"
+        },
+        {
+            "c_hash": "a58a7610",
+            "date": "2014-09-07 00:11:33 +0200",
+            "comment": "SM-2321: Upgrade to pax-logging 1.4.7"
+        },
+        {
+            "c_hash": "270b3eca",
+            "date": "2014-09-08 22:54:50 +0200",
+            "comment": "SM-2367: Upgrade to Felix BundleRepository 2.0.2"
+        },
+        {
+            "c_hash": "5d896ae7",
+            "date": "2014-09-22 22:27:46 +0200",
+            "comment": "SM-2321: Upgrade to Pax Url 2.2.0, correct OSGi version"
+        },
+        {
+            "c_hash": "f4290405",
+            "date": "2014-09-22 21:19:56 +0200",
+            "comment": "SM-2376: Incorrect javax.annotation version for java7"
+        },
+        {
+            "c_hash": "7fcdc95c",
+            "date": "2014-09-22 21:23:37 +0200",
+            "comment": "SM-2377: Java8 packages related to JavaFX are missing"
+        },
+        {
+            "c_hash": "db73ca6c",
+            "date": "2014-09-22 21:35:03 +0200",
+            "comment": "SM-2372: Upgrade to Pax Exam 4.2.0"
+        },
+        {
+            "c_hash": "12a2aeb7",
+            "date": "2014-09-28 21:42:22 +0200",
+            "comment": "SM-2381: Web Script Console Plugin"
+        },
+        {
+            "c_hash": "ba1ee8ea",
+            "date": "2014-11-03 22:11:04 +0100",
+            "comment": "SM-2368: Upgrade to Camel 2.14.0 and CXF 3.0.2"
+        },
+        {
+            "c_hash": "5eed29af",
+            "date": "2014-11-03 23:50:32 +0100",
+            "comment": "SM-2321: Upgrade to Karaf 3.0.2"
+        },
+        {
+            "c_hash": "63b39fbf",
+            "date": "2014-11-07 22:18:10 +0100",
+            "comment": "Use xerces.version parameter while defining xerces as plugin dependency"
+        },
+        {
+            "c_hash": "90186cc2",
+            "date": "2014-11-07 22:23:01 +0100",
+            "comment": "SM-2399: Upgrade to Apache POM 15"
+        },
+        {
+            "c_hash": "6317f93f",
+            "date": "2014-11-08 00:02:59 +0100",
+            "comment": "SM-2398: Upgrade maven plugins"
+        },
+        {
+            "c_hash": "892a78ca",
+            "date": "2014-11-08 00:04:04 +0100",
+            "comment": "SM-2400: Upgrade to Felix maven-bundle-plugin 2.5.3"
+        },
+        {
+            "c_hash": "abee1d24",
+            "date": "2014-11-08 00:09:57 +0100",
+            "comment": "SM-2403: Upgrade to maven-surefire-plugin 2.18"
+        },
+        {
+            "c_hash": "71045013",
+            "date": "2014-11-08 01:00:23 +0100",
+            "comment": "SM-2392: Upgrade to Pax Exam 4.3.0"
+        },
+        {
+            "c_hash": "53e81af7",
+            "date": "2014-11-08 00:59:04 +0100",
+            "comment": "SM-2402: Use correct cxf.codegen-plugin version"
+        },
+        {
+            "c_hash": "4f39520e",
+            "date": "2014-11-09 20:03:42 +0100",
+            "comment": "SM-2393: Upgrade to Activiti 5.16.4"
+        },
+        {
+            "c_hash": "e47d4cc3",
+            "date": "2014-11-11 14:46:15 +0100",
+            "comment": "SM-2388: Add \"update-strategy\" to camel-blueprint example"
+        },
+        {
+            "c_hash": "4c4e3571",
+            "date": "2014-11-11 14:59:32 +0100",
+            "comment": "SM-2396: CXF WSN sample installation fails"
+        }
+    ]
+}

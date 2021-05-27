@@ -1,0 +1,1 @@
+./runExperiment.sh configFiles/test/$1-config.json $1

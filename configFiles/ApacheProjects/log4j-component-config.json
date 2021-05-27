@@ -1,0 +1,348 @@
+{
+    "project": "log4j-component",
+    "git_url": "https://github.com/apache/log4j-component.git",
+    "last_commit": "2806b48b",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "7d824657",
+            "date": "2007-04-11 20:49:23 +0000",
+            "comment": "Bug 42094: log4j 1.3 component model artifact"
+        },
+        {
+            "c_hash": "79502f2b",
+            "date": "2007-04-11 20:51:52 +0000",
+            "comment": "Bug 42042: Copy org.apache.log4j.plugins to component project"
+        },
+        {
+            "c_hash": "6e1e7588",
+            "date": "2007-04-11 20:52:32 +0000",
+            "comment": "Bug 42042: Copy org.apache.log4j.scheduler to component project"
+        },
+        {
+            "c_hash": "f6110ab6",
+            "date": "2007-04-11 20:53:32 +0000",
+            "comment": "Bug 42042: Copy org.apache.log4j.ULogger to component project"
+        },
+        {
+            "c_hash": "d2f6f2ed",
+            "date": "2007-04-11 20:56:13 +0000",
+            "comment": "Bug 42042: Copy org.apache.log4j.spi to component project"
+        },
+        {
+            "c_hash": "09a88821",
+            "date": "2007-04-11 20:56:48 +0000",
+            "comment": "Bug 42042: Copy org.apache.log4j.helpers to component project"
+        },
+        {
+            "c_hash": "950d30e3",
+            "date": "2007-04-11 21:13:46 +0000",
+            "comment": "Bug 42094: Remove stale o.a.l.spi package"
+        },
+        {
+            "c_hash": "bef54e5c",
+            "date": "2007-04-11 21:14:10 +0000",
+            "comment": "Bug 42094: Remove stale o.a.l.helpers package"
+        },
+        {
+            "c_hash": "dd792bb8",
+            "date": "2007-04-11 21:22:06 +0000",
+            "comment": "Bug 42094: Refresh o.a.l.spi and o.a.l.helpers from log4j 1.3"
+        },
+        {
+            "c_hash": "c6078d65",
+            "date": "2007-04-11 21:40:18 +0000",
+            "comment": "Bug 42094: Final touches on initial pass on log4j 1.3 component project"
+        },
+        {
+            "c_hash": "977fb7a6",
+            "date": "2007-04-18 19:36:23 +0000",
+            "comment": "Bug 42094: Add NOTICE and LICENSE to jar"
+        },
+        {
+            "c_hash": "f64ff48c",
+            "date": "2007-04-19 17:27:30 +0000",
+            "comment": "Bug 42094: Add LoggerRepositoryExImpl"
+        },
+        {
+            "c_hash": "b8ce7eef",
+            "date": "2007-04-20 04:30:48 +0000",
+            "comment": "Bug 42094: Adding tests (currently failing) and web content"
+        },
+        {
+            "c_hash": "ce23270e",
+            "date": "2007-04-20 19:12:20 +0000",
+            "comment": "Bug 42094: Continued evolution of site, added Ant build for Gump"
+        },
+        {
+            "c_hash": "f333510b",
+            "date": "2007-04-20 19:13:01 +0000",
+            "comment": "Bug 42094: Resource file for test"
+        },
+        {
+            "c_hash": "dfa098ab",
+            "date": "2007-04-20 20:03:48 +0000",
+            "comment": "Bug 42094: Fix bad line endings, other Ant mods"
+        },
+        {
+            "c_hash": "7b6ed0a7",
+            "date": "2007-04-20 20:54:12 +0000",
+            "comment": "Bug 42904: Fix coverage report generation"
+        },
+        {
+            "c_hash": "7f45faa2",
+            "date": "2007-04-20 21:57:09 +0000",
+            "comment": "Bug 42904: Copy over fixed PluginTestCase from log4j 1.3"
+        },
+        {
+            "c_hash": "5c0c3916",
+            "date": "2007-04-21 20:55:38 +0000",
+            "comment": "Bug 42094: Add PluginConfigurator"
+        },
+        {
+            "c_hash": "958e9b2a",
+            "date": "2007-04-23 05:41:00 +0000",
+            "comment": "Bug 42094: Replaced symlink'd MockReceiver.java with actual copy"
+        },
+        {
+            "c_hash": "17816f24",
+            "date": "2007-04-25 04:28:05 +0000",
+            "comment": "Bug 42094: Fixed reports macro, CR to LF"
+        },
+        {
+            "c_hash": "1ca37377",
+            "date": "2007-04-25 06:16:15 +0000",
+            "comment": "Bug 42094: Add o.a.l.h.Constants to component companion, needed by receivers"
+        },
+        {
+            "c_hash": "34a281f2",
+            "date": "2007-04-25 10:38:41 +0000",
+            "comment": "Switching report macro to menu ref='reports'"
+        },
+        {
+            "c_hash": "83774019",
+            "date": "2007-04-26 05:16:04 +0000",
+            "comment": "Bug 42094: Refactor to use UnrecognizedElementHandler, o.a.l.xml.PluginConfigurator moved to o.a.l.plugins"
+        },
+        {
+            "c_hash": "99b7881a",
+            "date": "2007-04-26 18:06:16 +0000",
+            "comment": "Bug 42094: PluginConfigurator tweaks"
+        },
+        {
+            "c_hash": "1865e6b2",
+            "date": "2007-04-29 02:38:37 +0000",
+            "comment": "Bug 42094: Broken refs to DOMConfig in PluginConfigurator"
+        },
+        {
+            "c_hash": "8e59595a",
+            "date": "2007-06-04 19:57:41 +0000",
+            "comment": "Moving log4j compansions out of sandbox"
+        },
+        {
+            "c_hash": "dc6afb21",
+            "date": "2007-06-05 00:34:09 +0000",
+            "comment": "Bug 42094: Change version to 1.0, add docs, other product goodies"
+        },
+        {
+            "c_hash": "4da853dc",
+            "date": "2007-06-05 04:43:29 +0000",
+            "comment": "Bug 42094: Fix src/assembly/bin.xml, other minor changes"
+        },
+        {
+            "c_hash": "a0b191a3",
+            "date": "2007-06-05 13:50:38 +0000",
+            "comment": "Bug 42094: Drop Specification from manifest in ant build"
+        },
+        {
+            "c_hash": "1a8ef54c",
+            "date": "2007-06-21 04:59:55 +0000",
+            "comment": "Bug 42094: Switch back to junit 3.8.1 for pre-JDK 5, support testing existing jars"
+        },
+        {
+            "c_hash": "c360a0d2",
+            "date": "2007-06-21 05:00:52 +0000",
+            "comment": "[maven-release-plugin] prepare release v1_0_rc1"
+        },
+        {
+            "c_hash": "f971fcfb",
+            "date": "2007-06-21 05:01:04 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "34032733",
+            "date": "2007-06-21 05:17:40 +0000",
+            "comment": "Bug 42094: Drop -bin off distribution file name"
+        },
+        {
+            "c_hash": "c9a95457",
+            "date": "2007-06-21 05:18:28 +0000",
+            "comment": "[maven-release-plugin] prepare release v1_0_rc2"
+        },
+        {
+            "c_hash": "682cee6c",
+            "date": "2007-06-21 05:18:34 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "9d8be836",
+            "date": "2007-06-27 22:41:56 +0000",
+            "comment": "Bug 42094: Harmonization of companions"
+        },
+        {
+            "c_hash": "7f97f6a4",
+            "date": "2007-06-27 23:33:13 +0000",
+            "comment": "[maven-release-plugin] prepare release v1_0_rc3"
+        },
+        {
+            "c_hash": "7df829fa",
+            "date": "2007-06-27 23:33:22 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "37c78e9c",
+            "date": "2007-07-04 17:46:41 +0000",
+            "comment": "Bug 42783: Remove companions that were rolled into extras"
+        },
+        {
+            "c_hash": "e9fabf4f",
+            "date": "2007-07-05 04:33:44 +0000",
+            "comment": "Bug 42783: Revert misplaced edit"
+        },
+        {
+            "c_hash": "801d9343",
+            "date": "2007-07-21 01:00:57 +0000",
+            "comment": "Bug 37930: web site staging to SVN repo"
+        },
+        {
+            "c_hash": "a5f6cadd",
+            "date": "2007-07-21 17:22:25 +0000",
+            "comment": "Bug 42094: Set mime-type on staged content"
+        },
+        {
+            "c_hash": "e25742be",
+            "date": "2007-08-13 05:17:45 +0000",
+            "comment": "Remove all Javadoc @since 1.3 references (1.3 is obsoleted) - see http://issues.apache.org/bugzilla/show_bug.cgi?id=43101"
+        },
+        {
+            "c_hash": "61b99f38",
+            "date": "2007-08-23 13:38:35 +0000",
+            "comment": "Removing constants from extras & component (was added to log4j)"
+        },
+        {
+            "c_hash": "f4392ad0",
+            "date": "2007-08-23 17:48:58 +0000",
+            "comment": "- Move helpers/Constants out of log4j and back to component - Remove reference to Constants from socketappender - Use Constants for hostname key in socketnode13"
+        },
+        {
+            "c_hash": "03954810",
+            "date": "2007-08-28 21:08:43 +0000",
+            "comment": "Remove prospective release date and downloads"
+        },
+        {
+            "c_hash": "01ad86e9",
+            "date": "2007-08-30 22:02:18 +0000",
+            "comment": "Eliminate PluginConfiguration by adding dependency on log4j 1.2.15"
+        },
+        {
+            "c_hash": "d07c3794",
+            "date": "2007-09-05 17:03:49 +0000",
+            "comment": "Bug 43312: Mangled source-repository.html"
+        },
+        {
+            "c_hash": "fc3d7b39",
+            "date": "2008-06-06 16:55:09 +0000",
+            "comment": "Update ASL header"
+        },
+        {
+            "c_hash": "77268891",
+            "date": "2009-10-03 17:06:45 +0000",
+            "comment": "Commit patches provided by Antonio Petrelli - thanks Antonio"
+        },
+        {
+            "c_hash": "f7044ed0",
+            "date": "2010-02-23 07:32:41 +0000",
+            "comment": "Chainsaw updates: Minor layout changes to give messages more room by default  - Default timestamp format changed to HH:MM:ss  - Now using level text instead of icons  - Modified column widths to be a little narrower"
+        },
+        {
+            "c_hash": "2d70f41d",
+            "date": "2010-03-01 02:04:35 +0000",
+            "comment": "Provide a user-readable default plugin name"
+        },
+        {
+            "c_hash": "ac5a9e99",
+            "date": "2010-06-05 16:05:41 +0000",
+            "comment": "Bug 49390: Avoid Doxia bug, set explicit encoding, rat check"
+        },
+        {
+            "c_hash": "8fbd6e9b",
+            "date": "2010-06-08 04:19:27 +0000",
+            "comment": "Bug 49390: pom.xml tweaks"
+        },
+        {
+            "c_hash": "04cea01b",
+            "date": "2010-06-19 07:39:58 +0000",
+            "comment": "Added rat maven plugin support to chainsaw, component, extras, receivers and zeroconf"
+        },
+        {
+            "c_hash": "ac060ecb",
+            "date": "2010-06-19 23:47:34 +0000",
+            "comment": "Bug 49078: javadoc.jar was missing NOTICE and LICENSE"
+        },
+        {
+            "c_hash": "cefd7f7e",
+            "date": "2011-08-09 08:33:09 +0000",
+            "comment": "added poms to parent pom"
+        },
+        {
+            "c_hash": "b8bf03cb",
+            "date": "2011-08-15 10:47:38 +0000",
+            "comment": "upgraded to maven 3"
+        },
+        {
+            "c_hash": "b40141c7",
+            "date": "2011-08-16 09:26:07 +0000",
+            "comment": "maven logo for new branding"
+        },
+        {
+            "c_hash": "f90688d1",
+            "date": "2011-08-16 09:27:03 +0000",
+            "comment": "moved build plugin configuration to parent project"
+        },
+        {
+            "c_hash": "d922872c",
+            "date": "2011-08-16 09:40:51 +0000",
+            "comment": "removed build targets from build file"
+        },
+        {
+            "c_hash": "c63f50e3",
+            "date": "2011-08-16 10:26:02 +0000",
+            "comment": "cleaned up pom files, moved plugins to parent pom, formatting etc"
+        },
+        {
+            "c_hash": "e7fcc89b",
+            "date": "2011-08-17 07:54:34 +0000",
+            "comment": "completed branding requirements"
+        },
+        {
+            "c_hash": "cc3c7ab5",
+            "date": "2011-08-17 07:57:05 +0000",
+            "comment": "emphasize trademark"
+        },
+        {
+            "c_hash": "d9d70684",
+            "date": "2011-08-17 08:14:52 +0000",
+            "comment": "Update relative path to companions parent"
+        },
+        {
+            "c_hash": "f0f16812",
+            "date": "2011-08-25 02:53:11 +0000",
+            "comment": "Reverting rev 1161366 due to Gump breakage"
+        },
+        {
+            "c_hash": "2806b48b",
+            "date": "2012-05-26 15:48:32 +0000",
+            "comment": "moved components to extras"
+        }
+    ]
+}

@@ -1,0 +1,698 @@
+{
+    "project": "nuvem",
+    "git_url": "https://github.com/apache/nuvem.git",
+    "last_commit": "b92a21dc",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "906f7807",
+            "date": "2010-07-10 19:55:20 +0000",
+            "comment": "Initial project structure"
+        },
+        {
+            "c_hash": "1e637bbc",
+            "date": "2010-07-21 05:19:13 +0000",
+            "comment": "First commit, test commit access."
+        },
+        {
+            "c_hash": "a0a14e49",
+            "date": "2010-07-29 01:29:19 +0000",
+            "comment": "Adding main LICENSE, NOTICE and DISCLAIMER files as per ASF policy"
+        },
+        {
+            "c_hash": "20e2bf4c",
+            "date": "2010-07-29 01:39:20 +0000",
+            "comment": "Adding parent pom for Nuvem project"
+        },
+        {
+            "c_hash": "c6bf86a9",
+            "date": "2010-08-01 04:30:58 +0000",
+            "comment": "Renaming modules, refactoring packages, etc"
+        },
+        {
+            "c_hash": "39891107",
+            "date": "2010-08-01 04:33:19 +0000",
+            "comment": "svn propset svn:ignore"
+        },
+        {
+            "c_hash": "d04197a7",
+            "date": "2010-08-01 04:33:54 +0000",
+            "comment": "svn propset svn:ignore"
+        },
+        {
+            "c_hash": "4065f535",
+            "date": "2010-08-26 07:16:36 +0000",
+            "comment": "Corrected, sub module POM files refer to a wrong module name as the parent artifactId."
+        },
+        {
+            "c_hash": "75c96958",
+            "date": "2010-09-10 16:32:25 +0000",
+            "comment": "Moving to Snapshot version of Tuscany as we need some fixes related to GAE support"
+        },
+        {
+            "c_hash": "60b4a25b",
+            "date": "2010-09-10 16:32:27 +0000",
+            "comment": "Bumping up the version of the store-catalog deployed to GAE"
+        },
+        {
+            "c_hash": "ab3babe3",
+            "date": "2010-09-10 16:32:29 +0000",
+            "comment": "Updating to latest GAE SDK"
+        },
+        {
+            "c_hash": "f2f6578c",
+            "date": "2010-09-10 16:32:31 +0000",
+            "comment": "Renaming composition name to make it easier to differentiate apps in the GAE env"
+        },
+        {
+            "c_hash": "7c1c772d",
+            "date": "2010-09-10 16:32:33 +0000",
+            "comment": "Bumping up the application version at GAE"
+        },
+        {
+            "c_hash": "022f8a3a",
+            "date": "2010-09-10 16:32:35 +0000",
+            "comment": "Renaming composition name to make it easier to differentiate apps in the GAE env"
+        },
+        {
+            "c_hash": "724d6d9d",
+            "date": "2010-09-10 16:32:38 +0000",
+            "comment": "Making handling catalog references more flexible"
+        },
+        {
+            "c_hash": "4917f626",
+            "date": "2010-09-13 16:32:55 +0000",
+            "comment": "Adding noarg default constructor"
+        },
+        {
+            "c_hash": "c311b0ff",
+            "date": "2010-09-13 16:32:58 +0000",
+            "comment": "Tweaking pom to have proper GAE dependencies to avoid runtime issues"
+        },
+        {
+            "c_hash": "8db642b9",
+            "date": "2010-09-17 06:50:44 +0000",
+            "comment": "Minor change to switch to isEmpty()"
+        },
+        {
+            "c_hash": "25ee5922",
+            "date": "2010-09-17 06:50:48 +0000",
+            "comment": "Fixing up Apache License headers and other minor updates to confguration files"
+        },
+        {
+            "c_hash": "f56d914e",
+            "date": "2010-09-17 22:04:33 +0000",
+            "comment": "Work around the ClassCastException"
+        },
+        {
+            "c_hash": "b05344e8",
+            "date": "2010-09-19 02:48:50 +0000",
+            "comment": "Tweaking GAE dependencies to avoid Eclipse complains"
+        },
+        {
+            "c_hash": "1a55d020",
+            "date": "2010-09-20 07:14:40 +0000",
+            "comment": "A standalone store sample connecting to a python catalog from gae"
+        },
+        {
+            "c_hash": "0a3f7a02",
+            "date": "2010-09-20 07:14:46 +0000",
+            "comment": "NUVEM-1 - Applying patch from Avdhesh Yadav to add test cases to GAE DocumentStore implementations"
+        },
+        {
+            "c_hash": "3e9d979b",
+            "date": "2010-09-20 07:14:49 +0000",
+            "comment": "Installing test dependencies required by NUVEM-1"
+        },
+        {
+            "c_hash": "229731ec",
+            "date": "2010-09-20 23:33:58 +0000",
+            "comment": "Refactoring catalog interface for compatibility with python catalog interface where get is a reserved rest method name convention"
+        },
+        {
+            "c_hash": "74521632",
+            "date": "2010-09-21 00:15:00 +0000",
+            "comment": "Removing unused dependency"
+        },
+        {
+            "c_hash": "7577343f",
+            "date": "2010-09-21 17:10:44 +0000",
+            "comment": "Updating test case to reflect recently catalog content changes"
+        },
+        {
+            "c_hash": "ee570c13",
+            "date": "2010-09-21 17:58:37 +0000",
+            "comment": "Refactoring catalog interface in store-assets for compatibility with python catalog interface where get is a reserved rest method name convention"
+        },
+        {
+            "c_hash": "8f4dc444",
+            "date": "2010-09-21 18:38:12 +0000",
+            "comment": "Add a local Catalog component. Change list of fruits to help distinguish the different catalogs."
+        },
+        {
+            "c_hash": "0a73370c",
+            "date": "2010-09-22 01:53:45 +0000",
+            "comment": "Adding standalone in-memory implementation of DocumentServices based on simple HashMap"
+        },
+        {
+            "c_hash": "0be026d4",
+            "date": "2010-09-22 01:53:48 +0000",
+            "comment": "Tidyng up GAE implementation for DocumentService"
+        },
+        {
+            "c_hash": "82956d37",
+            "date": "2010-09-22 01:53:52 +0000",
+            "comment": "Refactoring ShoppingCart to use a reference to a DocumentService component to allow easily rewiring different storage utility components"
+        },
+        {
+            "c_hash": "987fb8f3",
+            "date": "2010-09-22 02:27:00 +0000",
+            "comment": "Bumping up the version to avoid overriding stable versions of the demo"
+        },
+        {
+            "c_hash": "19205485",
+            "date": "2010-10-01 05:10:04 +0000",
+            "comment": "Fixing RAT issues"
+        },
+        {
+            "c_hash": "db2558f0",
+            "date": "2010-11-21 05:15:50 +0000",
+            "comment": "Updating to Tuscany 2.0-M5.1 to get GAE related fixes"
+        },
+        {
+            "c_hash": "2e314911",
+            "date": "2010-11-21 05:17:16 +0000",
+            "comment": "NUVEM-6 - Applying patch from John Pradeep with new XMPP component support"
+        },
+        {
+            "c_hash": "92721ff6",
+            "date": "2010-11-21 05:19:15 +0000",
+            "comment": "Formating code"
+        },
+        {
+            "c_hash": "22801038",
+            "date": "2010-11-21 05:40:24 +0000",
+            "comment": "Adding missing Apache License headers and validating with rat (mvn -Prat)"
+        },
+        {
+            "c_hash": "395c3362",
+            "date": "2010-11-25 22:23:30 +0000",
+            "comment": "Changing test cases to run on port 8085 instead of 8080"
+        },
+        {
+            "c_hash": "10bb203a",
+            "date": "2010-12-10 18:00:14 +0000",
+            "comment": "Fixing store standalone tests"
+        },
+        {
+            "c_hash": "68383b3b",
+            "date": "2010-12-10 18:00:19 +0000",
+            "comment": "Upgrade to latest Apache parent pom"
+        },
+        {
+            "c_hash": "17bc819d",
+            "date": "2010-12-27 06:23:28 +0000",
+            "comment": "Apply John's patch from JIRA issue NUVEM-7. Modifications to the XMPP API and store sample."
+        },
+        {
+            "c_hash": "4e0332f6",
+            "date": "2011-02-11 07:57:10 +0000",
+            "comment": "Strawman components for simple parallel programming. No list support yet."
+        },
+        {
+            "c_hash": "c8199d0b",
+            "date": "2011-02-11 09:01:16 +0000",
+            "comment": "Starting to add components to work with lists, mapping and filtering."
+        },
+        {
+            "c_hash": "eccb33ce",
+            "date": "2011-02-12 07:07:19 +0000",
+            "comment": "Standalone XMPP server based on Vysper"
+        },
+        {
+            "c_hash": "17037ef0",
+            "date": "2011-02-20 20:59:10 +0000",
+            "comment": "Move component implementation scripts under a nuvem package."
+        },
+        {
+            "c_hash": "57e0edc9",
+            "date": "2011-02-26 21:09:25 +0000",
+            "comment": "Add more useful component implementations to work with urls, text, operators, iterate through lists, maps etc."
+        },
+        {
+            "c_hash": "da725dd7",
+            "date": "2011-03-07 02:24:31 +0000",
+            "comment": "Make 'list' component easier to compose by using one reference per element in the list, instead of a 'cons'-like linked list construction pattern. Rename the original list component to 'cons'."
+        },
+        {
+            "c_hash": "525c2a67",
+            "date": "2011-03-10 18:32:56 +0000",
+            "comment": "Replaced ${pom.version} by  ${project.version} as it deprecated in Maven 3.0."
+        },
+        {
+            "c_hash": "ecb795b2",
+            "date": "2011-03-13 19:20:57 +0000",
+            "comment": "Add components that eval a python expression and execute a python statement."
+        },
+        {
+            "c_hash": "2b8f7700",
+            "date": "2011-03-20 23:37:22 +0000",
+            "comment": "Add .gitignore file to tell git to ignore build outputs."
+        },
+        {
+            "c_hash": "e25e3470",
+            "date": "2011-03-20 23:37:26 +0000",
+            "comment": "Add components to format and parse text. Change join and replace components to support unwired references."
+        },
+        {
+            "c_hash": "f39ebf9d",
+            "date": "2011-03-22 04:55:39 +0000",
+            "comment": "Added maven-gae-plugin for appengine samples."
+        },
+        {
+            "c_hash": "8f622e9e",
+            "date": "2011-03-22 05:24:47 +0000",
+            "comment": "Added exec-maven-plugin to run Python tests."
+        },
+        {
+            "c_hash": "6af659e9",
+            "date": "2011-03-27 00:02:30 +0000",
+            "comment": "Exclude /components/comp-name prefix from path returned by the path component."
+        },
+        {
+            "c_hash": "ade617a2",
+            "date": "2011-03-27 00:02:34 +0000",
+            "comment": "Add a few components to help work with social APIs."
+        },
+        {
+            "c_hash": "2c865fc6",
+            "date": "2011-03-27 00:02:37 +0000",
+            "comment": "Add components to help apps handle user interactions, timer and location change events."
+        },
+        {
+            "c_hash": "2d804420",
+            "date": "2011-03-28 20:35:42 +0000",
+            "comment": "Added necessary javadocs and refactored the code to provide a XMPPConnector implementation to the XMPPEndPoint which will abstract the process of establishing connection to the XMPPServer so that there could be different strategies later."
+        },
+        {
+            "c_hash": "01bb88e8",
+            "date": "2011-03-28 20:40:05 +0000",
+            "comment": "Added necessary javadocs and refactored the code to provide a XMPPConnector implementation to the XMPPEndPoint which will abstract the process of establishing connection to the XMPPServer so that there could be different strategies later."
+        },
+        {
+            "c_hash": "f43b5f2e",
+            "date": "2011-03-28 20:56:03 +0000",
+            "comment": "Implemented XMPPConnector implementation and restructured the folders into client/server to provide standalone XMPP server implementation"
+        },
+        {
+            "c_hash": "4d8b26ef",
+            "date": "2011-03-28 21:00:54 +0000",
+            "comment": "composite file wiring xmpp component and its connector"
+        },
+        {
+            "c_hash": "a7229f36",
+            "date": "2011-04-04 07:57:30 +0000",
+            "comment": "Refactor and cleanup assoc. button, format and parse components. Add a date component."
+        },
+        {
+            "c_hash": "193d3409",
+            "date": "2011-04-04 08:03:58 +0000",
+            "comment": "Add database and search components."
+        },
+        {
+            "c_hash": "a142476f",
+            "date": "2011-04-04 22:08:37 +0000",
+            "comment": "Structured the code to support Different Connectors 1. Simple Connector - unsecured connection to the XMPP Server 2. SSL Connector - secure way to connect to the XMPP Server"
+        },
+        {
+            "c_hash": "66ff272e",
+            "date": "2011-04-15 00:31:09 +0000",
+            "comment": "Implemented Asynchronous XMPP Reciever for stand-alone XMPP Server and cleaned up some code."
+        },
+        {
+            "c_hash": "941bab2c",
+            "date": "2011-04-15 00:32:15 +0000",
+            "comment": "Implemented Asynchronous XMPP Reciever for stand-alone XMPP Server and cleaned up some code."
+        },
+        {
+            "c_hash": "ff39668e",
+            "date": "2011-04-15 00:35:40 +0000",
+            "comment": "Implemented Asynchronous XMPP Reciever for stand-alone XMPP Server and cleaned up some code."
+        },
+        {
+            "c_hash": "a196242e",
+            "date": "2011-04-17 18:18:25 +0000",
+            "comment": "Refactor event entry point services."
+        },
+        {
+            "c_hash": "8550992b",
+            "date": "2011-04-17 18:18:31 +0000",
+            "comment": "Add a few search components."
+        },
+        {
+            "c_hash": "bf69113d",
+            "date": "2011-04-17 18:18:43 +0000",
+            "comment": "Add a few more list processing and math / computing components. Minor improvements to list, text and date components to make them a bit more robust."
+        },
+        {
+            "c_hash": "09e73d80",
+            "date": "2011-05-02 06:01:17 +0000",
+            "comment": "Refactor start, stop, and timer event components."
+        },
+        {
+            "c_hash": "767b5ef9",
+            "date": "2011-05-02 23:06:39 +0000",
+            "comment": "Adding the initial XMPP presence management code, this code will be revised/refactored and appropriate test cases and sample code for store app will be added as the next step"
+        },
+        {
+            "c_hash": "0df522bb",
+            "date": "2011-05-02 23:07:39 +0000",
+            "comment": "organized packages more appropriately to support various xmpp features like messaging, presence management, pubsub etc"
+        },
+        {
+            "c_hash": "56357117",
+            "date": "2011-05-02 23:08:59 +0000",
+            "comment": "organized packages more appropriately to support various xmpp features like messaging, presence management, pubsub etc"
+        },
+        {
+            "c_hash": "2a9185ec",
+            "date": "2011-05-02 23:09:38 +0000",
+            "comment": "Initial Implementation code for Google XMPP Presence Management"
+        },
+        {
+            "c_hash": "f6648c0e",
+            "date": "2011-05-02 23:13:22 +0000",
+            "comment": "Standalone XMPP Presence Management implementation + simplifying few class names"
+        },
+        {
+            "c_hash": "311cd367",
+            "date": "2011-05-02 23:30:34 +0000",
+            "comment": "upgraded GAE API to the latest one which provides the new Presence management support, also modified a test case to reflect the package structure reorganization"
+        },
+        {
+            "c_hash": "20b6b1ba",
+            "date": "2011-05-02 23:33:52 +0000",
+            "comment": "Store App modified to reflect the new packate structure"
+        },
+        {
+            "c_hash": "51c31c37",
+            "date": "2011-05-07 22:18:44 +0000",
+            "comment": "all sample modules will be moved to a parent module - \"nuvem-samples\""
+        },
+        {
+            "c_hash": "a9296141",
+            "date": "2011-05-07 22:25:43 +0000",
+            "comment": "sample applications grouped under a single parent nuvem-samples"
+        },
+        {
+            "c_hash": "a133dee1",
+            "date": "2011-05-07 22:44:12 +0000",
+            "comment": "sample applications grouped under a single parent nuvem-samples"
+        },
+        {
+            "c_hash": "5b1e4fb9",
+            "date": "2011-05-07 22:51:16 +0000",
+            "comment": "features will be added as a package to the project specific to cloud platform"
+        },
+        {
+            "c_hash": "ce94a6f6",
+            "date": "2011-05-07 23:03:14 +0000",
+            "comment": "module restructuring + few folder structure changes to keep it consistent with all other modules"
+        },
+        {
+            "c_hash": "04165833",
+            "date": "2011-05-07 23:04:10 +0000",
+            "comment": "module restructuring + few folder structure changes to keep it consistent with all other modules"
+        },
+        {
+            "c_hash": "66f1b494",
+            "date": "2011-05-07 23:23:12 +0000",
+            "comment": "module restructuring + few folder structure changes to keep it consistent with all other modules"
+        },
+        {
+            "c_hash": "c019e6a9",
+            "date": "2011-05-08 00:06:05 +0000",
+            "comment": "updated the modules for the parent project"
+        },
+        {
+            "c_hash": "8a8ce6a8",
+            "date": "2011-05-08 00:17:44 +0000",
+            "comment": "added IBM and Azure modules"
+        },
+        {
+            "c_hash": "3db9edc0",
+            "date": "2011-05-08 00:19:57 +0000",
+            "comment": "removing .classpath which was added by mistake"
+        },
+        {
+            "c_hash": "45107e0c",
+            "date": "2011-05-08 00:23:01 +0000",
+            "comment": "GAE store application name restored to original one"
+        },
+        {
+            "c_hash": "95a9e9fd",
+            "date": "2011-05-17 22:30:37 +0000",
+            "comment": "Added necessary APIs to all XMPP clients to receive presence updates from the XMPP server"
+        },
+        {
+            "c_hash": "80668af8",
+            "date": "2011-05-22 22:47:15 +0000",
+            "comment": "Refactor and minor fixes to assoc and search components. Add a keychain component."
+        },
+        {
+            "c_hash": "4014bdc9",
+            "date": "2011-05-22 22:47:19 +0000",
+            "comment": "Refactor location component and add two geocoding components."
+        },
+        {
+            "c_hash": "bbd293dc",
+            "date": "2011-06-02 17:07:36 +0000",
+            "comment": "-upgraded GAE to a latest version -updated few pom to reflect parent/module relation -corrected a failing testcase"
+        },
+        {
+            "c_hash": "432a82d7",
+            "date": "2011-06-13 07:49:12 +0000",
+            "comment": "Add SMS sender component implementation."
+        },
+        {
+            "c_hash": "cdd7ad56",
+            "date": "2011-06-13 07:49:19 +0000",
+            "comment": "Add simple HTML generator component implementations."
+        },
+        {
+            "c_hash": "5960367c",
+            "date": "2011-06-19 21:16:55 +0000",
+            "comment": "Corrected code to recieve XMPP message in GAE"
+        },
+        {
+            "c_hash": "8baa33ed",
+            "date": "2011-06-19 21:19:08 +0000",
+            "comment": "configured sample app to make use of the XMPP Receiver in GAE"
+        },
+        {
+            "c_hash": "9d6e4c93",
+            "date": "2011-06-19 21:22:04 +0000",
+            "comment": "added missing library like the tuscany web runtime and jaxb databinding"
+        },
+        {
+            "c_hash": "5ebfde21",
+            "date": "2011-06-23 16:29:24 +0000",
+            "comment": "Set svn:ignore property for generated .pyc files. It would be  great if we can move them into target folder so that Maven clean can  remove them."
+        },
+        {
+            "c_hash": "8b923c42",
+            "date": "2011-06-29 17:13:22 +0000",
+            "comment": "Applied first patch for NUVEM-9 - Google Data Service support."
+        },
+        {
+            "c_hash": "f8791837",
+            "date": "2011-07-01 21:26:53 +0000",
+            "comment": "changed code to load certificate from class path which is required to start the vysper server"
+        },
+        {
+            "c_hash": "fa9071d2",
+            "date": "2011-07-04 23:25:12 +0000",
+            "comment": "updated proper namespaces, promoted required nuvem components and exported the namesapce for external use"
+        },
+        {
+            "c_hash": "61673976",
+            "date": "2011-07-04 23:28:35 +0000",
+            "comment": "refactored store.composite to use <implementation.composite> to make use of nuvem service"
+        },
+        {
+            "c_hash": "ab49c742",
+            "date": "2011-07-10 21:47:25 +0000",
+            "comment": "refactored to place the common code (which broadcasts recieved messages to listeners) in single place and also promoted xmpp service for standalone implementation"
+        },
+        {
+            "c_hash": "43764a65",
+            "date": "2011-07-10 21:50:27 +0000",
+            "comment": "refactored to place the common code (which broadcasts recieved messages to listeners) in single place and also promoted xmpp service for standalone implementation"
+        },
+        {
+            "c_hash": "69966350",
+            "date": "2011-07-13 22:24:05 +0000",
+            "comment": "--corrected the google presence reciever servlet to broadcast presence changes to listeners --modified the store application to demonstrate how to listen to presence changes and respond to such changes"
+        },
+        {
+            "c_hash": "d59ecd2e",
+            "date": "2011-08-05 16:24:00 +0000",
+            "comment": "Add components that generate CSS transforms and transitions."
+        },
+        {
+            "c_hash": "4ecae67b",
+            "date": "2011-08-05 16:24:04 +0000",
+            "comment": "Add components that implement a few useful math functions."
+        },
+        {
+            "c_hash": "2f8673ea",
+            "date": "2011-08-05 16:24:12 +0000",
+            "comment": "Implement type checks, checks for None values and automatic type conversions when necessary. Add a few more test cases."
+        },
+        {
+            "c_hash": "1252e6c3",
+            "date": "2011-08-25 15:46:02 +0000",
+            "comment": "Applied latest patch for NUVEM-9."
+        },
+        {
+            "c_hash": "7aa7bb6d",
+            "date": "2011-08-25 16:18:51 +0000",
+            "comment": "Temporally disable AmazonDataServiceImplTestCase."
+        },
+        {
+            "c_hash": "2d8c2246",
+            "date": "2011-11-30 08:04:50 +0000",
+            "comment": "Remove unnecessary import of sys.stderr."
+        },
+        {
+            "c_hash": "b28d00c7",
+            "date": "2012-02-12 09:34:48 +0000",
+            "comment": "Remove unwanted package."
+        },
+        {
+            "c_hash": "746a466b",
+            "date": "2012-03-03 06:12:02 +0000",
+            "comment": "Fixed the build failure. CassandraDataService require  external Cassandra instance to run this test case."
+        },
+        {
+            "c_hash": "64131dc3",
+            "date": "2012-03-03 06:55:57 +0000",
+            "comment": "Removed deprecated ${pom.version}"
+        },
+        {
+            "c_hash": "617d0d35",
+            "date": "2012-03-03 07:20:27 +0000",
+            "comment": "Added sample modules to  the top level POM so that samples also build with top level build."
+        },
+        {
+            "c_hash": "ce454c21",
+            "date": "2012-03-05 06:06:31 +0000",
+            "comment": "We should not keep IDE specific config files here."
+        },
+        {
+            "c_hash": "f1a4997b",
+            "date": "2012-03-05 06:15:51 +0000",
+            "comment": "Removed tuscany-sca-data-api dependency from Nuvem API . Now Nuvem API only depends on tuscany-sca-api."
+        },
+        {
+            "c_hash": "116bfcbb",
+            "date": "2012-03-05 06:36:03 +0000",
+            "comment": "NUVEM-13  - Introduced  a new module named nuvem-sca-config to isolate all Tuscany dependencies. Some one can use tuscany to  configure Nuvem components by making  this module as a dependency."
+        },
+        {
+            "c_hash": "5c00e1de",
+            "date": "2012-03-12 02:13:00 +0000",
+            "comment": "Removing empty folders to avoid git warnings"
+        },
+        {
+            "c_hash": "2a2d7bcc",
+            "date": "2012-03-12 02:34:37 +0000",
+            "comment": "Adding generated serialVersionUID to avoid eclipse warnings"
+        },
+        {
+            "c_hash": "70f7aa58",
+            "date": "2012-03-12 02:34:41 +0000",
+            "comment": "Addinf ASF header + minor formatting"
+        },
+        {
+            "c_hash": "1d98dd6d",
+            "date": "2012-03-12 02:34:46 +0000",
+            "comment": "Minor formatting"
+        },
+        {
+            "c_hash": "30f76b72",
+            "date": "2012-03-12 02:34:51 +0000",
+            "comment": "Minor formatting"
+        },
+        {
+            "c_hash": "3a6c6825",
+            "date": "2012-03-12 03:17:48 +0000",
+            "comment": "Updating to latest apache pom"
+        },
+        {
+            "c_hash": "b58b90d8",
+            "date": "2012-03-12 03:17:51 +0000",
+            "comment": "Moving to latest rat release"
+        },
+        {
+            "c_hash": "92fa9bfc",
+            "date": "2012-03-12 03:17:55 +0000",
+            "comment": "Updating rat configuration and profile documentation"
+        },
+        {
+            "c_hash": "6f17d154",
+            "date": "2012-03-12 03:18:02 +0000",
+            "comment": "Missing ASF license header"
+        },
+        {
+            "c_hash": "c5931fd2",
+            "date": "2012-03-14 04:38:14 +0000",
+            "comment": "Formatting using the Nuvem code style"
+        },
+        {
+            "c_hash": "e88f6472",
+            "date": "2012-03-14 07:42:10 +0000",
+            "comment": "Added Test for JID Validation"
+        },
+        {
+            "c_hash": "49a7caa1",
+            "date": "2012-03-17 18:14:39 +0000",
+            "comment": "Change database components to include appname instead of hostname in the database keys."
+        },
+        {
+            "c_hash": "742e61ba",
+            "date": "2012-03-24 03:23:18 +0000",
+            "comment": "Formatting ASL headers on pom.xml"
+        },
+        {
+            "c_hash": "7dab36ae",
+            "date": "2012-03-26 05:42:55 +0000",
+            "comment": "Fix bad formatting of ASL headers on composite files"
+        },
+        {
+            "c_hash": "d3978b38",
+            "date": "2012-04-02 01:07:44 +0000",
+            "comment": "NUVEM-17 - Fixing schema and formatting of Apache License header"
+        },
+        {
+            "c_hash": "6aa0ebe8",
+            "date": "2012-04-11 07:33:00 +0000",
+            "comment": "Applied patch for NUVEM-19."
+        },
+        {
+            "c_hash": "d354d61b",
+            "date": "2012-04-11 07:37:14 +0000",
+            "comment": "Applied patch for NUVEM-21."
+        },
+        {
+            "c_hash": "88b10f2b",
+            "date": "2012-04-11 07:50:47 +0000",
+            "comment": "Applied patch for NUVEM-22."
+        },
+        {
+            "c_hash": "b92a21dc",
+            "date": "2012-07-16 08:30:46 +0000",
+            "comment": "NUVEM-14 patch. Dulini's initial queue service implementation."
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+STATUS,START,END,SIZE,COMMIT_START,COMMIT_END,NUM_DIFF_EXCEPTION,EXCEPTION_:_SIZE
+NO_POM,0,2,3,906f7807f09f12a8c5c67add40ebf0f6646460ce,a0a14e498724a27fc715318be3b649677d269390,0, 
+BUILD_SUCCESSFUL,3,3,1,20e2bf4c5d4f5f56b2e863a3b8ed5d5ec913ff00,20e2bf4c5d4f5f56b2e863a3b8ed5d5ec913ff00,0, 
+BUILD_FAILURE,4,137,134,c6bf86a9739f164688564b395ce7d7d484ce73f1,b92a21dc6d902845810a67711e25a3f6fa9fb9f3,8,ArtifactResolutionException1:3;MojoExecutionException2:65;MojoFailureException3:1;MojoExecutionException4:5;ProjectBuildingException5:7;MojoExecutionException6:32;ProjectBuildingException7:1;MojoExecutionException8:20;

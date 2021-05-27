@@ -1,0 +1,6 @@
+commitID;commit-type;time-to-next-release;commit-message
+57025e107c757c16af57787b24dc6af3bf23468d;BREAKING_FIX;-;git-svn-id: https://svn.apache.org/repos/asf/struts/sandbox/trunk/struts2examples@1497921 13f79535-47bb-0310-9956-ffa450edef68 
+ba6b5aa2e51b1ca0432d30b4c20a66bff6c000a5;BREAKING_CHANGES;-;added helloworld as module git-svn-id: https://svn.apache.org/repos/asf/struts/sandbox/trunk/struts2examples@1497937 13f79535-47bb-0310-9956-ffa450edef68
+5a795c99d17e0dbfc48ad4c9645aa956700d98b3;BREAKING_FIX;-;Added Struts 2 and log4j dependencies git-svn-id: https://svn.apache.org/repos/asf/struts/sandbox/trunk/struts2examples@1497940 13f79535-47bb-0310-9956-ffa450edef68
+69a12d0ea6187ee9a69ab210fe1e520177b06a59;BREAKING_CHANGES;-;added message resource child module git-svn-id: https://svn.apache.org/repos/asf/struts/sandbox/trunk/struts2examples@1498487 13f79535-47bb-0310-9956-ffa450edef68
+69788e45f2890b939ed8935506b8863b8c5b8739;BREAKING_FIX;-;initial commit of Struts 2 Message Resource example application that goes with the Getting Started Struts 2 tutorials git-svn-id: https://svn.apache.org/repos/asf/struts/sandbox/trunk/struts2examples@1498490 13f79535-47bb-0310-9956-ffa450edef68

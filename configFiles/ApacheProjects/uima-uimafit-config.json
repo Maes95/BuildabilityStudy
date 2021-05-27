@@ -1,0 +1,1188 @@
+{
+    "project": "uima-uimafit",
+    "git_url": "https://github.com/apache/uima-uimafit.git",
+    "last_commit": "3a09c7b0",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "4270c4ae",
+            "date": "2012-12-13 18:49:33 +0000",
+            "comment": "[UIMA-2523] restructuring folders so uimafit has own trunk"
+        },
+        {
+            "c_hash": "b4c232c7",
+            "date": "2012-12-13 19:14:41 +0000",
+            "comment": "[UIMA-2523] restructuring folders so uimafit has own trunk"
+        },
+        {
+            "c_hash": "831b8ad1",
+            "date": "2012-12-13 19:16:21 +0000",
+            "comment": "[UIMA-2523] restructuring folders so uimafit, which has its own trunk, is directly under sandbox (no need for two trunks)"
+        },
+        {
+            "c_hash": "7ae89e70",
+            "date": "2012-12-13 19:20:14 +0000",
+            "comment": "[UIMA-2523] fixing case of top-level uimaFIT -> uimafit"
+        },
+        {
+            "c_hash": "aaeb68f5",
+            "date": "2012-12-14 23:34:54 +0000",
+            "comment": "[UIMA-2523] update modules to use lower case"
+        },
+        {
+            "c_hash": "9abc042f",
+            "date": "2012-12-17 16:10:21 +0000",
+            "comment": "[UIMA-2522] delete renamed pkgs"
+        },
+        {
+            "c_hash": "e7f1d042",
+            "date": "2012-12-25 14:45:57 +0000",
+            "comment": "NO JIRA - Added .gitignore"
+        },
+        {
+            "c_hash": "1965402e",
+            "date": "2012-12-25 14:50:04 +0000",
+            "comment": "[UIMA-2522] Rename packages - Renamed package package org.uimafit.component.xwriter in src/main/java - Renamed package package org.uimafit.component in src/main/java - Renamed package package org.uimafit.component.initialize in src/test/java - Renamed package package org.uimafit.factory in src/test/java - Renamed package package org.uimafit.factory.testAes in src/test/java - Renamed package package org.uimafit.factory.testCrs in src/test/java - Renamed package package org.uimafit.factory.testRes in src/test/java - Renamed type locations and packages - Renamed package org.uimafit.spring in src/test/java - Renamed package org.uimafit.spring in src/main/java - Renamed packages in examples"
+        },
+        {
+            "c_hash": "6c14e1bc",
+            "date": "2012-12-27 12:25:26 +0000",
+            "comment": "[UIMA-2541] Switch from Sonatype parent POM to Apache UIMA parent POM  https://issues.apache.org/jira/browse/UIMA-2541 - Updated parent POM - Updated SCM information - Removed reference to UIMA Maven repository - Update m2e lifecycle excludes"
+        },
+        {
+            "c_hash": "53380618",
+            "date": "2012-12-27 13:28:06 +0000",
+            "comment": "[UIMA-2538] Replace license header with header used elsewhere in UIMA - Removed legacy LicenseTest - Replaced previous license headers with default UIMA header - Applied copyright header to POM files - Reformatted some comments in POM files - Fixed encoding and formatting in NOTICE file - Updated copyright information in NOTICE file"
+        },
+        {
+            "c_hash": "c5118068",
+            "date": "2012-12-31 01:12:13 +0000",
+            "comment": "[UIMA-2535] Strip @author tags"
+        },
+        {
+            "c_hash": "0d73ccc6",
+            "date": "2013-01-04 01:13:00 +0000",
+            "comment": "[UIMA-2554] Change artifact coordinates"
+        },
+        {
+            "c_hash": "10a5771a",
+            "date": "2013-01-04 01:13:31 +0000",
+            "comment": "[UIMA-2553] Maven plugin to generate component descriptors from uimaFIT annotations at build time"
+        },
+        {
+            "c_hash": "f25079ca",
+            "date": "2013-01-04 01:17:27 +0000",
+            "comment": "[UIMA-2554] Change artifact coordinates"
+        },
+        {
+            "c_hash": "d351ea57",
+            "date": "2013-01-10 19:11:14 +0000",
+            "comment": "NO JIRA - Added Maven and Eclipse folders to svn:ignore."
+        },
+        {
+            "c_hash": "cb284264",
+            "date": "2013-01-10 19:50:38 +0000",
+            "comment": "[UIMA-2562]: Downgrade uimaFIT to Java 5 https://issues.apache.org/jira/browse/UIMA-2562 - Changed Java version to 1.5 - Removed @Override annotations for interface methods - Downgraded commons-io to 2.2 (last Java 5 version)"
+        },
+        {
+            "c_hash": "9414bbb5",
+            "date": "2013-01-10 23:03:10 +0000",
+            "comment": "[UIMA-2544] Apply UIMA code style https://issues.apache.org/jira/browse/UIMA-2544 - Added UIMA code style configuration for Eclipse to SVN. This is not covered by Maven/m2e."
+        },
+        {
+            "c_hash": "8548d69b",
+            "date": "2013-01-10 23:12:33 +0000",
+            "comment": "[UIMA-2544] Apply UIMA code style https://issues.apache.org/jira/browse/UIMA-2544 - Applied Eclipse's \"Format code\" function"
+        },
+        {
+            "c_hash": "50ff502c",
+            "date": "2013-01-18 00:16:49 +0000",
+            "comment": "- Removed .settings from gitignore."
+        },
+        {
+            "c_hash": "bd64679e",
+            "date": "2013-01-18 00:26:25 +0000",
+            "comment": "[UIMA-2540] Support legacy uimaFIT annotations in factory methods - Added Eclipse metadata files to gitignore - Added plugin module for legacy uimaFIT 1 support - Extended uimaFIT core module to automatically detect and use the module."
+        },
+        {
+            "c_hash": "ab5cf74f",
+            "date": "2013-01-20 20:09:38 +0000",
+            "comment": "[NO JIRA] Updated svn:ignores"
+        },
+        {
+            "c_hash": "93bf872f",
+            "date": "2013-01-20 20:47:08 +0000",
+            "comment": "[UIMA-2540] Support legacy uimaFIT annotations in factory methods https://issues.apache.org/jira/browse/UIMA-2540 - Included AnnotationLiteral originally from cdi-api (ASL 2.0) - Added license header to all Java files and POM"
+        },
+        {
+            "c_hash": "722cdba9",
+            "date": "2013-01-20 20:57:28 +0000",
+            "comment": "[NO JIRA] Removed empty legacy packages"
+        },
+        {
+            "c_hash": "00203018",
+            "date": "2013-01-20 20:59:06 +0000",
+            "comment": "[NO JIRA] Removed empty legacy packages"
+        },
+        {
+            "c_hash": "66376c8d",
+            "date": "2013-01-20 22:40:43 +0000",
+            "comment": "[UIMA-2587] @ConfigurationParameter - name should default to name of annotated field without class name https://issues.apache.org/jira/browse/UIMA-2587 - Default name is now only the field name - Removed ConfigurationParameterFactory.createConfigurationParameterName() method - Use legacy ConfigurationParameterFactory.createConfigurationParameterName() in test cases in legacy module - Changed legacy module to generate the old default value when the legacy annotation is used"
+        },
+        {
+            "c_hash": "cf67f061",
+            "date": "2013-01-24 23:42:06 +0000",
+            "comment": "[UIMA-2553] Maven plugin to generate component descriptors from uimaFIT annotations at build time - Write descriptors to ${project.build.directory}/generated-sources/uimafit (configurable) - Ignore unresolved dependencies (probably those out of scope, e.g. in \"test\" scope) - Add m2e life cycle mapping"
+        },
+        {
+            "c_hash": "dc60ed50",
+            "date": "2013-01-27 12:20:13 +0000",
+            "comment": "[UIMA-2599] Fill description of component and parameters from JavaDoc - uimafit-maven-plugin: Workaround for MNG-5346 to fix build - uimafit-maven-plugin: Added \"enhance\" mojo - uimafit-maven-plugin: Refactoring to extract common code from \"generate\" and \"enhance\" mojo - uimafit: moved some default values to Defaults.java. The Maven plugin can use this to check if a field has a default value or a customized value."
+        },
+        {
+            "c_hash": "15754cf4",
+            "date": "2013-01-27 13:23:33 +0000",
+            "comment": "[UIMA-2607] New annotation for component metadata - Added new annotation ResourceMetaData - Added new ResourceMetaDataFactory + test - Added support for this annotation to AE, CR and FC factories"
+        },
+        {
+            "c_hash": "3a0745db",
+            "date": "2013-01-27 21:00:28 +0000",
+            "comment": "[UIMA-2599] Fill description of component and parameters from JavaDoc [UIMA-2600] Fill vendor, version, etc. from Maven project - uimafit: Removed Defaults class again and moved functionality into ResourceMetaDataFactory - uimafit-maven-plugin: Moved extractor tests to correct package - uimafit-maven-plugin: Fixed ComponentDescriptionExtractor - uimafit-maven-plugin: Do not generate descriptors for abstract classes - uimafit-maven-plugin: Handle certain JavaDoc tags when extracting text"
+        },
+        {
+            "c_hash": "aca106fe",
+            "date": "2013-01-28 00:48:33 +0000",
+            "comment": "[UIMA-2553] Maven plugin to generate component descriptors from uimaFIT annotations at build time - Disable \"generate\" goal in incremental builds to reduce performance impact - Disable \"enhance\" goal on configuration because it does not modify the Maven model"
+        },
+        {
+            "c_hash": "38d2c993",
+            "date": "2013-01-28 02:42:42 +0000",
+            "comment": "[UIMA-2612] Mark enhanced files to avoid processing them multiple times - uimafit: Added EnhancedClassFile annotation - uimafit-maven-plugin: Add and honor EnhancedClassFile annotation - uimafit-maven-plugin: Log when class is not enhanced or was already enhanced [UIMA-2611] \"truncated class\" error sometimes during incremental builds - calling ctClazz.toBytecode() before writing in an attempt to work around the \"truncated class\""
+        },
+        {
+            "c_hash": "9ce91339",
+            "date": "2013-01-28 03:20:36 +0000",
+            "comment": "[UIMA-2600] Fill vendor, version, etc. from Maven project - Fixed bug that component metadata was only set if component JavaDoc was available"
+        },
+        {
+            "c_hash": "3d805bbe",
+            "date": "2013-02-12 20:35:14 +0000",
+            "comment": "NO JIRA - Test if array values can be passed to SharedResourceObjects"
+        },
+        {
+            "c_hash": "d08101e2",
+            "date": "2013-02-15 10:32:32 +0000",
+            "comment": "[UIMA-2553] Maven plugin to generate component descriptors from uimaFIT annotations at build time https://issues.apache.org/jira/browse/UIMA-2553 - Added simple integration test"
+        },
+        {
+            "c_hash": "adad7d22",
+            "date": "2013-02-15 10:49:56 +0000",
+            "comment": "[UIMA-2525] Add initTypeSystem Support to SimplePipeline https://issues.apache.org/jira/browse/UIMA-2525 - Call typeSystemInit on readers - Added test that typeSystemInit has really been called"
+        },
+        {
+            "c_hash": "99ed4d14",
+            "date": "2013-02-15 15:52:46 +0000",
+            "comment": "[UIMA-2553] Maven plugin to generate component descriptors from uimaFIT annotations at build time https://issues.apache.org/jira/browse/UIMA-2553 - Downgrade commons-io in integration test to be compatible with Java 1.5"
+        },
+        {
+            "c_hash": "52813b01",
+            "date": "2013-02-16 09:02:44 +0000",
+            "comment": "[UIMA-2553] Maven plugin to generate component descriptors from uimaFIT annotations at build time https://issues.apache.org/jira/browse/UIMA-2553 - Use xmlunit to compare descriptors since XML on Apache's Jenkins doesn't come out indented"
+        },
+        {
+            "c_hash": "545d6690",
+            "date": "2013-02-16 10:06:29 +0000",
+            "comment": "[UIMA-2553] Maven plugin to generate component descriptors from uimaFIT annotations at build time https://issues.apache.org/jira/browse/UIMA-2553 - Tell XMLUnit to ignore whitespace"
+        },
+        {
+            "c_hash": "b2fb5613",
+            "date": "2013-02-20 17:14:03 +0000",
+            "comment": "[UIMA-2679] Support legacy uimaFIT META-INF location https://issues.apache.org/jira/browse/UIMA-267 Issue UIMA-2679: Support legacy uimaFIT META-INF location https://issues.apache.org/jira/browse/UIMA-2679 - Marked several files as internal API - Changed META-INF location to org.apache.uima.fit - Extended LegacySupportModule to scan for descriptors - Moved descriptor scanning code to MetaDataUtil"
+        },
+        {
+            "c_hash": "01675e87",
+            "date": "2013-02-20 17:34:37 +0000",
+            "comment": "[UIMA-2587] @ConfigurationParameter - name should default to name of annotated field without class name https://issues.apache.org/jira/browse/UIMA-2587"
+        },
+        {
+            "c_hash": "a3d983a2",
+            "date": "2013-02-20 18:03:50 +0000",
+            "comment": "[UIMA-2683] Remove remaining references to \"org.uimafit\" https://issues.apache.org/jira/browse/UIMA-2683 - Removed references in comments/documentation - Renamed built-in values in Java annotations and updated legacy converters accordingly"
+        },
+        {
+            "c_hash": "555c78e2",
+            "date": "2013-02-21 08:36:52 +0000",
+            "comment": "[UIMA-2679] Support legacy uimaFIT META-INF location https://issues.apache.org/jira/browse/UIMA-2679 - Changed META-INF location to org.apache.uima.fit"
+        },
+        {
+            "c_hash": "d9079b15",
+            "date": "2013-02-23 19:40:47 +0000",
+            "comment": "[UIMA-2542] Migrate uimaFIT build process https://issues.apache.org/jira/browse/UIMA-2542 - Added NOTICE files to those modules that need it - Load NOTICE files and append them to META-INF/NOTICE in release builds - Removed configurations related to the old release process - Added missing license headers"
+        },
+        {
+            "c_hash": "d4fd263e",
+            "date": "2013-02-24 11:04:01 +0000",
+            "comment": "[UIMA-2613] Switch from Eclipse JDT to qdox https://issues.apache.org/jira/browse/UIMA-2613"
+        },
+        {
+            "c_hash": "e2ff5f06",
+            "date": "2013-02-25 20:00:37 +0000",
+            "comment": "[UIMA-2613] Switch from Eclipse JDT to qdox https://issues.apache.org/jira/browse/UIMA-2613 - Ignore parent classes while enhancing. These are enhanced separately anyway. - Better exception error messages."
+        },
+        {
+            "c_hash": "fc0680fd",
+            "date": "2013-02-25 21:27:28 +0000",
+            "comment": "NO JIRA - Formatting and removal of compiler warnings"
+        },
+        {
+            "c_hash": "24109ffe",
+            "date": "2013-02-25 22:06:42 +0000",
+            "comment": "[UIMA-2598] uimaFIT meta data file pointing to the location of XML descriptors https://issues.apache.org/jira/browse/UIMA-2598 - write META-INF/org.apache.uima.fit/components.txt unless option to skip is set"
+        },
+        {
+            "c_hash": "c3c6352b",
+            "date": "2013-02-28 21:27:24 +0000",
+            "comment": "[UIMA-2613] Switch from Eclipse JDT to qdox https://issues.apache.org/jira/browse/UIMA-2613 - Fixed NPE when no name constant field has been defined for a parameter field"
+        },
+        {
+            "c_hash": "1cc3d9d8",
+            "date": "2013-03-15 19:02:51 +0000",
+            "comment": "[UIMA-2598] uimaFIT meta data file pointing to the location of XML descriptors - Do not generate manifest file if there are no components"
+        },
+        {
+            "c_hash": "edd27ca0",
+            "date": "2013-03-15 22:24:52 +0000",
+            "comment": "[UIMA-2610] Report and fail build if meta data is missing https://issues.apache.org/jira/browse/UIMA-2610 - Added option to generate the report (enabled by default) - Added option to fail if meta data is missing (disabled by default)"
+        },
+        {
+            "c_hash": "b5c1fa69",
+            "date": "2013-03-30 15:52:13 +0000",
+            "comment": "[UIMA-2586] @ExternalResource - key should default to name of annotated field instead of the field type name https://issues.apache.org/jira/browse/UIMA-2586"
+        },
+        {
+            "c_hash": "ce062a1b",
+            "date": "2013-03-30 16:55:19 +0000",
+            "comment": "[UIMA-2779] External resources and parameters should be mandatory by default https://issues.apache.org/jira/browse/UIMA-2779"
+        },
+        {
+            "c_hash": "18e78370",
+            "date": "2013-03-30 19:03:13 +0000",
+            "comment": "[UIMA-2780] Initialize multi-value parameters with a single value https://issues.apache.org/jira/browse/UIMA-2780"
+        },
+        {
+            "c_hash": "ab4543ee",
+            "date": "2013-03-31 14:56:50 +0000",
+            "comment": "[UIMA-2787] Migrate documentation to docbook"
+        },
+        {
+            "c_hash": "047549ba",
+            "date": "2013-04-03 20:59:00 +0000",
+            "comment": "[UIMA-2798] NPE when primitive AE is added to CpeBuilder - Fixed by using a non-empty delegate key"
+        },
+        {
+            "c_hash": "d773d207",
+            "date": "2013-04-23 19:15:14 +0000",
+            "comment": "[UIMA-2782] afterResourcesInitialized() should declare an exception https://issues.apache.org/jira/browse/UIMA-2782 - Added throws ResourceInitializationException"
+        },
+        {
+            "c_hash": "cb1b65c9",
+            "date": "2013-04-23 19:17:20 +0000",
+            "comment": "NO ISSUE - Moved XML preamble to beginning of file where it must be"
+        },
+        {
+            "c_hash": "4393feda",
+            "date": "2013-04-23 19:18:19 +0000",
+            "comment": "[UIMA-2785] Make constructor of ContainmentIndex protected https://issues.apache.org/jira/browse/UIMA-2785"
+        },
+        {
+            "c_hash": "ea7e17af",
+            "date": "2013-04-26 20:08:27 +0000",
+            "comment": "[UIMA-2843] select(ArrayFS array, Type type) returns all FSes from the CAS, not just from the array"
+        },
+        {
+            "c_hash": "14831016",
+            "date": "2013-04-26 20:24:57 +0000",
+            "comment": "[UIMA-2815] Throw IllegalArgumentException when component and componentName list is not of equal size"
+        },
+        {
+            "c_hash": "041cf3e5",
+            "date": "2013-04-26 20:27:37 +0000",
+            "comment": "[UIMA-2784] Inner classes in FSCollectionFactory should not inherit from that class"
+        },
+        {
+            "c_hash": "fc8df00f",
+            "date": "2013-04-26 20:34:32 +0000",
+            "comment": "[UIMA-2803] createFSArray should return FSArray instead of ArrayFS"
+        },
+        {
+            "c_hash": "5bdb85ad",
+            "date": "2013-04-26 21:17:35 +0000",
+            "comment": "[UIMA-2846] Add more select* methods that do not take a CAS argument - Added more convenience methods without the CAS argument. - Using getView() instead of getCas() in the methods without CAS argument."
+        },
+        {
+            "c_hash": "93269108",
+            "date": "2013-04-26 21:26:55 +0000",
+            "comment": "[UIMA-2783] Variables that are final and static should be in all caps - Changed writing to JAVA_UIMA_TYPE_MAP and made map private"
+        },
+        {
+            "c_hash": "6429a047",
+            "date": "2013-04-26 22:17:26 +0000",
+            "comment": "[UIMA-2847] Address some PMD issues - Changed several things that PMD was complaining about - Ignored some more PMD warnings"
+        },
+        {
+            "c_hash": "1ee25820",
+            "date": "2013-04-26 22:25:02 +0000",
+            "comment": "[UIMA-2786] Remove deprecated API"
+        },
+        {
+            "c_hash": "6d8e36bc",
+            "date": "2013-04-26 22:43:06 +0000",
+            "comment": "[UIMA-2845] createAggregateDescription takes type system as argument but never uses it. - Removed argument because type system declarations are not allowed on aggregates"
+        },
+        {
+            "c_hash": "acb7093e",
+            "date": "2013-04-27 07:48:44 +0000",
+            "comment": "[UIMA-2786] Remove deprecated API"
+        },
+        {
+            "c_hash": "17c3e75d",
+            "date": "2013-04-27 07:49:02 +0000",
+            "comment": "[UIMA-2845] createAggregateDescription takes type system as argument but never uses it. - Removed argument because type system declarations are not allowed on aggregates"
+        },
+        {
+            "c_hash": "bb5a1244",
+            "date": "2013-04-30 06:27:05 +0000",
+            "comment": "[UIMA-2830] Expose FSIterator via (J)CasUtil.select*() methods where applicable - Slight re-routing of calls between (J)CasUtil and FSCollectionFactory to work out better where getAllIndexedFS() is required."
+        },
+        {
+            "c_hash": "7e7fe16d",
+            "date": "2013-05-01 09:03:06 +0000",
+            "comment": "[UIMA-2102] Make ResourceManager_impl.ResourceRegistration protected - Upgrade uimaFIT to uimaj-core 2.4.1-SNAPSHOT - Hack to create ResourceRegistration instances no longer necessary"
+        },
+        {
+            "c_hash": "ef8aad3c",
+            "date": "2013-05-01 13:42:10 +0000",
+            "comment": "[UIMA-2555] Logging messaged from ExtendedLogger always carry wrong source info - Use new logging function in UIMA 2.4.1-SNAPSHOT - Added tests"
+        },
+        {
+            "c_hash": "4f0b5eba",
+            "date": "2013-05-01 13:44:31 +0000",
+            "comment": "[UIMA-2102] Make ResourceManager_impl.ResourceRegistration protected - Removed unnecessary imports"
+        },
+        {
+            "c_hash": "bf733177",
+            "date": "2013-05-03 17:06:09 +0000",
+            "comment": "NO ISSUE - Added PMD config file for Eclipse referencing the pmd.xml rule file also used by Maven."
+        },
+        {
+            "c_hash": "9720a45f",
+            "date": "2013-05-03 17:11:11 +0000",
+            "comment": "[UIMA-2866] Parameter ordering could be improved in ConfigurationParameterInitializer & ExternalResourceInitializer - Using order (UIMAContext, Object) in both initializer classes now."
+        },
+        {
+            "c_hash": "67a46fe5",
+            "date": "2013-05-04 12:52:39 +0000",
+            "comment": "[UIMA-2813] Document in which order annotations are returned by the \"select*\" methods - Added explanatory statement at package level - Linked to statement from relevant methods"
+        },
+        {
+            "c_hash": "8a3755b9",
+            "date": "2013-05-04 13:46:21 +0000",
+            "comment": "[UIMA-2588] Move internal API into a separate package - Fix regression: Reset UIMA logging level in logging tests"
+        },
+        {
+            "c_hash": "6d2483c1",
+            "date": "2013-05-05 07:55:48 +0000",
+            "comment": "[UIMA-2870] Move CPE-related code to separate module - Added module skeleton"
+        },
+        {
+            "c_hash": "80e6fbab",
+            "date": "2013-05-05 09:14:20 +0000",
+            "comment": "[UIMA-2870] Move CPE-related code to separate module - Refactored tests not to rely on test code from main uimaFIT - Removed CPE test from legacy testing code"
+        },
+        {
+            "c_hash": "e9adebdf",
+            "date": "2013-05-05 09:15:18 +0000",
+            "comment": "NO ISSUE - Tell PMD to ignore inefficient switch statements"
+        },
+        {
+            "c_hash": "d01d5138",
+            "date": "2013-05-10 09:10:10 +0000",
+            "comment": "[UIMA-2885] Add createAnalysisEngineDescriptionFromPath method"
+        },
+        {
+            "c_hash": "73ff0e50",
+            "date": "2013-05-10 09:12:47 +0000",
+            "comment": "[UIMA-2885] Add createAnalysisEngineDescriptionFromPath method - Added such a method for CollectionReaders as well"
+        },
+        {
+            "c_hash": "9a543961",
+            "date": "2013-05-10 11:31:15 +0000",
+            "comment": "[UIMA-2892] Improve/clean up JavaDoc (and Exceptions) - Improved AnalysisEngineFactory - Added discussion on why descriptors are better than instances"
+        },
+        {
+            "c_hash": "7ddb72b8",
+            "date": "2013-05-10 11:44:13 +0000",
+            "comment": "[UIMA-2890] process() methods should not be in AnalysisEngineFactory - Removed these methods"
+        },
+        {
+            "c_hash": "dfbbef7d",
+            "date": "2013-05-10 15:59:23 +0000",
+            "comment": "[UIMA-2748] Fill description of external resources in component from JavaDoc - Added \"description\" to ExternalResource annotation - Refactoring of ExternalResourceFactory and ExternalResourceInitializer to better distribute the code - Extended \"enhance\" mojo to take external resources into account"
+        },
+        {
+            "c_hash": "0ddde37d",
+            "date": "2013-05-10 16:34:51 +0000",
+            "comment": "[UIMA-2787] Migrate documentation to docbook - Integrated user setup information"
+        },
+        {
+            "c_hash": "37109343",
+            "date": "2013-05-10 19:34:50 +0000",
+            "comment": "[UIMA-2533] Automatic type priority detection"
+        },
+        {
+            "c_hash": "32f164f5",
+            "date": "2013-05-10 20:41:38 +0000",
+            "comment": "[UIMA-2893] Indexes can be automatically detected but this is not done in AnalysisEngineFactory - Additionally fixed a wrong logging category and JavaDoc in FsIndexFactory"
+        },
+        {
+            "c_hash": "735866de",
+            "date": "2013-05-10 21:38:12 +0000",
+            "comment": "[UIMA-2893] Indexes can be automatically detected but this is not done in AnalysisEngineFactory - Fix logic: indexes from annotations cannot be ignored if indexes are explicitly specified when calling createPrimitive"
+        },
+        {
+            "c_hash": "4639782b",
+            "date": "2013-05-24 21:13:09 +0000",
+            "comment": "[Issue UIMA-2940] Remove dependency on JDom - Load serialized XMI/XCAS back into a CAS to verify if XWriter works, no loading of XML."
+        },
+        {
+            "c_hash": "bde56664",
+            "date": "2013-05-24 21:42:52 +0000",
+            "comment": "[UIMA-2941] Update to modern Maven plugin dependencies - Updated to 3.0.4 artifact containing Maven model classes"
+        },
+        {
+            "c_hash": "3da65250",
+            "date": "2013-05-24 22:26:51 +0000",
+            "comment": "[UIMA-2891] Check if type priorities may be configured on an aggregate - Added unit test if type prios on an aggregate have an effect."
+        },
+        {
+            "c_hash": "9a8e1bac",
+            "date": "2013-05-31 12:24:30 +0000",
+            "comment": "[UIMA-2941] Update to modern Maven plugin dependencies - Downgrade to Maven 3.0 (was 3.0.4)"
+        },
+        {
+            "c_hash": "35484b81",
+            "date": "2013-05-31 17:40:50 +0000",
+            "comment": "[UIMA-2941] Update to modern Maven plugin dependencies - Looks like 3.0.4 had a transitive dependency on guava, that needed to be added manually now."
+        },
+        {
+            "c_hash": "cebd7576",
+            "date": "2013-05-31 19:40:33 +0000",
+            "comment": "[UIMA-2871] Remove JCasGenPomFriendly in favor of jcasgen-maven-plugin - Using jcasgen-maven-plugin now - Removed dependency on uimaj-tools from main uimafit module - Removed JCasGenPomFriendly"
+        },
+        {
+            "c_hash": "6c78ace9",
+            "date": "2013-06-01 20:38:58 +0000",
+            "comment": "[UIMA-2801] Allow multi-valued external resources - Added support for multi-valued external resources - Added test cases"
+        },
+        {
+            "c_hash": "64a77a7d",
+            "date": "2013-06-07 14:43:00 +0000",
+            "comment": "[UIMA-2866] Parameter ordering could be improved in ConfigurationParameterInitializer & ExternalResourceInitializer - Changed parameter ordering to (target, settings) to be consistent with the other \"initialize\" methods in ConfigurationParameterInitializer."
+        },
+        {
+            "c_hash": "42ab7585",
+            "date": "2013-07-03 11:56:33 +0000",
+            "comment": "[UIMA-3046] uimaFIT build unable to find jcasgen-maven-plugin snapshot - Added Apache snapshot repositories for dependencies and plugins"
+        },
+        {
+            "c_hash": "b36680da",
+            "date": "2013-07-20 13:36:37 +0000",
+            "comment": "No jira - Ignore additional Eclipse metadata, update JDT metadata"
+        },
+        {
+            "c_hash": "59b3e01b",
+            "date": "2013-07-20 13:49:41 +0000",
+            "comment": "[UIMA-3091] Add tests using external resources with the CpePipeline"
+        },
+        {
+            "c_hash": "019b5ab9",
+            "date": "2013-07-20 14:09:08 +0000",
+            "comment": "[UIMA-3092] createExternalResourceDescription does not properly set parameters on ConfigurableDataResource_impl"
+        },
+        {
+            "c_hash": "c8536a96",
+            "date": "2013-07-20 14:12:15 +0000",
+            "comment": "No jira - Added test with nested resources, better names for test classes"
+        },
+        {
+            "c_hash": "deba9176",
+            "date": "2013-07-20 14:14:01 +0000",
+            "comment": "No jira - removed calls to consolidate()"
+        },
+        {
+            "c_hash": "7154fa3b",
+            "date": "2013-07-20 14:22:48 +0000",
+            "comment": "No jira - Ignore additional Eclipse metadata"
+        },
+        {
+            "c_hash": "4f4600fd",
+            "date": "2013-07-20 15:10:39 +0000",
+            "comment": "[UIMA-3093] Specifying other classes, such as FileResourceSpecifier_impl, as resource specifiers causes IllegalClassException when binding"
+        },
+        {
+            "c_hash": "779aa596",
+            "date": "2013-07-20 15:21:08 +0000",
+            "comment": "No jira - added internal experimental code to consolidate duplicate information in an aggregate analysis engine description"
+        },
+        {
+            "c_hash": "1c6d7014",
+            "date": "2013-07-20 17:50:51 +0000",
+            "comment": "[UIMA-3094] createEngine() and createEngineDescription() factory methods"
+        },
+        {
+            "c_hash": "766f5132",
+            "date": "2013-07-20 19:13:21 +0000",
+            "comment": "[UIMA-3041] JCasIterable should have signature accepting descriptors"
+        },
+        {
+            "c_hash": "cdc10983",
+            "date": "2013-07-20 21:08:29 +0000",
+            "comment": "No jira - Updated CHANGES"
+        },
+        {
+            "c_hash": "cabc6c56",
+            "date": "2013-07-20 22:12:35 +0000",
+            "comment": "[UIMA-3094] createEngine() and createEngineDescription() factory methods - Added back one legacy method that got removed accidentially"
+        },
+        {
+            "c_hash": "d1961e97",
+            "date": "2013-07-21 10:44:56 +0000",
+            "comment": "[UIMA-3095] createReader() and createReaderDescription() factory methods"
+        },
+        {
+            "c_hash": "adc4b144",
+            "date": "2013-07-26 18:47:14 +0000",
+            "comment": "No jira - upgrade to uimaj 2.4.1 and parent-pom 6"
+        },
+        {
+            "c_hash": "0c85c574",
+            "date": "2013-07-30 17:16:48 +0000",
+            "comment": "[UIMA-3132] - uimaFIT maven plugins do not run on ASF Jenkins slave \"windows1\" - Trying with a newer version of the Maven invoker plugin"
+        },
+        {
+            "c_hash": "4c5d7039",
+            "date": "2013-07-30 17:48:49 +0000",
+            "comment": "[UIMA-3132] - uimaFIT maven plugins do not run on ASF Jenkins slave \"windows1\" - Rolling back version override"
+        },
+        {
+            "c_hash": "732f01f7",
+            "date": "2013-07-30 17:50:29 +0000",
+            "comment": "[UIMA-3131] Goal \"enhance\" of uimaFIT Maven plugin fails on Windows - Replace platform-specific separator in path string to derive class name."
+        },
+        {
+            "c_hash": "08d81ea2",
+            "date": "2013-08-01 17:41:10 +0000",
+            "comment": "[UIMA-3131] Goal \"enhance\" of uimaFIT Maven plugin fails on Windows - Replace platform-specific separator in path string to derive class name."
+        },
+        {
+            "c_hash": "d9667a1c",
+            "date": "2013-08-02 19:48:53 +0000",
+            "comment": "[UIMA-3140] CASDumpWriter may close stdout - Protect stdout from being closed."
+        },
+        {
+            "c_hash": "dfd34564",
+            "date": "2013-08-04 12:10:30 +0000",
+            "comment": "[UIMA-3097] Split JCasIterable into iterable and iterator parts - Added stepPipeline() method to SimplePipeline (uses JCasIterable) - Split JCasIterator out of JCasIterable"
+        },
+        {
+            "c_hash": "2a60eeb5",
+            "date": "2013-08-04 12:39:13 +0000",
+            "comment": "[UIMA-2892] Improve/clean up JavaDoc (and Exceptions) - Removed unnecessary throws declarations"
+        },
+        {
+            "c_hash": "2da683b4",
+            "date": "2013-08-04 12:45:43 +0000",
+            "comment": "[UIMA-2892] Improve/clean up JavaDoc (and Exceptions) - Removed unnecessary throws declarations"
+        },
+        {
+            "c_hash": "6e9a8086",
+            "date": "2013-08-04 20:12:25 +0000",
+            "comment": "[UIMA-2542] Migrate uimaFIT build process - Added module to build distribution - Added ASF copyright info to NOTICE file - Updated JavaDoc config to new package names - Removed experimental Spring stuff from JavaDoc"
+        },
+        {
+            "c_hash": "61814cc8",
+            "date": "2013-08-04 20:33:24 +0000",
+            "comment": "[UIMA-3144] Rename CASDumpWriter to CasDumpWriter"
+        },
+        {
+            "c_hash": "e310d933",
+            "date": "2013-08-08 18:29:33 +0000",
+            "comment": "[UIMA-3145] Rename artifact \"uimafit\" to \"uimafit-core\""
+        },
+        {
+            "c_hash": "c75e3e7e",
+            "date": "2013-08-08 20:14:45 +0000",
+            "comment": "[UIMA-2542] Migrate uimaFIT build process - Added missing Apache license headers - Added special LICENSE and NOTICE files for the binary release"
+        },
+        {
+            "c_hash": "089be4f0",
+            "date": "2013-08-08 21:08:46 +0000",
+            "comment": "[UIMA-2542] Migrate uimaFIT build process - Avoid deploying assemblies to Maven"
+        },
+        {
+            "c_hash": "a1c7e86f",
+            "date": "2013-08-08 21:19:05 +0000",
+            "comment": "[maven-release-plugin] prepare release uimafit-2.0.0-rc1"
+        },
+        {
+            "c_hash": "d36f12a4",
+            "date": "2013-08-08 21:19:57 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "df9369b6",
+            "date": "2013-08-09 21:10:50 +0000",
+            "comment": "[UIMA-3170] Switch to UIMA-style project structure - Reset version to 2.0.0-SNAPSHOT"
+        },
+        {
+            "c_hash": "ff32e539",
+            "date": "2013-08-09 21:21:39 +0000",
+            "comment": "[UIMA-3168] Don't link sources in JavaDoc"
+        },
+        {
+            "c_hash": "e7ad8dac",
+            "date": "2013-08-09 21:50:15 +0000",
+            "comment": "[UIMA-3174] Remove unnecessary plugin configurations"
+        },
+        {
+            "c_hash": "1b6a19ab",
+            "date": "2013-08-09 22:05:22 +0000",
+            "comment": "[UIMA-3169] Fix JavaDoc warnings"
+        },
+        {
+            "c_hash": "23295578",
+            "date": "2013-08-09 22:23:51 +0000",
+            "comment": "[UIMA-3169] Fix JavaDoc warnings"
+        },
+        {
+            "c_hash": "8a457eb8",
+            "date": "2013-08-09 22:40:35 +0000",
+            "comment": "[UIMA-3175] Inconsistent line endings"
+        },
+        {
+            "c_hash": "bded8107",
+            "date": "2013-08-09 22:53:38 +0000",
+            "comment": "[UIMA-3169] Fix JavaDoc warnings"
+        },
+        {
+            "c_hash": "5cd182b5",
+            "date": "2013-08-10 12:23:15 +0000",
+            "comment": "No jira - Removed redundant reference to ASF in NOTICE files"
+        },
+        {
+            "c_hash": "3f33fb84",
+            "date": "2013-08-10 12:49:38 +0000",
+            "comment": "[UIMA-3177] Fix Maven warnings - Fixed issues found by dependency:analyze"
+        },
+        {
+            "c_hash": "a2355692",
+            "date": "2013-08-10 13:29:14 +0000",
+            "comment": "[UIMA-3177] Fix Maven warnings - Fix PMD warnings about being unable to cross-ref with source"
+        },
+        {
+            "c_hash": "99584e60",
+            "date": "2013-08-10 13:33:56 +0000",
+            "comment": "[UIMA-3176] uimaFIT depends on buggy 2.4.1 uima core release"
+        },
+        {
+            "c_hash": "f5149a9c",
+            "date": "2013-08-10 21:01:10 +0000",
+            "comment": "[UIMA-3179] JCasIterable destroys reader on hasNext() - call destroy() in hasNext() only if an error occurs - save one call to hasNext() in next(). - call hasNext() in next() only when some auto-mode is enabled"
+        },
+        {
+            "c_hash": "9b239af3",
+            "date": "2013-08-10 21:08:50 +0000",
+            "comment": "[UIMA-3180] JCasIterator should return false on hasNext() after it has been (auto)destroyed"
+        },
+        {
+            "c_hash": "5f1198aa",
+            "date": "2013-08-11 15:15:44 +0000",
+            "comment": "No jira. Removed unwanted output to System.out."
+        },
+        {
+            "c_hash": "4eb87bc8",
+            "date": "2013-08-15 19:14:09 +0000",
+            "comment": "[UIMA-3188] Traditional logging methods on ExtendedLogger report wrong class"
+        },
+        {
+            "c_hash": "057dc175",
+            "date": "2013-08-18 09:15:48 +0000",
+            "comment": "[UIMA-3097] Split JCasIterable into iterable and iterator parts - Renamed stepPipeline to iteratePipeline"
+        },
+        {
+            "c_hash": "64f3a9eb",
+            "date": "2013-08-18 13:09:18 +0000",
+            "comment": "[UIMA-3173] Document JCasUtil/CasUtil methods - Added documentation for select methods"
+        },
+        {
+            "c_hash": "8b5df4d0",
+            "date": "2013-08-18 13:29:56 +0000",
+            "comment": "[UIMA-3174] Remove unnecessary plugin configurations - Upgraded plugins"
+        },
+        {
+            "c_hash": "389f0cbf",
+            "date": "2013-08-18 13:50:21 +0000",
+            "comment": "[UIMA-3177] Fix Maven warnings - Fix warning during assembly - Renamed root folder in assembly"
+        },
+        {
+            "c_hash": "c916f596",
+            "date": "2013-08-18 14:47:52 +0000",
+            "comment": "[UIMA-3172] Document uimaFIT maven plugin"
+        },
+        {
+            "c_hash": "d32a81c2",
+            "date": "2013-08-18 14:55:29 +0000",
+            "comment": "[UIMA-3192] Move author attribution from NOTICE to README file - Removed author mentions from NOTICE file - Mentions already present in README at root level. Not adding additional README files at module level"
+        },
+        {
+            "c_hash": "a738acb0",
+            "date": "2013-08-18 14:55:54 +0000",
+            "comment": "[UIMA-3192] Move author attribution from NOTICE to README file - Removed author mentions from NOTICE file - Mentions already present in README at root level. Not adding additional README files at module level"
+        },
+        {
+            "c_hash": "3e6f7618",
+            "date": "2013-08-18 15:17:03 +0000",
+            "comment": "[maven-release-plugin] prepare release uimafit-2.0.0-rc2"
+        },
+        {
+            "c_hash": "172d5844",
+            "date": "2013-08-18 15:18:01 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "58890553",
+            "date": "2013-08-18 16:05:18 +0000",
+            "comment": "[UIMA-3192] Move author attribution from NOTICE to README file - Removed author mentions from binary release NOTICE file - Update README with correct UIMA SDK version"
+        },
+        {
+            "c_hash": "c1e83656",
+            "date": "2013-08-18 16:13:16 +0000",
+            "comment": "No issue. Fix web locations in README file"
+        },
+        {
+            "c_hash": "b156f9bd",
+            "date": "2013-08-18 16:24:54 +0000",
+            "comment": "[maven-release-plugin] prepare release uimafit-2.0.0-rc2"
+        },
+        {
+            "c_hash": "bddc1c43",
+            "date": "2013-08-18 16:25:42 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "32656813",
+            "date": "2013-08-20 20:18:43 +0000",
+            "comment": "No jira. Reset version to 2.0.0-SNAPSHOT"
+        },
+        {
+            "c_hash": "028f9734",
+            "date": "2013-08-20 20:32:05 +0000",
+            "comment": "[UIMA-3205] Fix groupId in README"
+        },
+        {
+            "c_hash": "009e3963",
+            "date": "2013-08-20 21:18:57 +0000",
+            "comment": "[UIMA-3197] \"wiki\" folder should not be included in source release"
+        },
+        {
+            "c_hash": "56899871",
+            "date": "2013-08-20 22:47:10 +0000",
+            "comment": "[UIMA-3206] Minimize RAT exceptions - Removed CHANGES files - they are outdated now - Added license headers to several test files (where sensible) - Ignored the other test files by exact name - Removed unused test data - Reduced test necessary data - Removed .gitignore"
+        },
+        {
+            "c_hash": "459ab922",
+            "date": "2013-08-23 15:32:43 +0000",
+            "comment": "No jira. Removed incomplete and outdated JavaDoc tags."
+        },
+        {
+            "c_hash": "7712da97",
+            "date": "2013-08-23 20:47:12 +0000",
+            "comment": "[UIMA-3200] Jira change report not in root folder of distribution"
+        },
+        {
+            "c_hash": "0c5f4d31",
+            "date": "2013-08-24 15:47:53 +0000",
+            "comment": "[UIMA-3206] Minimize RAT exceptions - Replaced potentially problematic sample text with pos-tagged version of the Apache License header."
+        },
+        {
+            "c_hash": "2330ff51",
+            "date": "2013-08-24 15:52:08 +0000",
+            "comment": "[UIMA-3217] Review the examples - Removed empty JavaDoc comments - Formatting - Write output to target - Use auto-type detection in more places - Rely on @ExternalResource annotation - Added test for ex6 - Updated references to org/uimafit"
+        },
+        {
+            "c_hash": "03f177d2",
+            "date": "2013-08-24 16:09:02 +0000",
+            "comment": "[UIMA-3201] Test files for different line-ending styles use svn:native - Renamed file to avoid confusion about line-endings."
+        },
+        {
+            "c_hash": "6bb0b838",
+            "date": "2013-08-24 16:18:20 +0000",
+            "comment": "[UIMA-3201] Test files for different line-ending styles use svn:native - Renamed files to avoid confusion about line-endings - Remove svn:eol-style properties - Converted files which should have Windows line endings to Windows line endings - Updated tests"
+        },
+        {
+            "c_hash": "abc722bf",
+            "date": "2013-08-24 16:42:08 +0000",
+            "comment": "[UIMA-3201] Test files for different line-ending styles use svn:native - Added additional tests to check for desired line endings"
+        },
+        {
+            "c_hash": "ed8f92b7",
+            "date": "2013-08-24 20:05:03 +0000",
+            "comment": "[UIMA-3218] Add migration guide to docbook"
+        },
+        {
+            "c_hash": "fca7c2a6",
+            "date": "2013-08-24 21:16:23 +0000",
+            "comment": "[UIMA-3202] Fix documentation issues - Fixed publication date - Fixed grammar \"allows + -ing\" - Updated references to org.uimafit - Fixed long code lines in PDF - Added TM to UIMA and uimaFIT - Removed fixed-width font tags from titles as these are rendered in wrong font size in PDF"
+        },
+        {
+            "c_hash": "8656f5a2",
+            "date": "2013-08-24 21:19:41 +0000",
+            "comment": "[UIMA-3202] Fix documentation issues - Ignore timestamp creation plugin in m2e"
+        },
+        {
+            "c_hash": "1e1c0c7a",
+            "date": "2013-08-24 21:52:13 +0000",
+            "comment": "[UIMA-3203] Fix branding - Added (TM) for uimaFIT and UIMA - Changed to resemble UIMA SDK README style - Added explanatory section on modules - Added reference to migration guide in manual"
+        },
+        {
+            "c_hash": "955eb8da",
+            "date": "2013-08-24 22:01:14 +0000",
+            "comment": "No jira. Tell people to get the UIMA SDK additionally to uimaFIT."
+        },
+        {
+            "c_hash": "341c01a3",
+            "date": "2013-08-24 22:02:17 +0000",
+            "comment": "No jira. Tell people to get the UIMA SDK additionally to uimaFIT. - Typo"
+        },
+        {
+            "c_hash": "15f323ca",
+            "date": "2013-08-24 22:06:31 +0000",
+            "comment": "[UIMA-3204] Add release notes to README file"
+        },
+        {
+            "c_hash": "dc567d3e",
+            "date": "2013-08-24 22:43:35 +0000",
+            "comment": "[UIMA-3217] Review the examples - Remove dependency on JUnit"
+        },
+        {
+            "c_hash": "35b5b602",
+            "date": "2013-08-24 22:45:36 +0000",
+            "comment": "[UIMA-3217] Review the examples - Create output folder before writing to it"
+        },
+        {
+            "c_hash": "3e084524",
+            "date": "2013-08-24 22:50:28 +0000",
+            "comment": "[UIMA-3217] Review the examples - Fix sample file location"
+        },
+        {
+            "c_hash": "1a9e311f",
+            "date": "2013-08-24 22:56:03 +0000",
+            "comment": "[UIMA-3217] Review the examples - Remove dependency on JUnit"
+        },
+        {
+            "c_hash": "cfcc3c4c",
+            "date": "2013-08-25 08:03:35 +0000",
+            "comment": "[UIMA-3217] Review the examples - Package uimafit-cpe and uimafit-legacy in \"extras\" folder"
+        },
+        {
+            "c_hash": "edb6d710",
+            "date": "2013-08-25 09:43:13 +0000",
+            "comment": "[UIMA-3219] Simpler XMI writing than XWriter - Removed XWriter - Moved CasDumpWriter and test out of old xwriter package - Changed CasDumpWriter parameter constant values to reflect field names - Moved (J)CAS reading methods from JCasFactory to CasIOUtil - Added writing methods - Moved 1.xmi from examples main to test (only used in test case) - Updated migration guide"
+        },
+        {
+            "c_hash": "aea947cc",
+            "date": "2013-08-25 09:49:12 +0000",
+            "comment": "[UIMA-3219] Simpler XMI writing than XWriter - Added missing license header - Update RAT exclusion after moving 1.xmi"
+        },
+        {
+            "c_hash": "779a5f38",
+            "date": "2013-08-25 10:16:55 +0000",
+            "comment": "[maven-release-plugin] prepare release uimafit-2.0.0-rc3"
+        },
+        {
+            "c_hash": "26a08e4f",
+            "date": "2013-08-25 10:17:38 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "248947e1",
+            "date": "2013-08-25 11:40:10 +0000",
+            "comment": "[UIMA-3217] Review the examples - Create output folder before writing"
+        },
+        {
+            "c_hash": "b259c27b",
+            "date": "2013-08-25 11:47:52 +0000",
+            "comment": "[maven-release-plugin] prepare release uimafit-2.0.0-rc3"
+        },
+        {
+            "c_hash": "94b40a7a",
+            "date": "2013-08-25 11:48:58 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "8e634c6d",
+            "date": "2013-09-29 12:09:31 +0000",
+            "comment": "[UIMA-3314] Project dirty on checkout on Windows"
+        },
+        {
+            "c_hash": "0f9c01a1",
+            "date": "2013-09-29 12:26:21 +0000",
+            "comment": "No jira. Upgrade to parent-pom 7."
+        },
+        {
+            "c_hash": "8fc1cb34",
+            "date": "2013-09-29 12:28:00 +0000",
+            "comment": "[UIMA-3315] Unit tests for enum injection"
+        },
+        {
+            "c_hash": "788a5370",
+            "date": "2013-11-24 18:10:50 +0000",
+            "comment": "Copying up"
+        },
+        {
+            "c_hash": "ffc33b31",
+            "date": "2013-11-24 19:10:25 +0000",
+            "comment": "No issue - Updated SVN location"
+        },
+        {
+            "c_hash": "f3b66e95",
+            "date": "2013-11-25 13:36:34 +0000",
+            "comment": "No issue - Updated uimaFIT SVN location"
+        },
+        {
+            "c_hash": "8b187b47",
+            "date": "2013-12-19 00:34:00 +0000",
+            "comment": "[UIMA-3508] - Resources from \"generate\" mojo do not end up in JARs"
+        },
+        {
+            "c_hash": "81289855",
+            "date": "2013-12-19 01:08:17 +0000",
+            "comment": "[maven-release-plugin] prepare branch 2.0.x"
+        },
+        {
+            "c_hash": "6eb49f91",
+            "date": "2013-12-19 01:08:29 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "e856b5d3",
+            "date": "2014-01-19 00:42:30 +0000",
+            "comment": "[UIMA-3558] Upgrade to parent-pom version 8"
+        },
+        {
+            "c_hash": "05f3fdc1",
+            "date": "2014-01-21 00:20:26 +0000",
+            "comment": "[UIMA-3559] JDK 8 complains about bad JavaDoc"
+        },
+        {
+            "c_hash": "1267c8eb",
+            "date": "2014-01-21 00:23:10 +0000",
+            "comment": "[UIMA-3565] Wrong rat-check exclude"
+        },
+        {
+            "c_hash": "a1fdb3e9",
+            "date": "2014-01-21 00:24:29 +0000",
+            "comment": "[UIMA-3566] Update to UIMA 2.5.0"
+        },
+        {
+            "c_hash": "8371c3fd",
+            "date": "2014-01-21 01:52:36 +0000",
+            "comment": "[UIMA-3325] FSCollectionFactory.createStringArray returns StringArrayFS (binary-incompatible-change)"
+        },
+        {
+            "c_hash": "3f08b812",
+            "date": "2014-01-21 01:57:11 +0000",
+            "comment": "[UIMA-3564] FsIndexFactory.REVERSE_STANDARD_COMPARE maps to STANDARD_COMPARE"
+        },
+        {
+            "c_hash": "55da8f71",
+            "date": "2014-01-21 01:59:42 +0000",
+            "comment": "[UIMA-3560] AnnotationFactory.createAnnotation() should not throw UIMAException"
+        },
+        {
+            "c_hash": "17346adf",
+            "date": "2014-02-17 16:06:39 +0000",
+            "comment": "[UIMA-3265] Test annotation types accidentally slipped into release"
+        },
+        {
+            "c_hash": "b8fd68cc",
+            "date": "2014-02-17 16:34:17 +0000",
+            "comment": "[UIMA-3250] Wrong qualifier"
+        },
+        {
+            "c_hash": "87f1b540",
+            "date": "2014-02-17 16:35:06 +0000",
+            "comment": "[UIMA-3591] Multi-values parameter does not accept single value when @ConfigurationParameter is not present"
+        },
+        {
+            "c_hash": "e35a0542",
+            "date": "2014-03-02 11:44:59 +0000",
+            "comment": "[UIMA-3403] selectPreceding() does not return preceding for last annotation"
+        },
+        {
+            "c_hash": "b2c740b8",
+            "date": "2014-03-26 15:49:26 +0000",
+            "comment": "No jira. Upgrade versions for code quality Maven plugins."
+        },
+        {
+            "c_hash": "f9b3120e",
+            "date": "2014-04-18 19:43:25 +0000",
+            "comment": "[UIMA-3385] Make meta data discovery compatible with fat jars"
+        },
+        {
+            "c_hash": "1407f2ca",
+            "date": "2014-04-18 21:10:35 +0000",
+            "comment": "[UIMA-3671] Resources cannot be shared between reader and analysis engines in SimplePipeline"
+        },
+        {
+            "c_hash": "c744a97c",
+            "date": "2014-04-19 09:31:15 +0000",
+            "comment": "[UIMA-3385] Make meta data discovery compatible with fat jars - Added comment on how to avoid deploying to Maven repository"
+        },
+        {
+            "c_hash": "7ce34c83",
+            "date": "2014-04-26 09:01:14 +0000",
+            "comment": "[No jira] Upgrade to UIMA 2.6.0-SNAPSHOT."
+        },
+        {
+            "c_hash": "0eccdcdb",
+            "date": "2014-04-28 20:10:25 +0000",
+            "comment": "[UIMA-3785] Upgrade to UIMA 2.6.0"
+        },
+        {
+            "c_hash": "b61aada6",
+            "date": "2014-04-28 20:36:31 +0000",
+            "comment": "[UIMA-3692] Classloading inconsistencies - Added an experimental API to control resource managers used by uimaFIT"
+        },
+        {
+            "c_hash": "3f4caa10",
+            "date": "2014-05-13 10:55:30 +0000",
+            "comment": "[UIMA-3785] Upgrade to UIMA 2.6.0"
+        },
+        {
+            "c_hash": "f7a6fed0",
+            "date": "2014-06-01 21:06:42 +0000",
+            "comment": "No jira - Change trunk version to 2.2.0-SNAPSHOT"
+        },
+        {
+            "c_hash": "eedc9021",
+            "date": "2014-06-01 21:51:20 +0000",
+            "comment": "[UIMA-3790] Reduce verbosity of uimafit-maven-plugin"
+        },
+        {
+            "c_hash": "7602368d",
+            "date": "2014-06-04 21:48:18 +0000",
+            "comment": "[UIMA-3845] Prepare for release version 2.1.0 - Update jiraVersion property - Update to UIMA parent pom 9 - Comment out snapshot repositories used while depending on UIMA 2.6.0-SNAPSHOT - Fix rat excludes in legacy module - Update README"
+        },
+        {
+            "c_hash": "71642940",
+            "date": "2014-06-04 21:57:59 +0000",
+            "comment": "[UIMA-3845] Prepare for release version 2.1.0 - Fix \"Apache License\" name in pom.xml files (was \"The Apache Software License\") - Fix Apache copyright year range in NOTICE files - Some formatting in README - Added missing sections to NOTICE file for binary distribution, conflating redundant parts for UIMA artifacts and uimaFIT artifacts - Removed redundant sections from NOTICE files in individual modules. These files contain only module-specific *extra* sections which are added to the auto-generated Apache UIMA uimaFIT section. - Changed module names from \"uimaFIT - XXX\" to \"Apache UIMA uimaFIT - XXX\""
+        },
+        {
+            "c_hash": "9f6f920c",
+            "date": "2014-06-04 21:59:39 +0000",
+            "comment": "[UIMA-3853] Compilation failure on IBM Java 8 beta 3"
+        },
+        {
+            "c_hash": "a4f755a6",
+            "date": "2014-06-04 22:00:41 +0000",
+            "comment": "[UIMA-3854] Update migration section in documentation - Reorganized migration section - Fixed some typos - Added section for 2.0.0 -> 2.1.0"
+        },
+        {
+            "c_hash": "2189f301",
+            "date": "2014-06-04 22:01:36 +0000",
+            "comment": "[UIMA-3854] Update migration section in documentation - Fixed some typos"
+        },
+        {
+            "c_hash": "fcbb4c9c",
+            "date": "2014-06-04 22:02:30 +0000",
+            "comment": "[UIMA-3559] JDK 8 complains about bad JavaDoc - Override maven-plugin-plugin version to 3.3 which has MPLUGIN-244 fixed"
+        },
+        {
+            "c_hash": "512faba2",
+            "date": "2014-06-04 22:03:36 +0000",
+            "comment": "[UIMA-3859] Better maven-plugin-plugin configuration"
+        },
+        {
+            "c_hash": "41a21387",
+            "date": "2014-06-07 15:47:44 +0000",
+            "comment": "[UIMA-3859] Better maven-plugin-plugin configuration - binding to process-classes phase already happens in UIMA parent pom (see UIMA-3072)"
+        },
+        {
+            "c_hash": "2999a68f",
+            "date": "2014-06-07 16:57:38 +0000",
+            "comment": "[UIMA-3870] Update to parent-pom 10 - Upgraded to 10-SNAPSHOT"
+        },
+        {
+            "c_hash": "f0a87f3c",
+            "date": "2014-06-07 16:58:08 +0000",
+            "comment": "[UIMA-3868] Remove maven-plugin-plugin override after upgrading to UIMA parent pom 10"
+        },
+        {
+            "c_hash": "0fcd46d7",
+            "date": "2014-06-07 17:49:39 +0000",
+            "comment": "[UIMA-3870] Update to parent-pom 10 - Fix build again by binding help-mojo to process-classes phase"
+        },
+        {
+            "c_hash": "281fa1ed",
+            "date": "2014-06-10 12:06:46 +0000",
+            "comment": "[UIMA-3869] Better maven-plugin-plugin configuration - Configure extractors in parent-pom - Configure helpmojo in parent-pom - Now all maven-plugin-plugin configuration can be removed in the modules"
+        },
+        {
+            "c_hash": "76aabfe7",
+            "date": "2014-06-11 21:36:00 +0000",
+            "comment": "UIMA-3885 - Remove configuration items moved to parent-pom 10 - removed code quality profiles (cf. UIMA-2548) - removed Java level settings"
+        },
+        {
+            "c_hash": "5a4f3b63",
+            "date": "2014-06-11 21:43:11 +0000",
+            "comment": "[UIMA-3885] Remove redundant configuration items"
+        },
+        {
+            "c_hash": "803f7f32",
+            "date": "2014-06-11 21:44:46 +0000",
+            "comment": "[UIMA-3885] Remove redundant configuration items - buildnumber-maven-plugin was a stopgap while the UIMA build-helper plugin didn't work. No longer required."
+        },
+        {
+            "c_hash": "d8bd10af",
+            "date": "2014-06-11 21:50:41 +0000",
+            "comment": "[No Jira] Update Java level settings in Eclipse metadata"
+        },
+        {
+            "c_hash": "b5befaab",
+            "date": "2014-06-11 21:53:20 +0000",
+            "comment": "[UIMA-3845] Prepare for release version 2.1.0 - Add standard boilerplate - Remove unnecessary/redundant boilerplate from dependencies - Removed passage about Spring Framework is licensed under Apache License, because this is already in the LICENSE - Removed passage inherited from Spring Framework NOTICE about inclusion of subcomponents with separate copyright terms. According to Apache guidelines, all bundled copyright/license/notice information must be aggregated in this file and the accompanying LICENSE file - Removed mention of copyright.txt in section about AnnotationLiteral.java because we only copied this one file and not the whole cdi-api/JBoss distribution. Copyright/author information is present in the AnnotationLiteral.java file and in the present NOTICE file"
+        },
+        {
+            "c_hash": "0e2b9162",
+            "date": "2014-07-26 16:47:27 +0000",
+            "comment": "[UIMA-3776] Delegate AEs no longer serialized to XML after resolving imports on aggregate - Adding a test case"
+        },
+        {
+            "c_hash": "bfe9dafc",
+            "date": "2014-08-08 12:51:36 +0000",
+            "comment": "[UIMA-3984] selectCovered documentation does not mention that covering annotation is never part of the result"
+        },
+        {
+            "c_hash": "2b8ef910",
+            "date": "2014-11-02 21:12:23 +0000",
+            "comment": "[UIMA-3024] CASDumpWriter is sensitive to type system changes - Added parameter to sort annotations instead of relying on index order. Disabled by default because it is assumed that client configures index order using type priorities."
+        },
+        {
+            "c_hash": "3a09c7b0",
+            "date": "2014-11-04 14:52:22 +0000",
+            "comment": "[UIMA-3024] CASDumpWriter is sensitive to type system changes - As a last resort try sorting by CAS address."
+        }
+    ]
+}

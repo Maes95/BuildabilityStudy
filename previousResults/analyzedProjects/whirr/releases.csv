@@ -1,0 +1,8 @@
+commitID;commit-type;time-to-next-release;commit-message
+16dae7df3d46c9da2f25c2c28f790f854fcc0970;BREAKING_CHANGES;445;WHIRR-2. Import initial Java source code. git-svn-id: https://svn.apache.org/repos/asf/incubator/whirr/trunk@953141 13f79535-47bb-0310-9956-ffa450edef68
+762c4af3362747673eaea8815ba6f211b24b8405;BREAKING_FIX;3;Preparing for 0.9.0 development git-svn-id: https://svn.apache.org/repos/asf/whirr/trunk@1374439 13f79535-47bb-0310-9956-ffa450edef68
+32481db44d8e5334423ac6285d33ef3608f9017d;BREAKING_CHANGES;35;WHIRR-681. Enhance puppet service with an ability to export cluster topology to the puppet code. Contributed by Roman Shaposhnik. 
+8b36d8973e56518ebfe0d4c6f88965d109e279bd;BREAKING_FIX;21;WHIRR-711. Add security group support for OpenStack. 
+f4605f54b27b85cf6a246c33b9428d0251519b2f;BREAKING_CHANGES;14;WHIRR-706. Add invalidate method to ComputeCache. 
+764e5dcc558b252d08a5730ff3da52e5e062905e;BREAKING_FIX;4;Fixing compilation error 
+4c37cfb310db60050f9036220fdbac13d5e26d13;BREAKING_CHANGES;-;Fixing Druid parent POM 

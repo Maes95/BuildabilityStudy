@@ -1,0 +1,2 @@
+commitID;commit-type;time-to-next-release;commit-message
+a793b8f68ab73237c9aaf759b43d1a5bbbcab03f;BREAKING_CHANGES;57;created a new runtime subdirectory  moved the main module in there -and also created a minimal servicemix distro (which hopefully we can reuse across each binary distro). Also added Camel to the distrogit-svn-id: https://svn.apache.org/repos/asf/servicemix/branches/servicemix-4.0/runtime@598367 13f79535-47bb-0310-9956-ffa450edef68

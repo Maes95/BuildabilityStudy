@@ -1,0 +1,523 @@
+{
+    "project": "karaf-cave",
+    "git_url": "https://github.com/apache/karaf-cave.git",
+    "last_commit": "d94b9ef7",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "4f48d93a",
+            "date": "2011-08-10 16:08:30 +0000",
+            "comment": "Initial import of the Cave sandbox."
+        },
+        {
+            "c_hash": "5bc25221",
+            "date": "2011-08-10 18:31:25 +0000",
+            "comment": "Add the .gitignore file and update the maven compiler plugin to use Java 1.6"
+        },
+        {
+            "c_hash": "406dfc0f",
+            "date": "2011-08-10 19:28:35 +0000",
+            "comment": "Add Cave Repository service."
+        },
+        {
+            "c_hash": "25915df4",
+            "date": "2011-08-11 09:47:08 +0000",
+            "comment": "Refactoring to allow multiple backend. Add repository scanning at creation time."
+        },
+        {
+            "c_hash": "3bb8d340",
+            "date": "2011-08-11 15:03:18 +0000",
+            "comment": "Add Karaf Cave command. Add Karaf Cave features descriptor and src distribution."
+        },
+        {
+            "c_hash": "7d529219",
+            "date": "2011-08-11 15:16:47 +0000",
+            "comment": "Change the name of Karaf Cave features."
+        },
+        {
+            "c_hash": "a73c94dc",
+            "date": "2011-08-11 17:52:22 +0000",
+            "comment": "Fix filesystem backend Import-Package statement. Add the list-repositories command."
+        },
+        {
+            "c_hash": "e2a51089",
+            "date": "2011-08-11 20:19:33 +0000",
+            "comment": "Inject OBR RepositoryAdmin service."
+        },
+        {
+            "c_hash": "9c123f2f",
+            "date": "2011-08-12 08:03:40 +0000",
+            "comment": "Fix the register feature. Add destory repository."
+        },
+        {
+            "c_hash": "46bf9de4",
+            "date": "2011-08-12 08:18:05 +0000",
+            "comment": "Rename list-repository command to list-repositories. Add the REST API structure."
+        },
+        {
+            "c_hash": "a3edc783",
+            "date": "2011-08-12 09:00:28 +0000",
+            "comment": "Add ConfigAdmin usage in Cave filesystem backend."
+        },
+        {
+            "c_hash": "51b9faae",
+            "date": "2011-08-13 06:20:57 +0000",
+            "comment": "Update the Aries CM version to use the update-strategy attribute. Prepare the URL proxy."
+        },
+        {
+            "c_hash": "d65cbd4e",
+            "date": "2011-08-13 18:19:30 +0000",
+            "comment": "Update the Karaf version range to be able to run with Karaf 2.2.x and 3.x."
+        },
+        {
+            "c_hash": "36d7554d",
+            "date": "2011-08-16 15:00:51 +0000",
+            "comment": "add some basic ignore, remove import of import com.sun.org.apache.bcel.internal.Repository"
+        },
+        {
+            "c_hash": "ac57946b",
+            "date": "2011-08-17 10:28:40 +0000",
+            "comment": "Add the name of the repository in the OBR repository data."
+        },
+        {
+            "c_hash": "a3d451f8",
+            "date": "2011-08-18 07:47:12 +0000",
+            "comment": "Use Resource relative URI (from the repository one)"
+        },
+        {
+            "c_hash": "ab689fee",
+            "date": "2011-08-18 09:57:20 +0000",
+            "comment": "Add proxy support in Cave repository."
+        },
+        {
+            "c_hash": "52a564cf",
+            "date": "2011-08-18 09:59:05 +0000",
+            "comment": "Write the repository.xml after an import."
+        },
+        {
+            "c_hash": "23b915f3",
+            "date": "2011-08-18 15:24:38 +0000",
+            "comment": "Add populate repo command."
+        },
+        {
+            "c_hash": "2ddd72fc",
+            "date": "2011-08-18 16:50:16 +0000",
+            "comment": "Use relative URI for repository import."
+        },
+        {
+            "c_hash": "81aa750b",
+            "date": "2011-08-19 10:19:08 +0000",
+            "comment": "Start the Cave REST API."
+        },
+        {
+            "c_hash": "b9ece20d",
+            "date": "2011-08-19 12:14:30 +0000",
+            "comment": "Add the REST Cave feature."
+        },
+        {
+            "c_hash": "9737c01f",
+            "date": "2011-08-19 13:01:32 +0000",
+            "comment": "Move the JAXRS server definition in Blueprint."
+        },
+        {
+            "c_hash": "8a6c4083",
+            "date": "2011-08-19 13:32:59 +0000",
+            "comment": "Change the default context path of the service. Inject the Cave repository service in blueprint."
+        },
+        {
+            "c_hash": "349eb655",
+            "date": "2011-08-20 06:56:56 +0000",
+            "comment": "Refactoring of the backend to include REST services as a core part."
+        },
+        {
+            "c_hash": "a448fdfe",
+            "date": "2011-08-21 17:39:57 +0000",
+            "comment": "Start the Cave management support. Start the Cave RepositoryAdmin proxy client."
+        },
+        {
+            "c_hash": "4a354c2c",
+            "date": "2011-08-23 07:33:28 +0000",
+            "comment": "Add methods to get resource input stream (in order to handle the HTTP service)."
+        },
+        {
+            "c_hash": "c6ca6da3",
+            "date": "2011-08-24 20:05:39 +0000",
+            "comment": "Add CXF in the features descriptor. Add the Cave HTTP service."
+        },
+        {
+            "c_hash": "2bae6c0a",
+            "date": "2011-08-25 06:38:29 +0000",
+            "comment": "Various typo fixes."
+        },
+        {
+            "c_hash": "1a567296",
+            "date": "2011-08-25 07:19:17 +0000",
+            "comment": "Fix the OBR relative URI support"
+        },
+        {
+            "c_hash": "94949ca7",
+            "date": "2011-08-25 09:18:32 +0000",
+            "comment": "Refactoring of the Cave modules. Complete HTTP service wrapper."
+        },
+        {
+            "c_hash": "7b1fa499",
+            "date": "2011-08-25 15:04:29 +0000",
+            "comment": "Start of the Cave manual."
+        },
+        {
+            "c_hash": "92ce01ad",
+            "date": "2011-08-30 07:26:56 +0000",
+            "comment": "Move Karaf Cave directly under sandbox."
+        },
+        {
+            "c_hash": "fd51e6e6",
+            "date": "2011-09-07 13:08:26 +0000",
+            "comment": "Promote Karaf Cave as a Karaf sub-project"
+        },
+        {
+            "c_hash": "cd8a97c9",
+            "date": "2011-09-07 14:56:51 +0000",
+            "comment": "OBR metadata are updated by default in Cave commands"
+        },
+        {
+            "c_hash": "4fee9229",
+            "date": "2011-09-09 08:34:39 +0000",
+            "comment": "[KARAF-858] Automatic refresh of OBR URLs."
+        },
+        {
+            "c_hash": "815cf5b5",
+            "date": "2011-09-19 08:24:37 +0000",
+            "comment": "[KARAF-869] Rid off Cave repository destroy action"
+        },
+        {
+            "c_hash": "219546ff",
+            "date": "2011-09-28 13:00:26 +0000",
+            "comment": "[KARAF-887] Reference PrinceXML in the generated manual"
+        },
+        {
+            "c_hash": "49f65ae6",
+            "date": "2011-10-29 12:49:21 +0000",
+            "comment": "[KARAF-973] Upgrade to CXF 2.4.3 and so support Karaf 2.2.4"
+        },
+        {
+            "c_hash": "f883b7e3",
+            "date": "2011-11-09 23:16:16 +0000",
+            "comment": "[KARAF-983] Cave repository scanning now accounts for removed bundles"
+        },
+        {
+            "c_hash": "447cebbe",
+            "date": "2011-11-09 23:35:30 +0000",
+            "comment": "[KARAF-974] Tightening up of cave:remove-repository and cave:register-repository commands"
+        },
+        {
+            "c_hash": "c01ac59d",
+            "date": "2011-11-12 14:50:13 +0000",
+            "comment": "[KARAF-882] Cave doesn't parse non jar file anymore"
+        },
+        {
+            "c_hash": "5daff9aa",
+            "date": "2011-11-24 11:13:26 +0000",
+            "comment": "Add name in the Cave features XML"
+        },
+        {
+            "c_hash": "bfa6bdff",
+            "date": "2012-01-03 08:19:40 +0000",
+            "comment": "Update text files to be ASF compliant"
+        },
+        {
+            "c_hash": "2ff5eaef",
+            "date": "2012-01-03 08:24:04 +0000",
+            "comment": "Add the NOTICE files to be ASF compliant"
+        },
+        {
+            "c_hash": "a2519e0a",
+            "date": "2012-01-13 16:38:43 +0000",
+            "comment": "Change the name of the Cave OBR server feature"
+        },
+        {
+            "c_hash": "9b3bef3b",
+            "date": "2012-01-16 09:59:39 +0000",
+            "comment": "[KARAF-1155] Upgrade to Apache POM 10"
+        },
+        {
+            "c_hash": "1d19c68d",
+            "date": "2012-02-21 12:00:46 +0000",
+            "comment": "[KARAF-1205] Upgrade to maven-bundle-plugin 2.3.7"
+        },
+        {
+            "c_hash": "51a6137b",
+            "date": "2012-06-03 17:20:44 +0000",
+            "comment": "[KARAF-1516] Fix Cave manual build and update feature name"
+        },
+        {
+            "c_hash": "f11e8a0e",
+            "date": "2012-10-18 09:44:31 +0000",
+            "comment": "[KARAF-1948] Upgrade to Apache 11"
+        },
+        {
+            "c_hash": "865af33d",
+            "date": "2012-10-18 13:23:00 +0000",
+            "comment": "[KARAF-1937] Fix dependencies to run Cave on Karaf 2.3.0"
+        },
+        {
+            "c_hash": "7b10b2fe",
+            "date": "2012-11-27 06:16:17 +0000",
+            "comment": "[KARAF-2030] Extend the enforcer Java version range"
+        },
+        {
+            "c_hash": "c9e4ddc1",
+            "date": "2012-12-11 14:59:10 +0000",
+            "comment": "[KARAF-2055] Upgrade to Apache POM 12"
+        },
+        {
+            "c_hash": "bd7cc731",
+            "date": "2012-12-12 12:48:16 +0000",
+            "comment": "[KARAF-2040] Ignore JSoup UnsupportedMimeTypeException"
+        },
+        {
+            "c_hash": "1db89f79",
+            "date": "2012-12-18 14:43:20 +0000",
+            "comment": "[KARAF-2057] Fix NOTICE and LICENSE files"
+        },
+        {
+            "c_hash": "854d1f55",
+            "date": "2013-01-23 03:36:39 +0000",
+            "comment": "[KARAF-2133] Fix version filtering in the manual title"
+        },
+        {
+            "c_hash": "4ca662be",
+            "date": "2013-01-28 17:44:03 +0000",
+            "comment": "[KARAF-2145] Extend org.osgi.framework version range to support several Karaf versions"
+        },
+        {
+            "c_hash": "c2c88b41",
+            "date": "2013-02-11 14:50:19 +0000",
+            "comment": "Remove empty folder"
+        },
+        {
+            "c_hash": "a9d3ab68",
+            "date": "2013-02-11 14:52:31 +0000",
+            "comment": "Remove empty folder"
+        },
+        {
+            "c_hash": "febc62ed",
+            "date": "2013-03-15 10:13:24 +0000",
+            "comment": "[KARAF-2218] Manual now publish to main site"
+        },
+        {
+            "c_hash": "1851dfba",
+            "date": "2013-05-22 19:24:51 +0000",
+            "comment": "[KARAF-2337] Upgrade to Apache POM 13"
+        },
+        {
+            "c_hash": "7f90b33d",
+            "date": "2013-07-25 17:04:40 +0000",
+            "comment": "[KARAF-1525] Add filter support on artifacts for API and commands."
+        },
+        {
+            "c_hash": "b9faac08",
+            "date": "2013-07-26 04:56:51 +0000",
+            "comment": "[KARAF-1525] Complete CaveRepositoryImpl commit"
+        },
+        {
+            "c_hash": "882ddf29",
+            "date": "2013-07-26 14:33:36 +0000",
+            "comment": "In preparation for the first release: - change the Cave version to 2.3.0-SNAPSHOT - update to Karaf 2.3.2 - update the manual with the filter option description of proxy and populate commands"
+        },
+        {
+            "c_hash": "336fa507",
+            "date": "2013-07-26 16:25:28 +0000",
+            "comment": "[KARAF-2410] Upgrade to CXF 2.7.6"
+        },
+        {
+            "c_hash": "b214b61c",
+            "date": "2013-07-26 16:27:45 +0000",
+            "comment": "[KARAF-2411] Upgrade to jsoup 1.7.2"
+        },
+        {
+            "c_hash": "dc118b4c",
+            "date": "2013-07-26 16:31:50 +0000",
+            "comment": "[KARAF-2412] Update to httpclient 4.2.5"
+        },
+        {
+            "c_hash": "cd892b1c",
+            "date": "2013-07-27 16:26:48 +0000",
+            "comment": "Upgrade to slf4j 1.7.5"
+        },
+        {
+            "c_hash": "24b8c835",
+            "date": "2013-08-04 18:09:07 +0000",
+            "comment": "[KARAF-871] Start renaming of API"
+        },
+        {
+            "c_hash": "d499da15",
+            "date": "2013-08-05 04:19:30 +0000",
+            "comment": "[KARAF-871] Rename commands"
+        },
+        {
+            "c_hash": "fa5fcde4",
+            "date": "2013-08-05 15:13:48 +0000",
+            "comment": "[KARAF-871] Update Cave documentation"
+        },
+        {
+            "c_hash": "b74e271f",
+            "date": "2013-08-05 18:34:39 +0000",
+            "comment": "[KARAF-872] Add support of ?repositories option in the Cave servlet to list the repositories"
+        },
+        {
+            "c_hash": "f743e484",
+            "date": "2013-08-06 05:42:45 +0000",
+            "comment": "[KARAF-870] Cave now stores the repositories in a properties file in order to be able to reload it"
+        },
+        {
+            "c_hash": "c86071db",
+            "date": "2013-08-14 21:36:46 +0000",
+            "comment": "Cleanup in the Cave commands."
+        },
+        {
+            "c_hash": "ab67133c",
+            "date": "2013-08-15 14:56:02 +0000",
+            "comment": "Rename cave-obr-server feature to cave-server feature"
+        },
+        {
+            "c_hash": "f740a191",
+            "date": "2013-08-16 02:48:53 +0000",
+            "comment": "[KARAF-2433] Refactoring of the Cave API to prepare the destroy command"
+        },
+        {
+            "c_hash": "bb893f82",
+            "date": "2013-12-18 09:18:30 +0100",
+            "comment": "Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/karaf-cave"
+        },
+        {
+            "c_hash": "ab582157",
+            "date": "2013-12-18 09:23:43 +0100",
+            "comment": "Add git scm section"
+        },
+        {
+            "c_hash": "cd86ef14",
+            "date": "2014-01-04 14:19:02 +0100",
+            "comment": "Upgrade Cave version to 3.0.0-SNAPSHOT on master"
+        },
+        {
+            "c_hash": "636c1095",
+            "date": "2014-01-09 21:21:49 +0100",
+            "comment": "[KARAF-2433] Add cave:repository-destroy command"
+        },
+        {
+            "c_hash": "11f8946d",
+            "date": "2014-01-09 21:21:49 +0100",
+            "comment": "[KARAF-2433] Add cave:repository-destroy command"
+        },
+        {
+            "c_hash": "1ba080c9",
+            "date": "2014-01-11 15:32:19 +0100",
+            "comment": "[KARAF-2408] Add new operations in the CaveRepositoryMBean"
+        },
+        {
+            "c_hash": "a6d844f4",
+            "date": "2014-01-11 16:44:42 +0100",
+            "comment": "[KARAF-2433] Add completer for the cave:repository-destroy command"
+        },
+        {
+            "c_hash": "1c360c70",
+            "date": "2014-01-11 16:45:03 +0100",
+            "comment": "Update Cave documentation"
+        },
+        {
+            "c_hash": "d4d91099",
+            "date": "2014-01-11 17:24:57 +0100",
+            "comment": "[KARAF-2433] Fix the cave:repository-destroy command"
+        },
+        {
+            "c_hash": "ee65d1fc",
+            "date": "2014-01-11 17:29:49 +0100",
+            "comment": "Add maven-release-plugin configuration"
+        },
+        {
+            "c_hash": "ab5b138f",
+            "date": "2014-01-11 17:48:16 +0100",
+            "comment": "Update the maven-release-plugin configuration"
+        },
+        {
+            "c_hash": "17a6e6fa",
+            "date": "2014-01-21 15:57:34 +0100",
+            "comment": "Include manual profile in the release profiles set"
+        },
+        {
+            "c_hash": "2cb3014f",
+            "date": "2014-02-23 21:31:31 +0100",
+            "comment": "Update copyright dates in NOTICE files"
+        },
+        {
+            "c_hash": "1b1b1b7d",
+            "date": "2014-06-27 08:06:29 +0200",
+            "comment": "[KARAF-3077] Align dependencies with Karaf 3.0.1"
+        },
+        {
+            "c_hash": "ed2e1718",
+            "date": "2014-06-27 08:45:47 +0200",
+            "comment": "[KARAF-3077] Upgrade to Apache POM 14"
+        },
+        {
+            "c_hash": "363813eb",
+            "date": "2014-06-27 10:53:21 +0200",
+            "comment": "[KARAF-3077] Upgrade to junit 4.11"
+        },
+        {
+            "c_hash": "65ba84ba",
+            "date": "2014-06-27 10:59:27 +0200",
+            "comment": "[KARAF-3076] Upgrade to jsoup 1.7.3"
+        },
+        {
+            "c_hash": "c9334af0",
+            "date": "2014-06-27 14:40:45 +0200",
+            "comment": "[KARAF-3078] Upgrade to CXF 3.0.0"
+        },
+        {
+            "c_hash": "e4d040b3",
+            "date": "2014-06-27 15:30:09 +0200",
+            "comment": "[KARAF-3080] Upgrade to httpclient 4.3.4 and align dependencies to Karaf 3.0.1"
+        },
+        {
+            "c_hash": "4c03de31",
+            "date": "2014-06-27 17:19:57 +0200",
+            "comment": "[KARAF-3081] Refactore Cave management to use Aries JMX services"
+        },
+        {
+            "c_hash": "50de991d",
+            "date": "2014-06-29 21:45:54 +0200",
+            "comment": "Upgrade to Karaf features namespace to 1.2.0"
+        },
+        {
+            "c_hash": "3fed55b2",
+            "date": "2014-06-29 22:02:45 +0200",
+            "comment": "[KARAF-3082] Upgrade to shell 1.1.0, new shell package, and ShellTable."
+        },
+        {
+            "c_hash": "c1300755",
+            "date": "2014-06-29 22:09:26 +0200",
+            "comment": "[KARAF-3083] Log the stack trace to trace level in the repository init() method"
+        },
+        {
+            "c_hash": "801ad7dd",
+            "date": "2014-06-29 22:25:40 +0200",
+            "comment": "Update Cave version on master"
+        },
+        {
+            "c_hash": "138161d8",
+            "date": "2014-06-30 15:00:01 +0200",
+            "comment": "Change to DEBUG log level when the repositories.properties doesn't exist yet."
+        },
+        {
+            "c_hash": "dd58c839",
+            "date": "2014-06-30 15:13:13 +0200",
+            "comment": "[KARAF-1056] Enhance the cave upload artifact operation"
+        },
+        {
+            "c_hash": "d94b9ef7",
+            "date": "2014-06-30 16:20:42 +0200",
+            "comment": "Extend the version range in import package"
+        }
+    ]
+}

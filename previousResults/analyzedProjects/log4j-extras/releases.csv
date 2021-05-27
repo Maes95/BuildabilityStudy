@@ -1,0 +1,8 @@
+commitID;commit-type;time-to-next-release;commit-message
+0d17dff580110fc9b113c19732b15be410cbb38f;BREAKING_FIX;77;Bug 42099: ExpressionFilter backport git-svn-id: https://svn.apache.org/repos/asf/logging/sandbox/log4j/expression-filter@527948 13f79535-47bb-0310-9956-ffa450edef68
+48e751037f2381f439c57e8e1550436d605bec56;BREAKING_CHANGES;77;Bug 42099: Copy implementation from log4j 1.3 git-svn-id: https://svn.apache.org/repos/asf/logging/sandbox/log4j/expression-filter@527950 13f79535-47bb-0310-9956-ffa450edef68
+db74266b8cfcaf111ad5bdb3c7733044bb4df694;BREAKING_FIX;77;Bug 42099: Rework to avoid log4j 1.3 dependency git-svn-id: https://svn.apache.org/repos/asf/logging/sandbox/log4j/expression-filter@527953 13f79535-47bb-0310-9956-ffa450edef68
+025d0a07f23ac96d3f1dc0680e1d0e1a893774e2;BREAKING_CHANGES;0;Removing constants from extras & component (was added to log4j) git-svn-id: https://svn.apache.org/repos/asf/logging/log4j/companions/extras/trunk@568982 13f79535-47bb-0310-9956-ffa450edef68
+6c17f2919bf26707f6256704c63e497ef76b7aab;BREAKING_FIX;0;Remove references to o.a.l.helpers.Constants git-svn-id: https://svn.apache.org/repos/asf/logging/log4j/companions/extras/trunk@569061 13f79535-47bb-0310-9956-ffa450edef68
+e2cf72b8a55298490f7af622710b6eabea27fdc1;BREAKING_CHANGES;633;added poms to parent pom git-svn-id: https://svn.apache.org/repos/asf/logging/log4j/companions/extras/trunk@1155260 13f79535-47bb-0310-9956-ffa450edef68
+fe721b41f4bf25654ae84bac385013023840b5ad;BREAKING_FIX;206;made apache pom the parent pom of extras. Removed unnecessary tags and copied the dependencies from the old parent to this one. git-svn-id: https://svn.apache.org/repos/asf/logging/log4j/companions/extras/trunk@1395992 13f79535-47bb-0310-9956-ffa450edef68

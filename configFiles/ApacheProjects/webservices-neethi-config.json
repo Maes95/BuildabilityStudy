@@ -1,0 +1,1798 @@
+{
+    "project": "webservices-neethi",
+    "git_url": "https://github.com/apache/webservices-neethi.git",
+    "last_commit": "d8930734",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "1ba61efa",
+            "date": "2005-11-07 16:49:40 +0000",
+            "comment": "importing policy model code from scratch area"
+        },
+        {
+            "c_hash": "5e40b3ab",
+            "date": "2005-11-07 18:00:57 +0000",
+            "comment": "moved policy to inside trunk"
+        },
+        {
+            "c_hash": "209f02fa",
+            "date": "2005-11-11 10:27:24 +0000",
+            "comment": "Adding support for defining policies in primitive assertions and some refactoring in codebase"
+        },
+        {
+            "c_hash": "4a28981e",
+            "date": "2005-11-16 05:13:29 +0000",
+            "comment": "adding support for using policies inside primitive assertion, Fixed: primitive assertion tags do not close properly when a primitive assertions are serialized"
+        },
+        {
+            "c_hash": "00e95be9",
+            "date": "2005-11-19 17:11:19 +0000",
+            "comment": "Adding PolicyFactory and PolicyWriter classes which add support for policy serialization."
+        },
+        {
+            "c_hash": "289e4dd2",
+            "date": "2005-11-20 15:37:48 +0000",
+            "comment": "Adding PolicyWriter class which creates a policy object using an inputstream. Some refactoring in the util package .."
+        },
+        {
+            "c_hash": "9c0e863d",
+            "date": "2005-11-20 15:40:19 +0000",
+            "comment": "Moving the WSPConstants to org.apache.policy package. Some changes in PrimitiveAssertion class to use PolicyReader class instead of WSPolicyParser"
+        },
+        {
+            "c_hash": "9989c7ae",
+            "date": "2005-11-20 15:42:24 +0000",
+            "comment": "Removing org.apache.policy.parser.* package."
+        },
+        {
+            "c_hash": "a2e8a5af",
+            "date": "2005-11-20 16:05:29 +0000",
+            "comment": "Some refactoring and few bug fixes .."
+        },
+        {
+            "c_hash": "a4b9e913",
+            "date": "2005-11-21 06:41:10 +0000",
+            "comment": "Adding the dependency jars to lib. Few fixes in build.xml"
+        },
+        {
+            "c_hash": "2daa986c",
+            "date": "2005-11-25 05:12:21 +0000",
+            "comment": "fix name of jar"
+        },
+        {
+            "c_hash": "0af47a16",
+            "date": "2005-11-25 06:06:23 +0000",
+            "comment": "- change package from org.apache.policy to org.apache.ws.policy - Added maven build script, removed ant build.xml - removed the checked in jars"
+        },
+        {
+            "c_hash": "ebf78c7e",
+            "date": "2005-11-25 13:01:26 +0000",
+            "comment": "dev->SNAPSHOT"
+        },
+        {
+            "c_hash": "a6fbe46a",
+            "date": "2005-11-25 13:02:46 +0000",
+            "comment": "helper maven.xml"
+        },
+        {
+            "c_hash": "c8601142",
+            "date": "2005-11-27 11:46:26 +0000",
+            "comment": "Implementation of a policy interop service endpoint and a simple client (see http://wsi.alphaworks.ibm.com:8080/wspolicy/index.html)"
+        },
+        {
+            "c_hash": "b5a3d887",
+            "date": "2005-11-29 06:21:42 +0000",
+            "comment": "Fixed: Incorrect namespace is considered for deciding whether an element is a primitive assertion"
+        },
+        {
+            "c_hash": "f0bf888c",
+            "date": "2005-12-05 15:05:46 +0000",
+            "comment": "First very simple example used to test the basic features."
+        },
+        {
+            "c_hash": "fc2531b9",
+            "date": "2005-12-05 15:05:52 +0000",
+            "comment": "First very simple example used to test the basic features."
+        },
+        {
+            "c_hash": "9cdba4fb",
+            "date": "2005-12-05 18:06:20 +0000",
+            "comment": "Fixed: Updated the SimplePolicyClient to use latest Axis2 Client API"
+        },
+        {
+            "c_hash": "33a2f1fc",
+            "date": "2005-12-08 04:54:03 +0000",
+            "comment": "Some refactoring in AndCompositeAssertion class"
+        },
+        {
+            "c_hash": "f505f996",
+            "date": "2005-12-08 10:56:16 +0000",
+            "comment": "some refactoring in normalize(..) method in all core classes"
+        },
+        {
+            "c_hash": "05c29b11",
+            "date": "2005-12-08 11:25:42 +0000",
+            "comment": "some refactring and few add-ons to several utility classes"
+        },
+        {
+            "c_hash": "34259aef",
+            "date": "2005-12-08 13:40:26 +0000",
+            "comment": "Another example that shows how to use the policy framework methods."
+        },
+        {
+            "c_hash": "a469e73f",
+            "date": "2005-12-08 13:41:57 +0000",
+            "comment": "Setup a DOM parser in addition to stream reader and Axis2 OM."
+        },
+        {
+            "c_hash": "65785ea3",
+            "date": "2005-12-08 14:31:53 +0000",
+            "comment": "update examples to include some more options in the policy2.xml (xml:base=\"...\")"
+        },
+        {
+            "c_hash": "a14e287b",
+            "date": "2005-12-08 14:32:59 +0000",
+            "comment": "Synchronizing with Sanka's modifications in reader module."
+        },
+        {
+            "c_hash": "668fbbe4",
+            "date": "2005-12-08 14:42:43 +0000",
+            "comment": "Cleanup import and comments"
+        },
+        {
+            "c_hash": "ecdbeb67",
+            "date": "2005-12-09 13:53:12 +0000",
+            "comment": "Adding PolicyReader and PolicyWriter interfaces.  Refactoring PolicyFactory"
+        },
+        {
+            "c_hash": "f2101791",
+            "date": "2005-12-09 13:55:22 +0000",
+            "comment": "Adding PolicyComparatot which is a utility class for policy comparison"
+        },
+        {
+            "c_hash": "e4f827fb",
+            "date": "2005-12-09 14:44:07 +0000",
+            "comment": "Remove debug prints. This problem is solved with Axis2 OM parser fix, see JIRA:AXIS2-329"
+        },
+        {
+            "c_hash": "b8c49304",
+            "date": "2005-12-09 14:45:56 +0000",
+            "comment": "Add Loader class from WSS4J, use real \"on-the-fly\" class loading in PolicyFactory to enable real plug-in and be independent of specifc XML parser."
+        },
+        {
+            "c_hash": "448f9b47",
+            "date": "2005-12-09 14:47:09 +0000",
+            "comment": "Fix examples to use the new structure of PolicyReader and PolicyWriter. Add wsu:Id attribute to policy2.xml to show if it works."
+        },
+        {
+            "c_hash": "6316652d",
+            "date": "2005-12-09 21:32:05 +0000",
+            "comment": "updated to 94"
+        },
+        {
+            "c_hash": "facc7a61",
+            "date": "2005-12-10 08:31:29 +0000",
+            "comment": "Chckin the Loader."
+        },
+        {
+            "c_hash": "df4538d3",
+            "date": "2005-12-10 15:47:28 +0000",
+            "comment": "Fixed: incorrect import"
+        },
+        {
+            "c_hash": "1e52e58b",
+            "date": "2005-12-10 15:50:02 +0000",
+            "comment": "Added: commons-logging.jar artifacts"
+        },
+        {
+            "c_hash": "7514f2af",
+            "date": "2005-12-11 09:35:13 +0000",
+            "comment": "Fix detection of wsp:Optional flag in reader."
+        },
+        {
+            "c_hash": "1d205b28",
+            "date": "2005-12-11 10:07:18 +0000",
+            "comment": "Add some trace information."
+        },
+        {
+            "c_hash": "aa830c19",
+            "date": "2005-12-11 10:07:56 +0000",
+            "comment": "log4j file to control trace/debug"
+        },
+        {
+            "c_hash": "d6bf58c4",
+            "date": "2005-12-11 10:44:09 +0000",
+            "comment": "Add a mor complex example to merge to policies. These policies were copied from the WS-SecurityPolicy specification Appendix C.3"
+        },
+        {
+            "c_hash": "5fc6c88c",
+            "date": "2005-12-11 11:11:49 +0000",
+            "comment": "Update to use new security policy namespace as per specification."
+        },
+        {
+            "c_hash": "fc0eb33e",
+            "date": "2005-12-11 13:36:31 +0000",
+            "comment": "Fixed: wsp:Optional attribute does not get resolved when normalize(..) is called"
+        },
+        {
+            "c_hash": "bbcb7a46",
+            "date": "2005-12-11 16:49:12 +0000",
+            "comment": "Added: Sample policy files for testcases."
+        },
+        {
+            "c_hash": "ed15d2ee",
+            "date": "2005-12-11 16:59:40 +0000",
+            "comment": "Modified: To compare core components of two policy objects."
+        },
+        {
+            "c_hash": "1c6fd27d",
+            "date": "2005-12-11 17:21:17 +0000",
+            "comment": "Moved: org.apache.ws.policy.model.* classes to org.apache.ws.policy.*"
+        },
+        {
+            "c_hash": "198d5d24",
+            "date": "2005-12-11 18:16:31 +0000",
+            "comment": "Deleted: unwanted folder org/apache/ws/policy/model"
+        },
+        {
+            "c_hash": "c054aa18",
+            "date": "2005-12-11 19:13:54 +0000",
+            "comment": "Added: testcases for test normalize(..) is working properly"
+        },
+        {
+            "c_hash": "50aefeeb",
+            "date": "2005-12-12 16:09:15 +0000",
+            "comment": "Fixed: normalize(..) causes an infinte recurrsion which result in stack overflow error"
+        },
+        {
+            "c_hash": "6a157a33",
+            "date": "2005-12-12 16:16:10 +0000",
+            "comment": "Removed: commented block of code .."
+        },
+        {
+            "c_hash": "3f215ca9",
+            "date": "2005-12-12 17:21:45 +0000",
+            "comment": "Fixed: child <wsp:Policy> ..</wsp:Policy> elements are serialized as <wsp:All> .. </wsp:All>"
+        },
+        {
+            "c_hash": "e908fcb6",
+            "date": "2005-12-19 03:49:00 +0000",
+            "comment": "Modified: making Policy readPolicy(OMElement element) a public method. In OM environment its seems to be reasonable"
+        },
+        {
+            "c_hash": "4feebbcf",
+            "date": "2005-12-20 12:23:30 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/webservices/commons/trunk/policy@357967 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "caf0d475",
+            "date": "2005-12-22 14:28:08 +0000",
+            "comment": "A more elaborated example that performs better parsing."
+        },
+        {
+            "c_hash": "9172b7ae",
+            "date": "2005-12-23 13:14:26 +0000",
+            "comment": "Some comments, insert checks to qualify policy"
+        },
+        {
+            "c_hash": "77a0cadf",
+            "date": "2005-12-28 04:57:07 +0000",
+            "comment": "Adding README file for test-resources"
+        },
+        {
+            "c_hash": "cae1c5e7",
+            "date": "2005-12-28 13:59:30 +0000",
+            "comment": "Only some cleanup"
+        },
+        {
+            "c_hash": "d8385d59",
+            "date": "2005-12-28 14:01:56 +0000",
+            "comment": "Insert test for second policy file and check for normalized."
+        },
+        {
+            "c_hash": "72ead306",
+            "date": "2005-12-30 18:58:28 +0000",
+            "comment": "Fixed: see: http://www.opensubscriber.com/message/wss4j-dev@ws.apache.org/2944470.html"
+        },
+        {
+            "c_hash": "8405da90",
+            "date": "2006-01-02 08:13:08 +0000",
+            "comment": "Making writePolicy(..), writePolicyReference(..) methods public"
+        },
+        {
+            "c_hash": "e83aeeed",
+            "date": "2006-01-03 05:38:20 +0000",
+            "comment": "Making private methods readPolicy(Element) and readPolicyReference(Element) public methods"
+        },
+        {
+            "c_hash": "f280ecee",
+            "date": "2006-01-03 18:47:38 +0000",
+            "comment": "Allowing the user to set the parent of PolicyRegistry"
+        },
+        {
+            "c_hash": "80d42cd4",
+            "date": "2006-01-08 19:01:06 +0000",
+            "comment": "Check-in a first, incomplete version of a security parser example."
+        },
+        {
+            "c_hash": "76382710",
+            "date": "2006-01-10 15:38:28 +0000",
+            "comment": "Next step for a security policy processor - still imcomplete."
+        },
+        {
+            "c_hash": "c955dff1",
+            "date": "2006-01-11 14:57:47 +0000",
+            "comment": "Another next step for a security policy processor - still imcomplete."
+        },
+        {
+            "c_hash": "ede202dd",
+            "date": "2006-01-12 13:32:24 +0000",
+            "comment": "Example of a security policy language processor. Contains all methods to parse the examples. Run Javadoc and refer to the package description of examples.secParser."
+        },
+        {
+            "c_hash": "15048eab",
+            "date": "2006-01-18 13:18:03 +0000",
+            "comment": "update to 95 SNAPSHOT"
+        },
+        {
+            "c_hash": "92249945",
+            "date": "2006-01-18 15:19:13 +0000",
+            "comment": "Add first level of PolicyEngineData processing."
+        },
+        {
+            "c_hash": "ab4f8365",
+            "date": "2006-01-20 04:19:32 +0000",
+            "comment": "Moving the WSSecurityPolicyParser example to policy/example/wsse directory"
+        },
+        {
+            "c_hash": "82f275c9",
+            "date": "2006-01-29 15:24:37 +0000",
+            "comment": "Some fixes in Javadoc."
+        },
+        {
+            "c_hash": "f297559e",
+            "date": "2006-02-01 05:47:32 +0000",
+            "comment": "- adjusting for changes to om in Axis2. - fixing some compile errors in interop classes"
+        },
+        {
+            "c_hash": "549f6507",
+            "date": "2006-02-01 11:07:04 +0000",
+            "comment": "fix name,version,repos; remove unused file"
+        },
+        {
+            "c_hash": "f87851cf",
+            "date": "2006-02-01 15:51:15 +0000",
+            "comment": "converted commons into a maven multi-project, yes, you can edit/compil/run each sub component w/o having to checkout everything"
+        },
+        {
+            "c_hash": "cefbfeca",
+            "date": "2006-02-06 08:08:43 +0000",
+            "comment": "Fixed: Assigned the proper namespace for 'wsu' prefix"
+        },
+        {
+            "c_hash": "078d2a56",
+            "date": "2006-02-09 14:48:52 +0000",
+            "comment": "Fixed: public Element lookup(String URI) should be a public method"
+        },
+        {
+            "c_hash": "d57f1366",
+            "date": "2006-02-13 04:07:25 +0000",
+            "comment": "making lookup method, public access"
+        },
+        {
+            "c_hash": "df641888",
+            "date": "2006-02-20 11:48:44 +0000",
+            "comment": "New policy test file."
+        },
+        {
+            "c_hash": "204cacae",
+            "date": "2006-02-20 12:24:02 +0000",
+            "comment": "A small utility that take policies, normalizes and merges them and produces a pretty printing. This utility needs Xerces - pls update your classpath."
+        },
+        {
+            "c_hash": "6c091801",
+            "date": "2006-02-20 12:59:48 +0000",
+            "comment": "Added more testcases to test policy.normalize() function"
+        },
+        {
+            "c_hash": "f975339c",
+            "date": "2006-02-20 14:37:41 +0000",
+            "comment": "Renaming normalize to normalized"
+        },
+        {
+            "c_hash": "c5c8e3ca",
+            "date": "2006-02-20 14:41:27 +0000",
+            "comment": "Renaming normalize to normalized"
+        },
+        {
+            "c_hash": "7b177c98",
+            "date": "2006-02-28 10:40:59 +0000",
+            "comment": "Few improvements and more refactoring for the codebase"
+        },
+        {
+            "c_hash": "09426370",
+            "date": "2006-02-28 10:48:57 +0000",
+            "comment": "adding one more testcase"
+        },
+        {
+            "c_hash": "8b159812",
+            "date": "2006-03-01 08:35:23 +0000",
+            "comment": "changing the policy.version from 1.0 to 0.90 I suggest we do couple of releases before we go for the 1.0 Release"
+        },
+        {
+            "c_hash": "eb2561e3",
+            "date": "2006-03-01 08:56:53 +0000",
+            "comment": "reverting the last commit and it is better to wait until the vote is over"
+        },
+        {
+            "c_hash": "e0410ab9",
+            "date": "2006-03-01 12:37:34 +0000",
+            "comment": "changing the version from 1.0-snapshot to 0.90-snapshot"
+        },
+        {
+            "c_hash": "6c3887a8",
+            "date": "2006-03-02 05:12:46 +0000",
+            "comment": "Made a slight imporvement to the DOM policy reader"
+        },
+        {
+            "c_hash": "3e9dc9de",
+            "date": "2006-03-02 09:55:29 +0000",
+            "comment": "adding comments to AbstractAction and Assertion interface"
+        },
+        {
+            "c_hash": "21a71819",
+            "date": "2006-03-03 05:49:54 +0000",
+            "comment": "adding more javadoc comments"
+        },
+        {
+            "c_hash": "67b820cd",
+            "date": "2006-03-03 08:26:45 +0000",
+            "comment": "adding more javadoc comments"
+        },
+        {
+            "c_hash": "bdd29024",
+            "date": "2006-03-03 08:52:32 +0000",
+            "comment": "Adding license and author files"
+        },
+        {
+            "c_hash": "2b98c0ba",
+            "date": "2006-03-03 09:02:15 +0000",
+            "comment": "Adding the readme file"
+        },
+        {
+            "c_hash": "a0f7dca9",
+            "date": "2006-03-03 09:14:37 +0000",
+            "comment": "Adding the release-note"
+        },
+        {
+            "c_hash": "3f66c8b9",
+            "date": "2006-03-03 09:27:38 +0000",
+            "comment": "Adding the introduction and the userguide documents"
+        },
+        {
+            "c_hash": "6d645c7e",
+            "date": "2006-03-03 17:56:58 +0000",
+            "comment": "Adding dist-src target in maven.xml"
+        },
+        {
+            "c_hash": "58698cd6",
+            "date": "2006-03-05 04:44:27 +0000",
+            "comment": "Renaming doc to docs"
+        },
+        {
+            "c_hash": "ba466b67",
+            "date": "2006-03-05 05:15:26 +0000",
+            "comment": "adding dist-bin target to maven.xml"
+        },
+        {
+            "c_hash": "bbeefa08",
+            "date": "2006-03-05 05:41:13 +0000",
+            "comment": "few minor fixes"
+        },
+        {
+            "c_hash": "ee79a83b",
+            "date": "2006-03-05 05:53:20 +0000",
+            "comment": "removing snapshot from version"
+        },
+        {
+            "c_hash": "79ad5e57",
+            "date": "2006-03-05 06:28:43 +0000",
+            "comment": "fix minor error in project.xml"
+        },
+        {
+            "c_hash": "f9c5274a",
+            "date": "2006-03-07 11:34:39 +0000",
+            "comment": "More flexible handling of arguments."
+        },
+        {
+            "c_hash": "69dae7d7",
+            "date": "2006-03-08 04:18:13 +0000",
+            "comment": "Changing the version from 0.90 to 0.92-SNAPSHOT"
+        },
+        {
+            "c_hash": "3f5d9fc3",
+            "date": "2006-03-13 04:50:50 +0000",
+            "comment": "building the site"
+        },
+        {
+            "c_hash": "b9b49a1e",
+            "date": "2006-03-13 05:20:27 +0000",
+            "comment": "minor adjustments to site"
+        },
+        {
+            "c_hash": "74f30fbb",
+            "date": "2006-03-13 05:28:36 +0000",
+            "comment": "adding mail archive link"
+        },
+        {
+            "c_hash": "caad7063",
+            "date": "2006-03-13 10:16:17 +0000",
+            "comment": "minor fix in navigation.xml"
+        },
+        {
+            "c_hash": "6c8b8c58",
+            "date": "2006-03-20 04:37:32 +0000",
+            "comment": "chaning the policy-0.92-SNAPSHOT to policy-SNAPSHOT"
+        },
+        {
+            "c_hash": "c3652953",
+            "date": "2006-03-22 03:55:20 +0000",
+            "comment": "made some usability enhancements/upgrades"
+        },
+        {
+            "c_hash": "c0f45d85",
+            "date": "2006-03-22 11:16:54 +0000",
+            "comment": "setting the appropriate axiom version"
+        },
+        {
+            "c_hash": "c760297d",
+            "date": "2006-03-23 04:02:43 +0000",
+            "comment": "some preparations for the release"
+        },
+        {
+            "c_hash": "301484c5",
+            "date": "2006-03-23 04:07:49 +0000",
+            "comment": "Renaming README to README.txt"
+        },
+        {
+            "c_hash": "4298f13b",
+            "date": "2006-03-23 04:23:05 +0000",
+            "comment": "fixing a minor error in RELEASE-NOTE.txt"
+        },
+        {
+            "c_hash": "f32312f9",
+            "date": "2006-03-23 05:03:09 +0000",
+            "comment": "fixing a minor error"
+        },
+        {
+            "c_hash": "9cb17cbe",
+            "date": "2006-03-23 05:56:46 +0000",
+            "comment": "adding download.xml"
+        },
+        {
+            "c_hash": "364b93fd",
+            "date": "2006-03-23 06:19:06 +0000",
+            "comment": "adding the url for the user's guide v1.0"
+        },
+        {
+            "c_hash": "b6f35338",
+            "date": "2006-03-23 08:23:03 +0000",
+            "comment": "made updates for release v1.0"
+        },
+        {
+            "c_hash": "d885813d",
+            "date": "2006-03-24 04:27:41 +0000",
+            "comment": "Moving modules in to trunk"
+        },
+        {
+            "c_hash": "1936ccb3",
+            "date": "2006-03-24 07:21:17 +0000",
+            "comment": "Changing to comply with latest axiom changes"
+        },
+        {
+            "c_hash": "f0685599",
+            "date": "2006-03-24 08:20:41 +0000",
+            "comment": "- moving project.* files in to the trunk - adding jar:install for policy project"
+        },
+        {
+            "c_hash": "8a44fd35",
+            "date": "2006-04-05 17:35:08 +0000",
+            "comment": "remove log4j setup and leave clogging configuration to the user of this library"
+        },
+        {
+            "c_hash": "f56095cb",
+            "date": "2006-04-05 17:36:42 +0000",
+            "comment": "set svn:ignore property to exclude target and IDE artifacts"
+        },
+        {
+            "c_hash": "7f144f77",
+            "date": "2006-04-16 19:17:52 +0000",
+            "comment": "Fixed few minor defects Added WSDLPolicyProcessor which provides WSDL PolicyAttachment support"
+        },
+        {
+            "c_hash": "e6c536a1",
+            "date": "2006-04-21 16:30:46 +0000",
+            "comment": "-document update for policy brand name   (changed by Chathra)"
+        },
+        {
+            "c_hash": "c194b5ce",
+            "date": "2006-04-26 06:51:02 +0000",
+            "comment": "Remove author tags in XmlSchema, AXIOM and Policy"
+        },
+        {
+            "c_hash": "d659548c",
+            "date": "2006-04-26 07:34:07 +0000",
+            "comment": "NOTICE.txt"
+        },
+        {
+            "c_hash": "e37c43c8",
+            "date": "2006-04-26 08:26:03 +0000",
+            "comment": "fix names"
+        },
+        {
+            "c_hash": "ba846334",
+            "date": "2006-04-27 09:11:35 +0000",
+            "comment": "Removing duplicate entry"
+        },
+        {
+            "c_hash": "87eb15b4",
+            "date": "2006-05-02 10:18:16 +0000",
+            "comment": "Minor fix in DOMPolicyReader ,thanks for pointing this out Mike"
+        },
+        {
+            "c_hash": "c54ba58d",
+            "date": "2006-05-02 10:27:12 +0000",
+            "comment": "renaming the 'policy' module to 'neethi'"
+        },
+        {
+            "c_hash": "3dbfbf40",
+            "date": "2006-05-02 10:30:47 +0000",
+            "comment": "updating documents for 1.0.1 release"
+        },
+        {
+            "c_hash": "bbe8b080",
+            "date": "2006-05-02 10:34:54 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/webservices/commons/trunk/modules/neethi@398894 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "ce46c54b",
+            "date": "2006-05-03 08:49:09 +0000",
+            "comment": "final preparations for neethi-1.0.1 release"
+        },
+        {
+            "c_hash": "06fd5359",
+            "date": "2006-05-03 09:54:50 +0000",
+            "comment": "final preparations for neethi-1.0.1 release"
+        },
+        {
+            "c_hash": "4051eb22",
+            "date": "2006-05-03 10:03:57 +0000",
+            "comment": "final preparations for neethi-1.0.1 release"
+        },
+        {
+            "c_hash": "4a4e3001",
+            "date": "2006-05-04 12:03:42 +0000",
+            "comment": "apply the patch. see:http://issues.apache.org/jira/browse/WSCOMMONS-14"
+        },
+        {
+            "c_hash": "1f4b8dfd",
+            "date": "2006-05-05 18:52:50 +0000",
+            "comment": "applied the patch. see JIRA WSCOMMONS-19"
+        },
+        {
+            "c_hash": "7c9d7d55",
+            "date": "2006-05-05 19:22:05 +0000",
+            "comment": "JIRA WSCOMMONS 15: patch applied"
+        },
+        {
+            "c_hash": "7f153938",
+            "date": "2006-05-09 10:30:07 +0000",
+            "comment": "Added: Policy.iterator() method which will return and iterator to keep track of alternatives. Here itertor.next() will return another iterator which points to the primitive terms set in the alternative which its parent points to .."
+        },
+        {
+            "c_hash": "d6d85b7a",
+            "date": "2006-05-10 05:36:31 +0000",
+            "comment": "renaming AndCompositeAssertion to All and XorCompositeAssertion to ExactlyOne"
+        },
+        {
+            "c_hash": "8e9f5c56",
+            "date": "2006-05-10 12:59:40 +0000",
+            "comment": "Adding the renamed class files"
+        },
+        {
+            "c_hash": "a3f1b090",
+            "date": "2006-05-15 11:27:43 +0000",
+            "comment": "Added the set of testcases uploaded in WS-COMMONS JIRA 26."
+        },
+        {
+            "c_hash": "d5723b48",
+            "date": "2006-05-16 14:32:31 +0000",
+            "comment": "Slight optimization for OMElementImpl (xmlns namespace is a constant now)"
+        },
+        {
+            "c_hash": "bb24fbdd",
+            "date": "2006-06-07 06:07:05 +0000",
+            "comment": "- more comments to the code - removed unnecessary normalization call"
+        },
+        {
+            "c_hash": "d5a3a2bd",
+            "date": "2006-07-08 15:25:32 +0000",
+            "comment": "Added new set of Classes and Interfaces which will probably goes as Neeth2. It is based on a new architecture and contains significant improvements than previous versions."
+        },
+        {
+            "c_hash": "8e445f1e",
+            "date": "2006-07-19 09:10:05 +0000",
+            "comment": "Completed the implementation of merge(...) and intersection(...) operations. Also added the first test suite for normalization operation."
+        },
+        {
+            "c_hash": "5679a622",
+            "date": "2006-07-20 09:34:07 +0000",
+            "comment": "Renamed the PolicyManager to PolicyEngine. Removed the PrimitiveAssertion interface. Added some comments to the existing codebase."
+        },
+        {
+            "c_hash": "79f45e18",
+            "date": "2006-07-22 03:35:38 +0000",
+            "comment": "add maven2 based build support"
+        },
+        {
+            "c_hash": "e2ad0a3f",
+            "date": "2006-07-24 04:05:54 +0000",
+            "comment": "Improved code documentation"
+        },
+        {
+            "c_hash": "12ce29be",
+            "date": "2006-07-26 06:15:17 +0000",
+            "comment": "Deprecating getName() method of OMNamespace and adding getNamespaceURI() method, as per http://issues.apache.org/jira/browse/WSCOMMONS-16"
+        },
+        {
+            "c_hash": "1c2dfe00",
+            "date": "2006-08-05 10:33:05 +0000",
+            "comment": "Adding a sample code for processing WSSecurity Policy Assertions"
+        },
+        {
+            "c_hash": "16515a46",
+            "date": "2006-08-05 10:34:01 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/webservices/commons/trunk/modules/neethi@428982 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "7c7a9b41",
+            "date": "2006-08-08 11:24:18 +0000",
+            "comment": "Adding Security Policy assertion builders as an example code"
+        },
+        {
+            "c_hash": "70b582a9",
+            "date": "2006-08-08 21:24:05 +0000",
+            "comment": "- Commented out use of the maven-assembly-plugin, because the plugin   descriptors are missing. - Added -sources and -javadoc jars to the release."
+        },
+        {
+            "c_hash": "599bf5fb",
+            "date": "2006-08-11 04:29:42 +0000",
+            "comment": "- Update woodstox to 3.0.0 - Update log4j to 1.2.13 - Update jaxen to 1.1-beta-9 - Use Sun's JavaMail 1.4 since it is available in a java.net's public repo - Use Sun's Activation 1.1 since it is available in a java.net's public repo - Replace axis1's wsdl4j.jar with the 1.5.2 jar from wsdl4j project - Fix maven.repo.remote's for all 3 projects (XmlSchema/Neethi/Axiom)"
+        },
+        {
+            "c_hash": "8f1b10a8",
+            "date": "2006-08-11 08:29:42 +0000",
+            "comment": "Catchup with changes in Axiom."
+        },
+        {
+            "c_hash": "bcaa9a92",
+            "date": "2006-08-11 20:57:15 +0000",
+            "comment": "Preparing generation of site and distributables with Maven 2."
+        },
+        {
+            "c_hash": "2ec5aa7c",
+            "date": "2006-08-12 20:18:34 +0000",
+            "comment": "The site is now being generated with Maven 2."
+        },
+        {
+            "c_hash": "ef9aef93",
+            "date": "2006-08-12 20:20:31 +0000",
+            "comment": "Removed empty directory."
+        },
+        {
+            "c_hash": "38045fb7",
+            "date": "2006-08-12 21:01:09 +0000",
+            "comment": "Distributables may now be generated using Maven 2."
+        },
+        {
+            "c_hash": "b38ba9b1",
+            "date": "2006-08-13 18:22:02 +0000",
+            "comment": "Added two new maven goals"
+        },
+        {
+            "c_hash": "a03a3642",
+            "date": "2006-08-13 20:21:54 +0000",
+            "comment": "Distributables may now be generated using Maven 2."
+        },
+        {
+            "c_hash": "12b95d04",
+            "date": "2006-08-14 20:40:55 +0000",
+            "comment": "Moved the test-resource, test2 and test3 directories to src/test, in order to meet the Maven 2 standards."
+        },
+        {
+            "c_hash": "09749e87",
+            "date": "2006-08-19 22:04:51 +0000",
+            "comment": "get tests to pass by adding the stax impl\""
+        },
+        {
+            "c_hash": "00d2d0f2",
+            "date": "2006-08-21 17:45:08 +0000",
+            "comment": "(1) Added a new method to AssertionBuilder interface, AssertionBuilder.getKnownElement which will return QName of the element that the AssertionBuilder can process and build an Assertion."
+        },
+        {
+            "c_hash": "ffc92247",
+            "date": "2006-08-22 02:52:07 +0000",
+            "comment": "fix Axis2 build break!"
+        },
+        {
+            "c_hash": "09e46a37",
+            "date": "2006-08-22 18:57:18 +0000",
+            "comment": "Apply the changes that were reverted last time due to an Axis2 build failure"
+        },
+        {
+            "c_hash": "567117fb",
+            "date": "2006-08-31 05:25:34 +0000",
+            "comment": "(1) Added two new interfaces called PolicyAlternatives and PolicyAlternative."
+        },
+        {
+            "c_hash": "7d5b22aa",
+            "date": "2006-09-06 07:40:33 +0000",
+            "comment": "Changing the return type of AssertionBuilder.getKnownElements() from QName to QName[] since it allow the same AssertionBuilder to be used for multiple elements"
+        },
+        {
+            "c_hash": "02c838cc",
+            "date": "2006-09-06 09:57:27 +0000",
+            "comment": "Another version missing problem in the ant run plugin"
+        },
+        {
+            "c_hash": "d4fc4189",
+            "date": "2006-09-18 07:23:40 +0000",
+            "comment": "(1) Integrated the patch that Amila has submitted."
+        },
+        {
+            "c_hash": "0d6d6128",
+            "date": "2006-09-21 08:28:39 +0000",
+            "comment": "Fixing a minor bug in policy.setId(..)"
+        },
+        {
+            "c_hash": "918513a6",
+            "date": "2006-09-25 14:41:34 +0000",
+            "comment": "removing unnecessary class test.java"
+        },
+        {
+            "c_hash": "30793a29",
+            "date": "2006-09-26 09:04:05 +0000",
+            "comment": "1. removed unncessary static block. This is alerady handled in AssersionBuilderFactory 2. Improvements to PolicyTestCase and Test"
+        },
+        {
+            "c_hash": "1023fd74",
+            "date": "2006-09-26 19:33:33 +0000",
+            "comment": "1) Improved documentation."
+        },
+        {
+            "c_hash": "0c9cf737",
+            "date": "2006-09-28 06:35:45 +0000",
+            "comment": "Fixed a minor error that caused the WSP policy URI not to be serialized."
+        },
+        {
+            "c_hash": "c0da3367",
+            "date": "2006-09-29 11:09:05 +0000",
+            "comment": "Fixed few minor errors that caused failures in PolicyReferences resolution."
+        },
+        {
+            "c_hash": "2483ab30",
+            "date": "2006-10-06 22:24:28 +0000",
+            "comment": "standardize the groupId's across projects and for both m1 and m2"
+        },
+        {
+            "c_hash": "19b8ac7b",
+            "date": "2006-10-06 22:26:18 +0000",
+            "comment": "switch to new groupId"
+        },
+        {
+            "c_hash": "97656d38",
+            "date": "2006-10-07 06:39:32 +0000",
+            "comment": "Updated the Neethi dependencies"
+        },
+        {
+            "c_hash": "27a41abd",
+            "date": "2006-10-07 11:28:23 +0000",
+            "comment": "Adding the default goal to maven.xml Seeting the correct axiom dependency"
+        },
+        {
+            "c_hash": "7fb6378c",
+            "date": "2006-10-10 16:25:35 +0000",
+            "comment": "Added PolicyRegistry.remove(key) method which is obviously a required method in PolicyRegistry interface."
+        },
+        {
+            "c_hash": "79e418b7",
+            "date": "2006-10-14 18:36:13 +0000",
+            "comment": "fix for AXIS2-1374 - WSDL's with policy references cause the WSDL2Java to fail with an UnsupportedOperationException thrown by the PolicyReference class"
+        },
+        {
+            "c_hash": "a55f2e58",
+            "date": "2006-10-19 08:37:11 +0000",
+            "comment": "Indentation fix"
+        },
+        {
+            "c_hash": "4689b737",
+            "date": "2006-11-08 06:44:35 +0000",
+            "comment": "Added a check whether the argument of PolicyEngine.getPolicy(..) is actually a policy element."
+        },
+        {
+            "c_hash": "6b290881",
+            "date": "2006-11-08 19:01:18 +0000",
+            "comment": "fix axis2 build break caused by this extra check"
+        },
+        {
+            "c_hash": "949611aa",
+            "date": "2006-11-12 10:22:54 +0000",
+            "comment": "Applied few patches uploaded in JIRA"
+        },
+        {
+            "c_hash": "f60d426c",
+            "date": "2006-11-12 10:32:41 +0000",
+            "comment": "Removed the old neethi codebase from the trunk."
+        },
+        {
+            "c_hash": "cfe64a28",
+            "date": "2006-11-12 11:12:25 +0000",
+            "comment": "Removed the testcases for the old Neethi codebase."
+        },
+        {
+            "c_hash": "dd36eac2",
+            "date": "2006-11-12 11:14:20 +0000",
+            "comment": "Added the new testcases for the new Neethi code."
+        },
+        {
+            "c_hash": "fe3f0f24",
+            "date": "2006-11-12 11:16:44 +0000",
+            "comment": "Removed the examples that are part of the old Neethi code"
+        },
+        {
+            "c_hash": "71c3d465",
+            "date": "2006-11-12 11:17:54 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/webservices/commons/trunk/modules/neethi@473926 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "71129909",
+            "date": "2006-11-12 11:20:22 +0000",
+            "comment": "Removed resources associated with the old neethi testcases."
+        },
+        {
+            "c_hash": "47c8d114",
+            "date": "2006-11-12 11:25:16 +0000",
+            "comment": "Removed an unnecessary namespace prefix check."
+        },
+        {
+            "c_hash": "929137ef",
+            "date": "2006-11-12 20:23:34 +0000",
+            "comment": "Moving to Axiom 1.2 release."
+        },
+        {
+            "c_hash": "f7c6696a",
+            "date": "2006-11-13 04:23:35 +0000",
+            "comment": "Updated the README, RELEASE-NOTE for the release. Added more documentation."
+        },
+        {
+            "c_hash": "191f22ac",
+            "date": "2006-11-13 05:43:17 +0000",
+            "comment": "Temporary fix to get the dist-bin working in maven 1.x."
+        },
+        {
+            "c_hash": "2edbf86d",
+            "date": "2006-11-13 06:26:33 +0000",
+            "comment": "Removed the xdoc/* since we need to recreate the site for this new neethi-2.0 release"
+        },
+        {
+            "c_hash": "d51c2779",
+            "date": "2006-11-13 09:57:04 +0000",
+            "comment": "Fixed the GroupId to the correct package name."
+        },
+        {
+            "c_hash": "1c72294b",
+            "date": "2006-12-30 02:08:48 +0000",
+            "comment": "add repo's explicitly"
+        },
+        {
+            "c_hash": "1b4f8230",
+            "date": "2007-02-01 14:20:02 +0000",
+            "comment": "Fix for WSCOMMONS-148 - Maven groupId different for maven1 and maven2"
+        },
+        {
+            "c_hash": "290eca1f",
+            "date": "2007-02-13 17:33:57 +0000",
+            "comment": "fix dist/snapshot repos"
+        },
+        {
+            "c_hash": "04c13352",
+            "date": "2007-02-15 15:33:59 +0000",
+            "comment": "fix m1 repo"
+        },
+        {
+            "c_hash": "803fd896",
+            "date": "2007-03-05 02:14:05 +0000",
+            "comment": "fix url"
+        },
+        {
+            "c_hash": "f49a9266",
+            "date": "2007-03-15 06:02:09 +0000",
+            "comment": "fixing dependency versions"
+        },
+        {
+            "c_hash": "89aeb25f",
+            "date": "2007-03-16 10:58:59 +0000",
+            "comment": "giving the proper woodstox location"
+        },
+        {
+            "c_hash": "a74c2cd1",
+            "date": "2007-04-02 17:51:39 +0000",
+            "comment": "Fixed: WSCOMMONS-178 (Applied the patch - thanks Saminda)"
+        },
+        {
+            "c_hash": "0c773cf4",
+            "date": "2007-04-14 01:08:38 +0000",
+            "comment": "use latest release of axiom"
+        },
+        {
+            "c_hash": "ebaabcfb",
+            "date": "2007-04-21 04:48:30 +0000",
+            "comment": "Fixed PolicyComparator.compare(Policy,Policy) method to check the Name and the Id of the arguments when comparing."
+        },
+        {
+            "c_hash": "8774abf4",
+            "date": "2007-06-18 08:57:39 +0000",
+            "comment": "Fixed: The proper normalization of the <wsp:PolicyReference> element."
+        },
+        {
+            "c_hash": "e6824f1f",
+            "date": "2007-06-18 11:15:40 +0000",
+            "comment": "Applied the supplied patch for the PolicyReference. see: AXIS2-2451."
+        },
+        {
+            "c_hash": "32d76370",
+            "date": "2007-06-29 03:38:03 +0000",
+            "comment": "Fix license header as per our legal policy -  http://www.apache.org/legal/src-headers.html#headers"
+        },
+        {
+            "c_hash": "97ad85da",
+            "date": "2007-07-05 12:08:48 +0000",
+            "comment": "Changed the axiom dependencies to SNAPSHOT."
+        },
+        {
+            "c_hash": "5c9e8227",
+            "date": "2007-07-07 07:42:31 +0000",
+            "comment": "typo"
+        },
+        {
+            "c_hash": "0592aa84",
+            "date": "2007-07-16 15:50:44 +0000",
+            "comment": "Defined the <axiom.version> and < neethi.version> properties in the pom.xml which is IMO much cleaner than hard codeing the version everywhere in the pom.xml."
+        },
+        {
+            "c_hash": "40859785",
+            "date": "2007-07-16 16:46:05 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/webservices/commons/trunk/modules/neethi@556667 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "e5e3a96c",
+            "date": "2008-01-28 18:51:50 +0000",
+            "comment": "remove m1 build artifacts"
+        },
+        {
+            "c_hash": "9767981f",
+            "date": "2008-01-28 18:54:53 +0000",
+            "comment": "update versions of dependencies"
+        },
+        {
+            "c_hash": "bb02b90e",
+            "date": "2008-02-13 03:39:41 +0000",
+            "comment": "Update dependencies to latest versions"
+        },
+        {
+            "c_hash": "4fee61ae",
+            "date": "2008-02-13 17:21:55 +0000",
+            "comment": "oops! it's pointing to the wrong repo"
+        },
+        {
+            "c_hash": "0e6a153d",
+            "date": "2008-03-07 03:42:06 +0000",
+            "comment": "remove m1 plugin. add osgi manifest information"
+        },
+        {
+            "c_hash": "41478651",
+            "date": "2008-04-03 19:23:50 +0000",
+            "comment": "updating license headers"
+        },
+        {
+            "c_hash": "0524b7bb",
+            "date": "2008-04-03 19:41:23 +0000",
+            "comment": "oops! remove duplicate license headers"
+        },
+        {
+            "c_hash": "0a1a08d8",
+            "date": "2008-04-04 03:10:31 +0000",
+            "comment": "move notice/license txt files to resources directory. get rid of the ant-run step, add explicit manifest"
+        },
+        {
+            "c_hash": "bd9afb55",
+            "date": "2008-04-04 10:36:13 +0000",
+            "comment": "oops forgot the manifest"
+        },
+        {
+            "c_hash": "e90c5bb1",
+            "date": "2008-04-04 13:40:12 +0000",
+            "comment": "make the sun.misc dependency optional, throw in flag to not fail if we just ignore tests"
+        },
+        {
+            "c_hash": "636a7c77",
+            "date": "2008-04-08 13:58:15 +0000",
+            "comment": "prep neethi bin/src dist"
+        },
+        {
+            "c_hash": "592cc672",
+            "date": "2008-04-08 18:43:23 +0000",
+            "comment": "add license and notice files"
+        },
+        {
+            "c_hash": "0647057e",
+            "date": "2008-04-08 18:53:52 +0000",
+            "comment": "don't include sources jar"
+        },
+        {
+            "c_hash": "735b9b49",
+            "date": "2008-04-10 02:40:00 +0000",
+            "comment": "add missing download.cgi/"
+        },
+        {
+            "c_hash": "916103be",
+            "date": "2008-04-10 02:43:56 +0000",
+            "comment": "fix version and features:"
+        },
+        {
+            "c_hash": "94bf9688",
+            "date": "2008-04-10 02:57:16 +0000",
+            "comment": "better site"
+        },
+        {
+            "c_hash": "4420a95c",
+            "date": "2008-04-15 15:42:12 +0000",
+            "comment": "Fix for WSCOMMONS-316 - PolicyReference.serialize(..) does not declare policy namespace"
+        },
+        {
+            "c_hash": "f752bae5",
+            "date": "2008-04-15 21:41:15 +0000",
+            "comment": "Fix for WSCOMMONS-322 - Get rid of sun.misc.Service"
+        },
+        {
+            "c_hash": "f28f51e7",
+            "date": "2008-04-17 12:45:38 +0000",
+            "comment": "Prep for Neethi 2.0.4"
+        },
+        {
+            "c_hash": "2e3f5051",
+            "date": "2008-04-22 20:59:57 +0000",
+            "comment": "Adding missing \"The\" (thanks to Dan Kulp)"
+        },
+        {
+            "c_hash": "21d84ae3",
+            "date": "2008-05-29 12:44:09 +0000",
+            "comment": "Fix for WSCOMMONS-352 - legal/stax-api-LICENSE.txt should be deleted"
+        },
+        {
+            "c_hash": "59306061",
+            "date": "2008-08-27 19:29:33 +0000",
+            "comment": "switch off unique versions in the snapshot repo"
+        },
+        {
+            "c_hash": "4bc8a62d",
+            "date": "2009-06-22 14:59:44 +0000",
+            "comment": "switch to correctly named SNAPSHOT with version #"
+        },
+        {
+            "c_hash": "89cfcb83",
+            "date": "2009-06-22 18:11:35 +0000",
+            "comment": "Update neethi pom to start working on 3.0"
+        },
+        {
+            "c_hash": "2be7e567",
+            "date": "2009-06-22 18:41:04 +0000",
+            "comment": "Update to use java 5 generics.   Get rest of Eclipse warnings cleaned up.   Nothing major at this point."
+        },
+        {
+            "c_hash": "50869348",
+            "date": "2010-03-16 21:23:01 +0000",
+            "comment": "Quick change to avoid NPE when an element does not have a namespace."
+        },
+        {
+            "c_hash": "c4171f54",
+            "date": "2010-12-04 13:59:25 +0000",
+            "comment": "Make sure that Neethi only uses Axiom classes that are part of the public API, not classes that belong to a particular implementation."
+        },
+        {
+            "c_hash": "536df8f1",
+            "date": "2010-12-30 09:04:32 +0000",
+            "comment": "Set org.apache:apache:8 as parent POM to include the Apache snapshot repository."
+        },
+        {
+            "c_hash": "a1da48bb",
+            "date": "2011-02-04 16:52:07 +0000",
+            "comment": "Update another API to use Java5 typed collections Port some tests from the 1.x branch and get them passing (intersect not working yet)"
+        },
+        {
+            "c_hash": "6acfe607",
+            "date": "2011-02-04 17:07:19 +0000",
+            "comment": "Change to using maven-bundle-plugin to generate OSGi manifest"
+        },
+        {
+            "c_hash": "978b3fa5",
+            "date": "2011-02-04 17:12:22 +0000",
+            "comment": "Add version to javadoc plugin to make maven 3 happy."
+        },
+        {
+            "c_hash": "e683fdfe",
+            "date": "2011-02-05 12:40:09 +0000",
+            "comment": "Updated Axiom snapshot version."
+        },
+        {
+            "c_hash": "97f1b3c9",
+            "date": "2011-02-08 02:21:52 +0000",
+            "comment": "Don't use a deprecated Axiom class"
+        },
+        {
+            "c_hash": "0410a5c3",
+            "date": "2011-02-08 02:59:26 +0000",
+            "comment": "Fix a bunch of spelling mistakes Change return of normalize to be Policy as it can only be a Policy."
+        },
+        {
+            "c_hash": "4234834c",
+            "date": "2011-02-08 03:38:23 +0000",
+            "comment": "Inherit deploy locations from apache parent pom"
+        },
+        {
+            "c_hash": "6b97e61f",
+            "date": "2011-02-08 03:51:18 +0000",
+            "comment": "Change java5 method sig to allow lists of the subclasses as well"
+        },
+        {
+            "c_hash": "4d942127",
+            "date": "2011-02-08 18:32:53 +0000",
+            "comment": "Fix spelling mistake in class name Add preliminary support for WS-Policy 1.5 Add ignorable attribute to assertions (for 1.5)"
+        },
+        {
+            "c_hash": "ea87de58",
+            "date": "2011-02-08 22:24:36 +0000",
+            "comment": "Remove Axiom from the core engine parts Introduce converters to convert to/from DOM Element/OMElement/XMLStreamReader when parsing Allow AssertionBuilder to be built using either of the three. Update tests to test building policies from all three."
+        },
+        {
+            "c_hash": "0bdb6deb",
+            "date": "2011-02-09 15:46:11 +0000",
+            "comment": "First pass at removing the singletons"
+        },
+        {
+            "c_hash": "1c4ebd15",
+            "date": "2011-02-09 16:26:09 +0000",
+            "comment": "Go back to calling it 3.0-SNAPSHOT  since it contains a bunch of incompatible changes now"
+        },
+        {
+            "c_hash": "38b90f95",
+            "date": "2011-02-09 16:51:53 +0000",
+            "comment": "[NEETHI-1]  Fix javadoc"
+        },
+        {
+            "c_hash": "441d23a9",
+            "date": "2011-02-09 16:57:22 +0000",
+            "comment": "[NEETHI-7] Add convenience constructors"
+        },
+        {
+            "c_hash": "077c1f5c",
+            "date": "2011-02-09 17:00:38 +0000",
+            "comment": "[NEETHI-6] Return null from getFirstPolicyComponent if there are no child components.  Don't NPE."
+        },
+        {
+            "c_hash": "d4af2aad",
+            "date": "2011-02-09 17:08:00 +0000",
+            "comment": "[NEETHI-3] Add test case from NEETHI-3 to prove it works with changes for 3.0"
+        },
+        {
+            "c_hash": "9f2eb978",
+            "date": "2011-02-09 17:41:24 +0000",
+            "comment": "[NEETHI-5, NEETHI-2] Call the builders for stuff in Policy namespace we don't know about. Add a default PolicyRegistry on the engine and allow the Policy objects to record that and use that when calling normalize()."
+        },
+        {
+            "c_hash": "428aab95",
+            "date": "2011-02-09 17:44:02 +0000",
+            "comment": "[NEETHI-8] Make vars protected for easier subclassing/extension"
+        },
+        {
+            "c_hash": "64e7ed46",
+            "date": "2011-02-10 03:31:46 +0000",
+            "comment": "[NEETHI-4] Implement intersect, take into account the lax mode and wsp:Ignorable flags. Grab all the latest test cases from w3c and add to the test suite."
+        },
+        {
+            "c_hash": "a21789fc",
+            "date": "2011-02-10 03:39:21 +0000",
+            "comment": "Add round5 tests. (good news, they all pass)"
+        },
+        {
+            "c_hash": "34f8598a",
+            "date": "2011-02-10 03:49:21 +0000",
+            "comment": "Update various things in pom"
+        },
+        {
+            "c_hash": "2ce3aef6",
+            "date": "2011-02-10 06:13:04 +0000",
+            "comment": "I don't think we need to import self in Java :-)"
+        },
+        {
+            "c_hash": "7cabf523",
+            "date": "2011-02-10 06:14:00 +0000",
+            "comment": "optimizing all the imports of the Policy engine"
+        },
+        {
+            "c_hash": "5045e44c",
+            "date": "2011-02-10 12:06:26 +0000",
+            "comment": "Ignore .snv dirs"
+        },
+        {
+            "c_hash": "6076aff6",
+            "date": "2011-02-12 02:24:08 +0000",
+            "comment": "Code cleanup, formatting, import cleanup, etc..."
+        },
+        {
+            "c_hash": "d55bcfbe",
+            "date": "2011-02-12 02:31:30 +0000",
+            "comment": "Minor PMD flagged changes"
+        },
+        {
+            "c_hash": "e027d40c",
+            "date": "2011-02-14 06:24:02 +0000",
+            "comment": "rename the prameter to uri as it is meaningfull from ur, and a return statement simplification"
+        },
+        {
+            "c_hash": "cafd1e67",
+            "date": "2011-02-14 06:30:00 +0000",
+            "comment": "minor reformatting to improve the code, readability"
+        },
+        {
+            "c_hash": "76a3d277",
+            "date": "2011-02-14 18:29:45 +0000",
+            "comment": "Remove the @suppresswarnings that are causing issues in eclipse"
+        },
+        {
+            "c_hash": "4be490f3",
+            "date": "2011-02-14 21:47:42 +0000",
+            "comment": "Start integrating neethi into CXF.   Needed to make some stuff protected and easier to subclass, but also needed to add support for the interem Policy 1.5 namespace."
+        },
+        {
+            "c_hash": "3aa33769",
+            "date": "2011-02-14 22:03:53 +0000",
+            "comment": "For policies that don't implement the new IntersectableAssertion interface, we'll do a very basic check for compatibility."
+        },
+        {
+            "c_hash": "acf378c6",
+            "date": "2011-02-15 20:32:31 +0000",
+            "comment": "The built in primitive assertions can use the default intersect algorithm.  Don't force all the subclasses to have the Intersectable interface set on them."
+        },
+        {
+            "c_hash": "8a46379a",
+            "date": "2011-02-15 20:35:12 +0000",
+            "comment": "Add a better description to the javadoc"
+        },
+        {
+            "c_hash": "ea580a8d",
+            "date": "2011-02-17 16:29:41 +0000",
+            "comment": "Change AssertionBuilderFactory to an interface (with an impl) to make it easier to extend.   Make some other changes to make it easier to extend the Neethi classes with extra functionality and such."
+        },
+        {
+            "c_hash": "92d3dfc6",
+            "date": "2011-02-17 17:43:30 +0000",
+            "comment": "Since this is a 3.0 update, go ahead and make the 1.5 namespace the default."
+        },
+        {
+            "c_hash": "01cb5902",
+            "date": "2011-02-18 04:11:47 +0000",
+            "comment": "Rename PolicyEngine to PolicyBuilder (since that is what it really is) Reinstate original PolicyEngine as static wrapper to PolicyBuilder. (Makes porting from neethi 2 to 3 MUCH easier) Change return type of getAlternatives to match javadoc and make it easier for porting."
+        },
+        {
+            "c_hash": "9de63aa9",
+            "date": "2011-02-18 04:47:58 +0000",
+            "comment": "If DOOM isn't avail, just use stax."
+        },
+        {
+            "c_hash": "7d2f8d86",
+            "date": "2011-02-18 15:02:01 +0000",
+            "comment": "Make sure attributes are saved on the primitive assertions."
+        },
+        {
+            "c_hash": "4bf38148",
+            "date": "2011-02-18 17:11:15 +0000",
+            "comment": "Write out the saved attributes"
+        },
+        {
+            "c_hash": "400fc3e0",
+            "date": "2011-02-18 17:59:10 +0000",
+            "comment": "getAttributes can return null"
+        },
+        {
+            "c_hash": "aeb6495f",
+            "date": "2011-02-21 16:28:25 +0000",
+            "comment": "Fix issues with Primitives with text content having the text get lost Fix a bunch of issues with serializing things Make XmlPrimitiveAssertion extend PrimitiveAssertion Add a couple basic test cases for all of the above."
+        },
+        {
+            "c_hash": "8c9c438e",
+            "date": "2011-02-21 17:22:47 +0000",
+            "comment": "Make sure prefix isn't null in QName"
+        },
+        {
+            "c_hash": "6b43dd9e",
+            "date": "2011-02-21 17:25:53 +0000",
+            "comment": "The Assertion name is already calculated, don't need to re-do it."
+        },
+        {
+            "c_hash": "88f65000",
+            "date": "2011-03-17 17:54:05 +0000",
+            "comment": "Fix the site name"
+        },
+        {
+            "c_hash": "5534135d",
+            "date": "2011-03-17 18:31:33 +0000",
+            "comment": "Fix a couple uses of generics.   Add migration guide to site"
+        },
+        {
+            "c_hash": "103cee55",
+            "date": "2011-03-21 16:46:09 +0000",
+            "comment": "Use slf4j instead of commons-logging"
+        },
+        {
+            "c_hash": "07a48838",
+            "date": "2011-03-28 18:15:25 +0000",
+            "comment": "Remove slf4j"
+        },
+        {
+            "c_hash": "109e36fc",
+            "date": "2011-04-01 15:26:14 +0000",
+            "comment": "[maven-release-plugin] prepare release neethi-3.0.0"
+        },
+        {
+            "c_hash": "a56cf74e",
+            "date": "2011-04-01 15:26:20 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "362a766f",
+            "date": "2011-04-01 17:12:55 +0000",
+            "comment": "Update release notes, download page, etc..."
+        },
+        {
+            "c_hash": "3e177fca",
+            "date": "2011-04-01 17:13:33 +0000",
+            "comment": "[maven-release-plugin] prepare release neethi-3.0.0"
+        },
+        {
+            "c_hash": "97b89d1e",
+            "date": "2011-04-01 17:13:40 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "4f7a11d8",
+            "date": "2011-04-02 18:33:23 +0000",
+            "comment": "Removed the source distribution. The default one created by the org.apache:apache super-POM is enough."
+        },
+        {
+            "c_hash": "512029ca",
+            "date": "2011-04-02 18:51:59 +0000",
+            "comment": "Avoid duplicate legal files in the JAR."
+        },
+        {
+            "c_hash": "1f4fc3f5",
+            "date": "2011-04-02 19:34:13 +0000",
+            "comment": "Make sure that the Maven site conforms to the Apache project branding guidelines. Also improved the site navigation and disabled project reports that are not useful."
+        },
+        {
+            "c_hash": "1d7e2582",
+            "date": "2011-04-02 20:32:38 +0000",
+            "comment": "Removed the Google Analytics stuff. Nobody has access to it, and the onClick attributes are lost anyway during HTML generation."
+        },
+        {
+            "c_hash": "784d5aef",
+            "date": "2011-04-02 20:39:32 +0000",
+            "comment": "Make sure that license/notice files are also included in the binary distribution."
+        },
+        {
+            "c_hash": "32da6c02",
+            "date": "2011-04-02 20:43:27 +0000",
+            "comment": "Updated the download page so that the names of the source distributions match with what is produced by the org.apache:apache super-POM."
+        },
+        {
+            "c_hash": "85f7e82c",
+            "date": "2011-04-03 13:34:22 +0000",
+            "comment": "Improve site plugin config to push sites with versions in their pathnames."
+        },
+        {
+            "c_hash": "7cc38f25",
+            "date": "2011-04-03 18:02:49 +0000",
+            "comment": "Relocated the site from http://ws.apache.org/commons/neethi/ to http://ws.apache.org/neethi/."
+        },
+        {
+            "c_hash": "a086c6b3",
+            "date": "2011-04-03 18:11:53 +0000",
+            "comment": "Fixed the inconsistent date format used in the download page and replaced it by a more explicit one to avoid confusion."
+        },
+        {
+            "c_hash": "41caa966",
+            "date": "2011-04-03 18:23:01 +0000",
+            "comment": "[maven-release-plugin] prepare release 3.0.0"
+        },
+        {
+            "c_hash": "836b9901",
+            "date": "2011-04-03 18:23:13 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "501606e0",
+            "date": "2011-04-07 19:29:50 +0000",
+            "comment": "Fixed Constants so that it has a consistent and complete set of isPolicyXXX methods."
+        },
+        {
+            "c_hash": "b69a11ff",
+            "date": "2011-04-07 20:49:04 +0000",
+            "comment": "Recovered file from the generated site that was not present in the site sources."
+        },
+        {
+            "c_hash": "596d8fe6",
+            "date": "2011-04-07 21:22:17 +0000",
+            "comment": "Removed duplicate download.cgi file. The right place is in src/site/resources; see r1090001."
+        },
+        {
+            "c_hash": "b71c3c20",
+            "date": "2011-04-07 21:31:41 +0000",
+            "comment": "Some fixes to the download page: * Don't use two different mirror selection systems at the same time. The page is designed for the CGI stuff, so use it. * Link to the correct KEYS file, i.e. the one for Neethi, not the one for Axiom. * If we change naming conventions for the distribution directories (from 2_0_4 to 2.0.5), then let's be consistent and also remove the \"commons\" part."
+        },
+        {
+            "c_hash": "bbd49e0d",
+            "date": "2011-04-16 20:28:34 +0000",
+            "comment": "Make use of the new API introduced by Axiom r1094037."
+        },
+        {
+            "c_hash": "ef835d4a",
+            "date": "2011-06-03 19:46:30 +0000",
+            "comment": "[NEETHI-11] Fix problems with mixed javax.xml.stream versions"
+        },
+        {
+            "c_hash": "f9d2ab75",
+            "date": "2011-06-03 19:52:26 +0000",
+            "comment": "[NEETHI-10] As per gnodet, make it not import its own packages"
+        },
+        {
+            "c_hash": "4c6a719c",
+            "date": "2011-07-06 15:16:33 +0000",
+            "comment": "Change  to using JUnit 4"
+        },
+        {
+            "c_hash": "f4e56be8",
+            "date": "2011-07-06 16:16:28 +0000",
+            "comment": "[NEETHI-12] Fixes to make sure the passed in element really is a Policy element."
+        },
+        {
+            "c_hash": "67a9baa8",
+            "date": "2011-07-06 16:22:40 +0000",
+            "comment": "[NEETHI-12] Actually, check the entire element name, not just the namespace"
+        },
+        {
+            "c_hash": "19219b70",
+            "date": "2011-07-08 19:59:19 +0000",
+            "comment": "NEETHI-9: Make sure that Converter implementations throw an exception instead of returning null."
+        },
+        {
+            "c_hash": "15c69ef7",
+            "date": "2011-07-08 20:09:47 +0000",
+            "comment": "Configured the RAT plugin and added a couple of missing license headers."
+        },
+        {
+            "c_hash": "895b346f",
+            "date": "2011-07-08 20:15:48 +0000",
+            "comment": "Adding myself as a developer."
+        },
+        {
+            "c_hash": "ea9b659a",
+            "date": "2011-07-08 20:17:43 +0000",
+            "comment": "Updated Axiom version to make Neethi ready for release."
+        },
+        {
+            "c_hash": "819e17a9",
+            "date": "2011-07-11 15:45:16 +0000",
+            "comment": "Remove authors file which is obsolete/out of date"
+        },
+        {
+            "c_hash": "81210c2a",
+            "date": "2011-07-11 15:45:24 +0000",
+            "comment": "Prepare for 3.0.1 release by updating release notes, download pages, etc...."
+        },
+        {
+            "c_hash": "6fa1fdc9",
+            "date": "2011-07-11 15:45:27 +0000",
+            "comment": "Add some more stuff that RAT needs to exclude"
+        },
+        {
+            "c_hash": "909a330c",
+            "date": "2011-07-11 16:04:51 +0000",
+            "comment": "Set a bunch of svn properties to make sure eol style is consistent, mime type set, etc..."
+        },
+        {
+            "c_hash": "a5f6cb59",
+            "date": "2011-07-11 16:05:52 +0000",
+            "comment": "[maven-release-plugin] prepare release neethi-3.0.1"
+        },
+        {
+            "c_hash": "73d34ddf",
+            "date": "2011-07-11 16:05:59 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "424850fd",
+            "date": "2011-07-11 18:09:34 +0000",
+            "comment": "Fixed a typo in one of the download links."
+        },
+        {
+            "c_hash": "99c85a20",
+            "date": "2011-09-06 16:01:09 +0000",
+            "comment": "Avoid unnecessary conversions if the object model implements both DOM and Axiom."
+        },
+        {
+            "c_hash": "401dc009",
+            "date": "2011-09-20 20:27:57 +0000",
+            "comment": "wsdl4j isn't needed for Neethi"
+        },
+        {
+            "c_hash": "e5de659e",
+            "date": "2011-10-03 20:32:09 +0000",
+            "comment": "[NEETHI-13] Fix potential exception from invalid qnames"
+        },
+        {
+            "c_hash": "12d61c21",
+            "date": "2011-10-09 13:27:55 +0000",
+            "comment": "Make sure that Neethi only refers to axiom-api, but never to implementation classes directly."
+        },
+        {
+            "c_hash": "d350afc5",
+            "date": "2012-01-10 16:46:21 +0000",
+            "comment": "Cleanup some use of generics.  Neethi is warning free in eclipse with the eclipse default warning levels."
+        },
+        {
+            "c_hash": "a60e3198",
+            "date": "2012-03-15 13:21:41 +0000",
+            "comment": "[NEETHI-14] Don't construct the AssertionBuilderFactory twice Patch from Jim Ma applied."
+        },
+        {
+            "c_hash": "fbdae4e4",
+            "date": "2012-03-15 14:16:18 +0000",
+            "comment": "Some minor optimizations to avoid some Class.forName calls when we know axiom is not available.  Also allow for a shared ConverterRegistry to be used."
+        },
+        {
+            "c_hash": "7ed8daa5",
+            "date": "2012-03-15 16:49:25 +0000",
+            "comment": "Don't create the ConverterRegistry twice"
+        },
+        {
+            "c_hash": "69f0a1bb",
+            "date": "2012-04-08 00:55:34 +0000",
+            "comment": "Update release notes"
+        },
+        {
+            "c_hash": "c4bca7a8",
+            "date": "2012-04-08 01:23:18 +0000",
+            "comment": "Update bundle plugin version"
+        },
+        {
+            "c_hash": "7eacf9ae",
+            "date": "2012-04-08 02:08:22 +0000",
+            "comment": "Update site"
+        },
+        {
+            "c_hash": "053a89bd",
+            "date": "2012-04-08 02:09:09 +0000",
+            "comment": "Flip to the currently being voted on Axiom so I can build release"
+        },
+        {
+            "c_hash": "289948b6",
+            "date": "2012-04-08 02:09:42 +0000",
+            "comment": "[maven-release-plugin] prepare release neethi-3.0.2"
+        },
+        {
+            "c_hash": "b24ed379",
+            "date": "2012-04-08 02:09:47 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "f5548e02",
+            "date": "2012-04-08 02:11:01 +0000",
+            "comment": "Back to axiom snapshot"
+        },
+        {
+            "c_hash": "eb1eb84b",
+            "date": "2012-07-07 05:20:57 +0000",
+            "comment": "Fixed incorrect release date for 3.0.2"
+        },
+        {
+            "c_hash": "7b46b011",
+            "date": "2013-02-26 19:29:22 +0000",
+            "comment": "Updated Axiom version (1.2.14-SNAPSHOT is no longer available)."
+        },
+        {
+            "c_hash": "7b000a41",
+            "date": "2013-06-02 14:32:50 +0000",
+            "comment": "Moved Neethi to the right location in SVN (following the decision to dismantle the WS-Commons subproject)."
+        },
+        {
+            "c_hash": "5d18ea39",
+            "date": "2013-06-02 14:54:42 +0000",
+            "comment": "Updated source code location."
+        },
+        {
+            "c_hash": "1242e1a4",
+            "date": "2013-06-02 14:56:49 +0000",
+            "comment": "Removed unnecessary exclusion: Axiom also uses woodstox-core-asl, and not wstx-asl anymore."
+        },
+        {
+            "c_hash": "9a274fa3",
+            "date": "2013-09-27 19:51:23 +0000",
+            "comment": "[NEETHI-15] Fix policy intersection Patch from J\u00f6rn Schneider applied"
+        },
+        {
+            "c_hash": "e213fe7f",
+            "date": "2013-09-27 19:51:52 +0000",
+            "comment": "[NEETHI-16] Make sure the namespaces are output"
+        },
+        {
+            "c_hash": "ad4adf67",
+            "date": "2013-09-27 19:52:16 +0000",
+            "comment": "Don't use a snapshot so we can get ready for a release."
+        },
+        {
+            "c_hash": "a0b735e8",
+            "date": "2013-09-27 20:03:43 +0000",
+            "comment": "[NEETHI-16] When reading from Stax, return the namespaces with the attributes to match what DOM does and what is expected in the serialization."
+        },
+        {
+            "c_hash": "c9dd06d0",
+            "date": "2014-01-21 20:16:09 +0000",
+            "comment": "Update woodstox version"
+        },
+        {
+            "c_hash": "bee12b46",
+            "date": "2014-01-21 20:18:31 +0000",
+            "comment": "Update release notes"
+        },
+        {
+            "c_hash": "53253a46",
+            "date": "2014-01-21 20:19:24 +0000",
+            "comment": "[maven-release-plugin] prepare release neethi-3.0.3"
+        },
+        {
+            "c_hash": "05d236a9",
+            "date": "2014-01-21 20:19:28 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "1c62f187",
+            "date": "2014-01-27 21:19:13 +0000",
+            "comment": "Updates to update the website"
+        },
+        {
+            "c_hash": "3a776a11",
+            "date": "2014-01-27 21:25:24 +0000",
+            "comment": "Update plugin"
+        },
+        {
+            "c_hash": "50205c89",
+            "date": "2014-01-27 21:40:09 +0000",
+            "comment": "Update to fluido  skin"
+        },
+        {
+            "c_hash": "d8930734",
+            "date": "2014-01-27 21:44:05 +0000",
+            "comment": "Put the log in the right place"
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+INDEX,COMMIT_ID,IS_MAVEN,OLD_BUILD_SUCCESSFUL,NEW_BUILD_SUCCESSFUL,OLD_EXCEPTION,NEW_EXCEPTION
+0,9eced2ad,False,False,False,,['OTHER']
+1,bb8152f1,True,True,True,,[]
+2,08720368,True,False,False,MojoFailureException,"['MojoFailureException', 'CompilationFailureException']"
+3,db87c1b5,True,False,False,MojoFailureException,"['MojoFailureException', 'CompilationFailureException']"
+4,c225005f,True,False,False,MojoFailureException,"['MojoFailureException', 'CompilationFailureException']"
+5,10803f00,True,False,False,MojoFailureException,"['MojoFailureException', 'CompilationFailureException']"
+6,f1b81c76,True,False,False,MojoFailureException,"['MojoFailureException', 'CompilationFailureException']"
+7,d38e8185,True,False,False,MojoFailureException,"['MojoFailureException', 'CompilationFailureException']"
+8,a4068077,True,False,False,MojoFailureException,"['MojoFailureException', 'CompilationFailureException']"
+9,7cddbd84,True,False,False,MojoFailureException,"['MojoFailureException', 'CompilationFailureException']"
+10,050d4ce3,True,False,False,MojoFailureException,"['MojoFailureException', 'CompilationFailureException']"
+11,9ea124fd,True,False,False,MojoFailureException,"['MojoFailureException', 'CompilationFailureException']"
+12,23e9357b,True,False,False,MojoFailureException,"['MojoFailureException', 'CompilationFailureException']"
+13,89c83b0d,True,True,True,,[]
+14,f7d1250d,True,True,True,,[]
+15,3713cb40,True,True,True,,[]
+16,65241776,True,True,True,,[]
+17,801dfadf,True,True,True,,[]
+18,f79f494e,True,True,True,,[]
+19,238da0cb,True,True,True,,[]
+20,616d2ce2,True,True,True,,[]
+21,0d4bfbf7,True,True,True,,[]
+22,4e00d4f0,True,True,True,,[]
+23,daea8f32,True,True,True,,[]
+24,570cfed7,True,True,True,,[]
+25,666e13de,True,True,True,,[]
+26,dd436f32,True,False,False,ArtifactResolutionException,"['ArtifactResolutionException', 'PluginResolutionException']"
+27,13c7fcd4,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+28,d3573d4f,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+29,45bfd715,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+30,5cf1556d,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+31,a6c94a12,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+32,d61de007,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+33,53855065,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+34,d2880ca8,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+35,388c05b8,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+36,9ac6f081,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+37,7a524f25,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+38,db382131,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+39,682b356e,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+40,739e5d8e,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+41,55cebb33,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+42,ecca810b,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+43,13da1780,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+44,d35d8925,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+45,45df701b,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+46,92a0cd5e,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+47,2b07c571,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+48,530259a3,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+49,e2ca1d0a,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+50,4936f8d3,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+51,573bada5,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+52,13590fe1,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+53,7aa247df,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+54,449b971d,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+55,e0eba675,True,False,False,ProjectBuildingException,['ProjectBuildingException']
+56,e6490b2d,True,False,False,ProjectBuildingException,['ProjectBuildingException']
+57,5ca44806,True,False,False,ProjectBuildingException,['ProjectBuildingException']
+58,29000a0f,True,False,False,ArtifactResolutionException,"['ArtifactResolutionException', 'PluginResolutionException']"
+59,0f3217c9,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+60,89ecb2d4,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+61,01fc3c67,True,False,False,ProjectBuildingException,['ProjectBuildingException']
+62,c15429eb,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+63,2755d7f8,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+64,f94d8fd1,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+65,11056e5c,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+66,f6de620d,True,True,True,,[]
+67,410893f3,True,True,True,,[]
+68,7c18dbfc,True,True,True,,[]
+69,491793cd,True,True,True,,[]
+70,a3f8ffc1,True,True,True,,[]
+71,63a4fe53,True,True,True,,[]
+72,ce88b7b5,True,True,True,,[]
+73,13fd3c73,True,True,True,,[]
+74,6deb8d6a,True,True,True,,[]
+75,d0c16027,True,True,True,,[]
+76,a41da370,True,True,True,,[]

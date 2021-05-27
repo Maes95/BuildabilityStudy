@@ -1,0 +1,3 @@
+commitID;commit-type;time-to-next-release;commit-message
+5b0b8d307805b819e0a9e44e9b73f9dfb92452ce;BREAKING_CHANGES;1129;Adding maven2 build files git-svn-id: https://svn.apache.org/repos/asf/webservices/rampart/trunk/java@494783 13f79535-47bb-0310-9956-ffa450edef68
+0e9e6ef89ffe6d84bd3e08818915a0030b4320a8;BREAKING_FIX;-;Use a more standard approach to generate the site: * Generate the site from the root POM, not from a submodule. * Avoid using antrun plugin to generate Javadocs. git-svn-id: https://svn.apache.org/repos/asf/axis/axis2/java/rampart/trunk@1479160 13f79535-47bb-0310-9956-ffa450edef68

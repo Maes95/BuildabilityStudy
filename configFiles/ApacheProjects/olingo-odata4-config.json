@@ -1,0 +1,2668 @@
+{
+    "project": "olingo-odata4",
+    "git_url": "https://github.com/apache/olingo-odata4.git",
+    "last_commit": "da4d7548",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "e48a7fee",
+            "date": "2013-11-07 13:28:42 +0100",
+            "comment": "Setup for eclipse, Disclaimer and gitignore file"
+        },
+        {
+            "c_hash": "9c6e200e",
+            "date": "2013-11-07 13:38:09 +0100",
+            "comment": "initial pom"
+        },
+        {
+            "c_hash": "24bddb9e",
+            "date": "2013-11-11 15:56:49 +0100",
+            "comment": "[OLINGO-58] New module structure to better support clients"
+        },
+        {
+            "c_hash": "33c51e30",
+            "date": "2013-11-12 12:29:24 +0100",
+            "comment": "[OLINGO-60] Edm Interfaces and Provider classes"
+        },
+        {
+            "c_hash": "fe10bb5c",
+            "date": "2013-11-12 14:10:32 +0100",
+            "comment": "[OLINGO-62] start implementation of edm interfaces"
+        },
+        {
+            "c_hash": "013859b7",
+            "date": "2013-11-12 16:09:41 +0100",
+            "comment": "[OLINGO-63] First draft of an uri parser with antlr"
+        },
+        {
+            "c_hash": "63b91d22",
+            "date": "2013-11-12 16:58:17 +0100",
+            "comment": "[OLINGO-64] Enhance build with rat and checkstyle"
+        },
+        {
+            "c_hash": "c0ec631c",
+            "date": "2013-11-13 15:27:57 +0100",
+            "comment": "[OLINGO-60] Deleted unnecessary EdmLiteral and moved EdmMapping"
+        },
+        {
+            "c_hash": "8c131685",
+            "date": "2013-11-13 15:35:11 +0100",
+            "comment": "[OLINGO-62] Bugfix for FunctionMapKey"
+        },
+        {
+            "c_hash": "eea0324d",
+            "date": "2013-11-13 15:55:00 +0100",
+            "comment": "[OLINGO-66] First prototype with jackson library"
+        },
+        {
+            "c_hash": "9aec30fd",
+            "date": "2013-11-18 14:28:15 +0100",
+            "comment": "[OLINGO-63] Uri Parser: complete lexer grammar and tests"
+        },
+        {
+            "c_hash": "3627f5c3",
+            "date": "2013-11-20 16:20:24 +0100",
+            "comment": "[OLINGO-63] Uri Parser: Add parser rule for enum, geometry and other URI parts"
+        },
+        {
+            "c_hash": "5c8d53b2",
+            "date": "2013-11-25 16:46:26 +0100",
+            "comment": "[OLINGO-62] implement edm interfaces further"
+        },
+        {
+            "c_hash": "243ca409",
+            "date": "2013-11-28 14:56:08 +0100",
+            "comment": "[OLINGO-62] Operation overloading and edm interface implementation"
+        },
+        {
+            "c_hash": "5e10653b",
+            "date": "2013-11-22 17:17:15 +0100",
+            "comment": "[OLINGO-63] Change LEXER grammer to work with modes"
+        },
+        {
+            "c_hash": "2e622040",
+            "date": "2013-12-02 10:54:53 +0100",
+            "comment": "[OLINGO-63] Improve-Lexer-Modes"
+        },
+        {
+            "c_hash": "7b1726a2",
+            "date": "2013-12-06 15:39:56 +0100",
+            "comment": "[OLINGO-62] Further implementation"
+        },
+        {
+            "c_hash": "82ae6060",
+            "date": "2013-12-06 15:49:55 +0100",
+            "comment": "[OLINGO-77] Refactored java package names"
+        },
+        {
+            "c_hash": "10ac7ee3",
+            "date": "2013-12-02 16:46:53 +0100",
+            "comment": "[OLINGO-63] Uri Parser: adoptions in lexer and parser, create UriParserImpl to convert the parsetree into internal structures, moved parser antlr part from .../olingo/producer/... to .../olingo/odata4/producer"
+        },
+        {
+            "c_hash": "021afffb",
+            "date": "2013-12-16 12:16:26 +0100",
+            "comment": "[OLINGO-63] Uri Parser: Add support for $filter"
+        },
+        {
+            "c_hash": "cf4df9be",
+            "date": "2013-12-18 11:23:48 +0100",
+            "comment": "[OLINGO-63] Uri Parser: Add support for  II"
+        },
+        {
+            "c_hash": "954ac46a",
+            "date": "2014-01-10 10:59:57 +0100",
+            "comment": "[OLINGO-62] Tests and documentation"
+        },
+        {
+            "c_hash": "53dcabe1",
+            "date": "2014-01-10 11:18:10 +0100",
+            "comment": "[OLINGO-62] Additional EdmProvider tests"
+        },
+        {
+            "c_hash": "49544671",
+            "date": "2014-01-21 12:23:22 +0100",
+            "comment": "[OLINGO-62] Info interfaces refactoring and tests"
+        },
+        {
+            "c_hash": "7955eadf",
+            "date": "2013-12-18 11:23:48 +0100",
+            "comment": "[OLINGO-63] Uri Parser: Add support for  II"
+        },
+        {
+            "c_hash": "ae46250b",
+            "date": "2014-01-23 13:55:32 +0100",
+            "comment": "[OLINGO-62] more tests for EDM providers"
+        },
+        {
+            "c_hash": "c8d0b26a",
+            "date": "2014-01-23 17:09:06 +0100",
+            "comment": "[OLINGO-63] Uri Parser: Extends test cases"
+        },
+        {
+            "c_hash": "a2ba493b",
+            "date": "2014-01-24 14:05:20 +0100",
+            "comment": "[OLINGO-63] Uri Parser: Add test cases for key predicates"
+        },
+        {
+            "c_hash": "8577d29d",
+            "date": "2014-01-27 10:49:23 +0100",
+            "comment": "[OLINGO-62] Edm Tests for EdmTypeDef etc"
+        },
+        {
+            "c_hash": "ab6dff29",
+            "date": "2014-01-28 15:46:25 +0100",
+            "comment": "[OLINGO-62] more tests"
+        },
+        {
+            "c_hash": "757eb54c",
+            "date": "2014-01-28 17:17:55 +0100",
+            "comment": "[OLINGO-62] Even more edm tests"
+        },
+        {
+            "c_hash": "1ef03f92",
+            "date": "2014-01-24 14:05:20 +0100",
+            "comment": "[OLINGO-63] Uri Parser: Add test cases for key predicates, select,expand and code cleanup"
+        },
+        {
+            "c_hash": "fb833de3",
+            "date": "2014-01-29 15:27:00 +0100",
+            "comment": "[OLINGO-63] Uri Parser: Improve API for $select and extend testcases"
+        },
+        {
+            "c_hash": "dbd01463",
+            "date": "2014-01-30 10:24:05 +0100",
+            "comment": "[OLINGO-62] Refactor overloading and more tests"
+        },
+        {
+            "c_hash": "5d98f909",
+            "date": "2014-01-30 10:31:19 +0100",
+            "comment": "[OLINGO-62] Cleanup"
+        },
+        {
+            "c_hash": "0756824d",
+            "date": "2014-01-30 16:26:11 +0100",
+            "comment": "[OLINGO-62] Overloading bugfix"
+        },
+        {
+            "c_hash": "b886528b",
+            "date": "2014-01-31 16:28:04 +0100",
+            "comment": "[OLINGO-62] final tests and implementation"
+        },
+        {
+            "c_hash": "03ea6c74",
+            "date": "2014-01-30 13:54:04 +0100",
+            "comment": "[OLINGO-63] Uri Parser: Remove usage of UriResourceIt where not required, introduce UriResourceStartingTypeFilterImpl, Test coverage and cleanup"
+        },
+        {
+            "c_hash": "f8d92381",
+            "date": "2014-02-06 13:12:15 +0100",
+            "comment": "[OLINGO-63] Uri Parser: add Tests for  package org.apache.olingo.odata4.producer.core.uri.queryoption.expression"
+        },
+        {
+            "c_hash": "224967b5",
+            "date": "2014-02-06 18:11:24 +0100",
+            "comment": "[OLINGO-63] Uri Parser: add Tests for  package org.apache.olingo.odata4.producer.core.uri.queryoption"
+        },
+        {
+            "c_hash": "b14e278a",
+            "date": "2014-02-07 15:32:39 +0100",
+            "comment": "[OLINGO-63] Uri Parser: add Tests for  package org.apache.olingo.odata4.producer.core.uri"
+        },
+        {
+            "c_hash": "3e079867",
+            "date": "2014-02-07 16:14:03 +0100",
+            "comment": "[OLINGO-62] Referntial Constraint support at edm"
+        },
+        {
+            "c_hash": "71ea1238",
+            "date": "2014-02-10 09:40:18 +0100",
+            "comment": "[OLINGO-63] Uri Parser: add evalation of referential contrains"
+        },
+        {
+            "c_hash": "7a3ee483",
+            "date": "2014-02-11 16:30:37 +0100",
+            "comment": "[OLINGO-63] Uri Parser: add testes for"
+        },
+        {
+            "c_hash": "fad52801",
+            "date": "2014-02-12 16:40:00 +0100",
+            "comment": "[OLINGO-63] Uri Parser: cleanup, tests"
+        },
+        {
+            "c_hash": "7baecb90",
+            "date": "2014-02-14 14:20:02 -0800",
+            "comment": "[OLINGO-146] Java Client Lib contributed under SGA from Microsoft Open Technologies, Inc. The majority of this was written by Francesco Chicchiricc\u00f2 <ilgrosso@apache.org>"
+        },
+        {
+            "c_hash": "6f38c7bf",
+            "date": "2014-02-17 13:31:05 +0100",
+            "comment": "OLINGO-159 temporary exclude added"
+        },
+        {
+            "c_hash": "a2057f2f",
+            "date": "2014-02-17 14:07:22 +0100",
+            "comment": "[OLINGO-159] Replacing license header with ASF's"
+        },
+        {
+            "c_hash": "b8bdf252",
+            "date": "2014-02-17 14:20:31 +0100",
+            "comment": "White noise: formatting"
+        },
+        {
+            "c_hash": "3381ef70",
+            "date": "2014-02-17 14:24:40 +0100",
+            "comment": "Upgrading some deps and plug-ins to latest versions"
+        },
+        {
+            "c_hash": "c49ff803",
+            "date": "2014-02-17 16:35:17 +0100",
+            "comment": "[OLINGO-161] Refactored module names"
+        },
+        {
+            "c_hash": "9593b53c",
+            "date": "2014-02-17 16:44:32 +0100",
+            "comment": "[OLINGO-161] Refactored Java package names"
+        },
+        {
+            "c_hash": "7a67ea2f",
+            "date": "2014-02-17 17:13:36 +0100",
+            "comment": "[OLINGO-163] Optimized pom dependencies"
+        },
+        {
+            "c_hash": "e8a63a58",
+            "date": "2014-02-17 17:23:08 +0100",
+            "comment": "[OLINGO-63] Uri Parser: add percent decoding"
+        },
+        {
+            "c_hash": "1ebe418a",
+            "date": "2014-02-18 13:55:06 +0100",
+            "comment": "Ignoring NB stuff from GIT"
+        },
+        {
+            "c_hash": "268f68d1",
+            "date": "2014-02-18 13:55:16 +0100",
+            "comment": "Restoring XML formatting"
+        },
+        {
+            "c_hash": "e2251733",
+            "date": "2014-02-18 14:00:04 +0100",
+            "comment": "White noise: ASF license header and minor tweaks"
+        },
+        {
+            "c_hash": "dabcb44d",
+            "date": "2014-02-18 15:00:16 +0100",
+            "comment": "White noise: ASF license header"
+        },
+        {
+            "c_hash": "bb944afb",
+            "date": "2014-02-19 11:29:42 +0100",
+            "comment": "Merge from origin/master"
+        },
+        {
+            "c_hash": "05b49fbc",
+            "date": "2014-02-19 11:32:12 +0100",
+            "comment": "Merge from origin/master"
+        },
+        {
+            "c_hash": "1ef04b32",
+            "date": "2014-02-19 11:50:19 +0100",
+            "comment": "Merge from master"
+        },
+        {
+            "c_hash": "3cee9228",
+            "date": "2014-02-20 11:28:04 +0100",
+            "comment": "White noise: formatting, some missing final, etc"
+        },
+        {
+            "c_hash": "e6728fdd",
+            "date": "2014-02-20 11:47:11 +0100",
+            "comment": "More white noise: format, final and some TODO"
+        },
+        {
+            "c_hash": "f094e109",
+            "date": "2014-02-20 14:28:17 +0100",
+            "comment": "Merge from origin/master"
+        },
+        {
+            "c_hash": "4f927e76",
+            "date": "2014-02-21 17:25:07 +0100",
+            "comment": "[OLINGO-169] First huge import from ODataJClient: for the moment, it just build (no tests yet) and dummy Edm interfaces are used instead of the ones from commons-api"
+        },
+        {
+            "c_hash": "7f76d8a7",
+            "date": "2014-02-21 17:27:52 +0100",
+            "comment": "Merge from origin/master"
+        },
+        {
+            "c_hash": "e7135610",
+            "date": "2014-02-24 11:51:47 +0100",
+            "comment": "[OLINGO-169] Introducing V3 and V4 metadata parsing tests - still using dummy Edm interfaces"
+        },
+        {
+            "c_hash": "a9bc09d9",
+            "date": "2014-02-24 11:52:23 +0100",
+            "comment": "Merge remote-tracking branch 'origin/master' into olingo169"
+        },
+        {
+            "c_hash": "07400abc",
+            "date": "2014-02-24 13:32:53 +0100",
+            "comment": "Removing unneeded type genericization after interface introduction"
+        },
+        {
+            "c_hash": "df906e43",
+            "date": "2014-02-25 12:21:56 +0100",
+            "comment": "[OLINGO-169] Making client-api Edm interfaces less dumb"
+        },
+        {
+            "c_hash": "eb886d6a",
+            "date": "2014-02-25 13:36:23 +0100",
+            "comment": "[OLINGO-169] Finalizing package renaming"
+        },
+        {
+            "c_hash": "cdb520e3",
+            "date": "2014-02-27 10:54:04 +0100",
+            "comment": "[OLINGO-169] Package renaming according to latest ML discussion"
+        },
+        {
+            "c_hash": "04855436",
+            "date": "2014-02-28 09:51:19 +0100",
+            "comment": "White noise: formatting"
+        },
+        {
+            "c_hash": "a8c0e9ea",
+            "date": "2014-03-05 15:47:18 +0100",
+            "comment": "Upgrading Jackson and SLF4J"
+        },
+        {
+            "c_hash": "bae3d847",
+            "date": "2014-03-05 16:06:00 +0100",
+            "comment": "[OLINGO-186] client-side implementation of commons Edm interfaces completed: some refactoring on server-side performed to extract common abstract implementation"
+        },
+        {
+            "c_hash": "cce0ba5c",
+            "date": "2014-03-05 16:12:53 +0100",
+            "comment": "[OLINGO-187] Using commons EdmType hierarchy everywhere"
+        },
+        {
+            "c_hash": "a97fd2de",
+            "date": "2014-03-05 16:45:33 +0100",
+            "comment": "[OLINGO-186] Small cleanings"
+        },
+        {
+            "c_hash": "c4239fc9",
+            "date": "2014-03-06 10:38:50 +0100",
+            "comment": "Merge from master"
+        },
+        {
+            "c_hash": "5fc405bf",
+            "date": "2014-03-06 11:15:24 +0100",
+            "comment": "Upgrading commons lang to 3.3"
+        },
+        {
+            "c_hash": "1264aecd",
+            "date": "2014-03-06 16:18:27 +0100",
+            "comment": "[OLINGO-169] client-api interface refinements + proxy of Edm interfaces for V3 functionImport"
+        },
+        {
+            "c_hash": "d1b341df",
+            "date": "2014-03-06 16:38:08 +0100",
+            "comment": "[OLINGO-169] Enhancing EdmActionImportInfo and EdmFunctionImportInfo support for V3"
+        },
+        {
+            "c_hash": "31b6c8c0",
+            "date": "2014-03-07 10:04:24 +0100",
+            "comment": "[OLINGO-169] Now able to use commons Edm interfaces with v3"
+        },
+        {
+            "c_hash": "3df91bfa",
+            "date": "2014-03-07 10:20:47 +0100",
+            "comment": "Fixing typo"
+        },
+        {
+            "c_hash": "744a3713",
+            "date": "2014-03-07 14:49:10 +0100",
+            "comment": "OLINGO-175 provided v3 post service"
+        },
+        {
+            "c_hash": "e6248155",
+            "date": "2014-03-07 15:27:15 +0100",
+            "comment": "[OLINGO-190] V3 service document deserializer merged, V4 implemented"
+        },
+        {
+            "c_hash": "1e4d761b",
+            "date": "2014-03-07 18:06:38 +0100",
+            "comment": "OLINGO-175 provided update (PUT) and X-HTTP-METHOD header management"
+        },
+        {
+            "c_hash": "61b7b913",
+            "date": "2014-03-07 18:07:26 +0100",
+            "comment": "Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/incubator-olingo-odata4"
+        },
+        {
+            "c_hash": "a9f74a87",
+            "date": "2014-03-09 11:37:41 +0100",
+            "comment": "OLINGO-175 provided patch update and some refactorings"
+        },
+        {
+            "c_hash": "1cf22600",
+            "date": "2014-03-10 12:00:27 +0100",
+            "comment": "OLINGO-175 provided merge update + refactoring"
+        },
+        {
+            "c_hash": "b18f01ba",
+            "date": "2014-03-10 12:00:49 +0100",
+            "comment": "Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/incubator-olingo-odata4"
+        },
+        {
+            "c_hash": "23aa96e9",
+            "date": "2014-03-10 16:06:10 +0100",
+            "comment": "[OLINGO-63] Uri Parser: add Documentation II"
+        },
+        {
+            "c_hash": "fe0b4636",
+            "date": "2014-03-10 17:17:48 +0100",
+            "comment": "[OLINGO-63] Uri Parser: delete old option files"
+        },
+        {
+            "c_hash": "78c3eaa4",
+            "date": "2014-03-11 13:52:07 +0100",
+            "comment": "[OLINGO-200] V3 (de)serializers + unit tests merged"
+        },
+        {
+            "c_hash": "4039990c",
+            "date": "2014-03-11 14:00:01 +0100",
+            "comment": "White noise: reformatting POMs"
+        },
+        {
+            "c_hash": "4bcc9964",
+            "date": "2014-03-11 14:28:55 +0100",
+            "comment": "Merge remote-tracking branch 'origin/master' into olingo200"
+        },
+        {
+            "c_hash": "b297a37c",
+            "date": "2014-03-11 15:07:05 +0100",
+            "comment": "[OLINGO-200] Minor refactorings for preparing migration of domain objects to commons"
+        },
+        {
+            "c_hash": "2a55b879",
+            "date": "2014-03-12 10:57:40 +0100",
+            "comment": "Merge remote-tracking branch 'origin/master' into olingo200"
+        },
+        {
+            "c_hash": "41600935",
+            "date": "2014-03-12 11:25:51 +0100",
+            "comment": "Merge remote-tracking branch 'origin/master' into olingo200"
+        },
+        {
+            "c_hash": "b5c38353",
+            "date": "2014-03-12 13:53:59 +0100",
+            "comment": "Merge from master"
+        },
+        {
+            "c_hash": "d3b05e01",
+            "date": "2014-03-13 16:23:24 +0100",
+            "comment": "OLINGO-205 ODataJClient request/response layer implementation imported"
+        },
+        {
+            "c_hash": "119627f7",
+            "date": "2014-03-13 16:27:29 +0100",
+            "comment": "OLINGO-205 fix for javadoc class references"
+        },
+        {
+            "c_hash": "70f06578",
+            "date": "2014-03-13 17:29:27 +0100",
+            "comment": "OLINGO-175 moved ODataJClient test-service into fit module"
+        },
+        {
+            "c_hash": "da3742ac",
+            "date": "2014-03-14 10:11:02 +0100",
+            "comment": "[OLINGO-175, OLINGO-205] provided failsafe plugin to start to import integration test from ODataJClient"
+        },
+        {
+            "c_hash": "ddc074bc",
+            "date": "2014-03-14 14:17:08 +0100",
+            "comment": "Using latest Tomcat available"
+        },
+        {
+            "c_hash": "c602ba8b",
+            "date": "2014-03-14 14:17:36 +0100",
+            "comment": "Silencing checkstyle warnings"
+        },
+        {
+            "c_hash": "cb07ded0",
+            "date": "2014-03-14 18:38:10 +0100",
+            "comment": "Merge branch 'olingo200' of https://git-wip-us.apache.org/repos/asf/incubator-olingo-odata4 into olingo200"
+        },
+        {
+            "c_hash": "aa80231b",
+            "date": "2014-03-15 15:22:48 +0100",
+            "comment": "WIP commits before merge"
+        },
+        {
+            "c_hash": "381b4170",
+            "date": "2014-03-19 17:58:11 +0100",
+            "comment": "[OLINGO-200] New StAX (replacing DOM) (de)serializers in place - still IT to check"
+        },
+        {
+            "c_hash": "df77c31a",
+            "date": "2014-03-19 17:58:20 +0100",
+            "comment": "Merge branch 'olingo200' of https://git-wip-us.apache.org/repos/asf/incubator-olingo-odata4 into olingo200"
+        },
+        {
+            "c_hash": "7b913008",
+            "date": "2014-03-20 08:49:54 +0100",
+            "comment": "Merge remote-tracking branch 'origin/master' into olingo200"
+        },
+        {
+            "c_hash": "eae72e80",
+            "date": "2014-03-20 09:42:21 +0100",
+            "comment": "Cleanup"
+        },
+        {
+            "c_hash": "4431a80d",
+            "date": "2014-03-20 11:26:41 +0100",
+            "comment": "[OLINGO-200] V3 Atom and JSON (de)serializers replaced are now DOM free - all tests succeed"
+        },
+        {
+            "c_hash": "06d5264e",
+            "date": "2014-03-20 11:54:11 +0100",
+            "comment": "[OLINGO-175] fix for json array property retrieve"
+        },
+        {
+            "c_hash": "c2f76550",
+            "date": "2014-03-20 12:56:23 +0100",
+            "comment": "Cleaning up generic requests"
+        },
+        {
+            "c_hash": "9c5b6fe0",
+            "date": "2014-03-20 12:57:49 +0100",
+            "comment": "White noise: minor Javadoc change"
+        },
+        {
+            "c_hash": "be73bf6d",
+            "date": "2014-03-20 13:02:40 +0100",
+            "comment": "Removing unused class"
+        },
+        {
+            "c_hash": "bab03624",
+            "date": "2014-03-20 14:37:37 +0100",
+            "comment": "Consistently using package name to differentiate V3 and V4"
+        },
+        {
+            "c_hash": "559698d4",
+            "date": "2014-03-21 11:51:11 +0100",
+            "comment": "[OLINGO-65] Geospatial types implemented, EdmStream mock implemented with URI as backend, V3 pruned types implemented, EdmSimpleTypeKind adapted, EdmSimpleTypeFactory introduces"
+        },
+        {
+            "c_hash": "5a15155c",
+            "date": "2014-03-21 13:17:37 +0100",
+            "comment": "[OLINGO-65] Former ODataJClient's main type management classes removed"
+        },
+        {
+            "c_hash": "130a49fe",
+            "date": "2014-03-22 16:11:36 +0100",
+            "comment": "[OLINGO-214] Using Timestamp consistently for both V4 and V3 datetime types"
+        },
+        {
+            "c_hash": "4780fc51",
+            "date": "2014-03-22 16:12:31 +0100",
+            "comment": "[OLINGO-65] Implementation completed"
+        },
+        {
+            "c_hash": "9aefb959",
+            "date": "2014-03-24 09:50:23 +0100",
+            "comment": "[OLINGO-205, OLINGO-200] provided atom v4 deserialization for entity type/set + entity set request"
+        },
+        {
+            "c_hash": "5b5576f8",
+            "date": "2014-03-24 10:05:44 +0100",
+            "comment": "[OLINGO-205, OLINGO-200, OLINGO-65] merge"
+        },
+        {
+            "c_hash": "f0edb508",
+            "date": "2014-03-24 10:38:32 +0100",
+            "comment": "[OLINGO-175, OLINGO-205] provided (V4) next link check"
+        },
+        {
+            "c_hash": "428277c2",
+            "date": "2014-03-26 15:40:11 +0100",
+            "comment": "[OLINGO-175, OLINGO-205] provided (v4) context url and entity reference retrieving + it tests"
+        },
+        {
+            "c_hash": "1a6a5488",
+            "date": "2014-03-26 16:20:13 +0100",
+            "comment": "[OLINGO-175, OLINGO-205] merge from new repo"
+        },
+        {
+            "c_hash": "2e33a68b",
+            "date": "2014-03-26 17:57:46 +0100",
+            "comment": "[OLINGO-205] pruned merge for v4"
+        },
+        {
+            "c_hash": "2f77689c",
+            "date": "2014-03-26 17:58:02 +0100",
+            "comment": "[OLINGO-205] pruned merge for v4"
+        },
+        {
+            "c_hash": "fc2881fe",
+            "date": "2014-03-26 18:26:30 +0100",
+            "comment": "Merge branch 'olingo200' of https://git-wip-us.apache.org/repos/asf/olingo-odata4 into olingo200"
+        },
+        {
+            "c_hash": "cde94fc0",
+            "date": "2014-03-27 15:35:14 +0100",
+            "comment": "Merge branch 'olingo200' of https://git-wip-us.apache.org/repos/asf/olingo-odata4 into olingo200"
+        },
+        {
+            "c_hash": "e4bf2132",
+            "date": "2014-03-27 15:41:09 +0100",
+            "comment": "[OLINGO-205] refactoring in order to add context url and metadata etag management"
+        },
+        {
+            "c_hash": "ce18b8e0",
+            "date": "2014-03-28 17:07:20 +0100",
+            "comment": "[OLINGO-200] V4 Atom and JSON parsers on their way - still to refine, but most features are in, and specific tests were added"
+        },
+        {
+            "c_hash": "3c4d7d17",
+            "date": "2014-03-28 17:07:46 +0100",
+            "comment": "Merge branch 'olingo200' of https://git-wip-us.apache.org/repos/asf/olingo-odata4 into olingo200"
+        },
+        {
+            "c_hash": "96b7a175",
+            "date": "2014-03-28 17:37:02 +0100",
+            "comment": "Unused import"
+        },
+        {
+            "c_hash": "72b264e9",
+            "date": "2014-03-29 06:27:31 +0100",
+            "comment": "Merge branch 'olingo200' of https://git-wip-us.apache.org/repos/asf/olingo-odata4 into olingo200"
+        },
+        {
+            "c_hash": "8c58e3ea",
+            "date": "2014-03-29 06:39:30 +0100",
+            "comment": "Consolidating ServiceDocument IT tests"
+        },
+        {
+            "c_hash": "b85c68fd",
+            "date": "2014-03-29 07:43:10 +0100",
+            "comment": "More V3 property tests"
+        },
+        {
+            "c_hash": "e0d1b6ff",
+            "date": "2014-03-29 13:53:26 +0100",
+            "comment": "Removing useless method"
+        },
+        {
+            "c_hash": "ceda4740",
+            "date": "2014-03-29 14:48:17 +0100",
+            "comment": "[OLINGO-200] Introducing interfaces for domain object"
+        },
+        {
+            "c_hash": "80e5ed56",
+            "date": "2014-03-29 16:55:41 +0100",
+            "comment": "[OLINGO-200] Introducing specialization for V3 and V4 domain objects"
+        },
+        {
+            "c_hash": "abe0e15e",
+            "date": "2014-03-29 16:55:47 +0100",
+            "comment": "Merge branch 'olingo200' of https://git-wip-us.apache.org/repos/asf/olingo-odata4 into olingo200"
+        },
+        {
+            "c_hash": "a884ad12",
+            "date": "2014-03-29 16:58:19 +0100",
+            "comment": "Redundant is redundant"
+        },
+        {
+            "c_hash": "cd7ede00",
+            "date": "2014-03-29 20:17:26 +0100",
+            "comment": "[OLINGO-200] V3/V4 specialization for ODataEntitySetIterator"
+        },
+        {
+            "c_hash": "117cf6f0",
+            "date": "2014-03-30 16:12:17 +0200",
+            "comment": "[OLINGO-200] More V4 Enum tests"
+        },
+        {
+            "c_hash": "dc2922c9",
+            "date": "2014-03-31 10:59:35 +0200",
+            "comment": "[OLINGO-200] V4 ODataValue full reachable via API"
+        },
+        {
+            "c_hash": "eeb5d9b4",
+            "date": "2014-03-31 15:17:08 +0200",
+            "comment": "[OLINGO-200] V4 (de)serialization tests for EntitySet and Property"
+        },
+        {
+            "c_hash": "de591bb5",
+            "date": "2014-03-31 16:55:31 +0200",
+            "comment": "[OLINGO-200] V3, V4 Error tests in"
+        },
+        {
+            "c_hash": "c73772f0",
+            "date": "2014-03-31 17:16:44 +0200",
+            "comment": "[OLINGO-205, OLINGO-175] provided JSON integration tests + refactoring and fixes"
+        },
+        {
+            "c_hash": "850d44e0",
+            "date": "2014-03-31 17:57:31 +0200",
+            "comment": "[OLINGO-175] V4 Entity create test"
+        },
+        {
+            "c_hash": "a5b7b257",
+            "date": "2014-04-01 14:10:29 +0200",
+            "comment": "[OLINGO-200] Fixing minor quirk in V4 APIs"
+        },
+        {
+            "c_hash": "1fa66760",
+            "date": "2014-04-01 14:16:50 +0200",
+            "comment": "[OLINGO-200] Cleanup again"
+        },
+        {
+            "c_hash": "525767c0",
+            "date": "2014-04-01 14:16:58 +0200",
+            "comment": "Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/olingo-odata4"
+        },
+        {
+            "c_hash": "6aaec814",
+            "date": "2014-04-01 16:04:24 +0200",
+            "comment": "[OLINGO-200] More ref tests"
+        },
+        {
+            "c_hash": "9806a273",
+            "date": "2014-04-01 16:16:35 +0200",
+            "comment": "Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/olingo-odata4"
+        },
+        {
+            "c_hash": "b275fc40",
+            "date": "2014-04-01 19:02:07 +0200",
+            "comment": "fixes OLINGO-227"
+        },
+        {
+            "c_hash": "793c56e8",
+            "date": "2014-04-02 09:30:53 +0200",
+            "comment": "Merge branch 'olingo168'"
+        },
+        {
+            "c_hash": "242f782b",
+            "date": "2014-04-02 10:53:41 +0200",
+            "comment": "[OLINGO-222] Remove Incubating from module names"
+        },
+        {
+            "c_hash": "6ae704d6",
+            "date": "2014-04-02 15:29:16 +0200",
+            "comment": "Updating Tomcat version"
+        },
+        {
+            "c_hash": "16d3b028",
+            "date": "2014-04-02 15:29:34 +0200",
+            "comment": "[OLINGO-230] Implementation completed"
+        },
+        {
+            "c_hash": "1e8eaecf",
+            "date": "2014-04-02 16:44:39 +0200",
+            "comment": "[OLINGO-233] HTTP proxy enabled HttpClientFactory provided"
+        },
+        {
+            "c_hash": "809519f9",
+            "date": "2014-04-02 17:21:18 +0200",
+            "comment": "[OLINGO-168] Tests for metadata serialization"
+        },
+        {
+            "c_hash": "8888b051",
+            "date": "2014-04-03 10:58:06 +0200",
+            "comment": "[OLINGO-175] removed parent's license dependency"
+        },
+        {
+            "c_hash": "a6817f32",
+            "date": "2014-04-03 10:58:54 +0200",
+            "comment": "Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/olingo-odata4"
+        },
+        {
+            "c_hash": "25174231",
+            "date": "2014-04-03 11:12:22 +0200",
+            "comment": "[OLINGO-209] open type is both for complex and entity types"
+        },
+        {
+            "c_hash": "8a0d5197",
+            "date": "2014-04-04 07:46:30 +0200",
+            "comment": "[OLINGO-215] remove disclaimer"
+        },
+        {
+            "c_hash": "7dae5ef3",
+            "date": "2014-04-04 07:49:57 +0200",
+            "comment": "[OLINGO-206] Merge branch 'olingo-206-val' into m2"
+        },
+        {
+            "c_hash": "bb748ec0",
+            "date": "2014-04-04 17:20:42 +0200",
+            "comment": "[OLINGO-175] Enabling fit to respond to action / function invocation (V3)"
+        },
+        {
+            "c_hash": "44729da1",
+            "date": "2014-04-04 17:23:23 +0200",
+            "comment": "[OLINGO-234] Invoke requests working for V3 (with new Edm interfaces)"
+        },
+        {
+            "c_hash": "9f6c0639",
+            "date": "2014-04-04 17:23:30 +0200",
+            "comment": "Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/olingo-odata4"
+        },
+        {
+            "c_hash": "e8b2873e",
+            "date": "2014-04-04 17:37:31 +0200",
+            "comment": "[OLINGO-143] All edm classes are documented with javadoc"
+        },
+        {
+            "c_hash": "2f7a191c",
+            "date": "2014-04-07 09:26:51 +0200",
+            "comment": "Updating cargo version"
+        },
+        {
+            "c_hash": "b0c26e11",
+            "date": "2014-04-07 09:27:26 +0200",
+            "comment": "White noise: adding some missing @Override"
+        },
+        {
+            "c_hash": "05b26700",
+            "date": "2014-04-07 11:26:01 +0200",
+            "comment": "[OLINGO-234] Cleaning up + re-enabling in-stream error test"
+        },
+        {
+            "c_hash": "081df2aa",
+            "date": "2014-04-07 13:21:17 +0200",
+            "comment": "[OLINGO-202] Required changes provided"
+        },
+        {
+            "c_hash": "855a586b",
+            "date": "2014-04-07 13:52:45 +0200",
+            "comment": "[OLINGO-202] Remove caching by by name for get with key"
+        },
+        {
+            "c_hash": "338ed707",
+            "date": "2014-04-07 14:47:41 +0200",
+            "comment": "[OLINGO-234] Action overloading working for v3"
+        },
+        {
+            "c_hash": "4f59dba7",
+            "date": "2014-04-08 14:43:55 +0200",
+            "comment": "[OLINGO-234] Everything ready for V4 function / action import invoke, integration tests cannot be committed yet, need fit counterparts"
+        },
+        {
+            "c_hash": "86a7dffd",
+            "date": "2014-04-08 16:09:55 +0200",
+            "comment": "[OLINGO-234] Adding operation import test IT case relying on external service, conditionally enabled - waiting for fit"
+        },
+        {
+            "c_hash": "d3b513cf",
+            "date": "2014-04-09 14:09:53 +0200",
+            "comment": "Small fixes and utility methods"
+        },
+        {
+            "c_hash": "7104c65f",
+            "date": "2014-04-09 14:11:07 +0200",
+            "comment": "[OLINGO-234] V4 bound Action / Function invoke tests ready - still using external service"
+        },
+        {
+            "c_hash": "0612eab4",
+            "date": "2014-04-09 15:56:22 +0200",
+            "comment": "Small domain object enhancement"
+        },
+        {
+            "c_hash": "9f96234e",
+            "date": "2014-04-09 17:03:50 +0200",
+            "comment": "Uniforming the type expression (de)serialization"
+        },
+        {
+            "c_hash": "6019385e",
+            "date": "2014-04-09 17:34:26 +0200",
+            "comment": "[OLINGO-242] Implementation provided"
+        },
+        {
+            "c_hash": "ba791fac",
+            "date": "2014-04-10 08:25:01 +0200",
+            "comment": "Upgrade commons-lang3 3.3.2"
+        },
+        {
+            "c_hash": "450ccfd4",
+            "date": "2014-04-10 16:32:12 +0200",
+            "comment": "[OLINGO-175] using commons (de-)serializers to add some capabilities to fit"
+        },
+        {
+            "c_hash": "e9b71f34",
+            "date": "2014-04-11 13:49:14 +0200",
+            "comment": "[OLINGO-227] Fixing again windows build"
+        },
+        {
+            "c_hash": "67ba360b",
+            "date": "2014-04-11 14:38:34 +0200",
+            "comment": "Fixing build with JDK 6"
+        },
+        {
+            "c_hash": "45673e8e",
+            "date": "2014-04-11 18:53:24 +0200",
+            "comment": "[OLINGO-175] Finally re-enabling open type tests for V3"
+        },
+        {
+            "c_hash": "39d96599",
+            "date": "2014-04-12 18:38:28 +0200",
+            "comment": "Still some 'incubator' around"
+        },
+        {
+            "c_hash": "1585f2da",
+            "date": "2014-04-14 10:47:41 +0200",
+            "comment": "[OLINGO-175] open type tests for V4"
+        },
+        {
+            "c_hash": "d5e29b02",
+            "date": "2014-04-14 14:11:43 +0200",
+            "comment": "[OLINGO-244] Implementation and IT provided"
+        },
+        {
+            "c_hash": "e67cbaa3",
+            "date": "2014-04-15 13:54:23 +0200",
+            "comment": "[OLINGO-175] Contained entity update tests (V4)"
+        },
+        {
+            "c_hash": "542541dd",
+            "date": "2014-04-15 14:09:12 +0200",
+            "comment": "Various dependency version upgrades"
+        },
+        {
+            "c_hash": "68f27d57",
+            "date": "2014-04-15 16:33:19 +0200",
+            "comment": "[OLINGO-246] provided batch integration; still missing internak batch reference support"
+        },
+        {
+            "c_hash": "046cdb11",
+            "date": "2014-04-16 08:47:27 +0200",
+            "comment": "[OLINGO-246] fix for build #251"
+        },
+        {
+            "c_hash": "39eb8212",
+            "date": "2014-04-16 08:47:51 +0200",
+            "comment": "Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/olingo-odata4"
+        },
+        {
+            "c_hash": "47f1ec18",
+            "date": "2014-04-16 09:09:13 +0200",
+            "comment": "Ensuring the build does not warn under JDK 6"
+        },
+        {
+            "c_hash": "7ee1e39f",
+            "date": "2014-04-16 09:31:17 +0200",
+            "comment": "Enhancing ODataPrimitiveValue test for DateTimeOffset"
+        },
+        {
+            "c_hash": "03e5462c",
+            "date": "2014-04-16 13:13:18 +0200",
+            "comment": "Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/olingo-odata4"
+        },
+        {
+            "c_hash": "ef8c3a05",
+            "date": "2014-04-17 10:42:29 +0200",
+            "comment": "Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/olingo-odata4"
+        },
+        {
+            "c_hash": "3bb39def",
+            "date": "2014-04-17 14:56:22 +0200",
+            "comment": "[OLINGO-175] More V4 CRUD tests for containment, deep insert and bind operation"
+        },
+        {
+            "c_hash": "b157e26c",
+            "date": "2014-04-17 15:57:56 +0200",
+            "comment": "Fixing incorrect millis <-> nanos conversion (with Timestamp) in EdmDateTimeOffset"
+        },
+        {
+            "c_hash": "811f0bfc",
+            "date": "2014-04-17 16:27:54 +0200",
+            "comment": "Enable simple logging on FIT"
+        },
+        {
+            "c_hash": "fe8df96f",
+            "date": "2014-04-17 17:31:18 +0200",
+            "comment": "(Finally) Fixing incorrect millis <-> nanos conversion (with Timestamp) in EdmDateTimeOffset"
+        },
+        {
+            "c_hash": "e4a4f9e6",
+            "date": "2014-04-18 11:05:37 +0200",
+            "comment": "Moving contained CRUD tests from external test service to fit"
+        },
+        {
+            "c_hash": "6dfdee2e",
+            "date": "2014-04-18 11:16:55 +0200",
+            "comment": "[OLINGO-175, OLINGO-205, OLINGO-246] provided batch error V4 + continueOnError support"
+        },
+        {
+            "c_hash": "9fa8fbc3",
+            "date": "2014-04-19 12:42:51 +0200",
+            "comment": "[OLINGO-175, OLINGO-205, OLINGO-246] provided v4 batch test including outside update; still missing asyncronous execution"
+        },
+        {
+            "c_hash": "85a3e0e8",
+            "date": "2014-04-19 13:01:17 +0200",
+            "comment": "[OLINGO-175, OLINGO-205, OLINGO-246] fix fo build"
+        },
+        {
+            "c_hash": "569d07f9",
+            "date": "2014-04-19 19:20:00 +0200",
+            "comment": "White noise: fixing some imports"
+        },
+        {
+            "c_hash": "32fcb8cb",
+            "date": "2014-04-21 07:39:42 +0200",
+            "comment": "White noise: fixing some imports"
+        },
+        {
+            "c_hash": "f87321f9",
+            "date": "2014-04-23 13:26:32 +0200",
+            "comment": "[OLINGO-234] OperationImportInvokeTestITCase moved to fit]"
+        },
+        {
+            "c_hash": "713ed0ef",
+            "date": "2014-04-23 18:27:55 +0200",
+            "comment": "[OLINGO-234] All tests moved to fit"
+        },
+        {
+            "c_hash": "d45a4828",
+            "date": "2014-04-24 09:54:27 +0200",
+            "comment": "Re-adding support for non-standard key-as-segment feature in V4"
+        },
+        {
+            "c_hash": "4f1072a6",
+            "date": "2014-04-24 10:13:48 +0200",
+            "comment": "[OLINGO-248] provided V4 asynchronous mechanisms. Still missing verification towards external services"
+        },
+        {
+            "c_hash": "fac8c0ae",
+            "date": "2014-04-24 11:36:07 +0200",
+            "comment": "Fixing (again) the build on windows"
+        },
+        {
+            "c_hash": "149c51c7",
+            "date": "2014-04-24 17:31:39 +0200",
+            "comment": "[OLINGO-253] fix  v4 compliance + added tests for , ,"
+        },
+        {
+            "c_hash": "96b8cd96",
+            "date": "2014-04-24 17:49:05 +0200",
+            "comment": "[OLINGO-248] provided callback support for V4 async requests"
+        },
+        {
+            "c_hash": "6a5fc354",
+            "date": "2014-04-26 15:51:11 +0200",
+            "comment": "[OLINGO-246] improve hasNext() and next() item iterator methods"
+        },
+        {
+            "c_hash": "15e7718a",
+            "date": "2014-04-27 07:48:52 +0200",
+            "comment": "[OLINGO-254] Specific client (EdmEnabledODataClient) provided to work with Edm: type information is derived from contextURL, hence such client is useful in JSON with full or minimal metadata"
+        },
+        {
+            "c_hash": "0b05798c",
+            "date": "2014-04-28 13:10:40 +0200",
+            "comment": "[OLINGO-246, OLINGO-248] provided async batch support"
+        },
+        {
+            "c_hash": "118b779b",
+            "date": "2014-04-28 17:00:23 +0200",
+            "comment": "[OLINGO-259] Delta response content parsing (including new domain objects)"
+        },
+        {
+            "c_hash": "e8ac1c74",
+            "date": "2014-04-28 18:13:34 +0200",
+            "comment": "[OLINGO-259] Request / Response handling + test"
+        },
+        {
+            "c_hash": "e26d55d5",
+            "date": "2014-04-29 10:49:36 +0200",
+            "comment": "[OLINGO-259] Some refinements"
+        },
+        {
+            "c_hash": "6c7aef90",
+            "date": "2014-04-29 10:59:19 +0200",
+            "comment": "Merge from master"
+        },
+        {
+            "c_hash": "8042913b",
+            "date": "2014-04-29 11:46:27 +0200",
+            "comment": "[OLINGO-236] Refactor complete"
+        },
+        {
+            "c_hash": "8a6bcb3d",
+            "date": "2014-04-29 16:36:59 +0200",
+            "comment": "[OLINGO-262] Additional ext sub-module provided for specific usage with Android"
+        },
+        {
+            "c_hash": "10f03a2c",
+            "date": "2014-04-30 09:13:08 +0200",
+            "comment": "Adding missing method to Edm interfaces to check whether an entity or a complex type is abstract"
+        },
+        {
+            "c_hash": "1fb616ff",
+            "date": "2014-04-30 09:13:27 +0200",
+            "comment": "Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/olingo-odata4"
+        },
+        {
+            "c_hash": "66a8f99b",
+            "date": "2014-04-30 09:47:03 +0200",
+            "comment": "[OLINGO-262] Small refinement"
+        },
+        {
+            "c_hash": "6e72b1f3",
+            "date": "2014-05-02 18:01:38 +0200",
+            "comment": "[OLINGO-261] Missing V3 implementation of EdmNavigationProperty"
+        },
+        {
+            "c_hash": "726fbe52",
+            "date": "2014-05-04 18:23:12 +0200",
+            "comment": "[OLINGO-263][OLINGO-264] First draft Edm annotation interfaces + client-side implementation (server components have TODO)"
+        },
+        {
+            "c_hash": "3b366002",
+            "date": "2014-05-05 12:22:23 +0200",
+            "comment": "[OLINGO-264] More client-side tests"
+        },
+        {
+            "c_hash": "7c079a1a",
+            "date": "2014-05-05 12:22:37 +0200",
+            "comment": "Merge remote-tracking branch 'origin/master' into olingo263"
+        },
+        {
+            "c_hash": "585ddaea",
+            "date": "2014-05-05 12:29:56 +0200",
+            "comment": "White noise: formatting"
+        },
+        {
+            "c_hash": "6e9cb60e",
+            "date": "2014-05-05 15:17:15 +0200",
+            "comment": "[OLINGO-263] Some refinements + client support form edmx:IncludeAnnotations"
+        },
+        {
+            "c_hash": "dda7577f",
+            "date": "2014-05-05 16:05:14 +0200",
+            "comment": "[OLINGO-271] Merge from master"
+        },
+        {
+            "c_hash": "f02d9a07",
+            "date": "2014-05-06 10:44:38 +0200",
+            "comment": "[OLINGO-261] providing basics for pojo generator and proxy annotations"
+        },
+        {
+            "c_hash": "6f1f4d05",
+            "date": "2014-05-07 12:42:01 +0800",
+            "comment": "[OLINGO-274] fix V4 json error response's deserializing (\"details\" & \"innererror\")"
+        },
+        {
+            "c_hash": "c32f4a0b",
+            "date": "2014-05-12 16:22:10 +0800",
+            "comment": "Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/olingo-odata4 into olingo274"
+        },
+        {
+            "c_hash": "8720a30e",
+            "date": "2014-05-12 12:41:25 +0200",
+            "comment": "Various small improvements, added test for instance annotations"
+        },
+        {
+            "c_hash": "ed8e0e3c",
+            "date": "2014-05-12 12:41:30 +0200",
+            "comment": "Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/olingo-odata4"
+        },
+        {
+            "c_hash": "288bbb72",
+            "date": "2014-05-12 15:52:17 +0200",
+            "comment": "[OLINGO-280] pojogen off-line generation implemented"
+        },
+        {
+            "c_hash": "feae9d02",
+            "date": "2014-05-12 15:52:32 +0200",
+            "comment": "Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/olingo-odata4"
+        },
+        {
+            "c_hash": "322a3efd",
+            "date": "2014-05-12 15:58:47 +0200",
+            "comment": "Updating RAT excludes to make the build succeeed"
+        },
+        {
+            "c_hash": "3af2c8ce",
+            "date": "2014-05-12 17:03:30 +0200",
+            "comment": "[OLINGO-260] provided create with back navigation link integration test on proxy"
+        },
+        {
+            "c_hash": "389b554c",
+            "date": "2014-05-13 12:12:36 +0200",
+            "comment": "[OLINGO-260] V3 proxy invoke"
+        },
+        {
+            "c_hash": "c05a9114",
+            "date": "2014-05-13 13:39:28 +0200",
+            "comment": "[OLINGO-260] provided v4 integration test for entity creation"
+        },
+        {
+            "c_hash": "1a14f3f1",
+            "date": "2014-05-13 14:20:59 +0200",
+            "comment": "[OLINGO-260] V3 action overloading invoke"
+        },
+        {
+            "c_hash": "36219a26",
+            "date": "2014-05-13 14:40:56 +0200",
+            "comment": "[OLINGO-260] provided singleton integration test on proxy"
+        },
+        {
+            "c_hash": "f170953c",
+            "date": "2014-05-13 15:16:45 +0200",
+            "comment": "[OLINGO-260] provided entity update integration test on proxy"
+        },
+        {
+            "c_hash": "3daee521",
+            "date": "2014-05-13 15:56:11 +0200",
+            "comment": "[OLINGO-260] (Proxy) context tests"
+        },
+        {
+            "c_hash": "32518c1b",
+            "date": "2014-05-13 18:59:14 +0200",
+            "comment": "[OLINGO-260] provided primitive keys integration test on proxy + some refactoring ... still missing EdmTime review: what about BigDecimal in place of Duration?"
+        },
+        {
+            "c_hash": "788b286b",
+            "date": "2014-05-14 10:21:03 +0200",
+            "comment": "[OLINGO-260] V4 function / action import invoke"
+        },
+        {
+            "c_hash": "29924aea",
+            "date": "2014-05-14 10:23:34 +0200",
+            "comment": "Fixing bad test"
+        },
+        {
+            "c_hash": "ab4afd24",
+            "date": "2014-05-14 10:24:02 +0200",
+            "comment": "Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/olingo-odata4"
+        },
+        {
+            "c_hash": "35f45500",
+            "date": "2014-05-14 10:45:31 +0200",
+            "comment": "Fixing RAT errors due to ref and server-ref"
+        },
+        {
+            "c_hash": "390d3a3a",
+            "date": "2014-05-14 12:07:44 +0200",
+            "comment": "[OLINGO-260] provided primitive keys integration test for proxy and pojogen"
+        },
+        {
+            "c_hash": "77e9e86d",
+            "date": "2014-05-14 13:28:48 +0200",
+            "comment": "[OLINGO-260] V4 bound operation invoke"
+        },
+        {
+            "c_hash": "99cd23fb",
+            "date": "2014-05-14 13:43:06 +0200",
+            "comment": "[OLINGO-261] Simplifying enum handling"
+        },
+        {
+            "c_hash": "6e9fb661",
+            "date": "2014-05-14 15:45:26 +0200",
+            "comment": "[OLINGO-261][OLINGO-260] Improving singleton handling"
+        },
+        {
+            "c_hash": "569996aa",
+            "date": "2014-05-14 16:34:19 +0200",
+            "comment": "[OLINGO-260] async tests"
+        },
+        {
+            "c_hash": "12a12846",
+            "date": "2014-05-14 17:49:50 +0200",
+            "comment": "[OLINGO-260] key as segment"
+        },
+        {
+            "c_hash": "4bdc9195",
+            "date": "2014-05-14 19:43:12 +0200",
+            "comment": "[OLINGO-260] partially provided opentype support on proxy"
+        },
+        {
+            "c_hash": "1dd8c987",
+            "date": "2014-05-15 10:35:24 +0200",
+            "comment": "[OLINGO-260] fix type seraialization + opentype integration test extension"
+        },
+        {
+            "c_hash": "8a7ef5c7",
+            "date": "2014-05-15 11:16:26 +0200",
+            "comment": "[OLINGO-261] Saving enum and complex generated classes for usage with open types"
+        },
+        {
+            "c_hash": "0e5b32e6",
+            "date": "2014-05-15 14:21:25 +0200",
+            "comment": "[OLINGO-260] opentypes full integrated onto the proxy"
+        },
+        {
+            "c_hash": "e854f416",
+            "date": "2014-05-15 15:56:28 +0200",
+            "comment": "[OLINGO-260] Filter/orderby and search tests"
+        },
+        {
+            "c_hash": "96c45510",
+            "date": "2014-05-16 12:08:22 +0200",
+            "comment": "[OLINGO-260] derived types tests"
+        },
+        {
+            "c_hash": "c35bc553",
+            "date": "2014-05-16 15:11:41 +0200",
+            "comment": "[OLINGO-260] deep insert test"
+        },
+        {
+            "c_hash": "ca66d671",
+            "date": "2014-05-17 16:06:18 +0200",
+            "comment": "[OLINGO-260] contained tests"
+        },
+        {
+            "c_hash": "f228204f",
+            "date": "2014-05-17 16:27:04 +0200",
+            "comment": "Fixing encoding for a test on Windows"
+        },
+        {
+            "c_hash": "946356fb",
+            "date": "2014-05-19 12:32:48 +0200",
+            "comment": "[OLINGO-260] provided media entity integration tests on proxy"
+        },
+        {
+            "c_hash": "4a1d5ab3",
+            "date": "2014-05-19 13:23:42 +0200",
+            "comment": "API enhancements: simplified operation import invoke with EdmEnabledODataClient"
+        },
+        {
+            "c_hash": "f59a8fb3",
+            "date": "2014-05-19 17:47:46 +0200",
+            "comment": "[OLINGO-260] Instance annotations test"
+        },
+        {
+            "c_hash": "beae4797",
+            "date": "2014-05-19 17:47:53 +0200",
+            "comment": "Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/olingo-odata4"
+        },
+        {
+            "c_hash": "5c28df50",
+            "date": "2014-05-19 18:02:47 +0200",
+            "comment": "IT: server-side paging"
+        },
+        {
+            "c_hash": "5fb2b80e",
+            "date": "2014-05-20 08:37:40 +0200",
+            "comment": "Enhancing the FunctionImport invoke API enhancement"
+        },
+        {
+            "c_hash": "62dad250",
+            "date": "2014-05-20 13:16:39 +0200",
+            "comment": "[OLINGO-260] missed open complex type support on the proxy"
+        },
+        {
+            "c_hash": "7d6c587c",
+            "date": "2014-05-20 14:06:24 +0200",
+            "comment": "[OLINGO-260] Adding Android support for proxy"
+        },
+        {
+            "c_hash": "8ad67fed",
+            "date": "2014-05-20 14:37:43 +0200",
+            "comment": "batch method and manager renaming"
+        },
+        {
+            "c_hash": "24ce9af6",
+            "date": "2014-05-20 15:02:39 +0200",
+            "comment": "Merged StreamRequestFactory methods into CURDrequestFactory and removed StreamRequestFactory"
+        },
+        {
+            "c_hash": "31550fd3",
+            "date": "2014-05-20 15:11:06 +0200",
+            "comment": "Adding a 'javadocs' profile for Javadocs generation"
+        },
+        {
+            "c_hash": "a12b2b11",
+            "date": "2014-05-20 16:15:06 +0200",
+            "comment": "Adding tests for linked entity create / delete"
+        },
+        {
+            "c_hash": "859a7e89",
+            "date": "2014-05-20 16:55:41 +0200",
+            "comment": "api review in order to avoid to append value segment explicitely in case of media entity retrieve and property value retrieve"
+        },
+        {
+            "c_hash": "84203da0",
+            "date": "2014-05-20 18:25:01 +0200",
+            "comment": "Client api change: removed 'outside' batch item"
+        },
+        {
+            "c_hash": "377ddb95",
+            "date": "2014-05-21 11:59:53 +0200",
+            "comment": "[OLINGO-260] provided authenticated entity creation on proxy"
+        },
+        {
+            "c_hash": "cf17331f",
+            "date": "2014-05-21 15:10:42 +0200",
+            "comment": "fit server metadatas loaded from res"
+        },
+        {
+            "c_hash": "a57926bf",
+            "date": "2014-05-21 15:11:17 +0200",
+            "comment": "Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/olingo-odata4"
+        },
+        {
+            "c_hash": "259eb078",
+            "date": "2014-05-22 17:04:04 +0200",
+            "comment": "[OLINGO-286] fixed: provided intengration test for '13.2 Interoperable OData Clients'"
+        },
+        {
+            "c_hash": "f57c9f04",
+            "date": "2014-05-22 17:04:16 +0200",
+            "comment": "Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/olingo-odata4"
+        },
+        {
+            "c_hash": "7902e723",
+            "date": "2014-05-22 17:05:36 +0200",
+            "comment": "Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/olingo-odata4"
+        },
+        {
+            "c_hash": "d0dd1ca9",
+            "date": "2014-05-22 17:30:16 +0200",
+            "comment": "Fix for build #311"
+        },
+        {
+            "c_hash": "696c5864",
+            "date": "2014-05-23 12:32:30 +0200",
+            "comment": "Bunch of client API review"
+        },
+        {
+            "c_hash": "5b5ff8ea",
+            "date": "2014-05-23 14:25:08 +0200",
+            "comment": "Fix for (authenticated) batch repeatable request"
+        },
+        {
+            "c_hash": "24a031b7",
+            "date": "2014-05-26 16:00:25 +0200",
+            "comment": "Some refinements arounf pojogen"
+        },
+        {
+            "c_hash": "b0a0c20e",
+            "date": "2014-05-26 16:00:45 +0200",
+            "comment": "Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/olingo-odata4"
+        },
+        {
+            "c_hash": "07748030",
+            "date": "2014-05-27 08:32:07 +0200",
+            "comment": "Updating Tomcat version"
+        },
+        {
+            "c_hash": "a66bd98b",
+            "date": "2014-05-27 11:00:32 +0200",
+            "comment": "[OLINGO-260] Adding option to work non-transactionally (e.g. without batch)"
+        },
+        {
+            "c_hash": "2e7883f6",
+            "date": "2014-05-27 11:13:27 +0200",
+            "comment": "Removing unwanted method"
+        },
+        {
+            "c_hash": "17f173a9",
+            "date": "2014-06-02 13:15:56 +0200",
+            "comment": "[OLINGO-266] Merge remote-tracking branch 'origin/olingo-266-tecsvc' into master"
+        },
+        {
+            "c_hash": "cc518254",
+            "date": "2014-06-02 18:51:34 +0200",
+            "comment": "Aligning package name with folder structure (org.apache.olingo.fit.proxy.v4.demo.odatademo)"
+        },
+        {
+            "c_hash": "9ae26a70",
+            "date": "2014-06-03 14:57:52 +0200",
+            "comment": "Merge branch 'olingo-266-tecsvc'"
+        },
+        {
+            "c_hash": "f68aa54e",
+            "date": "2014-06-03 16:20:34 +0200",
+            "comment": "[OLINGO-313] version header support"
+        },
+        {
+            "c_hash": "658ddef8",
+            "date": "2014-06-03 16:46:51 +0200",
+            "comment": "[OLINGO-313] more tests"
+        },
+        {
+            "c_hash": "8ad297f9",
+            "date": "2014-06-06 15:40:02 +0800",
+            "comment": "[OLINGO-314] pojogen plugin needs generate correct name for EDM comple type"
+        },
+        {
+            "c_hash": "80c2f83a",
+            "date": "2014-06-06 17:03:58 +0800",
+            "comment": "[OLINGO-315] handle the case of zero container in EDM schema"
+        },
+        {
+            "c_hash": "5959dfb0",
+            "date": "2014-06-06 23:40:06 +0800",
+            "comment": "[OLINGO-318]client should base64encode edm.binary data, not as URLSafeString"
+        },
+        {
+            "c_hash": "cf360e65",
+            "date": "2014-06-08 13:35:01 +0800",
+            "comment": "[OLINGO-319] fix java.lang.IllegalStateException: Content has been consumed"
+        },
+        {
+            "c_hash": "0e84b4ce",
+            "date": "2014-06-08 16:57:06 +0800",
+            "comment": "[OLINGO-321] client proxy code should support calling operation on minimal metadata entity"
+        },
+        {
+            "c_hash": "46a34178",
+            "date": "2014-06-09 14:43:34 +0200",
+            "comment": "[OLINGO-317] First presentable state"
+        },
+        {
+            "c_hash": "70afb2ac",
+            "date": "2014-06-11 13:39:53 +0200",
+            "comment": "[OLINGO-317] Finished DeSerializer refactoring"
+        },
+        {
+            "c_hash": "634d75b7",
+            "date": "2014-06-12 08:27:10 +0200",
+            "comment": "Removing unnecessary dependency - looks like a refuse"
+        },
+        {
+            "c_hash": "b15439ff",
+            "date": "2014-06-12 10:49:57 +0200",
+            "comment": "[OLINGO-317] Rename and move of some packages and classes"
+        },
+        {
+            "c_hash": "37abba5f",
+            "date": "2014-06-13 15:16:50 +0200",
+            "comment": "[OLINGO-317] Merged the format ENUMs"
+        },
+        {
+            "c_hash": "176bee4b",
+            "date": "2014-06-17 14:24:05 +0200",
+            "comment": "Merge branch 'master' into Olingo-317_DeSerializerRefactoring"
+        },
+        {
+            "c_hash": "ab6fd5e2",
+            "date": "2014-06-17 14:53:44 +0200",
+            "comment": "[OLINGO-317] Refactored ContentType"
+        },
+        {
+            "c_hash": "ce359852",
+            "date": "2014-06-23 15:19:23 +0200",
+            "comment": "[OLINGO-317] Minor ContentType refactoring"
+        },
+        {
+            "c_hash": "f70c294a",
+            "date": "2014-06-24 10:50:18 +0200",
+            "comment": "[OLINGO-328] pom maintenance"
+        },
+        {
+            "c_hash": "77af7dfa",
+            "date": "2014-06-24 12:21:34 +0200",
+            "comment": "[OLINGO-328] refactor EntitySetProcessor to CollectionProcessor"
+        },
+        {
+            "c_hash": "97222fad",
+            "date": "2014-06-24 17:20:48 +0200",
+            "comment": "[OLINGO-328] API design and setup of TDD"
+        },
+        {
+            "c_hash": "af3f998b",
+            "date": "2014-06-26 08:53:18 +0200",
+            "comment": "[OLINGO-328] improve multi valued headers of ODataRequest"
+        },
+        {
+            "c_hash": "0ffc26d1",
+            "date": "2014-06-27 14:22:23 +0200",
+            "comment": "[OLINGO-328] improve AcceptType for multi value support"
+        },
+        {
+            "c_hash": "acc12ff7",
+            "date": "2014-06-27 17:33:20 +0200",
+            "comment": "[OLINGO-328] refactor content negotiation"
+        },
+        {
+            "c_hash": "2355bf8d",
+            "date": "2014-06-30 09:22:00 +0200",
+            "comment": "[OLINGO-328] Merge remote-tracking branch 'origin/master' into olingo328"
+        },
+        {
+            "c_hash": "31440864",
+            "date": "2014-06-30 13:56:45 +0200",
+            "comment": "[OLINGO-328] all cases implemented"
+        },
+        {
+            "c_hash": "130c99c9",
+            "date": "2014-06-30 14:02:15 +0200",
+            "comment": "[OLINGO-328] refactor"
+        },
+        {
+            "c_hash": "bf968398",
+            "date": "2014-06-30 14:10:55 +0200",
+            "comment": "[OLINGO-328] Merge remote-tracking branch 'origin/master' into olingo328"
+        },
+        {
+            "c_hash": "2ab4b2fd",
+            "date": "2014-06-30 16:56:39 +0200",
+            "comment": "[OLINGO-328] code cleanup and checkstyle issues"
+        },
+        {
+            "c_hash": "b97226b0",
+            "date": "2014-07-01 10:22:29 +0200",
+            "comment": "[OLINGO-328] refactoring"
+        },
+        {
+            "c_hash": "a51146a4",
+            "date": "2014-07-01 15:07:46 +0200",
+            "comment": "[OLINGO-328] refactoring"
+        },
+        {
+            "c_hash": "2bd06626",
+            "date": "2014-07-01 17:26:20 +0200",
+            "comment": "[OLINGO-328] refactoring, improvements & fit"
+        },
+        {
+            "c_hash": "263e4280",
+            "date": "2014-07-04 08:58:47 +0200",
+            "comment": "[OLINGO-328] fix pom error"
+        },
+        {
+            "c_hash": "15f7de8f",
+            "date": "2014-07-04 11:09:42 +0200",
+            "comment": "[OLINGO-340] Fix"
+        },
+        {
+            "c_hash": "098ed145",
+            "date": "2014-07-04 11:23:36 +0200",
+            "comment": "[OLINGO-341] Fix"
+        },
+        {
+            "c_hash": "d049864e",
+            "date": "2014-07-03 09:09:22 +0200",
+            "comment": "[OLINGO-337] refactor requestedContentType"
+        },
+        {
+            "c_hash": "434246ab",
+            "date": "2014-07-03 10:45:37 +0200",
+            "comment": "[OLINGO-337] javadoc"
+        },
+        {
+            "c_hash": "f4640911",
+            "date": "2014-07-03 12:54:07 +0200",
+            "comment": "[OLINGO-337] improve AcceptType class to allow '*'"
+        },
+        {
+            "c_hash": "32c113df",
+            "date": "2014-07-04 08:38:08 +0200",
+            "comment": "[OLINGO-337] BasicITCase"
+        },
+        {
+            "c_hash": "6383ab0b",
+            "date": "2014-07-04 09:11:52 +0200",
+            "comment": "Fixing checkstyle errors"
+        },
+        {
+            "c_hash": "aff42fce",
+            "date": "2014-07-08 10:07:16 +0200",
+            "comment": "[OLINGO-337] more tests and fixes"
+        },
+        {
+            "c_hash": "811fff54",
+            "date": "2014-07-08 10:10:31 +0200",
+            "comment": "[OLINGO-337] merger origin/master"
+        },
+        {
+            "c_hash": "233651a8",
+            "date": "2014-07-08 10:16:48 +0200",
+            "comment": "[OLINGO-337] merge origin/master"
+        },
+        {
+            "c_hash": "b3cfc351",
+            "date": "2014-07-08 10:23:46 +0200",
+            "comment": "[OLINGO-337] fix issue after merge"
+        },
+        {
+            "c_hash": "45b7289f",
+            "date": "2014-07-08 13:53:58 +0200",
+            "comment": "[OLINGO-317] Merge feature branch into master"
+        },
+        {
+            "c_hash": "cc0d1a0e",
+            "date": "2014-07-08 14:49:21 +0200",
+            "comment": "[OLINGO-317] Fixed test"
+        },
+        {
+            "c_hash": "1d31f596",
+            "date": "2014-07-08 14:54:10 +0200",
+            "comment": "[OLINGO-342] Fixed typos in interfaces"
+        },
+        {
+            "c_hash": "51e8d3e8",
+            "date": "2014-07-08 14:49:05 +0200",
+            "comment": "[OLINGO-337] more fit tests"
+        },
+        {
+            "c_hash": "9fa6773d",
+            "date": "2014-07-08 16:52:31 +0200",
+            "comment": "[OLINGO-317] Fixed test failure"
+        },
+        {
+            "c_hash": "cbd2b3c9",
+            "date": "2014-07-08 15:41:00 +0200",
+            "comment": "[OLINGO-317] Store DataProvider per HttpSession"
+        },
+        {
+            "c_hash": "8e0abd7f",
+            "date": "2014-07-08 15:50:31 +0200",
+            "comment": "[OLINGO-337] fix unit test error"
+        },
+        {
+            "c_hash": "ba514333",
+            "date": "2014-07-09 13:51:13 +0200",
+            "comment": "[OLINGO-338] - refactor ContentType and AccessType class"
+        },
+        {
+            "c_hash": "13d8d36f",
+            "date": "2014-07-09 15:06:51 +0200",
+            "comment": "[OLINGO-317] Added DataProvider with data for TecSvc"
+        },
+        {
+            "c_hash": "ca5ed6e8",
+            "date": "2014-07-10 16:54:47 +0200",
+            "comment": "[OLINGO-353] fix"
+        },
+        {
+            "c_hash": "4cd65b21",
+            "date": "2014-07-10 18:03:00 +0200",
+            "comment": "Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/olingo-odata4"
+        },
+        {
+            "c_hash": "136f3344",
+            "date": "2014-07-10 18:06:05 +0200",
+            "comment": "Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/olingo-odata4"
+        },
+        {
+            "c_hash": "6587302a",
+            "date": "2014-07-12 16:09:13 +0200",
+            "comment": "Providing some refactoring in order to avoid multi-request retrieving entity info"
+        },
+        {
+            "c_hash": "05643bd2",
+            "date": "2014-07-12 16:09:18 +0200",
+            "comment": "Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/olingo-odata4"
+        },
+        {
+            "c_hash": "2df9426b",
+            "date": "2014-07-12 16:24:04 +0200",
+            "comment": "fix line too long"
+        },
+        {
+            "c_hash": "baf2cd10",
+            "date": "2014-07-13 18:08:58 +0200",
+            "comment": "provided the possibility to specify query options at proxy layer"
+        },
+        {
+            "c_hash": "bda51643",
+            "date": "2014-07-14 16:07:47 +0200",
+            "comment": "Fix for proxy inline entity and entity set retrieving"
+        },
+        {
+            "c_hash": "e914d17b",
+            "date": "2014-07-14 17:33:24 +0200",
+            "comment": "provided integration test for proxy API design review"
+        },
+        {
+            "c_hash": "87c87cb8",
+            "date": "2014-07-16 11:02:48 +0200",
+            "comment": "[OLINGO-366,OLINGO-365] working on API review, explicit next link handling and delayed http requests"
+        },
+        {
+            "c_hash": "5b3c3d34",
+            "date": "2014-07-16 11:24:30 +0200",
+            "comment": "[OLINGO-353] fixed + merge"
+        },
+        {
+            "c_hash": "599f1ef2",
+            "date": "2014-07-16 11:25:43 +0200",
+            "comment": "Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/olingo-odata4"
+        },
+        {
+            "c_hash": "8442ea8f",
+            "date": "2014-07-16 14:22:33 +0200",
+            "comment": "[OLINGO-317] Simplified version dependent constants"
+        },
+        {
+            "c_hash": "890628e0",
+            "date": "2014-07-16 15:10:08 +0200",
+            "comment": "Removed unused imports"
+        },
+        {
+            "c_hash": "b9db730f",
+            "date": "2014-07-15 15:00:38 +0200",
+            "comment": "[OLINGO-348] Translatable exception"
+        },
+        {
+            "c_hash": "989babb1",
+            "date": "2014-07-18 17:51:48 +0200",
+            "comment": "[OLINGO-366,OLINGO-367,OLINGO-370] chahnged entity, entity collection and complex creation methods (still missing complex collection creator). Provided delayed HTTP request for navigation property. Provided select query option support on entity set (still missing query options support for entity collections)"
+        },
+        {
+            "c_hash": "cdc98eac",
+            "date": "2014-07-18 18:07:15 +0200",
+            "comment": "[OLINGO-366,OLINGO-367,OLINGO-370] merge"
+        },
+        {
+            "c_hash": "f22cbfda",
+            "date": "2014-07-19 09:08:03 +0200",
+            "comment": "[OLINGO-366,OLINGO-367] provided navigation link lazy loading (including collection) + fix for select query option support on collection and antity set"
+        },
+        {
+            "c_hash": "dfe68e67",
+            "date": "2014-07-19 18:20:53 +0200",
+            "comment": "[OLINGO-366] provides complex lazy loading"
+        },
+        {
+            "c_hash": "aa0c5713",
+            "date": "2014-07-20 11:25:23 +0200",
+            "comment": "[OLINGO-366] provides stream lazy loading"
+        },
+        {
+            "c_hash": "95a13a4b",
+            "date": "2014-07-20 11:26:41 +0200",
+            "comment": "[OLINGO-366] provides stream lazy loading (missing something)"
+        },
+        {
+            "c_hash": "d72c5190",
+            "date": "2014-07-21 12:25:47 +0200",
+            "comment": "[OLINGO-366] provides tests for Edm.Stream properties + adds some query management improvements"
+        },
+        {
+            "c_hash": "3b0f97ca",
+            "date": "2014-07-21 12:30:30 +0200",
+            "comment": "[OLINGO-366] fixes test imports"
+        },
+        {
+            "c_hash": "df7cba69",
+            "date": "2014-07-21 12:40:49 +0200",
+            "comment": "[OLINGO-366] fixes EdmStreamTypeImpl package"
+        },
+        {
+            "c_hash": "c155238d",
+            "date": "2014-07-21 13:33:34 +0200",
+            "comment": "[OLINGO-362] Now supporting refresh token"
+        },
+        {
+            "c_hash": "08218d4e",
+            "date": "2014-07-21 14:44:41 +0200",
+            "comment": "[OLINGO-344] wMerge branch 'olingo344'"
+        },
+        {
+            "c_hash": "3a060746",
+            "date": "2014-07-21 16:42:59 +0200",
+            "comment": "Fixing ContextURL for contained entity sets"
+        },
+        {
+            "c_hash": "acc5b5ce",
+            "date": "2014-07-22 13:06:36 +0200",
+            "comment": "[OLINGO-366] provides Primitive and Complex collection handling"
+        },
+        {
+            "c_hash": "0c15673b",
+            "date": "2014-07-22 13:06:43 +0200",
+            "comment": "Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/olingo-odata4"
+        },
+        {
+            "c_hash": "c2e0042a",
+            "date": "2014-07-22 13:12:36 +0200",
+            "comment": "[OLINGO-366] privides Primitive and Complex Collections handling"
+        },
+        {
+            "c_hash": "71890331",
+            "date": "2014-07-22 13:18:17 +0200",
+            "comment": "Re-adding maven plugin declaration"
+        },
+        {
+            "c_hash": "18ce83af",
+            "date": "2014-07-22 16:40:26 +0200",
+            "comment": "[OLINGO-364] No more need to generate files under META-INF/"
+        },
+        {
+            "c_hash": "a9ec7599",
+            "date": "2014-07-22 16:40:33 +0200",
+            "comment": "Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/olingo-odata4"
+        },
+        {
+            "c_hash": "984ca341",
+            "date": "2014-07-22 14:13:58 +0200",
+            "comment": "[OLINGO-348] Exceptionhandling on server side and message texts"
+        },
+        {
+            "c_hash": "c5810946",
+            "date": "2014-07-22 16:28:39 +0200",
+            "comment": "[OLINGO-348] Exception refactoring on server side"
+        },
+        {
+            "c_hash": "935d70ab",
+            "date": "2014-07-22 18:08:37 +0200",
+            "comment": "[OLINGO-366] provides complex handling improvement"
+        },
+        {
+            "c_hash": "5476bad1",
+            "date": "2014-07-22 18:35:05 +0200",
+            "comment": "[OLINGO-370] fixed by adding creator methods into the entity containers"
+        },
+        {
+            "c_hash": "c75c29ce",
+            "date": "2014-07-23 10:43:46 +0200",
+            "comment": "[OLINGO-317] Split ContextURL in parser and builder"
+        },
+        {
+            "c_hash": "1c5b33ea",
+            "date": "2014-07-23 12:20:48 +0200",
+            "comment": "[OLINGO-363] pojogen now saves metadata information in the generated Service class, and proxy code fetches it from there"
+        },
+        {
+            "c_hash": "2822fe60",
+            "date": "2014-07-23 12:55:53 +0200",
+            "comment": "[OLINGO-366] provide some improvements around streams, singletons and delete requests"
+        },
+        {
+            "c_hash": "50ae17fa",
+            "date": "2014-07-23 14:49:52 +0200",
+            "comment": "[OLINGO-363] Missing"
+        },
+        {
+            "c_hash": "b8918211",
+            "date": "2014-07-23 15:04:44 +0200",
+            "comment": "[OLINGO-368] Async features via proxy for all but operation invocation"
+        },
+        {
+            "c_hash": "5ab4bdc9",
+            "date": "2014-07-23 20:16:13 +0200",
+            "comment": "[OLINGO-377] Replaced cargo with embedded tomcat"
+        },
+        {
+            "c_hash": "4977b174",
+            "date": "2014-07-24 08:33:37 +0200",
+            "comment": "[OLINGO-377] Improved cobertura settings"
+        },
+        {
+            "c_hash": "b4d3819a",
+            "date": "2014-07-24 09:24:47 +0200",
+            "comment": "[OLINGO-377] Unpack dependency to make instrumentation possible"
+        },
+        {
+            "c_hash": "7d3749c8",
+            "date": "2014-07-24 13:34:50 +0200",
+            "comment": "Merge branch 'master' into OLINGO-377-FIT"
+        },
+        {
+            "c_hash": "d3435067",
+            "date": "2014-07-25 08:07:18 +0200",
+            "comment": "Merge branch 'master' into OLINGO-377-FIT"
+        },
+        {
+            "c_hash": "49a38afc",
+            "date": "2014-07-26 11:41:54 +0200",
+            "comment": "[OLINGO-377] Code clean up"
+        },
+        {
+            "c_hash": "6e723194",
+            "date": "2014-07-26 11:58:08 +0200",
+            "comment": "[OLINGO-377] Merge branch 'master' into OLINGO-377-FIT"
+        },
+        {
+            "c_hash": "a18ec9d6",
+            "date": "2014-07-26 15:56:20 +0200",
+            "comment": "[OLINGO-377] Fixed port for pojogen integration test"
+        },
+        {
+            "c_hash": "2403efe0",
+            "date": "2014-07-26 17:06:57 +0200",
+            "comment": "[OLINGO-377] Changed base dir for tomcat"
+        },
+        {
+            "c_hash": "0f073cfc",
+            "date": "2014-07-28 13:49:22 +0200",
+            "comment": "[OLINGO-377] Added properties file for embedded tomcat config"
+        },
+        {
+            "c_hash": "aaa4f18e",
+            "date": "2014-07-28 14:43:12 +0200",
+            "comment": "[OLINGO-377] Added core as dependency to enable cobertura instrumentation"
+        },
+        {
+            "c_hash": "c2405468",
+            "date": "2014-07-28 20:53:12 +0200",
+            "comment": "[OLINGO-377] Updated cobertura configuration"
+        },
+        {
+            "c_hash": "ba3aa4ff",
+            "date": "2014-07-29 08:55:59 +0200",
+            "comment": "[OLINGO-377] Clean up poms"
+        },
+        {
+            "c_hash": "b95779b2",
+            "date": "2014-07-29 09:01:34 +0200",
+            "comment": "Merge branch 'master' into OLINGO-377-FIT"
+        },
+        {
+            "c_hash": "3aab1c12",
+            "date": "2014-07-29 10:00:12 +0200",
+            "comment": "Merge remote-tracking branch 'origin/master' into OLINGO-377-FIT"
+        },
+        {
+            "c_hash": "c35725ce",
+            "date": "2014-07-29 14:33:37 +0200",
+            "comment": "[OLINGO-377] Merge branch 'master' into OLINGO-377-FIT"
+        },
+        {
+            "c_hash": "45a46f86",
+            "date": "2014-07-29 14:43:06 +0200",
+            "comment": "[OLINGO-377] Merge branch 'master' into OLINGO-377-FIT"
+        },
+        {
+            "c_hash": "36e6ed40",
+            "date": "2014-07-30 08:24:22 +0200",
+            "comment": "[OLINGO-377] Removing unused cargo properties, upgrading Tomcat, renaming cargo.servlet.port to tomcat.servlet.port"
+        },
+        {
+            "c_hash": "17544d2d",
+            "date": "2014-07-30 09:53:30 +0200",
+            "comment": "[OLINGO-390] As for 'plain' complex values, do not serialize the type information as for primitives (in JSON)"
+        },
+        {
+            "c_hash": "1d9b70c6",
+            "date": "2014-07-30 11:46:01 +0200",
+            "comment": "[OLINGO-377] Enable embedded tomcat to be started via maven"
+        },
+        {
+            "c_hash": "82a73c57",
+            "date": "2014-07-31 10:29:03 +0200",
+            "comment": "[OLINGO-365] Better handling of EntityType inheritance hierachies"
+        },
+        {
+            "c_hash": "4ead5f41",
+            "date": "2014-07-31 11:08:13 +0200",
+            "comment": "[OLINGO-365] Better handling of derived types in entity and complex type collections"
+        },
+        {
+            "c_hash": "101266e8",
+            "date": "2014-07-31 11:08:27 +0200",
+            "comment": "Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/olingo-odata4"
+        },
+        {
+            "c_hash": "29d37474",
+            "date": "2014-07-31 13:42:15 +0200",
+            "comment": "[OLINGO-377] Fixed test issue for windows environments"
+        },
+        {
+            "c_hash": "bf4e34d8",
+            "date": "2014-07-31 17:40:58 +0200",
+            "comment": "ContextURLParser enhancement for deep contained URIs"
+        },
+        {
+            "c_hash": "9ef6863c",
+            "date": "2014-08-01 08:55:24 +0200",
+            "comment": "[OLINGO-377] Enabled log to file 'fit.log'"
+        },
+        {
+            "c_hash": "b01b7844",
+            "date": "2014-08-01 10:54:19 +0200",
+            "comment": "[OLINGO-391] Proved working on Android: needed also to get rid of StringUtils and few other Base64 methods"
+        },
+        {
+            "c_hash": "9b28f8df",
+            "date": "2014-08-01 12:35:52 +0200",
+            "comment": "[OLINGO-365] Enhancing type handling for complex properties"
+        },
+        {
+            "c_hash": "312aff1c",
+            "date": "2014-08-02 15:29:55 +0200",
+            "comment": "[OLINGO-365] Small cleanup"
+        },
+        {
+            "c_hash": "c0b92cf0",
+            "date": "2014-08-03 15:24:54 +0200",
+            "comment": "[OLINGO-365] Composable function invocation refactory - in progress"
+        },
+        {
+            "c_hash": "fce2155c",
+            "date": "2014-08-04 11:17:24 +0200",
+            "comment": "[OLINGO-365] All former tests now pass with new StructuredComposableInvokerInvocationHandler: time to add specific checks for new features"
+        },
+        {
+            "c_hash": "a13a0d86",
+            "date": "2014-08-04 12:07:01 +0200",
+            "comment": "Turning log4j.properties into log4j.xml and tuning things to avoid Tomcat's DEBUG statement polluting the log file"
+        },
+        {
+            "c_hash": "34f08256",
+            "date": "2014-08-04 13:09:47 +0200",
+            "comment": "[OLINGO-365] Adding checks for enhanced composable invoker"
+        },
+        {
+            "c_hash": "5c0b34a9",
+            "date": "2014-08-01 16:20:55 +0200",
+            "comment": "[OLINGO-350] Status code handling and refactoring"
+        },
+        {
+            "c_hash": "d19afa01",
+            "date": "2014-08-06 17:09:29 +0200",
+            "comment": "[OLINGO-348] Make Uri Parser exception translatable"
+        },
+        {
+            "c_hash": "9048d725",
+            "date": "2014-08-07 13:31:50 +0200",
+            "comment": "[OLINGO-356] URIParser untit tests check error message key"
+        },
+        {
+            "c_hash": "266c7b4a",
+            "date": "2014-08-07 13:33:13 +0200",
+            "comment": "[OLINGO-356] Content negotiation change for custom format"
+        },
+        {
+            "c_hash": "5cdf64db",
+            "date": "2014-08-08 06:33:31 +0200",
+            "comment": "OLINGO-317] Fixed context url in TechnicalScenario"
+        },
+        {
+            "c_hash": "e3d3bde6",
+            "date": "2014-08-09 08:45:52 +0200",
+            "comment": "[OLINGO-395] fixed"
+        },
+        {
+            "c_hash": "5f4d0507",
+            "date": "2014-08-08 10:49:58 +0200",
+            "comment": "[OLINGO-396] Added stricter check for $format in uri"
+        },
+        {
+            "c_hash": "bc1d1392",
+            "date": "2014-08-11 09:54:22 +0200",
+            "comment": "[OLINGO-342] Changed version to 4.0.0-beta-01-SNAPSHOT"
+        },
+        {
+            "c_hash": "1144e1b1",
+            "date": "2014-08-11 11:13:57 +0200",
+            "comment": "[OLINGO-398] fix"
+        },
+        {
+            "c_hash": "563959f0",
+            "date": "2014-08-11 11:14:18 +0200",
+            "comment": "Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/olingo-odata4"
+        },
+        {
+            "c_hash": "15a76db9",
+            "date": "2014-08-11 11:20:42 +0200",
+            "comment": "removed unused import"
+        },
+        {
+            "c_hash": "0a0344d6",
+            "date": "2014-08-11 13:13:35 +0200",
+            "comment": "[OLINGO-342] Changed version to 4.0.0-beta-01-SNAPSHOT (missing parts)"
+        },
+        {
+            "c_hash": "7be1e992",
+            "date": "2014-08-13 11:18:49 +0200",
+            "comment": "[OLINGO-399] Changing flush exception management done in OLINGO-369"
+        },
+        {
+            "c_hash": "0a80d514",
+            "date": "2014-08-13 14:11:25 +0200",
+            "comment": "translatable texts for all server exceptions"
+        },
+        {
+            "c_hash": "97790591",
+            "date": "2014-08-13 17:53:10 +0200",
+            "comment": "[OLINGO-403] Fix"
+        },
+        {
+            "c_hash": "cb7a8620",
+            "date": "2014-08-14 13:43:24 +0200",
+            "comment": "[OLINGO-348] Improved server exception handling"
+        },
+        {
+            "c_hash": "b9d45274",
+            "date": "2014-08-15 06:26:22 +0200",
+            "comment": "[OLINGO-356] Minor code clean up"
+        },
+        {
+            "c_hash": "0c82297c",
+            "date": "2014-08-15 06:36:42 +0200",
+            "comment": "[OLINGO-404] Allow inheritance for iterators"
+        },
+        {
+            "c_hash": "2cc02a63",
+            "date": "2014-08-15 09:53:36 +0200",
+            "comment": "[OLINGO-403] fix"
+        },
+        {
+            "c_hash": "931f1324",
+            "date": "2014-08-15 11:37:19 +0200",
+            "comment": "[OLINGO-356] removed several warnings + code clean-up"
+        },
+        {
+            "c_hash": "853bad6a",
+            "date": "2014-08-15 08:22:08 +0200",
+            "comment": "[OLINGO-405] Set content length for not chunked content"
+        },
+        {
+            "c_hash": "58619c96",
+            "date": "2014-08-18 15:04:55 +0200",
+            "comment": "[OLINGO-403] fixed"
+        },
+        {
+            "c_hash": "9c78784d",
+            "date": "2014-08-25 00:10:52 +0800",
+            "comment": "[OLINGO-415] Java client-proxy code getter method has performane issue: invoke() checks get- before isSelfMethods()."
+        },
+        {
+            "c_hash": "a0f8f356",
+            "date": "2014-08-29 15:00:10 +0200",
+            "comment": "[OLINGO-350] Transform exception to http status code"
+        },
+        {
+            "c_hash": "a30d2f82",
+            "date": "2014-08-29 15:11:35 +0200",
+            "comment": "[OLINGO-350] Delete printStackTrace in test"
+        },
+        {
+            "c_hash": "412a9901",
+            "date": "2014-09-01 09:44:12 +0200",
+            "comment": "Updating RAT and Jackson"
+        },
+        {
+            "c_hash": "a1621331",
+            "date": "2014-09-02 10:25:23 +0200",
+            "comment": "[OLINGO-350] Minor code clean up"
+        },
+        {
+            "c_hash": "f3289fb1",
+            "date": "2014-09-03 07:41:34 +0200",
+            "comment": "[OLINGO-406] Merge with branch 'OLINGO-406'"
+        },
+        {
+            "c_hash": "3ece19c9",
+            "date": "2014-09-03 11:04:36 +0200",
+            "comment": "[OLINGO-356] Rework EdmPrimitive Type exceptions"
+        },
+        {
+            "c_hash": "dff439fd",
+            "date": "2014-09-05 07:05:12 +0200",
+            "comment": "[OLINGO-356] Renamed namespace for technical service"
+        },
+        {
+            "c_hash": "134a575a",
+            "date": "2014-09-11 09:45:50 +0200",
+            "comment": "[OLINGO-342] Renaming for release"
+        },
+        {
+            "c_hash": "825b7db6",
+            "date": "2014-09-12 13:08:16 +0200",
+            "comment": "Set version to '4.0.0-beta-01-RC01'"
+        },
+        {
+            "c_hash": "c8976996",
+            "date": "2014-09-19 13:36:56 +0200",
+            "comment": "[OLINGO-342] Added NOTICE file for distribution"
+        },
+        {
+            "c_hash": "6c963396",
+            "date": "2014-09-19 13:40:32 +0200",
+            "comment": "[OLINGO-342] Set version to 4.0.0-beta-01-RC02"
+        },
+        {
+            "c_hash": "9e422a28",
+            "date": "2014-09-23 09:06:15 +0200",
+            "comment": "Set release version to '4.0.0-beta-01'"
+        },
+        {
+            "c_hash": "0dbd53d8",
+            "date": "2014-09-23 09:44:29 +0200",
+            "comment": "[OLINGO-342] Set development version to 4.0.0-beta-02-SNAPSHOT"
+        },
+        {
+            "c_hash": "5f5060fd",
+            "date": "2014-09-23 14:42:38 +0200",
+            "comment": "[OLINGO-422] Merge branch 'OLINGO-422-SelectExpandSupport'"
+        },
+        {
+            "c_hash": "68f51d84",
+            "date": "2014-09-24 09:17:35 +0200",
+            "comment": "[OLINGO-443] Added more JavaDoc"
+        },
+        {
+            "c_hash": "f947afc1",
+            "date": "2014-09-25 13:50:32 +0200",
+            "comment": "minor improvements"
+        },
+        {
+            "c_hash": "788036db",
+            "date": "2014-09-25 13:47:38 +0200",
+            "comment": "better server error messages in case of $format errors"
+        },
+        {
+            "c_hash": "7e0b013c",
+            "date": "2014-09-25 13:45:39 +0200",
+            "comment": "better handling of parameters in server content negotiation"
+        },
+        {
+            "c_hash": "49387917",
+            "date": "2014-09-30 11:19:29 +0200",
+            "comment": "Minor Bugfix: Double system query options result in server error"
+        },
+        {
+            "c_hash": "0eb95ed7",
+            "date": "2014-09-30 12:35:22 +0200",
+            "comment": "Minor Bugfix: UriParserSyntaxException in case of wrong percentence"
+        },
+        {
+            "c_hash": "bd4ad859",
+            "date": "2014-09-30 16:22:00 +0200",
+            "comment": "abbreviations are not allowed in Accept header"
+        },
+        {
+            "c_hash": "34825ab0",
+            "date": "2014-09-30 17:22:36 +0200",
+            "comment": "[OLINGO-447] Also accept the * accept header"
+        },
+        {
+            "c_hash": "ad3fbfb4",
+            "date": "2014-10-01 11:04:34 +0200",
+            "comment": "[OLINGO-447] Remove previous invalid fix"
+        },
+        {
+            "c_hash": "aac77f05",
+            "date": "2014-10-01 10:15:25 +0200",
+            "comment": "[OLINGO-438] Added count support for entity set"
+        },
+        {
+            "c_hash": "11bee5dc",
+            "date": "2014-10-01 22:06:08 +0200",
+            "comment": "[OLINGO-438] Renamed EntityCollectionProcessor"
+        },
+        {
+            "c_hash": "aaa09161",
+            "date": "2014-10-02 08:47:30 +0200",
+            "comment": "better segment handling in server URI parser"
+        },
+        {
+            "c_hash": "eacc63c6",
+            "date": "2014-10-02 14:35:29 +0200",
+            "comment": "more checks that media types are correctly formatted"
+        },
+        {
+            "c_hash": "5af9f46d",
+            "date": "2014-10-02 17:08:53 +0200",
+            "comment": "[OLINGO-447] Improve ODataHttpHandler and ODataHandler"
+        },
+        {
+            "c_hash": "6fbdb783",
+            "date": "2014-10-06 10:15:44 +0200",
+            "comment": "[OLINGO-444] Merge into master"
+        },
+        {
+            "c_hash": "d1bca471",
+            "date": "2014-10-02 15:46:24 +0200",
+            "comment": "better entity access in technical service data provider"
+        },
+        {
+            "c_hash": "9c606635",
+            "date": "2014-10-06 17:06:20 +0200",
+            "comment": "[OLINGO-260] Delete the HttpMethods in client and use the ones in commons"
+        },
+        {
+            "c_hash": "03475605",
+            "date": "2014-10-07 15:11:42 +0200",
+            "comment": "catch for bad characters in server URI parsing"
+        },
+        {
+            "c_hash": "e7bcaf06",
+            "date": "2014-10-07 16:20:10 +0200",
+            "comment": "use processor exceptions in technical service"
+        },
+        {
+            "c_hash": "541d7665",
+            "date": "2014-10-07 22:43:17 +0200",
+            "comment": "[OLINGO-434][OLINGO-435] Merge branch 'Olingo-434-435'"
+        },
+        {
+            "c_hash": "bc012949",
+            "date": "2014-10-07 09:52:46 -0500",
+            "comment": "[OLINGO-444] - Adding the ablity to add key predicates to Context URL - Fixed the wrong ContextURL with readProperty in TechnicalProcessor class - Added unit tests for ContextURL, and integration tests for PropertyProcessor's readProperty & readPropertyValue methods"
+        },
+        {
+            "c_hash": "16965153",
+            "date": "2014-10-09 09:30:38 +0200",
+            "comment": "[OLINGO-447] Better key access in technical service"
+        },
+        {
+            "c_hash": "ef0553a0",
+            "date": "2014-10-10 07:46:22 +0200",
+            "comment": "[OLINGO-444] Minor improvements"
+        },
+        {
+            "c_hash": "42043f46",
+            "date": "2014-10-10 11:01:49 +0200",
+            "comment": "[OLINGO-457] Fixed paths"
+        },
+        {
+            "c_hash": "cf032b69",
+            "date": "2014-10-08 15:54:56 +0200",
+            "comment": "\"bad request\" for not existing properties in expressions"
+        },
+        {
+            "c_hash": "188574f5",
+            "date": "2014-10-11 08:58:40 +0200",
+            "comment": "[OLINGO-423] Refactoring for EdmxReferenceHandling"
+        },
+        {
+            "c_hash": "87f0f06a",
+            "date": "2014-10-13 08:18:53 +0200",
+            "comment": "[OLINGO-456] Removed deprecated classes"
+        },
+        {
+            "c_hash": "e3121831",
+            "date": "2014-10-13 14:59:00 +0200",
+            "comment": "[OLINGO-423] Added implementation"
+        },
+        {
+            "c_hash": "fd033d7d",
+            "date": "2014-10-13 15:23:22 +0200",
+            "comment": "[OLINGO-423] Added convenience and tests"
+        },
+        {
+            "c_hash": "b006070b",
+            "date": "2014-10-14 08:28:34 +0200",
+            "comment": "[OLINGO-423] Added BasicITCase for metadata"
+        },
+        {
+            "c_hash": "c9ce087e",
+            "date": "2014-10-14 08:59:23 +0200",
+            "comment": "[OLINGO-423] Fixed edmx:reference uri for test case"
+        },
+        {
+            "c_hash": "3b9eb2fb",
+            "date": "2014-10-14 09:49:20 +0200",
+            "comment": "[OLINGO-428] Fixed optional alias attribute for Schema"
+        },
+        {
+            "c_hash": "ca4449f2",
+            "date": "2014-10-14 10:48:48 +0200",
+            "comment": "[OLINGO-423] no '*' imports + minor documentation fix"
+        },
+        {
+            "c_hash": "0be567b9",
+            "date": "2014-10-14 14:46:10 +0200",
+            "comment": "Minor changes for faster (default) FIT execution"
+        },
+        {
+            "c_hash": "7f86b264",
+            "date": "2014-10-14 16:39:07 +0200",
+            "comment": "[OLINGO-422] FIT test - recognition of inlined entities/entitysets in EDM-enabled client"
+        },
+        {
+            "c_hash": "2fbab652",
+            "date": "2014-10-16 10:51:52 +0200",
+            "comment": "[OLINGO-422] Minor refactoring for EdmxReference*"
+        },
+        {
+            "c_hash": "096946a7",
+            "date": "2014-10-16 13:48:56 +0200",
+            "comment": "improved server metadata and tests"
+        },
+        {
+            "c_hash": "35f24e98",
+            "date": "2014-10-17 09:15:48 +0200",
+            "comment": "[OLINGO-422] type guessing in client deserializer also for collections"
+        },
+        {
+            "c_hash": "5a999557",
+            "date": "2014-10-22 11:54:16 +0200",
+            "comment": "[OLINGO-466] First sample draft"
+        },
+        {
+            "c_hash": "9e5b284a",
+            "date": "2014-10-22 15:23:28 +0200",
+            "comment": "[OLINGO-444] improved server content negotiation"
+        },
+        {
+            "c_hash": "d84f843f",
+            "date": "2014-10-23 14:38:17 +0200",
+            "comment": "[OLINGO-468] Minor code clean up"
+        },
+        {
+            "c_hash": "af464e2c",
+            "date": "2014-10-23 15:17:51 +0200",
+            "comment": "[OLINGO-444] error from tech. service for property values not found"
+        },
+        {
+            "c_hash": "1e578d72",
+            "date": "2014-10-23 16:42:01 +0200",
+            "comment": "error at property path after collection in resource path"
+        },
+        {
+            "c_hash": "b5e40fdf",
+            "date": "2014-10-24 15:18:24 +0200",
+            "comment": "better key validation in server URI parsing"
+        },
+        {
+            "c_hash": "357e8b65",
+            "date": "2014-10-30 10:49:54 +0100",
+            "comment": "[OLINGO-468] better error message for wrong keys in server URI parser"
+        },
+        {
+            "c_hash": "3e117381",
+            "date": "2014-10-31 14:11:28 +0100",
+            "comment": "correct context URL for server property responses"
+        },
+        {
+            "c_hash": "32247295",
+            "date": "2014-10-16 17:39:39 +0200",
+            "comment": "[OLINGO-472] BatchParser first draft"
+        },
+        {
+            "c_hash": "15bd1526",
+            "date": "2014-10-28 16:55:57 +0100",
+            "comment": "Tech Servlet"
+        },
+        {
+            "c_hash": "ee2451cb",
+            "date": "2014-10-28 18:18:21 +0100",
+            "comment": "Changeset Sorter"
+        },
+        {
+            "c_hash": "0bd32951",
+            "date": "2014-11-03 17:16:47 +0100",
+            "comment": "MockedBatchHandler Test"
+        },
+        {
+            "c_hash": "6c7d11f4",
+            "date": "2014-11-05 16:02:12 +0100",
+            "comment": "Batch handler clean up"
+        },
+        {
+            "c_hash": "bb4b5541",
+            "date": "2014-11-05 16:18:40 +0100",
+            "comment": "Tests added"
+        },
+        {
+            "c_hash": "5f4eb03d",
+            "date": "2014-11-06 17:48:33 +0100",
+            "comment": "Merge method removed"
+        },
+        {
+            "c_hash": "4ff5fb9c",
+            "date": "2014-11-10 17:30:18 +0100",
+            "comment": "Batch IT test case"
+        },
+        {
+            "c_hash": "bc46b535",
+            "date": "2014-11-11 16:17:51 +0100",
+            "comment": "Test added to MockedBatchHandlerTest"
+        },
+        {
+            "c_hash": "ad177ac1",
+            "date": "2014-11-11 16:50:03 +0100",
+            "comment": "Api Refactoring"
+        },
+        {
+            "c_hash": "4f820fe5",
+            "date": "2014-11-13 17:27:36 +0100",
+            "comment": "Merge branch 'master' into olingo472"
+        },
+        {
+            "c_hash": "51acf8ae",
+            "date": "2014-11-18 15:45:37 +0100",
+            "comment": "[OLINGO-472] Batch Refactoring"
+        },
+        {
+            "c_hash": "402e847a",
+            "date": "2014-11-20 16:47:08 +0100",
+            "comment": "[OLINGO-472] IOExceptions, ChangeSetSorter removed"
+        },
+        {
+            "c_hash": "babc3a61",
+            "date": "2014-11-20 17:40:54 +0100",
+            "comment": "[OLINGO-472] BatchDeserializer refactoring"
+        },
+        {
+            "c_hash": "520acbce",
+            "date": "2014-11-27 17:10:23 +0100",
+            "comment": "[OLINGO-472] Refactoring Batch API"
+        },
+        {
+            "c_hash": "297950a8",
+            "date": "2014-12-01 17:18:05 +0100",
+            "comment": "[OLINGO-472] Absolute Uris are not longer allowed"
+        },
+        {
+            "c_hash": "19a7738a",
+            "date": "2014-12-05 14:28:20 +0100",
+            "comment": "[OLINGO-507] server support for reading, changing, and deleting media entities"
+        },
+        {
+            "c_hash": "ace57fd5",
+            "date": "2014-12-08 15:48:33 +0100",
+            "comment": "[OLINGO-472] Absolute Uris are allowed, if the base path is literally equals"
+        },
+        {
+            "c_hash": "2318ffad",
+            "date": "2014-12-08 17:12:50 +0100",
+            "comment": "[OLINGO-472] Client refactoring"
+        },
+        {
+            "c_hash": "5f18ea2e",
+            "date": "2014-12-02 13:57:52 +0100",
+            "comment": "[OLINGO-499][OLINGO-501] Serialization of complex collections works properly"
+        },
+        {
+            "c_hash": "aee1ebe3",
+            "date": "2014-12-09 15:11:32 +0100",
+            "comment": "[OLINGO-482] Refactor Processor Interfaces"
+        },
+        {
+            "c_hash": "da4d7548",
+            "date": "2014-12-12 14:51:14 +0100",
+            "comment": "[OLINGO-507] server support for entity-media create"
+        }
+    ]
+}

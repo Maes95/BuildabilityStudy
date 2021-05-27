@@ -1,0 +1,2 @@
+commitID;commit-type;time-to-next-release;commit-message
+a5dbb57071bb29c929eeb48be7162b3da7dfdaf1;BREAKING_CHANGES;7;This is a major restructuring of the project ready for 2.0.0, splitting the project into separate Maven modules git-svn-id: https://svn.apache.org/repos/asf/wookie/trunk@1564005 13f79535-47bb-0310-9956-ffa450edef68

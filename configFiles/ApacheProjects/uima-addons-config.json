@@ -1,0 +1,518 @@
+{
+    "project": "uima-addons",
+    "git_url": "https://github.com/apache/uima-addons.git",
+    "last_commit": "30ac1975",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "c18c30ad",
+            "date": "2011-06-09 19:47:52 +0000",
+            "comment": "[UIMA-2153] svn spot for add-ons being released"
+        },
+        {
+            "c_hash": "f7fb1e56",
+            "date": "2011-06-09 19:51:24 +0000",
+            "comment": "[UIMA-2153] svn spot for add-ons being released"
+        },
+        {
+            "c_hash": "7f117dd2",
+            "date": "2011-06-09 19:53:37 +0000",
+            "comment": "[UIMA-2153] svn spot for add-ons being released"
+        },
+        {
+            "c_hash": "d082cefb",
+            "date": "2011-06-09 19:55:13 +0000",
+            "comment": "[UIMA-2153] svn spot for add-ons being released"
+        },
+        {
+            "c_hash": "a1dc04d0",
+            "date": "2011-06-24 14:43:55 +0000",
+            "comment": "[UIMA-2158] - move aggregate-addons pom under SVN top node for addons"
+        },
+        {
+            "c_hash": "281a3a83",
+            "date": "2011-06-24 14:45:11 +0000",
+            "comment": "[UIMA-2158] - removed aggregate-addons dir"
+        },
+        {
+            "c_hash": "bda9f172",
+            "date": "2011-06-24 14:46:34 +0000",
+            "comment": "[UIMA-2158] - changed relative paths (removed ../) in topnode pom for aggregate addons"
+        },
+        {
+            "c_hash": "96603dd8",
+            "date": "2011-06-24 14:49:42 +0000",
+            "comment": "[UIMA-2158] - removed uimaScmProject property which is not used and changed uimaScmRoot according to recent move to addons SVN top node"
+        },
+        {
+            "c_hash": "3b75391f",
+            "date": "2011-06-28 13:37:11 +0000",
+            "comment": "[UIMA-2153] - uimaScmRoot switched from sandbox to addons, scm configuration added where missing"
+        },
+        {
+            "c_hash": "d1d6d1a1",
+            "date": "2011-06-28 13:40:15 +0000",
+            "comment": "[UIMA-2158] - switch distribution configuration to apache-release profile inside top level pom, added assembly descriptors for source and bin"
+        },
+        {
+            "c_hash": "a418e280",
+            "date": "2011-06-28 13:57:11 +0000",
+            "comment": "[UIMA-2158] - added assembly configuration trick to avoid default source release descriptor usage, changed src.xml id to uima-addons-source-release"
+        },
+        {
+            "c_hash": "52b26cae",
+            "date": "2011-06-28 14:11:07 +0000",
+            "comment": "[UIMA-2158] - reverted name of src assembly descriptor to source-release to avoid bad looking name for source package"
+        },
+        {
+            "c_hash": "55709dff",
+            "date": "2011-06-28 14:49:59 +0000",
+            "comment": "[UIMA-2103] - svn ignore for eclipse/idea files, apache-release profile not active by defaylt in top pom, reomved uimaScmRoot property inherited from uima-addons-parent in top pom"
+        },
+        {
+            "c_hash": "f2890372",
+            "date": "2011-06-28 15:09:14 +0000",
+            "comment": "[UIMA-2103] - svn ignore for intellij files"
+        },
+        {
+            "c_hash": "d92a8b75",
+            "date": "2011-06-29 08:56:52 +0000",
+            "comment": "[UIMA-2103] - add uima-addons-parent as module of top node pom, top node pom artifactid set to uima-addons (as it's used for the release package name)"
+        },
+        {
+            "c_hash": "80c93a22",
+            "date": "2011-07-04 10:53:47 +0000",
+            "comment": "[UIMA-2103] - add relativePath to uima-addons-parent, add uima-addons-parent to source release to allow building from sources, removed duplicate plugins declaration in uima-addons apache-release profile"
+        },
+        {
+            "c_hash": "7af7f756",
+            "date": "2011-07-05 09:57:56 +0000",
+            "comment": "[UIMA-2110] - applied (adapted) patch from Nicolas Hernandez"
+        },
+        {
+            "c_hash": "26117e6c",
+            "date": "2011-07-05 13:01:34 +0000",
+            "comment": "[UIMA-2110] - added license header in HmmTagger.xml"
+        },
+        {
+            "c_hash": "ad89d18c",
+            "date": "2011-07-05 13:04:13 +0000",
+            "comment": "[UIMA-2103] - added release-plugin configuration to avoid Maven being stuck during artifact sign phase"
+        },
+        {
+            "c_hash": "47220b10",
+            "date": "2011-07-05 16:52:24 +0000",
+            "comment": "[maven-release-plugin] rollback the release of uima-addons-2.3.1-rc3"
+        },
+        {
+            "c_hash": "f7d54b65",
+            "date": "2011-07-05 17:04:32 +0000",
+            "comment": "UIMA-2103 - accidentally reverted previous commit during dryRun"
+        },
+        {
+            "c_hash": "c22393ea",
+            "date": "2011-07-05 17:07:55 +0000",
+            "comment": "UIMA-2103 - accidentally reverted previous commit during dryRun"
+        },
+        {
+            "c_hash": "6ed5c66d",
+            "date": "2011-07-06 07:40:11 +0000",
+            "comment": "[maven-release-plugin] rollback the release of uima-addons-2.3.1-rc3"
+        },
+        {
+            "c_hash": "b1626830",
+            "date": "2011-07-06 07:50:18 +0000",
+            "comment": "UIMA-2103 - release-plugin configuration got reverted in release:rollback"
+        },
+        {
+            "c_hash": "a2553a14",
+            "date": "2011-07-06 08:32:13 +0000",
+            "comment": "[maven-release-plugin] prepare release uima-addons-2.3.1-rc3"
+        },
+        {
+            "c_hash": "220558a5",
+            "date": "2011-07-06 08:33:43 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "f0b1ec81",
+            "date": "2011-07-14 07:38:40 +0000",
+            "comment": "[maven-release-plugin] rollback the release of uima-addons-2.3.1-rc3"
+        },
+        {
+            "c_hash": "e4ed93d0",
+            "date": "2011-07-14 08:42:33 +0000",
+            "comment": "[UIMA-2103] - added src dir to source release assembly descriptor"
+        },
+        {
+            "c_hash": "40de6315",
+            "date": "2011-07-15 10:58:06 +0000",
+            "comment": "[maven-release-plugin] prepare release uima-addons-2.3.1-rc4"
+        },
+        {
+            "c_hash": "b9fd64f5",
+            "date": "2011-07-15 11:00:25 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "684af41e",
+            "date": "2011-07-17 13:42:38 +0000",
+            "comment": "no Jira -add .settings to svn:ignore"
+        },
+        {
+            "c_hash": "1ee7748d",
+            "date": "2011-07-20 07:50:25 +0000",
+            "comment": "[maven-release-plugin] rollback the release of uima-addons-2.3.1-rc4"
+        },
+        {
+            "c_hash": "cc7e0a70",
+            "date": "2011-07-21 20:30:44 +0000",
+            "comment": "[UIMA-2177] [UIMA-2176] change pom parent, change OSGi packaging to keep Jars of included things."
+        },
+        {
+            "c_hash": "71293b39",
+            "date": "2011-07-26 19:10:13 +0000",
+            "comment": "[UIMA-2186] change scope to provided for uimaj-core"
+        },
+        {
+            "c_hash": "b1a747b1",
+            "date": "2011-08-01 14:29:29 +0000",
+            "comment": "[UIMA-2184] removing seperate projects for osgi.  osgi bundles now built as part of normal build, if wanted."
+        },
+        {
+            "c_hash": "29b4ec2a",
+            "date": "2011-08-01 14:58:40 +0000",
+            "comment": "[UIMA-2185] change the binary build to create in base-bin the binary build to be zipped/tarred, with dependencies, docs, javadocs, and LICENSE/NOTICE files.  Use this for binary assemblies (both individual - not yet done - and overall addons binary), and as the base for PEAR and OSGi packagings."
+        },
+        {
+            "c_hash": "8826b890",
+            "date": "2011-08-01 15:04:02 +0000",
+            "comment": "[UIMA-2185] Update marker files for new build process.  Rename a few LICENSE.txt etc. to drop the \".txt\" to allow proper overriding."
+        },
+        {
+            "c_hash": "a9da9267",
+            "date": "2011-08-01 15:23:47 +0000",
+            "comment": "[UIMA-2185] remove osgi projects; remove dependencies, update bin.xml assembly to build by just copying the filesets of the sub-projects, change src.xml assembly to be identical to default one except for the addition of exclude for issuesFixed"
+        },
+        {
+            "c_hash": "b1189233",
+            "date": "2011-08-01 15:57:56 +0000",
+            "comment": "no Jira - add svn:eol-style native to top level LICENSE and NOTICE files"
+        },
+        {
+            "c_hash": "a0f527eb",
+            "date": "2011-08-01 18:12:25 +0000",
+            "comment": "[UIMA-2185] fix to use standard uimaBuildResourcesVersion"
+        },
+        {
+            "c_hash": "77f3d553",
+            "date": "2011-08-01 18:23:19 +0000",
+            "comment": "[UIMA-2185] fix to use standard source-release assembly process"
+        },
+        {
+            "c_hash": "1796811d",
+            "date": "2011-08-01 21:21:19 +0000",
+            "comment": "[UIMA-2185] found out that maven bundle plugin 2.3.5 has accidental dependency on Java 1.6 - revert to 2.3.4.  See http://uima.markmail.org/thread/hlya6yntiwv6prdd"
+        },
+        {
+            "c_hash": "21920db1",
+            "date": "2011-08-05 18:22:47 +0000",
+            "comment": "[UIMA-2192] add crypto notice - needed due to distribution of Tika Jars"
+        },
+        {
+            "c_hash": "034e14a9",
+            "date": "2011-08-05 18:31:10 +0000",
+            "comment": "[UIMA-2185] add uimaDependencyVersion property; exclude xxxx-osgi.jar when copying jars to lib; Change to use uimaBuildResources version 2 when building single project binary; add uimaj-core jar to lib/ for osgi build; add Include-Resource to include the uimaj-core jar; attach the xxx.pear after it is built, so it gets deployed to the maven repo."
+        },
+        {
+            "c_hash": "596d24b6",
+            "date": "2011-08-05 18:32:12 +0000",
+            "comment": "[UIMA-2192] add crypto notice - needed due to distribution of Tika Jars"
+        },
+        {
+            "c_hash": "a0e63bee",
+            "date": "2011-08-05 18:33:01 +0000",
+            "comment": "[UIMA-2185] remove unneeded directive (defaults)"
+        },
+        {
+            "c_hash": "589d562e",
+            "date": "2011-08-05 21:30:53 +0000",
+            "comment": "[UIMA-2205] fix uimaDependencyVersion"
+        },
+        {
+            "c_hash": "d4817532",
+            "date": "2011-08-05 22:26:42 +0000",
+            "comment": "[UIMA-2204] fix Solrcas license and notice to account for CDDL license for servlet-api-2.5.jar and MIT license for SLF4j"
+        },
+        {
+            "c_hash": "c0b9f259",
+            "date": "2011-08-05 22:28:43 +0000",
+            "comment": "[UIMA-2204] fix notice file copyright end dates"
+        },
+        {
+            "c_hash": "4cd90e53",
+            "date": "2011-08-05 22:30:01 +0000",
+            "comment": "[UIMA-2204] add missing parts to aggregate addons license and notice files"
+        },
+        {
+            "c_hash": "29253a5d",
+            "date": "2011-08-06 02:56:30 +0000",
+            "comment": "[UIMA-2204] add missing licenses / notices to Lucas annotator, coming from included Lucene Jars"
+        },
+        {
+            "c_hash": "f03428b4",
+            "date": "2011-08-06 02:57:25 +0000",
+            "comment": "[UIMA-2204] add missing licenses / notices to uima-addons, coming from updates to the Lucas project"
+        },
+        {
+            "c_hash": "5a21e56c",
+            "date": "2011-08-06 10:08:23 +0000",
+            "comment": "[UIMA-2185] have uima-addons binary build include the issuesFixed and the README.txt"
+        },
+        {
+            "c_hash": "88408571",
+            "date": "2011-08-06 10:17:49 +0000",
+            "comment": "[UIMA-2185] remove unused and incorrect build_documentation.xml from 3 addons projects"
+        },
+        {
+            "c_hash": "1b6b5535",
+            "date": "2011-08-06 10:43:38 +0000",
+            "comment": "[UIMA-2185] fix <id> of common build step which copies docs into base-bin.  Slightly generalize uima-addons assembly bin."
+        },
+        {
+            "c_hash": "1b578f76",
+            "date": "2011-08-06 10:43:41 +0000",
+            "comment": "[UIMA-2185] fix <id> of common build step which copies docs into base-bin.  Slightly generalize uima-addons assembly bin."
+        },
+        {
+            "c_hash": "47e7fa63",
+            "date": "2011-08-06 11:05:49 +0000",
+            "comment": "[UIMA-2185] for PEAR packaging - remove the exclude of the documentation from the base-bin because the PEAR packaging contains the docs."
+        },
+        {
+            "c_hash": "a1184dcc",
+            "date": "2011-08-06 11:30:51 +0000",
+            "comment": "[UIMA-2185] override alternative module-based source-release assembly - to use the standard common assembly instead."
+        },
+        {
+            "c_hash": "2712c896",
+            "date": "2011-08-08 20:50:45 +0000",
+            "comment": "[UIMA-2208] Use standard temp area for temp dir."
+        },
+        {
+            "c_hash": "8a1a2311",
+            "date": "2011-08-09 14:18:22 +0000",
+            "comment": "[UIMA-2185] move RELEASE_NOTES to top level, so they will be done in one place and included in both binary and source distributions.  Change the binary distribution assembly for addons to include these from the top level."
+        },
+        {
+            "c_hash": "4175e96e",
+            "date": "2011-08-09 14:18:52 +0000",
+            "comment": "[UIMA-2185] move RELEASE_NOTES to top level, so they will be done in one place and included in both binary and source distributions."
+        },
+        {
+            "c_hash": "bda0e6ef",
+            "date": "2011-08-10 16:08:24 +0000",
+            "comment": "[UIMA-2209] remove incorrect Eclipse-Buddy directive."
+        },
+        {
+            "c_hash": "1ec09074",
+            "date": "2011-08-15 21:11:48 +0000",
+            "comment": "no Jira - update http links to uima from incubator to the top level one."
+        },
+        {
+            "c_hash": "217285c5",
+            "date": "2011-08-16 00:46:47 +0000",
+            "comment": "no Jira - fix previous update which meant to just change a url, but accidentally included a big chunk of debugging code not meant to be ever checked in..."
+        },
+        {
+            "c_hash": "0fed8356",
+            "date": "2011-08-16 01:56:02 +0000",
+            "comment": "[UIMA-2213] [UIMA-2214] downgrade maven-bundle-plugin back to level which includes version information.  Move common binary build into profile which is activated only for single-projectsw"
+        },
+        {
+            "c_hash": "532cfd5a",
+            "date": "2011-08-16 02:10:32 +0000",
+            "comment": "no Jira - update the Release notes to describe OSGi packaging as experimental, with need to do custom bundles for doing more complex pipelines."
+        },
+        {
+            "c_hash": "8273c830",
+            "date": "2011-08-17 20:39:38 +0000",
+            "comment": "UIMA-2215 The create flag for the IndexWriter is now configurable via the properties file."
+        },
+        {
+            "c_hash": "4a8f9abc",
+            "date": "2011-08-18 11:34:19 +0000",
+            "comment": "UIMA-2215 Mistakenly used getBoolean insetad of parseBoolean"
+        },
+        {
+            "c_hash": "20a94b6c",
+            "date": "2011-08-23 19:50:08 +0000",
+            "comment": "[UIMA-2216] Remove OSGi builds (disable). Update release notes."
+        },
+        {
+            "c_hash": "575429bf",
+            "date": "2011-08-24 10:34:40 +0000",
+            "comment": "[maven-release-plugin] prepare release uima-addons-2.3.1-rc5"
+        },
+        {
+            "c_hash": "bdbb4546",
+            "date": "2011-08-24 10:35:04 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "084bdad0",
+            "date": "2011-09-21 14:24:49 +0000",
+            "comment": "[UIMA-2226] - applied patch from Greg Holmberg"
+        },
+        {
+            "c_hash": "03d7cc13",
+            "date": "2011-10-04 17:53:34 +0000",
+            "comment": "[UIMA-2134] depend on already released to maven central version of the whitespace tagger."
+        },
+        {
+            "c_hash": "ac0f653e",
+            "date": "2011-11-21 01:27:54 +0000",
+            "comment": "[UIMA-2290] change top level name from UIMA to Apache UIMA. Also change the parent of uima-addons-parent to the 3-SNAPSHOT version"
+        },
+        {
+            "c_hash": "3dcbf3d7",
+            "date": "2011-11-21 01:28:07 +0000",
+            "comment": "[UIMA-2290] change top level name from UIMA to Apache UIMA. Also change the parent of uima-addons-parent to the 3-SNAPSHOT version"
+        },
+        {
+            "c_hash": "80a88d77",
+            "date": "2012-01-24 22:07:10 +0000",
+            "comment": "[UIMA-2357] correct / update documentation of jars in the lib directory"
+        },
+        {
+            "c_hash": "9d6e37b0",
+            "date": "2012-06-11 14:07:11 +0000",
+            "comment": "[UIMA-2420] - update Solrcas Solr version to 3.6"
+        },
+        {
+            "c_hash": "5365f8cc",
+            "date": "2012-06-22 21:13:02 +0000",
+            "comment": "No Jira, change the parent of this project's pom to the released (no longer snapshot) version of the common build pom for UIMA projects"
+        },
+        {
+            "c_hash": "3587670d",
+            "date": "2012-07-08 13:39:56 +0000",
+            "comment": "[UIMA-2430] - removed incubator from xml beans created packages"
+        },
+        {
+            "c_hash": "01c7dc92",
+            "date": "2012-07-12 12:16:54 +0000",
+            "comment": "[UIMA-2430] - reverted previous changes due to backward compatiblity problems"
+        },
+        {
+            "c_hash": "d47d7ba3",
+            "date": "2012-08-27 10:27:34 +0000",
+            "comment": "[UIMA-2459] - applying Himanshu's patch for upgrading ConceptMappert to 2.4.0 SDK"
+        },
+        {
+            "c_hash": "f0886233",
+            "date": "2012-08-28 12:17:25 +0000",
+            "comment": "[UIMA-2456] - applying Andrea's patch (with some format adjustments)  plus minor refactoring to tests"
+        },
+        {
+            "c_hash": "87ffdd37",
+            "date": "2012-11-25 08:05:40 +0000",
+            "comment": "[UIMA-2503] - update Solrcas to Solr 3.6.1"
+        },
+        {
+            "c_hash": "c4cfe096",
+            "date": "2012-12-31 13:47:42 +0000",
+            "comment": "[UIMA-2390] - applied Renaud's patch"
+        },
+        {
+            "c_hash": "823d89c0",
+            "date": "2012-12-31 13:48:30 +0000",
+            "comment": "[UIMA-2390] - added test files"
+        },
+        {
+            "c_hash": "f0df4c2e",
+            "date": "2012-12-31 14:21:49 +0000",
+            "comment": "[UIMA-2547] - moved TikaAnnotator to Tika 0.8"
+        },
+        {
+            "c_hash": "39fe747f",
+            "date": "2012-12-31 15:22:44 +0000",
+            "comment": "[UIMA-2549] - removed valid api keys, ignoring integration tests for now"
+        },
+        {
+            "c_hash": "f942dbcd",
+            "date": "2013-01-11 07:40:31 +0000",
+            "comment": "[UIMA-2566] - upgraded Solr version to 3.6.2"
+        },
+        {
+            "c_hash": "1d13e273",
+            "date": "2013-01-11 08:15:07 +0000",
+            "comment": "[UIMA-2566] - replaced deprecated CommonsHttpSolrServer with HttpSolrServer plus minor improvements"
+        },
+        {
+            "c_hash": "9860991f",
+            "date": "2013-02-26 01:19:58 +0000",
+            "comment": "[UIMA-2694] spelling corrections in error msg"
+        },
+        {
+            "c_hash": "79ef6fab",
+            "date": "2013-06-20 13:20:38 +0000",
+            "comment": "[UIMA-2719] - allow addons modules to specify their specific jira version"
+        },
+        {
+            "c_hash": "86cf44e2",
+            "date": "2013-06-20 14:41:32 +0000",
+            "comment": "[UIMA-2719] - jiraVersion for uima-addons-parent"
+        },
+        {
+            "c_hash": "6df36726",
+            "date": "2013-06-20 14:42:37 +0000",
+            "comment": "[maven-release-plugin] prepare release uima-addons-parent-2.3.2-rc1"
+        },
+        {
+            "c_hash": "9e191c7b",
+            "date": "2013-06-20 14:43:19 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "d84f9c1a",
+            "date": "2013-06-24 07:18:55 +0000",
+            "comment": "[maven-release-plugin] rollback the release of uima-addons-parent-2.3.2-rc1"
+        },
+        {
+            "c_hash": "2c58543d",
+            "date": "2013-06-24 08:01:12 +0000",
+            "comment": "[UIMA-3022] - lifecycle-mapping plugin conf inherited by parent"
+        },
+        {
+            "c_hash": "bd3841fa",
+            "date": "2013-07-22 10:25:15 +0000",
+            "comment": "[UIMA-2318] - Define automatic distribution of a closed term set over multiple fields in one field definition, applied Erik Faessler's patch"
+        },
+        {
+            "c_hash": "1723804f",
+            "date": "2013-07-22 11:47:08 +0000",
+            "comment": "[UIMA-2318] - Define automatic distribution of a closed term set over multiple fields in one field definition, applied Erik Faessler's patch"
+        },
+        {
+            "c_hash": "5bb11064",
+            "date": "2013-10-31 19:59:03 +0000",
+            "comment": "[UIMA-3391] - Temporary workaround: ignoring copy goal in m2e builds"
+        },
+        {
+            "c_hash": "0dddf459",
+            "date": "2013-10-31 20:10:05 +0000",
+            "comment": "[UIMA-3391] - Temporary workaround: ignoring copy goal in m2e builds (the big hammer needed with parent-pom 3)"
+        },
+        {
+            "c_hash": "82fbb31b",
+            "date": "2014-09-23 21:36:42 +0000",
+            "comment": "Initial import."
+        },
+        {
+            "c_hash": "30ac1975",
+            "date": "2014-09-23 21:42:57 +0000",
+            "comment": "[UIMA-4020] create the uimaj-json addon project to hold the JSON serialization addon for uimaj sdk, and have the dependency on Jackson-core json support"
+        }
+    ]
+}

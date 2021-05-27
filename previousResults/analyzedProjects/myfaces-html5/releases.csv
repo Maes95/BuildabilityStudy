@@ -1,0 +1,6 @@
+commitID;commit-type;time-to-next-release;commit-message
+bb8152f1fb70efb8b5efaf670a2a78787960992a;BREAKING_FIX;222;The progress on html5-comp-lib so far goes into MyFaces repository git-svn-id: https://svn.apache.org/repos/asf/myfaces/gsoc/html5-comp-lib/trunk@980988 13f79535-47bb-0310-9956-ffa450edef68
+08720368dc4a2837d7acfd91aa94c172e468cf47;BREAKING_CHANGES;215;Improved client-side validation by driving JSF validators/converters. Added an example. Added TODOs git-svn-id: https://svn.apache.org/repos/asf/myfaces/gsoc/html5-comp-lib/trunk@983131 13f79535-47bb-0310-9956-ffa450edef68
+89c83b0d3a8204fc89953a867371589e3b5fd6f8;BREAKING_FIX;208;Html5 - Migrate to commons-lang 2.5 git-svn-id: https://svn.apache.org/repos/asf/myfaces/gsoc/html5-comp-lib/trunk@985397 13f79535-47bb-0310-9956-ffa450edef68
+dd436f3215cd13477bd45d2459884d5e03b6c1ee;BREAKING_CHANGES;105;Html5 Update to myfaces builder plugin 1.0.8-SNAPSHOT git-svn-id: https://svn.apache.org/repos/asf/myfaces/gsoc/html5-comp-lib/trunk@1038818 13f79535-47bb-0310-9956-ffa450edef68
+f6de620d041a077b2b215773ecfd0a2457bd42cf;BREAKING_FIX;-;MFHTML5-1 - Get rid of myfaces-shared-html5 dependency git-svn-id: https://svn.apache.org/repos/asf/myfaces/html5/trunk@1103558 13f79535-47bb-0310-9956-ffa450edef68

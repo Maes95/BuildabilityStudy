@@ -1,0 +1,1873 @@
+{
+    "project": "webservices-commons-xmlschema",
+    "git_url": "https://github.com/apache/webservices-commons-xmlschema.git",
+    "last_commit": "9d6e2b95",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "52e3f606",
+            "date": "2005-06-01 18:48:10 +0000",
+            "comment": "moving XmlSchema from CVS"
+        },
+        {
+            "c_hash": "ec85208f",
+            "date": "2005-08-03 23:05:02 +0000",
+            "comment": "Code cleanup, use official QName class."
+        },
+        {
+            "c_hash": "53d875b5",
+            "date": "2005-08-04 04:01:12 +0000",
+            "comment": "Some more work - make XmlSchemaCollection (might need to change that name) the focus of read()ing schemas in.  Enable searching for elements/types by QName in a collection.  Only store the local name of types/elements, get the namespace from the enclosing XmlSchema object.  Fix problem with forward references (we now correctly slot the type values into waiting element/attribute declarations when types are encountered - still need to complain when unresolved types are NOT resolved by the end of a parse."
+        },
+        {
+            "c_hash": "89dece66",
+            "date": "2005-08-08 12:40:23 +0000",
+            "comment": "Give individual schemas access to their parent collections, and default to building the jar."
+        },
+        {
+            "c_hash": "ba13855d",
+            "date": "2005-09-12 13:00:49 +0000",
+            "comment": "Add some useful Constants"
+        },
+        {
+            "c_hash": "b20cb4de",
+            "date": "2005-09-18 06:09:48 +0000",
+            "comment": "* Rough in test framework"
+        },
+        {
+            "c_hash": "9045b7b5",
+            "date": "2005-09-20 22:51:23 +0000",
+            "comment": "- Move packages around. - Update License to ASL 2.0"
+        },
+        {
+            "c_hash": "05d06d4d",
+            "date": "2005-09-20 22:55:02 +0000",
+            "comment": "move packages around update license"
+        },
+        {
+            "c_hash": "06878137",
+            "date": "2005-09-20 22:56:25 +0000",
+            "comment": "cleanup"
+        },
+        {
+            "c_hash": "fb34ba19",
+            "date": "2005-09-20 23:10:15 +0000",
+            "comment": "Fix problem reported by Gregory Lapouchnian <glapouch@redhat.com>"
+        },
+        {
+            "c_hash": "09a394a3",
+            "date": "2005-09-21 02:48:49 +0000",
+            "comment": "Fix loading of j2ee_1_4.xsd"
+        },
+        {
+            "c_hash": "b2af6504",
+            "date": "2005-10-25 16:54:05 +0000",
+            "comment": "Fix for PROBLEM 1&2 reported here by woden folks: http://mail-archives.apache.org/mod_mbox/ws-woden-dev/200510.mbox/browser"
+        },
+        {
+            "c_hash": "ed6c622c",
+            "date": "2005-10-25 17:09:06 +0000",
+            "comment": "Fix Problem #3 reported here by woden folks: http://mail-archives.apache.org/mod_mbox/ws-woden-dev/200510.mbox/browser"
+        },
+        {
+            "c_hash": "2d137f10",
+            "date": "2005-11-12 02:47:21 +0000",
+            "comment": "fix for AXIS2-303 - XmlSchema builder doesn't work if the schema isn't the root node from Dan Diephouse"
+        },
+        {
+            "c_hash": "7e19d388",
+            "date": "2005-11-25 07:41:32 +0000",
+            "comment": "Updated the schema builder to handle namespaces inside the elements. The earlier code did not handle the  following case   <xs:element name=\"inChar\" type=\"q1:char\" xmlns:q1=\"http://x.com/2003/10/Serialization/\"/> Now the namspace resolution first looks for nay namespace decalration in it's own scope befoe moving on to the parent."
+        },
+        {
+            "c_hash": "cbc58f9b",
+            "date": "2005-11-25 10:03:09 +0000",
+            "comment": "1. Updated the code to handle imported schemas with a base URI. 2. Added a new testcase/resources to test whether the imports are working"
+        },
+        {
+            "c_hash": "c851be20",
+            "date": "2005-11-28 08:17:53 +0000",
+            "comment": "1. Added support for all the built-in simple types - see http://www.w3.org/TR/2004/PER-xmlschema-2-20040318/datatypes.html#built-in-datatypes for the list of datatypes 2. Added a testcase and the relevant xsd resource - Note . This test resource is NOT complete. Needs to include all the derived types to test the schema fully"
+        },
+        {
+            "c_hash": "532f2d22",
+            "date": "2005-11-28 09:28:27 +0000",
+            "comment": "1. Updated the simple types. Now it seems that all the necessary simple types (including the derived ones) are added 2. Updated the test schema"
+        },
+        {
+            "c_hash": "cef2a5ee",
+            "date": "2005-12-12 18:09:11 +0000",
+            "comment": "Fixed problem when the derivation is specified as an empty string."
+        },
+        {
+            "c_hash": "4853aa27",
+            "date": "2005-12-22 22:21:13 +0000",
+            "comment": "bug fix from Tyler Nelson <pojojojo@gmail.com>"
+        },
+        {
+            "c_hash": "664b3890",
+            "date": "2006-01-23 08:31:18 +0000",
+            "comment": "Added a testcase to check whether commons schema properly handles element references"
+        },
+        {
+            "c_hash": "f08ff0b2",
+            "date": "2006-01-23 10:42:21 +0000",
+            "comment": "Implemented equals() method."
+        },
+        {
+            "c_hash": "0e4382ee",
+            "date": "2006-01-23 11:12:55 +0000",
+            "comment": "Missing else statement."
+        },
+        {
+            "c_hash": "3cf30289",
+            "date": "2006-01-24 12:46:15 +0000",
+            "comment": "Fixed a simple type processing error in the code 1.Commented line 342 in SchemaBuilder class to avoid setting the name of the simpletype objects name to the base types name. Not sure about the original authors intent though. 2. Added a testcase to test the simple content processing"
+        },
+        {
+            "c_hash": "ac8d76db",
+            "date": "2006-01-31 20:57:06 +0000",
+            "comment": "fix for AXIS2-419 - org.apache.ws.commons.schema.SchemaBuilder Method setNamespaceAttributes() overwrites Schemata already parsed"
+        },
+        {
+            "c_hash": "07fb0d5e",
+            "date": "2006-01-31 21:18:54 +0000",
+            "comment": "fix for AXIS2-364 - XmlSchema POM"
+        },
+        {
+            "c_hash": "24a9d3a6",
+            "date": "2006-02-01 13:58:24 +0000",
+            "comment": "get maven build/test working"
+        },
+        {
+            "c_hash": "1a2cc146",
+            "date": "2006-02-01 15:51:15 +0000",
+            "comment": "converted commons into a maven multi-project, yes, you can edit/compil/run each sub component w/o having to checkout everything"
+        },
+        {
+            "c_hash": "10ab6da9",
+            "date": "2006-02-02 03:59:36 +0000",
+            "comment": "Fix for  AXIS2-340 - wsdl2java fails"
+        },
+        {
+            "c_hash": "ac6e9dc9",
+            "date": "2006-02-02 16:52:46 +0000",
+            "comment": "Fix and test case for WSCOMMONS-2 - IllegalArgumentException because null is passed as the localPart arg to QName ctor"
+        },
+        {
+            "c_hash": "56c9414d",
+            "date": "2006-02-02 20:36:31 +0000",
+            "comment": "Fix for WSCOMMONS-1 - XmlSchema not resolving schemaLocation with a relative path"
+        },
+        {
+            "c_hash": "6e23360c",
+            "date": "2006-02-02 21:08:50 +0000",
+            "comment": "prev iteration was specific to jdk15, added new methods to pass in the uri for the dom document/element"
+        },
+        {
+            "c_hash": "a0fbdd3f",
+            "date": "2006-02-10 00:52:26 +0000",
+            "comment": "Fix for WSCOMMONS-4 - unit test for xml schema test suite from Dan Diephouse (with minor edits to build.xml from me)"
+        },
+        {
+            "c_hash": "b4d2172b",
+            "date": "2006-02-16 15:50:20 +0000",
+            "comment": "oops!"
+        },
+        {
+            "c_hash": "021e450c",
+            "date": "2006-02-17 04:24:26 +0000",
+            "comment": "Added a missing dependency"
+        },
+        {
+            "c_hash": "fab7f6b2",
+            "date": "2006-02-17 04:30:58 +0000",
+            "comment": "Added a comment explain the addition of the dependency"
+        },
+        {
+            "c_hash": "0af92139",
+            "date": "2006-02-21 18:48:28 +0000",
+            "comment": "Skip tests if -Dmaven.test.skip is specified"
+        },
+        {
+            "c_hash": "18a00fbf",
+            "date": "2006-02-21 20:20:56 +0000",
+            "comment": "Add a Maven 2 Build. Unfortunately it is currently impossible to skip the download with M2. I've filed a bug with them and will hopefully hear back soon."
+        },
+        {
+            "c_hash": "a8a13013",
+            "date": "2006-02-23 20:33:16 +0000",
+            "comment": "o Add a site in prep for the release o Add m1 deploy configuration o Fix m2 deploy locations"
+        },
+        {
+            "c_hash": "2f30d8be",
+            "date": "2006-02-24 16:46:48 +0000",
+            "comment": "Add missing plugin repo"
+        },
+        {
+            "c_hash": "eb698ece",
+            "date": "2006-02-24 17:12:57 +0000",
+            "comment": "Specify the tag base for a release"
+        },
+        {
+            "c_hash": "d722f133",
+            "date": "2006-02-24 17:38:19 +0000",
+            "comment": "[maven-release-plugin] prepare release XmlSchema-1.0"
+        },
+        {
+            "c_hash": "be30e90c",
+            "date": "2006-02-24 17:38:35 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "8c24cbd2",
+            "date": "2006-02-24 18:12:09 +0000",
+            "comment": "Rollback as the maven pom isn't set up right for releasing"
+        },
+        {
+            "c_hash": "a8ca90ce",
+            "date": "2006-02-24 18:14:30 +0000",
+            "comment": "[maven-release-plugin] prepare release XmlSchema-1.0"
+        },
+        {
+            "c_hash": "98c89afb",
+            "date": "2006-02-24 18:14:46 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "90a425dd",
+            "date": "2006-03-16 06:11:59 +0000",
+            "comment": "1. Fixing the any attribute missing problem. The anyAttribute was missing due to it being not processed in the SchemaBuilder.java 2. Added a test case to the test suite"
+        },
+        {
+            "c_hash": "673e6d31",
+            "date": "2006-03-16 08:13:24 +0000",
+            "comment": "1.Fixed a build problem. when the -Dmaven.test.skip is overridden the 6 Mb test suite was still getting downloaded since the if statement had an out of the place closing bracket!"
+        },
+        {
+            "c_hash": "0d029089",
+            "date": "2006-03-17 05:34:06 +0000",
+            "comment": "Fixed maven.xml to obtain the maven.test.skip value correctly"
+        },
+        {
+            "c_hash": "0f7abd2e",
+            "date": "2006-03-17 07:08:21 +0000",
+            "comment": "1.Fixed a minor bug in handling relative file references. The code was picking the parent directory even when the context path is a directory (in which case the context dir should be the parent dir)"
+        },
+        {
+            "c_hash": "a3e43f89",
+            "date": "2006-03-22 14:24:27 +0000",
+            "comment": "Update version per requesets."
+        },
+        {
+            "c_hash": "1c58988f",
+            "date": "2006-03-23 10:51:16 +0000",
+            "comment": "XmlSchema serialization was declaring the attributes like elementFormDefault, attributeFormDefault under the schema namespace. This behavior is clearly wrong and caused a issue in JDK 1.5. In JDK 1.4 the mistake was not noticed due to an erroneous use of the qualified name parameter. Corrected the above issue"
+        },
+        {
+            "c_hash": "0b3e0024",
+            "date": "2006-03-24 04:27:41 +0000",
+            "comment": "Moving modules in to trunk"
+        },
+        {
+            "c_hash": "1eed90b2",
+            "date": "2006-03-26 12:16:42 +0000",
+            "comment": "1. Added RELEASE-NOTE.txt,LICENSE.txt and README.txt to the root 2. Added the schematutorial.html and a proper navigation.xml (maven 1 style) 3. Fixed a few problems in the maven2 build 4. Added goals to generate the binary and source builds"
+        },
+        {
+            "c_hash": "3ed0259e",
+            "date": "2006-03-26 13:15:32 +0000",
+            "comment": "oops a daisy! wrong navigation.xml!"
+        },
+        {
+            "c_hash": "a5c03e17",
+            "date": "2006-03-27 05:18:28 +0000",
+            "comment": "made corrections and improvements"
+        },
+        {
+            "c_hash": "d80b9b0f",
+            "date": "2006-03-30 09:53:00 +0000",
+            "comment": "Modified the serializser allowing the serialization of extra namespace decalarations"
+        },
+        {
+            "c_hash": "1b2d405e",
+            "date": "2006-04-01 07:48:05 +0000",
+            "comment": "1. fixed the SchemaBuilder.java to pick the default namespace when a type has no explicit prefix defined (the earlier behavior was to pick the targetnamespace which is wrong) 2. Added a test case to verify the above behavior 3. Fixed a minor typo in the twoSchemas.wsdl"
+        },
+        {
+            "c_hash": "0b5ae393",
+            "date": "2006-04-05 15:49:29 +0000",
+            "comment": "Maven 2ify the site"
+        },
+        {
+            "c_hash": "beabe591",
+            "date": "2006-04-05 15:51:09 +0000",
+            "comment": "Update svn tag base"
+        },
+        {
+            "c_hash": "8d06a268",
+            "date": "2006-04-05 15:51:55 +0000",
+            "comment": "Didn't mean to change the version # yet..."
+        },
+        {
+            "c_hash": "39a4f494",
+            "date": "2006-04-05 15:59:10 +0000",
+            "comment": "[maven-release-plugin] prepare release 1.0.1"
+        },
+        {
+            "c_hash": "95a87fd5",
+            "date": "2006-04-05 15:59:19 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "02347d5e",
+            "date": "2006-04-05 16:00:20 +0000",
+            "comment": "Fix typo"
+        },
+        {
+            "c_hash": "05240e7c",
+            "date": "2006-04-05 16:46:51 +0000",
+            "comment": "Use more official release location"
+        },
+        {
+            "c_hash": "ff3a50e8",
+            "date": "2006-04-05 16:49:11 +0000",
+            "comment": "Fix typo"
+        },
+        {
+            "c_hash": "f712abda",
+            "date": "2006-04-06 18:22:37 +0000",
+            "comment": "Remove erroneous links"
+        },
+        {
+            "c_hash": "5cf08fe2",
+            "date": "2006-04-09 05:23:58 +0000",
+            "comment": "Fix critical bug where we were traversing up and reading the <wsdl> targetNamespace."
+        },
+        {
+            "c_hash": "c00e8131",
+            "date": "2006-04-13 19:03:12 +0000",
+            "comment": "- Remove Release notes and combine it with the readme. Right now I see no reason to have a seperate release notes file as we have no notes about the release. - Integrate source/bin distributions into mvn install"
+        },
+        {
+            "c_hash": "65bbaabd",
+            "date": "2006-04-13 19:47:18 +0000",
+            "comment": "Fix jar license inclusion"
+        },
+        {
+            "c_hash": "3136b7d4",
+            "date": "2006-04-13 19:50:03 +0000",
+            "comment": "don't depend on a snapshot for the release"
+        },
+        {
+            "c_hash": "aaf761c6",
+            "date": "2006-04-13 19:51:25 +0000",
+            "comment": "[maven-release-plugin] prepare release 1.0.1"
+        },
+        {
+            "c_hash": "9780a4fc",
+            "date": "2006-04-13 19:52:06 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "36ebd6d1",
+            "date": "2006-04-21 07:45:47 +0000",
+            "comment": "1. Added a new constants class to keep the values like \"any\",\"lax\" and so on    The original problem is wrongful content case (camelcase instead of lowercase) 2. Fixed a serialization issue where anyAttribute was serialized before attributes (which is invalid as per the schema spec) 3. Added two new test cases to test the new changes"
+        },
+        {
+            "c_hash": "4ffb59e3",
+            "date": "2006-04-21 08:43:55 +0000",
+            "comment": "changed the use of getTagName to getLocalName. The logic in the createNewElement method is not correct for processing the tag name!"
+        },
+        {
+            "c_hash": "cee7ab51",
+            "date": "2006-04-21 13:09:14 +0000",
+            "comment": "The write method of the XMLSchema always serialized all the schemas (including imported ones) and took the first schema. This is wrong behavior 1.Changed the default behavior to serialize only the relevant schema 2.Added a new method to get all schemas as DOM documents"
+        },
+        {
+            "c_hash": "d8f75f76",
+            "date": "2006-04-21 15:55:10 +0000",
+            "comment": "1. Annotations are serialized twice for the enums (and other facets). Fixed that issue. 2. Annotations in group serialization had a problem with the order! fixed that too"
+        },
+        {
+            "c_hash": "f4fafa7f",
+            "date": "2006-04-21 18:03:46 +0000",
+            "comment": "making the created jar automatically copied to the local repository."
+        },
+        {
+            "c_hash": "1d030707",
+            "date": "2006-04-24 08:40:52 +0000",
+            "comment": "Added support for registering an external resolver - a long waited feature :) 1. Introduced the URIResolver interface and the default implementation for the URI resolver 2. changed the schema builder to use the resolver to resolve the schemas"
+        },
+        {
+            "c_hash": "42430945",
+            "date": "2006-04-24 08:50:07 +0000",
+            "comment": "Fixing minor error in the group id"
+        },
+        {
+            "c_hash": "28ced0d0",
+            "date": "2006-04-24 09:20:26 +0000",
+            "comment": "A small fix to handle the case where the schema location is missing for the import!"
+        },
+        {
+            "c_hash": "e8723123",
+            "date": "2006-04-24 09:26:00 +0000",
+            "comment": "Changed the access modifier to protected for the default resolver. This makes it easy to extend this"
+        },
+        {
+            "c_hash": "583d6c2d",
+            "date": "2006-04-24 11:34:37 +0000",
+            "comment": "The schema serializaton had a wrong order for imports and inlcudes - fixed it"
+        },
+        {
+            "c_hash": "6afa16f3",
+            "date": "2006-04-26 06:51:02 +0000",
+            "comment": "Remove author tags in XmlSchema, AXIOM and Policy"
+        },
+        {
+            "c_hash": "41f35715",
+            "date": "2006-04-26 07:34:29 +0000",
+            "comment": "NOTICE.txt"
+        },
+        {
+            "c_hash": "3cdf206a",
+            "date": "2006-04-26 08:26:03 +0000",
+            "comment": "fix names"
+        },
+        {
+            "c_hash": "36112d13",
+            "date": "2006-04-27 04:15:56 +0000",
+            "comment": "Fixing a namespace issue.For references in attribute types that do not contain a namespace prefix the schemabuilder picked up the targetNamespace. it should be the default namespace!"
+        },
+        {
+            "c_hash": "b425edec",
+            "date": "2006-04-28 10:30:41 +0000",
+            "comment": "Fixed a minor issue in the SchemaBuilder. When the schema has no target namespace the parent schemas targetnamespace was added as the default namespace. This functionality was changed not to put anything"
+        },
+        {
+            "c_hash": "da41a933",
+            "date": "2006-04-30 19:44:18 +0000",
+            "comment": "Update release notes"
+        },
+        {
+            "c_hash": "d3072ced",
+            "date": "2006-04-30 19:49:48 +0000",
+            "comment": "[maven-release-plugin] prepare release XmlSchema-1.0.2"
+        },
+        {
+            "c_hash": "12f42f41",
+            "date": "2006-04-30 19:51:07 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "b36e8488",
+            "date": "2006-05-02 19:26:14 +0000",
+            "comment": "clean imports"
+        },
+        {
+            "c_hash": "4bde5736",
+            "date": "2006-05-04 20:12:30 +0000",
+            "comment": "o Support schemas which circularly reference eachother o Add convience methods in XmlSchemaCollection: getXmlSchema(string systemId) and getXmlSchemas()"
+        },
+        {
+            "c_hash": "78273352",
+            "date": "2006-05-06 18:18:52 +0000",
+            "comment": "Don't build distros unless the release profile is activated (specify -Drelease on the command line to activate)"
+        },
+        {
+            "c_hash": "ef79f74e",
+            "date": "2006-05-06 21:57:50 +0000",
+            "comment": "Use Java's built in URI resolution"
+        },
+        {
+            "c_hash": "36ee1a11",
+            "date": "2006-05-08 14:10:53 +0000",
+            "comment": "Improve resolution for the File case - especially when a trailing slash is missing"
+        },
+        {
+            "c_hash": "f0cf4519",
+            "date": "2006-05-10 12:59:27 +0000",
+            "comment": "Update release notes"
+        },
+        {
+            "c_hash": "1df3dc63",
+            "date": "2006-05-10 13:02:55 +0000",
+            "comment": "[maven-release-plugin] prepare release XmlSchema-1.0.3"
+        },
+        {
+            "c_hash": "1eaac8bf",
+            "date": "2006-05-10 13:06:29 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "16de61de",
+            "date": "2006-05-22 03:28:45 +0000",
+            "comment": "Fix for WSCOMMONS-31 from Brent Ulbricht - NPE in SchemaBuilder when using redefine"
+        },
+        {
+            "c_hash": "facf76a9",
+            "date": "2006-06-21 01:58:18 +0000",
+            "comment": "Fix for WSCOMMONS-28 - substitutionGroup not set for XmlSchemaElement Fix for WSCOMMONS-30 - Avoid cost of reflection in XmlSchemaFacet"
+        },
+        {
+            "c_hash": "dbc4703b",
+            "date": "2006-06-21 02:06:59 +0000",
+            "comment": "Fix for WSCOMMONS-37 - SchemaBuilder needs support for notation Fix for WSCOMMONS-36 - SchemaBuilder.java not setting constraints in handleElement method"
+        },
+        {
+            "c_hash": "2150eb49",
+            "date": "2006-06-24 02:54:05 +0000",
+            "comment": "Fix for WSCOMMONS-47 - additional schema tests"
+        },
+        {
+            "c_hash": "af29f322",
+            "date": "2006-06-29 15:23:22 +0000",
+            "comment": "Issue: WSCOMMONS-49 Contributor: Brent Ulbricht"
+        },
+        {
+            "c_hash": "ca15e01a",
+            "date": "2006-07-04 05:55:21 +0000",
+            "comment": "1. Adding a meta data hanger as suggested in the mailing list"
+        },
+        {
+            "c_hash": "f1031781",
+            "date": "2006-07-05 13:56:48 +0000",
+            "comment": "WSCOMMONS-53: don't download dependencies when running ant clean"
+        },
+        {
+            "c_hash": "91bb33d9",
+            "date": "2006-07-05 14:04:59 +0000",
+            "comment": "WSCOMMONS-54: gunzip and untar xsts-2002-01-16.tar.gz in one operation"
+        },
+        {
+            "c_hash": "bfaeba3e",
+            "date": "2006-07-06 06:01:22 +0000",
+            "comment": "1. Changed the getTextContent to getNodeValue. The former is a DOM level 3 API feature which is not supported in JK 1.4. The getNodeValue is supported in both the API's"
+        },
+        {
+            "c_hash": "e5b25067",
+            "date": "2006-07-06 10:34:01 +0000",
+            "comment": "1.Fixed a wrong groupId in the project.xml. This error causes the generated jar to be copied into a wrong repository location when running the maven 1 build"
+        },
+        {
+            "c_hash": "bcb0a442",
+            "date": "2006-07-06 15:24:07 +0000",
+            "comment": "1. Fixed an erroneous namespace resolving logic in SchemaBuilder.java where the external in scope namespace map was ignored 2 . Added a new test case and the relevant test resource"
+        },
+        {
+            "c_hash": "b90c390c",
+            "date": "2006-07-10 10:30:54 +0000",
+            "comment": "fix for WSCOMMONS-48 - Nillable attributes are not serialized"
+        },
+        {
+            "c_hash": "185fa446",
+            "date": "2006-07-11 07:43:17 +0000",
+            "comment": "1. Moved the block constants to an inner class inside the Constants class for clarity. Presence of multiple constant files is confusing! 2. Added functionality to populate a metadata map when external attributes are present. When external attributes are present they are populated as QName/value pairs into a map and stored in the metadata map under the key EXTERNAL_ATTRIBUTES (constant is Constants.MetaDataConstants.EXTERNAL_ATTRIBUTES) 3. Added a new test case and the relevant test case xsd file to test this functionality"
+        },
+        {
+            "c_hash": "9d7b0bc8",
+            "date": "2006-07-12 15:50:02 +0000",
+            "comment": "WSCOMMONS-58: added test harness to 'round trip test' *all* the valid schemas from the W3C xsts-2002-01-16.tar.gz test bucket. The list of schemas to test is taken from the three .testSet files in the xmlschema2002-01-16 directory of the extracted xsts-2002-01-16.tar.gz."
+        },
+        {
+            "c_hash": "8c84b142",
+            "date": "2006-07-14 13:34:50 +0000",
+            "comment": "Added testw3c target to build.xml Tidied up TestRoundTripXSD output in debug mode"
+        },
+        {
+            "c_hash": "aa71cf7b",
+            "date": "2006-07-16 04:07:35 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/webservices/commons/trunk/modules/XmlSchema@422363 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "b74801b3",
+            "date": "2006-07-18 14:55:14 +0000",
+            "comment": "WSCOMMONS-59: when a schema is serialized that doesn't have a target namespace set, prevent targetNamespace=\"DEFAULT\" being written"
+        },
+        {
+            "c_hash": "a26f5128",
+            "date": "2006-07-18 14:56:58 +0000",
+            "comment": "Added svn:ignore for build and target"
+        },
+        {
+            "c_hash": "44858a89",
+            "date": "2006-07-19 09:15:43 +0000",
+            "comment": "Fixed NPE when running with debug"
+        },
+        {
+            "c_hash": "7e1c7a9e",
+            "date": "2006-07-19 09:37:22 +0000",
+            "comment": "WSCOMMONS-61: When the targetNamespace is absent the effective namespace for use in QName objects is \"\". Emptystring isn't listed in the schema_ns as it isn't explicitly defined in the schema. Therefore looking up a prefix for the \"\" namespace returns null and a \"temporary\" 'genXXX' prefix is genereated. This fix prevents the temporary namespace being created when the namespace is \"\". The \"\" prefix is used."
+        },
+        {
+            "c_hash": "b6b41fe4",
+            "date": "2006-07-22 14:46:59 +0000",
+            "comment": "1. Fixing a minor mistake"
+        },
+        {
+            "c_hash": "52a37f52",
+            "date": "2006-08-10 05:42:12 +0000",
+            "comment": "Fix for AXIS2-998 - WSDL2Java creates invalid databinding code for choice elements with maxOccurs=unbounded"
+        },
+        {
+            "c_hash": "a6dc4d80",
+            "date": "2006-08-11 04:29:42 +0000",
+            "comment": "- Update woodstox to 3.0.0 - Update log4j to 1.2.13 - Update jaxen to 1.1-beta-9 - Use Sun's JavaMail 1.4 since it is available in a java.net's public repo - Use Sun's Activation 1.1 since it is available in a java.net's public repo - Replace axis1's wsdl4j.jar with the 1.5.2 jar from wsdl4j project - Fix maven.repo.remote's for all 3 projects (XmlSchema/Neethi/Axiom)"
+        },
+        {
+            "c_hash": "8eaa2b26",
+            "date": "2006-08-11 11:59:58 +0000",
+            "comment": "Removed a Xerces dependency."
+        },
+        {
+            "c_hash": "3acdcaf5",
+            "date": "2006-08-11 12:00:25 +0000",
+            "comment": "Catchup with changes in Axiom."
+        },
+        {
+            "c_hash": "fe6230b5",
+            "date": "2006-08-11 12:16:47 +0000",
+            "comment": "Added Eclipse build files."
+        },
+        {
+            "c_hash": "6fde8096",
+            "date": "2006-08-11 12:18:37 +0000",
+            "comment": "Added proxy support"
+        },
+        {
+            "c_hash": "a55d701a",
+            "date": "2006-08-13 01:25:53 +0000",
+            "comment": "Moved the \"src\" and \"test\" directories to \"src/main/java\" and \"src/test/java\", in order to match the Maven 2 standards."
+        },
+        {
+            "c_hash": "e4b367bf",
+            "date": "2006-08-13 01:30:10 +0000",
+            "comment": "Commented out the TestW3CSchemaBucket test, because half of the tests failed."
+        },
+        {
+            "c_hash": "7e9c5a8f",
+            "date": "2006-08-13 01:51:35 +0000",
+            "comment": "Changed layout in order to match the layout of Axiom and Neethi."
+        },
+        {
+            "c_hash": "a9fd9e48",
+            "date": "2006-08-13 02:46:26 +0000",
+            "comment": "Moved the test-resources directory to src/test, in order to meet the Maven 2 standards."
+        },
+        {
+            "c_hash": "42a64ac2",
+            "date": "2006-08-14 02:03:43 +0000",
+            "comment": "skip the nist download if the maven.test.skip is set (brett confirmed on #maven to stick to this since it  works even if it feels like a hack.)"
+        },
+        {
+            "c_hash": "5e1c317f",
+            "date": "2006-08-14 20:44:03 +0000",
+            "comment": "src/test/java is being compiled to target/test-classes in Eclipse."
+        },
+        {
+            "c_hash": "9b924b4e",
+            "date": "2006-08-29 16:45:02 +0000",
+            "comment": "throw exception if someone is trying to load old style schemas."
+        },
+        {
+            "c_hash": "8aa26604",
+            "date": "2006-09-01 10:43:49 +0000",
+            "comment": "Removed invalid JavaDoc tags."
+        },
+        {
+            "c_hash": "05cac30c",
+            "date": "2006-09-01 12:39:28 +0000",
+            "comment": "More JavaDoc fixes."
+        },
+        {
+            "c_hash": "b69a2ce7",
+            "date": "2006-09-05 03:10:32 +0000",
+            "comment": "Fix for WSCOMMONS-81 - Proper namespace handling"
+        },
+        {
+            "c_hash": "755cfb9d",
+            "date": "2006-09-05 03:53:36 +0000",
+            "comment": "get rid of javax.xml.XMLConstants"
+        },
+        {
+            "c_hash": "437c950b",
+            "date": "2006-09-05 16:25:37 +0000",
+            "comment": "Fix for WSCOMMONS-78 - Including a schema without namespace into a schema with namespace is not possible"
+        },
+        {
+            "c_hash": "c9cbed97",
+            "date": "2006-09-05 17:07:48 +0000",
+            "comment": "oops! XMLConstants again"
+        },
+        {
+            "c_hash": "fcc5fd9a",
+            "date": "2006-09-06 05:42:44 +0000",
+            "comment": "Fixing a problem in building XmlSchema"
+        },
+        {
+            "c_hash": "495297c8",
+            "date": "2006-09-06 13:41:02 +0000",
+            "comment": "- Fix extra xmlns=\"\" in serialized schema - Fix choice serialization for minOccurs/maxOccurs (they can be set to zero)"
+        },
+        {
+            "c_hash": "1de76dff",
+            "date": "2006-09-06 13:58:12 +0000",
+            "comment": "Fix serialization for the following union snippet"
+        },
+        {
+            "c_hash": "13279769",
+            "date": "2006-09-08 20:02:15 +0000",
+            "comment": "Added the WSCOMMONS-87 test case."
+        },
+        {
+            "c_hash": "880ac388",
+            "date": "2006-09-11 17:18:40 +0000",
+            "comment": "Fix and test case for WSCOMMONS-88 - XMLSchema cannot figure out external namespaces when the schema is read from an InputSource"
+        },
+        {
+            "c_hash": "9cad8301",
+            "date": "2006-09-11 17:31:36 +0000",
+            "comment": "Fix for WSCOMMONS-51 - Facet classes missing toString method"
+        },
+        {
+            "c_hash": "9cd076a3",
+            "date": "2006-09-14 04:46:10 +0000",
+            "comment": "Fixing problem that shows up here: http://issues.apache.org/jira/browse/AXIS2-1129#action_12434320"
+        },
+        {
+            "c_hash": "caa23e8d",
+            "date": "2006-09-15 17:00:07 +0000",
+            "comment": "prevent NPE"
+        },
+        {
+            "c_hash": "29a6daba",
+            "date": "2006-09-15 17:30:03 +0000",
+            "comment": "Fix for AXIS2-1162 - Build Failure: testScenarioOne(org.apache.axis2.wsdl.codegen.extension.SchemaUnwrapperExtensionTest): Caused an ERROR"
+        },
+        {
+            "c_hash": "566f7d1f",
+            "date": "2006-09-16 18:09:23 +0000",
+            "comment": "Removing redundant local vars"
+        },
+        {
+            "c_hash": "f41d3997",
+            "date": "2006-09-16 18:14:06 +0000",
+            "comment": "Deleting unused params"
+        },
+        {
+            "c_hash": "720df390",
+            "date": "2006-09-16 18:26:56 +0000",
+            "comment": "Removing redundant type casts Fixing a probable bug as AtributeGroupRef handling was not correct in Schema Serializer"
+        },
+        {
+            "c_hash": "7ace4cdd",
+            "date": "2006-09-16 18:28:50 +0000",
+            "comment": "Removing redundant variable initialization"
+        },
+        {
+            "c_hash": "23f65a1b",
+            "date": "2006-09-16 18:38:03 +0000",
+            "comment": "Improvements to String and boolean handling"
+        },
+        {
+            "c_hash": "d093c120",
+            "date": "2006-09-18 04:28:52 +0000",
+            "comment": "Making maven 1.x scripts to work : Making the javadocs goal to work."
+        },
+        {
+            "c_hash": "cb1d8cb4",
+            "date": "2006-09-18 04:34:43 +0000",
+            "comment": "Getting the mvn site to work"
+        },
+        {
+            "c_hash": "2bfdce0d",
+            "date": "2006-09-18 10:43:25 +0000",
+            "comment": "Making release goal to work"
+        },
+        {
+            "c_hash": "3554d56b",
+            "date": "2006-09-18 11:09:18 +0000",
+            "comment": "Updating the site.xml for a better site :)"
+        },
+        {
+            "c_hash": "3c6ea303",
+            "date": "2006-09-18 11:19:51 +0000",
+            "comment": "Correcting some typos"
+        },
+        {
+            "c_hash": "a2d201c1",
+            "date": "2006-09-18 11:51:56 +0000",
+            "comment": "- improving the index page - adding a proper download page (It is strange that XmlSchema)"
+        },
+        {
+            "c_hash": "b2b71f28",
+            "date": "2006-09-18 11:59:49 +0000",
+            "comment": "removing site and main folders from jar"
+        },
+        {
+            "c_hash": "7036f530",
+            "date": "2006-09-18 16:21:14 +0000",
+            "comment": "Completing the download page. Had to do this from scratch"
+        },
+        {
+            "c_hash": "d45a4f82",
+            "date": "2006-09-18 16:27:41 +0000",
+            "comment": "Minor update to POM to include bug tracking system"
+        },
+        {
+            "c_hash": "a325083c",
+            "date": "2006-09-18 16:46:54 +0000",
+            "comment": "More updates to the documentation"
+        },
+        {
+            "c_hash": "6238d5d7",
+            "date": "2006-09-18 17:04:40 +0000",
+            "comment": "Removing IDE specific crap."
+        },
+        {
+            "c_hash": "7de65697",
+            "date": "2006-09-18 17:50:39 +0000",
+            "comment": "Improved the script adding licenses, etc.,"
+        },
+        {
+            "c_hash": "fb15da0d",
+            "date": "2006-09-18 18:20:27 +0000",
+            "comment": "Removing more IDE specific stuff"
+        },
+        {
+            "c_hash": "25c1ed47",
+            "date": "2006-09-18 18:50:03 +0000",
+            "comment": "reverting back to SNAPSHOT"
+        },
+        {
+            "c_hash": "26b57160",
+            "date": "2006-09-18 19:15:02 +0000",
+            "comment": "Minor change to script to copy build.xml"
+        },
+        {
+            "c_hash": "aaa13e5f",
+            "date": "2006-09-20 05:03:00 +0000",
+            "comment": "some more updates"
+        },
+        {
+            "c_hash": "228a92fc",
+            "date": "2006-09-22 20:05:23 +0000",
+            "comment": "get build working under JDK1.4 for both maven2 and maven 1.x AND use old dom API in tests"
+        },
+        {
+            "c_hash": "42cebb5a",
+            "date": "2006-09-26 15:10:05 +0000",
+            "comment": "Source dirs were incorrect. <setproxy> caused problems when a http.proxyHost or Port weren't set"
+        },
+        {
+            "c_hash": "d423c312",
+            "date": "2006-10-02 03:59:01 +0000",
+            "comment": "Fix for AXIS2-1276 - Confusing Bug when calling webservice: The prefix xml cannot be bound to any namespace other than its usual namespace ...)"
+        },
+        {
+            "c_hash": "7fed7aa7",
+            "date": "2006-10-02 14:25:51 +0000",
+            "comment": "Fixing http://issues.apache.org/jira/browse/AXIS2-1138.. attributeFormDefualt=false"
+        },
+        {
+            "c_hash": "2b24ce06",
+            "date": "2006-10-04 14:55:34 +0000",
+            "comment": "fixing a typo"
+        },
+        {
+            "c_hash": "87639328",
+            "date": "2006-10-06 19:24:16 +0000",
+            "comment": "Fixing the broken build... I checked the build on Maven 1.x and did not notice the build break before commiting... Apologies for that..."
+        },
+        {
+            "c_hash": "61a7c17b",
+            "date": "2006-10-06 22:24:28 +0000",
+            "comment": "standardize the groupId's across projects and for both m1 and m2"
+        },
+        {
+            "c_hash": "c2641dc4",
+            "date": "2006-10-24 13:10:21 +0000",
+            "comment": "Fix for WSCOMMONS-112 - Non-native attributes (extensions) of simpleType and complexType not added to metaInfoMap"
+        },
+        {
+            "c_hash": "534e22b0",
+            "date": "2006-11-07 18:10:58 +0000",
+            "comment": "Fix for WSCOMMONS-120 - XmlSchema.equals(Object) returns a false positive result"
+        },
+        {
+            "c_hash": "456bd94c",
+            "date": "2006-11-13 04:50:28 +0000",
+            "comment": "ste updates for next release 1.2"
+        },
+        {
+            "c_hash": "4200ac3d",
+            "date": "2006-11-13 15:12:28 +0000",
+            "comment": "updating the release note"
+        },
+        {
+            "c_hash": "149ae472",
+            "date": "2007-01-16 22:35:30 +0000",
+            "comment": "Bring pom up-to-date and enable use of continuum without lots of e-mails."
+        },
+        {
+            "c_hash": "cd7c6fb5",
+            "date": "2007-02-23 15:43:30 +0000",
+            "comment": "fix repo"
+        },
+        {
+            "c_hash": "3b02dbfd",
+            "date": "2007-02-23 15:43:59 +0000",
+            "comment": "Fix for WSCOMMONS-149 - SchemaBuilder does not parse all the 'key' and 'keyref' definitions"
+        },
+        {
+            "c_hash": "cea98338",
+            "date": "2007-03-05 21:13:09 +0000",
+            "comment": "1. Adding the change proposed in WSCOMMONS-171 (https://issues.apache.org/jira/browse/WSCOMMONS-171)  I. Added the new set of classes to handle extension  II. Modified the schemaBuilder and schemaCollection to take an extra parameter, the extension registry"
+        },
+        {
+            "c_hash": "d149c3c7",
+            "date": "2007-03-08 21:23:36 +0000",
+            "comment": "if two schemas import each other, we need to prevent the recursion"
+        },
+        {
+            "c_hash": "4bec2370",
+            "date": "2007-03-29 20:46:16 +0000",
+            "comment": "1. Added a special method to load the extension registry from a system property if available. 2. Added a full test case that checks the deserialization of a custom attribute"
+        },
+        {
+            "c_hash": "9a3b25d5",
+            "date": "2007-03-30 01:55:41 +0000",
+            "comment": "1. Moved the custom attribute classes to the attrib package 2. Added new tests and  relevant classes /test xsd for the custom element"
+        },
+        {
+            "c_hash": "e9c9a490",
+            "date": "2007-03-30 02:00:17 +0000",
+            "comment": "1.Fixed the unused imports - No code changes!"
+        },
+        {
+            "c_hash": "a56ef80a",
+            "date": "2007-03-30 04:41:41 +0000",
+            "comment": "1. Changed the serialization from static to instance driven. 2. Fixed the serializer to have proper extension serialization calls 3. Added a test case to check the extension attributes"
+        },
+        {
+            "c_hash": "5fa35b1e",
+            "date": "2007-03-30 05:00:35 +0000",
+            "comment": "1. Added a test case for custom element serialization 2. Changed some of the comments and method names so that things make sense"
+        },
+        {
+            "c_hash": "7e3f6e82",
+            "date": "2007-03-30 05:01:26 +0000",
+            "comment": "1. Optimized the imports - No code changes!!"
+        },
+        {
+            "c_hash": "264debd6",
+            "date": "2007-03-30 17:00:21 +0000",
+            "comment": "1. Fixed a minor issue (changed the ordering of statements). This seems to fix the woden problem"
+        },
+        {
+            "c_hash": "e31abb3d",
+            "date": "2007-04-06 06:45:42 +0000",
+            "comment": "1. Fixed the serialization issue mentioned in  https://issues.apache.org/jira/browse/AXIS2-2457. 2. Added two more test cases to check the problem 3. Fixed the schemaImport null issue   - this should hopfully fix the woden problem"
+        },
+        {
+            "c_hash": "d46f90c5",
+            "date": "2007-04-06 06:58:54 +0000",
+            "comment": "1. Fixed the issues mentioned in https://issues.apache.org/jira/browse/WSCOMMONS-24  - Yet to add formal test cases"
+        },
+        {
+            "c_hash": "04b470c7",
+            "date": "2007-04-06 07:07:26 +0000",
+            "comment": "1. Fixed the test cases to work with the last change"
+        },
+        {
+            "c_hash": "bb9d3731",
+            "date": "2007-04-06 07:14:33 +0000",
+            "comment": "1. Fixed https://issues.apache.org/jira/browse/WSCOMMONS-177  -The id attribute in the element was ignored during the building phase"
+        },
+        {
+            "c_hash": "1598bbd7",
+            "date": "2007-04-06 07:22:13 +0000",
+            "comment": "1. Fixed https://issues.apache.org/jira/browse/WSCOMMONS-102"
+        },
+        {
+            "c_hash": "9bd9637c",
+            "date": "2007-04-06 07:30:32 +0000",
+            "comment": "1. Fixed https://issues.apache.org/jira/browse/WSCOMMONS-124"
+        },
+        {
+            "c_hash": "99c208f9",
+            "date": "2007-04-06 19:08:18 +0000",
+            "comment": "1. Adding the documentation for extensions"
+        },
+        {
+            "c_hash": "20895066",
+            "date": "2007-04-10 20:49:06 +0000",
+            "comment": "Preparing the source tree for a release 1. Added apache licence to the source files missing it 2. updated the release notes"
+        },
+        {
+            "c_hash": "5610535a",
+            "date": "2007-04-11 00:36:35 +0000",
+            "comment": "updated the download.xml"
+        },
+        {
+            "c_hash": "8724e38e",
+            "date": "2007-04-11 01:08:27 +0000",
+            "comment": "Changed the \"2004,2005 The Apache Software Foundation.\" to \"2004,2007 The Apache Software Foundation\" to reflect the change in the year"
+        },
+        {
+            "c_hash": "bf8dc66f",
+            "date": "2007-04-12 17:06:21 +0000",
+            "comment": "1. Updated the assemblies to generate proper zip archives for the release 2. removed the redundant maven 1 build as discussed in the list (the ant build.xml seems to be required for the maven 2 build) 3. Updated the POM file to include the right build version for tagging"
+        },
+        {
+            "c_hash": "24aff997",
+            "date": "2007-04-12 17:09:57 +0000",
+            "comment": "reverting back to the snapshot in trunk"
+        },
+        {
+            "c_hash": "189c89e6",
+            "date": "2007-05-22 04:55:23 +0000",
+            "comment": "Merging changes made in the 1.3.1 branch"
+        },
+        {
+            "c_hash": "1f31aa90",
+            "date": "2007-05-22 05:31:51 +0000",
+            "comment": "1. fixed Jira issue 205 (https://issues.apache.org/jira/browse/WSCOMMONS-205)  I. changed the string name attribute to qname  II. fixed serializers and deserializers  III. modified the test cases slightly to accomodate the change"
+        },
+        {
+            "c_hash": "be428e23",
+            "date": "2007-05-22 05:46:51 +0000",
+            "comment": "1. fixed Jira issue 204 (https://issues.apache.org/jira/browse/WSCOMMONS-204)   * need to add a test case to verify this"
+        },
+        {
+            "c_hash": "86530ebf",
+            "date": "2007-05-22 05:48:03 +0000",
+            "comment": "1. Changed the version to snapshot"
+        },
+        {
+            "c_hash": "9d85433c",
+            "date": "2007-05-22 06:29:13 +0000",
+            "comment": "1. fixed the Jira 73 (https://issues.apache.org/jira/browse/WSCOMMONS-73)  i. added code to populate the min/max occurences in relevant particles  ii. Added / modified the test cases to test it"
+        },
+        {
+            "c_hash": "298dc025",
+            "date": "2007-06-01 16:25:37 +0000",
+            "comment": "try a couple of more switches to pretty print the xml under different jdk's"
+        },
+        {
+            "c_hash": "aeefdb8a",
+            "date": "2007-06-15 20:38:23 +0000",
+            "comment": "1. Adding a new set of methods to  I. control the serialization parmeters  II. use the input encoding (if present) as the default output"
+        },
+        {
+            "c_hash": "f79abdd3",
+            "date": "2007-06-15 23:43:19 +0000",
+            "comment": "1. Fixing a few minor issues   I. Moved the block of setting the default encoding so that one can override it by passing a specific policy  II. Fixed a few other places where the input encoding needs to be passed on to the schema object"
+        },
+        {
+            "c_hash": "7c210999",
+            "date": "2007-06-22 03:31:23 +0000",
+            "comment": "Get XmlSchema to work somewhat better in DOM2 (See Stack trace in AXIS2-2814)"
+        },
+        {
+            "c_hash": "eb9f3cd2",
+            "date": "2007-06-29 03:35:20 +0000",
+            "comment": "Fix license header as per our legal policy -  http://www.apache.org/legal/src-headers.html#headers"
+        },
+        {
+            "c_hash": "6bb9dc30",
+            "date": "2007-07-02 06:02:58 +0000",
+            "comment": "1.Adding  a new test case to test the WSCOMMONS-204"
+        },
+        {
+            "c_hash": "a673caf8",
+            "date": "2007-07-02 07:44:50 +0000",
+            "comment": "1. Fixed issue WSCOMMONS-153 2. Added a test case for the appinfo serialization"
+        },
+        {
+            "c_hash": "d7a6bacb",
+            "date": "2007-07-04 21:18:26 +0000",
+            "comment": "1. Adding the extensibility element processing to the attribute building"
+        },
+        {
+            "c_hash": "d24b7a33",
+            "date": "2007-07-15 10:44:48 +0000",
+            "comment": "version"
+        },
+        {
+            "c_hash": "04e65090",
+            "date": "2007-07-15 10:57:57 +0000",
+            "comment": "I'm very sorry that  I've accidently  commited this line. I've reverted the commit. I'll make sure that this kind of a mistake will naver happend again. Sorry"
+        },
+        {
+            "c_hash": "eabd6189",
+            "date": "2007-07-25 06:07:19 +0000",
+            "comment": "1. Updating documentation for latest release 2. updating version numbers in the pom for branching/tagging"
+        },
+        {
+            "c_hash": "d128929d",
+            "date": "2007-07-28 18:21:21 +0000",
+            "comment": "1. removing the release specific version number that might have messed up the jars in the resync repo"
+        },
+        {
+            "c_hash": "1804adbf",
+            "date": "2007-10-22 13:58:45 +0000",
+            "comment": "1. Syncing the branch doc changes 2. Added the fix for Jira 259 - Still need a test case !"
+        },
+        {
+            "c_hash": "3c7790ea",
+            "date": "2007-10-22 14:13:57 +0000",
+            "comment": "1. Fixing issue  WSCOMMONS-260. The problem seemed to be a logical expression error in the prevoius code but just to be on the safe side added the encoding flag to the streamwriter as well (according to the suggestion made by Grzegorz - the reporter)"
+        },
+        {
+            "c_hash": "730d4041",
+            "date": "2007-10-22 15:46:08 +0000",
+            "comment": "Fixing WSCOMMONS-261. Need a test case but the code modifications did not break any existing tests"
+        },
+        {
+            "c_hash": "19cfcd64",
+            "date": "2007-10-22 15:46:49 +0000",
+            "comment": "oops - checked in a System.out by mistake"
+        },
+        {
+            "c_hash": "3c4a881d",
+            "date": "2007-10-22 16:14:03 +0000",
+            "comment": "1. Added a new feature to support the tuscany community (issue WSCOMMONS-264). Now there is a knownSchema map which will be used to decode schemas without their schema locations"
+        },
+        {
+            "c_hash": "37e05acd",
+            "date": "2007-10-22 16:21:15 +0000",
+            "comment": "1. Fixed the second case in issue 264."
+        },
+        {
+            "c_hash": "0b4ca1d5",
+            "date": "2007-10-22 16:27:55 +0000",
+            "comment": "1. Fixed issue 228. A long overdue correction"
+        },
+        {
+            "c_hash": "97aefb8b",
+            "date": "2007-10-22 18:43:44 +0000",
+            "comment": "Adding a test case for issue 261"
+        },
+        {
+            "c_hash": "33401378",
+            "date": "2007-10-22 20:14:12 +0000",
+            "comment": "1. Added a non UTF xml file and tested the reading and writing of that file. This file is of euc-jp (Japanese characters) encoding"
+        },
+        {
+            "c_hash": "d08d6f57",
+            "date": "2007-10-22 20:19:03 +0000",
+            "comment": "1.removing an unncessary system.out"
+        },
+        {
+            "c_hash": "6f6f1ea7",
+            "date": "2007-10-23 02:35:52 +0000",
+            "comment": "1. Adding a test case for the issue WS-Commons 208. it has been fixed but a test case was pending"
+        },
+        {
+            "c_hash": "c47a1e32",
+            "date": "2007-10-23 02:58:27 +0000",
+            "comment": "1.Added the functionality to pick types and elements from imported schemas (WSCOMMONS-225) 2. Modified the existing import test to test this functionality"
+        },
+        {
+            "c_hash": "321acd2d",
+            "date": "2007-10-23 03:05:52 +0000",
+            "comment": "1. The earlier commit made some important tests to fail. Fixing it now"
+        },
+        {
+            "c_hash": "64f6469b",
+            "date": "2007-10-23 03:42:51 +0000",
+            "comment": "1. Added a new test case to test   WSCOMMONS-259 2. Renamed an existing test"
+        },
+        {
+            "c_hash": "304d4fd1",
+            "date": "2007-10-23 03:43:35 +0000",
+            "comment": "1. correcting a minor mistake"
+        },
+        {
+            "c_hash": "406d4d40",
+            "date": "2007-10-24 15:25:35 +0000",
+            "comment": "WSCOMMONS-266 Contributor:Brian Murphy Change to the pom to explicitly specify the TransformerFactory via a System Property. This is necessary because the default TransformerFactory changes depending on the version of the JDK and JDK vendor.  This change helps stablize the tests and provides guidance for real world users who run into similar issues."
+        },
+        {
+            "c_hash": "38268996",
+            "date": "2007-10-24 19:16:11 +0000",
+            "comment": "Previous commit broke the XmlSchema build on Sun derived 1.5 vms (Solaris and OS X at least) as the xalan classes have been repackaged. This change reverts the default behaviour. To run the build pointing to the classes packaged in an IBM JVM, run the build with a -DisIBM=true For info about the sun renaming see http://java.sun.com/j2se/1.5.0/docs/guide/xml/jaxp/JAXP-Compatibility_150.html#packageNames"
+        },
+        {
+            "c_hash": "7ea68ddc",
+            "date": "2007-10-25 20:25:38 +0000",
+            "comment": "Formatting changes, plus a swap of args to make test slightly clearer."
+        },
+        {
+            "c_hash": "4eba2562",
+            "date": "2007-10-29 20:57:11 +0000",
+            "comment": "Added NPE guard.  The schema reference may be null, so check it is not before using it to get an element.  The original code was added under revision 587375. This NPE was encountered by Axis2 ADB-Codegen tests."
+        },
+        {
+            "c_hash": "a15c30ab",
+            "date": "2007-11-02 00:34:16 +0000",
+            "comment": "WSCOMMONS-270: add some toSting() methods"
+        },
+        {
+            "c_hash": "a3022153",
+            "date": "2007-12-11 14:18:42 +0000",
+            "comment": "added the branch methods to the trunk"
+        },
+        {
+            "c_hash": "acaf0322",
+            "date": "2007-12-25 20:40:01 +0000",
+            "comment": "Fix for JDK1.4 breakage reported here - http://marc.info/?l=axis-dev&m=119858333309960&w=2"
+        },
+        {
+            "c_hash": "3f81f1e8",
+            "date": "2007-12-26 00:50:35 +0000",
+            "comment": "remove unnecessary import - breaks under JDK1.4"
+        },
+        {
+            "c_hash": "69e848b6",
+            "date": "2007-12-26 01:58:17 +0000",
+            "comment": "Skip a few tests under JDK1.4"
+        },
+        {
+            "c_hash": "3a4d6a67",
+            "date": "2008-01-16 14:29:42 +0000",
+            "comment": "Fix build break under IBM JDK 6"
+        },
+        {
+            "c_hash": "1511a832",
+            "date": "2008-01-16 16:14:53 +0000",
+            "comment": "Better test for DOM3 interfaces. works on both IBM and Sun 1.4 JDK's"
+        },
+        {
+            "c_hash": "502eae63",
+            "date": "2008-01-18 17:35:23 +0000",
+            "comment": "some defensive code to prevent NPE (and fix build break)"
+        },
+        {
+            "c_hash": "d9bff94d",
+            "date": "2008-01-28 18:32:03 +0000",
+            "comment": "update dependencies"
+        },
+        {
+            "c_hash": "8396f340",
+            "date": "2008-01-29 04:16:48 +0000",
+            "comment": "better test for IBM JDK. no need to specify isIBM on the command line"
+        },
+        {
+            "c_hash": "4ea3a9ad",
+            "date": "2008-01-29 19:37:27 +0000",
+            "comment": "adding xalan explicitly for IBM JDK's"
+        },
+        {
+            "c_hash": "0f72c1ee",
+            "date": "2008-02-26 13:56:32 +0000",
+            "comment": "serializing the complex type annotations"
+        },
+        {
+            "c_hash": "24450048",
+            "date": "2008-02-28 11:00:10 +0000",
+            "comment": "fixing https://issues.apache.org/jira/browse/WSCOMMONS-273 in the trunk which is fixed in the branch but due to some reason which is not there"
+        },
+        {
+            "c_hash": "dde98b54",
+            "date": "2008-03-07 03:31:11 +0000",
+            "comment": "remove m1 plugin. add osgi manifest information"
+        },
+        {
+            "c_hash": "be616a70",
+            "date": "2008-03-16 04:10:51 +0000",
+            "comment": "annotation element should comes as the first child"
+        },
+        {
+            "c_hash": "c127fc5a",
+            "date": "2008-03-22 08:46:10 +0000",
+            "comment": "integrating the branch changes with the trunk. Some files (XmlSchema, SchemaBuilder) did not show the diff right in eclipse so I had to manually see what is different so not sure whether Ive missed something"
+        },
+        {
+            "c_hash": "6a23ad3a",
+            "date": "2008-03-22 13:18:45 +0000",
+            "comment": "looks like this got missed"
+        },
+        {
+            "c_hash": "67c62f8f",
+            "date": "2008-03-22 16:39:52 +0000",
+            "comment": "1.Fixing Jira 310 (still need a test case to verify)"
+        },
+        {
+            "c_hash": "cc28a1ad",
+            "date": "2008-03-22 17:49:04 +0000",
+            "comment": "1. Fixed the issue 309"
+        },
+        {
+            "c_hash": "ef9e1f69",
+            "date": "2008-03-22 18:02:30 +0000",
+            "comment": "fix typo"
+        },
+        {
+            "c_hash": "31c97ac6",
+            "date": "2008-03-22 20:36:26 +0000",
+            "comment": "1. Added a test case to test Jira 309"
+        },
+        {
+            "c_hash": "87f9d83c",
+            "date": "2008-03-22 21:25:47 +0000",
+            "comment": "1. Test case for issue 310"
+        },
+        {
+            "c_hash": "ed128634",
+            "date": "2008-03-22 21:48:34 +0000",
+            "comment": "1. fixed issue 311. Need to add a test case"
+        },
+        {
+            "c_hash": "968d9eef",
+            "date": "2008-03-24 17:06:10 +0000",
+            "comment": "1. Fixed some issues in the build script"
+        },
+        {
+            "c_hash": "fc1f92f0",
+            "date": "2008-03-24 17:46:01 +0000",
+            "comment": "1. Added a test case to test the issue 311. The test passes but I am not convinced whether the functionality is rightful - Hence till I further investigate the issue I will keep the issue open"
+        },
+        {
+            "c_hash": "7dbc001e",
+            "date": "2008-03-24 18:05:08 +0000",
+            "comment": "1. Adding  a comment about redefine handling  This seems to be an issue we need to discuss in the mailing list. I'm thinking that the behavior of the schema object model should not be validating and if the redefine is missing the parent then the object model should not be generating faults. However it would be convenient (just as in the case of getElement/Type) to have at least some utility methods that allows one to search through the full import/include/redefine hierarchy."
+        },
+        {
+            "c_hash": "71ca5032",
+            "date": "2008-03-25 21:39:34 +0000",
+            "comment": "work properly when java2 security is enabled"
+        },
+        {
+            "c_hash": "70964859",
+            "date": "2008-04-04 02:46:52 +0000",
+            "comment": "get rid of the maven-bundle-plugin. use an explicit manifest"
+        },
+        {
+            "c_hash": "358fe194",
+            "date": "2008-04-04 03:04:38 +0000",
+            "comment": "shorten the bundle name a bit"
+        },
+        {
+            "c_hash": "746ab12a",
+            "date": "2008-04-10 03:02:35 +0000",
+            "comment": "remove inconsistent line endings *ONLY* no other changes"
+        },
+        {
+            "c_hash": "a1703ae2",
+            "date": "2008-04-10 03:35:05 +0000",
+            "comment": "prep for 1.4.1"
+        },
+        {
+            "c_hash": "c9f25809",
+            "date": "2008-04-10 03:36:41 +0000",
+            "comment": "prep for 1.4.1"
+        },
+        {
+            "c_hash": "926ec40f",
+            "date": "2008-04-15 15:34:38 +0000",
+            "comment": "Fix Regression found by woden folks - http://markmail.org/message/zvmjz2jrxegsrvfz"
+        },
+        {
+            "c_hash": "33bf3c07",
+            "date": "2008-04-17 12:53:46 +0000",
+            "comment": "Prep for XmlSchema 1.4.2"
+        },
+        {
+            "c_hash": "7c2429f8",
+            "date": "2008-04-22 20:59:57 +0000",
+            "comment": "Adding missing \"The\" (thanks to Dan Kulp)"
+        },
+        {
+            "c_hash": "70c3836c",
+            "date": "2008-05-29 12:38:47 +0000",
+            "comment": "fix for WSCOMMONS-352 - legal/stax-api-LICENSE.txt should be deleted"
+        },
+        {
+            "c_hash": "94e60772",
+            "date": "2008-08-27 19:29:39 +0000",
+            "comment": "switch off unique versions in the snapshot repo"
+        },
+        {
+            "c_hash": "3c598e5d",
+            "date": "2008-09-25 16:41:11 +0000",
+            "comment": "WSCOMMONS-391:  allow caching of XmlSchema objects without changing default behavior of SchemaBuilder"
+        },
+        {
+            "c_hash": "f8968775",
+            "date": "2008-10-07 15:24:20 +0000",
+            "comment": "make static schema cache thread-safe"
+        },
+        {
+            "c_hash": "347412ee",
+            "date": "2008-10-07 16:39:14 +0000",
+            "comment": "fix previous commit in 702516.  Sorry, I introduced bad code in 702516.  This commit fixes that."
+        },
+        {
+            "c_hash": "0be9ecad",
+            "date": "2008-11-15 01:37:08 +0000",
+            "comment": "Initialized merge tracking via \"svnmerge\" with revisions \"1-714100\" from https://svn.apache.org/repos/asf/webservices/commons/branches/modules/XmlSchema/1_4_X_BRANCH"
+        },
+        {
+            "c_hash": "02873c02",
+            "date": "2008-11-15 01:39:01 +0000",
+            "comment": "Merge some fixes forward from the 1.4.x branch, mostly to show that it can be done."
+        },
+        {
+            "c_hash": "041d189e",
+            "date": "2008-11-16 03:14:02 +0000",
+            "comment": "Merged revisions 717963,717966-717968 via svnmerge from https://svn.apache.org/repos/asf/webservices/commons/branches/modules/XmlSchema/1_4_X_BRANCH"
+        },
+        {
+            "c_hash": "4fcad7aa",
+            "date": "2008-11-17 16:59:11 +0000",
+            "comment": "port fix in 1.4 branch 718274 to trunk"
+        },
+        {
+            "c_hash": "e411bce1",
+            "date": "2008-11-17 18:42:40 +0000",
+            "comment": "Merged revisions 717973,718061,718067,718092,718274 via svnmerge from https://svn.apache.org/repos/asf/webservices/commons/branches/modules/XmlSchema/1_4_X_BRANCH"
+        },
+        {
+            "c_hash": "0b151db3",
+            "date": "2008-11-17 19:42:30 +0000",
+            "comment": "Merged revisions 718331,718337 via svnmerge from https://svn.apache.org/repos/asf/webservices/commons/branches/modules/XmlSchema/1_4_X_BRANCH"
+        },
+        {
+            "c_hash": "67159eb0",
+            "date": "2008-11-17 19:47:16 +0000",
+            "comment": "Merged revisions 718348 via svnmerge from https://svn.apache.org/repos/asf/webservices/commons/branches/modules/XmlSchema/1_4_X_BRANCH"
+        },
+        {
+            "c_hash": "64dd460b",
+            "date": "2008-12-05 16:25:40 +0000",
+            "comment": "Add a link to Confluence."
+        },
+        {
+            "c_hash": "74ff0a17",
+            "date": "2008-12-06 01:09:01 +0000",
+            "comment": "Merged revisions 722074,722175,722227,722306,722310-722311,722313-722314,722316,723379,723383,723387,723390,723923,723930,723932 via svnmerge from https://svn.apache.org/repos/asf/webservices/commons/branches/modules/XmlSchema/1_4_X_BRANCH"
+        },
+        {
+            "c_hash": "f91caee7",
+            "date": "2008-12-14 21:42:52 +0000",
+            "comment": "Merged revisions 725681 via svnmerge from https://svn.apache.org/repos/asf/webservices/commons/branches/modules/XmlSchema/1_4_X_BRANCH"
+        },
+        {
+            "c_hash": "63b1142e",
+            "date": "2008-12-14 21:49:52 +0000",
+            "comment": "I think this completes a merge that I was in the middle of when I lost connectivity."
+        },
+        {
+            "c_hash": "4a61c9a7",
+            "date": "2008-12-14 22:00:35 +0000",
+            "comment": "Reinitialize merge tracking. What a pain."
+        },
+        {
+            "c_hash": "d8bdcfac",
+            "date": "2008-12-14 22:12:07 +0000",
+            "comment": "Try to patch the merge state."
+        },
+        {
+            "c_hash": "0cebd3ee",
+            "date": "2008-12-14 22:13:45 +0000",
+            "comment": "Try again to get merge into shape."
+        },
+        {
+            "c_hash": "f865dd94",
+            "date": "2008-12-14 22:27:37 +0000",
+            "comment": "Merged revisions 726532 via svnmerge from https://svn.apache.org/repos/asf/webservices/commons/branches/modules/XmlSchema/1_4_X_BRANCH"
+        },
+        {
+            "c_hash": "83670d34",
+            "date": "2008-12-14 22:40:24 +0000",
+            "comment": "Fix trunk POM to anticipate 2.0."
+        },
+        {
+            "c_hash": "9573bb38",
+            "date": "2008-12-14 23:18:54 +0000",
+            "comment": "Start moving on 2.0. Set up a set of PMD and Checkstyle options. Do an initial push of all of the code to respect them. mvn install doesn't run them yet, because even with this there are a lot of bits of code to clean up before they run cleanly."
+        },
+        {
+            "c_hash": "9f50b451",
+            "date": "2008-12-17 02:39:50 +0000",
+            "comment": "A very large set of changes to comply with checkstyle, PMD, and Java 1.5."
+        },
+        {
+            "c_hash": "d4fc5868",
+            "date": "2008-12-17 02:55:13 +0000",
+            "comment": "Fix bad import."
+        },
+        {
+            "c_hash": "9058b249",
+            "date": "2008-12-17 07:45:31 +0000",
+            "comment": "Persuant to LEGAL-40, just check in the w3c test suite and avoid the need to retrieve it."
+        },
+        {
+            "c_hash": "8bc96c99",
+            "date": "2008-12-17 16:13:58 +0000",
+            "comment": "Finish checking in the giant W3C test suite."
+        },
+        {
+            "c_hash": "07abdc6f",
+            "date": "2008-12-20 16:52:17 +0000",
+            "comment": "Update tests to Junit 4."
+        },
+        {
+            "c_hash": "8599f734",
+            "date": "2008-12-20 16:55:41 +0000",
+            "comment": "Update tests to Junit 4."
+        },
+        {
+            "c_hash": "9409ad5f",
+            "date": "2008-12-20 16:57:03 +0000",
+            "comment": "Update tests to Junit 4."
+        },
+        {
+            "c_hash": "0b69a137",
+            "date": "2008-12-20 19:45:40 +0000",
+            "comment": "Make the NIST tests part of the default maven build. Oddly, in spite of comments to the contrary, they pass."
+        },
+        {
+            "c_hash": "1181dbe3",
+            "date": "2008-12-20 19:49:30 +0000",
+            "comment": "Fix some spelling mistakes."
+        },
+        {
+            "c_hash": "4c2b9f2f",
+            "date": "2008-12-21 00:32:31 +0000",
+            "comment": "Use Java5 enums. Eliminate some dead code for never-implemented features, leaving thus space for some future effort in the same area."
+        },
+        {
+            "c_hash": "04f042c5",
+            "date": "2008-12-21 02:18:42 +0000",
+            "comment": "Continue to clean up."
+        },
+        {
+            "c_hash": "0ae73199",
+            "date": "2009-01-07 12:12:33 +0000",
+            "comment": "Begin to introduce 'XmlSchemaNamed' to centralize processing of named objects. Make preparations for eventual removal of XmlSchemaObjectCollection in favor of plain-old-collections."
+        },
+        {
+            "c_hash": "3d94c212",
+            "date": "2009-01-07 12:30:39 +0000",
+            "comment": "Rethink previous commit to recognize role of naming in the XmlSchema scheme of things."
+        },
+        {
+            "c_hash": "c1361b13",
+            "date": "2009-01-07 18:31:09 +0000",
+            "comment": "More work on things-with-names. Distinguish the 'name on the wire' of attributes and elements from the 'QName in the collection'."
+        },
+        {
+            "c_hash": "6a893ecd",
+            "date": "2009-01-07 19:07:48 +0000",
+            "comment": "Notations."
+        },
+        {
+            "c_hash": "34b59777",
+            "date": "2009-01-07 19:51:35 +0000",
+            "comment": "Fix eclipse setup Workaround \"bug\" in command line javac (works fine in eclipse javac)"
+        },
+        {
+            "c_hash": "1fa89f36",
+            "date": "2009-01-07 20:04:05 +0000",
+            "comment": "Finish making all the named objects consistent."
+        },
+        {
+            "c_hash": "767c3d27",
+            "date": "2009-01-07 20:12:22 +0000",
+            "comment": "Make more things private instead of default."
+        },
+        {
+            "c_hash": "774c795a",
+            "date": "2009-01-07 21:51:53 +0000",
+            "comment": "Move the <element> to use the new ref discipline."
+        },
+        {
+            "c_hash": "a3d6c58d",
+            "date": "2009-01-07 21:53:09 +0000",
+            "comment": "Whoops, forgot a checkin."
+        },
+        {
+            "c_hash": "7519e251",
+            "date": "2009-01-07 22:00:06 +0000",
+            "comment": "Move the attribute to the ref= discipline."
+        },
+        {
+            "c_hash": "01206476",
+            "date": "2009-01-07 22:10:40 +0000",
+            "comment": "Remove the obsolete two-argument toString methods. These created XML, but not useful or valid XML, since they lacked the context to deal with ref= and the like."
+        },
+        {
+            "c_hash": "82b4071d",
+            "date": "2009-02-05 22:23:57 +0000",
+            "comment": "Merged revisions 741242 via svnmerge from https://svn.apache.org/repos/asf/webservices/commons/branches/modules/XmlSchema/1_4_X_BRANCH"
+        },
+        {
+            "c_hash": "41c7a051",
+            "date": "2009-03-23 17:14:56 +0000",
+            "comment": "Update initCache and clearCache to account for multi-threaded case. Essentially, one thread could change the static 'resolvedSchema' variable from null to non-null after another thread found the value to be null."
+        },
+        {
+            "c_hash": "16069d55",
+            "date": "2009-04-05 10:51:05 +0000",
+            "comment": "Neaten up the SchemaBuilder per-thread cache code."
+        },
+        {
+            "c_hash": "31b13163",
+            "date": "2009-04-05 11:13:15 +0000",
+            "comment": "Fix some checkstyle issues."
+        },
+        {
+            "c_hash": "e94e9be8",
+            "date": "2009-04-05 11:16:18 +0000",
+            "comment": "Keep trying to create this."
+        },
+        {
+            "c_hash": "fabc0867",
+            "date": "2009-04-05 11:17:11 +0000",
+            "comment": "Complete the confused process of moving this test into the 'right' package."
+        },
+        {
+            "c_hash": "f4be19e8",
+            "date": "2009-04-05 11:25:21 +0000",
+            "comment": "turn on checkstyle in the build."
+        },
+        {
+            "c_hash": "7ad77891",
+            "date": "2009-04-05 13:17:01 +0000",
+            "comment": "Move the w3c test cases and make maven arrangements to avoid copying all of them, put them in the classpath in place."
+        },
+        {
+            "c_hash": "75802dd6",
+            "date": "2009-04-07 01:02:10 +0000",
+            "comment": " \t WSCOMMONS-458"
+        },
+        {
+            "c_hash": "ccc7f421",
+            "date": "2009-04-07 01:36:35 +0000",
+            "comment": "WSCOMMONS-430, WSCOMMONS-458 for Attribute Groups."
+        },
+        {
+            "c_hash": "cd4a7fd4",
+            "date": "2009-04-07 01:38:28 +0000",
+            "comment": "Move attribute groups to 'private'."
+        },
+        {
+            "c_hash": "b464a845",
+            "date": "2009-04-07 01:54:22 +0000",
+            "comment": "WSCOMMONS-458, WSCOMMONS-430 for attributes."
+        },
+        {
+            "c_hash": "96337f6a",
+            "date": "2009-04-08 16:55:55 +0000",
+            "comment": "Refactoring on the Element element."
+        },
+        {
+            "c_hash": "5d7c4a30",
+            "date": "2009-04-08 17:11:52 +0000",
+            "comment": "XmlSchemaGroup refactoring."
+        },
+        {
+            "c_hash": "f3c05980",
+            "date": "2009-04-09 13:06:28 +0000",
+            "comment": "Continued refactoring and cleanup. Remove dead concept of validation and compilation."
+        },
+        {
+            "c_hash": "b3689db9",
+            "date": "2009-04-10 20:40:06 +0000",
+            "comment": "Merged revisions 763303 via svnmerge from https://svn.apache.org/repos/asf/webservices/commons/branches/modules/XmlSchema/1_4_X_BRANCH"
+        },
+        {
+            "c_hash": "6584a878",
+            "date": "2009-04-10 20:45:22 +0000",
+            "comment": "Blocked revisions 747249,747252,747254-747255,747257,748230,748235,748237 via svnmerge"
+        },
+        {
+            "c_hash": "d185d7f2",
+            "date": "2009-04-11 22:01:06 +0000",
+            "comment": "Merge Dan's WSCOMMONS-460 fix forward."
+        },
+        {
+            "c_hash": "5642a336",
+            "date": "2009-04-13 01:10:39 +0000",
+            "comment": "Change XmlSchemaAnnotation to use List<> instead of XmlSchemaCollection. Introduce common parent class for appInfo and documentation."
+        },
+        {
+            "c_hash": "4240e73b",
+            "date": "2009-04-13 02:02:28 +0000",
+            "comment": "Keep chipping away at the use of XmlSchemaObjectCollection."
+        },
+        {
+            "c_hash": "9c549dd9",
+            "date": "2009-04-17 13:51:43 +0000",
+            "comment": "WSCOMMONS-463"
+        },
+        {
+            "c_hash": "ba3fc560",
+            "date": "2009-04-19 01:15:06 +0000",
+            "comment": "merge fix to WSCOMMONS-378 to trunk."
+        },
+        {
+            "c_hash": "8aff28b9",
+            "date": "2009-08-21 13:27:22 +0000",
+            "comment": "Fix for the following stack trace:"
+        },
+        {
+            "c_hash": "a9aca9ef",
+            "date": "2009-11-07 14:43:58 +0000",
+            "comment": "Remove another use of XmlSchemaObjectCollection, and fix a typo or two."
+        },
+        {
+            "c_hash": "099aacd8",
+            "date": "2009-11-07 18:59:25 +0000",
+            "comment": "Modernization on Redefine and Element."
+        },
+        {
+            "c_hash": "15ebb00f",
+            "date": "2009-11-07 19:09:00 +0000",
+            "comment": "Facets changed to collection."
+        },
+        {
+            "c_hash": "758ab975",
+            "date": "2009-11-07 19:15:33 +0000",
+            "comment": "SimpleContentRestriction modernization."
+        },
+        {
+            "c_hash": "423f4160",
+            "date": "2009-11-07 19:53:16 +0000",
+            "comment": "XmlSchemaIdentityConstraint modernization."
+        },
+        {
+            "c_hash": "9df33b21",
+            "date": "2009-11-07 20:06:09 +0000",
+            "comment": "XmlSchemaComplexType modernization. Add class to capture common use of Attribute and AttributeGroupRef."
+        },
+        {
+            "c_hash": "754d3578",
+            "date": "2009-11-07 20:10:08 +0000",
+            "comment": "XmlSchemaComplexContentRestriction modernization."
+        },
+        {
+            "c_hash": "5ff3f62f",
+            "date": "2009-11-07 20:18:02 +0000",
+            "comment": "XmlSchemaComplexContentExtension modernization."
+        },
+        {
+            "c_hash": "32fcd2e2",
+            "date": "2009-11-07 20:18:13 +0000",
+            "comment": "Remove types no longer needed."
+        },
+        {
+            "c_hash": "47514079",
+            "date": "2009-11-07 20:18:24 +0000",
+            "comment": "Remove the ObjectTable, and the dead code for 'attribute uses' in a complex type."
+        },
+        {
+            "c_hash": "4eed73d0",
+            "date": "2009-11-17 23:16:59 +0000",
+            "comment": "Set up nexus for snapshots."
+        },
+        {
+            "c_hash": "de2d1e15",
+            "date": "2009-11-18 02:38:58 +0000",
+            "comment": "turn off forking to avoid running out of memory."
+        },
+        {
+            "c_hash": "94350cb9",
+            "date": "2010-09-07 16:09:41 +0000",
+            "comment": "Merged revisions 993403 via svnmerge from https://svn.apache.org/repos/asf/webservices/commons/branches/modules/XmlSchema/1_4_X_BRANCH"
+        },
+        {
+            "c_hash": "3a270305",
+            "date": "2010-10-11 16:59:48 +0000",
+            "comment": "fix simple content restriction to store list of more descriptive type"
+        },
+        {
+            "c_hash": "cb5b2a12",
+            "date": "2010-10-11 17:35:09 +0000",
+            "comment": "Some missing public modifiers"
+        },
+        {
+            "c_hash": "ce5dc47a",
+            "date": "2010-10-12 00:49:04 +0000",
+            "comment": "Flush some warnings."
+        },
+        {
+            "c_hash": "72cd0c15",
+            "date": "2010-10-12 11:33:22 +0000",
+            "comment": "Fix attribute serialization of the form attribute"
+        },
+        {
+            "c_hash": "1efeb155",
+            "date": "2010-10-12 11:37:23 +0000",
+            "comment": "add missing convenience method"
+        },
+        {
+            "c_hash": "c1023943",
+            "date": "2010-10-12 23:05:13 +0000",
+            "comment": "If a ref= has no target, don't try to resolve it"
+        },
+        {
+            "c_hash": "71d225c7",
+            "date": "2010-10-13 01:00:35 +0000",
+            "comment": "Add an interface to give more commonality to the global items with names and ref="
+        },
+        {
+            "c_hash": "08eb676f",
+            "date": "2010-10-13 18:33:07 +0000",
+            "comment": "Merged revisions 998751 via svnmerge from https://svn.apache.org/repos/asf/webservices/commons/branches/modules/XmlSchema/1_4_X_BRANCH"
+        },
+        {
+            "c_hash": "f82de9d4",
+            "date": "2010-10-13 18:34:09 +0000",
+            "comment": "Using the existing schema that the import is added to as the schema is wrong and is producing a circular code path during serializing.   Need to talk to Benson about what the intent of this was."
+        },
+        {
+            "c_hash": "8d1594a5",
+            "date": "2010-10-13 21:24:07 +0000",
+            "comment": "add comments to clarify the schema slot in XmlSchemaExternal"
+        },
+        {
+            "c_hash": "bf11cba8",
+            "date": "2010-10-13 21:24:18 +0000",
+            "comment": "Add javadoc to emphasize what's going on with element and attribute names, and remove a dud item from the XmlElement."
+        },
+        {
+            "c_hash": "02d249b1",
+            "date": "2010-10-13 22:21:23 +0000",
+            "comment": "Javadoc improvements and some minor API cleanup at the top level"
+        },
+        {
+            "c_hash": "6f3f2215",
+            "date": "2010-10-13 23:14:19 +0000",
+            "comment": "Eliminate the obsolete top-level addType method."
+        },
+        {
+            "c_hash": "3f296f92",
+            "date": "2010-10-14 02:20:05 +0000",
+            "comment": "relax check we can't really get away with imposing"
+        },
+        {
+            "c_hash": "ff0d21f0",
+            "date": "2010-10-15 00:00:18 +0000",
+            "comment": "add a mechanism for catching invalid mods to some of the global collections"
+        },
+        {
+            "c_hash": "aad5378a",
+            "date": "2010-10-18 16:21:14 +0000",
+            "comment": "Turn on the uniqueversion things as Maven3 doesn't support it anymore and it's confusing Nexus' maven-metadata calculation"
+        },
+        {
+            "c_hash": "61816ac1",
+            "date": "2010-10-23 21:52:20 +0000",
+            "comment": "update POM for current versions, update site."
+        },
+        {
+            "c_hash": "9d6e2b95",
+            "date": "2010-10-23 21:58:26 +0000",
+            "comment": "Update to expect maven 3 when creating the site."
+        }
+    ]
+}

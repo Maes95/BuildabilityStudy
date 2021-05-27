@@ -1,0 +1,9 @@
+compile errors:,Compilation
+Compilation failed,Compilation
+Could not resolve all dependencies,Resolution
+Could not resolve,Resolution
+IOException: Server returned HTTP response code: 403 for URL:,Resolution
+Permission denied,Permission denied error
+Javadoc generation failed,Documentation error
+Execution failed for task ':test', Other
+Unable to retrieve secret key, Other

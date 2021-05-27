@@ -1,0 +1,11 @@
+commitID;commit-type;time-to-next-release;commit-message
+bcee7398c769bbd09a3cb551cc1bd40245640f30;BREAKING_CHANGES;2279;First AutoDeploy import on SVN with maven2 POM. git-svn-id: https://svn.apache.org/repos/asf/incubator/kalumet/trunk@1183902 13f79535-47bb-0310-9956-ffa450edef68
+4e810e90d6bb926d90bcce3b9ab03034b22a6b88;BREAKING_FIX;683;Start the refactoring/renaming of AutoDeploy to Kalumet. git-svn-id: https://svn.apache.org/repos/asf/incubator/kalumet/trunk@1187711 13f79535-47bb-0310-9956-ffa450edef68
+9e617dc8306de6f8e9fe436b0dcbe4d6926c8db8;BREAKING_CHANGES;683;Add log and update in the Kalumet model. git-svn-id: https://svn.apache.org/repos/asf/incubator/kalumet/trunk@1187714 13f79535-47bb-0310-9956-ffa450edef68
+d6c18ef95acfb390b1cd54e015dabe656dc8e24c;BREAKING_FIX;682;Update the Kalumet model and add unit tests. git-svn-id: https://svn.apache.org/repos/asf/incubator/kalumet/trunk@1187908 13f79535-47bb-0310-9956-ffa450edef68
+77dd90a8c7f7c00d4f7ddd94db88f8d453e1524b;BREAKING_CHANGES;680;Add new utils classes. Add the WSDD descriptor. git-svn-id: https://svn.apache.org/repos/asf/incubator/kalumet/trunk@1188542 13f79535-47bb-0310-9956-ffa450edef68
+97d3ffdca902a0ab232c4142ed6e6ce47958426e;BREAKING_FIX;676;Add the SQL script updater. git-svn-id: https://svn.apache.org/repos/asf/incubator/kalumet/trunk@1194890 13f79535-47bb-0310-9956-ffa450edef68
+a8b893c491610556434c7279d79ef84d8167b73a;BREAKING_CHANGES;659;Add IBM WebSphere controller. git-svn-id: https://svn.apache.org/repos/asf/incubator/kalumet/trunk@1202123 13f79535-47bb-0310-9956-ffa450edef68
+38e8ec8d4f481b75bb45cfefba840eea3eec745d;BREAKING_FIX;422;prevent infinite loop and NPE with a plexus-utils SNAPSHOT git-svn-id: https://svn.apache.org/repos/asf/incubator/kalumet/trunk@1359198 13f79535-47bb-0310-9956-ffa450edef68
+95170646f75894ddb25182e46f8ad67a09fd1058;BREAKING_CHANGES;2;Update the version on trunk git-svn-id: https://svn.apache.org/repos/asf/incubator/kalumet/trunk@1519370 13f79535-47bb-0310-9956-ffa450edef68
+899505ebcceaa400e3003ba20b52db3e549df22d;BREAKING_FIX;-;Fix version in controller modules git-svn-id: https://svn.apache.org/repos/asf/incubator/kalumet/trunk@1579927 13f79535-47bb-0310-9956-ffa450edef68

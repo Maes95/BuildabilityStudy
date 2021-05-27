@@ -1,0 +1,2 @@
+commitID;commit-type;time-to-next-release;commit-message
+0ef835c67662995f4ce41da8f1bcfde3c6cb0e05;BREAKING_CHANGES;329;More changes related to CONNECTORS-223.  Updated poms, and added resources so that the quick-start can be executed under Maven. git-svn-id: https://svn.apache.org/repos/asf/incubator/lcf/trunk@1148417 13f79535-47bb-0310-9956-ffa450edef68

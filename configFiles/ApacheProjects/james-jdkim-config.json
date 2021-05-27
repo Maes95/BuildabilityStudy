@@ -1,0 +1,628 @@
+{
+    "project": "james-jdkim",
+    "git_url": "https://github.com/apache/james-jdkim.git",
+    "last_commit": "1ddc1383",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "56014e46",
+            "date": "2009-10-06 16:38:39 +0000",
+            "comment": "Project structure for the jDKIM product"
+        },
+        {
+            "c_hash": "7049cf68",
+            "date": "2009-10-06 17:32:31 +0000",
+            "comment": "Main pom for the jDKIM project"
+        },
+        {
+            "c_hash": "fabb9b46",
+            "date": "2009-10-06 17:34:26 +0000",
+            "comment": "Basic structure for the 3 modules"
+        },
+        {
+            "c_hash": "afcac5dc",
+            "date": "2009-10-06 17:45:01 +0000",
+            "comment": "The code for the main library. It needs some refactoring/repackaging but works."
+        },
+        {
+            "c_hash": "95159b7e",
+            "date": "2009-10-06 17:45:41 +0000",
+            "comment": "The code for the main library. It needs some refactoring/repackaging but works."
+        },
+        {
+            "c_hash": "6a5dd3c5",
+            "date": "2009-10-06 17:50:37 +0000",
+            "comment": "Some test for the main library."
+        },
+        {
+            "c_hash": "6aa5514e",
+            "date": "2009-10-06 17:52:22 +0000",
+            "comment": "Some more test for the main library."
+        },
+        {
+            "c_hash": "1cbdc01d",
+            "date": "2009-10-06 17:56:14 +0000",
+            "comment": "First draft of jDKIM mailets: DKIMSign and ConvertTo7Bit."
+        },
+        {
+            "c_hash": "9cae8077",
+            "date": "2009-10-06 18:01:00 +0000",
+            "comment": "I have issues committing here."
+        },
+        {
+            "c_hash": "fb66032b",
+            "date": "2009-10-06 18:02:46 +0000",
+            "comment": "I have issues committing here."
+        },
+        {
+            "c_hash": "7fd60684",
+            "date": "2009-10-06 18:05:50 +0000",
+            "comment": "3rd party dependencies ------------------------- The old hated stage. I hope this will be removed later but I currently don't know what's the current best practice and this works atm. org.apache.james and commons-codec are from the asf maven repository. dnsjava is from maven central (the pom is from me). javax.* jars are CDDL and their poms written by me."
+        },
+        {
+            "c_hash": "2e6d96c6",
+            "date": "2009-10-06 18:08:05 +0000",
+            "comment": "3rd party dependencies ------------------------- The old hated stage. I hope this will be removed later but I currently don't know what's the current best practice and this works atm. org.apache.james and commons-codec are from the asf maven repository. dnsjava is from maven central (the pom is from me). javax.* jars are CDDL and their poms written by me."
+        },
+        {
+            "c_hash": "3e2e2782",
+            "date": "2009-10-06 18:14:20 +0000",
+            "comment": "Added some example message to better coverage the verification code"
+        },
+        {
+            "c_hash": "71f45e9a",
+            "date": "2009-10-06 18:15:40 +0000",
+            "comment": "required empty folders"
+        },
+        {
+            "c_hash": "20abcb97",
+            "date": "2009-10-06 18:21:23 +0000",
+            "comment": "test for the DKIMSign mailet (and the ConvertTo7Bit too)"
+        },
+        {
+            "c_hash": "36699105",
+            "date": "2009-10-06 18:41:37 +0000",
+            "comment": "Stop using Sun's Base64 private classes and move the code to Commons-Codec 1.3"
+        },
+        {
+            "c_hash": "9730bc0b",
+            "date": "2009-10-06 18:53:14 +0000",
+            "comment": "Fix an NPE on missing test resources"
+        },
+        {
+            "c_hash": "12149f08",
+            "date": "2009-10-06 20:26:17 +0000",
+            "comment": "Java 1.4 compatibility: downgraded to mime4j 0.5, some method \"backport\" and some javadoc fixes."
+        },
+        {
+            "c_hash": "803f411a",
+            "date": "2009-10-06 20:43:29 +0000",
+            "comment": "Added some resource to rat exclusions"
+        },
+        {
+            "c_hash": "1316fc70",
+            "date": "2009-10-06 20:51:56 +0000",
+            "comment": "hudson build fixes"
+        },
+        {
+            "c_hash": "33fc4642",
+            "date": "2009-10-08 09:50:37 +0000",
+            "comment": "Upgrade to latest commons-codec (1.4)"
+        },
+        {
+            "c_hash": "ac7fc8a0",
+            "date": "2009-10-08 09:52:22 +0000",
+            "comment": "Upgraded org.apache.james dependencies to latest stable instead of snapshots"
+        },
+        {
+            "c_hash": "cca2adf0",
+            "date": "2009-10-08 09:59:04 +0000",
+            "comment": "Fix DKIMSignTest for using \"Fake\" classes instead of \"Mock\" classes (mailet-base:tests upgrade). m2 build descriptors upgrade for the latest dependencies."
+        },
+        {
+            "c_hash": "5e1a5a8a",
+            "date": "2009-10-08 12:47:54 +0000",
+            "comment": "basic structure for jdkim site (JDKIM-5)"
+        },
+        {
+            "c_hash": "86c14b68",
+            "date": "2009-10-08 12:51:15 +0000",
+            "comment": "Update dnsjava to the just released 2.0.7"
+        },
+        {
+            "c_hash": "b96011ea",
+            "date": "2009-10-08 12:55:28 +0000",
+            "comment": "Changed the artifact names to include \"apache\". Added emma coverage to the website."
+        },
+        {
+            "c_hash": "b6f5c0fd",
+            "date": "2009-10-08 16:00:28 +0000",
+            "comment": "Remove workaround for dnsjava <= 2.0.6 as dnsjava 2.0.7 has been released and included in jDKIM (JDKIM-7)"
+        },
+        {
+            "c_hash": "0155af2c",
+            "date": "2009-10-10 11:53:34 +0000",
+            "comment": "Removed dependency between PublicKeyRecord and SignatureRecord. We treat them as information beans so it is better to not add cross logic."
+        },
+        {
+            "c_hash": "eb6c675c",
+            "date": "2009-10-11 10:19:13 +0000",
+            "comment": "jDKIM refactoring: just looking for a better architecture/organization."
+        },
+        {
+            "c_hash": "26bc2bd1",
+            "date": "2009-10-11 15:17:20 +0000",
+            "comment": "Removed unused methods and more cleanups."
+        },
+        {
+            "c_hash": "ed3ec57b",
+            "date": "2009-10-11 15:35:32 +0000",
+            "comment": "Reformat sources for ASF/James coding style guidelines (mainly spaces for indentation)."
+        },
+        {
+            "c_hash": "bbbe5858",
+            "date": "2009-10-11 15:49:59 +0000",
+            "comment": "commons-logging 1.1.1 for the stage, until we'll remove stage this is required."
+        },
+        {
+            "c_hash": "71632e31",
+            "date": "2009-10-11 16:45:37 +0000",
+            "comment": "fix typo"
+        },
+        {
+            "c_hash": "1effeac0",
+            "date": "2009-10-11 17:00:59 +0000",
+            "comment": "Verified refactoring. Now returns a list of succesfully verified headers and publishes more internals as public methods."
+        },
+        {
+            "c_hash": "df60acb6",
+            "date": "2009-10-11 20:04:57 +0000",
+            "comment": "Refactored SignatureRecord and its Impl to better support signing/verification. It now supports toString representation and \"unsigned\" representation."
+        },
+        {
+            "c_hash": "63857f88",
+            "date": "2009-10-12 07:42:49 +0000",
+            "comment": "Hide crypto exceptions behind PermFailExceptions."
+        },
+        {
+            "c_hash": "3abfbc37",
+            "date": "2009-10-12 08:46:48 +0000",
+            "comment": "*third party dependency*: not-yet-commons-ssl is an apache license 2 licensed artifact. The pom file has been authored by me."
+        },
+        {
+            "c_hash": "257ec55e",
+            "date": "2009-10-12 08:48:03 +0000",
+            "comment": "Switch to PEM format for the privateKey (JDKIM-10) This adds a new runtime dependency on not-yet-commons-ssl."
+        },
+        {
+            "c_hash": "edd7ee4f",
+            "date": "2009-10-12 11:54:06 +0000",
+            "comment": "Minor improvements to not-yet-commons-ssl pom definition (this is the pom I submitted to maven central)"
+        },
+        {
+            "c_hash": "466cdf3a",
+            "date": "2009-10-12 11:56:09 +0000",
+            "comment": "A new assemble module to generate releasable artifacts (JDKIM-12)"
+        },
+        {
+            "c_hash": "ae5fcecc",
+            "date": "2009-10-12 11:56:34 +0000",
+            "comment": "LICENSE and NOTICE for the source distribution (JDKIM-8)"
+        },
+        {
+            "c_hash": "dd451ed2",
+            "date": "2009-10-12 11:57:08 +0000",
+            "comment": "A new assemble module to generate releasable artifacts (JDKIM-12)"
+        },
+        {
+            "c_hash": "b0a32729",
+            "date": "2009-10-12 11:58:02 +0000",
+            "comment": "Changed unchecked IllegalStateException to checked PermFailExceptions in \"apply\" method."
+        },
+        {
+            "c_hash": "2c7c9031",
+            "date": "2009-10-12 11:59:31 +0000",
+            "comment": "Added DOAP generation (also for the generated site) and renamed modules/artifactNames to better support assemble module (JDKIM-11, JDKIM-12)"
+        },
+        {
+            "c_hash": "6973c3d5",
+            "date": "2009-10-12 12:00:58 +0000",
+            "comment": "Added release notes with some technical docs (JDKIM-9)"
+        },
+        {
+            "c_hash": "13dc028d",
+            "date": "2009-10-12 14:39:34 +0000",
+            "comment": "First attempt to make a website for jDKIM, as always an M2 PITA with multimodules and inheritance (JDKIM-5)"
+        },
+        {
+            "c_hash": "1445bcad",
+            "date": "2009-10-12 14:56:24 +0000",
+            "comment": "Trial/error for the maven site plugin and relative urls (JDKIM-5)"
+        },
+        {
+            "c_hash": "dc598aae",
+            "date": "2009-10-12 15:21:42 +0000",
+            "comment": "Trial/error for the maven site plugin and relative urls (JDKIM-5)"
+        },
+        {
+            "c_hash": "31751624",
+            "date": "2009-10-12 15:35:31 +0000",
+            "comment": "Trial/error for the maven site plugin and relative urls (JDKIM-5)"
+        },
+        {
+            "c_hash": "1d8bbd4c",
+            "date": "2009-11-19 16:10:37 +0000",
+            "comment": "Updated parent to the latest snapshot to inherit the latest main menu in the website + fixes in the local modules menu. (JDKIM-5)"
+        },
+        {
+            "c_hash": "19d8d4e8",
+            "date": "2009-11-19 16:40:35 +0000",
+            "comment": "Added the crypto notice to the README.txt (JDKIM-3)"
+        },
+        {
+            "c_hash": "91378616",
+            "date": "2009-11-20 11:18:29 +0000",
+            "comment": "Remove references to stage module as all of our dependencies are now on \"central\" (JDKIM-6)"
+        },
+        {
+            "c_hash": "b3f75369",
+            "date": "2009-11-20 11:27:38 +0000",
+            "comment": "Added a dependencyManagement section to the parent pom."
+        },
+        {
+            "c_hash": "6952e7b7",
+            "date": "2009-11-20 11:31:32 +0000",
+            "comment": "Added another hint about dnsjava 2.0.7 requirement (JDKIM-9)"
+        },
+        {
+            "c_hash": "0c7f04cc",
+            "date": "2009-11-20 11:46:56 +0000",
+            "comment": "Added a dependencyManagement section to the parent pom."
+        },
+        {
+            "c_hash": "0985f237",
+            "date": "2009-11-20 14:43:32 +0000",
+            "comment": "Removed the stage folder as everything should work from central now (JDKIM-6)"
+        },
+        {
+            "c_hash": "6ce3da20",
+            "date": "2010-01-26 14:31:13 +0000",
+            "comment": "Upgraded parent pom to released 1.5 version."
+        },
+        {
+            "c_hash": "833624a0",
+            "date": "2010-01-26 14:35:30 +0000",
+            "comment": "Minor cleanup, removed \"sensitive\" data from tests."
+        },
+        {
+            "c_hash": "754a7a29",
+            "date": "2010-01-26 14:36:16 +0000",
+            "comment": "Fix spacing for the DKIM-Signature field (add a space before, remove a space from the end) (JDKIM-13)"
+        },
+        {
+            "c_hash": "73b1815c",
+            "date": "2010-01-31 11:30:16 +0000",
+            "comment": "Current dev release is 0.2-SNAPSHOT, so the first release will be 0.2, not 0.1"
+        },
+        {
+            "c_hash": "99f5512d",
+            "date": "2010-01-31 11:33:55 +0000",
+            "comment": "We don't ship bnd or junit anymore (no more stage), so remove the references from LICENSE/NOTICE"
+        },
+        {
+            "c_hash": "e416dc13",
+            "date": "2010-01-31 11:43:30 +0000",
+            "comment": "Update plugin versions, junit version, javadoc plugin configuration."
+        },
+        {
+            "c_hash": "d122aaae",
+            "date": "2010-01-31 12:14:36 +0000",
+            "comment": "Forgot the apache license header in the mailet module pom."
+        },
+        {
+            "c_hash": "a1cf3abb",
+            "date": "2010-01-31 12:15:16 +0000",
+            "comment": "Add rat module to the build and exclude \"known\" headerless resources"
+        },
+        {
+            "c_hash": "454c84fa",
+            "date": "2010-01-31 12:15:48 +0000",
+            "comment": "Protect method from NPE on missing signature header"
+        },
+        {
+            "c_hash": "29889e15",
+            "date": "2010-01-31 12:26:16 +0000",
+            "comment": "Added Mail-DKIM perl library tests to our testsuite. Updated NOTICE/LICENSE to reflect the new content. This data is distributed under the Artistic License 1.0 terms (JDKIM-1 / LEGAL-64)"
+        },
+        {
+            "c_hash": "c8e48f44",
+            "date": "2010-03-29 10:02:12 +0000",
+            "comment": "Catch IllegalStateExcetpion and rethrow as PermFailException on Invalid public key."
+        },
+        {
+            "c_hash": "b9ff2e0b",
+            "date": "2010-03-29 10:03:19 +0000",
+            "comment": "Make sure to validate the signature templates and throw PermFailException if an invalid template is provided (otherwise it was throwing NPE later)"
+        },
+        {
+            "c_hash": "9b134856",
+            "date": "2010-03-31 09:57:49 +0000",
+            "comment": "Add related signature identity string to fail exceptions to improve verification results."
+        },
+        {
+            "c_hash": "dbe6d9bc",
+            "date": "2010-04-24 20:58:34 +0000",
+            "comment": "Remove unused mime4j code  from tests"
+        },
+        {
+            "c_hash": "0a850a38",
+            "date": "2010-04-27 07:30:52 +0000",
+            "comment": "Improve \"fail\" message for i= tag domain mismatch d= domain."
+        },
+        {
+            "c_hash": "e2e150ad",
+            "date": "2010-04-27 09:34:33 +0000",
+            "comment": "make sure file based test suites run correctly in every environment (m2 reactor, m2 single module, netbeans, eclipse..)"
+        },
+        {
+            "c_hash": "b651c2ad",
+            "date": "2010-06-08 22:07:01 +0000",
+            "comment": "Added basic support for t= parameter (signature timestamp) in the signature record (JDKIM-15)"
+        },
+        {
+            "c_hash": "9bd4e53a",
+            "date": "2010-06-08 22:13:37 +0000",
+            "comment": "Remove System.outs from default verification method (JDKIM-14)."
+        },
+        {
+            "c_hash": "4aed68cf",
+            "date": "2010-06-13 15:07:35 +0000",
+            "comment": "Updated source code to java 5 using generics (JDKIM-16) Updated mime4j dependency to 0.7-SNAPSHOT to solve some parsing/signing issue (JDKIM-17) Updated log4j/apache-mailet-base to latest available. Updated dnsjava to 2.0.8."
+        },
+        {
+            "c_hash": "0fb67dbc",
+            "date": "2010-06-17 13:11:38 +0000",
+            "comment": "Cleanup plugin versions and rat configuration."
+        },
+        {
+            "c_hash": "e0884ac5",
+            "date": "2010-06-28 20:47:31 +0000",
+            "comment": "Make use of new mime4j (0.7-SNAPSHOT) DOM interfaces (JDKIM-16)"
+        },
+        {
+            "c_hash": "94d2e7e0",
+            "date": "2010-08-24 09:25:56 +0000",
+            "comment": "Make sure to dispose mime4j messages once used (JDKIM-18). Thanks to Ben Aldrich for reporting. Implemented using a verbose dispose method instead of relying on finalizers."
+        },
+        {
+            "c_hash": "bb002e8a",
+            "date": "2010-08-24 09:39:43 +0000",
+            "comment": "Relaxed visibility of key/template in DKIMSign (JDKIM-19)."
+        },
+        {
+            "c_hash": "c63e951d",
+            "date": "2010-09-13 19:42:40 +0000",
+            "comment": "Catch IllegalArgumentExceptions on signature parsing (validation) and throws a permerror with a meaningfull description (DKIM-20)"
+        },
+        {
+            "c_hash": "6a0cf07a",
+            "date": "2010-09-13 19:52:13 +0000",
+            "comment": "Catch IllegalStateException on public key validation (unsupported algorythm and so on) and throws a permerror with a meaningfull description (DKIM-20)"
+        },
+        {
+            "c_hash": "d6adfbc7",
+            "date": "2010-09-15 20:49:09 +0000",
+            "comment": "Minor java2 1.4 => java5 updates (JDKIM-21) Thanks to Ben Aldrich for reporting."
+        },
+        {
+            "c_hash": "208a4405",
+            "date": "2010-09-17 20:59:17 +0000",
+            "comment": "Formatting"
+        },
+        {
+            "c_hash": "ffb54140",
+            "date": "2010-09-17 21:01:53 +0000",
+            "comment": "Return null on no DKIM-Signature found (JDKIM-22) Better error reporting for signatures having signature times in the future."
+        },
+        {
+            "c_hash": "a15b6ffa",
+            "date": "2010-09-17 21:15:15 +0000",
+            "comment": "Remove output from passing tests."
+        },
+        {
+            "c_hash": "05e9c4c1",
+            "date": "2010-09-17 22:53:59 +0000",
+            "comment": "Code formatting (before real code changes)"
+        },
+        {
+            "c_hash": "2399c52b",
+            "date": "2010-09-17 23:22:20 +0000",
+            "comment": "Fix test message encoding (no utf8 preamble in eml files!)"
+        },
+        {
+            "c_hash": "2143b10e",
+            "date": "2010-09-17 23:26:19 +0000",
+            "comment": "Added 2 stage verification to the DKIMVerifier (JDKIM-23) Now BodyHasher is a simpler interface (just getOutputStream exposed) and DKIMVerifier/DKIMSigner cast the BH to the concrete implementation they know they provided to the client in order to get \"memento\" data. DKIMVerifier now exposes a method to initialize the verification process from an \"Header\" object, returning a BodyHasher when the client can write the message body and then call the verifier again passing the \"computed\" bodyhasher."
+        },
+        {
+            "c_hash": "ec03eb08",
+            "date": "2010-09-17 23:28:57 +0000",
+            "comment": "Added DKIMVerify mailet (JDKIM-24) Extracted common code from DKIMSign. Like DKIMSign we don't use jdkim mime4j parser but instead rely on javamail mimemessage for the needed header parsing. The mailet simply adds a mail attribute: some more code/mailet will be needed to add headers."
+        },
+        {
+            "c_hash": "ab3b41af",
+            "date": "2011-02-02 10:52:17 +0000",
+            "comment": "Optimized valuetag validation regex so to limit stack abuse (JDKIM-26)"
+        },
+        {
+            "c_hash": "3bebe5d8",
+            "date": "2011-03-15 23:14:52 +0000",
+            "comment": "Fix compilation errors. MessageBuilderFactory does not (no longer?) exists. I assume it's MessageServiceFactory now."
+        },
+        {
+            "c_hash": "55361454",
+            "date": "2011-03-15 23:38:38 +0000",
+            "comment": "update svn:ignore"
+        },
+        {
+            "c_hash": "bdd5a092",
+            "date": "2011-03-15 23:57:50 +0000",
+            "comment": "Switch to and force maven 3. Add generation of technical reports using the -Psite-reports profile"
+        },
+        {
+            "c_hash": "bb136720",
+            "date": "2011-03-16 04:40:58 +0000",
+            "comment": "No relativePath for maven 3"
+        },
+        {
+            "c_hash": "f3252dbf",
+            "date": "2011-03-16 04:46:02 +0000",
+            "comment": "Use parent version instead"
+        },
+        {
+            "c_hash": "9451ca17",
+            "date": "2011-03-16 04:58:41 +0000",
+            "comment": "Formatting"
+        },
+        {
+            "c_hash": "e4378bc3",
+            "date": "2011-03-21 10:49:21 +0000",
+            "comment": "Next version fixes various issues when used with maven 3, add emma report"
+        },
+        {
+            "c_hash": "4c8fdf2d",
+            "date": "2011-03-24 18:54:31 +0000",
+            "comment": "Update to maven-skin-1.6"
+        },
+        {
+            "c_hash": "9d0ee553",
+            "date": "2011-03-24 19:21:32 +0000",
+            "comment": "Update to james-project-1.6"
+        },
+        {
+            "c_hash": "9efb1092",
+            "date": "2011-03-31 08:50:37 +0000",
+            "comment": "Fix behaviour with latest mime4j trunk. Felix change did fix build error (against latest mime4j trunk) but introduced behaviour issues."
+        },
+        {
+            "c_hash": "46d15bc2",
+            "date": "2011-03-31 09:55:40 +0000",
+            "comment": "Remove mime4j imports from DKIMSigner/DKIMVerifier so users of the DKIM mailets do not need mime4j in their classpath (mainly to reduce issues with mismatching mime4j versions inside james)."
+        },
+        {
+            "c_hash": "2982fbb8",
+            "date": "2011-03-31 09:58:03 +0000",
+            "comment": "Refactored DKIM mailets and their tests to not depend on mime4j. Excluded inheritance of mime4j dependency from pom.xml"
+        },
+        {
+            "c_hash": "82ddf085",
+            "date": "2011-03-31 15:12:10 +0000",
+            "comment": "Added forceCRLF parameter (default to true) to DKIMSign and DKIMVerify mailets (JDKIM-28)"
+        },
+        {
+            "c_hash": "d737f368",
+            "date": "2011-04-17 12:53:34 +0000",
+            "comment": "updated code to reflect current mime4j trunk (MIME4J-191, MIME4J-192). Code still depends on \"MimeWriter\" (MIME4J-193)"
+        },
+        {
+            "c_hash": "238f780b",
+            "date": "2011-06-17 08:36:11 +0000",
+            "comment": "Update jDKIM to the latest mime4j trunk (near to 0.7 release?), also using MessageFormatter instead of MimeWriter (see MIME4J-193)"
+        },
+        {
+            "c_hash": "b684088c",
+            "date": "2011-06-17 09:05:22 +0000",
+            "comment": "Fix formatting"
+        },
+        {
+            "c_hash": "317ba16c",
+            "date": "2011-06-20 22:34:28 +0000",
+            "comment": "Update jDKIM to latest mime4j trunk (MessageFormatter => MessageWriter)"
+        },
+        {
+            "c_hash": "46ca2ccd",
+            "date": "2011-07-18 06:33:21 +0000",
+            "comment": "Cleanup / Use skin for Apache Branding in Navigation. See JAMES-1289"
+        },
+        {
+            "c_hash": "d7623d51",
+            "date": "2011-07-18 10:36:30 +0000",
+            "comment": "update codebase against latest mime4j trunk."
+        },
+        {
+            "c_hash": "b63d2ac7",
+            "date": "2011-07-25 10:42:48 +0000",
+            "comment": "upgrade to mime4j 0.7 final remove of \"src\" assembly (it is already generated by our apache parent pom during release) renamed LICENSE/NOTICE to remove the .txt extension (so the source package from the parent pom is ok) removed sun's javamail dependency in favor of geronimo deps, so we can build without external repositories. created a CRLFOutputStream (copied from the one in james-mailbox, previously in server/util/stream) so to not use the one from javamail com.sun package anymore."
+        },
+        {
+            "c_hash": "c5c9571e",
+            "date": "2011-07-25 10:43:29 +0000",
+            "comment": "upgrade to mime4j 0.7 final remove of \"src\" assembly (it is already generated by our apache parent pom during release) renamed LICENSE/NOTICE to remove the .txt extension (so the source package from the parent pom is ok) removed sun's javamail dependency in favor of geronimo deps, so we can build without external repositories. created a CRLFOutputStream (copied from the one in james-mailbox, previously in server/util/stream) so to not use the one from javamail com.sun package anymore."
+        },
+        {
+            "c_hash": "770116e8",
+            "date": "2011-07-25 11:39:22 +0000",
+            "comment": "Updated release notes to reflect latest changes (expecially mime4j 0.7 and java 1.5)"
+        },
+        {
+            "c_hash": "0d5cbfa8",
+            "date": "2011-07-25 11:40:21 +0000",
+            "comment": "Updated main LICENSE/NOTICE and created licenseForApp/noticeForApp for the binary package (JDKIM-29). Also updated the rat configuration for main library."
+        },
+        {
+            "c_hash": "83a84c4f",
+            "date": "2011-07-25 17:17:48 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-jdkim-project-0.2"
+        },
+        {
+            "c_hash": "1c87afe1",
+            "date": "2011-07-25 17:19:12 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "c70a068e",
+            "date": "2011-07-29 22:14:57 +0000",
+            "comment": "Update James jDKIM site to reflect jDKIM 0.2 release and update scm url for site deploy"
+        },
+        {
+            "c_hash": "58155311",
+            "date": "2011-07-30 11:07:04 +0000",
+            "comment": "- fix site deploy url paths for submodules. - readd reports for the site generation - remove doap and add emma plugin"
+        },
+        {
+            "c_hash": "bd3e49ee",
+            "date": "2011-10-17 14:25:23 +0000",
+            "comment": "Use renamed james-skin (JAMES-1334)"
+        },
+        {
+            "c_hash": "f8694855",
+            "date": "2011-10-19 12:17:51 +0000",
+            "comment": "Reformat (JAMES-1339)"
+        },
+        {
+            "c_hash": "08251ba1",
+            "date": "2011-11-22 06:13:02 +0000",
+            "comment": "Update to james-project 1.8"
+        },
+        {
+            "c_hash": "30fea10b",
+            "date": "2011-11-25 20:24:16 +0000",
+            "comment": "Fix technical reports generation"
+        },
+        {
+            "c_hash": "7c83feb5",
+            "date": "2012-12-27 11:47:07 +0000",
+            "comment": "JDKIM-32 Upgraded to apache mailet 2.5.0"
+        },
+        {
+            "c_hash": "272ba684",
+            "date": "2012-12-27 11:49:54 +0000",
+            "comment": "JDKIM-33 IDE code analisis improvements and test migration to junit-04"
+        },
+        {
+            "c_hash": "1ddc1383",
+            "date": "2012-12-27 12:05:54 +0000",
+            "comment": "JDKIM-33 Updated libraries"
+        }
+    ]
+}

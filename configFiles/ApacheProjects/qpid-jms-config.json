@@ -1,0 +1,2493 @@
+{
+    "project": "qpid-jms",
+    "git_url": "https://github.com/apache/qpid-jms.git",
+    "last_commit": "e6a542a2",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "875d9d2f",
+            "date": "2013-05-29 15:37:26 +0000",
+            "comment": "NO-JIRA: add structure for new jms client development"
+        },
+        {
+            "c_hash": "22e25c6d",
+            "date": "2013-05-29 15:51:46 +0000",
+            "comment": "NO-JIRA: add very simple initial proof-of-concept for a proton-based client, from investigation by Rob Godfrey and myself."
+        },
+        {
+            "c_hash": "08b13d35",
+            "date": "2013-05-29 16:24:52 +0000",
+            "comment": "NO-JIRA: add an initial .gitignore file"
+        },
+        {
+            "c_hash": "5b6ccd94",
+            "date": "2013-06-04 12:10:15 +0000",
+            "comment": "NO-JIRA: dos2unix"
+        },
+        {
+            "c_hash": "d4cba0bb",
+            "date": "2013-06-04 12:10:21 +0000",
+            "comment": "NO-JIRA: require Java 1.7. This is necessary in order to implement JMS 2"
+        },
+        {
+            "c_hash": "7786ab33",
+            "date": "2013-07-10 15:21:19 +0000",
+            "comment": "NO-JIRA: made Main a JUnit test that also stops the driver, laying the groundwork for getting some proper tests up and running Also general source clean-up: - Implemented toString() in several classes - Created SimplePredicate class that can produce diagnostic information if waitFor(..) times out - Removed whitespace, added missing annotations etc."
+        },
+        {
+            "c_hash": "6522e749",
+            "date": "2013-07-10 15:21:28 +0000",
+            "comment": "NO-JIRA: fixed race condition in AmqpConnectionDriver that caused Driver.wakeup calls to be ignored. Also added simple stop mechanism to AmqpConnectionDriver Also minor logging etc changes"
+        },
+        {
+            "c_hash": "d2721a7b",
+            "date": "2013-07-30 09:31:00 +0000",
+            "comment": "QPIDJMS-2: test svn to JIRA integration with basic commit message"
+        },
+        {
+            "c_hash": "8014dffc",
+            "date": "2013-07-30 09:34:50 +0000",
+            "comment": "QPIDJMS-2: test svn to JIRA integration with cross-project reference to QPID-4891"
+        },
+        {
+            "c_hash": "b64ab4df",
+            "date": "2013-07-30 09:43:11 +0000",
+            "comment": "QPIDJMS-2: test svn to JIRA integration with cross-project reference to PROTON-321"
+        },
+        {
+            "c_hash": "b2a9a4cf",
+            "date": "2013-07-30 10:29:37 +0000",
+            "comment": "QPIDJMS-2: remove test file"
+        },
+        {
+            "c_hash": "de60858c",
+            "date": "2013-08-07 12:47:59 +0000",
+            "comment": "QPIDJMS-3: now waking up the driver when we stop it, so that Connection.close() completes promptly"
+        },
+        {
+            "c_hash": "ed936c8d",
+            "date": "2013-08-07 12:48:19 +0000",
+            "comment": "QPIDJMS-3: Added TestAmqpPeer for use in integration tests, and the first cut of ConnectionIntegrationTest. Also added generated frame and matchers classes (and the xsl used to generate them for potential future use)."
+        },
+        {
+            "c_hash": "1df4bae0",
+            "date": "2013-08-21 16:05:34 +0000",
+            "comment": "QPIDJMS-3: enhanced integration tests to include creating a session, a message producer, and sending a message. Several of our classes now implement the relevant JMS interfaces."
+        },
+        {
+            "c_hash": "11b5d926",
+            "date": "2013-08-30 16:01:07 +0000",
+            "comment": "QPIDJMS-4: add findbugs configuration"
+        },
+        {
+            "c_hash": "214a4c13",
+            "date": "2013-09-13 12:52:52 +0000",
+            "comment": "QPIDJMS-3: got message consumption integration test working"
+        },
+        {
+            "c_hash": "959d2c80",
+            "date": "2013-10-04 16:19:49 +0000",
+            "comment": "QPIDJMS-3: some minor cleanup and rationalisation, replace PHTODO with TODO in comments to leverage standard IDE etc matching rules, use 'Not Implemented' in exception message to avoid duplicate TODO pickup by tools."
+        },
+        {
+            "c_hash": "e503fd95",
+            "date": "2013-11-20 14:34:55 +0000",
+            "comment": "QPIDJMS-9: initial work on Message implementation and mapping to/from AMQP messages"
+        },
+        {
+            "c_hash": "d90c84a5",
+            "date": "2013-11-21 12:34:22 +0000",
+            "comment": "QPIDJMS-9: simplify null TextMessage content to just use an amqp-value section containing null"
+        },
+        {
+            "c_hash": "422b431a",
+            "date": "2013-11-21 16:10:59 +0000",
+            "comment": "QPIDJMS-9: start on basic application properties support"
+        },
+        {
+            "c_hash": "0d08b39a",
+            "date": "2013-11-22 16:50:00 +0000",
+            "comment": "QPIDJMS-9: implement the remaining get/setFooProperty methods from Message, expand message tests accordingly."
+        },
+        {
+            "c_hash": "829b04ad",
+            "date": "2013-11-25 15:26:01 +0000",
+            "comment": "QPIDJMS-9: add support for the durable header field in messages, ensure the producer sets/overrides this as necessary"
+        },
+        {
+            "c_hash": "9d6fedb8",
+            "date": "2013-11-26 15:50:52 +0000",
+            "comment": "QPIDJMS-9: flesh out support for incoming TextMessages using amqp data section, add unit testing of text messages and tweak the *Test class heirarchy and setUp overridding to ease examination of console output"
+        },
+        {
+            "c_hash": "d3d37f8d",
+            "date": "2013-11-26 15:52:08 +0000",
+            "comment": "QPIDJMS-9: round out BytesMessage handling of amqp data section, add unit testing"
+        },
+        {
+            "c_hash": "1f7c54b3",
+            "date": "2013-11-27 16:57:58 +0000",
+            "comment": "QPIDJMS-9: reorder some code for clarity"
+        },
+        {
+            "c_hash": "6cb2389c",
+            "date": "2013-11-27 16:59:33 +0000",
+            "comment": "QPIDJMS-9: add Message support for JMSDestination operations, with associated handling for producers and consumers"
+        },
+        {
+            "c_hash": "f2993835",
+            "date": "2013-11-28 17:15:04 +0000",
+            "comment": "QPIDJMS-9: add Message support for JMSTimestamp operations, with associated handling for producers"
+        },
+        {
+            "c_hash": "20740bd6",
+            "date": "2013-11-28 17:16:15 +0000",
+            "comment": "QPIDJMS-9: rework message-annotation methods, change method keys to be in terms of strings, add unit testing"
+        },
+        {
+            "c_hash": "c4bd54d2",
+            "date": "2013-11-29 16:59:10 +0000",
+            "comment": "QPIDJMS-9: consolidate sender test classes"
+        },
+        {
+            "c_hash": "c8658a6a",
+            "date": "2013-11-29 17:00:36 +0000",
+            "comment": "QPIDJMS-9: expand Destination impl somewhat, begin tramsitting and using type information to allow fully reproducing the Destination objects"
+        },
+        {
+            "c_hash": "596a1f95",
+            "date": "2013-12-03 13:11:23 +0000",
+            "comment": "QPIDJMS-9: update handling of TextMessage created from data section"
+        },
+        {
+            "c_hash": "e5670641",
+            "date": "2013-12-04 16:42:41 +0000",
+            "comment": "QPIDJMS-9: add support for JMSReplyTo, add use of consumer destination to aid JMSDestination/JMSReplyTo destination type/value discovery when we cant get the type from the type-related annotations or the 'to' field isnt set on the message"
+        },
+        {
+            "c_hash": "35c0d8e7",
+            "date": "2013-12-09 17:20:00 +0000",
+            "comment": "QPIDJMS-9: add support for sending/receiving messages with expiry, via the absolute-expiry-time field of the properties section and the ttl field of the header section"
+        },
+        {
+            "c_hash": "70b2a60d",
+            "date": "2013-12-11 13:53:04 +0000",
+            "comment": "QPIDJMS-9: update JMSExpiration to use absolute-expiry-time or 'current time + TTL' and NOT 'creation-time + ttl' as this would incorrectly lead to an earlier-than-desired JMSExpiration value because the TTL field is mutable during transit and creation-time is not."
+        },
+        {
+            "c_hash": "11daa282",
+            "date": "2013-12-11 18:23:30 +0000",
+            "comment": "QPIDJMS-9: simplify handling of header.ttl-derived JMSDestination, also allowing the header.ttl field to be manipulated independently of the JMSDestination value"
+        },
+        {
+            "c_hash": "ecc8ab0d",
+            "date": "2013-12-11 18:24:34 +0000",
+            "comment": "QPIDJMS-9: add ability to set the AMQP ttl field independently of the producer-applied Time To Live value which populates JMSExpiration"
+        },
+        {
+            "c_hash": "1228c571",
+            "date": "2013-12-12 13:28:03 +0000",
+            "comment": "QPIDJMS-9: add support for setting the AMQP header ttl field on outgoing messages independently of the value normally applied as result of the JMS producers TTL, using the JMS_AMQP_TTL vendor property"
+        },
+        {
+            "c_hash": "8bd49694",
+            "date": "2013-12-13 15:57:44 +0000",
+            "comment": "QPIDJMS-9: add basic support for clearProperties(), sans state checking"
+        },
+        {
+            "c_hash": "49f07079",
+            "date": "2014-01-21 17:26:24 +0000",
+            "comment": "QPIDJMS-9: add support for messages with priority"
+        },
+        {
+            "c_hash": "b9ce8251",
+            "date": "2014-01-21 17:33:06 +0000",
+            "comment": "QPIDJMS-9: add unit test to verify sender sets JMSPriority on message"
+        },
+        {
+            "c_hash": "194f9f6f",
+            "date": "2014-01-30 17:35:53 +0000",
+            "comment": "NO-JIRA: update dependencies to account for recent proton module changes, generally tidy things up"
+        },
+        {
+            "c_hash": "ecc61367",
+            "date": "2014-01-30 17:37:41 +0000",
+            "comment": "QPIDJMS-9: initial work on message-id (and eventually correlation-id) handling"
+        },
+        {
+            "c_hash": "bf8dc5a1",
+            "date": "2014-02-03 14:49:43 +0000",
+            "comment": "QPIDJMS-9: tidy up message tests to remove their direct use/knowledge of the test message classes"
+        },
+        {
+            "c_hash": "6dea2ab2",
+            "date": "2014-02-03 14:50:37 +0000",
+            "comment": "QPIDJMS-11: configure RAT plugin + report, fix files it identified as missing the licence header"
+        },
+        {
+            "c_hash": "7cf14ffd",
+            "date": "2014-02-03 14:51:29 +0000",
+            "comment": "QPIDJMS-9: use new UnsignedLong.valueOf(BigInteger) method since added to Proton."
+        },
+        {
+            "c_hash": "6307d26c",
+            "date": "2014-02-03 17:07:37 +0000",
+            "comment": "QPIDJMS-9: set JMSMessageID when sending. Initial work on correlation-id handling."
+        },
+        {
+            "c_hash": "65def643",
+            "date": "2014-02-04 13:52:18 +0000",
+            "comment": "QPIDJMS-9: add integration tests for recieving messages with correlation-id, and basic string test for sending. Add/reword javadoc and split unit tests to be more clearer and more specific."
+        },
+        {
+            "c_hash": "449b9db2",
+            "date": "2014-02-04 17:29:42 +0000",
+            "comment": "QPIDJMS-9: initial work on decoding JMSMessageIDs on incoming messages then used as JMSCorrelationID values on outgoing messages, enabling type retention for the transmitted AMQP correlation-id value"
+        },
+        {
+            "c_hash": "1c120032",
+            "date": "2014-02-07 16:46:38 +0000",
+            "comment": "QPIDJMS-9: consolidate the correlationId and messageId setters/getters, tweak id conversion for ulong"
+        },
+        {
+            "c_hash": "ce36ad4a",
+            "date": "2014-02-07 16:47:53 +0000",
+            "comment": "QPIDJMS-9: fix constants and method names relating to the ulong id conversion"
+        },
+        {
+            "c_hash": "e5290890",
+            "date": "2014-02-10 01:48:55 +0000",
+            "comment": "QPIDJMS-12: add configuration for jacoco to check coverage"
+        },
+        {
+            "c_hash": "cb3ac9d4",
+            "date": "2014-02-10 13:16:17 +0000",
+            "comment": "QPIDJMS-9: work on binary message-id/correlation-id handling, etc"
+        },
+        {
+            "c_hash": "f0ef7a16",
+            "date": "2014-02-11 17:56:15 +0000",
+            "comment": "QPIDJMS-9: remove stale comments"
+        },
+        {
+            "c_hash": "d29452b1",
+            "date": "2014-02-11 23:13:53 +0000",
+            "comment": "QPIDJMS-9: implement get/setJMSCorrelationIDAsBytes"
+        },
+        {
+            "c_hash": "63d90ac5",
+            "date": "2014-02-12 15:11:20 +0000",
+            "comment": "QPIDJMS-9: update exception behaviour for setJMSCorrelationID, tweak javadoc on helper class to more closely cover its usage"
+        },
+        {
+            "c_hash": "f234ccf5",
+            "date": "2014-02-12 15:51:13 +0000",
+            "comment": "QPIDJMS-9: implement get/setJMSType methods"
+        },
+        {
+            "c_hash": "86376007",
+            "date": "2014-02-12 17:04:41 +0000",
+            "comment": "QPIDJMS-9: add some missing testing around handling of missing properties"
+        },
+        {
+            "c_hash": "4a3e6d13",
+            "date": "2014-02-12 17:05:32 +0000",
+            "comment": "QPIDJMS-9: implement read-only mode for properties of received messages"
+        },
+        {
+            "c_hash": "fd2edb5d",
+            "date": "2014-02-13 11:55:11 +0000",
+            "comment": "QPIDJMS-9: implement validation that property names meet the identifier requirements"
+        },
+        {
+            "c_hash": "baa0e6c1",
+            "date": "2014-02-13 18:09:14 +0000",
+            "comment": "QPIDJMS-9: work on support for JMSXUserID"
+        },
+        {
+            "c_hash": "2fe7b154",
+            "date": "2014-02-14 17:44:06 +0000",
+            "comment": "QPIDJMS-9: add some additional tests for JMSXUserID, consolidate MFE creation into utility methods"
+        },
+        {
+            "c_hash": "c1153f48",
+            "date": "2014-02-15 23:05:33 +0000",
+            "comment": "QPIDJMS-9: move responsibility for implementing clearBody() to the concrete message classes"
+        },
+        {
+            "c_hash": "425f89e7",
+            "date": "2014-02-15 23:05:54 +0000",
+            "comment": "QPIDJMS-9: work on support for JMSXGroupID"
+        },
+        {
+            "c_hash": "24ff3750",
+            "date": "2014-02-16 23:30:03 +0000",
+            "comment": "QPIDJMS-9: initial work on implementing JMSXGroupSeq"
+        },
+        {
+            "c_hash": "3df21ede",
+            "date": "2014-02-18 17:41:33 +0000",
+            "comment": "flesh out JMSXGroupSeq, e.g getter and handle group-sequence values above the int limit"
+        },
+        {
+            "c_hash": "d6212b13",
+            "date": "2014-02-18 23:38:47 +0000",
+            "comment": "QPIDJMS-9: some small cleanup, add some additional tests"
+        },
+        {
+            "c_hash": "5c3ad1c2",
+            "date": "2014-02-18 23:39:24 +0000",
+            "comment": "QPIDJMS-9: ensure to clear up fields for JMSXUserID, JMSXGroupID, JMSXGroupSeq when clearing properties"
+        },
+        {
+            "c_hash": "62ecae60",
+            "date": "2014-02-20 16:59:56 +0000",
+            "comment": "QPIDJMS-9: add support for setting/getting the reply-to-group-id value using the synthetic JMS_AMQP_REPLY_TO_GROUP_ID vendor property"
+        },
+        {
+            "c_hash": "1fd5c7a0",
+            "date": "2014-02-21 13:09:40 +0000",
+            "comment": "QPIDJMS-9: add an integration test for sending messages with group properties set"
+        },
+        {
+            "c_hash": "cb023501",
+            "date": "2014-02-21 13:10:37 +0000",
+            "comment": "QPIDJMS-14: round out TextMessage support, add verification of message body state and implement clearBody()"
+        },
+        {
+            "c_hash": "3c581f45",
+            "date": "2014-03-12 13:34:06 +0000",
+            "comment": "QPIDJMS-15: add read-only/write-only checking and reset/clearBody support for BytesMessage"
+        },
+        {
+            "c_hash": "49ba1b8c",
+            "date": "2014-03-12 13:51:51 +0000",
+            "comment": "QPIDJMS-15: ensure that getBodyLength() handles changes from calling reset on a message after writing to it"
+        },
+        {
+            "c_hash": "d6139080",
+            "date": "2014-03-12 16:54:00 +0000",
+            "comment": "QPIDJMS-15: initial implementation and tests for most of the remaining BytesMessage methods"
+        },
+        {
+            "c_hash": "24a873b5",
+            "date": "2014-03-12 18:02:39 +0000",
+            "comment": "QPIDJMS-15: implement the asymmetric unsigned byte/short methods"
+        },
+        {
+            "c_hash": "472666dd",
+            "date": "2014-03-12 18:03:30 +0000",
+            "comment": "QPIDJMS-15: ensure we always throw the required IOOBE's, those raised as side effects of the method natural implementation dont account for some corner cases"
+        },
+        {
+            "c_hash": "d0d4404f",
+            "date": "2014-03-13 17:01:12 +0000",
+            "comment": "QPIDJMS-15: split input and output stream handling out to utility classes, enhance tests"
+        },
+        {
+            "c_hash": "edbef29a",
+            "date": "2014-03-14 13:47:32 +0000",
+            "comment": "QPIDJMS-15: support for sending a previously received BytesMessage, add/tidy up related integration tests"
+        },
+        {
+            "c_hash": "a14806d4",
+            "date": "2014-03-14 13:48:33 +0000",
+            "comment": "QPIDJMS-15: support conversion when sending a BytesMessage previously received from a non-JMS client using an alternative body representation"
+        },
+        {
+            "c_hash": "a7e47116",
+            "date": "2014-04-22 16:14:33 +0000",
+            "comment": "QPIDJMS-16: update to use the current qpid-parent snapshot, which will need to be locally installed in the mean time"
+        },
+        {
+            "c_hash": "cf93fd54",
+            "date": "2014-05-02 15:04:38 +0000",
+            "comment": "NO-JIRA: fix compilation after recent updates to the Proton factories"
+        },
+        {
+            "c_hash": "648093d9",
+            "date": "2014-05-02 15:05:07 +0000",
+            "comment": "QPIDJMS-16: remove redundant groupId element, inherit parent value"
+        },
+        {
+            "c_hash": "12069918",
+            "date": "2014-05-02 21:35:12 +0000",
+            "comment": "QPIDJMS-16: change to using the qpid-parent 1.0 release pom"
+        },
+        {
+            "c_hash": "b4ed9905",
+            "date": "2014-05-06 12:24:52 +0000",
+            "comment": "QPIDJMS-18: initial work on implementing ObjectMessage"
+        },
+        {
+            "c_hash": "4873b695",
+            "date": "2014-05-06 12:25:37 +0000",
+            "comment": "QPIDJMS-18: update other exception handling to match previous commit"
+        },
+        {
+            "c_hash": "2d1992c3",
+            "date": "2014-05-12 11:38:45 +0000",
+            "comment": "QPIDJMS-18: make order of constructor args consistent"
+        },
+        {
+            "c_hash": "c8d67f71",
+            "date": "2014-05-12 11:40:17 +0000",
+            "comment": "QPIDJMS-20: initial work on using AMQP type encoding for sent/received ObjectMessage"
+        },
+        {
+            "c_hash": "1121d4a4",
+            "date": "2014-05-13 16:46:53 +0000",
+            "comment": "QPIDJMS-21: initial work on implementing the MapMessage interface"
+        },
+        {
+            "c_hash": "1e8cd484",
+            "date": "2014-05-14 16:00:06 +0000",
+            "comment": "QPIDJMS-21: implement support for byte[] entries, use LinkedHashMap for predictable ordering behaviour, add additional tests."
+        },
+        {
+            "c_hash": "8f3a665f",
+            "date": "2014-05-15 15:27:20 +0000",
+            "comment": "QPIDJMS-21, QPIDJMS-20: update the message type identification process"
+        },
+        {
+            "c_hash": "6244d153",
+            "date": "2014-05-20 09:41:00 +0000",
+            "comment": "NO-JIRA: add a TODO for setting JMSDeliveryTime during send"
+        },
+        {
+            "c_hash": "57543701",
+            "date": "2014-07-02 12:20:39 +0000",
+            "comment": "NO-JIRA: fix compilation following changes on proton trunk"
+        },
+        {
+            "c_hash": "d90e7cb9",
+            "date": "2014-07-18 10:40:55 +0000",
+            "comment": "NO-JIRA: improve output of channel info when the matcher fails, help clarify what didnt meet expectation"
+        },
+        {
+            "c_hash": "e47a8ede",
+            "date": "2014-07-18 10:41:27 +0000",
+            "comment": "NO-JIRA: update tests to handle new behaviour from recent proton-j changes"
+        },
+        {
+            "c_hash": "391c051b",
+            "date": "2014-07-23 16:00:35 +0000",
+            "comment": "QPIDJMS-22: initial work on implementing StreamMessage"
+        },
+        {
+            "c_hash": "cdbcb89f",
+            "date": "2014-07-23 16:23:40 +0000",
+            "comment": "QPIDJMS-23: move existing findbugs-maven-plugin usage into its own profile"
+        },
+        {
+            "c_hash": "34bd4371",
+            "date": "2014-07-24 16:40:27 +0000",
+            "comment": "QPIDJMS-22: round out basic StreamMessage support"
+        },
+        {
+            "c_hash": "b6b45951",
+            "date": "2014-07-24 16:40:36 +0000",
+            "comment": "QPIDJMS-24: redirect test output to file, allowing use of -Dmaven.test.redirectTestOutputToFile=false to restore console output if desired"
+        },
+        {
+            "c_hash": "c182adbf",
+            "date": "2014-08-07 14:56:53 +0000",
+            "comment": "QPIDJMS-23: update to use findbugs[-maven-plugin] 3.0.0"
+        },
+        {
+            "c_hash": "dd606e3a",
+            "date": "2014-08-13 16:52:04 +0000",
+            "comment": "QPIDJMS-25: initial experimenting with Netty integration"
+        },
+        {
+            "c_hash": "edc8be69",
+            "date": "2014-08-13 16:52:21 +0000",
+            "comment": "QPIDJMS-25: update to support staged SASL negotiation rather than an immediately pipelined ANONYMOUS exchange, depends on some uncommitted PROTON SASL hacks/tweaks"
+        },
+        {
+            "c_hash": "c0f7892a",
+            "date": "2014-08-13 16:52:33 +0000",
+            "comment": "QPIDJMS-25: cleanup/fixups/formatting"
+        },
+        {
+            "c_hash": "ccfd66a7",
+            "date": "2014-08-13 16:52:40 +0000",
+            "comment": "QPIDJMS-25: add some sample config to the pom for enabling additional proton framing trace during tests"
+        },
+        {
+            "c_hash": "c7ea4acf",
+            "date": "2014-08-13 16:52:55 +0000",
+            "comment": "QPIDJMS-25: cleanup, disable debug logging by default, add temp event handling code to remove dependency on proton-j-demo"
+        },
+        {
+            "c_hash": "086a15ea",
+            "date": "2014-08-13 16:53:11 +0000",
+            "comment": "QPIDJMS-25: write pending output after completing a read, works around lack of events during SASL (and receiving a flow after doing a buffered send) allowing use of proton trunk again"
+        },
+        {
+            "c_hash": "0eaf1fcf",
+            "date": "2014-08-13 16:53:23 +0000",
+            "comment": "QPIDJMS-25: remove the previous ACD"
+        },
+        {
+            "c_hash": "f1f62520",
+            "date": "2014-08-18 16:29:32 +0000",
+            "comment": "QPIDJMS-26: initial update of session and link open+close handling to use the events API"
+        },
+        {
+            "c_hash": "c542107f",
+            "date": "2014-08-18 16:29:48 +0000",
+            "comment": "QPIDJMS-26: initial update of connection open+close handling to use the events API"
+        },
+        {
+            "c_hash": "5ad3fd87",
+            "date": "2014-08-19 16:48:22 +0000",
+            "comment": "QPIDJMS-27: initial work on using events to signal operation completion"
+        },
+        {
+            "c_hash": "ee2d7a0f",
+            "date": "2014-08-20 16:16:42 +0000",
+            "comment": "QPIDJMS-27: update link closing to use events to signal completion"
+        },
+        {
+            "c_hash": "d1a45dbd",
+            "date": "2014-08-20 16:16:56 +0000",
+            "comment": "QPIDJMS-27: update connection closing to use events to signal completion"
+        },
+        {
+            "c_hash": "d37fdfff",
+            "date": "2014-08-21 15:08:30 +0000",
+            "comment": "QPIDJMS-27: update message sending to use events to signal completion"
+        },
+        {
+            "c_hash": "4f531141",
+            "date": "2014-08-28 16:34:09 +0000",
+            "comment": "QPIDJMS-26: update message receiver to use delivery events to provoke initial processing"
+        },
+        {
+            "c_hash": "5db2c9d3",
+            "date": "2014-08-28 16:34:28 +0000",
+            "comment": "QPIDJMS-26: add basic consumer credit replenishment"
+        },
+        {
+            "c_hash": "718ff6c9",
+            "date": "2014-08-28 16:34:45 +0000",
+            "comment": "QPIDJMS-28: add initial utils drain and spout, temp location"
+        },
+        {
+            "c_hash": "71c88608",
+            "date": "2014-09-01 20:45:42 +0000",
+            "comment": "QPIDJMS-25: separate raw byte logging from the logger used for the other messages"
+        },
+        {
+            "c_hash": "23be4982",
+            "date": "2014-09-01 20:46:02 +0000",
+            "comment": "QPIDJMS-25: fix write size logging, add logging when write request is not successful"
+        },
+        {
+            "c_hash": "410d4dd5",
+            "date": "2014-09-01 20:46:13 +0000",
+            "comment": "QPIDJMS-25: move any 'write after read' work out of the netty IO thread, avoid them jumping application-initiated writes"
+        },
+        {
+            "c_hash": "a66db984",
+            "date": "2014-09-02 13:32:33 +0000",
+            "comment": "NO-JIRA: configure the frame size, increase session incoming capacity to max"
+        },
+        {
+            "c_hash": "a9a70b1f",
+            "date": "2014-09-15 15:25:49 +0000",
+            "comment": "NO-JIRA: move existing files into a module dir"
+        },
+        {
+            "c_hash": "c576597d",
+            "date": "2014-09-15 15:26:19 +0000",
+            "comment": "NO-JIRA: update artifactId to match dir name"
+        },
+        {
+            "c_hash": "b57d1c87",
+            "date": "2014-09-15 15:28:58 +0000",
+            "comment": "NO-JIRA: remove empty dir"
+        },
+        {
+            "c_hash": "7ec3bde4",
+            "date": "2014-09-15 22:57:37 +0000",
+            "comment": "Small change to suppress warnings for unused variables"
+        },
+        {
+            "c_hash": "0e75f47f",
+            "date": "2014-09-20 08:17:49 +0100",
+            "comment": "QPIDJMS-2: add test file"
+        },
+        {
+            "c_hash": "cbb081a8",
+            "date": "2014-09-22 18:14:22 +0100",
+            "comment": "QPIDJMS-2: remove test file"
+        },
+        {
+            "c_hash": "99f60c21",
+            "date": "2014-09-23 18:21:40 +0100",
+            "comment": "QPIDJMS-2: add test file again"
+        },
+        {
+            "c_hash": "e4decdc1",
+            "date": "2014-09-23 14:09:26 -0400",
+            "comment": "Initial drop of donated AMQP Client Code."
+        },
+        {
+            "c_hash": "c57094e9",
+            "date": "2014-09-23 20:36:15 +0100",
+            "comment": "QPIDJMS-2: remove test file again"
+        },
+        {
+            "c_hash": "59a5ae3d",
+            "date": "2014-09-24 09:30:37 -0400",
+            "comment": "Use a more OSGI friendly way of creating Vert.x which also allows use of more recent Vert.x versions if we need to work around issues until we switch over to Netty"
+        },
+        {
+            "c_hash": "06d8ed14",
+            "date": "2014-09-24 12:36:07 +0100",
+            "comment": "update the ID helper to use the proton types directory rather than converting them"
+        },
+        {
+            "c_hash": "5c483dbc",
+            "date": "2014-09-24 18:40:15 +0100",
+            "comment": "initial work on allowing the AMQP message facade to handle the various AMQP message-id and correlation-id types"
+        },
+        {
+            "c_hash": "8efad7c6",
+            "date": "2014-09-24 14:19:15 -0400",
+            "comment": "Add destination accessor"
+        },
+        {
+            "c_hash": "eae45830",
+            "date": "2014-09-24 16:06:58 -0400",
+            "comment": "Implement get / set of JMS Destination from the AMQP message facade"
+        },
+        {
+            "c_hash": "459c90a8",
+            "date": "2014-09-24 16:12:40 -0400",
+            "comment": "Add some notes"
+        },
+        {
+            "c_hash": "bdc47a55",
+            "date": "2014-09-24 16:14:31 -0400",
+            "comment": "Add mock return for consumer.getDestination"
+        },
+        {
+            "c_hash": "372d5b81",
+            "date": "2014-09-24 17:37:11 -0400",
+            "comment": "Initial stab at message copy, still needs work."
+        },
+        {
+            "c_hash": "18adb4e7",
+            "date": "2014-09-24 17:54:29 -0400",
+            "comment": "Cleanup the method names to make them consistent."
+        },
+        {
+            "c_hash": "2943002c",
+            "date": "2014-09-24 18:06:51 -0400",
+            "comment": "Add getters and setters for the To and ReplyTo address values from the underlying AMQP message to the message facade and use those in destination helper.  Create a new test to start covering the variations of things in AmqpDestinationHelper"
+        },
+        {
+            "c_hash": "07ccbfeb",
+            "date": "2014-09-24 18:46:37 -0400",
+            "comment": "Adding in more tests for the destination helper"
+        },
+        {
+            "c_hash": "5bf646cf",
+            "date": "2014-09-25 09:59:03 -0400",
+            "comment": "Additional tests for helper methods."
+        },
+        {
+            "c_hash": "148e1b9e",
+            "date": "2014-09-25 10:21:58 -0400",
+            "comment": "Add tests for the address set methods."
+        },
+        {
+            "c_hash": "1af530ad",
+            "date": "2014-09-25 11:14:00 +0100",
+            "comment": "small refactor for clarity, add note about exception handling"
+        },
+        {
+            "c_hash": "11e9f52c",
+            "date": "2014-09-25 11:26:16 +0100",
+            "comment": "reduce JmsMessageId to a single constructor"
+        },
+        {
+            "c_hash": "2728bf61",
+            "date": "2014-09-25 11:27:15 +0100",
+            "comment": "make the inbound messsage envelope part of the Id heirachy"
+        },
+        {
+            "c_hash": "2bd7b1cc",
+            "date": "2014-09-25 14:34:10 +0100",
+            "comment": "use the message envelopes to track deliveries etc, remove JmsMessageId class and have the facades use String for messageid"
+        },
+        {
+            "c_hash": "36a012c1",
+            "date": "2014-09-25 11:28:41 -0400",
+            "comment": "Add try/catch in ack for delviered case, this should also signal that the provider has an unrecoverable error, a failover provider won't signal error here only a direct connect."
+        },
+        {
+            "c_hash": "2c6e26d9",
+            "date": "2014-09-25 16:47:28 +0100",
+            "comment": "update set/getCorrelationIDAsBytes methods to use Binary objects"
+        },
+        {
+            "c_hash": "ef2e0d59",
+            "date": "2014-09-25 13:35:15 -0400",
+            "comment": "Implement a proper copy for the message object"
+        },
+        {
+            "c_hash": "38299e76",
+            "date": "2014-09-25 14:53:16 -0400",
+            "comment": "Use a JmsQueue as a fallback when no type annotations are present and we can't deduce from consumer.  This provides a JMS complaint result which doesn't impact how the Broker is really managing that destination."
+        },
+        {
+            "c_hash": "8063fcb8",
+            "date": "2014-09-25 15:38:51 -0400",
+            "comment": "Add some additional tests to validate handling null values behaves as expected."
+        },
+        {
+            "c_hash": "e7051100",
+            "date": "2014-09-25 15:53:54 -0400",
+            "comment": "Test basic message property for AmqpJmsMessageFacade.  Fix up a few null check issues, and use the AmqpJms facade types as covariant return types from the copy methods to make testing easier, no casts needed."
+        },
+        {
+            "c_hash": "54029860",
+            "date": "2014-09-25 16:31:20 -0400",
+            "comment": "Additional check to filter out replyToGroupId if its an empty string also."
+        },
+        {
+            "c_hash": "0546ace6",
+            "date": "2014-09-25 16:50:50 -0400",
+            "comment": "Test for number of message properties and fix copy incorrectly mapping replyTo into the replyToGroupId feild."
+        },
+        {
+            "c_hash": "44d6e320",
+            "date": "2014-09-25 18:45:13 -0400",
+            "comment": "Start testing the AmqpJmsMessagePropertIntercepter.  Work in progress as the object message type bits are complete."
+        },
+        {
+            "c_hash": "6abc69bb",
+            "date": "2014-09-26 10:09:10 +0100",
+            "comment": "add a note"
+        },
+        {
+            "c_hash": "63ab8c1b",
+            "date": "2014-09-26 10:27:45 +0100",
+            "comment": "fix exception message to state correct range"
+        },
+        {
+            "c_hash": "82b0842a",
+            "date": "2014-09-26 12:14:09 +0100",
+            "comment": "update envelope toString/equals/hashCode implementations, add sequence number and tweak facade to avoid message-id conversion cost for envelope use"
+        },
+        {
+            "c_hash": "191fa4ce",
+            "date": "2014-09-26 12:45:58 +0100",
+            "comment": "add some tests for JmsInboundMessageDispatch"
+        },
+        {
+            "c_hash": "dc40b09c",
+            "date": "2014-09-26 10:00:01 -0400",
+            "comment": "Fix issue with clearing destination bits when called with null"
+        },
+        {
+            "c_hash": "d94144cc",
+            "date": "2014-09-26 11:27:09 -0400",
+            "comment": "Finish the property intercepter bits around ObjectMessage serialization vs AMQP typed values."
+        },
+        {
+            "c_hash": "9919d2f8",
+            "date": "2014-09-26 16:11:11 +0100",
+            "comment": "add some support for messages arriving without the annotation to signal JMS message type"
+        },
+        {
+            "c_hash": "ee8a4cbd",
+            "date": "2014-09-26 16:55:09 +0100",
+            "comment": "fix population of creation-time field of propertie section, via sender using setJMSTimestamp"
+        },
+        {
+            "c_hash": "72c2d666",
+            "date": "2014-09-26 17:05:40 +0100",
+            "comment": "update facade and property interceptor to fix propertyExists(), handle properties that do exist with a null value"
+        },
+        {
+            "c_hash": "bc8124b8",
+            "date": "2014-09-26 17:06:10 +0100",
+            "comment": "add a note for later"
+        },
+        {
+            "c_hash": "4c17e5e4",
+            "date": "2014-09-26 13:10:22 -0400",
+            "comment": "Remove the ActiveMQ test deps as those are in the interop module now."
+        },
+        {
+            "c_hash": "a5fe3018",
+            "date": "2014-09-26 15:52:05 -0400",
+            "comment": "Create our own selector parser lib based on apollo-selector"
+        },
+        {
+            "c_hash": "ae9f689a",
+            "date": "2014-09-26 16:18:52 -0400",
+            "comment": "Create separate methods for message prop in the case of send vs dispatch so that we can have distinct processing logic for those cases."
+        },
+        {
+            "c_hash": "9f1e75bb",
+            "date": "2014-09-26 16:33:13 -0400",
+            "comment": "Couple little code format cleanups."
+        },
+        {
+            "c_hash": "e30ab41f",
+            "date": "2014-09-26 16:34:23 -0400",
+            "comment": "Correct method comments."
+        },
+        {
+            "c_hash": "fd7b3b20",
+            "date": "2014-09-26 16:38:45 -0400",
+            "comment": "Fix spelling error in comment."
+        },
+        {
+            "c_hash": "0d4d9d46",
+            "date": "2014-09-26 17:13:35 -0400",
+            "comment": "Removing of HawtBuf usage."
+        },
+        {
+            "c_hash": "10b92884",
+            "date": "2014-09-26 17:23:22 -0400",
+            "comment": "Remove use of HawtBuf"
+        },
+        {
+            "c_hash": "2e687e94",
+            "date": "2014-09-26 17:37:38 -0400",
+            "comment": "Remove use of HawtBuf"
+        },
+        {
+            "c_hash": "42dca618",
+            "date": "2014-09-26 18:15:29 -0400",
+            "comment": "Remove use of HawtBuf"
+        },
+        {
+            "c_hash": "0d7e2539",
+            "date": "2014-09-26 19:00:18 -0400",
+            "comment": "Remove all uses of HawtBuf and remove it as a dependency for the project."
+        },
+        {
+            "c_hash": "cc9f8dfe",
+            "date": "2014-09-29 09:42:22 -0400",
+            "comment": "Create the message level Destination and ReplyTo objects lazily since we may never need them if the client doesn't call getJMSDestination or getJMSReplyTo, pushes off the work to the client threads."
+        },
+        {
+            "c_hash": "bb6959dc",
+            "date": "2014-09-29 10:38:59 -0400",
+            "comment": "Add some initial testing and cleanup around JmsMessagePropertyIntercepter"
+        },
+        {
+            "c_hash": "52e02b69",
+            "date": "2014-09-29 11:22:53 -0400",
+            "comment": "Add tests for the default cases when doing a Get"
+        },
+        {
+            "c_hash": "88945f1c",
+            "date": "2014-09-27 17:41:17 +0100",
+            "comment": "fix empty list initialization on new stream message facades"
+        },
+        {
+            "c_hash": "161bba63",
+            "date": "2014-09-27 17:48:24 +0100",
+            "comment": "add support for [single] amqp-sequence bodies"
+        },
+        {
+            "c_hash": "66bc0033",
+            "date": "2014-09-29 10:02:31 +0100",
+            "comment": "stop application properties being overwritten when retrieving the contents from the facade"
+        },
+        {
+            "c_hash": "270765ac",
+            "date": "2014-09-29 10:39:25 +0100",
+            "comment": "update provider factory error logging, correct class and include exception toString as further aid"
+        },
+        {
+            "c_hash": "c294a3c7",
+            "date": "2014-09-29 11:52:07 +0100",
+            "comment": "add some logging of test phases to aid debugging"
+        },
+        {
+            "c_hash": "6d80d99e",
+            "date": "2014-09-29 11:54:41 +0100",
+            "comment": "use the x-opt-jms-type annotation for transmitting the JMSType header"
+        },
+        {
+            "c_hash": "a1bcdbbe",
+            "date": "2014-09-29 12:01:44 +0100",
+            "comment": "add toString for the selector filter"
+        },
+        {
+            "c_hash": "05b73e48",
+            "date": "2014-09-29 12:03:22 +0100",
+            "comment": "only set the message format property when using the transformer proces that needs it"
+        },
+        {
+            "c_hash": "9e3b5ecc",
+            "date": "2014-09-29 12:10:24 +0100",
+            "comment": "use AmqpJmsMessageBuilder to create incoming messages, remove transformer usage"
+        },
+        {
+            "c_hash": "1b10a6a7",
+            "date": "2014-09-29 12:16:07 +0100",
+            "comment": "switch to using the the AMQP message facades"
+        },
+        {
+            "c_hash": "a83589ea",
+            "date": "2014-09-29 17:08:02 +0100",
+            "comment": "add temporary ignore on test"
+        },
+        {
+            "c_hash": "0317483d",
+            "date": "2014-09-29 17:39:46 +0100",
+            "comment": "ensure facade copy includes consumer destination"
+        },
+        {
+            "c_hash": "6485baab",
+            "date": "2014-09-29 16:34:26 -0400",
+            "comment": "Remove use of the default message factory from the FailoverProvider and make it dependent on the connected instance for the message factory instance.  Also adds a new event onConnectionEstablished which allows the providers to know when chained that the next one in the series has connected and allows for a client level event to indicate same."
+        },
+        {
+            "c_hash": "d9803914",
+            "date": "2014-09-29 17:57:45 -0400",
+            "comment": "Remove all Proton-JMS and use just Proton-J constructs."
+        },
+        {
+            "c_hash": "4f8e3da1",
+            "date": "2014-09-29 18:30:35 -0400",
+            "comment": "Add some tests for property set intercepters"
+        },
+        {
+            "c_hash": "065000dd",
+            "date": "2014-09-29 18:51:44 -0400",
+            "comment": "Adds additional tests for property get intercepters"
+        },
+        {
+            "c_hash": "560e6fbd",
+            "date": "2014-09-30 15:27:36 +0100",
+            "comment": "enable test again after applying fix to proton-jms"
+        },
+        {
+            "c_hash": "cd51c357",
+            "date": "2014-09-30 11:34:59 -0400",
+            "comment": "More property intercepter tests and some fixes."
+        },
+        {
+            "c_hash": "19b378be",
+            "date": "2014-09-30 12:15:14 -0400",
+            "comment": "Start a bit of cleanup around delivery / redelivery count, keep all logic in the facade and just call into it from property intercepter and JMS message objects."
+        },
+        {
+            "c_hash": "ad17c6bf",
+            "date": "2014-09-30 14:35:09 -0400",
+            "comment": "Set the content type as defined in the JMS mapping spec."
+        },
+        {
+            "c_hash": "5b3d2038",
+            "date": "2014-09-30 14:35:47 -0400",
+            "comment": "clear the content type value on create to match the requirements in the JMS mapping spec."
+        },
+        {
+            "c_hash": "a2992a75",
+            "date": "2014-09-30 15:47:18 -0400",
+            "comment": "fix copy method broken in last commit"
+        },
+        {
+            "c_hash": "867c1ba4",
+            "date": "2014-09-30 17:02:03 -0400",
+            "comment": "Use a single Netty buffer to read all message bytes and grow as needed."
+        },
+        {
+            "c_hash": "a9386dac",
+            "date": "2014-09-30 17:12:23 -0400",
+            "comment": "Enforce content type always set to java serialized value."
+        },
+        {
+            "c_hash": "784025ac",
+            "date": "2014-09-30 18:23:45 -0400",
+            "comment": "Don't send error or close events if transport is already closed."
+        },
+        {
+            "c_hash": "e67f9d57",
+            "date": "2014-09-30 18:24:16 -0400",
+            "comment": "Clean some old comments."
+        },
+        {
+            "c_hash": "c695388b",
+            "date": "2014-09-30 18:26:29 -0400",
+            "comment": "clean up method names in the factories."
+        },
+        {
+            "c_hash": "9064cc8a",
+            "date": "2014-09-30 18:43:15 -0400",
+            "comment": "Move all the default implementations now used only for tests into the tests package."
+        },
+        {
+            "c_hash": "0bcc9516",
+            "date": "2014-10-01 10:01:03 +0100",
+            "comment": "enable various tests now that the relevant functionality is implemented"
+        },
+        {
+            "c_hash": "1732a2cd",
+            "date": "2014-10-01 10:04:40 +0100",
+            "comment": "add missing test"
+        },
+        {
+            "c_hash": "0075d0ae",
+            "date": "2014-10-01 10:09:17 +0100",
+            "comment": "use a plain Message rather than TextMessage"
+        },
+        {
+            "c_hash": "ba44ad6f",
+            "date": "2014-10-01 10:58:36 +0100",
+            "comment": "stop the consumer always overriding the 'to' field by setting JMSDestination, enable/add more tests"
+        },
+        {
+            "c_hash": "f4264942",
+            "date": "2014-10-01 12:02:19 +0100",
+            "comment": "ensure the ttl header field is populated appropriate based on JMSExpiration or JMS_AMQP_TTL usage, enable test that was failing"
+        },
+        {
+            "c_hash": "772032f1",
+            "date": "2014-10-01 12:29:40 +0100",
+            "comment": "obey requests to disable including timestamp on the message even if ttl is enabled"
+        },
+        {
+            "c_hash": "1e6d3809",
+            "date": "2014-10-01 13:38:23 +0100",
+            "comment": "update tests to check field values are within a certain delta"
+        },
+        {
+            "c_hash": "da34674f",
+            "date": "2014-10-01 09:55:04 -0400",
+            "comment": "Remove code that was only needed for use with the JMS transformer sends."
+        },
+        {
+            "c_hash": "92ad4ebc",
+            "date": "2014-10-01 15:05:42 +0100",
+            "comment": "simplify handling of ttl field, add tests to check we reject out of range values"
+        },
+        {
+            "c_hash": "d3b311fe",
+            "date": "2014-10-01 15:48:19 +0100",
+            "comment": "add tests for sending messges with ttl override in effect"
+        },
+        {
+            "c_hash": "d10da2c0",
+            "date": "2014-10-01 15:49:47 +0100",
+            "comment": "fix facade copy when ttl override value exists"
+        },
+        {
+            "c_hash": "72639ba7",
+            "date": "2014-10-01 16:12:00 +0100",
+            "comment": "fix synthetic ttl check issue exposed by tests after prior commit"
+        },
+        {
+            "c_hash": "cf38f9b0",
+            "date": "2014-10-01 16:25:35 -0400",
+            "comment": "Refactor send handling a bit, do all message prep in client thread during the onSend method.  Pass producer configuation to message onSend so the facade can decide what to include in sent message."
+        },
+        {
+            "c_hash": "1e0d838f",
+            "date": "2014-10-01 16:41:38 -0400",
+            "comment": "Delegate the work of creating a proper JMS Destination when setting the destination or reply to address via a Message object's setStringProperty or setObjectProperty methods."
+        },
+        {
+            "c_hash": "eec45ade",
+            "date": "2014-10-01 17:41:36 -0400",
+            "comment": "Initial implementation and test for creating a destination from string using connection destination prefix values."
+        },
+        {
+            "c_hash": "c7475b0f",
+            "date": "2014-10-01 18:50:38 -0400",
+            "comment": "Fix some issues reported by FindBugs"
+        },
+        {
+            "c_hash": "69db6cc3",
+            "date": "2014-10-02 13:23:05 +0100",
+            "comment": "add jacoco configuration to allow viewing test coverage"
+        },
+        {
+            "c_hash": "12ca77c4",
+            "date": "2014-10-02 13:24:56 +0100",
+            "comment": "add a README for examples"
+        },
+        {
+            "c_hash": "90490f12",
+            "date": "2014-10-02 11:48:11 -0400",
+            "comment": "Fix some issues found with findbugs"
+        },
+        {
+            "c_hash": "51da0e5a",
+            "date": "2014-10-02 11:50:43 -0400",
+            "comment": "Add m2e hint to ignore jacoco-maven-plugin"
+        },
+        {
+            "c_hash": "d4218476",
+            "date": "2014-10-02 12:13:03 -0400",
+            "comment": "Fix some issues found with Findbugs"
+        },
+        {
+            "c_hash": "5e1834b0",
+            "date": "2014-10-02 17:32:04 +0100",
+            "comment": "add basic BytesMessage integration test"
+        },
+        {
+            "c_hash": "58b48e5a",
+            "date": "2014-10-02 17:53:49 +0100",
+            "comment": "add basic MapMessage integration test"
+        },
+        {
+            "c_hash": "71055421",
+            "date": "2014-10-02 16:40:16 -0400",
+            "comment": "Fix more issues from FindBugs"
+        },
+        {
+            "c_hash": "ac85f2fa",
+            "date": "2014-10-02 16:57:23 -0400",
+            "comment": "Add note to explain duplicate code path."
+        },
+        {
+            "c_hash": "e1478481",
+            "date": "2014-10-02 16:58:17 -0400",
+            "comment": "Fix setCorrelationId calling setMessageId when the passed value is null. Also simplified the set correlation from bytes method to make findbugs happy."
+        },
+        {
+            "c_hash": "36f5afba",
+            "date": "2014-10-02 16:58:31 -0400",
+            "comment": "Check for the correct delegate type"
+        },
+        {
+            "c_hash": "0e5b55bd",
+            "date": "2014-10-02 17:47:22 -0400",
+            "comment": "Fix a number of minor issues reported from FindBugs."
+        },
+        {
+            "c_hash": "dda95f58",
+            "date": "2014-10-02 18:28:19 -0400",
+            "comment": "Do some code cleanup."
+        },
+        {
+            "c_hash": "84045ed6",
+            "date": "2014-10-02 18:44:50 -0400",
+            "comment": "Fix some issues in this module reported by findbugs"
+        },
+        {
+            "c_hash": "68f8edc8",
+            "date": "2014-10-03 09:41:23 +0100",
+            "comment": "add basic StreamMessage integration test"
+        },
+        {
+            "c_hash": "e53b49ff",
+            "date": "2014-10-03 09:57:09 +0100",
+            "comment": "add basic TextMessage integration test"
+        },
+        {
+            "c_hash": "735c2196",
+            "date": "2014-10-03 10:11:24 +0100",
+            "comment": "add basic Session integration test"
+        },
+        {
+            "c_hash": "e44c2e78",
+            "date": "2014-10-03 10:16:50 +0100",
+            "comment": "add timeouts to tests"
+        },
+        {
+            "c_hash": "19d2d052",
+            "date": "2014-10-03 11:09:19 +0100",
+            "comment": "add basic ObjectMessage integration tests"
+        },
+        {
+            "c_hash": "0001dd5f",
+            "date": "2014-10-03 11:31:54 +0100",
+            "comment": "add content type checking to initialise the correct delegate, enable test"
+        },
+        {
+            "c_hash": "1f451b62",
+            "date": "2014-10-03 12:15:18 +0100",
+            "comment": "update ObjectMessage facade copying to maintain the delegate type"
+        },
+        {
+            "c_hash": "2931fbb1",
+            "date": "2014-10-03 12:27:37 +0100",
+            "comment": "fix formatting"
+        },
+        {
+            "c_hash": "a6b5f1bb",
+            "date": "2014-10-03 15:00:13 +0100",
+            "comment": "add message builder unit tests for the case where the message type annotation exists"
+        },
+        {
+            "c_hash": "5da7f7cd",
+            "date": "2014-10-03 15:47:02 +0100",
+            "comment": "update incoming AmqpSequence without the x-opt-jms-msg-type message annotation to be an ObjectMessage"
+        },
+        {
+            "c_hash": "0136f1d2",
+            "date": "2014-10-03 16:24:30 +0100",
+            "comment": "add builder tests for messages arriving without a body section or the message type annotation"
+        },
+        {
+            "c_hash": "e3d21a7e",
+            "date": "2014-10-03 17:17:56 +0100",
+            "comment": "add builder tests for messages arriving with a data body section but no type annotation"
+        },
+        {
+            "c_hash": "8b0993c9",
+            "date": "2014-10-03 12:30:46 -0400",
+            "comment": "Add simple LRUCache implementation that can be used to cache anonymous producer instances for the AMQP provider."
+        },
+        {
+            "c_hash": "3077100b",
+            "date": "2014-10-03 17:26:10 +0100",
+            "comment": "process the new link detach events"
+        },
+        {
+            "c_hash": "dbdfb5b8",
+            "date": "2014-10-03 17:30:39 +0100",
+            "comment": "update test peer to close rather than detach links when asked"
+        },
+        {
+            "c_hash": "516d9108",
+            "date": "2014-10-03 16:13:13 -0400",
+            "comment": "Refactor of BytesMessage handling to make the message facade more opaque to the JmsBytesMessage instance which allows for handling of message content scenarios being fully contained in the facade implementation."
+        },
+        {
+            "c_hash": "263c93d8",
+            "date": "2014-10-03 16:38:17 -0400",
+            "comment": "Add some variations of anonymous send tests."
+        },
+        {
+            "c_hash": "81fc1e5d",
+            "date": "2014-10-03 17:15:47 -0400",
+            "comment": "More correct equals and hashCode"
+        },
+        {
+            "c_hash": "df6a30d5",
+            "date": "2014-10-03 18:24:29 -0400",
+            "comment": "Adds an initial implementation of producer caching for anonymous producers.  Added options to AmqpConnection to enable / disable and a configurable cache size value."
+        },
+        {
+            "c_hash": "b37c8971",
+            "date": "2014-10-06 10:22:47 +0100",
+            "comment": "add builder tests for messages arriving with an amqp-value or amqp-sequence body section but no type annotation"
+        },
+        {
+            "c_hash": "9243bc8b",
+            "date": "2014-10-06 10:52:46 +0100",
+            "comment": "enable ignored test"
+        },
+        {
+            "c_hash": "47e6fe0c",
+            "date": "2014-10-06 10:58:11 +0100",
+            "comment": "enable ignored test"
+        },
+        {
+            "c_hash": "026d83a9",
+            "date": "2014-10-06 12:31:11 +0100",
+            "comment": "add unit tests for AmqpJmsStreamMessageFacade"
+        },
+        {
+            "c_hash": "2e050059",
+            "date": "2014-10-06 14:05:05 +0100",
+            "comment": "use AmqpSequence body to send StreamMessages"
+        },
+        {
+            "c_hash": "dd00b90e",
+            "date": "2014-10-06 10:13:40 -0400",
+            "comment": "Fix potential NPE"
+        },
+        {
+            "c_hash": "375278b9",
+            "date": "2014-10-06 16:34:22 +0100",
+            "comment": "rename methods for clarity"
+        },
+        {
+            "c_hash": "37871f02",
+            "date": "2014-10-06 17:29:54 +0100",
+            "comment": "add unit tests for AmqpJmsMessageFacade handling of AMQP header"
+        },
+        {
+            "c_hash": "7a7bec71",
+            "date": "2014-10-06 17:31:25 +0100",
+            "comment": "ignore test for now, handling not implemented. Add related note."
+        },
+        {
+            "c_hash": "601d8f50",
+            "date": "2014-10-06 15:57:17 -0400",
+            "comment": "Create test case for the PropertyUtil class that covers most bits, fix all the little issues that were found during testing."
+        },
+        {
+            "c_hash": "43c8be48",
+            "date": "2014-10-06 16:37:02 -0400",
+            "comment": "Tests for IdGenerator"
+        },
+        {
+            "c_hash": "6d0fcad9",
+            "date": "2014-10-06 18:35:26 -0400",
+            "comment": "Add message queue tests"
+        },
+        {
+            "c_hash": "c311a421",
+            "date": "2014-10-06 18:49:50 -0400",
+            "comment": "Push proirity scaling to the facade class and do proper in / out scaling in the AMQP facade.  Enable test for get out of range value."
+        },
+        {
+            "c_hash": "5e237be5",
+            "date": "2014-10-07 10:16:45 +0100",
+            "comment": "Update priority scaling to handle values above the signed byte range. Change methods to use int so facades see original value, contain any casting to within facade."
+        },
+        {
+            "c_hash": "96443b98",
+            "date": "2014-10-07 10:27:09 +0100",
+            "comment": "add some more header priority tests"
+        },
+        {
+            "c_hash": "de71fe3d",
+            "date": "2014-10-07 10:27:37 +0100",
+            "comment": "enable ignored test now that functionality is implemented"
+        },
+        {
+            "c_hash": "a3db6896",
+            "date": "2014-10-07 10:55:03 +0100",
+            "comment": "add some tests for handling of Properties section absolute-expiry-time"
+        },
+        {
+            "c_hash": "6d55ce2e",
+            "date": "2014-10-07 10:56:01 +0100",
+            "comment": "add some tests for handling of Properties section creation-time"
+        },
+        {
+            "c_hash": "4723c5a1",
+            "date": "2014-10-07 11:18:48 +0100",
+            "comment": "add some tests for handling of Properties section group-id and reply-to-group-id"
+        },
+        {
+            "c_hash": "cbf24641",
+            "date": "2014-10-07 12:22:41 +0100",
+            "comment": "update JMSXGroupSeq interceptor propertyExists handling"
+        },
+        {
+            "c_hash": "9a5bee31",
+            "date": "2014-10-07 12:54:52 +0100",
+            "comment": "update group sequence handling to match mapping doc, add separate method to clear group-sequence field without setting it to 0"
+        },
+        {
+            "c_hash": "1803e02b",
+            "date": "2014-10-07 13:23:26 +0100",
+            "comment": "ensure that clearing properties clears the property-defined group sequence value of the facade"
+        },
+        {
+            "c_hash": "5c99fafa",
+            "date": "2014-10-07 13:24:09 +0100",
+            "comment": "add TODO notes for later"
+        },
+        {
+            "c_hash": "4d463bbb",
+            "date": "2014-10-07 14:51:50 +0100",
+            "comment": "add tests for Properties section user-id field, update setUserId to handle null"
+        },
+        {
+            "c_hash": "fe790242",
+            "date": "2014-10-07 17:18:12 +0100",
+            "comment": "add some tests for handling of Properties section to and reply-to fields"
+        },
+        {
+            "c_hash": "53d91fb4",
+            "date": "2014-10-07 17:34:17 +0100",
+            "comment": "rename MessageAnnotation related methods/fields for clarity"
+        },
+        {
+            "c_hash": "9e3d5608",
+            "date": "2014-10-07 17:47:54 +0100",
+            "comment": "add some tests for handling of MessageAnnotations section"
+        },
+        {
+            "c_hash": "6973cb51",
+            "date": "2014-10-07 15:50:07 -0400",
+            "comment": "Add full test coverage for the classes in jms.meta and enforce that id values cannot be null on creation plus fix a few other minor issues."
+        },
+        {
+            "c_hash": "6ed98ed9",
+            "date": "2014-10-07 16:15:06 -0400",
+            "comment": "Add unit test"
+        },
+        {
+            "c_hash": "e5fbb3b2",
+            "date": "2014-10-07 16:37:43 -0400",
+            "comment": "More unit tests for util classes"
+        },
+        {
+            "c_hash": "cbded457",
+            "date": "2014-10-07 17:12:03 -0400",
+            "comment": "Additional tests for dequeue"
+        },
+        {
+            "c_hash": "936098ec",
+            "date": "2014-10-07 17:58:32 -0400",
+            "comment": "Cover some additional code paths."
+        },
+        {
+            "c_hash": "b53f9658",
+            "date": "2014-10-07 18:40:00 -0400",
+            "comment": "Fix method name to match the add variant."
+        },
+        {
+            "c_hash": "f315bd30",
+            "date": "2014-10-07 18:46:45 -0400",
+            "comment": "Add basic test of JmsConnection using mocked provider to test the basic contracts of the object are honored."
+        },
+        {
+            "c_hash": "e338b4ef",
+            "date": "2014-10-08 09:38:54 +0100",
+            "comment": "remove field to simplify handling of message annotations section"
+        },
+        {
+            "c_hash": "b660c637",
+            "date": "2014-10-08 10:46:22 +0100",
+            "comment": "add some tests for handling of ApplicationProperties section"
+        },
+        {
+            "c_hash": "b01232dd",
+            "date": "2014-10-08 11:58:09 +0100",
+            "comment": "make method static to match setter and field accessed"
+        },
+        {
+            "c_hash": "aa92d995",
+            "date": "2014-10-08 12:04:00 +0100",
+            "comment": "update group related MessageIntegrationTest to assert on propertyNames + propertyExists status, ignore as currently failing"
+        },
+        {
+            "c_hash": "97f873d4",
+            "date": "2014-10-08 12:11:31 +0100",
+            "comment": "update message to get the property names from the facade"
+        },
+        {
+            "c_hash": "0ba4b565",
+            "date": "2014-10-08 12:17:14 +0100",
+            "comment": "remove test-only method"
+        },
+        {
+            "c_hash": "f3c2f041",
+            "date": "2014-10-08 10:07:44 -0400",
+            "comment": "Test and fix for Prefetch policy object."
+        },
+        {
+            "c_hash": "e6fe539f",
+            "date": "2014-10-08 11:48:12 -0400",
+            "comment": "Remove unused method, code for this lives in the destination helper now."
+        },
+        {
+            "c_hash": "4d3e9345",
+            "date": "2014-10-08 15:01:18 +0100",
+            "comment": "allow retrieving the intercepted property names without inclusing the standard JMS header names"
+        },
+        {
+            "c_hash": "756f120b",
+            "date": "2014-10-08 16:17:07 +0100",
+            "comment": "update getPropertyName handling to include [some] intercepted properties, fixup/enable tests accordingly"
+        },
+        {
+            "c_hash": "0d74de27",
+            "date": "2014-10-08 12:49:29 -0400",
+            "comment": "Add some additional tests to validate some edge case behaviors."
+        },
+        {
+            "c_hash": "fa00783c",
+            "date": "2014-10-08 17:31:37 +0100",
+            "comment": "add note for later"
+        },
+        {
+            "c_hash": "89e8e8fa",
+            "date": "2014-10-08 17:47:15 +0100",
+            "comment": "fill some gaps in correlation-id and message-id tests"
+        },
+        {
+            "c_hash": "1c44f940",
+            "date": "2014-10-08 18:00:40 +0100",
+            "comment": "update correlationid setter"
+        },
+        {
+            "c_hash": "c44975c6",
+            "date": "2014-10-08 13:54:15 -0400",
+            "comment": "Add test for AmqpMessageSupport"
+        },
+        {
+            "c_hash": "616f0e77",
+            "date": "2014-10-08 15:03:15 -0400",
+            "comment": "Remove now unnecessary method from the message facade classes and use the normal getProperyNames and getProperty methods to test message functionality."
+        },
+        {
+            "c_hash": "ee5042c1",
+            "date": "2014-10-08 16:38:21 -0400",
+            "comment": "Test the AmqpJmsMapMessageFacade"
+        },
+        {
+            "c_hash": "73fb97a8",
+            "date": "2014-10-08 16:57:17 -0400",
+            "comment": "Add configuration value to control AmqpJmsObjectMessage creation using serialized or AMQP types."
+        },
+        {
+            "c_hash": "1cfb7564",
+            "date": "2014-10-08 16:59:27 -0400",
+            "comment": "Update JavaDoc comment."
+        },
+        {
+            "c_hash": "3a85addd",
+            "date": "2014-10-08 17:00:01 -0400",
+            "comment": "Make the object immutable and read the encoding type for new Object mesage types from the parent connection."
+        },
+        {
+            "c_hash": "38f87370",
+            "date": "2014-10-08 18:11:32 -0400",
+            "comment": "Fix isEmpty method."
+        },
+        {
+            "c_hash": "80340025",
+            "date": "2014-10-08 18:18:26 -0400",
+            "comment": "Test coverage of AmqpJmsMessageFactory."
+        },
+        {
+            "c_hash": "459893d3",
+            "date": "2014-10-08 18:24:55 -0400",
+            "comment": "Add more to the TODO comment."
+        },
+        {
+            "c_hash": "4cc4debd",
+            "date": "2014-10-08 18:28:38 -0400",
+            "comment": "Add test for copy()"
+        },
+        {
+            "c_hash": "8c223aea",
+            "date": "2014-10-08 18:40:41 -0400",
+            "comment": "Remove unused method."
+        },
+        {
+            "c_hash": "fe1114d2",
+            "date": "2014-10-08 18:41:39 -0400",
+            "comment": "Break out some common bits into a base class for all the AMQP message facades to use in their test cases."
+        },
+        {
+            "c_hash": "37805022",
+            "date": "2014-10-08 18:46:09 -0400",
+            "comment": "Fix isEmpty()"
+        },
+        {
+            "c_hash": "5d6fc111",
+            "date": "2014-10-08 18:54:49 -0400",
+            "comment": "Start of AmqpJmsTextMessageFacadeTest"
+        },
+        {
+            "c_hash": "04f7d6dc",
+            "date": "2014-10-09 14:45:07 +0100",
+            "comment": "expand JmsTextMessageFacadeTest unit test"
+        },
+        {
+            "c_hash": "b07c7faa",
+            "date": "2014-10-09 10:41:50 -0400",
+            "comment": "Cover JMSException thrown when encoding doesn't match default UTF-8"
+        },
+        {
+            "c_hash": "fdd1437c",
+            "date": "2014-10-09 15:48:33 +0100",
+            "comment": "add some unit tests for AmqpJmsBytesMessageFacade"
+        },
+        {
+            "c_hash": "d5ef8fb9",
+            "date": "2014-10-09 11:40:25 -0400",
+            "comment": "Add a couple more tests for connection state handling."
+        },
+        {
+            "c_hash": "97912261",
+            "date": "2014-10-09 17:17:33 +0100",
+            "comment": "remove test-only getBody method, update testClearBody"
+        },
+        {
+            "c_hash": "5d3bfa27",
+            "date": "2014-10-09 17:47:56 +0100",
+            "comment": "add some more unit tests for AmqpJmsBytesMessageFacade"
+        },
+        {
+            "c_hash": "ac06fb2f",
+            "date": "2014-10-09 12:57:52 -0400",
+            "comment": "Allow creation in case we want to override the builder in the future based on connection properties."
+        },
+        {
+            "c_hash": "f2ff78e6",
+            "date": "2014-10-09 13:53:05 -0400",
+            "comment": "Clean up JmsObjectMessage a bit and delegate toString() to the facade for a meaningful content string."
+        },
+        {
+            "c_hash": "f4dd5875",
+            "date": "2014-10-09 14:30:11 -0400",
+            "comment": "Delegate all toString methods in the JMS Message classes to their facade instance for creation of a meaningful message string."
+        },
+        {
+            "c_hash": "c9d6407a",
+            "date": "2014-10-09 16:32:09 -0400",
+            "comment": "Clean up in JmsMessage a bit, adds more test coverage."
+        },
+        {
+            "c_hash": "46341887",
+            "date": "2014-10-09 17:07:27 -0400",
+            "comment": "Add some additional tests"
+        },
+        {
+            "c_hash": "343a075f",
+            "date": "2014-10-09 17:24:11 -0400",
+            "comment": "Remove an unneeded public accessor and just make the calls directly in the AmqpConsumer"
+        },
+        {
+            "c_hash": "1626a3ec",
+            "date": "2014-10-09 17:29:43 -0400",
+            "comment": "Add extra test cases to fully cover equals."
+        },
+        {
+            "c_hash": "80807b34",
+            "date": "2014-10-09 18:09:48 -0400",
+            "comment": "Enforce strings only for setting JMSXUserID and add tests for more of the interceptor methods and scenarios."
+        },
+        {
+            "c_hash": "e85c74b4",
+            "date": "2014-10-09 18:57:26 -0400",
+            "comment": "Fix issue when setting delivery mode from string, add more tests to cover."
+        },
+        {
+            "c_hash": "1794cbbf",
+            "date": "2014-10-10 10:43:02 +0100",
+            "comment": "remove testonly setBody method, update tests accordingly"
+        },
+        {
+            "c_hash": "c4690c48",
+            "date": "2014-10-10 11:18:45 +0100",
+            "comment": "rename for clarity"
+        },
+        {
+            "c_hash": "27b9b283",
+            "date": "2014-10-10 11:44:57 +0100",
+            "comment": "Make new facades have an empty data section, as the copy being sent always does. Add additional tests around copy."
+        },
+        {
+            "c_hash": "a6d04de0",
+            "date": "2014-10-10 11:55:18 +0100",
+            "comment": "test input/output stream state checking"
+        },
+        {
+            "c_hash": "8aa3d4d9",
+            "date": "2014-10-10 12:36:15 +0100",
+            "comment": "simplify setting the encoding method and ensure it is a no-op if the method is unchanged"
+        },
+        {
+            "c_hash": "5c46a63c",
+            "date": "2014-10-10 12:54:15 +0100",
+            "comment": "start on unit tests for AmqpJmsObjectMessageFacade"
+        },
+        {
+            "c_hash": "ba54a036",
+            "date": "2014-10-10 09:58:54 -0400",
+            "comment": "Add additional tests for property intercept on AMQP specific JMS properties."
+        },
+        {
+            "c_hash": "12cb11ef",
+            "date": "2014-10-10 10:17:44 -0400",
+            "comment": "Add some additional tests."
+        },
+        {
+            "c_hash": "d661352c",
+            "date": "2014-10-10 15:02:46 +0100",
+            "comment": "more unit tests for AmqpJmsObjectMessageFacade"
+        },
+        {
+            "c_hash": "7dbfa28c",
+            "date": "2014-10-10 10:55:10 -0400",
+            "comment": "Remove now unused parts of the interceptor classes and finish up the test coverage."
+        },
+        {
+            "c_hash": "466975eb",
+            "date": "2014-10-10 11:31:30 -0400",
+            "comment": "Add test for JmsOutboundMessageDispatch"
+        },
+        {
+            "c_hash": "6045f0ae",
+            "date": "2014-10-10 12:28:21 -0400",
+            "comment": "Finish covering JMS message property handling tests pulling in old tests from previous client work."
+        },
+        {
+            "c_hash": "40eb821c",
+            "date": "2014-10-10 12:34:44 -0400",
+            "comment": "Removing the isExpired method from JmsMessage.  Will need to add something to the message facade later to allow a consumer to check prior to dispatch to ensure that prefetched messages get filtered if they expired while sitting in the buffer.  Something along message.getFacade().isExpired()"
+        },
+        {
+            "c_hash": "bfd9953b",
+            "date": "2014-10-10 13:38:41 -0400",
+            "comment": "Test the equals and hashCode bits."
+        },
+        {
+            "c_hash": "079e6c04",
+            "date": "2014-10-10 14:28:48 -0400",
+            "comment": "Capture and throw correct errors from BytesMessage read and write methods, adds tests to cover these."
+        },
+        {
+            "c_hash": "ea187698",
+            "date": "2014-10-10 14:36:45 -0400",
+            "comment": "Romve override of setObjectProperty"
+        },
+        {
+            "c_hash": "4b04d693",
+            "date": "2014-10-10 15:36:48 -0400",
+            "comment": "Add test for setType / getType and fix setType to remove the annotation if the value applied is null."
+        },
+        {
+            "c_hash": "a7907e09",
+            "date": "2014-10-10 15:55:05 -0400",
+            "comment": "Add additional check to ensure that when the value is null we don't NPE"
+        },
+        {
+            "c_hash": "a52e142c",
+            "date": "2014-10-10 16:38:33 -0400",
+            "comment": "Add some testing and some notes about cleanup of delivery / redelivery count methods in the message facades."
+        },
+        {
+            "c_hash": "df82aeac",
+            "date": "2014-10-10 17:22:39 -0400",
+            "comment": "Cover text message code with tests for isEmpty"
+        },
+        {
+            "c_hash": "2c1e2b29",
+            "date": "2014-10-10 18:33:41 -0400",
+            "comment": "Started work on some refactoring of clearProperties and the property intercepter to make things simpler.  Some TODO entries added to indicate where more work is still needed."
+        },
+        {
+            "c_hash": "94febc97",
+            "date": "2014-10-10 19:34:51 -0400",
+            "comment": "Started adding in the clear bits to the AMQP intercetper also."
+        },
+        {
+            "c_hash": "cee0c341",
+            "date": "2014-10-13 13:47:03 -0400",
+            "comment": "Finish work on refactoring the Amqp message property intercepter and updated tests to mock out the needed bits."
+        },
+        {
+            "c_hash": "f2900222",
+            "date": "2014-10-13 14:16:40 -0400",
+            "comment": "Add tests for new clear calls."
+        },
+        {
+            "c_hash": "fff5e965",
+            "date": "2014-10-13 16:04:10 -0400",
+            "comment": "Fix the test case."
+        },
+        {
+            "c_hash": "95941245",
+            "date": "2014-10-13 16:31:10 -0400",
+            "comment": "Add some additional test cases to ensure errors are trapped.  Remove unneeded check for null."
+        },
+        {
+            "c_hash": "e3039f14",
+            "date": "2014-10-13 18:50:11 -0400",
+            "comment": "Add some initial support for gathing connection capabilities and properties into a config object.  Start on real anonymous producer support."
+        },
+        {
+            "c_hash": "a0f228ba",
+            "date": "2014-10-14 18:46:13 -0400",
+            "comment": "Start work on testing and improving the JMS transformation utility which handles conversions of foreign messages and destinations."
+        },
+        {
+            "c_hash": "4d3ea7a1",
+            "date": "2014-10-15 09:43:04 -0400",
+            "comment": "Complete path coverage of destination transformation method."
+        },
+        {
+            "c_hash": "a757bab4",
+            "date": "2014-10-15 11:45:23 -0400",
+            "comment": "Create a raw Message type, not a TextMessage"
+        },
+        {
+            "c_hash": "a088d998",
+            "date": "2014-10-15 11:45:48 -0400",
+            "comment": "start testing the message transformation bits."
+        },
+        {
+            "c_hash": "c6618625",
+            "date": "2014-10-15 12:59:59 -0400",
+            "comment": "Clean up comments and API documentation."
+        },
+        {
+            "c_hash": "12cc2f37",
+            "date": "2014-10-15 15:12:32 -0400",
+            "comment": "Add a set of JMS Message implementations that can be used to test support for Foreign JMS Types."
+        },
+        {
+            "c_hash": "6a221b16",
+            "date": "2014-10-15 17:24:29 -0400",
+            "comment": "Test and cleanup the transformation of Foreign messages."
+        },
+        {
+            "c_hash": "3fc2d8b1",
+            "date": "2014-10-15 18:28:07 -0400",
+            "comment": "Add the ability for adding in a custom intercepter to manage conversion of foreign destination types that we don't know how to convert ourselves.  Default implementation will look for isTopic or isQueue method in the class before giving up.  Add some tests around this."
+        },
+        {
+            "c_hash": "bec6b5ce",
+            "date": "2014-10-15 18:45:09 -0400",
+            "comment": "Throw JMSException is the destinatio name is null."
+        },
+        {
+            "c_hash": "7525ab93",
+            "date": "2014-10-16 09:59:51 -0400",
+            "comment": "Add some additional tests for handling unresolved foreign destination types."
+        },
+        {
+            "c_hash": "6bcb5546",
+            "date": "2014-10-15 12:45:42 +0100",
+            "comment": "title and organise into sections of related tests"
+        },
+        {
+            "c_hash": "47cf6e4c",
+            "date": "2014-10-16 11:55:06 +0100",
+            "comment": "add message to assertion to aid during test failure"
+        },
+        {
+            "c_hash": "8b96bd5c",
+            "date": "2014-10-16 12:20:08 +0100",
+            "comment": "add note about need to check limit to prevent excess provider creation attempts"
+        },
+        {
+            "c_hash": "437a74fb",
+            "date": "2014-10-16 16:51:41 +0100",
+            "comment": "add support for sending+recieving byte encoded destination type info, disabled on outbound pending a final toggle"
+        },
+        {
+            "c_hash": "29f2dcda",
+            "date": "2014-10-16 12:17:27 -0400",
+            "comment": "Enable honoring of the disable message ID value in producer, broker will generate an ID for incoming messages without one."
+        },
+        {
+            "c_hash": "0b431122",
+            "date": "2014-10-16 13:55:52 -0400",
+            "comment": "Add tests for some behaviors of onSend"
+        },
+        {
+            "c_hash": "49db0e5e",
+            "date": "2014-10-16 14:51:09 -0400",
+            "comment": "Tests for stat exception thrown when connection is closed."
+        },
+        {
+            "c_hash": "1ec8e2ca",
+            "date": "2014-10-16 16:51:25 -0400",
+            "comment": "Create a specialized session object used soley by the connection to provide a place for things like durable unsubscribe, etc."
+        },
+        {
+            "c_hash": "ec13a0d5",
+            "date": "2014-10-16 18:52:38 -0400",
+            "comment": "Do some cleanup and renaming to make things more consistent."
+        },
+        {
+            "c_hash": "e6807291",
+            "date": "2014-10-17 10:57:01 +0100",
+            "comment": "remove stale comment, add some tests around the disableMessageId/disableTimestamp producer hints"
+        },
+        {
+            "c_hash": "badfb1b4",
+            "date": "2014-10-17 12:23:34 +0100",
+            "comment": "add ability to toggle the destination type annotation values used"
+        },
+        {
+            "c_hash": "375b0550",
+            "date": "2014-10-17 16:12:35 -0400",
+            "comment": "Extract some common bits into a utility base class."
+        },
+        {
+            "c_hash": "f2cd19e4",
+            "date": "2014-10-20 09:47:36 +0100",
+            "comment": "fix typo that got c&p across everything"
+        },
+        {
+            "c_hash": "473e8814",
+            "date": "2014-10-20 10:33:21 +0100",
+            "comment": "remove unused import"
+        },
+        {
+            "c_hash": "03d3ff37",
+            "date": "2014-10-20 11:15:36 +0100",
+            "comment": "streamline test, other elements have their own specific tests"
+        },
+        {
+            "c_hash": "ace7dc39",
+            "date": "2014-10-20 11:27:27 +0100",
+            "comment": "enable sending byte value for destination type annotations"
+        },
+        {
+            "c_hash": "75da189a",
+            "date": "2014-10-20 14:49:43 +0100",
+            "comment": "add some interop tests around expiration"
+        },
+        {
+            "c_hash": "f1584d25",
+            "date": "2014-10-20 18:10:21 -0400",
+            "comment": "A functional durable subscription removal mechanism.  Show where we need some cleanup work and also looks to show a problem with handling on the broker side when the durable sub is not removable due to in use."
+        },
+        {
+            "c_hash": "cc1559be",
+            "date": "2014-10-21 12:31:34 -0400",
+            "comment": "Fix the case where unsubscribe fails and then is reattempted and can succeed."
+        },
+        {
+            "c_hash": "82a1fbe2",
+            "date": "2014-10-24 13:41:08 +0100",
+            "comment": "start on session integration test for temporary queues"
+        },
+        {
+            "c_hash": "8e0e28fe",
+            "date": "2014-10-24 18:04:17 +0100",
+            "comment": "extract a common base class for matching of descriptor and field values"
+        },
+        {
+            "c_hash": "d9ffd6e3",
+            "date": "2014-10-24 18:40:26 +0100",
+            "comment": "consolodate a couple of the frame matcher superclasses"
+        },
+        {
+            "c_hash": "2dafb519",
+            "date": "2014-10-24 19:05:28 +0100",
+            "comment": "update test peer handling enough to make test pass, and add additional check that TemporaryQueue object reflects given dynamic address"
+        },
+        {
+            "c_hash": "3aa6ff70",
+            "date": "2014-10-27 13:49:38 +0000",
+            "comment": "update generated matchers to actually match the current XSL template"
+        },
+        {
+            "c_hash": "a40f0276",
+            "date": "2014-10-27 13:56:13 +0000",
+            "comment": "create new matchers to allow verifying sub-values within the source and target values of the Attach frame"
+        },
+        {
+            "c_hash": "177aca04",
+            "date": "2014-10-27 14:01:55 +0000",
+            "comment": "update expectations for temporary-queue creation to match on values of the Attach target"
+        },
+        {
+            "c_hash": "4ac18b1e",
+            "date": "2014-10-27 17:26:28 +0000",
+            "comment": "update temporary destination creation to use link-detach expiry, allowing us to delete them by detaching the creating link later"
+        },
+        {
+            "c_hash": "54b7d684",
+            "date": "2014-10-27 17:44:41 +0000",
+            "comment": "add check for temp queue terminus durability"
+        },
+        {
+            "c_hash": "b1bf687e",
+            "date": "2014-10-27 17:53:28 +0000",
+            "comment": "start on brokerless integration test for durable subscribers"
+        },
+        {
+            "c_hash": "9ab5ed15",
+            "date": "2014-10-28 10:52:14 +0000",
+            "comment": "limit default channel-max to the signed short range for compatibility"
+        },
+        {
+            "c_hash": "992460d8",
+            "date": "2014-10-28 12:41:37 +0000",
+            "comment": "add definitions to testpeer for some of the basic terminus field types and their values"
+        },
+        {
+            "c_hash": "de967230",
+            "date": "2014-10-28 12:42:54 +0000",
+            "comment": "update the testpeer to use the new constants rather than literals"
+        },
+        {
+            "c_hash": "ead083b9",
+            "date": "2014-10-28 17:34:02 +0000",
+            "comment": "add transaction related files generated by existing XSL"
+        },
+        {
+            "c_hash": "c227b29f",
+            "date": "2014-10-28 17:35:42 +0000",
+            "comment": "add some more delivery state types"
+        },
+        {
+            "c_hash": "edb6aaf8",
+            "date": "2014-10-28 17:42:13 +0000",
+            "comment": "add some more transaction related types"
+        },
+        {
+            "c_hash": "a33cc988",
+            "date": "2014-10-28 17:45:09 +0000",
+            "comment": "add some more transaction related types"
+        },
+        {
+            "c_hash": "39fc8b9e",
+            "date": "2014-10-28 18:25:54 +0000",
+            "comment": "add the more general error-condition archetype rather than just transaction-error specifically"
+        },
+        {
+            "c_hash": "8d9c1f38",
+            "date": "2014-10-28 18:30:41 +0000",
+            "comment": "add types for sender/reciever roles and settlement"
+        },
+        {
+            "c_hash": "b47fbb74",
+            "date": "2014-10-28 18:34:58 +0000",
+            "comment": "update xsl name"
+        },
+        {
+            "c_hash": "e7af2e1e",
+            "date": "2014-10-28 18:41:06 +0000",
+            "comment": "add the error type"
+        },
+        {
+            "c_hash": "91e3627e",
+            "date": "2014-10-28 18:44:31 +0000",
+            "comment": "add dynamic node lifetime policies"
+        },
+        {
+            "c_hash": "7b601d23",
+            "date": "2014-10-28 18:54:30 +0000",
+            "comment": "add transactional-state matcher"
+        },
+        {
+            "c_hash": "a0c76f6a",
+            "date": "2014-10-28 16:12:37 -0400",
+            "comment": "Add a little bit more validation to the durable subscribe test."
+        },
+        {
+            "c_hash": "470c87ae",
+            "date": "2014-10-28 17:10:15 -0400",
+            "comment": "Add a NoOpAsyncResult class to use for out of band async operation where we don't care about the end result."
+        },
+        {
+            "c_hash": "7188d9c7",
+            "date": "2014-10-29 16:51:31 -0400",
+            "comment": "Implement proper durable topic unsubscribe.  Also ensures that for a durable subscriber we detach and not close when the MessageConsumer is closed.  Tests will continue to work with ActiveMQ as it removes subscriptions on the first reattach attempt and does not currently do a remove on close.  Some of the AmqpResource code is a bit messy now and needs to be refactored a bit after this change."
+        },
+        {
+            "c_hash": "c186b3bb",
+            "date": "2014-11-10 09:53:31 +0000",
+            "comment": "update to use new type classes for matching"
+        },
+        {
+            "c_hash": "f5c1fbd4",
+            "date": "2014-11-10 15:02:47 +0000",
+            "comment": "Update anonymous relay to use a target with null address in line with Addressing spec direction. Relies on update to broker to enable support. Needs finishing."
+        },
+        {
+            "c_hash": "da948845",
+            "date": "2014-11-10 15:04:34 +0000",
+            "comment": "add support to test peer for refusing producer links"
+        },
+        {
+            "c_hash": "f2b3a5da",
+            "date": "2014-11-10 15:21:03 +0000",
+            "comment": "encapsulate the endpoint field"
+        },
+        {
+            "c_hash": "923bbc7a",
+            "date": "2014-11-10 15:24:56 +0000",
+            "comment": "add test of behaviour when link is refused, i.e null source in attach response"
+        },
+        {
+            "c_hash": "85a310a3",
+            "date": "2014-11-10 15:25:36 +0000",
+            "comment": "add incomplete test of anonymous producer behaviour when the anonymous-relay node is not supported"
+        },
+        {
+            "c_hash": "c1c8b5b5",
+            "date": "2014-11-10 16:31:53 +0000",
+            "comment": "verify a non-null terminus during producer open completion, fail if otherwise"
+        },
+        {
+            "c_hash": "d7db08f5",
+            "date": "2014-11-10 17:45:30 +0000",
+            "comment": "temporarily disable the tests that fail due to requiring an outstanding patch to broker side anonymous relay behaviour"
+        },
+        {
+            "c_hash": "2d617c82",
+            "date": "2014-11-11 10:41:38 +0000",
+            "comment": "add option to group multiple frames into a single attempted TCP write, use to optionally defer the attach response until the detach is ready too"
+        },
+        {
+            "c_hash": "b8bb34b7",
+            "date": "2014-11-11 11:46:35 +0000",
+            "comment": "remove producers map that isnt currently really used"
+        },
+        {
+            "c_hash": "ab870c8e",
+            "date": "2014-11-11 14:40:29 +0000",
+            "comment": "update anonymous producers to attempt using the anonymous relay and then fall back to opening and closing links if unsuccessfull"
+        },
+        {
+            "c_hash": "109b4022",
+            "date": "2014-11-11 14:40:45 +0000",
+            "comment": "enable tests using anonymous producers again, now that they will fall back to opening and closing links if trying the anonymous relay fails."
+        },
+        {
+            "c_hash": "63d56d28",
+            "date": "2014-11-11 14:56:55 +0000",
+            "comment": "fixup config for controlling producer settlement"
+        },
+        {
+            "c_hash": "840d3f7e",
+            "date": "2014-11-12 09:45:42 +0000",
+            "comment": "update test to perform repeat send to observe continued use of link to the anonymous-relay"
+        },
+        {
+            "c_hash": "7537ee85",
+            "date": "2014-11-12 10:14:36 +0000",
+            "comment": "finish test of anonymous producer behaviour when the anonmous-relay node is not supported, observe link attach and detach/close for repeated sends"
+        },
+        {
+            "c_hash": "73f79da2",
+            "date": "2014-11-12 11:25:08 +0000",
+            "comment": "enable deciding whether a detach frame should be responded to, as it might be a response frame we are expecting"
+        },
+        {
+            "c_hash": "f4174a2c",
+            "date": "2014-11-12 11:28:15 +0000",
+            "comment": "fix session closed exception message"
+        },
+        {
+            "c_hash": "599585b7",
+            "date": "2014-11-12 14:37:38 +0000",
+            "comment": "update tests to expect detach responses during link rejection, update implementation to send them"
+        },
+        {
+            "c_hash": "6b24bd27",
+            "date": "2014-11-12 14:56:50 +0000",
+            "comment": "reduce duplication for durable subscription attach matching"
+        },
+        {
+            "c_hash": "d48d9876",
+            "date": "2014-11-12 15:25:07 +0000",
+            "comment": "update basic link flow expectation check to verify there is a handle set"
+        },
+        {
+            "c_hash": "af58ec04",
+            "date": "2014-11-12 15:32:45 +0000",
+            "comment": "expect a flow for the new subscriber, avoid race with test peer shutdown"
+        },
+        {
+            "c_hash": "7a0439e4",
+            "date": "2014-11-12 16:21:41 +0000",
+            "comment": "when matching the detach as not closed, allow either the explicit false or the default false through not being present"
+        },
+        {
+            "c_hash": "e7f34c73",
+            "date": "2014-11-13 09:47:24 +0000",
+            "comment": "add test of durable subscriber close, ensure the underlying AMQP link does not detach with close=true"
+        },
+        {
+            "c_hash": "c7bee104",
+            "date": "2014-11-13 10:20:57 +0000",
+            "comment": "log the recieved fields of the frame in the same order as the spec to aid diagnosis during failures"
+        },
+        {
+            "c_hash": "017d006d",
+            "date": "2014-11-13 10:59:51 +0000",
+            "comment": "make expectation checking and logging deterministic based on order of definition, clean up creation of matchers map"
+        },
+        {
+            "c_hash": "b0a29665",
+            "date": "2014-11-13 11:51:56 +0000",
+            "comment": "Start on brokerless integration test of transactions. Need to flesh out DataImpl array handling to proceed."
+        },
+        {
+            "c_hash": "ec7f3981",
+            "date": "2014-11-14 15:52:43 +0000",
+            "comment": "enable test now that DataImpl from Proton has been updated to handle the Coordinator target capabilities Symbol array"
+        },
+        {
+            "c_hash": "1ce194b7",
+            "date": "2014-11-14 16:25:16 +0000",
+            "comment": "update test to verify there are capabilities"
+        },
+        {
+            "c_hash": "b3ef44d1",
+            "date": "2014-11-14 16:45:56 +0000",
+            "comment": "remove the 'amqp:multi-txns-per-ssn' capability from coordinator links since we don't currently use this, update test to verify the exact capabilities we request"
+        },
+        {
+            "c_hash": "63f843f7",
+            "date": "2014-11-17 09:14:20 +0000",
+            "comment": "clean up unused imports"
+        },
+        {
+            "c_hash": "9d40af8f",
+            "date": "2014-11-17 09:43:05 +0000",
+            "comment": "allow controlling response state and settlement, for use in transaction declare+commit etc"
+        },
+        {
+            "c_hash": "fe8768b3",
+            "date": "2014-11-17 11:47:30 +0000",
+            "comment": "add equals/hashcode to the Declare and Discharge described types to allow equality check with decoded transfer value using the EncodedAmqpValueMatcher"
+        },
+        {
+            "c_hash": "3c868e70",
+            "date": "2014-11-17 12:06:35 +0000",
+            "comment": "enhance disposition matching ability to allow for transactional state"
+        },
+        {
+            "c_hash": "e13dfc48",
+            "date": "2014-11-17 13:54:06 +0000",
+            "comment": "add verification of settlement on transfer frames"
+        },
+        {
+            "c_hash": "92112063",
+            "date": "2014-11-17 14:17:06 +0000",
+            "comment": "add brokerless integration test of committing a transacted session with a consumer"
+        },
+        {
+            "c_hash": "c8397730",
+            "date": "2014-11-17 15:36:09 +0000",
+            "comment": "update to allow test to receive multiple messages, plus some extra logging and renaming for clarity"
+        },
+        {
+            "c_hash": "f9e4a6ca",
+            "date": "2014-11-17 15:47:29 +0000",
+            "comment": "add test that only receives some of the available messages in the transaction"
+        },
+        {
+            "c_hash": "9b0fbc72",
+            "date": "2014-11-17 16:52:47 +0000",
+            "comment": "only allow IOException's after socket closure to be suppressed, ensure other issues are actioned by the closer, e.g. unexpected data being read between the final handler and shutdown"
+        },
+        {
+            "c_hash": "86e51a85",
+            "date": "2014-11-17 16:57:53 +0000",
+            "comment": "fix up test to expect settlement of messages in the committed transaction"
+        },
+        {
+            "c_hash": "51a27a4a",
+            "date": "2014-11-17 17:12:21 +0000",
+            "comment": "add brokerless integration test of rollback on a transacted session with a consumer"
+        },
+        {
+            "c_hash": "3743acf1",
+            "date": "2014-11-18 14:54:14 +0000",
+            "comment": "remove unused connection property"
+        },
+        {
+            "c_hash": "428c782b",
+            "date": "2014-11-18 16:59:57 +0000",
+            "comment": "add support for offering capabilities from test peer"
+        },
+        {
+            "c_hash": "03be3ff0",
+            "date": "2014-11-18 17:08:39 +0000",
+            "comment": "update anonymous producers to use a connection capability to signal support of the anonymous relay node"
+        },
+        {
+            "c_hash": "d7ea4b17",
+            "date": "2014-11-19 15:20:08 +0000",
+            "comment": "add equals+hashcode to testpeer outcome described types"
+        },
+        {
+            "c_hash": "92b50f87",
+            "date": "2014-11-19 16:03:26 +0000",
+            "comment": "add matchers to the test peer for the various delivery outcomes"
+        },
+        {
+            "c_hash": "26ed4c2e",
+            "date": "2014-11-19 16:09:51 +0000",
+            "comment": "update tests to use new matchers, verify the rolled back messages have the appropriate failed+undeliverable values for their modified disposition state update"
+        },
+        {
+            "c_hash": "9b1f56ed",
+            "date": "2014-11-19 16:12:52 +0000",
+            "comment": "fix race-to-shutdown in test, ensure we expect and wait for the detach response"
+        },
+        {
+            "c_hash": "381f2397",
+            "date": "2014-11-19 16:52:54 +0000",
+            "comment": "set the outcomes for consumers souces, set default outcome to modified with failed=true and undeliverable-here=false. Work towards support for settling the deliveries prior to commit/rollback on transacted sessions."
+        },
+        {
+            "c_hash": "ba46179d",
+            "date": "2014-11-24 12:57:06 +0000",
+            "comment": "add support for matching Source details on producing links"
+        },
+        {
+            "c_hash": "6b39ddda",
+            "date": "2014-11-24 12:57:48 +0000",
+            "comment": "add test to check we specify support of accepted and rejected outcomes on producing links"
+        },
+        {
+            "c_hash": "1ec620ae",
+            "date": "2014-11-24 13:09:34 +0000",
+            "comment": "update producer to set supported outcomes on source"
+        },
+        {
+            "c_hash": "a6d03075",
+            "date": "2014-11-24 17:09:37 +0000",
+            "comment": "update consumers on transacted sessions to settle deliveries when transactionally accepting them"
+        },
+        {
+            "c_hash": "d51d4191",
+            "date": "2014-11-26 10:20:57 +0000",
+            "comment": "add test demonstrating ordering issue after rollback"
+        },
+        {
+            "c_hash": "b7e7ecdd",
+            "date": "2014-11-26 18:53:31 +0000",
+            "comment": "update test to show the order of all messages received when failing."
+        },
+        {
+            "c_hash": "b7f2b9ec",
+            "date": "2014-12-01 16:48:53 +0000",
+            "comment": "add test to expose broker issue when committing transacted message acks out of sequence with their original dispatch"
+        },
+        {
+            "c_hash": "1023dfc8",
+            "date": "2014-12-01 16:52:06 +0000",
+            "comment": "fix ignore comment"
+        },
+        {
+            "c_hash": "70b1690f",
+            "date": "2014-12-02 10:40:21 +0000",
+            "comment": "enable test now that broker change has been applied"
+        },
+        {
+            "c_hash": "40ad9e8b",
+            "date": "2014-12-02 11:03:36 +0000",
+            "comment": "change regular MessageConsumer creation to use the JmsMessageConsumer object"
+        },
+        {
+            "c_hash": "33893e8f",
+            "date": "2014-12-03 15:55:16 +0000",
+            "comment": "remove extraneous 'postCommit/postRollback' settlement handling, we now settle consumed messages at the point they are transactionally accepted rather than storing them as 'delivered'"
+        },
+        {
+            "c_hash": "7be4c07a",
+            "date": "2014-12-03 16:30:00 +0000",
+            "comment": "remove overridden method in QueueBrowser that does the same as its parent"
+        },
+        {
+            "c_hash": "ac61cbba",
+            "date": "2014-12-03 17:40:39 +0000",
+            "comment": "removed missed unused import"
+        },
+        {
+            "c_hash": "ac67160e",
+            "date": "2014-12-03 16:10:22 -0500",
+            "comment": "Update a couple of dependencies."
+        },
+        {
+            "c_hash": "cfbdeabc",
+            "date": "2014-12-03 18:37:58 -0500",
+            "comment": "Remove the async bit from the create methods, there's only one now."
+        },
+        {
+            "c_hash": "14829614",
+            "date": "2014-12-04 10:42:49 +0000",
+            "comment": "stop the consumers before the executor to help ensure they dont try using it or creating a new one"
+        },
+        {
+            "c_hash": "80d95960",
+            "date": "2014-12-04 12:19:21 +0000",
+            "comment": "add assertion text to aid analysis of failures"
+        },
+        {
+            "c_hash": "090286dc",
+            "date": "2014-12-04 14:24:45 +0000",
+            "comment": "stop delivery of additional messages while performing rollback, release prefetched messages before resuming delivery to give expected ordering behaviour"
+        },
+        {
+            "c_hash": "f994b354",
+            "date": "2014-12-05 11:23:21 +0000",
+            "comment": "update initial IDs used for next incoming/outgoing transfer to match what we actually use"
+        },
+        {
+            "c_hash": "0fdc8e54",
+            "date": "2014-12-05 12:46:05 +0000",
+            "comment": "add support for using drain to stop links"
+        },
+        {
+            "c_hash": "7c8f8e1c",
+            "date": "2014-12-05 14:25:49 +0000",
+            "comment": "dont begin the next transaction before releasing the prefetched messages"
+        },
+        {
+            "c_hash": "39c9dbb0",
+            "date": "2014-12-05 15:21:04 +0000",
+            "comment": "update rollback tests to account for recent changes"
+        },
+        {
+            "c_hash": "7daeb808",
+            "date": "2014-12-09 10:32:49 +0000",
+            "comment": "add support for precisely matching on the link credit indicated by Flow frames"
+        },
+        {
+            "c_hash": "07c3e991",
+            "date": "2014-12-09 10:33:32 +0000",
+            "comment": "add test that the prefetch policy influences the link credit issued for consumers"
+        },
+        {
+            "c_hash": "b581085b",
+            "date": "2014-12-09 10:43:30 +0000",
+            "comment": "add toggle for whether or not a Flow frame response is sent after a 'drain' request is received"
+        },
+        {
+            "c_hash": "68ee9f50",
+            "date": "2014-12-09 11:34:29 +0000",
+            "comment": "enforce previously implicit assumption that link isnt being drained"
+        },
+        {
+            "c_hash": "12fc1804",
+            "date": "2014-12-09 12:27:53 +0000",
+            "comment": "add test that rolls back transaction with prefetch already full, leading to the drain request not resulting in a response Flow"
+        },
+        {
+            "c_hash": "1b75b7e0",
+            "date": "2014-12-09 12:50:27 +0000",
+            "comment": "Check if the consumer link credit has already been exhausted, and no-op the 'stop' request. Update test accordingly"
+        },
+        {
+            "c_hash": "b5e981c4",
+            "date": "2014-12-09 14:40:03 +0000",
+            "comment": "consolidate handling of consumer flow handling and subsequent transfer and drain flow responses"
+        },
+        {
+            "c_hash": "58616e84",
+            "date": "2014-12-09 15:50:19 +0000",
+            "comment": "add a test where the drain attempt uses all the available credit and no flow response is sent as a result"
+        },
+        {
+            "c_hash": "c5ec1a54",
+            "date": "2014-12-09 15:52:05 +0000",
+            "comment": "update handling of drain attempts to handle messages using all the credit and no flow frame arriving to indicate completion"
+        },
+        {
+            "c_hash": "4e0c88fa",
+            "date": "2014-12-09 15:15:13 -0500",
+            "comment": "Add some notes on future work needed."
+        },
+        {
+            "c_hash": "99dde7ac",
+            "date": "2014-12-10 11:26:42 +0000",
+            "comment": "update stop process to handle presence of queued messages just in case, tidy up a little for clarity"
+        },
+        {
+            "c_hash": "85f92662",
+            "date": "2014-12-10 14:24:11 -0500",
+            "comment": "Add client ack test showing that extension of the link credit does not expand the prefetch window in ActiveMQ currently."
+        },
+        {
+            "c_hash": "e62deaac",
+            "date": "2014-12-10 15:59:49 -0500",
+            "comment": "Add another test that checks broker stats for zero prefetch to see if pulling one message works without causing more to go dispatched."
+        },
+        {
+            "c_hash": "e6a542a2",
+            "date": "2014-12-12 12:43:08 +0000",
+            "comment": "add test used to debug broker destination handling"
+        }
+    ]
+}

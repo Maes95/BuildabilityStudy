@@ -1,0 +1,69 @@
+INDEX,COMMIT_ID,IS_MAVEN,OLD_BUILD_SUCCESSFUL,NEW_BUILD_SUCCESSFUL,OLD_EXCEPTION,NEW_EXCEPTION
+0,7d824657,True,True,True,,[]
+1,79502f2b,True,False,False,CompilationFailureException,"['MojoFailureException', 'CompilationFailureException']"
+2,6e1e7588,True,False,False,CompilationFailureException,"['MojoFailureException', 'CompilationFailureException']"
+3,f6110ab6,True,False,False,CompilationFailureException,"['MojoFailureException', 'CompilationFailureException']"
+4,d2f6f2ed,True,False,False,CompilationFailureException,"['MojoFailureException', 'CompilationFailureException']"
+5,09a88821,True,False,False,CompilationFailureException,"['MojoFailureException', 'CompilationFailureException']"
+6,950d30e3,True,False,False,CompilationFailureException,"['MojoFailureException', 'CompilationFailureException']"
+7,bef54e5c,True,False,False,CompilationFailureException,"['MojoFailureException', 'CompilationFailureException']"
+8,dd792bb8,True,False,False,CompilationFailureException,"['MojoFailureException', 'CompilationFailureException']"
+9,c6078d65,True,True,True,,[]
+10,977fb7a6,True,True,True,,[]
+11,f64ff48c,True,True,True,,[]
+12,b8ce7eef,True,True,True,,[]
+13,ce23270e,True,True,True,,[]
+14,f333510b,True,True,True,,[]
+15,dfa098ab,True,True,True,,[]
+16,7b6ed0a7,True,True,True,,[]
+17,7f45faa2,True,True,True,,[]
+18,5c0c3916,True,True,True,,[]
+19,958e9b2a,True,True,True,,[]
+20,17816f24,True,True,True,,[]
+21,1ca37377,True,True,True,,[]
+22,34a281f2,True,True,True,,[]
+23,83774019,True,True,True,,[]
+24,99b7881a,True,True,True,,[]
+25,1865e6b2,True,True,True,,[]
+26,8e59595a,True,True,True,,[]
+27,dc6afb21,True,True,True,,[]
+28,4da853dc,True,True,True,,[]
+29,a0b191a3,True,True,True,,[]
+30,1a8ef54c,True,True,True,,[]
+31,c360a0d2,True,True,True,,[]
+32,f971fcfb,True,True,True,,[]
+33,34032733,True,True,True,,[]
+34,c9a95457,True,True,True,,[]
+35,682cee6c,True,True,True,,[]
+36,9d8be836,True,True,True,,[]
+37,7f97f6a4,True,True,True,,[]
+38,7df829fa,True,True,True,,[]
+39,37c78e9c,True,True,True,,[]
+40,e9fabf4f,True,True,True,,[]
+41,801d9343,True,True,True,,[]
+42,a5f6cadd,True,True,True,,[]
+43,e25742be,True,True,True,,[]
+44,61b99f38,True,True,True,,[]
+45,f4392ad0,True,True,True,,[]
+46,03954810,True,True,True,,[]
+47,01ad86e9,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+48,d07c3794,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+49,fc3d7b39,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+50,77268891,True,True,True,,[]
+51,f7044ed0,True,True,True,,[]
+52,2d70f41d,True,True,True,,[]
+53,ac5a9e99,True,True,True,,[]
+54,8fbd6e9b,True,True,True,,[]
+55,04cea01b,True,True,True,,[]
+56,ac060ecb,True,True,True,,[]
+57,cefd7f7e,True,False,False,ArtifactResolutionException,"['ArtifactResolutionException', 'ProjectBuildingException', 'UnresolvableModelException']"
+58,b8bf03cb,True,False,False,ArtifactResolutionException,"['ArtifactResolutionException', 'ProjectBuildingException', 'UnresolvableModelException']"
+59,b40141c7,True,False,False,ArtifactResolutionException,"['ArtifactResolutionException', 'ProjectBuildingException', 'UnresolvableModelException']"
+60,f90688d1,True,False,False,ArtifactResolutionException,"['ArtifactResolutionException', 'ProjectBuildingException', 'UnresolvableModelException']"
+61,d922872c,True,False,False,ArtifactResolutionException,"['ArtifactResolutionException', 'ProjectBuildingException', 'UnresolvableModelException']"
+62,c63f50e3,True,False,False,ArtifactResolutionException,"['ArtifactResolutionException', 'ProjectBuildingException', 'UnresolvableModelException']"
+63,e7fcc89b,True,False,False,ArtifactResolutionException,"['ArtifactResolutionException', 'ProjectBuildingException', 'UnresolvableModelException']"
+64,cc3c7ab5,True,False,False,ArtifactResolutionException,"['ArtifactResolutionException', 'ProjectBuildingException', 'UnresolvableModelException']"
+65,d9d70684,True,False,False,ArtifactResolutionException,"['ArtifactResolutionException', 'ProjectBuildingException', 'UnresolvableModelException']"
+66,f0f16812,True,False,False,ArtifactResolutionException,"['ArtifactResolutionException', 'ProjectBuildingException', 'UnresolvableModelException']"
+67,2806b48b,True,False,False,ArtifactResolutionException,"['ArtifactResolutionException', 'ProjectBuildingException', 'UnresolvableModelException']"

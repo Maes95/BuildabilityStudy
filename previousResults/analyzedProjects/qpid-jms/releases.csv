@@ -1,0 +1,8 @@
+commitID;commit-type;time-to-next-release;commit-message
+22e25c6d214ee44f3a9d15b2b068d6e6b59b3154;BREAKING_FIX;-;NO-JIRA: add very simple initial proof-of-concept for a proton-based client, from investigation by Rob Godfrey and myself. git-svn-id: https://svn.apache.org/repos/asf/qpid/jms/trunk@1487522 13f79535-47bb-0310-9956-ffa450edef68
+194f9f6f715a40a023087edcc1597b1ae56be332;BREAKING_CHANGES;-;NO-JIRA: update dependencies to account for recent proton module changes, generally tidy things up git-svn-id: https://svn.apache.org/repos/asf/qpid/jms/trunk@1562903 13f79535-47bb-0310-9956-ffa450edef68
+5754370187b5441536be020f40c1a3c6e654087f;BREAKING_FIX;-;NO-JIRA: fix compilation following changes on proton trunk git-svn-id: https://svn.apache.org/repos/asf/qpid/jms/trunk@1607339 13f79535-47bb-0310-9956-ffa450edef68
+dd606e3a2504abd54757f5b84485a122413fa74a;BREAKING_CHANGES;-;QPIDJMS-25: initial experimenting with Netty integration git-svn-id: https://svn.apache.org/repos/asf/qpid/jms/trunk@1617755 13f79535-47bb-0310-9956-ffa450edef68
+e4decdc1e5df9797915b5a892f59bc20134c969c;BREAKING_FIX;-;Initial drop of donated AMQP Client Code. 
+540298601f1db8aac54a5d17c9394d00f32616d5;BREAKING_CHANGES;-;Additional check to filter out replyToGroupId if its an empty string also. 
+0546ace6ea8f9611b898e480d92996cb765b025e;BREAKING_FIX;-;Test for number of message properties and fix copy incorrectly mapping replyTo into the replyToGroupId feild. 

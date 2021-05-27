@@ -1,0 +1,10 @@
+commitID;commit-type;time-to-next-release;commit-message
+ff2b0a0eee6d196fb217ed14d740ca3aac8b6d33;BREAKING_FIX;66;initial commit 
+622a0695859cc3f6e420c111a8f17a6e3d00f810;BREAKING_CHANGES;61;refactoring groupid and artifactid 
+2c38eec6867225698f9889637b31dde8c619e038;BREAKING_FIX;61;fix pom depencencies 
+3365281809055535302e31dd46010a68d0d9c884;BREAKING_CHANGES;17;Issue OLINGO-16 - add JPA ref scenario to distribution package 
+c9c4d957adce25698bf187de47b395acff37738f;BREAKING_FIX;17;Issue OLINGO-16 - fix build error: using eclipselink 2.5.0 
+d75041c4545302ec431a23ac894ee0498aeab18a;BREAKING_CHANGES;72;[OLINGO-256] Added more tests 
+55b1c8464e0c84f48210fb0d986975c954bc93ee;BREAKING_FIX;72;[OLINGO-256] Added missing import 
+41d99109b00f03da69072c4cab542db4cea1df1c;BREAKING_CHANGES;21;[OLINGO-312] Support for passing Mapping Model as a Input Stream. Implement the method getJPAEdmMappingModelStream method of JPAEdmExtension interface to return a Stream of Mapping Model. The mapping model stream should be a XML document adhering to JPAEDMMappingModel.xsd Signed-off-by: Chandan V A <chandan.v.a@sap.com>
+9f638e55ba55b72677dad841a81fa62de0abf868;BREAKING_FIX;21;[OLINGO-312] Fix Build Issue - This file got missed out in the commit :( Signed-off-by: Chandan V A <chandan.v.a@sap.com>

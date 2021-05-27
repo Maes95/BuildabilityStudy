@@ -1,0 +1,13 @@
+commitID;commit-type;time-to-next-release;commit-message
+a7fd858fe387fab5f839ae5567c545f623e35812;BREAKING_FIX;34;Merge 1.5 Release branch back to trunk. git-svn-id: https://svn.apache.org/repos/asf/velocity/engine/trunk@501574 13f79535-47bb-0310-9956-ffa450edef68
+186d81b9b42030380ca74576ff4eed6861228b3b;BREAKING_CHANGES;57;VELOCITY-606 misc performance improvements adapted from Jarkko Viinamaki's patch git-svn-id: https://svn.apache.org/repos/asf/velocity/engine/trunk@679165 13f79535-47bb-0310-9956-ffa450edef68
+73412fe8adea1ba0f68fe015eb834fc7222e2cc6;BREAKING_FIX;55;sync pom commons-lang version with build.properties git-svn-id: https://svn.apache.org/repos/asf/velocity/engine/trunk@679872 13f79535-47bb-0310-9956-ffa450edef68
+2b5d32cb869e90feef54b5d23c44029954f35df0;BREAKING_CHANGES;52;remove unnecessary synchronization (VELOCITY-606) git-svn-id: https://svn.apache.org/repos/asf/velocity/engine/trunk@680609 13f79535-47bb-0310-9956-ffa450edef68
+3206dc3a78ff405e0036b2b1d52a06026cb2c1ae;BREAKING_FIX;51;fix gump error (oops) git-svn-id: https://svn.apache.org/repos/asf/velocity/engine/trunk@680745 13f79535-47bb-0310-9956-ffa450edef68
+9c986c3171401592d73f8f787bd9871d85c97dc4;BREAKING_CHANGES;60;VELOCITY-666 add support for calling macros with a body (thanks to Jarkko Viinamki) git-svn-id: https://svn.apache.org/repos/asf/velocity/engine/trunk@735156 13f79535-47bb-0310-9956-ffa450edef68
+fb9fb4d79d79745d683f287ed072747c6e43727c;BREAKING_FIX;58;VELOCITY-666 add new files for macro block feature git-svn-id: https://svn.apache.org/repos/asf/velocity/engine/trunk@735392 13f79535-47bb-0310-9956-ffa450edef68
+cc548f78e498e33aef64634b545e78191502fe52;BREAKING_CHANGES;42;Fixed number of arguments reported in macro mis-match argument exception git-svn-id: https://svn.apache.org/repos/asf/velocity/engine/trunk@740591 13f79535-47bb-0310-9956-ffa450edef68
+467759f926b4133d0295e5dc82fcef3ce6c3c39e;BREAKING_FIX;42;Oops, reverse last checking, picked up stuff that shouldn't go in git-svn-id: https://svn.apache.org/repos/asf/velocity/engine/trunk@740593 13f79535-47bb-0310-9956-ffa450edef68
+c7ff1001b4a2ee7cd0b1cfd72dd052e666fb9f3b;BREAKING_CHANGES;24;VELOCITY-704 initial implementation of scope controls git-svn-id: https://svn.apache.org/repos/asf/velocity/engine/trunk@746438 13f79535-47bb-0310-9956-ffa450edef68
+447af5185a677333d6b0f01d9b919acdffe4d6d2;BREAKING_FIX;24;VELOCITY-704 continuation of r746438 (forgot to do svn add first) git-svn-id: https://svn.apache.org/repos/asf/velocity/engine/trunk@746439 13f79535-47bb-0310-9956-ffa450edef68
+4ca6334c336a3707842fdbc89b2cee320bc0bf1d;BREAKING_CHANGES;-;move 2.x branch to trunk git-svn-id: https://svn.apache.org/repos/asf/velocity/engine/trunk@1040711 13f79535-47bb-0310-9956-ffa450edef68

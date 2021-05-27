@@ -1,0 +1,4428 @@
+{
+    "project": "sandesha",
+    "git_url": "https://github.com/apache/sandesha.git",
+    "last_commit": "a6b133d0",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "686d5aa9",
+            "date": "2006-06-15 05:51:15 +0000",
+            "comment": "Moved the java svn to the new location, https://svn.apache.org/repos/asf/webservices/sandesha/trunk/java"
+        },
+        {
+            "c_hash": "d89e72a4",
+            "date": "2006-06-19 08:54:04 +0000",
+            "comment": "Applied the patch from Andrew"
+        },
+        {
+            "c_hash": "80b6947e",
+            "date": "2006-06-22 16:48:23 +0000",
+            "comment": "Applied the patch from Andrew"
+        },
+        {
+            "c_hash": "d585c251",
+            "date": "2006-06-27 15:51:10 +0000",
+            "comment": "Applied patches from Andrew and Thomas."
+        },
+        {
+            "c_hash": "4d193839",
+            "date": "2006-06-29 13:33:53 +0000",
+            "comment": "corrected the build break due to a change in Axis2"
+        },
+        {
+            "c_hash": "9cb3b78c",
+            "date": "2006-06-30 23:49:49 +0000",
+            "comment": "Did corrections to the Fault Handling logic. Added a handleFault method to the InOrderInvoker. Applied the patch from Andrew on 'Typos'"
+        },
+        {
+            "c_hash": "1ab77d18",
+            "date": "2006-07-03 18:09:38 +0000",
+            "comment": "Fixed a bug that could cause NullPointerExceptions in the TerminateSequenceProcessor"
+        },
+        {
+            "c_hash": "7c0bf469",
+            "date": "2006-07-04 11:30:56 +0000",
+            "comment": "had forgotten to commit the test classes after a previous refactoring"
+        },
+        {
+            "c_hash": "ae7ee7aa",
+            "date": "2006-07-07 18:21:28 +0000",
+            "comment": "The patch from Andrew plus some corrections to avaoid test failures."
+        },
+        {
+            "c_hash": "9ea6d2b6",
+            "date": "2006-07-07 18:24:32 +0000",
+            "comment": "Added a methods to confugire the created ConfigContext as needed"
+        },
+        {
+            "c_hash": "efd6d1f6",
+            "date": "2006-07-10 18:31:57 +0000",
+            "comment": "Removed Author Tags according to Axis2 convensions. Added some missing javadocs and licence declarations."
+        },
+        {
+            "c_hash": "002417d2",
+            "date": "2006-07-10 18:34:29 +0000",
+            "comment": "Corrections to the maven files. Added some dependencies neede by MTOM."
+        },
+        {
+            "c_hash": "99408a43",
+            "date": "2006-07-10 18:38:01 +0000",
+            "comment": "Cleaned some of the test cases."
+        },
+        {
+            "c_hash": "77b54ba4",
+            "date": "2006-07-12 02:50:31 +0000",
+            "comment": "Deprecated some unused methods of bean managers."
+        },
+        {
+            "c_hash": "d5496f13",
+            "date": "2006-07-13 23:06:58 +0000",
+            "comment": "Applied the patch from Matt on Unreliable Messages"
+        },
+        {
+            "c_hash": "6d6c2d70",
+            "date": "2006-07-14 10:23:53 +0000",
+            "comment": "Fixed the error pointed by Damitha"
+        },
+        {
+            "c_hash": "01e98f3d",
+            "date": "2006-07-18 11:50:10 +0000",
+            "comment": "Added a test case to show RM working with MTOM"
+        },
+        {
+            "c_hash": "635ab95b",
+            "date": "2006-07-19 02:58:31 +0000",
+            "comment": "Applied the patch from Thomas on i18n."
+        },
+        {
+            "c_hash": "527b3e7e",
+            "date": "2006-07-19 07:12:09 +0000",
+            "comment": "Fixed a bug in the AcknowledgementManager which cased the non-inorder case to fail. Added a new test case MTOMRMTest."
+        },
+        {
+            "c_hash": "b2551b5f",
+            "date": "2006-07-20 05:07:18 +0000",
+            "comment": "a change to include the resource.properties in the mar file"
+        },
+        {
+            "c_hash": "bd88511a",
+            "date": "2006-07-21 03:17:34 +0000",
+            "comment": "Applied the patch from matt on 'typos'"
+        },
+        {
+            "c_hash": "3ed1b750",
+            "date": "2006-07-30 04:29:29 +0000",
+            "comment": "A correction in the resources.properties file. Corrected Terminate Manager to clean the NextMsg Beans."
+        },
+        {
+            "c_hash": "a4f565d4",
+            "date": "2006-07-30 04:34:22 +0000",
+            "comment": "Copied the resources.properties file to the jar file."
+        },
+        {
+            "c_hash": "cd934000",
+            "date": "2006-07-31 00:11:36 +0000",
+            "comment": "Made getIncomingSequenceReport method public as Thomas had suggested."
+        },
+        {
+            "c_hash": "876eaa99",
+            "date": "2006-07-31 00:12:56 +0000",
+            "comment": "Iproved the AddressableEchoTest to do tests on the IncomingSequenceReports"
+        },
+        {
+            "c_hash": "2fc00dac",
+            "date": "2006-07-31 13:32:13 +0000",
+            "comment": "Matts patch for the Secure RM scenario"
+        },
+        {
+            "c_hash": "cb3a8944",
+            "date": "2006-07-31 14:18:48 +0000",
+            "comment": "Corrected to use commons-logging"
+        },
+        {
+            "c_hash": "01135b0c",
+            "date": "2006-08-02 16:47:27 +0000",
+            "comment": "Quick fix to a build problem. Need to fill the file with the required content"
+        },
+        {
+            "c_hash": "5fba7f08",
+            "date": "2006-08-03 03:11:48 +0000",
+            "comment": "Updated the test.module.xml"
+        },
+        {
+            "c_hash": "ab8136d2",
+            "date": "2006-08-03 17:12:32 +0000",
+            "comment": "A client to test RM+MTOM message exchange."
+        },
+        {
+            "c_hash": "ae464d21",
+            "date": "2006-08-03 17:14:03 +0000",
+            "comment": "Added the MTOMPing operation to the RMSampleService"
+        },
+        {
+            "c_hash": "edf36f9f",
+            "date": "2006-08-04 17:35:36 +0000",
+            "comment": "Corrected the client code to terminate property."
+        },
+        {
+            "c_hash": "67122a14",
+            "date": "2006-08-10 10:02:50 +0000",
+            "comment": "Applied the patch from Matt on refactoring the SequenceAcknowledgement header processing."
+        },
+        {
+            "c_hash": "497356ae",
+            "date": "2006-08-18 06:44:51 +0000",
+            "comment": "Updated the stax API version."
+        },
+        {
+            "c_hash": "8df40c44",
+            "date": "2006-08-20 14:56:06 +0000",
+            "comment": "add groupd id"
+        },
+        {
+            "c_hash": "90ea6884",
+            "date": "2006-08-20 15:08:45 +0000",
+            "comment": "oops remove extra groupid, add scm  url's"
+        },
+        {
+            "c_hash": "6f2a9636",
+            "date": "2006-08-20 15:14:41 +0000",
+            "comment": "change nag email address"
+        },
+        {
+            "c_hash": "ffaa2d9b",
+            "date": "2006-08-21 05:07:59 +0000",
+            "comment": "Made sender and Invoker thread pools. Still the pool size is 1. (hope to bring this into a policy after some testing). This will allow sandesha2 to send and invoke multiple message concurrently. This also eliminates some deadlock scenarios which existed before."
+        },
+        {
+            "c_hash": "1ad91c10",
+            "date": "2006-08-21 10:15:14 +0000",
+            "comment": "A correction to the MessageProcessor selection logic. Thanks Thomas for pointing this out."
+        },
+        {
+            "c_hash": "9717550f",
+            "date": "2006-08-22 08:11:08 +0000",
+            "comment": "Corrected to start the client side async listner when client side async control messages are expected."
+        },
+        {
+            "c_hash": "df49d355",
+            "date": "2006-08-23 06:28:48 +0000",
+            "comment": "Changed SequenceManager updateClientListnerIfNeeded method to pick the incomingTransport from the scheme of the To url. This will only be picked if the transportInProtocol is not set. Refactored the Invoker."
+        },
+        {
+            "c_hash": "e77ffd45",
+            "date": "2006-08-28 03:10:51 +0000",
+            "comment": "Added the WorkerLock class which is used by Invoker and Sender to make sure that two threads of the thread pools are not working on the Same item."
+        },
+        {
+            "c_hash": "d0b8a312",
+            "date": "2006-08-28 03:11:37 +0000",
+            "comment": "Reduced the waiting time of test cases."
+        },
+        {
+            "c_hash": "09176204",
+            "date": "2006-08-28 03:37:37 +0000",
+            "comment": "Added a new repo URL and changed the Stax impl. version."
+        },
+        {
+            "c_hash": "d8fc7b69",
+            "date": "2006-08-31 07:51:53 +0000",
+            "comment": "Oops. Had commited hardcoded ports. Reverting..."
+        },
+        {
+            "c_hash": "33446071",
+            "date": "2006-08-31 07:53:43 +0000",
+            "comment": "Applied the patch from Thomas on unreliable messages."
+        },
+        {
+            "c_hash": "a8ff880d",
+            "date": "2006-09-02 12:31:46 +0000",
+            "comment": "Some changes due to recent refactoring in Axis2."
+        },
+        {
+            "c_hash": "1828300d",
+            "date": "2006-09-04 11:48:37 +0000",
+            "comment": "ImageIO is not available in Axis2 anymore."
+        },
+        {
+            "c_hash": "642613e0",
+            "date": "2006-09-05 03:08:02 +0000",
+            "comment": "Oops. Had missed to remove the imports."
+        },
+        {
+            "c_hash": "0512e0a2",
+            "date": "2006-09-06 03:31:41 +0000",
+            "comment": "Removed the defaultFactory from the RMModel elements. Removed getElement() method from IOMRMPart. Updated code to go with the latest WSRM1.1 namespaces - Matt's patch Corrected the ackProcessing within SandeshaInHandler to go within a transaction - Andrew's patch"
+        },
+        {
+            "c_hash": "c406d533",
+            "date": "2006-09-06 03:32:18 +0000",
+            "comment": "Updated test cases."
+        },
+        {
+            "c_hash": "cb61997b",
+            "date": "2006-09-06 03:34:24 +0000",
+            "comment": "Updated module.xml to have the latest WSRM1.1 actions values."
+        },
+        {
+            "c_hash": "529f07e8",
+            "date": "2006-09-07 07:04:35 +0000",
+            "comment": "Patch from Matt on security support for the WSRM 1.1 spec."
+        },
+        {
+            "c_hash": "313ac588",
+            "date": "2006-09-07 07:38:58 +0000",
+            "comment": "Removed the 'factory' from the Constructor of some more elements. Added the UsesSequenceSTR from Matts patch."
+        },
+        {
+            "c_hash": "12b349ec",
+            "date": "2006-09-07 07:39:43 +0000",
+            "comment": "Updates to test cases."
+        },
+        {
+            "c_hash": "f3cc3165",
+            "date": "2006-09-07 10:33:17 +0000",
+            "comment": "Added MakeConnection and MessagePending message parts. Added code to initialize MakeConnection and MessagePending messages."
+        },
+        {
+            "c_hash": "b5ae2f16",
+            "date": "2006-09-07 10:34:54 +0000",
+            "comment": "xml files representing MakeConnection and MessagePending messages."
+        },
+        {
+            "c_hash": "12d3347e",
+            "date": "2006-09-07 10:35:57 +0000",
+            "comment": "TestCases to test MakeConnection and MessagePending elements."
+        },
+        {
+            "c_hash": "7bf90449",
+            "date": "2006-09-07 10:49:11 +0000",
+            "comment": "Changed the package of interop client classes. Added code/config for a interop service."
+        },
+        {
+            "c_hash": "c46493c4",
+            "date": "2006-09-07 10:50:12 +0000",
+            "comment": "Added a goal to create an Interop service."
+        },
+        {
+            "c_hash": "3133dd18",
+            "date": "2006-09-07 12:00:10 +0000",
+            "comment": "Patch from Andrew."
+        },
+        {
+            "c_hash": "68bd40e2",
+            "date": "2006-09-07 14:49:24 +0000",
+            "comment": "A bug fix in the sender and invoker."
+        },
+        {
+            "c_hash": "b16cbbff",
+            "date": "2006-09-12 03:33:43 +0000",
+            "comment": "Changed the RMMsgContext.getMessagePart method to return an IOMMsgPart."
+        },
+        {
+            "c_hash": "16e37763",
+            "date": "2006-09-12 10:31:59 +0000",
+            "comment": "Added a method 'getPropertyKey' to SandeshaUtil which will extract the correct property key from a message context. Used this in Sandesha Handlers. ApplicationMessage processor was modified to set some entries in message context, to be used by other handlers or service impl."
+        },
+        {
+            "c_hash": "1c7f69d8",
+            "date": "2006-09-12 10:32:54 +0000",
+            "comment": "Added a test-case to test weather properties are correctly set in the msgCtx."
+        },
+        {
+            "c_hash": "7872964c",
+            "date": "2006-09-13 06:29:07 +0000",
+            "comment": "Renamed the sequenceId property of the sequencePropertyBean manager to sequencePropertyKey. This reflects its real functionality (since we can use sequenceId/internalSequenceId depending on the RM endpoint)."
+        },
+        {
+            "c_hash": "9f22688a",
+            "date": "2006-09-13 06:29:48 +0000",
+            "comment": "An update due to a refactoring of the Source."
+        },
+        {
+            "c_hash": "d2ab1ff8",
+            "date": "2006-09-13 09:38:51 +0000",
+            "comment": "Updated some MessageProcessors and related classes to use to correct pattern of handling seuuencePropertyKeys. (The correct pattern is to get it from the SandeshaUtil.getSequenceProperty method.)"
+        },
+        {
+            "c_hash": "5992c37f",
+            "date": "2006-09-13 10:23:52 +0000",
+            "comment": "Moved some more classes to the correct pattern in handling sequence properties."
+        },
+        {
+            "c_hash": "ab67f3ec",
+            "date": "2006-09-14 09:32:31 +0000",
+            "comment": "Changed the methods of the MessageProcessor interface to throw AxisFaults."
+        },
+        {
+            "c_hash": "7648ace6",
+            "date": "2006-09-15 06:05:25 +0000",
+            "comment": "Applied the patch from Matt."
+        },
+        {
+            "c_hash": "9ca5515e",
+            "date": "2006-09-16 02:02:26 +0000",
+            "comment": "Patch from Matt on AckRequest processing."
+        },
+        {
+            "c_hash": "1bb917f2",
+            "date": "2006-09-20 12:00:49 +0000",
+            "comment": "Removing the old policy processors"
+        },
+        {
+            "c_hash": "3e51590e",
+            "date": "2006-09-20 12:01:50 +0000",
+            "comment": "Removing old policy context"
+        },
+        {
+            "c_hash": "3485da63",
+            "date": "2006-09-20 12:02:52 +0000",
+            "comment": "Adding the new RM Policy Processor"
+        },
+        {
+            "c_hash": "cebb52f5",
+            "date": "2006-09-20 12:04:56 +0000",
+            "comment": "updating the policy defined in the module.xml with the new RMAssertion"
+        },
+        {
+            "c_hash": "12ac45c2",
+            "date": "2006-09-20 12:15:10 +0000",
+            "comment": "Some cleanups with the upgrade to new Neethi2 architecture"
+        },
+        {
+            "c_hash": "c03f4e09",
+            "date": "2006-09-23 15:11:58 +0000",
+            "comment": "Finally test cases are passing with neethi2."
+        },
+        {
+            "c_hash": "fd17bdd2",
+            "date": "2006-09-23 15:12:40 +0000",
+            "comment": "Updated the test cases to comply with the recent changes."
+        },
+        {
+            "c_hash": "eace1de2",
+            "date": "2006-09-23 15:17:27 +0000",
+            "comment": "Moved the policy assertion builder to the config directory."
+        },
+        {
+            "c_hash": "d462cabd",
+            "date": "2006-09-23 15:26:08 +0000",
+            "comment": "Changed the module.xml to add a policy jar file."
+        },
+        {
+            "c_hash": "8ded9dfd",
+            "date": "2006-09-23 15:59:05 +0000",
+            "comment": "Applied patches from Thomas."
+        },
+        {
+            "c_hash": "67409ece",
+            "date": "2006-09-24 10:27:50 +0000",
+            "comment": "Adding the Rampart based security manager for Sandesha-Rampart integration"
+        },
+        {
+            "c_hash": "ec61baf2",
+            "date": "2006-09-26 05:57:52 +0000",
+            "comment": "Some bug fixes found when implementing polling."
+        },
+        {
+            "c_hash": "7762b2f7",
+            "date": "2006-09-26 05:59:42 +0000",
+            "comment": "Moved the secure-module creation to its own temp directory."
+        },
+        {
+            "c_hash": "f29cf1d3",
+            "date": "2006-09-26 06:52:02 +0000",
+            "comment": "Updated to match the latest rampart changes"
+        },
+        {
+            "c_hash": "0b2779d0",
+            "date": "2006-09-28 14:49:16 +0000",
+            "comment": "Changed to polling manager to do the polling processing logic using the NextMsgBean manager. This seems to be the correct way since NextMsgBean is the bean item that hs details about an incoming sequence."
+        },
+        {
+            "c_hash": "ba678a26",
+            "date": "2006-09-30 09:49:09 +0000",
+            "comment": "A fix in the SandeshaClient to add an Anonymous OutONly operation to a Service Client if one is not present. This will be useful for invocation using stubs."
+        },
+        {
+            "c_hash": "e7c5fe1b",
+            "date": "2006-09-30 09:50:45 +0000",
+            "comment": "Added ActionMappings for AckRequested and LastMessage type of messages."
+        },
+        {
+            "c_hash": "606d25cf",
+            "date": "2006-09-30 09:56:57 +0000",
+            "comment": "Added the RMInteropService.wsdl the WSDL file for the interop service. Added generated code (ADB) for te Skeleton and Stubs."
+        },
+        {
+            "c_hash": "4dc3d74d",
+            "date": "2006-09-30 09:59:51 +0000",
+            "comment": "Modified the interop:create goal."
+        },
+        {
+            "c_hash": "322d911c",
+            "date": "2006-09-30 10:26:38 +0000",
+            "comment": "Applied the patch from Matt"
+        },
+        {
+            "c_hash": "ad635cbd",
+            "date": "2006-09-30 12:20:11 +0000",
+            "comment": "Updated the default values."
+        },
+        {
+            "c_hash": "ae55d088",
+            "date": "2006-10-01 09:18:26 +0000",
+            "comment": "Implemented checkProofOfPossession in RampartBasedSecurityManager"
+        },
+        {
+            "c_hash": "cc5ed403",
+            "date": "2006-10-01 09:25:14 +0000",
+            "comment": "adding a few inline comments and a null check"
+        },
+        {
+            "c_hash": "ecd88ffd",
+            "date": "2006-10-02 04:28:41 +0000",
+            "comment": "Added code for interop scenario 4.1 and fixed a few token reference issues in RampartBasedSecurityManager."
+        },
+        {
+            "c_hash": "b33380cf",
+            "date": "2006-10-02 09:12:50 +0000",
+            "comment": "Implemented the serialize method in SandesahaPolicyBean."
+        },
+        {
+            "c_hash": "6b64b509",
+            "date": "2006-10-02 09:16:10 +0000",
+            "comment": "Removed the UnsupportedOperationException which is thrown in SandeshaPolicyBean.normalize() method."
+        },
+        {
+            "c_hash": "4ac26789",
+            "date": "2006-10-02 09:18:23 +0000",
+            "comment": "Added PolicyComponent.equal(PolicyComponent) method to SandeshaPolicyBean"
+        },
+        {
+            "c_hash": "44081376",
+            "date": "2006-10-02 13:25:55 +0000",
+            "comment": "Some bug fixes. These caused failures in different locations - specially in WSRX 1.1."
+        },
+        {
+            "c_hash": "9a8487b7",
+            "date": "2006-10-02 13:27:08 +0000",
+            "comment": "Updated test cases"
+        },
+        {
+            "c_hash": "b3e5652d",
+            "date": "2006-10-04 04:37:50 +0000",
+            "comment": "Applied the patch from Matt, to update the axis2.xml files."
+        },
+        {
+            "c_hash": "45fd9825",
+            "date": "2006-10-05 05:15:55 +0000",
+            "comment": "Did fixes to support secure conversation. Basically there is a new concept of Retransmittable phases.These will be called in every retransmission."
+        },
+        {
+            "c_hash": "a988510c",
+            "date": "2006-10-05 05:22:26 +0000",
+            "comment": "Updated module.xml due to the changes in Axis2."
+        },
+        {
+            "c_hash": "6a635a9a",
+            "date": "2006-10-05 05:57:58 +0000",
+            "comment": "Updated samples."
+        },
+        {
+            "c_hash": "6779b01c",
+            "date": "2006-10-05 07:56:36 +0000",
+            "comment": "Updated interop service and clients."
+        },
+        {
+            "c_hash": "0fc18eda",
+            "date": "2006-10-06 02:27:23 +0000",
+            "comment": "Got scenario 4.1 workign with the latest axis2 and the latest axiom"
+        },
+        {
+            "c_hash": "20d7b8a3",
+            "date": "2006-10-06 08:34:39 +0000",
+            "comment": "Using RampartBasedSecurityManager as the default. RampartBasedSecurityManager - Missing service policy means no security requirement"
+        },
+        {
+            "c_hash": "ac33361e",
+            "date": "2006-10-06 15:54:14 +0000",
+            "comment": "Getting SecRM scenario working with latest rampart"
+        },
+        {
+            "c_hash": "46d2885b",
+            "date": "2006-10-06 15:55:07 +0000",
+            "comment": "Getting SecRM scenario working with latest rampart"
+        },
+        {
+            "c_hash": "6697be34",
+            "date": "2006-10-07 08:01:18 +0000",
+            "comment": "Improved the waiting time of the AddressableEcho test"
+        },
+        {
+            "c_hash": "f13011a8",
+            "date": "2006-10-07 08:06:23 +0000",
+            "comment": "Corrected the fault handling logic. Now instead of creating a FaultMessageContext we do it the correct way. I.e. we set nevessary properties (e.g. FaultCode) in the MessageContext and throw an dummy SandeshaException. AxisEngine catches this and sends the fault. Added the code to actually terminate a sequence of a WSRM 1.1 sequence to the TerminateSequenceResponseMsgProcessor."
+        },
+        {
+            "c_hash": "3d97ff5f",
+            "date": "2006-10-07 13:56:17 +0000",
+            "comment": "Added code prevent two SequenceAcknowledgements going for the same sequence in the same message. Moved Ack sending logic from AckManager to the Application message processor which seems to be the better place for it. A bug fix in the SequenceAcknowledgement."
+        },
+        {
+            "c_hash": "25fcf475",
+            "date": "2006-10-07 18:10:36 +0000",
+            "comment": "Corrected the termination logic. A bug fix in the RMPolicyProcessor."
+        },
+        {
+            "c_hash": "c03bd0ec",
+            "date": "2006-10-08 07:51:44 +0000",
+            "comment": "Updating SecRm policy"
+        },
+        {
+            "c_hash": "d101aeb5",
+            "date": "2006-10-08 08:27:37 +0000",
+            "comment": "Adding the axis2.xml for the client side listener of the sec-rm case"
+        },
+        {
+            "c_hash": "da0fe2da",
+            "date": "2006-10-08 08:40:03 +0000",
+            "comment": "Use correct callback handler class"
+        },
+        {
+            "c_hash": "76cda8ae",
+            "date": "2006-10-10 05:49:04 +0000",
+            "comment": "Changed the groupId of Axis2 jar."
+        },
+        {
+            "c_hash": "ead362ff",
+            "date": "2006-10-11 04:31:51 +0000",
+            "comment": "Did changes to use a cloned version of the CreateSequence message as the reference in the RMS side. The original CreateSequence message will get subjected to things like encryption and it may not be possible to use it as a reference. When an incoming sequence is offered, this reference will be used for the RMD side of that as well."
+        },
+        {
+            "c_hash": "f80de5ba",
+            "date": "2006-10-11 11:50:27 +0000",
+            "comment": "Updated SecRM services.xml"
+        },
+        {
+            "c_hash": "d7054368",
+            "date": "2006-10-11 11:57:20 +0000",
+            "comment": "Updated interop services and clients."
+        },
+        {
+            "c_hash": "9c24af68",
+            "date": "2006-10-13 03:03:46 +0000",
+            "comment": "Patch from Andrew for Sandesha2-33."
+        },
+        {
+            "c_hash": "2edb9208",
+            "date": "2006-10-13 11:59:02 +0000",
+            "comment": "Some corrections to the SequencePropertyKey selection logic."
+        },
+        {
+            "c_hash": "d6e2c507",
+            "date": "2006-10-17 06:35:33 +0000",
+            "comment": "Patch from Matt on Sandesha2-35. Added the listener stoping method calls to the TestCases to fix test failures."
+        },
+        {
+            "c_hash": "6bf62dec",
+            "date": "2006-10-17 06:41:44 +0000",
+            "comment": "Changed Sandesha2 to axis2_1.1 branch where most of the events seems to be happening :-)"
+        },
+        {
+            "c_hash": "f86556fe",
+            "date": "2006-10-17 19:17:25 +0000",
+            "comment": "Applied the patch from Andrew for Sandesha2-34."
+        },
+        {
+            "c_hash": "4e457ef1",
+            "date": "2006-10-17 19:18:14 +0000",
+            "comment": "A correction to the MakeConnection action value."
+        },
+        {
+            "c_hash": "acf17466",
+            "date": "2006-10-24 10:00:05 +0000",
+            "comment": "Added an Endpoint part to the SequenceOffer. This is required by the WSRM 1.1 specification. Corrected the AcksTo part to enclose an EndpointReference element. A correction to the MakeConnection action value. Several other bug fixes"
+        },
+        {
+            "c_hash": "626515f2",
+            "date": "2006-10-24 10:01:07 +0000",
+            "comment": "Updated the test cases."
+        },
+        {
+            "c_hash": "f41531cb",
+            "date": "2006-10-25 03:43:41 +0000",
+            "comment": "Updated interop files"
+        },
+        {
+            "c_hash": "648fe29c",
+            "date": "2006-10-25 03:46:21 +0000",
+            "comment": "Hd forgotten to add the Endpoint class :("
+        },
+        {
+            "c_hash": "d88afb12",
+            "date": "2006-10-25 04:12:55 +0000",
+            "comment": "Sorry guys, this wasn't meant to be committed."
+        },
+        {
+            "c_hash": "69910b99",
+            "date": "2006-10-25 04:15:06 +0000",
+            "comment": "Changing things back to trunk with some other corrections. Sorry abt the delay guys."
+        },
+        {
+            "c_hash": "6e7b3825",
+            "date": "2006-10-26 22:14:35 +0000",
+            "comment": "Applied the patch from Matt on Sandesha2-32."
+        },
+        {
+            "c_hash": "fd9f51f2",
+            "date": "2006-10-30 03:31:31 +0000",
+            "comment": "exclude test that really does not do anything..."
+        },
+        {
+            "c_hash": "cc62fd35",
+            "date": "2006-10-30 15:43:24 +0000",
+            "comment": "Patch from Matt on Sandesha2-20"
+        },
+        {
+            "c_hash": "2bd48353",
+            "date": "2006-10-31 09:50:15 +0000",
+            "comment": "Things extracted from the commit 469421 that was done to the branch."
+        },
+        {
+            "c_hash": "8c3ddf40",
+            "date": "2006-11-01 02:46:49 +0000",
+            "comment": "Applied the operation.patch for Sandesha2-20 from Matt."
+        },
+        {
+            "c_hash": "e421838d",
+            "date": "2006-11-02 04:08:26 +0000",
+            "comment": "Patch from Andrew for Sandesha2-37"
+        },
+        {
+            "c_hash": "0b55098c",
+            "date": "2006-11-03 09:43:59 +0000",
+            "comment": "Applied the patch from Matt for Sandesha2-38"
+        },
+        {
+            "c_hash": "83a5e533",
+            "date": "2006-11-04 00:12:04 +0000",
+            "comment": "Applied the patches from Andrew on Sandesha2-39 and Sandesha2-40."
+        },
+        {
+            "c_hash": "91218621",
+            "date": "2006-11-06 00:02:50 +0000",
+            "comment": "Necessary updates from commit 471576 to the branch."
+        },
+        {
+            "c_hash": "401a4dcb",
+            "date": "2006-11-07 04:48:06 +0000",
+            "comment": "Patch from Andrew for Sandesha2-41"
+        },
+        {
+            "c_hash": "b0fc2713",
+            "date": "2006-11-12 11:06:53 +0000",
+            "comment": "Things from commit 473920 to the branch."
+        },
+        {
+            "c_hash": "62c6d003",
+            "date": "2006-11-13 04:51:26 +0000",
+            "comment": "Changed the default security manager back to DummySecurityManager. Having this as RampartBasedSecurityManager makes Sandesha2 dependent on 'security' jars unnecessarily. Removed some paramaters that are not needed in the default case."
+        },
+        {
+            "c_hash": "4d554a60",
+            "date": "2006-11-14 11:12:47 +0000",
+            "comment": "Minor trace and import updates taken from the patch to SANDESHA2-42"
+        },
+        {
+            "c_hash": "4ddef6fc",
+            "date": "2006-11-16 17:32:24 +0000",
+            "comment": "Improve tracing of exceptions in SenderWorker"
+        },
+        {
+            "c_hash": "b61e2387",
+            "date": "2006-11-17 10:50:13 +0000",
+            "comment": "Applying Andy's moretrace3.patch for SANDESHA2-2"
+        },
+        {
+            "c_hash": "a8ac589b",
+            "date": "2006-11-17 11:00:21 +0000",
+            "comment": "Applying Andy's terminate.patch for SANDESHA2-45"
+        },
+        {
+            "c_hash": "7c150c25",
+            "date": "2006-11-21 15:13:48 +0000",
+            "comment": "Tom's patch for SANDESHA2-43"
+        },
+        {
+            "c_hash": "f809eaba",
+            "date": "2006-11-21 16:16:58 +0000",
+            "comment": "Minor trace updates to SenderWorker"
+        },
+        {
+            "c_hash": "9b4c5fbd",
+            "date": "2006-11-22 10:30:57 +0000",
+            "comment": "Andy's patch for SANDESHA2-47"
+        },
+        {
+            "c_hash": "1d801cae",
+            "date": "2006-11-22 10:44:32 +0000",
+            "comment": "Andy's patch for SANDESHA2-48"
+        },
+        {
+            "c_hash": "9a6da03f",
+            "date": "2006-11-23 10:16:56 +0000",
+            "comment": "Add locking to the in-memory storage manager, see SANDESHA2-49"
+        },
+        {
+            "c_hash": "44463dec",
+            "date": "2006-11-23 16:02:42 +0000",
+            "comment": "Fix a bottleneck in the locking, see SANDESHA2-49"
+        },
+        {
+            "c_hash": "c7dd333d",
+            "date": "2006-11-24 11:10:26 +0000",
+            "comment": "Ensure we do not nest transactions within SandeshaClient, see SANDESHA2-47"
+        },
+        {
+            "c_hash": "d4fc1317",
+            "date": "2006-11-24 13:18:38 +0000",
+            "comment": "Ensure we clear the transaction flag when in the SenderWorker"
+        },
+        {
+            "c_hash": "dcea215c",
+            "date": "2006-11-24 16:47:15 +0000",
+            "comment": "Andy's SequenceProcessorTrace patch from SANDESHA2-2"
+        },
+        {
+            "c_hash": "c272707a",
+            "date": "2006-11-24 16:48:05 +0000",
+            "comment": "Andy's deadlockAck patch from SANDESHA2-49"
+        },
+        {
+            "c_hash": "de175651",
+            "date": "2006-11-27 08:50:54 +0000",
+            "comment": "Fix build for a java 1.4 jdk"
+        },
+        {
+            "c_hash": "dbc71657",
+            "date": "2006-11-27 10:11:25 +0000",
+            "comment": "Applying patch for SANDESHA2-46"
+        },
+        {
+            "c_hash": "229e1680",
+            "date": "2006-11-28 07:11:56 +0000",
+            "comment": "Changed the groupId to 'org.apache.sandesha2' according to the convention followed by other projects."
+        },
+        {
+            "c_hash": "65694788",
+            "date": "2006-11-28 09:44:49 +0000",
+            "comment": "Use WS-A to track response messages instead of saving the message context. See SANDESHA2-51"
+        },
+        {
+            "c_hash": "26b4d0b1",
+            "date": "2006-11-28 11:08:23 +0000",
+            "comment": "Andy's patch to ensure each message is only stored once, instead of being stored and then updated. See SANDESHA2-52."
+        },
+        {
+            "c_hash": "eee1bc94",
+            "date": "2006-11-28 12:54:24 +0000",
+            "comment": "Make sendAckIfNeeded static so SandeshaGlobalInHandler doesn't have to new a SequenceProcessor object to call it"
+        },
+        {
+            "c_hash": "29f4c0ba",
+            "date": "2006-11-28 14:34:02 +0000",
+            "comment": "Add trace statements"
+        },
+        {
+            "c_hash": "7663ce59",
+            "date": "2006-11-29 10:29:32 +0000",
+            "comment": "Tom's patch for SANDESHA2-53, to ensure that we do not assign new messages to closed sequences"
+        },
+        {
+            "c_hash": "6580771a",
+            "date": "2006-11-29 11:31:22 +0000",
+            "comment": "A fix to rampart securityManager"
+        },
+        {
+            "c_hash": "b525f867",
+            "date": "2006-11-29 15:23:40 +0000",
+            "comment": "Refactor tests to minimise wait times and remove duplicated code, see SANDESHA2-54"
+        },
+        {
+            "c_hash": "637cfe1d",
+            "date": "2006-11-30 11:04:44 +0000",
+            "comment": "Andy's latest deadlock patch for SANDESHA2-49"
+        },
+        {
+            "c_hash": "737b88f4",
+            "date": "2006-11-30 14:25:53 +0000",
+            "comment": "Another deadlock patch from Andy, for SANDESHA2-49"
+        },
+        {
+            "c_hash": "f7365166",
+            "date": "2006-11-30 18:40:59 +0000",
+            "comment": "Adding Toms's patch for SANDESHA2-56"
+        },
+        {
+            "c_hash": "31d2a8f4",
+            "date": "2006-12-01 11:20:52 +0000",
+            "comment": "deadlock4.patch from Andy for SANDESHA2-49"
+        },
+        {
+            "c_hash": "f12321dd",
+            "date": "2006-12-01 13:54:33 +0000",
+            "comment": "deadlock5.patch for SANDESHA2-49"
+        },
+        {
+            "c_hash": "6c58a669",
+            "date": "2006-12-04 09:36:28 +0000",
+            "comment": "Implement deadlock detection for the in-memory store, see SANDESHA2-49"
+        },
+        {
+            "c_hash": "bf9f85f8",
+            "date": "2006-12-04 10:33:32 +0000",
+            "comment": "Andy's patch to store protocol messages for later processing when the sequence is not yet running, see SANDESHA2-58"
+        },
+        {
+            "c_hash": "66c419aa",
+            "date": "2006-12-04 11:15:04 +0000",
+            "comment": "Applying patch for SANDESHA2-57"
+        },
+        {
+            "c_hash": "e9ea1b55",
+            "date": "2006-12-04 11:52:59 +0000",
+            "comment": "Applying close storing patch for SANDESHA2-58"
+        },
+        {
+            "c_hash": "1b9d87df",
+            "date": "2006-12-04 16:46:20 +0000",
+            "comment": "Applying ack request storing patch for SANDESHA2-58"
+        },
+        {
+            "c_hash": "7ff06c5c",
+            "date": "2006-12-05 10:32:48 +0000",
+            "comment": "Applying NPE patch for SANDESHA2-59"
+        },
+        {
+            "c_hash": "4d693c5c",
+            "date": "2006-12-05 15:43:24 +0000",
+            "comment": "ack request, close and terminate processing refactor patch for SANDESHA2-58"
+        },
+        {
+            "c_hash": "2dcc4681",
+            "date": "2006-12-05 18:02:54 +0000",
+            "comment": "rmVersion should be accessable to sub classes"
+        },
+        {
+            "c_hash": "ab4bd5a6",
+            "date": "2006-12-06 09:41:40 +0000",
+            "comment": "Applying Tom's patch for SANDESHA2-60"
+        },
+        {
+            "c_hash": "15f9e5f7",
+            "date": "2006-12-06 09:53:33 +0000",
+            "comment": "Takahide Nogayama's patch to ensure that sync responses are handled properly, see SANDESHA2-55"
+        },
+        {
+            "c_hash": "dff4b7e8",
+            "date": "2006-12-06 11:00:57 +0000",
+            "comment": "Apply Tom's patch to refactor sender and invoker threads, see SANDESHA2-61"
+        },
+        {
+            "c_hash": "b0330028",
+            "date": "2006-12-06 11:50:07 +0000",
+            "comment": "Adding the SandeshaThread see SANDESHA2-61"
+        },
+        {
+            "c_hash": "dbfde78e",
+            "date": "2006-12-06 15:05:14 +0000",
+            "comment": "transaction should be transient, not volitle to avoid serialization"
+        },
+        {
+            "c_hash": "af54cff8",
+            "date": "2006-12-07 12:21:25 +0000",
+            "comment": "Applying patch for SANDESHA2-49 to ensure outsequence id is always found"
+        },
+        {
+            "c_hash": "dab6f6e3",
+            "date": "2006-12-07 13:12:46 +0000",
+            "comment": "Use up-to-date axis2 mars, and ensure the tests use a proper ws-a action"
+        },
+        {
+            "c_hash": "33d6de35",
+            "date": "2006-12-07 15:14:01 +0000",
+            "comment": "Fix a bug where we store the token for an outbound sequence under the key that the inbound sequence should use"
+        },
+        {
+            "c_hash": "45a9ee52",
+            "date": "2006-12-07 16:04:03 +0000",
+            "comment": "Another update to common up the processing for Sender and Invoker see SANDESHA2-61"
+        },
+        {
+            "c_hash": "b27b5cb3",
+            "date": "2006-12-07 18:45:31 +0000",
+            "comment": "If a transaction fails to commit, the exception should be thrown"
+        },
+        {
+            "c_hash": "ef26115b",
+            "date": "2006-12-08 11:46:23 +0000",
+            "comment": "Fix a timing window in reply sequence termination, add trace to beans, and ensure ack messages know that they are flowing out."
+        },
+        {
+            "c_hash": "eb8951d6",
+            "date": "2006-12-08 11:52:57 +0000",
+            "comment": "More logic moved to the SandeshaThread, see SANDESHA2-61"
+        },
+        {
+            "c_hash": "8515ec54",
+            "date": "2006-12-08 13:30:22 +0000",
+            "comment": "Make FaultManager methods throw exceptions when there is an error, not return SandeshaExceptions"
+        },
+        {
+            "c_hash": "1d044bd4",
+            "date": "2006-12-10 12:46:51 +0000",
+            "comment": "Some changes from 1.1 - Refactoring of the StorageManager classes - Change to the module.xml policy prefix."
+        },
+        {
+            "c_hash": "04b2605c",
+            "date": "2006-12-10 17:14:40 +0000",
+            "comment": "More changes from 1.1."
+        },
+        {
+            "c_hash": "07ce1ecd",
+            "date": "2006-12-12 09:24:28 +0000",
+            "comment": "Sync 2-way for WSRM 1.1, see SANDESHA2-62"
+        },
+        {
+            "c_hash": "3f4be231",
+            "date": "2006-12-13 15:24:38 +0000",
+            "comment": "Protect against null sequenceKey for createSequence"
+        },
+        {
+            "c_hash": "bb036011",
+            "date": "2006-12-14 09:59:01 +0000",
+            "comment": "Support the RM anon URI template, see SANDESHA2-62."
+        },
+        {
+            "c_hash": "5deefe5e",
+            "date": "2006-12-15 15:52:50 +0000",
+            "comment": "Enable Sandesha to handle inbound fault messages with RM headers"
+        },
+        {
+            "c_hash": "4ea348b1",
+            "date": "2006-12-18 11:49:56 +0000",
+            "comment": "Remove unused imports and unused code"
+        },
+        {
+            "c_hash": "a0b45e18",
+            "date": "2006-12-19 14:11:08 +0000",
+            "comment": "Don't override the replyToEPR for application messages"
+        },
+        {
+            "c_hash": "dad278e7",
+            "date": "2006-12-19 14:46:08 +0000",
+            "comment": "Associate the Sandesha transaction with the thread that is running the code instead of the message context"
+        },
+        {
+            "c_hash": "51a49dca",
+            "date": "2006-12-20 06:35:09 +0000",
+            "comment": "Enable RM to work when no addressing headers are present"
+        },
+        {
+            "c_hash": "27dab20d",
+            "date": "2006-12-20 10:19:55 +0000",
+            "comment": "Enable rmSpecVersion to be set by a value set in the AxisOperation"
+        },
+        {
+            "c_hash": "a349e93c",
+            "date": "2006-12-20 15:20:37 +0000",
+            "comment": "Add an internalSequenceId to the SequenceAck message"
+        },
+        {
+            "c_hash": "3518f188",
+            "date": "2006-12-20 18:03:44 +0000",
+            "comment": "Move the highestIn properties to the RMDBean"
+        },
+        {
+            "c_hash": "9d1d3661",
+            "date": "2006-12-22 08:49:11 +0000",
+            "comment": "Move the last error properties to the RMSBean"
+        },
+        {
+            "c_hash": "c7c5e539",
+            "date": "2006-12-22 11:32:17 +0000",
+            "comment": "fork junits to stop out of memory errors due to threads not being shutdown"
+        },
+        {
+            "c_hash": "3058c70c",
+            "date": "2006-12-22 11:47:43 +0000",
+            "comment": "Throw an error if a message is sent to a timed out sequence"
+        },
+        {
+            "c_hash": "a8eee6a5",
+            "date": "2006-12-22 13:39:43 +0000",
+            "comment": "Allow client to create a sequence over a sequence that was previously terminated"
+        },
+        {
+            "c_hash": "90151f61",
+            "date": "2006-12-23 06:21:03 +0000",
+            "comment": "Fix the testTerminateCreateWithWait to use the correct port"
+        },
+        {
+            "c_hash": "bef7fc91",
+            "date": "2007-01-04 14:24:17 +0000",
+            "comment": "Avoid NPE from null body namespace, and remove unnecessary iterator"
+        },
+        {
+            "c_hash": "e7a864ef",
+            "date": "2007-01-08 08:42:07 +0000",
+            "comment": "Move the lastOutMessage to the RMSBean"
+        },
+        {
+            "c_hash": "cb7c8665",
+            "date": "2007-01-08 08:42:48 +0000",
+            "comment": "Move the lastOutMessage to the RMSBean"
+        },
+        {
+            "c_hash": "05bc3c98",
+            "date": "2007-01-08 11:54:21 +0000",
+            "comment": "Move the highestOut properties to the RMSBean"
+        },
+        {
+            "c_hash": "59cfa043",
+            "date": "2007-01-08 13:25:49 +0000",
+            "comment": "Move the nextMessageNumber to the RMSBean"
+        },
+        {
+            "c_hash": "ba7a8d89",
+            "date": "2007-01-08 17:17:40 +0000",
+            "comment": "Avoid polling for terminated sequences"
+        },
+        {
+            "c_hash": "38b01dde",
+            "date": "2007-01-09 11:43:10 +0000",
+            "comment": "Ensure we use consistent ws-a spec levels"
+        },
+        {
+            "c_hash": "420431ba",
+            "date": "2007-01-09 12:19:50 +0000",
+            "comment": "Move toEPR, replyToEPR, acksToEPR and ServerCompleted messages to RMSequenceBean and RMDBean"
+        },
+        {
+            "c_hash": "b320c249",
+            "date": "2007-01-09 14:32:40 +0000",
+            "comment": "Enable ACK Requests for closed sequences"
+        },
+        {
+            "c_hash": "6423b8cb",
+            "date": "2007-01-10 08:39:30 +0000",
+            "comment": "Patch for http://issues.apache.org/jira/browse/SANDESHA2-63"
+        },
+        {
+            "c_hash": "9ef3f0c1",
+            "date": "2007-01-11 14:48:34 +0000",
+            "comment": "Move clientCompletedMessages and terminate properties to RMSBean and RMSequenceBean"
+        },
+        {
+            "c_hash": "eac5fdc8",
+            "date": "2007-01-11 15:19:49 +0000",
+            "comment": "Fix up build dependencies"
+        },
+        {
+            "c_hash": "89130d42",
+            "date": "2007-01-12 10:44:48 +0000",
+            "comment": "Wake sender/invoker threads after transaction commits"
+        },
+        {
+            "c_hash": "ffd6882a",
+            "date": "2007-01-12 15:01:29 +0000",
+            "comment": "Sender transaction committed when Sequence times out"
+        },
+        {
+            "c_hash": "68c25d96",
+            "date": "2007-01-12 15:45:34 +0000",
+            "comment": "Move the OutOfOrderRanges, TermianteReceived, lastActivatedTime, noOutGoingMsgs, transportTo, sequenceClosedClient and lastInMsgId to RMS/RMDBeans"
+        },
+        {
+            "c_hash": "826e5859",
+            "date": "2007-01-13 11:06:01 +0000",
+            "comment": "Move OfferedSequence, OfferedEndPoint, SoapVersion and SequenceClosed to RMS/RMDBeans"
+        },
+        {
+            "c_hash": "8e6896db",
+            "date": "2007-01-15 08:42:59 +0000",
+            "comment": "Move sequenceTimedOut property to RMSBean"
+        },
+        {
+            "c_hash": "9b3fff35",
+            "date": "2007-01-15 09:31:28 +0000",
+            "comment": "Remove InternalSequenceId property"
+        },
+        {
+            "c_hash": "e1136289",
+            "date": "2007-01-15 10:52:42 +0000",
+            "comment": "Move rmSpecVersion property to RMSequenceBean"
+        },
+        {
+            "c_hash": "f83425c5",
+            "date": "2007-01-15 11:44:52 +0000",
+            "comment": "Move securityToken property to RMSequenceBean"
+        },
+        {
+            "c_hash": "a030e398",
+            "date": "2007-01-15 12:28:17 +0000",
+            "comment": "Remove allSequences property"
+        },
+        {
+            "c_hash": "3b0fac13",
+            "date": "2007-01-15 12:37:22 +0000",
+            "comment": "Remove SequencePropertyBeanMgr"
+        },
+        {
+            "c_hash": "b47531c4",
+            "date": "2007-01-15 16:23:40 +0000",
+            "comment": "Add module.xml properties to control MakeConnection support"
+        },
+        {
+            "c_hash": "a46bdb8a",
+            "date": "2007-01-15 16:55:05 +0000",
+            "comment": "Simplify config of sync 2-way apps, see SANDESHA2-64"
+        },
+        {
+            "c_hash": "e16ff0b3",
+            "date": "2007-01-16 08:50:20 +0000",
+            "comment": "A feature to tell rm bean managers weather or not to include booleans when searching. This will be used in one of my later commits."
+        },
+        {
+            "c_hash": "d65abb62",
+            "date": "2007-01-16 16:57:26 +0000",
+            "comment": "Update RMSBean in CreateSequenceResponseProcessor"
+        },
+        {
+            "c_hash": "f986045c",
+            "date": "2007-01-16 18:05:00 +0000",
+            "comment": "A correction to set the polling mode to the RMDBean correctly. Corected some mistakes I hd done in the last commit."
+        },
+        {
+            "c_hash": "ada7379a",
+            "date": "2007-01-17 09:13:32 +0000",
+            "comment": "Move RM Anon URI rewriting to the Application Message Processor"
+        },
+        {
+            "c_hash": "0e306fdd",
+            "date": "2007-01-17 09:31:47 +0000",
+            "comment": "Add a util method for consistent UNRELIABLE_MESSAGE checking"
+        },
+        {
+            "c_hash": "6ea7f2e2",
+            "date": "2007-01-17 15:48:13 +0000",
+            "comment": "Remove unnecessary store-and-restore of the message context when polling"
+        },
+        {
+            "c_hash": "9d3c7d89",
+            "date": "2007-01-18 10:26:30 +0000",
+            "comment": "Minor improvement to waitUntilSequenceCompleted to stop additional sleep if the sequence is completed"
+        },
+        {
+            "c_hash": "1374ca6c",
+            "date": "2007-01-18 10:28:58 +0000",
+            "comment": "Remove checkForCreateSequenceRefused from FaultManager as it doesn't do anything"
+        },
+        {
+            "c_hash": "402ac963",
+            "date": "2007-01-18 13:42:16 +0000",
+            "comment": "Add flags so that we can correctly match primitive types when searching for beans"
+        },
+        {
+            "c_hash": "5a3941f2",
+            "date": "2007-01-18 14:57:30 +0000",
+            "comment": "Generate the secure module, so that it doesn't get out of step with module.xml"
+        },
+        {
+            "c_hash": "95c75915",
+            "date": "2007-01-18 16:44:23 +0000",
+            "comment": "http://issues.apache.org/jira/browse/SANDESHA2-65"
+        },
+        {
+            "c_hash": "865be8ec",
+            "date": "2007-01-19 02:53:14 +0000",
+            "comment": "Support for Anonymous InOut scenario for RM 1.0. Updated the AnonymousEchoTest to verify this. Some refactoring to the Ack processing and creation logic."
+        },
+        {
+            "c_hash": "ca9f3edf",
+            "date": "2007-01-19 05:46:15 +0000",
+            "comment": "Sample client to demonstrate Anonymous InOut scenarios"
+        },
+        {
+            "c_hash": "2aee1f53",
+            "date": "2007-01-19 06:12:25 +0000",
+            "comment": "A bug fix to include the sandesha-policy jar file in the binary distribution."
+        },
+        {
+            "c_hash": "d1cb2ee9",
+            "date": "2007-01-19 10:47:35 +0000",
+            "comment": "Fix up a couple of merge errors"
+        },
+        {
+            "c_hash": "021f3db2",
+            "date": "2007-01-19 13:20:44 +0000",
+            "comment": "Make unit tests pass on XP.  Fix problem uncommitted transaction problem when terminating sequences, removed a few unused imports"
+        },
+        {
+            "c_hash": "440118b2",
+            "date": "2007-01-19 14:06:29 +0000",
+            "comment": "Update echo test to remove connection problem"
+        },
+        {
+            "c_hash": "86e3e5f0",
+            "date": "2007-01-19 18:33:38 +0000",
+            "comment": "Ensure that a FaultMessage can be created when RM is enabled"
+        },
+        {
+            "c_hash": "3dd9a22d",
+            "date": "2007-01-21 12:33:21 +0000",
+            "comment": "Ensure that the SandeshaThread's Context ClassLoader is the same ClassLoader used by the rest of Axis"
+        },
+        {
+            "c_hash": "20a99a0b",
+            "date": "2007-01-22 14:38:32 +0000",
+            "comment": "Offered sequence should have ClientCompletedMessages set"
+        },
+        {
+            "c_hash": "99a7ec50",
+            "date": "2007-01-23 08:28:20 +0000",
+            "comment": "A bug fix to avoid a NPE."
+        },
+        {
+            "c_hash": "ce36a25c",
+            "date": "2007-01-23 11:11:12 +0000",
+            "comment": "Moved the clone method to SandeshaUtil. Added logic to preserve the 'processed' state of header blocks."
+        },
+        {
+            "c_hash": "7903865b",
+            "date": "2007-01-23 11:27:22 +0000",
+            "comment": "waitForSequenceCompletion using -1 value never waits until the sequence terminates"
+        },
+        {
+            "c_hash": "6692928b",
+            "date": "2007-01-23 14:56:24 +0000",
+            "comment": "Remove a few compile warnings and refactor getting of RMS/RMD Beans from Fault/Sequence/AcknowledgementManager"
+        },
+        {
+            "c_hash": "beec068c",
+            "date": "2007-01-24 11:03:36 +0000",
+            "comment": "Fix NPE in SandeshaGlobalInHandler where Sequence not found"
+        },
+        {
+            "c_hash": "bc3a5287",
+            "date": "2007-01-25 16:30:47 +0000",
+            "comment": "Search for non-terminated sequences, and set the internal sequence id when possible"
+        },
+        {
+            "c_hash": "31b6032c",
+            "date": "2007-01-25 16:31:50 +0000",
+            "comment": "Improve error message"
+        },
+        {
+            "c_hash": "2725ecb8",
+            "date": "2007-01-25 16:33:27 +0000",
+            "comment": "Only time out sequences based on SenderBeans that have an internal sequence id set"
+        },
+        {
+            "c_hash": "39f2c1ba",
+            "date": "2007-01-25 16:34:45 +0000",
+            "comment": "Stop threads from ending too soon, add in trace, and delete some dead code"
+        },
+        {
+            "c_hash": "91558971",
+            "date": "2007-01-26 09:09:46 +0000",
+            "comment": "Refactor ack processing inside SequenceProcessor"
+        },
+        {
+            "c_hash": "33d9ff27",
+            "date": "2007-01-26 15:06:53 +0000",
+            "comment": "Refactor scenarios tests"
+        },
+        {
+            "c_hash": "b8b703ff",
+            "date": "2007-01-29 13:29:21 +0000",
+            "comment": "Fix for http://issues.apache.org/jira/browse/SANDESHA2-69"
+        },
+        {
+            "c_hash": "731b572b",
+            "date": "2007-01-29 17:14:36 +0000",
+            "comment": "Add a new test which runs the main scenarios with unit-test security enabled, and some related bug fixes"
+        },
+        {
+            "c_hash": "7e508368",
+            "date": "2007-01-30 11:23:08 +0000",
+            "comment": "Clean up some redundant code"
+        },
+        {
+            "c_hash": "4fe744e5",
+            "date": "2007-01-30 18:23:44 +0000",
+            "comment": "Fix some sync-2-way errors that stopped the backchannel working with WSRM 1.1"
+        },
+        {
+            "c_hash": "d0b60fc3",
+            "date": "2007-01-31 10:55:31 +0000",
+            "comment": "NPE in sendAckIfNeeded"
+        },
+        {
+            "c_hash": "ba0a1105",
+            "date": "2007-01-31 11:35:12 +0000",
+            "comment": "Stop deleting RMD beans, until we can implement a proper timeout mechanism"
+        },
+        {
+            "c_hash": "772846fb",
+            "date": "2007-01-31 14:28:09 +0000",
+            "comment": "Fix NPE in SandeshaClient.cleanupTerminatedSequence"
+        },
+        {
+            "c_hash": "497f55ff",
+            "date": "2007-01-31 16:14:31 +0000",
+            "comment": "Add support for the CreateSequenceRefused fault message"
+        },
+        {
+            "c_hash": "f57695fc",
+            "date": "2007-02-01 13:53:37 +0000",
+            "comment": "Avoid loading and saving message contexts when we get a create sequence response"
+        },
+        {
+            "c_hash": "4c10e5fa",
+            "date": "2007-02-01 14:23:39 +0000",
+            "comment": "Update to HttpCore 4.0-alpha3, to match Axis2 change r501869"
+        },
+        {
+            "c_hash": "71184ccf",
+            "date": "2007-02-01 15:44:28 +0000",
+            "comment": "Add support for generating wsrm:UnknownSequence faults"
+        },
+        {
+            "c_hash": "d08ad915",
+            "date": "2007-02-02 10:17:55 +0000",
+            "comment": "Ensure we always find the correct namespace for MessagePending headers"
+        },
+        {
+            "c_hash": "3a4c1295",
+            "date": "2007-02-02 12:12:18 +0000",
+            "comment": "Add support for generating InvalidAcknowledgement fault"
+        },
+        {
+            "c_hash": "d2eb02ba",
+            "date": "2007-02-02 12:48:22 +0000",
+            "comment": "Refactor sync-2-way with RM 1.0 so that is is treated as a very specific poll"
+        },
+        {
+            "c_hash": "3e472986",
+            "date": "2007-02-02 12:52:33 +0000",
+            "comment": "Add missing copyright to the scenarios tests"
+        },
+        {
+            "c_hash": "8a010f45",
+            "date": "2007-02-02 15:38:00 +0000",
+            "comment": "Add support for generating the MessageRolledOver Fault"
+        },
+        {
+            "c_hash": "85e1a21e",
+            "date": "2007-02-02 19:29:56 +0000",
+            "comment": "Add a config option to use message serialization, see SANDESHA2-70"
+        },
+        {
+            "c_hash": "f39ed459",
+            "date": "2007-02-04 08:32:05 +0000",
+            "comment": "Fixed a bug in RM 1.0 Anon InOut - Was not adjusting the senderBean for retransmissions. Fixed a bug in InMomorySenderBeanManager.getNextMsgToSend - was not doing the retransmission test Fixed a bug in sender - The workId sould contain the timeToSend, otherwise retransmissions will not happen correctly. Moved some strings to the i18n files."
+        },
+        {
+            "c_hash": "58cefa1d",
+            "date": "2007-02-04 17:47:18 +0000",
+            "comment": "A new policy to enforce RM at the server side. Corrected the policy handling logic to load service/operation level policies. Removed some commented code."
+        },
+        {
+            "c_hash": "83de6af7",
+            "date": "2007-02-05 13:10:21 +0000",
+            "comment": "RangeString doesn't perform for long running sequences, Add a test for MessageRolloverFaults and add method to RMSampleService.java to stop MethodNotFound exceptions"
+        },
+        {
+            "c_hash": "f5f5f6c0",
+            "date": "2007-02-05 14:14:17 +0000",
+            "comment": "Update code to generate wsrm:SequenceClosed Faults"
+        },
+        {
+            "c_hash": "9c4fa201",
+            "date": "2007-02-05 14:58:46 +0000",
+            "comment": "Update code to generate wsrm:SequenceTerminated Faults"
+        },
+        {
+            "c_hash": "dc2657e5",
+            "date": "2007-02-05 17:04:15 +0000",
+            "comment": "Move to new WSDL constants, to match upstream Axis2 changes"
+        },
+        {
+            "c_hash": "ae63d296",
+            "date": "2007-02-06 12:57:01 +0000",
+            "comment": "Make the PollingManager more similar to the other worker threads"
+        },
+        {
+            "c_hash": "80219022",
+            "date": "2007-02-07 10:45:23 +0000",
+            "comment": "Make the Sender take each sequence in turn, to avoid starving them"
+        },
+        {
+            "c_hash": "1141d377",
+            "date": "2007-02-07 11:07:53 +0000",
+            "comment": "A testcase was failing without this dependancy."
+        },
+        {
+            "c_hash": "10f85b7e",
+            "date": "2007-02-07 11:23:30 +0000",
+            "comment": "Add better error reporting when failing to send a TerminateResponse, add the logging to RMDBean for ServerCompletedMsgs"
+        },
+        {
+            "c_hash": "b227b62c",
+            "date": "2007-02-07 13:50:06 +0000",
+            "comment": "Remove as much as possible from the global in handler, and delete dead code"
+        },
+        {
+            "c_hash": "c39f911c",
+            "date": "2007-02-08 05:37:19 +0000",
+            "comment": "Updated mtom_service.xml files."
+        },
+        {
+            "c_hash": "24246074",
+            "date": "2007-02-08 05:40:01 +0000",
+            "comment": "This dependancy was not needed after updating the mtom_service.xml files."
+        },
+        {
+            "c_hash": "399f5d13",
+            "date": "2007-02-08 13:41:15 +0000",
+            "comment": "Removed unused messages"
+        },
+        {
+            "c_hash": "6ba626d1",
+            "date": "2007-02-08 15:26:30 +0000",
+            "comment": "Match rm spec defined fault reason strings"
+        },
+        {
+            "c_hash": "239e70ac",
+            "date": "2007-02-09 14:57:57 +0000",
+            "comment": "Move some build deps up to match the axis2 levels"
+        },
+        {
+            "c_hash": "ce941596",
+            "date": "2007-02-12 10:34:21 +0000",
+            "comment": "Fix a build break, caused by upstream Axis2 changes"
+        },
+        {
+            "c_hash": "e2d1e426",
+            "date": "2007-02-12 15:55:55 +0000",
+            "comment": "When receiving a CreateSequenceRefused Fault Sandesha2 should terminate the outbound sequence and notify any waiting clients of the problem"
+        },
+        {
+            "c_hash": "7137593d",
+            "date": "2007-02-12 16:35:17 +0000",
+            "comment": "Copy the CONTENT_TYPE over to the sync response message context, to fix the SOAP 1.2 tests"
+        },
+        {
+            "c_hash": "dd569525",
+            "date": "2007-02-12 17:31:52 +0000",
+            "comment": "Resolve NPE when looking for SenderBean and not finding it"
+        },
+        {
+            "c_hash": "c3a43e03",
+            "date": "2007-02-13 13:59:17 +0000",
+            "comment": "Fix compile errors caused by upstream Axis2 changes to the OperationContext constructors"
+        },
+        {
+            "c_hash": "95943f14",
+            "date": "2007-02-13 16:58:14 +0000",
+            "comment": "changed AckRequest, LastMessage and TerminateSequence ActionMappings to the RMInOutOperation. Having them as InOnly caused the response to come with 202 in the Servlet case."
+        },
+        {
+            "c_hash": "dbadac56",
+            "date": "2007-02-13 17:00:16 +0000",
+            "comment": "Handle exceptions generated when generating a fault message inside the InvokerWorker"
+        },
+        {
+            "c_hash": "3b5ecae1",
+            "date": "2007-02-14 14:44:38 +0000",
+            "comment": "Clean up setting the acksTo for sequences, and move inbound sequence info onto the operation context"
+        },
+        {
+            "c_hash": "2d84fa86",
+            "date": "2007-02-14 15:37:54 +0000",
+            "comment": "wsrm:UnknownSequence should be wsrm:Identifier for fault message"
+        },
+        {
+            "c_hash": "6e9f15dd",
+            "date": "2007-02-15 10:53:47 +0000",
+            "comment": "Set flags correctly on RMSBean to prevent early termination of sequences"
+        },
+        {
+            "c_hash": "894f5dea",
+            "date": "2007-02-15 14:20:22 +0000",
+            "comment": "Improve performance of MakeConnection by polling less often, and paying attention to MessagePending headers"
+        },
+        {
+            "c_hash": "ac4ac5b1",
+            "date": "2007-02-16 08:47:56 +0000",
+            "comment": "Protect against Null to address in SenderWorker, add extra trace information in SandeshaThread and InMemorySenderBeanMgr"
+        },
+        {
+            "c_hash": "c251e2fa",
+            "date": "2007-02-16 14:23:46 +0000",
+            "comment": "Move to new WS-RM and WS-MC namespaces, to match the latest WX-RX spec"
+        },
+        {
+            "c_hash": "3997b4d1",
+            "date": "2007-02-19 10:50:09 +0000",
+            "comment": "Notify waiting clients that a sequence has timed out"
+        },
+        {
+            "c_hash": "241a1f47",
+            "date": "2007-02-19 11:04:07 +0000",
+            "comment": "Remove deadlock between Invoker and InvokerWorker over InvokerBeans and RMDBeans.  Removed the invoked flag from the InvokerBean as it isn't used."
+        },
+        {
+            "c_hash": "a54f4486",
+            "date": "2007-02-20 16:58:33 +0000",
+            "comment": "Ensure protection against null headers (support axiom change to avoid serialization of empty SOAP headers)"
+        },
+        {
+            "c_hash": "d4f4389b",
+            "date": "2007-02-21 10:51:58 +0000",
+            "comment": "Create a SOAPHeader if one doesn't exist when piggy backing acks"
+        },
+        {
+            "c_hash": "ab1b832d",
+            "date": "2007-02-21 10:55:08 +0000",
+            "comment": "Modify SequenceProcessor so that ACKS are sent to non anonymous acks-to addresses when processing a duplicate message"
+        },
+        {
+            "c_hash": "8872e5ee",
+            "date": "2007-02-22 17:20:36 +0000",
+            "comment": "Remove ListenerManager code as it isn't required"
+        },
+        {
+            "c_hash": "41d5db94",
+            "date": "2007-02-23 05:48:11 +0000",
+            "comment": "Fix duplicate RMSBean error from SenderWorker which is caused when 2 sends happen at the same time targetting the same end point, which causes 2 RMSBeans to be created by the setupNewClientSequence which have the same InternalSequenceId, also reworked some trace from MakeConnectionProcessor"
+        },
+        {
+            "c_hash": "114d8d0e",
+            "date": "2007-02-23 13:14:29 +0000",
+            "comment": "Reduce the number of RMDBean lookups, and pass where found already.  Make the getting of the SandeshaPolicyBean consistent."
+        },
+        {
+            "c_hash": "aa5a2574",
+            "date": "2007-02-26 09:27:32 +0000",
+            "comment": "Add a MessageId to the CreateSequenceResponse message (fixes AddressingVersionTest failure)"
+        },
+        {
+            "c_hash": "09bdd9db",
+            "date": "2007-02-28 11:22:57 +0000",
+            "comment": "Put the uuid associated with an anonymous endpoint into the RMSBean, instead of on the Service Context"
+        },
+        {
+            "c_hash": "ccf3c3e1",
+            "date": "2007-02-28 12:40:50 +0000",
+            "comment": "Ensure that we always signal a transport, if one is waiting as we send a message"
+        },
+        {
+            "c_hash": "9cd682b9",
+            "date": "2007-02-28 15:21:17 +0000",
+            "comment": "Rework acks so that we piggyback based on the To EPR, and avoid storing ack messages when we know that we can piggyback later"
+        },
+        {
+            "c_hash": "dc7c9698",
+            "date": "2007-03-02 07:48:10 +0000",
+            "comment": "Check for sequences timed out on the Sender rather than when a message arrives, Delete terminated RMS/RMDBeans after a configurable period, Terminate RMDBeans after the Inactivity timeout is reached"
+        },
+        {
+            "c_hash": "335074f0",
+            "date": "2007-03-03 17:34:22 +0000",
+            "comment": "Made the property copying logic (from referenceMessage to newMessage) generic. Properties to be copied can be specified in the module.xml within the \"propertiesToCopyFromReferenceMessage\" property. If it is in the key1:key2 format, the property with the key 'key1' will be copied with the key 'key2'."
+        },
+        {
+            "c_hash": "9cf72189",
+            "date": "2007-03-03 18:05:10 +0000",
+            "comment": "Increased the time interval to avoid test failures."
+        },
+        {
+            "c_hash": "c67db7a2",
+            "date": "2007-03-09 14:47:35 +0000",
+            "comment": "Move propertiesToCopyFromReferenceMessage in module.xml as it was stopping policy info from being loaded.  Also fix several NullPointerExceptions in Sender and PollingManager"
+        },
+        {
+            "c_hash": "bd2c3ec8",
+            "date": "2007-03-09 15:51:40 +0000",
+            "comment": "Enable duplicate messages to be processed by Reliable messaging.  Duplicate message is detected by the SandeshaGlobalInHandler, then processed by the SequenceProcessor.processReliableMessage"
+        },
+        {
+            "c_hash": "ea37f789",
+            "date": "2007-03-13 16:23:56 +0000",
+            "comment": "Switch test xml files to soap 1.1 to work around a unit test failure"
+        },
+        {
+            "c_hash": "d16a92df",
+            "date": "2007-03-13 16:39:02 +0000",
+            "comment": "Use WS-RM anonymous address to piggyback ack messages"
+        },
+        {
+            "c_hash": "a21ab25b",
+            "date": "2007-03-13 17:22:34 +0000",
+            "comment": "Minor tweak to duplicate processing to enable message to reach the RMMessageReceiver so ACK messages can be sent."
+        },
+        {
+            "c_hash": "8cb7f2d2",
+            "date": "2007-03-14 16:55:33 +0000",
+            "comment": "Ensure that we match up inbound and outbound sequences, so that we stop polling once we get the reply messages that we expect"
+        },
+        {
+            "c_hash": "0e214f4e",
+            "date": "2007-03-14 17:00:35 +0000",
+            "comment": "Put some more diagnostics into the test case"
+        },
+        {
+            "c_hash": "8a089697",
+            "date": "2007-03-15 14:10:33 +0000",
+            "comment": "Move the StorageMap off the context, and into the storage manager"
+        },
+        {
+            "c_hash": "bbb00c28",
+            "date": "2007-03-15 14:50:45 +0000",
+            "comment": "Make the SandeshaInHandler a no-op when RM is not enabled"
+        },
+        {
+            "c_hash": "0dace513",
+            "date": "2007-03-15 16:30:27 +0000",
+            "comment": "Fix typo in constant"
+        },
+        {
+            "c_hash": "a7ddef35",
+            "date": "2007-03-15 17:03:54 +0000",
+            "comment": "Ensure we try the backchannel before we allow a message to be returned by MakeConnection"
+        },
+        {
+            "c_hash": "d42955be",
+            "date": "2007-03-19 16:01:12 +0000",
+            "comment": "MustUnderstands that have been processed are lost after message serialized/deserialized"
+        },
+        {
+            "c_hash": "35ace2e3",
+            "date": "2007-03-20 11:04:21 +0000",
+            "comment": "For AckRequested, SequenceFault and MessagePending headers, set them as processed when fromOMElement is called"
+        },
+        {
+            "c_hash": "93b3ca89",
+            "date": "2007-03-20 11:30:29 +0000",
+            "comment": "Use the HOLD_RESPONSE property to hold the transport for sync 2-way messages"
+        },
+        {
+            "c_hash": "acaa08e3",
+            "date": "2007-03-20 11:45:48 +0000",
+            "comment": "Only remove sequences which have a set sequenceRemoveTimeout value"
+        },
+        {
+            "c_hash": "d55ca0b2",
+            "date": "2007-03-20 11:47:25 +0000",
+            "comment": "Mark the RMSBean as terminated if a SequenceUnknown or SequenceTerminated fault is returned from the RMD"
+        },
+        {
+            "c_hash": "799e4429",
+            "date": "2007-03-20 14:37:23 +0000",
+            "comment": "Move fixed RM state off the context objects and onto the axis configuration"
+        },
+        {
+            "c_hash": "f8535aa5",
+            "date": "2007-03-20 14:41:56 +0000",
+            "comment": "Stop trace from being turned on in the unit tests"
+        },
+        {
+            "c_hash": "228c878c",
+            "date": "2007-03-21 13:12:04 +0000",
+            "comment": "Set the Sequence Identifier when processing SequenceTerminated or SequenceUnknown faults"
+        },
+        {
+            "c_hash": "95e2a2bd",
+            "date": "2007-03-22 13:20:02 +0000",
+            "comment": "Make the SandeshaUtil.getPermanentStorageManager use the correct classname"
+        },
+        {
+            "c_hash": "7adbae3b",
+            "date": "2007-03-22 13:38:32 +0000",
+            "comment": "SANDESHA2-75: Automatically send an offer when using WSRM 1.0 and connecting to a service that contains OUT-IN meps."
+        },
+        {
+            "c_hash": "958bbb51",
+            "date": "2007-03-22 17:58:50 +0000",
+            "comment": "Update to match Axis2 transport description changes"
+        },
+        {
+            "c_hash": "a0514367",
+            "date": "2007-03-25 17:33:14 +0000",
+            "comment": "Avioded rewriting of the Addressing anonymous URI for WSRM 1.0 messages. Avoided standalone acks in the WSRM 1.0 anonyous InOut scneario. If such an ack get returned the client may assume the message to be InOnly and avoid from replaying request msgs to get the response."
+        },
+        {
+            "c_hash": "910524b6",
+            "date": "2007-03-27 05:23:38 +0000",
+            "comment": "Moved the TerminateSequence action mapping to the InOnly group. Added a ServiceClient.setPolicyBean method. Using this users can set their policy beans through the client API."
+        },
+        {
+            "c_hash": "57cf7cbd",
+            "date": "2007-03-27 11:57:52 +0000",
+            "comment": "Make sure that the right namespace is used to parse Subcodes from SequenceFaults"
+        },
+        {
+            "c_hash": "8168a06e",
+            "date": "2007-03-28 07:52:38 +0000",
+            "comment": "Exceptions caught when processing SenderWorker.checkForSyncResponses should log a warning and not throw the exception otherwise Terminate processing does not complete for RM1.0"
+        },
+        {
+            "c_hash": "366328c9",
+            "date": "2007-03-29 10:37:05 +0000",
+            "comment": "Axiom changes have caused exceptions when generating fault RM messags, this fix stops the unit test failures"
+        },
+        {
+            "c_hash": "a149e2dc",
+            "date": "2007-03-29 13:30:26 +0000",
+            "comment": "SandeshaClient close/terminate/ack request may be sent using a different soap version to the rest of the sequence messages if the Options instance doesn't contain a soap version uri."
+        },
+        {
+            "c_hash": "ccc47ed4",
+            "date": "2007-03-29 14:42:57 +0000",
+            "comment": "See sandesha-77"
+        },
+        {
+            "c_hash": "9e23024b",
+            "date": "2007-04-11 14:44:52 +0000",
+            "comment": "Use the Sandesha2Constant for the RMDuplicate operation.  This fixes a problem where acks are not sent for duplicate messages."
+        },
+        {
+            "c_hash": "65c38fe6",
+            "date": "2007-04-12 07:59:06 +0000",
+            "comment": "Fix Build issue where AxisFault constructors have changed and makeFault method added.  Changed the jakarta.httpcore.version to alpha4 to match axis2 and resolve ClassNotFound issues"
+        },
+        {
+            "c_hash": "2ff9499e",
+            "date": "2007-04-13 07:49:18 +0000",
+            "comment": "See http://issues.apache.org/jira/browse/SANDESHA2-83"
+        },
+        {
+            "c_hash": "ad928928",
+            "date": "2007-04-17 10:44:29 +0000",
+            "comment": "Only piggyback ACKs if the sequence has an ACK to piggyback.  Check that an ACK is valid for a sequence.  Remove a few unused imports from the MTOM test"
+        },
+        {
+            "c_hash": "b8837f22",
+            "date": "2007-04-17 11:00:20 +0000",
+            "comment": "SenderBean not locked when updating the next retransmission time.  InMemorySenderBeanMgr can return a SenderBean which is not eligible for sending"
+        },
+        {
+            "c_hash": "df6dfe1f",
+            "date": "2007-04-17 11:03:13 +0000",
+            "comment": "See http://issues.apache.org/jira/browse/SANDESHA2-84"
+        },
+        {
+            "c_hash": "f3992d7e",
+            "date": "2007-04-17 11:18:03 +0000",
+            "comment": "Commit transaction after processing each part of the message inside the SandeshaInHandler.  This fixes both a deadlock with the SenderWorker with ordering of RMS/RMDBeans"
+        },
+        {
+            "c_hash": "8efd7bea",
+            "date": "2007-04-17 14:02:56 +0000",
+            "comment": "Check for AxisOperation in SandeshaModule.engageNotify as well as AxisService when deciding if it is an out in operation for RM Auto offering"
+        },
+        {
+            "c_hash": "d7b93a3d",
+            "date": "2007-04-18 13:52:42 +0000",
+            "comment": "Enable the CSR Fault test.  Move the RM Fault processing to the SandeshaGlobalInHandler which fixes the action not found error for RM1.0 Fault messages"
+        },
+        {
+            "c_hash": "71975c23",
+            "date": "2007-04-19 07:39:07 +0000",
+            "comment": "See http://issues.apache.org/jira/browse/SANDESHA2-85"
+        },
+        {
+            "c_hash": "573c4fb8",
+            "date": "2007-04-20 18:53:10 +0000",
+            "comment": "Improved the target resolver to set \"USE_ASYNC\" to false when Sandesha2 is not engaged."
+        },
+        {
+            "c_hash": "ee24b1be",
+            "date": "2007-04-21 10:05:43 +0000",
+            "comment": "A bug fix"
+        },
+        {
+            "c_hash": "d8ed64de",
+            "date": "2007-04-22 16:46:12 +0000",
+            "comment": "Updated the axis2.xml files"
+        },
+        {
+            "c_hash": "ef6c5c0f",
+            "date": "2007-04-22 16:47:13 +0000",
+            "comment": "Added the dependancy commons-fileupload. Some changes to dependency versions."
+        },
+        {
+            "c_hash": "a4815283",
+            "date": "2007-04-22 16:50:18 +0000",
+            "comment": "Corrected the SandeshaClient.terminateSequence method. \t- This was not sending an ampty LastMessage in the WSRM 1.0 case, but this is wrong according to the protocol. Several other bug fixes."
+        },
+        {
+            "c_hash": "dc874dbd",
+            "date": "2007-04-22 16:52:35 +0000",
+            "comment": "Some changes to the RMScenarioTest - Omited the checking of the termination of the response message in WSRM 1.0 sync InOut case. Since we terminate with the SandeshaClient.terminateSequence method, we send the Empty Body Last Message but still the server has not corrected to respond with a LastMessage."
+        },
+        {
+            "c_hash": "b58fbed3",
+            "date": "2007-04-22 16:54:28 +0000",
+            "comment": "Sorry, that was a mistake :-)"
+        },
+        {
+            "c_hash": "77cdd968",
+            "date": "2007-04-23 07:21:01 +0000",
+            "comment": "Folder structure for the maven2 build"
+        },
+        {
+            "c_hash": "17d82308",
+            "date": "2007-04-23 09:36:06 +0000",
+            "comment": "Applied the patch from Sumedha on the maven2 build - Sandesha2 86"
+        },
+        {
+            "c_hash": "4bbc483a",
+            "date": "2007-04-23 09:54:53 +0000",
+            "comment": "patch for - Sandesha2 86"
+        },
+        {
+            "c_hash": "6c42de03",
+            "date": "2007-04-23 10:06:52 +0000",
+            "comment": "More changes for Sandesha2 86"
+        },
+        {
+            "c_hash": "c7d4e5f6",
+            "date": "2007-04-23 10:13:09 +0000",
+            "comment": "Updated pom.xml"
+        },
+        {
+            "c_hash": "7ce83502",
+            "date": "2007-04-24 04:57:43 +0000",
+            "comment": "More changes for the maven2 build - Added the interop module"
+        },
+        {
+            "c_hash": "3e3f8a0a",
+            "date": "2007-04-24 08:55:43 +0000",
+            "comment": "More corrections from Sumedha"
+        },
+        {
+            "c_hash": "c128dfa2",
+            "date": "2007-04-25 05:16:48 +0000",
+            "comment": "patch from sumedha - Sandesha2 86"
+        },
+        {
+            "c_hash": "8382156a",
+            "date": "2007-04-25 06:55:59 +0000",
+            "comment": "Fixed test cases."
+        },
+        {
+            "c_hash": "0aa01f4b",
+            "date": "2007-04-25 07:47:17 +0000",
+            "comment": "Optimized the maven scripts"
+        },
+        {
+            "c_hash": "7ba6c20f",
+            "date": "2007-04-25 11:56:22 +0000",
+            "comment": "See http://issues.apache.org/jira/browse/SANDESHA2-87"
+        },
+        {
+            "c_hash": "aa55861d",
+            "date": "2007-04-25 12:14:09 +0000",
+            "comment": "Updated the pom files"
+        },
+        {
+            "c_hash": "9a3e0479",
+            "date": "2007-04-26 09:57:46 +0000",
+            "comment": "Avoid deadlock between Invoker and InvokerWorker when dealing with a 2-way message.  Deadlock is caused by RMDBean and InvokerBean taken in different orders."
+        },
+        {
+            "c_hash": "ea756520",
+            "date": "2007-04-26 10:00:22 +0000",
+            "comment": "Skip Sandesha processing if RM is not enabled for a Service."
+        },
+        {
+            "c_hash": "f0b920bf",
+            "date": "2007-04-26 10:38:49 +0000",
+            "comment": "Fixed test cases - to work from within IDEs"
+        },
+        {
+            "c_hash": "7032d1ad",
+            "date": "2007-04-26 11:20:37 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/webservices/sandesha/trunk/java@532708 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "effcf16c",
+            "date": "2007-04-26 17:43:01 +0000",
+            "comment": "Correct mar processing so properties files are added to the Sandesha mar"
+        },
+        {
+            "c_hash": "10f5c493",
+            "date": "2007-04-27 08:54:27 +0000",
+            "comment": "A correction to the mar target, resource files were not being coppied correctly."
+        },
+        {
+            "c_hash": "a5089026",
+            "date": "2007-04-27 09:14:41 +0000",
+            "comment": "Changed the name of the artifact from the core module to 'sandesha2-core'"
+        },
+        {
+            "c_hash": "16a7ffa6",
+            "date": "2007-04-30 03:44:48 +0000",
+            "comment": "Some updates to the pom.xml"
+        },
+        {
+            "c_hash": "31d11e65",
+            "date": "2007-04-30 04:16:27 +0000",
+            "comment": "Updates to the maven files"
+        },
+        {
+            "c_hash": "6320f453",
+            "date": "2007-04-30 09:00:01 +0000",
+            "comment": "Applied sumedhas patch on distributions"
+        },
+        {
+            "c_hash": "e833cf05",
+            "date": "2007-05-02 12:18:53 +0000",
+            "comment": "Make a CreateSequenceRefused fault if RM is not enabled for a particular service and it receives a CreateSequence message"
+        },
+        {
+            "c_hash": "147556ea",
+            "date": "2007-05-02 17:36:15 +0000",
+            "comment": "Added the samples and test modules to the maven2 build. Repo creation and sample creation scripts were written in seperate Ant files which get called from the pom.xml file. Moved the test and sample; src,resources files to the correct locations. Maven1 build was corrected according to these changes."
+        },
+        {
+            "c_hash": "13b81e2f",
+            "date": "2007-05-06 12:29:11 +0000",
+            "comment": "Corrected dependencies. Moved some resources files to correct places. Some other corrections."
+        },
+        {
+            "c_hash": "521afbc8",
+            "date": "2007-05-06 12:50:06 +0000",
+            "comment": "Corrected the path for Policy resources"
+        },
+        {
+            "c_hash": "8363ba8f",
+            "date": "2007-05-07 05:28:07 +0000",
+            "comment": "Sumedha's patch - distri. version2"
+        },
+        {
+            "c_hash": "bb51f2d4",
+            "date": "2007-05-07 07:04:00 +0000",
+            "comment": "Updates to TestCases"
+        },
+        {
+            "c_hash": "cccfed51",
+            "date": "2007-05-07 07:52:17 +0000",
+            "comment": "Both src and bin distributions should be created"
+        },
+        {
+            "c_hash": "bb2d1ab2",
+            "date": "2007-05-07 09:33:21 +0000",
+            "comment": "Commented the WSRM 1.0 syncEcho test- this hs a Random failure - fixing..."
+        },
+        {
+            "c_hash": "49d1bd19",
+            "date": "2007-05-09 00:38:04 +0000",
+            "comment": "Made sandesha2 dependent on Axis2 1.2."
+        },
+        {
+            "c_hash": "a2a06879",
+            "date": "2007-05-09 09:58:39 +0000",
+            "comment": "Solve access control exceptions when j2 security is on"
+        },
+        {
+            "c_hash": "8a6d0ee1",
+            "date": "2007-05-09 10:05:27 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/webservices/sandesha/trunk/java@536476 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "5817699e",
+            "date": "2007-05-09 12:29:30 +0000",
+            "comment": "Fix a couple of deadlocks.  One between Sender and SenderWorker with ordering of RMS and RMDBeans, the other fixes a problem with InvokerWorker and SenderWorker and ordering of RMS and RMDBeans."
+        },
+        {
+            "c_hash": "b7e24d55",
+            "date": "2007-05-10 10:51:20 +0000",
+            "comment": "Commit the transaction when the SenderWorker detects an un-sendable message"
+        },
+        {
+            "c_hash": "58f6fddf",
+            "date": "2007-05-10 11:52:02 +0000",
+            "comment": "PAtch from Sumedha - dependancy removal patch"
+        },
+        {
+            "c_hash": "3bbba680",
+            "date": "2007-05-10 11:56:07 +0000",
+            "comment": "cloneMessageContext String.getBytes should use UTF8 as the default encoding"
+        },
+        {
+            "c_hash": "bee731ba",
+            "date": "2007-05-12 00:52:02 +0000",
+            "comment": "when the client sends an LastMessage control message, the server also should try to coplete the response sequence with a LastMessage. LastMessage was marked as InOut in the module.xml. LastMessageProcessor was added. Corrected the AXIOM version (to 1.2.4)"
+        },
+        {
+            "c_hash": "4dbc32d4",
+            "date": "2007-05-14 06:20:37 +0000",
+            "comment": "removed commented dependancies"
+        },
+        {
+            "c_hash": "855be850",
+            "date": "2007-05-14 16:00:10 +0000",
+            "comment": "Abort processing for RM faults once processed"
+        },
+        {
+            "c_hash": "37f4a9a7",
+            "date": "2007-05-16 03:51:06 +0000",
+            "comment": "A bug fix - to support SMTP transport"
+        },
+        {
+            "c_hash": "7e04c274",
+            "date": "2007-05-16 12:11:42 +0000",
+            "comment": "Ignore the anonOutIn operation when deciding if we should offer a sequence. If we don't ignore this operation then we actually send an offer for all services, which fails to interoperate with some one-way services."
+        },
+        {
+            "c_hash": "c921a292",
+            "date": "2007-05-16 13:05:14 +0000",
+            "comment": "Return a fault if 2-way RM 1.1 is attempted without MakeConnection"
+        },
+        {
+            "c_hash": "dbb1eca2",
+            "date": "2007-05-16 15:16:35 +0000",
+            "comment": "Ensure we stop polling when a combination of sync and async 2-way calls are performed"
+        },
+        {
+            "c_hash": "eb10bba5",
+            "date": "2007-05-17 13:07:12 +0000",
+            "comment": "Ensure orphaned messages obtain RM namespace correctly"
+        },
+        {
+            "c_hash": "bc79b5aa",
+            "date": "2007-05-20 16:36:45 +0000",
+            "comment": "Changed the SenderWorker.checkForsyncResponse to accept an response MsgContext if one is alread available. A bug fix in the MsgInitializer"
+        },
+        {
+            "c_hash": "6bba5848",
+            "date": "2007-05-21 09:48:01 +0000",
+            "comment": "Piggyback acks on Terminate messages, to help end sequences cleanly."
+        },
+        {
+            "c_hash": "621fda15",
+            "date": "2007-05-21 12:17:40 +0000",
+            "comment": "Allow finer transactional control to stop window where acks are sent before transactions commit.  This reduces the time the transactions hold onto locks.  Finally improve the transaction commit/rollback handling when exceptions are thrown"
+        },
+        {
+            "c_hash": "fa3b629e",
+            "date": "2007-05-21 14:56:36 +0000",
+            "comment": "Put a delay into SenderBeans returned by the MakeConnectionProcessor.  This stops duplicates being sent along MakeConnections that arrive at short intervals"
+        },
+        {
+            "c_hash": "6d0ab650",
+            "date": "2007-05-21 15:03:09 +0000",
+            "comment": "When a SenderBean isn't found inside SenderWorker.updateMessage stop sending the message"
+        },
+        {
+            "c_hash": "39ffd7d9",
+            "date": "2007-05-21 16:14:08 +0000",
+            "comment": "Release the transport if it is blocked too long. This frees up transport resources when doing sync-2-way messaging with RM."
+        },
+        {
+            "c_hash": "8a68d0c9",
+            "date": "2007-05-21 16:32:37 +0000",
+            "comment": "Delete the create sequence message once the sequence is up and running."
+        },
+        {
+            "c_hash": "4c5256ee",
+            "date": "2007-05-21 23:36:26 +0000",
+            "comment": "A fix for a possible NullPointer"
+        },
+        {
+            "c_hash": "f1dc769a",
+            "date": "2007-05-22 12:23:45 +0000",
+            "comment": "Create a plug point to allow application context to be moved onto the InvokerWorker threads."
+        },
+        {
+            "c_hash": "aef83cbd",
+            "date": "2007-05-23 02:19:17 +0000",
+            "comment": "Moved the sandesha2-rampart integration code to a new maven module, named rampart-integration Cleaned the pom.xml files."
+        },
+        {
+            "c_hash": "cbbaa7e9",
+            "date": "2007-05-27 01:49:59 +0000",
+            "comment": "Merged the recent changes from the branch see r541573"
+        },
+        {
+            "c_hash": "1030d687",
+            "date": "2007-05-30 04:53:44 +0000",
+            "comment": "A correction to set the messageType of empty body LastMessages correctly."
+        },
+        {
+            "c_hash": "4e6bc09c",
+            "date": "2007-05-30 08:12:15 +0000",
+            "comment": "Ensure that polled msgs have RMS beans"
+        },
+        {
+            "c_hash": "a905cd6b",
+            "date": "2007-05-30 10:59:44 +0000",
+            "comment": "ensure we do not send makeConnection msgs aggresively"
+        },
+        {
+            "c_hash": "fdb717d8",
+            "date": "2007-05-30 11:02:33 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/webservices/sandesha/trunk/java@542795 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "f8dae967",
+            "date": "2007-05-31 20:04:00 +0000",
+            "comment": "Merger the previous commits to the branch, to the trunk"
+        },
+        {
+            "c_hash": "ca204282",
+            "date": "2007-06-03 14:02:04 +0000",
+            "comment": "Added a sequenceIDDispatcher which does the service dispatching of incoming messages according the the sequenceID."
+        },
+        {
+            "c_hash": "2a442adf",
+            "date": "2007-06-03 14:02:48 +0000",
+            "comment": "Changed the module.xml to deploy the SequenceIDDispatcher"
+        },
+        {
+            "c_hash": "c22bf858",
+            "date": "2007-06-03 18:53:30 +0000",
+            "comment": "added cleaning work to the module.shutdown method"
+        },
+        {
+            "c_hash": "aa4c68e6",
+            "date": "2007-06-04 06:30:27 +0000",
+            "comment": "merged the previous commits to the trunk"
+        },
+        {
+            "c_hash": "ac65d9cf",
+            "date": "2007-06-04 11:45:07 +0000",
+            "comment": "Ensure makeConnection mandate is only if we are running sync"
+        },
+        {
+            "c_hash": "a89b4626",
+            "date": "2007-06-11 09:40:24 +0000",
+            "comment": "Skip Sandesha processingfor services which have unreliable message set, or if a sequence property bean can't be found"
+        },
+        {
+            "c_hash": "059d19fa",
+            "date": "2007-06-11 10:16:23 +0000",
+            "comment": "Create RMS/RMDBean constructors which copy properties from supplied RMS/RMDBean.  Remove the numberOfMessagesAcknowledged from the RMS as this can be calculated.  Tidy up imports in some classes"
+        },
+        {
+            "c_hash": "38a935e8",
+            "date": "2007-06-11 11:22:22 +0000",
+            "comment": "Avoid NPE when unblocking the CreateSequence message transport"
+        },
+        {
+            "c_hash": "481db1c1",
+            "date": "2007-06-11 12:33:01 +0000",
+            "comment": "Move Reliable messaging enabled check from CSProcessor to the RMMessageReceiver.  Tidy up code in SenderWorker when looking up RMDBean"
+        },
+        {
+            "c_hash": "4304ff1f",
+            "date": "2007-06-24 19:50:13 +0000",
+            "comment": "Sandesha2Global In Handler was changed to throw Exceptions if service dispatching has not happened correctly. Added some code comments. Some corrections to the AckRequested Processor. A bug fix in the SenderWorker."
+        },
+        {
+            "c_hash": "76171797",
+            "date": "2007-07-03 10:53:23 +0000",
+            "comment": "Update to Axis2 SNAPSHOT"
+        },
+        {
+            "c_hash": "76ed89b1",
+            "date": "2007-07-03 12:48:47 +0000",
+            "comment": "Cache message context instance to save cost of loading it on first access"
+        },
+        {
+            "c_hash": "bc08c684",
+            "date": "2007-07-03 13:57:02 +0000",
+            "comment": "Fix an NPE when the internal sequence id is not known"
+        },
+        {
+            "c_hash": "01cfdde7",
+            "date": "2007-07-04 03:05:43 +0000",
+            "comment": "Corrected a compile failure and dependancies"
+        },
+        {
+            "c_hash": "0d9da7fb",
+            "date": "2007-07-04 04:18:16 +0000",
+            "comment": "A fix for the SequenceTerminatedFaultTest"
+        },
+        {
+            "c_hash": "14286bf6",
+            "date": "2007-07-04 05:21:52 +0000",
+            "comment": "A fix to SandeshaClientLastErrorTest. All the test cases should be passing now"
+        },
+        {
+            "c_hash": "30579bb4",
+            "date": "2007-07-04 07:12:19 +0000",
+            "comment": "Cleaningup the code"
+        },
+        {
+            "c_hash": "cb969dff",
+            "date": "2007-07-04 16:37:50 +0000",
+            "comment": "Make dup operation both 1 way and 2 way (SANDESHA2-95)"
+        },
+        {
+            "c_hash": "d66fa3e3",
+            "date": "2007-07-04 23:33:47 +0000",
+            "comment": "A correction to the Sandesha2 API. Changed returntypes ArrayList->List"
+        },
+        {
+            "c_hash": "b7779485",
+            "date": "2007-07-05 02:38:46 +0000",
+            "comment": "Some more comments for the Client API"
+        },
+        {
+            "c_hash": "7881eaaf",
+            "date": "2007-07-05 09:56:40 +0000",
+            "comment": "SANDESHA2-96: reduce gap in dup msg filtering"
+        },
+        {
+            "c_hash": "72aa8caa",
+            "date": "2007-07-06 09:23:47 +0000",
+            "comment": "Corrections to Getter Setter methods. SandeshaPolicyBean was changed to have set a ConstantsPropertyBean as the parent by default."
+        },
+        {
+            "c_hash": "cc50aa62",
+            "date": "2007-07-07 09:15:42 +0000",
+            "comment": "bug fixes"
+        },
+        {
+            "c_hash": "22d1cd94",
+            "date": "2007-07-07 13:07:10 +0000",
+            "comment": "Updated the description"
+        },
+        {
+            "c_hash": "9886dff7",
+            "date": "2007-07-09 18:58:10 +0000",
+            "comment": "fix build break"
+        },
+        {
+            "c_hash": "61d9dc88",
+            "date": "2007-07-10 08:52:45 +0000",
+            "comment": "Update test pom to use forkMode=pertest"
+        },
+        {
+            "c_hash": "ce5cb3a2",
+            "date": "2007-07-10 09:50:13 +0000",
+            "comment": "Adding perf module"
+        },
+        {
+            "c_hash": "98246c17",
+            "date": "2007-07-10 21:54:37 +0000",
+            "comment": "Get Sandesha tests working under m2 2.0.7"
+        },
+        {
+            "c_hash": "11334157",
+            "date": "2007-07-11 01:40:36 +0000",
+            "comment": "get modules/interop to build under m2 2.0.7"
+        },
+        {
+            "c_hash": "842cf4c9",
+            "date": "2007-07-13 09:33:45 +0000",
+            "comment": "Fixed two bug fixes."
+        },
+        {
+            "c_hash": "b21aad48",
+            "date": "2007-07-17 16:01:54 +0000",
+            "comment": "Remove the duplicate adding of UsesSequenceSTR.  Added once under addHeaderBlock and once under addChild.  Removing the addChild call."
+        },
+        {
+            "c_hash": "f1cd9492",
+            "date": "2007-07-18 12:38:00 +0000",
+            "comment": "Updates to the architecture guide to match current code base, such as removing SequencePropertyBeanMgr and CreateSeqBean references"
+        },
+        {
+            "c_hash": "0611343c",
+            "date": "2007-07-19 15:34:47 +0000",
+            "comment": "Sandesha doesn't process the UnknownSequenceFault when it's in the SOAP message body"
+        },
+        {
+            "c_hash": "9bc206f6",
+            "date": "2007-07-19 16:12:20 +0000",
+            "comment": "Fix deadlock when piggybacking Acks where the SenderBean and RmdBean locks are taken in the wrong order"
+        },
+        {
+            "c_hash": "41279d64",
+            "date": "2007-07-23 08:15:05 +0000",
+            "comment": "Axis2 has moved AddressingBased Dispatcher into pre-dispatch phase so Sandesha also need to change the phase rule to match with that"
+        },
+        {
+            "c_hash": "62b7e97f",
+            "date": "2007-07-23 09:28:44 +0000",
+            "comment": "Added seperate properties for wss4j and wsdl4j versions"
+        },
+        {
+            "c_hash": "bdd0c502",
+            "date": "2007-07-23 10:31:34 +0000",
+            "comment": "Fixed: NPE is thrown when tries to serialize the policy from a partially built SandeshaPolicyBean."
+        },
+        {
+            "c_hash": "640a1aa4",
+            "date": "2007-07-23 12:49:24 +0000",
+            "comment": "revert back to original , seems like we need to think twice on this change"
+        },
+        {
+            "c_hash": "c1c174c2",
+            "date": "2007-07-23 14:51:46 +0000",
+            "comment": "merge part of svn revision 557231 from 1.3 branch to get persistence + securerm scenario working"
+        },
+        {
+            "c_hash": "d7b8538f",
+            "date": "2007-07-27 11:43:38 +0000",
+            "comment": "fixing Sandesha build , still two test cases are failing Chamikra please have a look at them"
+        },
+        {
+            "c_hash": "22ff0e11",
+            "date": "2007-08-01 07:14:41 +0000",
+            "comment": "Fixed compilation failure. ADB code generation has changed.Manually added unimplemented method.Need to generate these classes automatically."
+        },
+        {
+            "c_hash": "30060182",
+            "date": "2007-08-01 08:06:45 +0000",
+            "comment": "Documentation artifact for distribution"
+        },
+        {
+            "c_hash": "fe09cde0",
+            "date": "2007-08-07 10:33:17 +0000",
+            "comment": "seems like SequenceIDDispacher shoud run before addressing based dispatcher o.w it gives errors.  (action can not be processed)"
+        },
+        {
+            "c_hash": "2277b407",
+            "date": "2007-08-08 12:09:59 +0000",
+            "comment": "we should not remove the callback"
+        },
+        {
+            "c_hash": "d8100cd7",
+            "date": "2007-08-09 00:57:51 +0000",
+            "comment": "Fix line endings and set eol-style ONLY - NO logic changes"
+        },
+        {
+            "c_hash": "1b95351c",
+            "date": "2007-08-09 17:53:53 +0000",
+            "comment": "Fix for build break in CreateSequenceRefusedInboundFaultTest. This was caused by a NPE in AddressingInFaultHandler line 92 - 'faultLocalName = code.getTextAsQName().getLocalPart();'"
+        },
+        {
+            "c_hash": "0e1e1dcd",
+            "date": "2007-08-13 03:55:13 +0000",
+            "comment": "Try a fix for the intermittent failure in SerializableScenariosTest. Basically wake up all the threads that are waiting on a monitor, not just one"
+        },
+        {
+            "c_hash": "ad286945",
+            "date": "2007-08-15 08:16:38 +0000",
+            "comment": "fixing RM 112 - We need to copy the properties from the original message context , o.w we clone not the original one but slightly changed one"
+        },
+        {
+            "c_hash": "f48a86bf",
+            "date": "2007-08-19 18:20:54 +0000",
+            "comment": "Applying fix for SANDESHA2-109 from Hans,added constant for en."
+        },
+        {
+            "c_hash": "36b5f5c4",
+            "date": "2007-08-19 20:52:25 +0000",
+            "comment": "Added copying properties from old msg context to new one.Possible fix for SANDESHA2-115."
+        },
+        {
+            "c_hash": "d33153f3",
+            "date": "2007-08-21 12:15:33 +0000",
+            "comment": "WSCOMMONS-236 Contributor:Rich Scheuerle Changed SandeshaUtil to use the new Axiom fast CopyUtils utility to copy the SOAPEnvelope"
+        },
+        {
+            "c_hash": "e6ec2282",
+            "date": "2007-08-22 16:17:35 +0000",
+            "comment": "changed how properties are being copied.Fix to SANDESHA2-115."
+        },
+        {
+            "c_hash": "23f8f9b6",
+            "date": "2007-09-06 12:34:04 +0000",
+            "comment": "SANDESHA2-120 : plugin to decorate replyTo EPRs"
+        },
+        {
+            "c_hash": "0824bafe",
+            "date": "2007-09-06 12:39:11 +0000",
+            "comment": "SANDESHA2-120 : plugin to decorate replyTo EPRs"
+        },
+        {
+            "c_hash": "0ebbeb66",
+            "date": "2007-09-11 06:55:50 +0000",
+            "comment": "performance improvements"
+        },
+        {
+            "c_hash": "b24f2a1a",
+            "date": "2007-09-11 09:53:04 +0000",
+            "comment": "Enable SEQUENCE_KEY property to be set on the ConfigurationContext.  Remove several unused imports"
+        },
+        {
+            "c_hash": "da860c35",
+            "date": "2007-09-13 05:35:27 +0000",
+            "comment": "Add a \"copy\" constructor to the InvokerBean"
+        },
+        {
+            "c_hash": "c6a55967",
+            "date": "2007-09-13 11:22:49 +0000",
+            "comment": "Alter the Orphaned message message to indicate if it was an application message or RM protocol message that is orphaned"
+        },
+        {
+            "c_hash": "1bfc6c2d",
+            "date": "2007-09-13 11:55:41 +0000",
+            "comment": "Move string.split() off the mainline code and into module init, to improve performance"
+        },
+        {
+            "c_hash": "d19ef9ff",
+            "date": "2007-09-13 12:37:25 +0000",
+            "comment": "fixing TS issue"
+        },
+        {
+            "c_hash": "034ad080",
+            "date": "2007-09-13 13:43:49 +0000",
+            "comment": "Ensure that 1-way LastMessages ack the message to ensure that the transport gets closed."
+        },
+        {
+            "c_hash": "c847b46c",
+            "date": "2007-09-13 13:46:45 +0000",
+            "comment": "Fix deadlock described in SANDESHA2-111."
+        },
+        {
+            "c_hash": "c2ff923b",
+            "date": "2007-09-13 16:20:15 +0000",
+            "comment": "Avoid polling for sequences that have not set the nextMessageNumber yet"
+        },
+        {
+            "c_hash": "2ee9c959",
+            "date": "2007-09-13 16:21:58 +0000",
+            "comment": "When the client uses the RM SPI to create a Sequence, use an async replyTo if they have chosen to use a separate listener"
+        },
+        {
+            "c_hash": "150cd0c6",
+            "date": "2007-09-13 16:45:23 +0000",
+            "comment": "Ensure we free the transport as soon as possible"
+        },
+        {
+            "c_hash": "2b487afc",
+            "date": "2007-09-17 12:31:22 +0000",
+            "comment": "potential NPE in populateRMMsgContext"
+        },
+        {
+            "c_hash": "45e25561",
+            "date": "2007-09-18 09:41:55 +0000",
+            "comment": "Transport issues and ensure seqID is correct when processing seqUnknownFaults"
+        },
+        {
+            "c_hash": "a55b74f3",
+            "date": "2007-09-18 10:47:01 +0000",
+            "comment": "guard against null beans"
+        },
+        {
+            "c_hash": "4182fd58",
+            "date": "2007-09-18 11:02:47 +0000",
+            "comment": "remove null bean checks"
+        },
+        {
+            "c_hash": "d4da9fc4",
+            "date": "2007-09-19 10:03:13 +0000",
+            "comment": "when a duplicate message comes to the system Sandesha pick the message context and that some time has a property saying addressing headers processed so we need to reset that for each requests. otherwise Axis2 gives errors"
+        },
+        {
+            "c_hash": "95b5f85c",
+            "date": "2007-09-19 14:59:57 +0000",
+            "comment": "More transport issues"
+        },
+        {
+            "c_hash": "80e2a4cb",
+            "date": "2007-09-20 07:08:44 +0000",
+            "comment": "Allow faster copy of messages stored in the InMemoryStorageManager"
+        },
+        {
+            "c_hash": "fb20f07d",
+            "date": "2007-09-20 09:23:25 +0000",
+            "comment": "If an InvokerBean fails to insert the request should be dropped"
+        },
+        {
+            "c_hash": "9ca3355d",
+            "date": "2007-09-21 11:50:24 +0000",
+            "comment": "fixing NPE in Axis2 due to error in Sandesha"
+        },
+        {
+            "c_hash": "f43cb48e",
+            "date": "2007-09-24 12:17:35 +0000",
+            "comment": "we need to have in-only mep for ackRequest"
+        },
+        {
+            "c_hash": "8a8c6dce",
+            "date": "2007-09-25 08:35:11 +0000",
+            "comment": "moving control operation into right place"
+        },
+        {
+            "c_hash": "aeaca2ad",
+            "date": "2007-09-25 12:59:18 +0000",
+            "comment": "In the client side if it gets ackReq after sequence is terminated , no need to send a fault to the server or need to throw exception"
+        },
+        {
+            "c_hash": "ad756c3d",
+            "date": "2007-09-25 14:35:44 +0000",
+            "comment": "Undo changes made to SenderWorker as this breaks the Sandesha unit tests.  The particular case broken is when a sync ack is sent on an Async request/response, the OpContext was being completed so no async response would ever be sent"
+        },
+        {
+            "c_hash": "d8a96750",
+            "date": "2007-09-25 14:53:58 +0000",
+            "comment": "long backoff after several message retransmissions"
+        },
+        {
+            "c_hash": "a7017d5d",
+            "date": "2007-09-26 09:08:47 +0000",
+            "comment": "no need to check that RM1.0 annon out-in has a sequence offer, since we actually force an offer in this case"
+        },
+        {
+            "c_hash": "7a7f2029",
+            "date": "2007-09-26 09:50:12 +0000",
+            "comment": "Do not process createSequenceRefused if the sequence is established already"
+        },
+        {
+            "c_hash": "6b33e399",
+            "date": "2007-09-27 10:54:05 +0000",
+            "comment": "Add trace to bean mgrs"
+        },
+        {
+            "c_hash": "02ceeea3",
+            "date": "2007-09-27 14:50:15 +0000",
+            "comment": "better logging of replyTo info in appMsgProcessor"
+        },
+        {
+            "c_hash": "933f4a0b",
+            "date": "2007-09-28 08:03:08 +0000",
+            "comment": "Ensure use the correct way to get RMSpecVer"
+        },
+        {
+            "c_hash": "5a1c9d66",
+            "date": "2007-09-28 10:31:06 +0000",
+            "comment": "Better trace in WorkerLock"
+        },
+        {
+            "c_hash": "b4ffe39e",
+            "date": "2007-09-28 12:43:36 +0000",
+            "comment": "Jira SANDESHA2-121: Optimize Sequence and SequenceAcknowldgement processing"
+        },
+        {
+            "c_hash": "4ea658df",
+            "date": "2007-10-01 11:01:08 +0000",
+            "comment": "SenderBean changed to set sentCount in adjustRetransmission is not the same bean instance as the one updated in SenderBeanManager from inside the SenderWorker"
+        },
+        {
+            "c_hash": "ab2eb129",
+            "date": "2007-10-02 13:49:48 +0000",
+            "comment": "Debug rather than warn when catching exceptions in checkSyncResponses"
+        },
+        {
+            "c_hash": "7db1c9d9",
+            "date": "2007-10-03 09:50:18 +0000",
+            "comment": "Close timing window when stopping SandeshaThreads and another thread requesting that it starts."
+        },
+        {
+            "c_hash": "14247c33",
+            "date": "2007-10-03 09:53:43 +0000",
+            "comment": "Ensure checkSyncResponses copies properties correctly"
+        },
+        {
+            "c_hash": "2e4bc7db",
+            "date": "2007-10-04 09:48:14 +0000",
+            "comment": "Performance improvements"
+        },
+        {
+            "c_hash": "edb34cf1",
+            "date": "2007-10-11 13:05:19 +0000",
+            "comment": "Ensure terminateSendingSide terminates properly"
+        },
+        {
+            "c_hash": "afff38fa",
+            "date": "2007-10-23 11:12:47 +0000",
+            "comment": "If a SandeshaThread is stopped, we can't then restart it using Thread.start().  Also, change errors to debug and remove an unused method from SandeshaUtil"
+        },
+        {
+            "c_hash": "e8cff01c",
+            "date": "2007-10-26 17:11:46 +0000",
+            "comment": "Do not predispatch in checkForSyncResponses"
+        },
+        {
+            "c_hash": "61846094",
+            "date": "2007-11-01 11:50:14 +0000",
+            "comment": "Debug for potential complex deadlocks"
+        },
+        {
+            "c_hash": "16ce28b9",
+            "date": "2007-11-02 13:33:27 +0000",
+            "comment": "Move the location for lookup for hasUserTransaction to before any updates are made to the storage manager to give the store a chance to setup any transactional information required."
+        },
+        {
+            "c_hash": "8e1871ff",
+            "date": "2007-11-03 07:30:53 +0000",
+            "comment": "Solve a NullPointerException when looking for the SandeshaPolicyBean when processing an AckRequest"
+        },
+        {
+            "c_hash": "45d58cfd",
+            "date": "2007-11-06 09:05:28 +0000",
+            "comment": "As described in SANDESHA2-108 this change avoids the Inorder thread switch if the message being received is the next message to be invoked.  This change requires Axis2 revision 592132"
+        },
+        {
+            "c_hash": "e4eacf7f",
+            "date": "2007-11-07 13:50:32 +0000",
+            "comment": "https://issues.apache.org/jira/browse/SANDESHA2-126"
+        },
+        {
+            "c_hash": "55514fa5",
+            "date": "2007-11-08 20:49:11 +0000",
+            "comment": "Removed copyright from source files and added the NOTICE.txt. See JIRA 124"
+        },
+        {
+            "c_hash": "290a8a94",
+            "date": "2007-11-09 11:30:57 +0000",
+            "comment": "https://issues.apache.org/jira/browse/SANDESHA2-127"
+        },
+        {
+            "c_hash": "fa82ab88",
+            "date": "2007-11-12 13:06:48 +0000",
+            "comment": "When the same SandeshaStorageManager is used in an environment where there are multiple jvms, it is possible to insert multiple sequences with the same identifier.  The changes here are for the ApplicationMsgProcessor to take note of the response returned when inserting the RMSBean and if a false is returned to reissue the getRMSBean request"
+        },
+        {
+            "c_hash": "fc30c01c",
+            "date": "2007-11-12 13:23:41 +0000",
+            "comment": "performance refactor"
+        },
+        {
+            "c_hash": "dcc4b5c0",
+            "date": "2007-11-13 12:04:18 +0000",
+            "comment": "some refactoring and potential NPE protection"
+        },
+        {
+            "c_hash": "de299e71",
+            "date": "2007-11-19 17:07:21 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/webservices/sandesha/trunk/java@596367 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "df33dd3e",
+            "date": "2007-11-20 11:00:18 +0000",
+            "comment": "enable messages to override unreliable operations"
+        },
+        {
+            "c_hash": "b643df99",
+            "date": "2007-11-20 13:17:01 +0000",
+            "comment": "Removed several unused imports/fields.  Updated InvokerWorker to support rollbacks"
+        },
+        {
+            "c_hash": "515aac44",
+            "date": "2007-11-20 16:06:47 +0000",
+            "comment": "Remove useage of RMElements and RMPart code. It's slow and unnecessary."
+        },
+        {
+            "c_hash": "b2ecc15b",
+            "date": "2007-11-21 08:47:31 +0000",
+            "comment": "Clean up previous changes - remove RMElements and references to it."
+        },
+        {
+            "c_hash": "2db044f2",
+            "date": "2007-11-21 14:24:00 +0000",
+            "comment": "Enable mechanism for checking EPRs validity"
+        },
+        {
+            "c_hash": "503cb384",
+            "date": "2007-11-23 11:45:13 +0000",
+            "comment": "RSP: some security refactoring to make checks easier"
+        },
+        {
+            "c_hash": "2b000fa8",
+            "date": "2007-11-28 14:48:29 +0000",
+            "comment": "Allow sequences to be auto-restarted after being torn down"
+        },
+        {
+            "c_hash": "3c3cb4a7",
+            "date": "2007-11-28 15:30:43 +0000",
+            "comment": "Fix build break in interop module."
+        },
+        {
+            "c_hash": "61653477",
+            "date": "2007-11-29 11:05:14 +0000",
+            "comment": "Add MissingSelectionFault and UnsupportedSelectionFault as described in SANDESHA2-73"
+        },
+        {
+            "c_hash": "2e791baf",
+            "date": "2007-11-30 13:03:35 +0000",
+            "comment": "Remove unused imports, removed casts that aren't required and protected against some possible NPE's"
+        },
+        {
+            "c_hash": "b0eb9ae7",
+            "date": "2007-12-03 14:44:36 +0000",
+            "comment": "doc improvements"
+        },
+        {
+            "c_hash": "26089b22",
+            "date": "2007-12-11 10:37:11 +0000",
+            "comment": "Ensure terminateSequenceResponse msgs go to acksTo EPR"
+        },
+        {
+            "c_hash": "54852fb5",
+            "date": "2007-12-11 11:36:59 +0000",
+            "comment": "Ensure error msgs are informative when RM is disabled"
+        },
+        {
+            "c_hash": "9774621b",
+            "date": "2007-12-12 16:12:56 +0000",
+            "comment": "Ensure RMD can close sequences"
+        },
+        {
+            "c_hash": "3f331279",
+            "date": "2007-12-14 10:55:51 +0000",
+            "comment": "fix some bugs in reallocate"
+        },
+        {
+            "c_hash": "5dfc0022",
+            "date": "2007-12-14 12:00:01 +0000",
+            "comment": "ensure 1.1 close and terminate have replyTo"
+        },
+        {
+            "c_hash": "87640ffd",
+            "date": "2007-12-21 06:41:39 +0000",
+            "comment": "Fixed a bug in MakeConnectionProcessor.replyToPoll(). It was allowing two requests to manipulate the same response message simultaneously. Now we use wait, notify methods to avoid this scenario."
+        },
+        {
+            "c_hash": "65ee1331",
+            "date": "2008-01-04 17:29:32 +0000",
+            "comment": "Close timing window when storing invoker beans"
+        },
+        {
+            "c_hash": "f34ce032",
+            "date": "2008-01-04 18:43:55 +0000",
+            "comment": "Ensure makeConnection responses do not contain makeConnection service contexts"
+        },
+        {
+            "c_hash": "7d94e424",
+            "date": "2008-01-06 18:18:32 +0000",
+            "comment": "fix error in sender worker"
+        },
+        {
+            "c_hash": "05f27bee",
+            "date": "2008-01-08 16:04:37 +0000",
+            "comment": "ensure only set serviceCtx on app responses coming on back channel of app requests"
+        },
+        {
+            "c_hash": "b51e05a9",
+            "date": "2008-01-15 11:08:04 +0000",
+            "comment": "further timing window when storing invoker beans"
+        },
+        {
+            "c_hash": "d239d89b",
+            "date": "2008-01-16 10:57:39 +0000",
+            "comment": "Update InMemoryStorageManager to use juc backport to reduce synchronization required for creating/removing InMemoryTransactions."
+        },
+        {
+            "c_hash": "c2eb3a92",
+            "date": "2008-01-23 19:36:07 +0000",
+            "comment": "SANDESHA2-135 Offers not being sent for RM 1.0 two way MEP's"
+        },
+        {
+            "c_hash": "f81310cc",
+            "date": "2008-01-24 11:44:53 +0000",
+            "comment": "First part of a tidy-up of the wsrm objects"
+        },
+        {
+            "c_hash": "f6badbb2",
+            "date": "2008-01-24 15:08:34 +0000",
+            "comment": "Fix AckRequest test"
+        },
+        {
+            "c_hash": "36adf844",
+            "date": "2008-01-24 15:57:23 +0000",
+            "comment": "More org.apache.sandesha2.wsrm refactor"
+        },
+        {
+            "c_hash": "084ed16c",
+            "date": "2008-01-24 16:15:59 +0000",
+            "comment": "Small refactor of the MakeConnection class"
+        },
+        {
+            "c_hash": "7409e194",
+            "date": "2008-01-24 18:18:01 +0000",
+            "comment": "Further refactor of SequenceAcknowledgement.java"
+        },
+        {
+            "c_hash": "066eb11f",
+            "date": "2008-01-25 15:02:52 +0000",
+            "comment": "MessagePending cleanup"
+        },
+        {
+            "c_hash": "4e96c224",
+            "date": "2008-01-29 10:52:55 +0000",
+            "comment": "See SANDESHA2-136"
+        },
+        {
+            "c_hash": "fa7c5103",
+            "date": "2008-01-30 03:06:45 +0000",
+            "comment": "possible fix for the intermittent failure in SecurityScenariosTest. Added but commented out the arguments for connecting a junit test to a debugger"
+        },
+        {
+            "c_hash": "c0c08a3b",
+            "date": "2008-01-30 14:17:46 +0000",
+            "comment": "rethrow AxisFault just like we do in SandeshaInHandler. still trying to track down the intermittent failure"
+        },
+        {
+            "c_hash": "7e0e30c1",
+            "date": "2008-01-30 18:27:49 +0000",
+            "comment": "break it into 2 tests to see which one actually failes more"
+        },
+        {
+            "c_hash": "6bfef481",
+            "date": "2008-01-31 03:12:03 +0000",
+            "comment": "don't run this test"
+        },
+        {
+            "c_hash": "4ceeab19",
+            "date": "2008-01-31 10:06:06 +0000",
+            "comment": "Use O(1) methods where possible"
+        },
+        {
+            "c_hash": "44839eec",
+            "date": "2008-01-31 14:24:28 +0000",
+            "comment": "Reverting 616602. My bad!"
+        },
+        {
+            "c_hash": "2eb35095",
+            "date": "2008-01-31 23:02:46 +0000",
+            "comment": "Improvements to makeConnection processing"
+        },
+        {
+            "c_hash": "67478f1d",
+            "date": "2008-02-01 13:27:16 +0000",
+            "comment": "FINDBUGS: Fix up some FindBugs static analysis issues"
+        },
+        {
+            "c_hash": "f9b00a41",
+            "date": "2008-02-01 17:14:52 +0000",
+            "comment": "switch on debug traces with log4j. let's see what shakes out."
+        },
+        {
+            "c_hash": "5b20ea6f",
+            "date": "2008-02-01 17:48:26 +0000",
+            "comment": "oops forgot to check in the log4j.version properties"
+        },
+        {
+            "c_hash": "6608ed18",
+            "date": "2008-02-04 19:15:17 +0000",
+            "comment": "Applying patch from Francois Mireaux  for SANDESHA2-138, Thanks"
+        },
+        {
+            "c_hash": "107ca704",
+            "date": "2008-02-04 19:37:11 +0000",
+            "comment": "Applying patch for SANDESHA2-137"
+        },
+        {
+            "c_hash": "faed623d",
+            "date": "2008-02-07 13:19:08 +0000",
+            "comment": "Make RMDBean retrieval more efficient"
+        },
+        {
+            "c_hash": "14d96902",
+            "date": "2008-02-07 17:36:49 +0000",
+            "comment": "Minor performance improvement."
+        },
+        {
+            "c_hash": "9b9192e0",
+            "date": "2008-02-08 09:46:09 +0000",
+            "comment": "Remove MessageValidator per e-mail on 05 Feb 2008"
+        },
+        {
+            "c_hash": "5398190e",
+            "date": "2008-02-13 03:39:02 +0000",
+            "comment": "Update dependencies to latest versions"
+        },
+        {
+            "c_hash": "015cc7b7",
+            "date": "2008-02-18 15:58:40 +0000",
+            "comment": "Revision 617562 added debug trace into the build. However, this is not a good idea since it makes the build take a long time and makes it harder to see if unit tests failed. Really debug should only be enabled when tracing specific problems."
+        },
+        {
+            "c_hash": "49f0efaf",
+            "date": "2008-02-20 09:18:43 +0000",
+            "comment": "Remove several unused imports, added some missing log.isDebugEnabled checks, removed some exceptions from methods that never throw that exception"
+        },
+        {
+            "c_hash": "eb2edda2",
+            "date": "2008-02-25 11:36:09 +0000",
+            "comment": "Record errors as debug, rather than an error"
+        },
+        {
+            "c_hash": "a42a9696",
+            "date": "2008-02-25 15:47:11 +0000",
+            "comment": "Register the mc anonymous address with the EndPointReference class"
+        },
+        {
+            "c_hash": "3345a849",
+            "date": "2008-02-26 22:54:28 +0000",
+            "comment": "Update RMMsgContext to take advantage of the SOAP Body first child work recently added to Axiom by Rich Scheurle (r631309)"
+        },
+        {
+            "c_hash": "356494e0",
+            "date": "2008-02-27 14:10:25 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/webservices/sandesha/trunk/java@631594 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "b4a4af6c",
+            "date": "2008-03-02 20:13:25 +0000",
+            "comment": "SANDESHA2-100 Finally remove the maven 1 build."
+        },
+        {
+            "c_hash": "73cdddbb",
+            "date": "2008-03-02 20:33:21 +0000",
+            "comment": "SANDESHA2-101 Remove the java properties file support as it is no longer used."
+        },
+        {
+            "c_hash": "4c326c10",
+            "date": "2008-03-04 09:35:38 +0000",
+            "comment": "Fix NullPointerException from SandeshaGlobalInHandler when duplicate response message is received"
+        },
+        {
+            "c_hash": "3179e0fd",
+            "date": "2008-03-07 10:47:41 +0000",
+            "comment": "SANDESHA2-141 Soap header issue"
+        },
+        {
+            "c_hash": "7633ce1f",
+            "date": "2008-03-14 11:06:15 +0000",
+            "comment": "Ensure that we start a new sequence if a Rollover fault is received"
+        },
+        {
+            "c_hash": "d15adbd6",
+            "date": "2008-03-14 11:10:12 +0000",
+            "comment": "Applying patch for SANDESHA2-142"
+        },
+        {
+            "c_hash": "ec0f5265",
+            "date": "2008-03-19 01:21:47 +0000",
+            "comment": "Fix build break caused by fix for AXIS2-3545 (svn revision 638494)"
+        },
+        {
+            "c_hash": "3295cef3",
+            "date": "2008-04-01 12:00:30 +0000",
+            "comment": "SANDESHA2-132"
+        },
+        {
+            "c_hash": "fff4a243",
+            "date": "2008-04-01 12:25:27 +0000",
+            "comment": "Pre-release fixup - Fixing licence headers per arat"
+        },
+        {
+            "c_hash": "46307a52",
+            "date": "2008-04-01 14:25:00 +0000",
+            "comment": "Further updates to assuage ARAT complaints"
+        },
+        {
+            "c_hash": "7e3753d1",
+            "date": "2008-04-03 02:29:59 +0000",
+            "comment": "Fix Build break caused by axis2 changes."
+        },
+        {
+            "c_hash": "58e6cf7f",
+            "date": "2008-04-04 14:30:39 +0000",
+            "comment": "Log debug rather than an error when failing with checkForSyncResponses"
+        },
+        {
+            "c_hash": "1db63917",
+            "date": "2008-04-05 09:08:19 +0000",
+            "comment": "Applied the patch file provided in SANDESHA2-143"
+        },
+        {
+            "c_hash": "67c7ebf5",
+            "date": "2008-04-10 09:36:04 +0000",
+            "comment": "SANDESHA2-145 Use ConcurrentHashMap to protect against message loss. Thanks Dave."
+        },
+        {
+            "c_hash": "91f5fc12",
+            "date": "2008-04-10 14:46:15 +0000",
+            "comment": "Fix NPE in test casued by earlier commit. oops, sorry"
+        },
+        {
+            "c_hash": "844e6c40",
+            "date": "2008-04-23 08:07:39 +0000",
+            "comment": "Applying patch from JIRA SANDESHA2-149"
+        },
+        {
+            "c_hash": "f1455205",
+            "date": "2008-04-30 06:13:02 +0000",
+            "comment": "Only call wakeThread in the cases where we need to wake the Sender as there is work to do"
+        },
+        {
+            "c_hash": "53daab45",
+            "date": "2008-04-30 11:53:05 +0000",
+            "comment": "Only process RM Faults if the action is recognised as a possible RM fault"
+        },
+        {
+            "c_hash": "e9dd897b",
+            "date": "2008-05-06 15:27:05 +0000",
+            "comment": "Apply fixes for SANDESHA2-147 and SANDESHA2-150"
+        },
+        {
+            "c_hash": "db77eae7",
+            "date": "2008-05-12 15:57:36 +0000",
+            "comment": "Use ConcurrentHashMap for InMemoryBeanManager for performance reasons"
+        },
+        {
+            "c_hash": "67b41c55",
+            "date": "2008-05-12 16:20:00 +0000",
+            "comment": "Performance: Reduce the complexity of Ack piggybacking for Sync invocations. It's clever but entirely unnecessary."
+        },
+        {
+            "c_hash": "1a14260d",
+            "date": "2008-05-12 16:52:34 +0000",
+            "comment": "Performance: Include MessageOut in retransmittable phases to prevent WS-A headers from being copied. Thanks to Sara Mitchell for help with this patch"
+        },
+        {
+            "c_hash": "319f1f03",
+            "date": "2008-05-12 16:53:22 +0000",
+            "comment": "Performance: Reduce the EPR Decorator cost by not modifying application message ReplyTo EPRs Thanks to Sara Mitchell for help with this patch"
+        },
+        {
+            "c_hash": "9bb91cde",
+            "date": "2008-05-17 17:56:27 +0000",
+            "comment": "Retransmitting through MessageOut can cause problems when retransmitting through Security."
+        },
+        {
+            "c_hash": "ab770314",
+            "date": "2008-05-23 05:57:58 +0000",
+            "comment": "Applying patch for SANDESHA2-151, thanks Dave"
+        },
+        {
+            "c_hash": "dea6eca2",
+            "date": "2008-05-29 13:12:23 +0000",
+            "comment": "*Experimental* LoggingControl for Sandesha2"
+        },
+        {
+            "c_hash": "9408905f",
+            "date": "2008-06-04 16:26:12 +0000",
+            "comment": "SANDESHA2-152 Contributor: Dave Parsons"
+        },
+        {
+            "c_hash": "99e1ef3c",
+            "date": "2008-06-06 15:05:40 +0000",
+            "comment": "update poms to use maven file copy... for continuum"
+        },
+        {
+            "c_hash": "526e2d3f",
+            "date": "2008-06-06 15:57:52 +0000",
+            "comment": "Force maven-dependency-plugin to 2.0"
+        },
+        {
+            "c_hash": "37f1217b",
+            "date": "2008-06-06 16:54:08 +0000",
+            "comment": "Update poms to allows distribution to use maven-dependency-plugin to retrieve sources"
+        },
+        {
+            "c_hash": "a8f65db8",
+            "date": "2008-06-06 17:02:16 +0000",
+            "comment": "Applying patches from   SANDESHA2-153, Thanks Sara"
+        },
+        {
+            "c_hash": "7b20a141",
+            "date": "2008-06-10 09:20:03 +0000",
+            "comment": "Update Sandesha2 trunk to Java 1.5"
+        },
+        {
+            "c_hash": "f960a54c",
+            "date": "2008-06-10 10:11:24 +0000",
+            "comment": "SANDESHA2-154 Remove dependency on backport-util-concurrent from head Contributor: Tom Seelbach - Thanks!"
+        },
+        {
+            "c_hash": "4a40d318",
+            "date": "2008-06-10 14:41:06 +0000",
+            "comment": "Ensure warning msg for unreliable msg when RM is enforced"
+        },
+        {
+            "c_hash": "4de81788",
+            "date": "2008-06-17 08:44:13 +0000",
+            "comment": "Commiting patch for SANDESHA2-156, thanks Sara"
+        },
+        {
+            "c_hash": "becd7373",
+            "date": "2008-06-17 10:35:15 +0000",
+            "comment": "Applying patch for https://issues.apache.org/jira/browse/SANDESHA2-158  Thanks David, Sara"
+        },
+        {
+            "c_hash": "50b797b8",
+            "date": "2008-06-19 10:21:19 +0000",
+            "comment": "See JIRA https://issues.apache.org/jira/browse/SANDESHA2-159"
+        },
+        {
+            "c_hash": "fec6d015",
+            "date": "2008-06-20 19:26:04 +0000",
+            "comment": "Modified remaining log statements to use the LoggingControl in an attempt to reduce processing overhead."
+        },
+        {
+            "c_hash": "03a8ae03",
+            "date": "2008-06-23 07:54:13 +0000",
+            "comment": "CSeq use correct replyTo: http://issues.apache.org/jira/browse/SANDESHA2-163"
+        },
+        {
+            "c_hash": "e1589438",
+            "date": "2008-06-23 12:13:15 +0000",
+            "comment": "Applying patch for SANDESHA2-155, thanks Sara"
+        },
+        {
+            "c_hash": "00f69b3c",
+            "date": "2008-06-23 12:19:16 +0000",
+            "comment": "Applying missing test for SANDESHA2-158"
+        },
+        {
+            "c_hash": "1ac24775",
+            "date": "2008-06-23 12:28:53 +0000",
+            "comment": "forbid mixed EPR types on a sequence https://issues.apache.org/jira/browse/SANDESHA2-160"
+        },
+        {
+            "c_hash": "e40c0837",
+            "date": "2008-06-23 13:07:30 +0000",
+            "comment": "Applying patch for SANDESHA2-165, Thanks David, Sara"
+        },
+        {
+            "c_hash": "7066f15e",
+            "date": "2008-06-24 08:19:37 +0000",
+            "comment": "Applying patches from SANDESHA2-161 and SANDESHA2-162, thanks David, Sara"
+        },
+        {
+            "c_hash": "43da22ea",
+            "date": "2008-06-24 08:22:54 +0000",
+            "comment": "Applying patches from SANDESHA2-164, thanks David and Sara"
+        },
+        {
+            "c_hash": "186b74c1",
+            "date": "2008-06-25 11:07:28 +0000",
+            "comment": "Allow for non reliable messages and further bug with replay model"
+        },
+        {
+            "c_hash": "d0fd3224",
+            "date": "2008-06-30 12:50:38 +0000",
+            "comment": "Commiting missing part from SANDESHA2-164"
+        },
+        {
+            "c_hash": "bc753a57",
+            "date": "2008-07-02 13:09:40 +0000",
+            "comment": "Applying patches from SANDESHA2-166 and SANDESHA2-158"
+        },
+        {
+            "c_hash": "b6eb1135",
+            "date": "2008-07-03 09:45:58 +0000",
+            "comment": "Remove unused imports/variables.  Fix a problem where an ACK is piggybacked on a MakeConnection - the message isn't processed in the RMMessageReceiver as the MsgType is an Ack, not a MC"
+        },
+        {
+            "c_hash": "4fcc277e",
+            "date": "2008-07-03 09:46:40 +0000",
+            "comment": "Removing system.out from SandeshaGlobalIn - ooops"
+        },
+        {
+            "c_hash": "1d562458",
+            "date": "2008-07-09 11:35:18 +0000",
+            "comment": "Re-add WSA changes accidentally removed in 673385"
+        },
+        {
+            "c_hash": "6e86bd95",
+            "date": "2008-07-10 15:56:49 +0000",
+            "comment": "Do not ack if no msgs sent and some serialization tests"
+        },
+        {
+            "c_hash": "092aa363",
+            "date": "2008-07-11 09:09:11 +0000",
+            "comment": "Test repository error in build, improve RMSBean cloning, improve serialization tests"
+        },
+        {
+            "c_hash": "d903ff9c",
+            "date": "2008-07-11 09:44:25 +0000",
+            "comment": "Further improvements to RangeString"
+        },
+        {
+            "c_hash": "50fdcaa9",
+            "date": "2008-07-15 10:03:22 +0000",
+            "comment": "cSeqRefused improvements"
+        },
+        {
+            "c_hash": "ff56da20",
+            "date": "2008-07-16 09:22:14 +0000",
+            "comment": "See https://issues.apache.org/jira/browse/SANDESHA2-167"
+        },
+        {
+            "c_hash": "6c8ac4bc",
+            "date": "2008-07-16 16:06:42 +0000",
+            "comment": "the RMSequenceBean had rMVersion in V1.2, this has been changed to RMVersion which breaks serialization for that field."
+        },
+        {
+            "c_hash": "80bca7f5",
+            "date": "2008-07-17 13:09:27 +0000",
+            "comment": "Applying patch for SANDESHA2-168, thanks Sara"
+        },
+        {
+            "c_hash": "c0f4ea1c",
+            "date": "2008-07-18 13:38:39 +0000",
+            "comment": "Updating Unit tests for serialization changes"
+        },
+        {
+            "c_hash": "54c6546f",
+            "date": "2008-07-30 09:37:13 +0000",
+            "comment": "CSeq offers with anon EPRs (see https://issues.apache.org/jira/browse/SANDESHA2-169)"
+        },
+        {
+            "c_hash": "fe24230e",
+            "date": "2008-07-30 14:41:37 +0000",
+            "comment": "See https://issues.apache.org/jira/browse/SANDESHA2-170 thanks Dave"
+        },
+        {
+            "c_hash": "d929c5e8",
+            "date": "2008-07-30 19:20:57 +0000",
+            "comment": "See https://issues.apache.org/jira/browse/SANDESHA2-171, Thanks Sara"
+        },
+        {
+            "c_hash": "ea509c56",
+            "date": "2008-07-31 12:38:36 +0000",
+            "comment": "See https://issues.apache.org/jira/browse/SANDESHA2-172, thanks Dave"
+        },
+        {
+            "c_hash": "6bb49c97",
+            "date": "2008-07-31 16:01:38 +0000",
+            "comment": "See https://issues.apache.org/jira/browse/SANDESHA2-173, thanks Sara"
+        },
+        {
+            "c_hash": "291cf66d",
+            "date": "2008-08-04 12:39:33 +0000",
+            "comment": "Only copy RangeString in RMSBean copy constructor if it is not null"
+        },
+        {
+            "c_hash": "5061dc4c",
+            "date": "2008-08-05 14:28:49 +0000",
+            "comment": "See https://issues.apache.org/jira/browse/SANDESHA2-174, SandeshaTransientStorageException, thx Dave"
+        },
+        {
+            "c_hash": "b0a89dcc",
+            "date": "2008-08-13 10:12:41 +0000",
+            "comment": "See https://issues.apache.org/jira/browse/SANDESHA2-175, thx Sara"
+        },
+        {
+            "c_hash": "4393b815",
+            "date": "2008-08-27 19:29:35 +0000",
+            "comment": "switch off unique versions in the snapshot repo"
+        },
+        {
+            "c_hash": "720bcb14",
+            "date": "2008-09-04 13:26:18 +0000",
+            "comment": "disable addressing on response msgs and more efficient creation of SOAP msgs"
+        },
+        {
+            "c_hash": "0879bd09",
+            "date": "2008-09-04 13:55:57 +0000",
+            "comment": "Ensure RMS lookups are robust and that storage managers are cleaned up"
+        },
+        {
+            "c_hash": "1bf48d12",
+            "date": "2008-09-04 14:18:22 +0000",
+            "comment": "No need to close XMLStreamReader"
+        },
+        {
+            "c_hash": "086c2707",
+            "date": "2008-09-09 14:28:20 +0000",
+            "comment": "Do not enlist beans when transaction is not active (see SANDESHA2-177)"
+        },
+        {
+            "c_hash": "6cdf2bfd",
+            "date": "2008-09-16 20:15:11 +0000",
+            "comment": "simpleaxisserver needs httpcore for running tests"
+        },
+        {
+            "c_hash": "560e2549",
+            "date": "2008-09-17 09:54:23 +0000",
+            "comment": "Some improvements to invalid ack processing"
+        },
+        {
+            "c_hash": "6bb6ec7c",
+            "date": "2008-09-17 11:00:13 +0000",
+            "comment": "only check ack rules for application msgs"
+        },
+        {
+            "c_hash": "a1a693ff",
+            "date": "2008-09-23 12:05:30 +0000",
+            "comment": "As the SNAPSHOT for Rampart and wss4j don't exist at the moment - moving to released versions to allow Sandesha to build"
+        },
+        {
+            "c_hash": "7345709c",
+            "date": "2008-09-24 10:24:30 +0000",
+            "comment": "Further improvements to invalid ack processing"
+        },
+        {
+            "c_hash": "06007678",
+            "date": "2008-09-24 10:40:57 +0000",
+            "comment": "remove accidental systemOuts from previous update - apologies"
+        },
+        {
+            "c_hash": "6ae01fdd",
+            "date": "2008-09-26 14:11:24 +0000",
+            "comment": "switch to SNAPSHOT's. We should use specific versions only in branches when we are trying to make a release"
+        },
+        {
+            "c_hash": "08f5d71d",
+            "date": "2008-09-30 12:11:10 +0000",
+            "comment": "If we fail to send a terminate sequence because we never got a MakeConnection message for the response sequence, terminate the sequence and clean up"
+        },
+        {
+            "c_hash": "2c2145cc",
+            "date": "2008-10-20 04:41:47 +0000",
+            "comment": "fixed the issue SANDESHA2-178"
+        },
+        {
+            "c_hash": "3684061f",
+            "date": "2008-10-21 07:53:46 +0000",
+            "comment": "Don't bother to notifyClientsOfFault for ACK and MakeConnection messages as the AxisOperations won't have anything registered with them"
+        },
+        {
+            "c_hash": "bd9f1497",
+            "date": "2008-10-21 09:26:50 +0000",
+            "comment": "For a 2-way sequence, the LastMessage never gets sent for a response sequence if the sequence was setup to use async communications.  This patch changes to send the response sequence to the defined reply to address which had been set on the sequence.  There is a bit of cleanup surrounding Ack processing for terminated sequences and removed several unused imports."
+        },
+        {
+            "c_hash": "d9faba88",
+            "date": "2008-10-21 15:07:45 +0000",
+            "comment": "JDBC persistent store - thanks Amila (see https://issues.apache.org/jira/browse/SANDESHA2-140)"
+        },
+        {
+            "c_hash": "c9b0c847",
+            "date": "2008-10-22 15:28:52 +0000",
+            "comment": "More refactoring to invalid ack processing"
+        },
+        {
+            "c_hash": "403c040b",
+            "date": "2008-10-23 10:17:55 +0000",
+            "comment": "remove unnecessary log files"
+        },
+        {
+            "c_hash": "6e58c9e5",
+            "date": "2008-10-23 10:23:03 +0000",
+            "comment": "make the first letter lower case"
+        },
+        {
+            "c_hash": "e744b400",
+            "date": "2008-10-29 06:34:40 +0000",
+            "comment": "applying the patch for SANDESHA2-179"
+        },
+        {
+            "c_hash": "817d0d7d",
+            "date": "2008-10-29 06:35:47 +0000",
+            "comment": "apply the patch for SANDESHA2-179"
+        },
+        {
+            "c_hash": "6d6de58e",
+            "date": "2008-10-29 06:41:11 +0000",
+            "comment": "reformatted to code to follow the tab based intent"
+        },
+        {
+            "c_hash": "69b83716",
+            "date": "2008-10-29 06:47:28 +0000",
+            "comment": "making variable names start with a lowercase letter"
+        },
+        {
+            "c_hash": "d386c58c",
+            "date": "2008-11-03 07:35:25 +0000",
+            "comment": "it is enough to isolate the transaction at repeatable read."
+        },
+        {
+            "c_hash": "66bce91b",
+            "date": "2008-11-10 04:27:51 +0000",
+            "comment": "changed the artifact name to persistence so that any persistence storage can use this module"
+        },
+        {
+            "c_hash": "9a2f270d",
+            "date": "2008-11-11 13:24:37 +0000",
+            "comment": "Concurrent unit test scenario"
+        },
+        {
+            "c_hash": "e706ce63",
+            "date": "2008-11-11 15:42:57 +0000",
+            "comment": "linux issues with multithreaded tests"
+        },
+        {
+            "c_hash": "bffcbc0c",
+            "date": "2008-11-11 17:38:47 +0000",
+            "comment": "Attempting to fix sandesha2-core on vmbuild"
+        },
+        {
+            "c_hash": "73213940",
+            "date": "2008-11-13 04:36:32 +0000",
+            "comment": "applied the patch for Sandesha2-181"
+        },
+        {
+            "c_hash": "eec86688",
+            "date": "2008-11-13 06:00:44 +0000",
+            "comment": "Adding persistence module to the distribution"
+        },
+        {
+            "c_hash": "00ef2421",
+            "date": "2008-11-14 16:43:52 +0000",
+            "comment": "Fix up a bunch of java5 warnings and remove the 'never' from the pom for the SNAPSHOT repo - that makes no sense"
+        },
+        {
+            "c_hash": "6853cb24",
+            "date": "2008-11-15 11:58:55 +0000",
+            "comment": "Break out the async echo tests to help debug what looks like a race condition"
+        },
+        {
+            "c_hash": "c2aae7e8",
+            "date": "2008-11-16 09:34:43 +0000",
+            "comment": "Remove use of deprecated stuff from the user samples"
+        },
+        {
+            "c_hash": "a6d5d98d",
+            "date": "2008-11-16 14:43:58 +0000",
+            "comment": "Fix rampart module load problems in the test module"
+        },
+        {
+            "c_hash": "d9d1ea1a",
+            "date": "2008-11-24 18:07:14 +0000",
+            "comment": "Detection of possible deadlocks and better trace of InterruptedExceptions"
+        },
+        {
+            "c_hash": "4ab1f2b2",
+            "date": "2008-12-02 10:26:40 +0000",
+            "comment": "Applying patch for SANDESHA2-183, thanks Dave"
+        },
+        {
+            "c_hash": "fe99ff2d",
+            "date": "2008-12-04 07:27:38 +0000",
+            "comment": "Reading the persistence storage parameters from the module parameters as well"
+        },
+        {
+            "c_hash": "423bb256",
+            "date": "2008-12-05 10:32:51 +0000",
+            "comment": "Reading the Storage manager parameter from module xml"
+        },
+        {
+            "c_hash": "1e287c7f",
+            "date": "2008-12-08 04:28:42 +0000",
+            "comment": "commiting the patch for SANDESHA2-184"
+        },
+        {
+            "c_hash": "5a1c45e1",
+            "date": "2008-12-08 04:29:28 +0000",
+            "comment": "applied the patch for SANDESHA-184"
+        },
+        {
+            "c_hash": "26fc0459",
+            "date": "2008-12-08 17:45:55 +0000",
+            "comment": "More IDE warning cleanup"
+        },
+        {
+            "c_hash": "b8693aaa",
+            "date": "2008-12-09 18:44:09 +0000",
+            "comment": "Match up with the generic type argument added to Axis2 PolicySubject"
+        },
+        {
+            "c_hash": "77958290",
+            "date": "2008-12-10 09:04:27 +0000",
+            "comment": "Applied the patch for SANDESHA2-186"
+        },
+        {
+            "c_hash": "a4da04db",
+            "date": "2009-01-13 11:42:36 +0000",
+            "comment": "The fix is a logic change in sandesha to stop two way sandeshaOps being seen as user defined ops.  This in turn stops sandesha from sending offers for one way user defined ops."
+        },
+        {
+            "c_hash": "0a024871",
+            "date": "2009-01-22 09:39:34 +0000",
+            "comment": "Clone constructor to bring SenderBean into line with RMSBean etc"
+        },
+        {
+            "c_hash": "1d4c24a9",
+            "date": "2009-02-05 15:08:33 +0000",
+            "comment": "InvalidAck err sent to wrong location.  It is currently sent to itself and not to the other end."
+        },
+        {
+            "c_hash": "d68f5e8c",
+            "date": "2009-02-05 16:42:54 +0000",
+            "comment": "Modifying SenderWorker to always send an ACK but only in the RM1.0 case.  This improves the 1.1 performance."
+        },
+        {
+            "c_hash": "d1d2040a",
+            "date": "2009-02-13 13:21:18 +0000",
+            "comment": "Modifying SequenceTerminatedFault test to remove ordering problem when finding RMDBeans"
+        },
+        {
+            "c_hash": "312f39d1",
+            "date": "2009-02-13 13:27:13 +0000",
+            "comment": "Fix to allow Acks to be sent for RM 1.1 Sync exchange protocols."
+        },
+        {
+            "c_hash": "c62f9791",
+            "date": "2009-02-23 14:24:09 +0000",
+            "comment": "Committing patch for https://issues.apache.org/jira/browse/SANDESHA2-188"
+        },
+        {
+            "c_hash": "ed4e7dde",
+            "date": "2009-02-24 15:38:33 +0000",
+            "comment": "when handling duplicate messages. i.e if the services blocks the thread for 60 seconds, then there is a possiblity that RMS sends duplicate messages. these duplcate messages are locked in the GloblaInHander util first message clear the service. Then when after processing these messages they going to commit. At this commit release locks method throws a Runtime Exception which causes a soap fault message. this can be avoided by catching this exception at this level. But how ever there may be an error with the InMemory Transaction model."
+        },
+        {
+            "c_hash": "7e696de5",
+            "date": "2009-03-11 13:15:03 +0000",
+            "comment": "Solve IllegalMonitorStateException problem as reported by Amila by only adding the bean to the list of locked beans if it really did get the lock."
+        },
+        {
+            "c_hash": "e8c3645c",
+            "date": "2009-03-31 07:58:26 +0000",
+            "comment": "removing transport headers if the transport is mail"
+        },
+        {
+            "c_hash": "34caef4d",
+            "date": "2009-03-31 08:06:28 +0000",
+            "comment": "remove the hard coded timout value"
+        },
+        {
+            "c_hash": "6ec14158",
+            "date": "2009-04-01 08:49:53 +0000",
+            "comment": "should get the message type using the response message context. this gives an excpetion when using with security."
+        },
+        {
+            "c_hash": "85b983c2",
+            "date": "2009-04-03 11:35:11 +0000",
+            "comment": "Fixes made to improve compliance with spec's and interop with other implementations: - AckRequest's now added as piggybacks to application msgs (this is needed as implementations don't have to piggyback acks and therefore could only respond to ackRequest msgs.) - We can ignore piggybacked ack requests as Sandesha piggyback acks at every opportunity - Offered EP's can't be set to none so have set to use AcksTo as the offered EP if one hasn't been set - Updated so that we poll for terminateSeqResponse - Updated so that we offer for 1.1 as well as 1.0.  This fixes an interop issue with WCF."
+        },
+        {
+            "c_hash": "31d10fcd",
+            "date": "2009-04-03 18:27:57 +0000",
+            "comment": "Fix to allow automatic reallocation of sequences that have timed out or been deleted.  The solution is to have a reallocated RMSBean point at the RMSBean created as part of the reallocation via a new RMSBean attribute that contains the internalSeqID of the newly created RMSBean."
+        },
+        {
+            "c_hash": "2d8718db",
+            "date": "2009-05-13 06:50:43 +0000",
+            "comment": "reformat the code"
+        },
+        {
+            "c_hash": "25fd5ab7",
+            "date": "2009-05-13 06:57:00 +0000",
+            "comment": "Set a property for make connections and terminate response messages to send 202 accepted header for synapse nhttp transport. Also increas the terminate message delay time suite for nhttp transport as well"
+        },
+        {
+            "c_hash": "01236e0c",
+            "date": "2009-05-13 08:14:02 +0000",
+            "comment": "increase the terminate message delay inorder to work this properly with synapse nhttp"
+        },
+        {
+            "c_hash": "276164bb",
+            "date": "2009-05-15 09:49:42 +0000",
+            "comment": "- Fix newly added reallocation code as deadlock had been introduced. - Changed RMSBean to store EndpointReference for offered Endpoints so ref params don't get lost - Update so that all backchannel msgs on MC's are processed successfully - Commented out sending of AckRequested msgs as not needed as yet and impacts performance"
+        },
+        {
+            "c_hash": "b7ed802c",
+            "date": "2009-05-20 10:04:56 +0000",
+            "comment": "applied the patch for SANDESHA2-191"
+        },
+        {
+            "c_hash": "705c65f9",
+            "date": "2009-07-07 15:03:47 +0000",
+            "comment": "- Msgs are being lost because RMDBeans are being updated to say msgs have been received before complete insertion of InvokerBeans.  The fix is to make the updating and insertion complete under one transaction. - The sync1way reallocation code isn't triggered because the client doesn't receive any faults from the server.  The fix is to set the faultTo so wsa has somewhere to send the fault."
+        },
+        {
+            "c_hash": "74f2f906",
+            "date": "2009-07-07 15:38:03 +0000",
+            "comment": "Fix committed for JIRA SANDESHA2-192.  Thanks Rick."
+        },
+        {
+            "c_hash": "74f640e7",
+            "date": "2009-07-10 14:59:52 +0000",
+            "comment": "- When an inorder RM system is under load msgs aren't always being delivered to applications as the InvokerWorker currently working the seq has the lock on the seq but has decided that there are no more msgs to process as the SequenceProcessor thread hasn't quite got as far as inserting a new InvokerBean.  This means neither thread does the work of delivering the msg to the application.  The fix is to move the removing of the lock on the sequence to before we commit the tran used to find the InvokerBean in the InvokerWorker."
+        },
+        {
+            "c_hash": "ce32709c",
+            "date": "2009-07-22 14:38:15 +0000",
+            "comment": "Added reallocated field to match method in RMSBean.  Thanks Francois Mireaux for pointing this out."
+        },
+        {
+            "c_hash": "29c19f04",
+            "date": "2009-08-11 10:16:10 +0000",
+            "comment": "The matching of the primitive type reallocated field happened whether or not the field had been set in the matcher RMSBean.  I've changed it so that it only matches upon request i.e. the field is set in the matcher bean."
+        },
+        {
+            "c_hash": "8dafc001",
+            "date": "2009-08-18 15:18:28 +0000",
+            "comment": "Fix committed for JIRA SANDESHA2-196.  Thanks Rick"
+        },
+        {
+            "c_hash": "7f2249ab",
+            "date": "2009-09-25 11:19:06 +0000",
+            "comment": "setting the rms annonymous address to close sequence as well"
+        },
+        {
+            "c_hash": "73a72fed",
+            "date": "2009-09-28 14:20:06 +0000",
+            "comment": "apply the patch for SANDESHA2-198"
+        },
+        {
+            "c_hash": "0201dd32",
+            "date": "2009-09-29 12:48:13 +0000",
+            "comment": "return the thread always if it is getting the response at the client side. there was a bug not returing 202 Accepted for response messages for dual channel case"
+        },
+        {
+            "c_hash": "03b3128f",
+            "date": "2009-09-30 16:25:05 +0000",
+            "comment": "General Performance Improvements"
+        },
+        {
+            "c_hash": "d4037201",
+            "date": "2009-10-01 05:42:52 +0000",
+            "comment": "remove the tests which check whether Make connection is there for RM 1.1 in out scenarios"
+        },
+        {
+            "c_hash": "8bec76d7",
+            "date": "2009-10-01 08:58:32 +0000",
+            "comment": "remove the generated code and change the test senarios to suite for current axis2 generated code"
+        },
+        {
+            "c_hash": "5fe27254",
+            "date": "2009-10-01 10:50:28 +0000",
+            "comment": "Fix for failing Sync2Way RSP interop tests"
+        },
+        {
+            "c_hash": "0eca28f0",
+            "date": "2009-11-09 11:45:10 +0000",
+            "comment": "So that Sandesha is compliant with the ReliableSecureProfile spec.  Piggybacked acks must have the mustUnderstand flag set to false."
+        },
+        {
+            "c_hash": "189131be",
+            "date": "2009-11-10 02:41:35 +0000",
+            "comment": "fix the artifact id"
+        },
+        {
+            "c_hash": "47fd0d0c",
+            "date": "2009-11-10 14:25:04 +0000",
+            "comment": "add missing transports - fix for test failure"
+        },
+        {
+            "c_hash": "cabe1559",
+            "date": "2009-11-10 16:06:55 +0000",
+            "comment": "better set of dependencies from Rick Slade"
+        },
+        {
+            "c_hash": "2b37d336",
+            "date": "2009-11-10 17:19:11 +0000",
+            "comment": "add transport dependencies"
+        },
+        {
+            "c_hash": "047e7afa",
+            "date": "2009-11-17 16:09:05 +0000",
+            "comment": "Fix added so that duplicate Seq ID's won't get added to either inmemory or permanent stores."
+        },
+        {
+            "c_hash": "bd82f29f",
+            "date": "2010-01-07 17:48:21 +0000",
+            "comment": "Improvements to error logging of Sequence Reallocation"
+        },
+        {
+            "c_hash": "de3f3ed3",
+            "date": "2010-01-14 15:38:48 +0000",
+            "comment": "Fix to Sandesha as problem highlighted after move to recent Axis2 release.  The thread ABORT logic has changed slightly in Axis2 so was causing NPE's when an RM inorder response was being delivered to a client.  The fix is to use a thread SUSPEND for inorder Sync responses."
+        },
+        {
+            "c_hash": "95333b25",
+            "date": "2010-01-27 16:42:44 +0000",
+            "comment": "Further update related to the last fix.  A null check was added as Sync RM 1.0 msgCtx's may not have a to address."
+        },
+        {
+            "c_hash": "a2800714",
+            "date": "2010-02-13 01:37:35 +0000",
+            "comment": "Moving axis svn, part of TLP move INFRA-2441"
+        },
+        {
+            "c_hash": "441c446f",
+            "date": "2010-02-27 13:03:58 +0000",
+            "comment": "commit the patch for SANDESHA2-199"
+        },
+        {
+            "c_hash": "624ba7bc",
+            "date": "2010-03-24 10:03:18 +0000",
+            "comment": "Update error msg to explain why the createSeqRefused fault is sent so as to aid diagnosis."
+        },
+        {
+            "c_hash": "33ddc354",
+            "date": "2010-03-25 10:57:42 +0000",
+            "comment": "Committing fix for SANDESHA2-201"
+        },
+        {
+            "c_hash": "40d3febf",
+            "date": "2010-05-12 10:48:20 +0000",
+            "comment": "Removed copying of TRANSPORT_HEADERS property from referenced MsgCtx into newly created MsgCtx as relies on specific information being available in future layers."
+        },
+        {
+            "c_hash": "435fd797",
+            "date": "2010-07-02 14:37:31 +0000",
+            "comment": "Update POM to point at new plugin maven repo."
+        },
+        {
+            "c_hash": "113b379c",
+            "date": "2010-07-04 11:49:37 +0000",
+            "comment": "Use org.apache:apache:7 as parent POM, so that the build has access to the new Apache snapshot repository. This also makes sure that all artifacts include the appropriate LICENSE and NOTICE files."
+        },
+        {
+            "c_hash": "338b3b13",
+            "date": "2010-07-04 12:10:22 +0000",
+            "comment": "Fixed the transport dependencies so that Sandesha can be compiled again."
+        },
+        {
+            "c_hash": "6e2b4597",
+            "date": "2010-07-04 15:00:23 +0000",
+            "comment": "Let the Sandesha integration tests use the WSS4J version selected by Rampart. Note that the SNAPSHOT version currently referenced in the POM is over 18 months old."
+        },
+        {
+            "c_hash": "e0b22826",
+            "date": "2010-07-04 16:15:37 +0000",
+            "comment": "Let Sandesha use the WSS4J version selected by Rampart. Note that the SNAPSHOT version currently referenced in the POM is over 18 months old."
+        },
+        {
+            "c_hash": "3ee0982c",
+            "date": "2010-07-04 16:34:54 +0000",
+            "comment": "Let Sandesha use the WSS4J version selected by Rampart. Note that the SNAPSHOT version currently referenced in the POM is over 18 months old."
+        },
+        {
+            "c_hash": "bb9332df",
+            "date": "2010-07-04 17:05:18 +0000",
+            "comment": "Removed unused repositories, in particular the old snapshot repository."
+        },
+        {
+            "c_hash": "159d9604",
+            "date": "2010-07-04 17:41:42 +0000",
+            "comment": "Removed dependency on axis2-transport-tcp. The TCP transport is never used in the tests."
+        },
+        {
+            "c_hash": "93e93d00",
+            "date": "2010-07-06 14:24:05 +0000",
+            "comment": "Update POM to point at new AXIOM SNAPSHOT branch"
+        },
+        {
+            "c_hash": "54410ce5",
+            "date": "2010-09-22 18:21:33 +0000",
+            "comment": "SANDESHA2-203 Contributor:Rick Slade Committer:Rich Scheuerle Summary: Adjustments to the resource.properties file. Some messages are removed. Other messages are fixed."
+        },
+        {
+            "c_hash": "f0a35ef5",
+            "date": "2010-09-25 09:36:06 +0000",
+            "comment": "Set up svn:ignore for Eclipse."
+        },
+        {
+            "c_hash": "304dfc3c",
+            "date": "2010-09-25 12:56:59 +0000",
+            "comment": "Fixed typo in unit test name."
+        },
+        {
+            "c_hash": "74a5fe3d",
+            "date": "2010-10-06 15:59:00 +0000",
+            "comment": "PiggyBacked acks sent on closeSeq & terminateSeq with mustUnderstand set to true breaks RSP spec.  Fixed so that all piggybacked acks are sent with mustUnderstand set to false."
+        },
+        {
+            "c_hash": "88fc66fc",
+            "date": "2010-12-02 23:12:09 +0000",
+            "comment": "Updated Axiom version to 1.2.11-SNAPSHOT because 1.2.10-SNAPSHOT is no longer available."
+        },
+        {
+            "c_hash": "c64e0b5e",
+            "date": "2010-12-02 23:36:41 +0000",
+            "comment": "Moved the XDoc documents and related files to the places expected by Maven 2 and did the minimal fixes to make mvn site succeed (i.e. basically made the XML files well formed)."
+        },
+        {
+            "c_hash": "9b0f58d2",
+            "date": "2010-12-04 10:56:02 +0000",
+            "comment": "Restore the site logos."
+        },
+        {
+            "c_hash": "fdfab30d",
+            "date": "2010-12-04 11:26:36 +0000",
+            "comment": "SAND-14: Reintegrated the change done in r729209 by gdaniels back into the site sources. PLEASE DO NOT MODIFY A GENERATED SITE WITHOUT ALSO UPDATING THE SITE SOURCES."
+        },
+        {
+            "c_hash": "34e2b75e",
+            "date": "2010-12-04 12:53:57 +0000",
+            "comment": "Reintegrated the changes done in r545826 and r582763 (download entries for 1.2 and 1.3) by chamikara and sumedha back into the site sources. PLEASE DO NOT MODIFY A GENERATED SITE WITHOUT ALSO UPDATING THE SITE SOURCES!"
+        },
+        {
+            "c_hash": "4728d65f",
+            "date": "2010-12-05 10:12:19 +0000",
+            "comment": "Fixed formatting of POM files (which had inconsistent indentation and a mix of tabs and spaces)."
+        },
+        {
+            "c_hash": "743c4e29",
+            "date": "2010-12-05 10:19:03 +0000",
+            "comment": "Adding missing relativePath (because the default value ../pom.xml is not correct here)."
+        },
+        {
+            "c_hash": "b8884ba8",
+            "date": "2010-12-05 10:24:51 +0000",
+            "comment": "Removed unnecessary configurations of the maven-compiler-plugin. The correct Java version is already set in the root/parent POM and in the mar module, the configuration is useless because there are no sources."
+        },
+        {
+            "c_hash": "f42dd337",
+            "date": "2010-12-05 10:33:21 +0000",
+            "comment": "Centralized the management of the Rampart version in the root POM."
+        },
+        {
+            "c_hash": "d1a645e2",
+            "date": "2010-12-05 11:02:14 +0000",
+            "comment": "Use ${project.version} to refer to the Sandesha2 version (as recommended by Maven 3), and eliminated usage of ${sandesha2.version}, ${pom.version}, ${version} and harcoded version."
+        },
+        {
+            "c_hash": "0024cf82",
+            "date": "2010-12-05 11:46:48 +0000",
+            "comment": "Use maven-shade-plugin to produce the sandesha2-client-constants JAR. This has the advantage that the resulting Maven artifact no longer has a dependency on sandesha2-core (from which sandesha2-client-constants is extracted). This is because maven-shade-plugin produces a dependency reduced JAR."
+        },
+        {
+            "c_hash": "2eaaec43",
+            "date": "2010-12-05 12:25:32 +0000",
+            "comment": "Skip site generation in submodules. We only need to generate the site of the root project."
+        },
+        {
+            "c_hash": "52948340",
+            "date": "2010-12-05 12:33:37 +0000",
+            "comment": "Produce and show a consistent set of project reports in the Maven site."
+        },
+        {
+            "c_hash": "94fed077",
+            "date": "2010-12-05 13:00:41 +0000",
+            "comment": "Updated the POM metadata (URLs, mailing lists, SVN, etc.)."
+        },
+        {
+            "c_hash": "54b2e3c0",
+            "date": "2010-12-06 21:49:24 +0000",
+            "comment": "Replaced tabs by spaces."
+        },
+        {
+            "c_hash": "128dbbc1",
+            "date": "2010-12-06 22:32:56 +0000",
+            "comment": "Use a dependencySet instead of a fileSet to include the JARs and the MAR into the binary distribution. Copying stuff from the target folder of sibling projects is a bad practice. Adding the other Maven modules as dependencies also eliminates the Javadoc warnings about missing packages."
+        },
+        {
+            "c_hash": "025f3a12",
+            "date": "2010-12-06 22:39:00 +0000",
+            "comment": "Replaced tabs with spaces."
+        },
+        {
+            "c_hash": "fb0a2d24",
+            "date": "2010-12-06 22:56:15 +0000",
+            "comment": "Again include the architecture and user guides (which were moved to make it possible to generate the Maven site) into the docs distribution. Also upgraded the maven-assembly-plugin because 2.1 has an issue with file permissions in ZIP files."
+        },
+        {
+            "c_hash": "4a971712",
+            "date": "2010-12-06 23:24:53 +0000",
+            "comment": "Removed the axis2-codegen dependency from the root POM. It is only used by the interop module, which already has a dependency declaration for axis2-codegen."
+        },
+        {
+            "c_hash": "70361d92",
+            "date": "2010-12-06 23:50:13 +0000",
+            "comment": "Removed the direct StAX, activation and javamail dependencies and use whatever Axis2 and Axiom recommends. In particular this removes the duplicate dependency on the StAX API."
+        },
+        {
+            "c_hash": "fc870e5c",
+            "date": "2010-12-15 21:27:21 +0000",
+            "comment": "Use Maven 2 style variable substitution for readme and release notes files."
+        },
+        {
+            "c_hash": "04fccf24",
+            "date": "2010-12-15 21:59:37 +0000",
+            "comment": "Removed unnecessary repositories."
+        },
+        {
+            "c_hash": "5e640291",
+            "date": "2010-12-15 22:14:52 +0000",
+            "comment": "Enabled Javadoc generation for the Maven site."
+        },
+        {
+            "c_hash": "98de3f47",
+            "date": "2010-12-15 22:36:19 +0000",
+            "comment": "Prevent the apache-release profile from generating a source JAR for sandesha2-client-constants (because it would be empty)."
+        },
+        {
+            "c_hash": "d9c93502",
+            "date": "2010-12-15 23:18:53 +0000",
+            "comment": "Skip the default source release assembly configured in org.apache:apache because we have our own source distribution."
+        },
+        {
+            "c_hash": "860e0f63",
+            "date": "2010-12-15 23:29:12 +0000",
+            "comment": "Use the maven-javadoc-plugin version configured in org.apache:apache (2.5) because 2.7 does some weird things when building the module Javadocs."
+        },
+        {
+            "c_hash": "ac1a66b6",
+            "date": "2010-12-16 07:44:25 +0000",
+            "comment": "Also use the shade plugin to produce the sandesha2-policy artifact."
+        },
+        {
+            "c_hash": "86a4c49c",
+            "date": "2010-12-16 08:00:51 +0000",
+            "comment": "Removed old Maven 1 stuff."
+        },
+        {
+            "c_hash": "80bbd86e",
+            "date": "2010-12-16 08:10:23 +0000",
+            "comment": "Fixed some outdated links and mailing list addresses."
+        },
+        {
+            "c_hash": "2828d016",
+            "date": "2010-12-16 08:11:53 +0000",
+            "comment": "Removed unnecessary or incorrect sourceDirectory, testSourceDirectory and resource entries in POM files."
+        },
+        {
+            "c_hash": "da832e8e",
+            "date": "2010-12-16 19:58:02 +0000",
+            "comment": "Added maven-release-plugin configuration."
+        },
+        {
+            "c_hash": "2790369f",
+            "date": "2010-12-16 20:10:03 +0000",
+            "comment": "Some formatting changes in POM files to avoid spurious changes introduced by the maven-release-plugin."
+        },
+        {
+            "c_hash": "64794e56",
+            "date": "2010-12-16 20:50:14 +0000",
+            "comment": "Use maven-javadoc-plugin instead of Ant to generate the Javadoc for inclusion in the doc distribution."
+        },
+        {
+            "c_hash": "51a38008",
+            "date": "2010-12-16 21:41:12 +0000",
+            "comment": "Configured the RAT plugin and added missing license headers."
+        },
+        {
+            "c_hash": "08749a9e",
+            "date": "2010-12-16 22:28:53 +0000",
+            "comment": "Avoid creating log files in source directories."
+        },
+        {
+            "c_hash": "3cc11043",
+            "date": "2010-12-16 22:30:24 +0000",
+            "comment": "Set svn:ignore."
+        },
+        {
+            "c_hash": "f10e3deb",
+            "date": "2010-12-16 22:34:26 +0000",
+            "comment": "Added missing plugin version."
+        },
+        {
+            "c_hash": "410e9f50",
+            "date": "2010-12-16 22:41:42 +0000",
+            "comment": "Updated distributionManagement."
+        },
+        {
+            "c_hash": "341208d3",
+            "date": "2010-12-16 22:47:34 +0000",
+            "comment": "[maven-release-plugin] prepare branch 1_4"
+        },
+        {
+            "c_hash": "d7bfe4a5",
+            "date": "2010-12-16 23:00:00 +0000",
+            "comment": "Rolling back failed attempt to create release branch (caused by MRELEASE-446)."
+        },
+        {
+            "c_hash": "1cb67416",
+            "date": "2010-12-16 23:10:57 +0000",
+            "comment": "[maven-release-plugin] prepare branch 1_4"
+        },
+        {
+            "c_hash": "b60225cc",
+            "date": "2010-12-16 23:11:27 +0000",
+            "comment": "[maven-release-plugin] prepare release 1_4"
+        },
+        {
+            "c_hash": "4dc41074",
+            "date": "2010-12-18 20:16:48 +0000",
+            "comment": "Make sure that if useSeparateListener=true and the response code is 200, the transport is cleaned up properly to avoid connection pool starvation."
+        },
+        {
+            "c_hash": "716d4910",
+            "date": "2010-12-19 13:30:44 +0000",
+            "comment": "Don't deploy the distributions to the Maven repository. Users should download them from the mirrors."
+        },
+        {
+            "c_hash": "c6835eb8",
+            "date": "2010-12-19 13:35:18 +0000",
+            "comment": "Sandesha2 1.2 has already been archived."
+        },
+        {
+            "c_hash": "962e3dd1",
+            "date": "2010-12-19 13:41:30 +0000",
+            "comment": "Added missing NOTICE.txt file to the distributions."
+        },
+        {
+            "c_hash": "6041f761",
+            "date": "2010-12-19 13:51:22 +0000",
+            "comment": "Converted index.xml to a real XDoc document."
+        },
+        {
+            "c_hash": "97202ae2",
+            "date": "2010-12-19 14:32:27 +0000",
+            "comment": "Implemented Apache Project Branding Requirements."
+        },
+        {
+            "c_hash": "fdeaa23c",
+            "date": "2010-12-19 14:48:18 +0000",
+            "comment": "Skip deployment of artifacts for the sandesha2-tests module."
+        },
+        {
+            "c_hash": "103f19eb",
+            "date": "2010-12-19 15:40:47 +0000",
+            "comment": "Make sure that the right NOTICE file is included in Maven artifacts."
+        },
+        {
+            "c_hash": "429c5259",
+            "date": "2010-12-19 16:36:47 +0000",
+            "comment": "Disambiguate the release dates in the download page."
+        },
+        {
+            "c_hash": "ebd93fc9",
+            "date": "2010-12-19 16:46:11 +0000",
+            "comment": "Added an entry for 1.4 to the download page."
+        },
+        {
+            "c_hash": "11ba1c7d",
+            "date": "2010-12-19 17:19:29 +0000",
+            "comment": "Avoid IOExceptions when sandesha2-tests is executed in a multi-module build."
+        },
+        {
+            "c_hash": "ee190795",
+            "date": "2010-12-19 17:28:55 +0000",
+            "comment": "Let Maven generate checksums when installing the distributions into the local repository."
+        },
+        {
+            "c_hash": "72c12365",
+            "date": "2010-12-19 18:06:58 +0000",
+            "comment": "Fixed a mistake in the 1.4 download entry. This release will be compatible with Axis2 1.5.4."
+        },
+        {
+            "c_hash": "99b64373",
+            "date": "2010-12-28 10:38:02 +0000",
+            "comment": "Removed incorrect or redundant sourceDirectory and testSourceDirectory. This should fix the problem that the unit test classes are included in the Javadoc published with the site."
+        },
+        {
+            "c_hash": "a748b8a2",
+            "date": "2010-12-28 10:51:51 +0000",
+            "comment": "Make sure that the information about the latest release in the download page is updated automatically."
+        },
+        {
+            "c_hash": "d184892a",
+            "date": "2010-12-28 10:58:58 +0000",
+            "comment": "Removed duplicate copyright footer."
+        },
+        {
+            "c_hash": "576ed3d5",
+            "date": "2010-12-28 11:09:03 +0000",
+            "comment": "Updated the link to the KEYS file."
+        },
+        {
+            "c_hash": "ea8282fb",
+            "date": "2010-12-28 12:44:39 +0000",
+            "comment": "Make sure that we use the expected Axis2 version, even for transitive dependencies of Rampart."
+        },
+        {
+            "c_hash": "98e2dfe8",
+            "date": "2010-12-28 13:38:51 +0000",
+            "comment": "Use dependencyManagement for all Axis2 and Axiom dependencies. This gives us better control over the stuff downloaded by Maven when resolving transitive dependencies."
+        },
+        {
+            "c_hash": "ca4c2d75",
+            "date": "2010-12-28 13:39:45 +0000",
+            "comment": "Set svn:ignore."
+        },
+        {
+            "c_hash": "b8f6ef15",
+            "date": "2010-12-31 12:50:41 +0000",
+            "comment": "Fixed an issue in the Sandesha2 DOAP file."
+        },
+        {
+            "c_hash": "ef593ea5",
+            "date": "2011-01-09 17:00:21 +0000",
+            "comment": "Fixed a build failure caused by the change described in AXIS2-4196."
+        },
+        {
+            "c_hash": "3e3791f8",
+            "date": "2011-02-05 12:55:51 +0000",
+            "comment": "Updated Axiom snapshot version."
+        },
+        {
+            "c_hash": "eab6e0f1",
+            "date": "2011-02-05 20:03:07 +0000",
+            "comment": "Added entry for 1.4 to the DOAP file."
+        },
+        {
+            "c_hash": "74fa4cfe",
+            "date": "2011-02-10 08:49:38 +0000",
+            "comment": "Temporary fix to the neethi trunk changes which caused a compilation failure and switch back to the neethi trunk ASA the compatibility issues are fixed"
+        },
+        {
+            "c_hash": "eec95923",
+            "date": "2011-02-19 10:56:32 +0000",
+            "comment": "[maven-release-plugin] prepare branch 1_6"
+        },
+        {
+            "c_hash": "22dc0b7f",
+            "date": "2011-02-19 10:57:09 +0000",
+            "comment": "[maven-release-plugin] prepare release 1_6"
+        },
+        {
+            "c_hash": "e88ccdb6",
+            "date": "2011-02-19 14:19:41 +0000",
+            "comment": "Updated the dependency versions of the trunk."
+        },
+        {
+            "c_hash": "3a690eeb",
+            "date": "2011-02-19 14:22:20 +0000",
+            "comment": "Created an assertion builder for each individual assertion used by Sandesha. This way of parsing the RMAssertion is much more lengthy, but integrates better with Neethi. If this had been done from the start, then it would have been much easier to upgrade to Neethi 3.0.0-SNAPSHOT."
+        },
+        {
+            "c_hash": "28b6bf88",
+            "date": "2011-02-19 19:14:21 +0000",
+            "comment": "Updated Axis2 version."
+        },
+        {
+            "c_hash": "79ccc87b",
+            "date": "2011-03-14 21:30:34 +0000",
+            "comment": "Applied a workaround for MASSEMBLY-422 / MASSEMBLY-449. This should fix the broken file and directory permissions in the distribution ZIP files."
+        },
+        {
+            "c_hash": "b0cd4249",
+            "date": "2011-04-08 12:08:27 +0000",
+            "comment": "Changed Neethi version to current trunk. 3.0.0-SNAPSHOT is no longer available."
+        },
+        {
+            "c_hash": "b1ea9a16",
+            "date": "2011-04-30 20:02:19 +0000",
+            "comment": "Preparing to archive the 1.3 release."
+        },
+        {
+            "c_hash": "45aed3b6",
+            "date": "2011-06-11 04:49:56 +0000",
+            "comment": "Updated for 1.6.0 release."
+        },
+        {
+            "c_hash": "a4de7a41",
+            "date": "2011-06-19 16:00:20 +0000",
+            "comment": "Pushing back the changes done in r1130464 to the trunk to avoid loosing them in the next major release."
+        },
+        {
+            "c_hash": "1de39a96",
+            "date": "2011-07-08 19:39:19 +0000",
+            "comment": "Updated Axiom version."
+        },
+        {
+            "c_hash": "80098e35",
+            "date": "2011-07-12 22:06:49 +0000",
+            "comment": "Removed the explicit dependency on Neethi and instead rely on the transitive dependency from Axis2, so that we no longer need to keep the Neethi version number (and exclusion rules) in sync with Axis2."
+        },
+        {
+            "c_hash": "5a329d1a",
+            "date": "2011-07-13 19:21:45 +0000",
+            "comment": "Removed some unnecessary direct dependencies."
+        },
+        {
+            "c_hash": "d9f19732",
+            "date": "2011-09-23 08:29:14 +0000",
+            "comment": "Applied patch for SANDESHA2-209."
+        },
+        {
+            "c_hash": "9f5a29bb",
+            "date": "2011-09-23 08:36:51 +0000",
+            "comment": "Fixed SANDESHA2-210."
+        },
+        {
+            "c_hash": "00f5b275",
+            "date": "2011-09-23 08:41:42 +0000",
+            "comment": "Fixed SANDESHA2-114."
+        },
+        {
+            "c_hash": "61236944",
+            "date": "2011-10-19 19:45:36 +0000",
+            "comment": "Eliminated a couple of illegal direct references to Axiom implementation classes."
+        },
+        {
+            "c_hash": "9c1cacd8",
+            "date": "2011-10-23 15:33:58 +0000",
+            "comment": "Fixed incorrect Axiom iterator usage."
+        },
+        {
+            "c_hash": "b958e8d8",
+            "date": "2011-10-23 15:59:36 +0000",
+            "comment": "* Use the new OMXMLBuilderFactory API. * Avoid FileReader because it uses the platform default encoding and that may cause issues if it is not UTF-8."
+        },
+        {
+            "c_hash": "a3dc4865",
+            "date": "2011-10-23 16:53:54 +0000",
+            "comment": "* Fault code should also be a QName. * Some code simplifications using features available in Axiom."
+        },
+        {
+            "c_hash": "42a1af8a",
+            "date": "2011-10-23 16:55:57 +0000",
+            "comment": "Fixed some variable names."
+        },
+        {
+            "c_hash": "875d7b19",
+            "date": "2011-10-23 19:35:37 +0000",
+            "comment": "Don't attempt to create fault subcodes with SOAP 1.1."
+        },
+        {
+            "c_hash": "14b0bb17",
+            "date": "2011-12-10 18:15:25 +0000",
+            "comment": "* Added entry for the 1.6.1 release. * Some formatting improvements."
+        },
+        {
+            "c_hash": "41fee5bb",
+            "date": "2011-12-13 19:54:50 +0000",
+            "comment": "Fixed the incorrect project name in the DOAP file."
+        },
+        {
+            "c_hash": "1b9949cf",
+            "date": "2011-12-15 22:29:24 +0000",
+            "comment": "Added an entry for the Sandesha2 1.6.1 release."
+        },
+        {
+            "c_hash": "965cdf4d",
+            "date": "2011-12-15 22:50:38 +0000",
+            "comment": "Fixed a couple of incorrect release dates."
+        },
+        {
+            "c_hash": "5c7eef69",
+            "date": "2011-12-19 21:37:54 +0000",
+            "comment": "Allow Sandesha2 builds to run concurrently."
+        },
+        {
+            "c_hash": "11e8f301",
+            "date": "2011-12-20 20:50:43 +0000",
+            "comment": "Make TestCallback thread safe."
+        },
+        {
+            "c_hash": "f26871a7",
+            "date": "2011-12-21 21:40:02 +0000",
+            "comment": "Updated maven-surefire-plugin to version 2.11 so that it recognizes the skipTests option."
+        },
+        {
+            "c_hash": "3d2a348b",
+            "date": "2011-12-29 09:45:31 +0000",
+            "comment": "Put each async echo scenario in a different test case to make it easier to analyze the sporadic test failure we are seeing in the Jenkins builds."
+        },
+        {
+            "c_hash": "7de96343",
+            "date": "2012-02-06 14:57:41 +0000",
+            "comment": "Applied the patch for SANDESHA2-211."
+        },
+        {
+            "c_hash": "5da41c68",
+            "date": "2012-04-09 14:29:54 +0000",
+            "comment": "Switched the Sandesha2 trunk to Axiom 1.2.14-SNAPSHOT."
+        },
+        {
+            "c_hash": "1858ec90",
+            "date": "2012-04-21 22:36:54 +0000",
+            "comment": "Eliminated a couple of references to deprecated classes so that we don't need to add a dependency to axiom-compat."
+        },
+        {
+            "c_hash": "54dcec4f",
+            "date": "2012-04-22 14:05:24 +0000",
+            "comment": "Setting uniqueVersion=true to prevent the Synapse build from downloading the wrong version."
+        },
+        {
+            "c_hash": "214628a0",
+            "date": "2012-04-26 08:44:11 +0000",
+            "comment": "Updated site for 1.6.2 release."
+        },
+        {
+            "c_hash": "68e3ed85",
+            "date": "2012-04-30 06:28:38 +0000",
+            "comment": "Fixed SANDESHA2-212."
+        },
+        {
+            "c_hash": "7822a7b4",
+            "date": "2012-04-30 06:35:23 +0000",
+            "comment": "Updated site for 1.6.2 release."
+        },
+        {
+            "c_hash": "bfb56a18",
+            "date": "2012-05-03 07:12:31 +0000",
+            "comment": "Updated DOAP file for 1.6.2 release."
+        },
+        {
+            "c_hash": "f0c2e9a0",
+            "date": "2012-05-06 07:25:04 +0000",
+            "comment": "Eliminated reference to deprecated Axiom API."
+        },
+        {
+            "c_hash": "6c305176",
+            "date": "2012-05-15 19:53:11 +0000",
+            "comment": "Eliminated a dependency on the bug described in AXIOM-422; the children of a SOAPHeaderBlock should be plain OMElements, not SOAPHeaderBlocks."
+        },
+        {
+            "c_hash": "d4d2883d",
+            "date": "2012-05-30 05:43:31 +0000",
+            "comment": "AXIS2-5315 - Removed Callback usage from Sandesha2"
+        },
+        {
+            "c_hash": "fdbde2f3",
+            "date": "2012-06-11 15:35:27 +0000",
+            "comment": "Changes required for AXIS2-5340."
+        },
+        {
+            "c_hash": "664e434e",
+            "date": "2012-06-13 05:29:38 +0000",
+            "comment": "Changes introduced by AXIS2-5315 in r1349635 [1]"
+        },
+        {
+            "c_hash": "ec731ef2",
+            "date": "2012-06-15 11:04:38 +0000",
+            "comment": "AXIS2-5315 - Changes according to R1350570."
+        },
+        {
+            "c_hash": "667cdbd2",
+            "date": "2012-08-15 13:53:37 +0000",
+            "comment": "Don't allow repositories other than Maven central (except for snapshots)."
+        },
+        {
+            "c_hash": "e2d688d2",
+            "date": "2012-09-10 19:32:39 +0000",
+            "comment": "Added TM to the Sandesha logo."
+        },
+        {
+            "c_hash": "e945908d",
+            "date": "2012-12-16 16:21:24 +0000",
+            "comment": "Moved to new Axiom snapshot version."
+        },
+        {
+            "c_hash": "cdcd583c",
+            "date": "2013-01-20 13:28:17 +0000",
+            "comment": "Setting correct svn:eol-style."
+        },
+        {
+            "c_hash": "ceb22149",
+            "date": "2013-01-20 13:31:15 +0000",
+            "comment": "Some code simplifications."
+        },
+        {
+            "c_hash": "718378b6",
+            "date": "2013-05-04 10:16:32 +0000",
+            "comment": "Fixed download page: 1.6.1 was correctly marked as archived, but the links were pointing to the mirrors."
+        },
+        {
+            "c_hash": "e5de59e2",
+            "date": "2013-05-04 11:22:00 +0000",
+            "comment": "Configuring the project to use maven-scm-publish-plugin."
+        },
+        {
+            "c_hash": "bdead65d",
+            "date": "2014-06-01 07:33:13 +0000",
+            "comment": "Create SOAPFaultText only for SOAP 1.2."
+        },
+        {
+            "c_hash": "a6b133d0",
+            "date": "2014-06-01 13:18:49 +0000",
+            "comment": "Create SOAPFaultText only for SOAP 1.2."
+        }
+    ]
+}

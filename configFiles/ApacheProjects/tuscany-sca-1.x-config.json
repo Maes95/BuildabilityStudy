@@ -1,0 +1,2583 @@
+{
+    "project": "tuscany-sca-1.x",
+    "git_url": "https://github.com/apache/tuscany-sca-1.x.git",
+    "last_commit": "3eb5a652",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "54611cad",
+            "date": "2009-11-02 21:39:39 +0000",
+            "comment": "Initial new svn structure as proposed at http://bit.ly/2EmuHs"
+        },
+        {
+            "c_hash": "0b54749f",
+            "date": "2009-11-13 01:42:27 +0000",
+            "comment": "Moving 1.x trunk"
+        },
+        {
+            "c_hash": "0ac6ec3b",
+            "date": "2009-11-13 13:28:16 +0000",
+            "comment": "TUSCANY-3312 - correct previous fix to prevent memory leak on WeakHashMap"
+        },
+        {
+            "c_hash": "6547d754",
+            "date": "2009-11-16 15:46:08 +0000",
+            "comment": "Copying store webapp sample from 1.x"
+        },
+        {
+            "c_hash": "92865ee4",
+            "date": "2009-11-16 23:20:19 +0000",
+            "comment": "Copying store webapp from 1.x"
+        },
+        {
+            "c_hash": "a8c946cb",
+            "date": "2009-11-23 18:15:18 +0000",
+            "comment": "Apply the patch from Martin Clough for TUSCANY-3379. Thanks."
+        },
+        {
+            "c_hash": "cde61938",
+            "date": "2009-11-29 17:14:59 +0000",
+            "comment": "fixing TUSCANY-3382"
+        },
+        {
+            "c_hash": "cd864722",
+            "date": "2009-11-30 08:56:06 +0000",
+            "comment": "Pull the configuration location from the first argument if one is provided."
+        },
+        {
+            "c_hash": "e9d29f9d",
+            "date": "2009-12-14 22:03:57 +0000",
+            "comment": "Fixing classNotFound issue with jaxws"
+        },
+        {
+            "c_hash": "e9788a1e",
+            "date": "2009-12-15 00:58:47 +0000",
+            "comment": "TUSCANY-3389 - Providing different http status code depending on the authentication/authorization error. 401 when user could not be authenticated, 403 when user was authenticated but it does not have the proper role to execute the operation"
+        },
+        {
+            "c_hash": "20a7d08b",
+            "date": "2009-12-16 11:33:08 +0000",
+            "comment": "TUSCANY-3394, avoid failure in the bad constructor annotation vtest"
+        },
+        {
+            "c_hash": "94558e2e",
+            "date": "2009-12-16 15:51:12 +0000",
+            "comment": "Change bigbank to use dojo from a maven dependency to try to fix the Hudson build"
+        },
+        {
+            "c_hash": "ee6c4c9f",
+            "date": "2009-12-17 09:16:10 +0000",
+            "comment": "Fix another Dojo download so it works in the hudson build"
+        },
+        {
+            "c_hash": "467f2e7e",
+            "date": "2009-12-17 09:32:22 +0000",
+            "comment": "Fix another Hudson dojo download"
+        },
+        {
+            "c_hash": "707697e1",
+            "date": "2009-12-17 09:42:21 +0000",
+            "comment": "Fix another Hudson build issue, this time with OpenAjax - don't faf about trying do download it with Ant just check the .js file into svn with the rest of the sample source"
+        },
+        {
+            "c_hash": "1e9193a2",
+            "date": "2009-12-17 09:50:07 +0000",
+            "comment": "Fix another dojo hudson build issue"
+        },
+        {
+            "c_hash": "02848bf4",
+            "date": "2009-12-17 09:50:47 +0000",
+            "comment": "Fix another dojo hudson build issue"
+        },
+        {
+            "c_hash": "82470c64",
+            "date": "2009-12-17 09:51:09 +0000",
+            "comment": "Fix another dojo hudson build issue"
+        },
+        {
+            "c_hash": "a3a702da",
+            "date": "2009-12-17 10:05:48 +0000",
+            "comment": "Another Dojo download script change for the Hudson build"
+        },
+        {
+            "c_hash": "08b60950",
+            "date": "2009-12-17 12:52:48 +0000",
+            "comment": "Increase the wait time as 4 secs can be too quick for hudson"
+        },
+        {
+            "c_hash": "fe98d5f5",
+            "date": "2009-12-21 12:31:56 +0000",
+            "comment": "Update 1.x trunk version to 1.7-SNAPSHOT"
+        },
+        {
+            "c_hash": "a2de867e",
+            "date": "2010-01-04 14:47:16 +0000",
+            "comment": "TUSCANY-3408 Generate referenced namespace shortname if it's not already present"
+        },
+        {
+            "c_hash": "0bf2b469",
+            "date": "2010-01-04 15:00:15 +0000",
+            "comment": "Add ignores"
+        },
+        {
+            "c_hash": "1eaec534",
+            "date": "2010-01-05 11:56:37 +0000",
+            "comment": "Add an explicit version for the exec-maven-plugin and provide a repository to retrieve it from."
+        },
+        {
+            "c_hash": "ce3b39ef",
+            "date": "2010-01-07 05:34:20 +0000",
+            "comment": "Minor formatting"
+        },
+        {
+            "c_hash": "c96ff125",
+            "date": "2010-01-07 05:38:13 +0000",
+            "comment": "TUSCANY-3389 - Tyding up the http response to properly distinguish from authentication and authorization exceptions and send the proper http status code"
+        },
+        {
+            "c_hash": "f1457e02",
+            "date": "2010-01-11 09:39:05 +0000",
+            "comment": "TUSCANY-3418 add missing equals operator to JMS wire formats so that interceptors are not injected twice."
+        },
+        {
+            "c_hash": "1f8e58eb",
+            "date": "2010-01-11 22:39:27 +0000",
+            "comment": "Removing JDK 5 specific code (String isEmpty)"
+        },
+        {
+            "c_hash": "5d59a918",
+            "date": "2010-01-12 08:08:33 +0000",
+            "comment": "Missing apache license header"
+        },
+        {
+            "c_hash": "68ba4395",
+            "date": "2010-01-12 08:08:47 +0000",
+            "comment": "Adding missing Apache License headers"
+        },
+        {
+            "c_hash": "dee72d17",
+            "date": "2010-01-12 08:09:15 +0000",
+            "comment": "Adding missing Apache License headers"
+        },
+        {
+            "c_hash": "dd891577",
+            "date": "2010-01-12 08:08:59 +0000",
+            "comment": "Adding missing Apache License headers"
+        },
+        {
+            "c_hash": "40b0d1d5",
+            "date": "2010-01-12 08:09:05 +0000",
+            "comment": "Adding missing Apache License headers"
+        },
+        {
+            "c_hash": "c7547012",
+            "date": "2010-01-12 08:13:02 +0000",
+            "comment": "Updates to source assembly to fix issues reported by RAT report"
+        },
+        {
+            "c_hash": "b56fa5a5",
+            "date": "2010-01-13 02:28:01 +0000",
+            "comment": "TUSCANY-3421 - Fixing 1.5 build issues, mostly dependencies around jax-ws, jaxb"
+        },
+        {
+            "c_hash": "008ac3c8",
+            "date": "2010-01-19 06:15:47 +0000",
+            "comment": "Updating LICENSE/NOTICE to properly mention required notice from Caucho Technology"
+        },
+        {
+            "c_hash": "185ee7e5",
+            "date": "2010-01-20 02:46:16 +0000",
+            "comment": "Adding missing modules to tuscany distribution"
+        },
+        {
+            "c_hash": "3f8c858b",
+            "date": "2010-01-20 03:56:34 +0000",
+            "comment": "Fixing geronimo-web.xml version to 1.7-SNAPSHOT"
+        },
+        {
+            "c_hash": "2f8b0947",
+            "date": "2010-01-20 19:53:46 +0000",
+            "comment": "Fixed SVN URLs listed in the pom.xml after SVN code re-organisations"
+        },
+        {
+            "c_hash": "2c246897",
+            "date": "2010-01-21 20:48:46 +0000",
+            "comment": "Renaming erlang samples and excluding them from binary distribution"
+        },
+        {
+            "c_hash": "96d69a43",
+            "date": "2010-01-21 22:33:40 +0000",
+            "comment": "svn propset svn:ignore"
+        },
+        {
+            "c_hash": "6b9c33f9",
+            "date": "2010-01-22 03:48:11 +0000",
+            "comment": "TUSCANY-3436 - Adding zipcode-jaxws sample back to build inorder to properly generate build-dependency for binary distribution"
+        },
+        {
+            "c_hash": "4ef203ee",
+            "date": "2010-01-23 20:45:34 +0000",
+            "comment": "TUSCANY-3438 - Adding calculator-corba samples to 1.6 binary distribution"
+        },
+        {
+            "c_hash": "df6c9dac",
+            "date": "2010-01-23 22:05:21 +0000",
+            "comment": "TUSCANY-3435 - Adding ant sript to run store-secure sample"
+        },
+        {
+            "c_hash": "63e4904c",
+            "date": "2010-01-24 09:24:18 +0000",
+            "comment": "TUSCANY-3428 - Adding provider factory for wire format to be merged into the bundle jar"
+        },
+        {
+            "c_hash": "cfcfb331",
+            "date": "2010-01-24 14:24:14 +0000",
+            "comment": "Copy into trunk from sandbox"
+        },
+        {
+            "c_hash": "78c14ff9",
+            "date": "2010-01-24 14:52:42 +0000",
+            "comment": "don't need diagram template any more"
+        },
+        {
+            "c_hash": "92a014fc",
+            "date": "2010-01-24 14:54:37 +0000",
+            "comment": "Contrib holds material that's no longer used in the same. Don't need it in trunk but it's still in the sandbox if you really need anything from here."
+        },
+        {
+            "c_hash": "f84c64f1",
+            "date": "2010-01-24 15:25:16 +0000",
+            "comment": "Update to match current configuration"
+        },
+        {
+            "c_hash": "9d6a7b67",
+            "date": "2010-01-24 15:32:22 +0000",
+            "comment": "Flip over to spring component implementation"
+        },
+        {
+            "c_hash": "7299492a",
+            "date": "2010-01-24 15:33:49 +0000",
+            "comment": "add ignores"
+        },
+        {
+            "c_hash": "f36a30aa",
+            "date": "2010-01-24 19:18:09 +0000",
+            "comment": "TUSCANY-3428 - Adding provider factory for operation selector to be merged into the bundle jar"
+        },
+        {
+            "c_hash": "9418d5a0",
+            "date": "2010-01-25 18:11:18 +0000",
+            "comment": "TUSCANY-3429 - Removing binding-sca-jms to check if that's what is causing the 'AxisFault: The system cannot infer the transport information from the /ComponentA URL' issues while running the samples from binary distribution"
+        },
+        {
+            "c_hash": "6ac8007e",
+            "date": "2010-01-26 18:56:06 +0000",
+            "comment": "TUSCANY-3430 - Processing asset contribution first to avoid NPE while processing contribution dependency. This looks like the issue that got fixed in 2.x by providing a pre-resolve phase to process/resolve the contribution dependencies"
+        },
+        {
+            "c_hash": "e25340a8",
+            "date": "2010-01-26 23:11:43 +0000",
+            "comment": "TUSCANY-3434 - Applying the same fix from 1.5.1 (TUSCANY-3292) to fix how the spring context path is calculated"
+        },
+        {
+            "c_hash": "4a8e05f1",
+            "date": "2010-01-27 01:52:33 +0000",
+            "comment": "Updating ant script used to install dojo with missing target: install-dojo-nomaven"
+        },
+        {
+            "c_hash": "da0716ad",
+            "date": "2010-01-27 02:01:03 +0000",
+            "comment": "Updating ant script used to install dojo with missing target: install-dojo-nomaven"
+        },
+        {
+            "c_hash": "66225fe8",
+            "date": "2010-01-27 22:28:18 +0000",
+            "comment": "Adding missing Apache License files"
+        },
+        {
+            "c_hash": "cb3f64d8",
+            "date": "2010-01-28 06:46:51 +0000",
+            "comment": "TUSCANY-3448 SCA Property and Reference annotation processing in web application results in incorrect computed names  o Removed the classname prefix when name attribute is not specified in the annotation  o Rev 903972 in 1.6 branch"
+        },
+        {
+            "c_hash": "33b453ee",
+            "date": "2010-01-28 07:41:23 +0000",
+            "comment": "Updating changes file with JIRAs for the release"
+        },
+        {
+            "c_hash": "87797515",
+            "date": "2010-01-29 18:03:25 +0000",
+            "comment": "Excluding dojo resources from 'sample' fileset as well"
+        },
+        {
+            "c_hash": "a4c174d5",
+            "date": "2010-02-02 23:54:46 +0000",
+            "comment": "Use property for ${tuscany.version}"
+        },
+        {
+            "c_hash": "7e3449e3",
+            "date": "2010-02-04 08:24:53 +0000",
+            "comment": "Launch JMS broker and CORBA tnameserv automatically (TUSCANY-3454)"
+        },
+        {
+            "c_hash": "d969645a",
+            "date": "2010-02-05 07:31:07 +0000",
+            "comment": "Remove travel sample code needed only for 1.5.1 and update README for 1.6"
+        },
+        {
+            "c_hash": "ecca1e38",
+            "date": "2010-02-05 22:36:02 +0000",
+            "comment": "Update Tuscany version to 1.6"
+        },
+        {
+            "c_hash": "d93d4333",
+            "date": "2010-02-07 07:16:02 +0000",
+            "comment": "Change incorrect contribution name payment-script to payment-spring-scatag"
+        },
+        {
+            "c_hash": "ef99c263",
+            "date": "2010-02-07 07:17:03 +0000",
+            "comment": "Change incorrect package scatours to scatours.payment"
+        },
+        {
+            "c_hash": "e392745f",
+            "date": "2010-02-07 08:12:57 +0000",
+            "comment": "Add new launchers to README"
+        },
+        {
+            "c_hash": "884e1748",
+            "date": "2010-02-07 08:14:37 +0000",
+            "comment": "Add failonerror=true to ant run command"
+        },
+        {
+            "c_hash": "1762a70a",
+            "date": "2010-02-07 09:34:36 +0000",
+            "comment": "Fix incorrect launcher package name in Main-Class manifest entry"
+        },
+        {
+            "c_hash": "e1d33619",
+            "date": "2010-02-09 22:47:42 +0000",
+            "comment": "Add launchers to distribution for payment-java, payment-java-policy, payment-spring, and payment-spring-scatag"
+        },
+        {
+            "c_hash": "684b7be8",
+            "date": "2010-02-09 22:51:29 +0000",
+            "comment": "Add contribution and launcher to distribution for payment-groovy"
+        },
+        {
+            "c_hash": "0aac4ada",
+            "date": "2010-02-10 09:56:55 +0000",
+            "comment": "Add scatours-launcher-payment-bpel to the travel sample distribution (TUSCANY-3460)"
+        },
+        {
+            "c_hash": "eeb34be6",
+            "date": "2010-02-11 10:28:13 +0000",
+            "comment": "Add ant scripts to travel sample distribution directories to demonstrate alternative solution to TUSCANY-3460"
+        },
+        {
+            "c_hash": "f4cb2962",
+            "date": "2010-02-15 17:18:00 +0000",
+            "comment": "Fixes for TUSCANY-3165, upgrade to OpenEJB version 3.1.2"
+        },
+        {
+            "c_hash": "76001f07",
+            "date": "2010-02-17 08:37:44 +0000",
+            "comment": "Package OpenEJB dependencies with the travel sample to avoid use of environment variables (TUSCANY-3460)"
+        },
+        {
+            "c_hash": "533b3fbd",
+            "date": "2010-02-18 11:33:27 +0000",
+            "comment": "Exclude Tuscany runtime dependencies from the travel sample distribution default build (TUSCANY-3462)"
+        },
+        {
+            "c_hash": "d538a222",
+            "date": "2010-02-18 11:37:26 +0000",
+            "comment": "Remove uncommented duplicate entry for creditcard-payment-webapp in distribution bundle pom"
+        },
+        {
+            "c_hash": "9e9faa85",
+            "date": "2010-02-18 22:53:56 +0000",
+            "comment": "Fix for TUSCANY-3466"
+        },
+        {
+            "c_hash": "1188c21c",
+            "date": "2010-02-18 23:11:51 +0000",
+            "comment": "Fix for TUSCANY-3467: Add JAXWS/JAXB compile dependencies for JDK 5"
+        },
+        {
+            "c_hash": "b024b778",
+            "date": "2010-02-19 09:58:57 +0000",
+            "comment": "Add jaxws-api and jaxb-api dependencies where needed to enable all modules to compile with JDK 5"
+        },
+        {
+            "c_hash": "7a8e29e1",
+            "date": "2010-02-20 10:51:47 +0000",
+            "comment": "Make wsimport target work on JDK 5 as well as JDK 6"
+        },
+        {
+            "c_hash": "7d0a8026",
+            "date": "2010-02-21 23:51:40 +0000",
+            "comment": "Remove duplicate entry for apache.snapshot (also defined in parent pom)"
+        },
+        {
+            "c_hash": "eff70791",
+            "date": "2010-02-22 05:06:59 +0000",
+            "comment": "Refactor conditional logic for better consistency and readability"
+        },
+        {
+            "c_hash": "be5230c6",
+            "date": "2010-02-22 05:43:26 +0000",
+            "comment": "Ensure maven-antrun-plugin runs when using <packaging>pom"
+        },
+        {
+            "c_hash": "ba10494c",
+            "date": "2010-02-22 06:04:23 +0000",
+            "comment": "Make the JAX-WS runtime available when running the travel sample on JDK 5 (TUSCANY-3467)"
+        },
+        {
+            "c_hash": "6f95d31f",
+            "date": "2010-02-22 10:21:05 +0000",
+            "comment": "Update README for recent changes"
+        },
+        {
+            "c_hash": "b423b88d",
+            "date": "2010-02-23 09:47:33 +0000",
+            "comment": "Correct the composite name"
+        },
+        {
+            "c_hash": "537dfde6",
+            "date": "2010-02-25 05:52:27 +0000",
+            "comment": "Add ODE runtime database to travel sample binary distro (TUSCANY-3461)"
+        },
+        {
+            "c_hash": "e1f16ef5",
+            "date": "2010-02-25 10:07:57 +0000",
+            "comment": "Refactor payment-bpel contribution by moving some files into a new contribution payment-bpel-process (TUSCANY-3461)"
+        },
+        {
+            "c_hash": "8578d576",
+            "date": "2010-02-25 10:09:28 +0000",
+            "comment": "Remove payment.bpel from payment-bpel contribution (TUSCANY-3461)"
+        },
+        {
+            "c_hash": "5f0a7a90",
+            "date": "2010-02-25 10:39:21 +0000",
+            "comment": "Exclude *.cbp files from payment-bpel-process contribution jar"
+        },
+        {
+            "c_hash": "71b21fa8",
+            "date": "2010-02-28 09:03:32 +0000",
+            "comment": "Bring fullapp-domain contributions into line with fullapp, and update README"
+        },
+        {
+            "c_hash": "5d557305",
+            "date": "2010-03-02 15:59:52 +0000",
+            "comment": "Remove bogus conversational configuration that is add odds with the current application configuration."
+        },
+        {
+            "c_hash": "4071f43c",
+            "date": "2010-03-08 11:17:14 +0000",
+            "comment": "Update thread pool creation code to match the corresponding code in ODE 1.3.3 (TUSCANY-3475)"
+        },
+        {
+            "c_hash": "7d058b5b",
+            "date": "2010-03-08 11:26:02 +0000",
+            "comment": "Add code to avoid a 60-second hang when using Tuscany SCA 1.6 (TUSCANY-3475)"
+        },
+        {
+            "c_hash": "45002491",
+            "date": "2010-03-08 11:43:49 +0000",
+            "comment": "Add code to avoid a hang on exit when using Tuscany SCA 1.6 (TUSCANY-3277)"
+        },
+        {
+            "c_hash": "fb81da8e",
+            "date": "2010-03-09 09:36:30 +0000",
+            "comment": "Add descriptions of .war contributions to README"
+        },
+        {
+            "c_hash": "1e56439f",
+            "date": "2010-03-10 09:18:01 +0000",
+            "comment": "add ignores"
+        },
+        {
+            "c_hash": "2feb3289",
+            "date": "2010-03-10 10:23:42 +0000",
+            "comment": "TUSCANY-242 add URI specific processing wherever we read an anyURI attribute"
+        },
+        {
+            "c_hash": "08d7690a",
+            "date": "2010-03-11 10:49:06 +0000",
+            "comment": "Fix build.xml files for travel sample .war contributions (TUSCANY-3414)"
+        },
+        {
+            "c_hash": "dff7f7b3",
+            "date": "2010-03-16 18:08:46 +0000",
+            "comment": "Update the travelsample with 2.x namespace/api/dependency (not completed yet)"
+        },
+        {
+            "c_hash": "c9192e6d",
+            "date": "2010-03-16 18:19:47 +0000",
+            "comment": "Revert the accidental change"
+        },
+        {
+            "c_hash": "01c95988",
+            "date": "2010-03-17 05:28:13 +0000",
+            "comment": "Remove redundant empty directories"
+        },
+        {
+            "c_hash": "31a9b4ea",
+            "date": "2010-03-19 01:38:53 +0000",
+            "comment": "Fix incorrect location for domain manager configuration files"
+        },
+        {
+            "c_hash": "b46aa944",
+            "date": "2010-03-19 01:43:19 +0000",
+            "comment": "Fix incorrect directories in domain manager configuration paths"
+        },
+        {
+            "c_hash": "eadd10d6",
+            "date": "2010-03-19 01:56:54 +0000",
+            "comment": "Replace payment-spring-policy by payment-java-policy to work around TUSCANY-3476 problem"
+        },
+        {
+            "c_hash": "461d9836",
+            "date": "2010-03-19 05:24:30 +0000",
+            "comment": "Fix typo in reference target component name"
+        },
+        {
+            "c_hash": "b0f63407",
+            "date": "2010-03-19 05:36:56 +0000",
+            "comment": "Apply workaround for TUSCANY-3476 to workspace-distribution.xml and add inline comments referencing this JIRA"
+        },
+        {
+            "c_hash": "304aeb74",
+            "date": "2010-03-19 10:20:34 +0000",
+            "comment": "Fix incorrect pom dependencies in contributions directories (TUSCANY-3506)"
+        },
+        {
+            "c_hash": "251e3a8a",
+            "date": "2010-03-21 01:20:01 +0000",
+            "comment": "Change jumpstart launcher so that it doesn't use LauncherUtil (TUSCANY-3508)"
+        },
+        {
+            "c_hash": "67c210f4",
+            "date": "2010-03-21 01:26:23 +0000",
+            "comment": "Fix incorrect path for domain configuration files"
+        },
+        {
+            "c_hash": "282a7cfd",
+            "date": "2010-03-21 17:05:00 +0000",
+            "comment": "Add some callback samples based on the payment and credit card payment components"
+        },
+        {
+            "c_hash": "b196c746",
+            "date": "2010-03-21 17:06:12 +0000",
+            "comment": "add ignores"
+        },
+        {
+            "c_hash": "3f61a029",
+            "date": "2010-03-21 17:06:47 +0000",
+            "comment": "Add some more ignores"
+        },
+        {
+            "c_hash": "f5e9c79c",
+            "date": "2010-03-21 17:39:54 +0000",
+            "comment": "Add a sample that demonstrated reference passing"
+        },
+        {
+            "c_hash": "2f7ffbf8",
+            "date": "2010-03-21 17:40:57 +0000",
+            "comment": "add ignores"
+        },
+        {
+            "c_hash": "ccbd3228",
+            "date": "2010-03-21 18:54:15 +0000",
+            "comment": "Revert change committed by accident"
+        },
+        {
+            "c_hash": "4512eec6",
+            "date": "2010-03-21 18:57:14 +0000",
+            "comment": "Add a trip contribution that demonstrates the logging policy. Was only turned on in the trip unit test previously."
+        },
+        {
+            "c_hash": "43cc9a0d",
+            "date": "2010-03-21 18:58:48 +0000",
+            "comment": "Correct module names in ant scripts"
+        },
+        {
+            "c_hash": "b5fa7319",
+            "date": "2010-03-21 19:01:14 +0000",
+            "comment": "Exercise the trip policy from the policy client and policy launcher"
+        },
+        {
+            "c_hash": "725f6664",
+            "date": "2010-03-21 19:02:44 +0000",
+            "comment": "add ignores"
+        },
+        {
+            "c_hash": "241f9c4d",
+            "date": "2010-03-22 08:03:53 +0000",
+            "comment": "Add new contribution \"using\" with examples for using SCA components"
+        },
+        {
+            "c_hash": "076ff01a",
+            "date": "2010-03-24 23:32:34 +0000",
+            "comment": "Added instructions about setting the JUNIT_JAR environment variable"
+        },
+        {
+            "c_hash": "2404377d",
+            "date": "2010-03-28 12:36:56 +0000",
+            "comment": "Add jython version of the payment component. Just because we can."
+        },
+        {
+            "c_hash": "0059eb92",
+            "date": "2010-03-28 12:37:26 +0000",
+            "comment": "add ignores"
+        },
+        {
+            "c_hash": "f9177136",
+            "date": "2010-03-28 12:39:51 +0000",
+            "comment": "Add a launcher for the payment-python contribution"
+        },
+        {
+            "c_hash": "2eaffa66",
+            "date": "2010-03-28 13:00:21 +0000",
+            "comment": "add payment-python to the build"
+        },
+        {
+            "c_hash": "21e4b1db",
+            "date": "2010-03-28 18:24:44 +0000",
+            "comment": "Delete unused empty directory"
+        },
+        {
+            "c_hash": "ddfa2c61",
+            "date": "2010-03-28 18:53:27 +0000",
+            "comment": "Remove explicit use of JMS BrokerService"
+        },
+        {
+            "c_hash": "43b6a882",
+            "date": "2010-03-29 07:33:21 +0000",
+            "comment": "Add complete \"using\" contribution and \"using\" launcher"
+        },
+        {
+            "c_hash": "973da453",
+            "date": "2010-03-29 07:48:42 +0000",
+            "comment": "Update pom.xml files to add \"using\" contribution and \"using\" launcher"
+        },
+        {
+            "c_hash": "3dc7495a",
+            "date": "2010-03-29 09:04:33 +0000",
+            "comment": "Add missing compile dependency"
+        },
+        {
+            "c_hash": "80226689",
+            "date": "2010-03-29 09:06:17 +0000",
+            "comment": "Add missing modules to the ant build and the distribution"
+        },
+        {
+            "c_hash": "e18d59c4",
+            "date": "2010-03-29 09:08:02 +0000",
+            "comment": "add svn:ignore property to newly added modules"
+        },
+        {
+            "c_hash": "205a5def",
+            "date": "2010-03-30 05:38:01 +0000",
+            "comment": "TUSCANY-3516 - Merging changes from 2.x to enable calling services exposed with JSON-RPC binding using GET method and properly handling HTTP Headers such eTags when usig GET method"
+        },
+        {
+            "c_hash": "21a52a58",
+            "date": "2010-03-30 12:53:32 +0000",
+            "comment": "Remove services/creditcard-payment-jaxws from the travel sample (TUSCANY-3415)"
+        },
+        {
+            "c_hash": "72cc00ee",
+            "date": "2010-04-07 22:54:39 +0000",
+            "comment": "Fix incorrect XML response returned by BPEL process"
+        },
+        {
+            "c_hash": "a17b8a76",
+            "date": "2010-04-07 22:58:47 +0000",
+            "comment": "Remove unused package-path setting from antdefs.xml (TUSCANY-3412)"
+        },
+        {
+            "c_hash": "f101a1d9",
+            "date": "2010-04-07 23:00:52 +0000",
+            "comment": "Ensure all variations of PaymentTestCase throw exceptions when they fail (TUSCANY-3407)"
+        },
+        {
+            "c_hash": "ce978df4",
+            "date": "2010-04-14 15:21:35 +0000",
+            "comment": "Remove binary distro from mvn build (TUSCANY-3528)"
+        },
+        {
+            "c_hash": "cebad92b",
+            "date": "2010-04-14 15:55:28 +0000",
+            "comment": "Clean up comment"
+        },
+        {
+            "c_hash": "8f9e2644",
+            "date": "2010-04-14 16:07:09 +0000",
+            "comment": "Add binaries module (TUSCANY-3528)"
+        },
+        {
+            "c_hash": "97a321fc",
+            "date": "2010-04-14 16:08:27 +0000",
+            "comment": "Replace distribution module by binaries module in top-level build (TUSCANY-3528)"
+        },
+        {
+            "c_hash": "6f5aee7f",
+            "date": "2010-04-14 16:33:59 +0000",
+            "comment": "Remove binary distro artifacts from distribution module (TUSCANY-3528)"
+        },
+        {
+            "c_hash": "290f5350",
+            "date": "2010-04-16 21:20:04 +0000",
+            "comment": "Add webapps to binaries build output"
+        },
+        {
+            "c_hash": "d32e7360",
+            "date": "2010-04-17 19:48:22 +0000",
+            "comment": "Fix pom dependencies in launchers, clients and services (TUSCANY-3506)"
+        },
+        {
+            "c_hash": "69da78ea",
+            "date": "2010-04-18 20:41:55 +0000",
+            "comment": "Remove incorrect dependency on servlet host (TUSCANY-3540)"
+        },
+        {
+            "c_hash": "ba07add0",
+            "date": "2010-04-18 20:49:13 +0000",
+            "comment": "Add unnecessary servlet host dependency as workaround for TUSCANY-3540"
+        },
+        {
+            "c_hash": "2e2fab13",
+            "date": "2010-04-18 20:51:32 +0000",
+            "comment": "Remove usage of NodeLauncher and DomainManagerLauncher (TUSCANY-3538)"
+        },
+        {
+            "c_hash": "fcf63dac",
+            "date": "2010-04-18 21:21:46 +0000",
+            "comment": "Remove references to the travel sample binary distribution (TUSCANY-3528) and add description of binaries/webapps directory"
+        },
+        {
+            "c_hash": "66bca4ec",
+            "date": "2010-04-20 21:31:19 +0000",
+            "comment": "Add travelsample top-level directory to the distribution package"
+        },
+        {
+            "c_hash": "3923a170",
+            "date": "2010-04-20 22:03:36 +0000",
+            "comment": "Move build instructions to BUILDING file"
+        },
+        {
+            "c_hash": "52fe5426",
+            "date": "2010-04-20 22:06:36 +0000",
+            "comment": "Update references to \"includes\" to say \"includes/uses\" and change 2009 to 2010"
+        },
+        {
+            "c_hash": "3ecfac19",
+            "date": "2010-04-20 22:07:38 +0000",
+            "comment": "Remove license text specific to the Tuscany SCA binary distribution"
+        },
+        {
+            "c_hash": "ed8c3ce9",
+            "date": "2010-04-20 22:09:20 +0000",
+            "comment": "Add BUILDING, CHANGES and RELEASE_NOTES files"
+        },
+        {
+            "c_hash": "0f89d551",
+            "date": "2010-04-20 22:11:14 +0000",
+            "comment": "Copy BUILDING, CHANGES, LICENSE, NOTICE and RELEASE_NOTES files to travelsample directory"
+        },
+        {
+            "c_hash": "851569b3",
+            "date": "2010-04-20 22:13:22 +0000",
+            "comment": "Move README file to distribution/src/main/release directory"
+        },
+        {
+            "c_hash": "1b410434",
+            "date": "2010-04-21 07:30:10 +0000",
+            "comment": "Move BUILDING, CHANGES, etc. files to top-level directory in distribution package"
+        },
+        {
+            "c_hash": "37dbd918",
+            "date": "2010-04-25 21:11:16 +0000",
+            "comment": "Restructure the README file"
+        },
+        {
+            "c_hash": "6353a660",
+            "date": "2010-04-25 21:16:39 +0000",
+            "comment": "Add dependencies (not available from Tuscany SCA binary distro) to travel sample distribution"
+        },
+        {
+            "c_hash": "5e74e243",
+            "date": "2010-04-25 21:19:33 +0000",
+            "comment": "Use dependencies packaged within travel sample distribution in preference to environment variable settings"
+        },
+        {
+            "c_hash": "25af8e7c",
+            "date": "2010-04-26 18:13:58 +0000",
+            "comment": "Add missing scenarios to README and make editorial changes to other release files"
+        },
+        {
+            "c_hash": "85a7e41c",
+            "date": "2010-05-07 20:19:51 +0000",
+            "comment": "Use Base64 class from commons-codec instead of forbidden internal JRE class (TUSCANY-3549)"
+        },
+        {
+            "c_hash": "bb3529d5",
+            "date": "2010-05-08 10:51:58 +0000",
+            "comment": "Make outstandingOrders list synchronized (TUSCANY-3550)"
+        },
+        {
+            "c_hash": "fe790f95",
+            "date": "2010-05-08 20:46:19 +0000",
+            "comment": "Exclude junit 3.8 dependency brought in by wss4j and use junit 4.5 instead"
+        },
+        {
+            "c_hash": "a18d381b",
+            "date": "2010-05-08 21:02:07 +0000",
+            "comment": "Prevent bootstrap launcher from changing caller's classloader setting (TUSCANY-3551)"
+        },
+        {
+            "c_hash": "6e35ad22",
+            "date": "2010-05-14 13:41:28 +0000",
+            "comment": "Remove redundant <reference> elements from component definitions"
+        },
+        {
+            "c_hash": "eb1a857a",
+            "date": "2010-05-14 14:12:35 +0000",
+            "comment": "Rename using contribution and launcher to usingsca"
+        },
+        {
+            "c_hash": "fc773f90",
+            "date": "2010-05-14 14:13:59 +0000",
+            "comment": "Delete contributions/using and launchers/using modules"
+        },
+        {
+            "c_hash": "e5ceb6f6",
+            "date": "2010-05-14 14:29:13 +0000",
+            "comment": "Rename com.tuscanyscatours.using package to com.tuscanyscatours.usingsca"
+        },
+        {
+            "c_hash": "af61e1ee",
+            "date": "2010-05-14 21:27:44 +0000",
+            "comment": "Finish the README and change the release date from April to May"
+        },
+        {
+            "c_hash": "87659ad4",
+            "date": "2010-05-18 12:04:20 +0000",
+            "comment": "Add implementation.web jars to the binary distribution (TUSCANY-3490)"
+        },
+        {
+            "c_hash": "d313af7c",
+            "date": "2010-05-19 20:59:07 +0000",
+            "comment": "Merge revision r944721 from release branch"
+        },
+        {
+            "c_hash": "06472da5",
+            "date": "2010-05-19 21:00:52 +0000",
+            "comment": "Merge revision r944722 from release branch"
+        },
+        {
+            "c_hash": "fdf09adc",
+            "date": "2010-05-19 21:01:38 +0000",
+            "comment": "Merge revision r944729 from release branch"
+        },
+        {
+            "c_hash": "62e056ce",
+            "date": "2010-05-19 21:02:45 +0000",
+            "comment": "Merge revision r944733 from release branch"
+        },
+        {
+            "c_hash": "36ea2992",
+            "date": "2010-05-19 21:09:15 +0000",
+            "comment": "Merge revision r944737 from 1.0 release branch"
+        },
+        {
+            "c_hash": "cac1edb4",
+            "date": "2010-05-19 21:10:07 +0000",
+            "comment": "Merge revision r944799 from 1.0 release branch"
+        },
+        {
+            "c_hash": "f65d7a68",
+            "date": "2010-05-19 21:18:41 +0000",
+            "comment": "Merge revision r944832 from 1.0 release branch"
+        },
+        {
+            "c_hash": "fc5600e9",
+            "date": "2010-05-19 21:26:42 +0000",
+            "comment": "Merge revision r944833 from 1.0 release branch"
+        },
+        {
+            "c_hash": "e3f23957",
+            "date": "2010-05-19 21:32:18 +0000",
+            "comment": "Merge revisions r944833 (second attempt) and r944834 from 1.0 release branch"
+        },
+        {
+            "c_hash": "ae4430b1",
+            "date": "2010-05-19 21:35:36 +0000",
+            "comment": "Merge revision r944884 from 1.0 release branch"
+        },
+        {
+            "c_hash": "1c4086bd",
+            "date": "2010-05-19 21:36:30 +0000",
+            "comment": "Merge revision r944885 from 1.0 release branch"
+        },
+        {
+            "c_hash": "b04fec65",
+            "date": "2010-05-19 21:37:09 +0000",
+            "comment": "Merge revision r944905 from 1.0 release branch"
+        },
+        {
+            "c_hash": "70b07691",
+            "date": "2010-05-19 21:38:11 +0000",
+            "comment": "Merge revision r944930 from 1.0 release branch"
+        },
+        {
+            "c_hash": "f61dd244",
+            "date": "2010-05-19 21:38:53 +0000",
+            "comment": "Merge revision r944931 from 1.0 release branch"
+        },
+        {
+            "c_hash": "573337d1",
+            "date": "2010-05-19 21:41:03 +0000",
+            "comment": "Merge revision r944932 from 1.0 release branch"
+        },
+        {
+            "c_hash": "d24442a6",
+            "date": "2010-05-19 21:42:09 +0000",
+            "comment": "Merge revision r944937 from 1.0 release branch"
+        },
+        {
+            "c_hash": "3bb0dc71",
+            "date": "2010-05-19 21:42:59 +0000",
+            "comment": "Merge revision r945072 from 1.0 release branch"
+        },
+        {
+            "c_hash": "4a502aa2",
+            "date": "2010-05-19 21:43:49 +0000",
+            "comment": "Merge revision r945084 from 1.0 release branch"
+        },
+        {
+            "c_hash": "8d49bb66",
+            "date": "2010-05-19 21:45:48 +0000",
+            "comment": "Merge revision r945180 from 1.0 release branch"
+        },
+        {
+            "c_hash": "7de57632",
+            "date": "2010-05-19 21:47:13 +0000",
+            "comment": "Merge revision r945281 from 1.0 release branch"
+        },
+        {
+            "c_hash": "6aedae28",
+            "date": "2010-05-19 21:56:42 +0000",
+            "comment": "Reverse incorrect commit r946409"
+        },
+        {
+            "c_hash": "f82a9665",
+            "date": "2010-05-19 21:58:32 +0000",
+            "comment": "Merge revision r944833 (third attempt) from 1.0 release branch"
+        },
+        {
+            "c_hash": "d74687d7",
+            "date": "2010-05-19 21:59:50 +0000",
+            "comment": "Merge revision r944834 from 1.0 release branch"
+        },
+        {
+            "c_hash": "0fdb1dd7",
+            "date": "2010-05-19 22:01:00 +0000",
+            "comment": "Merge revision r945287 from 1.0 release branch"
+        },
+        {
+            "c_hash": "bf55982c",
+            "date": "2010-05-19 22:02:22 +0000",
+            "comment": "Merge revision r945293 from 1.0 release branch"
+        },
+        {
+            "c_hash": "4908f2a7",
+            "date": "2010-05-19 22:03:11 +0000",
+            "comment": "Merge revision r945295 from 1.0 release branch"
+        },
+        {
+            "c_hash": "8b5d74a2",
+            "date": "2010-05-19 22:04:09 +0000",
+            "comment": "Merge revision r945303 from 1.0 release branch"
+        },
+        {
+            "c_hash": "c87e7837",
+            "date": "2010-05-19 22:04:51 +0000",
+            "comment": "Merge revision r945328 from 1.0 release branch"
+        },
+        {
+            "c_hash": "56319feb",
+            "date": "2010-05-19 22:06:30 +0000",
+            "comment": "Merge revision r945361 from 1.0 release branch"
+        },
+        {
+            "c_hash": "9437a01d",
+            "date": "2010-05-19 22:07:02 +0000",
+            "comment": "Merge revision r945362 from 1.0 release branch"
+        },
+        {
+            "c_hash": "d2f4139b",
+            "date": "2010-05-19 22:07:54 +0000",
+            "comment": "Merge revision r945740 from 1.0 release branch"
+        },
+        {
+            "c_hash": "6bca0e96",
+            "date": "2010-05-19 22:08:36 +0000",
+            "comment": "Merge revision r945741 from 1.0 release branch"
+        },
+        {
+            "c_hash": "275cdd04",
+            "date": "2010-05-19 22:09:43 +0000",
+            "comment": "Merge revision r946097 from 1.0 release branch"
+        },
+        {
+            "c_hash": "2dd9ecc8",
+            "date": "2010-05-19 22:10:22 +0000",
+            "comment": "Merge revision r946288 from 1.0 release branch"
+        },
+        {
+            "c_hash": "67e62e6f",
+            "date": "2010-05-19 22:11:10 +0000",
+            "comment": "Merge revision r946294 from 1.0 release branch"
+        },
+        {
+            "c_hash": "81e75e04",
+            "date": "2010-05-19 22:12:00 +0000",
+            "comment": "Merge revision r946340 from 1.0 release branch"
+        },
+        {
+            "c_hash": "62620f55",
+            "date": "2010-05-19 22:12:38 +0000",
+            "comment": "Merge revision r946349 from 1.0 release branch"
+        },
+        {
+            "c_hash": "86b406f9",
+            "date": "2010-05-19 22:13:37 +0000",
+            "comment": "Merge revision r946354 from 1.0 release branch"
+        },
+        {
+            "c_hash": "923feda7",
+            "date": "2010-05-19 22:15:46 +0000",
+            "comment": "Merge revision r946380 from 1.0 release branch"
+        },
+        {
+            "c_hash": "0c7b35ce",
+            "date": "2010-05-19 22:17:04 +0000",
+            "comment": "Merge revision r946383 from 1.0 release branch"
+        },
+        {
+            "c_hash": "8656966e",
+            "date": "2010-05-19 22:18:03 +0000",
+            "comment": "Merge revision r946387 from 1.0 release branch"
+        },
+        {
+            "c_hash": "f29bccdc",
+            "date": "2010-05-21 09:25:00 +0000",
+            "comment": "Update NOTICE and LICENSE files"
+        },
+        {
+            "c_hash": "610dbf8c",
+            "date": "2010-05-21 17:17:18 +0000",
+            "comment": "Change status code passed to System.exit()"
+        },
+        {
+            "c_hash": "1c080b6e",
+            "date": "2010-05-21 21:01:07 +0000",
+            "comment": "Remove jumpstart from Table 3, and some reformatting"
+        },
+        {
+            "c_hash": "ebc8dd4f",
+            "date": "2010-05-21 21:44:50 +0000",
+            "comment": "Cleanup to avoid unnecessary differences in RC tag"
+        },
+        {
+            "c_hash": "ce4586b4",
+            "date": "2010-05-25 09:10:29 +0000",
+            "comment": "A sample SCA webapp that can be installed in Tomcat and configured for basic authentication"
+        },
+        {
+            "c_hash": "d931230b",
+            "date": "2010-05-25 09:13:38 +0000",
+            "comment": "A sample that calls the add component (from the calculator-ws-basicauth-service-webapp samples) with basic authentication configured."
+        },
+        {
+            "c_hash": "7a4480f7",
+            "date": "2010-05-26 14:57:24 +0000",
+            "comment": "Fix mvn clean install problem by changing reactor build order"
+        },
+        {
+            "c_hash": "8f680272",
+            "date": "2010-05-26 14:58:09 +0000",
+            "comment": "Minor fixes to README"
+        },
+        {
+            "c_hash": "4129ebab",
+            "date": "2010-05-29 07:57:01 +0000",
+            "comment": "Fix incorrect property name in ant script (TUSCANY-3574)"
+        },
+        {
+            "c_hash": "f217c421",
+            "date": "2010-05-29 08:14:34 +0000",
+            "comment": "Fix JAX-WS classpath problems on JDK 5 (TUSCANY-3575)"
+        },
+        {
+            "c_hash": "63bc57ac",
+            "date": "2010-05-29 08:46:06 +0000",
+            "comment": "Fix OpenEJB classpath problems on JDK 5 (TUSCANY-3576)"
+        },
+        {
+            "c_hash": "60b46bb4",
+            "date": "2010-05-29 09:26:02 +0000",
+            "comment": "Change release date from May to June 2010"
+        },
+        {
+            "c_hash": "3ab19d8e",
+            "date": "2010-05-29 09:38:17 +0000",
+            "comment": "Add missing JAX-WS and/or JAXB dependencies to pom files (TUSCANY-3577)"
+        },
+        {
+            "c_hash": "e1bc116a",
+            "date": "2010-05-29 20:30:28 +0000",
+            "comment": "Remove openejb-runtime dependency from notification-ejb launcher when using the default profile, and clean up profile handling in the travel sample poms (TUSCANY-3578)"
+        },
+        {
+            "c_hash": "0b634d1b",
+            "date": "2010-06-04 20:10:02 +0000",
+            "comment": "Add <binding.sca> to generated node configuration (TUSCANY-3193)"
+        },
+        {
+            "c_hash": "bd15ab9d",
+            "date": "2010-06-04 20:21:46 +0000",
+            "comment": "Add missing wires to DomainManager.composite file (TUSCANY-3587)"
+        },
+        {
+            "c_hash": "ea243d5d",
+            "date": "2010-06-04 20:39:35 +0000",
+            "comment": "Fix NullPointerException caused by missing tests for null callback interface (TUSCANY-3588)"
+        },
+        {
+            "c_hash": "2755748f",
+            "date": "2010-06-04 21:09:35 +0000",
+            "comment": "Ensure the binary distribution contains commons-lang-2.3 instead of commons-lang-2.1 (TUSCANY-3589)"
+        },
+        {
+            "c_hash": "eb345871",
+            "date": "2010-06-07 11:28:41 +0000",
+            "comment": "Read composite content after contributions have been loaded (TUSCANY-3569)"
+        },
+        {
+            "c_hash": "0e774838",
+            "date": "2010-06-29 20:52:40 +0000",
+            "comment": "Process composites last when loading contributions into the domain (TUSCANY-3561)"
+        },
+        {
+            "c_hash": "f4a0d045",
+            "date": "2010-07-01 06:21:34 +0000",
+            "comment": "Fix incorrect name for tutorial-assets.jar"
+        },
+        {
+            "c_hash": "beeb7321",
+            "date": "2010-07-01 06:51:45 +0000",
+            "comment": "Add build-dependency.xml to svn:ignore list"
+        },
+        {
+            "c_hash": "1f21d96d",
+            "date": "2010-07-01 06:58:16 +0000",
+            "comment": "Add svn:ignore to calculator-ws-basicauth-* sample directories"
+        },
+        {
+            "c_hash": "5c274931",
+            "date": "2010-07-01 11:25:25 +0000",
+            "comment": "Delete OSGI bundle cache before running a new test (TUSCANY-3615)"
+        },
+        {
+            "c_hash": "4908478a",
+            "date": "2010-07-02 08:08:21 +0000",
+            "comment": "Add java.net2 repository (needed for mimepull-1.2.jar)"
+        },
+        {
+            "c_hash": "ae0f520a",
+            "date": "2010-07-29 14:45:23 +0000",
+            "comment": "TUSCATUSCANY-3625 - Ensure that the Java version of the method name is used to avert the case that the Tuscany interface has a different operation name by virtue of JAXWS annotations. Thanks for the patch Scott."
+        },
+        {
+            "c_hash": "b66fdda9",
+            "date": "2010-07-29 14:49:12 +0000",
+            "comment": "TUSCANY-3639 - ensure that the service wire is created at the same time as the binding wire is created"
+        },
+        {
+            "c_hash": "155e3b87",
+            "date": "2010-07-30 11:06:42 +0000",
+            "comment": "TUSCANY-3634: ensure jms session is closed for oneway requests"
+        },
+        {
+            "c_hash": "b7642339",
+            "date": "2010-08-05 10:35:07 +0000",
+            "comment": "Port the JSONP binding from 2.x to 1.x to help with this conversation http://www.mail-archive.com/dev@tuscany.apache.org/msg13393.html. It's not in the build yet but works in my environment. Hoping that Fabiano will check that it works in his environment."
+        },
+        {
+            "c_hash": "0320b656",
+            "date": "2010-08-05 10:40:20 +0000",
+            "comment": "As per previous commit comment I didn't mean to include these in the build just yet"
+        },
+        {
+            "c_hash": "290a11ba",
+            "date": "2010-08-05 15:16:43 +0000",
+            "comment": "Add a port of the 2.x version of the JSON databinding. This works with the JSONP binding. If I apply the 2.x changes to the existing JSON databinding the I can get the JSONP binding to work but it messes up other bindings, e.g. JSONRPC, which rely on it. These other bindings have been changed for 2.x also. Not in build yet."
+        },
+        {
+            "c_hash": "e64b0292",
+            "date": "2010-08-05 15:20:15 +0000",
+            "comment": "Add new modules but explicitly commented out at the moment"
+        },
+        {
+            "c_hash": "c24ec1b0",
+            "date": "2010-08-05 15:22:30 +0000",
+            "comment": "Convert to use the JSON2x databinding. Sill not in the build."
+        },
+        {
+            "c_hash": "d53e74c4",
+            "date": "2010-08-10 07:05:10 +0000",
+            "comment": "Add assert to test case"
+        },
+        {
+            "c_hash": "100aea1e",
+            "date": "2010-08-26 18:49:53 +0000",
+            "comment": "Updated example to be explicit as to which Java interface the CurrencyConverter service exposes"
+        },
+        {
+            "c_hash": "f3c0844f",
+            "date": "2010-09-01 20:13:23 +0000",
+            "comment": "Removed reference to BBC news feed as it just added more complexity without adding much value as we already demonstrate other RSS and Atom feeds"
+        },
+        {
+            "c_hash": "3b0cd051",
+            "date": "2010-09-01 20:13:39 +0000",
+            "comment": "No need to specify the interface using interface.java as it can be worked out by Tuscany from the WSDL"
+        },
+        {
+            "c_hash": "327b5e25",
+            "date": "2010-09-01 20:13:53 +0000",
+            "comment": "Added better error handling for when the user forgets to run the service/smsgateway-jaxws project first"
+        },
+        {
+            "c_hash": "fa6155ce",
+            "date": "2010-09-04 13:08:21 +0000",
+            "comment": "Remove unused import"
+        },
+        {
+            "c_hash": "6d6c2d72",
+            "date": "2010-09-05 09:53:05 +0000",
+            "comment": "Fix typo"
+        },
+        {
+            "c_hash": "6e2ea28b",
+            "date": "2010-09-13 15:31:14 +0000",
+            "comment": "Reverse incorrect commit r959529"
+        },
+        {
+            "c_hash": "580bd8ee",
+            "date": "2010-09-16 09:45:00 +0000",
+            "comment": "Fix svn properties to ignore generated files"
+        },
+        {
+            "c_hash": "1f5492f4",
+            "date": "2010-09-16 16:52:22 +0000",
+            "comment": "Delete .project files from svn"
+        },
+        {
+            "c_hash": "df7805a1",
+            "date": "2010-09-16 16:59:13 +0000",
+            "comment": "Add resources directory to make eclipse project files generation work correctly (TUSCANY-3676)"
+        },
+        {
+            "c_hash": "32217138",
+            "date": "2010-09-16 17:05:35 +0000",
+            "comment": "Fix svn properties to ignore generated files"
+        },
+        {
+            "c_hash": "4d82126e",
+            "date": "2010-09-16 17:23:58 +0000",
+            "comment": "Delete .project file from svn"
+        },
+        {
+            "c_hash": "f6b774ec",
+            "date": "2010-09-16 19:56:41 +0000",
+            "comment": "Merge commit r996380 from 1.6.1 branch"
+        },
+        {
+            "c_hash": "aad5c5d6",
+            "date": "2010-09-16 20:13:11 +0000",
+            "comment": "Merge commits r996988, r996991, r996994, r996998, r997259 and r997886 from 1.6.1 branch (TUSCANY-3676)"
+        },
+        {
+            "c_hash": "534d428b",
+            "date": "2010-09-16 20:15:32 +0000",
+            "comment": "Merge commit r997254 from 1.6.1 branch"
+        },
+        {
+            "c_hash": "cf4cc276",
+            "date": "2010-09-16 20:18:34 +0000",
+            "comment": "Merge commit r997683 from 1.6.1 branch"
+        },
+        {
+            "c_hash": "09a2b1cc",
+            "date": "2010-09-16 20:31:29 +0000",
+            "comment": "Merge commit r997917 from 1.6.1 branch"
+        },
+        {
+            "c_hash": "fee562fe",
+            "date": "2010-09-22 18:23:40 +0000",
+            "comment": "TUSCANY-3683: Fix exception when RMI service is promoted"
+        },
+        {
+            "c_hash": "0138e847",
+            "date": "2010-09-29 09:23:57 +0000",
+            "comment": "TUSCANY-3696 - Support parameter of type array in the JSONP binding."
+        },
+        {
+            "c_hash": "c87323e1",
+            "date": "2010-09-29 10:02:48 +0000",
+            "comment": "Remove commented out cruft"
+        },
+        {
+            "c_hash": "cffad9a9",
+            "date": "2010-09-29 15:31:54 +0000",
+            "comment": "TUSCANY-3696 - and make the array changes work with void input and output parameters"
+        },
+        {
+            "c_hash": "515b6b16",
+            "date": "2010-09-30 15:20:02 +0000",
+            "comment": "Add the test case from JSONP to check if JSONRPC covers the same cases. Not all tests enabled yet."
+        },
+        {
+            "c_hash": "3479a21e",
+            "date": "2010-10-06 12:06:59 +0000",
+            "comment": "TUSCANY-3698: Apply patch from Padraig Myers to update jms binding exception handling to return more info with  unchecked exceptions. And associated itest updates"
+        },
+        {
+            "c_hash": "9e749288",
+            "date": "2010-10-06 13:40:42 +0000",
+            "comment": "TUSCANY-3696 - add more checking for null response."
+        },
+        {
+            "c_hash": "3ab144ab",
+            "date": "2010-10-12 15:16:54 +0000",
+            "comment": "Add primitive type test and take account of it in the temporary databinding that jsonp uses."
+        },
+        {
+            "c_hash": "ca1828b3",
+            "date": "2010-10-25 07:30:06 +0000",
+            "comment": "TUSCANY-3747: Temporarily disable the failing tests"
+        },
+        {
+            "c_hash": "47c9498c",
+            "date": "2010-10-25 08:24:21 +0000",
+            "comment": "Merge r998020 Generate build.xml instead of build-dependency.xml"
+        },
+        {
+            "c_hash": "f0142df8",
+            "date": "2010-10-25 08:55:14 +0000",
+            "comment": "Merge r998069 Add build.xml file with generated dependencies"
+        },
+        {
+            "c_hash": "f4f3d6cf",
+            "date": "2010-10-25 09:08:36 +0000",
+            "comment": "Merge r998082 Add build.xml file with generated dependencies"
+        },
+        {
+            "c_hash": "c0bf795c",
+            "date": "2010-10-25 09:11:15 +0000",
+            "comment": "Merge r998083 Update recommended MAVEN_OPTS setting"
+        },
+        {
+            "c_hash": "6babd321",
+            "date": "2010-10-25 09:13:35 +0000",
+            "comment": "Merge r998155 Delete generated build.xml files from svn"
+        },
+        {
+            "c_hash": "7d423041",
+            "date": "2010-10-25 09:17:56 +0000",
+            "comment": "Merge r998237 Add build.xml file to svn with generated dependencies"
+        },
+        {
+            "c_hash": "eeaf09d1",
+            "date": "2010-10-25 09:22:16 +0000",
+            "comment": "Merge r998238 Add source directory to make the generated build.xml file work correctly"
+        },
+        {
+            "c_hash": "a574e619",
+            "date": "2010-10-25 09:24:26 +0000",
+            "comment": "Merge r998247 Generate a build.xml file from the maven build"
+        },
+        {
+            "c_hash": "52d90d79",
+            "date": "2010-10-25 09:26:33 +0000",
+            "comment": "Merge r998248 Correct dependency in pom so that generated build.xml file is correct"
+        },
+        {
+            "c_hash": "23d5d145",
+            "date": "2010-10-25 09:33:49 +0000",
+            "comment": "Merge r998250 Replace generated build.xml file by a handwritten one"
+        },
+        {
+            "c_hash": "4f2730e7",
+            "date": "2010-10-25 09:41:33 +0000",
+            "comment": "Merge r998257 Fix code for clean target in generated build.xml files (TUSCANY-3680)"
+        },
+        {
+            "c_hash": "0452450c",
+            "date": "2010-10-25 09:43:19 +0000",
+            "comment": "Merge r998259 Add build.xml file to tutorials/store directory"
+        },
+        {
+            "c_hash": "7d800636",
+            "date": "2010-10-25 09:45:21 +0000",
+            "comment": "Merge r998270 Add build.xml file to demos directory"
+        },
+        {
+            "c_hash": "ebda9273",
+            "date": "2010-10-25 09:50:13 +0000",
+            "comment": "Merge r998295 Fix code for \"clean\" target in build.xml files (TUSCANY-3680)"
+        },
+        {
+            "c_hash": "8a579cde",
+            "date": "2010-10-25 09:52:38 +0000",
+            "comment": "Merge r998324 Fix code for \"clean\" target in build.xml files (TUSCANY-3680)"
+        },
+        {
+            "c_hash": "4002b74d",
+            "date": "2010-10-25 09:55:12 +0000",
+            "comment": "Merge r998328 Add missing code generation to build.xml file"
+        },
+        {
+            "c_hash": "b3404e08",
+            "date": "2010-10-25 09:57:40 +0000",
+            "comment": "Merge r998330 Make \"compile\" the default target in build.xml"
+        },
+        {
+            "c_hash": "13f7cb8d",
+            "date": "2010-10-25 09:59:26 +0000",
+            "comment": "Merge r998332 Fix README references to incorrect module name"
+        },
+        {
+            "c_hash": "cce99bad",
+            "date": "2010-10-25 10:04:51 +0000",
+            "comment": "Merge r998341 Add build.xml to samples directory"
+        },
+        {
+            "c_hash": "e73ee25c",
+            "date": "2010-10-25 10:06:35 +0000",
+            "comment": "Merge r998364 Fix code for \"clean\" target in build.xml file (TUSCANY-3680)"
+        },
+        {
+            "c_hash": "2699da26",
+            "date": "2010-10-25 10:08:21 +0000",
+            "comment": "Merge r998365 Fix svn:ignore property to add build.xml"
+        },
+        {
+            "c_hash": "6ad82391",
+            "date": "2010-10-25 10:10:24 +0000",
+            "comment": "Merge r998367 Reorder modules to satisfy dependency relationships"
+        },
+        {
+            "c_hash": "e781e715",
+            "date": "2010-10-25 10:12:07 +0000",
+            "comment": "Merge r998370 Reorder modules to satisfy dependency relationships"
+        },
+        {
+            "c_hash": "20fc2d12",
+            "date": "2010-10-25 10:45:46 +0000",
+            "comment": "Merge r998521 Reorganize directory structure to make import into Eclipse work"
+        },
+        {
+            "c_hash": "a932bc07",
+            "date": "2010-10-25 10:50:48 +0000",
+            "comment": "Merge r999442 TUSCANY-1794: Exclude geronimo-activation_1.1_spec dependency from pom.xml"
+        },
+        {
+            "c_hash": "def6515e",
+            "date": "2010-10-25 10:55:06 +0000",
+            "comment": "Merge r999898 Change junit dependency to test scope"
+        },
+        {
+            "c_hash": "f46ab064",
+            "date": "2010-10-25 10:56:45 +0000",
+            "comment": "Merge r999899 Change junit dependency to test scope"
+        },
+        {
+            "c_hash": "a1ccd4fe",
+            "date": "2010-10-25 10:58:50 +0000",
+            "comment": "Merge r999901 Fix incorrect version number for commons-lang and exclude junit dependencies"
+        },
+        {
+            "c_hash": "850fbd15",
+            "date": "2010-10-25 11:00:44 +0000",
+            "comment": "Merge r999902 Exclude geronimo-activation_1.1_spec and junit dependencies"
+        },
+        {
+            "c_hash": "018a7e81",
+            "date": "2010-10-25 11:03:43 +0000",
+            "comment": "Merge r999904 Unzip files to target/database and target/classes before running sample (see TUSCANY-1994)"
+        },
+        {
+            "c_hash": "d5963681",
+            "date": "2010-10-25 11:05:50 +0000",
+            "comment": "Merge r999910 Update instructions for running this sample without needing to compile it first, and document the issue described in TUSCANY-1994"
+        },
+        {
+            "c_hash": "60918303",
+            "date": "2010-10-25 11:17:07 +0000",
+            "comment": "Merge r999920 Keep the generated tuscany-sca-manifest.jar in sync with the contents of the lib directory"
+        },
+        {
+            "c_hash": "27001499",
+            "date": "2010-10-25 11:18:51 +0000",
+            "comment": "Merge r999921 Exclude generated eclipse project files from the source distribution"
+        },
+        {
+            "c_hash": "a3788228",
+            "date": "2010-10-25 11:27:26 +0000",
+            "comment": "Merge r999922 Exclude generated eclipse project files from the binary distribution and fix other inconsistencies"
+        },
+        {
+            "c_hash": "19e1a41f",
+            "date": "2010-10-25 11:29:38 +0000",
+            "comment": "Merge r1000026 Add junit test dependency"
+        },
+        {
+            "c_hash": "491fe97d",
+            "date": "2010-10-25 11:34:22 +0000",
+            "comment": "Merge r1000235 TUSCANY-3037: Don't call setBody() if the message body hasn't changed"
+        },
+        {
+            "c_hash": "f4061a0d",
+            "date": "2010-10-25 11:40:15 +0000",
+            "comment": "Merge r1000237 Fix confusing prompt message"
+        },
+        {
+            "c_hash": "1e477cdf",
+            "date": "2010-10-25 11:42:26 +0000",
+            "comment": "Merge r1000266 Fix notification sample build.xml and README files to provide clear instructions that work"
+        },
+        {
+            "c_hash": "94e40f1f",
+            "date": "2010-10-25 11:44:15 +0000",
+            "comment": "Merge r1000425 Update CORBA sample READMEs to include instructions for using ant"
+        },
+        {
+            "c_hash": "366fb9f9",
+            "date": "2010-10-25 11:47:07 +0000",
+            "comment": "Merge r1000563 TUSCANY-3684: Provide additional configuration options for tuscany-maven-ant-generator"
+        },
+        {
+            "c_hash": "7b46fa0f",
+            "date": "2010-10-25 11:49:35 +0000",
+            "comment": "Merge r1000564 TUSCANY-3684: Generate working build.xml file using new configuration options in tuscany-maven-ant-generator"
+        },
+        {
+            "c_hash": "ccae3ea4",
+            "date": "2010-10-25 11:51:55 +0000",
+            "comment": "Merge r1000571 TUSCANY-3684: Update README file to describe building and running the sample using ant"
+        },
+        {
+            "c_hash": "74a4a01f",
+            "date": "2010-10-25 12:23:58 +0000",
+            "comment": "Merge r1000615 TUSCANY-3685: Add a test client that doesn't use JUnit and update the build.xml and README files"
+        },
+        {
+            "c_hash": "f5f6a933",
+            "date": "2010-10-25 12:27:01 +0000",
+            "comment": "Merge r1000619 Tidy up the README instructions to cover all options for building and running"
+        },
+        {
+            "c_hash": "92f258ed",
+            "date": "2010-10-25 12:28:15 +0000",
+            "comment": "Merge r1000626 Tidy up the README instructions to not require compiling before running"
+        },
+        {
+            "c_hash": "00ce5882",
+            "date": "2010-10-25 12:31:06 +0000",
+            "comment": "Merge r1000642 Add code to avoid a hang on exit (workaround for TUSCANY-3277)"
+        },
+        {
+            "c_hash": "1633d4fd",
+            "date": "2010-10-25 12:36:26 +0000",
+            "comment": "Merge r1000768 Fix a number of problems in the README instructions"
+        },
+        {
+            "c_hash": "bc252f9e",
+            "date": "2010-10-25 12:38:50 +0000",
+            "comment": "Merge r1000769 Minor improvements to the README instructions"
+        },
+        {
+            "c_hash": "56fa80bd",
+            "date": "2010-10-25 12:39:48 +0000",
+            "comment": "Merge r1000787 Improvements to the README instructions"
+        },
+        {
+            "c_hash": "cc142c21",
+            "date": "2010-10-25 14:32:29 +0000",
+            "comment": "Merge r1000868 Remove unused dojo dependency"
+        },
+        {
+            "c_hash": "6ef97ffd",
+            "date": "2010-10-25 14:40:35 +0000",
+            "comment": "Merge r1000878 Delete temporary dojo directory after maven packaging"
+        },
+        {
+            "c_hash": "ad49b411",
+            "date": "2010-10-25 14:42:25 +0000",
+            "comment": "Merge r1000887 Include dijit in maven build as well as ant build"
+        },
+        {
+            "c_hash": "1413f33c",
+            "date": "2010-10-25 14:43:56 +0000",
+            "comment": "Merge r1000896 Update README instructions to cover the case of the servlet container not using port 8080"
+        },
+        {
+            "c_hash": "1bf01d20",
+            "date": "2010-10-25 14:45:21 +0000",
+            "comment": "Merge r1000902 Fix problems with the README file"
+        },
+        {
+            "c_hash": "3d3b4a61",
+            "date": "2010-10-25 14:47:08 +0000",
+            "comment": "Merge r1000905 Explain that the WAR file is intentionally omitted from the binary distribution"
+        },
+        {
+            "c_hash": "5a634152",
+            "date": "2010-10-25 14:52:26 +0000",
+            "comment": "Merge r1000963 Fix typos and add maven build information"
+        },
+        {
+            "c_hash": "9f795b7d",
+            "date": "2010-10-25 14:54:15 +0000",
+            "comment": "Merge r1001036 Fix typo on web page"
+        },
+        {
+            "c_hash": "0202337d",
+            "date": "2010-10-25 15:10:57 +0000",
+            "comment": "Merge r1001042 Delete redundant files and redundant entries in pom.xml and build.xml"
+        },
+        {
+            "c_hash": "83780123",
+            "date": "2010-10-25 21:39:01 +0000",
+            "comment": "TUSCANY-3449: Merge r903639 and r904353 from 1.6 branch"
+        },
+        {
+            "c_hash": "4ae6ab21",
+            "date": "2010-10-25 22:04:58 +0000",
+            "comment": "Merge r1001047 Put dojo files in correct location in jar file and include dijit"
+        },
+        {
+            "c_hash": "e299f47f",
+            "date": "2010-10-25 22:11:38 +0000",
+            "comment": "Merge r1001054 Decouple run target from compile target"
+        },
+        {
+            "c_hash": "2ec17b3e",
+            "date": "2010-10-25 22:13:42 +0000",
+            "comment": "Merge r1001060 Describe running and building the demo separately"
+        },
+        {
+            "c_hash": "518354dc",
+            "date": "2010-10-25 22:15:07 +0000",
+            "comment": "Merge r1001069 Describe running and building the demo separately"
+        },
+        {
+            "c_hash": "a286aea1",
+            "date": "2010-10-25 22:17:09 +0000",
+            "comment": "Merge r1001501 Fix typos"
+        },
+        {
+            "c_hash": "93982ede",
+            "date": "2010-10-26 08:46:33 +0000",
+            "comment": "Merge r1001526 TUSCANY-3690: Handle unavailability of live RSS feed or web service by using historical data"
+        },
+        {
+            "c_hash": "1a128c5c",
+            "date": "2010-10-26 08:50:19 +0000",
+            "comment": "Merge r1001528 TUSCANY-3689: Fix corruption of XML document when transformed from XMLStreamReader to NodeInfo"
+        },
+        {
+            "c_hash": "c2efc167",
+            "date": "2010-10-26 08:56:52 +0000",
+            "comment": "Merge r1001690 TUSCANY-3690: Improve error handling and fix problems with local WSDL"
+        },
+        {
+            "c_hash": "bcd598be",
+            "date": "2010-10-26 09:38:51 +0000",
+            "comment": "Merge r1001694 Generate build.xml instead of build-dependency.xml"
+        },
+        {
+            "c_hash": "f10ee345",
+            "date": "2010-10-26 09:42:52 +0000",
+            "comment": "Merge r1001702 Update properties for generated build.xml"
+        },
+        {
+            "c_hash": "a3a6108d",
+            "date": "2010-10-26 09:44:59 +0000",
+            "comment": "Merge r1001709 Add missing samples to README and tidy up some text"
+        },
+        {
+            "c_hash": "c9d163f9",
+            "date": "2010-10-26 09:47:50 +0000",
+            "comment": "Merge r1001710 Fix incorrect substitution parameters in message template"
+        },
+        {
+            "c_hash": "18c277b8",
+            "date": "2010-10-26 09:49:35 +0000",
+            "comment": "Merge r1001737 Fix main class name"
+        },
+        {
+            "c_hash": "2c79721e",
+            "date": "2010-10-26 09:53:34 +0000",
+            "comment": "Merge r1001759 Fix tuscany.version property setting"
+        },
+        {
+            "c_hash": "22b2ad09",
+            "date": "2010-10-26 09:58:34 +0000",
+            "comment": "Merge r1002057 TUSCANY-3692: Fix JavaScript syntax error which was disabling all the scripts for this page"
+        },
+        {
+            "c_hash": "052fc3a5",
+            "date": "2010-10-26 10:05:41 +0000",
+            "comment": "Merge r1002061 TUSCANY-3693: Add missing SCA service definition"
+        },
+        {
+            "c_hash": "344aaedc",
+            "date": "2010-10-26 10:22:05 +0000",
+            "comment": "Merge r1002074 Use hand-built build.xml file containing code to create the sample database"
+        },
+        {
+            "c_hash": "28d9a3a8",
+            "date": "2010-10-26 10:28:52 +0000",
+            "comment": "Merge r1002075 Use hand-built build.xml file containing code to create the sample database"
+        },
+        {
+            "c_hash": "ca418dc5",
+            "date": "2010-10-26 10:31:06 +0000",
+            "comment": "Merge r1002077 Fix cut and paste error"
+        },
+        {
+            "c_hash": "36faccda",
+            "date": "2010-10-26 10:32:55 +0000",
+            "comment": "Merge r1002083 Add run targets to launch the nodes"
+        },
+        {
+            "c_hash": "3837c3c3",
+            "date": "2010-10-26 10:36:45 +0000",
+            "comment": "Merge r1002085 Add explicit ${basedir} references to ensure paths are correct when running from a top-level build"
+        },
+        {
+            "c_hash": "b5ac6560",
+            "date": "2010-10-26 10:38:32 +0000",
+            "comment": "Merge r1002086 Add main class so that a run target is generated in build.xml"
+        },
+        {
+            "c_hash": "8a8b70d4",
+            "date": "2010-10-26 11:05:03 +0000",
+            "comment": "Merge r1002088 Update README instructions"
+        },
+        {
+            "c_hash": "d79990ec",
+            "date": "2010-10-26 11:10:05 +0000",
+            "comment": "Merge r1002090 Use consistent resource exclusion patterns in all build files for the Store tutorial"
+        },
+        {
+            "c_hash": "1bb894a5",
+            "date": "2010-10-26 11:12:17 +0000",
+            "comment": "Merge r1002093 Fix resource exclusion patterns so that files under the target directory aren't incorrectly treated as resources"
+        },
+        {
+            "c_hash": "6070ff6a",
+            "date": "2010-10-26 11:14:03 +0000",
+            "comment": "Merge r1002811 Delete duplicate line"
+        },
+        {
+            "c_hash": "0eb4669a",
+            "date": "2010-10-26 11:16:14 +0000",
+            "comment": "Merge r1002816 Delete duplicate lines"
+        },
+        {
+            "c_hash": "c2652d1a",
+            "date": "2010-10-26 11:19:27 +0000",
+            "comment": "Merge r1002831 TUSCANY-3697: Delete incorrect continuation backslashes from XML files"
+        },
+        {
+            "c_hash": "762eb034",
+            "date": "2010-10-26 11:22:54 +0000",
+            "comment": "Merge r1002835 Fix indentation"
+        },
+        {
+            "c_hash": "82071208",
+            "date": "2010-10-26 11:39:04 +0000",
+            "comment": "Merge r1002838 TUSCANY-3680: Fix code in clean target"
+        },
+        {
+            "c_hash": "c92010bf",
+            "date": "2010-10-26 11:45:07 +0000",
+            "comment": "Merge r1002848 Replace tabs by spaces"
+        },
+        {
+            "c_hash": "e04396f0",
+            "date": "2010-10-26 11:46:46 +0000",
+            "comment": "Merge r1002859 Add build.xml to tutorials directory in binary distribution"
+        },
+        {
+            "c_hash": "f70bcf06",
+            "date": "2010-10-26 11:48:27 +0000",
+            "comment": "Merge r1002862 Add instructions for building the tutorial"
+        },
+        {
+            "c_hash": "4f56d19b",
+            "date": "2010-10-26 11:50:17 +0000",
+            "comment": "Merge r1002885 Remove bundle jars under target/.felix from binary distribution"
+        },
+        {
+            "c_hash": "7de878be",
+            "date": "2010-10-26 11:52:28 +0000",
+            "comment": "Merge r1003026 Fix incorrect shutdown instructions"
+        },
+        {
+            "c_hash": "ff2a6318",
+            "date": "2010-10-26 11:54:06 +0000",
+            "comment": "Merge r1003051 Remove redundant classpath entries"
+        },
+        {
+            "c_hash": "13a39c32",
+            "date": "2010-10-26 11:56:08 +0000",
+            "comment": "Merge r1003115 TUSCANY-3699: Fix README to describe using this sample's server"
+        },
+        {
+            "c_hash": "d0a5e0ee",
+            "date": "2010-10-26 12:34:47 +0000",
+            "comment": "Merge r1003117 Fix run target problem with using classes directory instead of jar file, and remove redundant saxon dependency"
+        },
+        {
+            "c_hash": "4a590f69",
+            "date": "2010-10-26 12:37:08 +0000",
+            "comment": "Merge r1003119 Remove redundant saxon dependency"
+        },
+        {
+            "c_hash": "27e9a196",
+            "date": "2010-10-26 12:38:55 +0000",
+            "comment": "Merge r1003122 Remove redundant classpath dependencies"
+        },
+        {
+            "c_hash": "8cd05024",
+            "date": "2010-10-26 12:41:12 +0000",
+            "comment": "Merge r1003145 Add timeout for stock quote service invocation and improve handling of connectivity errors"
+        },
+        {
+            "c_hash": "87ec8727",
+            "date": "2010-10-26 12:47:01 +0000",
+            "comment": "Merge r1006259 TUSCANY-3707: Use a local copy of the Tuscany home page so tests work without an internet connection"
+        },
+        {
+            "c_hash": "f756445b",
+            "date": "2010-10-26 12:50:12 +0000",
+            "comment": "Merge r1006260 TUSCANY-3707: If no internet connection, avoid running tests that need the internet"
+        },
+        {
+            "c_hash": "682eaee2",
+            "date": "2010-10-26 12:52:40 +0000",
+            "comment": "Merge r1006263 Add compile-time dependency on binding-ws-axis2"
+        },
+        {
+            "c_hash": "3633ab7e",
+            "date": "2010-10-26 13:09:45 +0000",
+            "comment": "Merge r1006267 TUSCANY-3706: Add JSR 181 API dependency"
+        },
+        {
+            "c_hash": "622774c3",
+            "date": "2010-10-26 13:16:55 +0000",
+            "comment": "Merge r1006268 TUSCANY-3706: Fix dependencies on JAX-WS APIs and runtime"
+        },
+        {
+            "c_hash": "294c3e56",
+            "date": "2010-10-26 13:18:40 +0000",
+            "comment": "Merge r1006269 Replace compile-time dependency on jaxws-rt by jaxws-api"
+        },
+        {
+            "c_hash": "61035302",
+            "date": "2010-10-26 13:21:29 +0000",
+            "comment": "Merge r1006270 TUSCANY-3706: Add jaxws-api dependencies to jaxws-maven-plugin configuration"
+        },
+        {
+            "c_hash": "d71d63b6",
+            "date": "2010-10-26 13:23:01 +0000",
+            "comment": "Merge r1022053 TUSCANY-3706: Add jaxws-api dependencies to jaxws-maven-plugin configuration"
+        },
+        {
+            "c_hash": "b0f5bdcb",
+            "date": "2010-10-26 13:24:54 +0000",
+            "comment": "Merge r1022055 Replace compile-time dependency on jaxws-rt by jaxws-api"
+        },
+        {
+            "c_hash": "b955ddcb",
+            "date": "2010-10-26 13:31:30 +0000",
+            "comment": "Merge r1022436 TUSCANY-3722: Check for correct versions of jaxws-api jar and pom in local maven repository"
+        },
+        {
+            "c_hash": "4679943f",
+            "date": "2010-10-26 13:42:30 +0000",
+            "comment": "Merge r1022460 TUSCANY-3723: Add erlang modules and samples to binary distribution"
+        },
+        {
+            "c_hash": "261c04e4",
+            "date": "2010-10-26 13:45:06 +0000",
+            "comment": "Merge r1022644 TUSCANY-3726: Include store-dojo and its runtime dependencies in the binary distribution"
+        },
+        {
+            "c_hash": "505fa19a",
+            "date": "2010-10-26 13:46:59 +0000",
+            "comment": "Merge r1022646 TUSCANY-3726: Include store-dojo and its runtime dependencies in the binary distribution"
+        },
+        {
+            "c_hash": "3c2f19d1",
+            "date": "2010-10-26 15:20:21 +0000",
+            "comment": "TUSCANY-3729: Apply r1023208 changes to 1.x trunk except for deletion of unreleased modules and samples"
+        },
+        {
+            "c_hash": "48ae3579",
+            "date": "2010-10-26 16:09:08 +0000",
+            "comment": "Merge r1023240 Exclude unwanted files from source distribution"
+        },
+        {
+            "c_hash": "61c47fee",
+            "date": "2010-10-26 16:12:20 +0000",
+            "comment": "Merge r1023372 TUSCANY-3685: Add jar in binary distribution for test classes and resources"
+        },
+        {
+            "c_hash": "1145f79e",
+            "date": "2010-10-26 16:17:56 +0000",
+            "comment": "Merge r1023375 Change run target to unzip jar file into classes directory (fix problem introduced in r1027512)"
+        },
+        {
+            "c_hash": "76961af9",
+            "date": "2010-10-26 16:20:32 +0000",
+            "comment": "Merge r1023378 Replace target/classes by target/demo-bigbank.jar in test classpath"
+        },
+        {
+            "c_hash": "80cd6db7",
+            "date": "2010-10-26 16:22:49 +0000",
+            "comment": "Merge r1023825 TUSCANY-3726: Update jar filtering to exclude the *-dojo jars"
+        },
+        {
+            "c_hash": "a8405710",
+            "date": "2010-10-26 16:24:48 +0000",
+            "comment": "Merge r1023826 Use jar file contributions so that the store tutorial works when running from the binary distribution"
+        },
+        {
+            "c_hash": "dac87fc4",
+            "date": "2010-10-26 16:29:48 +0000",
+            "comment": "Merge r1023849 TUSCANY-3730: Add \"ant setup\" command to create database files needed by store tutorial"
+        },
+        {
+            "c_hash": "ce0512ab",
+            "date": "2010-10-26 16:35:07 +0000",
+            "comment": "Merge r1025503 TUSCANY-3737: Fix conversion from RSS feed to Atom feed to use UTF-8 charset"
+        },
+        {
+            "c_hash": "4a864946",
+            "date": "2010-10-26 16:48:16 +0000",
+            "comment": "Merge r1025535 TUSCANY-3734: Fix incorrect rendering of non-ASCII characters"
+        },
+        {
+            "c_hash": "5102e1de",
+            "date": "2010-10-26 17:20:40 +0000",
+            "comment": "Merge r1025776 TUSCANY-3742: Fix time comparison for If-Modified-Since and If-Unmodified-Since; also merge r1025533 Fix typos"
+        },
+        {
+            "c_hash": "9d032815",
+            "date": "2010-10-26 19:17:45 +0000",
+            "comment": "Merge r1025777 TUSCANY-3743: Return correct response code from If-Unmodified-Since"
+        },
+        {
+            "c_hash": "62f1bbf6",
+            "date": "2010-10-26 19:30:36 +0000",
+            "comment": "Merge r1025782 TUSCANY-3743: Check for correct response code from If-Unmodified-Since"
+        },
+        {
+            "c_hash": "ec0560ca",
+            "date": "2010-10-26 19:36:25 +0000",
+            "comment": "Merge r1025930 Add test to ensure If-Modified-Since returns 304 if feed is unmodified"
+        },
+        {
+            "c_hash": "932b0eb3",
+            "date": "2010-10-26 19:45:47 +0000",
+            "comment": "Merge r1025934 TUSCANY-3735: Don't use HTTP authorization or authentication by default"
+        },
+        {
+            "c_hash": "4dcb5698",
+            "date": "2010-10-26 19:58:29 +0000",
+            "comment": "Merge r1026240 Change RSS feed to Atom feed so that it works with the atomAggregator service"
+        },
+        {
+            "c_hash": "68733de4",
+            "date": "2010-10-26 20:00:25 +0000",
+            "comment": "Merge r1026251 Remove explicit host name and port number from sample files"
+        },
+        {
+            "c_hash": "f4b59e44",
+            "date": "2010-10-26 20:02:06 +0000",
+            "comment": "Merge r1026272 Add note to README about possible delays receiving chat messages"
+        },
+        {
+            "c_hash": "db28a422",
+            "date": "2010-10-26 20:04:56 +0000",
+            "comment": "Merge r1026863 TUSCANY-3678: Add description of remaining differences between source and binary distributions"
+        },
+        {
+            "c_hash": "9ac96ad6",
+            "date": "2010-10-26 20:23:37 +0000",
+            "comment": "Merge r1027728 Update version number of jar file in README description"
+        },
+        {
+            "c_hash": "4953d28f",
+            "date": "2010-10-26 20:44:55 +0000",
+            "comment": "Merge r1027738 Change release date and update list of changes"
+        },
+        {
+            "c_hash": "26235293",
+            "date": "2010-10-27 15:55:37 +0000",
+            "comment": "TUSCANY-3758: Exclude zipcode-jaxws from the build"
+        },
+        {
+            "c_hash": "9874e4fd",
+            "date": "2010-10-27 21:26:27 +0000",
+            "comment": "Merge remaining r743192 changes from 2.x to 1.x and add a new itest for @XmlJavaTypeAdapter"
+        },
+        {
+            "c_hash": "8f1fbdca",
+            "date": "2010-10-28 16:27:41 +0000",
+            "comment": "Merge r1028371 TUSCANY-3759: Document Tuscany Erlang binding incompatibility with current Erlang/OTP runtime"
+        },
+        {
+            "c_hash": "2126d5f0",
+            "date": "2010-10-29 09:29:36 +0000",
+            "comment": "Merge r1028654 TUSCANY-3759: Move up to latest jinterface version"
+        },
+        {
+            "c_hash": "580207ea",
+            "date": "2010-10-29 09:39:25 +0000",
+            "comment": "Merge r1028655 TUSCANY-3759: Add code to read stdin and stderr from spawned epmd process and reverse changes made by commit r1028378"
+        },
+        {
+            "c_hash": "320bf95e",
+            "date": "2010-10-29 11:48:05 +0000",
+            "comment": "Remove SNAPSHOT from namespace string"
+        },
+        {
+            "c_hash": "10a04a9c",
+            "date": "2010-10-29 13:29:56 +0000",
+            "comment": "Merge r1028725 Update LICENSE file to match the binary distribution lib directory contents"
+        },
+        {
+            "c_hash": "edffb0c8",
+            "date": "2010-10-29 14:04:54 +0000",
+            "comment": "Merge r1028751 Update CHANGES file"
+        },
+        {
+            "c_hash": "1a669cc6",
+            "date": "2010-10-29 14:39:16 +0000",
+            "comment": "Merge r1028770 Update LICENSE file"
+        },
+        {
+            "c_hash": "8717cc2f",
+            "date": "2010-10-29 14:41:00 +0000",
+            "comment": "Merge r1028771 Update CHANGES file"
+        },
+        {
+            "c_hash": "c499dcbb",
+            "date": "2010-10-30 10:49:53 +0000",
+            "comment": "Merge r1029014 TUSCANY-3761: Pass correct arguments from node-launcher to the domain manager"
+        },
+        {
+            "c_hash": "a479dc04",
+            "date": "2010-10-30 11:02:01 +0000",
+            "comment": "Merge r1029018 Update CHANGES file"
+        },
+        {
+            "c_hash": "81c43ee9",
+            "date": "2010-10-30 18:58:55 +0000",
+            "comment": "Merge r1029129 Fix incorrect war name to exclude from binary distribution"
+        },
+        {
+            "c_hash": "611a848e",
+            "date": "2010-10-30 19:06:16 +0000",
+            "comment": "Merge r1029161 Update CHANGES file"
+        },
+        {
+            "c_hash": "5621456b",
+            "date": "2010-11-01 17:29:29 +0000",
+            "comment": "Wanted to try some concurrent calls to an COMPOSITE scoped component to make sure it runs OK so though it may be useful to start a test for it. Don't think we have one already. If someone can point me at one I can just ditch this. Not in the build yet."
+        },
+        {
+            "c_hash": "ca0938fe",
+            "date": "2010-11-02 14:46:14 +0000",
+            "comment": "Merge r1030063 TUSCANY-3762: Fix Eclipse feature/plugin installation issues"
+        },
+        {
+            "c_hash": "4d284f2f",
+            "date": "2010-11-02 14:50:55 +0000",
+            "comment": "Merge r1030071 TUSCANY-3762: Delete files moved to about_files directory"
+        },
+        {
+            "c_hash": "bf1ee313",
+            "date": "2010-11-02 21:21:20 +0000",
+            "comment": "Fix copyright notice dates"
+        },
+        {
+            "c_hash": "2405dbac",
+            "date": "2010-11-02 21:27:11 +0000",
+            "comment": "Merge r1030212 TUSCANY-3764: Fix problems and inconsistencies in LICENSE and NOTICE files"
+        },
+        {
+            "c_hash": "933b0e5c",
+            "date": "2010-11-03 07:33:25 +0000",
+            "comment": "Merge r1030346 Update CHANGES file"
+        },
+        {
+            "c_hash": "34e8deb0",
+            "date": "2010-11-03 12:01:06 +0000",
+            "comment": "Merge r1030417 TUSCANY-3762: Update build.properties file"
+        },
+        {
+            "c_hash": "20b040ed",
+            "date": "2010-11-03 20:21:07 +0000",
+            "comment": "Merge r1030643 TUSCANY-3765: Ensure all classes produced by the build are compatible with JDK 5"
+        },
+        {
+            "c_hash": "5b3682dd",
+            "date": "2010-11-03 21:02:22 +0000",
+            "comment": "Merge r1030676 Add a note to RELEASE_NOTES mentioning the Tuscany Eclipse update site"
+        },
+        {
+            "c_hash": "0b658f26",
+            "date": "2010-11-03 21:05:39 +0000",
+            "comment": "Merge r1030679 Update CHANGES file"
+        },
+        {
+            "c_hash": "eaddf476",
+            "date": "2010-11-07 17:12:30 +0000",
+            "comment": "Add test for abstract exceptions"
+        },
+        {
+            "c_hash": "1a043479",
+            "date": "2010-11-09 15:16:26 +0000",
+            "comment": "TUSCANY-3770: Remove thread message context on completion of each request"
+        },
+        {
+            "c_hash": "00374a38",
+            "date": "2010-11-10 12:37:38 +0000",
+            "comment": "TUSCANY-3778 - changes to demonstrate the issues described in the JIRA. The failing tests are commented out."
+        },
+        {
+            "c_hash": "d0096b43",
+            "date": "2010-11-10 16:52:42 +0000",
+            "comment": "Add test code to demonstrate problem with WSDL generation when using @XmlJavaTypeAdapter (see TUSCANY-3779)"
+        },
+        {
+            "c_hash": "445872a6",
+            "date": "2010-11-10 20:10:25 +0000",
+            "comment": "Merge r1033686 TUSCANY-3780: Avoid deleting \"build\" directory in maven-incremental-build from the source distribution"
+        },
+        {
+            "c_hash": "b34936c8",
+            "date": "2010-11-10 20:45:41 +0000",
+            "comment": "Merge r1033698 Update CHANGES file"
+        },
+        {
+            "c_hash": "f5a9afab",
+            "date": "2010-11-11 10:09:39 +0000",
+            "comment": "Remove commenting out of modules included by mistake in revision r1030068 (fix for TUSCANY-3762)"
+        },
+        {
+            "c_hash": "e09f64f9",
+            "date": "2010-11-12 10:06:06 +0000",
+            "comment": "Fix problem running mvn eclipse:eclipse caused by changes for r1030068 (part 1)"
+        },
+        {
+            "c_hash": "4b75143e",
+            "date": "2010-11-12 10:07:49 +0000",
+            "comment": "Fix problem running mvn eclipse:eclipse caused by changes for r1030068 (part 2)"
+        },
+        {
+            "c_hash": "29612aa2",
+            "date": "2010-11-12 10:10:17 +0000",
+            "comment": "Fix problem running mvn eclipse:eclipse caused by changes for r1030068 (part 3)"
+        },
+        {
+            "c_hash": "8dded8aa",
+            "date": "2010-11-12 14:19:11 +0000",
+            "comment": "Merge r1034402 Fix errors from project org.apache.tuscany.sca.core when imported into Eclipse"
+        },
+        {
+            "c_hash": "907d7450",
+            "date": "2010-11-14 21:41:26 +0000",
+            "comment": "Merge r1025065 TUSCANY-3762: Move maven-antrun-plugin to install phase"
+        },
+        {
+            "c_hash": "07bbd80c",
+            "date": "2010-11-14 21:42:48 +0000",
+            "comment": "Merge r1035066 TUSCANY-3762: Fix problems with build.properties file"
+        },
+        {
+            "c_hash": "64dc03d1",
+            "date": "2010-11-14 21:45:57 +0000",
+            "comment": "Merge r1035067 TUSCANY-3762: Move filtered resources into new filtered-resources directory"
+        },
+        {
+            "c_hash": "235bf6f9",
+            "date": "2010-11-14 21:48:14 +0000",
+            "comment": "Merge r1035075 TUSCANY-3762: Fix comments in pom.xml files and clean up handling of filtered resource files"
+        },
+        {
+            "c_hash": "3dfa4a3e",
+            "date": "2010-11-15 19:01:17 +0000",
+            "comment": "Merge r1035254 TUSCANY-3762: Add source distribution exclusions for files generated from filtered-resources/*"
+        },
+        {
+            "c_hash": "a1ab272f",
+            "date": "2010-11-17 19:20:51 +0000",
+            "comment": "TUSCANY-3789: Define project.build.sourceEncoding property in top-level pom.xml"
+        },
+        {
+            "c_hash": "3fffb603",
+            "date": "2010-11-18 17:06:10 +0000",
+            "comment": "TUSCANY-3778: Fix WSDL generation and enable commented out tests"
+        },
+        {
+            "c_hash": "139d1a22",
+            "date": "2010-11-19 22:08:18 +0000",
+            "comment": "TUSCANY-3778: Fix namespace inconsistency in the 1.x fix committed under r1036533"
+        },
+        {
+            "c_hash": "d82ec597",
+            "date": "2010-11-23 11:43:20 +0000",
+            "comment": "TUSCANY-3797: Generate WSDL with xs:anyType for dynamic SDO DataObject"
+        },
+        {
+            "c_hash": "5d42c922",
+            "date": "2010-11-25 12:02:58 +0000",
+            "comment": "Add test for abstract exception (marked @Ignore) and add test for List type"
+        },
+        {
+            "c_hash": "d2c1d838",
+            "date": "2010-11-25 18:01:27 +0000",
+            "comment": "Refactor as a test framework and add more tests"
+        },
+        {
+            "c_hash": "88ad4b0e",
+            "date": "2010-11-25 20:44:20 +0000",
+            "comment": "TUSCANY-3747: disable another test with similar failure symptoms"
+        },
+        {
+            "c_hash": "feed3bc0",
+            "date": "2010-11-25 20:46:27 +0000",
+            "comment": "Add saaj-api to endorsed directory to fix build failure on JDK 5"
+        },
+        {
+            "c_hash": "1431e205",
+            "date": "2010-11-26 15:34:00 +0000",
+            "comment": "Add itest/wsdlgen-verify to pom.xml"
+        },
+        {
+            "c_hash": "6493309f",
+            "date": "2010-11-28 07:06:55 +0000",
+            "comment": "Remvoving empty folder"
+        },
+        {
+            "c_hash": "d0a2daee",
+            "date": "2010-11-28 07:54:35 +0000",
+            "comment": "TUSCANY-3747 - Adjusting test case to expected behaviour"
+        },
+        {
+            "c_hash": "8434a895",
+            "date": "2010-11-30 18:04:47 +0000",
+            "comment": "TUSCANY-3747: Update result comparison code so that it works on JDK 5 and JDK 6"
+        },
+        {
+            "c_hash": "20aa700b",
+            "date": "2010-12-01 21:08:32 +0000",
+            "comment": "TUSCANY-3802: Throw test exceptions back to JUnit"
+        },
+        {
+            "c_hash": "5065427a",
+            "date": "2010-12-01 21:35:25 +0000",
+            "comment": "TUSCANY-3802: Temporarily disable two failing tests"
+        },
+        {
+            "c_hash": "9f5559df",
+            "date": "2010-12-02 12:47:20 +0000",
+            "comment": "TUSCANY-3806: Close the SCA domain after running the tests"
+        },
+        {
+            "c_hash": "cc433f62",
+            "date": "2010-12-02 13:03:23 +0000",
+            "comment": "TUSCANY-3804: Handle input and output wrappers separately"
+        },
+        {
+            "c_hash": "86fd2134",
+            "date": "2010-12-02 13:07:30 +0000",
+            "comment": "TUSCANY-3802: Remove one @Ignore annotation and update another to identify the correct JIRA"
+        },
+        {
+            "c_hash": "aa03bd5e",
+            "date": "2010-12-03 17:07:02 +0000",
+            "comment": "TUSCANY-3298: Enable JAXB wrappers for WSDL generation"
+        },
+        {
+            "c_hash": "59c85d22",
+            "date": "2010-12-03 20:50:18 +0000",
+            "comment": "Refactor into framework and separate test cases, and add more tests"
+        },
+        {
+            "c_hash": "8f01554b",
+            "date": "2010-12-03 20:52:19 +0000",
+            "comment": "Add more tests"
+        },
+        {
+            "c_hash": "4a09d7ae",
+            "date": "2010-12-03 21:18:27 +0000",
+            "comment": "TUSCANY-3805: Fix compilation error"
+        },
+        {
+            "c_hash": "bb6ce093",
+            "date": "2010-12-04 09:32:09 +0000",
+            "comment": "TUSCANY-3800: Generate correct WSDL for two-dimensional arrays"
+        },
+        {
+            "c_hash": "a17049e5",
+            "date": "2010-12-04 09:40:04 +0000",
+            "comment": "TUSCANY-3800: Add test for multi-dimensional array type"
+        },
+        {
+            "c_hash": "063a0ed4",
+            "date": "2010-12-04 09:40:44 +0000",
+            "comment": "Print WSDL once only"
+        },
+        {
+            "c_hash": "b71bc737",
+            "date": "2010-12-04 10:04:06 +0000",
+            "comment": "Add test for three-dimensional array"
+        },
+        {
+            "c_hash": "c40aed3c",
+            "date": "2011-02-08 15:58:16 +0000",
+            "comment": "TUSCANY-3834 - Extend the test case to look at exceptions thrown from within @Destroy operations."
+        },
+        {
+            "c_hash": "c47ac4de",
+            "date": "2011-02-09 11:47:36 +0000",
+            "comment": "Target shouldn't be checked in"
+        },
+        {
+            "c_hash": "33235ea1",
+            "date": "2011-02-09 11:49:49 +0000",
+            "comment": "Add ignores"
+        },
+        {
+            "c_hash": "61b2f7e5",
+            "date": "2011-02-09 12:08:42 +0000",
+            "comment": "update references to 1.6.1-SNAPSHOT"
+        },
+        {
+            "c_hash": "27aeef31",
+            "date": "2011-02-09 12:13:50 +0000",
+            "comment": "Add ignores"
+        },
+        {
+            "c_hash": "d0056bd7",
+            "date": "2011-02-09 13:54:03 +0000",
+            "comment": "fix another 1.6.1-SNAPSHOT reference"
+        },
+        {
+            "c_hash": "2bed1d6d",
+            "date": "2011-02-09 14:01:46 +0000",
+            "comment": "TUSCANY-3834 - continue stopping components in the case of exceptions thrown during a previous component stop."
+        },
+        {
+            "c_hash": "d6453161",
+            "date": "2011-02-09 14:04:21 +0000",
+            "comment": "add init and concurrency tests to build."
+        },
+        {
+            "c_hash": "52f1209d",
+            "date": "2011-02-21 13:51:58 +0000",
+            "comment": "TUSCANY-3834: Update so that exceptions during stop processing use the Monitor to log the exception"
+        },
+        {
+            "c_hash": "fd514854",
+            "date": "2011-03-27 14:02:43 +0000",
+            "comment": "Add test for @WebParam annotation"
+        },
+        {
+            "c_hash": "a065ff60",
+            "date": "2011-03-27 14:49:38 +0000",
+            "comment": "Add exclusions for santuario and opensaml to prevent mvn warnings"
+        },
+        {
+            "c_hash": "3b1cf68a",
+            "date": "2011-03-29 20:47:44 +0000",
+            "comment": "TUSCANY-3822: call PolicyHandler.afterInvoke() with outbound MessageContext containing response message"
+        },
+        {
+            "c_hash": "8703b862",
+            "date": "2011-03-29 21:31:15 +0000",
+            "comment": "TUSCANY-3838: call PolicyHandler.afterInvoke() when AxisFault is thrown"
+        },
+        {
+            "c_hash": "c25cc8cf",
+            "date": "2011-04-13 10:07:06 +0000",
+            "comment": "Delete redundant build.xml file"
+        },
+        {
+            "c_hash": "2fc15f93",
+            "date": "2011-04-13 10:10:58 +0000",
+            "comment": "Remove reference to 1.6.1"
+        },
+        {
+            "c_hash": "a1c69704",
+            "date": "2011-04-13 10:26:04 +0000",
+            "comment": "TUSCANY-3858: Eclipse update site doesn't build correctly from a top-level build"
+        },
+        {
+            "c_hash": "59cca248",
+            "date": "2011-04-13 10:27:18 +0000",
+            "comment": "Avoid copying duplicate resource files to target/classes directory"
+        },
+        {
+            "c_hash": "da6b0fb1",
+            "date": "2011-04-13 10:32:15 +0000",
+            "comment": "TUSCANY-3859: Update \"no namespace\" type references in xs:extension schema elements"
+        },
+        {
+            "c_hash": "d55275c9",
+            "date": "2011-04-13 11:01:48 +0000",
+            "comment": "Update 1.6.1-SNAPSHOT pom references"
+        },
+        {
+            "c_hash": "d90dc7ef",
+            "date": "2011-04-13 11:05:22 +0000",
+            "comment": "Remove repositories at ws.zones.apache.org"
+        },
+        {
+            "c_hash": "abe6e5e8",
+            "date": "2011-04-13 11:07:42 +0000",
+            "comment": "Use new aggregated repository URL for Apache snapshots"
+        },
+        {
+            "c_hash": "c04812b6",
+            "date": "2011-04-13 11:22:58 +0000",
+            "comment": "Update copyright dates"
+        },
+        {
+            "c_hash": "9099eb90",
+            "date": "2011-04-13 20:37:51 +0000",
+            "comment": "Use filtering to put correct version number into distribution tutorials/store/README file"
+        },
+        {
+            "c_hash": "960090f7",
+            "date": "2011-04-20 09:08:04 +0000",
+            "comment": "Add test for ServiceReference type"
+        },
+        {
+            "c_hash": "446fe076",
+            "date": "2011-04-23 21:16:54 +0000",
+            "comment": "TUSCANY-2322: print valid XML syntax for BPEL partnerLinkType element in WSDL, and add an itest module to check ?wsdl output"
+        },
+        {
+            "c_hash": "861ca7d4",
+            "date": "2011-04-23 21:23:47 +0000",
+            "comment": "Remove partnerLinkType from test-import.wsdl (tested in jupiter.wsdl instead)"
+        },
+        {
+            "c_hash": "2ef6a29f",
+            "date": "2011-04-23 21:41:55 +0000",
+            "comment": "Add license headers"
+        },
+        {
+            "c_hash": "fd153422",
+            "date": "2011-04-24 20:50:28 +0000",
+            "comment": "Ensure the Tuscany Eclipse plugin release number has 3 digits"
+        },
+        {
+            "c_hash": "b54d27a0",
+            "date": "2011-04-24 20:53:35 +0000",
+            "comment": "Make Ecipse plugin and feature jar names consistent"
+        },
+        {
+            "c_hash": "c1d9b575",
+            "date": "2011-04-25 12:55:04 +0000",
+            "comment": "TUSCANY-3860: Update URL for LICENSE file to point to Eclipse update site on tuscany.apache.org"
+        },
+        {
+            "c_hash": "7b3b4feb",
+            "date": "2011-05-01 10:57:43 +0000",
+            "comment": "TUSCANY-3860: Add /java/sca to URL of Eclipse update site on tuscany.apache.org"
+        },
+        {
+            "c_hash": "d3aab604",
+            "date": "2011-05-01 14:57:07 +0000",
+            "comment": "TUSCANY-3860: Build updatesite contents for site-publish as part of the distribution output"
+        },
+        {
+            "c_hash": "786d5b38",
+            "date": "2011-06-09 09:58:11 +0000",
+            "comment": "TUSCANY-3869: Add tests to 1.x for POJO type in different package than the interface"
+        },
+        {
+            "c_hash": "07d3d639",
+            "date": "2011-08-12 10:52:45 +0000",
+            "comment": "TUSCANY-3919: Fix configuration problems in the calculator-distributed sample"
+        },
+        {
+            "c_hash": "da2660de",
+            "date": "2011-08-21 11:55:43 +0000",
+            "comment": "TUSCANY-2735: Add tests for generic types"
+        },
+        {
+            "c_hash": "01ad36f0",
+            "date": "2011-11-20 21:07:24 +0000",
+            "comment": "Add test for serializing a service reference to XML"
+        },
+        {
+            "c_hash": "b5ba430f",
+            "date": "2011-12-04 11:39:52 +0000",
+            "comment": "TUSCANY-3990: Fix XML syntax errors"
+        },
+        {
+            "c_hash": "030c3eb8",
+            "date": "2011-12-04 13:19:14 +0000",
+            "comment": "Remove unused dependency for commons-httpclient"
+        },
+        {
+            "c_hash": "56100a90",
+            "date": "2011-12-04 17:37:44 +0000",
+            "comment": "TUSCANY-3991: temporarily disable the failing tests"
+        },
+        {
+            "c_hash": "5c5dfdf0",
+            "date": "2011-12-04 18:06:13 +0000",
+            "comment": "Add .htaccess and site--xml.html to svn:ignore property"
+        },
+        {
+            "c_hash": "43b7e8a9",
+            "date": "2011-12-04 18:10:28 +0000",
+            "comment": "TUSCANY-3984: Support binding.ws, interface.wsdl and policySets for serialized service references"
+        },
+        {
+            "c_hash": "3eb5a652",
+            "date": "2011-12-14 12:09:11 +0000",
+            "comment": "TUSCANY-3850: Apply patch from Sebastian Millies to fix RMI bug: ConnectException after component restart"
+        }
+    ]
+}

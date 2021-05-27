@@ -1,0 +1,143 @@
+{
+    "project": "myfaces-portlet-bridge",
+    "git_url": "https://github.com/apache/myfaces-portlet-bridge.git",
+    "last_commit": "27041661",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "9a9932e2",
+            "date": "2007-10-25 13:19:48 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/myfaces/portlet-bridge/trunk@588228 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "e4f15dae",
+            "date": "2007-10-25 13:38:05 +0000",
+            "comment": "https://issues.apache.org/jira/browse/MYFACES-1664 (MYFACES-1664): JSR-301 Implementation, initial commit"
+        },
+        {
+            "c_hash": "46880b8b",
+            "date": "2007-10-25 15:36:43 +0000",
+            "comment": "PORTLETBRIDGE-9"
+        },
+        {
+            "c_hash": "578f8c5b",
+            "date": "2007-10-25 20:27:34 +0000",
+            "comment": "https://issues.apache.org/jira/browse/MYFACES-1664 (MYFACES-1664): JSR-301 Implementation, initial commit"
+        },
+        {
+            "c_hash": "daae6a48",
+            "date": "2007-11-15 20:57:29 +0000",
+            "comment": "PORTLETBRIDGE-4 - Added site documentation"
+        },
+        {
+            "c_hash": "e6747846",
+            "date": "2007-11-16 20:48:15 +0000",
+            "comment": "PORTLETBRIDGE-12: PortletViewHandler - viewId handling"
+        },
+        {
+            "c_hash": "25889fdb",
+            "date": "2007-11-19 16:56:29 +0000",
+            "comment": "Made all files use consistant formatting for CR/LF.  Although svn will will handle this based on the system checking in the code, some of this code came from a windows environment but was checked in using my unix environment.  Therefore the CR/LF's are incorrectly handled."
+        },
+        {
+            "c_hash": "e0fa56d9",
+            "date": "2007-11-21 00:19:55 +0000",
+            "comment": "PORTLETBRIDGE-6: JDK 1.5 Functionality"
+        },
+        {
+            "c_hash": "69315cf8",
+            "date": "2007-11-21 16:48:11 +0000",
+            "comment": "Fixed a few stragglers to the JDK 1.5 checkin."
+        },
+        {
+            "c_hash": "ebdad228",
+            "date": "2007-11-21 18:59:58 +0000",
+            "comment": "PORTLETBRIDGE-13 Switch to new MyFaces Master POM * Reparented master POM * Updated version of JDEV plugin in api and impl * Added Mike Freedman as a contributor * Added Simon Lessard as a developer * Fixed a runtime issue in PortletExternalContextImpl associated with   the JDK 1.5 updates...  My bad..."
+        },
+        {
+            "c_hash": "6c2446bd",
+            "date": "2007-11-21 22:48:41 +0000",
+            "comment": "PORTLETBRIDGE-2:  PortletViewHandlerImpl.renderView() fails if included                   entity acquires response OutputStream PORTLETBRIDGE-3:  Bad init param causes infinite loop PORTLETBRIDGE-14: Setting the request character encoding during a                   RenderRequest"
+        },
+        {
+            "c_hash": "e27054ea",
+            "date": "2007-11-21 23:15:11 +0000",
+            "comment": "Previous patch did not have a parameterized map in BridgeUtils"
+        },
+        {
+            "c_hash": "e371435d",
+            "date": "2007-11-21 23:29:48 +0000",
+            "comment": "Removed unneeded staging repository"
+        },
+        {
+            "c_hash": "e3412167",
+            "date": "2007-11-29 00:39:53 +0000",
+            "comment": "PORTLETBRIDGE-16: Path problems in PortletExternalContextImpl."
+        },
+        {
+            "c_hash": "b7449078",
+            "date": "2007-11-29 00:50:30 +0000",
+            "comment": "PORTLETBRIDGE-17: Bridge faces-config.xml doesn't configure the bridge's StateManager"
+        },
+        {
+            "c_hash": "856ded09",
+            "date": "2007-11-29 01:01:30 +0000",
+            "comment": "Removed more CR/LF's that were incorrectly loaded into the svn respoitory."
+        },
+        {
+            "c_hash": "73535f88",
+            "date": "2007-11-30 18:51:34 +0000",
+            "comment": "PORTLETBRIDGE-18 - thx to Michael Freedman"
+        },
+        {
+            "c_hash": "2369f635",
+            "date": "2007-12-06 19:39:54 +0000",
+            "comment": "PORTLETBRIDGE-19: PortletExternalContextImpl.encodeResourceURL seems to                   return prepend the context path twice"
+        },
+        {
+            "c_hash": "e5e5ac38",
+            "date": "2007-12-19 22:35:06 +0000",
+            "comment": "PORTLETBRIDGE-20: PortletConfig not added to the proper ELContext   Thanks to Michael Freedman for the patch"
+        },
+        {
+            "c_hash": "1d0f5456",
+            "date": "2008-01-08 17:26:34 +0000",
+            "comment": "Makes J2EE annotations available to the project"
+        },
+        {
+            "c_hash": "6ee3f6e8",
+            "date": "2008-01-10 17:27:52 +0000",
+            "comment": "PORTLETBRIDGE-22: Update PortletBridge to latest draft (revision 11) PORTLETBRIDGE-21: Wrong leading slash in BRIDGE_SERVICE_CLASSPATH /GenericFacesPortlet"
+        },
+        {
+            "c_hash": "c5dc1029",
+            "date": "2008-01-30 21:36:25 +0000",
+            "comment": "Update with Patch 19b: (re)Fixes JIRA-Portletbridge-19: Absolute URL processing was broken.  Adds excludedAttributes statement to exclude com.sun.faces.* attributes so RI attrbiutes aren't preserved."
+        },
+        {
+            "c_hash": "a92d0062",
+            "date": "2008-02-12 22:55:45 +0000",
+            "comment": "[maven-release-plugin] prepare release portlet-bridge-1.0.0-alpha"
+        },
+        {
+            "c_hash": "e25557a6",
+            "date": "2008-02-12 22:55:57 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "6412b2c0",
+            "date": "2008-02-14 00:52:30 +0000",
+            "comment": "Added assembly project to make releases easier"
+        },
+        {
+            "c_hash": "696a765e",
+            "date": "2008-02-14 18:40:14 +0000",
+            "comment": "[maven-release-plugin] prepare release portlet-bridge-1.0.0-alpha"
+        },
+        {
+            "c_hash": "27041661",
+            "date": "2008-02-14 18:40:37 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        }
+    ]
+}

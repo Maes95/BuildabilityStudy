@@ -1,0 +1,3438 @@
+{
+    "project": "james-hupa",
+    "git_url": "https://github.com/apache/james-hupa.git",
+    "last_commit": "3c012724",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "a6735c96",
+            "date": "2009-09-04 09:04:09 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/labs/hupa/trunk@811296 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "b88b215d",
+            "date": "2009-09-04 09:05:49 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/labs/hupa/trunk@811299 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "e3b90246",
+            "date": "2009-09-04 09:06:41 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/labs/hupa/trunk@811300 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "3454c9de",
+            "date": "2009-09-04 09:07:37 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/labs/hupa/trunk@811302 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "7e930848",
+            "date": "2009-09-04 09:08:21 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/labs/hupa/trunk@811304 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "81f57396",
+            "date": "2009-09-04 09:09:27 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/labs/hupa/trunk@811305 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "11e8626a",
+            "date": "2009-09-04 09:10:50 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/labs/hupa/trunk@811307 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "17d3c28b",
+            "date": "2009-09-04 09:11:45 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/labs/hupa/trunk@811308 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "f316ef9f",
+            "date": "2009-09-04 09:12:51 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/labs/hupa/trunk@811309 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "1705ce97",
+            "date": "2009-09-04 09:13:38 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/labs/hupa/trunk@811312 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "5eb445d7",
+            "date": "2009-09-04 09:23:13 +0000",
+            "comment": "Fix local maven lib problem when using linux . Thx to Manuel Carrasco for providing a patch ( LABS-432 )"
+        },
+        {
+            "c_hash": "9606cde9",
+            "date": "2009-09-04 09:32:59 +0000",
+            "comment": "cleanup"
+        },
+        {
+            "c_hash": "55c4ed94",
+            "date": "2009-09-04 14:39:19 +0000",
+            "comment": "Rename ExposeMessage* to GetMessageDetails* to better match the usage Start to add Handler to only fetch recent messages. This will improve the overall performance"
+        },
+        {
+            "c_hash": "da355b06",
+            "date": "2009-09-04 18:59:28 +0000",
+            "comment": "Make sure parts with message/rfc822 are handled correctly"
+        },
+        {
+            "c_hash": "c63d7e22",
+            "date": "2009-09-05 19:37:09 +0000",
+            "comment": "only try to close folder if we open it before... (LABS-436)"
+        },
+        {
+            "c_hash": "087aa40e",
+            "date": "2009-09-05 21:02:52 +0000",
+            "comment": "Add support for viewing the original message (LABS-435)"
+        },
+        {
+            "c_hash": "88056c62",
+            "date": "2009-09-06 10:26:11 +0000",
+            "comment": "Logout the user and show an error message if the session expires (LABS-437)"
+        },
+        {
+            "c_hash": "e2b85506",
+            "date": "2009-09-06 11:40:49 +0000",
+            "comment": "set the width of the raw message dialog to something useful"
+        },
+        {
+            "c_hash": "a6737840",
+            "date": "2009-09-06 12:34:29 +0000",
+            "comment": "Fix up text 2 html conversion Remove stupid junit test, not need to test replaceAll..."
+        },
+        {
+            "c_hash": "d7a288ad",
+            "date": "2009-09-06 16:02:52 +0000",
+            "comment": "add logging"
+        },
+        {
+            "c_hash": "f1d7c93c",
+            "date": "2009-09-06 18:09:09 +0000",
+            "comment": "Handle multipart/alternatives correctly"
+        },
+        {
+            "c_hash": "ce282545",
+            "date": "2009-09-07 12:38:19 +0000",
+            "comment": "Add support of configurable location of server's configuration file. Used the patch of Manuel Carrasco (thank you) as basis and modified the patch to work os independent and look for the config under /path/to/webapp/WEB-INF/config/. (LABS-434)"
+        },
+        {
+            "c_hash": "75df74b9",
+            "date": "2009-09-13 08:41:28 +0000",
+            "comment": "display the mail as seen after the details get loaded (LABS-444)"
+        },
+        {
+            "c_hash": "b2261ee0",
+            "date": "2009-09-13 09:01:33 +0000",
+            "comment": "Center the raw message dialogbox and add a header"
+        },
+        {
+            "c_hash": "70c57b78",
+            "date": "2009-09-13 14:19:49 +0000",
+            "comment": "Start to prepare for adding a delete all messages button (LABS-431)"
+        },
+        {
+            "c_hash": "ab312ae0",
+            "date": "2009-09-13 15:05:14 +0000",
+            "comment": "add a delete all messages button (LABS-431)"
+        },
+        {
+            "c_hash": "f5e6085b",
+            "date": "2009-09-13 16:45:29 +0000",
+            "comment": "Add support for canceling / removing uploads. I used the provided patch + updating pom.xml. Thx Manuel Carrasco for the contribution again! (LABS-445)"
+        },
+        {
+            "c_hash": "9b3852d7",
+            "date": "2009-09-13 16:46:47 +0000",
+            "comment": "cancel current upload on on unbinding"
+        },
+        {
+            "c_hash": "c8d681b2",
+            "date": "2009-09-13 16:54:48 +0000",
+            "comment": "Add spanish localization, I have no idea about spanish so time to trus Manuel eh ;) .. Thx to Manuel Carrasco again.. (LABS-446)"
+        },
+        {
+            "c_hash": "6c9bf672",
+            "date": "2009-09-13 17:01:52 +0000",
+            "comment": "Some build improvements and more infos in README.txt. Thx to Manuel Carrasco (LABS-447)"
+        },
+        {
+            "c_hash": "c8265194",
+            "date": "2009-09-13 17:57:40 +0000",
+            "comment": "Cancel editing when user clicks new message button"
+        },
+        {
+            "c_hash": "9be95b92",
+            "date": "2009-09-20 16:14:15 +0000",
+            "comment": "Start to implement marking messages as SEEN/NOT SEEN (LABS-462)"
+        },
+        {
+            "c_hash": "fac3862b",
+            "date": "2009-09-22 09:09:46 +0000",
+            "comment": "move hupa to james as subproject"
+        },
+        {
+            "c_hash": "98bb1a1a",
+            "date": "2009-09-22 10:55:29 +0000",
+            "comment": "start to adjust src to generate website etc"
+        },
+        {
+            "c_hash": "fff2bd89",
+            "date": "2009-09-22 10:57:10 +0000",
+            "comment": "fix copy and paste error"
+        },
+        {
+            "c_hash": "01253684",
+            "date": "2009-09-22 17:48:01 +0000",
+            "comment": "Add support for mark messages as seen/unseen (HUPA-11)"
+        },
+        {
+            "c_hash": "3b92d18f",
+            "date": "2009-09-22 17:51:21 +0000",
+            "comment": "remove unused import"
+        },
+        {
+            "c_hash": "6d83b2af",
+            "date": "2009-09-22 18:39:22 +0000",
+            "comment": "Move enable / disable of buttons to presenter"
+        },
+        {
+            "c_hash": "b30b18a8",
+            "date": "2009-09-23 07:02:56 +0000",
+            "comment": "Use color code (HUPA-27)"
+        },
+        {
+            "c_hash": "38c85429",
+            "date": "2009-09-23 08:34:06 +0000",
+            "comment": "Only add some dummy site stuff"
+        },
+        {
+            "c_hash": "161532b1",
+            "date": "2009-09-25 12:29:53 +0000",
+            "comment": "fix up site.xml"
+        },
+        {
+            "c_hash": "b561f61c",
+            "date": "2009-09-25 15:08:08 +0000",
+            "comment": "Update message count when fetching messages (Hupa-28)"
+        },
+        {
+            "c_hash": "2f8d817b",
+            "date": "2009-09-25 15:08:55 +0000",
+            "comment": "decrease message count when a unread message got expanded"
+        },
+        {
+            "c_hash": "916a8104",
+            "date": "2009-09-25 15:10:11 +0000",
+            "comment": "Update message count when fetching messages (Hupa-28)"
+        },
+        {
+            "c_hash": "517e6bef",
+            "date": "2009-09-25 18:33:09 +0000",
+            "comment": "ignore exception on closing folder"
+        },
+        {
+            "c_hash": "4c649207",
+            "date": "2009-09-29 18:38:11 +0000",
+            "comment": "expire cached IMAPStore objects (HUPA-29)"
+        },
+        {
+            "c_hash": "b037e125",
+            "date": "2009-10-02 11:37:31 +0000",
+            "comment": "upgrade to gwt 1.7.1"
+        },
+        {
+            "c_hash": "ed2a41fd",
+            "date": "2009-10-02 12:22:26 +0000",
+            "comment": "Remove usage of Session and LoginSession (HUPA-32) Detect server status and reuse server session (HUPA-30) Support demo mode (HUPA-31) *** All three patches were contributed by Manuel Carrasco. Thx a bunch:) ***"
+        },
+        {
+            "c_hash": "7203cd98",
+            "date": "2009-10-07 15:32:43 +0000",
+            "comment": "Take care of reconnect on closed imap socket (HUPA-34) and make sure connections get closed on removal from cache (HUPA-33)"
+        },
+        {
+            "c_hash": "6ef9174f",
+            "date": "2009-10-07 16:46:01 +0000",
+            "comment": "Bind PlaceManager to the PlaceChangedEvent"
+        },
+        {
+            "c_hash": "10e21ee8",
+            "date": "2009-10-09 12:08:23 +0000",
+            "comment": "Having a seperate Presenter/View for the IMAPFoldersTree doesn't make to much sense after re-thinking on it"
+        },
+        {
+            "c_hash": "4376b42c",
+            "date": "2009-10-09 12:10:05 +0000",
+            "comment": "Reformat"
+        },
+        {
+            "c_hash": "78fe09b9",
+            "date": "2009-10-15 10:34:46 +0000",
+            "comment": "commit patches for HUPA-38 and Hupa-38. Thx to Manuel Carrasco"
+        },
+        {
+            "c_hash": "011052c0",
+            "date": "2009-10-16 07:46:12 +0000",
+            "comment": "svn ignore"
+        },
+        {
+            "c_hash": "f4ffd0fd",
+            "date": "2009-10-16 09:52:34 +0000",
+            "comment": "Add contributer documents. Thx to Juergen Hoffmann for contributing ! (HUPA-40)"
+        },
+        {
+            "c_hash": "51382340",
+            "date": "2009-10-16 13:35:40 +0000",
+            "comment": "Just add some <br/>'s"
+        },
+        {
+            "c_hash": "b162cc1c",
+            "date": "2009-10-18 11:36:59 +0000",
+            "comment": "add missing link (HUPA-40)"
+        },
+        {
+            "c_hash": "961b8632",
+            "date": "2009-10-23 09:56:45 +0000",
+            "comment": "Replace tabs with spaces. Thx to Manuel Carrasco for this patch"
+        },
+        {
+            "c_hash": "112844cb",
+            "date": "2009-10-23 10:00:50 +0000",
+            "comment": "Add eclipse editings for using right formatter. (HUPA-39)"
+        },
+        {
+            "c_hash": "ff454cac",
+            "date": "2009-10-29 13:24:15 +0000",
+            "comment": "Commit patch for HUPA-44. Increased test coverage, added msg fixtures, many fixes. Thx to Manuel Carrasco!"
+        },
+        {
+            "c_hash": "f78bd1a1",
+            "date": "2009-10-30 13:53:22 +0000",
+            "comment": "Fix failing tests in windows (HUPA-45). Thx again to Manuel Carrasco"
+        },
+        {
+            "c_hash": "32fecdc7",
+            "date": "2009-11-02 12:21:53 +0000",
+            "comment": "Inject the TableModel. Thats better in terms of MVP."
+        },
+        {
+            "c_hash": "0d096ad9",
+            "date": "2009-11-06 15:19:28 +0000",
+            "comment": "Load config file"
+        },
+        {
+            "c_hash": "2935dbfe",
+            "date": "2009-11-07 16:42:17 +0000",
+            "comment": "Remove messages from table as soon as possible"
+        },
+        {
+            "c_hash": "e08ce0d1",
+            "date": "2009-11-07 16:56:23 +0000",
+            "comment": "Show some loading widget while sending message"
+        },
+        {
+            "c_hash": "63a5c890",
+            "date": "2009-11-07 17:02:09 +0000",
+            "comment": "more usefull logging"
+        },
+        {
+            "c_hash": "5a4267a3",
+            "date": "2009-11-07 17:11:55 +0000",
+            "comment": "Remove hardcoded path"
+        },
+        {
+            "c_hash": "d41e5eb8",
+            "date": "2009-11-07 17:13:19 +0000",
+            "comment": "Only some cleanup"
+        },
+        {
+            "c_hash": "4583d9dd",
+            "date": "2009-11-07 17:45:56 +0000",
+            "comment": "Display Loading image while bootstrap app"
+        },
+        {
+            "c_hash": "b5a80e3f",
+            "date": "2009-11-07 20:07:42 +0000",
+            "comment": "Get sure all fields are reset"
+        },
+        {
+            "c_hash": "f7d2b30e",
+            "date": "2009-11-07 20:57:56 +0000",
+            "comment": "fix url"
+        },
+        {
+            "c_hash": "ce6bd8e5",
+            "date": "2009-11-07 21:16:53 +0000",
+            "comment": "javadocs and cleanup"
+        },
+        {
+            "c_hash": "8c01812e",
+            "date": "2009-11-08 11:31:14 +0000",
+            "comment": "Replace gwt-presenter-1.0.0 with gwt-presenter-1.1.0-replace-SNAPSHOT ( this will be the next version of the library)"
+        },
+        {
+            "c_hash": "e979b5bf",
+            "date": "2009-11-09 12:44:44 +0000",
+            "comment": "Work in progress for using PageRequestEvent for navigating"
+        },
+        {
+            "c_hash": "67e69fde",
+            "date": "2009-11-09 15:01:34 +0000",
+            "comment": "Only some cleanup / javadocs"
+        },
+        {
+            "c_hash": "90d22984",
+            "date": "2009-11-09 15:41:59 +0000",
+            "comment": "Correct usage of gwt-presenter for supporting history ( Back/ Forward Button )"
+        },
+        {
+            "c_hash": "c7ed5854",
+            "date": "2009-11-09 16:11:05 +0000",
+            "comment": "Some more cleanup / move classes"
+        },
+        {
+            "c_hash": "2a232295",
+            "date": "2009-11-09 16:24:01 +0000",
+            "comment": "Some nice loader gif"
+        },
+        {
+            "c_hash": "5d71745d",
+            "date": "2009-11-09 16:39:56 +0000",
+            "comment": "cleanup/javadocs"
+        },
+        {
+            "c_hash": "65018ee6",
+            "date": "2009-11-10 13:49:03 +0000",
+            "comment": "Better handling of history"
+        },
+        {
+            "c_hash": "9a4850f7",
+            "date": "2009-11-10 14:06:27 +0000",
+            "comment": "Add Button to refresh current mailtable"
+        },
+        {
+            "c_hash": "32137122",
+            "date": "2009-11-10 18:51:30 +0000",
+            "comment": "Forward/Backward button now work for page navigation (mailtable)"
+        },
+        {
+            "c_hash": "a07328f1",
+            "date": "2009-11-10 19:28:50 +0000",
+            "comment": "Rows per page now work with history.. w0h00"
+        },
+        {
+            "c_hash": "48c3770f",
+            "date": "2009-11-11 12:38:13 +0000",
+            "comment": "Better displaying of email messages (HUPA-47). Thx to Manuel Carrasco !"
+        },
+        {
+            "c_hash": "56bab608",
+            "date": "2009-11-11 17:19:04 +0000",
+            "comment": "better handling of history updates"
+        },
+        {
+            "c_hash": "2fe6be5b",
+            "date": "2009-11-11 19:22:06 +0000",
+            "comment": "Remove the war directory which is not needed when running hosted mode with -war argument"
+        },
+        {
+            "c_hash": "cc2ebbfb",
+            "date": "2009-11-12 11:59:25 +0000",
+            "comment": "reset mailtable on logout"
+        },
+        {
+            "c_hash": "0337b3ee",
+            "date": "2009-11-12 18:17:40 +0000",
+            "comment": "Fix regex bug and configuration file load order (HUPA-48). Thx to Manuel Carrasco again.."
+        },
+        {
+            "c_hash": "3ad22d0c",
+            "date": "2009-11-13 16:08:49 +0000",
+            "comment": "Fix refetching of messages on delete and update row count on PagingOptions"
+        },
+        {
+            "c_hash": "28afa76c",
+            "date": "2009-11-14 16:17:23 +0000",
+            "comment": "fixes dangerous-attributes removal regex (HUPA-52). Thx to Manuel for submitting this patch"
+        },
+        {
+            "c_hash": "7285eeb2",
+            "date": "2009-11-14 16:34:37 +0000",
+            "comment": "Automaticly detect locale (HUPA-21). Thx to Manuel!"
+        },
+        {
+            "c_hash": "5e048df4",
+            "date": "2009-11-14 21:36:18 +0000",
+            "comment": "add german localization"
+        },
+        {
+            "c_hash": "a3b1108d",
+            "date": "2009-11-15 14:56:44 +0000",
+            "comment": "Fix searching in messages"
+        },
+        {
+            "c_hash": "22221a5d",
+            "date": "2009-11-16 10:26:09 +0000",
+            "comment": "Start to add navigation for switching between Email and Addressbook ( coming soon)"
+        },
+        {
+            "c_hash": "0c70b879",
+            "date": "2009-11-16 11:20:04 +0000",
+            "comment": "Searching belongs to IMAPMessageListPresenter/View/Place"
+        },
+        {
+            "c_hash": "e4097d84",
+            "date": "2009-11-16 18:08:11 +0000",
+            "comment": "Remove not needed code"
+        },
+        {
+            "c_hash": "fe283d21",
+            "date": "2009-11-16 20:54:08 +0000",
+            "comment": "Inject HupaMessage/HupaConstants/HupaImageBundle and add PlaceHolder for Contacs"
+        },
+        {
+            "c_hash": "9c53f3cf",
+            "date": "2009-11-16 21:37:34 +0000",
+            "comment": "move some reusable widgets to the widget module"
+        },
+        {
+            "c_hash": "dd753310",
+            "date": "2009-11-18 18:47:14 +0000",
+            "comment": "Fix NPE introduced by myself.. shame on me"
+        },
+        {
+            "c_hash": "b8f18730",
+            "date": "2009-11-18 19:38:48 +0000",
+            "comment": "Use more then one IMAP connection per user (HUPA-51)."
+        },
+        {
+            "c_hash": "ce24bc57",
+            "date": "2009-11-18 20:17:49 +0000",
+            "comment": "Enable javamail session debugging if logger is configured for debugging"
+        },
+        {
+            "c_hash": "41bfa7c4",
+            "date": "2009-11-19 15:33:32 +0000",
+            "comment": "Fixes a mistake in the regex which add html links to emails Adds new properties to demo default configuration And.. testing my first commit :-)"
+        },
+        {
+            "c_hash": "b0484929",
+            "date": "2009-11-19 17:36:12 +0000",
+            "comment": "substitute tabs by spaces"
+        },
+        {
+            "c_hash": "06272460",
+            "date": "2009-11-19 19:15:00 +0000",
+            "comment": "Fix build"
+        },
+        {
+            "c_hash": "c07ac163",
+            "date": "2009-11-19 23:30:31 +0000",
+            "comment": "Start adding 'wysiwyg' capabilities for composing and editing emails in Hupa."
+        },
+        {
+            "c_hash": "0e4af097",
+            "date": "2009-11-20 07:48:31 +0000",
+            "comment": "Fixed a bug in forwarding & replying messages because the super constructor was not called. Fixed the regex used in client email-validator."
+        },
+        {
+            "c_hash": "04b89f3b",
+            "date": "2009-11-21 09:10:09 +0000",
+            "comment": "Basic implementation of the 'wysiwyg' email editor. Changes in sendmail-handler to send both html and txt version of the message."
+        },
+        {
+            "c_hash": "2fd30cc3",
+            "date": "2009-11-21 09:19:02 +0000",
+            "comment": "Removed ugly code used while developing, and committed by error"
+        },
+        {
+            "c_hash": "deefde77",
+            "date": "2009-11-21 19:14:57 +0000",
+            "comment": "move images to src/main/resources, if we don't do this mvn gets a bit confused when compiling"
+        },
+        {
+            "c_hash": "7362f351",
+            "date": "2009-11-22 08:57:18 +0000",
+            "comment": "Make sure that java,class,gwt.xml files get included in the jar so its usable by other gwt projects too"
+        },
+        {
+            "c_hash": "777823f5",
+            "date": "2009-11-22 09:13:59 +0000",
+            "comment": "Fix configuration of Properties.. Thx for Manuel for spotting it"
+        },
+        {
+            "c_hash": "e50cdd93",
+            "date": "2009-11-23 08:56:55 +0000",
+            "comment": "documented the use of \"junction\" command (the ln for windows)."
+        },
+        {
+            "c_hash": "8a60372d",
+            "date": "2009-11-23 09:05:24 +0000",
+            "comment": "Some screenshot for the Hupa site!"
+        },
+        {
+            "c_hash": "8bfd2438",
+            "date": "2009-11-23 13:54:25 +0000",
+            "comment": "Fix typo"
+        },
+        {
+            "c_hash": "a967efaa",
+            "date": "2009-11-23 19:38:51 +0000",
+            "comment": "fix image paths"
+        },
+        {
+            "c_hash": "15257b5b",
+            "date": "2009-11-24 18:58:39 +0000",
+            "comment": " MessageSourceServlet had a close() not in a finally block (HUPA-55).Thx to Eric Jablow for the patch."
+        },
+        {
+            "c_hash": "80b46105",
+            "date": "2009-11-24 19:14:39 +0000",
+            "comment": "Use IoUtils to close streams to simplify the code (HUPA-54). Thx to Eric Jablow for the patch"
+        },
+        {
+            "c_hash": "195f759d",
+            "date": "2009-11-27 13:24:51 +0000",
+            "comment": "Added a bunch of tests and utilities needed to fix various bugs in sending emails. New tests are now using guice to inject mock classes. Little refactoring in arguments and class names. Unified all demo-mode constants in a class. Added war to svnignore."
+        },
+        {
+            "c_hash": "f57d6580",
+            "date": "2009-11-30 19:53:58 +0000",
+            "comment": "Only send idle command if the store supports it (HUPA-56)"
+        },
+        {
+            "c_hash": "08427b1c",
+            "date": "2009-11-30 20:25:13 +0000",
+            "comment": "Only send idle command if the store supports it.Rename Noop* to Idle* which better reflect the real purpose (HUPA-56)"
+        },
+        {
+            "c_hash": "20187c6d",
+            "date": "2009-12-01 15:05:00 +0000",
+            "comment": "Fixed a bug in sending emails with attachments in client side because the uploader widget was not correctly reseted. Fixed a bug in server side because attachment-registry was not multisession. Forward and send actions handle correctly attachments now, but reply needs more work. Fixed a bug in Demo-mode which produced unreacheable attachments in the sent-box. Inline images are not shown in the attachment list. Increased server test coverage. Re-factoring: moved methods from handles to util classes, renamed classes, regexp, tests classes etc. Rolled back in client side to use implementations instead of interfaces"
+        },
+        {
+            "c_hash": "8008cc81",
+            "date": "2009-12-02 10:32:05 +0000",
+            "comment": "Now replying messages handles correctly: inline images present in original message, and new attachments added by the user. Re-factoring in MessageHandlers: now they share the same code for createMessage and fillMessage, being different the getAttachments Partially applied HUPA-58 patch."
+        },
+        {
+            "c_hash": "4c867f2e",
+            "date": "2009-12-02 17:30:17 +0000",
+            "comment": "Use Reply-to header. Improved the text which is automatically added in the head of reply and forward messages. Added a log line useful to investigate bug #57"
+        },
+        {
+            "c_hash": "3058c303",
+            "date": "2009-12-02 17:45:59 +0000",
+            "comment": "Deleted a bunch of lines which shouldn't be committed in my last patch"
+        },
+        {
+            "c_hash": "c2b46b7f",
+            "date": "2009-12-03 17:52:20 +0000",
+            "comment": "Minor changes to layout. Added a new class for hupa's css constants"
+        },
+        {
+            "c_hash": "de408ed4",
+            "date": "2009-12-04 16:04:39 +0000",
+            "comment": "Paging is now working with and without search key given (HUPA-60)"
+        },
+        {
+            "c_hash": "53b781ce",
+            "date": "2009-12-04 16:13:58 +0000",
+            "comment": "Empty the searchbox on logout"
+        },
+        {
+            "c_hash": "536947cd",
+            "date": "2009-12-04 16:28:36 +0000",
+            "comment": "fix bug in index caculation when searching in messages"
+        },
+        {
+            "c_hash": "c311ced5",
+            "date": "2009-12-05 22:47:13 +0000",
+            "comment": "Disable new folder button while new folder creation is in progress"
+        },
+        {
+            "c_hash": "f1d17c4f",
+            "date": "2009-12-08 14:39:58 +0000",
+            "comment": "Changed Hupa's layout: added logo, moved contacts and mail tabs to top-buttons. Made MainView configurable using css. Added flash events to display messages to the user."
+        },
+        {
+            "c_hash": "65472b61",
+            "date": "2009-12-17 12:16:51 +0000",
+            "comment": "Many changes moving styling from code to css which make Hupa easier to customize. - Hupa.css is loaded dinamically - re-factoring and classing of layouts in views: AppView is complete, other views need some work. - Added a rounded-corner class which defers which technique to use (css or html wrapping) depending on the browser. - Removed all resize-window handlers because panels are resized using css rules. - Improved a little bit the design. - Fixed some issues with fonts. - Added a footer."
+        },
+        {
+            "c_hash": "aa9bc874",
+            "date": "2009-12-18 12:25:17 +0000",
+            "comment": "Fixed HUPA-57"
+        },
+        {
+            "c_hash": "d759d001",
+            "date": "2009-12-22 09:16:09 +0000",
+            "comment": "Added a little bit more information to debug messages, when decoding fails."
+        },
+        {
+            "c_hash": "49980be9",
+            "date": "2009-12-22 09:20:01 +0000",
+            "comment": "Fixed an issue with setfocus() when a new folder is created. Added new created folders to dnd controller. Avoid asking the server when a new folder doesnt exist yet."
+        },
+        {
+            "c_hash": "1436f821",
+            "date": "2009-12-24 08:30:26 +0000",
+            "comment": "Changed login fields validation to the presenter, and removed login button disabling feature because onKeyUp is not fired by some mobile browsers. Changed the way of how rowsPerPage was handled, so the paging box shows the real number of rows. Fixed a bug in fetch messages handler, which made the all the call fail when a message was malformed. Changes in PagingOption to use the same loading of the caller. Re-factor of views to move styling stuff to css: IMAPMessageListView"
+        },
+        {
+            "c_hash": "434b82e9",
+            "date": "2009-12-26 09:48:40 +0000",
+            "comment": "Fixed a bug escaping html tags in text/plain messages. Fixed an issue when new folders are created in gmail imap servers. Styling of Hupa dialog box."
+        },
+        {
+            "c_hash": "69bbb92e",
+            "date": "2009-12-26 09:59:31 +0000",
+            "comment": "removed an unnecessary import which makes build fail"
+        },
+        {
+            "c_hash": "5e725c7b",
+            "date": "2010-01-05 16:21:24 +0000",
+            "comment": "Finished the re-factoring of views moving almost everything related with styling to css style-sheet. Fixed a bug in creating folders, caused by I mistake I did last commit. Created new widgets to share code in message headers and commands bar. Modified pom to use gwt-2.0.0 and gwtupload-0.5.6. Other changes related to the use of deprecated methods"
+        },
+        {
+            "c_hash": "424b10da",
+            "date": "2010-01-05 16:23:34 +0000",
+            "comment": "deleted tmp stuff"
+        },
+        {
+            "c_hash": "60b9a47f",
+            "date": "2010-01-05 21:03:29 +0000",
+            "comment": "added ciManagement to pom"
+        },
+        {
+            "c_hash": "fa3c9c4c",
+            "date": "2010-01-06 07:12:19 +0000",
+            "comment": "removed tabs from pom file"
+        },
+        {
+            "c_hash": "e2c742c9",
+            "date": "2010-01-06 07:52:59 +0000",
+            "comment": "just a simple change to make hudson run the build again"
+        },
+        {
+            "c_hash": "da626e18",
+            "date": "2010-01-06 08:57:46 +0000",
+            "comment": "removed tabs from pom file"
+        },
+        {
+            "c_hash": "ce99a7e0",
+            "date": "2010-01-13 22:57:32 +0000",
+            "comment": "Fixed some issues in rich text editor. Now everything works as expected in FF, but IE and safari need some research."
+        },
+        {
+            "c_hash": "03fcb7b2",
+            "date": "2010-01-14 17:12:14 +0000",
+            "comment": "Changed 'ugly' pop-up selectors in message editor in favor of color-picker and font-picker"
+        },
+        {
+            "c_hash": "0d76f2de",
+            "date": "2010-01-15 18:33:41 +0000",
+            "comment": "Added contacts support (basic version). right now, the contacts are get from the messages and put in user session. Suggestion box, only is able to select an email. Contact list is not editable."
+        },
+        {
+            "c_hash": "8ad210f1",
+            "date": "2010-01-19 18:57:27 +0000",
+            "comment": "Implemented selection of multiple e-mails from suggestion list in the to, cc, and bcc fields. Changed text-boxes by text-areas in to, cc and bcc to fit more addresses. Hide cc, bcc and attachments, when they are empty to save visual space. Fixed a bug in the client email validator"
+        },
+        {
+            "c_hash": "a7ccc65c",
+            "date": "2010-01-19 23:39:41 +0000",
+            "comment": "using gin 1.0 instead of snapshot, HUPA-61"
+        },
+        {
+            "c_hash": "bfe5539b",
+            "date": "2010-01-21 10:52:29 +0000",
+            "comment": "Allow new lines in email suggestion boxes"
+        },
+        {
+            "c_hash": "d58664ef",
+            "date": "2010-01-21 11:07:26 +0000",
+            "comment": "removed dead code because split method returns at least one element"
+        },
+        {
+            "c_hash": "3f7e97fe",
+            "date": "2010-01-21 11:40:59 +0000",
+            "comment": "added emma coverage filters so as not to report widgets and external stuff"
+        },
+        {
+            "c_hash": "dac51f4a",
+            "date": "2010-01-21 13:10:51 +0000",
+            "comment": "changed the repository order"
+        },
+        {
+            "c_hash": "2d03e071",
+            "date": "2010-01-21 19:25:13 +0000",
+            "comment": "Created UserPreferencesStorage as an interface for storage implementations. Created first implementation of a preferences storage using session."
+        },
+        {
+            "c_hash": "aca2a969",
+            "date": "2010-01-28 12:07:20 +0000",
+            "comment": "Setting output directory by default to war/WEB-INF to avoid google-pluging complaining about that"
+        },
+        {
+            "c_hash": "702d2955",
+            "date": "2010-01-29 11:14:46 +0000",
+            "comment": "removes the instanceof checks from the org.apache.hupa.widgets.ui.ToolTip constructor and exposes them as generic constraints. Thanks to Robert Munteanu. HUPA-62"
+        },
+        {
+            "c_hash": "e83489a2",
+            "date": "2010-01-29 11:23:38 +0000",
+            "comment": "using last version of gwt-maven-plugin. Fixes HUPA-63."
+        },
+        {
+            "c_hash": "eb24143a",
+            "date": "2010-01-31 19:25:58 +0000",
+            "comment": "added path of client tests to eclipse conf files"
+        },
+        {
+            "c_hash": "e5e1dfca",
+            "date": "2010-01-31 19:31:53 +0000",
+            "comment": "Fixed a problem with focusable elements because FocusAction expect FocusWidget it instead of Focusable, and a bug in validation"
+        },
+        {
+            "c_hash": "b930fa03",
+            "date": "2010-02-01 11:06:48 +0000",
+            "comment": "removed gwt profile stuff and gwt repository, since last version of gwt and gwt-maven dont need them"
+        },
+        {
+            "c_hash": "98f2c6b7",
+            "date": "2010-02-06 17:55:51 +0000",
+            "comment": "allow to run hupa from the cmdline via maven (HUPA-65). Thx to Johnny S\u00f8rensen for the patch!"
+        },
+        {
+            "c_hash": "0248c582",
+            "date": "2010-02-06 20:34:15 +0000",
+            "comment": "Use gin from maven central (HUPA-64). Thx to Robert Munteanu for the patch"
+        },
+        {
+            "c_hash": "4352d6f7",
+            "date": "2010-02-09 11:00:47 +0000",
+            "comment": "Added an implementation for storing user preferences in IMAP messages, right now, only contacts are stored. When the user sends a message emails are added automatically to the contacts list. Added new configuration parameters: DefaultDraftsFolder, and SessionDebug (SMTP, IMAP debugging). A lot of work in test part in order to easily modify GuiceModule to be able to change classes implementations and run integration tests. A couple of minor fixes."
+        },
+        {
+            "c_hash": "934fe955",
+            "date": "2010-02-09 14:18:37 +0000",
+            "comment": "clean session objects at logout"
+        },
+        {
+            "c_hash": "d97c4413",
+            "date": "2010-02-11 21:36:17 +0000",
+            "comment": "Tests re-factoring to use HupaGuiceTestCase"
+        },
+        {
+            "c_hash": "5d22d107",
+            "date": "2010-02-11 23:32:10 +0000",
+            "comment": "More test re-factoring to use HupaGuiceTestCase"
+        },
+        {
+            "c_hash": "cbeb68eb",
+            "date": "2010-02-14 10:26:52 +0000",
+            "comment": "Added common classes for testing presenters and client code. Client pom.xml modifications to include easymock stuff and to run GwtTestCase cases. Little refactoring in server side tests. Tests for ContactsPresenter."
+        },
+        {
+            "c_hash": "2f45bfd6",
+            "date": "2010-02-17 14:49:48 +0000",
+            "comment": "Fixed a pair of bugs related with replying and replying-to messages. Refactoring of MessageSendPresenter to make easy test it. Added tests for almost everything in MessageSendPresenter. Moved validations which can not be run with junit from the presenter to the view. Minor changes to the common tests classes."
+        },
+        {
+            "c_hash": "f5a6382e",
+            "date": "2010-02-17 16:15:29 +0000",
+            "comment": ":"
+        },
+        {
+            "c_hash": "a9dc459c",
+            "date": "2010-02-17 19:47:57 +0000",
+            "comment": "reverted"
+        },
+        {
+            "c_hash": "27df892e",
+            "date": "2010-02-17 19:50:49 +0000",
+            "comment": "Decouple contacts from SendMessagePresenter and IMAPMessageListPresenter in favor of using the eventbus."
+        },
+        {
+            "c_hash": "feddc02c",
+            "date": "2010-02-17 19:54:28 +0000",
+            "comment": "deleted unneeded folder"
+        },
+        {
+            "c_hash": "f059067c",
+            "date": "2010-02-17 19:56:39 +0000",
+            "comment": "renamed variable"
+        },
+        {
+            "c_hash": "eac1a7df",
+            "date": "2010-02-18 18:02:16 +0000",
+            "comment": "fixed: update suggestion boxes in MessageSendView when contacts are updated"
+        },
+        {
+            "c_hash": "2a0db14b",
+            "date": "2010-03-02 22:25:27 +0000",
+            "comment": "Avoid using \"UID EXPUNGE\" in InImapUserPreferences, because it is not included in the standard set of IMAP commands"
+        },
+        {
+            "c_hash": "24d8b7d3",
+            "date": "2010-03-02 23:15:05 +0000",
+            "comment": "fixed tests, because MockIMAPFolder didnt expunge folder on close"
+        },
+        {
+            "c_hash": "b5eac8b6",
+            "date": "2010-03-03 12:21:36 +0000",
+            "comment": "able to use demo messages packaged in jars, so as the application can be deployed in demo mode"
+        },
+        {
+            "c_hash": "2b57ebfd",
+            "date": "2010-03-03 12:31:33 +0000",
+            "comment": "use latest versions of gwt and gwtupload"
+        },
+        {
+            "c_hash": "5c3e4509",
+            "date": "2010-03-03 15:32:43 +0000",
+            "comment": "use latest gwt-incubator library"
+        },
+        {
+            "c_hash": "8e48a5b5",
+            "date": "2010-03-09 19:21:50 +0000",
+            "comment": "added a missing method in a mock which made tests fail"
+        },
+        {
+            "c_hash": "10ba9a72",
+            "date": "2010-04-15 15:26:21 +0000",
+            "comment": "set default configuration to use mock imap provider"
+        },
+        {
+            "c_hash": "bba012e5",
+            "date": "2010-04-15 15:26:45 +0000",
+            "comment": " fixed rounded corners in opera"
+        },
+        {
+            "c_hash": "ee19c217",
+            "date": "2010-04-15 15:30:55 +0000",
+            "comment": "deleted war folder in / because last google-eclipse plugin has fixed the problem"
+        },
+        {
+            "c_hash": "47e1bf1c",
+            "date": "2010-04-15 15:33:05 +0000",
+            "comment": "more stuff about the deleted /war folder"
+        },
+        {
+            "c_hash": "f39c0ba1",
+            "date": "2010-04-15 15:34:38 +0000",
+            "comment": "upgrade to latest GWT and gwtupload versions, added dependencies which are resolved transitively HUPA-68"
+        },
+        {
+            "c_hash": "18bbe627",
+            "date": "2010-06-10 09:13:36 +0000",
+            "comment": "Removed a bunch of unavailable methods in java 1.5 which make the build fail in hudson"
+        },
+        {
+            "c_hash": "354b07e3",
+            "date": "2011-02-28 06:37:56 +0000",
+            "comment": "Fix HUPA build. Thanks to Felix Knecht for the patch. See HUPA-69"
+        },
+        {
+            "c_hash": "c2c71300",
+            "date": "2011-02-28 08:07:25 +0000",
+            "comment": "Remove legacy repository declaration. Thanks to Felix Knecht for the patch."
+        },
+        {
+            "c_hash": "abd36ab3",
+            "date": "2011-03-11 11:56:22 +0000",
+            "comment": "Upper memory for gwt maven module and upgrade gwt-dnd and gwt-incubator"
+        },
+        {
+            "c_hash": "ee9797ea",
+            "date": "2011-03-24 19:21:32 +0000",
+            "comment": "Update to james-project-1.6"
+        },
+        {
+            "c_hash": "e7501680",
+            "date": "2011-07-18 06:33:21 +0000",
+            "comment": "Cleanup / Use skin for Apache Branding in Navigation. See JAMES-1289"
+        },
+        {
+            "c_hash": "45c9a6d5",
+            "date": "2011-07-19 07:06:44 +0000",
+            "comment": "Update to latest gwt version 2.3.0"
+        },
+        {
+            "c_hash": "202de0c8",
+            "date": "2011-08-09 18:34:16 +0000",
+            "comment": "Add/fix build of technical reports"
+        },
+        {
+            "c_hash": "224eded0",
+            "date": "2011-08-09 18:38:59 +0000",
+            "comment": "Add to svn:ignore"
+        },
+        {
+            "c_hash": "5d5e42c9",
+            "date": "2011-08-09 19:35:26 +0000",
+            "comment": "Formatting of pom.xml and other xml files"
+        },
+        {
+            "c_hash": "ce72bf42",
+            "date": "2011-08-09 19:40:23 +0000",
+            "comment": "- Use target.jdk where usefull - Define version of dashboard-maven-plugin (makes maven3 happier)"
+        },
+        {
+            "c_hash": "0aee37c2",
+            "date": "2011-08-10 01:31:02 +0000",
+            "comment": "Add documentation about howto configure HUPA"
+        },
+        {
+            "c_hash": "f22706b3",
+            "date": "2011-08-10 05:49:37 +0000",
+            "comment": "Use latest version of gwt-maven-plugin"
+        },
+        {
+            "c_hash": "52dc23ee",
+            "date": "2011-08-10 05:50:37 +0000",
+            "comment": "Add configuration possibility for custom truststore (HUPA-70)"
+        },
+        {
+            "c_hash": "9c736bd9",
+            "date": "2011-08-10 14:45:31 +0000",
+            "comment": "- Add validation for mandatory and optional configuration properties - Add documentation for this - Add default values for missing optional configuration properties - Throw a more meaningful exception (HUPA-71)"
+        },
+        {
+            "c_hash": "ad764e2a",
+            "date": "2011-08-10 18:08:08 +0000",
+            "comment": "Update svn:ignore"
+        },
+        {
+            "c_hash": "eb12a56f",
+            "date": "2011-08-12 05:40:08 +0000",
+            "comment": "Add collapse icon"
+        },
+        {
+            "c_hash": "425ba11d",
+            "date": "2011-08-12 08:57:12 +0000",
+            "comment": "Add type safety"
+        },
+        {
+            "c_hash": "81677330",
+            "date": "2011-08-12 12:15:10 +0000",
+            "comment": "set bold style for IMAPFolders containing unseen messages (HUPA-72)"
+        },
+        {
+            "c_hash": "0d36b040",
+            "date": "2011-08-12 12:16:48 +0000",
+            "comment": "update svn:ignore"
+        },
+        {
+            "c_hash": "77dcc781",
+            "date": "2011-08-12 13:28:04 +0000",
+            "comment": "Fix missing dependency when building with a clean local maven repository"
+        },
+        {
+            "c_hash": "cbac7231",
+            "date": "2011-08-14 09:41:20 +0000",
+            "comment": "It's a constant so make it final"
+        },
+        {
+            "c_hash": "70c87525",
+            "date": "2011-08-14 13:41:16 +0000",
+            "comment": "FileItem is incompatible with expected argument type String. As no return value is validated we will never notice if the item has been removed ... or if just 'null' has been returned"
+        },
+        {
+            "c_hash": "877bb1fc",
+            "date": "2011-08-14 15:48:38 +0000",
+            "comment": "Add license header (HUPA-50)"
+        },
+        {
+            "c_hash": "e63ab698",
+            "date": "2011-08-18 13:03:05 +0000",
+            "comment": "Add some missing license headers"
+        },
+        {
+            "c_hash": "f8dda773",
+            "date": "2011-08-25 15:07:41 +0000",
+            "comment": "Fix deprecated methods (HUPA-73) RichTextArea.BasicFormatter, RichTextArea.ExtendedFormatter -> RichTextArea.Formatter ImageBundle -> ClientBundle"
+        },
+        {
+            "c_hash": "6c165eb6",
+            "date": "2011-08-26 15:35:02 +0000",
+            "comment": "Update junit, log4j, gwt-dispatch, commons-fileupload dependencies (HUPA-74)"
+        },
+        {
+            "c_hash": "fb7b5c7e",
+            "date": "2011-08-28 06:08:47 +0000",
+            "comment": "Fix deprecated methods (HUPA-73)"
+        },
+        {
+            "c_hash": "a90b2ad1",
+            "date": "2011-09-21 05:44:08 +0000",
+            "comment": "Fix HUPA-75"
+        },
+        {
+            "c_hash": "77b1e7bf",
+            "date": "2011-09-21 11:21:29 +0000",
+            "comment": "Doing the count using offset as amount of messages shown the first is also part of it. (HUPA-76)"
+        },
+        {
+            "c_hash": "ba03d2a7",
+            "date": "2011-09-21 13:22:29 +0000",
+            "comment": "Don't concatenate strings using + in a loop"
+        },
+        {
+            "c_hash": "323fa7b6",
+            "date": "2011-09-21 13:24:34 +0000",
+            "comment": "Don't concatenate strings using + in a loop"
+        },
+        {
+            "c_hash": "4b541dd1",
+            "date": "2011-09-21 15:45:34 +0000",
+            "comment": "Multiplier should be a prime number (16 isn't). Why not just use the most closest hash?"
+        },
+        {
+            "c_hash": "b3d41eb6",
+            "date": "2011-09-21 15:50:56 +0000",
+            "comment": "Use for-each loop (since Java 1.5)"
+        },
+        {
+            "c_hash": "30f63258",
+            "date": "2011-09-22 11:40:17 +0000",
+            "comment": "Use latest gwt version"
+        },
+        {
+            "c_hash": "fbc8abda",
+            "date": "2011-09-22 11:56:43 +0000",
+            "comment": "Remove Eclipse IDE specific files and add them to svn:ignore"
+        },
+        {
+            "c_hash": "b2729001",
+            "date": "2011-09-22 12:07:45 +0000",
+            "comment": "Remove Eclipse IDE specific files and add them to svn:ignore"
+        },
+        {
+            "c_hash": "995060ae",
+            "date": "2011-09-22 12:11:54 +0000",
+            "comment": "Remove duplicate definition"
+        },
+        {
+            "c_hash": "1f721987",
+            "date": "2011-09-22 12:12:31 +0000",
+            "comment": "Add relativePath"
+        },
+        {
+            "c_hash": "6c0bfdef",
+            "date": "2011-09-22 13:50:10 +0000",
+            "comment": "Fix some javadoc errors"
+        },
+        {
+            "c_hash": "748e7cd6",
+            "date": "2011-09-22 18:59:00 +0000",
+            "comment": "Seems no longer be needed"
+        },
+        {
+            "c_hash": "73f4eb62",
+            "date": "2011-09-23 09:25:52 +0000",
+            "comment": "Use interface instaed of specific implementation (HUPA-77)"
+        },
+        {
+            "c_hash": "58646534",
+            "date": "2011-09-23 09:27:15 +0000",
+            "comment": "Skip test (see comment inline) (HUPA-77)"
+        },
+        {
+            "c_hash": "f9ea0fa1",
+            "date": "2011-09-23 09:28:50 +0000",
+            "comment": "Use interface instead of specific implementation (HUPA-77) Do toString recursive"
+        },
+        {
+            "c_hash": "26c794b9",
+            "date": "2011-09-23 09:29:47 +0000",
+            "comment": "Fetch and create folders recursive (HUPA-77)"
+        },
+        {
+            "c_hash": "184d528f",
+            "date": "2011-09-23 14:32:46 +0000",
+            "comment": "Some small performance improvements"
+        },
+        {
+            "c_hash": "ee9f615f",
+            "date": "2011-09-24 12:06:04 +0000",
+            "comment": "Finally close the stream"
+        },
+        {
+            "c_hash": "5b99baa0",
+            "date": "2011-09-25 06:46:02 +0000",
+            "comment": "Add directory where demo source code goes to (HUPA-79)"
+        },
+        {
+            "c_hash": "59db6637",
+            "date": "2011-09-25 06:54:00 +0000",
+            "comment": "Add directories where demo source code goes to (HUPA-79)"
+        },
+        {
+            "c_hash": "c2f1178a",
+            "date": "2011-09-25 10:42:05 +0000",
+            "comment": "Revert 1175306 and 1175307. It was too enthusiastic ..."
+        },
+        {
+            "c_hash": "24833a72",
+            "date": "2011-09-26 10:06:09 +0000",
+            "comment": "Refactor mock objects to own module (HUPA-79)"
+        },
+        {
+            "c_hash": "07f42449",
+            "date": "2011-09-26 10:58:38 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/james/hupa/trunk@1175788 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "22126b88",
+            "date": "2011-09-26 10:59:10 +0000",
+            "comment": "Refactor GuiceServerTestModule to test trees (HUPA-79)"
+        },
+        {
+            "c_hash": "7c8297a0",
+            "date": "2011-09-26 11:04:04 +0000",
+            "comment": "Fix site generation (HUPA-79)"
+        },
+        {
+            "c_hash": "ae66191e",
+            "date": "2011-09-26 11:34:44 +0000",
+            "comment": "Unintentionally committed"
+        },
+        {
+            "c_hash": "651ea1bd",
+            "date": "2011-09-26 12:24:01 +0000",
+            "comment": "Exclude mock/demo messages from rat report"
+        },
+        {
+            "c_hash": "4974bef7",
+            "date": "2011-09-26 12:35:48 +0000",
+            "comment": "Intentionally do nothing (HUPA-79)"
+        },
+        {
+            "c_hash": "7d8df1a7",
+            "date": "2011-09-26 12:38:45 +0000",
+            "comment": "Avoid NPE (HUPA-79)"
+        },
+        {
+            "c_hash": "609d939f",
+            "date": "2011-09-26 12:53:45 +0000",
+            "comment": "Should be synchronized (HUPA-79)"
+        },
+        {
+            "c_hash": "87faf8a0",
+            "date": "2011-10-17 14:25:23 +0000",
+            "comment": "Use renamed james-skin (JAMES-1334)"
+        },
+        {
+            "c_hash": "ae0d5340",
+            "date": "2011-10-19 07:25:46 +0000",
+            "comment": "Use most recent versions of libraries and gwt. Add support for RequestFactory (initial stuff: dependencies, tests). Increase snapshot version"
+        },
+        {
+            "c_hash": "ab2a46df",
+            "date": "2011-10-19 12:20:49 +0000",
+            "comment": "Reformat (JAMES-1339)"
+        },
+        {
+            "c_hash": "0dcaad98",
+            "date": "2011-11-10 17:03:31 +0000",
+            "comment": "Move to james-project-1.7"
+        },
+        {
+            "c_hash": "1970ba50",
+            "date": "2011-11-10 17:04:36 +0000",
+            "comment": "Update svn:ignore"
+        },
+        {
+            "c_hash": "d2e79733",
+            "date": "2012-01-06 19:39:22 +0000",
+            "comment": "Comment emma-maven-plugin which gives compilation exception (HUPA-81)"
+        },
+        {
+            "c_hash": "82a1722e",
+            "date": "2012-01-14 12:12:10 +0000",
+            "comment": "Bump to james parent pom 1.9-SNAPSHOT (HUPA-82)"
+        },
+        {
+            "c_hash": "7cb9af42",
+            "date": "2012-02-13 13:19:26 +0000",
+            "comment": "add svn:ignore"
+        },
+        {
+            "c_hash": "9ff22e19",
+            "date": "2012-02-13 13:24:34 +0000",
+            "comment": "pom tuning and empty folder creation to help maven and eclipse (HUPA-83)"
+        },
+        {
+            "c_hash": "dce57a00",
+            "date": "2012-02-21 16:32:59 +0000",
+            "comment": "HUPA-84 fixed. <servlet> and <servlet-mapping> elements were reordered to make the web.xml DTD compliant."
+        },
+        {
+            "c_hash": "7b3d357c",
+            "date": "2012-03-15 19:01:06 +0000",
+            "comment": "dependencies changed from current snapshots to last released versions"
+        },
+        {
+            "c_hash": "82ef7a13",
+            "date": "2012-03-22 08:41:30 +0000",
+            "comment": "Make Hupa compile: fix repository order and remove unused ones"
+        },
+        {
+            "c_hash": "b1633d56",
+            "date": "2012-03-22 09:13:04 +0000",
+            "comment": "Update gwt-upload version"
+        },
+        {
+            "c_hash": "faba96ad",
+            "date": "2012-03-22 09:14:47 +0000",
+            "comment": "remove duplicated servlet in web.xml, use the gwt-2.4.0 remote-logging stuff"
+        },
+        {
+            "c_hash": "09393f9a",
+            "date": "2012-03-22 09:16:20 +0000",
+            "comment": "Sort messages by SendDate so as we can use fetchmail with old messages"
+        },
+        {
+            "c_hash": "6ad8d858",
+            "date": "2012-03-22 13:42:43 +0000",
+            "comment": "Fix compilation"
+        },
+        {
+            "c_hash": "a1820c5f",
+            "date": "2012-03-22 13:55:52 +0000",
+            "comment": "Add unimplemented methods in mock object"
+        },
+        {
+            "c_hash": "57e0d93f",
+            "date": "2012-03-24 09:12:08 +0000",
+            "comment": "Remove last snapshot dependency: fixes HUPA-49. Run app in standard instead of quirks mode. Remove libraries which only are needed during compilation & test phases from the final distribution file (reduced size about 30M)."
+        },
+        {
+            "c_hash": "e9d00d0c",
+            "date": "2012-03-24 10:55:36 +0000",
+            "comment": "Added Jetty so as hupa war file can be run as an standalone application"
+        },
+        {
+            "c_hash": "d487809d",
+            "date": "2012-03-24 11:01:32 +0000",
+            "comment": "replace tabs by spaces"
+        },
+        {
+            "c_hash": "4625f457",
+            "date": "2012-03-29 09:06:41 +0000",
+            "comment": "Disable Truststore parameter in the default configuration (gmail) because gmail uses valid certificates"
+        },
+        {
+            "c_hash": "5935f613",
+            "date": "2012-04-20 18:07:21 +0000",
+            "comment": "Improve hupa site: logo, update news, javadocs, screenshots etc"
+        },
+        {
+            "c_hash": "9cc77df5",
+            "date": "2012-04-20 19:49:20 +0000",
+            "comment": "Adding dummy web.xml to shared module. Fixes HUPA-86. Patch by  Luis Slocker"
+        },
+        {
+            "c_hash": "e477c3f4",
+            "date": "2012-04-28 06:22:21 +0000",
+            "comment": "remove mvn3 warnings"
+        },
+        {
+            "c_hash": "84f93e5f",
+            "date": "2012-04-28 06:45:18 +0000",
+            "comment": "Removing wrapping of orphand links and email addresses in anchors because of performance problems in the regular expressions used"
+        },
+        {
+            "c_hash": "9f2132b5",
+            "date": "2012-04-28 07:01:40 +0000",
+            "comment": "Update hupa news"
+        },
+        {
+            "c_hash": "358deb36",
+            "date": "2012-04-28 08:04:13 +0000",
+            "comment": "Improve FAQ page"
+        },
+        {
+            "c_hash": "60142cdb",
+            "date": "2012-04-29 21:08:30 +0000",
+            "comment": "A few css modifications to add shadows and gradients"
+        },
+        {
+            "c_hash": "7bf894ba",
+            "date": "2012-04-30 11:51:57 +0000",
+            "comment": "Compile all locale and browser permutations when using production profile"
+        },
+        {
+            "c_hash": "2a61d401",
+            "date": "2012-04-30 12:25:32 +0000",
+            "comment": "Fix compilation in non production mode"
+        },
+        {
+            "c_hash": "7abbf63a",
+            "date": "2012-04-30 15:50:01 +0000",
+            "comment": "Opera supports css3 borders. Fix content-length when downloading attachments"
+        },
+        {
+            "c_hash": "f1c93f01",
+            "date": "2012-04-30 16:52:04 +0000",
+            "comment": "Send deflated js. Fix favicon transparency. Css gradients in opera. Use xsiframe linker"
+        },
+        {
+            "c_hash": "4f441aef",
+            "date": "2012-05-02 16:05:26 +0000",
+            "comment": "Many changes in order to decouple mock stuff, so as Hupa could be delivered with and without the mock module. Fix demo-mode previously broken, now all demo classes are injected via guice injection, and mock classes are loaded using reflection. Fix multipart messages inside mixed messages with text and html attachments. Refresh folders when removing messages in view."
+        },
+        {
+            "c_hash": "be0b8922",
+            "date": "2012-05-02 17:19:47 +0000",
+            "comment": "Fix client tests"
+        },
+        {
+            "c_hash": "00cd6bae",
+            "date": "2012-05-02 17:20:19 +0000",
+            "comment": "Update info about how to use demo-mode"
+        },
+        {
+            "c_hash": "4745281a",
+            "date": "2012-05-02 20:05:33 +0000",
+            "comment": "improve hupa site documentation"
+        },
+        {
+            "c_hash": "3922525d",
+            "date": "2012-05-02 21:23:02 +0000",
+            "comment": "bin folder should not be in svn"
+        },
+        {
+            "c_hash": "4a430265",
+            "date": "2012-05-03 07:26:12 +0000",
+            "comment": "fix font-size and html tagging in editor."
+        },
+        {
+            "c_hash": "da14e250",
+            "date": "2012-05-03 09:09:23 +0000",
+            "comment": "Fix non ascii characters in CC field. Avoid storing certain contacts"
+        },
+        {
+            "c_hash": "1cf1e6d4",
+            "date": "2012-05-03 11:41:04 +0000",
+            "comment": "add https link to demo page"
+        },
+        {
+            "c_hash": "3acf8f43",
+            "date": "2012-05-03 15:16:21 +0000",
+            "comment": "Fix tests"
+        },
+        {
+            "c_hash": "2f60c227",
+            "date": "2012-05-04 06:30:34 +0000",
+            "comment": "update default configuration file"
+        },
+        {
+            "c_hash": "01603938",
+            "date": "2012-05-04 07:36:32 +0000",
+            "comment": "Remove unused container"
+        },
+        {
+            "c_hash": "4a692ba9",
+            "date": "2012-05-04 07:56:34 +0000",
+            "comment": "Remove quotes around names in email addresses"
+        },
+        {
+            "c_hash": "a092234b",
+            "date": "2012-05-04 08:25:12 +0000",
+            "comment": "Avoid empty names in contacts"
+        },
+        {
+            "c_hash": "64fd2d60",
+            "date": "2012-05-04 09:15:12 +0000",
+            "comment": "Do not deliver hupa with demo stuff by default, use -Pdemo to include it"
+        },
+        {
+            "c_hash": "69ca1ba4",
+            "date": "2012-05-04 10:07:35 +0000",
+            "comment": "Fix: reply messages was removing the old subject some times"
+        },
+        {
+            "c_hash": "1de36010",
+            "date": "2012-05-04 11:00:04 +0000",
+            "comment": "Append domain to gmail accounts. Configuration in user home was not being read"
+        },
+        {
+            "c_hash": "a18c8555",
+            "date": "2012-05-04 12:11:10 +0000",
+            "comment": "typo"
+        },
+        {
+            "c_hash": "eeb5cd97",
+            "date": "2012-05-04 12:25:33 +0000",
+            "comment": "Fix source view in demo mode"
+        },
+        {
+            "c_hash": "03bb4cf6",
+            "date": "2012-05-04 12:43:15 +0000",
+            "comment": "Implement search in demo mode"
+        },
+        {
+            "c_hash": "914e2399",
+            "date": "2012-05-04 18:19:39 +0000",
+            "comment": "Fix tests. Test search feature"
+        },
+        {
+            "c_hash": "7e1a922e",
+            "date": "2012-05-07 11:05:49 +0000",
+            "comment": "Remove duplicated files"
+        },
+        {
+            "c_hash": "82cebb5c",
+            "date": "2012-05-07 11:17:38 +0000",
+            "comment": "Reduce the number of queries to the imap server when fetching messages"
+        },
+        {
+            "c_hash": "5e0ae3fd",
+            "date": "2012-05-07 11:22:55 +0000",
+            "comment": "For some reason we lost the ability to run integraton tests. Now it is possible to run tests against real imap servers just replacing mockProperties by realProperties. Many other changes in tests and configuration as well"
+        },
+        {
+            "c_hash": "7d5b6117",
+            "date": "2012-05-07 12:51:17 +0000",
+            "comment": "When reloading folder tree do not remove old one until new data comes"
+        },
+        {
+            "c_hash": "28e8ca74",
+            "date": "2012-05-08 09:33:27 +0000",
+            "comment": "Fix viewing of certain html messages"
+        },
+        {
+            "c_hash": "3b983821",
+            "date": "2012-05-08 09:40:06 +0000",
+            "comment": "Some cache improvements in client side. Fix parallel fetching of messages on loading"
+        },
+        {
+            "c_hash": "f8976a25",
+            "date": "2012-05-08 23:31:38 +0000",
+            "comment": "fix ocasional array out of bounds error when switching folders"
+        },
+        {
+            "c_hash": "df0c81b9",
+            "date": "2012-05-09 09:35:38 +0000",
+            "comment": "Make the login page compatible with the browser save password feature, and replace cobogw buttons by css-stiled ones in it"
+        },
+        {
+            "c_hash": "01fd6e8d",
+            "date": "2012-05-09 21:11:38 +0000",
+            "comment": "fix save password in chrome, it needs that submit is not cancelled"
+        },
+        {
+            "c_hash": "4ffa466d",
+            "date": "2012-05-10 08:00:53 +0000",
+            "comment": "Encode unstructures RFC 822 ^Caders when sending emails"
+        },
+        {
+            "c_hash": "59ee7445",
+            "date": "2012-05-10 08:06:01 +0000",
+            "comment": "fix tests"
+        },
+        {
+            "c_hash": "e514e42d",
+            "date": "2012-05-10 08:56:18 +0000",
+            "comment": "Fix NPE"
+        },
+        {
+            "c_hash": "16476689",
+            "date": "2012-05-24 07:41:46 +0000",
+            "comment": "Change the groupId so as james-devels can deploy artifacts in apache maven repo"
+        },
+        {
+            "c_hash": "cfde3b56",
+            "date": "2012-05-30 12:00:15 +0000",
+            "comment": "[maven-release-plugin] prepare release hupa-parent-0.0.2"
+        },
+        {
+            "c_hash": "ff1e0bee",
+            "date": "2012-05-30 12:05:05 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "58251334",
+            "date": "2012-06-07 13:58:03 +0000",
+            "comment": "update hupa docs with release 0.2"
+        },
+        {
+            "c_hash": "402eada1",
+            "date": "2012-06-07 14:59:14 +0000",
+            "comment": "typo"
+        },
+        {
+            "c_hash": "18349c79",
+            "date": "2012-07-14 07:39:51 +0000",
+            "comment": "Remove dependency of org.cobogw.gwt for Round panels. Use css3 in modern browsers and gwt decorators for old ones"
+        },
+        {
+            "c_hash": "cef8e997",
+            "date": "2012-07-14 08:08:00 +0000",
+            "comment": "Remove unused file"
+        },
+        {
+            "c_hash": "2244fca5",
+            "date": "2012-07-14 09:40:21 +0000",
+            "comment": "Enable chromeframe in IE6/7/8 when available"
+        },
+        {
+            "c_hash": "d38a9ea0",
+            "date": "2012-07-14 09:41:44 +0000",
+            "comment": "add profile for readable js"
+        },
+        {
+            "c_hash": "8c1871fb",
+            "date": "2012-07-14 09:43:29 +0000",
+            "comment": "FIXES HUPA-94, patch by: Zsombor Gegesy"
+        },
+        {
+            "c_hash": "5dd9acf9",
+            "date": "2012-07-14 12:31:20 +0000",
+            "comment": "FIXES HUPA-93, patch by: Zsombor Gegesy"
+        },
+        {
+            "c_hash": "3613cd34",
+            "date": "2012-07-17 06:27:39 +0000",
+            "comment": "FIXES HUPA-94, patch by: Zsombor Gegesy"
+        },
+        {
+            "c_hash": "852edab1",
+            "date": "2012-07-24 09:09:40 +0000",
+            "comment": "Fixes HUPA-96 : pass reference ids when replying. Patch by Zsombor Gegesy"
+        },
+        {
+            "c_hash": "aff28a81",
+            "date": "2012-08-16 09:15:19 +0000",
+            "comment": "Fix XSS vulnerability in message list and view"
+        },
+        {
+            "c_hash": "01d067de",
+            "date": "2012-08-16 09:31:44 +0000",
+            "comment": "[maven-release-plugin] prepare release hupa-parent-0.0.3"
+        },
+        {
+            "c_hash": "814694b0",
+            "date": "2012-08-16 09:32:01 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "bfcc594b",
+            "date": "2012-08-16 10:06:12 +0000",
+            "comment": "remove println"
+        },
+        {
+            "c_hash": "1315ef29",
+            "date": "2012-08-22 07:20:32 +0000",
+            "comment": "Update release section in hupa doc"
+        },
+        {
+            "c_hash": "f753c5fd",
+            "date": "2013-08-21 14:08:19 +0000",
+            "comment": "Merge branch 'gs' into gsvn"
+        },
+        {
+            "c_hash": "5b92bcaf",
+            "date": "2013-08-21 16:35:16 +0000",
+            "comment": "merge"
+        },
+        {
+            "c_hash": "aab40c8d",
+            "date": "2013-08-22 15:29:57 +0000",
+            "comment": "first correct commit"
+        },
+        {
+            "c_hash": "c2f91f93",
+            "date": "2013-08-22 16:17:04 +0000",
+            "comment": "commit"
+        },
+        {
+            "c_hash": "10843340",
+            "date": "2013-09-12 01:59:36 +0000",
+            "comment": "first commit"
+        },
+        {
+            "c_hash": "1d9f9406",
+            "date": "2013-09-12 02:00:24 +0000",
+            "comment": "constant changed by manolo"
+        },
+        {
+            "c_hash": "d0d47dbf",
+            "date": "2013-09-12 02:00:55 +0000",
+            "comment": "constantly changed by manolo"
+        },
+        {
+            "c_hash": "7dc0934d",
+            "date": "2013-09-12 02:01:24 +0000",
+            "comment": "constantly changed by manolo"
+        },
+        {
+            "c_hash": "e9419651",
+            "date": "2013-09-12 02:02:20 +0000",
+            "comment": "constantly changed by manolo"
+        },
+        {
+            "c_hash": "e21d15e1",
+            "date": "2013-09-12 02:02:42 +0000",
+            "comment": "constantly changed by manolo"
+        },
+        {
+            "c_hash": "306bbef2",
+            "date": "2013-09-12 02:03:24 +0000",
+            "comment": "constantly changed by manolo"
+        },
+        {
+            "c_hash": "e45a73db",
+            "date": "2013-09-12 02:03:52 +0000",
+            "comment": "change the LOGIN progress using native MVP instead of gwt-presenter"
+        },
+        {
+            "c_hash": "995bf066",
+            "date": "2013-09-12 02:04:40 +0000",
+            "comment": "Change to new mvp framework - first step"
+        },
+        {
+            "c_hash": "c8f87c19",
+            "date": "2013-09-12 02:05:02 +0000",
+            "comment": "constantly changed by manolo"
+        },
+        {
+            "c_hash": "1e5769ea",
+            "date": "2013-09-12 02:05:26 +0000",
+            "comment": "decorate the theme"
+        },
+        {
+            "c_hash": "1ff365c5",
+            "date": "2013-09-12 02:05:39 +0000",
+            "comment": "decorate the theme"
+        },
+        {
+            "c_hash": "d441e2a6",
+            "date": "2013-09-12 02:06:04 +0000",
+            "comment": "introduce the top activity"
+        },
+        {
+            "c_hash": "c3144c98",
+            "date": "2013-09-12 02:06:30 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/james/hupa/trunk@1522115 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "5b17f06d",
+            "date": "2013-09-12 02:06:53 +0000",
+            "comment": "At first make the inbox work, but only when click the refresh button. The page also be working, the other folder will be like the same."
+        },
+        {
+            "c_hash": "2ba60ca5",
+            "date": "2013-09-12 02:07:26 +0000",
+            "comment": "1. improve the inbox folder place. 2. commit all of the activities except contacts."
+        },
+        {
+            "c_hash": "a4b553eb",
+            "date": "2013-09-12 02:08:28 +0000",
+            "comment": "Make the evo more clear."
+        },
+        {
+            "c_hash": "fce8ebea",
+            "date": "2013-09-12 02:08:50 +0000",
+            "comment": "fix the literal(\"\") the css rules starting with '-'"
+        },
+        {
+            "c_hash": "593989da",
+            "date": "2013-09-12 02:09:31 +0000",
+            "comment": "get started to request factory"
+        },
+        {
+            "c_hash": "64cd5e3f",
+            "date": "2013-09-12 02:10:17 +0000",
+            "comment": "As the FetchFolders RequestFactory, but can not run correctly. Maybe the procedure is wrong somewhere."
+        },
+        {
+            "c_hash": "3269ffe8",
+            "date": "2013-09-12 02:10:38 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/james/hupa/trunk@1522124 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "e7d1a0be",
+            "date": "2013-09-12 02:11:00 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/james/hupa/trunk@1522125 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "155f03ee",
+            "date": "2013-09-12 02:12:04 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/james/hupa/trunk@1522126 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "ffa341e1",
+            "date": "2013-09-12 02:13:01 +0000",
+            "comment": "undo previous operations, for which is not the feasible method. we can not make the client and server implement the same entity interface."
+        },
+        {
+            "c_hash": "999e6585",
+            "date": "2013-09-12 02:14:17 +0000",
+            "comment": "Aim to make the front end view work after the server side's IMAPFolder services RF being working, but there are issues on RF's find* method, I think."
+        },
+        {
+            "c_hash": "db15acaa",
+            "date": "2013-09-12 02:42:10 +0000",
+            "comment": "first commit"
+        },
+        {
+            "c_hash": "12ea9413",
+            "date": "2013-09-12 02:42:51 +0000",
+            "comment": "constant changed by manolo"
+        },
+        {
+            "c_hash": "8a109052",
+            "date": "2013-09-12 02:43:25 +0000",
+            "comment": "constantly changed by manolo"
+        },
+        {
+            "c_hash": "754570b6",
+            "date": "2013-09-12 02:43:53 +0000",
+            "comment": "constantly changed by manolo"
+        },
+        {
+            "c_hash": "89f4d3f5",
+            "date": "2013-09-12 02:44:47 +0000",
+            "comment": "constantly changed by manolo"
+        },
+        {
+            "c_hash": "b4dc6061",
+            "date": "2013-09-12 02:45:06 +0000",
+            "comment": "constantly changed by manolo"
+        },
+        {
+            "c_hash": "c2ef5e05",
+            "date": "2013-09-12 02:45:52 +0000",
+            "comment": "constantly changed by manolo"
+        },
+        {
+            "c_hash": "13f99f69",
+            "date": "2013-09-12 02:46:28 +0000",
+            "comment": "change the LOGIN progress using native MVP instead of gwt-presenter"
+        },
+        {
+            "c_hash": "a8c86d0f",
+            "date": "2013-09-12 02:47:16 +0000",
+            "comment": "Change to new mvp framework - first step"
+        },
+        {
+            "c_hash": "7306a092",
+            "date": "2013-09-12 02:47:41 +0000",
+            "comment": "constantly changed by manolo"
+        },
+        {
+            "c_hash": "ca08070a",
+            "date": "2013-09-12 02:48:05 +0000",
+            "comment": "decorate the theme"
+        },
+        {
+            "c_hash": "09cc394c",
+            "date": "2013-09-12 02:48:21 +0000",
+            "comment": "decorate the theme"
+        },
+        {
+            "c_hash": "82543df0",
+            "date": "2013-09-12 02:48:50 +0000",
+            "comment": "introduce the top activity"
+        },
+        {
+            "c_hash": "cf2cbf3c",
+            "date": "2013-09-12 02:49:20 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/james/hupa/trunk@1522145 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "b01c1fb3",
+            "date": "2013-09-12 02:49:47 +0000",
+            "comment": "At first make the inbox work, but only when click the refresh button. The page also be working, the other folder will be like the same."
+        },
+        {
+            "c_hash": "c38d686d",
+            "date": "2013-09-12 02:50:25 +0000",
+            "comment": "1. improve the inbox folder place. 2. commit all of the activities except contacts."
+        },
+        {
+            "c_hash": "ad89fcd2",
+            "date": "2013-09-12 02:50:59 +0000",
+            "comment": "Make the evo more clear."
+        },
+        {
+            "c_hash": "ee9079c9",
+            "date": "2013-09-12 02:51:39 +0000",
+            "comment": "As the FetchFolders RequestFactory, but can not run correctly. Maybe the procedure is wrong somewhere."
+        },
+        {
+            "c_hash": "4860defc",
+            "date": "2013-09-12 02:52:46 +0000",
+            "comment": "Aim to make the front end view work after the server side's IMAPFolder services RF being working, but there are issues on RF's find* method, I think."
+        },
+        {
+            "c_hash": "b20a60ee",
+            "date": "2013-09-12 02:53:43 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/james/hupa/trunk@1522153 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "350fe28f",
+            "date": "2013-09-12 02:55:36 +0000",
+            "comment": "Make the ValueProxy(ImapFolder) work with Manolo's patch. Hupa can display folders in west view with RequestFactory now."
+        },
+        {
+            "c_hash": "f8ac6dba",
+            "date": "2013-09-12 02:56:01 +0000",
+            "comment": "fix issue 2&3. \tHandle exceptions thrown in async blocks & Simply injection code"
+        },
+        {
+            "c_hash": "ca25527f",
+            "date": "2013-09-12 02:57:07 +0000",
+            "comment": "merged with main trunk in apache: replacing rounded borders with gwt decorator boxes, fix Hupa-93 Hupa-94, fix IE issue"
+        },
+        {
+            "c_hash": "a851d93a",
+            "date": "2013-09-12 02:57:27 +0000",
+            "comment": "fix compile error"
+        },
+        {
+            "c_hash": "7c723279",
+            "date": "2013-09-12 02:58:42 +0000",
+            "comment": "Allow client can use the domain entity interface. Fetch the ImapFolder with Service-s and Locator-s"
+        },
+        {
+            "c_hash": "ab0c7679",
+            "date": "2013-09-12 03:00:47 +0000",
+            "comment": "Make chechsession and login work with RF, with refactoring fetch folders. ...there are so many handlers should be changed to RF..."
+        },
+        {
+            "c_hash": "be441233",
+            "date": "2013-09-12 03:01:05 +0000",
+            "comment": "config guice server module's listener"
+        },
+        {
+            "c_hash": "be61ed1b",
+            "date": "2013-09-12 03:01:24 +0000",
+            "comment": "use domain.User"
+        },
+        {
+            "c_hash": "967d5c85",
+            "date": "2013-09-12 03:02:41 +0000",
+            "comment": "try to change fetch messages to use RF"
+        },
+        {
+            "c_hash": "7ebfcf2e",
+            "date": "2013-09-12 03:04:05 +0000",
+            "comment": "try to fetch messages, yet can not fire the login event in ModelTable such that just get a NullPointerException in it."
+        },
+        {
+            "c_hash": "f41bc419",
+            "date": "2013-09-12 03:04:28 +0000",
+            "comment": "Can fetch messages if click the Refresh button, but a strange issue occur. - can not put the action.setFolder to the first place."
+        },
+        {
+            "c_hash": "dd5e058e",
+            "date": "2013-09-12 03:05:13 +0000",
+            "comment": "Succeed creating new folder"
+        },
+        {
+            "c_hash": "648e79fb",
+            "date": "2013-09-12 03:06:03 +0000",
+            "comment": "delete and rename folder"
+        },
+        {
+            "c_hash": "928b6d61",
+            "date": "2013-09-12 03:06:54 +0000",
+            "comment": "delete messages, make WestActivity Singleton"
+        },
+        {
+            "c_hash": "00356c52",
+            "date": "2013-09-12 03:07:36 +0000",
+            "comment": "Fixes HUPA-96 : pass reference ids when replying. Patch by Zsombor Gegesy"
+        },
+        {
+            "c_hash": "f84f2dd5",
+            "date": "2013-09-12 03:08:08 +0000",
+            "comment": "fix the frozen autobean issue, yet another occur"
+        },
+        {
+            "c_hash": "bbb73737",
+            "date": "2013-09-12 03:09:26 +0000",
+            "comment": "try to get message details, problem is: \"Attempting to edit an EntityProxy previously edited by another RequestContext\""
+        },
+        {
+            "c_hash": "13438d61",
+            "date": "2013-09-12 03:09:49 +0000",
+            "comment": "Solved the \"java.lang.IllegalArgumentException: Attempting to edit an EntityProxy  previously edited by another RequestContext\" and make GetMessageDetails work. Thanks to http://fascynacja.wordpress.com/tag/java-lang-illegalargumentexception-attempting-to-edit-an-entityproxy-previously-edited-by-another-requestcontext/"
+        },
+        {
+            "c_hash": "1d874ffd",
+            "date": "2013-09-12 03:11:57 +0000",
+            "comment": "forward and reply message to use RF"
+        },
+        {
+            "c_hash": "ab3db27f",
+            "date": "2013-09-12 03:13:20 +0000",
+            "comment": "other RFs"
+        },
+        {
+            "c_hash": "97341127",
+            "date": "2013-09-12 03:13:55 +0000",
+            "comment": "fix some bugs related to RF, and try to use new CellView to replace gwt-incubator"
+        },
+        {
+            "c_hash": "fa6cd60c",
+            "date": "2013-09-12 03:14:16 +0000",
+            "comment": "use CellTable to deal with MessageTableModel, even a few issues"
+        },
+        {
+            "c_hash": "c0fe0bdc",
+            "date": "2013-09-12 03:14:41 +0000",
+            "comment": "fix the CellTable display"
+        },
+        {
+            "c_hash": "8d854270",
+            "date": "2013-09-12 03:15:02 +0000",
+            "comment": "clean some code. Pager issue remain"
+        },
+        {
+            "c_hash": "2cde1779",
+            "date": "2013-09-12 03:15:21 +0000",
+            "comment": "fixed imageBundle NullPointerException"
+        },
+        {
+            "c_hash": "d6af3217",
+            "date": "2013-09-12 03:15:43 +0000",
+            "comment": "remove gwt-incubator dependency in Messages List Model; make activities singleton, seems better"
+        },
+        {
+            "c_hash": "2a8020d9",
+            "date": "2013-09-12 03:16:04 +0000",
+            "comment": "add SuppressWarnings(\"depraction\")"
+        },
+        {
+            "c_hash": "0613002f",
+            "date": "2013-09-12 03:16:24 +0000",
+            "comment": "make it usable by removing a function that showing the unread message number dynamically."
+        },
+        {
+            "c_hash": "7c4a9e35",
+            "date": "2013-09-12 03:17:01 +0000",
+            "comment": "delete some deprecated code"
+        },
+        {
+            "c_hash": "ac7da872",
+            "date": "2013-09-12 03:17:34 +0000",
+            "comment": "remove some gwt-incubator stuff"
+        },
+        {
+            "c_hash": "939600dc",
+            "date": "2013-09-12 03:17:58 +0000",
+            "comment": "remove gwt-representer dependency of client"
+        },
+        {
+            "c_hash": "22cd502d",
+            "date": "2013-09-12 03:19:03 +0000",
+            "comment": "remove both of gwt-representer and gwt-dispatch dependencies, add license headers to all new files"
+        },
+        {
+            "c_hash": "fbb512cf",
+            "date": "2013-09-12 03:19:23 +0000",
+            "comment": "remove both of gwt-representer and gwt-dispatch dependencies, add license headers to all new files"
+        },
+        {
+            "c_hash": "f989e9f3",
+            "date": "2013-09-12 03:20:49 +0000",
+            "comment": "remove both of gwt-representer and gwt-dispatch dependencies, add license headers to all new files"
+        },
+        {
+            "c_hash": "c92843db",
+            "date": "2013-09-12 03:21:52 +0000",
+            "comment": "remove both of gwt-representer and gwt-dispatch dependencies, add license headers to all new files"
+        },
+        {
+            "c_hash": "841364e4",
+            "date": "2013-09-12 03:22:10 +0000",
+            "comment": "remove both of gwt-representer and gwt-dispatch dependencies, add license headers to all new files"
+        },
+        {
+            "c_hash": "bf2fe5d3",
+            "date": "2013-09-12 03:22:32 +0000",
+            "comment": "remove both of gwt-representer and gwt-dispatch dependencies, add license headers to all new files"
+        },
+        {
+            "c_hash": "1e7e9819",
+            "date": "2013-09-12 03:22:53 +0000",
+            "comment": "fix the serialization issue."
+        },
+        {
+            "c_hash": "340dca64",
+            "date": "2013-09-12 03:23:13 +0000",
+            "comment": "use DockLayoutPanel as the App Layout"
+        },
+        {
+            "c_hash": "b78ef1da",
+            "date": "2013-09-12 03:23:37 +0000",
+            "comment": "use DataGrid instead of CellTable to list messages."
+        },
+        {
+            "c_hash": "20c4cd43",
+            "date": "2013-09-12 03:23:56 +0000",
+            "comment": "make login form available"
+        },
+        {
+            "c_hash": "7292f325",
+            "date": "2013-09-12 03:24:17 +0000",
+            "comment": "make it look more beautiful"
+        },
+        {
+            "c_hash": "2f7a631d",
+            "date": "2013-09-12 03:24:37 +0000",
+            "comment": "make it look more beautiful"
+        },
+        {
+            "c_hash": "342dd828",
+            "date": "2013-09-12 03:24:50 +0000",
+            "comment": "make it look more beautiful"
+        },
+        {
+            "c_hash": "bb105753",
+            "date": "2013-09-12 03:25:10 +0000",
+            "comment": "fixed unread mail bug with just not dealing with it, for the west view should be replaced by Cell Tree in the future."
+        },
+        {
+            "c_hash": "044bd79c",
+            "date": "2013-09-12 03:25:45 +0000",
+            "comment": "fix bugs, including 1)folders appending on west panel; 2)unread email folder's been frozen exception; 3)back, logout, ...buttons wired behavior."
+        },
+        {
+            "c_hash": "7ae5c75b",
+            "date": "2013-09-12 03:26:09 +0000",
+            "comment": "make messages list pager be available"
+        },
+        {
+            "c_hash": "eef41e5f",
+            "date": "2013-09-12 03:26:32 +0000",
+            "comment": "decorate columns of messages list and related panels above and below."
+        },
+        {
+            "c_hash": "fedeacad",
+            "date": "2013-09-12 03:26:44 +0000",
+            "comment": "fixing weird error in compilation:  Deferred binding failed for 'com.google.gwt.user.client.ui.NativeHorizontalScrollbar'"
+        },
+        {
+            "c_hash": "f0c10dfb",
+            "date": "2013-09-12 03:27:13 +0000",
+            "comment": "alert people \"invilid login\" for the wrong username and/or password, which should be improved with a gentle way"
+        },
+        {
+            "c_hash": "842be77a",
+            "date": "2013-09-12 03:27:33 +0000",
+            "comment": "make the messages list can be selected without bothering the checkbox column's behavior of it."
+        },
+        {
+            "c_hash": "29171d97",
+            "date": "2013-09-12 03:28:08 +0000",
+            "comment": "fix issue 5,6,8: [5]Selection box for number of comments does not work [6]It seems multiple sessions dont work [8]Login screen not centered in chrome"
+        },
+        {
+            "c_hash": "f335f58a",
+            "date": "2013-09-12 03:28:59 +0000",
+            "comment": "fix issue 4 [4]Attachments do not work"
+        },
+        {
+            "c_hash": "f8a6a706",
+            "date": "2013-09-12 03:29:25 +0000",
+            "comment": "fix issue 10 [10]would send increasing 1 message every new send"
+        },
+        {
+            "c_hash": "eb2928a0",
+            "date": "2013-09-12 03:29:50 +0000",
+            "comment": "scrub code"
+        },
+        {
+            "c_hash": "fa1193eb",
+            "date": "2013-09-12 03:30:10 +0000",
+            "comment": "scrub code"
+        },
+        {
+            "c_hash": "f7ef7699",
+            "date": "2013-09-12 03:30:31 +0000",
+            "comment": "fix the main part of issue 11 - delete selected messages."
+        },
+        {
+            "c_hash": "7cfe869d",
+            "date": "2013-09-12 03:31:01 +0000",
+            "comment": "fix AllDelete feature in issue 11. and scrub some code"
+        },
+        {
+            "c_hash": "22993b8b",
+            "date": "2013-09-12 03:31:23 +0000",
+            "comment": "scrub code"
+        },
+        {
+            "c_hash": "452475c6",
+            "date": "2013-09-12 03:31:43 +0000",
+            "comment": "fix issue 14 [14]Delete is not working in MessageDetail panel"
+        },
+        {
+            "c_hash": "7bd62a8b",
+            "date": "2013-09-12 03:32:28 +0000",
+            "comment": "Fix issue #15. Just replace the west tree by using CellTree, resulting in issue #16 & #17"
+        },
+        {
+            "c_hash": "e4db9d85",
+            "date": "2013-09-12 03:33:03 +0000",
+            "comment": "fixed issue #16 [Issue 16]click events should be attached to the CellTree so that the messages list can display at the main panel."
+        },
+        {
+            "c_hash": "c5d4e1e9",
+            "date": "2013-09-12 03:34:02 +0000",
+            "comment": "refactoring."
+        },
+        {
+            "c_hash": "b01bae07",
+            "date": "2013-09-12 03:34:20 +0000",
+            "comment": "want to make it, never give it up"
+        },
+        {
+            "c_hash": "9ad7a031",
+            "date": "2013-09-12 03:35:54 +0000",
+            "comment": "re-add server unit tests"
+        },
+        {
+            "c_hash": "1e460dfc",
+            "date": "2013-09-12 03:36:16 +0000",
+            "comment": "commit frequently based on (http://t.cn/zjxJ71X), there should be more robust and user-friendly features to develop."
+        },
+        {
+            "c_hash": "707b2af2",
+            "date": "2013-09-12 03:36:35 +0000",
+            "comment": "commit frequently based on (http://t.cn/zjxJ71X), there should be more robust and user-friendly features to develop."
+        },
+        {
+            "c_hash": "b53ed40a",
+            "date": "2013-09-12 03:37:27 +0000",
+            "comment": "remove warnings"
+        },
+        {
+            "c_hash": "c58a5152",
+            "date": "2013-09-12 03:37:38 +0000",
+            "comment": "new spirit should come with 2013, this is the first commit"
+        },
+        {
+            "c_hash": "04f5b2c7",
+            "date": "2013-09-12 03:38:00 +0000",
+            "comment": "fix the bug that there will throw a NullPointerException after the first time into the message view page and then click the back link given not click the folders names"
+        },
+        {
+            "c_hash": "fa115405",
+            "date": "2013-09-12 03:38:10 +0000",
+            "comment": "update to the latest 2.5.0 version of gwt"
+        },
+        {
+            "c_hash": "ef357895",
+            "date": "2013-09-12 03:38:32 +0000",
+            "comment": "replace with uibinder"
+        },
+        {
+            "c_hash": "ecc777a6",
+            "date": "2013-09-12 03:39:10 +0000",
+            "comment": "refactoring theme 1 - login page"
+        },
+        {
+            "c_hash": "66ec5d07",
+            "date": "2013-09-12 03:39:28 +0000",
+            "comment": "add background of login box"
+        },
+        {
+            "c_hash": "64680740",
+            "date": "2013-09-12 03:40:03 +0000",
+            "comment": "move new theme ui from experiment to hupa evo"
+        },
+        {
+            "c_hash": "456db6b0",
+            "date": "2013-09-12 03:40:31 +0000",
+            "comment": "refactoring"
+        },
+        {
+            "c_hash": "b605e0cc",
+            "date": "2013-09-12 03:41:09 +0000",
+            "comment": "make login page as one part of the overall layout & splite layout to little one"
+        },
+        {
+            "c_hash": "cd7e920b",
+            "date": "2013-09-12 03:41:40 +0000",
+            "comment": "integrate them as a whole one - first: make the default place work"
+        },
+        {
+            "c_hash": "88fdfd0d",
+            "date": "2013-09-12 03:42:12 +0000",
+            "comment": "remove some warnings and create the AbstractPlace that can give place infomation"
+        },
+        {
+            "c_hash": "790d32ab",
+            "date": "2013-09-12 03:43:03 +0000",
+            "comment": "integrate all of the views to their corresponding activities and mappers"
+        },
+        {
+            "c_hash": "73584455",
+            "date": "2013-09-12 03:43:24 +0000",
+            "comment": "remove the needless ones"
+        },
+        {
+            "c_hash": "b0feacc0",
+            "date": "2013-09-12 03:43:43 +0000",
+            "comment": "clear needless images"
+        },
+        {
+            "c_hash": "ef7ddf51",
+            "date": "2013-09-12 03:44:03 +0000",
+            "comment": "make folder list in west panel partly work"
+        },
+        {
+            "c_hash": "b440de06",
+            "date": "2013-09-12 03:44:35 +0000",
+            "comment": "track the folder list tree model issue of invalid session, TODO how to retrieve folders data using GIN"
+        },
+        {
+            "c_hash": "8718780d",
+            "date": "2013-09-12 03:45:01 +0000",
+            "comment": "make folder list panel work as expected"
+        },
+        {
+            "c_hash": "e3bad4e8",
+            "date": "2013-09-12 03:45:32 +0000",
+            "comment": "bind FolderListActivity to Singleton, otherwise it might create its view several times"
+        },
+        {
+            "c_hash": "2ac0b0d3",
+            "date": "2013-09-12 03:45:49 +0000",
+            "comment": "remove the duplicate bind of LoginActivity"
+        },
+        {
+            "c_hash": "dafd53bf",
+            "date": "2013-09-12 03:46:10 +0000",
+            "comment": "adjust folder list's css style, try to dynamically load folder icons"
+        },
+        {
+            "c_hash": "ee94e167",
+            "date": "2013-09-12 03:46:28 +0000",
+            "comment": "the workaround of r149, all of the folders use the same one icon"
+        },
+        {
+            "c_hash": "bb495d1a",
+            "date": "2013-09-12 03:46:45 +0000",
+            "comment": "try to integrate the messages list's panel"
+        },
+        {
+            "c_hash": "78b34038",
+            "date": "2013-09-12 03:47:13 +0000",
+            "comment": "make message list view panel work as expected partly"
+        },
+        {
+            "c_hash": "b5ed262e",
+            "date": "2013-09-12 03:47:31 +0000",
+            "comment": "DataGrid requires to be put in a LayoutPanel or Panel that implements the ProvidesResize interface to be visible"
+        },
+        {
+            "c_hash": "0ec7c8e8",
+            "date": "2013-09-12 03:47:52 +0000",
+            "comment": "prepare for search box"
+        },
+        {
+            "c_hash": "cc4148ff",
+            "date": "2013-09-12 03:48:19 +0000",
+            "comment": "prepare for message content panel"
+        },
+        {
+            "c_hash": "2e6991cc",
+            "date": "2013-09-12 03:48:47 +0000",
+            "comment": "make message content work as expected partly"
+        },
+        {
+            "c_hash": "23f63ff5",
+            "date": "2013-09-12 03:49:15 +0000",
+            "comment": "adjust to the ui of folder list panel"
+        },
+        {
+            "c_hash": "5f5a4a3a",
+            "date": "2013-09-12 03:49:34 +0000",
+            "comment": "set minimum size of left area"
+        },
+        {
+            "c_hash": "04c3d4dd",
+            "date": "2013-09-12 03:49:51 +0000",
+            "comment": "set minimum size of message list box"
+        },
+        {
+            "c_hash": "cc11150e",
+            "date": "2013-09-12 03:50:13 +0000",
+            "comment": "deal with onResizeEvent of folder list panel, but found issue #25"
+        },
+        {
+            "c_hash": "3ca31469",
+            "date": "2013-09-12 03:50:31 +0000",
+            "comment": "beautify the message list footer"
+        },
+        {
+            "c_hash": "ee044a70",
+            "date": "2013-09-12 03:50:51 +0000",
+            "comment": "add datagrid style resources"
+        },
+        {
+            "c_hash": "fa2b0deb",
+            "date": "2013-09-12 03:51:09 +0000",
+            "comment": "fixed issue #26 and #28, left panel is scrollable currently"
+        },
+        {
+            "c_hash": "51c0b95f",
+            "date": "2013-09-12 03:51:32 +0000",
+            "comment": "beautify message list and content"
+        },
+        {
+            "c_hash": "efba5d25",
+            "date": "2013-09-12 03:51:49 +0000",
+            "comment": "dynamical style tool bar"
+        },
+        {
+            "c_hash": "46572d50",
+            "date": "2013-09-12 03:52:07 +0000",
+            "comment": "add enable tool bar buttons toggling event, with being related to issue #31"
+        },
+        {
+            "c_hash": "2f2220cd",
+            "date": "2013-09-12 03:52:25 +0000",
+            "comment": "add click handler to every message row"
+        },
+        {
+            "c_hash": "912332c3",
+            "date": "2013-09-12 03:52:48 +0000",
+            "comment": "prepare for place management and history controller"
+        },
+        {
+            "c_hash": "f648b334",
+            "date": "2013-09-12 03:53:07 +0000",
+            "comment": "prepare to manage the places and histories"
+        },
+        {
+            "c_hash": "873de178",
+            "date": "2013-09-12 03:53:25 +0000",
+            "comment": "keep active to make change"
+        },
+        {
+            "c_hash": "f98b5f71",
+            "date": "2013-09-12 03:53:49 +0000",
+            "comment": "get the fixed version of SplitLayoutPanel to fix the hidden children issue"
+        },
+        {
+            "c_hash": "64cf8720",
+            "date": "2013-09-12 03:54:11 +0000",
+            "comment": "prepare for places and do something for loading related to issue #18"
+        },
+        {
+            "c_hash": "87b7d145",
+            "date": "2013-09-12 03:54:37 +0000",
+            "comment": "add logout support"
+        },
+        {
+            "c_hash": "692d90a5",
+            "date": "2013-09-12 03:54:56 +0000",
+            "comment": "dealing with login panel's loading progress ajax loader"
+        },
+        {
+            "c_hash": "8937171a",
+            "date": "2013-09-12 03:55:24 +0000",
+            "comment": "make reload mail folder place work, fixed issue #7"
+        },
+        {
+            "c_hash": "bf16916e",
+            "date": "2013-09-12 03:55:54 +0000",
+            "comment": "make reload message content work, use the same place with folder list, while separated with slash, that looks like Gmail's"
+        },
+        {
+            "c_hash": "9e3adb0c",
+            "date": "2013-09-12 03:56:23 +0000",
+            "comment": "scrub code"
+        },
+        {
+            "c_hash": "eebbd73f",
+            "date": "2013-09-12 03:56:50 +0000",
+            "comment": "support code split"
+        },
+        {
+            "c_hash": "9b8b0e00",
+            "date": "2013-09-12 03:57:26 +0000",
+            "comment": "scrub login view code, use css by a unique way"
+        },
+        {
+            "c_hash": "c32cbe3d",
+            "date": "2013-09-12 03:57:53 +0000",
+            "comment": "split the layout panel to little ones"
+        },
+        {
+            "c_hash": "6970f429",
+            "date": "2013-09-12 03:58:28 +0000",
+            "comment": "split the layout panel to more small ones"
+        },
+        {
+            "c_hash": "0198caad",
+            "date": "2013-09-12 03:58:57 +0000",
+            "comment": "make fine tuning with tool buttons in toolbar"
+        },
+        {
+            "c_hash": "bdc3dd66",
+            "date": "2013-09-12 03:59:31 +0000",
+            "comment": "use GinFactoryModuleBuilder to inject multiple displayable instances of some activities"
+        },
+        {
+            "c_hash": "8e18227b",
+            "date": "2013-09-12 03:59:50 +0000",
+            "comment": "fine tuning on folder list footer panel's border"
+        },
+        {
+            "c_hash": "20fbac93",
+            "date": "2013-09-12 04:00:11 +0000",
+            "comment": "preparing for composing panel"
+        },
+        {
+            "c_hash": "8fc34b80",
+            "date": "2013-09-12 04:00:33 +0000",
+            "comment": "composing composing panel"
+        },
+        {
+            "c_hash": "55e37fa6",
+            "date": "2013-09-12 04:01:01 +0000",
+            "comment": "beautify composing panel"
+        },
+        {
+            "c_hash": "52ecd7f0",
+            "date": "2013-09-12 04:01:20 +0000",
+            "comment": "fine tuning the pixel of composing panel, while issue #35 should be fixed later"
+        },
+        {
+            "c_hash": "9bd00f2d",
+            "date": "2013-09-12 04:01:37 +0000",
+            "comment": "prepare for the composing content, attachment and status panel"
+        },
+        {
+            "c_hash": "2de2d2ef",
+            "date": "2013-09-12 04:01:58 +0000",
+            "comment": "add a logger to folder list view for logging the switching activity"
+        },
+        {
+            "c_hash": "4cc2e801",
+            "date": "2013-09-12 04:02:21 +0000",
+            "comment": "make compose panel left another widget rather than cell tree"
+        },
+        {
+            "c_hash": "2af8b8ba",
+            "date": "2013-09-12 04:02:45 +0000",
+            "comment": "could change main panel dynamically currently by clicking the compose button"
+        },
+        {
+            "c_hash": "80c97b39",
+            "date": "2013-09-12 04:03:07 +0000",
+            "comment": "scrub code"
+        },
+        {
+            "c_hash": "f3d010a0",
+            "date": "2013-09-12 04:03:34 +0000",
+            "comment": "cope with issue #36, the default place and and the mail folder place, we would always come up with the default place whenever giving a empty string token"
+        },
+        {
+            "c_hash": "b67977c4",
+            "date": "2013-09-12 04:03:58 +0000",
+            "comment": "scrub code"
+        },
+        {
+            "c_hash": "96fe603e",
+            "date": "2013-09-12 04:04:37 +0000",
+            "comment": "make compose panel managed by activity manager, there is a problem here that whether the hidden view will be lazy loaded regarding the code split mechnism"
+        },
+        {
+            "c_hash": "76421224",
+            "date": "2013-09-12 04:05:00 +0000",
+            "comment": "temporarily hide the left panel under composing, since the contact panel should be realized later"
+        },
+        {
+            "c_hash": "03b24af0",
+            "date": "2013-09-12 04:05:31 +0000",
+            "comment": "toggle to display/hide the tool bar view to adjust the compose and message panel"
+        },
+        {
+            "c_hash": "305c1853",
+            "date": "2013-09-12 04:06:02 +0000",
+            "comment": "dealing with new message editor"
+        },
+        {
+            "c_hash": "2a5f0a98",
+            "date": "2013-09-12 04:06:39 +0000",
+            "comment": "temporarily use the FlowPanel as Editor, the inner rich text area can not automatically adjust the height and width"
+        },
+        {
+            "c_hash": "8dfcbf62",
+            "date": "2013-09-12 04:07:02 +0000",
+            "comment": "change the text box to text area of input type in compose panel, and set its width and height"
+        },
+        {
+            "c_hash": "ead482d1",
+            "date": "2013-09-12 04:08:09 +0000",
+            "comment": "make send text mail work excellently"
+        },
+        {
+            "c_hash": "11df9eac",
+            "date": "2013-09-12 04:08:47 +0000",
+            "comment": "add user label, yet issue46 occur"
+        },
+        {
+            "c_hash": "468847f2",
+            "date": "2013-09-12 04:09:09 +0000",
+            "comment": "make attachments sending work as expected"
+        },
+        {
+            "c_hash": "70911bb9",
+            "date": "2013-09-12 04:09:36 +0000",
+            "comment": "coping with reply and forward sending message"
+        },
+        {
+            "c_hash": "e58ac2fa",
+            "date": "2013-09-12 04:10:06 +0000",
+            "comment": "coping with java.lang.IllegalArgumentException: uid"
+        },
+        {
+            "c_hash": "fa9e94fe",
+            "date": "2013-09-12 04:11:10 +0000",
+            "comment": "fixed the requestfactory's quirk"
+        },
+        {
+            "c_hash": "55691947",
+            "date": "2013-09-12 04:11:36 +0000",
+            "comment": "scrub code"
+        },
+        {
+            "c_hash": "91d69c6a",
+            "date": "2013-09-12 04:11:55 +0000",
+            "comment": "event register for compose activity, and try to update the version of gwtuploader but found some exceptions"
+        },
+        {
+            "c_hash": "1321f24a",
+            "date": "2013-09-12 04:12:14 +0000",
+            "comment": "add style for the choose file button"
+        },
+        {
+            "c_hash": "f6cb0d8a",
+            "date": "2013-09-12 04:12:35 +0000",
+            "comment": "make add operation buttons work according to the click events"
+        },
+        {
+            "c_hash": "b675446c",
+            "date": "2013-09-12 04:12:56 +0000",
+            "comment": "ignore the cc or bcc addresses when they are hidden elements"
+        },
+        {
+            "c_hash": "68254c97",
+            "date": "2013-09-12 04:13:20 +0000",
+            "comment": "beautify the multiuploader"
+        },
+        {
+            "c_hash": "ac6c0839",
+            "date": "2013-09-12 04:13:49 +0000",
+            "comment": "fill the empty compose view with the old message when the composing type are reply, replyAll, forward and preparing for about & deleting operation"
+        },
+        {
+            "c_hash": "a89af87e",
+            "date": "2013-09-12 04:14:08 +0000",
+            "comment": "scrub code"
+        },
+        {
+            "c_hash": "56f0b313",
+            "date": "2013-09-12 04:14:41 +0000",
+            "comment": "scrub code"
+        },
+        {
+            "c_hash": "d579ab76",
+            "date": "2013-09-12 04:15:00 +0000",
+            "comment": "make the unread message row's font bold and the read ones normal, see issue#33"
+        },
+        {
+            "c_hash": "c3e3f845",
+            "date": "2013-09-12 04:15:25 +0000",
+            "comment": "1.do not select the message which is being focused on. 2.create the mark popup menu"
+        },
+        {
+            "c_hash": "110e1300",
+            "date": "2013-09-12 04:15:49 +0000",
+            "comment": "beutify the popup menu"
+        },
+        {
+            "c_hash": "9759ba98",
+            "date": "2013-09-12 04:16:09 +0000",
+            "comment": "link the mark action to the message list such that they can change upon the actions"
+        },
+        {
+            "c_hash": "7e5eda0c",
+            "date": "2013-09-12 04:16:29 +0000",
+            "comment": "try to link the mark actions to rf services"
+        },
+        {
+            "c_hash": "bbb312b2",
+            "date": "2013-09-12 04:16:45 +0000",
+            "comment": "prepare to add right click event to folders list"
+        },
+        {
+            "c_hash": "ea85ef99",
+            "date": "2013-09-12 04:17:07 +0000",
+            "comment": "add style to popup menu"
+        },
+        {
+            "c_hash": "ffcf89f7",
+            "date": "2013-09-12 04:17:18 +0000",
+            "comment": "switch from svn to git"
+        },
+        {
+            "c_hash": "991b5600",
+            "date": "2013-09-12 04:17:29 +0000",
+            "comment": "add gitignore to ignore files by git"
+        },
+        {
+            "c_hash": "d30d8dfa",
+            "date": "2013-09-12 04:17:41 +0000",
+            "comment": "update git ignore"
+        },
+        {
+            "c_hash": "dc6e4df3",
+            "date": "2013-09-12 04:17:51 +0000",
+            "comment": "upgrade gwt to 2.5.1"
+        },
+        {
+            "c_hash": "4224e670",
+            "date": "2013-09-12 04:18:02 +0000",
+            "comment": "validation-api should be in the final .war"
+        },
+        {
+            "c_hash": "75199c5c",
+            "date": "2013-09-12 04:18:31 +0000",
+            "comment": "try to fix some issues by reorganize the activity mapper and place controller"
+        },
+        {
+            "c_hash": "672d12c2",
+            "date": "2013-09-12 04:18:58 +0000",
+            "comment": "fixed issue#46 and issue#32"
+        },
+        {
+            "c_hash": "ddcb1611",
+            "date": "2013-09-12 04:19:18 +0000",
+            "comment": "prepare to make composeView's reload work"
+        },
+        {
+            "c_hash": "bd2cabb6",
+            "date": "2013-09-12 04:19:47 +0000",
+            "comment": "fixed issue#32"
+        },
+        {
+            "c_hash": "2ec7eb2c",
+            "date": "2013-09-12 04:20:07 +0000",
+            "comment": "fixed issue#54 just using History.back()"
+        },
+        {
+            "c_hash": "499eb7fa",
+            "date": "2013-09-12 04:20:33 +0000",
+            "comment": "fixed issue#45, issue#47, issue#51. change the layout of composite, don't use contact instead of folders list"
+        },
+        {
+            "c_hash": "fad4ccce",
+            "date": "2013-09-12 04:20:52 +0000",
+            "comment": "let messages list activity make use of mvp"
+        },
+        {
+            "c_hash": "7f2e9433",
+            "date": "2013-09-12 04:21:15 +0000",
+            "comment": "scrub code"
+        },
+        {
+            "c_hash": "9ae590b7",
+            "date": "2013-09-12 04:21:44 +0000",
+            "comment": "fixed issue#11, write a subclass of SplitLayoutPanel to override its onResize but failed, use the native one, and then refactor some names"
+        },
+        {
+            "c_hash": "b636a5d8",
+            "date": "2013-09-12 04:22:06 +0000",
+            "comment": "add the files leaved by last commit"
+        },
+        {
+            "c_hash": "6a7ec1dd",
+            "date": "2013-09-12 04:22:25 +0000",
+            "comment": "fixed issue#48, and add the original IdleTimer"
+        },
+        {
+            "c_hash": "253c0063",
+            "date": "2013-09-12 04:22:48 +0000",
+            "comment": "fix the bugs resulted from the no unit tests"
+        },
+        {
+            "c_hash": "f4750eff",
+            "date": "2013-09-12 04:23:15 +0000",
+            "comment": "make the selected toolbar UI work"
+        },
+        {
+            "c_hash": "39b27651",
+            "date": "2013-09-12 04:23:52 +0000",
+            "comment": "fixed issue#58, with the last commit"
+        },
+        {
+            "c_hash": "9b9fe8a7",
+            "date": "2013-09-12 04:24:21 +0000",
+            "comment": "fixed issue#59, coupled with fixing some UI refreshment issues in toolsbar"
+        },
+        {
+            "c_hash": "4471c707",
+            "date": "2013-09-12 04:24:50 +0000",
+            "comment": "add loading and notification bar(finishing the folder list click event), related to the issue#18"
+        },
+        {
+            "c_hash": "6316d1b7",
+            "date": "2013-09-12 04:25:13 +0000",
+            "comment": "make a notification timer to be able to schedule the notice with millis time."
+        },
+        {
+            "c_hash": "efe4f90e",
+            "date": "2013-09-12 04:25:36 +0000",
+            "comment": "make the notification be able to cope with link"
+        },
+        {
+            "c_hash": "212f4ae6",
+            "date": "2013-09-12 04:25:55 +0000",
+            "comment": "scrub code"
+        },
+        {
+            "c_hash": "f137a347",
+            "date": "2013-09-12 04:26:28 +0000",
+            "comment": "upgrade maven-processor-plugin to the latest 2.2.4; change the middle-man in MessageListActivityMapper to string instead of the whole MessageFolderPlace"
+        },
+        {
+            "c_hash": "615fe921",
+            "date": "2013-09-12 04:26:53 +0000",
+            "comment": "fixed issue#61; add loading to mark, unmark."
+        },
+        {
+            "c_hash": "7789b0e1",
+            "date": "2013-09-12 04:27:16 +0000",
+            "comment": "fixed issue#18"
+        },
+        {
+            "c_hash": "eeaabcbb",
+            "date": "2013-09-12 04:28:09 +0000",
+            "comment": "an exception in DEV-MODE"
+        },
+        {
+            "c_hash": "9361749b",
+            "date": "2013-09-12 04:28:35 +0000",
+            "comment": "fixed issue#55 ; relative the mark as (un)read"
+        },
+        {
+            "c_hash": "247415ad",
+            "date": "2013-09-12 04:28:55 +0000",
+            "comment": "scrub code"
+        },
+        {
+            "c_hash": "23f450c3",
+            "date": "2013-09-12 04:29:20 +0000",
+            "comment": "attempt to add label setting feature"
+        },
+        {
+            "c_hash": "538730ac",
+            "date": "2013-09-12 04:29:41 +0000",
+            "comment": "add layout styles to three part"
+        },
+        {
+            "c_hash": "29d43467",
+            "date": "2013-09-12 04:30:41 +0000",
+            "comment": "add splitter"
+        },
+        {
+            "c_hash": "a0001efa",
+            "date": "2013-09-12 04:31:08 +0000",
+            "comment": "change setting playground's background to be different"
+        },
+        {
+            "c_hash": "1dd07034",
+            "date": "2013-09-12 04:31:43 +0000",
+            "comment": "make label settings prototype"
+        },
+        {
+            "c_hash": "49ac16d7",
+            "date": "2013-09-12 04:32:18 +0000",
+            "comment": "fixed issue#62"
+        },
+        {
+            "c_hash": "3b1b4f20",
+            "date": "2013-09-12 04:32:57 +0000",
+            "comment": "pull all folders for label settings"
+        },
+        {
+            "c_hash": "35949326",
+            "date": "2013-09-12 04:33:24 +0000",
+            "comment": "layout the label setting view"
+        },
+        {
+            "c_hash": "63c50063",
+            "date": "2013-09-12 04:34:08 +0000",
+            "comment": "add rename RF to label setting feature"
+        },
+        {
+            "c_hash": "74eec3d5",
+            "date": "2013-09-12 04:34:31 +0000",
+            "comment": "fixed issue#57 - really disable the tools in toolbar"
+        },
+        {
+            "c_hash": "000799d0",
+            "date": "2013-09-12 04:34:53 +0000",
+            "comment": "make tool bar's style work as expected"
+        },
+        {
+            "c_hash": "c4af82bf",
+            "date": "2013-09-12 04:35:15 +0000",
+            "comment": "try to make switch to setting work"
+        },
+        {
+            "c_hash": "4ec5352c",
+            "date": "2013-09-12 04:35:42 +0000",
+            "comment": "make layout can be arranged by clicking the navigation buttons; make the layout changing by set their sizes to zero rather than remove/add from their parent widgets; merge to the master branch."
+        },
+        {
+            "c_hash": "19ab707c",
+            "date": "2013-09-12 04:36:08 +0000",
+            "comment": "make navigation styles shufflling be working as expected"
+        },
+        {
+            "c_hash": "33499b99",
+            "date": "2013-09-12 04:36:35 +0000",
+            "comment": "make delete label in label setting work(backend now)"
+        },
+        {
+            "c_hash": "56c500a1",
+            "date": "2013-09-12 04:36:58 +0000",
+            "comment": "make add of label setting work in backend"
+        },
+        {
+            "c_hash": "a3469e2f",
+            "date": "2013-09-12 04:37:35 +0000",
+            "comment": "try to rearrange the places and history managment."
+        },
+        {
+            "c_hash": "c3d648e1",
+            "date": "2013-09-12 04:38:35 +0000",
+            "comment": "change place management and make refresh folder and message list more gentle"
+        },
+        {
+            "c_hash": "c90e1579",
+            "date": "2013-09-12 04:39:59 +0000",
+            "comment": "change message list view to make it not refresh the whole list when click one of the messages"
+        },
+        {
+            "c_hash": "2a978d4b",
+            "date": "2013-09-12 04:41:05 +0000",
+            "comment": "try to make messages list better for user experience"
+        },
+        {
+            "c_hash": "f614fc6f",
+            "date": "2013-09-12 04:41:52 +0000",
+            "comment": "make folders list view refresh automatically according to the actual unread message"
+        },
+        {
+            "c_hash": "25245370",
+            "date": "2013-09-12 04:42:32 +0000",
+            "comment": "add top Deleting... bar when delete message(s)"
+        },
+        {
+            "c_hash": "dec5951a",
+            "date": "2013-09-12 04:43:02 +0000",
+            "comment": "add top Loading... bar when expanding a message"
+        },
+        {
+            "c_hash": "1ad72cd0",
+            "date": "2013-09-12 04:43:31 +0000",
+            "comment": "refresh labels list when create/remove label in the setting place, while remove label can not refresh now"
+        },
+        {
+            "c_hash": "b1924a41",
+            "date": "2013-09-12 04:43:51 +0000",
+            "comment": "remove useless code"
+        },
+        {
+            "c_hash": "6ce619fe",
+            "date": "2013-09-12 04:44:11 +0000",
+            "comment": "fixed issue#65, while this should be improved to add some cache or something like"
+        },
+        {
+            "c_hash": "911ddff4",
+            "date": "2013-09-12 04:44:36 +0000",
+            "comment": "fixed issue#64, add attachments region in message content view"
+        },
+        {
+            "c_hash": "88e78e84",
+            "date": "2013-09-12 04:44:57 +0000",
+            "comment": "Quick fix to make the project compile"
+        },
+        {
+            "c_hash": "9948f01f",
+            "date": "2013-09-12 04:45:29 +0000",
+            "comment": "replace with IsWidget"
+        },
+        {
+            "c_hash": "7ae54480",
+            "date": "2013-09-12 04:45:51 +0000",
+            "comment": "fixed issue#68, make pager work as expected"
+        },
+        {
+            "c_hash": "bcc5bd99",
+            "date": "2013-09-12 04:46:08 +0000",
+            "comment": "change the message content view with scrollbar"
+        },
+        {
+            "c_hash": "a2b5aa3f",
+            "date": "2013-09-12 04:46:28 +0000",
+            "comment": "replace Label List View in setting place to use ScrollPanel"
+        },
+        {
+            "c_hash": "b397c4f1",
+            "date": "2013-09-12 04:46:51 +0000",
+            "comment": "add intents to labels list"
+        },
+        {
+            "c_hash": "42e617e0",
+            "date": "2013-09-12 04:47:14 +0000",
+            "comment": "add adjusted style to labels list in setting palce"
+        },
+        {
+            "c_hash": "98353e70",
+            "date": "2013-09-12 04:47:35 +0000",
+            "comment": "add cursor pointer style to the attachment list"
+        },
+        {
+            "c_hash": "22786570",
+            "date": "2013-09-12 04:47:54 +0000",
+            "comment": "hide the header in message content panel util the feature is added"
+        },
+        {
+            "c_hash": "917f8362",
+            "date": "2013-09-12 04:48:15 +0000",
+            "comment": "remove the cursor pointer style in the attachment box"
+        },
+        {
+            "c_hash": "08f3e740",
+            "date": "2013-09-12 04:48:33 +0000",
+            "comment": "change a new start at tree view model"
+        },
+        {
+            "c_hash": "9a239dac",
+            "date": "2013-09-12 04:48:52 +0000",
+            "comment": "fixed issue#67; fixed issue#69 (with default select inbox folder); fixed issue#70;"
+        },
+        {
+            "c_hash": "6c70185d",
+            "date": "2013-09-12 04:49:12 +0000",
+            "comment": "compize the label list"
+        },
+        {
+            "c_hash": "00c82d50",
+            "date": "2013-09-12 04:49:32 +0000",
+            "comment": "This class should not be here since it is part of GWT and it seems we are not patching it"
+        },
+        {
+            "c_hash": "557c8ce6",
+            "date": "2013-09-12 04:49:50 +0000",
+            "comment": "Fix grid not resizing since we werent implementing RequiresResize in its container. In fact we could get rid of its container"
+        },
+        {
+            "c_hash": "4553782c",
+            "date": "2013-09-12 04:50:12 +0000",
+            "comment": "done issue#72, get back the unread count"
+        },
+        {
+            "c_hash": "6b333323",
+            "date": "2013-09-12 04:50:31 +0000",
+            "comment": "fixed issue#75 with our own CheckboxHeader and DataGrid.redrawHeaders method"
+        },
+        {
+            "c_hash": "18e02d0f",
+            "date": "2013-09-12 04:50:53 +0000",
+            "comment": "fixed issue#76 with adding delete handler event"
+        },
+        {
+            "c_hash": "1b4efc14",
+            "date": "2013-09-12 04:51:11 +0000",
+            "comment": "fixed issue#77, the reason is that the arguement passed to server was not the selected value in the list box"
+        },
+        {
+            "c_hash": "7c9cfa56",
+            "date": "2013-09-12 04:51:35 +0000",
+            "comment": "Fix issue in chrome with inlined images in messages"
+        },
+        {
+            "c_hash": "053dda8a",
+            "date": "2013-09-12 04:51:57 +0000",
+            "comment": "fixed issue#78, cause not be using the HtmlConstant and nameForDisplay which with intents"
+        },
+        {
+            "c_hash": "ffb24e46",
+            "date": "2013-09-12 04:52:22 +0000",
+            "comment": "make status panel in the message content panel hidden temp"
+        },
+        {
+            "c_hash": "3a0d3378",
+            "date": "2013-09-12 04:52:44 +0000",
+            "comment": "fixed issue#79, using 100 as the assuming page size of labels list rather than CellList's default page size 25"
+        },
+        {
+            "c_hash": "57bf2665",
+            "date": "2013-09-12 04:53:03 +0000",
+            "comment": "fixed issue#80, make root path empty string ''"
+        },
+        {
+            "c_hash": "308314bb",
+            "date": "2013-09-12 04:53:34 +0000",
+            "comment": "fixed issue#81, add refresh event handler"
+        },
+        {
+            "c_hash": "563af0e3",
+            "date": "2013-09-12 04:53:54 +0000",
+            "comment": "fixed issue#84, actually, in evo, there has been several deprecated classed, include WestActivity, which is replaced by FolderListActivity"
+        },
+        {
+            "c_hash": "fc83c6af",
+            "date": "2013-09-12 04:54:19 +0000",
+            "comment": "prepared for issue#73, established the UI layout"
+        },
+        {
+            "c_hash": "8d35c5d0",
+            "date": "2013-09-12 04:54:38 +0000",
+            "comment": "Do not compile language specific permutations until we dont translate all the app to other languages"
+        },
+        {
+            "c_hash": "ef02c0d1",
+            "date": "2013-09-12 04:54:59 +0000",
+            "comment": "Remove demo values in login screen"
+        },
+        {
+            "c_hash": "a00d398c",
+            "date": "2013-09-12 04:55:20 +0000",
+            "comment": "fixed issue#73, using LinkedHashSet in memory to store the contacts list like 'Echo Wang <echowdx@gmail.com>'"
+        },
+        {
+            "c_hash": "17b2a179",
+            "date": "2013-09-12 04:55:42 +0000",
+            "comment": "prepare to add search feature"
+        },
+        {
+            "c_hash": "198284b9",
+            "date": "2013-09-12 04:55:58 +0000",
+            "comment": "Avoid entering a new-line in the textarea when selecting a suggestion element"
+        },
+        {
+            "c_hash": "4925776b",
+            "date": "2013-09-12 04:56:28 +0000",
+            "comment": "fixed issue#74, finished to add search feature"
+        },
+        {
+            "c_hash": "ebf4642c",
+            "date": "2013-09-12 04:56:48 +0000",
+            "comment": "Adding some kind of sorting in client-side. Fixed issue#83"
+        },
+        {
+            "c_hash": "5be5b8f9",
+            "date": "2013-09-12 04:57:06 +0000",
+            "comment": "quick fix something - use textbox for search and make contacts TODO"
+        },
+        {
+            "c_hash": "e1689d40",
+            "date": "2013-09-12 04:57:25 +0000",
+            "comment": "make more width for searchButton because firefox compress it"
+        },
+        {
+            "c_hash": "0c3a309e",
+            "date": "2013-09-12 04:57:43 +0000",
+            "comment": "add searching... loading progress; add some attribute to searchbox, say magnifying glass and placeholder and so on"
+        },
+        {
+            "c_hash": "f9d1246b",
+            "date": "2013-09-12 04:58:10 +0000",
+            "comment": "fixed issue#87, and remove deprecated west view related codes"
+        },
+        {
+            "c_hash": "e1f6391f",
+            "date": "2013-09-12 04:58:45 +0000",
+            "comment": "scrub code, remove deprecated code"
+        },
+        {
+            "c_hash": "8ddbb72b",
+            "date": "2013-09-12 04:59:06 +0000",
+            "comment": "use different INBOX folder in DEV and PROD mode respectively"
+        },
+        {
+            "c_hash": "98ea953c",
+            "date": "2013-09-12 04:59:28 +0000",
+            "comment": "show/hide attachment's panel according to the attachments size"
+        },
+        {
+            "c_hash": "0be51700",
+            "date": "2013-09-12 04:59:48 +0000",
+            "comment": "fixed issue#82, make display message first and then mark etc."
+        },
+        {
+            "c_hash": "f069ca42",
+            "date": "2013-09-12 05:00:10 +0000",
+            "comment": "fixed issue#86, use opening a new window button to show the raw message in a new window"
+        },
+        {
+            "c_hash": "2e8bd5ee",
+            "date": "2013-09-12 05:00:33 +0000",
+            "comment": "hide the show raw message button when not displaying a message and remove deprecated code"
+        },
+        {
+            "c_hash": "e418ed69",
+            "date": "2013-09-12 05:00:54 +0000",
+            "comment": "remove deprecated code"
+        },
+        {
+            "c_hash": "e3f1e542",
+            "date": "2013-09-12 05:01:25 +0000",
+            "comment": "fixed issue#85, can move one message now in DEMO mode, while not test in Gmail mode"
+        },
+        {
+            "c_hash": "0faebb7a",
+            "date": "2013-09-12 05:01:50 +0000",
+            "comment": "fixed issue#71, use an unique background"
+        },
+        {
+            "c_hash": "7395d781",
+            "date": "2013-09-12 05:02:12 +0000",
+            "comment": "fixed issue#66 and remove one useless class, make MessageListFooterActivityMapper do not map anything when it comes to setting place"
+        },
+        {
+            "c_hash": "519dfd89",
+            "date": "2013-09-12 05:02:39 +0000",
+            "comment": "make a skeleton in the setting place, for more setting items"
+        },
+        {
+            "c_hash": "d012ea8e",
+            "date": "2013-09-12 05:02:52 +0000",
+            "comment": "Compiler optimizations and profiles"
+        },
+        {
+            "c_hash": "389580eb",
+            "date": "2013-09-12 05:03:12 +0000",
+            "comment": "Fix tests"
+        },
+        {
+            "c_hash": "912db26e",
+            "date": "2013-09-12 05:03:30 +0000",
+            "comment": "Fix RegexPatternsTest test"
+        },
+        {
+            "c_hash": "e23b0859",
+            "date": "2013-09-12 05:03:49 +0000",
+            "comment": "Set snapshot version higger than the current hupa in svn repo"
+        },
+        {
+            "c_hash": "08ee4600",
+            "date": "2013-09-12 05:04:08 +0000",
+            "comment": "Move method to Util class"
+        },
+        {
+            "c_hash": "9e1912fe",
+            "date": "2013-09-12 05:04:26 +0000",
+            "comment": "Change method signature"
+        },
+        {
+            "c_hash": "b8fe0d3a",
+            "date": "2013-09-12 05:04:54 +0000",
+            "comment": "Remove unused stuff"
+        },
+        {
+            "c_hash": "4b301536",
+            "date": "2013-09-12 05:05:13 +0000",
+            "comment": "Disable InImapUserPreferencesStorage"
+        },
+        {
+            "c_hash": "328f19e9",
+            "date": "2013-09-12 05:05:33 +0000",
+            "comment": "make cursor pointer to the right place"
+        },
+        {
+            "c_hash": "3ac0b0fa",
+            "date": "2013-09-23 07:04:08 +0000",
+            "comment": "Big Commit: Fix everything broken after using \"git svn\" to merge hupa-evo from apache-extras."
+        },
+        {
+            "c_hash": "4ff419f9",
+            "date": "2013-09-25 08:18:21 +0000",
+            "comment": "Fix hupa doc"
+        },
+        {
+            "c_hash": "643857f0",
+            "date": "2013-09-25 08:19:23 +0000",
+            "comment": "Remove unused source files"
+        },
+        {
+            "c_hash": "1ebdd6e1",
+            "date": "2013-09-26 02:00:47 +0000",
+            "comment": "remove useless folders"
+        },
+        {
+            "c_hash": "9dd92c5b",
+            "date": "2013-09-26 02:07:11 +0000",
+            "comment": "remove useless files"
+        },
+        {
+            "c_hash": "f73365be",
+            "date": "2013-09-26 02:10:21 +0000",
+            "comment": "remove useless files"
+        },
+        {
+            "c_hash": "867d0b73",
+            "date": "2013-09-26 02:15:46 +0000",
+            "comment": "remove some warnings in client package"
+        },
+        {
+            "c_hash": "811e18b6",
+            "date": "2013-09-26 04:30:19 +0000",
+            "comment": "remove useless folders"
+        },
+        {
+            "c_hash": "67309620",
+            "date": "2013-09-26 04:31:23 +0000",
+            "comment": "remove the broken link of hupa"
+        },
+        {
+            "c_hash": "b8bfdb8b",
+            "date": "2013-09-26 04:36:38 +0000",
+            "comment": "add theme's license note"
+        },
+        {
+            "c_hash": "65efdf60",
+            "date": "2013-10-07 13:32:06 +0000",
+            "comment": "remove useless diff file"
+        },
+        {
+            "c_hash": "7c707ffa",
+            "date": "2014-03-02 12:12:22 +0000",
+            "comment": "Complete refactor of HUPA so as many pieces can be reusable. Adding the ability to support multiple imap/smtp servers, and autodiscovering of server configuration. Adding client side caching infra based on localStorage. Improved performance, and removed repeated calls. Fixing a lot of issues which makes Hupa almost ready for production environments. Now client is a separated module which produce a reusable jar artifact. etc, etc."
+        },
+        {
+            "c_hash": "c596b8e5",
+            "date": "2014-03-02 14:07:59 +0000",
+            "comment": "forget file"
+        },
+        {
+            "c_hash": "6b2e5c37",
+            "date": "2014-03-02 14:19:39 +0000",
+            "comment": "update README"
+        },
+        {
+            "c_hash": "e16c9000",
+            "date": "2014-03-02 14:33:04 +0000",
+            "comment": "Update to gwt version 2.6.0"
+        },
+        {
+            "c_hash": "73b6451d",
+            "date": "2014-03-15 10:26:38 +0000",
+            "comment": "Remove ecs stuff"
+        },
+        {
+            "c_hash": "f78213f2",
+            "date": "2014-03-15 10:30:05 +0000",
+            "comment": "add methods for getting the iso address from contacts"
+        },
+        {
+            "c_hash": "99244a88",
+            "date": "2014-03-15 10:32:46 +0000",
+            "comment": "Do not repeat contacts"
+        },
+        {
+            "c_hash": "ebb80094",
+            "date": "2014-03-15 10:33:53 +0000",
+            "comment": "Return an empty settings if email is nor valid"
+        },
+        {
+            "c_hash": "614233f0",
+            "date": "2014-03-15 10:36:25 +0000",
+            "comment": "Do not remove non-hupa session attributes, so as hupa server can be included in other backends, and some re-factoring to avoid repeated code"
+        },
+        {
+            "c_hash": "b3038069",
+            "date": "2014-03-15 10:37:46 +0000",
+            "comment": "Formating: Replace tabs with spaces"
+        },
+        {
+            "c_hash": "b4192d01",
+            "date": "2014-03-20 08:16:02 +0000",
+            "comment": "Formating: replace tabs by spaces, remove <cr>, remove trailing spaces"
+        },
+        {
+            "c_hash": "3d849a3a",
+            "date": "2014-03-20 09:03:39 +0000",
+            "comment": "Fix site doc"
+        },
+        {
+            "c_hash": "ce52225c",
+            "date": "2014-03-20 09:17:54 +0000",
+            "comment": "Fix site doc creation due to a maven issue"
+        },
+        {
+            "c_hash": "13c10dbb",
+            "date": "2014-03-21 04:47:14 +0000",
+            "comment": "Change gQuery version to the latest 1.4.1"
+        },
+        {
+            "c_hash": "46b75195",
+            "date": "2014-03-22 13:19:05 +0000",
+            "comment": "Disable the glass of setting in login panel"
+        },
+        {
+            "c_hash": "d3289bea",
+            "date": "2014-04-14 16:48:18 +0000",
+            "comment": "Update guice groupId"
+        },
+        {
+            "c_hash": "65289689",
+            "date": "2014-05-19 17:31:16 +0000",
+            "comment": "upgrade gwt to the latest 2.6.1"
+        },
+        {
+            "c_hash": "3bb1ca66",
+            "date": "2014-06-18 06:36:58 +0000",
+            "comment": "update jetty version so as super-dev-mode does work fine"
+        },
+        {
+            "c_hash": "ba3c46ed",
+            "date": "2014-06-18 15:54:40 +0000",
+            "comment": "Testing committer access"
+        },
+        {
+            "c_hash": "938a050d",
+            "date": "2014-07-27 07:47:50 +0000",
+            "comment": "scrub code"
+        },
+        {
+            "c_hash": "b731960c",
+            "date": "2014-07-27 20:44:25 +0000",
+            "comment": "Remove deprecated client logger"
+        },
+        {
+            "c_hash": "60cac5cd",
+            "date": "2014-07-27 20:52:57 +0000",
+            "comment": "Remove another deprecated client logger"
+        },
+        {
+            "c_hash": "06f24ea5",
+            "date": "2014-11-05 07:22:26 +0000",
+            "comment": "typo"
+        },
+        {
+            "c_hash": "3c012724",
+            "date": "2014-11-06 07:46:38 +0000",
+            "comment": "remove the test file from emma"
+        }
+    ]
+}

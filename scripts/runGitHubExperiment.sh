@@ -1,0 +1,1 @@
+./scripts/runExperiment.sh configFiles/GitHubProjects/$1-config.json $1

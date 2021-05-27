@@ -1,0 +1,3 @@
+commitID;commit-type;time-to-next-release;commit-message
+cc9a1735257e25b4b184cdf6c3ad83b02849247b;BREAKING_FIX;104;Move some code to the features tree git-svn-id: https://svn.apache.org/repos/asf/servicemix/smx4/features/trunk@608107 13f79535-47bb-0310-9956-ffa450edef68
+7e35de6a49775e1873b76c75431cfd525295eb0d;BREAKING_CHANGES;103;get servicemix-camel tests running in features module git-svn-id: https://svn.apache.org/repos/asf/servicemix/smx4/features/trunk@608719 13f79535-47bb-0310-9956-ffa450edef68

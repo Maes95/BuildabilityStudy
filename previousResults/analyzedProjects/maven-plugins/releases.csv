@@ -1,0 +1,9 @@
+commitID;commit-type;time-to-next-release;commit-message
+907ed31dbb5a2f318b6c727900ebbd8a2fd8af37;BREAKING_CHANGES;2045;move plugins git-svn-id: https://svn.apache.org/repos/asf/maven/plugins/trunk@345007 13f79535-47bb-0310-9956-ffa450edef68
+369a7e5070d0e89cf216b2918f19d9456b083c02;BREAKING_FIX;1171;o Disable the reactor temporarily in order to make a release. git-svn-id: https://svn.apache.org/repos/asf/maven/plugins/trunk@646035 13f79535-47bb-0310-9956-ffa450edef68
+a0f3084c24662d873f773a5d1ec3e6e7b255724f;BREAKING_CHANGES;1166;o Put back stuff that I needed to remove to be able to release parent 11. git-svn-id: https://svn.apache.org/repos/asf/maven/plugins/trunk@647538 13f79535-47bb-0310-9956-ffa450edef68
+c39a0a85000733ed104fd3840bda866747cbfc1d;BREAKING_FIX;1005;o Comment out the modules to be able to release the plugins parent. git-svn-id: https://svn.apache.org/repos/asf/maven/plugins/trunk@697508 13f79535-47bb-0310-9956-ffa450edef68
+45ca89239a10f76acf052645c630c9114b567c28;BREAKING_CHANGES;1005;o Restore modules after the release of the plugins parent. git-svn-id: https://svn.apache.org/repos/asf/maven/plugins/trunk@697533 13f79535-47bb-0310-9956-ffa450edef68
+e42468ddf95e1f2ac2b8489809b13524f36bd873;BREAKING_FIX;856;temporarily remove the modules to avoid a cyclic dependency git-svn-id: https://svn.apache.org/repos/asf/maven/plugins/trunk@745339 13f79535-47bb-0310-9956-ffa450edef68
+87b57b02ec466d1508ae32e968c5f3124ce0872b;BREAKING_CHANGES;856;put the modules back git-svn-id: https://svn.apache.org/repos/asf/maven/plugins/trunk@745342 13f79535-47bb-0310-9956-ffa450edef68
+16cd6573385889105e28dbe49e28a50062182e33;BREAKING_CHANGES;403;o Added maven-plugins-aggregator to compensate for move of maven-plugins (cf. http://www.mail-archive.com/dev@maven.apache.org/msg84531.html) git-svn-id: https://svn.apache.org/repos/asf/maven/plugins/trunk@944891 13f79535-47bb-0310-9956-ffa450edef68

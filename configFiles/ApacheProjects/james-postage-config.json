@@ -1,0 +1,378 @@
+{
+    "project": "james-postage",
+    "git_url": "https://github.com/apache/james-postage.git",
+    "last_commit": "4d62edc7",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "8b03623b",
+            "date": "2006-06-14 08:24:01 +0000",
+            "comment": "postage svn structure (JAMES-442)"
+        },
+        {
+            "c_hash": "6ba74ab8",
+            "date": "2006-06-19 08:34:36 +0000",
+            "comment": "initial import (ongoing)"
+        },
+        {
+            "c_hash": "a4325a0e",
+            "date": "2006-06-19 10:12:24 +0000",
+            "comment": "initial import (ongoing)"
+        },
+        {
+            "c_hash": "9d407dc2",
+            "date": "2006-06-19 10:14:56 +0000",
+            "comment": "initial import (finish)"
+        },
+        {
+            "c_hash": "22c9e7c9",
+            "date": "2006-06-20 09:23:07 +0000",
+            "comment": "make JVMResourceSampler compile under Java5"
+        },
+        {
+            "c_hash": "7c2b17ab",
+            "date": "2006-06-20 09:48:52 +0000",
+            "comment": "some apache commons libraries which come in handy"
+        },
+        {
+            "c_hash": "3b993f5c",
+            "date": "2006-06-29 08:16:36 +0000",
+            "comment": "incorporate changes/fixes made to similar code in james/trunk rev 410089"
+        },
+        {
+            "c_hash": "06775196",
+            "date": "2006-07-10 11:21:12 +0000",
+            "comment": "- log exceptions when reading forwarded mail - fix reflection calls for methods having void parameter list"
+        },
+        {
+            "c_hash": "9d4c4091",
+            "date": "2006-07-12 15:07:12 +0000",
+            "comment": "make it compile under Java 1.4"
+        },
+        {
+            "c_hash": "f3734d05",
+            "date": "2006-08-07 09:09:49 +0000",
+            "comment": "Add copyright statement to NOTICE / check if svn notification works."
+        },
+        {
+            "c_hash": "b218d106",
+            "date": "2006-08-07 15:05:18 +0000",
+            "comment": "Introduced maven2 pom to build postage site."
+        },
+        {
+            "c_hash": "c8d014ac",
+            "date": "2006-08-09 16:07:44 +0000",
+            "comment": "applied the fix/patch for JIRA POSTAGE-7"
+        },
+        {
+            "c_hash": "105eb732",
+            "date": "2006-08-10 06:37:14 +0000",
+            "comment": "- apply new ASF headers - remove trailing whitespaces - fix config file location in ant file"
+        },
+        {
+            "c_hash": "493d6e0d",
+            "date": "2006-08-10 07:00:08 +0000",
+            "comment": "Remove -- characters that were reported as invalid within a comment.  Add the build/lib directory that holds the required jars.  Adjust the path to match the svn directory structure.  And modify the path to refer to the v2.3 branch, since postage is not updated to work with trunk."
+        },
+        {
+            "c_hash": "6b41632b",
+            "date": "2006-08-10 12:30:02 +0000",
+            "comment": "Fixing POSTAGE-11: \"Getting sometimes an NPE in POP3Client\"."
+        },
+        {
+            "c_hash": "22fc04cd",
+            "date": "2006-08-22 11:44:10 +0000",
+            "comment": "Fix broken config file"
+        },
+        {
+            "c_hash": "fb183241",
+            "date": "2006-08-27 13:15:41 +0000",
+            "comment": "Remove the hardcoded configuration of the smtphandler as SMTPHandler already define its own default handlerchain if no chain is specified."
+        },
+        {
+            "c_hash": "448fe447",
+            "date": "2006-08-27 13:28:09 +0000",
+            "comment": "Fix typos in NOTICE.txt and pom.xml"
+        },
+        {
+            "c_hash": "eebf979e",
+            "date": "2006-08-27 13:46:01 +0000",
+            "comment": "Reduced the dependency tree for maven2 usage (need to download less jars)"
+        },
+        {
+            "c_hash": "619ac6e5",
+            "date": "2006-08-30 14:07:15 +0000",
+            "comment": "Ignore test mails found from previous runs (see jira POSTAGE-10)"
+        },
+        {
+            "c_hash": "c905cc2b",
+            "date": "2006-09-01 10:51:48 +0000",
+            "comment": "add 2 new files missing from previous commit r438486"
+        },
+        {
+            "c_hash": "9ad17c4d",
+            "date": "2006-09-06 09:01:59 +0000",
+            "comment": "implements POSTAGE-5: validate received test mails"
+        },
+        {
+            "c_hash": "76c44b86",
+            "date": "2006-09-08 20:03:29 +0000",
+            "comment": "Updated repository references in pom.xml"
+        },
+        {
+            "c_hash": "de3f04d1",
+            "date": "2006-09-11 13:10:48 +0000",
+            "comment": "Added dnsjava to runtime dependencies. I'm not sure on why it does not inherith dnsjava from james, but this fixes the problem."
+        },
+        {
+            "c_hash": "18d01c39",
+            "date": "2006-09-13 07:01:36 +0000",
+            "comment": "- fixed reading the text parts size - startup-test mails have no longer postage id == NULL, now postage id is \"PROFORMA\" - handle the startup-test mails correctly: ignore them, not try to match them - unifying the mail reception workflow, handling creation of result record, matching and validation in MailAnalyzeStrategy and its derivations - integrate validator concept (POSTAGE-5) with current DefaultMailFactory, moving validation code into DefaultMailValidator"
+        },
+        {
+            "c_hash": "1d26f001",
+            "date": "2006-09-26 16:27:36 +0000",
+            "comment": "Updated pom.xml to depend on james-server:3.0-SNAPSHOT (deployed in the apache snapshot repository)"
+        },
+        {
+            "c_hash": "b81a87a5",
+            "date": "2006-09-26 17:47:01 +0000",
+            "comment": "Fixed project url for relative paths (JAMES-634)"
+        },
+        {
+            "c_hash": "1ec79410",
+            "date": "2006-09-26 21:43:46 +0000",
+            "comment": "Fix project name for Postage"
+        },
+        {
+            "c_hash": "c2a6f1bd",
+            "date": "2006-09-27 06:33:29 +0000",
+            "comment": "extract abstract MailFactory to facilitate development of custom test mails (POSTAGE-5)"
+        },
+        {
+            "c_hash": "5ef01be1",
+            "date": "2006-09-27 06:36:28 +0000",
+            "comment": "initial documentation (POSTAGE-16, and also POSTAGE-5)"
+        },
+        {
+            "c_hash": "b0e52531",
+            "date": "2006-09-27 11:55:44 +0000",
+            "comment": "added fixcrlf to ant build file. apart from that, no effective code changes, just format adjustments and copyright header"
+        },
+        {
+            "c_hash": "b1f3143e",
+            "date": "2006-09-27 14:00:32 +0000",
+            "comment": "Added svn:eol-style=native to all text files (*.java, *.xml, *.txt)"
+        },
+        {
+            "c_hash": "c27f680f",
+            "date": "2006-09-29 12:34:23 +0000",
+            "comment": "edited javadocs only"
+        },
+        {
+            "c_hash": "3f2f2ffe",
+            "date": "2006-10-01 20:55:19 +0000",
+            "comment": "Binary parts now use full random bytes for binary parts (not only letters) Fix to the MailMatchingUtils size calculator (uses getContent and not part.getSize) Added a debug helper: exception nesting."
+        },
+        {
+            "c_hash": "b331d8c5",
+            "date": "2007-08-13 18:20:33 +0000",
+            "comment": "tiny adjustment, to match better a common (default) server configuration out-of-the-box"
+        },
+        {
+            "c_hash": "e359e666",
+            "date": "2008-04-08 15:26:03 +0000",
+            "comment": "Improved reporting in build and allow JAMES_HOME to be set.https://issues.apache.org/jira/browse/POSTAGE-14 POSTAGE-14"
+        },
+        {
+            "c_hash": "05c1d026",
+            "date": "2008-07-31 12:32:14 +0000",
+            "comment": "Updated postage descriptor"
+        },
+        {
+            "c_hash": "3c932566",
+            "date": "2008-08-10 09:40:44 +0000",
+            "comment": "Stage folder for postage. Artifacts part of this commit are copied from server-trunk. This include poms/jars from maven repository. As for server-trunk pom files require a deeper check to understand licensing issues."
+        },
+        {
+            "c_hash": "f5d8a05a",
+            "date": "2008-08-10 09:51:41 +0000",
+            "comment": "Stage folder for postage. Artifacts part of this commit are copied from server-trunk. This include poms/jars from maven repository. As for server-trunk pom files require a deeper check to understand licensing issues."
+        },
+        {
+            "c_hash": "fb650157",
+            "date": "2008-08-10 09:54:55 +0000",
+            "comment": "Minor code cleanup (remove unnecessary casts, declarations, imports, loggers)"
+        },
+        {
+            "c_hash": "5e387db0",
+            "date": "2008-08-10 09:55:59 +0000",
+            "comment": "Cosmetic postage.xml update: reference a released server version (2.3.1), instead of a beta."
+        },
+        {
+            "c_hash": "a1875119",
+            "date": "2008-08-10 09:59:02 +0000",
+            "comment": "Updated m2 and ant builds to require java 1.5 (removed conditional compilation for JMX support). Make use of the new stage folder for building and running postage with both ant and m2. Updated SimpleMailServer/SMTPMailSink to be based on current server trunk (only because of cleaner/simpler m2 dependency tree). Removed m2 stuff from todos.txt. Updated howto.txt according to this upgrade."
+        },
+        {
+            "c_hash": "9442c369",
+            "date": "2008-08-10 10:01:20 +0000",
+            "comment": "svn ignores"
+        },
+        {
+            "c_hash": "2e7ced74",
+            "date": "2008-08-10 10:06:50 +0000",
+            "comment": "Forgot to commit this (upgrade from james 2.3 to trunk, ReaderInputStream has been moved)"
+        },
+        {
+            "c_hash": "f985a4af",
+            "date": "2008-08-10 10:44:52 +0000",
+            "comment": "Update NOTICE to reflect current \"stage\" content."
+        },
+        {
+            "c_hash": "8d4b4bc2",
+            "date": "2008-08-10 10:46:54 +0000",
+            "comment": "lib is no more used (everything needed is in stage, now)"
+        },
+        {
+            "c_hash": "fd5067de",
+            "date": "2008-08-12 10:05:22 +0000",
+            "comment": "Updated postage dependencies to reflect server-trunk changes (few more jars and service.DNSServer repackaged to domain.DNSService)"
+        },
+        {
+            "c_hash": "ea2e209b",
+            "date": "2008-09-20 19:24:44 +0000",
+            "comment": "partly undo changes from commit 684436. my javac is frowning upon missing casts"
+        },
+        {
+            "c_hash": "7be64f34",
+            "date": "2008-09-21 16:44:14 +0000",
+            "comment": "Remove java2 1.4 compatibility classes. (POSTAGE-20)"
+        },
+        {
+            "c_hash": "d0f0eaac",
+            "date": "2008-09-21 17:04:00 +0000",
+            "comment": "First pass at using generics (POSTAGE-21)"
+        },
+        {
+            "c_hash": "d64bd3bd",
+            "date": "2008-09-22 05:41:41 +0000",
+            "comment": "add missing lib to run path, so invoking 'ant run' works again"
+        },
+        {
+            "c_hash": "4c4f3f2d",
+            "date": "2008-09-22 18:18:56 +0000",
+            "comment": "get rid of *Worker: rename to JVMResourceSampler"
+        },
+        {
+            "c_hash": "f119c285",
+            "date": "2011-02-25 07:53:47 +0000",
+            "comment": "Fix type in plugin config. Thanks to Felix Knecht for the fix"
+        },
+        {
+            "c_hash": "e6e0b7ee",
+            "date": "2011-07-18 06:32:10 +0000",
+            "comment": "Add site-reporting directory"
+        },
+        {
+            "c_hash": "7122cf26",
+            "date": "2011-07-18 06:33:21 +0000",
+            "comment": "Cleanup / Use skin for Apache Branding in Navigation. See JAMES-1289"
+        },
+        {
+            "c_hash": "79359cf3",
+            "date": "2011-10-17 14:25:23 +0000",
+            "comment": "Use renamed james-skin (JAMES-1334)"
+        },
+        {
+            "c_hash": "ada504a7",
+            "date": "2011-10-19 12:05:02 +0000",
+            "comment": "Reformat (JAMES-1339)"
+        },
+        {
+            "c_hash": "d8a02e73",
+            "date": "2011-11-10 20:39:38 +0000",
+            "comment": "Move to james-project-1.7"
+        },
+        {
+            "c_hash": "4addb1d1",
+            "date": "2012-06-13 12:31:57 +0000",
+            "comment": "Add pom.xml to postage (POSTAGE-23)"
+        },
+        {
+            "c_hash": "289fdab0",
+            "date": "2012-06-13 12:42:03 +0000",
+            "comment": "remove pom.xml before tagging"
+        },
+        {
+            "c_hash": "b7ccd231",
+            "date": "2012-06-13 12:47:35 +0000",
+            "comment": "(re)Add pom.xml to postage (POSTAGE-23)"
+        },
+        {
+            "c_hash": "b82c92c6",
+            "date": "2012-06-14 09:22:43 +0000",
+            "comment": "Upper case HOWTO and TODO (POSTAGE-23)"
+        },
+        {
+            "c_hash": "3faffc18",
+            "date": "2012-06-14 09:23:19 +0000",
+            "comment": "Move postage.xml to src/main/resources (POSTAGE-23)"
+        },
+        {
+            "c_hash": "f9030a19",
+            "date": "2012-06-14 09:24:18 +0000",
+            "comment": "More dependencies to run james3 SMTP server (POSTAGE-23)"
+        },
+        {
+            "c_hash": "84fb33fb",
+            "date": "2012-06-14 09:25:15 +0000",
+            "comment": "Remove .txt extension (POSTAGE-23)"
+        },
+        {
+            "c_hash": "dbd5c682",
+            "date": "2012-06-14 09:26:03 +0000",
+            "comment": "Impact code to use james3 components (POSTAGE-23)"
+        },
+        {
+            "c_hash": "323cc457",
+            "date": "2012-06-14 09:27:02 +0000",
+            "comment": "Remove m_ prefixes from class fields (POSTAGE-24)"
+        },
+        {
+            "c_hash": "ff484acd",
+            "date": "2012-06-14 09:27:22 +0000",
+            "comment": "Add simple temp test (POSTAGE-23)"
+        },
+        {
+            "c_hash": "abb97068",
+            "date": "2012-06-14 09:29:44 +0000",
+            "comment": "Move HOWTO and TODO in root folder"
+        },
+        {
+            "c_hash": "5b1b55d1",
+            "date": "2012-06-14 09:31:05 +0000",
+            "comment": "remove empty folder (POSTAGE-23)"
+        },
+        {
+            "c_hash": "467864d0",
+            "date": "2012-06-14 09:32:18 +0000",
+            "comment": "remove libs, there are now defined via pom (POSTAGE-23)"
+        },
+        {
+            "c_hash": "0b915917",
+            "date": "2012-06-14 14:02:46 +0000",
+            "comment": "Comment temp test (POSTAGE-23)"
+        },
+        {
+            "c_hash": "72d06f53",
+            "date": "2012-12-29 09:45:49 +0000",
+            "comment": "Fix MailContext mock in postage project further to new 2.5.0 version"
+        },
+        {
+            "c_hash": "4d62edc7",
+            "date": "2013-01-05 15:01:53 +0000",
+            "comment": "Fix compilation failure due to pom and new commons-configuration (POSTAGE-25)"
+        }
+    ]
+}

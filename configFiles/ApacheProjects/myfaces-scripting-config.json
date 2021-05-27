@@ -1,0 +1,4223 @@
+{
+    "project": "myfaces-scripting",
+    "git_url": "https://github.com/apache/myfaces-scripting.git",
+    "last_commit": "a42c1784",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "99373ab3",
+            "date": "2009-08-17 17:48:16 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/myfaces/extensions/scripting/trunk@805072 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "6105e846",
+            "date": "2009-08-17 17:52:31 +0000",
+            "comment": "initial import of the scripting subproject"
+        },
+        {
+            "c_hash": "0f461180",
+            "date": "2009-08-17 17:54:18 +0000",
+            "comment": "too many files committed deleting ide files"
+        },
+        {
+            "c_hash": "8dd2d8e8",
+            "date": "2009-08-17 17:55:42 +0000",
+            "comment": "too many files committed deleting ide files"
+        },
+        {
+            "c_hash": "1b02cdf1",
+            "date": "2009-08-17 17:57:28 +0000",
+            "comment": "too many files committed deleting ide files"
+        },
+        {
+            "c_hash": "a93f1375",
+            "date": "2009-08-17 17:57:48 +0000",
+            "comment": "too many files committed deleting ide files"
+        },
+        {
+            "c_hash": "7eeb01a4",
+            "date": "2009-08-25 13:22:25 +0000",
+            "comment": "committed the last changed accidentally into the wrong repo here we go https://issues.apache.org/jira/browse/EXTSCRIPT-3 https://issues.apache.org/jira/browse/EXTSCRIPT-2"
+        },
+        {
+            "c_hash": "a5c4faf4",
+            "date": "2009-08-25 13:25:53 +0000",
+            "comment": "committed the last changed accidentally into the wrong repo here we go https://issues.apache.org/jira/browse/EXTSCRIPT-3 https://issues.apache.org/jira/browse/EXTSCRIPT-2"
+        },
+        {
+            "c_hash": "8e342a82",
+            "date": "2009-08-25 13:27:26 +0000",
+            "comment": "committed the last changed accidentally into the wrong repo here we go https://issues.apache.org/jira/browse/EXTSCRIPT-3 https://issues.apache.org/jira/browse/EXTSCRIPT-2"
+        },
+        {
+            "c_hash": "552249f5",
+            "date": "2009-08-25 14:29:49 +0000",
+            "comment": "Implementing the java recompilation core"
+        },
+        {
+            "c_hash": "12c3ab6a",
+            "date": "2009-08-25 14:34:01 +0000",
+            "comment": "added a few comments"
+        },
+        {
+            "c_hash": "ce133d19",
+            "date": "2009-08-25 14:39:04 +0000",
+            "comment": "changed the packaging info in the pom.xmls"
+        },
+        {
+            "c_hash": "a205d9c1",
+            "date": "2009-08-26 14:54:11 +0000",
+            "comment": "ongoing works with the scripting engine integration"
+        },
+        {
+            "c_hash": "0b89785f",
+            "date": "2009-08-26 15:24:57 +0000",
+            "comment": "ongoing integration works the reloading is currently broken cannot be fixed for today"
+        },
+        {
+            "c_hash": "6157f38f",
+            "date": "2009-08-26 15:41:15 +0000",
+            "comment": "project semi working again, renderer reload is broken for now but I will investigate that later"
+        },
+        {
+            "c_hash": "d02032b4",
+            "date": "2009-08-27 07:04:17 +0000",
+            "comment": "examples now work fully again, the issue was a bug in groovy which triggered a classCastException on newInstance I could work around that by instating over the java layer instead of directly in groovy. Also added some code cleanups, the facade now is fully working and can delegate to multiple scripting engines"
+        },
+        {
+            "c_hash": "7c1640a8",
+            "date": "2009-08-27 10:46:57 +0000",
+            "comment": "first java reloading now working"
+        },
+        {
+            "c_hash": "327e39dd",
+            "date": "2009-08-27 10:48:55 +0000",
+            "comment": "changed the targets again to 1.6"
+        },
+        {
+            "c_hash": "7698bc44",
+            "date": "2009-08-27 15:08:30 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-6"
+        },
+        {
+            "c_hash": "d83711f3",
+            "date": "2009-08-31 20:17:55 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-3 Major core refactoring which will make it easier in the near future to add new engines, the common non engine related functionality of the script weaving has been moved into a common base class"
+        },
+        {
+            "c_hash": "23d2afb6",
+            "date": "2009-08-31 20:54:14 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-3 Major core refactoring which will make it easier in the near future to add new engines."
+        },
+        {
+            "c_hash": "4350b827",
+            "date": "2009-09-01 08:45:22 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-3 adding java blogging example to identify the weak spots of our relaoding code"
+        },
+        {
+            "c_hash": "78d9466e",
+            "date": "2009-09-01 09:19:50 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-3 added documentation added a tighter convenience method behavior"
+        },
+        {
+            "c_hash": "af931d77",
+            "date": "2009-09-01 09:21:55 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-3 added documentation added a tighter convenience method behavior"
+        },
+        {
+            "c_hash": "dbd46973",
+            "date": "2009-09-01 09:23:13 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-3 removed some debugging infos"
+        },
+        {
+            "c_hash": "38570d90",
+            "date": "2009-09-01 09:30:24 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-3 moving over the example introspection code to add the dynamic helpers for the java layer"
+        },
+        {
+            "c_hash": "5320cc5b",
+            "date": "2009-09-01 09:37:02 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-3 moving over the example introspection code to add the dynamic helpers for the java layer"
+        },
+        {
+            "c_hash": "7b6aed8b",
+            "date": "2009-09-03 13:59:03 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-7 added possible jar search paths and other classpaths which will be picked up by the java compiler"
+        },
+        {
+            "c_hash": "90ccaff3",
+            "date": "2009-09-07 14:58:15 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-11 adding the jci compiler facade, but the main issue here is that the entire pre jdk6 support needs a project reorg I am not sure if I really will drag this along especially since we have to target myfaces 2.0 as well"
+        },
+        {
+            "c_hash": "59c12a02",
+            "date": "2009-09-07 17:05:08 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-11 removed the jar scanning code, the URL classloader does the trick"
+        },
+        {
+            "c_hash": "031f4fa2",
+            "date": "2009-09-07 18:51:39 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-11 removed splitted the file to get a better encapsulation of functionality next step will be to move the jci part into the reflection api to be able to go down to jdk5"
+        },
+        {
+            "c_hash": "d5da605e",
+            "date": "2009-09-08 07:35:43 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-12"
+        },
+        {
+            "c_hash": "83a3f3da",
+            "date": "2009-09-08 07:36:34 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-12"
+        },
+        {
+            "c_hash": "ed5e1d97",
+            "date": "2009-09-08 07:49:26 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-12"
+        },
+        {
+            "c_hash": "aaf05673",
+            "date": "2009-09-08 07:51:05 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-12"
+        },
+        {
+            "c_hash": "16155e5c",
+            "date": "2009-09-08 07:51:49 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-12 cleaning old code junk"
+        },
+        {
+            "c_hash": "d7e253db",
+            "date": "2009-09-08 11:56:31 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-12"
+        },
+        {
+            "c_hash": "18670723",
+            "date": "2009-09-08 19:52:52 +0000",
+            "comment": "fixing a broken build, sorry for this"
+        },
+        {
+            "c_hash": "f74b3aec",
+            "date": "2009-09-09 07:14:30 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-13"
+        },
+        {
+            "c_hash": "a373084d",
+            "date": "2009-09-09 18:39:19 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-14"
+        },
+        {
+            "c_hash": "7ba73b40",
+            "date": "2009-09-09 19:29:14 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-14"
+        },
+        {
+            "c_hash": "1e8cf56e",
+            "date": "2009-09-09 19:45:18 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-14"
+        },
+        {
+            "c_hash": "24b26bf4",
+            "date": "2009-09-09 19:45:59 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-14 fix for too many temp dirs being generated, it now works and behaves as expected"
+        },
+        {
+            "c_hash": "1e66bb48",
+            "date": "2009-09-10 10:08:42 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-14 unified the access to the myfaces_shared classutils as much as possible"
+        },
+        {
+            "c_hash": "17cddd14",
+            "date": "2009-09-10 10:25:49 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-12 project reorg"
+        },
+        {
+            "c_hash": "467082e6",
+            "date": "2009-09-10 10:36:50 +0000",
+            "comment": "deleting junk dirs"
+        },
+        {
+            "c_hash": "d26dfb30",
+            "date": "2009-09-10 10:40:12 +0000",
+            "comment": "another rename"
+        },
+        {
+            "c_hash": "c7506b51",
+            "date": "2009-09-10 10:55:40 +0000",
+            "comment": "addind new submodules"
+        },
+        {
+            "c_hash": "ce1e6ade",
+            "date": "2009-09-10 10:57:25 +0000",
+            "comment": "moving"
+        },
+        {
+            "c_hash": "6d10a22e",
+            "date": "2009-09-10 11:22:23 +0000",
+            "comment": "save before another rename"
+        },
+        {
+            "c_hash": "29c2b180",
+            "date": "2009-09-10 11:23:47 +0000",
+            "comment": "rename again"
+        },
+        {
+            "c_hash": "cd4d65a2",
+            "date": "2009-09-10 11:27:07 +0000",
+            "comment": "deleting junk dir"
+        },
+        {
+            "c_hash": "fe5be97a",
+            "date": "2009-09-10 11:32:28 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-12"
+        },
+        {
+            "c_hash": "497a1241",
+            "date": "2009-09-10 11:34:25 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-12 moving files over to their new submodule so that we can deal with various implementations of jsf"
+        },
+        {
+            "c_hash": "e9b07e56",
+            "date": "2009-09-10 11:38:42 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-12"
+        },
+        {
+            "c_hash": "bd604b8c",
+            "date": "2009-09-10 11:39:26 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-12"
+        },
+        {
+            "c_hash": "abe6d7d9",
+            "date": "2009-09-10 11:43:08 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-12"
+        },
+        {
+            "c_hash": "023e9b32",
+            "date": "2009-09-10 11:55:34 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-1"
+        },
+        {
+            "c_hash": "419b6677",
+            "date": "2009-09-10 12:15:07 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-1"
+        },
+        {
+            "c_hash": "c73da64e",
+            "date": "2009-09-10 13:55:53 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-1"
+        },
+        {
+            "c_hash": "c71888d1",
+            "date": "2009-09-10 14:31:50 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-1 smaller fix in the faces-config"
+        },
+        {
+            "c_hash": "cd8267a2",
+            "date": "2009-09-10 17:04:44 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-1"
+        },
+        {
+            "c_hash": "0987fe62",
+            "date": "2009-09-11 10:46:51 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-1"
+        },
+        {
+            "c_hash": "44897f3d",
+            "date": "2009-09-11 10:48:50 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-1"
+        },
+        {
+            "c_hash": "1e53dd22",
+            "date": "2009-09-11 10:56:09 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-1"
+        },
+        {
+            "c_hash": "5e52f2d5",
+            "date": "2009-09-11 11:58:43 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-1"
+        },
+        {
+            "c_hash": "5c325668",
+            "date": "2009-09-11 12:09:02 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-1"
+        },
+        {
+            "c_hash": "5c6e5dca",
+            "date": "2009-09-11 18:40:12 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-15"
+        },
+        {
+            "c_hash": "96f88718",
+            "date": "2009-09-15 08:25:47 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-15 added the asm dependency removed the bcel one"
+        },
+        {
+            "c_hash": "04095b0e",
+            "date": "2009-09-15 08:27:34 +0000",
+            "comment": "adding interfaces for the annotation processors implementation still pending"
+        },
+        {
+            "c_hash": "4b88c769",
+            "date": "2009-09-15 08:28:37 +0000",
+            "comment": "adding qdox for source annotation scanning"
+        },
+        {
+            "c_hash": "f16fd4d7",
+            "date": "2009-09-15 08:29:39 +0000",
+            "comment": "reworking of the reflect utils to get the casting out, for normal usecases"
+        },
+        {
+            "c_hash": "b2ea3c65",
+            "date": "2009-09-15 08:30:35 +0000",
+            "comment": "reworking of the tests"
+        },
+        {
+            "c_hash": "16d7f1cd",
+            "date": "2009-09-15 08:35:56 +0000",
+            "comment": "moving the examples into their own hierarchy"
+        },
+        {
+            "c_hash": "f3976707",
+            "date": "2009-09-15 13:23:27 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-1"
+        },
+        {
+            "c_hash": "0ece01d9",
+            "date": "2009-09-15 13:24:32 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-1"
+        },
+        {
+            "c_hash": "cfc7d729",
+            "date": "2009-09-16 09:06:38 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-1 fixed a minor npe which occurred when the filter is not set, now instead a warning is issued and the reloading subsystem is disabled."
+        },
+        {
+            "c_hash": "878056bc",
+            "date": "2009-09-16 13:15:31 +0000",
+            "comment": "ongoing works to enable jdk5 so far the only showstopper left is that jci requires an older version of asm which is incompatible."
+        },
+        {
+            "c_hash": "d156ef0b",
+            "date": "2009-09-16 13:16:19 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-1 upgraded qdox to the latest version starting some preliminary evaluation tests"
+        },
+        {
+            "c_hash": "2a137bce",
+            "date": "2009-09-16 13:17:12 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-18"
+        },
+        {
+            "c_hash": "4205243f",
+            "date": "2009-09-16 14:21:54 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-1 opened a path to the scripting weavers so that we can access their internal search paths"
+        },
+        {
+            "c_hash": "717f74a5",
+            "date": "2009-09-16 14:23:11 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-1 ongoing works on the annotation listeners so that we can register annotated beans at a lazy scan into the runnint application"
+        },
+        {
+            "c_hash": "2b842e80",
+            "date": "2009-09-17 17:17:22 +0000",
+            "comment": "merging code which implements the dummy weaver from external dev branch"
+        },
+        {
+            "c_hash": "9ebde5c2",
+            "date": "2009-09-17 17:17:53 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-1 ongoing works for jsf2"
+        },
+        {
+            "c_hash": "23961dca",
+            "date": "2009-09-17 17:18:46 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-1 moved over annotation code from myfaces 2 impl"
+        },
+        {
+            "c_hash": "214f9829",
+            "date": "2009-09-18 12:49:12 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-1 implementing field scanner for qdox level"
+        },
+        {
+            "c_hash": "ea3640f5",
+            "date": "2009-09-18 12:49:41 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-1 implementing field scanner for qdox level"
+        },
+        {
+            "c_hash": "075d6f4d",
+            "date": "2009-09-18 12:50:27 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-18 ongoing works on the annotation bean scanners"
+        },
+        {
+            "c_hash": "842c16b6",
+            "date": "2009-09-18 12:52:12 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-18 introducing a singleton which is the bridge between our annotation scanners and the core which cannot process annotations directly"
+        },
+        {
+            "c_hash": "b32f6bd7",
+            "date": "2009-09-18 12:53:08 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-18"
+        },
+        {
+            "c_hash": "e8261038",
+            "date": "2009-09-18 14:30:30 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-18"
+        },
+        {
+            "c_hash": "680e0fa2",
+            "date": "2009-09-21 17:18:44 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-18 ongoing works on the annotation scanner, thanks to a fixup in myfaces the listener works also now"
+        },
+        {
+            "c_hash": "8561c697",
+            "date": "2009-09-21 17:20:12 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-18 ongoing works on the annotation scanner, thanks to a fixup in myfaces the listener works also now"
+        },
+        {
+            "c_hash": "5032192b",
+            "date": "2009-09-21 17:21:19 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-18 ongoing works on the annotation scanner, thanks to a fixup in myfaces the listener works also now"
+        },
+        {
+            "c_hash": "e0b4d4cd",
+            "date": "2009-09-21 17:22:27 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-18 initial scan now working on managed beans"
+        },
+        {
+            "c_hash": "9d36c7ea",
+            "date": "2009-09-22 08:48:54 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-18 starting works on the class scanning additionall to the source scan"
+        },
+        {
+            "c_hash": "4de44270",
+            "date": "2009-09-22 08:50:44 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-18 adding binary backport for the managed bean dynamic recompilation annotations"
+        },
+        {
+            "c_hash": "e7ca0c8f",
+            "date": "2009-09-22 08:52:23 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-18 adding binary backport for the managed bean dynamic recompilation annotations"
+        },
+        {
+            "c_hash": "df18ccfa",
+            "date": "2009-09-22 10:44:09 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-18 adding base class for shared code"
+        },
+        {
+            "c_hash": "fefb2d2f",
+            "date": "2009-09-22 10:45:06 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-18 extracting shared code"
+        },
+        {
+            "c_hash": "7f23bfbf",
+            "date": "2009-09-22 10:45:59 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-18 too much move up"
+        },
+        {
+            "c_hash": "ef4f6f9e",
+            "date": "2009-09-22 10:47:07 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-18 adding implementations for validators and renderers"
+        },
+        {
+            "c_hash": "aee6a5a7",
+            "date": "2009-09-22 10:47:57 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-18 adding implementations for validators and renderers"
+        },
+        {
+            "c_hash": "03141eb3",
+            "date": "2009-09-22 17:03:36 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-18 almost all scan artefacts now fully implemented the only one is the renderer which needs an instance for registration"
+        },
+        {
+            "c_hash": "9a5c6033",
+            "date": "2009-09-22 17:05:43 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-18 save state of affairs"
+        },
+        {
+            "c_hash": "3e95ec07",
+            "date": "2009-09-23 10:39:40 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-22 first steps for the custom compiler integration"
+        },
+        {
+            "c_hash": "4eb33079",
+            "date": "2009-09-23 10:40:51 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-22 integration of a custom javac compiler binding thanks bernhard for providing it"
+        },
+        {
+            "c_hash": "eeb49337",
+            "date": "2009-09-23 11:06:42 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-22 adding a new compiler facade to isolate the new api"
+        },
+        {
+            "c_hash": "8096c96c",
+            "date": "2009-09-23 11:07:20 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-18 adding scope handling to the managed bean listener"
+        },
+        {
+            "c_hash": "0948e764",
+            "date": "2009-09-23 11:10:37 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-18 adding scope handling to the managed bean listener"
+        },
+        {
+            "c_hash": "10fe607b",
+            "date": "2009-09-23 12:20:16 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-22"
+        },
+        {
+            "c_hash": "3420f5be",
+            "date": "2009-09-23 12:34:08 +0000",
+            "comment": "forgot to update the groovy compiler dependency to the latest groovy version"
+        },
+        {
+            "c_hash": "f809a3fb",
+            "date": "2009-09-25 08:19:19 +0000",
+            "comment": "overhaul of the reflection code for the next big features"
+        },
+        {
+            "c_hash": "286abd39",
+            "date": "2009-09-25 08:22:42 +0000",
+            "comment": "overhaul of the reflection code for the next big features https://issues.apache.org/jira/browse/EXTSCRIPT-18 ongoing works in the compiler facade and annotation part to get dynamic annotation handling in currently annotations are only scanned at startup"
+        },
+        {
+            "c_hash": "084ea8cf",
+            "date": "2009-09-25 12:29:09 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-23"
+        },
+        {
+            "c_hash": "3fd05dc3",
+            "date": "2009-09-25 12:30:50 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-18 smaller fixes the annotation scanner was not started anymore, thats it for today I will work on the fut https://issues.apache.org/jira/browse/EXTSCRIPT-23 smaller fixes the annotation scanner was not triggered, last commit for today, the subtask will be completed hopefully next week."
+        },
+        {
+            "c_hash": "e91c096e",
+            "date": "2009-09-30 08:16:45 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-25 Artefact event system added, but not finalized yet, next works will happen in the annotation processing area so that we get following use cases working with annotations Bean Annotation added on managed bean Bean Annotation moved from one bean to the other Bean Annotation removed from the managed bean It makes sense to limit outselfs to managed beans for now because they are the most complicated case due to their IOC and scoping nature every other usecase is easy to deal with in comparison once we get the beans properly working"
+        },
+        {
+            "c_hash": "76371e74",
+            "date": "2009-10-01 15:26:40 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-25 save state of affairs before we remove the listener from the bean handler we probably wont need it"
+        },
+        {
+            "c_hash": "de3c0ede",
+            "date": "2009-10-01 15:28:06 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-26 bean annotation moving is working, yiehaa"
+        },
+        {
+            "c_hash": "eeff5200",
+            "date": "2009-10-19 00:55:31 +0000",
+            "comment": "added serialVersionUID; added empty implementation of missing method"
+        },
+        {
+            "c_hash": "21d28aff",
+            "date": "2009-10-19 06:17:05 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-26 starting works on the other annotatioins so that you can move them around as well!"
+        },
+        {
+            "c_hash": "a9882918",
+            "date": "2009-10-19 06:18:31 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-26 adding decorator pattern to savestate the delegate values wherever possible"
+        },
+        {
+            "c_hash": "e7bdecc5",
+            "date": "2009-10-19 06:20:00 +0000",
+            "comment": "merging conflict introduced by foreign commit"
+        },
+        {
+            "c_hash": "ccdc3606",
+            "date": "2009-10-19 09:45:23 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-26 adding testcases"
+        },
+        {
+            "c_hash": "289b873f",
+            "date": "2009-10-19 09:47:23 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-26 reverting"
+        },
+        {
+            "c_hash": "a9068531",
+            "date": "2009-10-19 09:48:32 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-26 fixup for the last issues"
+        },
+        {
+            "c_hash": "5afb67de",
+            "date": "2009-10-19 09:49:22 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-26 fixup npe in the 1.2 environment"
+        },
+        {
+            "c_hash": "9099c227",
+            "date": "2009-10-19 16:24:35 +0000",
+            "comment": "fixup for for the latest myfaces codebase"
+        },
+        {
+            "c_hash": "f0659974",
+            "date": "2009-10-22 15:37:15 +0000",
+            "comment": "converter now working \tnew file:   examples/myfaces20-example/src/main/webapp/WEB-INF/java/org/apache/myfaces/javaloader/renderer/TestConverter1.java \tnew file:   examples/myfaces20-example/src/main/webapp/WEB-INF/java/org/apache/myfaces/javaloader/renderer/TestConverter2.java \tnew file:   examples/myfaces20-example/src/main/webapp/WEB-INF/java/org/apache/myfaces/javaloader/renderer/TestValidator1.java \tnew file:   examples/myfaces20-example/src/main/webapp/WEB-INF/java/org/apache/myfaces/javaloader/renderer/TestValidator2.java \tmodified:   examples/myfaces20-example/src/main/webapp/helloWorld.xhtml"
+        },
+        {
+            "c_hash": "59a2d275",
+            "date": "2009-10-27 07:22:34 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-26 validator annotation change is working as expected"
+        },
+        {
+            "c_hash": "4746cede",
+            "date": "2009-10-27 07:23:23 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-26 ongoing works for the behavior and resource handler"
+        },
+        {
+            "c_hash": "cf2a497d",
+            "date": "2009-10-27 07:24:35 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-26 implemented the removal of behaviors for getBehaviorIds"
+        },
+        {
+            "c_hash": "d4842278",
+            "date": "2009-10-27 07:25:24 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-26 changed a comment, regarding the double bookkeeping of the behavior ids"
+        },
+        {
+            "c_hash": "f4975fca",
+            "date": "2009-10-27 07:26:24 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-26 converters and validators now working with annotations"
+        },
+        {
+            "c_hash": "d2e797ba",
+            "date": "2009-11-16 14:54:49 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-26 streamlining of code"
+        },
+        {
+            "c_hash": "63249cd2",
+            "date": "2009-11-16 14:55:57 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-26 adding the hopefully last new annotation the behavior renderer"
+        },
+        {
+            "c_hash": "2e80c6ed",
+            "date": "2009-11-16 14:57:10 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-26 proxying code for the behavior renderer added"
+        },
+        {
+            "c_hash": "cdc0a08b",
+            "date": "2009-11-16 14:58:04 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-26 annotation works mostly done now"
+        },
+        {
+            "c_hash": "db8a73c5",
+            "date": "2009-11-16 14:59:27 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-26 component annotation now done as well I will close this issue now I guess all the annotations work as expected"
+        },
+        {
+            "c_hash": "68e2ba50",
+            "date": "2009-12-01 19:25:56 +0000",
+            "comment": "updating to a more recent version of myfaces"
+        },
+        {
+            "c_hash": "85a32fd7",
+            "date": "2009-12-08 23:42:13 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-20 ongoing works on the bean strategies, I have refactored a few names which point towards the correct patterns used now, also I added an request map accessor in our central WeavingContext so that we can add per request block code easier encapsulating the long jsf api that way"
+        },
+        {
+            "c_hash": "a9891665",
+            "date": "2009-12-08 23:45:35 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-20 added artefact type extensions in our loader apis so that various strategies can be applied for reloading depending on the artefact type"
+        },
+        {
+            "c_hash": "e8b8a27a",
+            "date": "2009-12-08 23:47:16 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-20 save state of affairs, we move the compiler to a single compile step at the beginning of the lifecycle, not done yet but the jsr 199 full compile now is coded, we now also have to code the groovy part and move the entire groovy compile over to a full compile step"
+        },
+        {
+            "c_hash": "590750f0",
+            "date": "2009-12-08 23:48:18 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-20 Refactoring extracting all shared compiler consts for the various implementations"
+        },
+        {
+            "c_hash": "b3cac184",
+            "date": "2009-12-08 23:50:20 +0000",
+            "comment": "compile all now working compiler api now under unit test coverage"
+        },
+        {
+            "c_hash": "ea6833b5",
+            "date": "2009-12-08 23:51:40 +0000",
+            "comment": "full recompile now enabled for every request we now drop the per instance compile on java files"
+        },
+        {
+            "c_hash": "ecfbd724",
+            "date": "2009-12-08 23:53:20 +0000",
+            "comment": "groovy now working again but still at state last commit (no extended reloading strategy handling etc...)"
+        },
+        {
+            "c_hash": "5eb8b6b9",
+            "date": "2009-12-08 23:54:42 +0000",
+            "comment": "bean classcast exception no finally history, yiehaa... thanks to the improved classloader and thanks also to the more complicated bean reloading strategies. renderer reloading strategy improved as well, since the renderer is a flyweight pattern we do not have to copy anything, we just drop everything and reload anew."
+        },
+        {
+            "c_hash": "bf134ace",
+            "date": "2009-12-08 23:55:59 +0000",
+            "comment": "ongoing works on the reloading strategies, we now have better reload handling on the flyweight and stateless or light artefacts (the ones which can drop states and expect them in case of a reload, or which get the states injected instead)"
+        },
+        {
+            "c_hash": "dd9afb70",
+            "date": "2009-12-08 23:57:14 +0000",
+            "comment": "bean reloading now without classcast exceptions, finally..."
+        },
+        {
+            "c_hash": "5f802bcc",
+            "date": "2009-12-08 23:58:13 +0000",
+            "comment": "code cleanup moved some shared code (bean tainting) into the weaver base class to handle it shared over all scripting engine instances."
+        },
+        {
+            "c_hash": "428ad88a",
+            "date": "2009-12-09 00:01:22 +0000",
+            "comment": "annotations broken due to the latest changes unfortunately, has to be fixed before the commit"
+        },
+        {
+            "c_hash": "4965da30",
+            "date": "2009-12-09 00:02:29 +0000",
+            "comment": "annotations fixed again but with a rather hackish solution, we have to walk our annotation handling again to avoid the constant classloader recreation, it is pointless"
+        },
+        {
+            "c_hash": "a5860b0a",
+            "date": "2009-12-09 00:05:39 +0000",
+            "comment": "annotation moving now working again but still we have too many classloader inits but lets leave it for now"
+        },
+        {
+            "c_hash": "cc16908b",
+            "date": "2009-12-09 12:05:44 +0000",
+            "comment": "fixing the logging output fixing the poms to the latest stable build, the snapshots were pulled a while ago"
+        },
+        {
+            "c_hash": "6af9d40a",
+            "date": "2009-12-09 19:50:09 +0000",
+            "comment": "testing bean reloading and renderer reloading"
+        },
+        {
+            "c_hash": "d10595ce",
+            "date": "2009-12-09 19:51:55 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-31 https://issues.apache.org/jira/browse/EXTSCRIPT-29 https://issues.apache.org/jira/browse/EXTSCRIPT-28"
+        },
+        {
+            "c_hash": "e34f8ba5",
+            "date": "2009-12-09 20:37:28 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-28 We added pull code to identify when the personal scoped beans have to be refreshed. Also the refresh code for non Application scoped beans now is added."
+        },
+        {
+            "c_hash": "71b607ab",
+            "date": "2009-12-09 20:38:33 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-28 a few changes for testing to check if all still works"
+        },
+        {
+            "c_hash": "838b0d11",
+            "date": "2009-12-09 21:25:30 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-28 moved the compile recommendation code into the refreshcontext"
+        },
+        {
+            "c_hash": "6c7f3bb9",
+            "date": "2009-12-09 21:28:00 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-28 small last fixes on the codebase for today"
+        },
+        {
+            "c_hash": "0689a688",
+            "date": "2009-12-09 21:28:56 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-28 added a todo for the pending work, we still have a concurrency issue in the bean reloading"
+        },
+        {
+            "c_hash": "0d1f6e9b",
+            "date": "2009-12-13 13:15:36 +0000",
+            "comment": "- Removed unused folders. - Created a package that will contain the module after some code cleanup."
+        },
+        {
+            "c_hash": "2e99dab3",
+            "date": "2009-12-13 13:17:49 +0000",
+            "comment": "- Removed unused folders."
+        },
+        {
+            "c_hash": "b349789d",
+            "date": "2009-12-13 14:42:41 +0000",
+            "comment": "- Added a new compiler API that only knows how to compile one file at a time. Note that it's still possible to compile mutiple files by just using multiple method calls, but some of my parts will require that much control."
+        },
+        {
+            "c_hash": "ba30a5fd",
+            "date": "2009-12-13 16:03:39 +0000",
+            "comment": "- Added some custom class loaders and testcases. - Corrected the POM, it didn't include the JUnit dependency."
+        },
+        {
+            "c_hash": "668fd5ef",
+            "date": "2009-12-13 16:14:42 +0000",
+            "comment": "- Added a class loader that knows how to load class files from the file system."
+        },
+        {
+            "c_hash": "5ad8c4ce",
+            "date": "2009-12-13 16:56:35 +0000",
+            "comment": "- Added compiler implementations and testcases."
+        },
+        {
+            "c_hash": "ba749c67",
+            "date": "2009-12-13 17:30:18 +0000",
+            "comment": "- Added the reloading class loader."
+        },
+        {
+            "c_hash": "6c3b75bc",
+            "date": "2009-12-13 17:33:53 +0000",
+            "comment": "- Added generics"
+        },
+        {
+            "c_hash": "05259c90",
+            "date": "2009-12-15 11:27:36 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-28 added an atomic commit counter so that we deal with the compile trigger time correctly"
+        },
+        {
+            "c_hash": "ebfe7a1f",
+            "date": "2009-12-15 11:29:44 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-28 https://issues.apache.org/jira/browse/EXTSCRIPT-36 added an atomic commit counter so that we deal with the compile trigger time correctly fixed the submit issue, in the myfaces 1.2 example"
+        },
+        {
+            "c_hash": "b3f66ecd",
+            "date": "2009-12-15 12:13:48 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-37 Have set the affected tests to ignore. I will do a proper investigation tomorrow when I can dedicate a full day to the project. It is important that the project compiles again!"
+        },
+        {
+            "c_hash": "501731c2",
+            "date": "2009-12-15 18:30:06 +0000",
+            "comment": "EXTSCRIPT-27 myfaces 1.2. example doesn't run on Windoze..."
+        },
+        {
+            "c_hash": "2e3f1b98",
+            "date": "2009-12-16 09:39:34 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-38 The problem was partially a bug in groovy which prevented the super(variable) to be called I have worked around that one (again), this bug has been worked around in other parts of the system as well."
+        },
+        {
+            "c_hash": "57d28f15",
+            "date": "2009-12-16 12:43:44 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-21 Removing the asm dependency entirely simply by changing the detection code to the classloader detection"
+        },
+        {
+            "c_hash": "4c099c33",
+            "date": "2009-12-16 12:44:37 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-21 Adjusted the tests to the new infrastructure"
+        },
+        {
+            "c_hash": "609c34df",
+            "date": "2009-12-16 12:45:28 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-21 Adjusted the tests to the new infrastructure"
+        },
+        {
+            "c_hash": "4efbc5e6",
+            "date": "2009-12-16 14:49:41 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-33 removed the source annotation scanner on the java side and replaced it with a binary scanner next step is groovy annotations yiehaa"
+        },
+        {
+            "c_hash": "437176b4",
+            "date": "2009-12-16 16:21:03 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-30 annotations on the groovy side should work now are not fully tested yet but first examples work"
+        },
+        {
+            "c_hash": "0527dd65",
+            "date": "2009-12-16 19:44:16 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-30 fixing a concurrent modification exception at bean refresh stage for myfaces 2.0"
+        },
+        {
+            "c_hash": "c1340d1f",
+            "date": "2009-12-16 19:46:25 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-30 adding comment for the snapshot code"
+        },
+        {
+            "c_hash": "f9ee5b00",
+            "date": "2009-12-16 19:56:20 +0000",
+            "comment": "fixing the pickup path issues"
+        },
+        {
+            "c_hash": "dd3fb9b4",
+            "date": "2009-12-16 21:14:41 +0000",
+            "comment": "added mutexes on the correct parts of the system so that the iteration over the beans does not happen at the same time as the alteration"
+        },
+        {
+            "c_hash": "d9353827",
+            "date": "2009-12-16 21:16:00 +0000",
+            "comment": "added mutexes on the correct parts of the system so that the iteration over the beans does not happen at the same time as the alteration"
+        },
+        {
+            "c_hash": "67331f45",
+            "date": "2009-12-16 21:31:53 +0000",
+            "comment": "added mutexes on the correct parts of the system so that the iteration over the beans does not happen at the same time as the alteration"
+        },
+        {
+            "c_hash": "238e11f0",
+            "date": "2009-12-17 09:59:38 +0000",
+            "comment": "removed a load of unused codejunk"
+        },
+        {
+            "c_hash": "2c47014b",
+            "date": "2009-12-17 10:00:40 +0000",
+            "comment": "testcommit git"
+        },
+        {
+            "c_hash": "177920c8",
+            "date": "2009-12-17 10:01:55 +0000",
+            "comment": "save state of affairs before next commit"
+        },
+        {
+            "c_hash": "1dd0938a",
+            "date": "2009-12-19 22:34:10 +0000",
+            "comment": "save state of affairs for testing"
+        },
+        {
+            "c_hash": "405bdf74",
+            "date": "2009-12-19 22:35:03 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-29 setting the variables of the reloading metadata to volatile due to concurrency"
+        },
+        {
+            "c_hash": "3995ac81",
+            "date": "2009-12-19 22:35:55 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-29 setting the variables of the reloading metadata to volatile due to concurrency"
+        },
+        {
+            "c_hash": "b2afe3bb",
+            "date": "2009-12-19 22:37:25 +0000",
+            "comment": "dependency cleanup in the poms"
+        },
+        {
+            "c_hash": "a779215a",
+            "date": "2009-12-19 22:38:24 +0000",
+            "comment": "dependency cleanup in the poms"
+        },
+        {
+            "c_hash": "3edcf474",
+            "date": "2009-12-19 22:40:00 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-39"
+        },
+        {
+            "c_hash": "7735440f",
+            "date": "2009-12-20 18:23:19 +0000",
+            "comment": "- Corrected typos - Small refactorings"
+        },
+        {
+            "c_hash": "1bd34a1f",
+            "date": "2009-12-20 18:24:38 +0000",
+            "comment": "- Corrected typos"
+        },
+        {
+            "c_hash": "9d01c041",
+            "date": "2009-12-20 20:26:07 +0000",
+            "comment": "- Added a Groovy compiler implementation."
+        },
+        {
+            "c_hash": "16e54a8f",
+            "date": "2009-12-20 23:01:01 +0000",
+            "comment": "- Corrected some typos again - Extended the Groovy compiler"
+        },
+        {
+            "c_hash": "50b1e673",
+            "date": "2009-12-21 16:37:32 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-39"
+        },
+        {
+            "c_hash": "65865898",
+            "date": "2009-12-21 16:38:29 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-39"
+        },
+        {
+            "c_hash": "37be3e3e",
+            "date": "2009-12-21 17:01:02 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-39"
+        },
+        {
+            "c_hash": "2d7c2a56",
+            "date": "2009-12-21 17:07:17 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-39"
+        },
+        {
+            "c_hash": "af9daa1e",
+            "date": "2009-12-21 18:57:48 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-39"
+        },
+        {
+            "c_hash": "c0bd2c41",
+            "date": "2009-12-21 19:53:12 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-39 cleaned up the param passing and added a logger for the two error cases"
+        },
+        {
+            "c_hash": "bd5f5ca3",
+            "date": "2009-12-21 21:17:59 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-39"
+        },
+        {
+            "c_hash": "dc4b1794",
+            "date": "2009-12-25 14:24:13 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-39"
+        },
+        {
+            "c_hash": "83a0fd73",
+            "date": "2009-12-25 14:25:42 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-39"
+        },
+        {
+            "c_hash": "e9f28efc",
+            "date": "2009-12-25 14:29:03 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-39"
+        },
+        {
+            "c_hash": "236f1f9d",
+            "date": "2009-12-25 14:30:09 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-39"
+        },
+        {
+            "c_hash": "a6173d9c",
+            "date": "2009-12-25 14:31:28 +0000",
+            "comment": "classloader issue gone"
+        },
+        {
+            "c_hash": "cafd8673",
+            "date": "2009-12-25 14:32:52 +0000",
+            "comment": "ongoing works to add the extended dependency scan also to groovy"
+        },
+        {
+            "c_hash": "61d73ade",
+            "date": "2009-12-25 14:37:26 +0000",
+            "comment": "dependency scanning now working refreshes again work in jsf1.2 and jsf2 annotation support working again!"
+        },
+        {
+            "c_hash": "9f0486eb",
+            "date": "2009-12-30 18:19:04 +0000",
+            "comment": "ongoing works on making the lib thread safe"
+        },
+        {
+            "c_hash": "66cf3159",
+            "date": "2010-01-09 16:09:28 +0000",
+            "comment": "I must have reformatted the code"
+        },
+        {
+            "c_hash": "ccb330c0",
+            "date": "2010-01-09 16:12:14 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-42"
+        },
+        {
+            "c_hash": "2333f27e",
+            "date": "2010-01-09 16:14:25 +0000",
+            "comment": "finishing the implementations of the source redirecting resource handlers for ext-scripting removal of many typos"
+        },
+        {
+            "c_hash": "4e860483",
+            "date": "2010-01-09 16:16:14 +0000",
+            "comment": "removed a load of warnings and typos"
+        },
+        {
+            "c_hash": "f325b506",
+            "date": "2010-01-09 16:18:06 +0000",
+            "comment": "removed a lot of warnings typos and some unused code"
+        },
+        {
+            "c_hash": "990852cb",
+            "date": "2010-01-09 16:21:25 +0000",
+            "comment": "adding dynamic ressource handler code which now works"
+        },
+        {
+            "c_hash": "6af79266",
+            "date": "2010-01-09 16:22:48 +0000",
+            "comment": "preparations for the commit"
+        },
+        {
+            "c_hash": "83dcdd95",
+            "date": "2010-01-15 16:26:23 +0000",
+            "comment": "added a classloading hook for our scanner so that we can hook ourselfs in fixed a lot of warnings"
+        },
+        {
+            "c_hash": "91694167",
+            "date": "2010-01-15 16:28:22 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-43 change to groovy compile instead of interpretation"
+        },
+        {
+            "c_hash": "48abb82b",
+            "date": "2010-01-15 16:29:23 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-43 ongoing works on the compiler integration"
+        },
+        {
+            "c_hash": "4f2492d2",
+            "date": "2010-01-15 16:30:42 +0000",
+            "comment": "ongoing works on the compiler integration: reenabling the dependency scanner on the java side https://issues.apache.org/jira/browse/EXTSCRIPT-43"
+        },
+        {
+            "c_hash": "8531d721",
+            "date": "2010-01-15 16:31:46 +0000",
+            "comment": "Simplification of the language weavers by moving a lot of code into the base"
+        },
+        {
+            "c_hash": "5d5ba5ef",
+            "date": "2010-01-15 16:32:39 +0000",
+            "comment": "fixup a refactoring error added recompile supression if recommended is not set"
+        },
+        {
+            "c_hash": "0b068bc9",
+            "date": "2010-01-15 16:42:06 +0000",
+            "comment": "fixup a refactoring error added recompile supression if recommended is not set"
+        },
+        {
+            "c_hash": "3a77fcd5",
+            "date": "2010-01-15 16:43:19 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-46"
+        },
+        {
+            "c_hash": "60365549",
+            "date": "2010-01-15 16:44:15 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-46"
+        },
+        {
+            "c_hash": "b0b88315",
+            "date": "2010-01-15 16:46:12 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-46"
+        },
+        {
+            "c_hash": "0b652d45",
+            "date": "2010-01-15 16:47:23 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-46"
+        },
+        {
+            "c_hash": "f2cd3f14",
+            "date": "2010-01-15 16:48:25 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-46 simplified the bean proxy, reloading of beans now works again as expected, yiehaa I assume we are now commit ready"
+        },
+        {
+            "c_hash": "54b6f2c7",
+            "date": "2010-01-15 16:49:35 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-46 final testing round for today"
+        },
+        {
+            "c_hash": "97d26efd",
+            "date": "2010-01-15 16:51:01 +0000",
+            "comment": "fixup of the web.xml for the commit"
+        },
+        {
+            "c_hash": "33f54885",
+            "date": "2010-01-15 16:51:56 +0000",
+            "comment": "fixup of the web.xml for the commit"
+        },
+        {
+            "c_hash": "a8520d7b",
+            "date": "2010-01-21 17:21:35 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-48 small bugfix, we get better refreshing behavior if we check all files from time to time... but we still have a bug in the renderers where the tainted is not set to false from time to time, this has to be investigated later"
+        },
+        {
+            "c_hash": "0f305b8d",
+            "date": "2010-01-21 17:23:48 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-48"
+        },
+        {
+            "c_hash": "4791759e",
+            "date": "2010-01-21 17:25:00 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-50"
+        },
+        {
+            "c_hash": "19867b9a",
+            "date": "2010-01-21 17:26:09 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-50"
+        },
+        {
+            "c_hash": "aaef6e52",
+            "date": "2010-01-21 17:29:01 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-52 namespace refactoring"
+        },
+        {
+            "c_hash": "aa27fe9f",
+            "date": "2010-01-21 17:30:13 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-52"
+        },
+        {
+            "c_hash": "1fcd7009",
+            "date": "2010-01-21 17:34:23 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-47 finishing works on the tag handler section so that the component attributes can be added on the fly."
+        },
+        {
+            "c_hash": "d754ac9b",
+            "date": "2010-01-21 17:36:34 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-47"
+        },
+        {
+            "c_hash": "fbfa1cbb",
+            "date": "2010-01-21 17:37:37 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-47 refactoring for the facelet patchup part"
+        },
+        {
+            "c_hash": "5fe3f13a",
+            "date": "2010-01-21 17:39:23 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-47 removing unused images"
+        },
+        {
+            "c_hash": "d47c7a42",
+            "date": "2010-01-21 17:40:25 +0000",
+            "comment": "fix for commit"
+        },
+        {
+            "c_hash": "ff5cb853",
+            "date": "2010-01-26 19:13:39 +0000",
+            "comment": "moving the componentOutput into its own taglib definition file"
+        },
+        {
+            "c_hash": "cbe3e567",
+            "date": "2010-01-26 19:15:21 +0000",
+            "comment": "ongoing beautifying works"
+        },
+        {
+            "c_hash": "66ddade2",
+            "date": "2010-01-26 19:16:24 +0000",
+            "comment": "EXTSCRIPT-49: Renderers stay tainted after refresh"
+        },
+        {
+            "c_hash": "0de196fe",
+            "date": "2010-01-26 19:17:21 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-53"
+        },
+        {
+            "c_hash": "ca77f052",
+            "date": "2010-01-26 19:18:38 +0000",
+            "comment": "save state of affairs before server commit"
+        },
+        {
+            "c_hash": "11cf970a",
+            "date": "2010-01-27 16:00:01 +0000",
+            "comment": "save state of affairs before server commit"
+        },
+        {
+            "c_hash": "f573c0ad",
+            "date": "2010-01-28 18:08:37 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-52"
+        },
+        {
+            "c_hash": "931b7c81",
+            "date": "2010-01-28 18:09:43 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-52"
+        },
+        {
+            "c_hash": "5d920c67",
+            "date": "2010-01-28 18:10:34 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-52"
+        },
+        {
+            "c_hash": "c8dbc552",
+            "date": "2010-01-28 18:11:25 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-52 last commit before saving into the server"
+        },
+        {
+            "c_hash": "e534d4b0",
+            "date": "2010-01-28 21:02:40 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-52 final layout for the blog now done for the jsf2 part"
+        },
+        {
+            "c_hash": "70669d55",
+            "date": "2010-01-29 13:12:21 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-55"
+        },
+        {
+            "c_hash": "04fd9079",
+            "date": "2010-01-29 13:13:46 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-55"
+        },
+        {
+            "c_hash": "7ea79997",
+            "date": "2010-01-29 13:14:56 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-57"
+        },
+        {
+            "c_hash": "bf72492e",
+            "date": "2010-01-29 13:15:51 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-57"
+        },
+        {
+            "c_hash": "bb6222df",
+            "date": "2010-01-29 13:16:46 +0000",
+            "comment": "changes before next commit"
+        },
+        {
+            "c_hash": "19a2b8ce",
+            "date": "2010-02-01 19:27:18 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-58"
+        },
+        {
+            "c_hash": "188172a7",
+            "date": "2010-02-01 19:29:05 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-58"
+        },
+        {
+            "c_hash": "58d337f5",
+            "date": "2010-02-01 19:30:26 +0000",
+            "comment": "preparations for checkin"
+        },
+        {
+            "c_hash": "48495b28",
+            "date": "2010-02-04 21:33:09 +0000",
+            "comment": "unification of the compiler api https://issues.apache.org/jira/browse/EXTSCRIPT-60"
+        },
+        {
+            "c_hash": "78e3d78f",
+            "date": "2010-02-04 21:35:09 +0000",
+            "comment": "fixup for the refactoring on the compiler components"
+        },
+        {
+            "c_hash": "7995fc90",
+            "date": "2010-02-04 21:36:48 +0000",
+            "comment": "moving the compiler target part into the configuration context https://issues.apache.org/jira/browse/EXTSCRIPT-60"
+        },
+        {
+            "c_hash": "b507fa0f",
+            "date": "2010-02-04 21:37:40 +0000",
+            "comment": "save state before next commit"
+        },
+        {
+            "c_hash": "c56db090",
+            "date": "2010-02-04 21:59:03 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-61 fix the parent pom issue, also remove a utf problem heaven knows why this one came into the source"
+        },
+        {
+            "c_hash": "c885f6b0",
+            "date": "2010-02-09 22:05:03 +0000",
+            "comment": "adding apache headers wherever missing"
+        },
+        {
+            "c_hash": "eeba38ef",
+            "date": "2010-02-09 22:05:53 +0000",
+            "comment": "fixing the nav entries in the file"
+        },
+        {
+            "c_hash": "d407267a",
+            "date": "2010-02-09 22:06:57 +0000",
+            "comment": "last checkin before pushing the history back into cvs"
+        },
+        {
+            "c_hash": "391f8c49",
+            "date": "2010-02-16 16:41:08 +0000",
+            "comment": "save state of affairs before local branch for the next features"
+        },
+        {
+            "c_hash": "8e7556c5",
+            "date": "2010-02-16 16:42:25 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-65"
+        },
+        {
+            "c_hash": "8eac4065",
+            "date": "2010-02-16 17:12:01 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-65"
+        },
+        {
+            "c_hash": "44bdee86",
+            "date": "2010-02-16 17:25:39 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-65"
+        },
+        {
+            "c_hash": "a6dc9c8e",
+            "date": "2010-02-16 17:26:32 +0000",
+            "comment": "save state of affairs for the next commit"
+        },
+        {
+            "c_hash": "8b326c0f",
+            "date": "2010-02-18 10:28:25 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-64"
+        },
+        {
+            "c_hash": "5586bf51",
+            "date": "2010-02-18 10:29:14 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-63"
+        },
+        {
+            "c_hash": "e7525697",
+            "date": "2010-02-18 10:30:02 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-63"
+        },
+        {
+            "c_hash": "0a23e4c1",
+            "date": "2010-02-18 12:55:59 +0000",
+            "comment": "EXTSCRIPT-62 - Dependency detection - interfaces not entirely correctly detected"
+        },
+        {
+            "c_hash": "7251045b",
+            "date": "2010-02-18 13:25:03 +0000",
+            "comment": "EXTSCRIPT-62 - Dependency detection - interfaces not entirely correctly detected"
+        },
+        {
+            "c_hash": "7945ef9a",
+            "date": "2010-02-18 13:26:53 +0000",
+            "comment": "adding cyclic dependency test scan apache headers"
+        },
+        {
+            "c_hash": "4bc3c7d8",
+            "date": "2010-02-18 13:49:19 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-66 https://issues.apache.org/jira/browse/EXTSCRIPT-63"
+        },
+        {
+            "c_hash": "acf7d287",
+            "date": "2010-02-18 14:39:24 +0000",
+            "comment": "adding a top navigation to our example to reache the other examples faster"
+        },
+        {
+            "c_hash": "8d6674d3",
+            "date": "2010-02-18 14:51:43 +0000",
+            "comment": "removing stack of unused imports"
+        },
+        {
+            "c_hash": "7e1223f2",
+            "date": "2010-02-18 15:14:17 +0000",
+            "comment": "save before stash apply"
+        },
+        {
+            "c_hash": "bff3c6a1",
+            "date": "2010-02-18 15:15:12 +0000",
+            "comment": "save state of affairs... from testing against eclipse"
+        },
+        {
+            "c_hash": "8e8c30d4",
+            "date": "2010-02-19 16:26:06 +0000",
+            "comment": "adding basic jsr233 example"
+        },
+        {
+            "c_hash": "2558ed00",
+            "date": "2010-02-19 16:27:56 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-68 https://issues.apache.org/jira/browse/EXTSCRIPT-69"
+        },
+        {
+            "c_hash": "4474770e",
+            "date": "2010-02-19 16:28:46 +0000",
+            "comment": "adding some test hooks"
+        },
+        {
+            "c_hash": "7b5aa9fd",
+            "date": "2010-02-19 16:29:35 +0000",
+            "comment": "last changes before dcommit"
+        },
+        {
+            "c_hash": "c8b42ec4",
+            "date": "2010-02-20 15:42:47 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-72"
+        },
+        {
+            "c_hash": "8530fbb6",
+            "date": "2010-02-20 15:48:34 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-72 removed sysouts"
+        },
+        {
+            "c_hash": "8e2a6ce0",
+            "date": "2010-02-20 21:47:40 +0000",
+            "comment": "save all for presentation tag"
+        },
+        {
+            "c_hash": "0959bd19",
+            "date": "2010-02-20 21:50:59 +0000",
+            "comment": "changing from commons-logging to jul"
+        },
+        {
+            "c_hash": "474d6297",
+            "date": "2010-02-20 22:19:01 +0000",
+            "comment": "cleaned up dirty logging code"
+        },
+        {
+            "c_hash": "f4379ffc",
+            "date": "2010-02-25 11:03:31 +0000",
+            "comment": "test commit because bohmann has problems committing"
+        },
+        {
+            "c_hash": "370296c2",
+            "date": "2010-02-25 16:55:32 +0000",
+            "comment": "changing the current whitelist system to speed optimized filters"
+        },
+        {
+            "c_hash": "52a80798",
+            "date": "2010-02-25 16:58:31 +0000",
+            "comment": "ongoing works in the whitelist filters fixed logger transitional bug in the groovy blogging examples"
+        },
+        {
+            "c_hash": "3cedb2fe",
+            "date": "2010-02-25 17:03:48 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-74"
+        },
+        {
+            "c_hash": "e99f1f4b",
+            "date": "2010-02-26 08:38:42 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-74"
+        },
+        {
+            "c_hash": "e409f92a",
+            "date": "2010-02-26 08:39:32 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-74"
+        },
+        {
+            "c_hash": "980210ba",
+            "date": "2010-03-01 12:12:05 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-74"
+        },
+        {
+            "c_hash": "7a90dfd0",
+            "date": "2010-03-01 12:13:39 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-74"
+        },
+        {
+            "c_hash": "7ce36a8c",
+            "date": "2010-03-01 12:15:27 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-74"
+        },
+        {
+            "c_hash": "f19a94d7",
+            "date": "2010-03-01 12:16:29 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-74"
+        },
+        {
+            "c_hash": "4d1f40dd",
+            "date": "2010-03-01 13:23:46 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-74"
+        },
+        {
+            "c_hash": "566d6db0",
+            "date": "2010-03-01 13:25:09 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-74"
+        },
+        {
+            "c_hash": "2a6cadfd",
+            "date": "2010-03-01 15:54:49 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-70"
+        },
+        {
+            "c_hash": "9b7e9019",
+            "date": "2010-03-01 16:01:39 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-70 TODO removal we are done with this issue nothing more is possible for now"
+        },
+        {
+            "c_hash": "f5a9cf72",
+            "date": "2010-03-01 16:02:33 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-70"
+        },
+        {
+            "c_hash": "058e4bb6",
+            "date": "2010-03-01 16:16:03 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-70"
+        },
+        {
+            "c_hash": "118ad2e1",
+            "date": "2010-03-02 09:49:08 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-75 adding package relocation for asm"
+        },
+        {
+            "c_hash": "b29a6fb1",
+            "date": "2010-03-02 09:50:09 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-70"
+        },
+        {
+            "c_hash": "dc0d158a",
+            "date": "2010-03-02 14:06:47 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-76"
+        },
+        {
+            "c_hash": "e775504c",
+            "date": "2010-03-02 14:09:55 +0000",
+            "comment": "removed typo"
+        },
+        {
+            "c_hash": "4c3bf66a",
+            "date": "2010-03-02 14:10:47 +0000",
+            "comment": "reset for commit"
+        },
+        {
+            "c_hash": "a9773709",
+            "date": "2010-03-02 16:39:22 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-78"
+        },
+        {
+            "c_hash": "ab80865f",
+            "date": "2010-03-02 16:40:29 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-78 https://issues.apache.org/jira/browse/EXTSCRIPT-79"
+        },
+        {
+            "c_hash": "7a703c8c",
+            "date": "2010-03-02 17:22:10 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-82"
+        },
+        {
+            "c_hash": "542be727",
+            "date": "2010-03-02 17:23:01 +0000",
+            "comment": "resetting web.xml for dcommit"
+        },
+        {
+            "c_hash": "a1b03b5d",
+            "date": "2010-03-02 21:31:20 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-81"
+        },
+        {
+            "c_hash": "4e457c01",
+            "date": "2010-03-02 21:32:20 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-81"
+        },
+        {
+            "c_hash": "c007fc0b",
+            "date": "2010-03-02 21:33:31 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-81"
+        },
+        {
+            "c_hash": "dd717d41",
+            "date": "2010-03-02 21:34:34 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-81"
+        },
+        {
+            "c_hash": "e17410fb",
+            "date": "2010-03-02 21:35:27 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-81"
+        },
+        {
+            "c_hash": "b0de0eb5",
+            "date": "2010-03-02 21:36:28 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-81"
+        },
+        {
+            "c_hash": "61a9d0dc",
+            "date": "2010-03-02 21:37:40 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-81"
+        },
+        {
+            "c_hash": "fe91ab89",
+            "date": "2010-03-02 21:38:32 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-81"
+        },
+        {
+            "c_hash": "6f481678",
+            "date": "2010-03-02 21:39:23 +0000",
+            "comment": "save for commit"
+        },
+        {
+            "c_hash": "a3278584",
+            "date": "2010-03-03 15:45:22 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-81 https://issues.apache.org/jira/browse/EXTSCRIPT-83"
+        },
+        {
+            "c_hash": "79070011",
+            "date": "2010-03-04 22:02:06 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-40"
+        },
+        {
+            "c_hash": "d8f76fc8",
+            "date": "2010-03-04 22:03:09 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-86 adding basics of the taint history component"
+        },
+        {
+            "c_hash": "d45015d4",
+            "date": "2010-03-04 22:04:13 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-86"
+        },
+        {
+            "c_hash": "8c959d7b",
+            "date": "2010-03-04 22:05:34 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-86"
+        },
+        {
+            "c_hash": "7d83b0b6",
+            "date": "2010-03-04 22:07:09 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-84"
+        },
+        {
+            "c_hash": "7ad9d587",
+            "date": "2010-03-04 22:08:00 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-84"
+        },
+        {
+            "c_hash": "69866a60",
+            "date": "2010-03-08 14:22:19 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-87"
+        },
+        {
+            "c_hash": "198674cc",
+            "date": "2010-03-08 15:06:27 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-77"
+        },
+        {
+            "c_hash": "b7bbbd24",
+            "date": "2010-03-08 15:07:16 +0000",
+            "comment": "last changes for dcommit as usual"
+        },
+        {
+            "c_hash": "aa642b36",
+            "date": "2010-03-08 15:54:57 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-86"
+        },
+        {
+            "c_hash": "37f96a4e",
+            "date": "2010-03-09 08:20:47 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-88"
+        },
+        {
+            "c_hash": "07232f25",
+            "date": "2010-03-09 10:37:21 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-89"
+        },
+        {
+            "c_hash": "4b41afd1",
+            "date": "2010-03-09 10:45:22 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-89"
+        },
+        {
+            "c_hash": "8bbc4d1f",
+            "date": "2010-03-09 11:39:41 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-89"
+        },
+        {
+            "c_hash": "a1a56791",
+            "date": "2010-03-09 11:54:57 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-89 fix of a timing issue I ran into while being in the windows vm"
+        },
+        {
+            "c_hash": "eaf13f3c",
+            "date": "2010-03-09 14:47:10 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-90"
+        },
+        {
+            "c_hash": "80dc777d",
+            "date": "2010-03-09 14:48:09 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-92 It turns out there was a bug in our bundeling, the core faces-config was overwritten by our local ones, I now merged the core faces config into our submodule faces-configs to have only one per bundle which then never is overwritten."
+        },
+        {
+            "c_hash": "7025aaf7",
+            "date": "2010-03-09 14:49:10 +0000",
+            "comment": "finalizing the bundles"
+        },
+        {
+            "c_hash": "e4c11299",
+            "date": "2010-03-09 14:50:00 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-90 final commit before dcommit"
+        },
+        {
+            "c_hash": "67c43029",
+            "date": "2010-03-10 12:57:00 +0000",
+            "comment": "small refactoring issue, there was too much refactoring"
+        },
+        {
+            "c_hash": "66906007",
+            "date": "2010-03-10 12:58:41 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-91"
+        },
+        {
+            "c_hash": "48b01b9d",
+            "date": "2010-03-10 14:16:26 +0000",
+            "comment": "small refactoring issue, there was too much refactoring"
+        },
+        {
+            "c_hash": "638b9270",
+            "date": "2010-03-10 16:31:53 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-41"
+        },
+        {
+            "c_hash": "b639c479",
+            "date": "2010-03-10 16:32:46 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-41"
+        },
+        {
+            "c_hash": "4a5f2d40",
+            "date": "2010-03-10 16:33:38 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-41"
+        },
+        {
+            "c_hash": "e3a93a3a",
+            "date": "2010-03-11 13:52:08 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-41"
+        },
+        {
+            "c_hash": "4cdcc90e",
+            "date": "2010-03-11 13:53:08 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-41 adding new pictures"
+        },
+        {
+            "c_hash": "dbe525db",
+            "date": "2010-03-11 13:54:15 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-41"
+        },
+        {
+            "c_hash": "d4b2a2b6",
+            "date": "2010-03-12 11:34:44 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-41"
+        },
+        {
+            "c_hash": "cba12415",
+            "date": "2010-03-12 11:35:37 +0000",
+            "comment": "save state of affairs"
+        },
+        {
+            "c_hash": "04d419c1",
+            "date": "2010-03-12 11:36:45 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-41"
+        },
+        {
+            "c_hash": "1eaa17cb",
+            "date": "2010-03-12 12:40:09 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-41"
+        },
+        {
+            "c_hash": "6e392316",
+            "date": "2010-03-12 12:55:57 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-41"
+        },
+        {
+            "c_hash": "3cdfa806",
+            "date": "2010-03-15 13:53:36 +0000",
+            "comment": "save state of affairs"
+        },
+        {
+            "c_hash": "0d7a73bb",
+            "date": "2010-03-15 13:55:17 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-41 splitting up the users guide adding new chapters"
+        },
+        {
+            "c_hash": "2dda41e1",
+            "date": "2010-03-15 13:56:11 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-41"
+        },
+        {
+            "c_hash": "d12848b0",
+            "date": "2010-03-15 13:57:18 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-41"
+        },
+        {
+            "c_hash": "ac8bebf6",
+            "date": "2010-03-15 15:36:18 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-41"
+        },
+        {
+            "c_hash": "362e4f89",
+            "date": "2010-03-15 15:37:20 +0000",
+            "comment": "update"
+        },
+        {
+            "c_hash": "d3edd8f2",
+            "date": "2010-03-15 15:48:22 +0000",
+            "comment": "reset for branch"
+        },
+        {
+            "c_hash": "fa9e7af4",
+            "date": "2010-03-23 10:43:07 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-96"
+        },
+        {
+            "c_hash": "514309e9",
+            "date": "2010-03-23 10:44:03 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-97"
+        },
+        {
+            "c_hash": "e2504fe5",
+            "date": "2010-03-23 13:03:04 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-98 project reorg due to pending issues with the svn change history plugin"
+        },
+        {
+            "c_hash": "1aaefa39",
+            "date": "2010-03-23 13:03:55 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-98 project reorg due to pending issues with the svn change history plugin"
+        },
+        {
+            "c_hash": "d80be1d3",
+            "date": "2010-03-23 13:04:27 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-98 project reorg due to pending issues with the svn change history plugin"
+        },
+        {
+            "c_hash": "60fccdd7",
+            "date": "2010-03-23 13:06:02 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-98 project reorg due to pending issues with the svn change history plugin"
+        },
+        {
+            "c_hash": "7477e711",
+            "date": "2010-03-23 13:06:39 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-98 project reorg due to pending issues with the svn change history plugin"
+        },
+        {
+            "c_hash": "6f4a69d4",
+            "date": "2010-03-23 13:07:20 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-98 project reorg due to pending issues with the svn change history plugin"
+        },
+        {
+            "c_hash": "d91d03ec",
+            "date": "2010-03-23 13:07:59 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-98 project reorg due to pending issues with the svn change history plugin"
+        },
+        {
+            "c_hash": "78098350",
+            "date": "2010-03-23 13:08:46 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-98 project reorg due to pending issues with the svn change history plugin"
+        },
+        {
+            "c_hash": "e9af2065",
+            "date": "2010-03-23 13:09:22 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-98 project reorg due to pending issues with the svn change history plugin"
+        },
+        {
+            "c_hash": "8535ef07",
+            "date": "2010-03-23 13:19:44 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-98 project reorg due to pending issues with the svn change history plugin"
+        },
+        {
+            "c_hash": "8b10d0cd",
+            "date": "2010-03-23 13:26:27 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-98"
+        },
+        {
+            "c_hash": "4e14fea7",
+            "date": "2010-03-23 16:22:36 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-95"
+        },
+        {
+            "c_hash": "891fbf89",
+            "date": "2010-03-23 16:43:37 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-95 fixed a typo in the bundle :-)"
+        },
+        {
+            "c_hash": "8009309d",
+            "date": "2010-03-23 17:02:42 +0000",
+            "comment": "merging trunk"
+        },
+        {
+            "c_hash": "f5dcdaf4",
+            "date": "2010-03-23 17:08:01 +0000",
+            "comment": "changed docs dropped an empty file"
+        },
+        {
+            "c_hash": "5633d739",
+            "date": "2010-03-23 17:31:04 +0000",
+            "comment": "moving over to myfaces2 beta3 for the pending beta1 tag"
+        },
+        {
+            "c_hash": "66c1c00b",
+            "date": "2010-03-23 23:50:52 +0000",
+            "comment": "add scm properties"
+        },
+        {
+            "c_hash": "53d86850",
+            "date": "2010-03-24 00:18:45 +0000",
+            "comment": "add generate-assembly profile"
+        },
+        {
+            "c_hash": "0a6d1eed",
+            "date": "2010-03-25 08:22:21 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-103"
+        },
+        {
+            "c_hash": "8af3d212",
+            "date": "2010-03-25 10:27:59 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-102"
+        },
+        {
+            "c_hash": "8c89673f",
+            "date": "2010-03-25 13:26:11 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-100"
+        },
+        {
+            "c_hash": "15adb51b",
+            "date": "2010-03-25 13:29:06 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-100"
+        },
+        {
+            "c_hash": "2ad103e0",
+            "date": "2010-03-25 13:46:03 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-104"
+        },
+        {
+            "c_hash": "e8514312",
+            "date": "2010-03-25 14:12:37 +0000",
+            "comment": "adding comments"
+        },
+        {
+            "c_hash": "7f654d2f",
+            "date": "2010-03-25 14:44:28 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-100"
+        },
+        {
+            "c_hash": "632bf0c1",
+            "date": "2010-03-26 14:48:57 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-101"
+        },
+        {
+            "c_hash": "83552c75",
+            "date": "2010-03-26 14:50:22 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-101"
+        },
+        {
+            "c_hash": "c8011ff5",
+            "date": "2010-03-26 14:51:22 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-101"
+        },
+        {
+            "c_hash": "4625908b",
+            "date": "2010-03-26 15:18:15 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-105"
+        },
+        {
+            "c_hash": "16650a8d",
+            "date": "2010-03-26 16:34:02 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-106"
+        },
+        {
+            "c_hash": "97972511",
+            "date": "2010-03-28 14:40:34 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-108"
+        },
+        {
+            "c_hash": "703f7717",
+            "date": "2010-03-28 14:43:46 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-108"
+        },
+        {
+            "c_hash": "f7e755d6",
+            "date": "2010-03-28 14:45:57 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-108"
+        },
+        {
+            "c_hash": "3dc10cf5",
+            "date": "2010-03-28 14:47:50 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-108"
+        },
+        {
+            "c_hash": "feb60f3d",
+            "date": "2010-03-28 14:49:49 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-108"
+        },
+        {
+            "c_hash": "f07ada0d",
+            "date": "2010-03-28 14:50:43 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-108"
+        },
+        {
+            "c_hash": "16bba951",
+            "date": "2010-03-29 13:30:50 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-109"
+        },
+        {
+            "c_hash": "1684f39c",
+            "date": "2010-03-29 14:48:39 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-109"
+        },
+        {
+            "c_hash": "70f81166",
+            "date": "2010-03-29 21:00:54 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-109"
+        },
+        {
+            "c_hash": "71de114d",
+            "date": "2010-03-30 06:38:14 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-109"
+        },
+        {
+            "c_hash": "f9de54f5",
+            "date": "2010-03-30 07:00:42 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-109"
+        },
+        {
+            "c_hash": "431ca99d",
+            "date": "2010-03-30 16:44:45 +0000",
+            "comment": "temp save to remove the file"
+        },
+        {
+            "c_hash": "bedaf040",
+            "date": "2010-03-30 16:45:34 +0000",
+            "comment": "merged in stash"
+        },
+        {
+            "c_hash": "8a97a8a7",
+            "date": "2010-03-30 16:46:49 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-109"
+        },
+        {
+            "c_hash": "808d204f",
+            "date": "2010-03-30 17:36:16 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-109"
+        },
+        {
+            "c_hash": "b518aad4",
+            "date": "2010-03-30 18:54:28 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-109"
+        },
+        {
+            "c_hash": "593ae7f9",
+            "date": "2010-03-30 18:56:15 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-109"
+        },
+        {
+            "c_hash": "22653dec",
+            "date": "2010-03-30 18:57:12 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-109"
+        },
+        {
+            "c_hash": "5e618a16",
+            "date": "2010-03-31 07:44:15 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-109"
+        },
+        {
+            "c_hash": "69e6b440",
+            "date": "2010-03-31 07:48:16 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-109"
+        },
+        {
+            "c_hash": "a4d9fc22",
+            "date": "2010-03-31 07:50:18 +0000",
+            "comment": "adding new logo"
+        },
+        {
+            "c_hash": "dcc18465",
+            "date": "2010-03-31 10:08:04 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-109"
+        },
+        {
+            "c_hash": "e115e4c1",
+            "date": "2010-03-31 19:46:52 +0000",
+            "comment": "fixing links in the beta docs"
+        },
+        {
+            "c_hash": "18338e35",
+            "date": "2010-03-31 19:48:57 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-109"
+        },
+        {
+            "c_hash": "46190db7",
+            "date": "2010-03-31 19:50:38 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-110"
+        },
+        {
+            "c_hash": "70b12eb8",
+            "date": "2010-03-31 19:51:31 +0000",
+            "comment": "save before dcommit"
+        },
+        {
+            "c_hash": "6790bbb7",
+            "date": "2010-04-01 13:39:21 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-111"
+        },
+        {
+            "c_hash": "8d0347a7",
+            "date": "2010-04-01 20:25:57 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-111 removed a set of invalid warnings"
+        },
+        {
+            "c_hash": "a140ad06",
+            "date": "2010-04-04 13:02:23 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-111 adding a security constraint startup check"
+        },
+        {
+            "c_hash": "ca955f09",
+            "date": "2010-04-04 13:04:12 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-111 warning fixes missing headers added"
+        },
+        {
+            "c_hash": "7dc3a3dc",
+            "date": "2010-04-04 13:05:11 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-111 some variable renames some constant externalization"
+        },
+        {
+            "c_hash": "00cdb8b4",
+            "date": "2010-04-04 13:06:02 +0000",
+            "comment": "save state of affairs"
+        },
+        {
+            "c_hash": "05c13427",
+            "date": "2010-04-04 13:06:57 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-109"
+        },
+        {
+            "c_hash": "344e60fb",
+            "date": "2010-04-04 13:08:02 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-109"
+        },
+        {
+            "c_hash": "b7bc61ef",
+            "date": "2010-04-04 13:09:11 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-109"
+        },
+        {
+            "c_hash": "19133daa",
+            "date": "2010-04-04 13:10:53 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-109"
+        },
+        {
+            "c_hash": "889588f3",
+            "date": "2010-04-04 13:41:10 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-109"
+        },
+        {
+            "c_hash": "29433538",
+            "date": "2010-04-12 13:07:02 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-109"
+        },
+        {
+            "c_hash": "5612ccbe",
+            "date": "2010-04-12 13:07:52 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-109"
+        },
+        {
+            "c_hash": "8555e92b",
+            "date": "2010-04-12 13:32:12 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-109"
+        },
+        {
+            "c_hash": "c4dc9c9b",
+            "date": "2010-04-12 14:08:20 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-113"
+        },
+        {
+            "c_hash": "dac8d89f",
+            "date": "2010-04-12 14:09:56 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-113"
+        },
+        {
+            "c_hash": "2e528a40",
+            "date": "2010-04-12 19:43:30 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-112"
+        },
+        {
+            "c_hash": "afad920a",
+            "date": "2010-04-13 14:48:32 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-112"
+        },
+        {
+            "c_hash": "caaba4b7",
+            "date": "2010-04-13 14:58:33 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-112"
+        },
+        {
+            "c_hash": "3b73d648",
+            "date": "2010-04-14 21:36:15 +0000",
+            "comment": "improving the docs, reflecting the latest builds"
+        },
+        {
+            "c_hash": "2a66e823",
+            "date": "2010-04-19 11:24:19 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-114"
+        },
+        {
+            "c_hash": "beeaf30f",
+            "date": "2010-04-19 12:08:06 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-115"
+        },
+        {
+            "c_hash": "b6c056de",
+            "date": "2010-04-19 12:37:22 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-115"
+        },
+        {
+            "c_hash": "ead58a77",
+            "date": "2010-04-19 13:23:36 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-116"
+        },
+        {
+            "c_hash": "c1d8de42",
+            "date": "2010-04-19 14:38:49 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-118"
+        },
+        {
+            "c_hash": "b8f32133",
+            "date": "2010-04-19 14:41:00 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-118 adding comment"
+        },
+        {
+            "c_hash": "ee219323",
+            "date": "2010-04-19 14:42:54 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-118 adding comment"
+        },
+        {
+            "c_hash": "91040ccc",
+            "date": "2010-04-20 09:09:13 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-119"
+        },
+        {
+            "c_hash": "5bdc63f0",
+            "date": "2010-04-20 10:04:10 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-119 fixing plain bean validation support"
+        },
+        {
+            "c_hash": "152e492f",
+            "date": "2010-04-20 10:38:34 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-120 Fixed the performance issue, the testing revealed it really is old code, but it showed another bug filed under:"
+        },
+        {
+            "c_hash": "df1f2a48",
+            "date": "2010-04-20 10:42:27 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-120 adding a deprecated, it is too early to remove the method"
+        },
+        {
+            "c_hash": "fe6fcc34",
+            "date": "2010-04-20 11:15:46 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-121"
+        },
+        {
+            "c_hash": "54af6428",
+            "date": "2010-04-20 13:44:10 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-122 reduced one compile, still one call too much, but it is ok for 1.0 for me now I will work on the entire compile aspect post 1.0 to make it entirely switch offable, I added already preparation code for this."
+        },
+        {
+            "c_hash": "66f5d2c6",
+            "date": "2010-04-20 13:56:12 +0000",
+            "comment": "Adding basic extension framework info to the documentation"
+        },
+        {
+            "c_hash": "f2005861",
+            "date": "2010-04-20 14:38:09 +0000",
+            "comment": "adding final logo from Adonis"
+        },
+        {
+            "c_hash": "3e5bae29",
+            "date": "2010-04-20 15:14:25 +0000",
+            "comment": "fixing typos"
+        },
+        {
+            "c_hash": "7d06b412",
+            "date": "2010-04-20 15:16:43 +0000",
+            "comment": "users guide removal of wrong part"
+        },
+        {
+            "c_hash": "f2e85cb8",
+            "date": "2010-04-21 14:17:50 +0000",
+            "comment": "improving the documentation"
+        },
+        {
+            "c_hash": "38829b29",
+            "date": "2010-04-21 14:31:02 +0000",
+            "comment": "adding ajax support to the java blog"
+        },
+        {
+            "c_hash": "34131de4",
+            "date": "2010-04-21 16:03:54 +0000",
+            "comment": "doc changes removing junk for the template"
+        },
+        {
+            "c_hash": "ea3a6dc0",
+            "date": "2010-04-21 17:20:54 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-117"
+        },
+        {
+            "c_hash": "b4b9e72d",
+            "date": "2010-04-22 08:32:08 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-123"
+        },
+        {
+            "c_hash": "a5902cb2",
+            "date": "2010-04-23 07:30:25 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-124"
+        },
+        {
+            "c_hash": "4689bd00",
+            "date": "2010-04-23 07:57:59 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-124"
+        },
+        {
+            "c_hash": "33962bb6",
+            "date": "2010-04-24 15:37:56 +0000",
+            "comment": "fixed build for maven3 fixed npe for threading conditions"
+        },
+        {
+            "c_hash": "8e6ddbd7",
+            "date": "2010-04-30 12:17:26 +0000",
+            "comment": "minor code cleanup"
+        },
+        {
+            "c_hash": "9e0f8133",
+            "date": "2010-04-30 13:13:43 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-125"
+        },
+        {
+            "c_hash": "14ed3256",
+            "date": "2010-04-30 13:16:16 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-125"
+        },
+        {
+            "c_hash": "7fa2d15a",
+            "date": "2010-05-03 09:57:59 +0000",
+            "comment": "removed snapshot from the extval dep"
+        },
+        {
+            "c_hash": "c2f50efc",
+            "date": "2010-05-03 10:17:14 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-127"
+        },
+        {
+            "c_hash": "fea843b1",
+            "date": "2010-05-04 07:00:31 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-128"
+        },
+        {
+            "c_hash": "a38930e1",
+            "date": "2010-05-04 07:06:30 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-128"
+        },
+        {
+            "c_hash": "fb09abdd",
+            "date": "2010-05-04 10:10:03 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-129 changing the group ids to the final official ones (we broke our scheme of naming with the old one)"
+        },
+        {
+            "c_hash": "b11bf204",
+            "date": "2010-05-05 15:26:01 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-130"
+        },
+        {
+            "c_hash": "b61c1edb",
+            "date": "2010-05-14 21:02:56 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-130"
+        },
+        {
+            "c_hash": "dcac2439",
+            "date": "2010-05-25 13:50:45 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-133"
+        },
+        {
+            "c_hash": "7900e98e",
+            "date": "2010-06-08 17:28:24 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-134"
+        },
+        {
+            "c_hash": "ff8d400a",
+            "date": "2010-06-08 17:32:20 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-134"
+        },
+        {
+            "c_hash": "2d67dc9b",
+            "date": "2010-06-28 09:55:26 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-135"
+        },
+        {
+            "c_hash": "1fc3250b",
+            "date": "2010-06-28 09:56:41 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-135"
+        },
+        {
+            "c_hash": "942a248d",
+            "date": "2010-06-28 10:18:12 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-136"
+        },
+        {
+            "c_hash": "444802b4",
+            "date": "2010-06-28 10:21:53 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-136"
+        },
+        {
+            "c_hash": "e12a32c1",
+            "date": "2010-06-28 10:36:34 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-136"
+        },
+        {
+            "c_hash": "9bdc1a44",
+            "date": "2010-06-28 11:00:49 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-136"
+        },
+        {
+            "c_hash": "32af5a9c",
+            "date": "2010-06-28 11:14:37 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-137"
+        },
+        {
+            "c_hash": "11d95b97",
+            "date": "2010-06-28 13:02:16 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-139"
+        },
+        {
+            "c_hash": "7205cee4",
+            "date": "2010-06-28 13:40:38 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-139"
+        },
+        {
+            "c_hash": "d569306c",
+            "date": "2010-06-28 14:36:45 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-139"
+        },
+        {
+            "c_hash": "6051d163",
+            "date": "2010-06-29 07:16:59 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-139"
+        },
+        {
+            "c_hash": "389d9cf4",
+            "date": "2010-06-30 11:23:13 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-139"
+        },
+        {
+            "c_hash": "88be587a",
+            "date": "2010-07-06 21:41:23 +0000",
+            "comment": "MYFACES-2789 add ASL header to our poms"
+        },
+        {
+            "c_hash": "87fcbe98",
+            "date": "2010-07-07 11:43:01 +0000",
+            "comment": "upgrade to the latest extval version, bean resolution on el level did not work out we cannot coerce the type properly without instantiating the bean, hence we have to live with the class level only."
+        },
+        {
+            "c_hash": "f9fd58b3",
+            "date": "2010-09-13 13:10:33 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-143"
+        },
+        {
+            "c_hash": "8652c4c1",
+            "date": "2010-09-13 14:31:10 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-143"
+        },
+        {
+            "c_hash": "0f887e3c",
+            "date": "2010-09-14 13:38:36 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-143 fixup for the compiler interface we now have a dedicated single compile, we also moved the compile part now to the servlet filter so that we have the compile itself outside of jsf, that way we can ensure that a new version of the class is present when jsf kicks in (important for resource handlers etc...)"
+        },
+        {
+            "c_hash": "bae0079a",
+            "date": "2010-09-14 15:31:04 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-143 replacing the standard tainted mechanism on classloader level with a real touch mechanism on filesystem level, the advantage is we on classloader level can rely entirely on the class file has changed mechanism for reloading, which means a slightly better decoupling between classloader and resource monitor, theoretically a compile on the fly already should work, but we wont enable that before 1.1."
+        },
+        {
+            "c_hash": "06115eee",
+            "date": "2010-09-14 16:20:30 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-143 reverted the compiled check because the java compiler automatically compiles dependencies with it which might not have changed, and we are getting classcast exceptions, it is better simply to check for refresh requested instead for now .. but in the end it might be preferrable to check in the refresh part for tainted (backwards referencing) and compiled (forward referencing)"
+        },
+        {
+            "c_hash": "0ce0efe0",
+            "date": "2010-09-15 13:41:42 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-143"
+        },
+        {
+            "c_hash": "4966358a",
+            "date": "2010-09-15 13:59:29 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-143"
+        },
+        {
+            "c_hash": "bdd869a9",
+            "date": "2010-09-16 09:02:32 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-144 crossported the parts of our resource handling which affects my code to decouple this part from the shared impl. It probably will be entirely replaced by a leaner less complex implementation post 1.0, but for now this has to suffice."
+        },
+        {
+            "c_hash": "fc577eb7",
+            "date": "2010-09-16 11:01:15 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-144"
+        },
+        {
+            "c_hash": "69026ef6",
+            "date": "2010-09-16 13:13:54 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-144"
+        },
+        {
+            "c_hash": "d1619c86",
+            "date": "2010-09-16 13:29:26 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-144"
+        },
+        {
+            "c_hash": "1fe2e3b9",
+            "date": "2010-09-17 11:53:04 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-144"
+        },
+        {
+            "c_hash": "e18e789b",
+            "date": "2010-09-23 11:59:45 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-144"
+        },
+        {
+            "c_hash": "74eb54e2",
+            "date": "2010-09-23 12:40:33 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-144"
+        },
+        {
+            "c_hash": "cbf628dd",
+            "date": "2010-09-23 12:55:02 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-144"
+        },
+        {
+            "c_hash": "d4e06f93",
+            "date": "2010-09-24 08:54:05 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-144"
+        },
+        {
+            "c_hash": "139a1f69",
+            "date": "2010-09-24 09:20:11 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-144"
+        },
+        {
+            "c_hash": "8def3282",
+            "date": "2010-11-23 14:25:53 +0000",
+            "comment": "testcommit to get the keyring update (no issue)"
+        },
+        {
+            "c_hash": "85dbd93c",
+            "date": "2010-11-23 14:42:29 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-144"
+        },
+        {
+            "c_hash": "d20d7057",
+            "date": "2010-12-13 12:52:22 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-144 another third release attempt directly from the trunk, upping the extval version"
+        },
+        {
+            "c_hash": "d636ce08",
+            "date": "2010-12-13 13:56:34 +0000",
+            "comment": "[maven-release-plugin] prepare release extscript-root-1.0"
+        },
+        {
+            "c_hash": "ebf82798",
+            "date": "2010-12-13 13:58:23 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "bb80900b",
+            "date": "2010-12-14 12:39:46 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-144 reverting release due to missing license headers"
+        },
+        {
+            "c_hash": "936ccf9d",
+            "date": "2010-12-14 13:06:10 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-144 adding myfaces checkstyle and checkstyle fixes regarding missing license headers"
+        },
+        {
+            "c_hash": "a0f6fff7",
+            "date": "2010-12-14 13:48:15 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-144 adding myfaces checkstyle and checkstyle fixes regarding missing license headers"
+        },
+        {
+            "c_hash": "9636e6c9",
+            "date": "2010-12-14 14:13:07 +0000",
+            "comment": "[maven-release-plugin] prepare release extscript-root-1.0"
+        },
+        {
+            "c_hash": "49cdaa89",
+            "date": "2010-12-14 14:28:49 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-144 cleanup after a failed release prepare"
+        },
+        {
+            "c_hash": "10daad59",
+            "date": "2010-12-14 14:37:07 +0000",
+            "comment": "[maven-release-plugin] prepare release extscript-root-1.0"
+        },
+        {
+            "c_hash": "10ff436e",
+            "date": "2010-12-14 14:41:19 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "88fe4821",
+            "date": "2011-04-12 13:31:49 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-145 https://issues.apache.org/jira/browse/EXTSCRIPT-146"
+        },
+        {
+            "c_hash": "53e9ed36",
+            "date": "2011-04-13 12:56:38 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-148"
+        },
+        {
+            "c_hash": "5ed3007f",
+            "date": "2011-04-14 10:15:34 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-149"
+        },
+        {
+            "c_hash": "f385b17c",
+            "date": "2011-04-14 11:56:59 +0000",
+            "comment": "testcommit"
+        },
+        {
+            "c_hash": "a2d729eb",
+            "date": "2011-04-14 12:00:23 +0000",
+            "comment": "[maven-release-plugin] prepare release extscript-root-1.0.1"
+        },
+        {
+            "c_hash": "2ddcadf2",
+            "date": "2011-04-14 12:02:10 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "3b5faa34",
+            "date": "2011-07-08 11:59:48 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-150"
+        },
+        {
+            "c_hash": "88f5d75b",
+            "date": "2012-01-12 17:45:56 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-151 Code now compatible with the latest myfaces versions"
+        },
+        {
+            "c_hash": "ab257899",
+            "date": "2012-02-29 13:07:30 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-152 Various fixes in the poms"
+        },
+        {
+            "c_hash": "20691a66",
+            "date": "2012-02-29 13:10:16 +0000",
+            "comment": "EXTSCRIPT-152: Preparations for 1.0.2 final"
+        },
+        {
+            "c_hash": "afd88e52",
+            "date": "2012-02-29 13:47:32 +0000",
+            "comment": "[maven-release-plugin] prepare release extscript-root-1.0.2"
+        },
+        {
+            "c_hash": "611bf59e",
+            "date": "2012-02-29 13:48:21 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "b2bbea62",
+            "date": "2012-03-02 11:06:44 +0000",
+            "comment": "EXTSCRIPT-152: Preparations for 1.0.2 final changing version back"
+        },
+        {
+            "c_hash": "0cfaa636",
+            "date": "2012-03-02 11:41:47 +0000",
+            "comment": "[maven-release-plugin] prepare release extscript-root-1.0.2"
+        },
+        {
+            "c_hash": "95643f4c",
+            "date": "2012-03-02 11:42:36 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "06b5e0be",
+            "date": "2012-03-06 12:30:58 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-154"
+        },
+        {
+            "c_hash": "2c0dbb41",
+            "date": "2012-03-06 13:39:20 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-154 still working on the startup and daemon process"
+        },
+        {
+            "c_hash": "e85ee103",
+            "date": "2012-03-06 14:13:33 +0000",
+            "comment": "http://issues.apache.org/jira/browse/EXTSCRIPT-154 remove duplicated calls in the startup process adding the missing links in the startup and shutdown, ready for testing now"
+        },
+        {
+            "c_hash": "f3f34696",
+            "date": "2012-03-07 07:20:51 +0000",
+            "comment": "EXTSCRIPT-154: Startup now working next check if the dependency scan works as expected"
+        },
+        {
+            "c_hash": "6ef67df0",
+            "date": "2012-03-07 07:42:00 +0000",
+            "comment": "EXTSCRIPT-154: fixup of smaller bugs"
+        },
+        {
+            "c_hash": "d3504ef8",
+            "date": "2012-03-07 08:34:21 +0000",
+            "comment": "EXTSCRIPT-154: fixing tainting process, it now works with all dependencies. adding delta state before and after compile."
+        },
+        {
+            "c_hash": "958fc028",
+            "date": "2012-03-07 08:43:30 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, moving packages into core to get a cleaner submodule distinction"
+        },
+        {
+            "c_hash": "bb44a326",
+            "date": "2012-03-07 08:44:15 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, moving packages into core to get a cleaner submodule distinction"
+        },
+        {
+            "c_hash": "9e88e928",
+            "date": "2012-03-07 08:45:07 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, moving packages into core to get a cleaner submodule distinction"
+        },
+        {
+            "c_hash": "4fb0549d",
+            "date": "2012-03-07 08:54:51 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, moving packages into core to get a cleaner submodule distinction"
+        },
+        {
+            "c_hash": "400925e0",
+            "date": "2012-03-07 09:03:34 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, moving packages into core to get a cleaner submodule distinction"
+        },
+        {
+            "c_hash": "7dac67af",
+            "date": "2012-03-07 09:07:45 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, moving packages into core to get a cleaner submodule distinction"
+        },
+        {
+            "c_hash": "636a5644",
+            "date": "2012-03-07 09:09:17 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, moving packages into core to get a cleaner submodule distinction"
+        },
+        {
+            "c_hash": "9e4d7bf5",
+            "date": "2012-03-07 09:10:10 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, moving packages into core to get a cleaner submodule distinction"
+        },
+        {
+            "c_hash": "bf5d03dd",
+            "date": "2012-03-07 09:11:49 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, moving packages into core to get a cleaner submodule distinction"
+        },
+        {
+            "c_hash": "f2549eb4",
+            "date": "2012-03-08 12:49:14 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, ongoing works in the classloader area, integration of jsf2"
+        },
+        {
+            "c_hash": "88f42f34",
+            "date": "2012-03-08 12:54:55 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, ongoing works in the classloader area, integration of jsf2"
+        },
+        {
+            "c_hash": "e2a60f90",
+            "date": "2012-03-08 13:07:07 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, ongoing works in the classloader area, integration of jsf2"
+        },
+        {
+            "c_hash": "7208aa95",
+            "date": "2012-03-08 13:20:07 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, ongoing works in the classloader area, integration of jsf2"
+        },
+        {
+            "c_hash": "8dc241a8",
+            "date": "2012-03-08 13:42:22 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, loading classes now works"
+        },
+        {
+            "c_hash": "5ce97715",
+            "date": "2012-03-08 15:52:10 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, loading classes now works"
+        },
+        {
+            "c_hash": "6da0c0c5",
+            "date": "2012-03-08 15:53:02 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, loading classes now works"
+        },
+        {
+            "c_hash": "35496dd4",
+            "date": "2012-03-08 15:53:32 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, loading classes now works"
+        },
+        {
+            "c_hash": "464de70d",
+            "date": "2012-03-08 15:54:56 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, loading classes now works"
+        },
+        {
+            "c_hash": "2398cced",
+            "date": "2012-03-09 09:06:05 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, adding the resource handlers, we don\u00b4t do anything with those in this rewrite, maybe in the next one we will patch facelets in the impl directly to handle that."
+        },
+        {
+            "c_hash": "66c55763",
+            "date": "2012-03-09 09:12:59 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring adding facelet support now (finally)"
+        },
+        {
+            "c_hash": "b431befa",
+            "date": "2012-03-09 09:35:14 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, adding facelet handlers now"
+        },
+        {
+            "c_hash": "8ec91fc6",
+            "date": "2012-03-09 13:48:14 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, save state of affairs, we now have to work on the refresh code, we have a phase listener working and recompiling, but the reloading yet fails on proxy level."
+        },
+        {
+            "c_hash": "0163391c",
+            "date": "2012-03-09 14:16:54 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring,fixing a new issue in the codebase which prevented code to be loaded"
+        },
+        {
+            "c_hash": "9ef11ce6",
+            "date": "2012-03-12 08:20:37 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, fixing porting issues"
+        },
+        {
+            "c_hash": "ba52ee5b",
+            "date": "2012-03-12 09:08:56 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, fixing issues"
+        },
+        {
+            "c_hash": "74624e1f",
+            "date": "2012-03-12 09:17:51 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, loading classes now works"
+        },
+        {
+            "c_hash": "287011aa",
+            "date": "2012-03-12 09:55:58 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, loading classes now works"
+        },
+        {
+            "c_hash": "2d292601",
+            "date": "2012-03-12 12:21:25 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, adding annotation processing"
+        },
+        {
+            "c_hash": "89881446",
+            "date": "2012-03-12 12:30:53 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, some refactorings"
+        },
+        {
+            "c_hash": "93fe2bbb",
+            "date": "2012-03-12 12:55:50 +0000",
+            "comment": "EXTSCRIPT-154: adding testcases"
+        },
+        {
+            "c_hash": "46ada5dc",
+            "date": "2012-03-13 08:11:32 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, annotations now work"
+        },
+        {
+            "c_hash": "2e336bf4",
+            "date": "2012-03-13 08:12:42 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, dump for old test code"
+        },
+        {
+            "c_hash": "8362adfc",
+            "date": "2012-03-13 08:14:12 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, loading classes now works"
+        },
+        {
+            "c_hash": "a3537b7b",
+            "date": "2012-03-13 08:22:45 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring,moved old tests out of the way, there will be a set of new ones"
+        },
+        {
+            "c_hash": "53e4b42c",
+            "date": "2012-03-13 08:52:35 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, adding the utils classes for the testases"
+        },
+        {
+            "c_hash": "59141525",
+            "date": "2012-03-13 11:06:58 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, save state of affairs"
+        },
+        {
+            "c_hash": "88d88bcf",
+            "date": "2012-03-13 11:20:31 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, moving the tests to other packages"
+        },
+        {
+            "c_hash": "eef69379",
+            "date": "2012-03-13 11:44:20 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, moving the weaving context"
+        },
+        {
+            "c_hash": "9b088ae7",
+            "date": "2012-03-13 11:46:05 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, WeavingContext refactoring"
+        },
+        {
+            "c_hash": "86371a58",
+            "date": "2012-03-13 12:32:43 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, removing old junk"
+        },
+        {
+            "c_hash": "cbd12d24",
+            "date": "2012-03-13 12:33:55 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, making the rewrite now self contained"
+        },
+        {
+            "c_hash": "d3686aed",
+            "date": "2012-03-13 12:42:33 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, make everything self contained"
+        },
+        {
+            "c_hash": "c946740b",
+            "date": "2012-03-13 13:47:02 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring,cleaning up the compiler interface ongoing works on the components"
+        },
+        {
+            "c_hash": "f78685f0",
+            "date": "2012-03-13 15:16:19 +0000",
+            "comment": "EXTSCRIPT-154: Code Rewrite/Refactoring, cleaning up resource compile workflow for the components."
+        },
+        {
+            "c_hash": "e209216a",
+            "date": "2012-03-14 09:39:54 +0000",
+            "comment": "save test"
+        },
+        {
+            "c_hash": "7045da80",
+            "date": "2012-03-14 09:49:08 +0000",
+            "comment": "merging changes from the old checkout"
+        },
+        {
+            "c_hash": "8bea48b9",
+            "date": "2012-03-14 09:56:37 +0000",
+            "comment": "moving old code out"
+        },
+        {
+            "c_hash": "e7ebf55f",
+            "date": "2012-03-14 10:14:10 +0000",
+            "comment": "moving old code out"
+        },
+        {
+            "c_hash": "6e7b7c7a",
+            "date": "2012-03-14 10:14:37 +0000",
+            "comment": "adding todo"
+        },
+        {
+            "c_hash": "4fd4bcbc",
+            "date": "2012-03-14 10:16:35 +0000",
+            "comment": "adding moved files, the ide did not do it"
+        },
+        {
+            "c_hash": "6d649f06",
+            "date": "2012-03-14 11:22:11 +0000",
+            "comment": "readding the reloading strategy"
+        },
+        {
+            "c_hash": "ba17c0f6",
+            "date": "2012-03-14 11:23:04 +0000",
+            "comment": "fixing smaller compile issues"
+        },
+        {
+            "c_hash": "86fa2fe1",
+            "date": "2012-03-14 12:42:50 +0000",
+            "comment": "remove unused junk"
+        },
+        {
+            "c_hash": "f50c95f8",
+            "date": "2012-03-14 12:43:36 +0000",
+            "comment": "fixing smaller issues in the compiler, testing round"
+        },
+        {
+            "c_hash": "7e9d3c25",
+            "date": "2012-03-14 14:51:12 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-154 fixing the refresh in non request scopes"
+        },
+        {
+            "c_hash": "5d3da8a2",
+            "date": "2012-03-14 14:51:30 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-154 adding the components to the faces config"
+        },
+        {
+            "c_hash": "b8925a15",
+            "date": "2012-03-14 14:53:48 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-154 removing old code which is not needed anymore"
+        },
+        {
+            "c_hash": "0e4d50ef",
+            "date": "2012-03-14 14:54:15 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-154 save state of affairs"
+        },
+        {
+            "c_hash": "8e90f735",
+            "date": "2012-03-14 15:02:07 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-154 refactoring the rewrite package name out"
+        },
+        {
+            "c_hash": "9288554b",
+            "date": "2012-03-14 15:20:20 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-154 removing old code"
+        },
+        {
+            "c_hash": "ad65e21f",
+            "date": "2012-03-14 15:46:00 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-154 adding testcases"
+        },
+        {
+            "c_hash": "048e3c61",
+            "date": "2012-03-14 15:48:47 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-154 removing empty dirs"
+        },
+        {
+            "c_hash": "afc22328",
+            "date": "2012-03-14 15:49:10 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-154 removing empty dirs"
+        },
+        {
+            "c_hash": "ee0e5bb6",
+            "date": "2012-03-14 15:50:34 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-154 removing empty dirs"
+        },
+        {
+            "c_hash": "f5e391bb",
+            "date": "2012-03-14 15:51:03 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-154 removing empty dirs"
+        },
+        {
+            "c_hash": "28f730c4",
+            "date": "2012-03-14 15:51:23 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-154 removing empty dirs"
+        },
+        {
+            "c_hash": "3c93c903",
+            "date": "2012-03-14 15:51:37 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-154 removing empty dirs"
+        },
+        {
+            "c_hash": "b05050e0",
+            "date": "2012-03-14 15:52:03 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-154 removing empty dirs"
+        },
+        {
+            "c_hash": "a3b78b59",
+            "date": "2012-03-14 15:52:24 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-154 removing empty dirs"
+        },
+        {
+            "c_hash": "72705f1b",
+            "date": "2012-03-14 15:53:22 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-154 removing empty dirs"
+        },
+        {
+            "c_hash": "5a7ef6d7",
+            "date": "2012-03-14 16:00:09 +0000",
+            "comment": "EXTSCRIPT-154: removing old junk dirs"
+        },
+        {
+            "c_hash": "054512d5",
+            "date": "2012-03-14 16:01:50 +0000",
+            "comment": "EXTSCRIPT-154: removing old junk dirs"
+        },
+        {
+            "c_hash": "02b668f8",
+            "date": "2012-03-14 16:06:01 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-154 removing empty dirs"
+        },
+        {
+            "c_hash": "3214edc6",
+            "date": "2012-03-14 19:55:21 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-154 adding old testcase fixing smaller issue with the source file handling"
+        },
+        {
+            "c_hash": "6cd21297",
+            "date": "2012-03-15 08:52:37 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-154 fixing a missing groovy mapping issue"
+        },
+        {
+            "c_hash": "42f6ecac",
+            "date": "2012-03-15 13:05:31 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-155 fixing package names"
+        },
+        {
+            "c_hash": "9a705032",
+            "date": "2012-03-15 13:06:21 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-155 fixing a proxy issue with ext-val, fixing an issue with the dynamic class detection, some classes were loaded upfront with a different classloader which is a non issue, but needs to be taken into consideration"
+        },
+        {
+            "c_hash": "33db5352",
+            "date": "2012-03-16 09:23:46 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-156 fixing a bean annotation not movable issue cleaning up code"
+        },
+        {
+            "c_hash": "38927b9e",
+            "date": "2012-03-16 11:46:56 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-156 fixing an annotation move issue in my component testcase"
+        },
+        {
+            "c_hash": "05d8ffd3",
+            "date": "2012-03-16 13:28:44 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-156 removing unwanted debug points"
+        },
+        {
+            "c_hash": "56c684bd",
+            "date": "2012-03-16 14:14:09 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-157 adding the bundles and assemblies to be conform with the documentation"
+        },
+        {
+            "c_hash": "df9f00c4",
+            "date": "2012-03-19 13:07:19 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-157 eliminating the scanner classloader"
+        },
+        {
+            "c_hash": "7910f710",
+            "date": "2012-03-19 13:07:51 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-157 eliminating the scanner classloader"
+        },
+        {
+            "c_hash": "7eb21ff5",
+            "date": "2012-03-19 13:08:17 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-157 eliminating the scanner classloader"
+        },
+        {
+            "c_hash": "230873ff",
+            "date": "2012-03-19 13:08:52 +0000",
+            "comment": "fixing the getResource from the the throw away loader"
+        },
+        {
+            "c_hash": "0394c413",
+            "date": "2012-03-19 13:10:16 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-158 moving to jetty 8 and isolating the blogging example for easier debugging"
+        },
+        {
+            "c_hash": "bf252d7a",
+            "date": "2012-03-19 13:10:40 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-158 cleaning up and fortyfing the app"
+        },
+        {
+            "c_hash": "f2760a3d",
+            "date": "2012-03-19 13:11:13 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-158 move the throw away classloader to the engine dir"
+        },
+        {
+            "c_hash": "9916b8bf",
+            "date": "2012-03-19 13:12:01 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-158 fixing the issue itself"
+        },
+        {
+            "c_hash": "3bdd1b3b",
+            "date": "2012-03-19 13:12:30 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-157 adding a blogging example as standalone webapp"
+        },
+        {
+            "c_hash": "773203b8",
+            "date": "2012-03-19 15:26:04 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-157 moving on with the 1.0.3 documentation and splitting off the 1.0.2 and earlier docs"
+        },
+        {
+            "c_hash": "cf3fc090",
+            "date": "2012-03-19 15:26:20 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-157 moving on with the 1.0.3 documentation and splitting off the 1.0.2 and earlier docs"
+        },
+        {
+            "c_hash": "93aba412",
+            "date": "2012-03-19 15:26:34 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-157 fixing smaller issues add dynamic resource reloading"
+        },
+        {
+            "c_hash": "cee96511",
+            "date": "2012-03-19 15:26:50 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-157 fixing an issue with the embedded videos we now use the new google iframe api"
+        },
+        {
+            "c_hash": "b2852996",
+            "date": "2012-03-20 11:22:48 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-159 adding scala support"
+        },
+        {
+            "c_hash": "b667a868",
+            "date": "2012-03-20 11:23:19 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-159 adding scala testcase, it still fails due to classpath issues"
+        },
+        {
+            "c_hash": "32d54993",
+            "date": "2012-03-20 11:24:05 +0000",
+            "comment": "EXTSCRIPT-159: Add scala language support if possible"
+        },
+        {
+            "c_hash": "250bc4a4",
+            "date": "2012-03-20 14:08:06 +0000",
+            "comment": "EXTSCRIPT-159: Add scala language support if possible: adding the classpath to avoid a scala compiler error, thanks to the scala mailinglist this was fast to fix"
+        },
+        {
+            "c_hash": "6fb675f8",
+            "date": "2012-03-20 14:08:31 +0000",
+            "comment": "EXTSCRIPT-159: Add scala language support if possible: adding missing license headers"
+        },
+        {
+            "c_hash": "8667d950",
+            "date": "2012-03-20 14:09:33 +0000",
+            "comment": "EXTSCRIPT-159: Add scala language support if possible: scala support now working"
+        },
+        {
+            "c_hash": "d58c6f05",
+            "date": "2012-03-20 17:13:55 +0000",
+            "comment": "EXTSCRIPT-157: prepare and improve the site documentation for the 1.0.2 and 1.0.3 release announcments in the users list."
+        },
+        {
+            "c_hash": "38608948",
+            "date": "2012-03-20 17:14:07 +0000",
+            "comment": "EXTSCRIPT-157: prepare and improve the site documentation for the 1.0.2 and 1.0.3 release announcments in the users list."
+        },
+        {
+            "c_hash": "97240a75",
+            "date": "2012-03-20 17:14:17 +0000",
+            "comment": "EXTSCRIPT-157: prepare and improve the site documentation for the 1.0.2 and 1.0.3 release announcments in the users list."
+        },
+        {
+            "c_hash": "84d400a0",
+            "date": "2012-03-21 14:59:45 +0000",
+            "comment": "EXTSCRIPT-157: prepare and improve the site documentation for the 1.0.2 and 1.0.3 release announcments in the users list."
+        },
+        {
+            "c_hash": "6505add1",
+            "date": "2012-03-21 15:00:25 +0000",
+            "comment": "EXTSCRIPT-157: prepare and improve the site documentation for the 1.0.2 and 1.0.3 small code refactoring"
+        },
+        {
+            "c_hash": "b39d98ff",
+            "date": "2012-03-21 15:00:53 +0000",
+            "comment": "EXTSCRIPT-159: forgot the dependency scanner"
+        },
+        {
+            "c_hash": "38945bc0",
+            "date": "2012-03-21 15:01:17 +0000",
+            "comment": "EXTSCRIPT-159: smaller refactorings"
+        },
+        {
+            "c_hash": "663d6333",
+            "date": "2012-03-21 15:01:42 +0000",
+            "comment": "EXTSCRIPT-159: smaller refactorings"
+        },
+        {
+            "c_hash": "92cfc9d5",
+            "date": "2012-03-22 08:11:03 +0000",
+            "comment": "EXTSCRIPT-160: Fixing the testcases, in linux they failed due to a different test execution order"
+        },
+        {
+            "c_hash": "bd9d6f8c",
+            "date": "2012-03-22 08:35:56 +0000",
+            "comment": "EXTSCRIPT-160: Fixing the testcases, in linux they failed due to a different test execution order"
+        },
+        {
+            "c_hash": "ccfebb05",
+            "date": "2012-03-22 09:54:39 +0000",
+            "comment": "EXTSCRIPT-160: removing test, because it is"
+        },
+        {
+            "c_hash": "544ebbe9",
+            "date": "2012-03-22 10:07:24 +0000",
+            "comment": "EXTSCRIPT-160: saving"
+        },
+        {
+            "c_hash": "662f1c87",
+            "date": "2012-03-22 10:08:44 +0000",
+            "comment": "EXTSCRIPT-160: changing illegal version number"
+        },
+        {
+            "c_hash": "5cb3af2e",
+            "date": "2012-03-22 10:10:13 +0000",
+            "comment": "EXTSCRIPT-160: changing illegal version number"
+        },
+        {
+            "c_hash": "21b49a94",
+            "date": "2012-03-22 10:59:12 +0000",
+            "comment": "[maven-release-plugin] prepare release extscript-root-1.0.3"
+        },
+        {
+            "c_hash": "c30dfbb5",
+            "date": "2012-03-22 11:00:50 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "5e7aa044",
+            "date": "2012-03-22 12:44:30 +0000",
+            "comment": "EXTSCRIPT-160: reverting revision"
+        },
+        {
+            "c_hash": "4c971726",
+            "date": "2012-03-22 12:52:29 +0000",
+            "comment": "[maven-release-plugin] prepare release extscript-root-1.0.3"
+        },
+        {
+            "c_hash": "70f781b3",
+            "date": "2012-03-22 12:58:07 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "450315a2",
+            "date": "2012-03-23 09:15:52 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-161, improving the classpath handling"
+        },
+        {
+            "c_hash": "970ecf0b",
+            "date": "2012-03-23 12:25:47 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-161, adding a service spi connector to our package, so that myfaces can pick it up at startup."
+        },
+        {
+            "c_hash": "da9c62b7",
+            "date": "2012-03-23 12:26:28 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-161, getting rid of the ChainLoader entry in the web.xml, this was the last mandatory entry, which now is picked up automatically by the impl."
+        },
+        {
+            "c_hash": "59e3cc9d",
+            "date": "2012-03-26 06:59:38 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-161, getting rid of the ChainLoader entry in the web.xml, this was the last mandatory entry, which now is picked up automatically by the impl."
+        },
+        {
+            "c_hash": "4d1346d8",
+            "date": "2012-03-26 07:00:08 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-157: Save current state of affairs before rerelease, the release notes will be adjusted accordingly."
+        },
+        {
+            "c_hash": "66b621f5",
+            "date": "2012-03-26 07:46:47 +0000",
+            "comment": "EXTSCRIPT-153: Preparations for 1.0.2 final"
+        },
+        {
+            "c_hash": "44a320ea",
+            "date": "2012-03-26 07:47:08 +0000",
+            "comment": "EXTSCRIPT-153: Preparations for 1.0.2 final, resetting version"
+        },
+        {
+            "c_hash": "b580be86",
+            "date": "2012-03-26 09:02:09 +0000",
+            "comment": "[maven-release-plugin] prepare release extscript-root-1.0.3"
+        },
+        {
+            "c_hash": "4ab56025",
+            "date": "2012-03-26 09:02:54 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "caaf43e6",
+            "date": "2012-04-04 11:58:23 +0000",
+            "comment": "working on testcases"
+        },
+        {
+            "c_hash": "cb776fbe",
+            "date": "2012-04-04 11:58:57 +0000",
+            "comment": "finalizing download links"
+        },
+        {
+            "c_hash": "79c08755",
+            "date": "2012-04-04 11:59:10 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-163 update the docs"
+        },
+        {
+            "c_hash": "c66beccf",
+            "date": "2012-04-04 12:00:09 +0000",
+            "comment": "EXTSCRIPT-107: CDI Integration work started"
+        },
+        {
+            "c_hash": "bddc61bf",
+            "date": "2012-04-04 12:00:34 +0000",
+            "comment": "OWB now working in the example"
+        },
+        {
+            "c_hash": "374e64c6",
+            "date": "2012-04-05 08:00:18 +0000",
+            "comment": "EXTSCRIPT-107: CDI Integration work started"
+        },
+        {
+            "c_hash": "3bd0fe0d",
+            "date": "2012-04-05 08:00:30 +0000",
+            "comment": "EXTSCRIPT-153: adding the distribution management section for the docs"
+        },
+        {
+            "c_hash": "dad5f4ca",
+            "date": "2012-04-05 08:00:56 +0000",
+            "comment": "EXTSCRIPT-107: CDI Integration work started"
+        },
+        {
+            "c_hash": "7078bfae",
+            "date": "2012-04-05 08:14:42 +0000",
+            "comment": "EXTSCRIPT-163: fixing typos and grammar errors"
+        },
+        {
+            "c_hash": "528caeae",
+            "date": "2012-04-05 08:14:54 +0000",
+            "comment": "EXTSCRIPT-163: fixing typos and grammar errors removing old outdated version docs which are not linked anymore"
+        },
+        {
+            "c_hash": "b7db1ba8",
+            "date": "2012-04-05 09:37:11 +0000",
+            "comment": "EXTSCRIPT-163: fixing links adding latest reporting infrastructure to the pom"
+        },
+        {
+            "c_hash": "67cdd64f",
+            "date": "2012-04-05 11:50:11 +0000",
+            "comment": "EXTSCRIPT-163: moving the scala plugin from the root module to the one which really needs it"
+        },
+        {
+            "c_hash": "91c2f04e",
+            "date": "2012-04-05 11:50:22 +0000",
+            "comment": "EXTSCRIPT-163: fixing typos"
+        },
+        {
+            "c_hash": "9d04ebe3",
+            "date": "2012-04-05 11:50:32 +0000",
+            "comment": "EXTSCRIPT-163: fixing typos"
+        },
+        {
+            "c_hash": "1b307583",
+            "date": "2012-04-05 11:50:42 +0000",
+            "comment": "EXTSCRIPT-163: fixing typos"
+        },
+        {
+            "c_hash": "465d5892",
+            "date": "2012-04-05 11:50:52 +0000",
+            "comment": "EXTSCRIPT-163: fixing typos"
+        },
+        {
+            "c_hash": "2c0721b0",
+            "date": "2012-04-05 13:42:42 +0000",
+            "comment": "EXTSCRIPT-107: ongoing works for the cdi integration"
+        },
+        {
+            "c_hash": "3d7084dd",
+            "date": "2012-04-05 14:11:45 +0000",
+            "comment": "EXTSCRIPT-162: ongoing works for the site deployment"
+        },
+        {
+            "c_hash": "97dac61e",
+            "date": "2012-04-12 13:04:29 +0000",
+            "comment": "EXTSCRIPT-107: CDI Bootstrapping now working"
+        },
+        {
+            "c_hash": "92cf0b18",
+            "date": "2012-04-12 13:06:35 +0000",
+            "comment": "EXTSCRIPT-107: cdi works"
+        },
+        {
+            "c_hash": "902dc058",
+            "date": "2012-04-12 13:07:11 +0000",
+            "comment": "EXTSCRIPT-107: CDI Kickstarting in OWB, this works now as expected"
+        },
+        {
+            "c_hash": "912feb26",
+            "date": "2012-05-21 07:31:11 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-164"
+        },
+        {
+            "c_hash": "c90e6519",
+            "date": "2012-05-29 07:09:32 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-165"
+        },
+        {
+            "c_hash": "0d80652b",
+            "date": "2012-06-25 20:53:25 +0000",
+            "comment": "EXTSCRIPT-166"
+        },
+        {
+            "c_hash": "8e31af87",
+            "date": "2012-07-12 15:16:02 +0000",
+            "comment": "EXTSCRIPT-166"
+        },
+        {
+            "c_hash": "cb6af0e2",
+            "date": "2012-07-16 15:01:01 +0000",
+            "comment": "EXTSCRIPT-166 fixing up the encoding code for the url handling so that it should work properly no matter which system"
+        },
+        {
+            "c_hash": "1259dc9c",
+            "date": "2012-08-03 15:40:50 +0000",
+            "comment": "testcommit"
+        },
+        {
+            "c_hash": "af7ac742",
+            "date": "2012-08-03 15:43:33 +0000",
+            "comment": "[maven-release-plugin] prepare release extscript-root-1.0.4"
+        },
+        {
+            "c_hash": "8b9ee97b",
+            "date": "2012-08-03 15:44:21 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "4654a811",
+            "date": "2012-08-06 07:19:31 +0000",
+            "comment": "resetting the versions due to failed release"
+        },
+        {
+            "c_hash": "4c4d3362",
+            "date": "2012-08-06 07:57:54 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-167"
+        },
+        {
+            "c_hash": "388fdbfb",
+            "date": "2012-08-06 08:15:22 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-167"
+        },
+        {
+            "c_hash": "ccb7e325",
+            "date": "2012-08-06 08:15:41 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-167"
+        },
+        {
+            "c_hash": "9539d002",
+            "date": "2012-08-06 09:08:54 +0000",
+            "comment": "EXTSCRIPT-167"
+        },
+        {
+            "c_hash": "663fb38b",
+            "date": "2012-08-06 11:50:04 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-167"
+        },
+        {
+            "c_hash": "2b7429a1",
+            "date": "2012-08-06 12:05:43 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-167 removing old readmes which are obsolete by now. adding a licens header to another one"
+        },
+        {
+            "c_hash": "32d0661b",
+            "date": "2012-08-06 12:07:27 +0000",
+            "comment": "removing readme EXTSCRIPT-167"
+        },
+        {
+            "c_hash": "26166b0a",
+            "date": "2012-08-06 13:18:19 +0000",
+            "comment": "EXTSCRIPT-167 adding rat plugin to the build as separate testing profile"
+        },
+        {
+            "c_hash": "241ee243",
+            "date": "2012-08-06 14:00:29 +0000",
+            "comment": "EXTSCRIPT-168"
+        },
+        {
+            "c_hash": "b5e42cd1",
+            "date": "2012-08-06 14:15:33 +0000",
+            "comment": "adding rat.txt for bug in rat plugin"
+        },
+        {
+            "c_hash": "b42937cf",
+            "date": "2012-08-06 15:00:37 +0000",
+            "comment": "[maven-release-plugin] prepare release extscript-root-1.0.4"
+        },
+        {
+            "c_hash": "1cf8a8b6",
+            "date": "2012-08-06 15:01:24 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "e3d7d884",
+            "date": "2012-08-07 08:35:46 +0000",
+            "comment": "reverting the versions due to failed vote."
+        },
+        {
+            "c_hash": "35b7069f",
+            "date": "2012-08-07 08:49:45 +0000",
+            "comment": "EXTSCRIPT-167 cleanup for release of the web.xml"
+        },
+        {
+            "c_hash": "4fc94fcf",
+            "date": "2012-08-07 12:16:28 +0000",
+            "comment": "EXTSCRIPT-167 removing web.xml junk, changing the documentation link in the demo"
+        },
+        {
+            "c_hash": "7c62c798",
+            "date": "2012-08-07 12:16:40 +0000",
+            "comment": "EXTSCRIPT-167 changing the headers"
+        },
+        {
+            "c_hash": "b96d43fb",
+            "date": "2012-09-12 13:26:14 +0000",
+            "comment": "EXTSCRIPT-173 glassfish npe fix"
+        },
+        {
+            "c_hash": "1c1f1463",
+            "date": "2012-09-12 13:29:37 +0000",
+            "comment": "EXTSCRIPT-173 adding glassfish myfaces definitions"
+        },
+        {
+            "c_hash": "68292796",
+            "date": "2012-09-13 08:38:29 +0000",
+            "comment": "EXTSCRIPT-174 adding wildcarding to the additional classpaths"
+        },
+        {
+            "c_hash": "a9aeec6a",
+            "date": "2012-09-13 08:43:32 +0000",
+            "comment": "EXTSCRIPT-174 adding the additional classpath to the configuration"
+        },
+        {
+            "c_hash": "4d0faf7a",
+            "date": "2012-09-13 14:26:12 +0000",
+            "comment": "testcommit from linux"
+        },
+        {
+            "c_hash": "9d68bb7e",
+            "date": "2012-10-11 09:57:13 +0000",
+            "comment": " EXTSCRIPT-175"
+        },
+        {
+            "c_hash": "2dfb8d6d",
+            "date": "2012-10-11 09:59:38 +0000",
+            "comment": " EXTSCRIPT-175 adding missing files"
+        },
+        {
+            "c_hash": "3592bdb2",
+            "date": "2012-10-11 09:59:50 +0000",
+            "comment": " EXTSCRIPT-175 adding the glassfish files to the WEB-INF as well"
+        },
+        {
+            "c_hash": "923d2097",
+            "date": "2012-10-11 11:27:15 +0000",
+            "comment": "testcommit"
+        },
+        {
+            "c_hash": "79240bc1",
+            "date": "2012-10-11 11:33:37 +0000",
+            "comment": "EXTSCRIPT-175"
+        },
+        {
+            "c_hash": "f81e26e1",
+            "date": "2012-10-11 11:39:17 +0000",
+            "comment": "EXTSCRIPT-175 remving a line for a testcommit"
+        },
+        {
+            "c_hash": "701d949e",
+            "date": "2012-10-11 11:43:24 +0000",
+            "comment": "[maven-release-plugin] prepare release extscript-root-1.0.4"
+        },
+        {
+            "c_hash": "927a233b",
+            "date": "2012-10-11 11:57:25 +0000",
+            "comment": "[maven-release-plugin] rollback the release of extscript-root-1.0.4"
+        },
+        {
+            "c_hash": "050adba1",
+            "date": "2012-10-11 12:16:26 +0000",
+            "comment": "[maven-release-plugin] prepare release extscript-root-1.0.4"
+        },
+        {
+            "c_hash": "2de3cc67",
+            "date": "2012-10-11 12:21:14 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "0db372ee",
+            "date": "2012-10-17 13:26:58 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-172 adding source links and new release links to the homepage"
+        },
+        {
+            "c_hash": "4f9125ac",
+            "date": "2012-10-18 08:23:57 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-172 updating the documentation with the openwebbeans information and the dependencies list"
+        },
+        {
+            "c_hash": "3c5e52fd",
+            "date": "2012-10-18 08:24:09 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-172 fixing typos"
+        },
+        {
+            "c_hash": "a63cb4eb",
+            "date": "2012-10-18 08:59:25 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-171 adding a link to the issue tracker"
+        },
+        {
+            "c_hash": "38b0646f",
+            "date": "2012-10-22 11:56:01 +0000",
+            "comment": "adding the jruby compiler bindings"
+        },
+        {
+            "c_hash": "29ee28dc",
+            "date": "2012-10-22 11:56:33 +0000",
+            "comment": "compiler now works initially not fully yet, but enough that we can progress further"
+        },
+        {
+            "c_hash": "5edc94b6",
+            "date": "2012-10-22 11:56:52 +0000",
+            "comment": "adding engine"
+        },
+        {
+            "c_hash": "f917296c",
+            "date": "2012-10-22 11:57:58 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-177"
+        },
+        {
+            "c_hash": "8c2a9b0b",
+            "date": "2012-10-22 11:58:20 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-177 adding missing license headers"
+        },
+        {
+            "c_hash": "dfd5e6ae",
+            "date": "2012-10-23 10:26:32 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-177 adding stdout capture so that we have meaningful error messages"
+        },
+        {
+            "c_hash": "591c3cff",
+            "date": "2012-10-23 10:26:55 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-177 adding a logger to the mix so that stdout from jruby is also put out on the console"
+        },
+        {
+            "c_hash": "f38eadfc",
+            "date": "2012-10-23 10:27:18 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-177 removing a debugging message"
+        },
+        {
+            "c_hash": "db2a51a2",
+            "date": "2012-10-24 13:46:44 +0000",
+            "comment": "adding init comment to avoid future confusion"
+        },
+        {
+            "c_hash": "13853f4d",
+            "date": "2012-10-24 13:47:46 +0000",
+            "comment": "adding spring example"
+        },
+        {
+            "c_hash": "628b8b93",
+            "date": "2012-10-24 13:48:07 +0000",
+            "comment": "example application now transitioned"
+        },
+        {
+            "c_hash": "cf673b09",
+            "date": "2012-10-24 13:48:59 +0000",
+            "comment": "save state of affairs webapp now shot boot, and also ext-scripting"
+        },
+        {
+            "c_hash": "2e1f6161",
+            "date": "2012-10-24 13:49:23 +0000",
+            "comment": "adding license headers for compile reasons"
+        },
+        {
+            "c_hash": "7011af65",
+            "date": "2012-10-24 13:50:30 +0000",
+            "comment": "non proxied spring beans now refresh as expected"
+        },
+        {
+            "c_hash": "2236c3ec",
+            "date": "2012-10-24 13:50:57 +0000",
+            "comment": "adding an instantiation strategy"
+        },
+        {
+            "c_hash": "384a60ad",
+            "date": "2012-10-24 15:04:47 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-44"
+        },
+        {
+            "c_hash": "0a8ecc9c",
+            "date": "2012-10-25 06:56:54 +0000",
+            "comment": "EXTSCRIPT-44 tainted checks now in place to avoid unneccessary class reloads and bean reloads"
+        },
+        {
+            "c_hash": "6c8b8770",
+            "date": "2012-10-25 07:24:10 +0000",
+            "comment": "EXTSCRIPT-44: Adding missing author flags, adding license headers, removing an unused listener for the system."
+        },
+        {
+            "c_hash": "454337c6",
+            "date": "2012-10-25 07:52:16 +0000",
+            "comment": "EXTSCRIPT-44: testprobe1 accidentally overwritten"
+        },
+        {
+            "c_hash": "24630708",
+            "date": "2012-10-25 07:59:24 +0000",
+            "comment": "EXTSCRIPT-44: fixing a missing license header"
+        },
+        {
+            "c_hash": "459c183b",
+            "date": "2012-10-25 08:14:17 +0000",
+            "comment": "EXTSCRIPT-177 fixing the example for annotations"
+        },
+        {
+            "c_hash": "5ba70dc5",
+            "date": "2012-10-25 08:43:31 +0000",
+            "comment": "EXTSCRIPT-44: adding a ruby bean to the spring config to show the multlanguage capabilities of the system"
+        },
+        {
+            "c_hash": "1d908c34",
+            "date": "2012-10-25 08:44:12 +0000",
+            "comment": "EXTSCRIPT-177: finalizing the ruby context param adding examples for the ruby loader paths"
+        },
+        {
+            "c_hash": "2848be8e",
+            "date": "2012-10-25 09:58:51 +0000",
+            "comment": "EXTSCRIPT-178: fixing the base engine, since tomcat returns a null path on \"./\" adding context.xmls wherever needed added scripting paths for the testing example fixing the startu process since spring behaves differently in startup compared to jetty. This should also resolve a likely issue with big irons where paths are not getting picked up."
+        },
+        {
+            "c_hash": "25666727",
+            "date": "2012-10-25 14:39:41 +0000",
+            "comment": "EXTSCRIPT-44 EXTSCRIPT-177 removing the compiler test because it fails despite a working compiler in linux fixing up the web.xml for jetty"
+        },
+        {
+            "c_hash": "b2a09c8c",
+            "date": "2012-10-30 14:56:43 +0000",
+            "comment": "EXTSCRIPT-179 adding the compiler"
+        },
+        {
+            "c_hash": "64479563",
+            "date": "2012-10-30 15:07:49 +0000",
+            "comment": "EXTSCRIPT-179 remove idea comments"
+        },
+        {
+            "c_hash": "2c46b82e",
+            "date": "2012-10-30 15:08:04 +0000",
+            "comment": "EXTSCRIPT-179: adding new definition to gitignore"
+        },
+        {
+            "c_hash": "4c2aeef5",
+            "date": "2012-10-30 16:08:37 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-179 fixing the code block handling for the compiler"
+        },
+        {
+            "c_hash": "897fef43",
+            "date": "2012-10-30 16:09:06 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-179 fixing the code block handling for the compiler"
+        },
+        {
+            "c_hash": "6982692f",
+            "date": "2012-10-30 16:13:02 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-179 fixing a regexp error in the header part"
+        },
+        {
+            "c_hash": "9709d40b",
+            "date": "2012-10-30 16:22:48 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-179 fixing the href links from a href to mdtext"
+        },
+        {
+            "c_hash": "3de489f7",
+            "date": "2012-10-30 16:34:01 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-179 fixing the images to the mdtext syntax"
+        },
+        {
+            "c_hash": "139c29c6",
+            "date": "2012-10-30 16:44:58 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-179 renaming several images because the apache cms has a bug and transforms _ into escapes in image links"
+        },
+        {
+            "c_hash": "37cbf30b",
+            "date": "2012-10-31 10:12:27 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-179 handling of nested lists added, does not work in conjunction with the code formatter however"
+        },
+        {
+            "c_hash": "11709922",
+            "date": "2012-10-31 10:12:43 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-179 acidentally deleted index"
+        },
+        {
+            "c_hash": "23e33419",
+            "date": "2012-10-31 10:13:06 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-179 nested ul and nested table handling now in place"
+        },
+        {
+            "c_hash": "d5d82cd4",
+            "date": "2012-10-31 10:27:34 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-179 refactoring the names of various files to avoid an mdtext bug with the encoding of underscores"
+        },
+        {
+            "c_hash": "7c0f9d87",
+            "date": "2012-10-31 10:27:54 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-179 refactoring the names of various files to avoid an mdtext bug with the encoding of underscores"
+        },
+        {
+            "c_hash": "02b40df6",
+            "date": "2012-10-31 10:31:12 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-179 file name error caused by refactoring"
+        },
+        {
+            "c_hash": "6462c727",
+            "date": "2012-10-31 11:07:11 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-179 adding the generated mdtext files to the site"
+        },
+        {
+            "c_hash": "f7f52ca6",
+            "date": "2012-10-31 11:15:49 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-179 forgot the license header"
+        },
+        {
+            "c_hash": "a01fcd64",
+            "date": "2012-10-31 11:16:11 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-179 forgot the license header"
+        },
+        {
+            "c_hash": "03008c5f",
+            "date": "2012-10-31 12:06:04 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-179 adding download file as well"
+        },
+        {
+            "c_hash": "95b7b210",
+            "date": "2012-11-06 13:32:16 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-180 adding basic weld support code, but not much, does not work yet"
+        },
+        {
+            "c_hash": "5a4d750e",
+            "date": "2012-11-06 13:44:04 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-180 removing the weld subprojects for future use"
+        },
+        {
+            "c_hash": "da88da57",
+            "date": "2012-11-09 13:53:10 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-182 moving the entire myfaces related classes into their own subproject with their own SPI infrastructure, that way we can support mojarra in the long run"
+        },
+        {
+            "c_hash": "793d68ff",
+            "date": "2012-11-28 13:59:53 +0000",
+            "comment": "fixing up the scm poms"
+        },
+        {
+            "c_hash": "f7625007",
+            "date": "2012-11-28 14:02:57 +0000",
+            "comment": "mojarra support basics now working we changed the testcases accordingly"
+        },
+        {
+            "c_hash": "1976c4ee",
+            "date": "2012-11-28 14:04:17 +0000",
+            "comment": "renaming of the myfaces rerouting resource resolver to resource resolver"
+        },
+        {
+            "c_hash": "30427ff6",
+            "date": "2012-11-28 14:05:56 +0000",
+            "comment": "adding latest mojarra changes moving changes into bundle moving the config files into their respective implementation directories"
+        },
+        {
+            "c_hash": "132bc67e",
+            "date": "2012-11-28 14:06:21 +0000",
+            "comment": "fixing a behavior bug, the addBehavior was not delegated which works for myfaces but not mojarra"
+        },
+        {
+            "c_hash": "5aec6aee",
+            "date": "2012-11-28 14:06:42 +0000",
+            "comment": "enabling the source resource handler"
+        },
+        {
+            "c_hash": "0653ea8e",
+            "date": "2012-11-28 14:07:34 +0000",
+            "comment": "changed the resource handlers to a simpler code"
+        },
+        {
+            "c_hash": "0d6b3783",
+            "date": "2012-11-28 14:09:33 +0000",
+            "comment": "rename the classes to their old names to keep compatibility to the docs"
+        },
+        {
+            "c_hash": "96954ccf",
+            "date": "2012-11-28 14:10:06 +0000",
+            "comment": "code beautifying"
+        },
+        {
+            "c_hash": "7e641e1c",
+            "date": "2012-11-28 14:10:58 +0000",
+            "comment": "adding deprecation messages old resource handler, save state of affairs"
+        },
+        {
+            "c_hash": "6f86bbbc",
+            "date": "2012-11-28 14:12:05 +0000",
+            "comment": "adding web overrides for mojarra and myfaces"
+        },
+        {
+            "c_hash": "84fc5a21",
+            "date": "2012-11-28 14:13:41 +0000",
+            "comment": "enabling the component tag handler delegate for mojarra and myfaces moving the classloader handling  into its own spi"
+        },
+        {
+            "c_hash": "947a197e",
+            "date": "2012-11-28 14:14:54 +0000",
+            "comment": "save state of affairs"
+        },
+        {
+            "c_hash": "7f9c3ff3",
+            "date": "2012-11-28 14:15:09 +0000",
+            "comment": "removing the mojarra bundle from the build for now"
+        },
+        {
+            "c_hash": "e909017b",
+            "date": "2012-11-28 14:15:57 +0000",
+            "comment": "removing the mojarra code for push"
+        },
+        {
+            "c_hash": "72d96f13",
+            "date": "2012-12-04 11:08:09 +0000",
+            "comment": "save state of affairs"
+        },
+        {
+            "c_hash": "9403562b",
+            "date": "2012-12-04 11:08:49 +0000",
+            "comment": "fixing an issue with the combination of CDI and Managed beans"
+        },
+        {
+            "c_hash": "fd312a1a",
+            "date": "2012-12-04 11:09:14 +0000",
+            "comment": "refinement of the CDI throw away classloader mojarra references again removed for commit"
+        },
+        {
+            "c_hash": "04b26026",
+            "date": "2012-12-04 12:08:57 +0000",
+            "comment": "https://issues.apache.org/jira/browse/EXTSCRIPT-183"
+        },
+        {
+            "c_hash": "734b9c01",
+            "date": "2012-12-04 12:19:07 +0000",
+            "comment": "EXTSCRIPT-183 removing an npe"
+        },
+        {
+            "c_hash": "f65bbf0d",
+            "date": "2012-12-04 13:13:52 +0000",
+            "comment": "EXTSCRIPT-183 final fix for the npe"
+        },
+        {
+            "c_hash": "4d0ed35e",
+            "date": "2012-12-04 13:22:04 +0000",
+            "comment": "EXTSCRIPT-96 small cleanup in the example"
+        },
+        {
+            "c_hash": "e0fba3e7",
+            "date": "2012-12-04 14:16:31 +0000",
+            "comment": "no commit number for testing purposes only"
+        },
+        {
+            "c_hash": "7b6fb91d",
+            "date": "2012-12-04 15:00:01 +0000",
+            "comment": "EXTSCRIPT-184 test failure fix"
+        },
+        {
+            "c_hash": "01da989c",
+            "date": "2012-12-04 15:06:55 +0000",
+            "comment": "EXTSCRIPT-185 wrong bundle excluded"
+        },
+        {
+            "c_hash": "efbb15c0",
+            "date": "2012-12-04 15:17:27 +0000",
+            "comment": "EXTSCRIPT-185 adding test scoped scala libs to to support the linux runtime"
+        },
+        {
+            "c_hash": "ad088ebd",
+            "date": "2012-12-04 15:44:18 +0000",
+            "comment": "EXTSCRIPT-185 fixing the tests for good"
+        },
+        {
+            "c_hash": "87b5ff12",
+            "date": "2012-12-05 10:42:18 +0000",
+            "comment": "EXTSCRIPT-185"
+        },
+        {
+            "c_hash": "c4cb3ad6",
+            "date": "2012-12-05 12:33:44 +0000",
+            "comment": "EXTSCRIPT-185 fixing up the documentation for the pending release"
+        },
+        {
+            "c_hash": "cc901b81",
+            "date": "2012-12-05 12:36:24 +0000",
+            "comment": "EXTSCRIPT-185 updating mdtext"
+        },
+        {
+            "c_hash": "6b771f63",
+            "date": "2012-12-05 12:36:36 +0000",
+            "comment": "EXTSCRIPT-185 adding accidentally deleted download mtext"
+        },
+        {
+            "c_hash": "13138216",
+            "date": "2012-12-05 13:06:22 +0000",
+            "comment": "EXTSCRIPT-185 missing license in project which is not activated"
+        },
+        {
+            "c_hash": "11fe9b25",
+            "date": "2012-12-05 13:06:33 +0000",
+            "comment": "EXTSCRIPT-185 adding missing license header"
+        },
+        {
+            "c_hash": "1992b926",
+            "date": "2012-12-05 13:06:43 +0000",
+            "comment": "EXTSCRIPT-185 adding asl license to gitignore to avoid another rat error"
+        },
+        {
+            "c_hash": "6598cee7",
+            "date": "2012-12-05 13:16:43 +0000",
+            "comment": "EXTSCRIPT-185 missing license"
+        },
+        {
+            "c_hash": "1b810d2a",
+            "date": "2012-12-05 13:17:12 +0000",
+            "comment": "EXTSCRIPT-185 adding missing licenses"
+        },
+        {
+            "c_hash": "69ebcadd",
+            "date": "2012-12-05 13:21:59 +0000",
+            "comment": "adding missing license files to core project"
+        },
+        {
+            "c_hash": "6e01adf3",
+            "date": "2012-12-05 13:27:02 +0000",
+            "comment": "EXTSCRIPT-185 adding spring license to the spring subproject, removing the asm and facelets licenses from the cdi subproject"
+        },
+        {
+            "c_hash": "154bb1f6",
+            "date": "2012-12-05 14:11:40 +0000",
+            "comment": "EXTSCRIPT-185 making the jruby support only enabled if there is a ruby jar present fixing a few licenses along the way"
+        },
+        {
+            "c_hash": "397d1ced",
+            "date": "2012-12-05 14:43:21 +0000",
+            "comment": "EXTSCRIPT-185 removing junk from the pom"
+        },
+        {
+            "c_hash": "0b4a243a",
+            "date": "2012-12-05 14:43:44 +0000",
+            "comment": "EXTSCRIPT-185"
+        },
+        {
+            "c_hash": "9e3fc711",
+            "date": "2012-12-05 14:44:07 +0000",
+            "comment": "adding sl4j license"
+        },
+        {
+            "c_hash": "e1c80c6e",
+            "date": "2012-12-05 14:44:53 +0000",
+            "comment": "removing facelets licenses since they are ASL2 anyway"
+        },
+        {
+            "c_hash": "89056c2a",
+            "date": "2012-12-05 15:19:27 +0000",
+            "comment": "EXTSCRIPT-185 fixing testcase for dynamic jruby inclusion"
+        },
+        {
+            "c_hash": "b1081079",
+            "date": "2012-12-05 15:52:42 +0000",
+            "comment": "EXTSCRIPT-185 removal error handler for the interrupted exception"
+        },
+        {
+            "c_hash": "cf907c68",
+            "date": "2012-12-06 12:55:31 +0000",
+            "comment": "[maven-release-plugin] prepare release extscript-root-1.0.5"
+        },
+        {
+            "c_hash": "dbc4610d",
+            "date": "2012-12-06 12:57:45 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "0be5790b",
+            "date": "2012-12-10 13:07:42 +0000",
+            "comment": "[EXTSCRIPT-185] changing description of the module"
+        },
+        {
+            "c_hash": "a42c1784",
+            "date": "2012-12-10 13:07:55 +0000",
+            "comment": "adding release information for 1.0.5"
+        }
+    ]
+}

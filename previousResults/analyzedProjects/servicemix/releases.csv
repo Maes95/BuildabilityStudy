@@ -1,0 +1,8 @@
+commitID;commit-type;time-to-next-release;commit-message
+ef57fd77233e31c5c6c61cf83b898070f5d4d5fa;BREAKING_CHANGES;991;Add basic project layout with manual and console for smx5 git-svn-id: https://svn.apache.org/repos/asf/servicemix/smx5/trunk@1141262 13f79535-47bb-0310-9956-ffa450edef68
+e7e6e7c5e537f04d7b1507ec8c074d6d3b13b280;BREAKING_CHANGES;404;Copy of codebase at smx4/features/trunk git-svn-id: https://svn.apache.org/repos/asf/servicemix/smx5/trunk@1442548 13f79535-47bb-0310-9956-ffa450edef68
+337486fd7312bd191e864743cc5e92b5e5054f05;BREAKING_FIX;-;SM-2278 Upgrade to Karaf 3.0.1 (closes #6) Thanks to Wim Verreydt for the pull request!! 
+a041239b6a82d7250513df5855c8fd14393edea6;BREAKING_CHANGES;-;[SM-2319] Remove the connector feature (now provided by Karaf) [SM-2321] Upgrade to Karaf 3.0.2-SNAPSHOT 
+5eed29afc4fbf49f094b9026e5f2b5c5cb46b60f;BREAKING_FIX;-;SM-2321: Upgrade to Karaf 3.0.2 
+63b39fbf353549e8ec5d5954d7bbba1f7b610beb;BREAKING_CHANGES;-;Use xerces.version parameter while defining xerces as plugin dependency 
+53e81af7f76f7abcc50c29e22c13118fe3a81c34;BREAKING_FIX;-;SM-2402: Use correct cxf.codegen-plugin version 

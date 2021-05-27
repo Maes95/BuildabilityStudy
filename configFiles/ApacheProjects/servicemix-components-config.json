@@ -1,0 +1,1133 @@
+{
+    "project": "servicemix-components",
+    "git_url": "https://github.com/apache/servicemix-components.git",
+    "last_commit": "6bf1e46e",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "f98b1695",
+            "date": "2010-12-09 22:25:00 +0000",
+            "comment": "Move JBI components back into a single svn tree location"
+        },
+        {
+            "c_hash": "965896fb",
+            "date": "2010-12-12 07:17:23 +0000",
+            "comment": "Add .gitignore file in the \"new\" components repo."
+        },
+        {
+            "c_hash": "800ffb57",
+            "date": "2010-12-12 08:23:53 +0000",
+            "comment": "[SMXCOMP-675] Add content type support in ERROR and FAULT messages."
+        },
+        {
+            "c_hash": "de141906",
+            "date": "2010-12-13 07:23:38 +0000",
+            "comment": "[SMXCOMP-827] Blueprint descriptors contain an error in the license text."
+        },
+        {
+            "c_hash": "d9089b49",
+            "date": "2010-12-13 13:25:12 +0000",
+            "comment": "SMXCOMP-826: in case of a processing error for a mail we set the original mail to UNSEEN state just for the case the mail system automatically sets it to SEEN"
+        },
+        {
+            "c_hash": "739b2ef0",
+            "date": "2010-12-14 07:28:13 +0000",
+            "comment": "Remove per component .gitignore files"
+        },
+        {
+            "c_hash": "3235fb9c",
+            "date": "2010-12-14 13:05:01 +0000",
+            "comment": "Add a few files to .gitignore until SMXCOMP-832 gets fixed"
+        },
+        {
+            "c_hash": "13bb904f",
+            "date": "2010-12-15 13:10:37 +0000",
+            "comment": "SMXCOMP-827: Fix error in license header text"
+        },
+        {
+            "c_hash": "981e258d",
+            "date": "2010-12-15 15:27:06 +0000",
+            "comment": "SMXCOMP-833: Add servicemix-common sources as a dependency"
+        },
+        {
+            "c_hash": "65111e89",
+            "date": "2010-12-15 21:41:18 +0000",
+            "comment": "SMXCOMP-833: Remove duplicate documentation dependencies"
+        },
+        {
+            "c_hash": "dfe77207",
+            "date": "2010-12-15 21:41:31 +0000",
+            "comment": "SMXCOMP-833: Improve servicemix-cxf-se javadoc for wiki/xsd documentation"
+        },
+        {
+            "c_hash": "1ad8ba91",
+            "date": "2010-12-15 21:50:43 +0000",
+            "comment": "SMXCOMP-832: Ensure that mvn clean removes all files created during build"
+        },
+        {
+            "c_hash": "489506de",
+            "date": "2010-12-16 19:03:09 +0000",
+            "comment": "SMXCOMP-833: Improve servicemix-ftp javadoc for wiki/xsd documentation"
+        },
+        {
+            "c_hash": "8069fa6a",
+            "date": "2010-12-17 09:52:24 +0000",
+            "comment": "SMXCOMP-833: Improve servicemix-ftp javadoc for wiki/xsd documentation (ftp:pool)"
+        },
+        {
+            "c_hash": "fc264a54",
+            "date": "2010-12-17 09:52:37 +0000",
+            "comment": "SMXCOMP-833: Improve servicemix-validation javadoc for wiki/xsd documentationi"
+        },
+        {
+            "c_hash": "03cabecc",
+            "date": "2010-12-17 09:52:43 +0000",
+            "comment": "Prepare for release: avoid duplicate .asc.asc files in the release artifacts"
+        },
+        {
+            "c_hash": "1c185868",
+            "date": "2010-12-17 12:23:10 +0000",
+            "comment": "[maven-release-plugin] prepare release components-2010.02"
+        },
+        {
+            "c_hash": "baca3554",
+            "date": "2010-12-17 12:42:46 +0000",
+            "comment": "[maven-release-plugin] rollback the release of components-2010.02"
+        },
+        {
+            "c_hash": "f283c432",
+            "date": "2010-12-17 12:49:44 +0000",
+            "comment": "Fix release build: update SCM location information"
+        },
+        {
+            "c_hash": "c4878b8f",
+            "date": "2010-12-17 12:56:19 +0000",
+            "comment": "[maven-release-plugin] prepare release components-2010.02"
+        },
+        {
+            "c_hash": "77a77564",
+            "date": "2010-12-17 12:57:10 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "7a4f2f72",
+            "date": "2010-12-17 13:42:11 +0000",
+            "comment": "Fix build after release process left released version in the POM"
+        },
+        {
+            "c_hash": "f5f705d8",
+            "date": "2010-12-17 13:48:49 +0000",
+            "comment": "Fix build after release process left released version in the POM"
+        },
+        {
+            "c_hash": "d858d6b2",
+            "date": "2010-12-22 12:49:36 +0000",
+            "comment": "[SMXCOMP]upgrade to cxf 2.3.1"
+        },
+        {
+            "c_hash": "d7cf968c",
+            "date": "2010-12-22 12:59:27 +0000",
+            "comment": "[SMXCOMP]upgrade to cxf 2.3.1"
+        },
+        {
+            "c_hash": "9b6f2221",
+            "date": "2010-12-22 13:03:49 +0000",
+            "comment": "[SMXCOMP]upgrade to cxf 2.3.1"
+        },
+        {
+            "c_hash": "3d993dee",
+            "date": "2011-01-03 10:05:37 +0000",
+            "comment": "[SMXCOMP-825] Upgrade to ActiveMQ 5.4.2."
+        },
+        {
+            "c_hash": "423ef678",
+            "date": "2011-01-04 13:43:46 +0000",
+            "comment": "[SMXCOMP-834] Leveraged maven-build-helper plugin to allocate unused ports for servicemix-http unit tests."
+        },
+        {
+            "c_hash": "0d2afce9",
+            "date": "2011-01-05 06:11:04 +0000",
+            "comment": "[SMXCOMP-836]EndpointExporter should unregister the endpoint with it if failed to create a ServiceAssembly"
+        },
+        {
+            "c_hash": "97a31c85",
+            "date": "2011-01-05 06:12:00 +0000",
+            "comment": "[SMXCOMP-837]should remove wsdl definition from bus cache when shutdown the cxfbc consumer endpoint"
+        },
+        {
+            "c_hash": "36b31f1d",
+            "date": "2011-01-07 07:45:28 +0000",
+            "comment": "Remove duplicate cxf.version property definitions"
+        },
+        {
+            "c_hash": "d32c2909",
+            "date": "2011-01-11 05:34:22 +0000",
+            "comment": "[SMXCOMP-839]incorrect OSGi manifest metadata of servicemix-exec component"
+        },
+        {
+            "c_hash": "a3a6da25",
+            "date": "2011-01-14 09:48:58 +0000",
+            "comment": "[SMXCOMP-840] Upgrade to Spring 3.0.5.RELEASE."
+        },
+        {
+            "c_hash": "2a84434e",
+            "date": "2011-01-17 21:27:48 +0000",
+            "comment": "added bundle description osgi header (see ESB-1271)"
+        },
+        {
+            "c_hash": "2e1f0739",
+            "date": "2011-01-18 09:17:07 +0000",
+            "comment": "[SMXCOMP-842] Upgrade to CXF 2.3.2-SNAPSHOT [SMXCOMP-841] Upgrade to Camel 2.6-SNAPSHOT."
+        },
+        {
+            "c_hash": "73bca005",
+            "date": "2011-01-18 13:14:34 +0000",
+            "comment": "added description (see SM-2038)"
+        },
+        {
+            "c_hash": "3ceb752c",
+            "date": "2011-01-19 08:36:35 +0000",
+            "comment": "Update the HttpBridgeServletTest to use Servlet spec 3.0."
+        },
+        {
+            "c_hash": "20733049",
+            "date": "2011-01-19 09:27:48 +0000",
+            "comment": "Upgrade not released servicemix-ldap to match the super POM version."
+        },
+        {
+            "c_hash": "0678c5fa",
+            "date": "2011-01-19 09:30:44 +0000",
+            "comment": "Upgrade non released servicemix-rmi component to use the correct super POM version."
+        },
+        {
+            "c_hash": "34bd1e35",
+            "date": "2011-01-21 13:18:35 +0000",
+            "comment": "SM-2043 SimpleEndpoint fail method error is not logged"
+        },
+        {
+            "c_hash": "1edf1b2d",
+            "date": "2011-01-21 15:55:20 +0000",
+            "comment": "SMXCOMP-844 Possibility to choose preemptive Authentication for the http provider endpoint."
+        },
+        {
+            "c_hash": "33cef731",
+            "date": "2011-01-21 16:51:25 +0000",
+            "comment": "SMXCOMP-843 The old provider processor has no possibilty to bind the Auth scope on a host:port config"
+        },
+        {
+            "c_hash": "85f792f7",
+            "date": "2011-01-25 11:00:04 +0000",
+            "comment": "[SMXCOMP-842] Upgrade to CXF 2.3.2."
+        },
+        {
+            "c_hash": "c7e6f363",
+            "date": "2011-01-25 22:33:49 +0000",
+            "comment": "Upgrade to servicemix specs 1.7.0"
+        },
+        {
+            "c_hash": "7439e90c",
+            "date": "2011-01-26 13:28:07 +0000",
+            "comment": "Fix release build: upgrade maven-source-plugin and use fixed version for servicemix-shared instead of property"
+        },
+        {
+            "c_hash": "2e3a760a",
+            "date": "2011-01-26 13:52:02 +0000",
+            "comment": "SMXCOMP-845 http provider processor - simple response content type check missing which can lead to errors."
+        },
+        {
+            "c_hash": "54049c4d",
+            "date": "2011-01-27 09:46:53 +0000",
+            "comment": "Remove property servicemix-shared.version -- no longer needed in single component build"
+        },
+        {
+            "c_hash": "fb8b33b7",
+            "date": "2011-01-27 12:30:29 +0000",
+            "comment": "[SMXCOMP-849] Added serviceType property on SMPP endpoints."
+        },
+        {
+            "c_hash": "18ef7418",
+            "date": "2011-01-27 19:41:25 +0000",
+            "comment": "fixed wrong parent version in smx-pdf"
+        },
+        {
+            "c_hash": "ce07bae7",
+            "date": "2011-01-29 06:19:20 +0000",
+            "comment": "[SMXCOMP-841] Upgrade to Camel 2.6.0 and ServiceMix Utils 1.4.0."
+        },
+        {
+            "c_hash": "97a9e680",
+            "date": "2011-01-31 07:31:39 +0000",
+            "comment": "[SMXCOMP-850] Provide additional info for Karaf info command."
+        },
+        {
+            "c_hash": "30830777",
+            "date": "2011-01-31 08:11:55 +0000",
+            "comment": "[SMXCOMP-768] Improve async behavior in MessageFilter patterns of the ServiceMix EIP component."
+        },
+        {
+            "c_hash": "6cfe4d27",
+            "date": "2011-01-31 10:28:59 +0000",
+            "comment": "[SMXCOMP-768] Revert MessageFilter async changes."
+        },
+        {
+            "c_hash": "59760966",
+            "date": "2011-02-01 07:52:06 +0000",
+            "comment": "[maven-release-plugin] prepare release components-2011.01"
+        },
+        {
+            "c_hash": "ab44123b",
+            "date": "2011-02-01 07:53:35 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "962ffb51",
+            "date": "2011-02-04 09:05:47 +0000",
+            "comment": "[SMXCOMP-852] Switch to use SLF4J as default logger."
+        },
+        {
+            "c_hash": "95fdcdff",
+            "date": "2011-02-04 12:32:30 +0000",
+            "comment": "SMXCOMP-852: Fix build error in servicemix-truezip"
+        },
+        {
+            "c_hash": "d2e03bf0",
+            "date": "2011-02-05 08:25:14 +0000",
+            "comment": "[SMXCOMP-852] Beginning to use SLF4J args to avoid string concatenation."
+        },
+        {
+            "c_hash": "650bd2eb",
+            "date": "2011-02-05 21:25:08 +0000",
+            "comment": "[SMXCOMP-852] Use SLF4J args to avoid string concatenation."
+        },
+        {
+            "c_hash": "ab8c4f50",
+            "date": "2011-02-06 21:04:44 +0000",
+            "comment": "[SMXCOMP-852] Use SLF4J args to avoid string concatenation."
+        },
+        {
+            "c_hash": "eccc0321",
+            "date": "2011-02-21 08:39:46 +0000",
+            "comment": "[SMXCOMP-855]MessageExchange Leak in CXF SE Proxy Per-Request"
+        },
+        {
+            "c_hash": "bc2b3025",
+            "date": "2011-02-21 10:01:17 +0000",
+            "comment": "[SMXCOMP-857]ensure cxfse:proxy is thread safe to access requestcontext"
+        },
+        {
+            "c_hash": "a28171b6",
+            "date": "2011-02-22 09:21:11 +0000",
+            "comment": "[SMXCOMP-858]CXFSE Proxy Doesn't Implement propagateSubject Setting"
+        },
+        {
+            "c_hash": "f7fe148f",
+            "date": "2011-03-25 14:21:51 +0000",
+            "comment": "upgraded slf4j version to 1.6.1 (see SMX4-778)"
+        },
+        {
+            "c_hash": "f06f8a93",
+            "date": "2011-03-26 15:56:35 +0000",
+            "comment": "Upgrade to servicemix-utils 1.5.0-SNAPSHOT"
+        },
+        {
+            "c_hash": "6f666735",
+            "date": "2011-03-27 20:12:42 +0000",
+            "comment": "SMXCOMP-859: Upgrade to Camel 2.7"
+        },
+        {
+            "c_hash": "89c27c61",
+            "date": "2011-03-28 02:53:36 +0000",
+            "comment": "[SMXCOMP-861]upgrade to cxf 2.3.3"
+        },
+        {
+            "c_hash": "41d383c6",
+            "date": "2011-03-28 14:33:06 +0000",
+            "comment": "SMXCOMP-862: Upgrade to ActiveMQ 5.5.0"
+        },
+        {
+            "c_hash": "de8d0537",
+            "date": "2011-03-30 07:38:08 +0000",
+            "comment": "[SMXCOMP-863]Make allowsCoreThreadTimeOut name consistent across mbeans and properties"
+        },
+        {
+            "c_hash": "06f9b5a4",
+            "date": "2011-03-30 17:27:32 +0000",
+            "comment": "Move camel.version property to top-level POM together with the rest"
+        },
+        {
+            "c_hash": "3d5e7e7a",
+            "date": "2011-04-01 12:51:27 +0000",
+            "comment": "SMXCOMP-863: Name allowCoreThreadTimeOut consistently over all projects"
+        },
+        {
+            "c_hash": "dc27fec5",
+            "date": "2011-04-03 07:20:22 +0000",
+            "comment": "[SMXCOMP-862] Upgrade to ActiveMQ 5.5.0."
+        },
+        {
+            "c_hash": "1762b3e3",
+            "date": "2011-04-14 05:59:17 +0000",
+            "comment": "SM-1206 - ClientFactory JNDI bind fails in non-standalone ServiceMix installs"
+        },
+        {
+            "c_hash": "68b5b5fd",
+            "date": "2011-04-20 04:51:37 +0000",
+            "comment": "[SMXCOMP-868]Align stax-api version"
+        },
+        {
+            "c_hash": "c05553fd",
+            "date": "2011-04-20 08:25:57 +0000",
+            "comment": "[SMXCOMP-867]servicemix-camel performance optimizations"
+        },
+        {
+            "c_hash": "961642eb",
+            "date": "2011-04-20 09:11:49 +0000",
+            "comment": "upgrade to jetty 6.1.26"
+        },
+        {
+            "c_hash": "ad572b83",
+            "date": "2011-04-28 10:18:02 +0000",
+            "comment": "[SMXCOMP-870]upgrade to cxf 2.4.0"
+        },
+        {
+            "c_hash": "01ff43c7",
+            "date": "2011-05-06 12:44:46 +0000",
+            "comment": "changed JNDI names"
+        },
+        {
+            "c_hash": "1ba7b53d",
+            "date": "2011-05-09 01:23:54 +0000",
+            "comment": "enable servicemix-soap/soap2 module which comment out inadvertently"
+        },
+        {
+            "c_hash": "bc6969da",
+            "date": "2011-05-16 18:18:27 +0000",
+            "comment": "SM-1206 - ClientFactory JNDI bind fails in non-standalone ServiceMix installs"
+        },
+        {
+            "c_hash": "7e5332c5",
+            "date": "2011-05-18 11:17:08 +0000",
+            "comment": "SM-1206 - ClientFactory JNDI bind fails in non-standalone ServiceMix installs"
+        },
+        {
+            "c_hash": "cbee69ea",
+            "date": "2011-05-25 06:43:06 +0000",
+            "comment": "[SMXCOMP-874] Upgrade to ServiceMix Specs 1.8.0"
+        },
+        {
+            "c_hash": "a649978c",
+            "date": "2011-05-26 01:11:50 +0000",
+            "comment": "[SMXCOMP-876]servicemix-soap bundle is missing some necessary <Import-Package> and <Export-Package>"
+        },
+        {
+            "c_hash": "2dfaef19",
+            "date": "2011-05-27 07:12:14 +0000",
+            "comment": "[SMXCOMP-878]ensure cxf bc consumer endpoint can publish wsdl"
+        },
+        {
+            "c_hash": "5acaf1d4",
+            "date": "2011-05-31 04:52:00 +0000",
+            "comment": "[SMXCOMP-879]cxf se endpoint should support configure JAXBDataBinding with extraClass"
+        },
+        {
+            "c_hash": "95470cde",
+            "date": "2011-06-06 07:34:56 +0000",
+            "comment": "[SMXCOMP-882] Upgrade to Java Mail 1.4.4"
+        },
+        {
+            "c_hash": "f5b71bc1",
+            "date": "2011-06-07 07:58:46 +0000",
+            "comment": "Fix indentation before making other changes"
+        },
+        {
+            "c_hash": "fd59c368",
+            "date": "2011-06-07 07:59:30 +0000",
+            "comment": "SMXCOMP-880: Refactor servicemix-http component to avoid use of wrapper for locking"
+        },
+        {
+            "c_hash": "dd237152",
+            "date": "2011-06-07 07:59:28 +0000",
+            "comment": "Upgrade to cobertura-maven-plugin 2.5.1"
+        },
+        {
+            "c_hash": "b7e91dfe",
+            "date": "2011-06-07 12:49:09 +0000",
+            "comment": "SMXCOMP-881: Allow configuring HTTP consumer endpoint for handling late responses more quietly"
+        },
+        {
+            "c_hash": "59db846d",
+            "date": "2011-06-07 14:06:28 +0000",
+            "comment": "[SMXCOMP-833]cxf bc consumer should be able to determine soap version from incoming message"
+        },
+        {
+            "c_hash": "7e521e9d",
+            "date": "2011-06-09 10:19:51 +0000",
+            "comment": "[SMXCOMP-886]<http:soap-consumer> config may fail to import xsd or wsdl files"
+        },
+        {
+            "c_hash": "38b1857e",
+            "date": "2011-06-09 12:58:29 +0000",
+            "comment": "[SMXCOMP-885]Dynamic Soap address in wsdl"
+        },
+        {
+            "c_hash": "304f490a",
+            "date": "2011-06-09 13:31:15 +0000",
+            "comment": "applied patch to set client timeouts and max connections (see ESB-1328)"
+        },
+        {
+            "c_hash": "42e99f2b",
+            "date": "2011-06-10 09:19:30 +0000",
+            "comment": "[SMXCOMP-887]<http:soap-consumer> config may fail to import xsd or wsdl files in sub-directories"
+        },
+        {
+            "c_hash": "06104142",
+            "date": "2011-06-11 10:53:00 +0000",
+            "comment": "SMXCOMP-881: Introducing exception types to better distinguish between the time-out and the late response that follows it"
+        },
+        {
+            "c_hash": "55aa71ce",
+            "date": "2011-06-12 05:15:43 +0000",
+            "comment": "[SMXCOMP-878]add cxf simple frontend dependency to the JBI installer so that WSDLGetInterceptor is available in SMX3"
+        },
+        {
+            "c_hash": "aa972bad",
+            "date": "2011-06-12 06:57:57 +0000",
+            "comment": "[SMXCOMP-888]remove xmlschema from sharedlib"
+        },
+        {
+            "c_hash": "0977aa81",
+            "date": "2011-06-12 07:03:02 +0000",
+            "comment": "[SMXCOMP-889]use local copy of XSD for servicemix-soap2 to avoid test hang"
+        },
+        {
+            "c_hash": "c968614f",
+            "date": "2011-06-13 06:18:26 +0000",
+            "comment": "Update the previous releases set."
+        },
+        {
+            "c_hash": "9d0628c2",
+            "date": "2011-06-16 02:31:15 +0000",
+            "comment": "[SMXCOMP-868]Align stax-api version"
+        },
+        {
+            "c_hash": "09dcd849",
+            "date": "2011-06-16 20:58:32 +0000",
+            "comment": "SMXCOMP-891: Avoid adding commons-logging 1.0.3 to servicemix-shared"
+        },
+        {
+            "c_hash": "0d1ee09e",
+            "date": "2011-06-20 03:48:14 +0000",
+            "comment": "[SMXCOMP-890]upgrade to cxf 2.4.1"
+        },
+        {
+            "c_hash": "0277353b",
+            "date": "2011-06-24 13:48:14 +0000",
+            "comment": "[SMXCOMP-875] In preparation for Camel 2.8.0 update, refactoring of the exception handling to remove deprecated methods usage."
+        },
+        {
+            "c_hash": "7c105a02",
+            "date": "2011-07-06 15:16:51 +0000",
+            "comment": "[SMXCOMP-875] Update to Camel 2.8-SNAPSHOT waiting for Camel 2.8.0 that should be available soon."
+        },
+        {
+            "c_hash": "9e8a31e9",
+            "date": "2011-07-08 15:57:24 +0000",
+            "comment": "[SM-1831] Replace StaxSourceTransformer by SourceTransformer."
+        },
+        {
+            "c_hash": "5b353771",
+            "date": "2011-07-15 12:54:48 +0000",
+            "comment": "[SMXCOMP-892] Upgrade to Groovy 1.8.0."
+        },
+        {
+            "c_hash": "5216b2d6",
+            "date": "2011-07-22 06:39:52 +0000",
+            "comment": "[SMXCOMP-893]remove META-INF/cxf/cxf-extension-soap.xml from servicemix-cxf-se"
+        },
+        {
+            "c_hash": "1c6f7a72",
+            "date": "2011-07-22 20:49:00 +0000",
+            "comment": "Remove unused commons-logging dependency."
+        },
+        {
+            "c_hash": "c7a6b8ea",
+            "date": "2011-07-23 09:05:21 +0000",
+            "comment": "[SMXCOMP-894] Upgrade to Quartz 1.8.5"
+        },
+        {
+            "c_hash": "3659282a",
+            "date": "2011-07-25 09:02:07 +0000",
+            "comment": "[SMXCOMP-875] Upgrade to Camel 2.8.0"
+        },
+        {
+            "c_hash": "0cd3effa",
+            "date": "2011-07-29 03:28:15 +0000",
+            "comment": "SMXCOMP-896 Fixed the cxf-bc issue of working with CXF continuation"
+        },
+        {
+            "c_hash": "299448ae",
+            "date": "2011-08-11 03:48:56 +0000",
+            "comment": "[SMXCOMP-897]ensure cxf servlet transport and cxf bc can share same bus out of box when deploy smx-cxf-bc in web container"
+        },
+        {
+            "c_hash": "d2a814e6",
+            "date": "2011-08-25 10:18:00 +0000",
+            "comment": "[SMXCOMP-899]upgrade to cxf 2.4.2"
+        },
+        {
+            "c_hash": "f1ae5326",
+            "date": "2011-09-03 07:25:13 +0000",
+            "comment": "[SMXCOMP-900] Upgrade to Camel 2.8.1-SNAPSHOT [SMXCOMP-898] Upgrade to CXF 2.4.2 and align dependencies version"
+        },
+        {
+            "c_hash": "998603c5",
+            "date": "2011-09-14 05:34:25 +0000",
+            "comment": "[SMXCOMP-902]should be able to configure jaas domain name used in JbiJAASInterceptor"
+        },
+        {
+            "c_hash": "537e6272",
+            "date": "2011-09-14 14:51:48 +0000",
+            "comment": "SMXCOMP-903: Fix AsyncBaseLifeCycle's prepareShutdown method"
+        },
+        {
+            "c_hash": "a343c8f3",
+            "date": "2011-09-14 14:52:00 +0000",
+            "comment": "SMXCOMP-903: Wait for pending exchanges to get done before unregistering subscription endpoint"
+        },
+        {
+            "c_hash": "6be1979e",
+            "date": "2011-09-14 14:52:07 +0000",
+            "comment": "SMXCOMP-900: Upgrade to Camel 2.8.1"
+        },
+        {
+            "c_hash": "58d49abb",
+            "date": "2011-09-20 05:02:15 +0000",
+            "comment": "[SMXCOMP-905]ensure DONE status is set when cxf bc consumer encounter soap fault and use synchronous=\"true\""
+        },
+        {
+            "c_hash": "49a54901",
+            "date": "2011-09-22 02:36:50 +0000",
+            "comment": "[SM-1995]remove java.net repository from pom as they are synced up to the central repo"
+        },
+        {
+            "c_hash": "2ba596b6",
+            "date": "2011-09-25 11:52:07 +0000",
+            "comment": "[SMXCOMP-906]servicemix-cxf-bc should use version range for javax.servlet package import"
+        },
+        {
+            "c_hash": "8fe0a881",
+            "date": "2011-10-13 03:32:12 +0000",
+            "comment": "[SMXCOMP-901]upgrade to cxf 2.4.3"
+        },
+        {
+            "c_hash": "3f71f354",
+            "date": "2011-10-17 09:43:04 +0000",
+            "comment": "revert to still use cxf 2.4.2 for SMX 4.4 release"
+        },
+        {
+            "c_hash": "6a3417bf",
+            "date": "2011-10-18 05:53:59 +0000",
+            "comment": "[SMXCOMP-910]NPE Generated whenever a soap message is received that contains a namespace prefix but no namespace uri."
+        },
+        {
+            "c_hash": "f03c6c09",
+            "date": "2011-10-27 21:23:23 +0000",
+            "comment": "SMXCOMP-911: Add shared-library bundles to JBI component Require-Bundle header"
+        },
+        {
+            "c_hash": "43f78e43",
+            "date": "2011-10-31 01:30:09 +0000",
+            "comment": "[SMXCOMP-909]upgrade to spring 3.0.6"
+        },
+        {
+            "c_hash": "c03008bd",
+            "date": "2011-10-31 06:22:26 +0000",
+            "comment": "[SMXCOMP-912]servicemix-cxf-se OSGi header is incorrect"
+        },
+        {
+            "c_hash": "38b8c261",
+            "date": "2011-11-08 08:13:34 +0000",
+            "comment": "[SMXCOMP-913]upgrade to CXF 2.4.4"
+        },
+        {
+            "c_hash": "ded04e4c",
+            "date": "2011-11-08 11:39:05 +0000",
+            "comment": "[SMXCOMP-913]upgrade to CXF 2.4.4"
+        },
+        {
+            "c_hash": "8cf4cacc",
+            "date": "2011-11-15 04:25:28 +0000",
+            "comment": "[SMX4-914]servicemix-wsn2005 can't restart correctly when the dependency activemq-broker.xml bundle restart"
+        },
+        {
+            "c_hash": "3ffc880f",
+            "date": "2011-11-22 12:09:34 +0000",
+            "comment": "SMXCOMP-915: Upgrade to Camel 2.8.3"
+        },
+        {
+            "c_hash": "1ff9b775",
+            "date": "2011-11-29 07:34:12 +0000",
+            "comment": "[SMXCOMP-916]org.apache.servicemix.http.jetty.JCLLogger can't get initialized in OSGi container"
+        },
+        {
+            "c_hash": "b22ea982",
+            "date": "2011-12-02 07:54:17 +0000",
+            "comment": "remove stax-api dependency from servicemix-core"
+        },
+        {
+            "c_hash": "7e88a919",
+            "date": "2011-12-06 11:28:20 +0000",
+            "comment": "Fix servicemix-eip build and temporarily disable TxTest (cfr. SMXCOMP-860)"
+        },
+        {
+            "c_hash": "568133d8",
+            "date": "2011-12-06 20:26:00 +0000",
+            "comment": "[SMX4-872] Update to Groovy 1.8.3"
+        },
+        {
+            "c_hash": "328937b4",
+            "date": "2011-12-09 05:11:32 +0000",
+            "comment": "[SMXCOMP-9191]JMS soap endpoint tests failing"
+        },
+        {
+            "c_hash": "6313d581",
+            "date": "2011-12-09 06:16:54 +0000",
+            "comment": "[SMXCOMP-9191]JMS soap endpoint tests failing"
+        },
+        {
+            "c_hash": "9dee81a7",
+            "date": "2011-12-12 11:35:30 +0000",
+            "comment": "Upgrade to ActiveMQ 5.5.1 for testing"
+        },
+        {
+            "c_hash": "d4a07b12",
+            "date": "2011-12-13 14:37:45 +0000",
+            "comment": "Prepare for release: Upgrade to specs 1.9.0 and utils 1.5.0"
+        },
+        {
+            "c_hash": "48f56653",
+            "date": "2011-12-14 09:11:12 +0000",
+            "comment": "[maven-release-plugin] prepare release components-2011.02"
+        },
+        {
+            "c_hash": "1c98e71a",
+            "date": "2011-12-14 09:12:03 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "6f80b4f0",
+            "date": "2011-12-14 09:19:41 +0000",
+            "comment": "Let's make that 2012.01-SNAPSHOT instead of 2012.02-SNAPSHOT"
+        },
+        {
+            "c_hash": "e1328a14",
+            "date": "2011-12-16 06:03:41 +0000",
+            "comment": "[SMXCOMP-920]upgrade to wss4j 1.6.3"
+        },
+        {
+            "c_hash": "0b33fe00",
+            "date": "2011-12-16 14:22:31 +0000",
+            "comment": "[maven-release-plugin] prepare release components-2011.02"
+        },
+        {
+            "c_hash": "60c9cfd6",
+            "date": "2011-12-16 14:23:20 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "6d8875ec",
+            "date": "2011-12-22 03:06:00 +0000",
+            "comment": "[SMXCOMP-917]upgrade to cxf 2.5.1"
+        },
+        {
+            "c_hash": "e1f82e13",
+            "date": "2011-12-22 03:06:48 +0000",
+            "comment": "[SMXCOMP-917]upgrade to cxf 2.5.1"
+        },
+        {
+            "c_hash": "b5b8ce57",
+            "date": "2011-12-22 03:12:56 +0000",
+            "comment": "[SMXCOMP-917]upgrade to cxf 2.5.1"
+        },
+        {
+            "c_hash": "0c9b936f",
+            "date": "2011-12-22 03:36:00 +0000",
+            "comment": "[SMXCOMP-918]upgrade to camel 2.9"
+        },
+        {
+            "c_hash": "86dd4d30",
+            "date": "2011-12-24 06:32:22 +0000",
+            "comment": "[SMXCOMP-921]servicemix-camel blueprint configuration use duplicated PID"
+        },
+        {
+            "c_hash": "62dc8ef8",
+            "date": "2012-01-03 10:56:01 +0000",
+            "comment": "SMXCOMP-918: Upgrade to Camel 2.9.0"
+        },
+        {
+            "c_hash": "d08081a8",
+            "date": "2012-01-03 20:18:48 +0000",
+            "comment": "SMX4-1024 - Align the xmlsec version with the rest of ServiceMix. Thanks to Fernando Ribeiro for reporting this."
+        },
+        {
+            "c_hash": "36fca220",
+            "date": "2012-01-04 16:45:09 +0000",
+            "comment": "SM-2141 - Fix leak in servicemix-eip when handling late responses"
+        },
+        {
+            "c_hash": "90719dd6",
+            "date": "2012-02-10 05:10:03 +0000",
+            "comment": "[SMXCOMP-923]cxf bc provider should be able to return correct fault when useSOAPEnvelope=true"
+        },
+        {
+            "c_hash": "cd4d00cd",
+            "date": "2012-02-22 12:50:48 +0000",
+            "comment": "[SMXCOMP-924]CXF SE should ensure jax-ws-catalog get loaded and get chance to import local schema as inline schema"
+        },
+        {
+            "c_hash": "e455e391",
+            "date": "2012-02-23 01:37:01 +0000",
+            "comment": "[SMXCOMP-925]CxfBcConsumer.retrieveWSDL should throw DeploymentException when can't get wsdl definition"
+        },
+        {
+            "c_hash": "31509829",
+            "date": "2012-03-09 00:52:21 +0000",
+            "comment": "[SMXCOMP-926]upgrade to saxon 9.3.0.11"
+        },
+        {
+            "c_hash": "6dd4e085",
+            "date": "2012-03-12 08:37:32 +0000",
+            "comment": "[SMXCOMP-927]upgrade to wss4j 1.6.1 and xmlsec 1.5.1"
+        },
+        {
+            "c_hash": "d6983260",
+            "date": "2012-04-10 09:22:49 +0000",
+            "comment": "[SMXCOMP-928]introduce WSNUnsubsribeInterceptor which can read address from WSN unsubsribe message and determine target enpoint in WSN broker dynamically"
+        },
+        {
+            "c_hash": "42d7dd64",
+            "date": "2012-04-10 23:37:25 +0000",
+            "comment": "remove some System.out.println used only for my debug"
+        },
+        {
+            "c_hash": "fd95191d",
+            "date": "2012-04-25 05:28:43 +0000",
+            "comment": "[SMXCOMP-929]upgrade to cxf 2.5.3"
+        },
+        {
+            "c_hash": "6ed97a16",
+            "date": "2012-05-21 03:18:04 +0000",
+            "comment": "[SMXCOMP-931]upgrade to cxf 2.6.0"
+        },
+        {
+            "c_hash": "5f23e22d",
+            "date": "2012-06-05 04:43:01 +0000",
+            "comment": "[SMXCOMP-934]upgrade to cxf 2.6.1"
+        },
+        {
+            "c_hash": "cfed8df4",
+            "date": "2012-06-17 18:59:32 +0000",
+            "comment": "SMXCOMP-935: Upgrade to XBean 3.11.1"
+        },
+        {
+            "c_hash": "b543b94c",
+            "date": "2012-07-02 01:21:53 +0000",
+            "comment": "[SMXCOMP-936]set more timeout to avoid intermittent test failure"
+        },
+        {
+            "c_hash": "596b8937",
+            "date": "2012-07-17 00:14:28 +0000",
+            "comment": "fix wrong wsdlLocation"
+        },
+        {
+            "c_hash": "211661a7",
+            "date": "2012-07-23 00:28:03 +0000",
+            "comment": "[SMXCOMP-937]when deploying multiple CXF JBI services all services are shown in the list regardless of port they are running on."
+        },
+        {
+            "c_hash": "b13f4803",
+            "date": "2012-07-25 01:47:57 +0000",
+            "comment": "[SMXCOMP-938]introduce a showAllServices property for CxfBcComponent"
+        },
+        {
+            "c_hash": "b9733612",
+            "date": "2012-08-17 07:56:22 +0000",
+            "comment": "[SMXCOMP-939]unify jetty version for JBI components"
+        },
+        {
+            "c_hash": "39525fc6",
+            "date": "2012-08-17 08:47:29 +0000",
+            "comment": "[SMXCOMP-939]correct jetty version range"
+        },
+        {
+            "c_hash": "4d2f0fac",
+            "date": "2012-08-19 12:01:49 +0000",
+            "comment": "SMXCOMP-937: Add LateReponseStrategy and HttpProviderListener"
+        },
+        {
+            "c_hash": "6d32e305",
+            "date": "2012-08-19 12:29:46 +0000",
+            "comment": "SMXCOMP-940: InstanceAlreadyExistsException in HTTP/JMS component bootstrap on WebSphere"
+        },
+        {
+            "c_hash": "72d1def9",
+            "date": "2012-08-28 06:23:58 +0000",
+            "comment": "[SMX4COMP-941]upgrade camel to 2.10.0"
+        },
+        {
+            "c_hash": "c329cdd6",
+            "date": "2012-08-28 07:06:41 +0000",
+            "comment": "[SMXCOMP-942]upgrade to cxf 2.6.2"
+        },
+        {
+            "c_hash": "aaa62f08",
+            "date": "2012-08-31 06:18:41 +0000",
+            "comment": "[SMXCOMP-943]upgrade to camel 2.10.1"
+        },
+        {
+            "c_hash": "d0c834fd",
+            "date": "2012-09-06 02:38:07 +0000",
+            "comment": "[SMXCOMP-944]org.apache.servicemix.common.util.MessageUtil creates a new SourceTransformer each time."
+        },
+        {
+            "c_hash": "9e4f6e50",
+            "date": "2012-09-06 07:26:37 +0000",
+            "comment": "[SMXCOMP-945]OsgiJbiComponent should use camel ServiceSupport to manage the lifecycle"
+        },
+        {
+            "c_hash": "acbda602",
+            "date": "2012-09-12 12:06:32 +0000",
+            "comment": "[SMXCOMP-946]can't install servicemix-http feature"
+        },
+        {
+            "c_hash": "4230815d",
+            "date": "2012-09-13 04:28:42 +0000",
+            "comment": "[SMXCOMP-946]can't install servicemix-http feature"
+        },
+        {
+            "c_hash": "bd2d3120",
+            "date": "2012-09-17 09:58:41 +0000",
+            "comment": "[SMXCOMP-947]use DOMSource instead of StringSource in servicemix-common/MessageUtil"
+        },
+        {
+            "c_hash": "2c723520",
+            "date": "2012-09-18 06:12:10 +0000",
+            "comment": "[SMXCOMP-948]https related test failure with JDK7"
+        },
+        {
+            "c_hash": "c3c2d861",
+            "date": "2012-10-18 12:55:10 +0000",
+            "comment": "Fix build with clean local repo: add ServiceMix repo for woden 1.0.0M6"
+        },
+        {
+            "c_hash": "1ad9a2a0",
+            "date": "2012-10-18 19:32:03 +0000",
+            "comment": "SMX4-1263: Upgrade to ActiveMQ 5.7.0"
+        },
+        {
+            "c_hash": "81166350",
+            "date": "2012-10-19 09:00:06 +0000",
+            "comment": "SMXCOMP-949: Upgrade to Camel 2.10.2"
+        },
+        {
+            "c_hash": "61f374da",
+            "date": "2012-10-22 05:35:06 +0000",
+            "comment": "[SMXCOMP-950]upgrade to cxf 2.6.3"
+        },
+        {
+            "c_hash": "d44495ce",
+            "date": "2012-10-23 02:05:49 +0000",
+            "comment": "[SMXCOMP-951]refector AsyncBaseLifeCycle to avoid call into processExchangeInTx even the Exchange has no Transaction property"
+        },
+        {
+            "c_hash": "8362c33f",
+            "date": "2012-11-06 06:05:07 +0000",
+            "comment": "[SMXCOMP-952]NPE in CxfBcConsumer when ServiceMix is deployed as a web application"
+        },
+        {
+            "c_hash": "379cde32",
+            "date": "2012-11-09 16:21:20 +0000",
+            "comment": "Prepare for release: align dependencies with upcoming 4.5.0 release"
+        },
+        {
+            "c_hash": "f2e13002",
+            "date": "2012-11-09 16:21:40 +0000",
+            "comment": "SMXCOMP-953: ExecEndpointTest hangs on Windows"
+        },
+        {
+            "c_hash": "55465457",
+            "date": "2012-11-19 03:22:19 +0000",
+            "comment": "[SMXCOMP-955]ensure camel-jbi endpoint url operation get decoded"
+        },
+        {
+            "c_hash": "d530f930",
+            "date": "2012-11-19 03:38:49 +0000",
+            "comment": "SM-2165 - servicemix-drools doesn't work with JDK7"
+        },
+        {
+            "c_hash": "25df636f",
+            "date": "2012-11-20 03:49:26 +0000",
+            "comment": "fix intermittent CxfBCPolicyTest failure"
+        },
+        {
+            "c_hash": "bc5ab113",
+            "date": "2012-11-26 04:32:18 +0000",
+            "comment": "[SMXCOMP-956]AsyncBaseLifeCycle should be able to return Error MessageExchange if provider threadpool is run out"
+        },
+        {
+            "c_hash": "99fe4b8a",
+            "date": "2012-11-26 06:08:19 +0000",
+            "comment": "[SMXCOMP-956]add a testcase to demonstrate this issue"
+        },
+        {
+            "c_hash": "846c0381",
+            "date": "2012-11-26 06:15:42 +0000",
+            "comment": "[SMXCOMP-956]use servicemix-core 3.4.1 for test purpose so that I can leverage the new optimizedDelivery property"
+        },
+        {
+            "c_hash": "0b57b76b",
+            "date": "2012-11-29 06:11:40 +0000",
+            "comment": "[SMXCOMP-956]send error message back when use jdk6"
+        },
+        {
+            "c_hash": "82a1db9f",
+            "date": "2012-11-30 09:48:13 +0000",
+            "comment": "[SMXCOMP-956]use one thread directly rather than the threadpool as this method actually get invoked only once"
+        },
+        {
+            "c_hash": "1618a38f",
+            "date": "2012-12-06 02:10:39 +0000",
+            "comment": "[SMXCOMP-957]add serverGracefulTimeout for servicemix-http blueprint configuration"
+        },
+        {
+            "c_hash": "1cc59e3c",
+            "date": "2012-12-07 07:33:37 +0000",
+            "comment": "[SMXCOMP-958]servicemix-wsn2005 should be able to configure username/password when connect to a secure jms broker"
+        },
+        {
+            "c_hash": "298d4965",
+            "date": "2012-12-07 17:34:07 +0000",
+            "comment": "SMXCOMP-959 - servicemix-wsn2005 shouldn't rely on activemq-broker.xml bundle"
+        },
+        {
+            "c_hash": "167602fd",
+            "date": "2012-12-13 08:05:33 +0000",
+            "comment": "[SMXCOMP-960]upgrade to cxf 2.6.4"
+        },
+        {
+            "c_hash": "7301fccc",
+            "date": "2012-12-17 00:57:58 +0000",
+            "comment": "[SMXCOMP-961]add version range for saxon Import-Package"
+        },
+        {
+            "c_hash": "8357578e",
+            "date": "2013-01-07 13:09:44 +0000",
+            "comment": "Prepare for release: Align dependencies with upcoming 4.5.0 release"
+        },
+        {
+            "c_hash": "836e5145",
+            "date": "2013-01-15 20:14:53 +0000",
+            "comment": "Prepare for release: Upgrade to servicemix-utils 1.6.0"
+        },
+        {
+            "c_hash": "e1be6706",
+            "date": "2013-01-15 20:46:23 +0000",
+            "comment": "[maven-release-plugin] prepare release components-2013.01"
+        },
+        {
+            "c_hash": "b1fad07f",
+            "date": "2013-01-15 20:47:19 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "e7a0b597",
+            "date": "2013-02-06 11:59:13 +0000",
+            "comment": "SMXCOMP-963 - StaticRoutingSlip doesn't propagate errors to the caller endpoint when some endpoints in in the slip doesn't exist"
+        },
+        {
+            "c_hash": "1d29c2ab",
+            "date": "2013-02-06 12:42:42 +0000",
+            "comment": "SMXCOMP-964 Added DefaultJBIHeaderFilterStrategy to avoid copy the javax.jbi headers between Camel exchange and JBI exchange."
+        },
+        {
+            "c_hash": "da6d1b13",
+            "date": "2013-02-06 13:59:10 +0000",
+            "comment": "SMXCOMP-965 - HttpConsumerEndpoint invokes sendError with null exchange"
+        },
+        {
+            "c_hash": "6acf8eb2",
+            "date": "2013-03-12 12:26:56 +0000",
+            "comment": "use caught exception rather than exchange exception as that may not be set yet"
+        },
+        {
+            "c_hash": "d4d57e5e",
+            "date": "2013-03-29 19:07:46 +0000",
+            "comment": "SMXCOMP-971 - Update to jruby 1.7.2"
+        },
+        {
+            "c_hash": "b45f2cad",
+            "date": "2013-09-16 02:46:17 +0000",
+            "comment": "[SMXCOMP-973]Servicemix-drools - exchange submited two times, second raise error in logs"
+        },
+        {
+            "c_hash": "5e0657e3",
+            "date": "2013-10-18 13:03:00 +0000",
+            "comment": "SMXCOMP-975: Upgrade to Camel 2.12.1"
+        },
+        {
+            "c_hash": "5d772283",
+            "date": "2013-10-18 13:54:59 +0000",
+            "comment": "[SMXCOMP-974]Upgrade to CXF 2.7.6"
+        },
+        {
+            "c_hash": "c199f232",
+            "date": "2013-10-23 20:56:24 +0000",
+            "comment": "SMXCOMP-976: Intermittent test failure in servicemix-scripting"
+        },
+        {
+            "c_hash": "367a897d",
+            "date": "2013-10-26 14:49:50 +0000",
+            "comment": "SMXCOMP-977: Upgrade to ActiveMQ 5.9.0"
+        },
+        {
+            "c_hash": "26be9f1d",
+            "date": "2013-12-11 05:04:38 +0000",
+            "comment": "SM-2218 Do not throw exception in the SimpleBeanFactory getAliases() method"
+        },
+        {
+            "c_hash": "de27df2c",
+            "date": "2013-12-31 08:29:43 +0000",
+            "comment": "SM-2218: Fix JAXBConverterLoadingSpringTest"
+        },
+        {
+            "c_hash": "f365d36c",
+            "date": "2014-04-09 16:02:12 +0000",
+            "comment": "SMXCOMP-979 - update servicemix-saxon to saxon 9.4.0.4"
+        },
+        {
+            "c_hash": "1633c85c",
+            "date": "2014-04-09 16:05:28 +0000",
+            "comment": "SMXCOMP-979 - update servicemix-saxon to saxon 9.5.1"
+        },
+        {
+            "c_hash": "43677dcb",
+            "date": "2014-04-09 17:23:32 +0000",
+            "comment": "update to latest spring 3.2.x"
+        },
+        {
+            "c_hash": "1f597f52",
+            "date": "2014-04-09 17:30:01 +0000",
+            "comment": "SMXCOMP-980 - components do not work with new spring OSGi bundles"
+        },
+        {
+            "c_hash": "002ab267",
+            "date": "2014-04-09 17:31:18 +0000",
+            "comment": "remove trailing comma in servicemix-eip metadata"
+        },
+        {
+            "c_hash": "6bf1e46e",
+            "date": "2014-04-09 17:51:21 +0000",
+            "comment": "SMXCOMP-981 - update components to use jetty 8"
+        }
+    ]
+}

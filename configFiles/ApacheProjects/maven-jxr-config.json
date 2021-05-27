@@ -1,0 +1,1168 @@
+{
+    "project": "maven-jxr",
+    "git_url": "https://github.com/apache/maven-jxr.git",
+    "last_commit": "25dec268",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "d0ab9026",
+            "date": "2005-09-30 03:10:30 +0000",
+            "comment": "create trunk/tags/branches"
+        },
+        {
+            "c_hash": "6ed6d34a",
+            "date": "2005-09-30 03:54:30 +0000",
+            "comment": "add structure"
+        },
+        {
+            "c_hash": "45288364",
+            "date": "2005-09-30 03:54:53 +0000",
+            "comment": "initial pom"
+        },
+        {
+            "c_hash": "0036237c",
+            "date": "2005-09-30 04:10:36 +0000",
+            "comment": "initial copy"
+        },
+        {
+            "c_hash": "13d972cc",
+            "date": "2005-09-30 04:27:12 +0000",
+            "comment": "reformat code"
+        },
+        {
+            "c_hash": "9575f3e3",
+            "date": "2005-09-30 06:15:37 +0000",
+            "comment": "o switch to Velocity (thanks to Fabrice Bellingard) o clean up o encapsulate API in JXR class, remove extra bean"
+        },
+        {
+            "c_hash": "4cea78c1",
+            "date": "2005-09-30 06:22:51 +0000",
+            "comment": "update deps"
+        },
+        {
+            "c_hash": "9a33b1bd",
+            "date": "2005-09-30 06:51:22 +0000",
+            "comment": "fix file to check"
+        },
+        {
+            "c_hash": "ab4df7ea",
+            "date": "2005-09-30 07:12:01 +0000",
+            "comment": "avoid NPE"
+        },
+        {
+            "c_hash": "c37d9ce3",
+            "date": "2005-09-30 07:59:23 +0000",
+            "comment": "Add transform method for users that don't want to work on files but with Reader/Writer"
+        },
+        {
+            "c_hash": "f03768b1",
+            "date": "2005-10-05 03:31:42 +0000",
+            "comment": "[maven-release-plugin] prepare release maven-jxr-1.0-beta-1"
+        },
+        {
+            "c_hash": "f5e36388",
+            "date": "2005-10-05 03:39:06 +0000",
+            "comment": "bump version"
+        },
+        {
+            "c_hash": "3b5fa1fa",
+            "date": "2005-10-05 08:37:02 +0000",
+            "comment": "not needed in this library, only the report"
+        },
+        {
+            "c_hash": "207763de",
+            "date": "2005-10-27 16:25:26 +0000",
+            "comment": "o updating the deployment to use scpexe and the extensions required to do that o adding a minimal site with new look and feel"
+        },
+        {
+            "c_hash": "59710dcb",
+            "date": "2005-10-27 16:39:26 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/maven/jxr/trunk@328912 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "a46c5310",
+            "date": "2005-10-27 21:55:40 +0000",
+            "comment": "links update"
+        },
+        {
+            "c_hash": "ac0be66b",
+            "date": "2005-12-31 16:54:23 +0000",
+            "comment": "fix wrong variable for package name (part of the issue in JXR-5)"
+        },
+        {
+            "c_hash": "2e6648a6",
+            "date": "2005-12-31 17:05:08 +0000",
+            "comment": "reduce velocity output to console: velocity is too verbose, lower the level of info messages to debug"
+        },
+        {
+            "c_hash": "d1525eb3",
+            "date": "2005-12-31 17:07:07 +0000",
+            "comment": "change another info log to debug"
+        },
+        {
+            "c_hash": "84e9855d",
+            "date": "2005-12-31 17:16:21 +0000",
+            "comment": "killing the annoying \"unable to find resource 'VM_global_library.vm' in any resource loader.\" message, now we have a quiet and happy jxr..."
+        },
+        {
+            "c_hash": "e96372e8",
+            "date": "2006-01-01 14:57:13 +0000",
+            "comment": "PR: JXR-6 Submitted by: mike perham Reviewed by: Fabrizio Giustina fix javadoc links"
+        },
+        {
+            "c_hash": "49b4789c",
+            "date": "2006-01-01 15:07:52 +0000",
+            "comment": "JXR-1 Rename CodeTransform to JavaCodeTransform"
+        },
+        {
+            "c_hash": "5c978b0f",
+            "date": "2006-01-01 15:41:59 +0000",
+            "comment": "JXR-7 bad html: overlapping <em> in javadoc comments"
+        },
+        {
+            "c_hash": "26757cac",
+            "date": "2006-01-06 18:26:10 +0000",
+            "comment": "PR: MPJXR-31 Source X-Ref Plugin reverses backslashes."
+        },
+        {
+            "c_hash": "90d7ca2d",
+            "date": "2006-01-28 14:51:51 +0000",
+            "comment": "fix scm connection url, remove ssh-external extension (not needed anymore for deploy with mvn 2.0.2), add myself as a developer"
+        },
+        {
+            "c_hash": "4167ac82",
+            "date": "2006-01-28 14:53:37 +0000",
+            "comment": "[maven-release-plugin] prepare release maven-jxr-1.0"
+        },
+        {
+            "c_hash": "71be6c3e",
+            "date": "2006-01-28 15:11:20 +0000",
+            "comment": "preparing next development iteration"
+        },
+        {
+            "c_hash": "abfced9f",
+            "date": "2006-03-17 07:03:32 +0000",
+            "comment": "update to latest parent"
+        },
+        {
+            "c_hash": "688ac60f",
+            "date": "2006-06-20 06:34:27 +0000",
+            "comment": "[JXR-20] Package summary CSS linked incorrectly"
+        },
+        {
+            "c_hash": "d8959737",
+            "date": "2006-11-01 13:07:01 +0000",
+            "comment": "JXR-19: More info on the website"
+        },
+        {
+            "c_hash": "ff5fed51",
+            "date": "2006-11-01 13:09:38 +0000",
+            "comment": "o ignored cobertura"
+        },
+        {
+            "c_hash": "a693abbb",
+            "date": "2006-11-13 13:17:05 +0000",
+            "comment": "o starting to refactoring JavaCodeTransform (JXR-22) o improved code lisibility o updated some javadoc"
+        },
+        {
+            "c_hash": "13257e53",
+            "date": "2007-01-19 13:48:01 +0000",
+            "comment": "JXR-21: Greather than sign not handle as predefined entity"
+        },
+        {
+            "c_hash": "ecc86c69",
+            "date": "2007-01-19 13:51:14 +0000",
+            "comment": "o ignore Eclipse files"
+        },
+        {
+            "c_hash": "d5b9c077",
+            "date": "2007-01-19 14:22:06 +0000",
+            "comment": "o applied new license headers (tx again idea;)) o no code changes"
+        },
+        {
+            "c_hash": "aae189e4",
+            "date": "2007-01-20 13:38:04 +0000",
+            "comment": "JXR-18: JXR Fails with NPE if the .java file is empty (class commented out)"
+        },
+        {
+            "c_hash": "952b5665",
+            "date": "2007-01-20 15:32:31 +0000",
+            "comment": "JXR-4: Each html tags in transformation must have their own css class with a \"jxr.\" prefix"
+        },
+        {
+            "c_hash": "9c95b06c",
+            "date": "2007-02-17 11:58:14 +0000",
+            "comment": "o Fix JavaDoc error."
+        },
+        {
+            "c_hash": "f7f22ce1",
+            "date": "2007-02-17 12:00:37 +0000",
+            "comment": "o Fix spelling and JavaDoc compliance."
+        },
+        {
+            "c_hash": "9fa95ef3",
+            "date": "2007-02-17 12:09:33 +0000",
+            "comment": "o Update to the new ASF license headers."
+        },
+        {
+            "c_hash": "75b9539a",
+            "date": "2007-02-17 12:19:07 +0000",
+            "comment": "o Correct spelling and update links."
+        },
+        {
+            "c_hash": "f8382744",
+            "date": "2007-02-27 22:42:08 +0000",
+            "comment": "[JXR-17] JXR has no option to include / exclude source files"
+        },
+        {
+            "c_hash": "07a1bf0b",
+            "date": "2007-03-04 15:31:15 +0000",
+            "comment": "[JXR-11] JXR does not handles multiple classes in one source file [JXR-14] JXR does not seem to handle inner classes properly"
+        },
+        {
+            "c_hash": "7da0cdd0",
+            "date": "2007-03-04 15:34:12 +0000",
+            "comment": "o Set EOL style to native."
+        },
+        {
+            "c_hash": "a0c9210b",
+            "date": "2007-03-04 17:05:39 +0000",
+            "comment": "[JXR-24] The generated index.html page should have a Frameset DOCTYPE"
+        },
+        {
+            "c_hash": "fc17e424",
+            "date": "2007-03-04 17:13:46 +0000",
+            "comment": "o Add \"throws\" as a keyword."
+        },
+        {
+            "c_hash": "f47569cf",
+            "date": "2007-03-04 17:17:16 +0000",
+            "comment": "[JXR-25] The generated class pages contains invalid xhtml"
+        },
+        {
+            "c_hash": "5df953b5",
+            "date": "2007-03-11 15:40:10 +0000",
+            "comment": "o Move the new structure to the correct place."
+        },
+        {
+            "c_hash": "c2b88fc7",
+            "date": "2007-03-11 17:04:40 +0000",
+            "comment": "o Ignore target directory and IDEA files."
+        },
+        {
+            "c_hash": "243c4039",
+            "date": "2007-03-11 18:07:31 +0000",
+            "comment": "o Flip a couple of equals() to avoid NPEs. o Do not set package, add import or add classType (for class, interface or enum) for tokens that are quoted strings."
+        },
+        {
+            "c_hash": "de4f5ca4",
+            "date": "2007-03-11 19:50:38 +0000",
+            "comment": "o Add a jxr-parent and make the modules inherit from that."
+        },
+        {
+            "c_hash": "171812fa",
+            "date": "2007-03-11 19:58:17 +0000",
+            "comment": "o Adjust titles."
+        },
+        {
+            "c_hash": "0eaa9748",
+            "date": "2007-03-11 20:01:09 +0000",
+            "comment": "o Add styling that was previously inherited from the parent."
+        },
+        {
+            "c_hash": "239e3a5d",
+            "date": "2007-03-11 20:01:54 +0000",
+            "comment": "o Adjust SVN link to point to the new location."
+        },
+        {
+            "c_hash": "bdec035b",
+            "date": "2007-03-11 20:02:40 +0000",
+            "comment": "o Remove unnecessary text."
+        },
+        {
+            "c_hash": "13a761ec",
+            "date": "2007-03-11 22:07:41 +0000",
+            "comment": "o Use the new syntax for reports."
+        },
+        {
+            "c_hash": "992c2ea5",
+            "date": "2007-03-11 22:09:20 +0000",
+            "comment": "o Add more missing pieces that were previously inherited from the plugins parent."
+        },
+        {
+            "c_hash": "582bce18",
+            "date": "2007-03-29 15:26:49 +0000",
+            "comment": "MJXR-15: Added sourcePath parameter to mimic the Javadoc plugin behavior (allow to specify a custom source directory if necessary, overriding compileSourceRoots). Submitted by: Martin Zeltner Reviewed by: Stephane Nicoll"
+        },
+        {
+            "c_hash": "8da8b540",
+            "date": "2007-03-31 15:44:15 +0000",
+            "comment": "o Fix errors reported by Checkstyle."
+        },
+        {
+            "c_hash": "062cfb11",
+            "date": "2007-03-31 16:47:12 +0000",
+            "comment": "o Use the same issueManagement as the parent."
+        },
+        {
+            "c_hash": "5f8f8fa7",
+            "date": "2007-03-31 16:53:37 +0000",
+            "comment": "[maven-release-plugin] prepare release jxr-2.1"
+        },
+        {
+            "c_hash": "fce99c89",
+            "date": "2007-03-31 16:54:01 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "4e046a38",
+            "date": "2007-03-31 17:07:35 +0000",
+            "comment": "o Revert back to 2.1-SNAPSHOT. o Make sure that tagBase is configured for maven-release-plugin and nothing else."
+        },
+        {
+            "c_hash": "562f8068",
+            "date": "2007-03-31 17:15:19 +0000",
+            "comment": "[maven-release-plugin] prepare release jxr-2.1"
+        },
+        {
+            "c_hash": "1e399541",
+            "date": "2007-03-31 17:15:45 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "0907559e",
+            "date": "2007-06-02 11:51:25 +0000",
+            "comment": "o bumped to the development maven-jxr:2.2-SNAPSHOT o added license header"
+        },
+        {
+            "c_hash": "ca653a67",
+            "date": "2007-06-02 11:53:55 +0000",
+            "comment": "o ignored Eclipse files"
+        },
+        {
+            "c_hash": "1852e212",
+            "date": "2007-06-03 10:43:21 +0000",
+            "comment": "JXR-52: Dont generate xref report if project has pom packaging and src/main exists"
+        },
+        {
+            "c_hash": "e3f8679d",
+            "date": "2007-06-03 11:30:59 +0000",
+            "comment": "JXR-53: Add a link to test javadoc"
+        },
+        {
+            "c_hash": "a09d108b",
+            "date": "2007-06-03 11:56:01 +0000",
+            "comment": "o updated javadoc o no code change"
+        },
+        {
+            "c_hash": "0f9fa746",
+            "date": "2007-06-03 14:05:22 +0000",
+            "comment": "JXR-51: Javadoc link broken for site:stage"
+        },
+        {
+            "c_hash": "5a2d41ff",
+            "date": "2007-06-03 14:07:54 +0000",
+            "comment": "o fixed typo in javadoc"
+        },
+        {
+            "c_hash": "68ffc4f5",
+            "date": "2007-06-07 10:35:47 +0000",
+            "comment": "o added a link to forrestdoc sandbox"
+        },
+        {
+            "c_hash": "5def2a61",
+            "date": "2007-07-07 13:23:51 +0000",
+            "comment": "use the code for copyright instead of &copy;"
+        },
+        {
+            "c_hash": "0ba01726",
+            "date": "2007-07-15 22:27:37 +0000",
+            "comment": "o first creation of the JXR site project: the goal is to be more consistent with the other Maven projects"
+        },
+        {
+            "c_hash": "786a8de4",
+            "date": "2007-07-15 22:28:58 +0000",
+            "comment": "o first import"
+        },
+        {
+            "c_hash": "277102f9",
+            "date": "2007-07-15 22:35:27 +0000",
+            "comment": "o first import from maven-jxr/src/site"
+        },
+        {
+            "c_hash": "f6a9a976",
+            "date": "2007-07-15 22:36:25 +0000",
+            "comment": "o ignored target"
+        },
+        {
+            "c_hash": "a8221821",
+            "date": "2007-07-16 10:32:05 +0000",
+            "comment": "o using maven-site-plugin:2.0-beta-5 instead of the snapshot"
+        },
+        {
+            "c_hash": "f54c8fd3",
+            "date": "2007-07-16 10:57:04 +0000",
+            "comment": "o updated the index page and added a history section with the last Lukas's comments on dev@ o updated the faq"
+        },
+        {
+            "c_hash": "7bd2e3a7",
+            "date": "2008-01-19 17:02:22 +0000",
+            "comment": "[JXR-55] Add dedicated resource bundle for English Submitted by: Benjamin Bentmann Reviewed by: Dennis Lundberg"
+        },
+        {
+            "c_hash": "5322d84e",
+            "date": "2008-01-19 17:05:55 +0000",
+            "comment": "[JXR-56] Add german translation Submitted by: Benjamin Bentmann Reviewed by: Dennis Lundberg"
+        },
+        {
+            "c_hash": "1473a3b4",
+            "date": "2008-03-15 09:26:03 +0000",
+            "comment": "[JXR-57] Change type of outputDirectory parameter to java.io.File"
+        },
+        {
+            "c_hash": "66cee08c",
+            "date": "2008-03-15 09:47:19 +0000",
+            "comment": "o Added svn:keywords"
+        },
+        {
+            "c_hash": "e1109f73",
+            "date": "2008-04-17 21:26:04 +0000",
+            "comment": "[MJXR-60] use ${project.build.sourceEncoding} as default value for \"encoding\" parameter"
+        },
+        {
+            "c_hash": "b2545d75",
+            "date": "2008-04-17 22:02:37 +0000",
+            "comment": "o Bumped prerequisite to Maven 2.0.6 to satisfy dependency on plexus-utils o Added used but undeclared dependencies"
+        },
+        {
+            "c_hash": "e2f7c78d",
+            "date": "2008-04-18 11:19:25 +0000",
+            "comment": "o Added bin to svn:ignore"
+        },
+        {
+            "c_hash": "8c09b7d0",
+            "date": "2008-04-26 12:53:12 +0000",
+            "comment": "o archiva and continuum are now TLP"
+        },
+        {
+            "c_hash": "e10a2f99",
+            "date": "2008-05-18 17:12:42 +0000",
+            "comment": "o Update links to Doxia APT reference."
+        },
+        {
+            "c_hash": "39fac8cc",
+            "date": "2008-05-18 20:21:24 +0000",
+            "comment": "[JXR-62] made file encoding default to platform encoding"
+        },
+        {
+            "c_hash": "7319a6d2",
+            "date": "2008-05-18 20:50:44 +0000",
+            "comment": "[JXR-62] added a warning if no inputEncoding is set"
+        },
+        {
+            "c_hash": "335bcca9",
+            "date": "2008-08-09 09:04:10 +0000",
+            "comment": "o Tweaked the POM to workaround a deficiency in the Release Plugin which causes loss of the license header"
+        },
+        {
+            "c_hash": "224487f8",
+            "date": "2008-08-24 21:40:42 +0000",
+            "comment": "o Updated index page of plugin site"
+        },
+        {
+            "c_hash": "8ec371f7",
+            "date": "2008-08-26 12:57:19 +0000",
+            "comment": "o Unified plugin name"
+        },
+        {
+            "c_hash": "0e144fc3",
+            "date": "2008-08-28 16:34:39 +0000",
+            "comment": "o Explicitly stated UTF-8 as file encoding"
+        },
+        {
+            "c_hash": "396f08e2",
+            "date": "2008-08-29 10:57:35 +0000",
+            "comment": "o Updated index page of plugin site"
+        },
+        {
+            "c_hash": "9a6ebf7a",
+            "date": "2008-09-06 17:13:41 +0000",
+            "comment": "fixed typos in javadocs"
+        },
+        {
+            "c_hash": "6cc4f83c",
+            "date": "2008-09-06 17:34:46 +0000",
+            "comment": "improved javadoc and fixed typos"
+        },
+        {
+            "c_hash": "33e01950",
+            "date": "2008-09-06 20:42:24 +0000",
+            "comment": "ignore Eclipse .settings files"
+        },
+        {
+            "c_hash": "1debd6ca",
+            "date": "2008-11-03 21:53:34 +0000",
+            "comment": "[JXR-67] use ${project.reporting.outputEncoding} as default value for \"outputEncoding\" parameter and default to UTF-8"
+        },
+        {
+            "c_hash": "5a34d9c1",
+            "date": "2008-11-03 22:51:01 +0000",
+            "comment": "simplified unit-test code"
+        },
+        {
+            "c_hash": "18023b6b",
+            "date": "2008-12-23 15:54:04 +0000",
+            "comment": "o order pom o using latest parent"
+        },
+        {
+            "c_hash": "04cbcd28",
+            "date": "2008-12-23 15:56:15 +0000",
+            "comment": "o using maven-stylus-skin snap due to r728944"
+        },
+        {
+            "c_hash": "236d5f6a",
+            "date": "2009-01-16 13:55:28 +0000",
+            "comment": "o bump to maven-stylus-skin:1.1"
+        },
+        {
+            "c_hash": "354ebf39",
+            "date": "2009-02-14 01:42:04 +0000",
+            "comment": "use new parent"
+        },
+        {
+            "c_hash": "2ef9d1ff",
+            "date": "2009-02-21 09:31:30 +0000",
+            "comment": "o Inherited from maven-parent:11"
+        },
+        {
+            "c_hash": "cd935f86",
+            "date": "2009-03-01 11:04:14 +0000",
+            "comment": "o Used http://maven.apache.org/xsd/* for schema location"
+        },
+        {
+            "c_hash": "ed0ff50f",
+            "date": "2009-08-08 11:16:17 +0000",
+            "comment": "o Enabled filtering of plugin version"
+        },
+        {
+            "c_hash": "021eed79",
+            "date": "2009-08-08 13:54:05 +0000",
+            "comment": "o fixed ambiguous links o added Doxia xsd"
+        },
+        {
+            "c_hash": "d8672954",
+            "date": "2009-09-05 16:37:57 +0000",
+            "comment": "upgrade to last parent."
+        },
+        {
+            "c_hash": "899766af",
+            "date": "2009-09-05 16:40:12 +0000",
+            "comment": "remove reporting herited from parent."
+        },
+        {
+            "c_hash": "18e1f795",
+            "date": "2009-09-05 16:44:14 +0000",
+            "comment": "use dependencyManagement for junit version. add a m2e profile to have build output directory different in eclipse than the cli."
+        },
+        {
+            "c_hash": "7dae9a8c",
+            "date": "2009-09-05 16:45:50 +0000",
+            "comment": "enable incremental build in m2e profile with using last resources plugin version."
+        },
+        {
+            "c_hash": "d14f9a8b",
+            "date": "2009-09-05 16:49:00 +0000",
+            "comment": "align maven version with prerequisites."
+        },
+        {
+            "c_hash": "857a1776",
+            "date": "2009-09-05 16:52:28 +0000",
+            "comment": "use last testing-harness version"
+        },
+        {
+            "c_hash": "eed4b3ad",
+            "date": "2009-09-05 17:29:53 +0000",
+            "comment": "add a simple it."
+        },
+        {
+            "c_hash": "ff517302",
+            "date": "2009-09-05 17:34:57 +0000",
+            "comment": "fix it for maven 3"
+        },
+        {
+            "c_hash": "d0aa4f4d",
+            "date": "2009-09-05 17:43:48 +0000",
+            "comment": "add snapshot repo for the site plugin snapshot version"
+        },
+        {
+            "c_hash": "8bd8dcca",
+            "date": "2009-12-10 19:58:15 +0000",
+            "comment": "o Add l10n-maven-plugin."
+        },
+        {
+            "c_hash": "701cd497",
+            "date": "2010-01-11 00:06:19 +0000",
+            "comment": "upgrade to last maven parent pom"
+        },
+        {
+            "c_hash": "5b31961f",
+            "date": "2010-01-20 13:26:26 +0000",
+            "comment": "o Improve the plugin site."
+        },
+        {
+            "c_hash": "4773d397",
+            "date": "2010-01-20 13:35:15 +0000",
+            "comment": "o Update to maven-parent-15."
+        },
+        {
+            "c_hash": "fb1a875a",
+            "date": "2010-01-20 13:36:31 +0000",
+            "comment": "o Improve the JXR site."
+        },
+        {
+            "c_hash": "228b099e",
+            "date": "2010-04-27 21:07:24 +0000",
+            "comment": "[JXR-77] Add Swedish translation"
+        },
+        {
+            "c_hash": "ef9b9c59",
+            "date": "2010-04-27 21:27:20 +0000",
+            "comment": "[JXR-81]Add \"implements\" to keyword filter Submitted by: Brian Relph Reviewed by: Dennis Lundberg"
+        },
+        {
+            "c_hash": "29241182",
+            "date": "2010-04-27 21:38:14 +0000",
+            "comment": "[JXR-82] Add \"linenumber\" class to generated line number anchors Submitted by: Brian Relph Reviewed by: Dennis Lundberg"
+        },
+        {
+            "c_hash": "ef90b6cb",
+            "date": "2010-04-27 22:15:42 +0000",
+            "comment": "Fix typos."
+        },
+        {
+            "c_hash": "b51f695b",
+            "date": "2010-05-12 22:52:25 +0000",
+            "comment": "updated reporting plugins dependencies: maven-reporting-api 3.0"
+        },
+        {
+            "c_hash": "ee74c0aa",
+            "date": "2010-05-30 20:06:03 +0000",
+            "comment": "fix version"
+        },
+        {
+            "c_hash": "b46ccdbf",
+            "date": "2010-06-01 19:12:46 +0000",
+            "comment": "Update to maven-parent:16."
+        },
+        {
+            "c_hash": "aab625e7",
+            "date": "2010-06-01 19:22:15 +0000",
+            "comment": "Use UTF-8 encoding."
+        },
+        {
+            "c_hash": "5bc14d35",
+            "date": "2010-06-01 19:27:52 +0000",
+            "comment": "[maven-release-plugin] prepare release jxr-2.2"
+        },
+        {
+            "c_hash": "38c95d54",
+            "date": "2010-06-01 19:28:12 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "c59c8801",
+            "date": "2010-06-02 17:15:37 +0000",
+            "comment": "Add breadcrumbs and fix version and name."
+        },
+        {
+            "c_hash": "62010571",
+            "date": "2010-06-02 17:22:20 +0000",
+            "comment": "Add configuration for Maven Plugin Plugin so that a help mojo and mojo documentation in general is generated. Add stagingSiteURL. Add configuration for Maven Javadoc Plugin that adds taglets for Maven plugin tags."
+        },
+        {
+            "c_hash": "629d2063",
+            "date": "2010-06-02 17:25:52 +0000",
+            "comment": "Roll back to version 2.2-SNAPSHOT to redo the failed release attempt."
+        },
+        {
+            "c_hash": "b318935a",
+            "date": "2010-06-02 18:28:49 +0000",
+            "comment": "[maven-release-plugin] prepare release jxr-2.2"
+        },
+        {
+            "c_hash": "0bca2d52",
+            "date": "2010-06-02 18:29:08 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "09cc9744",
+            "date": "2011-05-15 20:19:18 +0000",
+            "comment": "Add ciManagement for Jenkins."
+        },
+        {
+            "c_hash": "a0abb108",
+            "date": "2011-06-19 22:05:12 +0000",
+            "comment": "[JXR-71] JXR doesn't link classes with non letters in their names Submited by: James Agnew"
+        },
+        {
+            "c_hash": "23b7f9cf",
+            "date": "2011-06-19 22:21:21 +0000",
+            "comment": "[JXR-59] speed up AbstractJxrReport.hasSources()"
+        },
+        {
+            "c_hash": "12587bba",
+            "date": "2011-06-20 21:13:06 +0000",
+            "comment": "[JXR-71] JXR doesn't link classes with non letters in their names added IT"
+        },
+        {
+            "c_hash": "c2eef4b4",
+            "date": "2011-07-11 01:14:29 +0000",
+            "comment": "JXR-88: create jxr:aggregate and jxr:test-aggregate"
+        },
+        {
+            "c_hash": "ed922031",
+            "date": "2011-07-11 01:23:37 +0000",
+            "comment": "JXR-88: jxr:aggregate and jxr:test-aggregate o some debugging support."
+        },
+        {
+            "c_hash": "47ceb816",
+            "date": "2011-07-11 01:39:50 +0000",
+            "comment": "JXR-88:  jxr:aggregate and jxr:test-aggregate o fix up test case, turn on javadoc. There's a lot still to be tested in this vicinity."
+        },
+        {
+            "c_hash": "49b4b00f",
+            "date": "2011-07-11 14:02:55 +0000",
+            "comment": "JXR-88: jxr:aggregate and jxr:test-aggregate o add code, and test coverage, for test-aggregate o repair NPE in test report; someone seemed to have left two copies of something in there, and one of the two lacked protection from an NPE case. I'm puzzled as to why this bit me, but the fix seems clear enough."
+        },
+        {
+            "c_hash": "3b051203",
+            "date": "2011-07-12 00:38:49 +0000",
+            "comment": "[JXR-84] Spurious error message fixed in Velocity 1.5 still exists in JXR o update the whole business to velocity 1.5, which, to match up with plexus and doxia, also required updating to doxia 1.2 and making related tweaks. While here, move a few easy things from plexus-utils to commons."
+        },
+        {
+            "c_hash": "cf1e7d5e",
+            "date": "2011-07-12 00:48:59 +0000",
+            "comment": "[JXR-64] System ID of XHTML frameset incorrect in HTML source"
+        },
+        {
+            "c_hash": "6f952cac",
+            "date": "2011-07-15 16:44:42 +0000",
+            "comment": "[JXR-86] add standard skip configuration option"
+        },
+        {
+            "c_hash": "ace3e401",
+            "date": "2011-07-15 16:48:15 +0000",
+            "comment": "[maven-release-plugin] prepare release jxr-2.3"
+        },
+        {
+            "c_hash": "0bdbc2b0",
+            "date": "2011-07-15 16:48:28 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "f9a32e62",
+            "date": "2011-07-17 13:49:35 +0000",
+            "comment": "Copy more configuration from the standard plugin parent to see if I can't fix up the site issues that Herv\u00e9 pointed out. This is certainly not all the fixes needed."
+        },
+        {
+            "c_hash": "e0bda30a",
+            "date": "2011-07-17 14:55:23 +0000",
+            "comment": "improve deprecated parameter doc."
+        },
+        {
+            "c_hash": "28194f28",
+            "date": "2011-07-17 19:58:03 +0000",
+            "comment": "Fix up index page for all four goals."
+        },
+        {
+            "c_hash": "107f2b37",
+            "date": "2011-07-18 07:28:45 +0000",
+            "comment": "formatting, remove tabs"
+        },
+        {
+            "c_hash": "32276f3d",
+            "date": "2011-07-31 20:26:00 +0000",
+            "comment": "fixed typo"
+        },
+        {
+            "c_hash": "a21fcc73",
+            "date": "2011-08-16 14:40:10 +0000",
+            "comment": "add a README that includes dev@"
+        },
+        {
+            "c_hash": "e69dd3a7",
+            "date": "2011-08-23 18:07:32 +0000",
+            "comment": "[JXR-94] use the maven-plugins pom as the parent of the maven-jxr-plugin"
+        },
+        {
+            "c_hash": "b485cc76",
+            "date": "2011-08-23 18:12:48 +0000",
+            "comment": "[JXR-93] aggregate goal creates blank top-level report"
+        },
+        {
+            "c_hash": "30e0d684",
+            "date": "2011-08-23 18:29:20 +0000",
+            "comment": "[JXR-93] aggregate goal creates blank top-level report o While I'm here, update the doc to recommend the new goals for aggregation instead of the deprecated param."
+        },
+        {
+            "c_hash": "a93d2ce9",
+            "date": "2011-08-23 18:46:03 +0000",
+            "comment": "[JXR-91] Javadoc link generation not working when using the 'reportPlugins' parameter of the site plugin instead of the 'reporting' section of the pom. o add integration test. It's all working for me."
+        },
+        {
+            "c_hash": "1b6c78ef",
+            "date": "2011-08-23 22:09:33 +0000",
+            "comment": "[JXR-93] aggregate goal creates blank top-level report o improve test to actually notice correct top-level content. o fix a spelling error. o update to maven component pom."
+        },
+        {
+            "c_hash": "fe47db10",
+            "date": "2011-08-23 22:33:11 +0000",
+            "comment": "[JXR-91] Javadoc link generation not working when using the 'reportPlugins' parameter of the site plugin instead of the 'reporting' section of the pom. o make new IT actually check for javadoc links."
+        },
+        {
+            "c_hash": "2b43c640",
+            "date": "2011-08-23 22:34:20 +0000",
+            "comment": "[JXR-93] aggregate goal creates blank top-level report o sort out the its. the aggregate it now just uses reportSets. The mixed-plugin-report uses both build and reportSets. o fix the doc for aggregation, the right way, this time."
+        },
+        {
+            "c_hash": "6e258e7a",
+            "date": "2012-03-05 07:37:10 +0000",
+            "comment": "[JXR-96] JXR Comment handling has several shortcomings Submitted by: Matt Benson"
+        },
+        {
+            "c_hash": "88c913d3",
+            "date": "2012-09-02 22:24:56 +0000",
+            "comment": "use last parent 22"
+        },
+        {
+            "c_hash": "a639d32a",
+            "date": "2012-09-02 22:25:04 +0000",
+            "comment": "add a simple .gitignore"
+        },
+        {
+            "c_hash": "c5655ef8",
+            "date": "2013-01-25 21:07:25 +0000",
+            "comment": "use last parent"
+        },
+        {
+            "c_hash": "1cf0defb",
+            "date": "2013-01-25 21:07:33 +0000",
+            "comment": "remove inherited configuration"
+        },
+        {
+            "c_hash": "dbc14e8d",
+            "date": "2013-01-25 21:08:01 +0000",
+            "comment": "move site to top module"
+        },
+        {
+            "c_hash": "0ce35ff4",
+            "date": "2013-01-25 21:08:12 +0000",
+            "comment": "remove inherited configuration"
+        },
+        {
+            "c_hash": "5dcfbd7d",
+            "date": "2013-01-25 21:08:21 +0000",
+            "comment": "jxr-plugin has now jxr parent as parent."
+        },
+        {
+            "c_hash": "707e1b7f",
+            "date": "2013-01-25 21:08:30 +0000",
+            "comment": "fix ci url"
+        },
+        {
+            "c_hash": "15ab6436",
+            "date": "2013-01-25 21:08:42 +0000",
+            "comment": "upgrade p-u to 3.0.10"
+        },
+        {
+            "c_hash": "52efaf4f",
+            "date": "2013-01-25 21:08:51 +0000",
+            "comment": "upgrade invoker plugin"
+        },
+        {
+            "c_hash": "82c1c4a3",
+            "date": "2013-01-25 21:16:00 +0000",
+            "comment": "configure site deployment via svnpubsub"
+        },
+        {
+            "c_hash": "84c53ae9",
+            "date": "2013-01-25 21:21:57 +0000",
+            "comment": "fix configuration with add disMngt for site"
+        },
+        {
+            "c_hash": "32e7a6c9",
+            "date": "2013-01-25 21:26:01 +0000",
+            "comment": "fix links"
+        },
+        {
+            "c_hash": "48a283e7",
+            "date": "2013-01-25 21:28:35 +0000",
+            "comment": "fix link"
+        },
+        {
+            "c_hash": "fa473439",
+            "date": "2013-01-25 21:43:03 +0000",
+            "comment": "fix link"
+        },
+        {
+            "c_hash": "9ff0915c",
+            "date": "2013-01-25 21:47:16 +0000",
+            "comment": "add aggregate jxr"
+        },
+        {
+            "c_hash": "05482269",
+            "date": "2013-01-25 21:47:27 +0000",
+            "comment": "fix more links"
+        },
+        {
+            "c_hash": "d440957b",
+            "date": "2013-02-01 09:28:35 +0000",
+            "comment": "[JXR-63] Bottom line in jxr report does not correspond to Javadoc style Submitted by Michael Osipov."
+        },
+        {
+            "c_hash": "cd0baf44",
+            "date": "2013-02-01 09:28:48 +0000",
+            "comment": "format code"
+        },
+        {
+            "c_hash": "becb6447",
+            "date": "2013-02-01 09:28:56 +0000",
+            "comment": "add contributor"
+        },
+        {
+            "c_hash": "4fc89769",
+            "date": "2013-05-14 19:22:15 +0000",
+            "comment": "CLOSED - issue JXR-99: Improve linguistic style of bottom"
+        },
+        {
+            "c_hash": "16bc58b2",
+            "date": "2013-08-03 22:30:44 +0000",
+            "comment": "Improved labels in German - Added necessary hyphenation - Turned Test Source into compound word"
+        },
+        {
+            "c_hash": "795beb26",
+            "date": "2013-08-03 23:00:37 +0000",
+            "comment": "Remove directory jxr-site because site has already been moved by olamy in r1438706 (2013-01-25 22:08:01)."
+        },
+        {
+            "c_hash": "03024374",
+            "date": "2013-08-03 23:20:13 +0000",
+            "comment": "[JXR-103] All DTD XHTML 1.0 Transitional references are incorrect"
+        },
+        {
+            "c_hash": "8e038e85",
+            "date": "2013-11-23 16:48:04 +0000",
+            "comment": "[JXR-87] Change line number anchor name pattern"
+        },
+        {
+            "c_hash": "6ecc4ec9",
+            "date": "2013-11-23 18:03:22 +0000",
+            "comment": "[JXR-104] Remove NOTICE footer/bottom altogether because no other writes this one too"
+        },
+        {
+            "c_hash": "f2a68670",
+            "date": "2013-11-23 18:54:06 +0000",
+            "comment": "[JXR-61] Include bottom text in all pages"
+        },
+        {
+            "c_hash": "145a0201",
+            "date": "2013-11-23 19:54:40 +0000",
+            "comment": "[JXR-85] JXR generates files with inconsistent line ending style"
+        },
+        {
+            "c_hash": "d84e6e93",
+            "date": "2013-12-07 14:10:56 +0000",
+            "comment": "- Make Javadoc Plugin quiet - Update a few plugins for Maven 3.1 compat (Aether not found)"
+        },
+        {
+            "c_hash": "e230e399",
+            "date": "2013-12-08 17:18:32 +0000",
+            "comment": "updated svnpubsub configuration"
+        },
+        {
+            "c_hash": "784d4f5c",
+            "date": "2013-12-08 22:09:56 +0000",
+            "comment": "Corrected spelling."
+        },
+        {
+            "c_hash": "f67ff14a",
+            "date": "2013-12-09 11:35:37 +0000",
+            "comment": "Correct <content> value of scm publish to publish-scm goal."
+        },
+        {
+            "c_hash": "e0762d82",
+            "date": "2013-12-09 17:06:58 +0000",
+            "comment": "- Remove breadcrumb to have proper navigation - Add decent project names to site.xml"
+        },
+        {
+            "c_hash": "b8554736",
+            "date": "2013-12-10 20:43:22 +0000",
+            "comment": "[JXR-106] Remove Maven 1.x from docs"
+        },
+        {
+            "c_hash": "28f56a78",
+            "date": "2013-12-10 20:47:39 +0000",
+            "comment": "Remove links.apt altogether. All links are either dead (404) or hopelessly outdated."
+        },
+        {
+            "c_hash": "14a160d1",
+            "date": "2013-12-10 20:49:14 +0000",
+            "comment": "Rely during site generation on the currect version of JXR in the reactor to have a recent JXR report. Just like Maven Fluido Skin does in site.xml."
+        },
+        {
+            "c_hash": "912477bc",
+            "date": "2013-12-10 21:03:35 +0000",
+            "comment": "Auto version submodules by default during release."
+        },
+        {
+            "c_hash": "76951f13",
+            "date": "2013-12-10 21:10:10 +0000",
+            "comment": "[maven-release-plugin] prepare release jxr-2.4"
+        },
+        {
+            "c_hash": "12dc9338",
+            "date": "2013-12-10 21:11:06 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "526e5332",
+            "date": "2014-04-06 22:07:13 +0000",
+            "comment": "Add missing license headers, and a couple of excludes for RAT."
+        },
+        {
+            "c_hash": "b685e313",
+            "date": "2014-04-13 12:20:27 +0000",
+            "comment": "updated parent pom"
+        },
+        {
+            "c_hash": "faac4a5d",
+            "date": "2014-04-13 21:40:12 +0000",
+            "comment": "[JXR-109] use maven-plugin-tools' java 5 annotations"
+        },
+        {
+            "c_hash": "cb2965fa",
+            "date": "2014-04-14 20:39:58 +0000",
+            "comment": "use Java 5 constructs"
+        },
+        {
+            "c_hash": "58808f6f",
+            "date": "2014-06-24 21:06:45 +0000",
+            "comment": "[MNGSITE-152] added license and download links"
+        },
+        {
+            "c_hash": "504f0b98",
+            "date": "2014-06-25 16:15:47 +0000",
+            "comment": "[MNGSITE-152] moved license and download links to release root"
+        },
+        {
+            "c_hash": "71e9369d",
+            "date": "2014-09-29 20:53:17 +0000",
+            "comment": "[JXR-111]  - Upgraded to Maven 2.2.1"
+        },
+        {
+            "c_hash": "7815382e",
+            "date": "2014-09-29 20:55:50 +0000",
+            "comment": "[JXR-112]  - Upgrade plexus-utils from 3.0.10 to 3.0.18"
+        },
+        {
+            "c_hash": "90ab11fc",
+            "date": "2014-09-29 20:58:34 +0000",
+            "comment": "[JXR-113]  - Upgraded maven-reporting-impl from 2.1 to 2.3"
+        },
+        {
+            "c_hash": "cb98e2cf",
+            "date": "2014-10-26 13:24:23 +0000",
+            "comment": "[JXR-112]  - Upgrade plexus-utils from 3.0.18 to 3.0.20"
+        },
+        {
+            "c_hash": "cb22ead5",
+            "date": "2014-10-26 13:41:56 +0000",
+            "comment": "[JXR-116]  - Upgrade doxia from 1.2 to 1.4"
+        },
+        {
+            "c_hash": "37fda522",
+            "date": "2014-10-26 17:53:17 +0000",
+            "comment": "[JXR-118]   - Fixed checkstyle reported errors.     Currently excluded JavaCodeTransform.java based on     the different license header."
+        },
+        {
+            "c_hash": "32dd7974",
+            "date": "2014-10-26 18:03:20 +0000",
+            "comment": "[JXR-119]  - Upgrade org.apache.maven:maven-parent:24 to 25"
+        },
+        {
+            "c_hash": "ca637cc1",
+            "date": "2014-10-26 18:07:16 +0000",
+            "comment": "[JXR-119]  - Followup cleaning up pom in relationship to upgrade of parent."
+        },
+        {
+            "c_hash": "5e6774ce",
+            "date": "2014-10-26 18:42:02 +0000",
+            "comment": "[JXR-115]  - Removed maven-surefire-plugin configuration which    is deprecated in the meantime."
+        },
+        {
+            "c_hash": "0cb066f9",
+            "date": "2014-10-26 18:48:29 +0000",
+            "comment": "[JXR-114]  - Removed deprecated marked parameters."
+        },
+        {
+            "c_hash": "581d47d7",
+            "date": "2014-10-26 21:55:59 +0000",
+            "comment": "[JXR-121]  - Fixed unit tests based on removement of    aggregate attribute."
+        },
+        {
+            "c_hash": "277386f0",
+            "date": "2014-10-26 21:59:18 +0000",
+            "comment": "[maven-release-plugin] prepare release jxr-2.5"
+        },
+        {
+            "c_hash": "90ed0b9e",
+            "date": "2014-10-26 21:59:36 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "9b796e92",
+            "date": "2014-11-01 15:44:24 +0000",
+            "comment": "- Undone changes based on the canceled vote."
+        },
+        {
+            "c_hash": "9fa9e062",
+            "date": "2014-11-01 15:57:58 +0000",
+            "comment": "[JXR-120]  - Added configuration for maven-release-plugin to    autoVersionSubmodules."
+        },
+        {
+            "c_hash": "1d4065de",
+            "date": "2014-11-01 18:24:25 +0000",
+            "comment": "[JXR-122]  - Added the configuration for apache-rat-plugin otherwise    the release source artifact can't be built without changing    it."
+        },
+        {
+            "c_hash": "9071c583",
+            "date": "2014-11-01 19:15:07 +0000",
+            "comment": "[JXR-123]  - Upgrade maven-plugin-annotations and maven-plugin-plugin from 3.2 to 3.3"
+        },
+        {
+            "c_hash": "2e459b33",
+            "date": "2014-11-01 19:20:34 +0000",
+            "comment": "[JXR-117] Added hint about the special case."
+        },
+        {
+            "c_hash": "84219efa",
+            "date": "2014-11-02 08:17:45 +0000",
+            "comment": "[maven-release-plugin] prepare release jxr-2.5"
+        },
+        {
+            "c_hash": "c47f501a",
+            "date": "2014-11-02 08:18:02 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "3acb5307",
+            "date": "2014-11-22 11:41:22 +0000",
+            "comment": "[JXR-124] Remove excluded DEPENDENCIES file if new parent is used.  - Fixed configuration for apache-rat-plugin to added    execludes instead of replacing them."
+        },
+        {
+            "c_hash": "25dec268",
+            "date": "2014-11-26 08:44:25 +0000",
+            "comment": "[JXR-126] File write using platform default encoding"
+        }
+    ]
+}

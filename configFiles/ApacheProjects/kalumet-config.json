@@ -1,0 +1,868 @@
+{
+    "project": "kalumet",
+    "git_url": "https://github.com/apache/kalumet.git",
+    "last_commit": "899505eb",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "bcee7398",
+            "date": "2007-06-09 12:43:01 +0000",
+            "comment": "First AutoDeploy import on SVN with maven2 POM."
+        },
+        {
+            "c_hash": "59123909",
+            "date": "2011-01-12 13:55:50 +0000",
+            "comment": "Kalumet import."
+        },
+        {
+            "c_hash": "fb0a26df",
+            "date": "2011-10-18 06:29:59 +0000",
+            "comment": "Add the Kalumet svn structure"
+        },
+        {
+            "c_hash": "4e810e90",
+            "date": "2011-10-22 13:10:01 +0000",
+            "comment": "Start the refactoring/renaming of AutoDeploy to Kalumet."
+        },
+        {
+            "c_hash": "9e617dc8",
+            "date": "2011-10-22 13:18:35 +0000",
+            "comment": "Add log and update in the Kalumet model."
+        },
+        {
+            "c_hash": "0c7519ad",
+            "date": "2011-10-22 13:26:04 +0000",
+            "comment": "Add svn:ignore for IntelliJ files."
+        },
+        {
+            "c_hash": "d5ce6e03",
+            "date": "2011-10-22 18:01:26 +0000",
+            "comment": "Update the Kalumet model to be clearer. Complete all WS clients."
+        },
+        {
+            "c_hash": "d6c18ef9",
+            "date": "2011-10-23 15:37:31 +0000",
+            "comment": "Update the Kalumet model and add unit tests."
+        },
+        {
+            "c_hash": "411d03ff",
+            "date": "2011-10-24 15:07:18 +0000",
+            "comment": "Add new utils and start the refactoring of the updaters."
+        },
+        {
+            "c_hash": "77dd90a8",
+            "date": "2011-10-25 07:05:37 +0000",
+            "comment": "Add new utils classes. Add the WSDD descriptor."
+        },
+        {
+            "c_hash": "0560ae4a",
+            "date": "2011-10-25 15:34:12 +0000",
+            "comment": "Refactoring to create a Kalumet utils module."
+        },
+        {
+            "c_hash": "e1e18c12",
+            "date": "2011-10-26 08:52:32 +0000",
+            "comment": "Add SQL script utils. Add the software updater."
+        },
+        {
+            "c_hash": "14edd6de",
+            "date": "2011-10-27 07:50:02 +0000",
+            "comment": "Add the controller module."
+        },
+        {
+            "c_hash": "9bfd06b5",
+            "date": "2011-10-29 09:37:44 +0000",
+            "comment": "Add new updaters."
+        },
+        {
+            "c_hash": "69889ba1",
+            "date": "2011-10-29 12:14:56 +0000",
+            "comment": "Add JMS server and JNDI binding updaters."
+        },
+        {
+            "c_hash": "81892efb",
+            "date": "2011-10-29 13:22:17 +0000",
+            "comment": "Add shared library updater."
+        },
+        {
+            "c_hash": "97d3ffdc",
+            "date": "2011-10-29 14:13:10 +0000",
+            "comment": "Add the SQL script updater."
+        },
+        {
+            "c_hash": "faca20a3",
+            "date": "2011-10-31 18:39:27 +0000",
+            "comment": "Add agent assembly."
+        },
+        {
+            "c_hash": "a8b893c4",
+            "date": "2011-11-15 10:55:59 +0000",
+            "comment": "Add IBM WebSphere controller."
+        },
+        {
+            "c_hash": "9e1a92ef",
+            "date": "2011-11-15 13:18:22 +0000",
+            "comment": "Add assembly distribution files"
+        },
+        {
+            "c_hash": "e5aa4b87",
+            "date": "2011-11-15 13:19:10 +0000",
+            "comment": "Add .gitignore file"
+        },
+        {
+            "c_hash": "5118211f",
+            "date": "2011-11-15 15:54:20 +0000",
+            "comment": "Fix the Websphere controller artifactId"
+        },
+        {
+            "c_hash": "227f6a4f",
+            "date": "2011-11-15 15:54:31 +0000",
+            "comment": "Add Websphere implfactory.properties"
+        },
+        {
+            "c_hash": "85938c18",
+            "date": "2011-11-15 15:54:46 +0000",
+            "comment": "Applied checkstyle on WebsphereController"
+        },
+        {
+            "c_hash": "eab5163a",
+            "date": "2011-11-15 15:55:12 +0000",
+            "comment": "Add Oracle WebLogic controller"
+        },
+        {
+            "c_hash": "ff4f9448",
+            "date": "2011-11-16 06:31:45 +0000",
+            "comment": "Add NOTICE file in the controllers"
+        },
+        {
+            "c_hash": "cbbaad0c",
+            "date": "2011-11-16 06:32:12 +0000",
+            "comment": "Add JBoss application server controller"
+        },
+        {
+            "c_hash": "3a10f3d5",
+            "date": "2011-11-16 09:08:29 +0000",
+            "comment": "Add JBoss controller template files"
+        },
+        {
+            "c_hash": "58ee8d38",
+            "date": "2011-11-16 09:08:42 +0000",
+            "comment": "Update the title of notification and report"
+        },
+        {
+            "c_hash": "c5e7307d",
+            "date": "2011-11-16 09:08:55 +0000",
+            "comment": "Update the storage location and publisher title"
+        },
+        {
+            "c_hash": "9b7f03b8",
+            "date": "2011-11-16 09:13:04 +0000",
+            "comment": "Add console resources"
+        },
+        {
+            "c_hash": "63c998d0",
+            "date": "2011-11-17 16:17:52 +0000",
+            "comment": "Add console StackTraceUtils to create a string representation of a stack trace"
+        },
+        {
+            "c_hash": "364ad7b2",
+            "date": "2011-11-17 16:18:11 +0000",
+            "comment": "Add console configuration model and digester"
+        },
+        {
+            "c_hash": "6db6ae42",
+            "date": "2011-11-17 16:18:32 +0000",
+            "comment": "Add the console configuration and configuration manager"
+        },
+        {
+            "c_hash": "a6883a03",
+            "date": "2011-11-17 16:29:42 +0000",
+            "comment": "Improve the stack trace utils method to use a StringBuilder"
+        },
+        {
+            "c_hash": "dc170e29",
+            "date": "2011-11-17 16:33:49 +0000",
+            "comment": "Improve logging to use SLF4J substitute"
+        },
+        {
+            "c_hash": "8fd91ab7",
+            "date": "2011-11-17 16:51:09 +0000",
+            "comment": "Killer Olivier's improvement in the stack trace to \"minor\" gain ;)"
+        },
+        {
+            "c_hash": "4b76512f",
+            "date": "2011-11-17 16:51:26 +0000",
+            "comment": "Add configuration wrapper service"
+        },
+        {
+            "c_hash": "14c9ea23",
+            "date": "2011-11-17 16:51:44 +0000",
+            "comment": "Add journal event appender service"
+        },
+        {
+            "c_hash": "8ab747a7",
+            "date": "2011-11-17 16:51:54 +0000",
+            "comment": "Add servlet-api dependency"
+        },
+        {
+            "c_hash": "ab8e6a3d",
+            "date": "2011-11-17 16:52:08 +0000",
+            "comment": "Align the web.xml DOCTYPE version with the dependency"
+        },
+        {
+            "c_hash": "878279a4",
+            "date": "2011-11-17 21:35:57 +0000",
+            "comment": "ignore .DS_Store"
+        },
+        {
+            "c_hash": "7424cdb6",
+            "date": "2011-11-23 20:52:16 +0000",
+            "comment": "Import Kalumet console."
+        },
+        {
+            "c_hash": "fe7260b1",
+            "date": "2011-12-02 13:04:43 +0000",
+            "comment": "ignore target directory"
+        },
+        {
+            "c_hash": "1663692e",
+            "date": "2011-12-02 13:09:16 +0000",
+            "comment": "ignore *.iml in modules too"
+        },
+        {
+            "c_hash": "25945b6c",
+            "date": "2011-12-02 13:19:48 +0000",
+            "comment": ".gitignore + .idea"
+        },
+        {
+            "c_hash": "b0a9078c",
+            "date": "2011-12-02 13:20:21 +0000",
+            "comment": "use 2 spaces ident in pom. yes olamy == maniac with that :-)"
+        },
+        {
+            "c_hash": "7d45c503",
+            "date": "2011-12-02 13:21:35 +0000",
+            "comment": "add animal-sniffer-maven-plugin to check 1.5 compat and fix 1.5 compat"
+        },
+        {
+            "c_hash": "46fad2e9",
+            "date": "2011-12-02 13:21:56 +0000",
+            "comment": "add ciMngt url"
+        },
+        {
+            "c_hash": "d0f658e1",
+            "date": "2011-12-02 13:32:57 +0000",
+            "comment": "start configuring tomcat maven plugin to be able to run the app without any install first from the top with a simple tomcat:run"
+        },
+        {
+            "c_hash": "482d3891",
+            "date": "2011-12-02 14:11:07 +0000",
+            "comment": "fix compilation failure"
+        },
+        {
+            "c_hash": "dcca2d7d",
+            "date": "2011-12-08 18:37:45 +0000",
+            "comment": "Add controller for JBoss 6.x"
+        },
+        {
+            "c_hash": "4ded6855",
+            "date": "2011-12-08 18:38:02 +0000",
+            "comment": "Rename the JBossController to JBoss4Controller"
+        },
+        {
+            "c_hash": "b2e28226",
+            "date": "2011-12-08 18:38:14 +0000",
+            "comment": "Add the controller README files"
+        },
+        {
+            "c_hash": "4e75e4cd",
+            "date": "2011-12-08 18:38:39 +0000",
+            "comment": "Remove output when executing SQL scripts"
+        },
+        {
+            "c_hash": "52caaabf",
+            "date": "2011-12-08 20:38:58 +0000",
+            "comment": "Use file manipulator prototype in place of singleton. Update the console with the JBoss 6 support."
+        },
+        {
+            "c_hash": "0f317a7a",
+            "date": "2011-12-08 20:39:23 +0000",
+            "comment": "Fix the update status check in the software database window"
+        },
+        {
+            "c_hash": "8eb41ba6",
+            "date": "2011-12-12 13:45:37 +0000",
+            "comment": "Fix some old wording. Update the version to including SNAPSHOT (in order to release easily with the maven-release-plugin)."
+        },
+        {
+            "c_hash": "a2270675",
+            "date": "2012-01-18 15:38:48 +0000",
+            "comment": "[KALUMET-6] Fix the way that JBoss6Controller get the ServerHomeLocation attribute"
+        },
+        {
+            "c_hash": "c8cdd846",
+            "date": "2012-03-20 19:12:54 +0000",
+            "comment": "[KALUMET-22] POM updated to Apache email for trimmer Updated pom.xml for trimmer to use an Apache email instead of gmail."
+        },
+        {
+            "c_hash": "d48c6746",
+            "date": "2012-03-22 17:56:08 +0000",
+            "comment": "Add the documentation module"
+        },
+        {
+            "c_hash": "9f30e717",
+            "date": "2012-03-25 19:33:20 +0000",
+            "comment": "Add the admin guide index"
+        },
+        {
+            "c_hash": "61d52ff2",
+            "date": "2012-05-07 20:59:33 +0000",
+            "comment": "compiler plugin 2.4 is faster"
+        },
+        {
+            "c_hash": "543d8455",
+            "date": "2012-05-10 12:53:46 +0000",
+            "comment": "Add the agent installation section"
+        },
+        {
+            "c_hash": "0b93e97e",
+            "date": "2012-05-10 13:04:44 +0000",
+            "comment": "Update the admin guide sections order"
+        },
+        {
+            "c_hash": "c77b7abc",
+            "date": "2012-06-07 16:08:31 +0000",
+            "comment": "[KALUMET-23] Add a distribution for the console"
+        },
+        {
+            "c_hash": "1fed33aa",
+            "date": "2012-06-07 16:41:41 +0000",
+            "comment": "[KALUMET-2] Provide a src distribution"
+        },
+        {
+            "c_hash": "25b343e8",
+            "date": "2012-06-08 07:57:15 +0000",
+            "comment": "Fix the console style and resources loading"
+        },
+        {
+            "c_hash": "3a1199f7",
+            "date": "2012-06-08 14:18:31 +0000",
+            "comment": "[KALUMET-38] Console now creates default minimal file"
+        },
+        {
+            "c_hash": "79067a3c",
+            "date": "2012-06-08 15:40:02 +0000",
+            "comment": "[KALUMET-38] Fix the location of the environment journals"
+        },
+        {
+            "c_hash": "9573eb69",
+            "date": "2012-06-08 16:50:20 +0000",
+            "comment": "Reformat all sources"
+        },
+        {
+            "c_hash": "efe1f496",
+            "date": "2012-06-08 17:20:23 +0000",
+            "comment": "Fix imports"
+        },
+        {
+            "c_hash": "e8320ea1",
+            "date": "2012-06-10 14:29:26 +0000",
+            "comment": "[KALUMET-39] Fix a NPE creating a new J2EE application server in the console"
+        },
+        {
+            "c_hash": "3468029a",
+            "date": "2012-06-18 09:59:29 +0000",
+            "comment": "Resume documentation and update console README part"
+        },
+        {
+            "c_hash": "7c48ab9e",
+            "date": "2012-06-18 17:35:08 +0000",
+            "comment": "Update console documentation and fix rendering"
+        },
+        {
+            "c_hash": "99857e10",
+            "date": "2012-06-21 07:10:28 +0000",
+            "comment": "Update the user guide table of content"
+        },
+        {
+            "c_hash": "8915b562",
+            "date": "2012-06-21 07:17:22 +0000",
+            "comment": "Add the developer guide table of content"
+        },
+        {
+            "c_hash": "82e166b0",
+            "date": "2012-06-22 15:06:07 +0000",
+            "comment": "basic svn:ignore for documentation module"
+        },
+        {
+            "c_hash": "fe931d20",
+            "date": "2012-06-23 07:12:04 +0000",
+            "comment": "Start the user guide"
+        },
+        {
+            "c_hash": "3dcd3597",
+            "date": "2012-06-24 10:33:41 +0000",
+            "comment": "Update the documentation adding the core configuration section"
+        },
+        {
+            "c_hash": "0f8c2cc6",
+            "date": "2012-06-24 17:04:56 +0000",
+            "comment": "Add agent screenshots"
+        },
+        {
+            "c_hash": "2795c18d",
+            "date": "2012-06-26 04:37:34 +0000",
+            "comment": "Complete the agents section documentation"
+        },
+        {
+            "c_hash": "78702f0a",
+            "date": "2012-06-26 11:34:04 +0000",
+            "comment": "Add the console user section in the documentation"
+        },
+        {
+            "c_hash": "74828e8d",
+            "date": "2012-06-26 11:48:00 +0000",
+            "comment": "Complete the \"Users and Groups\" section in the documentation"
+        },
+        {
+            "c_hash": "1d1fe514",
+            "date": "2012-06-26 12:07:26 +0000",
+            "comment": "Add the statistics section in the documentation"
+        },
+        {
+            "c_hash": "2623c786",
+            "date": "2012-06-27 17:43:02 +0000",
+            "comment": "Add environment general section in the documentation"
+        },
+        {
+            "c_hash": "0bd97a23",
+            "date": "2012-06-27 21:11:48 +0000",
+            "comment": "add rat plugin and fix some license missing"
+        },
+        {
+            "c_hash": "139878bf",
+            "date": "2012-06-27 21:13:13 +0000",
+            "comment": "use repository from apache extras"
+        },
+        {
+            "c_hash": "67934489",
+            "date": "2012-06-28 09:55:11 +0000",
+            "comment": "Add environment security section in the documentation"
+        },
+        {
+            "c_hash": "38cf7620",
+            "date": "2012-06-28 12:30:35 +0000",
+            "comment": "Update the license file in the security documentation source"
+        },
+        {
+            "c_hash": "c4faecfd",
+            "date": "2012-06-28 12:54:21 +0000",
+            "comment": "Update the message to use JEE instead of J2EE and update the screenshots. Start the JEE application servers documentation section."
+        },
+        {
+            "c_hash": "d7ccfaa4",
+            "date": "2012-07-02 16:33:12 +0000",
+            "comment": "Add the JEE application server section in the documentation"
+        },
+        {
+            "c_hash": "8d822616",
+            "date": "2012-07-02 17:51:42 +0000",
+            "comment": "Update the JEE application server section of the documentation"
+        },
+        {
+            "c_hash": "c462e3e4",
+            "date": "2012-07-03 14:33:17 +0000",
+            "comment": "Add the JDBC Connection Pool section in the documentation"
+        },
+        {
+            "c_hash": "6d24e5ab",
+            "date": "2012-07-06 06:27:19 +0000",
+            "comment": "Add the JDBC data sources section in the documentation"
+        },
+        {
+            "c_hash": "81a70e57",
+            "date": "2012-07-06 07:28:35 +0000",
+            "comment": "Add JMS connection factories section in the documentation"
+        },
+        {
+            "c_hash": "eb4a1be0",
+            "date": "2012-07-06 08:09:20 +0000",
+            "comment": "Add JMS server section in the documentation"
+        },
+        {
+            "c_hash": "0750549b",
+            "date": "2012-07-06 09:17:47 +0000",
+            "comment": "Add JNDI bindings section in the documentation"
+        },
+        {
+            "c_hash": "273a718b",
+            "date": "2012-07-06 12:07:23 +0000",
+            "comment": "Add the shared library section in the documentation"
+        },
+        {
+            "c_hash": "655b70c8",
+            "date": "2012-07-06 15:55:06 +0000",
+            "comment": "Start JEE application section in the documentation"
+        },
+        {
+            "c_hash": "2689fcfa",
+            "date": "2012-07-09 09:48:46 +0000",
+            "comment": "last compiler plugin version"
+        },
+        {
+            "c_hash": "ef7d74f7",
+            "date": "2012-07-09 10:00:58 +0000",
+            "comment": "configure release plugin"
+        },
+        {
+            "c_hash": "0a25a1f1",
+            "date": "2012-07-09 10:03:46 +0000",
+            "comment": "add DISCLAIMER file"
+        },
+        {
+            "c_hash": "b39825e1",
+            "date": "2012-07-09 10:15:36 +0000",
+            "comment": "configure more plugins versions"
+        },
+        {
+            "c_hash": "00736aed",
+            "date": "2012-07-09 10:19:22 +0000",
+            "comment": "configure reporting section"
+        },
+        {
+            "c_hash": "75df8da8",
+            "date": "2012-07-09 10:23:09 +0000",
+            "comment": "configure site plugin version"
+        },
+        {
+            "c_hash": "12faa18b",
+            "date": "2012-07-09 10:24:13 +0000",
+            "comment": "remove content inherited from parent pom"
+        },
+        {
+            "c_hash": "38e8ec8d",
+            "date": "2012-07-09 14:56:58 +0000",
+            "comment": "prevent infinite loop and NPE with a plexus-utils SNAPSHOT"
+        },
+        {
+            "c_hash": "07db975a",
+            "date": "2012-07-09 14:57:08 +0000",
+            "comment": "declare plexus snapshot repository"
+        },
+        {
+            "c_hash": "c2b9669e",
+            "date": "2012-07-09 15:07:16 +0000",
+            "comment": "move this repo declaration in top module"
+        },
+        {
+            "c_hash": "0f0fb10f",
+            "date": "2012-07-09 15:08:41 +0000",
+            "comment": "grrh it's a plugin dependency"
+        },
+        {
+            "c_hash": "5dcbf881",
+            "date": "2012-07-09 17:00:47 +0000",
+            "comment": "Update the JEE application documentation section"
+        },
+        {
+            "c_hash": "9cb58549",
+            "date": "2012-07-09 19:47:04 +0000",
+            "comment": "move some modules to a top level kalumet-modules to be able to generate some reporting (javadocs etc..) without infinite loop in documentation module"
+        },
+        {
+            "c_hash": "4610fcc0",
+            "date": "2012-07-09 19:47:41 +0000",
+            "comment": "add some basic reporting for code part"
+        },
+        {
+            "c_hash": "5a1cb885",
+            "date": "2012-07-09 19:47:56 +0000",
+            "comment": "those NOTICE files are not needed"
+        },
+        {
+            "c_hash": "f69e6652",
+            "date": "2012-07-09 19:48:09 +0000",
+            "comment": "possible to run the web console with mvn tomcat7:run -Pdev -Pdev will use a different log4j.xml to use a ConsoleAppender."
+        },
+        {
+            "c_hash": "be0822ed",
+            "date": "2012-07-09 19:48:19 +0000",
+            "comment": "don't write kalumet.xml in source tree when testing console module"
+        },
+        {
+            "c_hash": "fe015b59",
+            "date": "2012-07-09 19:48:33 +0000",
+            "comment": "prevent NPE"
+        },
+        {
+            "c_hash": "af6d4c69",
+            "date": "2012-07-09 19:48:48 +0000",
+            "comment": "make possible to run tests when offline"
+        },
+        {
+            "c_hash": "c549fb6d",
+            "date": "2012-07-09 19:55:20 +0000",
+            "comment": "remove empty directories"
+        },
+        {
+            "c_hash": "78b7d712",
+            "date": "2012-07-10 12:42:16 +0000",
+            "comment": "Use id in the assembly final name"
+        },
+        {
+            "c_hash": "dcc56449",
+            "date": "2012-07-10 13:51:29 +0000",
+            "comment": "Resume the JEE application section of the documentation"
+        },
+        {
+            "c_hash": "44f0c785",
+            "date": "2012-07-10 14:37:13 +0000",
+            "comment": "use plexus-utils released version"
+        },
+        {
+            "c_hash": "95344952",
+            "date": "2012-07-10 14:37:20 +0000",
+            "comment": "remove not anymore used repository"
+        },
+        {
+            "c_hash": "da1e66d2",
+            "date": "2012-07-10 16:41:28 +0000",
+            "comment": "Resume the JEE application section in the documentation"
+        },
+        {
+            "c_hash": "bf292526",
+            "date": "2012-07-11 16:26:44 +0000",
+            "comment": "Continue the JEE application section in the documentation"
+        },
+        {
+            "c_hash": "57926097",
+            "date": "2012-07-12 06:45:43 +0000",
+            "comment": "Add screenshot for JEE application database section in the documentation"
+        },
+        {
+            "c_hash": "d768cd05",
+            "date": "2012-08-19 01:53:41 +0000",
+            "comment": "Resume J2EE applications section of the documentation"
+        },
+        {
+            "c_hash": "479fa02e",
+            "date": "2012-08-25 11:25:32 +0000",
+            "comment": "Rename J2EE links to JEE links in the documentation navigation menu"
+        },
+        {
+            "c_hash": "abf583d4",
+            "date": "2012-08-25 11:27:23 +0000",
+            "comment": "Fix loading of JEE applications in the model"
+        },
+        {
+            "c_hash": "6e69ec8c",
+            "date": "2012-08-25 11:28:21 +0000",
+            "comment": "Resume JEE applications section of the documentation"
+        },
+        {
+            "c_hash": "bd4854b2",
+            "date": "2012-08-30 17:31:27 +0000",
+            "comment": "Rename J2EE to JEE"
+        },
+        {
+            "c_hash": "9934b298",
+            "date": "2012-08-31 10:36:18 +0000",
+            "comment": "Fix JEE applications model handling"
+        },
+        {
+            "c_hash": "2f256789",
+            "date": "2012-09-24 14:47:50 +0000",
+            "comment": "use last fluido skin version"
+        },
+        {
+            "c_hash": "5883e66b",
+            "date": "2012-09-24 15:16:11 +0000",
+            "comment": "upgrade some plugins version"
+        },
+        {
+            "c_hash": "e912cdcd",
+            "date": "2012-09-24 15:16:21 +0000",
+            "comment": "fix warName"
+        },
+        {
+            "c_hash": "a44d906e",
+            "date": "2012-11-18 20:19:36 +0000",
+            "comment": "Add console plugin documentation"
+        },
+        {
+            "c_hash": "af451e4f",
+            "date": "2012-11-25 10:58:43 +0000",
+            "comment": "Exclude log file from rat configuration. Remove \"old\" console log."
+        },
+        {
+            "c_hash": "92f3d0f3",
+            "date": "2012-12-02 21:33:44 +0000",
+            "comment": "Cleanup the documentation page title. Add first screenshots for software."
+        },
+        {
+            "c_hash": "fcc45f90",
+            "date": "2012-12-03 06:45:25 +0000",
+            "comment": "Complete the documentation user guide"
+        },
+        {
+            "c_hash": "858e92a5",
+            "date": "2012-12-03 07:48:21 +0000",
+            "comment": "Update the documentation adding the developer guide"
+        },
+        {
+            "c_hash": "5cda436c",
+            "date": "2012-12-04 18:00:56 +0000",
+            "comment": "[maven-release-plugin] prepare release kalumet-0.6-incubating"
+        },
+        {
+            "c_hash": "7dd081d2",
+            "date": "2012-12-04 18:01:25 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "0fefe4d8",
+            "date": "2012-12-05 06:30:38 +0000",
+            "comment": "Cancel Apache Kalumet 0.6-incubating release"
+        },
+        {
+            "c_hash": "a315ac72",
+            "date": "2012-12-05 06:38:24 +0000",
+            "comment": "Update RELEASE-NOTES in preparation for the release"
+        },
+        {
+            "c_hash": "202916a3",
+            "date": "2012-12-05 06:59:51 +0000",
+            "comment": "[maven-release-plugin] prepare release kalumet-0.6-incubating"
+        },
+        {
+            "c_hash": "73415502",
+            "date": "2012-12-05 07:00:35 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "0c5379d3",
+            "date": "2012-12-13 07:13:50 +0000",
+            "comment": "Cancel Apache Kalumet 0.6-incubating release"
+        },
+        {
+            "c_hash": "98b850d9",
+            "date": "2012-12-13 08:54:47 +0000",
+            "comment": "[KALUMET-50] Upgrade to Apache POM 12"
+        },
+        {
+            "c_hash": "96446d0a",
+            "date": "2012-12-13 08:54:57 +0000",
+            "comment": "upgrade some maven plugins"
+        },
+        {
+            "c_hash": "ea41e953",
+            "date": "2012-12-14 12:43:05 +0000",
+            "comment": "[KALUMET-51] Fix LICENSE and NOTICE files content"
+        },
+        {
+            "c_hash": "cc9f919b",
+            "date": "2012-12-14 18:25:07 +0000",
+            "comment": "[KALUMET-51] Add src distribution specific LICENSE and NOTICE files"
+        },
+        {
+            "c_hash": "1e6fe83a",
+            "date": "2012-12-15 07:02:11 +0000",
+            "comment": "Update RELEASE-NOTES"
+        },
+        {
+            "c_hash": "5b9e55f9",
+            "date": "2012-12-15 14:27:32 +0000",
+            "comment": "fix directory name in archives"
+        },
+        {
+            "c_hash": "f253d7d1",
+            "date": "2012-12-15 16:39:30 +0000",
+            "comment": "[maven-release-plugin] prepare release kalumet-0.6-incubating"
+        },
+        {
+            "c_hash": "15488158",
+            "date": "2012-12-15 16:40:02 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "553b7374",
+            "date": "2013-01-07 09:47:01 +0000",
+            "comment": "configure svnpubsub for documentation"
+        },
+        {
+            "c_hash": "91429cba",
+            "date": "2013-01-07 09:57:02 +0000",
+            "comment": "ignore site-content"
+        },
+        {
+            "c_hash": "c179d903",
+            "date": "2013-01-07 10:12:02 +0000",
+            "comment": "use topbar"
+        },
+        {
+            "c_hash": "b5b9099d",
+            "date": "2013-01-10 13:47:18 +0000",
+            "comment": "Add KEYS"
+        },
+        {
+            "c_hash": "942a19d0",
+            "date": "2013-02-15 15:05:13 +0000",
+            "comment": "Cancel Kalumet 0.6-incubating release"
+        },
+        {
+            "c_hash": "0cc200b2",
+            "date": "2013-03-30 11:06:23 +0000",
+            "comment": "add a script to ease git svn setup"
+        },
+        {
+            "c_hash": "0c43516f",
+            "date": "2013-03-30 11:24:55 +0000",
+            "comment": "last version of tomcat7 maven plugin"
+        },
+        {
+            "c_hash": "b67c2665",
+            "date": "2013-09-02 06:20:50 +0000",
+            "comment": "Fix legal files, especially the NOTICE file"
+        },
+        {
+            "c_hash": "95170646",
+            "date": "2013-09-02 09:18:28 +0000",
+            "comment": "Update the version on trunk"
+        },
+        {
+            "c_hash": "6704ee02",
+            "date": "2013-09-05 06:57:49 +0000",
+            "comment": "Add Apache license header in .gitignore"
+        },
+        {
+            "c_hash": "f8b4d2a1",
+            "date": "2014-02-07 06:35:27 +0000",
+            "comment": "upgrade some plugins"
+        },
+        {
+            "c_hash": "2c6e0319",
+            "date": "2014-02-07 06:39:40 +0000",
+            "comment": "use java concurent librairies"
+        },
+        {
+            "c_hash": "795facfb",
+            "date": "2014-02-07 06:50:45 +0000",
+            "comment": "java 1.5"
+        },
+        {
+            "c_hash": "6adf1cb5",
+            "date": "2014-02-07 06:50:54 +0000",
+            "comment": "upgrade slf4j"
+        },
+        {
+            "c_hash": "c83ff45b",
+            "date": "2014-02-07 07:02:00 +0000",
+            "comment": "formatting"
+        },
+        {
+            "c_hash": "899505eb",
+            "date": "2014-03-21 11:25:08 +0000",
+            "comment": "Fix version in controller modules"
+        }
+    ]
+}

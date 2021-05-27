@@ -1,0 +1,3673 @@
+{
+    "project": "james-mime4j",
+    "git_url": "https://github.com/apache/james-mime4j.git",
+    "last_commit": "8a109f0c",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "0a32c4a1",
+            "date": "2005-05-03 13:44:19 +0000",
+            "comment": "MIME4J -- stream based MIME parser"
+        },
+        {
+            "c_hash": "c1343990",
+            "date": "2005-06-05 11:24:03 +0000",
+            "comment": "Initial import."
+        },
+        {
+            "c_hash": "232c240c",
+            "date": "2005-06-05 12:15:02 +0000",
+            "comment": "Add SimpleContentHandler to make it more straightforward to write streaming parsers."
+        },
+        {
+            "c_hash": "4e78a99d",
+            "date": "2005-06-07 09:29:41 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/james/mime4j/trunk@188738 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "8478babd",
+            "date": "2005-06-07 11:36:37 +0000",
+            "comment": "Fixed bug causing OutOfMemoryError when decoding strings which contain =? but are not encoded words."
+        },
+        {
+            "c_hash": "c73dc846",
+            "date": "2005-06-21 20:19:04 +0000",
+            "comment": "Added a catch clause for UnsupportedOperationException to the static initializer to fix an issue when running under Java 1.5."
+        },
+        {
+            "c_hash": "f62dba13",
+            "date": "2005-06-21 20:20:41 +0000",
+            "comment": "Set default source file encoding to 8859-1. Set default source and class file target to Java 1.3."
+        },
+        {
+            "c_hash": "62583e85",
+            "date": "2006-01-09 07:16:02 +0000",
+            "comment": "Released 0.2"
+        },
+        {
+            "c_hash": "e5935e04",
+            "date": "2006-01-09 16:25:14 +0000",
+            "comment": "Changed current version to 0.3-SNAPSHOT"
+        },
+        {
+            "c_hash": "7645704b",
+            "date": "2006-02-08 19:09:30 +0000",
+            "comment": "Changed parse() to parse Reply-To as AddressListField"
+        },
+        {
+            "c_hash": "9806a3ad",
+            "date": "2006-08-31 12:21:01 +0000",
+            "comment": "Removed trunk folders/files to leave space to the maven2-port merge"
+        },
+        {
+            "c_hash": "256c4a99",
+            "date": "2006-08-31 12:22:11 +0000",
+            "comment": "Copying maven2-port to trunk..."
+        },
+        {
+            "c_hash": "c644c9cc",
+            "date": "2006-08-31 12:22:35 +0000",
+            "comment": "Copying maven2-port to trunk..."
+        },
+        {
+            "c_hash": "312381e2",
+            "date": "2006-08-31 12:23:08 +0000",
+            "comment": "Copying maven2-port to trunk..."
+        },
+        {
+            "c_hash": "67a054fb",
+            "date": "2006-08-31 12:54:43 +0000",
+            "comment": "Updated testmsgs folder reference in test script."
+        },
+        {
+            "c_hash": "b9ddb88c",
+            "date": "2006-09-06 19:52:27 +0000",
+            "comment": "Applied patch provided by Rob Oxspring. This patch introduces a FieldParser interface and a DelegatingFieldParser implementation that delegates parsing to other parsers based on the field name. The DefaultFieldParser delegates to static inner classes of each of the existing Field implementations. The net result is that users can now more asily add custom field parsers."
+        },
+        {
+            "c_hash": "7dfbedea",
+            "date": "2006-09-08 20:09:49 +0000",
+            "comment": "Updated repository references in pom.xml"
+        },
+        {
+            "c_hash": "2395df64",
+            "date": "2006-09-10 08:03:10 +0000",
+            "comment": "Made some changes to better comply with ASF release rules. Added Rob Oxspring as a contributor."
+        },
+        {
+            "c_hash": "f8058d28",
+            "date": "2006-09-10 08:03:51 +0000",
+            "comment": "Removed some things which have already been done."
+        },
+        {
+            "c_hash": "dbc3e4f2",
+            "date": "2006-09-22 19:10:41 +0000",
+            "comment": "First step towards a secure (managed) maven2 build (MIME4J-1). This one does not include ibiblio libraries in the final package."
+        },
+        {
+            "c_hash": "55aeaac2",
+            "date": "2006-09-24 22:26:53 +0000",
+            "comment": "Updated mime4j website to reflect the existence of new JIRA space instead of old sourceforge tracker (MIME4J-2)"
+        },
+        {
+            "c_hash": "9f31f28b",
+            "date": "2006-09-26 17:47:07 +0000",
+            "comment": "Fixed project url for relative paths (JAMES-634)"
+        },
+        {
+            "c_hash": "db705fdb",
+            "date": "2006-11-15 11:39:45 +0000",
+            "comment": "Fixed broken link on mime4j homepage (JAMES-692)"
+        },
+        {
+            "c_hash": "f75478b8",
+            "date": "2007-02-19 07:41:05 +0000",
+            "comment": "Remove @author tags"
+        },
+        {
+            "c_hash": "31fc20a5",
+            "date": "2007-02-21 12:07:40 +0000",
+            "comment": "Add some javadocs, remove deprecated methods"
+        },
+        {
+            "c_hash": "a455e654",
+            "date": "2007-02-22 12:00:19 +0000",
+            "comment": "Add simple write support."
+        },
+        {
+            "c_hash": "f83f9989",
+            "date": "2007-02-22 12:32:48 +0000",
+            "comment": "Add javadocs Remove duplicate code Header.toString() representation needs to have CRLFCRLF"
+        },
+        {
+            "c_hash": "8bd9e074",
+            "date": "2007-02-22 13:46:22 +0000",
+            "comment": "Fix tabs Add missing license headers"
+        },
+        {
+            "c_hash": "7daa939a",
+            "date": "2007-02-22 16:45:51 +0000",
+            "comment": "Remove TODO Get sure the CLRFCLRF is handled correctly"
+        },
+        {
+            "c_hash": "10e4c98e",
+            "date": "2007-02-23 11:44:00 +0000",
+            "comment": "Get sure we use the right charset for while writing to the OutputStream"
+        },
+        {
+            "c_hash": "1fae7aff",
+            "date": "2007-03-26 06:42:02 +0000",
+            "comment": "The encoded word '=?ISO-8859-1?Q?' caused an IndexOutOfBoundsException to be logged and then the empty string was returned. DecoderUtil will now deal with this encoded word and an exception won't be logged."
+        },
+        {
+            "c_hash": "9d2b15bd",
+            "date": "2007-03-28 13:54:52 +0000",
+            "comment": "Java 1.4 compatibility issues (BufferedWriter.append is Java 5 specific)"
+        },
+        {
+            "c_hash": "385099cd",
+            "date": "2007-03-31 14:59:35 +0000",
+            "comment": "Add javadocs Remove unused stuff"
+        },
+        {
+            "c_hash": "b2fa65e3",
+            "date": "2007-04-23 12:11:16 +0000",
+            "comment": "Use default charset of ISO8859-1 if charset could not retrived. Thx to GX; -)"
+        },
+        {
+            "c_hash": "d5ee778b",
+            "date": "2007-04-24 11:06:05 +0000",
+            "comment": "Fallback defaultcharset if writing and the charset can not detected"
+        },
+        {
+            "c_hash": "c62e73f8",
+            "date": "2007-04-24 13:07:53 +0000",
+            "comment": "Fix typo.. Thx to Stefano for reporting"
+        },
+        {
+            "c_hash": "e7cb811a",
+            "date": "2007-04-26 11:01:39 +0000",
+            "comment": "Change NOTICE"
+        },
+        {
+            "c_hash": "4f671999",
+            "date": "2007-04-26 12:22:06 +0000",
+            "comment": "Removed all references to Sourceforge. Added a note about mvn eclipse:eclipse not generating the .classpath properly for the javacc generated sources."
+        },
+        {
+            "c_hash": "390ef344",
+            "date": "2007-04-26 22:24:12 +0000",
+            "comment": "Changed MessageParserTest to not create .mime4j. files unless there is an error (the expected file is not found or it is different). This way we don't create duplicated mime4j files in source tree. Removed unused mime4j files from resources."
+        },
+        {
+            "c_hash": "92f5b486",
+            "date": "2007-04-26 22:56:11 +0000",
+            "comment": "Repackaged org.mime4j to org.apache.james.mime4j."
+        },
+        {
+            "c_hash": "6f427d51",
+            "date": "2007-04-26 23:05:29 +0000",
+            "comment": "Remove old package folders."
+        },
+        {
+            "c_hash": "3b379c21",
+            "date": "2007-04-26 23:06:50 +0000",
+            "comment": "Remove old package folders."
+        },
+        {
+            "c_hash": "1b38f38d",
+            "date": "2007-04-26 23:07:56 +0000",
+            "comment": "Remove old package folders."
+        },
+        {
+            "c_hash": "2bba3693",
+            "date": "2007-04-27 10:52:51 +0000",
+            "comment": "Added svn:ignore for eclipse/maven artifacts"
+        },
+        {
+            "c_hash": "333978d3",
+            "date": "2007-04-27 10:53:51 +0000",
+            "comment": "Remove old package folders."
+        },
+        {
+            "c_hash": "4c5b5aa9",
+            "date": "2007-04-27 10:56:01 +0000",
+            "comment": "Remove old package folders."
+        },
+        {
+            "c_hash": "f877748a",
+            "date": "2007-04-27 10:57:35 +0000",
+            "comment": "Added missing ASF license header for MessageTree (MIME4J-10)"
+        },
+        {
+            "c_hash": "9ecd1fd2",
+            "date": "2007-04-27 11:01:16 +0000",
+            "comment": "Remove old package folders."
+        },
+        {
+            "c_hash": "14052507",
+            "date": "2007-04-27 13:14:22 +0000",
+            "comment": "Fix possible NPE in MailboxList. When null was passed as parameter to constructor it was not correctly initialized. (found writing coverage unit tests)."
+        },
+        {
+            "c_hash": "7c505168",
+            "date": "2007-04-27 13:29:58 +0000",
+            "comment": "Add few unit tests (+3% coverage) for address beans."
+        },
+        {
+            "c_hash": "d5d3cef0",
+            "date": "2007-04-27 13:34:05 +0000",
+            "comment": "Remove test messages because of unknown copyright / not compatible licensing (MIME4J-11) We'll add back new messages created from scratch."
+        },
+        {
+            "c_hash": "a88b4705",
+            "date": "2007-04-27 14:00:15 +0000",
+            "comment": "Fix a just added test for a ClassCastException added before commit."
+        },
+        {
+            "c_hash": "a40bd691",
+            "date": "2007-04-27 14:02:46 +0000",
+            "comment": "Changed the mime parser test so that when an expected file cannot be found it will create a new .mime4j.xml file with the obtained result. This file should be reviewed and the \".mime4j\" should be removed so to make it an effective test."
+        },
+        {
+            "c_hash": "c79ed4f9",
+            "date": "2007-04-27 14:03:11 +0000",
+            "comment": "Added 3 simple test messages and expected results."
+        },
+        {
+            "c_hash": "3660cb67",
+            "date": "2007-04-27 14:15:18 +0000",
+            "comment": "A simple mime message with a binary attachment."
+        },
+        {
+            "c_hash": "93dcfa41",
+            "date": "2007-04-28 15:44:48 +0000",
+            "comment": "Added parent/skin dependencies to the local repository. Added a couple of comments to pom.xml about how to workaround some m2 issues handling our \"hacked\" local repository."
+        },
+        {
+            "c_hash": "13277975",
+            "date": "2007-04-28 15:45:35 +0000",
+            "comment": "Added some missing expected result for previously added tests."
+        },
+        {
+            "c_hash": "8298e595",
+            "date": "2007-04-28 15:48:30 +0000",
+            "comment": "Renaming repos/third-party-m1 to stage to better follow the new server-modular structure."
+        },
+        {
+            "c_hash": "0fbc5fe1",
+            "date": "2007-04-28 15:48:57 +0000",
+            "comment": "Renaming repos/third-party-m1 to stage to better follow the new server-modular structure."
+        },
+        {
+            "c_hash": "bb38542d",
+            "date": "2007-04-28 15:49:51 +0000",
+            "comment": "Renaming repos/third-party-m1 to stage to better follow the new server-modular structure."
+        },
+        {
+            "c_hash": "d7a87581",
+            "date": "2007-04-28 15:54:01 +0000",
+            "comment": "Renaming repos/third-party-m1 to stage to better follow the new server-modular structure."
+        },
+        {
+            "c_hash": "0c17432f",
+            "date": "2007-04-30 23:58:09 +0000",
+            "comment": "Remove binaries with unknown license."
+        },
+        {
+            "c_hash": "733c5a70",
+            "date": "2007-05-04 17:32:06 +0000",
+            "comment": "Remove the close of the given OutputStream (was done by mistake). See MIME4J-12 (Thx to GX for reporting)"
+        },
+        {
+            "c_hash": "01d85b33",
+            "date": "2007-05-08 22:56:28 +0000",
+            "comment": "Created assemblies descriptors for bin, src and source packages. Updated site to have a better order (download => build and not viceversa) Fixed syntax validity for build page. Updated log4j to 1.2.14 Updated local staged james snapshots dependencies. Removed LICENSE/NOTICE in favor of maven generated ones."
+        },
+        {
+            "c_hash": "c2f6e563",
+            "date": "2007-05-08 22:57:27 +0000",
+            "comment": "Forgot 3 files in previous commit"
+        },
+        {
+            "c_hash": "2d990ffc",
+            "date": "2007-05-08 23:04:28 +0000",
+            "comment": "Removed apidocs/xrefs generation by mistakes"
+        },
+        {
+            "c_hash": "8373f6e2",
+            "date": "2007-05-10 16:56:05 +0000",
+            "comment": "Moved developers/contributors to main james-parent artifact."
+        },
+        {
+            "c_hash": "d571e3c8",
+            "date": "2007-05-10 23:02:19 +0000",
+            "comment": "Include the example in the binary package (it is small and may be useful for library users) Generate javadoc.jar and include javadocs folder in the binary distribution."
+        },
+        {
+            "c_hash": "de8994c6",
+            "date": "2007-05-10 23:21:34 +0000",
+            "comment": "Update staged artifacts to latest james-project"
+        },
+        {
+            "c_hash": "a8a54f27",
+            "date": "2007-05-11 00:03:57 +0000",
+            "comment": "Fix binary build: it was no more including the main jar :-/"
+        },
+        {
+            "c_hash": "3200723a",
+            "date": "2007-05-11 11:48:30 +0000",
+            "comment": "Added missing NOTICE entry for junit."
+        },
+        {
+            "c_hash": "154bdd67",
+            "date": "2007-05-13 13:35:34 +0000",
+            "comment": "Add missing dependency (apache-jar-resource-bundle) to the local stage folder."
+        },
+        {
+            "c_hash": "12c163f9",
+            "date": "2007-05-14 17:37:39 +0000",
+            "comment": "Created a simple BUILDING.txt file (MIME4J-15)"
+        },
+        {
+            "c_hash": "ca10bb5b",
+            "date": "2007-05-14 17:38:10 +0000",
+            "comment": "Changed artifactId to apache-mime4j (MIME4J-14) Added more informations to MANIFEST.MF (MIME4J-13)"
+        },
+        {
+            "c_hash": "b26da87a",
+            "date": "2007-05-15 01:11:59 +0000",
+            "comment": "Changed non-ascii chars in string to unicode literals \"\\uXXXX\" (MIME4J-7)"
+        },
+        {
+            "c_hash": "e14c71cc",
+            "date": "2007-05-20 15:13:37 +0000",
+            "comment": "preparing release: updated parent dependency to non-SNAPSHOT versions (and updated the stage folder as a consequence)"
+        },
+        {
+            "c_hash": "2e4987e9",
+            "date": "2007-05-24 15:42:01 +0000",
+            "comment": "Remove jars/pom/xml to replace with \"official\" ones"
+        },
+        {
+            "c_hash": "c4d825d5",
+            "date": "2007-05-24 15:43:03 +0000",
+            "comment": "Add \"official\" jars/pom/xml"
+        },
+        {
+            "c_hash": "88f6e5d9",
+            "date": "2007-05-24 16:02:12 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-mime4j-0.3"
+        },
+        {
+            "c_hash": "e42fc46f",
+            "date": "2007-05-24 16:02:27 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "25af6e2b",
+            "date": "2007-05-25 13:17:21 +0000",
+            "comment": "Allow exceptions from a ContentHandler (Thx to Jukka). See MIME4J-16"
+        },
+        {
+            "c_hash": "9eea6283",
+            "date": "2007-06-05 12:46:17 +0000",
+            "comment": "Resolved issue MIME4J-17. Initialization of custom TempStorage using system properties  should now work."
+        },
+        {
+            "c_hash": "a8c31a29",
+            "date": "2007-07-02 14:33:02 +0000",
+            "comment": "Fixed a StringIndexOutOfBoundsException when parsing addresses with local parts containing an empty quoted-string followed by a dot-atom."
+        },
+        {
+            "c_hash": "31a7b50e",
+            "date": "2007-07-16 16:53:54 +0000",
+            "comment": "Updated header generation"
+        },
+        {
+            "c_hash": "906f8ea6",
+            "date": "2007-07-23 19:54:08 +0000",
+            "comment": "Pull parser patch https://issues.apache.org/jira/browse/MIME4J-19. Contributed by Jochen Wiedmann."
+        },
+        {
+            "c_hash": "a8d90d9c",
+            "date": "2007-07-24 21:01:35 +0000",
+            "comment": "Factored out cursor. This will allow an easy byte buffer implementation."
+        },
+        {
+            "c_hash": "edf9d0c3",
+            "date": "2007-08-10 16:30:31 +0000",
+            "comment": "Remove unnecessary implementations of read(byte). Part of https://issues.apache.org/jira/browse/MIME4J-27. Thanks to Jochen Wiedmann."
+        },
+        {
+            "c_hash": "966a27ca",
+            "date": "2007-08-10 16:50:18 +0000",
+            "comment": "Store field name and value data. https://issues.apache.org/jira/browse/MIME4J-25. Contributed by Jochen Wiedmann."
+        },
+        {
+            "c_hash": "f472147e",
+            "date": "2007-08-11 09:40:58 +0000",
+            "comment": "No need to log these at warn. https://issues.apache.org/jira/browse/MIME4J-23. Jochen Wiedmann."
+        },
+        {
+            "c_hash": "d003bbd1",
+            "date": "2007-09-03 22:29:14 +0000",
+            "comment": "Javadoc syntax fix (thanks to Jochen Wiedmann)"
+        },
+        {
+            "c_hash": "513969ca",
+            "date": "2007-09-03 22:30:57 +0000",
+            "comment": "Introduced StringArrayMap as an utility class for mime4j users (MIME4J-24) Patch submitted by Jochen Wiedmann."
+        },
+        {
+            "c_hash": "d34dd48e",
+            "date": "2007-09-04 21:56:58 +0000",
+            "comment": "Let BodyDescriptor be an interface and move current behavior to DefaultBodyDescriptor (MIME4J-22) - [JW#2] Let BodyDescriptor provide full blown access to the headers - Patch submitted by Jochen Wiedmann"
+        },
+        {
+            "c_hash": "f7f9a0ba",
+            "date": "2007-09-04 22:04:10 +0000",
+            "comment": "Avoid MimeUtil instantiability, Use ContentTransferEncodingField constants \"base64\" and \"quoted-printable\" when possible."
+        },
+        {
+            "c_hash": "37e7ad96",
+            "date": "2007-09-04 22:08:34 +0000",
+            "comment": "move BodyDescriptor creation to protected fields. This makes more clear that the test is generic for BodyDescriptor and just test this interface from DefaultBodyDescriptor. Furthermore this allow reuse of the class code for other BodyDescriptor implementations (made them protected)."
+        },
+        {
+            "c_hash": "d1f79405",
+            "date": "2007-09-08 14:35:06 +0000",
+            "comment": "Add support for strict validation. Implemented by adding event monitor. Developed in https://issues.apache.org/jira/browse/MIME4J-23."
+        },
+        {
+            "c_hash": "939de012",
+            "date": "2007-09-19 20:07:47 +0000",
+            "comment": "Fixed NPE MIME4J-28. Fix suggested by Ron Lissack in https://issues.apache.org/jira/browse/MIME4J-28."
+        },
+        {
+            "c_hash": "127ebac7",
+            "date": "2007-09-20 13:32:52 +0000",
+            "comment": "Removed cyclic dependencies (MIME4J-29) - Moved SimpleContentHandler from mime4j root package to message. It has depedencies on the message package and no one depends on this. So either \"message\" or a new package. - Moved the encoding string constants from ContentTransferEncodingField to MimeUtil. - Removed static method parse from DateTime and move the logic inside DateTimeField.Parse class (the only user of that code)."
+        },
+        {
+            "c_hash": "9ddc39b6",
+            "date": "2007-09-26 10:07:32 +0000",
+            "comment": "Updated m2 parent to the just release james-project-1.2: this should fix a website building skin issue."
+        },
+        {
+            "c_hash": "d7f40c9e",
+            "date": "2007-10-22 10:47:51 +0000",
+            "comment": "Removed cruft from start of pom."
+        },
+        {
+            "c_hash": "30567164",
+            "date": "2008-01-27 15:03:41 +0000",
+            "comment": "MIME4J-33 - Refine Log4j dependency. Contributed by Oleg Kalnichevski https://issues.apache.org/jira/browse/MIME4J-33."
+        },
+        {
+            "c_hash": "76435309",
+            "date": "2008-01-29 21:30:57 +0000",
+            "comment": "MIME4J-32 Multipart#writeTo generates invalid content; does not flush writer's buffer (https://issues.apache.org/jira/browse/MIME4J-32). Patch adds flushes between mime parts and fixes some bad boundary logic. Contributed by Oleg Kalnichevski."
+        },
+        {
+            "c_hash": "d8e6a35b",
+            "date": "2008-02-04 21:10:35 +0000",
+            "comment": "MIME4J-35 Split BodyDescriptor into a mutable / immutable interface pair (https://issues.apache.org/jira/browse/MIME4J-35). Contributed by Oleg Kalnichevski. Amended by myself: renamed ContentProperties -> ContentDescriptor for consistency."
+        },
+        {
+            "c_hash": "a3963bd0",
+            "date": "2008-02-10 11:28:21 +0000",
+            "comment": "MIM4J-34 Fix header charset handling. Applied revised and more flexible version of the patch. Contributed by Oleg Kalnichevski (https://issues.apache.org/jira/browse/MIME4J-34)."
+        },
+        {
+            "c_hash": "3e8d760f",
+            "date": "2008-02-12 21:11:35 +0000",
+            "comment": "Added new no recurse mode alongside recurse and raw. No recurse prevents the parser recursing into embedded RFC822 objects and instead treats them as unstructured."
+        },
+        {
+            "c_hash": "4efef4a3",
+            "date": "2008-02-20 18:37:05 +0000",
+            "comment": "Allow getInputStream for the contents of a multipart message. This allows more efficient then reading of data."
+        },
+        {
+            "c_hash": "37cf3c75",
+            "date": "2008-02-20 19:44:25 +0000",
+            "comment": "Ensure that END_BODYPART is reported when a message is finished."
+        },
+        {
+            "c_hash": "b3f8b0f1",
+            "date": "2008-03-08 16:05:56 +0000",
+            "comment": "Added getReader a conveniance method that returns a correct configured reader suitable for decoding bodies."
+        },
+        {
+            "c_hash": "c5d3b8bd",
+            "date": "2008-03-09 07:42:10 +0000",
+            "comment": "Allow getBodyDescriptor when in preamble or epilogue"
+        },
+        {
+            "c_hash": "e2291241",
+            "date": "2008-04-10 15:49:25 +0000",
+            "comment": "Added ALv2 header to this class created by me as result of a past refactoring."
+        },
+        {
+            "c_hash": "d1c0e820",
+            "date": "2008-04-10 15:50:13 +0000",
+            "comment": "Replaced previous junit-3.8.1.pom with the one created by me for jSPF few days ago (so this is an ALv2 licensed file)"
+        },
+        {
+            "c_hash": "b6e1c745",
+            "date": "2008-04-10 15:51:02 +0000",
+            "comment": "Added ALv2 license header to 3 Test files created by Robert: Robert please confirm that you created this and you simply forgot the headers."
+        },
+        {
+            "c_hash": "6282e84e",
+            "date": "2008-04-10 15:54:17 +0000",
+            "comment": "Added versions to plugins (build reproducibility), added rat to the verify goal, configured rat to check the project and exclude some test resources (created by us and not having a way to insert a comment)."
+        },
+        {
+            "c_hash": "0945b02e",
+            "date": "2008-04-14 15:23:08 +0000",
+            "comment": "Fix next release number."
+        },
+        {
+            "c_hash": "08a1c54e",
+            "date": "2008-05-25 09:43:38 +0000",
+            "comment": "No longer dependent on regex"
+        },
+        {
+            "c_hash": "6e8d1e3a",
+            "date": "2008-05-25 09:45:07 +0000",
+            "comment": "Confirmed and fixed that content-Type parameter values that contain only digits are ignored MIME4J-41 https://issues.apache.org/jira/browse/MIME4J-41."
+        },
+        {
+            "c_hash": "c83ed25a",
+            "date": "2008-05-25 10:22:48 +0000",
+            "comment": "Confirmed and fixed MIME4J-40 Message.MessageBuilder#startMultupart does not set multipart subType https://issues.apache.org/jira/browse/MIME4J-40."
+        },
+        {
+            "c_hash": "40424f06",
+            "date": "2008-05-25 10:56:26 +0000",
+            "comment": "Confirmed and fixed MIME4J-36 NullPointerException in Header.writeTo with missing Content-Type https://issues.apache.org/jira/browse/MIME4J-36."
+        },
+        {
+            "c_hash": "998ef6d6",
+            "date": "2008-05-25 13:55:02 +0000",
+            "comment": "Confirmed and fixed MIME4J-36 NullPointerException in Header.writeTo with missing Content-Type https://issues.apache.org/jira/browse/MIME4J-36."
+        },
+        {
+            "c_hash": "c3319669",
+            "date": "2008-05-25 14:30:55 +0000",
+            "comment": "Pass mode through to all writeTo calls"
+        },
+        {
+            "c_hash": "0a5c7bb6",
+            "date": "2008-05-25 18:42:23 +0000",
+            "comment": "Confirmed and fixed MIME4J-37 Wrong implementation of TempFileBinaryBody.writeTo https://issues.apache.org/jira/browse/MIME4J-37 for the binary Base64 encoded case only. Binaries transfer encoded with printed-quotable."
+        },
+        {
+            "c_hash": "6b69ca5d",
+            "date": "2008-05-26 15:00:50 +0000",
+            "comment": "No need to keep main around"
+        },
+        {
+            "c_hash": "fa6ce4d8",
+            "date": "2008-05-26 15:02:46 +0000",
+            "comment": "Added quoted printable encoding support for binaries. Completes fixes and test for MIME4J-36 (Wrong implementation of TempFileBinaryBody.writeTo) https://issues.apache.org/jira/browse/MIME4J-37"
+        },
+        {
+            "c_hash": "153257ad",
+            "date": "2008-05-27 20:53:50 +0000",
+            "comment": "Remove main source dependency on CommonsIO. Retained test dependency."
+        },
+        {
+            "c_hash": "d6bc426e",
+            "date": "2008-05-28 16:43:14 +0000",
+            "comment": "Make exception handling heirarchy more concise."
+        },
+        {
+            "c_hash": "f66774ac",
+            "date": "2008-05-28 18:40:20 +0000",
+            "comment": "Upgraded javacc plugin. ParseExceptions now modified to extend MimeException."
+        },
+        {
+            "c_hash": "b50e9cbb",
+            "date": "2008-05-28 18:53:37 +0000",
+            "comment": "Added tag list plugin to reports"
+        },
+        {
+            "c_hash": "0781c586",
+            "date": "2008-05-28 18:56:41 +0000",
+            "comment": "Too tricky to support: let's just forget it."
+        },
+        {
+            "c_hash": "768b53e6",
+            "date": "2008-05-28 18:57:04 +0000",
+            "comment": "Update license header"
+        },
+        {
+            "c_hash": "d1a62fc7",
+            "date": "2008-05-28 21:59:09 +0000",
+            "comment": "Think this fixes MIME4J-20 Fix duplicated generation of source/sources jars for maven repository, https://issues.apache.org/jira/browse/MIME4J-20. Thanks to Oleg Kalnichevski."
+        },
+        {
+            "c_hash": "0305055d",
+            "date": "2008-05-29 08:32:17 +0000",
+            "comment": "Fix java 1.4 compatibility issue: IOException in 1.4 does not have the nested exception constructor (MIME4J-43)"
+        },
+        {
+            "c_hash": "efbce023",
+            "date": "2008-05-29 08:33:21 +0000",
+            "comment": "Added a related project menu with httpmime inside (I already published a website based on this updated site.xml and forgot to commit the site.xml itself)."
+        },
+        {
+            "c_hash": "3727c7c4",
+            "date": "2008-05-29 09:25:35 +0000",
+            "comment": "Simplified maven javacc plugin configuration removing workarounds for bugs in previous version (MIME4J-20)."
+        },
+        {
+            "c_hash": "f54d37a4",
+            "date": "2008-05-29 11:40:21 +0000",
+            "comment": "Added tests for ParseExceptions to extend MimeException."
+        },
+        {
+            "c_hash": "840d09a8",
+            "date": "2008-05-29 20:29:15 +0000",
+            "comment": "Switching to new goal enables copying."
+        },
+        {
+            "c_hash": "4cab2a8d",
+            "date": "2008-05-29 22:39:37 +0000",
+            "comment": "Class.asSubclass is a java5 method. Translated to Class.isAssignable to fix java 1.4 compatibility."
+        },
+        {
+            "c_hash": "230909a6",
+            "date": "2008-05-29 22:40:37 +0000",
+            "comment": "Removed the manual javacc execution (integrated in jjtree-javac by Robert). Added jjdoc BNF generation to website!"
+        },
+        {
+            "c_hash": "e6a9127c",
+            "date": "2008-05-30 13:06:54 +0000",
+            "comment": "NODE_PACKAGE and PACKAGE_NAME are not valid directives and are ignored (jjdoc pointed out this)."
+        },
+        {
+            "c_hash": "74df48ff",
+            "date": "2008-05-30 13:20:00 +0000",
+            "comment": "Test fix: startMultipart was not overridden for real because of argument mismatch."
+        },
+        {
+            "c_hash": "ded6feba",
+            "date": "2008-05-30 13:20:27 +0000",
+            "comment": "Removed unnecessary casts and imports."
+        },
+        {
+            "c_hash": "bb6607a6",
+            "date": "2008-05-31 23:57:51 +0000",
+            "comment": "Recoding the sources in US-ASCII to get rid of encoding problems."
+        },
+        {
+            "c_hash": "784375f4",
+            "date": "2008-06-12 17:02:21 +0000",
+            "comment": "Support for OSGI"
+        },
+        {
+            "c_hash": "d956661d",
+            "date": "2008-06-12 17:30:38 +0000",
+            "comment": "Added missing Vendor-Id"
+        },
+        {
+            "c_hash": "e09af333",
+            "date": "2008-06-14 22:08:41 +0000",
+            "comment": "Parse for RFC 2045 mime-version field values"
+        },
+        {
+            "c_hash": "78699d46",
+            "date": "2008-06-17 18:52:48 +0000",
+            "comment": "Parse and store Content-Description Content-ID"
+        },
+        {
+            "c_hash": "558450a2",
+            "date": "2008-06-21 08:43:37 +0000",
+            "comment": "Factor out mutable interface. Interface exposed to reader is now read only."
+        },
+        {
+            "c_hash": "365bd5ae",
+            "date": "2008-06-21 08:53:43 +0000",
+            "comment": "Renamed method so that it's clear which parameters are referred to."
+        },
+        {
+            "c_hash": "f0317b02",
+            "date": "2008-06-21 09:07:28 +0000",
+            "comment": "Factored RFC2045 properties into interface"
+        },
+        {
+            "c_hash": "13fab134",
+            "date": "2008-06-21 09:17:27 +0000",
+            "comment": "Better to include name as well as number"
+        },
+        {
+            "c_hash": "13198249",
+            "date": "2008-06-21 10:34:50 +0000",
+            "comment": "Use a single superclass to test both implementation of BodyDescriptor"
+        },
+        {
+            "c_hash": "fee6200c",
+            "date": "2008-06-21 13:31:09 +0000",
+            "comment": "Pushed trimming and unfolding logic into utility method. Factored out contents of long if statement."
+        },
+        {
+            "c_hash": "f4f8b251",
+            "date": "2008-06-21 16:17:35 +0000",
+            "comment": "RFC2183 Content Disposition parsing"
+        },
+        {
+            "c_hash": "a041af42",
+            "date": "2008-06-22 10:34:32 +0000",
+            "comment": "Support for parsing RFC3066 Content-Language headers"
+        },
+        {
+            "c_hash": "323ecf3f",
+            "date": "2008-06-24 20:03:44 +0000",
+            "comment": "Parser for structured fields. This should copes with folding and comments."
+        },
+        {
+            "c_hash": "494eace0",
+            "date": "2008-06-25 21:08:13 +0000",
+            "comment": "Support for Content-Location"
+        },
+        {
+            "c_hash": "1cdbde4a",
+            "date": "2008-07-01 20:31:51 +0000",
+            "comment": "MIME4J-5 Performance improvements. First of a sequence of patches. Contributed by Oleg Kalnichevski. See https://issues.apache.org/jira/browse/MIME4J-5."
+        },
+        {
+            "c_hash": "103a6912",
+            "date": "2008-07-05 15:31:17 +0000",
+            "comment": "Second patch from MIM4J-5 https://issues.apache.org/jira/browse/MIME4J-5. Contributed by Oleg Kalnichevski. Factors out an abstract superclass and interface for pull parser state machine. This will ease the creation of alternatives to MimeTokenStream. Factors state constants into separate classes to improve readability. Removes Cursor. This was originally added to allow first class support for nio. The design cost of this abstract is higher than the likely performance gain."
+        },
+        {
+            "c_hash": "869168e6",
+            "date": "2008-07-05 19:23:12 +0000",
+            "comment": "Fix NullPointerException"
+        },
+        {
+            "c_hash": "02ac5631",
+            "date": "2008-07-05 19:30:18 +0000",
+            "comment": "Doh! Patch doesn't delete, just empties."
+        },
+        {
+            "c_hash": "422526fc",
+            "date": "2008-07-05 20:56:25 +0000",
+            "comment": "Added support for Content-MD5"
+        },
+        {
+            "c_hash": "a9e0e511",
+            "date": "2008-07-06 10:23:15 +0000",
+            "comment": "This change breaks backwards compatibility but I think is justified. I agree that defaulting is appropriate for TEXT types but is very unreliable for other types. For many types conversion to characters is not appropriate (for example, image/png). For other types, the type itself contains charset meta-data (for example application/xhtml+xml). By defaulting in these cases information is lost: it is not possible to destinguish between the case when the charset parameters is explicitly set to us-ascii and when the charset is unset. Non TEXT types cannot be assumed to default to us-ascii and so this behaviour is potentially dangerous."
+        },
+        {
+            "c_hash": "68dceaa2",
+            "date": "2008-07-06 19:41:11 +0000",
+            "comment": "Extra test coverage."
+        },
+        {
+            "c_hash": "810d1507",
+            "date": "2008-07-06 19:52:58 +0000",
+            "comment": "Fix changing recursion mode half way through an operation"
+        },
+        {
+            "c_hash": "94f24e26",
+            "date": "2008-07-07 20:23:15 +0000",
+            "comment": "Added new recursion mode."
+        },
+        {
+            "c_hash": "48959f0c",
+            "date": "2008-07-08 20:16:45 +0000",
+            "comment": "Trying to track down why Mime4J now longer parses complex nested messages correctly."
+        },
+        {
+            "c_hash": "6c573818",
+            "date": "2008-07-08 20:44:06 +0000",
+            "comment": "MIME4J-5 Performance patch 3, https://issues.apache.org/jira/browse/MIME4J-5. Contributed by Oleg Kalnichevski. This patch eliminates one-byte-reads for common use cases; eliminates the synchronised StringBuffer and reduces memory footprint."
+        },
+        {
+            "c_hash": "b0d1d2e9",
+            "date": "2008-07-09 18:32:27 +0000",
+            "comment": "Added toString"
+        },
+        {
+            "c_hash": "5e5b63bf",
+            "date": "2008-07-09 19:04:37 +0000",
+            "comment": "MIME4J-5 Performance improvements patch 4, https://issues.apache.org/jira/browse/MIME4J-5. Contributed by Oleg Kalnichevski. Fixes issue caused by reset when parsing complex messages with embedded mail. Other minor performance improvements."
+        },
+        {
+            "c_hash": "78004152",
+            "date": "2008-07-09 20:13:50 +0000",
+            "comment": "MIME4J-30 Transfer-encoding should be transparent, https://issues.apache.org/jira/browse/MIME4J-30. Committed patch contributed by Oleg Kalnichevski. Introduces transparent encoding but makes it optional."
+        },
+        {
+            "c_hash": "a725d101",
+            "date": "2008-07-10 15:55:41 +0000",
+            "comment": "Remove unused import (created a declared but unexisting cyclic depencies between packages)"
+        },
+        {
+            "c_hash": "c4dbe489",
+            "date": "2008-07-10 15:57:39 +0000",
+            "comment": "Remove imports from the same package."
+        },
+        {
+            "c_hash": "cc9cd928",
+            "date": "2008-07-10 19:12:39 +0000",
+            "comment": "Replace method added in Java1.5. Contributed by Oleg Kalnichevski."
+        },
+        {
+            "c_hash": "671da21b",
+            "date": "2008-07-10 19:37:09 +0000",
+            "comment": "Resolved MIME4J-47: Applied patch contributed by Oleg Kalnichevski."
+        },
+        {
+            "c_hash": "704df2aa",
+            "date": "2008-07-10 22:08:19 +0000",
+            "comment": "For some JVMs, Sun elects to throw a IOException when an InputStreamReader encounters a zero. For example, see http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4684515. This prevents JAMES IMAP from functioning correct when faced with some large emails. Most clients will simply call this method again if zero is returned so I think that this fix should reasonably safe but please review."
+        },
+        {
+            "c_hash": "80ae6608",
+            "date": "2008-07-11 08:58:23 +0000",
+            "comment": "Resolved MIME4J-48: Messages containing qp or base64 encoded embedded messages should now parse as expected."
+        },
+        {
+            "c_hash": "63e84b4f",
+            "date": "2008-07-14 11:47:06 +0000",
+            "comment": "Adding some new messages proving bugs in the current implementation and differences from what we had in mime4j 0.2 result/testsuite. Expected results have to be checked for correctness."
+        },
+        {
+            "c_hash": "8b722d44",
+            "date": "2008-07-14 11:54:19 +0000",
+            "comment": "changed msg files svn:mime-type to application/octet-stream to preserve mungled newlines."
+        },
+        {
+            "c_hash": "cf6615d0",
+            "date": "2008-07-14 13:49:56 +0000",
+            "comment": "Adding some new messages proving bugs in the current implementation and differences from what we had in mime4j 0.2 result/testsuite. Expected results have to be checked for correctness."
+        },
+        {
+            "c_hash": "197f48b5",
+            "date": "2008-07-14 13:50:38 +0000",
+            "comment": "changed msg files svn:mime-type to application/octet-stream to preserve mungled newlines."
+        },
+        {
+            "c_hash": "88ac54f4",
+            "date": "2008-07-14 14:02:00 +0000",
+            "comment": "A test for a boundary with all of the permitted chars and a length of 70, ending with a space."
+        },
+        {
+            "c_hash": "88f4df7b",
+            "date": "2008-07-14 14:08:49 +0000",
+            "comment": "Adding a test with a non compliant bounday (700 chars) that mime4j correctly handles."
+        },
+        {
+            "c_hash": "ea4166d4",
+            "date": "2008-07-14 14:09:38 +0000",
+            "comment": "adding a sample message with a 7000 chars boundary that sends mime4j in infinite loop."
+        },
+        {
+            "c_hash": "a2b892f7",
+            "date": "2008-07-14 14:23:42 +0000",
+            "comment": "add a test for very long lines in message body to make sure MIME4J-55 does not apply to every line."
+        },
+        {
+            "c_hash": "b2053d37",
+            "date": "2008-07-18 07:27:15 +0000",
+            "comment": "Make space for \"streams-refactoring\" branche merge"
+        },
+        {
+            "c_hash": "aa8087ca",
+            "date": "2008-07-18 07:27:51 +0000",
+            "comment": "Merge \"streams-refactoring\" branche src folder"
+        },
+        {
+            "c_hash": "a323cfa3",
+            "date": "2008-07-18 07:30:37 +0000",
+            "comment": "Make space for \"streams-refactoring\" branche merge"
+        },
+        {
+            "c_hash": "19cfb576",
+            "date": "2008-07-18 07:31:03 +0000",
+            "comment": "Merge \"streams-refactoring\" branche examples folder"
+        },
+        {
+            "c_hash": "82eca494",
+            "date": "2008-07-20 18:44:30 +0000",
+            "comment": "Add one more test to EOLConvertingTest"
+        },
+        {
+            "c_hash": "1adde0a0",
+            "date": "2008-07-20 19:48:41 +0000",
+            "comment": "Refactored TestSuites to be better GUI friendly (show message under testing, allow running of single message test)"
+        },
+        {
+            "c_hash": "4c784387",
+            "date": "2008-07-20 20:10:06 +0000",
+            "comment": "No need to have LF ending lines in this tests. We already check lenient delimiters in other tests."
+        },
+        {
+            "c_hash": "3ebdaba2",
+            "date": "2008-07-20 20:16:20 +0000",
+            "comment": "Make sure we don't alter expected and actual results before checking (doesn't change the current tests failures)."
+        },
+        {
+            "c_hash": "4d9c2101",
+            "date": "2008-07-21 09:23:31 +0000",
+            "comment": "Fix for MIME4J-61: Large inputs will not cause ArrayIndexOutOfBoundsException anymore when encoded using quoted printable."
+        },
+        {
+            "c_hash": "3a78b072",
+            "date": "2008-07-21 10:15:41 +0000",
+            "comment": "Saved txt files will now use the mime charset specified for the body part instead of the Java default."
+        },
+        {
+            "c_hash": "23da1fd3",
+            "date": "2008-07-21 10:20:00 +0000",
+            "comment": "Resolved MIME4J-59: The TextBody instances created when parsing a message will now handle the decoding/encoding of qp and base64 bodies automatically as it was done in Mime4j 0.3."
+        },
+        {
+            "c_hash": "ad071208",
+            "date": "2008-07-21 10:36:57 +0000",
+            "comment": "Resolved MIME4J-63: CodecUtil.encodeQuotedPrintableBinary() now handles 8bit bytes as expected."
+        },
+        {
+            "c_hash": "941a59aa",
+            "date": "2008-07-21 14:22:53 +0000",
+            "comment": "Make sure test resources are committed with mime-type=application/octet-stream so their line endings are not altered by SVN."
+        },
+        {
+            "c_hash": "a410e358",
+            "date": "2008-07-21 14:24:15 +0000",
+            "comment": "Commit updated expected result (they are not what I would expect from mime4j, but people is scared by failing tests, so let's make them pass) (this will probably change as we find an agreement on MIME4J-60)"
+        },
+        {
+            "c_hash": "4d1ab067",
+            "date": "2008-07-21 14:30:27 +0000",
+            "comment": "Remove bug-proving tests (moved them to MIME4J-54 and MIME4J-60)"
+        },
+        {
+            "c_hash": "271db857",
+            "date": "2008-07-21 16:39:26 +0000",
+            "comment": "Make sure we don't have an eol-style native. Maybe this still changes the resources even when an application/octet-stream mime type is there"
+        },
+        {
+            "c_hash": "793dfe52",
+            "date": "2008-07-21 17:52:56 +0000",
+            "comment": "BufferedLineReaderInputStream indexOf method was ignoring pos and searched in the wrong part of the buffer if pos/len argument were used."
+        },
+        {
+            "c_hash": "627bfb7e",
+            "date": "2008-07-21 20:03:38 +0000",
+            "comment": "Improved encoder supports text and binary modes. More tests are needed but I think the pay will be greater if these are added as integration tests."
+        },
+        {
+            "c_hash": "06176a43",
+            "date": "2008-07-21 20:04:09 +0000",
+            "comment": "Use text mode for text bodies"
+        },
+        {
+            "c_hash": "df990766",
+            "date": "2008-07-21 20:17:41 +0000",
+            "comment": "MIME4J-55 introduced an IllegalArgumentException. Though this is unlikely to be thrown, it would be unfriendly for a RuntimeException to be propogated. Document the throw, catch the runtime in the caller and wrap in a checked exception."
+        },
+        {
+            "c_hash": "42a492b7",
+            "date": "2008-07-21 20:41:27 +0000",
+            "comment": "Removed the extra CRLF written by writeTo() when QP encoding is used."
+        },
+        {
+            "c_hash": "6dfae6fd",
+            "date": "2008-07-22 20:12:08 +0000",
+            "comment": "Useful for debugging."
+        },
+        {
+            "c_hash": "4009783f",
+            "date": "2008-07-27 15:06:34 +0000",
+            "comment": "Improved test coverage of message/rfc822 type mail"
+        },
+        {
+            "c_hash": "6ef0a45a",
+            "date": "2008-07-30 11:01:23 +0000",
+            "comment": "Message.writeTo for an rfc822 part was ignoring the message encoding (MIME4J-65) The patch remove the usage of the Base64Encoder (because of MIME4J-66 and MIME4J-67) in favor of a Base64OutputStream cloned by ALv2/ASF licensed MyFaces Trinidad 1.2.8."
+        },
+        {
+            "c_hash": "a571dd7c",
+            "date": "2008-07-30 11:03:25 +0000",
+            "comment": "Make sure we find boundaries only at the beginning of a line (MIME4J-54) Everything in a line starting with a boundary is ignored and not considered part of the following part."
+        },
+        {
+            "c_hash": "ca4b0ff2",
+            "date": "2008-07-30 11:08:07 +0000",
+            "comment": "Add more test messages (expecially for MIME4J-65 and MIME4J-54) Fixed ending-boundaries test expected result (according to RFC and MIME4J-54)"
+        },
+        {
+            "c_hash": "00965dfd",
+            "date": "2008-07-30 11:11:48 +0000",
+            "comment": "Added a new Message.writeTo checker with roundtrip checking for messages (MIME4J-64). We first check the output against the expected output (.out file). Then we read it and output it again to make sure that starting from our own output a new output will be identical. Added .out files for existing messages (not all of them are what we really would expect, but they are what currently mime4j outputs)"
+        },
+        {
+            "c_hash": "7607b511",
+            "date": "2008-07-30 11:17:36 +0000",
+            "comment": "Make sure we use application/octet-stream as svn:mime-type for tests added fixing MIME4J-64, MIME4J-65, MIME4J-54."
+        },
+        {
+            "c_hash": "4d6b9743",
+            "date": "2008-07-30 11:21:27 +0000",
+            "comment": "Make sure we don't have an eol-style native. Maybe this still changes the resources even when an application/octet-stream mime type is there"
+        },
+        {
+            "c_hash": "00c9d8f5",
+            "date": "2008-07-30 11:31:07 +0000",
+            "comment": "Add some sort of unit tests for LineBreakingOutputStream"
+        },
+        {
+            "c_hash": "5379f8f4",
+            "date": "2008-07-30 11:54:08 +0000",
+            "comment": "Recreated test results from unix. Not sure why this keep giving issues dependending on the platform."
+        },
+        {
+            "c_hash": "679af7b3",
+            "date": "2008-08-04 12:57:59 +0000",
+            "comment": "Remove cyclic dependencies and provide better organization of the source tree (MIME4J-51)"
+        },
+        {
+            "c_hash": "b7bd2e5f",
+            "date": "2008-08-04 13:08:47 +0000",
+            "comment": "Added license headers: please review, they seem to be missing from the contribution MIME4J-5"
+        },
+        {
+            "c_hash": "2811fab2",
+            "date": "2008-08-04 13:12:00 +0000",
+            "comment": "Updated rat checks. Not sure how to better deal with license headers for the testmsgs."
+        },
+        {
+            "c_hash": "1d09c1f7",
+            "date": "2008-08-04 14:32:27 +0000",
+            "comment": "Update usage according to new packages (MIME4J-51)"
+        },
+        {
+            "c_hash": "8e154877",
+            "date": "2008-08-07 08:11:38 +0000",
+            "comment": "Moved remaining *Descriptor classes from main to descriptor package (great suggestion from Niklas) (MIME4J-51)."
+        },
+        {
+            "c_hash": "e72bbd90",
+            "date": "2008-08-07 08:23:22 +0000",
+            "comment": "Created a message.storage package and moved 4 utility classes there (this is a specific local package to message) (MIME4J-51). We previously discussed about this, but I forgot to include it in the proposal. Applying it in CTR because people agreed that removing from util is good."
+        },
+        {
+            "c_hash": "345a3211",
+            "date": "2008-08-07 09:01:31 +0000",
+            "comment": "Make it explicit this InputStreams act as FilterInputStreams (they take another InputStream in the constructor)."
+        },
+        {
+            "c_hash": "d600c664",
+            "date": "2008-08-07 09:40:43 +0000",
+            "comment": "Add an overview for the apidocs including links to MimeStreamParser and Message classes (MIME4J-51)"
+        },
+        {
+            "c_hash": "2313660f",
+            "date": "2008-08-07 09:50:28 +0000",
+            "comment": "Hudson and rat complained I forgot the license in the overview.html ;-) Good job guys."
+        },
+        {
+            "c_hash": "d2083cc4",
+            "date": "2008-08-13 10:26:41 +0000",
+            "comment": "Fix website pages to reflect package changes (some reference still pointed to org.mime4j package !! ) (MIME4J-51)"
+        },
+        {
+            "c_hash": "dee6da7c",
+            "date": "2008-08-13 17:56:54 +0000",
+            "comment": "Added release notes; added DOAP descriptor; updated the web site for 0.4 release"
+        },
+        {
+            "c_hash": "bf27a6b4",
+            "date": "2008-08-13 18:14:07 +0000",
+            "comment": "Fixed BIN assembly descriptor"
+        },
+        {
+            "c_hash": "99060871",
+            "date": "2008-08-13 20:11:15 +0000",
+            "comment": "Added a brief description (users don't always get a library through the main page); Added more notes; Added more features."
+        },
+        {
+            "c_hash": "253f0dab",
+            "date": "2008-08-14 11:49:05 +0000",
+            "comment": "Add LICENSE.txt + NOTICE.txt for the source tree and for the source distribution. Includes references to the junit file bundled in the stage folder."
+        },
+        {
+            "c_hash": "185bc12c",
+            "date": "2008-08-14 11:50:50 +0000",
+            "comment": "Make sure the source distribution includes NOTICE.txt and LICENSE.txt from the source tree instead of the tuple generated by maven remote resource plugin. (Same approach as for jSieve: NOTICE.txt/LICENSE.txt from the src tree used only in the src.zip, other artifacts using maven generated files)."
+        },
+        {
+            "c_hash": "efd1742b",
+            "date": "2008-08-14 11:52:32 +0000",
+            "comment": "Updated/FIxed versions for maven plugins. Moved assembly plugin at the end. Updated assembly plugin required changes to the bin.xml descriptor, too."
+        },
+        {
+            "c_hash": "34a7bf8b",
+            "date": "2008-08-14 12:07:06 +0000",
+            "comment": "Renamed \"stream\" package to \"io\" (MIME4J-51)"
+        },
+        {
+            "c_hash": "af97b90c",
+            "date": "2008-08-14 17:45:57 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-mime4j-0.4"
+        },
+        {
+            "c_hash": "6bd2924c",
+            "date": "2008-08-14 17:46:08 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "b75a4790",
+            "date": "2008-08-19 10:56:32 +0000",
+            "comment": "Add credit for Base64OutputStream to NOTICE.txt (MIME4J-71)"
+        },
+        {
+            "c_hash": "677da8d8",
+            "date": "2008-08-21 15:38:15 +0000",
+            "comment": "Remove code copied from Apache MyFaces Trinidad (Base64OutputStream & Base64OutputStreamTest). Removed NOTICE credits to Oracle no more needed because of this removal. Introduced a new Base64OutputStream fixed according to our test suite requirement (MIME4J-71). Fixed Entity.writeTo to not append CRLF_CRLF in the base64 specific case (so at least this works like the qp code."
+        },
+        {
+            "c_hash": "1afcd746",
+            "date": "2008-09-16 21:36:06 +0000",
+            "comment": "MIME4J-72 https://issues.apache.org/jira/browse/MIME4J-72 Contributed by Markus Wiederkehr."
+        },
+        {
+            "c_hash": "c7b81b85",
+            "date": "2008-09-17 11:06:13 +0000",
+            "comment": "MIME4J-72 https://issues.apache.org/jira/browse/MIME4J-72 Contributed by Markus Wiederkehr. Missing Disposable interface."
+        },
+        {
+            "c_hash": "8e6c1891",
+            "date": "2008-09-17 12:08:43 +0000",
+            "comment": "Resolved issue MIME4J-74"
+        },
+        {
+            "c_hash": "4891aa4f",
+            "date": "2008-09-20 18:40:41 +0000",
+            "comment": "MIME4J-73: * Message(InputStream), Header(InputStream) and Field.parse(String) throw a MimeException instead of a runtime exception * Moved MessageBuilder into a separate public class"
+        },
+        {
+            "c_hash": "afb89b42",
+            "date": "2008-09-20 18:54:15 +0000",
+            "comment": "MIME4J-57: enforce a limit on the maximum line length"
+        },
+        {
+            "c_hash": "4097b065",
+            "date": "2008-09-20 19:12:27 +0000",
+            "comment": "MIME4J-57: Added a special IOException class to signal a line exceeding the maximum line length limit"
+        },
+        {
+            "c_hash": "e4bddef1",
+            "date": "2008-09-21 11:51:48 +0000",
+            "comment": "MIME4J-57: Changed base class of MaxLineLimitException from IOException to MimeException"
+        },
+        {
+            "c_hash": "61b9c92a",
+            "date": "2008-09-21 13:07:49 +0000",
+            "comment": "MIME4J-57: * Added javadocs to the MimeEntityConfig class * Made sure the max line length limit is correctly enforced for folded lines * Added max header limit check; intended as a protection from a DoS condition if a message contains too many headers (more than 1000)"
+        },
+        {
+            "c_hash": "daf5a500",
+            "date": "2008-09-21 13:20:05 +0000",
+            "comment": "MIME4J-75: Rename o.a.j.mj.stream to o.a.j.mj.io for test classes"
+        },
+        {
+            "c_hash": "f2062550",
+            "date": "2008-09-21 14:02:09 +0000",
+            "comment": "Updated release notes / status page for the upcoming 0.5 release"
+        },
+        {
+            "c_hash": "16a13fe0",
+            "date": "2008-09-21 17:12:18 +0000",
+            "comment": "Update doc for the eclipse:eclipse issue that has been fixed in newer eclipse plugin."
+        },
+        {
+            "c_hash": "4e3bcc04",
+            "date": "2008-09-21 21:12:13 +0000",
+            "comment": "Fixed javadoc warnings"
+        },
+        {
+            "c_hash": "2437c2d3",
+            "date": "2008-09-21 21:13:03 +0000",
+            "comment": "Exclude lib directory from src assembly"
+        },
+        {
+            "c_hash": "03242ae2",
+            "date": "2008-09-22 17:22:22 +0000",
+            "comment": "MIME4J-73: MessageBuilder declares to throw MimeException in every method it implements from ContentHandler Contributed by Markus Wiederkehr <markus.wiederkehr at gmail.com>"
+        },
+        {
+            "c_hash": "993cfe55",
+            "date": "2008-09-24 12:26:04 +0000",
+            "comment": "Message.writeTo() prematurely closed output stream if transfer encoding is BASE64 (MIME4J-79) Patch kindly provided by Markus Wiederkehr and Oleg Kalnichevski. The only change from the proposed patch is the \"closed = true\" when \"len < 0\" (in Base64OutputStream) because len == -1 is the way we are notified of a stream end and writing more data would result in corrupted output, so it seems safer to consider the stream closed after that call."
+        },
+        {
+            "c_hash": "d7670fb7",
+            "date": "2008-09-24 19:21:07 +0000",
+            "comment": "Decoupled CodecUtil and LineBreakingOutputStream; Factored Base64Encoder into a separate class"
+        },
+        {
+            "c_hash": "0e4b7e9b",
+            "date": "2008-10-04 15:38:21 +0000",
+            "comment": "Add utility methods for creating message boundaries and message IDs (MIME4J-81) Patch kindly provided by Markus Wiederkehr"
+        },
+        {
+            "c_hash": "67b9f606",
+            "date": "2008-10-04 15:40:26 +0000",
+            "comment": "Add methods for removing and replacing header fields (MIME4J-80) Patch kindly provided by Markus Wiederkehr"
+        },
+        {
+            "c_hash": "b1dd73f2",
+            "date": "2008-10-04 15:49:32 +0000",
+            "comment": "Provide a means to dispose a Message (MIME4J-72) Patch kindly provided by Markus Wiederkehr. Temporary commented out finalizers until more people will comment on the subject."
+        },
+        {
+            "c_hash": "31420b00",
+            "date": "2008-10-06 22:15:39 +0000",
+            "comment": "MIME4J-27: Content length limitation Support"
+        },
+        {
+            "c_hash": "d48914eb",
+            "date": "2008-10-07 20:11:53 +0000",
+            "comment": "MIME4J-82: Marked LineBreakingOutputStream, CloseShieldInputStream and PartialInputStream classes deprecated / to be removed in 0.6"
+        },
+        {
+            "c_hash": "316528d2",
+            "date": "2008-10-11 12:46:16 +0000",
+            "comment": "MIME4J-72: Removed code clutter but left the general disposal mechanism as it is Contributed by Markus Wiederkehr"
+        },
+        {
+            "c_hash": "c8e2d6b0",
+            "date": "2008-10-11 17:16:03 +0000",
+            "comment": "Check of body being non null"
+        },
+        {
+            "c_hash": "6560c98b",
+            "date": "2008-10-12 18:14:45 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-mime4j-0.5"
+        },
+        {
+            "c_hash": "a5af0897",
+            "date": "2008-10-12 18:15:03 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "a51a978b",
+            "date": "2008-11-01 11:56:28 +0000",
+            "comment": "MIME4J-78: Upgraded commons-logging to version 1.1.1"
+        },
+        {
+            "c_hash": "61385fb2",
+            "date": "2008-11-04 13:42:00 +0000",
+            "comment": "MIME4J-77: MimeException no longer extends IOException"
+        },
+        {
+            "c_hash": "05a30067",
+            "date": "2008-11-04 13:57:50 +0000",
+            "comment": "MIME4J-82: Removed unused stream classes"
+        },
+        {
+            "c_hash": "2b4575e4",
+            "date": "2008-11-10 20:44:00 +0000",
+            "comment": "MIME4J-84: Base64OutputStream and trailing CRLFs"
+        },
+        {
+            "c_hash": "085c69be",
+            "date": "2008-11-16 12:56:20 +0000",
+            "comment": "MIME4J-85: Upgrade source to Java 5"
+        },
+        {
+            "c_hash": "8cc41d0b",
+            "date": "2008-11-16 13:04:09 +0000",
+            "comment": "Removed commented out code"
+        },
+        {
+            "c_hash": "b35fd15f",
+            "date": "2008-11-16 18:32:24 +0000",
+            "comment": "MIME4J-86: Javadoc fixes"
+        },
+        {
+            "c_hash": "3b0b19fd",
+            "date": "2008-11-17 20:16:31 +0000",
+            "comment": "#writeTo(InputStream, Mode) method of message components to throw MimeIOException instead of MimeException"
+        },
+        {
+            "c_hash": "18f92b17",
+            "date": "2008-11-17 20:18:58 +0000",
+            "comment": "Deprecated StringArrayMap"
+        },
+        {
+            "c_hash": "f71467c1",
+            "date": "2008-11-22 13:29:10 +0000",
+            "comment": "MIME4J-83: Add a more generic machanism for storing message bodies"
+        },
+        {
+            "c_hash": "037460d1",
+            "date": "2008-11-30 20:59:36 +0000",
+            "comment": "https://issues.apache.org/jira/browse/MIME4J-87 Add a factory for creating message bodies. Contributed by Markus Wiederkehr MIME4J-87."
+        },
+        {
+            "c_hash": "f9b599ff",
+            "date": "2008-11-30 22:43:10 +0000",
+            "comment": "https://issues.apache.org/jira/browse/MIME4J-88  Make message bodies sharable. Contributed by Markus Wiederkehr MIME4J-88."
+        },
+        {
+            "c_hash": "daa74dbc",
+            "date": "2008-12-01 19:35:27 +0000",
+            "comment": "https://issues.apache.org/jira/browse/MIME4J-89  Improve thread synchronization in MultiReferenceStorage. Contributed by Markus Wiederkehr MIME4J-89."
+        },
+        {
+            "c_hash": "0e59fa13",
+            "date": "2008-12-02 18:33:26 +0000",
+            "comment": "Mime4J should use server-dev mailing lists"
+        },
+        {
+            "c_hash": "21a4a8ae",
+            "date": "2008-12-07 15:26:00 +0000",
+            "comment": "MIME4J-90: Consistent parsing of header field names Contributed by Markus Wiederkehr <markus.wiederkehr at gmail.com>"
+        },
+        {
+            "c_hash": "4d0abb92",
+            "date": "2008-12-12 13:06:54 +0000",
+            "comment": "Faster Base64OutputStream for MIME4J-71"
+        },
+        {
+            "c_hash": "9643b1ba",
+            "date": "2008-12-12 14:26:38 +0000",
+            "comment": "Reverted deprecation of StringArrayMap because although the class is not used in Mime4j there may be users or libraries (Commons Fileupload) that need it. See MIME4J-24."
+        },
+        {
+            "c_hash": "d4d993a0",
+            "date": "2008-12-12 16:33:06 +0000",
+            "comment": "resolved minor javadoc issues: there was a line break between '@' and 'link' that caused a javadoc warning. also decrementCounter() throws an IllegalStateException, not an IllegalArgumentException"
+        },
+        {
+            "c_hash": "8961e4c3",
+            "date": "2008-12-12 16:58:50 +0000",
+            "comment": "OutputStream support for StorageProvider (MIME4J-91)"
+        },
+        {
+            "c_hash": "de654aa7",
+            "date": "2008-12-15 13:59:08 +0000",
+            "comment": "Removed Base64Encoder and rewrote CodecUtil.encodeBase64() to use Base64OutputStream instead. Resolves MIME4J-66 and MIME4J-67."
+        },
+        {
+            "c_hash": "a845d27a",
+            "date": "2008-12-18 13:05:20 +0000",
+            "comment": "Use a ThresholdStorageProvider backed by a TempFileStorageProvider as default instance. This should be a more practical setup because small amounts of data are now kept in memory."
+        },
+        {
+            "c_hash": "c1bbb244",
+            "date": "2008-12-18 13:06:12 +0000",
+            "comment": "Minor refactoring to make the inner classes static."
+        },
+        {
+            "c_hash": "f28400be",
+            "date": "2008-12-18 13:07:02 +0000",
+            "comment": "Updated unit tests for latest changes to DefaultStorageProvider"
+        },
+        {
+            "c_hash": "cc7e1e54",
+            "date": "2008-12-18 13:33:52 +0000",
+            "comment": "Added a Base64InputStream that uses block operations; fix for MIME4J-92"
+        },
+        {
+            "c_hash": "582e990a",
+            "date": "2008-12-24 18:13:14 +0000",
+            "comment": "Added a simple benchmark for parsing of a long multipart message"
+        },
+        {
+            "c_hash": "da990135",
+            "date": "2008-12-29 19:23:47 +0000",
+            "comment": "added ASF header; use of CodecUtil.copy(); changed unit to seconds"
+        },
+        {
+            "c_hash": "87b7e758",
+            "date": "2008-12-29 19:25:35 +0000",
+            "comment": "added base64 I/O stream benchmarks from MIME4J-71 and MIME4J-92."
+        },
+        {
+            "c_hash": "d6eed742",
+            "date": "2008-12-31 14:18:53 +0000",
+            "comment": "eliminated tab characters from source code; no functional changes."
+        },
+        {
+            "c_hash": "032ac6d2",
+            "date": "2009-01-01 12:02:31 +0000",
+            "comment": "Added excludes parameter for rat:check to ignore test messages under benchmarks/resources"
+        },
+        {
+            "c_hash": "0222376d",
+            "date": "2009-01-03 19:53:43 +0000",
+            "comment": "Added more benchmark tests in addition to the existing MimeTokenStream test: a test that uses an empty AbstractContentHandler, one that uses an empty SimpleContentHandler and one that creates a Message object."
+        },
+        {
+            "c_hash": "f3be1651",
+            "date": "2009-01-03 20:37:16 +0000",
+            "comment": "Added copy constructors for BodyPart, Header, Message and Multipart (MIME4J-94)."
+        },
+        {
+            "c_hash": "02be1231",
+            "date": "2009-01-03 22:42:26 +0000",
+            "comment": "Convenience methods for manipulating the list of body parts (MIME4J-95)"
+        },
+        {
+            "c_hash": "10664d74",
+            "date": "2009-01-04 00:08:48 +0000",
+            "comment": "added serialVersionUID to eliminate compiler warning"
+        },
+        {
+            "c_hash": "dafbd997",
+            "date": "2009-01-04 00:09:40 +0000",
+            "comment": "Added message transformation example"
+        },
+        {
+            "c_hash": "4a18dbaa",
+            "date": "2009-01-04 00:14:18 +0000",
+            "comment": "Added ASF header"
+        },
+        {
+            "c_hash": "1378f009",
+            "date": "2009-01-04 18:35:45 +0000",
+            "comment": "Added standard license header used in all other Java source files in Mime4j"
+        },
+        {
+            "c_hash": "c01124f1",
+            "date": "2009-01-04 18:37:04 +0000",
+            "comment": "added a warm-up phase and more statistics"
+        },
+        {
+            "c_hash": "1cf2aee5",
+            "date": "2009-01-06 18:50:13 +0000",
+            "comment": "Dropped JDK 1.4 support"
+        },
+        {
+            "c_hash": "f743c643",
+            "date": "2009-01-06 18:51:04 +0000",
+            "comment": "Changed Mode into a Java 5 enum because JDK 1.4 support has been dropped"
+        },
+        {
+            "c_hash": "de62b85f",
+            "date": "2009-01-06 18:58:27 +0000",
+            "comment": "Implements Iterable to support enhanced for-loops"
+        },
+        {
+            "c_hash": "4f5569a6",
+            "date": "2009-01-06 19:25:25 +0000",
+            "comment": "Deferred parsing of header fields (MIME4J-96)."
+        },
+        {
+            "c_hash": "c709ea31",
+            "date": "2009-01-06 23:43:48 +0000",
+            "comment": "minor optimization: getCharset(ContentTypeField) no longer calls f.getCharset() up to three times"
+        },
+        {
+            "c_hash": "85129f85",
+            "date": "2009-01-08 21:59:32 +0000",
+            "comment": "MIME4J-60: Made RootInputStream treat consistently with the rest o.a.j.mime4j.io classes (CR-LF and lone LF count as valid line delimiters)"
+        },
+        {
+            "c_hash": "e0428ebe",
+            "date": "2009-01-09 19:28:24 +0000",
+            "comment": "migrated JavaCC sources to Java 5 (related to MIME4J-85)"
+        },
+        {
+            "c_hash": "a39fa365",
+            "date": "2009-01-10 19:45:48 +0000",
+            "comment": "Field.parse(String) throws MimeException again; also added method Field.parse(String, String). Fixes MIME4J-90."
+        },
+        {
+            "c_hash": "6ca24547",
+            "date": "2009-01-10 20:28:47 +0000",
+            "comment": "MIME4J-97: Pulled up method getParseException from various Field subclasses to abstract class Field."
+        },
+        {
+            "c_hash": "7b6919cd",
+            "date": "2009-01-10 21:51:31 +0000",
+            "comment": "MIME4J-99: convenience methods in Entity to set the message body along with the content type header field. Also introduces getMimeCharset() in TextBody."
+        },
+        {
+            "c_hash": "4e05451b",
+            "date": "2009-01-10 22:26:46 +0000",
+            "comment": "move StorageProvider to o.a.j.mime4j.storage (fix for MIME4J-102)."
+        },
+        {
+            "c_hash": "71b1ca80",
+            "date": "2009-01-11 09:11:15 +0000",
+            "comment": "MIME4J-70 RFC Interface Design - remove interfaces to simplify design (https://issues.apache.org/jira/browse/MIME4J-70)"
+        },
+        {
+            "c_hash": "73c901d1",
+            "date": "2009-01-12 22:19:17 +0000",
+            "comment": "Utility method for folding a long line into a multiple-line representation (needed for MIME4J-100)."
+        },
+        {
+            "c_hash": "e086c03d",
+            "date": "2009-01-12 22:33:18 +0000",
+            "comment": "Initial import of a high-level factory for Field instances (MIME4J-100)."
+        },
+        {
+            "c_hash": "aff532e2",
+            "date": "2009-01-12 22:44:51 +0000",
+            "comment": "MIME4J-99: Additional content-type parameters for setMultipart and setBody (e.g. required for multipart/signed). Refactored Entity to use utility class Fields. New method Entity.setContentTransferEncoding."
+        },
+        {
+            "c_hash": "e15c2f21",
+            "date": "2009-01-12 23:18:41 +0000",
+            "comment": "MIME4J-100: methods for creating Date header fields"
+        },
+        {
+            "c_hash": "79537ef0",
+            "date": "2009-01-12 23:21:04 +0000",
+            "comment": "Javadoc referred to \"this message\" instead of \"this entity\"."
+        },
+        {
+            "c_hash": "8048c1e3",
+            "date": "2009-01-13 10:31:38 +0000",
+            "comment": "Deferred parsing of header fields (MIME4J-96)."
+        },
+        {
+            "c_hash": "b9ead783",
+            "date": "2009-01-13 11:43:54 +0000",
+            "comment": "Deferred parsing of header fields (MIME4J-96). Forgot to removed value computation from constructor."
+        },
+        {
+            "c_hash": "d3f16da0",
+            "date": "2009-01-16 15:14:56 +0000",
+            "comment": "changed maximum number of characters per line in MimeUtil.fold() to 76 because of RFC 2047 (MIME4J-100)"
+        },
+        {
+            "c_hash": "3fd654b7",
+            "date": "2009-01-17 22:59:24 +0000",
+            "comment": "MIME4J-100: utility class to encode encoded-words as per RFC 2047 (required to encode header fields such as Subject, From or To)."
+        },
+        {
+            "c_hash": "e47c72cd",
+            "date": "2009-01-17 23:19:17 +0000",
+            "comment": "MIME4J-100: methods for creating Message-ID and Subject header fields"
+        },
+        {
+            "c_hash": "852660cb",
+            "date": "2009-01-18 09:21:21 +0000",
+            "comment": "inferred generics into code to generate html table of known charsets"
+        },
+        {
+            "c_hash": "891dc4b5",
+            "date": "2009-01-18 09:30:37 +0000",
+            "comment": "Added report on issues closed in current version"
+        },
+        {
+            "c_hash": "30b7639e",
+            "date": "2009-01-19 20:20:18 +0000",
+            "comment": "MIME4J-105: rename org.apache.james.mime4j.decoder in org.apache.james.mime4j.codec"
+        },
+        {
+            "c_hash": "1235c356",
+            "date": "2009-01-19 20:31:27 +0000",
+            "comment": "ByteQueue implements Iterable<Byte> (related to MIME4J-85)"
+        },
+        {
+            "c_hash": "942fc3eb",
+            "date": "2009-01-19 21:00:54 +0000",
+            "comment": "MIME4J-106: move code from MessageUtils to CharsetUtil"
+        },
+        {
+            "c_hash": "728a2eeb",
+            "date": "2009-01-19 23:16:06 +0000",
+            "comment": "decodeEncodedWords removed white spaces that separates a pair of adjacent encoded-words (fixes MIME4J-104)."
+        },
+        {
+            "c_hash": "42c59dd3",
+            "date": "2009-01-20 00:00:56 +0000",
+            "comment": "use StringBuilder instead of CharArrayBuffer (the advantage of CharArrayBuffer over StringBuffer is that it is not synchronized; with StringBuilder this advantage is gone)"
+        },
+        {
+            "c_hash": "f7b68e0e",
+            "date": "2009-01-20 00:13:36 +0000",
+            "comment": "fixed typos in javadoc"
+        },
+        {
+            "c_hash": "936aaca9",
+            "date": "2009-01-20 14:08:33 +0000",
+            "comment": "use the same license header for all Java source files."
+        },
+        {
+            "c_hash": "93739383",
+            "date": "2009-01-20 20:11:14 +0000",
+            "comment": "enhanced for loop to iterate over list of mailboxes"
+        },
+        {
+            "c_hash": "9ff10987",
+            "date": "2009-01-20 21:56:31 +0000",
+            "comment": "MIME4J-100: getters and setters for Message-ID, Subject and Date in class Message."
+        },
+        {
+            "c_hash": "58ed6c97",
+            "date": "2009-01-22 15:43:01 +0000",
+            "comment": "MIME4J-100: parameter values with space characters have to be quoted"
+        },
+        {
+            "c_hash": "62f4e399",
+            "date": "2009-01-23 13:31:36 +0000",
+            "comment": "missing @Override annotation"
+        },
+        {
+            "c_hash": "a95852a4",
+            "date": "2009-01-23 15:00:54 +0000",
+            "comment": "MIME4J-107: removed NamedMailbox; addresses are serializable; added Address.getDisplayString(); added Mailbox.getAddress()"
+        },
+        {
+            "c_hash": "5be6e1b6",
+            "date": "2009-01-23 15:23:27 +0000",
+            "comment": "MIME4J-107: added hashCode() and equals() for Mailbox"
+        },
+        {
+            "c_hash": "5ac9609a",
+            "date": "2009-01-23 15:59:20 +0000",
+            "comment": "MIME4J-107: added DomainList.toString()"
+        },
+        {
+            "c_hash": "19bc10cf",
+            "date": "2009-01-23 16:43:06 +0000",
+            "comment": "MIME4J-107: hashCode() and equals() treat the local-part of an address as case-sensitive (thanks Stefano)."
+        },
+        {
+            "c_hash": "29eba99b",
+            "date": "2009-01-23 20:36:57 +0000",
+            "comment": "MIME4J-100: move code to encode a Content-Type parameter value to class EncoderUtil"
+        },
+        {
+            "c_hash": "89d5b6a7",
+            "date": "2009-01-23 20:51:03 +0000",
+            "comment": "MIME4J-107: new method Address.getEncodedString()"
+        },
+        {
+            "c_hash": "6c42272d",
+            "date": "2009-01-24 14:19:36 +0000",
+            "comment": "MIME4J-107: fixed getDisplayString and getEncodedString for empty groups"
+        },
+        {
+            "c_hash": "5f88fb8f",
+            "date": "2009-01-24 14:48:05 +0000",
+            "comment": "MIME4J-107: additional spaces in group string representations to allow for folding to take place (getEncodedString) and to improve legibility (getDisplayString)"
+        },
+        {
+            "c_hash": "5ee29446",
+            "date": "2009-01-24 14:52:16 +0000",
+            "comment": "MIME4J-107: two more test cases taken from rfc 5322"
+        },
+        {
+            "c_hash": "3ddf9fb6",
+            "date": "2009-01-24 21:31:22 +0000",
+            "comment": "MIME4J-107: AddressList, DomainList and MailboxList extend java.util.AbstractList"
+        },
+        {
+            "c_hash": "1dca95e0",
+            "date": "2009-01-24 21:51:21 +0000",
+            "comment": "MIME4J-107: added Group.parse(String) and Mailbox.parse(String)"
+        },
+        {
+            "c_hash": "2e84c2ab",
+            "date": "2009-01-25 18:49:27 +0000",
+            "comment": "MIME4J-100: use BitSet instead of boolean[] for quoted-printable character tables"
+        },
+        {
+            "c_hash": "a70e2289",
+            "date": "2009-01-25 18:54:43 +0000",
+            "comment": "getter to retrieve the storage provider."
+        },
+        {
+            "c_hash": "565289a4",
+            "date": "2009-01-26 19:29:10 +0000",
+            "comment": "javadoc no longer refers to ArrayList"
+        },
+        {
+            "c_hash": "6e85f015",
+            "date": "2009-01-26 19:34:15 +0000",
+            "comment": "MIME4J-100: type-safe parse method"
+        },
+        {
+            "c_hash": "326eb7c0",
+            "date": "2009-01-26 20:25:52 +0000",
+            "comment": "MIME4J-100: methods for creating mailbox fields, mailbox-list fields and address-list fields"
+        },
+        {
+            "c_hash": "58f474ac",
+            "date": "2009-01-26 21:03:07 +0000",
+            "comment": "MIME4J-100: getters and setters for address fields in class Message."
+        },
+        {
+            "c_hash": "b87fab02",
+            "date": "2009-01-26 21:04:06 +0000",
+            "comment": "MIME4J-100: two additional examples"
+        },
+        {
+            "c_hash": "0e4a41e7",
+            "date": "2009-01-26 21:06:26 +0000",
+            "comment": "set From header field"
+        },
+        {
+            "c_hash": "1faa9f86",
+            "date": "2009-01-26 23:13:03 +0000",
+            "comment": "renamed createImageBodyPart in createImagePart"
+        },
+        {
+            "c_hash": "2f353258",
+            "date": "2009-01-27 11:22:09 +0000",
+            "comment": "MIME4J-100: change threshold of EncoderUtil.hasToBeEncoded to 77 characters; one character has to reserved for a possible folding white space."
+        },
+        {
+            "c_hash": "bc1993b1",
+            "date": "2009-01-27 12:01:21 +0000",
+            "comment": "MIME4J-100: fold entire header field not only field value"
+        },
+        {
+            "c_hash": "6d3830f6",
+            "date": "2009-01-27 12:16:33 +0000",
+            "comment": "change encodeContentTypeParameterValue in encodeHeaderParameter"
+        },
+        {
+            "c_hash": "bb98d76a",
+            "date": "2009-01-28 11:52:56 +0000",
+            "comment": "javadoc"
+        },
+        {
+            "c_hash": "f09991ba",
+            "date": "2009-01-28 22:35:38 +0000",
+            "comment": "MIME4J-108: added ContentDispositionField"
+        },
+        {
+            "c_hash": "8ab8caa5",
+            "date": "2009-01-28 22:38:56 +0000",
+            "comment": "license header"
+        },
+        {
+            "c_hash": "203e6e79",
+            "date": "2009-01-29 14:47:15 +0000",
+            "comment": "call Field.getRaw instead of toString (toString is for a person to read)"
+        },
+        {
+            "c_hash": "6bf85616",
+            "date": "2009-01-29 15:05:47 +0000",
+            "comment": "MIME4J-100: moved code to format an RFC822 date string into MimeUtil"
+        },
+        {
+            "c_hash": "8fc586ba",
+            "date": "2009-01-29 15:10:42 +0000",
+            "comment": "explicitly set default time zone because DateFormat is kept in a ThreadLocal"
+        },
+        {
+            "c_hash": "2ad221d8",
+            "date": "2009-01-29 21:07:05 +0000",
+            "comment": "MIME4J-100, MIME4J-108: methods for creating Content-Disposition fields"
+        },
+        {
+            "c_hash": "f3d79446",
+            "date": "2009-01-31 19:20:25 +0000",
+            "comment": "MIME4J-100: check if mimeType is valid; parameter keys are encoded lower-case; minor changes in EncoderUtil"
+        },
+        {
+            "c_hash": "7d2817d0",
+            "date": "2009-01-31 20:47:48 +0000",
+            "comment": "MIME4J-100, MIME4J-108: more methods for creating Content-Disposition fields"
+        },
+        {
+            "c_hash": "9860a5d8",
+            "date": "2009-01-31 20:48:46 +0000",
+            "comment": "removed empty test"
+        },
+        {
+            "c_hash": "8173b4a2",
+            "date": "2009-01-31 21:11:23 +0000",
+            "comment": "javadoc"
+        },
+        {
+            "c_hash": "4a9e578d",
+            "date": "2009-01-31 21:25:42 +0000",
+            "comment": "RFC 2045: transfer encoding mechanisms are not case sensitive"
+        },
+        {
+            "c_hash": "ac531537",
+            "date": "2009-01-31 21:36:03 +0000",
+            "comment": "Header implements Iterable<Field>."
+        },
+        {
+            "c_hash": "67d705ef",
+            "date": "2009-02-01 00:04:49 +0000",
+            "comment": "added constructor MimeIOException(String)"
+        },
+        {
+            "c_hash": "e04d0284",
+            "date": "2009-02-01 12:09:59 +0000",
+            "comment": "javadoc"
+        },
+        {
+            "c_hash": "61b4f733",
+            "date": "2009-02-01 18:22:16 +0000",
+            "comment": "javadoc"
+        },
+        {
+            "c_hash": "f55e1f14",
+            "date": "2009-02-01 19:17:55 +0000",
+            "comment": "removed deprecated classes"
+        },
+        {
+            "c_hash": "6fce73d9",
+            "date": "2009-02-01 19:37:59 +0000",
+            "comment": "MIME4J-110: added a dedicated MessageWriter class"
+        },
+        {
+            "c_hash": "4bf59cc3",
+            "date": "2009-02-01 22:24:22 +0000",
+            "comment": "Switch PMD to use 1.5"
+        },
+        {
+            "c_hash": "b9f23835",
+            "date": "2009-02-01 22:35:16 +0000",
+            "comment": "I don't know how to persuade maven to link across main and test javadocs"
+        },
+        {
+            "c_hash": "b090f99c",
+            "date": "2009-02-01 22:59:45 +0000",
+            "comment": "Switch pom to use new mailing list"
+        },
+        {
+            "c_hash": "87bbe15c",
+            "date": "2009-02-01 23:00:02 +0000",
+            "comment": "Link to new mailing list"
+        },
+        {
+            "c_hash": "6186b351",
+            "date": "2009-02-01 23:00:32 +0000",
+            "comment": "PMD: Avoid modifiers which are implied by the context"
+        },
+        {
+            "c_hash": "b49a3e58",
+            "date": "2009-02-01 23:23:10 +0000",
+            "comment": "typo"
+        },
+        {
+            "c_hash": "c7815077",
+            "date": "2009-02-02 12:50:40 +0000",
+            "comment": "FieldParser implementations do not have to be part of the public API."
+        },
+        {
+            "c_hash": "a4966e6e",
+            "date": "2009-02-02 13:07:45 +0000",
+            "comment": "MIME4J-111: converted TextBody and BinaryBody into abstract subclasses of SingleBody."
+        },
+        {
+            "c_hash": "72507b8e",
+            "date": "2009-02-02 13:19:52 +0000",
+            "comment": "eliminated possible compiler warnings"
+        },
+        {
+            "c_hash": "6f48e58c",
+            "date": "2009-02-03 20:15:10 +0000",
+            "comment": "added MimeUtil.unfold(String)"
+        },
+        {
+            "c_hash": "3e3922e9",
+            "date": "2009-02-03 21:05:32 +0000",
+            "comment": "MIME4J-100, MIME4J-108: javadoc for Content-Disposition fields"
+        },
+        {
+            "c_hash": "c500c043",
+            "date": "2009-02-03 22:04:59 +0000",
+            "comment": "additional release notes for 0.6"
+        },
+        {
+            "c_hash": "97219a07",
+            "date": "2009-02-03 22:13:53 +0000",
+            "comment": "link to release notes"
+        },
+        {
+            "c_hash": "ecfd4e41",
+            "date": "2009-02-04 11:54:00 +0000",
+            "comment": "added protected constructor"
+        },
+        {
+            "c_hash": "c027a5b1",
+            "date": "2009-02-04 11:56:34 +0000",
+            "comment": "MIME4J-100: removed date() methods for raw field values; added javadoc"
+        },
+        {
+            "c_hash": "1b0d988c",
+            "date": "2009-02-04 12:14:37 +0000",
+            "comment": "removed @version tags"
+        },
+        {
+            "c_hash": "c844424b",
+            "date": "2009-02-04 12:17:29 +0000",
+            "comment": "MIME4J-93: RootInputStream degrades performance by 50%"
+        },
+        {
+            "c_hash": "73218b2b",
+            "date": "2009-02-04 13:32:12 +0000",
+            "comment": "MIME4J-107: added Address.parse(String); optimized Group.parse and Mailbox.parse"
+        },
+        {
+            "c_hash": "4aa54caf",
+            "date": "2009-02-04 13:58:08 +0000",
+            "comment": "Eclipse code formatter"
+        },
+        {
+            "c_hash": "fb37a66d",
+            "date": "2009-02-04 14:16:09 +0000",
+            "comment": "MIME4J-100: javadoc"
+        },
+        {
+            "c_hash": "656b7b43",
+            "date": "2009-02-05 15:33:09 +0000",
+            "comment": "move all JavaCC generated parsers to a package that ends in .parser"
+        },
+        {
+            "c_hash": "83a888dd",
+            "date": "2009-02-05 15:44:11 +0000",
+            "comment": "exclude packages org.apache.james.mime4j.field.*.parser from generated javadoc"
+        },
+        {
+            "c_hash": "8d8d93d8",
+            "date": "2009-02-05 16:50:40 +0000",
+            "comment": "bug fix: getContentLength() did not work"
+        },
+        {
+            "c_hash": "c8d8a01e",
+            "date": "2009-02-07 18:24:24 +0000",
+            "comment": "Updated 0.6 release notes and added more samples"
+        },
+        {
+            "c_hash": "85f44c4a",
+            "date": "2009-02-07 18:25:17 +0000",
+            "comment": "Fixed typo"
+        },
+        {
+            "c_hash": "4802f063",
+            "date": "2009-02-07 18:26:18 +0000",
+            "comment": "Fixed another typo"
+        },
+        {
+            "c_hash": "f77bcbe9",
+            "date": "2009-02-07 18:32:38 +0000",
+            "comment": "Updated status page"
+        },
+        {
+            "c_hash": "086e5ef8",
+            "date": "2009-02-07 18:56:18 +0000",
+            "comment": "Added MultipartMessage example; correct directory is \"examples\" not \"samples\"."
+        },
+        {
+            "c_hash": "c95660f6",
+            "date": "2009-02-09 23:09:46 +0000",
+            "comment": "Added a few more notes based on comments from the list"
+        },
+        {
+            "c_hash": "d18d7a8d",
+            "date": "2009-02-10 19:30:23 +0000",
+            "comment": "Slighly more efficient byte to ASCII char conversion"
+        },
+        {
+            "c_hash": "bbbec313",
+            "date": "2009-02-10 19:30:52 +0000",
+            "comment": "Added previous releases"
+        },
+        {
+            "c_hash": "8d7d23ed",
+            "date": "2009-02-10 20:21:48 +0000",
+            "comment": "Fixed wrong release version"
+        },
+        {
+            "c_hash": "c762c5ac",
+            "date": "2009-02-15 16:02:36 +0000",
+            "comment": "Updated build instructions"
+        },
+        {
+            "c_hash": "1cc02952",
+            "date": "2009-02-20 12:28:04 +0000",
+            "comment": "MIME4J-118: immutable Field interface to represent an abstract MIME field"
+        },
+        {
+            "c_hash": "98fdb531",
+            "date": "2009-02-20 14:04:27 +0000",
+            "comment": "MIME4J-118: SimpleContentHandler parses Field to keep the previous behavior"
+        },
+        {
+            "c_hash": "fc207b7b",
+            "date": "2009-02-20 14:05:28 +0000",
+            "comment": "MIME4J-118: use Field instead of AbstractField where appropriate"
+        },
+        {
+            "c_hash": "ec7a5ce5",
+            "date": "2009-02-20 14:17:00 +0000",
+            "comment": "MIME4J-119: added Entity.removeBody()"
+        },
+        {
+            "c_hash": "f60977a6",
+            "date": "2009-02-20 14:21:18 +0000",
+            "comment": "added @Override annotation"
+        },
+        {
+            "c_hash": "95116e07",
+            "date": "2009-02-20 14:24:07 +0000",
+            "comment": "removed \"unfolded\" from javadoc of getBody()"
+        },
+        {
+            "c_hash": "1f0cc763",
+            "date": "2009-02-20 14:51:20 +0000",
+            "comment": "extracted header field name constants"
+        },
+        {
+            "c_hash": "2adefd81",
+            "date": "2009-02-20 15:02:37 +0000",
+            "comment": "cleanup javadoc"
+        },
+        {
+            "c_hash": "559ab15a",
+            "date": "2009-02-24 21:36:19 +0000",
+            "comment": "make the behaviour of Field independent of AbstractField and the current configuration of DefaultFieldParser (related to MIME4J-100 and in preparation for MIME4J-118)"
+        },
+        {
+            "c_hash": "e183124e",
+            "date": "2009-02-27 16:45:02 +0000",
+            "comment": "Fix for MIME4J-118: MIME stream parser handles non-ASCII fields incorrectly"
+        },
+        {
+            "c_hash": "f27d4c0c",
+            "date": "2009-02-27 16:48:03 +0000",
+            "comment": "removed obsolete class CharArrayBuffer"
+        },
+        {
+            "c_hash": "898a22de",
+            "date": "2009-02-27 16:53:07 +0000",
+            "comment": "removed ByteArrayBuffer.append(char[],int,int) because of naive character to byte conversion"
+        },
+        {
+            "c_hash": "f6835ab6",
+            "date": "2009-02-27 16:55:49 +0000",
+            "comment": "removed isContentType(), isSubject(), isFrom() and isTo() from AbstractField; they are no longer useful because they are hidden behind interface Field now.."
+        },
+        {
+            "c_hash": "bdf74aa2",
+            "date": "2009-02-27 17:12:58 +0000",
+            "comment": "extracted interface ParsedField from class AbstractField"
+        },
+        {
+            "c_hash": "dcb01c55",
+            "date": "2009-03-01 11:44:27 +0000",
+            "comment": "Upgraded javadoc plugin to version 2.5 shipped with Maven 2.0.10"
+        },
+        {
+            "c_hash": "8f332517",
+            "date": "2009-03-01 21:50:40 +0000",
+            "comment": "MimeDefang is quite a different site now, concentrating on pushing it's commercial offerings. So opted to remove the link."
+        },
+        {
+            "c_hash": "c53a98c8",
+            "date": "2009-03-02 19:54:53 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-mime4j-0.6"
+        },
+        {
+            "c_hash": "1a8d56f5",
+            "date": "2009-03-02 19:55:20 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "df1d0a91",
+            "date": "2009-03-18 08:40:37 +0000",
+            "comment": "Switch new trunk into place.  MIME4J-121 https://issues.apache.org/jira/browse/MIME4J-121"
+        },
+        {
+            "c_hash": "3a7e428f",
+            "date": "2009-03-18 09:05:49 +0000",
+            "comment": "Modules should inherit from project. Project should use latest version of the james-project pom. MIME4J-125 https://issues.apache.org/jira/browse/MIME4J-125"
+        },
+        {
+            "c_hash": "e6b62da3",
+            "date": "2009-03-18 09:28:44 +0000",
+            "comment": "Move project information to top level. Move (most) plugin and reporting to top level. MIME4J-125 https://issues.apache.org/jira/browse/MIME4J-125"
+        },
+        {
+            "c_hash": "59f1ec27",
+            "date": "2009-03-18 09:50:39 +0000",
+            "comment": "Other modules unlikely to use JavaCC so push back down. MIME4J-125 https://issues.apache.org/jira/browse/MIME4J-125"
+        },
+        {
+            "c_hash": "1cf2b4aa",
+            "date": "2009-03-18 10:10:21 +0000",
+            "comment": "Move repository definition up to top level. MIME4J-125 https://issues.apache.org/jira/browse/MIME4J-125"
+        },
+        {
+            "c_hash": "ce48f72d",
+            "date": "2009-03-18 10:32:15 +0000",
+            "comment": "Move RAT report back into module. MIME4J-125 https://issues.apache.org/jira/browse/MIME4J-125"
+        },
+        {
+            "c_hash": "e09f54a6",
+            "date": "2009-03-18 10:41:53 +0000",
+            "comment": "Ignore target. MIME4J-125 https://issues.apache.org/jira/browse/MIME4J-125"
+        },
+        {
+            "c_hash": "165a3ad9",
+            "date": "2009-03-18 11:12:21 +0000",
+            "comment": "Run RAT once at top level only. MIME4J-125 https://issues.apache.org/jira/browse/MIME4J-125"
+        },
+        {
+            "c_hash": "7c11b1c8",
+            "date": "2009-03-18 11:30:41 +0000",
+            "comment": "Yet again, can't make dependency inheritance work :-/ Ideas, anyone? MIME4J-125 https://issues.apache.org/jira/browse/MIME4J-125"
+        },
+        {
+            "c_hash": "79de889a",
+            "date": "2009-03-18 11:31:08 +0000",
+            "comment": "Yet again, can't make dependency inheritance work :-/ Ideas, anyone? MIME4J-125 https://issues.apache.org/jira/browse/MIME4J-125"
+        },
+        {
+            "c_hash": "165241a6",
+            "date": "2009-03-18 11:55:20 +0000",
+            "comment": "Move staging repository to top level. MIME4J-123 https://issues.apache.org/jira/browse/MIME4J-123"
+        },
+        {
+            "c_hash": "7fb8345c",
+            "date": "2009-03-18 11:59:40 +0000",
+            "comment": "These documents are available at top level. MIME4J-123 https://issues.apache.org/jira/browse/MIME4J-123"
+        },
+        {
+            "c_hash": "f722067f",
+            "date": "2009-03-18 12:02:35 +0000",
+            "comment": "Move to top level. MIME4J-123 https://issues.apache.org/jira/browse/MIME4J-123"
+        },
+        {
+            "c_hash": "db6feb26",
+            "date": "2009-03-18 16:31:58 +0000",
+            "comment": "Move assembly from core into new module MIME4J-124 https://issues.apache.org/jira/browse/MIME4J-124"
+        },
+        {
+            "c_hash": "2194b98c",
+            "date": "2009-03-18 16:32:28 +0000",
+            "comment": "Correct copyright year MIME4J-124 https://issues.apache.org/jira/browse/MIME4J-124"
+        },
+        {
+            "c_hash": "f4ad2176",
+            "date": "2009-03-18 17:21:54 +0000",
+            "comment": "Move site to top level MIME4J-125 https://issues.apache.org/jira/browse/MIME4J-125"
+        },
+        {
+            "c_hash": "c78981a6",
+            "date": "2009-03-18 17:31:47 +0000",
+            "comment": "Aggregate reports"
+        },
+        {
+            "c_hash": "0b6c806b",
+            "date": "2009-03-18 17:43:10 +0000",
+            "comment": "Ignore eclipse files MIME4J-125 https://issues.apache.org/jira/browse/MIME4J-125"
+        },
+        {
+            "c_hash": "9212ca99",
+            "date": "2009-03-19 09:13:31 +0000",
+            "comment": "Inherit now working.."
+        },
+        {
+            "c_hash": "b2533931",
+            "date": "2009-03-30 08:47:22 +0000",
+            "comment": "Copying out new examples module MIME4J-127 https://issues.apache.org/jira/browse/MIME4J-127"
+        },
+        {
+            "c_hash": "d7f54e53",
+            "date": "2009-03-30 08:49:30 +0000",
+            "comment": "Move example code into position MIME4J-127 https://issues.apache.org/jira/browse/MIME4J-127"
+        },
+        {
+            "c_hash": "997333f3",
+            "date": "2009-03-30 08:56:51 +0000",
+            "comment": "No longer needed MIME4J-127 https://issues.apache.org/jira/browse/MIME4J-127"
+        },
+        {
+            "c_hash": "dc65d33c",
+            "date": "2009-03-30 10:05:30 +0000",
+            "comment": "Update poms MIME4J-127 https://issues.apache.org/jira/browse/MIME4J-127"
+        },
+        {
+            "c_hash": "0d6c43dc",
+            "date": "2009-03-30 10:07:21 +0000",
+            "comment": "Remove examples directory MIME4J-127 https://issues.apache.org/jira/browse/MIME4J-127"
+        },
+        {
+            "c_hash": "188dbdcb",
+            "date": "2009-03-30 10:11:06 +0000",
+            "comment": "Copy outline of benchmark module MIME4J-126 https://issues.apache.org/jira/browse/MIME4J-126"
+        },
+        {
+            "c_hash": "4568079e",
+            "date": "2009-03-30 10:20:06 +0000",
+            "comment": "Arrange code conventionally MIME4J-126 https://issues.apache.org/jira/browse/MIME4J-126"
+        },
+        {
+            "c_hash": "b7a09c02",
+            "date": "2009-03-30 10:21:34 +0000",
+            "comment": "No longer needed MIME4J-126 https://issues.apache.org/jira/browse/MIME4J-126"
+        },
+        {
+            "c_hash": "798d291c",
+            "date": "2009-03-30 10:32:21 +0000",
+            "comment": "Updated poms MIME4J-126 https://issues.apache.org/jira/browse/MIME4J-126"
+        },
+        {
+            "c_hash": "01f0f376",
+            "date": "2009-03-30 10:35:30 +0000",
+            "comment": "Removed old code MIME4J-126 https://issues.apache.org/jira/browse/MIME4J-126"
+        },
+        {
+            "c_hash": "92fab1bd",
+            "date": "2009-04-25 14:51:04 +0000",
+            "comment": "A desperate attempt to fix Hudson build"
+        },
+        {
+            "c_hash": "d50b3c2c",
+            "date": "2009-04-29 19:15:04 +0000",
+            "comment": "Allow headless parsing from Message MIME4J-128 https://issues.apache.org/jira/browse/MIME4J-128"
+        },
+        {
+            "c_hash": "177f3cfb",
+            "date": "2009-04-30 13:34:54 +0000",
+            "comment": "Default to UTF-8 encoding"
+        },
+        {
+            "c_hash": "319507b0",
+            "date": "2009-05-08 11:34:30 +0000",
+            "comment": "Added cryptography notice. MIME4J-134 https://issues.apache.org/jira/browse/MIME4J-134"
+        },
+        {
+            "c_hash": "39136cc7",
+            "date": "2009-05-10 08:06:09 +0000",
+            "comment": "Add a note for release notes for next release. MIME4J-134 https://issues.apache.org/jira/browse/MIME4J-134"
+        },
+        {
+            "c_hash": "2a3edf25",
+            "date": "2009-05-10 08:16:34 +0000",
+            "comment": "Include README in jar. MIME4J-134 https://issues.apache.org/jira/browse/MIME4J-134"
+        },
+        {
+            "c_hash": "ce4d2753",
+            "date": "2009-05-25 17:02:25 +0000",
+            "comment": "MIME4J-136: Pull up getInputStream() from BinaryBody to SingleBody"
+        },
+        {
+            "c_hash": "a28a2703",
+            "date": "2009-05-25 17:20:48 +0000",
+            "comment": "set svn:eol-style=native on all Java source files"
+        },
+        {
+            "c_hash": "5f3c0c6d",
+            "date": "2009-05-25 17:38:35 +0000",
+            "comment": "eliminated mixed CRLF, LF line terminators"
+        },
+        {
+            "c_hash": "ddcffae8",
+            "date": "2009-05-25 17:41:53 +0000",
+            "comment": "set svn:eol-style=native on all Java source files"
+        },
+        {
+            "c_hash": "7aca49bd",
+            "date": "2009-05-31 18:03:44 +0000",
+            "comment": "String.getBytes(Charset) is a java6 method."
+        },
+        {
+            "c_hash": "ef54d455",
+            "date": "2009-06-06 20:56:21 +0000",
+            "comment": "fix for MIME4J-135: Minor tweaks to MimeException, MimeIOException and unit tests for both"
+        },
+        {
+            "c_hash": "9cb55dce",
+            "date": "2009-06-12 11:59:10 +0000",
+            "comment": "removed constructor MimeIOException(String); MaxLineLimitException now extends IOException instead of MimeIOException; additional javadoc for MimeException and MimeIOException (resolves MIME4J-137)."
+        },
+        {
+            "c_hash": "5f6052d1",
+            "date": "2009-08-17 12:28:27 +0000",
+            "comment": "split up big test method"
+        },
+        {
+            "c_hash": "631141a8",
+            "date": "2009-08-17 12:41:28 +0000",
+            "comment": "converted commented-out code into a unit test"
+        },
+        {
+            "c_hash": "110021c6",
+            "date": "2009-08-17 13:49:38 +0000",
+            "comment": "renamed decodeBaseQuotedPrintable() in decodeQuotedPrintable()"
+        },
+        {
+            "c_hash": "567e3e46",
+            "date": "2009-08-17 13:55:37 +0000",
+            "comment": "throw IllegalStateException in should-never-happen block"
+        },
+        {
+            "c_hash": "a6da12c4",
+            "date": "2009-08-17 14:10:21 +0000",
+            "comment": "extracted method replaceUnderscores()"
+        },
+        {
+            "c_hash": "d4308235",
+            "date": "2009-08-17 14:15:30 +0000",
+            "comment": "parameter should be called encodedText because it represents what is called encoded-text in RFC 2047 (encoded-text is part of an encoded-word not the encoded-word itself)."
+        },
+        {
+            "c_hash": "79053794",
+            "date": "2009-08-18 18:36:30 +0000",
+            "comment": "two additional tests"
+        },
+        {
+            "c_hash": "b3d2b07c",
+            "date": "2009-08-18 19:02:07 +0000",
+            "comment": "added notes for next release"
+        },
+        {
+            "c_hash": "9a3deb93",
+            "date": "2009-08-29 21:33:13 +0000",
+            "comment": "use regular expression to match encoded words (MIME4J-138)"
+        },
+        {
+            "c_hash": "c96ee027",
+            "date": "2009-11-15 19:06:34 +0000",
+            "comment": "added stage directory to svn:ignore"
+        },
+        {
+            "c_hash": "39e1f495",
+            "date": "2009-11-15 19:09:16 +0000",
+            "comment": "added stage directory to svn:ignore"
+        },
+        {
+            "c_hash": "442ce56c",
+            "date": "2009-11-15 20:14:53 +0000",
+            "comment": "Made DEFAULT_PARSER static final to prevent NPE in certain conditions, should fix MIME4J-139."
+        },
+        {
+            "c_hash": "c0d17139",
+            "date": "2009-11-15 20:15:30 +0000",
+            "comment": "Use upper case for private static final variables."
+        },
+        {
+            "c_hash": "2740c9de",
+            "date": "2009-11-16 09:27:19 +0000",
+            "comment": "order of methods: placed getters before setters"
+        },
+        {
+            "c_hash": "e880645b",
+            "date": "2009-11-16 09:31:21 +0000",
+            "comment": "An attempt to explain #setMaximalBodyDescriptor"
+        },
+        {
+            "c_hash": "0362553c",
+            "date": "2009-11-16 09:47:13 +0000",
+            "comment": "added documentation for default values"
+        },
+        {
+            "c_hash": "e822eb4c",
+            "date": "2009-11-16 11:25:48 +0000",
+            "comment": "Added configuration parameter maxHeaderLen (MIME4J-140)."
+        },
+        {
+            "c_hash": "8b0d7b35",
+            "date": "2009-11-16 12:36:41 +0000",
+            "comment": "Added MaxHeaderLengthLimitException (MIME4J-140)."
+        },
+        {
+            "c_hash": "9496dcb6",
+            "date": "2009-11-16 13:22:46 +0000",
+            "comment": "Do not check header count if maxHeaderCount is not positive (in accordance to the javadoc of MimeEntityConfig)."
+        },
+        {
+            "c_hash": "63f5d5b4",
+            "date": "2009-12-01 20:54:22 +0000",
+            "comment": "MIME4J-141: DefaultFieldParser / DelegatingFieldParser incorrectly reject folded headers as invalid"
+        },
+        {
+            "c_hash": "1b887260",
+            "date": "2009-12-02 19:12:45 +0000",
+            "comment": "MIME4J-141: removed unnecessary MimeUtil.unfold() call in AbstractField"
+        },
+        {
+            "c_hash": "bff3bc5b",
+            "date": "2009-12-15 12:20:07 +0000",
+            "comment": "test should prove that MIME4J-142 is invalid"
+        },
+        {
+            "c_hash": "52a98389",
+            "date": "2009-12-16 21:00:20 +0000",
+            "comment": "QP coding benchmarks"
+        },
+        {
+            "c_hash": "90251b96",
+            "date": "2009-12-17 19:24:00 +0000",
+            "comment": "* MIME4J-103: QuotedPrintableInputStream refactoring (first round); 2.5 times better performance * Fix for MIME4J-143: QuotedPrintableInputStream can now deal with soft line breaks terminated by a lone LF"
+        },
+        {
+            "c_hash": "0aef98aa",
+            "date": "2009-12-18 10:22:42 +0000",
+            "comment": "QuotedPrintableOutputStream refactoring"
+        },
+        {
+            "c_hash": "3e5738a1",
+            "date": "2009-12-21 19:12:09 +0000",
+            "comment": "MIME4J-103: QuotedPrintableInputStream refactoring (second round); substituted ByteQueue with ByteArrayBuffer"
+        },
+        {
+            "c_hash": "5b4f0b0a",
+            "date": "2009-12-21 19:13:16 +0000",
+            "comment": "Removed unused import"
+        },
+        {
+            "c_hash": "799d25ce",
+            "date": "2009-12-24 17:29:58 +0000",
+            "comment": "MIME4J-103: QuotedPrintableInputStream refactoring (third round); eliminated double buffering of decoded data"
+        },
+        {
+            "c_hash": "bf543d1a",
+            "date": "2009-12-27 18:50:13 +0000",
+            "comment": "Alter the multi-file testsuite to use classpath lookup instead of source reference. This make tests work out of the box in a maven imported eclipse (multiple module in single project) while keeping the behaviour in standard maven. Also this is much better as it does not references the source location for files while refers it using the final test-classes package name."
+        },
+        {
+            "c_hash": "963b65d7",
+            "date": "2009-12-27 18:57:08 +0000",
+            "comment": "Content-Location needs a special \"decoding\" to remove linear whitespace after unfolding. Remove calls to setFoldingPreserved, as \"false\" is also the default (only?) behaviour."
+        },
+        {
+            "c_hash": "3a0f3b43",
+            "date": "2009-12-27 19:13:30 +0000",
+            "comment": "Make sure RawField.getBody returns an unfolded string. Then remove unnecessary unfold from MimeUtil (MIME4J-146)."
+        },
+        {
+            "c_hash": "12fa9f4e",
+            "date": "2009-12-27 19:30:40 +0000",
+            "comment": "More consistent unfolding behaviour (MIME4J-146, partial revert of MIME4J-141). Continued from r894101 (previous commit)."
+        },
+        {
+            "c_hash": "72d33e6c",
+            "date": "2009-12-27 19:41:34 +0000",
+            "comment": "Moved default/generic field parsing from AbstractField to DefaultFieldParser (MIME4J-147)"
+        },
+        {
+            "c_hash": "fb36b9cf",
+            "date": "2009-12-27 19:53:45 +0000",
+            "comment": "Generics for FieldParser (not so useful \"casting-wise\", but remove some warning)"
+        },
+        {
+            "c_hash": "3c607633",
+            "date": "2009-12-28 19:48:55 +0000",
+            "comment": "Fixed the use of generics"
+        },
+        {
+            "c_hash": "c9394238",
+            "date": "2009-12-28 19:49:47 +0000",
+            "comment": "Javadoc fixes"
+        },
+        {
+            "c_hash": "6ea3bc43",
+            "date": "2010-01-30 18:54:25 +0000",
+            "comment": "Make space for \"cycleclean\" branch merge."
+        },
+        {
+            "c_hash": "ce99a8b8",
+            "date": "2010-01-30 18:55:31 +0000",
+            "comment": "Merge benchmark, core, examples modules from cycleclean branch."
+        },
+        {
+            "c_hash": "07b9949f",
+            "date": "2010-01-30 19:31:00 +0000",
+            "comment": "Remove stage, upgrade parent to 1.5 (enable remote repositories), update BUILDING to reflect the change."
+        },
+        {
+            "c_hash": "a5774bc0",
+            "date": "2010-01-30 19:31:15 +0000",
+            "comment": "Remove stage, upgrade parent to 1.5 (enable remote repositories), update BUILDING to reflect the change."
+        },
+        {
+            "c_hash": "0bbbc38c",
+            "date": "2010-01-30 20:17:38 +0000",
+            "comment": "Javadoc fixes to reflect repackaging."
+        },
+        {
+            "c_hash": "fa75f593",
+            "date": "2010-01-30 20:18:44 +0000",
+            "comment": "Update copyright year. Removed references to cpl as we don't include it anymore."
+        },
+        {
+            "c_hash": "282263a7",
+            "date": "2010-01-30 20:19:55 +0000",
+            "comment": "Remove bnd and junit licenses from LICENSE.txt as we don't ship them anymore."
+        },
+        {
+            "c_hash": "25de4fd9",
+            "date": "2010-01-30 20:28:34 +0000",
+            "comment": "Use svn:mime-type application/octet-stream for test resources as we care preserving CR / LF."
+        },
+        {
+            "c_hash": "c23ebec0",
+            "date": "2010-01-30 21:19:23 +0000",
+            "comment": "Trying to remove content to be recommitted later (maybe it is not being overwritten with the right CRLF)"
+        },
+        {
+            "c_hash": "1e49bfa3",
+            "date": "2010-01-30 21:23:57 +0000",
+            "comment": "Recommit removed tests, hoping this time they will preserve the content."
+        },
+        {
+            "c_hash": "4e51dc7a",
+            "date": "2010-01-30 22:24:56 +0000",
+            "comment": "Overall update: plugins, dependencies, build configuration. (MIME4J-173)"
+        },
+        {
+            "c_hash": "cf2a69fd",
+            "date": "2010-01-31 14:40:22 +0000",
+            "comment": "manve-site-plugin 2.1 requires maven 2.1+, and I tested it with 2.2.1, so updating the BUILDING.txt to reflect this new requirement."
+        },
+        {
+            "c_hash": "bb803825",
+            "date": "2010-01-31 14:41:11 +0000",
+            "comment": "Updated RELEASE_NOTES.txt to reflect some of the changes currently in trunk."
+        },
+        {
+            "c_hash": "465575ad",
+            "date": "2010-02-03 19:37:57 +0000",
+            "comment": "\ufeffMIME4J-129, MIME4J-157: The patch eliminates a direct dependency on MaximalBodyDescriptor in all parser classes and replaces it with the MutableBodyDescriptorFactory interface"
+        },
+        {
+            "c_hash": "7c25b6ea",
+            "date": "2010-02-03 19:51:59 +0000",
+            "comment": "\ufeffMIME4J-129, MIME4J-157: Moved MimeTokenStream functionality back to BasicMimeTokenStream; renamed BasicMimeTokenStream to MimeTokenStream"
+        },
+        {
+            "c_hash": "6abdfd17",
+            "date": "2010-02-03 20:15:30 +0000",
+            "comment": "MIME4J-129, MIME4J-157: Moved ContentHandler and AbstractContentHandler to 'parser' package"
+        },
+        {
+            "c_hash": "570be9a1",
+            "date": "2010-02-03 20:25:01 +0000",
+            "comment": "MIME4J-129, MIME4J-157: Moved MaximalBodyDescriptor and MaximalBodyDescriptorFactory to 'message' package"
+        },
+        {
+            "c_hash": "0a043d75",
+            "date": "2010-02-04 20:32:25 +0000",
+            "comment": "MIME4J-158: Eliminates dependency on commons-logging in 'stream' classes"
+        },
+        {
+            "c_hash": "505141fc",
+            "date": "2010-02-04 22:42:28 +0000",
+            "comment": "Set maven-changes-plugin to the latest version (2.3); trying to fix Hudson build breakage"
+        },
+        {
+            "c_hash": "80a50fc2",
+            "date": "2010-02-04 22:54:10 +0000",
+            "comment": "Javadoc fixes"
+        },
+        {
+            "c_hash": "014b6402",
+            "date": "2010-02-05 14:38:41 +0000",
+            "comment": "MIME4J-129: Moved 'field', 'dom', 'message', and 'storage' classes to a separate module; two test cases (MessageParserTest and ExampleMessagesRoundtripTest) dependent on file resources in the '/testmsgs' package are currently broken"
+        },
+        {
+            "c_hash": "33e2a81b",
+            "date": "2010-02-05 14:45:15 +0000",
+            "comment": "Removed dependency on Commons-logging and Log4j in Core"
+        },
+        {
+            "c_hash": "11bd131d",
+            "date": "2010-02-05 16:42:38 +0000",
+            "comment": "Fixed broken test cases"
+        },
+        {
+            "c_hash": "d7cc9e33",
+            "date": "2010-02-05 17:11:35 +0000",
+            "comment": "MIME4J-158: Eliminated all dependencies on Commons-Logging in DOM module with the sole exception of LoggingMonitor"
+        },
+        {
+            "c_hash": "bc962ed7",
+            "date": "2010-02-05 18:12:29 +0000",
+            "comment": "Removed references to commons-logging and log4j from supplemental models"
+        },
+        {
+            "c_hash": "30c8bcfd",
+            "date": "2010-02-06 12:13:28 +0000",
+            "comment": "MIME4J-158: Moved LoggingMonitor to examples; DOM module no longer depends on Commons-Logging"
+        },
+        {
+            "c_hash": "bce606a0",
+            "date": "2010-02-12 10:43:29 +0000",
+            "comment": "Changed static methods to return an interface instead of a concrete class"
+        },
+        {
+            "c_hash": "11cca9f2",
+            "date": "2010-03-14 23:04:58 +0000",
+            "comment": "Refactor org.mime4j.util.CharsetUtil to lazily determine supported encodings/decodings (MIME4J-174) Patch kindly contributed by Richard von Keyserling."
+        },
+        {
+            "c_hash": "0d589454",
+            "date": "2010-03-14 23:05:59 +0000",
+            "comment": "Remove System.out from jj source code."
+        },
+        {
+            "c_hash": "c4d83ba9",
+            "date": "2010-03-14 23:11:00 +0000",
+            "comment": "Renamed MessageBuilder to EntityBuilder to avoid confusion with next changes (introducing a MessageBuilder similar to xml's DocumentBuilder) (MIME4J-156)"
+        },
+        {
+            "c_hash": "585502a2",
+            "date": "2010-03-14 23:18:51 +0000",
+            "comment": "Proposal for a MessageBuilderFactory/MessageBuilder way to create new Messages similar to the well known DocumentBuilderFactory/DocumentBuilder pattern. (MIME4J-175)"
+        },
+        {
+            "c_hash": "0055d8ac",
+            "date": "2010-03-15 00:01:10 +0000",
+            "comment": "First improvement to show how to support configuration of the MessageBuilder wrt StorageProvider and DecodeMonitor (MIME4J-175)."
+        },
+        {
+            "c_hash": "3caff3d9",
+            "date": "2010-03-27 21:08:20 +0000",
+            "comment": "Improve toString debug for BufferedLineReaderInputStream in order to debug temporary buffer state."
+        },
+        {
+            "c_hash": "e6e5ce9a",
+            "date": "2010-03-27 21:09:08 +0000",
+            "comment": "add a default value (false) for malformedHeaderStartsBody"
+        },
+        {
+            "c_hash": "be831dff",
+            "date": "2010-03-27 21:13:15 +0000",
+            "comment": "Altered parser to skip the T_PREAMBLE token when there is no preamble in the input message. Updated tests to avoid expecting T_PREAMBLE. Updated roundtrip tests expectation with the right results. (MIME4J-177)"
+        },
+        {
+            "c_hash": "c3d5a784",
+            "date": "2010-03-27 21:17:08 +0000",
+            "comment": "Make sure the MessageWriter for the DOM does not introduce a preamble when it's been built from a message with no preamble. Multipart preamble and epilogue are now nullable so to be able to distinguish between empty preamble/epilogue and no preamble/epilogue (MIME4J-176)"
+        },
+        {
+            "c_hash": "888f4d0a",
+            "date": "2010-03-27 21:18:11 +0000",
+            "comment": "Added explicit notes about contract change in parser and dom due to fixes for MIME4J-176 and MIME4J-177"
+        },
+        {
+            "c_hash": "83da7666",
+            "date": "2010-04-24 19:10:32 +0000",
+            "comment": "Use the \"mail\" category in the doap descriptor (Java does not exists)"
+        },
+        {
+            "c_hash": "d559dd35",
+            "date": "2010-04-24 19:15:17 +0000",
+            "comment": "Avoid sequencing streams and simulating a contenttype header when we can easily simulate the events (MIME4J-153 and MIME4J-128)"
+        },
+        {
+            "c_hash": "918d08d0",
+            "date": "2010-04-24 19:40:43 +0000",
+            "comment": "Make sure headless parsing in MimeTokenStream starts from the first body token and not with the unexpected T_END_HEADER, also change MimeStreamParser to avoid waiting for that event (MIME4J-153 and MIME4J-128)"
+        },
+        {
+            "c_hash": "d4ee4c7f",
+            "date": "2010-04-24 19:48:39 +0000",
+            "comment": "Documented headless parsing changes (MIME4J-153 and MIME4J-128)"
+        },
+        {
+            "c_hash": "162fc322",
+            "date": "2010-04-24 20:02:34 +0000",
+            "comment": "Changed MimeEntityConfig property \"defaultContentType\" to \"headlessParsing\", so it better self-describe the impact on parsing, as it is not only a default, but a directive for parsing behaviour. (MIME4J-178 and MIME4J-128)"
+        },
+        {
+            "c_hash": "ee24d30e",
+            "date": "2010-04-24 20:51:40 +0000",
+            "comment": "Added MimeEntityConfig and MutableBodyDescriptorFactory configurations (setAttribute) to MessageBuilderFactory so to be able most mime4j features without directly using the message package (MIME4J-175)."
+        },
+        {
+            "c_hash": "b81567a2",
+            "date": "2010-04-24 23:07:55 +0000",
+            "comment": "Added setFlat(boolean flatMode) method to MimeStreamParser (so to simplify jDKIM usage)."
+        },
+        {
+            "c_hash": "a84ef314",
+            "date": "2010-04-24 23:09:01 +0000",
+            "comment": "Small JavaDocs improvement (MIME4J-175)"
+        },
+        {
+            "c_hash": "a5339dcc",
+            "date": "2010-04-24 23:09:44 +0000",
+            "comment": "Add correct services file (MIME4J-175)"
+        },
+        {
+            "c_hash": "3f729a81",
+            "date": "2010-06-15 06:31:13 +0000",
+            "comment": "Adding implementation of skip(long)."
+        },
+        {
+            "c_hash": "54cf4c55",
+            "date": "2010-06-28 20:43:31 +0000",
+            "comment": "Expose contentDecoding and FlatMode via MessageBuilder API (MIME4J-175)"
+        },
+        {
+            "c_hash": "ea15be8d",
+            "date": "2011-01-12 10:57:38 +0000",
+            "comment": "Removed superfluous declarations from interface methods"
+        },
+        {
+            "c_hash": "b781e935",
+            "date": "2011-01-12 11:01:13 +0000",
+            "comment": "Removed test code from main code base; removed bogus interactive test"
+        },
+        {
+            "c_hash": "56703cd1",
+            "date": "2011-01-12 21:03:53 +0000",
+            "comment": "Factored out address formatting code to a separate utility class similar to AddressBuilder; there is no longer a need for MailboxImlp and GroupImpl; slightly more efficient #equals and #hashCode implementations for Mailbox (merged from a refactoring branch)"
+        },
+        {
+            "c_hash": "45618d82",
+            "date": "2011-01-12 22:09:20 +0000",
+            "comment": "Removed unused utility class"
+        },
+        {
+            "c_hash": "e725f475",
+            "date": "2011-01-19 18:50:34 +0000",
+            "comment": "Moved all implementation details from 'dom' to 'message'; 'dom' is mostly pure interfaces now (merged from refactoring branch)"
+        },
+        {
+            "c_hash": "216ff394",
+            "date": "2011-01-26 22:38:38 +0000",
+            "comment": "Message builder / formatter API refactoring (merged from refactoring branch)"
+        },
+        {
+            "c_hash": "cfb6ea4f",
+            "date": "2011-01-27 14:34:53 +0000",
+            "comment": "Decoupled storage and message code: the message package contains only a very basic BodyFactory interface and its default implementation whereas the storage package provides a feature complete version of BodyFactory with different storage backends"
+        },
+        {
+            "c_hash": "d6f8125d",
+            "date": "2011-01-27 21:55:35 +0000",
+            "comment": "Moved storage classes to a separate module"
+        },
+        {
+            "c_hash": "285f8f44",
+            "date": "2011-01-27 22:39:51 +0000",
+            "comment": "SVN ignore"
+        },
+        {
+            "c_hash": "f38bfece",
+            "date": "2011-01-30 16:28:23 +0000",
+            "comment": "Small improvement in parsing error message and in test suites so to be able to generate expected results when missing. Added svn-ignore for \"target\"."
+        },
+        {
+            "c_hash": "4ab780bf",
+            "date": "2011-02-08 15:59:28 +0000",
+            "comment": "Moved parser parameters to MimeBuilder and MessageBuilderImpl; removed ParseParams"
+        },
+        {
+            "c_hash": "1cff0e67",
+            "date": "2011-02-08 16:07:06 +0000",
+            "comment": "Added #getDispositionType and #getFilename to the Entity interface"
+        },
+        {
+            "c_hash": "731235a8",
+            "date": "2011-03-15 23:00:59 +0000",
+            "comment": "Switch to and force maven 3. Add generation of technical reports using the -Psite-reports profile"
+        },
+        {
+            "c_hash": "3434dab8",
+            "date": "2011-03-16 20:21:39 +0000",
+            "comment": "EntityState and RecursionMode changed from a set of int values defined by an interface to enum types"
+        },
+        {
+            "c_hash": "03d7500f",
+            "date": "2011-03-21 10:48:32 +0000",
+            "comment": "Next version fixes various issues when used with maven 3"
+        },
+        {
+            "c_hash": "6c541481",
+            "date": "2011-03-24 18:54:31 +0000",
+            "comment": "Update to maven-skin-1.6"
+        },
+        {
+            "c_hash": "f2829f5e",
+            "date": "2011-03-24 19:21:32 +0000",
+            "comment": "Update to james-project-1.6"
+        },
+        {
+            "c_hash": "721d7e07",
+            "date": "2011-03-29 17:52:22 +0000",
+            "comment": "MIME4J-165: Use FieldBuilder to build MIME fields from individual lines. Concrete implementations of this interface can choose to truncate MIME fields that exceed a particular limit or to ignore certain fields altogether."
+        },
+        {
+            "c_hash": "447ab517",
+            "date": "2011-03-29 19:33:58 +0000",
+            "comment": "MIME4J-165: added test case for skipping unwanted fields"
+        },
+        {
+            "c_hash": "ed80834e",
+            "date": "2011-03-31 12:02:16 +0000",
+            "comment": "Moved field formatting logic from Field interface to MimeWriter"
+        },
+        {
+            "c_hash": "2c24c9c9",
+            "date": "2011-04-01 09:49:08 +0000",
+            "comment": "MIME4J-145: moved code splitting raw byte sequence into field name / field body parts from RawField to RawFieldParser; RawField still contains logic to extract and unfold body content, which probably should also be moved to RawFieldParser"
+        },
+        {
+            "c_hash": "f67dc057",
+            "date": "2011-04-05 15:49:38 +0000",
+            "comment": "MIME4J-145: Moved code splitting raw field value into a list of name/value pairs from DefaultBodyDescriptor to RawFieldParser; replaced old implementation with a new one based on code borrowed from HttpCore; the new implementation should generate less intermediate garbage on the heap"
+        },
+        {
+            "c_hash": "9e438a04",
+            "date": "2011-04-06 12:38:15 +0000",
+            "comment": "Use simple byte to char and char to byte casts when decoding / encoding ASCII elements"
+        },
+        {
+            "c_hash": "a07f3a0a",
+            "date": "2011-04-06 16:45:51 +0000",
+            "comment": "MIME4J-166: added a more lenient implementation of FieldBuilder which quietly truncate MIME fields exceeding a particular max limit; refactored and optimized RawFieldParser and DefaultFieldBuilder. LenientFieldBuilder is also more resource efficient compared to DefaultFieldBuilder as it does not maintain original raw content and also generates less intermediate garbage on heap"
+        },
+        {
+            "c_hash": "9d26d3d5",
+            "date": "2011-04-14 08:30:11 +0000",
+            "comment": "MIME4J-187: Fixed inconsistency in handling of empty preambles and epilogues"
+        },
+        {
+            "c_hash": "253b715c",
+            "date": "2011-04-14 15:02:01 +0000",
+            "comment": "Added test case for MIME4J-180; minor code refactoring in MimeBoundaryInputStream and MimeEntity.java"
+        },
+        {
+            "c_hash": "4fadda0b",
+            "date": "2011-04-14 15:07:05 +0000",
+            "comment": "MIME4-159: removed custom charset registry in favor of Java standard Charset implementation"
+        },
+        {
+            "c_hash": "c0722a7b",
+            "date": "2011-04-14 21:26:12 +0000",
+            "comment": "No relative parents in maven-3"
+        },
+        {
+            "c_hash": "02319a86",
+            "date": "2011-04-14 21:28:49 +0000",
+            "comment": "Fix image urls"
+        },
+        {
+            "c_hash": "1092af4c",
+            "date": "2011-04-15 04:07:01 +0000",
+            "comment": "Add license to header"
+        },
+        {
+            "c_hash": "db373fd2",
+            "date": "2011-04-15 04:09:03 +0000",
+            "comment": "Add some excludes for apache-rat report"
+        },
+        {
+            "c_hash": "2570f156",
+            "date": "2011-04-15 04:47:21 +0000",
+            "comment": "Remove unused imports"
+        },
+        {
+            "c_hash": "256a9413",
+            "date": "2011-04-15 04:48:42 +0000",
+            "comment": "No need to import a type that lives in the same package"
+        },
+        {
+            "c_hash": "c28ca968",
+            "date": "2011-04-15 04:57:52 +0000",
+            "comment": "Performance improvement"
+        },
+        {
+            "c_hash": "5f16593c",
+            "date": "2011-04-16 10:14:32 +0000",
+            "comment": "Tolerate null input"
+        },
+        {
+            "c_hash": "0c4c67fc",
+            "date": "2011-04-16 11:48:33 +0000",
+            "comment": "CharsetUtil#lookup to catch IllegalCharsetNameException; added javadocs and test cases"
+        },
+        {
+            "c_hash": "a3fc3643",
+            "date": "2011-04-17 10:41:46 +0000",
+            "comment": "MIME4J-191: Added MimeWriter#writeField method"
+        },
+        {
+            "c_hash": "e6cba827",
+            "date": "2011-04-17 11:46:40 +0000",
+            "comment": "MIME4J-192: added FlatMode and ContentDecoding parameters"
+        },
+        {
+            "c_hash": "fce7d163",
+            "date": "2011-04-18 10:04:04 +0000",
+            "comment": "MIME4J-194: added unit test"
+        },
+        {
+            "c_hash": "bb5cdcef",
+            "date": "2011-04-19 09:57:36 +0000",
+            "comment": "Added some more testmsgs generated by me"
+        },
+        {
+            "c_hash": "26b44438",
+            "date": "2011-04-19 10:12:19 +0000",
+            "comment": "Added test messages from MIME-Tools perl toolkit distributions (MIME4J-190, related to MIME4J-11, LEGAL-64) Tests have been added to a different folder to keep licensing more clear. RAT configuration updated, file based tests now runs both folder (testmsgs and mimetools-testmsgs)."
+        },
+        {
+            "c_hash": "00b5e935",
+            "date": "2011-04-19 14:53:36 +0000",
+            "comment": "Moved presence of whitespace chars in boundary check from MimeBoundaryInputStream's constructor to MimeEntity where this protocol violation can be hanlded leniently depending on the parsing mode"
+        },
+        {
+            "c_hash": "08b2a22c",
+            "date": "2011-04-19 15:13:41 +0000",
+            "comment": "Added test to prove MIME4J-189 issue"
+        },
+        {
+            "c_hash": "5e8acb98",
+            "date": "2011-04-19 15:22:29 +0000",
+            "comment": "Temporarily comment the failing test (MIME4J-189)"
+        },
+        {
+            "c_hash": "ee7fa00e",
+            "date": "2011-04-19 15:26:47 +0000",
+            "comment": "Temporay fix for missing unfolding by RawFieldParser (MIME4J-189)"
+        },
+        {
+            "c_hash": "b54ac424",
+            "date": "2011-04-19 15:38:32 +0000",
+            "comment": "Revert bad code that broke tests. Whitespace is valid in the boundary. left the CR/LF checks in place. (MIME4J-189)"
+        },
+        {
+            "c_hash": "b9c69544",
+            "date": "2011-04-19 19:39:10 +0000",
+            "comment": "A complete rewrite of the low level field parsing routines: the parser should be more flexible now while still being very efficient and fast (the parser never needs to move backward and does not create intermediate copies of the data being parsed). Handling of comments will be implemented as the next step"
+        },
+        {
+            "c_hash": "1384bb96",
+            "date": "2011-04-20 12:16:59 +0000",
+            "comment": "RawFieldPsrser: handling of comments in field values"
+        },
+        {
+            "c_hash": "280a2c9a",
+            "date": "2011-04-20 13:02:16 +0000",
+            "comment": "MIME4J-189: fixed regression caused by incorrect handling of folded quoted strings in RawFieldParser"
+        },
+        {
+            "c_hash": "17a32f85",
+            "date": "2011-04-24 10:51:53 +0000",
+            "comment": "Update Maven version and tighten prose"
+        },
+        {
+            "c_hash": "ffd83a70",
+            "date": "2011-05-15 18:37:39 +0000",
+            "comment": "MIME4J-116: Groundwork to resolve duplicate parsing of header field: moved Field interface back to core; RawField changed to implement Field; ContentHandler changed to accept Fields instead of RawFields"
+        },
+        {
+            "c_hash": "f92e1786",
+            "date": "2011-05-19 14:05:09 +0000",
+            "comment": "MIME4J-116: duplicate parsing of header fields can now be avoided by passing an instance of FieldParser to the MimeTokenStream. The field parser can choose to parse fields either eagerly or lazily. Lazy parsing is used per default"
+        },
+        {
+            "c_hash": "2a914e6c",
+            "date": "2011-05-23 20:20:44 +0000",
+            "comment": "Follow-up to MIME4J-116: parsing code moved from body descriptors to individual field impls; body descriptors are now collections of lazily parsed fields"
+        },
+        {
+            "c_hash": "73c06166",
+            "date": "2011-05-24 12:35:10 +0000",
+            "comment": "Follow-up to MIME4J-116: FieldParser interface changed to take Field as an input parameter. This enables more efficient parser implementations that can make use of RawField data without having to make an intermediate copy of the field body"
+        },
+        {
+            "c_hash": "bf147862",
+            "date": "2011-05-25 15:47:57 +0000",
+            "comment": "MIME4J-197: Added 'lenient' ContentTypeField implementation; added LenientFieldParser as an alternative to DefaultFieldParser"
+        },
+        {
+            "c_hash": "191aba61",
+            "date": "2011-06-01 11:58:11 +0000",
+            "comment": "MIME4J-197: added lenient implementations of ContentDispositionField and ContentLanguageField"
+        },
+        {
+            "c_hash": "95bbdeba",
+            "date": "2011-06-06 15:24:11 +0000",
+            "comment": "MIME4J-197: added lenient implementations of ContentLocationField and MimeVersionField"
+        },
+        {
+            "c_hash": "72c882ca",
+            "date": "2011-06-09 15:17:28 +0000",
+            "comment": "MIME4J-197: Lenient implementation of Mailbox parser; refactored AddressBuilder and AddressFormatter test cases"
+        },
+        {
+            "c_hash": "ca9f8c5c",
+            "date": "2011-06-14 14:52:12 +0000",
+            "comment": "MIME4J-197: Lenient implementation of AddressBuilder"
+        },
+        {
+            "c_hash": "4a51d573",
+            "date": "2011-06-15 09:17:59 +0000",
+            "comment": "MIME4J-197: added lenient implementations of MailboxField, MailboxListField, AddressListField and DateTimeField"
+        },
+        {
+            "c_hash": "5978538e",
+            "date": "2011-06-15 14:20:18 +0000",
+            "comment": "MIME4J-180: I/O exception is thrown in the strict parsing mode when reading from body content stream if the mime part has no end boundary; fixed recursion in MimeBoundaryInputStream#read(byte[], int, int) method"
+        },
+        {
+            "c_hash": "0136b250",
+            "date": "2011-06-16 12:37:45 +0000",
+            "comment": "Improved exception messages"
+        },
+        {
+            "c_hash": "07d49e55",
+            "date": "2011-06-16 12:40:17 +0000",
+            "comment": "re-added mimetools double-semicolon tests."
+        },
+        {
+            "c_hash": "582dc2fe",
+            "date": "2011-06-16 17:34:35 +0000",
+            "comment": "remove empty file (rat is failing)"
+        },
+        {
+            "c_hash": "160a0a48",
+            "date": "2011-06-16 17:35:25 +0000",
+            "comment": "added 2 \"expected\" files missing from a previous commit."
+        },
+        {
+            "c_hash": "c26958ff",
+            "date": "2011-06-17 07:35:09 +0000",
+            "comment": "QuotedPrintable: added the dot the the \"default\" list of encoded chars (MIME4J-186) Updated test case expected outputs."
+        },
+        {
+            "c_hash": "89557d00",
+            "date": "2011-06-17 08:23:57 +0000",
+            "comment": "Renamed MessageFormatter's writeTo to writeMessage (MIME4J-193)"
+        },
+        {
+            "c_hash": "381605f8",
+            "date": "2011-06-17 08:28:06 +0000",
+            "comment": "No need to have MessageFormatterImpl as MimeWriter can directly implement MessageFormatter and anyway the whole thing is exposed via MessageFormatter interface (MIME4J-193)"
+        },
+        {
+            "c_hash": "9c0c9c3a",
+            "date": "2011-06-17 08:31:32 +0000",
+            "comment": "Expose writing methods for other dom objects via MessageFormatter (MIME4J-193)"
+        },
+        {
+            "c_hash": "0c5c74bb",
+            "date": "2011-06-17 09:03:09 +0000",
+            "comment": "Just replace tabs with spaces"
+        },
+        {
+            "c_hash": "e16c52d8",
+            "date": "2011-06-20 14:49:10 +0000",
+            "comment": "Eliminated MessageBuilderImpl to match changes made on the writer side of the DOM API"
+        },
+        {
+            "c_hash": "53298837",
+            "date": "2011-06-20 14:53:06 +0000",
+            "comment": "MessageFormatter -> MessageWriter"
+        },
+        {
+            "c_hash": "b71f2023",
+            "date": "2011-06-20 15:00:29 +0000",
+            "comment": "MimeWriter -> DefaultMessageWriter, MimeBuilder -> DefaultMessageBuilder"
+        },
+        {
+            "c_hash": "466029f5",
+            "date": "2011-06-20 15:16:33 +0000",
+            "comment": "Added methods to create Header and Multipart instances to MessageBuilder interface"
+        },
+        {
+            "c_hash": "90a23ed6",
+            "date": "2011-06-21 15:25:54 +0000",
+            "comment": "Fixed broken #charAt method; renamed to #byteAt"
+        },
+        {
+            "c_hash": "4dcf1733",
+            "date": "2011-06-22 08:34:41 +0000",
+            "comment": "MIME4J-199: boundary scanning code in MimeBoundaryInputStream improved; extra check added to ensure that multipart boundary is properly terminated with a whitedspace or '-' char"
+        },
+        {
+            "c_hash": "42903a3d",
+            "date": "2011-06-22 09:57:43 +0000",
+            "comment": "Fixed wrong line delimiters"
+        },
+        {
+            "c_hash": "08c667d4",
+            "date": "2011-06-22 10:04:13 +0000",
+            "comment": "Fixed wrong line delimiters"
+        },
+        {
+            "c_hash": "22e9324a",
+            "date": "2011-06-22 10:07:18 +0000",
+            "comment": "Fixed wrong line delimiters"
+        },
+        {
+            "c_hash": "68c08018",
+            "date": "2011-06-22 10:12:47 +0000",
+            "comment": "Fixed wrong line delimiters"
+        },
+        {
+            "c_hash": "3f0ef3c8",
+            "date": "2011-06-22 10:14:26 +0000",
+            "comment": "To hell with it"
+        },
+        {
+            "c_hash": "bc719cbe",
+            "date": "2011-06-23 09:08:14 +0000",
+            "comment": "Merged Refactoring for MIME4J-116. FieldParser has been moved to the dom package and field parsing is expected to happen inside the MutableBodyDescriptor implementation. Minimal/MaximalBodyDescriptor implementations takes a FieldParser instance so that EntityBuilder doesn't have to know the FieldParser again."
+        },
+        {
+            "c_hash": "ef1b288d",
+            "date": "2011-06-23 15:01:02 +0000",
+            "comment": "Merged AbstractEntity code into MimeEntity (a prerequisite for MutableBodyDescriptor refactoring)"
+        },
+        {
+            "c_hash": "028ceb80",
+            "date": "2011-06-28 14:11:40 +0000",
+            "comment": "MutableBodyDescriptor and MutableBodyDescriptorFactory replaced with BodyDescriptorBuilder; MinimalBodyDescriptor is no longer needed"
+        },
+        {
+            "c_hash": "098ada22",
+            "date": "2011-07-11 19:48:50 +0000",
+            "comment": "TABS -> SPACES"
+        },
+        {
+            "c_hash": "1d455fe1",
+            "date": "2011-07-13 14:17:19 +0000",
+            "comment": "Updated javadocs for mime4j core api"
+        },
+        {
+            "c_hash": "5fe59a7d",
+            "date": "2011-07-15 11:57:09 +0000",
+            "comment": "Updated javadocs for mime4j dom classes"
+        },
+        {
+            "c_hash": "9a2ea987",
+            "date": "2011-07-18 06:33:21 +0000",
+            "comment": "Cleanup / Use skin for Apache Branding in Navigation. See JAMES-1289"
+        },
+        {
+            "c_hash": "85b04a60",
+            "date": "2011-07-18 08:44:05 +0000",
+            "comment": "Updated release notes for Mime4J 0.7 release"
+        },
+        {
+            "c_hash": "9bdc1fce",
+            "date": "2011-07-18 08:52:18 +0000",
+            "comment": "Renamed MimeEntityConfig to MimeConfig"
+        },
+        {
+            "c_hash": "a65c0166",
+            "date": "2011-07-18 09:16:05 +0000",
+            "comment": "Javadoc updates"
+        },
+        {
+            "c_hash": "912f6293",
+            "date": "2011-07-18 16:42:09 +0000",
+            "comment": "Support \"DecodeMonitor\" attribute in the default messageservicefactory."
+        },
+        {
+            "c_hash": "4638db65",
+            "date": "2011-07-19 18:35:24 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-mime4j-project-0.7"
+        },
+        {
+            "c_hash": "ada732c6",
+            "date": "2011-07-19 18:37:00 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "c8659a70",
+            "date": "2011-07-20 10:59:00 +0000",
+            "comment": "rename LICENSE.txt/NOTICE.txt to LICENSE/NOTICE to follow maven convention and make sure the source package defined in apache parent pom includes our licensing stuff instead of maven defaults. remove src.xml descriptor from assemble module: we don't need to generate a source package because the \"apache-release\" profile already creates a correct one for the main pom. alter bin.xml assembly descriptor to include all of our generated jars (previously it only included core jars)."
+        },
+        {
+            "c_hash": "600c20d7",
+            "date": "2011-07-20 10:59:15 +0000",
+            "comment": "rename LICENSE.txt/NOTICE.txt to LICENSE/NOTICE to follow maven convention and make sure the source package defined in apache parent pom includes our licensing stuff instead of maven defaults. remove src.xml descriptor from assemble module: we don't need to generate a source package because the \"apache-release\" profile already creates a correct one for the main pom. alter bin.xml assembly descriptor to include all of our generated jars (previously it only included core jars)."
+        },
+        {
+            "c_hash": "4361ff41",
+            "date": "2011-07-20 18:49:42 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-mime4j-project-0.7"
+        },
+        {
+            "c_hash": "def68819",
+            "date": "2011-07-20 18:55:19 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "6b0e040b",
+            "date": "2011-07-25 13:28:50 +0000",
+            "comment": "Update mime4j status page further to 0.7 release"
+        },
+        {
+            "c_hash": "9375ff61",
+            "date": "2011-07-25 13:41:41 +0000",
+            "comment": "Add javadoc in the Mime4J menu because new skin does not show generated reports."
+        },
+        {
+            "c_hash": "3bb5e476",
+            "date": "2011-07-25 13:42:13 +0000",
+            "comment": "User Apache James Mime4J syntax."
+        },
+        {
+            "c_hash": "f72804c5",
+            "date": "2011-07-30 10:35:14 +0000",
+            "comment": "fix apt syntax for anchors (they don't need the starting #) and relative urls (the have to start with ./)."
+        },
+        {
+            "c_hash": "8a8942ba",
+            "date": "2011-08-13 11:32:08 +0000",
+            "comment": "MIME4J-202: allow for mailboxes with empty local part in the lenient mode"
+        },
+        {
+            "c_hash": "68bc1194",
+            "date": "2011-09-30 16:26:45 +0000",
+            "comment": "MIME4J-203: RawField#getBody does not correctly handle TAB character after the body delimiter"
+        },
+        {
+            "c_hash": "0879e0cd",
+            "date": "2011-09-30 17:02:58 +0000",
+            "comment": "MIME4J-204: accept date-time fields without day of the week attribute when in lenient mode"
+        },
+        {
+            "c_hash": "8736f081",
+            "date": "2011-10-03 23:13:45 +0000",
+            "comment": "MIME4J-205: new instances of MessageImpl class to contain a MIME-version field per default"
+        },
+        {
+            "c_hash": "953579f1",
+            "date": "2011-10-08 15:35:53 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-mime4j-project-0.7.1"
+        },
+        {
+            "c_hash": "8ba908db",
+            "date": "2011-10-08 15:36:36 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "32fa893a",
+            "date": "2011-10-17 14:25:23 +0000",
+            "comment": "Use renamed james-skin (JAMES-1334)"
+        },
+        {
+            "c_hash": "d4feaae9",
+            "date": "2011-10-19 12:07:49 +0000",
+            "comment": "Reformat (JAMES-1339)"
+        },
+        {
+            "c_hash": "74a7a9cf",
+            "date": "2011-11-10 20:26:16 +0000",
+            "comment": "Move to james-project-1.7"
+        },
+        {
+            "c_hash": "493f480c",
+            "date": "2011-11-22 08:29:29 +0000",
+            "comment": "MIME4J-207: IndexOutOfBoundsException while parsing email address with a leading 'at' character"
+        },
+        {
+            "c_hash": "5b892df8",
+            "date": "2011-11-22 08:57:26 +0000",
+            "comment": "MIME4J-208: DateTimeFieldLenientImpl used incorrect date-time format"
+        },
+        {
+            "c_hash": "5a9dd7a3",
+            "date": "2011-11-22 09:28:45 +0000",
+            "comment": "Update to james-project 1.8"
+        },
+        {
+            "c_hash": "3580457d",
+            "date": "2011-11-22 09:42:48 +0000",
+            "comment": "Remove old, unused navigation"
+        },
+        {
+            "c_hash": "7ec2555c",
+            "date": "2011-11-22 09:43:52 +0000",
+            "comment": "Fix / update some documentation"
+        },
+        {
+            "c_hash": "d7241dca",
+            "date": "2011-11-22 11:17:23 +0000",
+            "comment": "Fix technical reports generation"
+        },
+        {
+            "c_hash": "64b472be",
+            "date": "2011-11-22 11:54:39 +0000",
+            "comment": "Downgrade to Java 1.5"
+        },
+        {
+            "c_hash": "a1e1c647",
+            "date": "2011-11-22 19:25:58 +0000",
+            "comment": "- Add issue tracker - Adapt to James Server menu structure"
+        },
+        {
+            "c_hash": "90242422",
+            "date": "2011-11-26 22:05:24 +0000",
+            "comment": "Downgrade bundle plugin to be able to compile with java5"
+        },
+        {
+            "c_hash": "28f70e83",
+            "date": "2011-12-12 19:49:14 +0000",
+            "comment": "MIME4J-210: lenient address parser does not decode encoded display names"
+        },
+        {
+            "c_hash": "8ab9362b",
+            "date": "2011-12-13 17:45:52 +0000",
+            "comment": "MIME4J-209: Regex pattern used by DecoderUtil disallowed question mark in the encoded text"
+        },
+        {
+            "c_hash": "5356dcc0",
+            "date": "2011-12-15 12:00:47 +0000",
+            "comment": "Expose default instance of DefaultFieldParser and LenientFieldParser as an immutable interface rather than a mutable concrete class"
+        },
+        {
+            "c_hash": "986b6a7d",
+            "date": "2011-12-21 21:12:24 +0000",
+            "comment": "Updated usage page and MimeStreamParser javadocs"
+        },
+        {
+            "c_hash": "7562f0df",
+            "date": "2011-12-21 21:12:40 +0000",
+            "comment": "Updated release notes"
+        },
+        {
+            "c_hash": "649c21e7",
+            "date": "2011-12-29 12:33:08 +0000",
+            "comment": "Fixed the use of generic collection parameters in Message and related classes"
+        },
+        {
+            "c_hash": "4eb7fbf2",
+            "date": "2012-01-05 22:13:00 +0000",
+            "comment": "More efficient implementation of TextBody backed by a String; body content can be streamed without convering the string to a byte array"
+        },
+        {
+            "c_hash": "2a944253",
+            "date": "2012-01-05 22:14:08 +0000",
+            "comment": "Cleared executable bit"
+        },
+        {
+            "c_hash": "5b5d7a66",
+            "date": "2012-01-07 14:01:30 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-mime4j-project-0.7.2"
+        },
+        {
+            "c_hash": "54f25b51",
+            "date": "2012-01-07 14:05:30 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "f5ea3a49",
+            "date": "2012-02-05 19:28:21 +0000",
+            "comment": "MIME4J-211: Add an optional fallback charset argument to DecoderUtil.decodeEncodedWords Contributed by TzeKai Lee <chikei at gmail.com>"
+        },
+        {
+            "c_hash": "6ff1dc47",
+            "date": "2012-02-08 18:27:04 +0000",
+            "comment": "MIME4J-212: DefaultMessageBuilder#parseHeader ignores MimeConfig"
+        },
+        {
+            "c_hash": "bbfef0a0",
+            "date": "2012-03-24 11:09:15 +0000",
+            "comment": "MIME4J-213: OSGi metadata fix Contributed by Raman Gupta <rocketraman at gmail.com>"
+        },
+        {
+            "c_hash": "7679f5d3",
+            "date": "2012-04-17 17:20:10 +0000",
+            "comment": "use 1.8.1 parent to generate correct site"
+        },
+        {
+            "c_hash": "9c3b4c55",
+            "date": "2012-06-19 09:41:00 +0000",
+            "comment": "Integrated Mbox Iterator to Apache James Mime4j"
+        },
+        {
+            "c_hash": "16eb70ff",
+            "date": "2012-06-19 09:41:33 +0000",
+            "comment": "Removed Guava from dependencies."
+        },
+        {
+            "c_hash": "0ddf3aaa",
+            "date": "2012-06-23 13:38:38 +0000",
+            "comment": "MIME4J-215: Make MboxIterator compatible with target.jdk=1.5 Eclipse's .settings, .project and .classpath added to svn:ignore"
+        },
+        {
+            "c_hash": "4d1730d0",
+            "date": "2012-09-26 17:21:25 +0000",
+            "comment": "Made DomainList immutable, fixes MIME4J-217"
+        },
+        {
+            "c_hash": "6b38bd81",
+            "date": "2012-11-23 14:46:16 +0000",
+            "comment": "fix svn:ignore properties"
+        },
+        {
+            "c_hash": "a1b701c0",
+            "date": "2012-12-27 12:25:27 +0000",
+            "comment": "MIME4j-219 Added new DateTime format and test. Added also the message sample to test/resources."
+        },
+        {
+            "c_hash": "4b59934f",
+            "date": "2012-12-27 13:23:54 +0000",
+            "comment": "MIME4J-221 Updated most tests to junit-4 style"
+        },
+        {
+            "c_hash": "d2b77deb",
+            "date": "2013-01-02 15:38:19 +0000",
+            "comment": "MIME4J-218: made it easier to map a charset name to Charset implementation (added BasicBodyFactory#resolveCharset method)"
+        },
+        {
+            "c_hash": "c3c53363",
+            "date": "2013-01-02 15:45:57 +0000",
+            "comment": "MIME4J-218: rethrow UnsupportedCharsetException as a checked I/O exception"
+        },
+        {
+            "c_hash": "cd362e02",
+            "date": "2013-03-17 10:36:33 +0000",
+            "comment": "MIME4J-221 Pom cleanup and IDE code analisys improvements"
+        },
+        {
+            "c_hash": "8743eee3",
+            "date": "2013-03-17 12:08:05 +0000",
+            "comment": "Upgraded to apache-james-project 1.8.2"
+        },
+        {
+            "c_hash": "222ed368",
+            "date": "2013-03-17 12:12:04 +0000",
+            "comment": "Updated commons-io to 2.4 fixed some tests"
+        },
+        {
+            "c_hash": "39212b84",
+            "date": "2013-03-17 12:12:29 +0000",
+            "comment": "Changed version format to tree component style 0.8.0"
+        },
+        {
+            "c_hash": "f3a5ae28",
+            "date": "2013-03-17 12:20:53 +0000",
+            "comment": "Fixes MIME4J-225 and MIME4J-222"
+        },
+        {
+            "c_hash": "409b162b",
+            "date": "2013-03-24 09:18:24 +0000",
+            "comment": "MIME4J-226 changed compiler source and target to java 1.5"
+        },
+        {
+            "c_hash": "c0c7c233",
+            "date": "2013-04-23 14:01:58 +0000",
+            "comment": "MIME4J-229: test cases"
+        },
+        {
+            "c_hash": "8a3703fb",
+            "date": "2013-04-30 08:46:16 +0000",
+            "comment": "Restored full Java 1.5 compatibility"
+        },
+        {
+            "c_hash": "5c79f1fc",
+            "date": "2013-05-10 17:22:34 +0000",
+            "comment": "Fixed resource leak warnings"
+        },
+        {
+            "c_hash": "ec79f41b",
+            "date": "2013-05-10 17:26:02 +0000",
+            "comment": "Use more efficient implementations for byte array and string backed input stream implementations that attempt to minimize intermediate copying while streaming data"
+        },
+        {
+            "c_hash": "b6ea5829",
+            "date": "2013-05-12 13:58:51 +0000",
+            "comment": "Cleanups in core unit tests; removed unnecessary test utils"
+        },
+        {
+            "c_hash": "4bba3178",
+            "date": "2013-05-13 12:13:09 +0000",
+            "comment": "Refactored sample message based test suites; fixed frivolous usage of file based resources"
+        },
+        {
+            "c_hash": "7dc58eb8",
+            "date": "2013-05-14 10:43:35 +0000",
+            "comment": "Moved standard charsets to a separate class"
+        },
+        {
+            "c_hash": "8415f921",
+            "date": "2013-05-14 10:44:12 +0000",
+            "comment": "Moved CodecUtil methods to ContentUtil / EncoderUtil"
+        },
+        {
+            "c_hash": "a26b15d3",
+            "date": "2013-05-14 10:49:34 +0000",
+            "comment": "Throw checked i/o exception instead of unchecked one in case of an unsupported / invalid charset in body descriptor"
+        },
+        {
+            "c_hash": "602def13",
+            "date": "2013-05-14 10:51:32 +0000",
+            "comment": "Made MimeConfig immutable"
+        },
+        {
+            "c_hash": "ead7a463",
+            "date": "2013-05-14 13:29:53 +0000",
+            "comment": "Eliminated duplicate class in dom module"
+        },
+        {
+            "c_hash": "017b78f5",
+            "date": "2013-05-14 15:10:12 +0000",
+            "comment": "Added builder class for BinaryPart and TextPart instances"
+        },
+        {
+            "c_hash": "8f8c265c",
+            "date": "2013-05-15 14:39:55 +0000",
+            "comment": "Removed redundant class"
+        },
+        {
+            "c_hash": "96700349",
+            "date": "2013-09-25 10:16:56 +0000",
+            "comment": "MIME4J-232: Problem paring date with extra leading space(s) Contributed by Lukas Vlcek <lukas.vlcek at gmail.com>"
+        },
+        {
+            "c_hash": "d0d17ec0",
+            "date": "2014-01-08 19:16:38 +0000",
+            "comment": "MIME4J-235: Content-Type fields containing RFC 2231 formatted boundary attribute cause NPE"
+        },
+        {
+            "c_hash": "685de05e",
+            "date": "2014-01-29 14:18:49 +0000",
+            "comment": "MIME4J-236: invalid handling of soft line breaks in strict mode"
+        },
+        {
+            "c_hash": "0f68a8f9",
+            "date": "2014-03-07 15:59:20 +0000",
+            "comment": "MIMEJ-237: fixed bug in RawFieldParser#parseValue() causing incorrect parsing of field values with quoted and unquoted content"
+        },
+        {
+            "c_hash": "9e764429",
+            "date": "2014-06-27 12:29:23 +0000",
+            "comment": "MIME4J-241: inconsistent StringInputStream read zero behavior"
+        },
+        {
+            "c_hash": "d07958db",
+            "date": "2014-06-27 12:34:17 +0000",
+            "comment": "Added builder class for Message instances"
+        },
+        {
+            "c_hash": "e56e143f",
+            "date": "2014-06-27 17:59:51 +0000",
+            "comment": "Minor code refactoring and cleanup in MessageBuilder; SingleBodyBuilder to use BodyFactory to instantiate TextBody and BinaryBody"
+        },
+        {
+            "c_hash": "bf706690",
+            "date": "2014-06-29 11:39:42 +0000",
+            "comment": "Moved common MIME entity building logic to a separate class"
+        },
+        {
+            "c_hash": "6c969882",
+            "date": "2014-06-29 11:40:02 +0000",
+            "comment": "Added builder class for BodyPart and Multipart instances"
+        },
+        {
+            "c_hash": "eb818c43",
+            "date": "2014-07-17 08:07:31 +0000",
+            "comment": "Extended new builder classes with methods to create copies of message elements and to parse message from content stream"
+        },
+        {
+            "c_hash": "98399d48",
+            "date": "2014-07-17 08:08:07 +0000",
+            "comment": "EntityBuilder -> /ParserStreamContentHandler; minor cleanups"
+        },
+        {
+            "c_hash": "ecf5be54",
+            "date": "2014-08-12 19:23:00 +0000",
+            "comment": "Added unit tests for AbstractEntityBuilder and BodyPartBuilder; incremental improvements in builder implementations"
+        },
+        {
+            "c_hash": "58f05c63",
+            "date": "2014-08-13 15:19:29 +0000",
+            "comment": "Added typed #getField methods"
+        },
+        {
+            "c_hash": "6c31bd1e",
+            "date": "2014-08-14 19:57:45 +0000",
+            "comment": "Added unit tests for MultipartBuilder and MessageBuilder"
+        },
+        {
+            "c_hash": "165ca378",
+            "date": "2014-08-14 19:57:59 +0000",
+            "comment": "Removed mutators from DOM interfaces (Message, BodyPart, Multipart, etc) that are now provided by corresponding builders"
+        },
+        {
+            "c_hash": "2ea38c1c",
+            "date": "2014-08-14 19:58:42 +0000",
+            "comment": "Moved Message, Header and Entity implementation test cases"
+        },
+        {
+            "c_hash": "eaa51e9a",
+            "date": "2014-09-01 08:52:29 +0000",
+            "comment": "MIME4J-242 Added more geenric From line matcher"
+        },
+        {
+            "c_hash": "d1aaa00e",
+            "date": "2014-10-31 10:07:00 +0000",
+            "comment": "MIME4J-218: Content-Type fallback character set contributed by Wolfgang Fahl <wf at bitplan.com>"
+        },
+        {
+            "c_hash": "0d5247fe",
+            "date": "2014-11-01 11:12:25 +0000",
+            "comment": "fixes license header"
+        },
+        {
+            "c_hash": "2ae2cb54",
+            "date": "2014-11-01 11:12:42 +0000",
+            "comment": "MIME4J-218: improves defaultCharset handling improves messages for limit exceptions with details about limit sizes Contributed by Wolfgang Fahl <wf at bitplan.com>"
+        },
+        {
+            "c_hash": "dbe2d960",
+            "date": "2014-11-01 11:21:39 +0000",
+            "comment": "BasicBodyFactory to use strict mode when used by message builder to parse messages in strict mode"
+        },
+        {
+            "c_hash": "8a109f0c",
+            "date": "2014-11-01 12:07:00 +0000",
+            "comment": "Rename AddressBuilder to DefaultAddressBuilder and introduce a common interface for DefaultAddressBuilder/LenientAddressBuilder"
+        }
+    ]
+}

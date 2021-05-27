@@ -1,0 +1,26 @@
+INDEX,COMMIT_ID,IS_MAVEN,OLD_BUILD_SUCCESSFUL,NEW_BUILD_SUCCESSFUL,OLD_EXCEPTION,NEW_EXCEPTION
+0,f857c250,True,True,True,,[]
+1,e7d064f0,True,False,False,CompilationFailureException,"['MojoFailureException', 'CompilationFailureException']"
+2,9eae253a,True,False,False,CompilationFailureException,"['MojoFailureException', 'CompilationFailureException']"
+3,dfc35b99,True,False,False,CompilationFailureException,"['MojoFailureException', 'CompilationFailureException']"
+4,190dc03c,True,False,False,CompilationFailureException,"['MojoFailureException', 'CompilationFailureException']"
+5,e2d8457d,True,True,True,,[]
+6,d8e1d73b,True,True,True,,[]
+7,f2ce77f2,True,True,True,,[]
+8,4eefd3f3,True,True,True,,[]
+9,a62394c6,True,True,True,,[]
+10,92f719aa,True,True,True,,[]
+11,f8a68f67,True,True,True,,[]
+12,7269a179,True,True,True,,[]
+13,697dcd47,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+14,94b32139,True,False,False,DependencyResolutionException,"['ArtifactResolutionException', 'DependencyResolutionException']"
+15,07fbaf06,True,True,True,,[]
+16,a3b7e745,True,True,True,,[]
+17,6cdccda2,True,False,False,ArtifactResolutionException,"['ArtifactResolutionException', 'ProjectBuildingException', 'UnresolvableModelException']"
+18,9b2f40d5,True,False,False,ArtifactResolutionException,"['ArtifactResolutionException', 'ProjectBuildingException', 'UnresolvableModelException']"
+19,71ba978d,True,False,False,ArtifactResolutionException,"['ArtifactResolutionException', 'ProjectBuildingException', 'UnresolvableModelException']"
+20,dd7619a0,True,False,False,ArtifactResolutionException,"['ArtifactResolutionException', 'ProjectBuildingException', 'UnresolvableModelException']"
+21,e247df92,True,False,False,ArtifactResolutionException,"['ArtifactResolutionException', 'ProjectBuildingException', 'UnresolvableModelException']"
+22,a26bf298,True,False,False,ArtifactResolutionException,"['ArtifactResolutionException', 'ProjectBuildingException', 'UnresolvableModelException']"
+23,d0c4a4bb,True,False,False,ArtifactResolutionException,"['ArtifactResolutionException', 'ProjectBuildingException', 'UnresolvableModelException']"
+24,d1ca62d0,True,False,False,ArtifactResolutionException,"['ArtifactResolutionException', 'ProjectBuildingException', 'UnresolvableModelException']"

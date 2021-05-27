@@ -1,0 +1,39 @@
+commitID;commit-type;time-to-next-release;commit-message
+8f08c8580a52abecea39fc200098fb2522f50c5d;BREAKING_CHANGES;98;Discontinue development of wicket 2 *with* c'tor change, switching trunk with branches/wicket-1.x git-svn-id: https://svn.apache.org/repos/asf/incubator/wicket/trunk@530304 13f79535-47bb-0310-9956-ffa450edef68
+3dc1dc71c3697575d1c72a12fc09c0d7b1221eff;BREAKING_FIX;27;WICKET-4281 Simplify Maven build for development: remove remaining stale dependencies to wicket-util:tests:jar git-svn-id: https://svn.apache.org/repos/asf/wicket/trunk@1220851 13f79535-47bb-0310-9956-ffa450edef68
+6e78fcd80a4c05796cf75fe856f6447ef763c03c;BREAKING_CHANGES;26;WICKET-4307 Support javax.inject.Inject annotation in Guice and Spring integration git-svn-id: https://svn.apache.org/repos/asf/wicket/trunk@1221201 13f79535-47bb-0310-9956-ffa450edef68
+d32dafd60650c167eff7f3a6db9f0c47bf6092f4;BREAKING_FIX;25;WICKET-4000 Header contributions order is not stable 
+330e655e6e04872c4516b797af6410b1f962fff4;BREAKING_CHANGES;12;WICKET-3367 Rewrite all JavaScript inline event handlers to be proper attached event handlers Implement throttling of Ajax calls with the new AjaxRequestAttributes
+8efe8207589fbaea93f54cfae97d6512d2677953;BREAKING_FIX;12;WICKET-3367 Rewrite all JavaScript inline event handlers to be proper attached event handlers Implement throttling of Ajax calls with the new AjaxRequestAttributes
+705944e9ca9859cbd3d15e9896db8760658d00e9;BREAKING_CHANGES;9;WICKET-4430: By using int as the scope, it is possible to read arbitrary resources from the classpath of a wicket application 
+a5dbb3c9ac18ef738d663916addfb42ca22e3ff9;BREAKING_FIX;9;WICKET-4430: By using int as the scope, it is possible to read arbitrary resources from the classpath of a wicket application 
+f4fca19c0783381a058910e91cd573aae094217d;BREAKING_CHANGES;13;WICKET-4593 reverted changes which lead to ITab#getPanel() created multiple times 
+1aef8389ebbab52b8f8eb0503bd23d5fcd17d5f5;BREAKING_FIX;13;WICKET-4593 reverted changes which lead to ITab#getPanel() created multiple times 
+c7f3c9c4444c73c4962fe95a71a4b6d586fd145d;BREAKING_CHANGES;0;An first pass at a revamped Wicket examples This commit introduces an experimental module for a new, revitalizedWicket Examples project.The Wicket Examples project borrows heavily from Twitter's bootstrapdocumentation pages, as they are currently the golden standard fordocumentation and examples.The styling and functionality is a 1-1 copy of Bootstrap. This willbe themed to a new Wicket style as the new Wicket web site will takeshape.The experimental modules also recieve a new module: Bootstrap. Thiswill be the integration point for Twitter's bootstrap CSS and JSplatform into Wicket. I'm still looking at l0rdn1kk0n's bootstrapintegration at github https://github.com/l0rdn1kk0n/wicket-bootstrapand to develop that further in this module. Currently ourintegration only contains the Bootstrap 2.0.3 resources.
+55cd660053c5eb60e2879f075b863c239b71b16c;BREAKING_FIX;40;Disable YUICompressor for the new wicket-examples. It fails for prettyprint.js
+ade856dbb3887a4cd19618507b9f7db5133ba9e7;BREAKING_CHANGES;25;Add a very simple example for beginners. 
+1cd665366e9865a65d148e9752401815bc8ebe7d;BREAKING_FIX;25;Add a very simple example for beginners. 
+d84c3371f682b1999c81677091a906b92605d837;BREAKING_CHANGES;47;Make inner classes static where possible 
+6971f879e64ea96b7612184b1dea910e90a9dd0c;BREAKING_FIX;47;Small simplification - 'result' cannot be null at that stage 
+6434c830f5181f0162f1b4158c5bc924560bfd40;BREAKING_CHANGES;34;Upgrade Jacoco 
+329b9454abeabe947c1ed4b54c496cd7a6eb714f;BREAKING_FIX;34;WICKET-5537 Wicket.DOM.toggleClass is called with additional "#" inside AutoLabelResolver (cherry picked from commit 469f189c09af1c72a56ec8779c88ff4b64a97d16)
+b9fe341aa1ccb9ff0962933053b7419bdbdb92d4;BREAKING_CHANGES;8;WICKET-5555 AbstractAutoCompleteBehavior.WrappedHeaderItem should depend on wicket-ajax.js (cherry picked from commit c2691cb5de2e9aed4201dec020c0ebf01f6518fd)
+7a4b37b780438bcb01b4db69ac2b935745a0a5f9;BREAKING_FIX;8;WICKET-5555 AbstractAutoCompleteBehavior.WrappedHeaderItem should depend on wicket-ajax.js Fix the build after a cherry-pick
+fe82a9dab213841c81fb472c21152ff8d959692a;BREAKING_CHANGES;4;Rename groupId because a '.' is a special character in Maven 
+fd7555d2cff0ffcc3485f94f0195f5776f03121c;BREAKING_FIX;4;Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/wicket 
+2f458d8cd8a20cba394cf5a2fae6e7fe3da04bd1;BREAKING_CHANGES;20;WICKET-5580 Allow markup to find child fragments when wicket:child is inside a component tag (cherry picked from commit bc62f8cca03573160514444291513899211dae7e)
+240a45276c56354d29cbf9dd8bc54d26fc827a82;BREAKING_FIX;20;WICKET-5580 Allow markup to find child fragments when wicket:child is inside a component tag Fix method name.Java 7 diamonds
+69d0ed041f34e5c42652c0d7e231aa2c1688c4d8;BREAKING_CHANGES;67;WICKET-5632 Use frontend-maven-plugin to run the JavaScript tests 
+c4ebc2c677ee83fe14d9b7908fd658bce9cc4e25;BREAKING_FIX;67;WICKET-5632 Use frontend-maven-plugin to run the JavaScript tests Add the pom.xml
+31b7047ecee9a324d20c234afc947215c1ce5d18;BREAKING_CHANGES;21;Make members final when there is no need to modify them later (cherry picked from commit a969f5999d9b25c867ff0dc904186cd66de6b76b)
+3d9a4a6f5968b84338cc46f9255f9f02b30ca0dc;BREAKING_FIX;21;Cache the got value and reuse it in a method (cherry picked from commit ca6e424c89d3b75216e58bf0733637aeb37c4a8c)
+2a837d32d554398a6f6951d70ec389946d496751;BREAKING_CHANGES;59;Upgrade Spring to 4.1.0 
+48c7a42ba0030a4e8773d5afa34db4be419cbcb0;BREAKING_FIX;59;Remove useless javadoc (@see interface) 
+ee41e39a5695bef0f6fc3c31b38e5f78de21d018;BREAKING_CHANGES;46;WICKET-5350 remove wildcards from #ofList() and others 
+c9ac08c8c143a0160d11c34dedf38b7b93beb417;BREAKING_FIX;46;WICKET-5350 adjust components' wildcards 
+ffb5a972015282e7b34b3f2f52c25c24ae619e03;BREAKING_CHANGES;45;Revert "WICKET-5350 remove wildcards from #ofList() and others" This reverts commit ee41e39a5695bef0f6fc3c31b38e5f78de21d018.Revert to make Wildcard**Model classes deprecated.
+fb8db6ce665858b3c9780cab0ff855d849a007dc;BREAKING_FIX;45;WICKET-5350 Use Model.ofList() Java 7 diamonds
+61d6264b2bfa1a68b18a1c223945ad1cd9a3b8de;BREAKING_CHANGES;69;WICKET-5772 set attached after load, so failuer of load() will not keep null value 
+c572210a66025611973fa581d3890d5b31023448;BREAKING_FIX;69;WICKET-5774 UrlRenderer should render full and absolute urls in their canonical form 
+bbc5dbbdb435485571c428783560045b13624d3e;BREAKING_CHANGES;59;WICKET-5782 Missing escaping in MultiFileUploadField.js - sort of XSS (cherry picked from commit 354e07129e587043d1eba32e08b0d82c4fc404e0)
+f7fc5d09517d9d774bc0d06a38f94a9b472d5bc7;BREAKING_FIX;59;WICKET-5782 Missing escaping in MultiFileUploadField.js - sort of XSS Rename 'char' to 'ch'(cherry picked from commit c41701506c862f761d56235e4d29e00938cf9330)

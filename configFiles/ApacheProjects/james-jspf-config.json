@@ -1,0 +1,3113 @@
+{
+    "project": "james-jspf",
+    "git_url": "https://github.com/apache/james-jspf.git",
+    "last_commit": "2e148b9f",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "3cf42031",
+            "date": "2006-05-06 12:29:21 +0000",
+            "comment": "Initial Layout"
+        },
+        {
+            "c_hash": "0b9d6f13",
+            "date": "2006-05-08 14:16:35 +0000",
+            "comment": "Initial Import (r246) Tests not imported yet for licensing issues"
+        },
+        {
+            "c_hash": "33002f9f",
+            "date": "2006-05-21 18:18:59 +0000",
+            "comment": "Recreate jspf trunk for import of codebase."
+        },
+        {
+            "c_hash": "e935855b",
+            "date": "2006-04-25 06:19:11 +0000",
+            "comment": "init"
+        },
+        {
+            "c_hash": "ee2af442",
+            "date": "2006-04-25 12:46:31 +0000",
+            "comment": "CheckFQDN now works like expected"
+        },
+        {
+            "c_hash": "c298c12e",
+            "date": "2006-04-25 12:50:05 +0000",
+            "comment": "Add includeException"
+        },
+        {
+            "c_hash": "6ed257e1",
+            "date": "2006-04-25 12:51:39 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/james/jspf/trunk@408214 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "6e6ffa12",
+            "date": "2006-04-25 14:06:25 +0000",
+            "comment": "Fixes for parser"
+        },
+        {
+            "c_hash": "fd122067",
+            "date": "2006-04-25 14:14:06 +0000",
+            "comment": "Remove unneded Exceptions"
+        },
+        {
+            "c_hash": "445ba657",
+            "date": "2006-04-25 16:59:08 +0000",
+            "comment": "TestSuites refactoring to improve Eclispe integration (\"rerunnability\" of single tests). Added \"implementation aware\" test_parser reading Added spfjava specific errors to test_parser.txt"
+        },
+        {
+            "c_hash": "3187ad29",
+            "date": "2006-04-25 16:59:46 +0000",
+            "comment": "Change the template convention to Sun (like James server). Spaces instead of Tabs."
+        },
+        {
+            "c_hash": "663548bf",
+            "date": "2006-04-25 17:00:12 +0000",
+            "comment": "Use ECLIPSE_HOME for junit library. Should be more portable."
+        },
+        {
+            "c_hash": "6bf40e8b",
+            "date": "2006-04-26 11:13:52 +0000",
+            "comment": "Remove unneeded methods and variables. Thx Stefano :-)"
+        },
+        {
+            "c_hash": "d8ae6f26",
+            "date": "2006-04-26 11:55:24 +0000",
+            "comment": "printout an text if was wrong used form cmdline"
+        },
+        {
+            "c_hash": "690251ae",
+            "date": "2006-04-26 12:05:08 +0000",
+            "comment": "Remove unneeded code."
+        },
+        {
+            "c_hash": "f15cd5a9",
+            "date": "2006-04-26 12:05:43 +0000",
+            "comment": "Remove unneeded class"
+        },
+        {
+            "c_hash": "c5c3073b",
+            "date": "2006-04-26 12:19:52 +0000",
+            "comment": "Add javadocs"
+        },
+        {
+            "c_hash": "1691fbb5",
+            "date": "2006-04-26 12:22:58 +0000",
+            "comment": "."
+        },
+        {
+            "c_hash": "2750f2ee",
+            "date": "2006-04-26 12:35:50 +0000",
+            "comment": "Fix javadoc"
+        },
+        {
+            "c_hash": "ddd2fdd4",
+            "date": "2006-04-26 13:00:59 +0000",
+            "comment": "Add todo"
+        },
+        {
+            "c_hash": "57f0d053",
+            "date": "2006-04-26 18:13:59 +0000",
+            "comment": "Add more logging in the exceptions"
+        },
+        {
+            "c_hash": "c2d10a50",
+            "date": "2006-04-26 19:48:55 +0000",
+            "comment": "log"
+        },
+        {
+            "c_hash": "7e275f7d",
+            "date": "2006-04-26 19:52:13 +0000",
+            "comment": "commit test"
+        },
+        {
+            "c_hash": "22aecfd2",
+            "date": "2006-04-26 20:04:20 +0000",
+            "comment": "Removed dependencies from InetAddress. Changed ip string checks to \"syntax only\" checks (no dns lookups). Added an IPAddr test for IPV4 and IP6 address strings check"
+        },
+        {
+            "c_hash": "cf8418bc",
+            "date": "2006-04-26 20:24:05 +0000",
+            "comment": "Marked DNSProbe methods deprecated if not used, private if used only internally."
+        },
+        {
+            "c_hash": "70df756b",
+            "date": "2006-04-26 20:44:30 +0000",
+            "comment": "DNSProbe refactoring: created a DNSService and a default DNSServiceXBillImpl. Now SPF and SPF1Data can take a DNSService in the constructor: if not passed it simply uses the DNSServiceXBillImpl."
+        },
+        {
+            "c_hash": "d9d1826a",
+            "date": "2006-04-26 23:29:38 +0000",
+            "comment": "Generalized ArrayList to List in DNSService, added HardCoded DNSServiceMock to return tested dns zones."
+        },
+        {
+            "c_hash": "628ec87c",
+            "date": "2006-04-27 16:28:34 +0000",
+            "comment": "Start the SPF1Parser Class. This class should be instanced by SPF with a SPFRecord given."
+        },
+        {
+            "c_hash": "fb6b8a23",
+            "date": "2006-04-27 18:31:22 +0000",
+            "comment": "More regex !"
+        },
+        {
+            "c_hash": "d8150e64",
+            "date": "2006-04-27 21:00:21 +0000",
+            "comment": "Add some regex and start with validation methods"
+        },
+        {
+            "c_hash": "9550e164",
+            "date": "2006-04-27 21:07:05 +0000",
+            "comment": "fix"
+        },
+        {
+            "c_hash": "c6baa753",
+            "date": "2006-04-27 21:10:05 +0000",
+            "comment": "quick commit for testing"
+        },
+        {
+            "c_hash": "f3d67c0d",
+            "date": "2006-04-27 21:12:59 +0000",
+            "comment": "fix regex for CIDR length"
+        },
+        {
+            "c_hash": "1fdb6553",
+            "date": "2006-04-27 21:44:17 +0000",
+            "comment": "First pass regexp review (not tested)"
+        },
+        {
+            "c_hash": "b22e3800",
+            "date": "2006-04-27 21:51:20 +0000",
+            "comment": "isValidAMechanismn now handle a mechanismn without domain-spec correct"
+        },
+        {
+            "c_hash": "3d548d3d",
+            "date": "2006-04-27 21:52:52 +0000",
+            "comment": "Fix to the regexp. Added the matcher method."
+        },
+        {
+            "c_hash": "7e31f1cc",
+            "date": "2006-04-27 22:00:16 +0000",
+            "comment": "SPF1ParserTest updated to test match/unmatch only."
+        },
+        {
+            "c_hash": "83234b97",
+            "date": "2006-04-27 22:04:55 +0000",
+            "comment": "Updated parser and parsertest for pure On/Off matching"
+        },
+        {
+            "c_hash": "0960f630",
+            "date": "2006-04-28 05:13:36 +0000",
+            "comment": "Create a new interface which all mechanismn should implement"
+        },
+        {
+            "c_hash": "70446012",
+            "date": "2006-04-28 05:47:38 +0000",
+            "comment": "Change interface"
+        },
+        {
+            "c_hash": "72432c74",
+            "date": "2006-04-28 06:24:44 +0000",
+            "comment": "use regex to check what command should be used!"
+        },
+        {
+            "c_hash": "111c46a2",
+            "date": "2006-04-28 08:18:53 +0000",
+            "comment": "Add a helper method to replace stuff"
+        },
+        {
+            "c_hash": "e46680a8",
+            "date": "2006-04-28 08:46:32 +0000",
+            "comment": "Add new method which we will use later to get the right result from the mechanismn results"
+        },
+        {
+            "c_hash": "4987fd8c",
+            "date": "2006-04-28 09:25:55 +0000",
+            "comment": "move the parsing to an own method. create an method to retrieve the result"
+        },
+        {
+            "c_hash": "83a94682",
+            "date": "2006-04-28 10:02:27 +0000",
+            "comment": "Macro expand domain"
+        },
+        {
+            "c_hash": "c977bd4d",
+            "date": "2006-04-28 10:38:09 +0000",
+            "comment": "remove dependency of SPF1Data"
+        },
+        {
+            "c_hash": "95b5b655",
+            "date": "2006-04-28 10:55:36 +0000",
+            "comment": "Change the interface layout to reflect the changes we spoke about in icq"
+        },
+        {
+            "c_hash": "4ee7c5ac",
+            "date": "2006-04-28 10:58:40 +0000",
+            "comment": "ups.."
+        },
+        {
+            "c_hash": "aa9fa512",
+            "date": "2006-04-28 11:08:17 +0000",
+            "comment": "Change a method to public and add a TODO"
+        },
+        {
+            "c_hash": "7db9a39d",
+            "date": "2006-04-28 11:08:49 +0000",
+            "comment": "throw ErrorException"
+        },
+        {
+            "c_hash": "e14a3bce",
+            "date": "2006-04-28 13:02:47 +0000",
+            "comment": "this is how the interface should be. Create the first Mechanismn class"
+        },
+        {
+            "c_hash": "90d07efb",
+            "date": "2006-04-28 13:06:54 +0000",
+            "comment": "AMechanismn"
+        },
+        {
+            "c_hash": "5e343736",
+            "date": "2006-04-28 13:07:59 +0000",
+            "comment": "add a new class called IPUtil."
+        },
+        {
+            "c_hash": "dca461a2",
+            "date": "2006-04-28 13:08:26 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/james/jspf/trunk@408261 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "ef8e03de",
+            "date": "2006-04-28 13:10:09 +0000",
+            "comment": "remove unneeded stuff"
+        },
+        {
+            "c_hash": "02660ab7",
+            "date": "2006-04-28 13:23:35 +0000",
+            "comment": "Remove init from interface"
+        },
+        {
+            "c_hash": "63eb0f36",
+            "date": "2006-04-28 13:42:00 +0000",
+            "comment": "init the MXMechanismn class"
+        },
+        {
+            "c_hash": "842d6c42",
+            "date": "2006-04-28 14:18:06 +0000",
+            "comment": "Add PTRMechanismn"
+        },
+        {
+            "c_hash": "1e57bc08",
+            "date": "2006-04-28 14:25:24 +0000",
+            "comment": "instance PTRMethod.."
+        },
+        {
+            "c_hash": "4c83471c",
+            "date": "2006-04-28 14:41:55 +0000",
+            "comment": "Fix a bug .."
+        },
+        {
+            "c_hash": "af9ce8bc",
+            "date": "2006-04-28 14:44:30 +0000",
+            "comment": "replace some methods. And change a few to private cause these should never called from other classes"
+        },
+        {
+            "c_hash": "5e6ee7b3",
+            "date": "2006-04-28 15:14:18 +0000",
+            "comment": "Add javadoc"
+        },
+        {
+            "c_hash": "c32e938c",
+            "date": "2006-04-28 17:59:48 +0000",
+            "comment": "Rename prefix to qualifier to reflect next rfc"
+        },
+        {
+            "c_hash": "f23db512",
+            "date": "2006-04-28 18:00:21 +0000",
+            "comment": "Create ExistsMechanismn"
+        },
+        {
+            "c_hash": "af729108",
+            "date": "2006-04-28 18:08:25 +0000",
+            "comment": "init the ExistsMechanism and throw an ErrorException if the mechanismn is unknown"
+        },
+        {
+            "c_hash": "12a9e0c3",
+            "date": "2006-04-28 18:10:59 +0000",
+            "comment": "Move IPAddr to util package"
+        },
+        {
+            "c_hash": "54337047",
+            "date": "2006-04-28 18:11:09 +0000",
+            "comment": "Move IPAddr to util package"
+        },
+        {
+            "c_hash": "ec592c3b",
+            "date": "2006-04-28 18:11:44 +0000",
+            "comment": "Move IPUtil to util package"
+        },
+        {
+            "c_hash": "0da55c92",
+            "date": "2006-04-28 18:12:50 +0000",
+            "comment": "Move Inet6Util to util package"
+        },
+        {
+            "c_hash": "88d7bd86",
+            "date": "2006-04-28 18:13:21 +0000",
+            "comment": "changes affect by moving"
+        },
+        {
+            "c_hash": "5bf7d23a",
+            "date": "2006-04-28 18:14:33 +0000",
+            "comment": "changes affect by moving"
+        },
+        {
+            "c_hash": "17b043b5",
+            "date": "2006-04-28 18:15:21 +0000",
+            "comment": "Remove test class for SPF1Record cause i will drop the SPF1Record class soon"
+        },
+        {
+            "c_hash": "f76c40a7",
+            "date": "2006-04-28 18:23:37 +0000",
+            "comment": "Add javadocs and author sections"
+        },
+        {
+            "c_hash": "5ab34b97",
+            "date": "2006-04-28 18:29:16 +0000",
+            "comment": "Add javadocs and author section"
+        },
+        {
+            "c_hash": "3b80b83a",
+            "date": "2006-04-28 18:31:06 +0000",
+            "comment": "Format"
+        },
+        {
+            "c_hash": "59124df6",
+            "date": "2006-04-28 18:49:14 +0000",
+            "comment": "Remove NeutralException. Ignore problems in classes which should be removed anyware!"
+        },
+        {
+            "c_hash": "a3f17730",
+            "date": "2006-04-28 18:51:18 +0000",
+            "comment": "Remove unneeded exceptions"
+        },
+        {
+            "c_hash": "e646972a",
+            "date": "2006-04-28 18:54:17 +0000",
+            "comment": "Forget the Tests"
+        },
+        {
+            "c_hash": "34342324",
+            "date": "2006-04-28 19:19:44 +0000",
+            "comment": "Refactored Mechanisms. 1) renamed the GenericMechanism to Mechanism 2) s/Mechanismn/Mechanism 3) Introduced GenericMechanism as an optional abstract class with common code"
+        },
+        {
+            "c_hash": "19e80597",
+            "date": "2006-04-28 20:36:27 +0000",
+            "comment": "Add ip4Mechanism class"
+        },
+        {
+            "c_hash": "0950390c",
+            "date": "2006-04-28 20:59:33 +0000",
+            "comment": "rename Collection"
+        },
+        {
+            "c_hash": "72df2fc4",
+            "date": "2006-04-29 06:27:59 +0000",
+            "comment": "-Renamed ErrorException to PermErrorExeption like its called in SPF-Specs -Create TempErrorException"
+        },
+        {
+            "c_hash": "f25fee80",
+            "date": "2006-04-29 07:05:03 +0000",
+            "comment": "-Add ExpMechanismn"
+        },
+        {
+            "c_hash": "28d7acae",
+            "date": "2006-04-29 07:24:45 +0000",
+            "comment": "-Add AllMechanismn -Add TempErrorException"
+        },
+        {
+            "c_hash": "e85cb638",
+            "date": "2006-04-29 07:49:32 +0000",
+            "comment": "-SPF class now use the new classes -fix a bug which let SPF1Parser throw a NumberFormatException"
+        },
+        {
+            "c_hash": "8b6f19b9",
+            "date": "2006-04-29 08:21:25 +0000",
+            "comment": "-Generate also the explanaton if no exp mechanism was found."
+        },
+        {
+            "c_hash": "1a406862",
+            "date": "2006-04-29 08:22:50 +0000",
+            "comment": "-Forgot the commit the ExpMachansim too"
+        },
+        {
+            "c_hash": "3bf2b2ee",
+            "date": "2006-04-29 09:23:10 +0000",
+            "comment": "- Rename ExpMechanismn to ExpModifier - Create new package modifier - Create new interface Modifier - Create new abstract class GenericModifier - Move the ExpModifier to the modifier package."
+        },
+        {
+            "c_hash": "a1a10f18",
+            "date": "2006-04-29 11:07:32 +0000",
+            "comment": "Add RedirectModifier"
+        },
+        {
+            "c_hash": "5926aa3b",
+            "date": "2006-04-29 11:36:28 +0000",
+            "comment": "."
+        },
+        {
+            "c_hash": "8dd14e5e",
+            "date": "2006-04-29 12:04:43 +0000",
+            "comment": "-Add include Modifier -Change the run method of the Modifier interface and GenericModifier abstract class to return a String -Some format fixes -Remove not needed methods from SPF1Data"
+        },
+        {
+            "c_hash": "0b0a53af",
+            "date": "2006-04-29 12:06:13 +0000",
+            "comment": "Remove old classes"
+        },
+        {
+            "c_hash": "c8aec547",
+            "date": "2006-04-29 12:30:47 +0000",
+            "comment": "Set the result to neutral if a SPF-Record was found but not matched"
+        },
+        {
+            "c_hash": "fd76b504",
+            "date": "2006-04-29 12:39:10 +0000",
+            "comment": "remove old package and class"
+        },
+        {
+            "c_hash": "64c49532",
+            "date": "2006-04-29 12:51:59 +0000",
+            "comment": "-Fix nullpointer -Workaround for qualifiers -code cleanup"
+        },
+        {
+            "c_hash": "4a416e20",
+            "date": "2006-04-29 13:40:39 +0000",
+            "comment": "docs"
+        },
+        {
+            "c_hash": "b8e92259",
+            "date": "2006-04-29 15:09:39 +0000",
+            "comment": "Removed unused classes (they have been moved to the util package)"
+        },
+        {
+            "c_hash": "57b2f46a",
+            "date": "2006-04-29 15:26:53 +0000",
+            "comment": "-Fix a bug where the result was not set right. -Remove some unneeded stuff"
+        },
+        {
+            "c_hash": "759b70a0",
+            "date": "2006-04-29 15:42:00 +0000",
+            "comment": "-Rename IncludeModifier to IncludeMechanism -Move it the the Mechanism package cause it is one"
+        },
+        {
+            "c_hash": "749903c3",
+            "date": "2006-04-29 16:53:48 +0000",
+            "comment": "."
+        },
+        {
+            "c_hash": "87f7e1e8",
+            "date": "2006-04-29 17:09:25 +0000",
+            "comment": "Add javadocs"
+        },
+        {
+            "c_hash": "d99c2b39",
+            "date": "2006-04-29 20:03:12 +0000",
+            "comment": "Unfinished/Untested parser/Lexer refactoring."
+        },
+        {
+            "c_hash": "b1a2da88",
+            "date": "2006-04-29 20:44:52 +0000",
+            "comment": "Fix for previous code."
+        },
+        {
+            "c_hash": "4c82a77b",
+            "date": "2006-04-30 02:51:28 +0000",
+            "comment": "Test fixes"
+        },
+        {
+            "c_hash": "32f499ae",
+            "date": "2006-04-30 09:49:52 +0000",
+            "comment": "Mechanisms overall review / fixes. PTR/EXISTS/INCLUDE directly extends GenericMechanism MX extends AMechanism IP6 extends IP4Mechanism"
+        },
+        {
+            "c_hash": "c35ef87a",
+            "date": "2006-04-30 10:11:16 +0000",
+            "comment": "Further parsing fix. Most parser tests passes, but: - missing ip6 parsing - some test seems to be invalid - we probably miss a check on missing TLDs from host."
+        },
+        {
+            "c_hash": "105b4fd3",
+            "date": "2006-04-30 10:23:07 +0000",
+            "comment": "Changed FQDN regex check"
+        },
+        {
+            "c_hash": "14f359db",
+            "date": "2006-04-30 10:26:55 +0000",
+            "comment": "format source"
+        },
+        {
+            "c_hash": "0af3bf21",
+            "date": "2006-04-30 10:27:52 +0000",
+            "comment": "format source"
+        },
+        {
+            "c_hash": "6a90bf56",
+            "date": "2006-04-30 10:39:35 +0000",
+            "comment": "Introduced MacroData interface as a layer between macroexpansion and spf1data"
+        },
+        {
+            "c_hash": "b2a3f9ba",
+            "date": "2006-04-30 10:42:47 +0000",
+            "comment": "Macro [r] (receiving domain) was not supported"
+        },
+        {
+            "c_hash": "ab41463e",
+            "date": "2006-04-30 11:33:58 +0000",
+            "comment": "Splitted parser in parser + resulting record. Refactored parser to dynamically load mechanisms."
+        },
+        {
+            "c_hash": "f326886c",
+            "date": "2006-04-30 11:45:11 +0000",
+            "comment": "Moved regexp to modifiers class."
+        },
+        {
+            "c_hash": "5693fce7",
+            "date": "2006-04-30 12:05:24 +0000",
+            "comment": "Cleaning refactoring: Mechanism \"building\" logic moved to SPF1Parser. Now the Mechanisms need only to declare their REGEX as static \"known\" fields."
+        },
+        {
+            "c_hash": "cfeb1d29",
+            "date": "2006-04-30 13:35:08 +0000",
+            "comment": "Refactored, again, the parser creation scheme. Now the parser know very little of the mechanism/modifier internals and dynamically build the regexp starting from modifier/mechanism collections."
+        },
+        {
+            "c_hash": "91a4e885",
+            "date": "2006-04-30 14:16:07 +0000",
+            "comment": "Removed IPUtil class: now that MXMechanism extends AMechanism they can share that method."
+        },
+        {
+            "c_hash": "093804ee",
+            "date": "2006-04-30 15:54:04 +0000",
+            "comment": "- Removed \"Exception\" in favor of PermError in MacroExpand - Removed unused fields from SPF and SPF1Data - Big parser refactoring (still in progress) - default Explanation moved to ExpModifier - Removed unused method from IPAddr"
+        },
+        {
+            "c_hash": "e6593236",
+            "date": "2006-04-30 16:01:22 +0000",
+            "comment": "Minor cleanup"
+        },
+        {
+            "c_hash": "2d7005fb",
+            "date": "2006-04-30 16:08:09 +0000",
+            "comment": "Removed a lot of static final public regexp. Now that the parser doesn't need to know the name-value separation we don't need all that declaration!"
+        },
+        {
+            "c_hash": "6af8029c",
+            "date": "2006-04-30 16:21:24 +0000",
+            "comment": "-fix a bug which caused SPF class return every time pass. That was cause cause the result was not set to the new one if a mechanism or modifier match"
+        },
+        {
+            "c_hash": "cb73ffb9",
+            "date": "2006-04-30 17:57:50 +0000",
+            "comment": "-TempErrorException get now thrown if the lookup result is not HOST_NOT_FOUND or SUCCESSFULLY -Change the method getARecords to use lookup method of dnsjava so we can check for the query result -change a few classes to throw the TempErrorException"
+        },
+        {
+            "c_hash": "752c384e",
+            "date": "2006-04-30 23:52:15 +0000",
+            "comment": "Just a few more docs etc.."
+        },
+        {
+            "c_hash": "0f88fb17",
+            "date": "2006-05-01 01:53:20 +0000",
+            "comment": "Updated SPFTest for new TempErrorException, Updated SPF to use a single parser for multiple checks Updated Directive to throw error with no mechanism Improved exception for IP4 not matching"
+        },
+        {
+            "c_hash": "ce698115",
+            "date": "2006-05-01 01:55:58 +0000",
+            "comment": "Parser refactoring (in-progress). Now we use only 1 dynamically generated, dynamically looked-up, regex for the whole parsing!"
+        },
+        {
+            "c_hash": "12756443",
+            "date": "2006-05-01 02:06:12 +0000",
+            "comment": "Refactoring: moved MatchResultSubset to the util package, added comments."
+        },
+        {
+            "c_hash": "7af87096",
+            "date": "2006-05-01 02:15:08 +0000",
+            "comment": "Improved test-suite speed by reusing the SPF1Parser and SPF objects between tests"
+        },
+        {
+            "c_hash": "cad9da26",
+            "date": "2006-05-01 09:25:14 +0000",
+            "comment": "-Add getAAAARecords method -Modify AMechanism to use getARecords for ipv4 connections and getAAAARecords for ipv6 connections"
+        },
+        {
+            "c_hash": "c969858f",
+            "date": "2006-05-01 09:50:21 +0000",
+            "comment": "-Add authors -Fix a bug on mechanism processing. Now the ehile loop get break if a match was returned from the mechanism. -Set the qualifier to \"+\" pass if its empty -Set default result to \"?\" neutral like discripted in RFC"
+        },
+        {
+            "c_hash": "fec47da8",
+            "date": "2006-05-01 10:58:33 +0000",
+            "comment": "Format"
+        },
+        {
+            "c_hash": "366c3fb5",
+            "date": "2006-05-01 11:25:56 +0000",
+            "comment": "-Throw PermErrorException if we reached the maxDepth"
+        },
+        {
+            "c_hash": "443503a4",
+            "date": "2006-05-01 13:22:06 +0000",
+            "comment": "Added ip6 parsing stuff from Harmony project and changed IPAddr to use that code. Now we pass IP6 parsing tests."
+        },
+        {
+            "c_hash": "7cb0111e",
+            "date": "2006-05-01 14:14:17 +0000",
+            "comment": "Updated test_parser to pass all the tests. Many tests were not spec compliant."
+        },
+        {
+            "c_hash": "25fdc24c",
+            "date": "2006-05-01 14:37:22 +0000",
+            "comment": "SPF1Test refactored to run tests in order and moved the MockDSNService to a different class. Now only 29 SPF tests fail, while we pass all parser tests"
+        },
+        {
+            "c_hash": "db90f274",
+            "date": "2006-05-01 17:56:33 +0000",
+            "comment": "-Move the setDepth to the mechanism and modifiers which should update that."
+        },
+        {
+            "c_hash": "a5e4f6e2",
+            "date": "2006-05-01 22:24:29 +0000",
+            "comment": "Implemented the IncludeMechanism. We now pass 2 more tests. Maybe it is yet incomple/inaccurate."
+        },
+        {
+            "c_hash": "719f69aa",
+            "date": "2006-05-01 23:19:38 +0000",
+            "comment": "Fix a bug in IP4Mechanism. The check must be done using the maskLength"
+        },
+        {
+            "c_hash": "46e89966",
+            "date": "2006-05-01 23:21:20 +0000",
+            "comment": "Moved \"match\" and current result to spfData Implemented the RedirectModifier Reviewed some failing test and commented in test.txt the wrong tests. We only have 7 failing tests!!"
+        },
+        {
+            "c_hash": "6f201bab",
+            "date": "2006-05-02 04:32:02 +0000",
+            "comment": "-Comment an invalid test. 6 Test failures to go.. -Add an TODO in SPF1Parser. We handle unknown mechanism wrong! We must return an result of  unknown if such a mechanismn was detected. At the moment we return a permerror.  After we fix this we pass all tests :-)"
+        },
+        {
+            "c_hash": "be8d6d08",
+            "date": "2006-05-02 09:04:11 +0000",
+            "comment": "Parser cleaning"
+        },
+        {
+            "c_hash": "fcd67409",
+            "date": "2006-05-02 09:10:15 +0000",
+            "comment": "Add a todo file"
+        },
+        {
+            "c_hash": "c1c47b32",
+            "date": "2006-05-02 09:25:24 +0000",
+            "comment": "updated todos"
+        },
+        {
+            "c_hash": "3257b12e",
+            "date": "2006-05-02 09:36:15 +0000",
+            "comment": "add more todos.."
+        },
+        {
+            "c_hash": "138bc296",
+            "date": "2006-05-02 09:51:22 +0000",
+            "comment": "More todos"
+        },
+        {
+            "c_hash": "ce885341",
+            "date": "2006-05-02 10:21:24 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/james/jspf/trunk@408351 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "8ce860f9",
+            "date": "2006-05-02 10:21:34 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/james/jspf/trunk@408352 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "34929c95",
+            "date": "2006-05-02 10:21:53 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/james/jspf/trunk@408353 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "31dd27ed",
+            "date": "2006-05-02 10:22:06 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/james/jspf/trunk@408354 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "e50adc4b",
+            "date": "2006-05-02 10:22:26 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/james/jspf/trunk@408355 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "8693296e",
+            "date": "2006-05-02 10:22:38 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/james/jspf/trunk@408356 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "c68f59c3",
+            "date": "2006-05-02 10:26:01 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/james/jspf/trunk@408357 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "a30b2df6",
+            "date": "2006-05-02 10:26:15 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/james/jspf/trunk@408358 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "1925cd90",
+            "date": "2006-05-02 10:26:26 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/james/jspf/trunk@408359 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "564d008f",
+            "date": "2006-05-02 10:43:32 +0000",
+            "comment": "Remove unused folder"
+        },
+        {
+            "c_hash": "d144a148",
+            "date": "2006-05-02 10:43:53 +0000",
+            "comment": "Remove unused folder"
+        },
+        {
+            "c_hash": "fae1ec49",
+            "date": "2006-05-02 10:44:29 +0000",
+            "comment": "rename package from spf to jspf"
+        },
+        {
+            "c_hash": "d6f0c8cb",
+            "date": "2006-05-02 10:44:57 +0000",
+            "comment": "rename package from spf to jspf"
+        },
+        {
+            "c_hash": "d485626d",
+            "date": "2006-05-02 10:47:46 +0000",
+            "comment": "renamed package names in import"
+        },
+        {
+            "c_hash": "c3aa7c25",
+            "date": "2006-05-02 11:12:04 +0000",
+            "comment": "Changed copyright to 2006, reorganized packages"
+        },
+        {
+            "c_hash": "34687b2f",
+            "date": "2006-05-02 11:12:22 +0000",
+            "comment": "Changed copyright to 2006, reorganized packages"
+        },
+        {
+            "c_hash": "3f0e53e4",
+            "date": "2006-05-02 11:12:38 +0000",
+            "comment": "Changed copyright to 2006, reorganized packages"
+        },
+        {
+            "c_hash": "e799d79b",
+            "date": "2006-05-02 11:14:06 +0000",
+            "comment": "Changed copyright to 2006, reorganized packages"
+        },
+        {
+            "c_hash": "3ab910a2",
+            "date": "2006-05-02 11:14:50 +0000",
+            "comment": "Changed copyright to 2006, reorganized packages"
+        },
+        {
+            "c_hash": "40754751",
+            "date": "2006-05-02 11:15:10 +0000",
+            "comment": "Changed copyright to 2006, reorganized packages"
+        },
+        {
+            "c_hash": "860dde23",
+            "date": "2006-05-02 11:16:26 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/james/jspf/trunk@408371 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "29f081b0",
+            "date": "2006-05-02 11:16:43 +0000",
+            "comment": "Changed copyright to 2006, reorganized packages"
+        },
+        {
+            "c_hash": "a543f7ee",
+            "date": "2006-05-02 11:19:56 +0000",
+            "comment": "Moved IPAddr to core."
+        },
+        {
+            "c_hash": "bfd5672f",
+            "date": "2006-05-02 11:25:27 +0000",
+            "comment": "Add license and dnsjava license"
+        },
+        {
+            "c_hash": "b2f111eb",
+            "date": "2006-05-02 12:07:45 +0000",
+            "comment": "-Now its possible to configure the timeout for dnsrequests before an TempError is returned. Default timout is 20 seconds"
+        },
+        {
+            "c_hash": "2508bb36",
+            "date": "2006-05-02 13:32:36 +0000",
+            "comment": "Added pom.xml for maven (untested) Moved resources to resouces subfolder Moved terms declaration to jspf.default.terms (The parser is no logger aware of the terms package) Created a manifest (untested) Added further fix/comments to test.txt: now we pass all the tests."
+        },
+        {
+            "c_hash": "08619571",
+            "date": "2006-05-02 13:34:47 +0000",
+            "comment": "removed not needed timeout from mock service"
+        },
+        {
+            "c_hash": "f4c91611",
+            "date": "2006-05-02 13:37:34 +0000",
+            "comment": "Updated TODOs"
+        },
+        {
+            "c_hash": "d6831c73",
+            "date": "2006-05-02 13:38:52 +0000",
+            "comment": "default build folder"
+        },
+        {
+            "c_hash": "7cdf2493",
+            "date": "2006-05-02 13:59:38 +0000",
+            "comment": "My job ;-)"
+        },
+        {
+            "c_hash": "dfdf1c13",
+            "date": "2006-05-02 14:10:44 +0000",
+            "comment": "Reformat parser Qualifier string now takes its value from the SPF1Constants."
+        },
+        {
+            "c_hash": "0cc80c97",
+            "date": "2006-05-02 14:21:48 +0000",
+            "comment": "Add first logging to SPF"
+        },
+        {
+            "c_hash": "d6934faf",
+            "date": "2006-05-02 15:40:36 +0000",
+            "comment": "Fix for previous commit"
+        },
+        {
+            "c_hash": "b23dfc65",
+            "date": "2006-05-02 15:44:04 +0000",
+            "comment": "Added maven2 build. Added an automatically created an ant script (maven does this for us) Switched default .project to use http://m2eclipse.codehaus.org/ dnsjava 2.0.1 is not on the official maven repository so a new pom has to be created in the local home repository folder."
+        },
+        {
+            "c_hash": "2eac792f",
+            "date": "2006-05-02 15:44:33 +0000",
+            "comment": "default output folder for eclipse and maven"
+        },
+        {
+            "c_hash": "172f1654",
+            "date": "2006-05-02 15:44:36 +0000",
+            "comment": "default output folder for eclipse and maven"
+        },
+        {
+            "c_hash": "cd5b4f39",
+            "date": "2006-05-02 15:45:13 +0000",
+            "comment": "removed bin (no more used)"
+        },
+        {
+            "c_hash": "5bf40665",
+            "date": "2006-05-02 18:47:26 +0000",
+            "comment": "Updated pom.xml to reflect more information and to add clover, javadocs, pmd and other interesting reports. Moved LICENSE to LICENSE.txt, removed dnsjava library and the whole lib folder"
+        },
+        {
+            "c_hash": "1bff1b39",
+            "date": "2006-05-02 18:50:24 +0000",
+            "comment": "Updated TODO: Maven 2 pom \"first try\" is there. It run tests, generate the release, create reports."
+        },
+        {
+            "c_hash": "8e5c0193",
+            "date": "2006-05-02 18:55:51 +0000",
+            "comment": "Remove doc folder. The docs are generated automatically by maven using the \"mvn javadoc:javadoc\" command or creating the maven package. From Eclipse, right-click on pom.xml, run as maven 2..., select the \"package\" goal."
+        },
+        {
+            "c_hash": "0281d456",
+            "date": "2006-05-02 19:19:57 +0000",
+            "comment": "Updated pom"
+        },
+        {
+            "c_hash": "90f8ade5",
+            "date": "2006-05-02 19:43:09 +0000",
+            "comment": "Various updates following the pmd hints."
+        },
+        {
+            "c_hash": "f27b02ad",
+            "date": "2006-05-02 23:45:34 +0000",
+            "comment": "Removed unused code, added a few TODOs."
+        },
+        {
+            "c_hash": "85dcf9fc",
+            "date": "2006-05-03 10:35:16 +0000",
+            "comment": "Regression fix to pass again 2 failing tests."
+        },
+        {
+            "c_hash": "092a7fc9",
+            "date": "2006-05-03 10:52:49 +0000",
+            "comment": "Sample log call and log4j.properties file."
+        },
+        {
+            "c_hash": "11a480ca",
+            "date": "2006-05-03 12:07:53 +0000",
+            "comment": "Add logging .. Not sure if its enough"
+        },
+        {
+            "c_hash": "b0658ae9",
+            "date": "2006-05-03 12:08:44 +0000",
+            "comment": "-why i import these ? Only god knows! Removed it"
+        },
+        {
+            "c_hash": "f03b7053",
+            "date": "2006-05-03 12:43:44 +0000",
+            "comment": "-Add logging -Add javadocs -Rename a method to better reflect the usage"
+        },
+        {
+            "c_hash": "5a9717b7",
+            "date": "2006-05-03 12:55:54 +0000",
+            "comment": "Add some logs"
+        },
+        {
+            "c_hash": "454653fa",
+            "date": "2006-05-03 12:57:38 +0000",
+            "comment": "Update TODO"
+        },
+        {
+            "c_hash": "2b28886c",
+            "date": "2006-05-03 13:13:14 +0000",
+            "comment": "-More logs and todos."
+        },
+        {
+            "c_hash": "4941f610",
+            "date": "2006-05-03 13:33:08 +0000",
+            "comment": "Test for MacroExpand (the ipv6 test fail!)"
+        },
+        {
+            "c_hash": "c0313f3c",
+            "date": "2006-05-03 13:33:13 +0000",
+            "comment": "Test for MacroExpand (the ipv6 test fail!)"
+        },
+        {
+            "c_hash": "488b166a",
+            "date": "2006-05-03 13:37:43 +0000",
+            "comment": "-Add logs -Throw IllegalStateException if the term file could not read or the class not exists and set the result to neutral"
+        },
+        {
+            "c_hash": "d53ff470",
+            "date": "2006-05-03 13:46:50 +0000",
+            "comment": "Ignore target content"
+        },
+        {
+            "c_hash": "9d6914c7",
+            "date": "2006-05-03 13:47:09 +0000",
+            "comment": "Updated TODO"
+        },
+        {
+            "c_hash": "5057ca97",
+            "date": "2006-05-03 13:47:29 +0000",
+            "comment": "Updated project and classpath generated by maven2"
+        },
+        {
+            "c_hash": "b2511e66",
+            "date": "2006-05-03 13:48:17 +0000",
+            "comment": "We don't need target/classes in the repository"
+        },
+        {
+            "c_hash": "cfc882d8",
+            "date": "2006-05-03 13:52:16 +0000",
+            "comment": "Not sure what is happening with my classpath. This seems to work better with maven2 plugin"
+        },
+        {
+            "c_hash": "6d249d86",
+            "date": "2006-05-03 14:07:30 +0000",
+            "comment": "Add javadocs!"
+        },
+        {
+            "c_hash": "3dd4d9a9",
+            "date": "2006-05-03 14:15:11 +0000",
+            "comment": "-Add headers for all results -Remove this from TODO"
+        },
+        {
+            "c_hash": "5f6deb89",
+            "date": "2006-05-03 14:37:11 +0000",
+            "comment": "Change to loglevel to DEBUG for testing"
+        },
+        {
+            "c_hash": "7d642c53",
+            "date": "2006-05-03 15:09:23 +0000",
+            "comment": "Use more \"standard\" names for NOTICE and TODO (txt extension)"
+        },
+        {
+            "c_hash": "7bc7a8af",
+            "date": "2006-05-03 15:12:26 +0000",
+            "comment": "-Add author sections -Add javadoc -Set timeOut to 20"
+        },
+        {
+            "c_hash": "763618e6",
+            "date": "2006-05-03 15:17:31 +0000",
+            "comment": "This new method will be completed later.. just ignore it.."
+        },
+        {
+            "c_hash": "30cf01e1",
+            "date": "2006-05-03 17:13:04 +0000",
+            "comment": "implement the getReceivingDomain() method"
+        },
+        {
+            "c_hash": "29a26e32",
+            "date": "2006-05-03 17:16:59 +0000",
+            "comment": "Updated TODOs"
+        },
+        {
+            "c_hash": "9325366a",
+            "date": "2006-05-03 19:08:09 +0000",
+            "comment": "-Remove duplicate constants -Remove result of unknown. Not valid anymore!"
+        },
+        {
+            "c_hash": "66bc4dda",
+            "date": "2006-05-03 22:04:04 +0000",
+            "comment": "Added logging and a few comments to the SPF1Parser"
+        },
+        {
+            "c_hash": "d73bc4e8",
+            "date": "2006-05-04 07:52:04 +0000",
+            "comment": "Added checkstyle to the site generation Commented the failing test in MacroExpandTest and added a TODO"
+        },
+        {
+            "c_hash": "a52be52c",
+            "date": "2006-05-04 08:06:56 +0000",
+            "comment": "Remove todo.. not possible"
+        },
+        {
+            "c_hash": "c1b077d5",
+            "date": "2006-05-04 08:57:34 +0000",
+            "comment": "implement the getReadableIP() method"
+        },
+        {
+            "c_hash": "0eeea758",
+            "date": "2006-05-04 10:20:19 +0000",
+            "comment": "-Add author section -check if the domain is a FQDN before return and set it as receivingDomain -Declare the SPF1Utils.checkFQDN() method as public"
+        },
+        {
+            "c_hash": "a7106df8",
+            "date": "2006-05-05 10:09:07 +0000",
+            "comment": "Updated todo: JDK1.4 compliance"
+        },
+        {
+            "c_hash": "095748cf",
+            "date": "2006-05-05 10:15:36 +0000",
+            "comment": "Removed Java5 specific code (IllegalStateException with nested and MatchResult from Regex) Renamed MatchResultSubset to ConfigurationMatch: it is no more a MatchResult."
+        },
+        {
+            "c_hash": "621b30db",
+            "date": "2006-05-05 12:19:49 +0000",
+            "comment": "I think we agreed that this should not be configurable cause it breaks our implementation"
+        },
+        {
+            "c_hash": "717d3e80",
+            "date": "2006-05-05 12:53:51 +0000",
+            "comment": "-add javadocs and author sections"
+        },
+        {
+            "c_hash": "d9fcc09f",
+            "date": "2006-05-05 12:56:16 +0000",
+            "comment": "forget to update this too"
+        },
+        {
+            "c_hash": "26775abd",
+            "date": "2006-05-05 13:39:43 +0000",
+            "comment": "-Remove the thrown PermErrorException. We don't have to do this here. Only set the Explantion to \"\"  if such an error is detected! -Remove TODOS. Only set Explanation to the default String on any other Exceptions -return null if the getCurrentResult() method is not equals SPF1Constants.FAIL"
+        },
+        {
+            "c_hash": "ba7bdf8d",
+            "date": "2006-05-06 13:07:53 +0000",
+            "comment": "reincluded dnsjava in the repository until we find out how to add it to a public repository."
+        },
+        {
+            "c_hash": "29c45902",
+            "date": "2006-05-06 13:16:22 +0000",
+            "comment": "Preparing pom for ASF import"
+        },
+        {
+            "c_hash": "3f845912",
+            "date": "2006-05-06 13:23:44 +0000",
+            "comment": "Added svn:eol-style = native to all text files, autoreformatted files."
+        },
+        {
+            "c_hash": "8ed64a01",
+            "date": "2006-05-06 21:56:46 +0000",
+            "comment": "-Add 4 new tests to get sure that the redirect modifier and include modifier works like expected! It seems so :-)"
+        },
+        {
+            "c_hash": "2d759f17",
+            "date": "2006-05-06 22:06:52 +0000",
+            "comment": "-Remove the todo.. cause we allready did it !"
+        },
+        {
+            "c_hash": "c71076ac",
+            "date": "2006-05-06 22:18:05 +0000",
+            "comment": "-Throw an PermErrorExcepion on None result in include -Fix syntax bug in include test records -Fix the result in test.txt for an include"
+        },
+        {
+            "c_hash": "22344ba6",
+            "date": "2006-05-06 22:25:34 +0000",
+            "comment": "-Remove not needed import and else if statement. Just notice we don't need that at all"
+        },
+        {
+            "c_hash": "6f7ce87d",
+            "date": "2006-05-07 09:14:49 +0000",
+            "comment": "-more include tests."
+        },
+        {
+            "c_hash": "5a28bcec",
+            "date": "2006-05-07 09:23:55 +0000",
+            "comment": "-Remove main from SPF"
+        },
+        {
+            "c_hash": "6d3b09ef",
+            "date": "2006-05-07 21:37:14 +0000",
+            "comment": "Splitted mailzone tests (based on mocked but reproducing a real zone) from our specific tests (fully mocked). Cleaned up the mocked dns services to not fallback to the real implementation. Created a LoggingDNSService that fallback to the XBill implementation but logs any call!"
+        },
+        {
+            "c_hash": "56a06980",
+            "date": "2006-05-08 06:52:45 +0000",
+            "comment": "-Remove logging from todo.. I think that enough now -assign me the ipv6 macrodata"
+        },
+        {
+            "c_hash": "aba8fa64",
+            "date": "2006-05-08 07:57:05 +0000",
+            "comment": "Updated info on explanation recursion"
+        },
+        {
+            "c_hash": "8cd6aa30",
+            "date": "2006-05-08 08:17:53 +0000",
+            "comment": "-one more task for me"
+        },
+        {
+            "c_hash": "9cbebe05",
+            "date": "2006-05-08 09:06:37 +0000",
+            "comment": "- implement the exp modifier correct for include and redirect!"
+        },
+        {
+            "c_hash": "06d3f77a",
+            "date": "2006-05-08 10:08:47 +0000",
+            "comment": "-Add Explanation tests"
+        },
+        {
+            "c_hash": "0cc407e3",
+            "date": "2006-05-08 10:50:43 +0000",
+            "comment": "-Move default explanation creation to SPF class -Merge explanation tests to SPF1Test -Get sure the explanation get reset on every runCheck() call"
+        },
+        {
+            "c_hash": "b0101475",
+            "date": "2006-05-08 11:14:02 +0000",
+            "comment": "Reminder to check synchronization issues."
+        },
+        {
+            "c_hash": "2322e420",
+            "date": "2006-05-08 12:23:20 +0000",
+            "comment": "- Fix a bug in explanation modifier"
+        },
+        {
+            "c_hash": "065f96c2",
+            "date": "2006-05-08 12:32:32 +0000",
+            "comment": "-return null on a exception. No need to continue"
+        },
+        {
+            "c_hash": "89c55f1b",
+            "date": "2006-05-08 14:08:07 +0000",
+            "comment": "todo updated"
+        },
+        {
+            "c_hash": "fb05d762",
+            "date": "2006-05-08 14:38:14 +0000",
+            "comment": "-Support for ipv6 macros!"
+        },
+        {
+            "c_hash": "573cd34b",
+            "date": "2006-05-08 15:03:25 +0000",
+            "comment": "Moved IPAddrTest to core package, changed the getNibble method, updated macroData test and create an SPF1Data test."
+        },
+        {
+            "c_hash": "353f8d34",
+            "date": "2006-05-08 16:41:49 +0000",
+            "comment": "Link to the new JIRA tracker."
+        },
+        {
+            "c_hash": "4aece1cd",
+            "date": "2006-05-09 06:03:26 +0000",
+            "comment": "-Remove old rfc links and replace it with the new official rfc: http://www.ietf.org/rfc/rfc4408.txt -Remove TODO which are not valid or have been fixed"
+        },
+        {
+            "c_hash": "20f7aadf",
+            "date": "2006-05-11 17:47:34 +0000",
+            "comment": "Finish the IP6Mechanism. Have to check if the netmask stuff work"
+        },
+        {
+            "c_hash": "f14255d3",
+            "date": "2006-05-11 18:09:49 +0000",
+            "comment": "Add test for ip6 + mask"
+        },
+        {
+            "c_hash": "52de4e81",
+            "date": "2006-05-12 07:10:47 +0000",
+            "comment": "Removed DNSJava from the repository (has been uploaded to ibiblio) Removed TODOs moved to JIRA"
+        },
+        {
+            "c_hash": "42b876d5",
+            "date": "2006-05-13 15:57:55 +0000",
+            "comment": "Introduced SPFResult (and SPFInternalResult) objects and removed fields from the SPF class (part of JSPF-3)"
+        },
+        {
+            "c_hash": "8aacda70",
+            "date": "2006-05-14 13:55:26 +0000",
+            "comment": "Thread-safety for SPF1Parser (part of JSPF-3)"
+        },
+        {
+            "c_hash": "b33f41e8",
+            "date": "2006-05-22 05:45:39 +0000",
+            "comment": "description was too long"
+        },
+        {
+            "c_hash": "1884df5c",
+            "date": "2006-05-22 05:46:16 +0000",
+            "comment": "Fix a bug which throw an temperror if no record of the queried type was found"
+        },
+        {
+            "c_hash": "362c0401",
+            "date": "2006-05-22 05:47:04 +0000",
+            "comment": "Fix a bug where the explanation was only set if a modifier was present."
+        },
+        {
+            "c_hash": "ff65111a",
+            "date": "2006-05-22 05:47:32 +0000",
+            "comment": "change version"
+        },
+        {
+            "c_hash": "047506fc",
+            "date": "2006-05-22 08:24:33 +0000",
+            "comment": "Thread safety for Terms (JSPF-3)"
+        },
+        {
+            "c_hash": "06146b1b",
+            "date": "2006-05-22 08:57:02 +0000",
+            "comment": "Move log4j.properties to test resources (JSPF-15) Removed TODO: we now use JIRA"
+        },
+        {
+            "c_hash": "6b25535b",
+            "date": "2006-05-24 13:02:27 +0000",
+            "comment": "Remove local MANIFEST (JSPF-14) The real manifest will be configured in pom.xml"
+        },
+        {
+            "c_hash": "d7d3e136",
+            "date": "2006-05-24 13:19:43 +0000",
+            "comment": "Add new class for commandline usage. See JSPF-13"
+        },
+        {
+            "c_hash": "30427d84",
+            "date": "2006-05-24 13:30:41 +0000",
+            "comment": "MANIFEST is now generated by maven2. See JSPF-14"
+        },
+        {
+            "c_hash": "d3fd8245",
+            "date": "2006-05-24 14:04:46 +0000",
+            "comment": "Add BasicConfiguration to the class to prevent Log4j warnings"
+        },
+        {
+            "c_hash": "e176be07",
+            "date": "2006-05-24 16:49:06 +0000",
+            "comment": "Add switches for enable/disable logging on cmdline use. See JSPF-16"
+        },
+        {
+            "c_hash": "8e78b54e",
+            "date": "2006-05-24 16:51:56 +0000",
+            "comment": "Fix the usage text"
+        },
+        {
+            "c_hash": "4f9011ca",
+            "date": "2006-05-24 18:12:44 +0000",
+            "comment": "Fix SPFQuery to use the same return codes as the perl implementation. See JSPF-17"
+        },
+        {
+            "c_hash": "e24c51dd",
+            "date": "2006-05-24 18:35:05 +0000",
+            "comment": "Better way to get the return code."
+        },
+        {
+            "c_hash": "54906149",
+            "date": "2006-05-27 07:05:47 +0000",
+            "comment": "Add xdoc for site generation. See JSPF-6"
+        },
+        {
+            "c_hash": "9fcb13bf",
+            "date": "2006-05-27 12:53:12 +0000",
+            "comment": "Added automatic reports submenus to the site.xml layout, added a few reports (pmd, xref, todos, clover) to the default site generation. (related to JSPF-6)"
+        },
+        {
+            "c_hash": "4607bdb6",
+            "date": "2006-05-27 14:21:35 +0000",
+            "comment": "Add junit test for tempError and getAAAARecords."
+        },
+        {
+            "c_hash": "39effb89",
+            "date": "2006-05-27 17:23:31 +0000",
+            "comment": "Add and correct more javadocs"
+        },
+        {
+            "c_hash": "33ff6982",
+            "date": "2006-05-27 18:23:51 +0000",
+            "comment": "-Code cleanup -Add more javadocs"
+        },
+        {
+            "c_hash": "2b9f5de4",
+            "date": "2006-05-29 07:33:32 +0000",
+            "comment": "few changes in xdoc generation"
+        },
+        {
+            "c_hash": "5ced4c2f",
+            "date": "2006-06-01 09:45:41 +0000",
+            "comment": "Remove author sections from the classes. See JSPF-18"
+        },
+        {
+            "c_hash": "d0355cfb",
+            "date": "2006-07-03 04:46:49 +0000",
+            "comment": "update the build.xml by using mvn ant:ant. Thx to Alan to post the right command"
+        },
+        {
+            "c_hash": "d0640342",
+            "date": "2006-07-03 04:47:03 +0000",
+            "comment": "."
+        },
+        {
+            "c_hash": "a668a6e6",
+            "date": "2006-07-11 07:30:28 +0000",
+            "comment": "Correct version ( get ready for first beta)"
+        },
+        {
+            "c_hash": "3481cc71",
+            "date": "2006-07-11 10:21:18 +0000",
+            "comment": "Change version"
+        },
+        {
+            "c_hash": "41562320",
+            "date": "2006-07-11 10:45:38 +0000",
+            "comment": "Add a build.xml and a README.txt to the root (JSPF-19)"
+        },
+        {
+            "c_hash": "296bcd3a",
+            "date": "2006-07-11 20:09:32 +0000",
+            "comment": "Set version"
+        },
+        {
+            "c_hash": "0c9b2956",
+            "date": "2006-07-12 18:49:56 +0000",
+            "comment": "Fix a link"
+        },
+        {
+            "c_hash": "d2320f08",
+            "date": "2006-07-13 06:11:38 +0000",
+            "comment": "Revert the change i made yesterday"
+        },
+        {
+            "c_hash": "c5c59e2c",
+            "date": "2006-07-14 09:04:43 +0000",
+            "comment": "Commented empty/todo pages and links to non existant subproject websites. We'll enable them as soon as content will appear."
+        },
+        {
+            "c_hash": "8f64ea6a",
+            "date": "2006-07-15 16:26:14 +0000",
+            "comment": "Fix download url"
+        },
+        {
+            "c_hash": "0d6a5f58",
+            "date": "2006-07-21 17:43:37 +0000",
+            "comment": "Updated jspf docs/website generation to match new site look/structure (JAMES-573)"
+        },
+        {
+            "c_hash": "ff10b5bb",
+            "date": "2006-07-21 17:43:43 +0000",
+            "comment": "Updated jspf docs/website generation to match new site look/structure (JAMES-573)"
+        },
+        {
+            "c_hash": "3d1a762c",
+            "date": "2006-07-24 09:26:55 +0000",
+            "comment": "Update license headers and notice (JSPF-22)"
+        },
+        {
+            "c_hash": "9a3c4258",
+            "date": "2006-07-24 11:03:02 +0000",
+            "comment": "Add ASL2 license headers to xml (pom, site, xdocs) (JSPF-22)"
+        },
+        {
+            "c_hash": "81f448c0",
+            "date": "2006-07-24 11:04:25 +0000",
+            "comment": "Introduced Logger service and enable DI for logging (JSPF-20)"
+        },
+        {
+            "c_hash": "50627cf9",
+            "date": "2006-07-24 11:20:53 +0000",
+            "comment": "Added libspf2/Wayne Schlitt to NOTICE (JSPF-12)"
+        },
+        {
+            "c_hash": "a75e41e7",
+            "date": "2006-07-24 13:26:04 +0000",
+            "comment": "Add assembly default descriptorRefs (bin/src) to pom.xml Now only \"mvn assembly:assembly\" is needed to create src and bin distribution"
+        },
+        {
+            "c_hash": "38744ab0",
+            "date": "2006-07-26 17:09:01 +0000",
+            "comment": "Updated the site to use the new maven-skin. Added \"james-project\" as parent. Removed non-working reports."
+        },
+        {
+            "c_hash": "3858f9f6",
+            "date": "2006-07-26 17:11:30 +0000",
+            "comment": "Remove unused css (now in the maven skin)."
+        },
+        {
+            "c_hash": "d85b68eb",
+            "date": "2006-07-31 20:00:18 +0000",
+            "comment": "Correct version number"
+        },
+        {
+            "c_hash": "33af9b23",
+            "date": "2006-08-02 14:20:14 +0000",
+            "comment": "Remove eclipse stuff, we don't need them in svn. Just use svn eclipse:eclipse to build them."
+        },
+        {
+            "c_hash": "6a6365ed",
+            "date": "2006-08-21 17:34:25 +0000",
+            "comment": "Fix a bug in which the Exception in PTRMechanism was not catched correctly. See JSPF-23"
+        },
+        {
+            "c_hash": "824843dd",
+            "date": "2006-08-21 17:38:28 +0000",
+            "comment": "Update version number"
+        },
+        {
+            "c_hash": "6c10a1cc",
+            "date": "2006-09-08 20:30:57 +0000",
+            "comment": "Updated repository references in pom.xml"
+        },
+        {
+            "c_hash": "999641a1",
+            "date": "2006-09-18 11:57:06 +0000",
+            "comment": "Added TestStuites to run the official SPF YAML tests (see JSPF-25) This new tests will broke the mvn packaging, because the tests do not pass now."
+        },
+        {
+            "c_hash": "433cd949",
+            "date": "2006-09-18 16:06:27 +0000",
+            "comment": "Update yaml tests to be able to run a single sub-test via eclipse gui (related to JSPF-25)"
+        },
+        {
+            "c_hash": "f931f1aa",
+            "date": "2006-09-20 10:57:33 +0000",
+            "comment": "Start fixin failing yaml tests."
+        },
+        {
+            "c_hash": "57629899",
+            "date": "2006-09-20 12:13:19 +0000",
+            "comment": "Removed masks from DNSService calls: we return single IP. The caller will have to handle masking. We now pass all tests but 1 IPv6 test (See JSPF-25)"
+        },
+        {
+            "c_hash": "bb31420a",
+            "date": "2006-09-20 13:12:22 +0000",
+            "comment": "Fix Inet6Util.isValidIP6Address for addresses starting with a single ':'"
+        },
+        {
+            "c_hash": "735a2596",
+            "date": "2006-09-20 13:12:35 +0000",
+            "comment": "Fix Inet6Util.isValidIP6Address for addresses starting with a single ':'"
+        },
+        {
+            "c_hash": "c0c26d5a",
+            "date": "2006-09-20 13:17:26 +0000",
+            "comment": "Remove specific support for a/0 and a//0: simply removed the code and test still pass! Splitted MAX_DEPTH into MAX_DEPTH (spf recursion) and MAX_DEPTH_DNS (dns records returned)"
+        },
+        {
+            "c_hash": "1b05ca90",
+            "date": "2006-09-20 15:12:00 +0000",
+            "comment": "Fix/add javadocs Replace catch Exception with the right Exception types Reformat some stuff"
+        },
+        {
+            "c_hash": "2591fa71",
+            "date": "2006-09-20 16:14:08 +0000",
+            "comment": "Introduced a DNSService.setRecordLimit to change the default record lookup limit of 10. Added few tests and removed unused code to increase coverage from 68 to 71%. Converted old tests to the new YAML format (JSPF-26)."
+        },
+        {
+            "c_hash": "532e798e",
+            "date": "2006-09-20 16:19:13 +0000",
+            "comment": "Remove unused tests after the conversion to YAML of the previous ones (JSPF-26)."
+        },
+        {
+            "c_hash": "479ae860",
+            "date": "2006-09-20 16:39:11 +0000",
+            "comment": "Moved common YAML test code to AbstractYamlTest."
+        },
+        {
+            "c_hash": "83d4009a",
+            "date": "2006-09-22 20:20:58 +0000",
+            "comment": "First step towards a secure (managed) maven2 build (JSPF-27). This one does not include ibiblio libraries in the final package."
+        },
+        {
+            "c_hash": "9404d767",
+            "date": "2006-09-22 20:27:50 +0000",
+            "comment": "Add missing images to jspf"
+        },
+        {
+            "c_hash": "c008f7f9",
+            "date": "2006-09-22 20:28:34 +0000",
+            "comment": "Add missing images to jspf"
+        },
+        {
+            "c_hash": "c83d15cd",
+            "date": "2006-09-24 17:34:52 +0000",
+            "comment": "Allow the user to set a default explanation. See JSPF-28"
+        },
+        {
+            "c_hash": "9c10bab3",
+            "date": "2006-09-24 18:58:15 +0000",
+            "comment": "Fix a bug i indruduce. Now all junit tests pass again"
+        },
+        {
+            "c_hash": "59e18803",
+            "date": "2006-09-24 19:43:59 +0000",
+            "comment": "Updated website to show 0.9b3 release"
+        },
+        {
+            "c_hash": "30da97c6",
+            "date": "2006-09-24 19:47:04 +0000",
+            "comment": "Changed \"error\" to \"permerror\": this seems what is used as the official reply for a permanent error."
+        },
+        {
+            "c_hash": "ab448b92",
+            "date": "2006-09-24 19:50:31 +0000",
+            "comment": "Add missing svn:eol-style=native property to yaml tests and NeutralException"
+        },
+        {
+            "c_hash": "24ed75f5",
+            "date": "2006-09-24 20:45:42 +0000",
+            "comment": "Small refactoring in DNSServiceXBillImpl to compact the getMxRecords code"
+        },
+        {
+            "c_hash": "a878b63b",
+            "date": "2006-09-24 21:10:54 +0000",
+            "comment": "Refactored DNSServiceXBillImpl to remove duplicate code (introduced a generic getRecords including common code)"
+        },
+        {
+            "c_hash": "56fc0f60",
+            "date": "2006-09-25 05:43:27 +0000",
+            "comment": "Allow the user to set a default explanation on cmdline usage. See JSPF-28"
+        },
+        {
+            "c_hash": "ed8d0eb0",
+            "date": "2006-09-25 07:35:08 +0000",
+            "comment": "Removed NoneException from DNSService: we now return null when no record is found (JSPF-29) Temporarily changed the first rfc4408 test to add 10 chars to the tested label (To be verified)"
+        },
+        {
+            "c_hash": "c67b8c8c",
+            "date": "2006-09-25 07:53:05 +0000",
+            "comment": "Moved record limit check from ExistsMechanism to DNSServiceImpl."
+        },
+        {
+            "c_hash": "914cd9b9",
+            "date": "2006-09-25 08:30:09 +0000",
+            "comment": "Changed DNSService.getRecord to get an internal int as a type and to always return a list of strings for the lookup (JSPF-29)"
+        },
+        {
+            "c_hash": "8bc35c14",
+            "date": "2006-09-25 08:35:55 +0000",
+            "comment": "Simplifications for the previous DNSService refactoring (JSPF-29)"
+        },
+        {
+            "c_hash": "95e001e7",
+            "date": "2006-09-25 08:45:03 +0000",
+            "comment": "Further simplifications for the previous DNSService refactoring: removed internal getTXTRecords (JSPF-29)"
+        },
+        {
+            "c_hash": "42889477",
+            "date": "2006-09-25 14:05:13 +0000",
+            "comment": "A lot of changes for JSPF-29 : Fixed mailzone-tests.yml and tests.yml to use \"inverse-ip.in-addr.arpa\" instead of \"ip\" for PTR records Updated rfc4408 test to the last available online: changed the first test to have 64 chars in the label instead of 54. Added a toString() to all the mechanism/modifiers so that they give useful informations when printed out. Introduced a DNSService.TimeoutException to be used instead of the TempErrorException in dns calls (added catch and rethrow TempError in the caller) Removed the record specific calls from the DNSService interface in favor of the generic getRecord. Moved the SPF specific logic from DNSService to the caller terms/code."
+        },
+        {
+            "c_hash": "fde8ec89",
+            "date": "2006-09-25 14:23:45 +0000",
+            "comment": "Fix for 2 failing tests: 1) SPF open group changed his mind about the MX limit 2) The trim we did on the returned SPF was trimming a null in the spf record and we were not failing: now we don't trim it and correctly fail to parse it!"
+        },
+        {
+            "c_hash": "44c38c8a",
+            "date": "2006-09-25 15:15:18 +0000",
+            "comment": "Add support for best guess. See JSPF-24"
+        },
+        {
+            "c_hash": "d661d39d",
+            "date": "2006-09-25 15:49:12 +0000",
+            "comment": "Fix Nullpointer which get thrown if no Record was found."
+        },
+        {
+            "c_hash": "8141e84f",
+            "date": "2006-09-25 15:50:24 +0000",
+            "comment": "Change SoftFail to Neutral.. Thx to Guillermo Grandes for reporting"
+        },
+        {
+            "c_hash": "79d56f3f",
+            "date": "2006-09-25 15:59:52 +0000",
+            "comment": "Fix Nullpointer which get thrown if no Record was found."
+        },
+        {
+            "c_hash": "b47ebf6d",
+            "date": "2006-09-25 16:03:53 +0000",
+            "comment": "Add option to use best guess from commandline. See JSPF-24"
+        },
+        {
+            "c_hash": "609f9bf2",
+            "date": "2006-09-25 16:05:44 +0000",
+            "comment": "Fix the BEST_GUESS_RECORD. Thx again Guillermo Grandes"
+        },
+        {
+            "c_hash": "33a7ab6d",
+            "date": "2006-09-25 17:50:59 +0000",
+            "comment": "Fix last failing test. Now we pass all tests again (but 1 that is under investigation by spf team and we think is invalid)."
+        },
+        {
+            "c_hash": "99cc7439",
+            "date": "2006-09-27 17:54:39 +0000",
+            "comment": "Add support for fallback (not sure i like the classname yet). See JSPF-31"
+        },
+        {
+            "c_hash": "ca0f956c",
+            "date": "2006-09-27 18:10:37 +0000",
+            "comment": "Add correct svn style."
+        },
+        {
+            "c_hash": "a1d5b0c5",
+            "date": "2006-09-27 18:15:01 +0000",
+            "comment": "Add correct svn style."
+        },
+        {
+            "c_hash": "13dd1b9b",
+            "date": "2006-09-28 12:16:13 +0000",
+            "comment": "Use commons-cli for commandline usage. See JSPF-33"
+        },
+        {
+            "c_hash": "9d67c4fe",
+            "date": "2006-09-28 12:17:08 +0000",
+            "comment": "Rename class to better reflect the usage. See JSPF-32"
+        },
+        {
+            "c_hash": "2d58555c",
+            "date": "2006-09-28 12:17:34 +0000",
+            "comment": "Rename class to better reflect the usage. See JSPF-32"
+        },
+        {
+            "c_hash": "71aa3eaf",
+            "date": "2006-09-28 12:23:29 +0000",
+            "comment": "Fix format"
+        },
+        {
+            "c_hash": "e9d8f899",
+            "date": "2006-09-28 12:24:54 +0000",
+            "comment": "Add missing svn style"
+        },
+        {
+            "c_hash": "2e186a98",
+            "date": "2006-09-28 13:07:23 +0000",
+            "comment": "Update to pom.xml to include repos and dependency ofor commons-cli"
+        },
+        {
+            "c_hash": "986d4eda",
+            "date": "2006-09-28 14:25:39 +0000",
+            "comment": "Delete all class"
+        },
+        {
+            "c_hash": "63542167",
+            "date": "2006-10-01 13:25:45 +0000",
+            "comment": "Deleted for new version of testfile"
+        },
+        {
+            "c_hash": "08ab1cd2",
+            "date": "2006-10-01 13:26:13 +0000",
+            "comment": "Add new version orf rfc4408 testfile"
+        },
+        {
+            "c_hash": "1eb927e3",
+            "date": "2006-10-01 14:19:40 +0000",
+            "comment": "Fix 2 junit tests which was failing in the updated rfc4408 testsuite"
+        },
+        {
+            "c_hash": "856ad96d",
+            "date": "2006-10-01 20:02:03 +0000",
+            "comment": "Fix getReverseIP() for ip6"
+        },
+        {
+            "c_hash": "99c59551",
+            "date": "2006-10-01 21:32:36 +0000",
+            "comment": "Few more fixes against official testsuite: we now validate PTR records looking for matching A records."
+        },
+        {
+            "c_hash": "af54f66a",
+            "date": "2006-10-02 03:56:37 +0000",
+            "comment": "lookup AAAA-Record in PTR if the connecting ip is ip6 move some code"
+        },
+        {
+            "c_hash": "9221ceca",
+            "date": "2006-10-02 04:27:47 +0000",
+            "comment": "Add workaround for not matching explanation. Thats caused by Inet6Address behavoir."
+        },
+        {
+            "c_hash": "f9a28ac2",
+            "date": "2006-10-02 06:29:18 +0000",
+            "comment": "Correct handling of ipv4-mapped-addresses. All junit test pass now"
+        },
+        {
+            "c_hash": "bf307f89",
+            "date": "2006-10-02 06:42:17 +0000",
+            "comment": "We should remember to run mvn ant after adding new depenedencies"
+        },
+        {
+            "c_hash": "4e92b0c2",
+            "date": "2006-10-02 15:52:02 +0000",
+            "comment": "Updated pom to use people.apache.org instead of minotaur."
+        },
+        {
+            "c_hash": "af220301",
+            "date": "2006-10-02 22:37:04 +0000",
+            "comment": "Add support for trusted-forwarder.org. See JSPF-30"
+        },
+        {
+            "c_hash": "7f488b4d",
+            "date": "2006-10-02 22:41:52 +0000",
+            "comment": "Add support of trusted-forwarder.org to SPFQuery. See JSPF-30"
+        },
+        {
+            "c_hash": "9a245cd1",
+            "date": "2006-10-03 10:29:25 +0000",
+            "comment": "Updated rfc4408.yml tests from new.openspf.org (we still pass them) Introduced an SPFChecker interface to be used for recursive call as a dependency. Made it possible for SPF to receive an external SPFParser (so we can reuse it) Optimized tests to reuse a single SPFParser between tests (it is stateless) Fixed SPF to avoid settingup the FallbackPolicy if not enabled. Removed few catch(Exception e) in favor of specific exception catches Changed ipAddr method to avoid throwing NumberFormatException and wrap it in a PermErrorException. Changed include/redirect to not create a new SPF object but to use the spfProbe (SPFChecker) service embedded in spf1data."
+        },
+        {
+            "c_hash": "f26d9d69",
+            "date": "2006-10-04 11:20:34 +0000",
+            "comment": "Introduced a Configuration parameter interface for Configurable. Introduced an SPFRecordParser interface for the parser Refactored the parser to smaller components (introduced the TermsFactory, and its default implementation). Some class has been moved around to have a better package dependency structure. Now: overall coverage 75%, parser coverage 95%."
+        },
+        {
+            "c_hash": "f4ef8d52",
+            "date": "2006-10-04 11:33:16 +0000",
+            "comment": "Remove not needed synchronized"
+        },
+        {
+            "c_hash": "93ef244f",
+            "date": "2006-10-04 14:56:47 +0000",
+            "comment": "Moved enabling interfaces to the \"wiring\" package. Removed services from SPF1Data. Introduced a WiringService (in the wiring package). A component (Factory) creating childs to be serviced can use WiringService.wire(Object). Packages changes, names changes and few more refactoring have to be done."
+        },
+        {
+            "c_hash": "1f06906b",
+            "date": "2006-10-05 14:03:49 +0000",
+            "comment": "Complete refactoring of SPF class: introduced the concept of Policy and NestedPolicy. Now the SPF processing is based on a set (chain) of Policies. Basic behaviours have been added to the \"policies\" package and optional behaviours have been added to \"policies.local\" package. SPF1Record now contains an iterator method that return a chained iterator over the terms. SPF1Record now is able represents both a parsed record (previous record) or an unparsed spf record (String)."
+        },
+        {
+            "c_hash": "20111880",
+            "date": "2006-10-05 14:09:51 +0000",
+            "comment": "Forgot to remove the localpolicy empty package"
+        },
+        {
+            "c_hash": "e2088b2b",
+            "date": "2006-10-05 15:53:51 +0000",
+            "comment": "Removed SPFInternalResult (we don't use it anymore) Moved DefaultExplanationPolicy to policies.local Introduced a common abstract SPFResultException to be used as the root of our exceptions: the concrete implementations provide also the string representation of the result to use."
+        },
+        {
+            "c_hash": "bd6c0f1b",
+            "date": "2006-10-05 16:43:45 +0000",
+            "comment": "Removed unused methods constants to reach 76.5% coverage (ok this is cheating ;-) ) Moved service implementations with dependencies in the impl package (we could even move this to a different module)"
+        },
+        {
+            "c_hash": "cb31a784",
+            "date": "2006-10-06 06:55:26 +0000",
+            "comment": "Remove the initalizeFallback method and use lazy initalization"
+        },
+        {
+            "c_hash": "c4b8b692",
+            "date": "2006-10-06 07:22:51 +0000",
+            "comment": "Add support for Override. See JSPF-36 and JSPF-32"
+        },
+        {
+            "c_hash": "cdd63472",
+            "date": "2006-10-07 09:35:31 +0000",
+            "comment": "New version of testsuite"
+        },
+        {
+            "c_hash": "2798aa54",
+            "date": "2006-10-07 09:44:55 +0000",
+            "comment": "Handle caseinsenitive spfrecords correctly"
+        },
+        {
+            "c_hash": "86510418",
+            "date": "2006-10-07 09:46:23 +0000",
+            "comment": "Correct stype"
+        },
+        {
+            "c_hash": "40abf0d5",
+            "date": "2006-10-08 13:09:23 +0000",
+            "comment": "Remove for new version"
+        },
+        {
+            "c_hash": "e06c8c5f",
+            "date": "2006-10-08 13:10:24 +0000",
+            "comment": "New version of testsuite"
+        },
+        {
+            "c_hash": "330671a2",
+            "date": "2006-10-08 16:37:26 +0000",
+            "comment": "Fix ClassCastException. Now all tests pass again"
+        },
+        {
+            "c_hash": "15901e43",
+            "date": "2006-10-08 17:42:51 +0000",
+            "comment": "Alternative fix for previusly fixed ClassCastException."
+        },
+        {
+            "c_hash": "12c7f790",
+            "date": "2006-10-09 09:35:18 +0000",
+            "comment": "Add building instructions. See JSPF-34"
+        },
+        {
+            "c_hash": "3b804014",
+            "date": "2006-10-09 10:51:10 +0000",
+            "comment": "Fix build.xml. See JSPF-35"
+        },
+        {
+            "c_hash": "c97fe9a0",
+            "date": "2006-10-09 11:07:45 +0000",
+            "comment": "add right main method to build.xml"
+        },
+        {
+            "c_hash": "42d3b1d6",
+            "date": "2006-10-10 11:22:18 +0000",
+            "comment": "Add a SNAPSHOT of the upcomming dnsjava release to include SPFRecord types Add a junit test for the SPFRecord type"
+        },
+        {
+            "c_hash": "0d6ffc2d",
+            "date": "2006-10-10 13:26:36 +0000",
+            "comment": "Add an other SPFRetriever which can be used to strict use RFC. See JSPF-37"
+        },
+        {
+            "c_hash": "73f9a7de",
+            "date": "2006-10-10 14:35:52 +0000",
+            "comment": "Forget to commit some changes for SPF-Type support"
+        },
+        {
+            "c_hash": "84d592d1",
+            "date": "2006-10-10 14:54:04 +0000",
+            "comment": "Change classname for better reflect the usage"
+        },
+        {
+            "c_hash": "4e676227",
+            "date": "2006-10-15 15:25:14 +0000",
+            "comment": "Move TRUSTEDFORWARDER default value from SPF to the specific policy class"
+        },
+        {
+            "c_hash": "a7f393b0",
+            "date": "2006-10-17 09:46:25 +0000",
+            "comment": "New rfc4408 tests"
+        },
+        {
+            "c_hash": "4f2bb754",
+            "date": "2006-10-31 14:57:12 +0000",
+            "comment": "Add new RFC tests"
+        },
+        {
+            "c_hash": "f67597cf",
+            "date": "2006-10-31 15:36:33 +0000",
+            "comment": "Fix failing unit test on MX mechanism when remote address in an IPv6"
+        },
+        {
+            "c_hash": "d3e7c740",
+            "date": "2006-11-15 10:31:40 +0000",
+            "comment": "Updated openspf yaml tests to current trunk and fixed a couple of bugs in JSpf testsuite: 1) mocked dns server was case sensitive in search => changed to use lowercase hosts 2) mocked dns server did not support CNAMEs"
+        },
+        {
+            "c_hash": "885b5e88",
+            "date": "2006-11-16 12:31:03 +0000",
+            "comment": "Update rfc4408 tests to be update date."
+        },
+        {
+            "c_hash": "01daba3c",
+            "date": "2006-11-27 19:25:17 +0000",
+            "comment": "Add new Version of rfc4408 test file. The tests now the same as the official released testsuite on new.openspf.org Fix a bug in junit tests"
+        },
+        {
+            "c_hash": "7d34168e",
+            "date": "2006-12-22 23:56:15 +0000",
+            "comment": "Added support for childloggers to ConsoleLogger (and write the logger name to output) Make use of ChildLoggers also in tests. Added a main to org.apache.james.jspf.RFC4408YamlTest that use log4j (to help spf spec people testing our tests)"
+        },
+        {
+            "c_hash": "ea268b75",
+            "date": "2007-01-05 13:31:05 +0000",
+            "comment": "Some code cleanup."
+        },
+        {
+            "c_hash": "605ab256",
+            "date": "2007-01-15 11:43:27 +0000",
+            "comment": "Update to new testsuite. Fix a bug with more then one explanation TXT-Record"
+        },
+        {
+            "c_hash": "982615ea",
+            "date": "2007-01-15 15:11:42 +0000",
+            "comment": "Fix macro expansion: now it should be more strict and compliant."
+        },
+        {
+            "c_hash": "4e206222",
+            "date": "2007-01-15 16:50:29 +0000",
+            "comment": "Second fix for macro expansion: now it should be strict and compliant."
+        },
+        {
+            "c_hash": "73f4a7ec",
+            "date": "2007-01-15 20:00:41 +0000",
+            "comment": "Upgrade to dnsjava 2.0.3 final: support for SPF type  (JSPF-39, JSPF-10)"
+        },
+        {
+            "c_hash": "71c00402",
+            "date": "2007-01-17 14:59:11 +0000",
+            "comment": "Removed rfc4408-tests YAML file because of to be verified (questionable) licensing issues (CC-BY-SA). Updated the testsuite to provide a link to the downloadable testsuite."
+        },
+        {
+            "c_hash": "7557f7cf",
+            "date": "2007-01-17 16:02:24 +0000",
+            "comment": "Get ready for next beta release"
+        },
+        {
+            "c_hash": "c8a9973d",
+            "date": "2007-02-10 14:33:26 +0000",
+            "comment": "Add section to reflect new jspf release"
+        },
+        {
+            "c_hash": "20c40548",
+            "date": "2007-03-31 13:01:42 +0000",
+            "comment": "Fix so that exp=something and redirect=something are not valid UnknownModifiers (rfc interpretation) Fixed pom to not use the apache m1 repository and added commons-cli and junit.jar into the local repository."
+        },
+        {
+            "c_hash": "31af7a6c",
+            "date": "2007-03-31 13:04:41 +0000",
+            "comment": "Svn ingored maven/eclipse trash"
+        },
+        {
+            "c_hash": "cdba2e9f",
+            "date": "2007-04-16 11:05:13 +0000",
+            "comment": "Small change to ExpModifier to support \"exp=\" as non permerror as required by the currently discussed Errata for RFC4408."
+        },
+        {
+            "c_hash": "3502b966",
+            "date": "2007-04-16 12:53:05 +0000",
+            "comment": "Fix bug in ipv6 lookup by AMechanism (ClassCastException)"
+        },
+        {
+            "c_hash": "979463e3",
+            "date": "2007-04-16 12:54:00 +0000",
+            "comment": "Remove duplicated expansion of host (waste of resources and possible bugs/security issues)"
+        },
+        {
+            "c_hash": "752c0999",
+            "date": "2007-04-16 13:11:55 +0000",
+            "comment": "First step of refactoring to make MacroExpand a service (thread-safety)"
+        },
+        {
+            "c_hash": "87a74450",
+            "date": "2007-04-16 17:46:01 +0000",
+            "comment": "Remove unneccessary cast/instance of"
+        },
+        {
+            "c_hash": "8d927a65",
+            "date": "2007-04-16 17:48:02 +0000",
+            "comment": "Removed dns dependency from SPF1Data: now MacroExpand has dns dependency and take care of managing this. Introduced MacroExpandEnabled to declare dependency on MacroExpand services and moved it to a singleton service (performance improvement)"
+        },
+        {
+            "c_hash": "4001f3ea",
+            "date": "2007-04-16 18:15:26 +0000",
+            "comment": "Removed method from the AbstractNestedPolicy: the postfilter already has the capabilities of the fallback filter, so no need to use both."
+        },
+        {
+            "c_hash": "1c7e7d0b",
+            "date": "2007-04-16 22:06:24 +0000",
+            "comment": "Refactored the Policy support from Nested (Policy/NestedPolicy/AbstractNestedPolicy) to Policy+PolicyPostFilter and linear iterative pattern (simpler to be approached via events)."
+        },
+        {
+            "c_hash": "debf7a09",
+            "date": "2007-04-17 19:57:45 +0000",
+            "comment": "Upgrade log4j to version 1.2.14 Upgrade jvyaml to version 0.2.1"
+        },
+        {
+            "c_hash": "ad22feb2",
+            "date": "2007-04-17 22:01:46 +0000",
+            "comment": "Removed unused method from SPF1Record."
+        },
+        {
+            "c_hash": "4646daf2",
+            "date": "2007-04-17 22:02:18 +0000",
+            "comment": "Minor fix in ParseRecordPolicy: if record is already parsed, do not parse it."
+        },
+        {
+            "c_hash": "5e2bb59b",
+            "date": "2007-04-21 16:38:11 +0000",
+            "comment": "Update news formatting and some link (openspf website, download pages to point to mirrors)"
+        },
+        {
+            "c_hash": "487f51f6",
+            "date": "2007-04-28 15:49:17 +0000",
+            "comment": "Renaming repos/third-party-m1 to stage to better follow the new server-modular structure."
+        },
+        {
+            "c_hash": "b393fecd",
+            "date": "2007-04-28 15:49:38 +0000",
+            "comment": "Renaming repos/third-party-m1 to stage to better follow the new server-modular structure."
+        },
+        {
+            "c_hash": "40be473b",
+            "date": "2007-04-28 15:49:57 +0000",
+            "comment": "Renaming repos/third-party-m1 to stage to better follow the new server-modular structure."
+        },
+        {
+            "c_hash": "dfb630db",
+            "date": "2007-04-28 16:09:15 +0000",
+            "comment": "Renaming repos/third-party-m1 to stage to better follow the new server-modular structure. Added some comment to pom.xml for m2 build workarounds."
+        },
+        {
+            "c_hash": "b780d045",
+            "date": "2007-05-10 23:30:30 +0000",
+            "comment": "new trunk created from the asynch-jspf branch."
+        },
+        {
+            "c_hash": "b9498073",
+            "date": "2007-05-11 00:03:31 +0000",
+            "comment": "Changed the package goal to create: 1) the main jar 2) the javadoc jar 3) the sources jar 4) the src package including the full tree 5) the bin package including the main jar, the runtime dependencies jars, the javadocs. Updated staged dependencies. Make use of the remote resources plugin to bundle a LICENSE/NOTICE in generated artifacts."
+        },
+        {
+            "c_hash": "7de92027",
+            "date": "2007-05-11 00:08:29 +0000",
+            "comment": "remote eclipse specific settings"
+        },
+        {
+            "c_hash": "c0d177ac",
+            "date": "2007-05-25 15:52:20 +0000",
+            "comment": "Add \"official\" jars/pom/xml (did this in the branch before by mistake)"
+        },
+        {
+            "c_hash": "708ac2f5",
+            "date": "2007-05-25 16:31:26 +0000",
+            "comment": "Remove build.xml to replace it"
+        },
+        {
+            "c_hash": "e11891ec",
+            "date": "2007-05-25 16:31:55 +0000",
+            "comment": "Add workin build.xml"
+        },
+        {
+            "c_hash": "b11ebaa2",
+            "date": "2007-05-31 10:11:29 +0000",
+            "comment": "Updated dnsjnio dependency. Updated pom to depend on non-snapshot when possible (and to point to updated stage folder)"
+        },
+        {
+            "c_hash": "06b1616c",
+            "date": "2007-05-31 10:12:00 +0000",
+            "comment": "IllegalStateException(Exception e) is not available in java 1.4"
+        },
+        {
+            "c_hash": "b2fad41f",
+            "date": "2007-05-31 13:34:43 +0000",
+            "comment": "Add build instructions for linux"
+        },
+        {
+            "c_hash": "19c40b24",
+            "date": "2007-06-01 16:07:06 +0000",
+            "comment": "Only some small javadocs corrections"
+        },
+        {
+            "c_hash": "02ba11f6",
+            "date": "2007-06-22 17:57:36 +0000",
+            "comment": "Updated AbstractYamlTest (thought this was already committed, but I see many differences...weird). Updated dnsjava to in house built version of current trunk (including spf record patch submitted to dnsjava) Updated dnsjnio to 0.9.7 official source code, but locally rebuilt because official 0.9.7 is java6 (class version 50). We fail multispf1 and multispf2 tests from official testsuite (only in real environment), but there is an ongoing errata about this on spf-devel."
+        },
+        {
+            "c_hash": "8c6bc334",
+            "date": "2007-08-29 14:20:15 +0000",
+            "comment": "Updated dnsjava to 2.0.5 (JSPF-51) This is finally java 1.4 compatible and correctly supports SPF records comparison/serialization."
+        },
+        {
+            "c_hash": "29fa2d93",
+            "date": "2007-09-03 12:39:50 +0000",
+            "comment": "Minor change to SPFRetriever: added a constant to switch from SPF+TXT resolution to TXT only (rarely useful when testing fallback behaviour)"
+        },
+        {
+            "c_hash": "8a886d7a",
+            "date": "2007-09-03 12:50:54 +0000",
+            "comment": "Update dnsjnio to the new ASLv2 licensed/java 1.4 compatible 0.9.8 release (JSPF-41)"
+        },
+        {
+            "c_hash": "0a471d89",
+            "date": "2007-09-03 23:34:21 +0000",
+            "comment": "Remove redundant code from test class."
+        },
+        {
+            "c_hash": "642c3d72",
+            "date": "2007-09-03 23:37:22 +0000",
+            "comment": "Created a fake dnsserver launcher class. This class allow running a fake dnsserver on the given interface/port reading the given yaml file and the given test suite description. If the parameters are correct the server will start listening/answering until killed."
+        },
+        {
+            "c_hash": "a523fad5",
+            "date": "2007-09-04 18:14:45 +0000",
+            "comment": "Fix some javadocs Code cleanup Add license headers"
+        },
+        {
+            "c_hash": "dbbfdc2d",
+            "date": "2007-09-04 23:30:02 +0000",
+            "comment": "Big class-shake to try removing a cyclic dependencies hell, Part 1 (JSPF-54)"
+        },
+        {
+            "c_hash": "1fd077e8",
+            "date": "2007-09-04 23:33:43 +0000",
+            "comment": "Big class-shake to try removing a cyclic dependencies hell, Part 2 (JSPF-54) Every cycle has been removed. I'm not very satisfied with the resulting structure, but having no cycle will help the next steps."
+        },
+        {
+            "c_hash": "cfff7c50",
+            "date": "2007-09-06 18:25:47 +0000",
+            "comment": "Fix some visibilities... Fix some typos Add visibility modifier's to be more \"inline\" with other coding style in this project"
+        },
+        {
+            "c_hash": "e33fe6d1",
+            "date": "2007-09-08 14:51:05 +0000",
+            "comment": "Add some more javadocs Rename the DefaultSPF1Parser to RFC4408SPF1Parser and declare it final (because its a \"RFC\" implementation) Fix a synchronize issue.."
+        },
+        {
+            "c_hash": "9725d1b3",
+            "date": "2007-09-10 07:32:52 +0000",
+            "comment": "Remove the final declaration ( this was bad idea at all )"
+        },
+        {
+            "c_hash": "dd4c2c1e",
+            "date": "2007-09-10 15:14:16 +0000",
+            "comment": "Promoted public nested exception classes to top level classes."
+        },
+        {
+            "c_hash": "03ebe7d2",
+            "date": "2007-09-10 15:27:37 +0000",
+            "comment": "Remove unused test class (including no tests)"
+        },
+        {
+            "c_hash": "636d9f52",
+            "date": "2007-09-10 22:30:55 +0000",
+            "comment": "Move MacroData to core package (same afferent/efferent dependencies). A single class in a package means too much fragmentation."
+        },
+        {
+            "c_hash": "2b78f9a7",
+            "date": "2007-09-10 22:32:52 +0000",
+            "comment": "Move MacroData to core package (same afferent/efferent dependencies). A single class in a package means too much fragmentation."
+        },
+        {
+            "c_hash": "1d8f0e3b",
+            "date": "2007-09-10 22:39:04 +0000",
+            "comment": "Move utils to core package (same afferent/efferent dependencies). 2 classes in a package was too much fragmentation (all of the code depending on utils also depends on core)."
+        },
+        {
+            "c_hash": "dcec6c7e",
+            "date": "2007-09-11 05:47:53 +0000",
+            "comment": "Remove empty packages ( Stefano seems to miss this..)"
+        },
+        {
+            "c_hash": "5ac75508",
+            "date": "2007-09-11 06:01:41 +0000",
+            "comment": "Correct visibility...."
+        },
+        {
+            "c_hash": "6dbe66a8",
+            "date": "2007-09-11 06:08:08 +0000",
+            "comment": "Update README to show the usage of DefaultSPF class"
+        },
+        {
+            "c_hash": "e88dddb5",
+            "date": "2007-09-11 09:27:37 +0000",
+            "comment": "Remove empty package"
+        },
+        {
+            "c_hash": "397031b2",
+            "date": "2007-09-11 09:33:17 +0000",
+            "comment": "Correct visibility.... ( missed this before)"
+        },
+        {
+            "c_hash": "c59e457e",
+            "date": "2007-09-16 23:07:22 +0000",
+            "comment": "Moved SPF to the impl package (single class package does not make sense. Most people will anyway use DefaultSPF from the impl package). Moved \"Enabling interfaces\" from _wiring_ to the same package of the service interface."
+        },
+        {
+            "c_hash": "d542ad5c",
+            "date": "2007-09-16 23:13:53 +0000",
+            "comment": "More packages reorganization."
+        },
+        {
+            "c_hash": "9df6948b",
+            "date": "2007-09-16 23:16:04 +0000",
+            "comment": "Move TimeoutException to the exceptions package"
+        },
+        {
+            "c_hash": "12a8f473",
+            "date": "2007-09-16 23:20:11 +0000",
+            "comment": "Renamed Configurable to ConfigurationEnabled to follow the \"Enabled\" naming we already use for every other service."
+        },
+        {
+            "c_hash": "12e6d04c",
+            "date": "2007-09-16 23:29:48 +0000",
+            "comment": "Move Configuration/ConfigurationEnabled to the terms package (only user of the 2 interfaces)"
+        },
+        {
+            "c_hash": "f052e3a6",
+            "date": "2007-09-16 23:31:51 +0000",
+            "comment": "Remove empty packages"
+        },
+        {
+            "c_hash": "eae3f684",
+            "date": "2007-09-17 00:21:56 +0000",
+            "comment": "move TermDefinition/TermsFactory implementations to impl."
+        },
+        {
+            "c_hash": "2b62972e",
+            "date": "2007-09-17 00:22:51 +0000",
+            "comment": "Added some basic code documentation to README (is this the best place?)."
+        },
+        {
+            "c_hash": "594cff88",
+            "date": "2007-09-17 09:16:31 +0000",
+            "comment": "Fix for a newly introduced NPE. I made this inner class \"static\" and forgot to assign the logger."
+        },
+        {
+            "c_hash": "55e8a322",
+            "date": "2007-09-17 09:17:03 +0000",
+            "comment": "Move port configuration for the FAKE_SERVER tests to a constant."
+        },
+        {
+            "c_hash": "b004c677",
+            "date": "2007-09-17 09:59:52 +0000",
+            "comment": "remove unused test resource"
+        },
+        {
+            "c_hash": "bae38e68",
+            "date": "2007-09-17 10:00:58 +0000",
+            "comment": "Added poms for our dependencies. Upgraded commons-cli to 1.1"
+        },
+        {
+            "c_hash": "ef15e0d0",
+            "date": "2007-09-17 10:01:26 +0000",
+            "comment": "Add missing license headers"
+        },
+        {
+            "c_hash": "c8f08b3d",
+            "date": "2007-09-17 10:02:21 +0000",
+            "comment": "Added ASLv2 header to dnsjava/jnamed based classes."
+        },
+        {
+            "c_hash": "43498347",
+            "date": "2007-09-17 14:40:03 +0000",
+            "comment": "Remove NOTICE.txt and LICENSE.txt from our sources: the one included in generated packages are automatically generated by maven and build using pom.xml+src\\main\\appended-resources\\supplemental-models.xml  files). Having this files in the root gives the wrong feeling that changing them give some result in the output packages, so it's better to remove them."
+        },
+        {
+            "c_hash": "b912dc1c",
+            "date": "2007-09-17 14:41:09 +0000",
+            "comment": "Fixed plugins dependencies (build reproducibility) and upgrade some of them to the latest available. Added some more sentence to the NOTICE generator (copied from the previous NOTICE.txt file)"
+        },
+        {
+            "c_hash": "d54a663a",
+            "date": "2007-09-17 14:43:42 +0000",
+            "comment": "Small fixes to BUILDING.txt"
+        },
+        {
+            "c_hash": "1d425255",
+            "date": "2007-09-17 14:44:20 +0000",
+            "comment": "new.openspf.org => www.openspf.org in rfclist."
+        },
+        {
+            "c_hash": "47672792",
+            "date": "2007-09-17 14:45:08 +0000",
+            "comment": "Remove JavaDocs warning."
+        },
+        {
+            "c_hash": "27d19be0",
+            "date": "2007-09-18 20:22:23 +0000",
+            "comment": "Add serial version uids to Exceptions."
+        },
+        {
+            "c_hash": "65e95d36",
+            "date": "2007-09-18 20:45:24 +0000",
+            "comment": "Using commons-cli formatter for usage. Improved parameter documentation and added short options."
+        },
+        {
+            "c_hash": "d5178d7d",
+            "date": "2007-09-19 15:14:18 +0000",
+            "comment": "Add libspf2.LICENSES file (license for test_*.txt resources). Added reference to the NOTICE generator (pom). Added ASF header to the mailzone-tests.yml."
+        },
+        {
+            "c_hash": "23ae4fd1",
+            "date": "2007-09-20 14:22:35 +0000",
+            "comment": "Readd rfc4408-tests.yml and added copyright and PSFL license references to the pom (NOTICE generator). Just preparing things: we should be allowed to redistribute PSFL files, but this is still under investigation."
+        },
+        {
+            "c_hash": "2fb7efcc",
+            "date": "2007-09-20 14:29:54 +0000",
+            "comment": "Tweaked command line parameter names for better intelligibility and compliance with other spf tools."
+        },
+        {
+            "c_hash": "b9f679ef",
+            "date": "2007-09-21 13:50:08 +0000",
+            "comment": "update parent project to the 1.2 \"staged\" release."
+        },
+        {
+            "c_hash": "d080471c",
+            "date": "2007-09-21 13:53:36 +0000",
+            "comment": "minor update to pom comment"
+        },
+        {
+            "c_hash": "c4420a25",
+            "date": "2007-09-21 13:54:07 +0000",
+            "comment": "forgot to commit this.."
+        },
+        {
+            "c_hash": "80d4352e",
+            "date": "2007-09-21 13:55:23 +0000",
+            "comment": "another minor issue in the comments"
+        },
+        {
+            "c_hash": "f679dc2c",
+            "date": "2007-09-21 13:59:54 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-jspf-0.9.5"
+        },
+        {
+            "c_hash": "a8808bd2",
+            "date": "2007-09-21 14:12:19 +0000",
+            "comment": "Revert releasing process."
+        },
+        {
+            "c_hash": "942f34a1",
+            "date": "2007-09-21 14:14:20 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-jspf-0.9.5"
+        },
+        {
+            "c_hash": "676d145a",
+            "date": "2007-09-21 14:14:30 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "54b3f05c",
+            "date": "2007-09-22 16:27:20 +0000",
+            "comment": "Updating headers for jnamed derived files following Robert suggestion."
+        },
+        {
+            "c_hash": "fd30d43e",
+            "date": "2007-09-24 09:14:45 +0000",
+            "comment": "Renamed libspf2.LICENSES to libspf2.LICENSE (naming convention for license files). Added automatic RAT check to the maven build / site generation. Excluded from RAT checks the resources already taken into consideration in NOTICE. Changed the NOTICE text to be more specific about included 3rd party files and inspiration sources."
+        },
+        {
+            "c_hash": "028442fa",
+            "date": "2007-09-25 06:40:10 +0000",
+            "comment": "update index.xml to reflect new jspf release"
+        },
+        {
+            "c_hash": "bc842042",
+            "date": "2007-09-25 10:13:16 +0000",
+            "comment": "Fix spelling and version number"
+        },
+        {
+            "c_hash": "9fdd448e",
+            "date": "2007-09-26 09:48:41 +0000",
+            "comment": "Added some more explanation about the parent-pom issue to the BUILDING.txt. Thanx to Bernd for pointing out that the comment in the pom.xml was not so visible."
+        },
+        {
+            "c_hash": "281db548",
+            "date": "2007-11-29 12:12:53 +0000",
+            "comment": "Updated rfc4408-tests.yml to openspf BSD licensed one (JSPF-58). The rfc4408-tests.* have been downloaded from http://www.openspf.org/source/project/test-suite/. The LICENSE file says it's BSD, The copyright for the files is: (C) 2006-2007 Stuart D Gathman <stuart@bmsi.com>"
+        },
+        {
+            "c_hash": "2a4007db",
+            "date": "2007-11-29 12:15:50 +0000",
+            "comment": "\"exp=\" have to result in PermError. Update the exp parsing string and our mailzone-tests.yml to reflect this change in the specification (JSPF-56)."
+        },
+        {
+            "c_hash": "2f0b3fb2",
+            "date": "2007-12-06 15:58:30 +0000",
+            "comment": "Make sure to clean up caches when the \"faked zone\" changes (JSPF-59)"
+        },
+        {
+            "c_hash": "2a5b21e3",
+            "date": "2008-01-15 09:26:54 +0000",
+            "comment": "Update dnsjnio to 0.9.9. Fixes an NPE on answers received after the internal timeout (JSPF-57). The pom file has been created by me, the jar file has been downloaded from sourceforge and extracted from the the dnsjnio-0.9.9.tar.gz. The package is distributed under the Apache Software License v2.0."
+        },
+        {
+            "c_hash": "31d1336d",
+            "date": "2008-01-15 09:35:29 +0000",
+            "comment": "Update the rfc4408-tests.yml to the latest available from the openspf group."
+        },
+        {
+            "c_hash": "8395de06",
+            "date": "2008-02-22 14:17:19 +0000",
+            "comment": "Throw IllegalArgumentException on invalid data given for SPFSession. See JSPF-60"
+        },
+        {
+            "c_hash": "37290314",
+            "date": "2008-02-22 14:18:50 +0000",
+            "comment": "fix bad format"
+        },
+        {
+            "c_hash": "b88ac607",
+            "date": "2008-02-23 15:36:57 +0000",
+            "comment": "Next try to fix JSPF-60"
+        },
+        {
+            "c_hash": "01d6765e",
+            "date": "2008-02-23 15:47:23 +0000",
+            "comment": "Finally fix JSPF-60 ( all tests pass again )"
+        },
+        {
+            "c_hash": "38c589c3",
+            "date": "2008-02-23 15:49:17 +0000",
+            "comment": "Fix format ( eclipse drives me crazy )"
+        },
+        {
+            "c_hash": "b4562689",
+            "date": "2008-02-24 20:46:58 +0000",
+            "comment": "Inlined SPFSession.setupData private method content to the constructor calling it. This make more evident that there is no need to catch NoneException."
+        },
+        {
+            "c_hash": "38cb64f1",
+            "date": "2008-02-24 21:44:53 +0000",
+            "comment": "Make sure we correctly use \"postmaster\" as localpart when we receive no local part. Remove workaround from the testsuite. Make sure we don't check the whole record when the input IP is malformed but direclty return the permerror (JSPF-60)."
+        },
+        {
+            "c_hash": "e84e9a90",
+            "date": "2008-02-25 10:28:58 +0000",
+            "comment": "Minor fix in probably unused code. (we returned the short error instead of the long one)"
+        },
+        {
+            "c_hash": "131d17ee",
+            "date": "2008-02-25 10:29:53 +0000",
+            "comment": "We don't need this file not found lazy \"check\" anymore. We can bundle the testsuite file now."
+        },
+        {
+            "c_hash": "e2a7164c",
+            "date": "2008-02-25 12:24:24 +0000",
+            "comment": "Made a refactoring so that there is no more an ExceptionCatcher stack in SPFSession. Now every SPFChecker can implement ExceptionCatcher so that a single checker stack is needed/used and it seem a little clearer and the logic to remove \"skipped\" checkers can be moved to the executors (much better)."
+        },
+        {
+            "c_hash": "01bd30a1",
+            "date": "2008-02-25 12:34:08 +0000",
+            "comment": "Remove \"System.out\"s."
+        },
+        {
+            "c_hash": "81800c58",
+            "date": "2008-02-25 13:14:22 +0000",
+            "comment": "Minor fixes and updated README.txt to reflect the catchers removal."
+        },
+        {
+            "c_hash": "e26e3136",
+            "date": "2008-03-20 17:13:48 +0000",
+            "comment": "Exclude release.properties from rat checks"
+        },
+        {
+            "c_hash": "e338e50d",
+            "date": "2008-03-20 17:16:41 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-jspf-0.9.6"
+        },
+        {
+            "c_hash": "d81957ed",
+            "date": "2008-03-20 17:17:01 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "ec9903a7",
+            "date": "2008-03-27 16:41:55 +0000",
+            "comment": "Update rfc4408-tests.yml to today version (r96). We still pass all the tests :-)"
+        },
+        {
+            "c_hash": "46d3c448",
+            "date": "2008-03-27 16:42:40 +0000",
+            "comment": "Added ALv2 license header to poms created by me."
+        },
+        {
+            "c_hash": "9ff293db",
+            "date": "2008-03-31 22:05:43 +0000",
+            "comment": "Created my own pom for junit-3.8.1.jar artifact."
+        },
+        {
+            "c_hash": "8bb1b747",
+            "date": "2008-03-31 22:20:25 +0000",
+            "comment": "Fix build.xml . This file is always outdated. Can we have ant to read our pom.xml ?"
+        },
+        {
+            "c_hash": "be4758a9",
+            "date": "2008-04-05 08:45:17 +0000",
+            "comment": "Reset version for mvn release plugin"
+        },
+        {
+            "c_hash": "c2c8c30c",
+            "date": "2008-04-05 08:49:08 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-jspf-0.9.6"
+        },
+        {
+            "c_hash": "7fe1bc93",
+            "date": "2008-04-05 08:49:27 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "b31a4bd1",
+            "date": "2008-04-08 18:16:01 +0000",
+            "comment": "Add new news section which reflect 0.9.6 release"
+        },
+        {
+            "c_hash": "c121104c",
+            "date": "2008-05-06 17:04:46 +0000",
+            "comment": "Sorry for the noise.. need to test svn mirror syncing"
+        },
+        {
+            "c_hash": "ab152069",
+            "date": "2008-05-06 17:07:43 +0000",
+            "comment": "Remove the test file..."
+        },
+        {
+            "c_hash": "3a188b50",
+            "date": "2008-05-10 19:36:14 +0000",
+            "comment": "test"
+        },
+        {
+            "c_hash": "16ee4365",
+            "date": "2008-05-10 19:50:09 +0000",
+            "comment": "test2"
+        },
+        {
+            "c_hash": "076f5a38",
+            "date": "2008-07-27 12:43:52 +0000",
+            "comment": "Updated dnsjava to 2.0.6. (JSPF-62) Also do not rat-ignore poms created by us."
+        },
+        {
+            "c_hash": "7ba2008e",
+            "date": "2008-07-27 13:12:09 +0000",
+            "comment": "Allow use of a custom Resolver (JSPF-61)"
+        },
+        {
+            "c_hash": "0e5ea534",
+            "date": "2008-08-04 14:37:04 +0000",
+            "comment": "Remove files without license header (make the m2 install fail because of rat checks)"
+        },
+        {
+            "c_hash": "f00a7860",
+            "date": "2008-08-13 08:52:34 +0000",
+            "comment": "Added a dnsjnio 1.0.0-beta-1 to check integration and see if the 2 fixed race issues fix JSPF-65 Jar has been created by Alex D (author of dnsjnio) for the specific purpose of letting us test it. http://sourceforge.net/mailarchive/message.php?msg_name=OFAE5EA938.A9112C4A-ON802574A3.003F725A-802574A3.003FA18A%40nominet.org.uk https://dnsjnio.svn.sourceforge.net/svnroot/dnsjnio/tags/dnsjnio-1.0.0-beta/dnsjnio-1.0.0-beta-1.jar"
+        },
+        {
+            "c_hash": "41cd97ba",
+            "date": "2008-08-19 09:02:22 +0000",
+            "comment": "Make space for multimodule-proposal branch code (JSPF-63) Prefer to copy single subfolders instead of copy the branch over trunk because some tool is unhappy when the main folder is replaced."
+        },
+        {
+            "c_hash": "a9d522a7",
+            "date": "2008-08-19 09:03:09 +0000",
+            "comment": "Make space for multimodule-proposal branch code (JSPF-63) Prefer to copy single subfolders instead of copy the branch over trunk because some tool is unhappy when the main folder is replaced."
+        },
+        {
+            "c_hash": "0707dedc",
+            "date": "2008-08-19 09:03:30 +0000",
+            "comment": "Make space for multimodule-proposal branch code (JSPF-63) Prefer to copy single subfolders instead of copy the branch over trunk because some tool is unhappy when the main folder is replaced."
+        },
+        {
+            "c_hash": "1ebea486",
+            "date": "2008-08-19 09:03:52 +0000",
+            "comment": "Make space for multimodule-proposal branch code (JSPF-63) Prefer to copy single subfolders instead of copy the branch over trunk because some tool is unhappy when the main folder is replaced."
+        },
+        {
+            "c_hash": "5a6e59a3",
+            "date": "2008-08-19 09:04:12 +0000",
+            "comment": "Make space for multimodule-proposal branch code (JSPF-63) Prefer to copy single subfolders instead of copy the branch over trunk because some tool is unhappy when the main folder is replaced."
+        },
+        {
+            "c_hash": "941f3d13",
+            "date": "2008-08-19 09:04:30 +0000",
+            "comment": "Make space for multimodule-proposal branch code (JSPF-63) Prefer to copy single subfolders instead of copy the branch over trunk because some tool is unhappy when the main folder is replaced."
+        },
+        {
+            "c_hash": "91836f0c",
+            "date": "2008-08-19 09:04:48 +0000",
+            "comment": "Make space for multimodule-proposal branch code (JSPF-63) Prefer to copy single subfolders instead of copy the branch over trunk because some tool is unhappy when the main folder is replaced."
+        },
+        {
+            "c_hash": "6ac94d59",
+            "date": "2008-08-19 09:05:06 +0000",
+            "comment": "Make space for multimodule-proposal branch code (JSPF-63) Prefer to copy single subfolders instead of copy the branch over trunk because some tool is unhappy when the main folder is replaced."
+        },
+        {
+            "c_hash": "facbd652",
+            "date": "2008-08-19 09:05:22 +0000",
+            "comment": "Make space for multimodule-proposal branch code (JSPF-63) Prefer to copy single subfolders instead of copy the branch over trunk because some tool is unhappy when the main folder is replaced."
+        },
+        {
+            "c_hash": "a305fbda",
+            "date": "2008-08-19 09:16:58 +0000",
+            "comment": "Update rfc4408-tests.yml testsuite from current OpenSPF head to expose the macro expansion bug (JSPF-66)"
+        },
+        {
+            "c_hash": "6336f60e",
+            "date": "2008-08-19 09:17:56 +0000",
+            "comment": "Fix macroexpansion for %- and %_ (JSPF-66)"
+        },
+        {
+            "c_hash": "4c606c83",
+            "date": "2008-08-20 17:30:10 +0000",
+            "comment": "Update dependency to dnsjnio-1.0.0-beta-2. This is a beta release from the dnsjnio project distributed under the ALv2 license. Alex fixed the random port issue, and the QID issue related to DNS vulnerabilities."
+        },
+        {
+            "c_hash": "8e94fde4",
+            "date": "2008-08-21 10:22:52 +0000",
+            "comment": "Remove obsolete content."
+        },
+        {
+            "c_hash": "18f85362",
+            "date": "2008-09-14 16:57:06 +0000",
+            "comment": "Create a src.zip/tar.gz package including the whole source tree (JSPF-68) Remove src/source packages from the resolver module (we don't need them for resolver)"
+        },
+        {
+            "c_hash": "f58f849a",
+            "date": "2008-09-20 17:44:26 +0000",
+            "comment": "Updated dnsjnio to 1.0.0 final (JSPF-64/JSPF-65). The jar comes from the zip distributed by sourceforge. The pom has been created by me."
+        },
+        {
+            "c_hash": "bf6a7bcf",
+            "date": "2008-09-20 20:55:34 +0000",
+            "comment": "javadoc 2.5 requires maven 2.0.9 (hudson has an older version)"
+        },
+        {
+            "c_hash": "6abec177",
+            "date": "2008-12-18 10:57:11 +0000",
+            "comment": "update rfc4408-tests.yml to revision 107 (04 Dec 2008) http://www.openspf.org/source/project/test-suite/rfc4408-tests.yml?revision=107&view=markup"
+        },
+        {
+            "c_hash": "d912ef41",
+            "date": "2009-05-30 17:03:55 +0000",
+            "comment": "Correctly handle dollar sign in local-part of emailaddress. See JSPF-71. Thx to Frank Stolle for reporting"
+        },
+        {
+            "c_hash": "8ebd041e",
+            "date": "2009-05-30 17:07:33 +0000",
+            "comment": "Add assertEquals (JSPF-71)"
+        },
+        {
+            "c_hash": "9f94729c",
+            "date": "2009-05-30 19:59:51 +0000",
+            "comment": "Upgrade to dnsjnio 1.0.2 (JSPF-73)"
+        },
+        {
+            "c_hash": "c053dc8c",
+            "date": "2009-05-31 12:22:44 +0000",
+            "comment": "Also add escaping for backslash in regex replace strings (JSPF-71) From javadocs, both dollar and backslash need escaping. (also replaced tabs with spaces for our formatting convention)."
+        },
+        {
+            "c_hash": "8e75d760",
+            "date": "2009-05-31 12:25:47 +0000",
+            "comment": "Upgraded parent project to 1.3 final."
+        },
+        {
+            "c_hash": "ad9ce21c",
+            "date": "2009-05-31 14:38:56 +0000",
+            "comment": "Added \"released\" openspf testsuite to the tests. We previously only tested against \"trunk\" testsuite and openspf advised to check against the latest release (2008.08). The testsuite check the released suite synchronously and the trunk asynchronously."
+        },
+        {
+            "c_hash": "922a3c13",
+            "date": "2009-05-31 14:39:53 +0000",
+            "comment": "Updated pom.xml for the new dnsjnio (JSPF-73)"
+        },
+        {
+            "c_hash": "fbb1f7ea",
+            "date": "2009-05-31 14:42:37 +0000",
+            "comment": "DNSJava already parsed quoted TXT records correctly, so I moved the \"unquote\" to the resolver instead of the SPFRetriever that now expect a single, unquoted, string (JSPF-72)"
+        },
+        {
+            "c_hash": "0d8b2eb9",
+            "date": "2009-05-31 14:48:44 +0000",
+            "comment": "Just cleanup..."
+        },
+        {
+            "c_hash": "db3f8aaf",
+            "date": "2009-05-31 17:38:04 +0000",
+            "comment": "Let's rat know we added a 3rd party licensed test file."
+        },
+        {
+            "c_hash": "b4ca2d88",
+            "date": "2009-06-01 20:35:24 +0000",
+            "comment": "JSPF-74 Moved assembly to a separate module https://issues.apache.org/jira/browse/JSPF-74"
+        },
+        {
+            "c_hash": "c5f26f75",
+            "date": "2009-06-01 21:06:23 +0000",
+            "comment": "JSPF-74 Add top level license and notice document. Copy them into the binary. https://issues.apache.org/jira/browse/JSPF-74"
+        },
+        {
+            "c_hash": "47f16cd0",
+            "date": "2009-06-01 21:24:44 +0000",
+            "comment": "JSPF-74 Include sources. https://issues.apache.org/jira/browse/JSPF-74"
+        },
+        {
+            "c_hash": "ba832fc8",
+            "date": "2009-06-03 09:24:05 +0000",
+            "comment": "JSPF-74 Correct top level NOTICE https://issues.apache.org/jira/browse/JSPF-74"
+        },
+        {
+            "c_hash": "a6c9ff13",
+            "date": "2009-06-03 09:24:58 +0000",
+            "comment": "JSPF-74 License applies to content in resolver not tester module https://issues.apache.org/jira/browse/JSPF-74"
+        },
+        {
+            "c_hash": "f1a6c112",
+            "date": "2009-06-03 09:45:57 +0000",
+            "comment": "JSPF-74 Improve manifests https://issues.apache.org/jira/browse/JSPF-74"
+        },
+        {
+            "c_hash": "856dc26e",
+            "date": "2009-06-03 09:57:23 +0000",
+            "comment": "JSPF-74 The latest version of the Apache resource bundle supports only minimal NOTICE files with more information in dependencies. https://issues.apache.org/jira/browse/JSPF-74"
+        },
+        {
+            "c_hash": "f08b0962",
+            "date": "2009-06-03 10:20:11 +0000",
+            "comment": "\"tester\" resources are no more in test but in main (JSPF-74)"
+        },
+        {
+            "c_hash": "cfe9c7c1",
+            "date": "2009-06-03 13:34:57 +0000",
+            "comment": "JSPF-75 Repackaged tester classes and files. https://issues.apache.org/jira/browse/JSPF-75"
+        },
+        {
+            "c_hash": "72bd379d",
+            "date": "2009-06-03 14:14:14 +0000",
+            "comment": "JSPF-75 Corrected paths in NOTICE. https://issues.apache.org/jira/browse/JSPF-75"
+        },
+        {
+            "c_hash": "f2c9ed39",
+            "date": "2009-06-03 14:20:47 +0000",
+            "comment": "JSPF-76 OSGi enable https://issues.apache.org/jira/browse/JSPF-76"
+        },
+        {
+            "c_hash": "d5af0dcb",
+            "date": "2009-06-04 15:53:30 +0000",
+            "comment": "Let rat know that we moved test resources to the tester subfolder."
+        },
+        {
+            "c_hash": "aaa7f129",
+            "date": "2009-06-07 16:46:36 +0000",
+            "comment": "Added ability to load all of the zones defined in a yml file. The test files often do define overlapping zones, so this allow testing a full file without reloading the fake server."
+        },
+        {
+            "c_hash": "7823d4ee",
+            "date": "2009-06-14 17:29:03 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-jspf-project-0.9.7"
+        },
+        {
+            "c_hash": "8a940241",
+            "date": "2009-06-14 17:30:41 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "08f17bbb",
+            "date": "2009-06-25 11:11:51 +0000",
+            "comment": "update site src file for announce the new jspf release"
+        },
+        {
+            "c_hash": "dd7b2503",
+            "date": "2009-08-06 15:04:18 +0000",
+            "comment": "\"Correct usage\" of OptionBuilder to eliminate warnings (JSPF-80)"
+        },
+        {
+            "c_hash": "1051b1b1",
+            "date": "2009-08-06 15:08:36 +0000",
+            "comment": "\"Correct usage\" of OptionBuilder to eliminate warnings (JSPF-80)"
+        },
+        {
+            "c_hash": "e31dfd71",
+            "date": "2009-08-06 15:11:32 +0000",
+            "comment": "Move to java5 (JSPF-79)"
+        },
+        {
+            "c_hash": "53227106",
+            "date": "2009-08-06 15:13:52 +0000",
+            "comment": "add missing serialVersionUID (JSPF-81)"
+        },
+        {
+            "c_hash": "fc1511cd",
+            "date": "2009-08-06 16:55:18 +0000",
+            "comment": "Start to generify (JSPF-78)"
+        },
+        {
+            "c_hash": "5787edcc",
+            "date": "2009-08-06 18:31:23 +0000",
+            "comment": "Remove unnecessary synchronized statements (JSPF-82)"
+        },
+        {
+            "c_hash": "14773894",
+            "date": "2009-08-06 20:02:00 +0000",
+            "comment": "more generify (JSPF-78)"
+        },
+        {
+            "c_hash": "f0aa85ea",
+            "date": "2009-08-07 08:43:57 +0000",
+            "comment": "More Generics (JSPF-78)"
+        },
+        {
+            "c_hash": "4efbcd76",
+            "date": "2009-08-08 18:30:05 +0000",
+            "comment": "more generify again (JSPF-78)"
+        },
+        {
+            "c_hash": "c161c7c5",
+            "date": "2010-01-07 16:23:40 +0000",
+            "comment": "Upgrade dependencies (dnsjava 2.0.6=>2.0.8, dnsjnio 1.0.2=>1.0.3, commons-cli 1.1 => 1.2) (JSPF-87 and JSPF-84)"
+        },
+        {
+            "c_hash": "5741ca92",
+            "date": "2010-01-07 16:48:15 +0000",
+            "comment": "Updated openspf test suite to 2009.10 (all tests still pass). Updated code to reflect dnsjnio 1.0.3 new packaging (it doesn't have any more classes in the dnsjava namespace) (JSPF-87, JSPF-85 and JSPF-84)"
+        },
+        {
+            "c_hash": "c374f541",
+            "date": "2010-01-07 17:44:36 +0000",
+            "comment": "Some generics for test classes (and many suppresswarnings) (JSPF-78)"
+        },
+        {
+            "c_hash": "180b219a",
+            "date": "2010-01-19 14:33:24 +0000",
+            "comment": "* Upgrade to james-project 1.5 * Cleanup stage * jvyaml artifact name changed"
+        },
+        {
+            "c_hash": "c9146e00",
+            "date": "2010-01-19 14:35:14 +0000",
+            "comment": "remove empty dir"
+        },
+        {
+            "c_hash": "f0f34612",
+            "date": "2010-06-08 19:12:46 +0000",
+            "comment": "Fix generics in test (ClassCastException)"
+        },
+        {
+            "c_hash": "9992fd5c",
+            "date": "2010-06-08 19:13:28 +0000",
+            "comment": "Remove \"stage\". Every dependency is in central, so we don't need anymore the stage folder. (JSPF-86)"
+        },
+        {
+            "c_hash": "93fbebda",
+            "date": "2010-06-08 19:13:33 +0000",
+            "comment": "Remove \"stage\". Every dependency is in central, so we don't need anymore the stage folder. (JSPF-86)"
+        },
+        {
+            "c_hash": "bdc16c01",
+            "date": "2010-06-08 20:13:03 +0000",
+            "comment": "Removed LICENSE.apache and NOTICE.base as the basic NOTICE/LICENSE files are already added by the maven remote resources plugin. Removed junit license from LICENSE.txt as none of our packages include the junit.jar anymore. Added custom NOTICE to the  tester META-INF resources so that its jars have correct references for the included resources (mainly the yaml tests sources) (JSPF-67)"
+        },
+        {
+            "c_hash": "041e60f2",
+            "date": "2010-06-08 20:19:09 +0000",
+            "comment": "Ignore some generics warning for tests (JSPF-67)"
+        },
+        {
+            "c_hash": "f96b12b4",
+            "date": "2010-06-10 16:50:48 +0000",
+            "comment": "Cleanup / adjust pom.xml file to get ready for next release"
+        },
+        {
+            "c_hash": "c9e6348e",
+            "date": "2010-06-10 17:00:12 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-jspf-project-0.9.8"
+        },
+        {
+            "c_hash": "8281b386",
+            "date": "2010-06-10 17:00:27 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "68a79a4d",
+            "date": "2010-06-21 13:25:16 +0000",
+            "comment": "Update to reflect release of jspf 0.9.8"
+        },
+        {
+            "c_hash": "62f84b82",
+            "date": "2011-02-25 09:22:51 +0000",
+            "comment": "Fix type in plugin config. Thanks to Felix Knecht for the fix"
+        },
+        {
+            "c_hash": "4db9b6d7",
+            "date": "2011-03-18 00:29:53 +0000",
+            "comment": "Switch to and force maven 3. Add generation of technical reports using the -Psite-reports profile"
+        },
+        {
+            "c_hash": "643439e1",
+            "date": "2011-03-21 10:48:32 +0000",
+            "comment": "Next version fixes various issues when used with maven 3"
+        },
+        {
+            "c_hash": "73b05746",
+            "date": "2011-03-24 18:54:31 +0000",
+            "comment": "Update to maven-skin-1.6"
+        },
+        {
+            "c_hash": "ba4a671a",
+            "date": "2011-03-24 19:21:32 +0000",
+            "comment": "Update to james-project-1.6"
+        },
+        {
+            "c_hash": "1f0702f6",
+            "date": "2011-06-30 19:37:10 +0000",
+            "comment": "Replace tabs by spaces"
+        },
+        {
+            "c_hash": "41e00998",
+            "date": "2011-07-01 19:53:27 +0000",
+            "comment": "Don't import commons-cli packages via OSGI. See JSPF-90"
+        },
+        {
+            "c_hash": "99b3cf51",
+            "date": "2011-07-04 06:09:16 +0000",
+            "comment": "Mark dnsjnio imports as optional. See JSPF-89"
+        },
+        {
+            "c_hash": "97fe595e",
+            "date": "2011-07-05 16:46:45 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-jspf-project-0.9.9"
+        },
+        {
+            "c_hash": "444397ad",
+            "date": "2011-07-05 16:47:39 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "f8b3113c",
+            "date": "2011-07-06 14:59:25 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-jspf-project-0.9.9"
+        },
+        {
+            "c_hash": "1827064a",
+            "date": "2011-07-06 15:00:54 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "b24f3715",
+            "date": "2011-07-14 10:41:08 +0000",
+            "comment": "Fixed typo in artifact name."
+        },
+        {
+            "c_hash": "b5f1a014",
+            "date": "2011-07-14 11:06:42 +0000",
+            "comment": "JSPF-91 Copy existing NOTICE and LICENSE to preserve existing information"
+        },
+        {
+            "c_hash": "722fbf4c",
+            "date": "2011-07-14 11:08:17 +0000",
+            "comment": "JSPF-91 Remove information that no longer reflects source in version control. Updated copyright."
+        },
+        {
+            "c_hash": "c44ca731",
+            "date": "2011-07-14 11:40:42 +0000",
+            "comment": "JSPF-91 Format tabs to spaces."
+        },
+        {
+            "c_hash": "c2da2829",
+            "date": "2011-07-14 13:17:53 +0000",
+            "comment": "JSPF-91 Stage no longer exists."
+        },
+        {
+            "c_hash": "d9a64f11",
+            "date": "2011-07-14 17:42:36 +0000",
+            "comment": "JSPF-91 Update to reflect newer names for resources."
+        },
+        {
+            "c_hash": "c72eb7b2",
+            "date": "2011-07-14 18:08:11 +0000",
+            "comment": "JSPF-91 Switch to using license and notice in sources."
+        },
+        {
+            "c_hash": "0238d8e5",
+            "date": "2011-07-14 18:14:50 +0000",
+            "comment": "JSPF-91 Switch to Maven naming convention for legal documentation."
+        },
+        {
+            "c_hash": "a3b3cd76",
+            "date": "2011-07-18 06:33:21 +0000",
+            "comment": "Cleanup / Use skin for Apache Branding in Navigation. See JAMES-1289"
+        },
+        {
+            "c_hash": "a629d9c7",
+            "date": "2011-09-12 13:34:29 +0000",
+            "comment": "Synchronize FutureSPFResult.isReady() to avoid race-conditions. See JSPF-93"
+        },
+        {
+            "c_hash": "b1b00e94",
+            "date": "2011-10-17 14:25:23 +0000",
+            "comment": "Use renamed james-skin (JAMES-1334)"
+        },
+        {
+            "c_hash": "2c283831",
+            "date": "2011-10-19 12:15:03 +0000",
+            "comment": "Format (JAMES-1339)"
+        },
+        {
+            "c_hash": "85792984",
+            "date": "2011-11-10 21:21:37 +0000",
+            "comment": "Move to james-project-1.7"
+        },
+        {
+            "c_hash": "e097dcc4",
+            "date": "2011-11-16 15:47:08 +0000",
+            "comment": "Add support for IFutureSPFResultListener. See JSPF-94"
+        },
+        {
+            "c_hash": "d38f3464",
+            "date": "2011-11-22 06:20:44 +0000",
+            "comment": "Update to james-project 1.8"
+        },
+        {
+            "c_hash": "2eaefb79",
+            "date": "2011-11-24 10:36:16 +0000",
+            "comment": "Make sure we mark the current Thread as interrupted when we catch the InterruptedException"
+        },
+        {
+            "c_hash": "f51abc80",
+            "date": "2011-11-24 13:58:59 +0000",
+            "comment": "Make sure all registered IFutureSPFResultListener get executed even on an unchecked Exception. See JSPF-95"
+        },
+        {
+            "c_hash": "c4a2536b",
+            "date": "2011-11-25 15:27:06 +0000",
+            "comment": "Don't hold the lock while executing the listeners"
+        },
+        {
+            "c_hash": "f16e1c8f",
+            "date": "2011-11-25 20:52:00 +0000",
+            "comment": "Fix technical reports generation"
+        },
+        {
+            "c_hash": "c492d605",
+            "date": "2011-11-26 16:37:57 +0000",
+            "comment": "Use java 1.5"
+        },
+        {
+            "c_hash": "52b8ff3a",
+            "date": "2011-11-26 17:41:02 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-jspf-project-1.0.0"
+        },
+        {
+            "c_hash": "60bd29ac",
+            "date": "2011-11-26 17:42:38 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "227c2d8f",
+            "date": "2011-11-26 20:48:43 +0000",
+            "comment": "Downgrade bundle plugin to be able to compile with java5"
+        },
+        {
+            "c_hash": "6af23da2",
+            "date": "2011-11-26 20:54:39 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-jspf-project-1.0.0"
+        },
+        {
+            "c_hash": "572c3ca5",
+            "date": "2011-11-26 21:00:21 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "2e148b9f",
+            "date": "2011-11-26 21:27:00 +0000",
+            "comment": "Use pluginManagement to change version of a plugin, so it's done only in one place"
+        }
+    ]
+}

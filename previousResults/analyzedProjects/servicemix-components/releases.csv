@@ -1,0 +1,9 @@
+commitID;commit-type;time-to-next-release;commit-message
+f98b16951adeb180ab105d5d27fc454be0bdb443;BREAKING_CHANGES;0;Move JBI components back into a single svn tree location git-svn-id: https://svn.apache.org/repos/asf/servicemix/components/trunk@1044149 13f79535-47bb-0310-9956-ffa450edef68
+d4a07b12d3b2f6384bf0cf0dd4dac3babce4a0a0;BREAKING_FIX;2;Prepare for release: Upgrade to specs 1.9.0 and utils 1.5.0 git-svn-id: https://svn.apache.org/repos/asf/servicemix/components/trunk@1213715 13f79535-47bb-0310-9956-ffa450edef68
+0c9b936fbba0d0789c00bd94d96d2b2c63c971d5;BREAKING_CHANGES;183;[SMXCOMP-918]upgrade to camel 2.9 git-svn-id: https://svn.apache.org/repos/asf/servicemix/components/trunk@1222023 13f79535-47bb-0310-9956-ffa450edef68
+62dc8ef881a8e10951cb71a57081d1e72b5683ce;BREAKING_FIX;170;SMXCOMP-918: Upgrade to Camel 2.9.0 git-svn-id: https://svn.apache.org/repos/asf/servicemix/components/trunk@1226739 13f79535-47bb-0310-9956-ffa450edef68
+b9733612bd81ee763c5d0eee00cb9d5949ec0cc3;BREAKING_CHANGES;150;[SMXCOMP-939]unify jetty version for JBI components git-svn-id: https://svn.apache.org/repos/asf/servicemix/components/trunk@1374169 13f79535-47bb-0310-9956-ffa450edef68
+c3c2d861a08b57382367d1bcac724e3fac727e17;BREAKING_FIX;88;Fix build with clean local repo: add ServiceMix repo for woden 1.0.0M6 git-svn-id: https://svn.apache.org/repos/asf/servicemix/components/trunk@1399640 13f79535-47bb-0310-9956-ffa450edef68
+379cde329f080c022f5b7cfed51db11ad8c1e8a3;BREAKING_CHANGES;66;Prepare for release: align dependencies with upcoming 4.5.0 release git-svn-id: https://svn.apache.org/repos/asf/servicemix/components/trunk@1407521 13f79535-47bb-0310-9956-ffa450edef68
+836e514506f481fecf21c2dd4a025eb0063929fe;BREAKING_FIX;-;Prepare for release: Upgrade to servicemix-utils 1.6.0 git-svn-id: https://svn.apache.org/repos/asf/servicemix/components/trunk@1433612 13f79535-47bb-0310-9956-ffa450edef68

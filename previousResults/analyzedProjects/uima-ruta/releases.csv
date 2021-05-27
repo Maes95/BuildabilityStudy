@@ -1,0 +1,2 @@
+commitID;commit-type;time-to-next-release;commit-message
+c541ac2a3382e45cacd3d6c2d166bf6e5530f5eb;BREAKING_CHANGES;343;UIMA-2526 - added reactor/parent pom for textmarker modules - changed parent pom of textmarker modules ... this can still cause build errors. I committed this changes in order to test correct checkoutgit-svn-id: https://svn.apache.org/repos/asf/uima/sandbox/trunk/TextMarker@1422899 13f79535-47bb-0310-9956-ffa450edef68

@@ -1,0 +1,8 @@
+commitID;commit-type;time-to-next-release;commit-message
+4cca3c20df54bf8c7e7ea0c95f454b2c2ded6d0c;BREAKING_FIX;128;o first add due to r636142 git-svn-id: https://svn.apache.org/repos/asf/maven/plugin-testing/trunk@636145 13f79535-47bb-0310-9956-ffa450edef68
+d274cdbd491ef6754ac0365787856c0b4fc572f1;BREAKING_CHANGES;466;Check that maven-parent 9 works with all projects git-svn-id: https://svn.apache.org/repos/asf/maven/plugin-testing/trunk@683423 13f79535-47bb-0310-9956-ffa450edef68
+cc0922f63cbfaf92de02c02bdfecb0f0c908c85f;BREAKING_FIX;429;o Inherited from maven-parent:9 git-svn-id: https://svn.apache.org/repos/asf/maven/plugin-testing/trunk@694660 13f79535-47bb-0310-9956-ffa450edef68
+705fdc7a6108fc77f39e85157a05fca4ad8663cf;BREAKING_CHANGES;275;use the new parent git-svn-id: https://svn.apache.org/repos/asf/maven/plugin-testing/trunk@744347 13f79535-47bb-0310-9956-ffa450edef68
+2115422da4a2ab4e15b0a09552ccebf1f758f4e8;BREAKING_FIX;267;o Inherited from maven-parent:11 git-svn-id: https://svn.apache.org/repos/asf/maven/plugin-testing/trunk@746463 13f79535-47bb-0310-9956-ffa450edef68
+43b055fd034a758a71af6470ed83ec58ec356dea;BREAKING_CHANGES;-;o bump to 3.0.0-SNAPSHOT to account for the major change in use of 3.1.0 git-svn-id: https://svn.apache.org/repos/asf/maven/plugin-testing/trunk@1507022 13f79535-47bb-0310-9956-ffa450edef68
+e92a15e2f20ab9ba125390c33e58cade7ff14f2b;BREAKING_FIX;-;bump to 3.0-SNAPSHOT for all modules (child modules omitted in 1507022) git-svn-id: https://svn.apache.org/repos/asf/maven/plugin-testing/trunk@1509103 13f79535-47bb-0310-9956-ffa450edef68

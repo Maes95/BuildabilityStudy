@@ -1,0 +1,1278 @@
+{
+    "project": "servicemix4-specs",
+    "git_url": "https://github.com/apache/servicemix4-specs.git",
+    "last_commit": "2cbd0274",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "2e1880f6",
+            "date": "2008-04-22 17:09:14 +0000",
+            "comment": "SMX4-15: Make JEE specs that use the services discovery mechanism work in OSGi"
+        },
+        {
+            "c_hash": "528a01cd",
+            "date": "2008-04-23 11:44:45 +0000",
+            "comment": "Fix svn:ignore prop"
+        },
+        {
+            "c_hash": "1a406afe",
+            "date": "2008-04-24 16:33:34 +0000",
+            "comment": "Add ASL headers, remove the idea creation comment, fix small incompatibilities with the spec"
+        },
+        {
+            "c_hash": "f9ca1e61",
+            "date": "2008-04-25 08:10:25 +0000",
+            "comment": "Use the released version of sevicemix-legal"
+        },
+        {
+            "c_hash": "918bb4af",
+            "date": "2008-05-07 09:41:20 +0000",
+            "comment": "Fix headers and rewrite jaxb context finder"
+        },
+        {
+            "c_hash": "962180a2",
+            "date": "2008-05-10 19:30:12 +0000",
+            "comment": "Test commit"
+        },
+        {
+            "c_hash": "b5c32d37",
+            "date": "2008-05-10 20:00:40 +0000",
+            "comment": "Test commit"
+        },
+        {
+            "c_hash": "97be3e12",
+            "date": "2008-05-10 20:25:32 +0000",
+            "comment": "Test commit"
+        },
+        {
+            "c_hash": "8206c5b2",
+            "date": "2008-05-10 20:28:44 +0000",
+            "comment": "Test commit"
+        },
+        {
+            "c_hash": "b4acc737",
+            "date": "2008-05-10 20:42:52 +0000",
+            "comment": "Test commit"
+        },
+        {
+            "c_hash": "e6a1d12a",
+            "date": "2008-05-10 20:44:24 +0000",
+            "comment": "Test commit"
+        },
+        {
+            "c_hash": "49db5b7f",
+            "date": "2008-05-10 20:47:25 +0000",
+            "comment": "Test commit"
+        },
+        {
+            "c_hash": "fafdf265",
+            "date": "2008-05-10 20:49:14 +0000",
+            "comment": "Test commit"
+        },
+        {
+            "c_hash": "982d1c47",
+            "date": "2008-05-13 19:10:26 +0000",
+            "comment": "Fix jaxb spec"
+        },
+        {
+            "c_hash": "ac91ec35",
+            "date": "2008-05-22 07:16:01 +0000",
+            "comment": "Add jaxws-api-2.1 jar and make rename directories to include the api version"
+        },
+        {
+            "c_hash": "99c01f42",
+            "date": "2008-05-22 07:37:44 +0000",
+            "comment": "Fix poms"
+        },
+        {
+            "c_hash": "2c6e1a09",
+            "date": "2008-05-26 09:34:07 +0000",
+            "comment": "Add jaxb-api 2.1 specs"
+        },
+        {
+            "c_hash": "dd08ed26",
+            "date": "2008-06-02 14:49:53 +0000",
+            "comment": "Add default value to XmlEnum#value()"
+        },
+        {
+            "c_hash": "8a8c915f",
+            "date": "2008-06-05 19:32:02 +0000",
+            "comment": "Fix formatting and use the correct version 2.1 for the packages"
+        },
+        {
+            "c_hash": "f23081a8",
+            "date": "2008-06-09 08:48:42 +0000",
+            "comment": "Fix jaxb specs and jaxws FactoryFinder"
+        },
+        {
+            "c_hash": "48619eb5",
+            "date": "2008-06-09 11:45:15 +0000",
+            "comment": "Fix compilation problem and use the JApiDiff plugin to make sure the apis signatures are the same than the SUN's ones"
+        },
+        {
+            "c_hash": "9dae1c62",
+            "date": "2008-06-09 12:30:06 +0000",
+            "comment": "Use split-package to avoid warnings"
+        },
+        {
+            "c_hash": "df238e9e",
+            "date": "2008-06-12 18:00:31 +0000",
+            "comment": "Add notice and license files"
+        },
+        {
+            "c_hash": "20257a59",
+            "date": "2008-06-12 21:30:23 +0000",
+            "comment": "Fix specs projects"
+        },
+        {
+            "c_hash": "3e8f3dcb",
+            "date": "2008-06-13 08:08:44 +0000",
+            "comment": "Use japidiff 1.1"
+        },
+        {
+            "c_hash": "4c40e5cb",
+            "date": "2008-06-13 08:35:52 +0000",
+            "comment": "Upgrade to japidiff 1.2"
+        },
+        {
+            "c_hash": "05dd8717",
+            "date": "2008-06-13 08:59:00 +0000",
+            "comment": "Fix source packaging and add missing asf header"
+        },
+        {
+            "c_hash": "33a5e643",
+            "date": "2008-06-13 09:09:22 +0000",
+            "comment": "Reformat locator pom"
+        },
+        {
+            "c_hash": "85ec2192",
+            "date": "2008-06-13 09:22:35 +0000",
+            "comment": "Add source and javadocs to the locator"
+        },
+        {
+            "c_hash": "0043e794",
+            "date": "2008-06-13 11:36:57 +0000",
+            "comment": "Fix shade plugin to include the right classes"
+        },
+        {
+            "c_hash": "d4d0009e",
+            "date": "2008-06-13 11:42:05 +0000",
+            "comment": "Remove optional flag on dependencies as they are overwritten by the shade plugin"
+        },
+        {
+            "c_hash": "ada458a4",
+            "date": "2008-06-13 13:42:58 +0000",
+            "comment": "[maven-release-plugin] prepare release specs-1.0"
+        },
+        {
+            "c_hash": "56ef712a",
+            "date": "2008-06-13 13:43:03 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "ae3ff2ab",
+            "date": "2008-06-13 13:54:32 +0000",
+            "comment": "[maven-release-plugin] rollback the release of specs-1.0"
+        },
+        {
+            "c_hash": "9c47e06c",
+            "date": "2008-06-13 13:56:31 +0000",
+            "comment": "[maven-release-plugin] prepare release specs-1.0.0"
+        },
+        {
+            "c_hash": "a97f585d",
+            "date": "2008-06-13 13:56:35 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "5b21802d",
+            "date": "2008-07-16 11:36:07 +0000",
+            "comment": "SMX4-63: SMX4 stalls when running on Linux -- deadlocked"
+        },
+        {
+            "c_hash": "748e5a17",
+            "date": "2008-07-22 07:16:13 +0000",
+            "comment": "[maven-release-plugin] prepare release specs-1.0.1"
+        },
+        {
+            "c_hash": "883db688",
+            "date": "2008-07-22 07:35:38 +0000",
+            "comment": "Use snapshots again"
+        },
+        {
+            "c_hash": "87a19445",
+            "date": "2008-07-24 16:01:36 +0000",
+            "comment": "SM-1438: NPE in the specs when uninstalling bundle"
+        },
+        {
+            "c_hash": "c331a0b3",
+            "date": "2008-07-24 16:09:00 +0000",
+            "comment": "[maven-release-plugin] prepare release specs-1.0.1"
+        },
+        {
+            "c_hash": "b49d4ad6",
+            "date": "2008-07-24 16:20:17 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "25376b46",
+            "date": "2008-07-29 14:36:20 +0000",
+            "comment": "SMX4-81: Add the javax.script API to the specs project"
+        },
+        {
+            "c_hash": "0b37f486",
+            "date": "2008-08-25 09:16:02 +0000",
+            "comment": "SM-1455: Add JBI api to the specs subproject"
+        },
+        {
+            "c_hash": "be931830",
+            "date": "2008-09-03 11:31:52 +0000",
+            "comment": "[maven-release-plugin] prepare release specs-1.1.0"
+        },
+        {
+            "c_hash": "18d8f986",
+            "date": "2008-09-03 11:32:00 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "46b17006",
+            "date": "2008-09-03 16:13:19 +0000",
+            "comment": "[maven-release-plugin] rollback the release of specs-1.1.0"
+        },
+        {
+            "c_hash": "7291a4bc",
+            "date": "2008-09-03 20:37:36 +0000",
+            "comment": "Add source and javadoc generation for the JBI API"
+        },
+        {
+            "c_hash": "270a008d",
+            "date": "2008-09-03 20:43:37 +0000",
+            "comment": "[maven-release-plugin] prepare release specs-1.1.0"
+        },
+        {
+            "c_hash": "eac4d189",
+            "date": "2008-09-03 20:43:41 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "7dac491b",
+            "date": "2008-09-16 13:07:29 +0000",
+            "comment": "SM-1577: AbstractUnmarshallerImpl throws incorrect IllegalArgumentException in the JAXB2 specs"
+        },
+        {
+            "c_hash": "4c306f88",
+            "date": "2008-09-19 07:32:10 +0000",
+            "comment": "[maven-release-plugin] prepare release specs-1.1.1"
+        },
+        {
+            "c_hash": "1293097a",
+            "date": "2008-09-19 07:32:18 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "ec8a192f",
+            "date": "2008-09-19 09:42:42 +0000",
+            "comment": "Fix scm infos in pom"
+        },
+        {
+            "c_hash": "99b9518a",
+            "date": "2008-10-23 11:45:55 +0000",
+            "comment": "Add debug logging to the specs' osgi stuff"
+        },
+        {
+            "c_hash": "a95ea7ea",
+            "date": "2008-10-23 11:47:18 +0000",
+            "comment": "SMX4KNL-123: Add JAXP 1.3 API to the specs"
+        },
+        {
+            "c_hash": "02c30fe1",
+            "date": "2008-10-26 09:36:16 +0000",
+            "comment": "SMX4-145: OSGi specs bundle listener may register duplicate entries leading to using invalid bundles when creating factories"
+        },
+        {
+            "c_hash": "01cadaf8",
+            "date": "2008-10-28 06:12:29 +0000",
+            "comment": "Use 2-SNAPSHOT version of the root pom"
+        },
+        {
+            "c_hash": "463eaeb7",
+            "date": "2008-11-01 13:46:00 +0000",
+            "comment": "Add JAXP 1.4 API"
+        },
+        {
+            "c_hash": "4c9399b5",
+            "date": "2008-11-01 14:11:49 +0000",
+            "comment": "Add JAXP 1.4 API"
+        },
+        {
+            "c_hash": "04f43f41",
+            "date": "2008-11-01 20:16:14 +0000",
+            "comment": "Fix jaxp 1.4 spec bundle"
+        },
+        {
+            "c_hash": "42c724f5",
+            "date": "2008-11-04 05:11:00 +0000",
+            "comment": "SMX4-148  Added bootclasspath argument to compiler plugin"
+        },
+        {
+            "c_hash": "06db1143",
+            "date": "2008-11-05 04:33:14 +0000",
+            "comment": "[SMX4KNL-134]XPathFactoryFinder in jaxp api should use factoryId to load the spi class in osgi enviroment"
+        },
+        {
+            "c_hash": "1378df1f",
+            "date": "2008-11-14 14:56:58 +0000",
+            "comment": "SMX4-157: Use the geronimo jaxws 2.1 api as it passes the tck"
+        },
+        {
+            "c_hash": "3bc595b3",
+            "date": "2008-11-20 18:44:23 +0000",
+            "comment": "SMX4-161: The first spec implementation bundle deployed is always used instead of the last one"
+        },
+        {
+            "c_hash": "271e21df",
+            "date": "2008-11-20 22:14:26 +0000",
+            "comment": "SMX4-162: Use released version of parent pom"
+        },
+        {
+            "c_hash": "132a0827",
+            "date": "2008-12-01 11:49:21 +0000",
+            "comment": "[SM-1709]unify third party libs version used across servicemix projects"
+        },
+        {
+            "c_hash": "c966ffab",
+            "date": "2008-12-07 12:59:29 +0000",
+            "comment": "[SMX4-167]add bundle jar for jsr311-api in specs"
+        },
+        {
+            "c_hash": "89a07b17",
+            "date": "2008-12-08 05:29:35 +0000",
+            "comment": "[SMX4-167]add bundle jar for jsr311-api-1.0 in specs"
+        },
+        {
+            "c_hash": "3c9d08b8",
+            "date": "2008-12-11 21:15:49 +0000",
+            "comment": "SMX4-174: Upgrade to latest JSR223 api"
+        },
+        {
+            "c_hash": "d4a4bbf5",
+            "date": "2008-12-26 07:10:25 +0000",
+            "comment": "[SMX4-181]add bundle for javamail api"
+        },
+        {
+            "c_hash": "4520cedc",
+            "date": "2008-12-28 23:30:15 +0000",
+            "comment": "Fixing typo in directory name"
+        },
+        {
+            "c_hash": "a7db0077",
+            "date": "2008-12-28 23:30:37 +0000",
+            "comment": "Fixing typo in directory name"
+        },
+        {
+            "c_hash": "1ccbf5af",
+            "date": "2008-12-29 05:09:33 +0000",
+            "comment": "[SMX4-185]add bunle jar for activation api"
+        },
+        {
+            "c_hash": "864bc651",
+            "date": "2008-12-29 10:42:33 +0000",
+            "comment": "use correct specs snapshot version"
+        },
+        {
+            "c_hash": "a8cdc5cf",
+            "date": "2009-01-12 03:49:24 +0000",
+            "comment": "SMX4-189 Activation spec fails compile with JDK 1.6"
+        },
+        {
+            "c_hash": "b0120196",
+            "date": "2009-01-12 10:17:13 +0000",
+            "comment": "SMX4-189: Using Geronimo Activation API on the compiler boot classpath"
+        },
+        {
+            "c_hash": "e238759f",
+            "date": "2009-02-06 13:35:26 +0000",
+            "comment": "Include xml-apis in the reduced pom for jaxp-api-1.4"
+        },
+        {
+            "c_hash": "070d3e92",
+            "date": "2009-02-09 07:58:26 +0000",
+            "comment": "[maven-release-plugin] prepare release specs-1.2"
+        },
+        {
+            "c_hash": "d998bc16",
+            "date": "2009-02-09 08:37:29 +0000",
+            "comment": "Revert to snapshots"
+        },
+        {
+            "c_hash": "d091d422",
+            "date": "2009-02-09 08:38:50 +0000",
+            "comment": "[maven-release-plugin] prepare release specs-1.2.0"
+        },
+        {
+            "c_hash": "7df907d8",
+            "date": "2009-02-09 08:57:48 +0000",
+            "comment": "Revert to snapshots"
+        },
+        {
+            "c_hash": "da250c38",
+            "date": "2009-02-09 09:00:03 +0000",
+            "comment": "Revert to snapshots"
+        },
+        {
+            "c_hash": "4b509848",
+            "date": "2009-02-09 09:02:07 +0000",
+            "comment": "[maven-release-plugin] prepare release specs-1.2.0"
+        },
+        {
+            "c_hash": "170cd43f",
+            "date": "2009-02-09 09:06:55 +0000",
+            "comment": "[maven-release-plugin] rollback the release of specs-1.2.0"
+        },
+        {
+            "c_hash": "e7f60ca5",
+            "date": "2009-02-09 09:09:58 +0000",
+            "comment": "[maven-release-plugin] prepare release specs-1.2.0"
+        },
+        {
+            "c_hash": "f1938e8e",
+            "date": "2009-02-09 09:24:19 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "7711c9f3",
+            "date": "2009-02-09 10:13:52 +0000",
+            "comment": "[maven-release-plugin] rollback the release of specs-1.2.0"
+        },
+        {
+            "c_hash": "e95406f6",
+            "date": "2009-02-09 10:14:58 +0000",
+            "comment": "Fix shade jar for jaxws 2.1"
+        },
+        {
+            "c_hash": "e47fd3f8",
+            "date": "2009-02-09 10:53:43 +0000",
+            "comment": "Fix specs before release"
+        },
+        {
+            "c_hash": "f612b839",
+            "date": "2009-02-09 12:57:16 +0000",
+            "comment": "[maven-release-plugin] prepare release specs-1.2.0"
+        },
+        {
+            "c_hash": "1bb901c6",
+            "date": "2009-02-09 12:58:38 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "d11bbcfe",
+            "date": "2009-03-12 07:28:28 +0000",
+            "comment": "SMX4KNL-238: OsgiLocator doesn\u00b4t locate SAX driver by META-INF/services/org.xml.sax.driver"
+        },
+        {
+            "c_hash": "8596c94e",
+            "date": "2009-03-12 07:48:38 +0000",
+            "comment": "Fix svn:ignore properties"
+        },
+        {
+            "c_hash": "ff62c505",
+            "date": "2009-03-12 08:12:57 +0000",
+            "comment": "[maven-release-plugin] prepare release specs-1.2.1"
+        },
+        {
+            "c_hash": "ef54d685",
+            "date": "2009-03-12 08:17:31 +0000",
+            "comment": "[maven-release-plugin] rollback the release of specs-1.2.1"
+        },
+        {
+            "c_hash": "678bd2c9",
+            "date": "2009-03-12 15:33:19 +0000",
+            "comment": "Fix activation spec in osgi, it now auto-discover META-INF/mailcap files in bundles and populate the MailcapCommandMap accordingly"
+        },
+        {
+            "c_hash": "8c11e03a",
+            "date": "2009-03-13 08:29:26 +0000",
+            "comment": "[maven-release-plugin] prepare release specs-1.3.0"
+        },
+        {
+            "c_hash": "e0763f02",
+            "date": "2009-03-13 08:31:43 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "aa99f1ef",
+            "date": "2009-03-13 08:43:52 +0000",
+            "comment": "[maven-release-plugin] rollback the release of specs-1.3.0"
+        },
+        {
+            "c_hash": "a13c6a5a",
+            "date": "2009-03-13 08:47:12 +0000",
+            "comment": "Fix release process"
+        },
+        {
+            "c_hash": "94c2f515",
+            "date": "2009-03-13 08:52:12 +0000",
+            "comment": "[maven-release-plugin] prepare release specs-1.3.0"
+        },
+        {
+            "c_hash": "4b153ee6",
+            "date": "2009-03-13 08:53:00 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "dee55cda",
+            "date": "2009-03-19 10:33:49 +0000",
+            "comment": "SMX4-237: javax.xml.stream packages should have a version of 1.0.1"
+        },
+        {
+            "c_hash": "ec406ad6",
+            "date": "2009-03-19 15:57:00 +0000",
+            "comment": "Upgrade to geronimo javamail spec 1.7-SNAPSHOT"
+        },
+        {
+            "c_hash": "1b7ae6fe",
+            "date": "2009-04-16 09:57:20 +0000",
+            "comment": "Added an OSGi bundle for JSR 250 (javax.annotation) - I've not managed to find one anywhere. We can delete this later if one shows up :)"
+        },
+        {
+            "c_hash": "e124e4a3",
+            "date": "2009-07-13 11:53:15 +0000",
+            "comment": "SMX4-318: Add JAX-RS 1.1 API bundle"
+        },
+        {
+            "c_hash": "4a6c4a15",
+            "date": "2009-07-13 12:09:55 +0000",
+            "comment": "Temporarily add java.net repo until JAX-RS 1.1 hits central repo"
+        },
+        {
+            "c_hash": "c48fd3df",
+            "date": "2009-08-05 02:51:05 +0000",
+            "comment": "[SMX4-329]jaxb-api bundle should throw JAXBException when contextPath is empty string"
+        },
+        {
+            "c_hash": "39414478",
+            "date": "2009-08-06 02:48:52 +0000",
+            "comment": "[SMX4-330]JAXB 2.1 API - TypeConstraintException do not behave as expected by the spec"
+        },
+        {
+            "c_hash": "5686786d",
+            "date": "2009-08-06 03:02:05 +0000",
+            "comment": "[SMX4-331]contextFinder do not invoke createContext(String, ClassLoader) method"
+        },
+        {
+            "c_hash": "4eb17f77",
+            "date": "2009-09-10 14:12:38 +0000",
+            "comment": "applied patch provided by Willem Jiang (see SMX4-355)"
+        },
+        {
+            "c_hash": "0f8931eb",
+            "date": "2009-09-10 20:57:07 +0000",
+            "comment": "SMX4-358: JSR-311 1.1 specification fails to load implementation classes"
+        },
+        {
+            "c_hash": "bd327588",
+            "date": "2009-09-25 12:43:23 +0000",
+            "comment": "SMX4-384: Unable to build JAXP 1.3 specification on IBM JDK 6"
+        },
+        {
+            "c_hash": "bb9d363d",
+            "date": "2009-10-06 10:12:24 +0000",
+            "comment": "SMX4-390: Add FactoryFinder to jaxrs api 1.1 bundle"
+        },
+        {
+            "c_hash": "1f077011",
+            "date": "2009-11-20 13:20:28 +0000",
+            "comment": "Temporarily downgrading to geronimo-javamail_1.4_spec version 1.6 to allow release"
+        },
+        {
+            "c_hash": "b0b62b87",
+            "date": "2009-11-20 13:35:52 +0000",
+            "comment": "[maven-release-plugin] prepare release specs-1.4.0"
+        },
+        {
+            "c_hash": "e124cf0e",
+            "date": "2009-11-20 13:50:11 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "fb10a10a",
+            "date": "2010-01-19 16:26:20 +0000",
+            "comment": "[SMX4-450] Create specs bundle for JPA 2.0."
+        },
+        {
+            "c_hash": "998871dd",
+            "date": "2010-02-08 15:28:36 +0000",
+            "comment": "Cleanup locator (pkg* properties not used)."
+        },
+        {
+            "c_hash": "ab6629f0",
+            "date": "2010-04-12 12:09:20 +0000",
+            "comment": "[SMX4-507] Create a specs bundle for JSR 303 (Java Validation API) 1.0.0."
+        },
+        {
+            "c_hash": "141851e9",
+            "date": "2010-04-29 09:56:49 +0000",
+            "comment": "Fix JSR-303 pom.xml for release"
+        },
+        {
+            "c_hash": "9c1fce7f",
+            "date": "2010-04-29 10:09:42 +0000",
+            "comment": "[maven-release-plugin] prepare release specs-1.5.0"
+        },
+        {
+            "c_hash": "aa8ef856",
+            "date": "2010-04-29 10:13:56 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "5c30d571",
+            "date": "2010-06-30 03:23:08 +0000",
+            "comment": "SMX4-544 - Update poms to not have warnings with Maven 3 - Updated Features project for Maven 3 - Updated parent pom relativePath: This quiets maven 3 builds when servicemix-pom is not in a sibling directory to nmr, features, etc.  If the directory is not present or the GAV does not match, maven reverts to the repository so this change is harmless."
+        },
+        {
+            "c_hash": "a9189623",
+            "date": "2010-07-27 14:36:24 +0000",
+            "comment": "[SMX4-567] Normalize specs naming convention."
+        },
+        {
+            "c_hash": "c96e4f8c",
+            "date": "2010-07-29 06:35:51 +0000",
+            "comment": "[SMX4-569]activation-api-1.1 specs bundle should use OsgiMailcapCommandMap to create DataContentHandler"
+        },
+        {
+            "c_hash": "43c7ae21",
+            "date": "2010-07-29 06:37:52 +0000",
+            "comment": "remove unnecessary comment"
+        },
+        {
+            "c_hash": "0b0f054c",
+            "date": "2010-07-30 14:33:20 +0000",
+            "comment": "[SMX4-567] Normalize Specs naming convention."
+        },
+        {
+            "c_hash": "6f21c64f",
+            "date": "2010-08-19 06:39:10 +0000",
+            "comment": "[SMX4-580]enable exception stacktrace for jaxb-api bundle"
+        },
+        {
+            "c_hash": "ab487be3",
+            "date": "2010-09-16 02:35:04 +0000",
+            "comment": "[SMX4-580]throw exception for jaxb-api bundle"
+        },
+        {
+            "c_hash": "6c43e5f0",
+            "date": "2010-09-20 10:17:22 +0000",
+            "comment": "[SMX4-593] Create Bundles for SIP API"
+        },
+        {
+            "c_hash": "3e2ef935",
+            "date": "2010-10-12 04:52:15 +0000",
+            "comment": "[SMX4-605] jsr303 api bundle doesn't support find the ValidatorProvider in the OSGi out of box"
+        },
+        {
+            "c_hash": "d8dfd0b9",
+            "date": "2010-11-03 19:03:05 +0000",
+            "comment": "Prepare for release: Upgrade to released parent pom and fix a few Maven 3 warnings"
+        },
+        {
+            "c_hash": "d9687176",
+            "date": "2010-11-04 08:21:51 +0000",
+            "comment": "[SMX4-663|SMX4-664]add jaxws-api-2.2 and jaxb-api-2.2 bundles"
+        },
+        {
+            "c_hash": "259ca136",
+            "date": "2010-11-04 08:55:37 +0000",
+            "comment": "Fix a few Maven 3 warnings"
+        },
+        {
+            "c_hash": "29b3d242",
+            "date": "2010-11-04 12:38:00 +0000",
+            "comment": "Prepare for release: fix release:prepare build"
+        },
+        {
+            "c_hash": "b6c5952f",
+            "date": "2010-11-04 12:50:07 +0000",
+            "comment": "[maven-release-plugin] prepare release specs-1.6.0"
+        },
+        {
+            "c_hash": "2e3d3031",
+            "date": "2010-11-04 12:50:33 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "b8ada8c1",
+            "date": "2010-12-07 08:42:35 +0000",
+            "comment": "[SMX4-697]java-persistence-api spec bundle wrongly import javax.persistence package"
+        },
+        {
+            "c_hash": "4bf76ec6",
+            "date": "2011-01-04 02:22:11 +0000",
+            "comment": "[ServiceMix 4]remove noisy printStackTrace"
+        },
+        {
+            "c_hash": "43a5f2f2",
+            "date": "2011-01-04 12:35:29 +0000",
+            "comment": "Fixed the dependency issue of jaxws-api-2.2"
+        },
+        {
+            "c_hash": "c3e91a16",
+            "date": "2011-01-05 09:27:11 +0000",
+            "comment": "SMX4-734 Updated the jaxb 2.2 spec code"
+        },
+        {
+            "c_hash": "09f80b3d",
+            "date": "2011-01-06 05:58:19 +0000",
+            "comment": "[maven-release-plugin] prepare release specs-1.7.0"
+        },
+        {
+            "c_hash": "94352018",
+            "date": "2011-01-06 05:59:15 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "e369ab2b",
+            "date": "2011-01-10 21:34:27 +0000",
+            "comment": "SMX4-720: Update JIRA URL in POM"
+        },
+        {
+            "c_hash": "4bf23b1d",
+            "date": "2011-01-18 07:49:08 +0000",
+            "comment": "added Bundle-Description osgi header (see SM-2038)"
+        },
+        {
+            "c_hash": "664aca78",
+            "date": "2011-04-08 08:16:47 +0000",
+            "comment": "SMX4-803 Performance improvement on the OsgiLocator"
+        },
+        {
+            "c_hash": "26c436f5",
+            "date": "2011-04-20 02:59:17 +0000",
+            "comment": "SMX4-811 OSGi Locator supports to return the service class which is defined from the system property"
+        },
+        {
+            "c_hash": "d00ff97f",
+            "date": "2011-04-21 07:58:12 +0000",
+            "comment": "[SMX4-814] Create JSR-311 1.1.1 API."
+        },
+        {
+            "c_hash": "33e023cb",
+            "date": "2011-05-19 03:05:15 +0000",
+            "comment": "[maven-release-plugin] prepare release specs-1.8.0"
+        },
+        {
+            "c_hash": "711a94c6",
+            "date": "2011-05-19 03:30:34 +0000",
+            "comment": "rollback previous changes"
+        },
+        {
+            "c_hash": "40365dc6",
+            "date": "2011-05-19 03:48:53 +0000",
+            "comment": "[maven-release-plugin] prepare release specs-1.8.0"
+        },
+        {
+            "c_hash": "74fa5781",
+            "date": "2011-05-19 03:49:35 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "30559749",
+            "date": "2011-06-09 14:21:09 +0000",
+            "comment": "[SMX4-859] ServiceMix Specs should check class space consistency before using an implementation"
+        },
+        {
+            "c_hash": "cd015dfa",
+            "date": "2011-06-09 14:22:04 +0000",
+            "comment": "[SMX4-860] ServiceMix specs should wait for an implementation for a certain amount of time when in OSGi"
+        },
+        {
+            "c_hash": "d468118b",
+            "date": "2011-06-10 11:54:43 +0000",
+            "comment": "[SMX4-860] Add a configurable timeout"
+        },
+        {
+            "c_hash": "497a6eae",
+            "date": "2011-09-19 18:12:20 +0000",
+            "comment": "[SMX4-921] Jaxb api throws jaxb exception when using the jre implementation"
+        },
+        {
+            "c_hash": "d21bb707",
+            "date": "2011-10-25 03:24:24 +0000",
+            "comment": "[SMX4-949]use Servicemix OSGi Locator for jaxws 2.2 api bundle"
+        },
+        {
+            "c_hash": "3f231de3",
+            "date": "2011-10-26 09:44:39 +0000",
+            "comment": "[SMX4-953]add JCR 2.0 API bundle"
+        },
+        {
+            "c_hash": "3f824726",
+            "date": "2011-10-28 13:08:37 +0000",
+            "comment": "Fix release build - add locator dependency used in javadoc/sources generation"
+        },
+        {
+            "c_hash": "cd1e4097",
+            "date": "2011-10-28 13:39:02 +0000",
+            "comment": "SMX4-958: Javadoc warnings during release build"
+        },
+        {
+            "c_hash": "f60090e5",
+            "date": "2011-10-28 14:28:00 +0000",
+            "comment": "[maven-release-plugin] prepare release specs-1.9.0"
+        },
+        {
+            "c_hash": "ffbee94a",
+            "date": "2011-10-28 14:28:25 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "0425221d",
+            "date": "2012-01-03 15:30:38 +0000",
+            "comment": "Experiment with the new specs using endorsed jars"
+        },
+        {
+            "c_hash": "678a6845",
+            "date": "2012-01-03 15:42:53 +0000",
+            "comment": "Add support for stax implementation in ibm jre"
+        },
+        {
+            "c_hash": "9e44f2da",
+            "date": "2012-01-04 15:39:58 +0000",
+            "comment": "Add stax 1.2 api and fix imports for stax-1.0 api"
+        },
+        {
+            "c_hash": "9a2b0440",
+            "date": "2012-01-04 19:47:39 +0000",
+            "comment": "Upgrade jaxp api to 1.4.5 by including stax 1.2"
+        },
+        {
+            "c_hash": "34c7dfec",
+            "date": "2012-01-05 16:53:49 +0000",
+            "comment": "Make sure we don't import exported packages for specs"
+        },
+        {
+            "c_hash": "6cae43c4",
+            "date": "2012-02-08 02:54:48 +0000",
+            "comment": "[SMX4-1089]saaj-api couldn't load configured javax.xml.soap.MetaFactory from saaj-impl"
+        },
+        {
+            "c_hash": "0d3a2062",
+            "date": "2012-03-20 06:16:39 +0000",
+            "comment": "[SM-2149]ClassCastException in OsgiMailcapCommandMap"
+        },
+        {
+            "c_hash": "b7a26140",
+            "date": "2012-04-06 09:32:44 +0000",
+            "comment": "Change the default specs timeout to 0"
+        },
+        {
+            "c_hash": "368bae14",
+            "date": "2012-04-20 02:58:28 +0000",
+            "comment": "[SMX4-1126]The SchemaFactoryFinder.createInstance method does not have the correct access level"
+        },
+        {
+            "c_hash": "6e7e7055",
+            "date": "2012-05-10 11:44:04 +0000",
+            "comment": "[maven-release-plugin] prepare release specs-2.0.0"
+        },
+        {
+            "c_hash": "887ab40d",
+            "date": "2012-05-10 11:45:08 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "2cb27f70",
+            "date": "2012-05-10 11:50:15 +0000",
+            "comment": "[maven-release-plugin] rollback the release of specs-2.0.0"
+        },
+        {
+            "c_hash": "d868120b",
+            "date": "2012-05-11 07:12:05 +0000",
+            "comment": "[maven-release-plugin] prepare release specs-2.0.0"
+        },
+        {
+            "c_hash": "ed14ea1c",
+            "date": "2012-05-11 07:12:34 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "9cf941bb",
+            "date": "2012-05-13 07:59:32 +0000",
+            "comment": "Cancel ServiceMix Specs 2.0.0 release"
+        },
+        {
+            "c_hash": "7d7de320",
+            "date": "2012-05-21 11:53:43 +0000",
+            "comment": "[SMX4-1137] jsr311-api src folder renamed to javax/ws/rs/ext to match the FactoryFinder package"
+        },
+        {
+            "c_hash": "a26b270f",
+            "date": "2012-05-21 11:57:01 +0000",
+            "comment": "[SMX4-1137] Remove old jsr311-api src folder"
+        },
+        {
+            "c_hash": "4ac54d71",
+            "date": "2012-05-21 12:01:53 +0000",
+            "comment": "[SMX4-1137] Remove old jsr311-api-1.0 src folder"
+        },
+        {
+            "c_hash": "77872b85",
+            "date": "2012-05-21 12:02:58 +0000",
+            "comment": "[SMX4-1137] Remove old jsr311-api-1.1 src folder"
+        },
+        {
+            "c_hash": "2ceb38d9",
+            "date": "2012-05-21 12:06:28 +0000",
+            "comment": "[SMX4-1137] Remove old jsr311-api-1.1.1 src folder"
+        },
+        {
+            "c_hash": "c22e6f7a",
+            "date": "2012-06-06 16:55:21 +0000",
+            "comment": "[SMX4-1177] Add src distribution for specs"
+        },
+        {
+            "c_hash": "7280cd09",
+            "date": "2012-06-07 06:34:25 +0000",
+            "comment": "[maven-release-plugin] prepare release specs-2.0.0"
+        },
+        {
+            "c_hash": "e1c90960",
+            "date": "2012-06-07 06:34:53 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "2bf6a85c",
+            "date": "2012-06-12 04:38:00 +0000",
+            "comment": "[SMX4-1182]jaxws api 2.2 spec bundle shouldn't import org.apache.geronimo.osgi* from the dependency"
+        },
+        {
+            "c_hash": "f3382bab",
+            "date": "2012-06-12 06:47:05 +0000",
+            "comment": "Cancel ServiceMix Specs 2.0.0 release"
+        },
+        {
+            "c_hash": "39ffde5d",
+            "date": "2012-06-12 07:18:43 +0000",
+            "comment": "[maven-release-plugin] prepare release specs-2.0.0"
+        },
+        {
+            "c_hash": "e9740d48",
+            "date": "2012-06-12 07:19:12 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "aec60c32",
+            "date": "2012-06-26 00:42:47 +0000",
+            "comment": "[SMX4-1190]saaj-api bundle jar doesn't work when put it in endorsed folder"
+        },
+        {
+            "c_hash": "54ef7295",
+            "date": "2012-09-05 14:48:56 +0000",
+            "comment": "[SMX4-1229] Add jsr339-api-m10 specs bundle"
+        },
+        {
+            "c_hash": "214a6781",
+            "date": "2012-09-12 13:28:35 +0000",
+            "comment": "[SMX4-1229] Add FactoryFinder in the jsr339-api-m10 spec"
+        },
+        {
+            "c_hash": "a94eac74",
+            "date": "2012-09-24 16:38:10 +0000",
+            "comment": "[SMX4-1248] Update saaj-api specs bundle to latest geronimo-specs version"
+        },
+        {
+            "c_hash": "a97de00c",
+            "date": "2012-09-26 05:44:12 +0000",
+            "comment": "[maven-release-plugin] prepare release specs-2.1.0"
+        },
+        {
+            "c_hash": "2532c589",
+            "date": "2012-09-26 05:44:37 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "4e27f556",
+            "date": "2012-09-28 18:29:14 +0000",
+            "comment": "[CXF-1253] Fix NPE in jaxws API when stuck in lib/endorsed"
+        },
+        {
+            "c_hash": "181f3224",
+            "date": "2012-09-29 06:32:04 +0000",
+            "comment": "Rollback ServiceMix Specs 2.1.0 release"
+        },
+        {
+            "c_hash": "90629f9e",
+            "date": "2012-10-01 04:30:47 +0000",
+            "comment": "[SMX4-1255] Create a global spec src distribution"
+        },
+        {
+            "c_hash": "349388b0",
+            "date": "2012-10-01 06:22:21 +0000",
+            "comment": "Remove old src-assembly folder"
+        },
+        {
+            "c_hash": "f157bfd0",
+            "date": "2012-10-01 08:36:15 +0000",
+            "comment": "[maven-release-plugin] prepare release specs-2.1.0"
+        },
+        {
+            "c_hash": "3bbbac09",
+            "date": "2012-10-01 08:36:46 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "8b3e6b1a",
+            "date": "2012-10-02 14:59:01 +0000",
+            "comment": "[SMX4-1089] Apply fix for this to the new factoryfinder method as well."
+        },
+        {
+            "c_hash": "b8f57a5b",
+            "date": "2012-10-02 15:39:39 +0000",
+            "comment": "Add svn:ignores for new stuff"
+        },
+        {
+            "c_hash": "06415be6",
+            "date": "2012-10-02 15:47:06 +0000",
+            "comment": "[maven-release-plugin] prepare release specs-2.1.0"
+        },
+        {
+            "c_hash": "345c80ad",
+            "date": "2012-10-02 15:47:13 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "1ec59569",
+            "date": "2012-10-19 15:56:07 +0000",
+            "comment": "[SMX4-227] Ignore comment lines"
+        },
+        {
+            "c_hash": "8ffecbd5",
+            "date": "2012-10-19 15:57:02 +0000",
+            "comment": "[SMX4-1265] Be much more careful about having the class.getClassLoader() calls return null."
+        },
+        {
+            "c_hash": "2f6d8f0d",
+            "date": "2012-10-21 15:34:52 +0000",
+            "comment": "Fix specs build failure"
+        },
+        {
+            "c_hash": "0cffd860",
+            "date": "2012-10-24 18:53:41 +0000",
+            "comment": "Use sun internal classname for xpath"
+        },
+        {
+            "c_hash": "9cc67c84",
+            "date": "2012-11-10 09:37:56 +0000",
+            "comment": "Add .idea in the .gitignore"
+        },
+        {
+            "c_hash": "562b1033",
+            "date": "2012-11-19 17:18:47 +0000",
+            "comment": "[SMX4-1280] Export the 1.1 versions"
+        },
+        {
+            "c_hash": "b2afb080",
+            "date": "2012-11-19 18:14:47 +0000",
+            "comment": "Update export to 1.1.1"
+        },
+        {
+            "c_hash": "62c0a0aa",
+            "date": "2012-11-20 12:47:36 +0000",
+            "comment": "[SMX4-1284]Create a spec bundle for javax.ws.rs-api 2.0-m13"
+        },
+        {
+            "c_hash": "b5f5ba29",
+            "date": "2012-11-20 16:01:13 +0000",
+            "comment": "Make sure it's exported as 1.1.1 as well"
+        },
+        {
+            "c_hash": "5c0a1f02",
+            "date": "2012-11-28 06:59:14 +0000",
+            "comment": "[maven-release-plugin] prepare release specs-2.2.0"
+        },
+        {
+            "c_hash": "707348ef",
+            "date": "2012-11-28 07:00:00 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "7283955c",
+            "date": "2013-02-01 05:05:48 +0000",
+            "comment": "[SMX4-1373]infinite loop in BundleFactoryLoader"
+        },
+        {
+            "c_hash": "d02f4fd5",
+            "date": "2013-04-05 15:55:23 +0000",
+            "comment": "Add some debugging info and a system property to turn it on."
+        },
+        {
+            "c_hash": "50ba2646",
+            "date": "2013-04-23 06:38:40 +0000",
+            "comment": "[SMX4-1447]can't endorse activation smx activation-api-1.1 spec jar"
+        },
+        {
+            "c_hash": "282445ac",
+            "date": "2013-05-17 15:14:17 +0000",
+            "comment": "Add a module for the latest jaxrs (very close to final)"
+        },
+        {
+            "c_hash": "1004ee02",
+            "date": "2013-06-06 09:32:48 +0000",
+            "comment": "[SMX4-1475]Create jsr339-api-2.0 API spec bundle"
+        },
+        {
+            "c_hash": "dcb7ee00",
+            "date": "2013-06-06 10:12:15 +0000",
+            "comment": "[SMX4-1475]with wanted javax.annotation version"
+        },
+        {
+            "c_hash": "2c306cf7",
+            "date": "2013-06-06 10:12:43 +0000",
+            "comment": "[SMX4-1476]Create javax.annotation-api 1.2-b04 bundle"
+        },
+        {
+            "c_hash": "daeaa828",
+            "date": "2013-07-18 03:08:25 +0000",
+            "comment": "[SMX4-1475]add javax.ws.rs.client.FactoryFinder which can load ClientBuilder in OSGi container"
+        },
+        {
+            "c_hash": "7f60e090",
+            "date": "2013-08-07 12:39:51 +0000",
+            "comment": "Add 2.0 api bundle to build so it stages"
+        },
+        {
+            "c_hash": "3537340a",
+            "date": "2013-08-22 00:33:12 +0000",
+            "comment": "[SMX4-1534]add a NPE guard for MimetypesFileTypeMap"
+        },
+        {
+            "c_hash": "f38ee4ec",
+            "date": "2013-08-22 00:58:37 +0000",
+            "comment": "add annotation-api-1.2-b04 into nightly build"
+        },
+        {
+            "c_hash": "2bd1a78c",
+            "date": "2013-11-14 05:40:25 +0000",
+            "comment": "Exclude activation-api from the reactor as it's built/release through the activator module"
+        },
+        {
+            "c_hash": "e34022aa",
+            "date": "2013-11-14 05:43:18 +0000",
+            "comment": "[maven-release-plugin] prepare release specs-2.3.0"
+        },
+        {
+            "c_hash": "e46fdadb",
+            "date": "2013-11-14 05:43:33 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "caab0f50",
+            "date": "2013-11-26 11:13:55 +0000",
+            "comment": "[SMX4-1624] NPE in servicemix spec MailcapCommandMap"
+        },
+        {
+            "c_hash": "0850bcd0",
+            "date": "2013-12-13 15:08:47 +0000",
+            "comment": "Update to new stax-api that fixes the problems of lost cause exceptions"
+        },
+        {
+            "c_hash": "b85954d4",
+            "date": "2013-12-30 14:14:24 +0000",
+            "comment": "[SMX4-1498] Upgrade to maven-bundle-plugin 2.4.0"
+        },
+        {
+            "c_hash": "56287b29",
+            "date": "2013-12-30 14:17:29 +0000",
+            "comment": "Upgrade to OSGi 4.3.0"
+        },
+        {
+            "c_hash": "ae6a4e2c",
+            "date": "2013-12-30 14:24:54 +0000",
+            "comment": "Update maven plugins version"
+        },
+        {
+            "c_hash": "2155aede",
+            "date": "2013-12-30 14:35:57 +0000",
+            "comment": "Upgrade to geronimo-activation_1.1_spec 1.1"
+        },
+        {
+            "c_hash": "57cb4985",
+            "date": "2013-12-30 14:36:04 +0000",
+            "comment": "Upgrade to geronimo-activation_1.1_spec 1.1"
+        },
+        {
+            "c_hash": "d5f20fe5",
+            "date": "2013-12-30 14:36:10 +0000",
+            "comment": "Add annotation-api 1.2 spec"
+        },
+        {
+            "c_hash": "e53ab477",
+            "date": "2013-12-30 14:40:06 +0000",
+            "comment": "[SMX4-1655] Create jain-sip-api 1.2.1 spec bundle"
+        },
+        {
+            "c_hash": "1f07ce36",
+            "date": "2013-12-30 14:44:39 +0000",
+            "comment": "[SMX4-1656] Upgrade to geronimo-javamail_1.4_spec 1.7.1"
+        },
+        {
+            "c_hash": "be208237",
+            "date": "2013-12-30 14:48:45 +0000",
+            "comment": "[SMX4-1657] Upgrade to geronimo-jpa_2.0_spec 1.1"
+        },
+        {
+            "c_hash": "9d6da4fe",
+            "date": "2013-12-30 14:55:49 +0000",
+            "comment": "[SMX4-1658] Upgrade to geronimo-activation_1.1_spec 1.1"
+        },
+        {
+            "c_hash": "dd4724ba",
+            "date": "2013-12-30 14:57:49 +0000",
+            "comment": "[SMX4-1659] Upgrade to jaxb-api 2.2.11"
+        },
+        {
+            "c_hash": "32d5a1d3",
+            "date": "2013-12-30 15:02:39 +0000",
+            "comment": "[SMX4-1660] Upgrade to geronimo-ws-metadata_2.0_spec 1.1.3"
+        },
+        {
+            "c_hash": "f12d53fa",
+            "date": "2013-12-30 19:08:54 +0000",
+            "comment": "[SMX4-1661] Upgrade to geronimo-jaxws_2.2_spec 1.2"
+        },
+        {
+            "c_hash": "40922f0c",
+            "date": "2013-12-30 20:41:50 +0000",
+            "comment": "[SMX4-1662] Upgrade to geronimo-annotation_1.0_spec 1.1.1"
+        },
+        {
+            "c_hash": "290f1c9a",
+            "date": "2013-12-30 20:50:07 +0000",
+            "comment": "[SMX4-1663] Upgrade to livetribe-jsr223 2.0.6"
+        },
+        {
+            "c_hash": "d78599a8",
+            "date": "2013-12-31 06:17:11 +0000",
+            "comment": "[SMX4-1618] Create jsr303-api 1.1.0 spec bundle"
+        },
+        {
+            "c_hash": "c9c4f71f",
+            "date": "2014-01-02 07:05:54 +0000",
+            "comment": "[SMX4-1664] Upgrade to livetribe-jsr223 2.0.7"
+        },
+        {
+            "c_hash": "0aa69d77",
+            "date": "2014-01-02 08:40:18 +0000",
+            "comment": "Fix annotation-api-1.2 source generation"
+        },
+        {
+            "c_hash": "dc78e89a",
+            "date": "2014-01-02 08:52:49 +0000",
+            "comment": "[maven-release-plugin] prepare release specs-2.4.0"
+        },
+        {
+            "c_hash": "2cbd0274",
+            "date": "2014-01-02 08:53:17 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        }
+    ]
+}

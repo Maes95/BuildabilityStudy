@@ -1,0 +1,2 @@
+STATUS,START,END,SIZE,COMMIT_START,COMMIT_END,NUM_DIFF_EXCEPTION,EXCEPTION_:_SIZE
+BUILD_FAILURE,0,1211,1212,4776834185a653f5d1f5454de76017de9b2e9b32,5e043bd87bc6f84848d0745f435706421932cf60,6,MojoExecutionException1:276;DependencyResolutionException2:1;MojoExecutionException3:444;DependencyResolutionException4:1;MojoExecutionException5:303;PluginDescriptorParsingException6:187;

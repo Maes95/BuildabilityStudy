@@ -1,0 +1,62 @@
+commitID;commit-type;time-to-next-release;commit-message
+8c5c3aa64c47a87a1b4b85916d7b74dab7418b35;BREAKING_CHANGES;6;Master POM (minimal) git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1338053 13f79535-47bb-0310-9956-ffa450edef68
+776819644c890f5886570f0acb284d6712f49320;BREAKING_FIX;22;[maven-release-plugin] prepare release jena-2.7.X git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1340919 13f79535-47bb-0310-9956-ffa450edef68
+bef8ff8437bd6b2d7a4d4d32ff356cc1120b25e6;BREAKING_CHANGES;22;[maven-release-plugin] prepare for next development iteration git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1340921 13f79535-47bb-0310-9956-ffa450edef68
+c23551844a1ed81c11615e2e19756f040b1803ad;BREAKING_FIX;1;[maven-release-plugin] prepare release jena-2.7.1 git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1348746 13f79535-47bb-0310-9956-ffa450edef68
+0b33bef91905183074dcac96cc234767897dd19c;BREAKING_CHANGES;1;[maven-release-plugin] prepare for next development iteration git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1348748 13f79535-47bb-0310-9956-ffa450edef68
+1ddd841dbce436094a54452add8e406790fa1628;BREAKING_FIX;14;Prepare for release (cycle 2) git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1349834 13f79535-47bb-0310-9956-ffa450edef68
+e635698b5e5de7e8e9a1cca621409aa9e03f0a95;BREAKING_CHANGES;14;Prepare for release (cycle 2) git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1349838 13f79535-47bb-0310-9956-ffa450edef68
+aab71617a837214c777ee72a48d1efdda0253027;BREAKING_FIX;14;[maven-release-plugin] prepare release jena-2.7.1 git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1349853 13f79535-47bb-0310-9956-ffa450edef68
+8e8ffabd09d59b27d88f35a0c4bd70d8e9c8b9b1;BREAKING_CHANGES;14;[maven-release-plugin] prepare for next development iteration git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1349855 13f79535-47bb-0310-9956-ffa450edef68
+698bc57575a566cd9ed84ff20d3080a07c975f80;BREAKING_FIX;35;[maven-release-plugin] prepare release jena-2.7.2 git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1355005 13f79535-47bb-0310-9956-ffa450edef68
+a8cf54b855b3d037c2736f354436c0a59bc5e534;BREAKING_CHANGES;35;[maven-release-plugin] prepare for next development iteration git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1355007 13f79535-47bb-0310-9956-ffa450edef68
+3459c3a822780fb7fae67fcf591fe551d0da8a65;BREAKING_FIX;4;[maven-release-plugin] prepare release jena-2.7.3 git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1369112 13f79535-47bb-0310-9956-ffa450edef68
+e46b52ff2d83b66151e31d125528a5126c2ffb23;BREAKING_CHANGES;4;[maven-release-plugin] prepare for next development iteration git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1369114 13f79535-47bb-0310-9956-ffa450edef68
+f953efbe80d26fb0e5ad09e0d04019cd3077f49d;BREAKING_FIX;4;[maven-release-plugin] prepare release jena-2.7.3-RC1 git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1369121 13f79535-47bb-0310-9956-ffa450edef68
+4d33e6043002705c82f03731f5afe97d92ec42eb;BREAKING_CHANGES;4;[maven-release-plugin] prepare for next development iteration git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1369123 13f79535-47bb-0310-9956-ffa450edef68
+59241c31e9986bd3c990b5c79e1975554606ceea;BREAKING_FIX;4;[maven-release-plugin] prepare release jena-2.7.3-RC2 git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1369141 13f79535-47bb-0310-9956-ffa450edef68
+f6cb2151f0116ec7407a0ebe9aaf1de3458d4283;BREAKING_CHANGES;4;[maven-release-plugin] prepare for next development iteration git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1369143 13f79535-47bb-0310-9956-ffa450edef68
+329dbf6fac078a9f5312f692c49bfbb60b49d71f;BREAKING_FIX;4;[maven-release-plugin] prepare release 2.7.3-RC3 git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1369155 13f79535-47bb-0310-9956-ffa450edef68
+65b5373aeb3336401ccaa2365b6ad6988bcc403a;BREAKING_CHANGES;4;[maven-release-plugin] prepare for next development iteration git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1369157 13f79535-47bb-0310-9956-ffa450edef68
+db06d6f01415961ee81ab2ac0f537e77911166ea;BREAKING_FIX;0;[maven-release-plugin] prepare release jena-2.7.4 git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1400221 13f79535-47bb-0310-9956-ffa450edef68
+7efc17c5584f091f4bfff47d1966299e5ff003f3;BREAKING_CHANGES;0;[maven-release-plugin] prepare for next development iteration git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1400223 13f79535-47bb-0310-9956-ffa450edef68
+2b7d28bb3886a83c6ba31b58261e727c2d8f72bb;BREAKING_FIX;122;[maven-release-plugin] prepare release jena-2.7.4 git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1400411 13f79535-47bb-0310-9956-ffa450edef68
+eef6bc4e2e0cee4f67c34e1febab81bc0a6ab9d2;BREAKING_CHANGES;122;[maven-release-plugin] prepare for next development iteration git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1400413 13f79535-47bb-0310-9956-ffa450edef68
+179e53d2d25a16a5de0c4b410d32ede833246817;BREAKING_FIX;122;[maven-release-plugin] prepare release jena-2.7.4 git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1400479 13f79535-47bb-0310-9956-ffa450edef68
+f6b730895fddcafe4f1aabe802286e63e0a2af13;BREAKING_CHANGES;122;[maven-release-plugin] prepare for next development iteration git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1400481 13f79535-47bb-0310-9956-ffa450edef68
+6f3d21c8180fad27ebc1cb5b4637478007c2c88c;BREAKING_FIX;79;[maven-release-plugin] prepare release jena-2.10.0 git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1448084 13f79535-47bb-0310-9956-ffa450edef68
+735154844761963b3cbf4121b9a337e0e8b56794;BREAKING_CHANGES;79;Reset git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1448095 13f79535-47bb-0310-9956-ffa450edef68
+05cf50016de8a4e678b971429c625bd05671a974;BREAKING_FIX;79;[maven-release-plugin] prepare release jena-2.10.0 git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1448106 13f79535-47bb-0310-9956-ffa450edef68
+265a6d424f4867be759b789bd85c45d540bf7534;BREAKING_CHANGES;79;Set POMs to next release SNAPSHOT git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1448180 13f79535-47bb-0310-9956-ffa450edef68
+fe91ec4b155bd4bbf2877e080c1859bea9f5879a;BREAKING_FIX;13;[maven-release-plugin] prepare release jena-2.10.1 git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1481409 13f79535-47bb-0310-9956-ffa450edef68
+321f2642d90b945e3c09e00c60946c112860b3c5;BREAKING_CHANGES;13;Update to snapshot versions after release git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1481439 13f79535-47bb-0310-9956-ffa450edef68
+aef0286b4b0f6edad5cb0d5548c0e7a4a64fa241;BREAKING_FIX;127;[maven-release-plugin] prepare release jena-2.11.0 git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1522506 13f79535-47bb-0310-9956-ffa450edef68
+4c5791ea78cb004efa610de55e77b7a764c43c7c;BREAKING_CHANGES;127;Advance POMs to development SNAPSHOT version git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1522548 13f79535-47bb-0310-9956-ffa450edef68
+90dd7e2c2b3a749097def8b61cb4747d86b91d31;BREAKING_FIX;134;[maven-release-plugin] prepare release jena-2.11.1 git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1559356 13f79535-47bb-0310-9956-ffa450edef68
+c46d8fa987c854ba74feeb78bbebe0b22f929db2;BREAKING_CHANGES;134;[maven-release-plugin] prepare for next development iteration git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1559358 13f79535-47bb-0310-9956-ffa450edef68
+d18a0a85a567913115b256a5f317a632f9ab303b;BREAKING_FIX;134;[maven-release-plugin] prepare release jena-2.11.1 git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1559388 13f79535-47bb-0310-9956-ffa450edef68
+6f9a37f2b85fb8203c39058ed5892defd100424b;BREAKING_CHANGES;134;[maven-release-plugin] prepare for next development iteration git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1559390 13f79535-47bb-0310-9956-ffa450edef68
+b79d0790f349383f6e85b06196620e15b4819eab;BREAKING_FIX;53;[maven-release-plugin] prepare release jena-2.11.2 git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1599130 13f79535-47bb-0310-9956-ffa450edef68
+8501e8520238003d9cdab143c38113d82cb7a76a;BREAKING_CHANGES;53;[maven-release-plugin] prepare for next development iteration git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1599132 13f79535-47bb-0310-9956-ffa450edef68
+1c70616bd1f77977bd8e2a27c10a9da60398b80d;BREAKING_FIX;36;Remove version numbers where derived from the Apache POM parent git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1603968 13f79535-47bb-0310-9956-ffa450edef68
+edb110dbdf6c2e04716c54cee541782a75694c97;BREAKING_CHANGES;34;JENA-726 : Removal of deprecated methods in FileManager. git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1604374 13f79535-47bb-0310-9956-ffa450edef68
+c19d5c80352c9edf3aa0a61e11d6c77a7744d8be;BREAKING_FIX;34;JENA-726 : Removing deprecated methods (internal). git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1604375 13f79535-47bb-0310-9956-ffa450edef68
+6ef8a2a7d09c66f4ea499f671ab656fe48c1d00b;BREAKING_CHANGES;31;JENA-726 : Remove deprecated reification style ans methods (patch remove-deprecated-reification.patch) git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1605037 13f79535-47bb-0310-9956-ffa450edef68
+c536e2e18ed85700895523f50a65f022ebaaf28c;BREAKING_FIX;31;Align of removal of 'reification style' from jena-core git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1605074 13f79535-47bb-0310-9956-ffa450edef68
+647b60c659315f847b2f9008a0097301bf3edb74;BREAKING_CHANGES;29;JENA-731 JENA-732: make target for sources configurable, change default to add '/jena', and add the directory as a source root. git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1605941 13f79535-47bb-0310-9956-ffa450edef68
+5d2c7b8d8fd7bdcf1d92f523df351143069b33ea;BREAKING_FIX;28;JENA-731: deal with dependency convergence. git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1606036 13f79535-47bb-0310-9956-ffa450edef68
+c7c640e6d3afb2317959cb853926a27e8f4f50d3;BREAKING_CHANGES;22;Tests for BPTree.clear git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1607657 13f79535-47bb-0310-9956-ffa450edef68
+b79f3730db378a27dd70b8d64efc99d8ffb2fc1d;BREAKING_FIX;22;Reformatting git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1607659 13f79535-47bb-0310-9956-ffa450edef68
+a0b5273b163fdd54405af192b8a8dc7268e47bf2;BREAKING_CHANGES;29;JENA-774 : RDF Thrift implementation for Jena git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1621573 13f79535-47bb-0310-9956-ffa450edef68
+0eeefb6aaa4943a03330f0521c4fc4fc82ea4aee;BREAKING_FIX;29;JENA-774 : Use Jena version for org.apache.httpcomponents:httpcore git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1621592 13f79535-47bb-0310-9956-ffa450edef68
+afaab7533124e3d9e145d3f09f52cc8ec67f1751;BREAKING_CHANGES;24;retire code git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1622697 13f79535-47bb-0310-9956-ffa450edef68
+aa672b106d29953610c568dceea273c4a6a59feb;BREAKING_FIX;24;Encapsulate fields of SystemParams git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1622698 13f79535-47bb-0310-9956-ffa450edef68
+a7fbfe2dc851d77945955ca0e9faa6d78f81d0d9;BREAKING_CHANGES;24;SystemParamsBuidler git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1622717 13f79535-47bb-0310-9956-ffa450edef68
+2c5968af9f74300a9f4780d1fdb56d37be212b3d;BREAKING_FIX;24;SystemParamsBuidler git-svn-id: https://svn.apache.org/repos/asf/jena/trunk@1622728 13f79535-47bb-0310-9956-ffa450edef68
+b74bd7ddb3495b4f3a373336151fc955dd4e81ec;BREAKING_CHANGES;-;Merge branch 'jena-csv' 
+36855e1b1e73b7c0580409c512e35bb8889c4106;BREAKING_CHANGES;-;reverting accidentally deleted files 
+2da64fe4733f09bb4e015344cb7dbb19c4818fa8;BREAKING_FIX;-;Update to correct parent version 
+8864bd0609831cd67edff27e6b5e39d4d2d2ee22;BREAKING_CHANGES;-;JENA-816 : Recode to be RDF 1.0/1.1 neutral. 
+a226343a9735def593f1acdf5e52914da884e690;BREAKING_FIX;-;JENA-815 : Add create(lex,lang) form without XML flag. Replace uses of create(lex,lang,false) with a call to this new method.
+274cab4fcc55431ee2c2a1a7756caeac3594f7af;BREAKING_CHANGES;-;Move dependency management for Thrift and commons-csv into jena-parent 
+05fae18a1d57e71f1eb6d59c15ad88617be746cb;BREAKING_FIX;-;Date and dateTime formatting. This closes #12

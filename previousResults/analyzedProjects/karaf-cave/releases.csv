@@ -1,0 +1,6 @@
+commitID;commit-type;time-to-next-release;commit-message
+4f48d93a27efb8254e3f38b94b18cc0c6d0a6364;BREAKING_FIX;884;Initial import of the Cave sandbox. git-svn-id: https://svn.apache.org/repos/asf/karaf/sandbox/jbonofre/cave/trunk@1156246 13f79535-47bb-0310-9956-ffa450edef68
+7b1fa499895b32a3ab129c7491b2b21bbd5415b5;BREAKING_CHANGES;869;Start of the Cave manual. git-svn-id: https://svn.apache.org/repos/asf/karaf/sandbox/jbonofre/cave/trunk@1161595 13f79535-47bb-0310-9956-ffa450edef68
+7b10b2fef6c85e911f74ec915f3ce740109ae238;BREAKING_FIX;409;[KARAF-2030] Extend the enforcer Java version range git-svn-id: https://svn.apache.org/repos/asf/karaf/cave/trunk@1414002 13f79535-47bb-0310-9956-ffa450edef68
+7f90b33de8aab0a9be2b4a1050d77e87e57a5732;BREAKING_CHANGES;169;[KARAF-1525] Add filter support on artifacts for API and commands. git-svn-id: https://svn.apache.org/repos/asf/karaf/cave/trunk@1507066 13f79535-47bb-0310-9956-ffa450edef68
+b9faac08a8fe10ee595c9ab648b534cffd8aa9d0;BREAKING_FIX;169;[KARAF-1525] Complete CaveRepositoryImpl commit git-svn-id: https://svn.apache.org/repos/asf/karaf/cave/trunk@1507193 13f79535-47bb-0310-9956-ffa450edef68

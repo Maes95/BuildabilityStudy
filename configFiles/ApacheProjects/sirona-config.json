@@ -1,0 +1,3598 @@
+{
+    "project": "sirona",
+    "git_url": "https://github.com/apache/sirona.git",
+    "last_commit": "be2aa104",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "6c4aba34",
+            "date": "2008-01-18 19:54:05 +0000",
+            "comment": "[monitoring] initial maven project structure"
+        },
+        {
+            "c_hash": "b52d0da5",
+            "date": "2008-01-19 09:19:28 +0000",
+            "comment": "Update to released version 3 of commons-sandbox-parent pom"
+        },
+        {
+            "c_hash": "e782656c",
+            "date": "2008-01-19 09:27:27 +0000",
+            "comment": "Add copyright statement to NOTICE, license and inception year to pom"
+        },
+        {
+            "c_hash": "598382e7",
+            "date": "2008-01-23 15:56:25 +0000",
+            "comment": "initial code base : - basic repository to create/retrieve monitors - convenience Monitoring utility class - composite monitor key inspired by Moskito - StopWatch to estimate process execution duration - simple monitor to access statValues - Gauge and Counter implementation of statValue - ConcurrencyGauge to compute average concurrent threads - reporting to export monitors as XML or JSON - test cases"
+        },
+        {
+            "c_hash": "edbf0db0",
+            "date": "2008-01-23 21:03:08 +0000",
+            "comment": "Remove Jakarta references"
+        },
+        {
+            "c_hash": "75074169",
+            "date": "2008-01-23 21:09:38 +0000",
+            "comment": "Bugzilla --> JIRA"
+        },
+        {
+            "c_hash": "c8c1a3b0",
+            "date": "2008-01-23 21:25:36 +0000",
+            "comment": "Set svn properties (keywords and eol style)"
+        },
+        {
+            "c_hash": "8e0cf98a",
+            "date": "2008-01-23 21:27:59 +0000",
+            "comment": "Add site structure"
+        },
+        {
+            "c_hash": "79b84202",
+            "date": "2008-01-24 10:42:00 +0000",
+            "comment": "Fix MoSKito link"
+        },
+        {
+            "c_hash": "15680ed1",
+            "date": "2008-01-24 11:30:56 +0000",
+            "comment": "fix to broken link and bad english"
+        },
+        {
+            "c_hash": "57c535b3",
+            "date": "2008-01-24 13:06:54 +0000",
+            "comment": "- rename read methods to getXX (javabean convention) - override getMean for Gauge (testcase included) - rename stats methods to match commons-math terminology"
+        },
+        {
+            "c_hash": "08cde9d4",
+            "date": "2008-01-28 16:34:14 +0000",
+            "comment": "- txt renderer (for logs) - simplified renderer testing - composite Gauge & Counter (required for period based monitoring) - cleaner separation between simpleGauge and simpleCounter"
+        },
+        {
+            "c_hash": "379d4f2d",
+            "date": "2008-01-29 11:15:00 +0000",
+            "comment": "- Event based notification for StatValue threshold - some tiny doc - simplified ExecutionStack usage via StopWatches auto-registration and auto-cleanup"
+        },
+        {
+            "c_hash": "301aee60",
+            "date": "2008-01-30 12:46:05 +0000",
+            "comment": "- Monitor implementation refactored as a class hierarchy - Composite gauge/counter with less synchronization requirements - Implementation classes renamed to expose features - thread-safety test"
+        },
+        {
+            "c_hash": "61dafad1",
+            "date": "2008-01-30 13:36:12 +0000",
+            "comment": "jars removed from SVN to follow commons sandbox conventions retrotranslator configuration commented (wating for MAVENUPLOAD request)"
+        },
+        {
+            "c_hash": "f5db296a",
+            "date": "2008-01-30 14:24:08 +0000",
+            "comment": "- Composite statValues implementation & test case - DefaultRepository to user CompositeValuesMonitor - Value Listener+ Threshold implementation"
+        },
+        {
+            "c_hash": "0af7c1c8",
+            "date": "2008-01-30 14:24:17 +0000",
+            "comment": "- Composite statValues implementation & test case - DefaultRepository to user CompositeValuesMonitor - Value Listener+ Threshold implementation"
+        },
+        {
+            "c_hash": "cbabcf02",
+            "date": "2008-01-30 19:14:30 +0000",
+            "comment": "fix test"
+        },
+        {
+            "c_hash": "0c5f1ecd",
+            "date": "2008-02-04 10:03:23 +0000",
+            "comment": "secondary monitors : attach to live monitors, watch monitored activity and detach (base for history graphs and other time-based features)"
+        },
+        {
+            "c_hash": "ffed4aba",
+            "date": "2008-02-04 10:14:57 +0000",
+            "comment": "reverted change to use System.nanotime() as documented in http://wiki.apache.org/commons/Monitoring/Precision"
+        },
+        {
+            "c_hash": "da912da4",
+            "date": "2008-02-05 00:35:17 +0000",
+            "comment": "Add a description to pom (for the summary page), fix the logo location and add license header to proposal"
+        },
+        {
+            "c_hash": "840bef94",
+            "date": "2008-02-26 09:31:23 +0000",
+            "comment": "documentation periodic reporting to logs using secondaryRepository StopWatch redesigned as interface"
+        },
+        {
+            "c_hash": "84b22de6",
+            "date": "2008-03-03 07:42:35 +0000",
+            "comment": "missing StopWatch interface"
+        },
+        {
+            "c_hash": "b021cb7c",
+            "date": "2008-03-05 02:53:30 +0000",
+            "comment": "Upgrade to version 4 of commons-sandbox-parent and add properties for commons-build-plugin"
+        },
+        {
+            "c_hash": "fd6c5a68",
+            "date": "2008-03-05 02:55:25 +0000",
+            "comment": "Generate Issue Tracking pages using commons-build-plugin and update site menus"
+        },
+        {
+            "c_hash": "b643c447",
+            "date": "2008-03-05 10:48:38 +0000",
+            "comment": "- implementations refactored as a class hierarchy, beeing easier to extend and cleaner to discover repository features - dedicated packages for component implementations - reporting for HTML output - web UI servlet extending HTML reporting with JavaScript enhancements (JQuery)"
+        },
+        {
+            "c_hash": "f3583761",
+            "date": "2008-03-05 10:50:14 +0000",
+            "comment": "fix some PMD violations"
+        },
+        {
+            "c_hash": "c666b6cf",
+            "date": "2008-03-06 11:41:35 +0000",
+            "comment": "Introduce Unit in counter and gauges to avoid incompatible data type Improve Renderer with Options for filtering and units Improve web UI"
+        },
+        {
+            "c_hash": "adcd0fbb",
+            "date": "2008-03-06 11:47:07 +0000",
+            "comment": "fix some PMD violations fix xdoc"
+        },
+        {
+            "c_hash": "5b8b213a",
+            "date": "2008-03-06 13:42:27 +0000",
+            "comment": "increase TO to avoid failure when ran by cobertura"
+        },
+        {
+            "c_hash": "5cff2afc",
+            "date": "2008-03-06 15:25:17 +0000",
+            "comment": "fix bad unit scaling for \"hits\""
+        },
+        {
+            "c_hash": "f3241055",
+            "date": "2008-03-07 08:22:14 +0000",
+            "comment": "fix Selector not being determinist when multiple get methods with various args fix monitor.Key constructor to avoid nulls add convenience Monitoring.start( Monitor )"
+        },
+        {
+            "c_hash": "8a4c5988",
+            "date": "2008-03-07 14:04:46 +0000",
+            "comment": "add support for commons-proxy interceptors AbstractPerformanceInterceptor for common method interception features, to be derived according to method interception APIs"
+        },
+        {
+            "c_hash": "45f09315",
+            "date": "2008-03-07 15:13:07 +0000",
+            "comment": "missing throwable declaration"
+        },
+        {
+            "c_hash": "3a8729a5",
+            "date": "2008-03-07 16:16:25 +0000",
+            "comment": "fix sorting in Web UI broken by locale-dependent number formats"
+        },
+        {
+            "c_hash": "05cbe9ff",
+            "date": "2008-03-08 10:47:27 +0000",
+            "comment": "fix broken tests"
+        },
+        {
+            "c_hash": "8c789f43",
+            "date": "2008-03-17 15:02:10 +0000",
+            "comment": "fix unexpected columns when monitors hold heterogenous statvalues"
+        },
+        {
+            "c_hash": "728f8997",
+            "date": "2008-03-17 16:02:58 +0000",
+            "comment": "fix unexpected columns when monitors hold heterogenous statvalues - CSS style"
+        },
+        {
+            "c_hash": "6fd48eb1",
+            "date": "2008-04-07 10:35:50 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/commons/sandbox/monitoring/trunk@645449 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "c4ac153c",
+            "date": "2008-04-07 10:36:52 +0000",
+            "comment": "remove System.err used for debugging"
+        },
+        {
+            "c_hash": "efe26dcf",
+            "date": "2008-04-07 10:37:59 +0000",
+            "comment": "add the option to handle errors"
+        },
+        {
+            "c_hash": "b29dcb07",
+            "date": "2008-04-07 10:38:47 +0000",
+            "comment": "add the option to handle errors"
+        },
+        {
+            "c_hash": "8254a92f",
+            "date": "2008-04-07 11:04:48 +0000",
+            "comment": "Add date (long) of secondary repository attachement/detachement from observed repository change PeriodicLogger to explicitly use a SecondaryRepository Repository Decorator for historization"
+        },
+        {
+            "c_hash": "4479a043",
+            "date": "2008-04-07 14:13:13 +0000",
+            "comment": "historization of repository based on a decorator : - complete Detachable interface - EmptyMonitor to avoid nullPointer - enhance Reporter to support detachable - Refactored MonitoringListener for webapps"
+        },
+        {
+            "c_hash": "83ab89f4",
+            "date": "2008-04-08 08:01:38 +0000",
+            "comment": "fix rendering (JSON)"
+        },
+        {
+            "c_hash": "14c8e416",
+            "date": "2008-04-09 06:51:05 +0000",
+            "comment": "fix testcase"
+        },
+        {
+            "c_hash": "da470ac2",
+            "date": "2008-04-10 09:02:07 +0000",
+            "comment": "generate Flot graph output"
+        },
+        {
+            "c_hash": "90d8db87",
+            "date": "2008-04-10 09:14:34 +0000",
+            "comment": "test fix"
+        },
+        {
+            "c_hash": "f6cb7d8e",
+            "date": "2008-04-10 15:34:13 +0000",
+            "comment": "fix test"
+        },
+        {
+            "c_hash": "291d98ee",
+            "date": "2008-04-14 12:30:47 +0000",
+            "comment": "allow access to the active SecondaryRepository"
+        },
+        {
+            "c_hash": "54af5787",
+            "date": "2008-04-15 09:14:45 +0000",
+            "comment": "PeriodicLogger can be started at a fixed Date"
+        },
+        {
+            "c_hash": "88ddfd67",
+            "date": "2008-04-15 09:58:28 +0000",
+            "comment": "new \"Role\" concept to describe a statValue in a monitor. Includes name and Unit as a prototype for create-on-demand"
+        },
+        {
+            "c_hash": "3817dddc",
+            "date": "2008-04-18 15:17:49 +0000",
+            "comment": "fix compatibility for Java1.3 backport"
+        },
+        {
+            "c_hash": "20076cf0",
+            "date": "2008-04-20 17:27:20 +0000",
+            "comment": "upgrade to version 5 of commons-sandbox-parent"
+        },
+        {
+            "c_hash": "cb294fd3",
+            "date": "2008-04-21 07:41:40 +0000",
+            "comment": "fix rendering options"
+        },
+        {
+            "c_hash": "6fe117c6",
+            "date": "2008-04-22 08:35:40 +0000",
+            "comment": "fix variance computation"
+        },
+        {
+            "c_hash": "bbac1b2c",
+            "date": "2008-04-27 14:55:28 +0000",
+            "comment": "initial code base for JSP tags Role now requires a StatValue type"
+        },
+        {
+            "c_hash": "de34ad25",
+            "date": "2008-05-04 21:16:59 +0000",
+            "comment": "Removed free-standing semicolon ..."
+        },
+        {
+            "c_hash": "ea4b0793",
+            "date": "2008-05-04 21:23:09 +0000",
+            "comment": "Schema validation failed within IntelliJ - fixed that"
+        },
+        {
+            "c_hash": "99463931",
+            "date": "2008-05-05 12:14:25 +0000",
+            "comment": "basic JSP tag library for the reporting web UI support for intergation with springframework using AutoProxyCreators"
+        },
+        {
+            "c_hash": "2aaf0683",
+            "date": "2008-05-05 12:53:47 +0000",
+            "comment": "fix to doc"
+        },
+        {
+            "c_hash": "ae79741a",
+            "date": "2008-05-05 15:37:34 +0000",
+            "comment": "Pulling in test dependencies for the jetty plugin - this allows to use test classes (e.g. servlets)"
+        },
+        {
+            "c_hash": "971b0325",
+            "date": "2008-05-17 17:29:48 +0000",
+            "comment": "Upgrade to commons-sandbox-parent-6 pom"
+        },
+        {
+            "c_hash": "c7577604",
+            "date": "2008-05-20 12:56:47 +0000",
+            "comment": "test code removed"
+        },
+        {
+            "c_hash": "f4e9cf86",
+            "date": "2008-05-24 02:25:23 +0000",
+            "comment": "COMMONSSITE-30 - fix the checkstyle configuration to work for multi-module and review/update <reporting> plugin version numbers for the poms being changed.  - pom's need to use ${basedir} for configuration files as the multi-module profile is run from commons-parent, so if not specified it can't find those files  - the checkstyle configuration file needs to use ${checkstyle.header.file} for the headerFile property and  <headerFile> element added to the plugin config in the pom.xml  - fix m1 checkstyle config to reflect the above where appropriate (specify header file property)"
+        },
+        {
+            "c_hash": "ed5dbb71",
+            "date": "2008-06-04 12:46:44 +0000",
+            "comment": "jquery update"
+        },
+        {
+            "c_hash": "b4a5b260",
+            "date": "2008-06-04 12:48:27 +0000",
+            "comment": "render sum of squares to support post-processing of stats and datas from multiple instances (cluster) aggregation"
+        },
+        {
+            "c_hash": "71c971e9",
+            "date": "2008-06-04 12:49:14 +0000",
+            "comment": "fix IndexOutOfBoundException"
+        },
+        {
+            "c_hash": "e1aca0a1",
+            "date": "2008-06-04 12:49:34 +0000",
+            "comment": "render sum of squares to support post-processing of stats and datas from multiple instances (cluster) aggregation"
+        },
+        {
+            "c_hash": "b30c10c4",
+            "date": "2008-06-04 12:50:11 +0000",
+            "comment": "use ThreadMxBean to compute CPU time"
+        },
+        {
+            "c_hash": "7364a921",
+            "date": "2008-07-21 21:54:43 +0000",
+            "comment": "change commons-sandbox-parent to version 7 and re-generate issue-tracking pages to correct comment"
+        },
+        {
+            "c_hash": "7669cbf1",
+            "date": "2008-07-23 09:00:21 +0000",
+            "comment": "rename \"statValue\" to \"metric\""
+        },
+        {
+            "c_hash": "05a99b44",
+            "date": "2008-09-17 14:50:57 +0000",
+            "comment": "fix java 1.3 compatibility issue"
+        },
+        {
+            "c_hash": "c3009fa1",
+            "date": "2009-07-30 07:52:18 +0000",
+            "comment": "moved as trunk"
+        },
+        {
+            "c_hash": "e02b9386",
+            "date": "2009-08-13 15:11:04 +0000",
+            "comment": "fix inconsistent min/max value in gauges"
+        },
+        {
+            "c_hash": "e2fa4355",
+            "date": "2009-09-04 15:39:04 +0000",
+            "comment": "avoid method override in design, set method final where possible"
+        },
+        {
+            "c_hash": "13034993",
+            "date": "2009-09-04 15:40:32 +0000",
+            "comment": "expected result was wrong : hit is expected to be \"1\" after the gauge has been set"
+        },
+        {
+            "c_hash": "2f1b7e12",
+            "date": "2009-12-22 08:22:46 +0000",
+            "comment": "HOMT decorator test improvement"
+        },
+        {
+            "c_hash": "dcb3153e",
+            "date": "2010-01-06 12:38:46 +0000",
+            "comment": "bugFix : Thread history is not cleared if to level StopWatch is canceled"
+        },
+        {
+            "c_hash": "75a9ef65",
+            "date": "2010-01-11 15:26:20 +0000",
+            "comment": "invalid dependency scope -> test"
+        },
+        {
+            "c_hash": "cc9bb53d",
+            "date": "2010-01-22 11:17:37 +0000",
+            "comment": "cleaner rendering architecture : o AbstractVisitor supports filtering and defines start/end \"event\" method o FormatVisitor applies formatting on \"events\" o Format implementations to support specific data layout and separators (XML + JSON)"
+        },
+        {
+            "c_hash": "6da013fc",
+            "date": "2010-01-26 09:13:43 +0000",
+            "comment": "draft JAR-RS repporting endpoint"
+        },
+        {
+            "c_hash": "d13eb09d",
+            "date": "2010-03-15 00:19:50 +0000",
+            "comment": "Fix broken build"
+        },
+        {
+            "c_hash": "a36b581d",
+            "date": "2010-03-19 23:07:34 +0000",
+            "comment": "Upgrade to commons-sandbox-parent-8"
+        },
+        {
+            "c_hash": "356ae458",
+            "date": "2010-04-21 22:55:26 +0000",
+            "comment": "Upgrade to commons-sandbox-parent version 9"
+        },
+        {
+            "c_hash": "12adec5d",
+            "date": "2010-04-21 23:09:24 +0000",
+            "comment": "Generate custom Mailing List pages for sandbox components (using \"mvn commons:mail-page\") See http://commons.apache.org/commons-build-plugin/mail-page.html"
+        },
+        {
+            "c_hash": "4e42facf",
+            "date": "2010-04-30 14:24:50 +0000",
+            "comment": "tiny bug fix"
+        },
+        {
+            "c_hash": "b4d83b5e",
+            "date": "2010-10-01 10:49:48 +0000",
+            "comment": "@Override not allowed for interfaces in Java 1.5"
+        },
+        {
+            "c_hash": "b2de6e27",
+            "date": "2013-02-13 21:01:04 +0000",
+            "comment": "ignore idea files"
+        },
+        {
+            "c_hash": "76cf1e25",
+            "date": "2013-02-13 21:03:27 +0000",
+            "comment": "use last parent"
+        },
+        {
+            "c_hash": "2873774d",
+            "date": "2013-02-13 21:04:47 +0000",
+            "comment": "remove not used profile"
+        },
+        {
+            "c_hash": "030036de",
+            "date": "2013-02-18 23:20:30 +0000",
+            "comment": "add missing license header"
+        },
+        {
+            "c_hash": "d08f0caa",
+            "date": "2013-02-18 23:25:28 +0000",
+            "comment": "fix compilation"
+        },
+        {
+            "c_hash": "e9d8f0ed",
+            "date": "2013-02-18 23:27:15 +0000",
+            "comment": "remove @Override"
+        },
+        {
+            "c_hash": "171a21ff",
+            "date": "2013-05-20 14:55:23 +0000",
+            "comment": "sp"
+        },
+        {
+            "c_hash": "f07c842b",
+            "date": "2013-07-25 12:28:46 +0000",
+            "comment": "apply path provided by Romain Manni-Bucau"
+        },
+        {
+            "c_hash": "b02f3d8b",
+            "date": "2013-07-25 12:29:34 +0000",
+            "comment": "cleanup patch"
+        },
+        {
+            "c_hash": "ad93e0d5",
+            "date": "2013-07-25 12:35:37 +0000",
+            "comment": "cleanup poms"
+        },
+        {
+            "c_hash": "3836bfc4",
+            "date": "2013-07-25 12:42:21 +0000",
+            "comment": "cleanup poms"
+        },
+        {
+            "c_hash": "91adc63a",
+            "date": "2013-07-25 12:47:25 +0000",
+            "comment": "missing license headers"
+        },
+        {
+            "c_hash": "1b33b9e5",
+            "date": "2013-07-29 06:20:54 +0000",
+            "comment": "removing gauge which weren't really gauge, replacing it by a counter in counters, adding basic config, splitting in several modules"
+        },
+        {
+            "c_hash": "3fac4096",
+            "date": "2013-07-29 12:25:34 +0000",
+            "comment": "ignore idea files"
+        },
+        {
+            "c_hash": "f97e2005",
+            "date": "2013-07-29 13:47:39 +0000",
+            "comment": "basic gui + getting rid of visitable/visitor pattern for formats"
+        },
+        {
+            "c_hash": "bffb151c",
+            "date": "2013-07-29 14:08:03 +0000",
+            "comment": "fixing default unit"
+        },
+        {
+            "c_hash": "23843426",
+            "date": "2013-07-29 14:42:35 +0000",
+            "comment": "adding concurrency (and not only maxConcurrency)"
+        },
+        {
+            "c_hash": "8ac92798",
+            "date": "2013-07-30 06:58:19 +0000",
+            "comment": "moving clear/reset button on report page + adding links to convert in ms/ns/s + mapping report.csv, report.xml, report.json"
+        },
+        {
+            "c_hash": "d5cef639",
+            "date": "2013-07-30 06:59:49 +0000",
+            "comment": "removing unused classes"
+        },
+        {
+            "c_hash": "b5d05bc9",
+            "date": "2013-07-30 07:29:00 +0000",
+            "comment": "adding basic plugin API"
+        },
+        {
+            "c_hash": "bd975788",
+            "date": "2013-07-30 12:24:16 +0000",
+            "comment": "ignore out directory"
+        },
+        {
+            "c_hash": "6fd73af8",
+            "date": "2013-07-30 12:29:30 +0000",
+            "comment": "move dependency to dptMngt in parent pom"
+        },
+        {
+            "c_hash": "5d6d84e5",
+            "date": "2013-07-30 12:31:56 +0000",
+            "comment": "move dependency to dptMngt in parent pom"
+        },
+        {
+            "c_hash": "1a3f4822",
+            "date": "2013-07-30 12:33:13 +0000",
+            "comment": "use last spring version"
+        },
+        {
+            "c_hash": "3bc9816f",
+            "date": "2013-07-30 12:36:34 +0000",
+            "comment": "remove non needed repository"
+        },
+        {
+            "c_hash": "ceb8a997",
+            "date": "2013-07-30 12:38:10 +0000",
+            "comment": "surefire 2.15"
+        },
+        {
+            "c_hash": "b335c683",
+            "date": "2013-07-31 11:00:47 +0000",
+            "comment": "adding jmx plugin + moving format in handler + using resources from classloader instead of sevletcontext to be able to embed the jar easily"
+        },
+        {
+            "c_hash": "3e864f32",
+            "date": "2013-07-31 11:03:22 +0000",
+            "comment": "fixing NOTICE in reporting"
+        },
+        {
+            "c_hash": "4dd51e4a",
+            "date": "2013-07-31 11:54:19 +0000",
+            "comment": "replacing hardcoded report stuff in MonitoringController by a plugin"
+        },
+        {
+            "c_hash": "270d37f0",
+            "date": "2013-07-31 12:04:36 +0000",
+            "comment": "avoiding css ambiguity + adding bootstrap-dropdown to replace the breadcrumb in report page"
+        },
+        {
+            "c_hash": "8b06babe",
+            "date": "2013-07-31 15:52:31 +0000",
+            "comment": "basic jmx invocations"
+        },
+        {
+            "c_hash": "4b9003d3",
+            "date": "2013-08-01 08:32:00 +0000",
+            "comment": "escaping method parameter by parameter for jmx method invocation + fixing JMX names of counters"
+        },
+        {
+            "c_hash": "4dbb3fd6",
+            "date": "2013-08-01 09:02:57 +0000",
+            "comment": "adding a basic test for spring module"
+        },
+        {
+            "c_hash": "6bd147da",
+            "date": "2013-08-01 11:12:51 +0000",
+            "comment": "getting rid of monitor (counter should be enough)"
+        },
+        {
+            "c_hash": "788157d6",
+            "date": "2013-08-01 11:53:36 +0000",
+            "comment": "cleaning up repository/counter APIs"
+        },
+        {
+            "c_hash": "a080ce47",
+            "date": "2013-08-01 11:55:15 +0000",
+            "comment": "using Counter in MetricQueueManager API"
+        },
+        {
+            "c_hash": "8b85f32f",
+            "date": "2013-08-01 11:56:41 +0000",
+            "comment": "CounterStopWatch doesn't need a role, it is in the counter"
+        },
+        {
+            "c_hash": "006bd00d",
+            "date": "2013-08-01 11:58:25 +0000",
+            "comment": "Role makes much more sense in counter package now"
+        },
+        {
+            "c_hash": "6e4c66e9",
+            "date": "2013-08-01 11:59:57 +0000",
+            "comment": "getting rid of CXF module which can be replace by the web one"
+        },
+        {
+            "c_hash": "1b9cec1f",
+            "date": "2013-08-01 12:22:30 +0000",
+            "comment": "hooking a JVM plugin (to implement)"
+        },
+        {
+            "c_hash": "9629e6bd",
+            "date": "2013-08-01 14:49:04 +0000",
+            "comment": "oops, issue with Idea refactoring"
+        },
+        {
+            "c_hash": "d9e4fc8d",
+            "date": "2013-08-02 07:42:15 +0000",
+            "comment": "adding gauge concept (= way to get a measure)"
+        },
+        {
+            "c_hash": "3c93e5dd",
+            "date": "2013-08-02 12:22:38 +0000",
+            "comment": "first JVM page with CPU and memory usage (last ten measures by default, measures are done each 4s)"
+        },
+        {
+            "c_hash": "18ed1176",
+            "date": "2013-08-02 12:46:36 +0000",
+            "comment": "better TabularData support"
+        },
+        {
+            "c_hash": "79d2b0dd",
+            "date": "2013-08-02 15:25:25 +0000",
+            "comment": "adding icon in jmx tree"
+        },
+        {
+            "c_hash": "a17ecda0",
+            "date": "2013-08-03 10:08:01 +0000",
+            "comment": "remove not needed anymore files"
+        },
+        {
+            "c_hash": "7483d20e",
+            "date": "2013-08-04 16:35:50 +0000",
+            "comment": "adding DataStore interface"
+        },
+        {
+            "c_hash": "b52a1b5c",
+            "date": "2013-08-04 18:03:35 +0000",
+            "comment": "date picker for JVM page"
+        },
+        {
+            "c_hash": "a9ac20ba",
+            "date": "2013-08-04 18:20:34 +0000",
+            "comment": "adding GaugeFactory"
+        },
+        {
+            "c_hash": "26d74edc",
+            "date": "2013-08-05 08:48:04 +0000",
+            "comment": "reworking plugin API, in particular getting rid of Handler/Renderer to use something closer to REST (@Regex)"
+        },
+        {
+            "c_hash": "b1b44512",
+            "date": "2013-08-05 14:24:13 +0000",
+            "comment": "adding basic doc"
+        },
+        {
+            "c_hash": "292e1ffd",
+            "date": "2013-08-07 07:12:40 +0000",
+            "comment": "completing plugin doc page"
+        },
+        {
+            "c_hash": "605628fd",
+            "date": "2013-08-07 08:23:46 +0000",
+            "comment": "Allow build to work on Maven 2.2.1"
+        },
+        {
+            "c_hash": "db9c4d93",
+            "date": "2013-08-12 10:42:58 +0000",
+            "comment": "adding JTA plugin"
+        },
+        {
+            "c_hash": "baa4cf5c",
+            "date": "2013-08-12 10:57:22 +0000",
+            "comment": "adding session listener to monitor sessions"
+        },
+        {
+            "c_hash": "ce23dcb2",
+            "date": "2013-08-12 11:32:54 +0000",
+            "comment": "adding thread plugin"
+        },
+        {
+            "c_hash": "aef67eaf",
+            "date": "2013-08-12 12:56:35 +0000",
+            "comment": "svn ignore"
+        },
+        {
+            "c_hash": "1f65b5d5",
+            "date": "2013-08-19 13:01:38 +0000",
+            "comment": "configure reporting: no need of cobertura, aggregate javadoc only from top"
+        },
+        {
+            "c_hash": "eb01c4a6",
+            "date": "2013-08-20 13:06:04 +0000",
+            "comment": "configure tomcat maven plugin to be able to run tomcat7:run"
+        },
+        {
+            "c_hash": "c570918d",
+            "date": "2013-08-29 06:40:12 +0000",
+            "comment": "allowing to extend JMXEndpoints easily"
+        },
+        {
+            "c_hash": "27dcdb29",
+            "date": "2013-09-02 12:32:17 +0000",
+            "comment": "Fix the default NameExtractor implementation so that it does not fail with a NPE if the pointcut is on a static method."
+        },
+        {
+            "c_hash": "a44f49ae",
+            "date": "2013-09-03 01:57:09 +0000",
+            "comment": "simple script to deploy website"
+        },
+        {
+            "c_hash": "81afa18c",
+            "date": "2013-09-03 03:32:29 +0000",
+            "comment": "move dependency-reduced-pom.xml out of the scm tree"
+        },
+        {
+            "c_hash": "60dde09b",
+            "date": "2013-09-03 03:37:13 +0000",
+            "comment": "remove non needed file"
+        },
+        {
+            "c_hash": "3691de93",
+            "date": "2013-09-03 04:40:25 +0000",
+            "comment": "use a bean rather than parameters to ease futur extensions"
+        },
+        {
+            "c_hash": "270a3de5",
+            "date": "2013-09-03 06:04:01 +0000",
+            "comment": "use more recent version of commons-math"
+        },
+        {
+            "c_hash": "c1c975b5",
+            "date": "2013-09-03 06:20:06 +0000",
+            "comment": "fix relocation"
+        },
+        {
+            "c_hash": "c16322ce",
+            "date": "2013-09-06 03:49:02 +0000",
+            "comment": "simplify code"
+        },
+        {
+            "c_hash": "119c403f",
+            "date": "2013-09-09 00:22:01 +0000",
+            "comment": "fix equals and use a better toString()"
+        },
+        {
+            "c_hash": "c7467ed1",
+            "date": "2013-09-09 01:25:15 +0000",
+            "comment": "make those fields private as they are exposed via getter"
+        },
+        {
+            "c_hash": "2d9fd59f",
+            "date": "2013-09-10 02:22:42 +0000",
+            "comment": "improve home page with links on others pages"
+        },
+        {
+            "c_hash": "f8544f55",
+            "date": "2013-09-10 04:40:22 +0000",
+            "comment": "use a ConcurrentHashMap to prevent possible concurrency issues"
+        },
+        {
+            "c_hash": "ce6daeef",
+            "date": "2013-10-02 06:47:07 +0000",
+            "comment": "allowing to customize gui resources"
+        },
+        {
+            "c_hash": "5f78c342",
+            "date": "2013-10-02 20:12:29 +0000",
+            "comment": "Fixing configuration property typo"
+        },
+        {
+            "c_hash": "825f2b48",
+            "date": "2013-10-04 14:44:26 +0000",
+            "comment": "Trim package entry to makes it possible to use identation in web.xml"
+        },
+        {
+            "c_hash": "c17e9c59",
+            "date": "2013-10-04 15:25:28 +0000",
+            "comment": "Fix the Gauge discovery mechanism which is broken when more than one entry"
+        },
+        {
+            "c_hash": "d2dda50b",
+            "date": "2013-10-04 15:26:40 +0000",
+            "comment": "Uncomplete commit for gauge discovery"
+        },
+        {
+            "c_hash": "991e713b",
+            "date": "2013-10-04 17:02:28 +0000",
+            "comment": "Makes it possible to override resources - ie. theme"
+        },
+        {
+            "c_hash": "70a67d49",
+            "date": "2013-10-06 19:47:22 +0000",
+            "comment": "Adding a constant for the activation flag."
+        },
+        {
+            "c_hash": "e89f5dd9",
+            "date": "2013-10-07 11:32:18 +0000",
+            "comment": "ignore .java-version"
+        },
+        {
+            "c_hash": "544f01bc",
+            "date": "2013-10-10 06:47:39 +0000",
+            "comment": "String... is an empty array by default - at least on some jdk - and not null so let handle it"
+        },
+        {
+            "c_hash": "b3ab3e5e",
+            "date": "2013-10-10 09:46:51 +0000",
+            "comment": "adding graphite module"
+        },
+        {
+            "c_hash": "61abbf33",
+            "date": "2013-10-14 06:35:01 +0000",
+            "comment": "removing GaugeObserver and using DataStore API to write a GraphiteDataStore"
+        },
+        {
+            "c_hash": "2c1f5549",
+            "date": "2013-10-14 06:37:25 +0000",
+            "comment": "logging IO errors instead of swallowing it"
+        },
+        {
+            "c_hash": "0bfc2cb6",
+            "date": "2013-10-14 06:39:58 +0000",
+            "comment": "ensuring we don't have any space which could corrupt the sent data in keys"
+        },
+        {
+            "c_hash": "4a9a8446",
+            "date": "2013-10-14 06:40:43 +0000",
+            "comment": "better synchro protection"
+        },
+        {
+            "c_hash": "3fbbf4b5",
+            "date": "2013-10-14 15:55:33 +0000",
+            "comment": "avoid index exception"
+        },
+        {
+            "c_hash": "21d4c3f6",
+            "date": "2013-10-14 16:00:55 +0000",
+            "comment": "avoid index exception - s/max/min/"
+        },
+        {
+            "c_hash": "ed8d8ca4",
+            "date": "2013-10-14 16:51:36 +0000",
+            "comment": "fixing js of jta view + handling css/js content-type"
+        },
+        {
+            "c_hash": "1f1fd1c8",
+            "date": "2013-10-15 06:41:33 +0000",
+            "comment": "audo destroy for BatchCounterDataStore + findOrCreate instead of systematic newInstance"
+        },
+        {
+            "c_hash": "0d16ea6d",
+            "date": "2013-10-15 07:50:19 +0000",
+            "comment": "allowing to configure cdi monitoring through properties file"
+        },
+        {
+            "c_hash": "5528f203",
+            "date": "2013-10-15 09:04:54 +0000",
+            "comment": "allowing to register automatically reporting gui"
+        },
+        {
+            "c_hash": "90da7eab",
+            "date": "2013-10-15 09:15:56 +0000",
+            "comment": "making web monitoring automatic in a servlet 3 container (but still configurable) + fixing role name of session monitoring (to distinguish between apps"
+        },
+        {
+            "c_hash": "37590eef",
+            "date": "2013-10-15 09:18:14 +0000",
+            "comment": "typo (plural) + using context path in counter name instead of role name for a better filtering"
+        },
+        {
+            "c_hash": "87021ffe",
+            "date": "2013-10-15 09:31:41 +0000",
+            "comment": "adding a session gauge to monitor the number of sessions and renaming old session counter to session-durations which is more appropriated"
+        },
+        {
+            "c_hash": "146451ec",
+            "date": "2013-10-15 10:10:27 +0000",
+            "comment": "adding web plugin - Note: js graph part should be reworked to be centralized"
+        },
+        {
+            "c_hash": "ddc4e0b2",
+            "date": "2013-10-15 11:59:55 +0000",
+            "comment": "doc config + allowing to monitor multiple urls"
+        },
+        {
+            "c_hash": "44ddbbdf",
+            "date": "2013-10-15 19:39:39 +0000",
+            "comment": "Fixing bad scheduling and Graphite test accordingly."
+        },
+        {
+            "c_hash": "0e1b981b",
+            "date": "2013-10-15 20:30:19 +0000",
+            "comment": "Better rendering numbers in report plugin"
+        },
+        {
+            "c_hash": "c77e6a5b",
+            "date": "2013-10-15 20:47:51 +0000",
+            "comment": "Remove the mantis part, it makes things really bad in the UI"
+        },
+        {
+            "c_hash": "d9c7caf2",
+            "date": "2013-10-16 06:34:36 +0000",
+            "comment": "fixing number formatting, we don't want to format in csv but only in rendered html + allowing to configure it"
+        },
+        {
+            "c_hash": "6988dbbc",
+            "date": "2013-10-16 06:42:26 +0000",
+            "comment": "keeping webapp context in web monitoring, looks nice to remove it but when you have multiple apps it is quickly the mess"
+        },
+        {
+            "c_hash": "ddc9a732",
+            "date": "2013-10-16 09:00:02 +0000",
+            "comment": "adding a cube module to push to square cube"
+        },
+        {
+            "c_hash": "3118a2e5",
+            "date": "2013-10-16 14:57:02 +0000",
+            "comment": "adding an assert in cube test + using default cube port/url"
+        },
+        {
+            "c_hash": "27131f5e",
+            "date": "2013-10-17 16:40:58 +0000",
+            "comment": "moving some more cube related logic to Cube + adding marker to be able to know the origin of the event"
+        },
+        {
+            "c_hash": "61da324a",
+            "date": "2013-10-17 16:41:35 +0000",
+            "comment": "oops string has tostring but useless to call it now"
+        },
+        {
+            "c_hash": "48f5737c",
+            "date": "2013-10-18 10:04:46 +0000",
+            "comment": "pushin minimum data when using cube to try to reduce computation overhead"
+        },
+        {
+            "c_hash": "a25b1b51",
+            "date": "2013-10-18 13:56:08 +0000",
+            "comment": "Make it possible to have a different datastore for counter and gauge"
+        },
+        {
+            "c_hash": "7afc4b27",
+            "date": "2013-10-18 16:23:12 +0000",
+            "comment": "adding base for a collector module, ATM counter data are not that consistent + tests need to be written"
+        },
+        {
+            "c_hash": "4f45682d",
+            "date": "2013-10-21 12:54:16 +0000",
+            "comment": "better thread safety + first collector servlet implementation (in memory) + SPI interface (delegating to ServiceLoader by default) to let user override it if needed"
+        },
+        {
+            "c_hash": "d3ee5223",
+            "date": "2013-10-21 15:07:43 +0000",
+            "comment": "adding counter detail page"
+        },
+        {
+            "c_hash": "ce0264a3",
+            "date": "2013-10-22 01:14:10 +0000",
+            "comment": "fix svn:ignore"
+        },
+        {
+            "c_hash": "db1538de",
+            "date": "2013-10-22 09:07:48 +0000",
+            "comment": "adding jpa module - doc todo"
+        },
+        {
+            "c_hash": "7d51c841",
+            "date": "2013-10-22 09:14:51 +0000",
+            "comment": "move monitoring to incubator as sirona project"
+        },
+        {
+            "c_hash": "7c3b32c0",
+            "date": "2013-10-22 09:32:30 +0000",
+            "comment": "svn:ignore"
+        },
+        {
+            "c_hash": "14876a04",
+            "date": "2013-10-22 09:33:00 +0000",
+            "comment": "adding jpa doc"
+        },
+        {
+            "c_hash": "f5d9128a",
+            "date": "2013-10-22 09:36:55 +0000",
+            "comment": "change groupId"
+        },
+        {
+            "c_hash": "d70d6140",
+            "date": "2013-10-22 09:39:39 +0000",
+            "comment": "change artifactId %s/commons-monitoring/sirona"
+        },
+        {
+            "c_hash": "6d6b4797",
+            "date": "2013-10-22 10:03:02 +0000",
+            "comment": "package renaming"
+        },
+        {
+            "c_hash": "f64a4c81",
+            "date": "2013-10-22 10:08:36 +0000",
+            "comment": "pom work"
+        },
+        {
+            "c_hash": "f6a47a0a",
+            "date": "2013-10-22 10:11:49 +0000",
+            "comment": "groupId change"
+        },
+        {
+            "c_hash": "cd544ce8",
+            "date": "2013-10-22 10:15:06 +0000",
+            "comment": "fix name"
+        },
+        {
+            "c_hash": "47f254f8",
+            "date": "2013-10-22 10:19:13 +0000",
+            "comment": "fix duplicate"
+        },
+        {
+            "c_hash": "b411d1d6",
+            "date": "2013-10-22 10:38:15 +0000",
+            "comment": "fix site"
+        },
+        {
+            "c_hash": "2c428b02",
+            "date": "2013-10-22 12:38:34 +0000",
+            "comment": "fixing testcase, making it locale and OS agnostic. Failed with Win7/de_DE."
+        },
+        {
+            "c_hash": "e1b5a92c",
+            "date": "2013-10-22 12:53:26 +0000",
+            "comment": "fixing a build failure, back to the present with no Java7."
+        },
+        {
+            "c_hash": "8b310fb9",
+            "date": "2013-10-22 21:34:38 +0000",
+            "comment": "version to 0.1-incubating"
+        },
+        {
+            "c_hash": "3d3800b3",
+            "date": "2013-10-22 21:49:03 +0000",
+            "comment": "add ciManagement and issueManagement"
+        },
+        {
+            "c_hash": "39fe6a18",
+            "date": "2013-10-22 22:02:27 +0000",
+            "comment": "Fixed typos. s/Graphite/Cube/g."
+        },
+        {
+            "c_hash": "6b8f91c0",
+            "date": "2013-10-23 04:26:23 +0000",
+            "comment": "fix eol-style"
+        },
+        {
+            "c_hash": "a627e140",
+            "date": "2013-10-23 04:57:41 +0000",
+            "comment": "fix eol-style"
+        },
+        {
+            "c_hash": "55be70ac",
+            "date": "2013-10-23 05:22:55 +0000",
+            "comment": "add DISCLAIMER file"
+        },
+        {
+            "c_hash": "72a85584",
+            "date": "2013-10-23 06:56:19 +0000",
+            "comment": "using sirona.properties + documenting how to monitor cdi/jta without updating any code"
+        },
+        {
+            "c_hash": "e07198d2",
+            "date": "2013-10-23 13:12:33 +0000",
+            "comment": "making AbstractPerformanceInterceptor configurable to skip too small invocations"
+        },
+        {
+            "c_hash": "c5360936",
+            "date": "2013-10-23 13:13:20 +0000",
+            "comment": "typo"
+        },
+        {
+            "c_hash": "11effd56",
+            "date": "2013-10-23 21:01:53 +0000",
+            "comment": "better way to configure cdi performance/jta interceptors. Note: config is better but we can't rely add custom interceptors anymore. Surely not an issue since it would be great in DeltaSpike rather than here."
+        },
+        {
+            "c_hash": "fec7d1e4",
+            "date": "2013-10-24 12:11:47 +0000",
+            "comment": "add .gitignore and provide a simple script for git svn setup"
+        },
+        {
+            "c_hash": "89a29232",
+            "date": "2013-10-25 04:34:00 +0000",
+            "comment": "add .gitignore file and remove NOTICE as it is generated"
+        },
+        {
+            "c_hash": "d166a540",
+            "date": "2013-10-26 09:26:54 +0000",
+            "comment": "cleaning up cdi extension + hashcode/equals in perf interceptor when using dynamic interception"
+        },
+        {
+            "c_hash": "02bfa764",
+            "date": "2013-10-28 16:06:16 +0000",
+            "comment": "s/CommonsMonitoring/Sirona/"
+        },
+        {
+            "c_hash": "9951700c",
+            "date": "2013-10-28 16:46:07 +0000",
+            "comment": "adding AggregatedGaugeDataStore and using it as base for graphite store"
+        },
+        {
+            "c_hash": "a891dace",
+            "date": "2013-10-28 16:48:17 +0000",
+            "comment": "unused import"
+        },
+        {
+            "c_hash": "5ea73e37",
+            "date": "2013-10-28 17:12:04 +0000",
+            "comment": "if no tx is active we can't call transactionSynchronizationRegistry.getResource + fixing graphite error messages to be more obvious"
+        },
+        {
+            "c_hash": "e51caca9",
+            "date": "2013-10-29 08:10:02 +0000",
+            "comment": "using aop in web module to reuse the existing logic + monitoring http status"
+        },
+        {
+            "c_hash": "080692f2",
+            "date": "2013-10-30 09:50:51 +0000",
+            "comment": "using sb-admin bootstrap theme - need to cleanup gui + add missing tests + add licence but committing it now to be able to not work alone anymore"
+        },
+        {
+            "c_hash": "31876dfb",
+            "date": "2013-10-30 09:52:28 +0000",
+            "comment": "updating license and notice file in reporting module"
+        },
+        {
+            "c_hash": "314ad0f5",
+            "date": "2013-10-30 10:32:32 +0000",
+            "comment": "adding basic tests for all part of the gui (reporting)"
+        },
+        {
+            "c_hash": "22363833",
+            "date": "2013-10-30 11:47:01 +0000",
+            "comment": "removing useless deps + fixing report page"
+        },
+        {
+            "c_hash": "2b38a342",
+            "date": "2013-10-30 14:11:44 +0000",
+            "comment": "oops removed an important line in last commit + fixing menu width"
+        },
+        {
+            "c_hash": "09a87d82",
+            "date": "2013-10-30 14:18:59 +0000",
+            "comment": "avoid NPE cause some jmx info are missing and used in the velocity template + removing useless margin now th emenu is smaller"
+        },
+        {
+            "c_hash": "efcfe902",
+            "date": "2013-10-30 16:11:58 +0000",
+            "comment": "fixing css after the upgrade to bootstrap 3 and sb-admin theme - still some enhancement todo but at least we are as good as before"
+        },
+        {
+            "c_hash": "1c2bcc28",
+            "date": "2013-10-30 16:20:15 +0000",
+            "comment": "adding arquillian config for web module"
+        },
+        {
+            "c_hash": "43372a22",
+            "date": "2013-10-30 16:32:43 +0000",
+            "comment": "using sb-admin panel for graphs"
+        },
+        {
+            "c_hash": "1f9bf2c8",
+            "date": "2013-10-30 17:13:50 +0000",
+            "comment": "creating a 'big' macro for the graph gui part and some Sirona js for the update of graph 'onclick'"
+        },
+        {
+            "c_hash": "e5480cf0",
+            "date": "2013-10-31 06:35:37 +0000",
+            "comment": "auto refreshing graphs"
+        },
+        {
+            "c_hash": "b562244a",
+            "date": "2013-10-31 07:36:23 +0000",
+            "comment": "ensuring html pages have the right content type"
+        },
+        {
+            "c_hash": "5fe0bd36",
+            "date": "2013-10-31 15:50:45 +0000",
+            "comment": "s/</[/ on site"
+        },
+        {
+            "c_hash": "1b94b37e",
+            "date": "2013-10-31 16:00:17 +0000",
+            "comment": "adding graphite/cube/collector in main menu of the site"
+        },
+        {
+            "c_hash": "43d897c3",
+            "date": "2013-11-03 16:58:49 +0000",
+            "comment": "fixing message of the collection when not a collector gauge store is used"
+        },
+        {
+            "c_hash": "59ae63ad",
+            "date": "2013-11-03 19:02:03 +0000",
+            "comment": "fixing collector module + making of it a war (+ jar) + moving some stuff for easier usage (Collector*Store in core to let the gui handle it a bit more later + JVM gauges in core to allow to activate/deactivate it)"
+        },
+        {
+            "c_hash": "a9bdb0aa",
+            "date": "2013-11-03 20:39:30 +0000",
+            "comment": "printing data by node for gauges by default in reporting view if in collector mode"
+        },
+        {
+            "c_hash": "83b03c64",
+            "date": "2013-11-03 20:40:45 +0000",
+            "comment": "oops wrong block to hide in collector mode"
+        },
+        {
+            "c_hash": "4ac41e27",
+            "date": "2013-11-04 08:24:57 +0000",
+            "comment": "using gauges for http status monitoring"
+        },
+        {
+            "c_hash": "e775eefc",
+            "date": "2013-11-04 10:23:22 +0000",
+            "comment": "adding gauge report"
+        },
+        {
+            "c_hash": "2405d1cd",
+            "date": "2013-11-04 11:06:47 +0000",
+            "comment": "updating collector to support new reporting pages (gauges typically)"
+        },
+        {
+            "c_hash": "b5964b5e",
+            "date": "2013-11-04 14:04:01 +0000",
+            "comment": "cleaning up GaugeDataStore to split it up in local and remote API + adding @Local on plugins working only when colocalized with collectors + clean up of Unit"
+        },
+        {
+            "c_hash": "9bc853e7",
+            "date": "2013-11-04 14:22:45 +0000",
+            "comment": "avoiding a useless find (since we check collector just before) + fixing isCollector impl after recent refactoring"
+        },
+        {
+            "c_hash": "af8538f4",
+            "date": "2013-11-04 16:12:48 +0000",
+            "comment": "adding node status reporter"
+        },
+        {
+            "c_hash": "1ca2f886",
+            "date": "2013-11-04 16:19:53 +0000",
+            "comment": "updating doc about node status reporter"
+        },
+        {
+            "c_hash": "fb4785bd",
+            "date": "2013-11-04 16:38:42 +0000",
+            "comment": "using color for node status"
+        },
+        {
+            "c_hash": "6ba3e1e6",
+            "date": "2013-11-05 17:25:15 +0000",
+            "comment": "reorganizing project structure to get a better view of modules"
+        },
+        {
+            "c_hash": "deecba82",
+            "date": "2013-11-06 00:46:56 +0000",
+            "comment": "add svn:ignore"
+        },
+        {
+            "c_hash": "5df2fa50",
+            "date": "2013-11-06 04:54:22 +0000",
+            "comment": "very important change :-)"
+        },
+        {
+            "c_hash": "61a27376",
+            "date": "2013-11-06 08:29:23 +0000",
+            "comment": "making GaugeManager more specialized and creating API CollectorNodeStatusDataStore"
+        },
+        {
+            "c_hash": "a76a4d39",
+            "date": "2013-11-06 11:11:06 +0000",
+            "comment": "adding tomee agent plugin"
+        },
+        {
+            "c_hash": "2a125b48",
+            "date": "2013-11-06 13:11:22 +0000",
+            "comment": "allowing to configure basic authent + https for cube client"
+        },
+        {
+            "c_hash": "1253996d",
+            "date": "2013-11-06 13:27:42 +0000",
+            "comment": "reactivating web plugin"
+        },
+        {
+            "c_hash": "472366db",
+            "date": "2013-11-06 14:13:33 +0000",
+            "comment": "fixing destroy lifecycle"
+        },
+        {
+            "c_hash": "010f2a28",
+            "date": "2013-11-06 14:42:58 +0000",
+            "comment": "fixing css for report table"
+        },
+        {
+            "c_hash": "4af9bf23",
+            "date": "2013-11-06 15:19:33 +0000",
+            "comment": "fixing table theme"
+        },
+        {
+            "c_hash": "33b4d987",
+            "date": "2013-11-06 15:21:54 +0000",
+            "comment": "renaming of stopGaugeTimers to match API"
+        },
+        {
+            "c_hash": "eaa4e40a",
+            "date": "2013-11-06 17:27:26 +0000",
+            "comment": "basic agent for pulling (in webapps) - need timers on collector + a way to register an agent + doc"
+        },
+        {
+            "c_hash": "d14a5656",
+            "date": "2013-11-07 08:13:01 +0000",
+            "comment": "adding highlighting to code snippet in site"
+        },
+        {
+            "c_hash": "f559c176",
+            "date": "2013-11-07 10:50:38 +0000",
+            "comment": "adding registration + basic test for pull collection mode"
+        },
+        {
+            "c_hash": "f54712dc",
+            "date": "2013-11-07 11:23:29 +0000",
+            "comment": "Adding transient flag to make SerializableMethod really serilizable"
+        },
+        {
+            "c_hash": "36c9a319",
+            "date": "2013-11-07 12:35:29 +0000",
+            "comment": "adding some collector config in doc"
+        },
+        {
+            "c_hash": "c97a13d0",
+            "date": "2013-11-07 16:38:18 +0000",
+            "comment": "basic cassandra module structure. All is to implement"
+        },
+        {
+            "c_hash": "8b802d01",
+            "date": "2013-11-07 17:00:28 +0000",
+            "comment": "implementing markers() for cassandra counter store"
+        },
+        {
+            "c_hash": "5d60c21f",
+            "date": "2013-11-07 22:14:25 +0000",
+            "comment": "rat 0.10 is faster"
+        },
+        {
+            "c_hash": "82e81e10",
+            "date": "2013-11-08 05:06:12 +0000",
+            "comment": "svn:ignore"
+        },
+        {
+            "c_hash": "9c345064",
+            "date": "2013-11-08 09:34:55 +0000",
+            "comment": "cassandra collector counter should be almost working"
+        },
+        {
+            "c_hash": "dd202be5",
+            "date": "2013-11-08 10:23:55 +0000",
+            "comment": "change checkout directory for scm pub plugin"
+        },
+        {
+            "c_hash": "83d1c0de",
+            "date": "2013-11-08 10:24:44 +0000",
+            "comment": "ignore .site-content"
+        },
+        {
+            "c_hash": "e1902d95",
+            "date": "2013-11-08 14:01:51 +0000",
+            "comment": "adding CassandraCollectorGaugeDataStore"
+        },
+        {
+            "c_hash": "a6e61249",
+            "date": "2013-11-08 15:43:38 +0000",
+            "comment": "moving cassandra store to server/store/cassandra + adding cassandra store doc + finishing implementing cassandra store"
+        },
+        {
+            "c_hash": "af269141",
+            "date": "2013-11-08 15:51:44 +0000",
+            "comment": "adding cassandra model to doc"
+        },
+        {
+            "c_hash": "a9d961e5",
+            "date": "2013-11-08 16:00:04 +0000",
+            "comment": "writing doc is good, making it accessible is better -< linking cassandra page to home"
+        },
+        {
+            "c_hash": "f164a34f",
+            "date": "2013-11-09 18:09:17 +0000",
+            "comment": "using super column for counters too in cassandra store - this is not possible for gauges otherwise we don't have a fine enough condition in querying"
+        },
+        {
+            "c_hash": "f3c2e1f1",
+            "date": "2013-11-11 02:44:31 +0000",
+            "comment": "populate html rendering parameters with http request parameters if onlyBody request parameter render only the body not the whole page just to be able to integrate small rendering inside larger application"
+        },
+        {
+            "c_hash": "82d2b087",
+            "date": "2013-11-11 06:32:58 +0000",
+            "comment": "add a Gauge for heap off memory usage"
+        },
+        {
+            "c_hash": "d890ed9a",
+            "date": "2013-11-11 06:33:16 +0000",
+            "comment": "reverse properties order loading System props win/override"
+        },
+        {
+            "c_hash": "49c6c400",
+            "date": "2013-11-11 06:34:00 +0000",
+            "comment": "Ok I'm maniac but hardcoded port for unit tests tends to irritate me :-)"
+        },
+        {
+            "c_hash": "fd4fe830",
+            "date": "2013-11-11 06:36:14 +0000",
+            "comment": "plugin version in pluginMngt in top level pom"
+        },
+        {
+            "c_hash": "367f2cb2",
+            "date": "2013-11-11 23:57:17 +0000",
+            "comment": "use last tomcat7 maven plugin version"
+        },
+        {
+            "c_hash": "fa3dcb1f",
+            "date": "2013-11-12 04:32:23 +0000",
+            "comment": "added myself in dev list"
+        },
+        {
+            "c_hash": "8fc65b5d",
+            "date": "2013-11-12 05:43:51 +0000",
+            "comment": "add incubator logo"
+        },
+        {
+            "c_hash": "9c7f0fc3",
+            "date": "2013-11-12 05:44:03 +0000",
+            "comment": "add footer with trademark"
+        },
+        {
+            "c_hash": "45608908",
+            "date": "2013-11-12 05:44:16 +0000",
+            "comment": "add ASF Links"
+        },
+        {
+            "c_hash": "d4f87bc3",
+            "date": "2013-11-12 05:51:38 +0000",
+            "comment": "add links to maven reports"
+        },
+        {
+            "c_hash": "76eae9ee",
+            "date": "2013-11-12 05:53:52 +0000",
+            "comment": "notimestamp for javadoc"
+        },
+        {
+            "c_hash": "d18707eb",
+            "date": "2013-11-12 08:39:58 +0000",
+            "comment": "adding some exclusion in cassandra module + fixing comparator type for gauges"
+        },
+        {
+            "c_hash": "741c6d99",
+            "date": "2013-11-12 08:47:47 +0000",
+            "comment": "putting non heap mem on the same line as heap mem and cpu + fixing vertical axis unit"
+        },
+        {
+            "c_hash": "9d4834dc",
+            "date": "2013-11-12 10:20:58 +0000",
+            "comment": "removing OpenEJB logs to avoid to make the test failing cause the error is logged"
+        },
+        {
+            "c_hash": "6af41e83",
+            "date": "2013-11-12 10:27:11 +0000",
+            "comment": "fix path"
+        },
+        {
+            "c_hash": "9aaf17d6",
+            "date": "2013-11-12 12:38:22 +0000",
+            "comment": "random port for arquillian tests, it is based on using defaults of the container in IDE or configured ones when using a good IDE"
+        },
+        {
+            "c_hash": "943340d9",
+            "date": "2013-11-12 12:48:22 +0000",
+            "comment": "adding some CQL samples in cassandra doc"
+        },
+        {
+            "c_hash": "82477673",
+            "date": "2013-11-12 12:56:51 +0000",
+            "comment": "adding consistency level config to cassandra"
+        },
+        {
+            "c_hash": "3f108e17",
+            "date": "2013-11-12 13:17:13 +0000",
+            "comment": "adding cassandra write level config to the doc"
+        },
+        {
+            "c_hash": "764c5aea",
+            "date": "2013-11-12 13:17:48 +0000",
+            "comment": "using right wrapper type to create JMX operations"
+        },
+        {
+            "c_hash": "948c50ed",
+            "date": "2013-11-12 13:18:37 +0000",
+            "comment": "no need of else"
+        },
+        {
+            "c_hash": "f0706a61",
+            "date": "2013-11-12 16:27:50 +0000",
+            "comment": "moving in memory collector*store impl in core to get better dependencies between modules - there was no real reason to put them in collector"
+        },
+        {
+            "c_hash": "0e368f57",
+            "date": "2013-11-12 22:27:15 +0000",
+            "comment": "fix svn:ignore for idea"
+        },
+        {
+            "c_hash": "4fba499f",
+            "date": "2013-11-12 22:40:52 +0000",
+            "comment": "add a default port when using ide"
+        },
+        {
+            "c_hash": "2fef8a0d",
+            "date": "2013-11-12 22:47:28 +0000",
+            "comment": "link to ohloh project"
+        },
+        {
+            "c_hash": "730c17f7",
+            "date": "2013-11-12 22:47:37 +0000",
+            "comment": "ignore out directory"
+        },
+        {
+            "c_hash": "b3565bc1",
+            "date": "2013-11-12 23:19:00 +0000",
+            "comment": "add google analytics"
+        },
+        {
+            "c_hash": "8d4e6ba7",
+            "date": "2013-11-12 23:19:13 +0000",
+            "comment": "add privacy policy page"
+        },
+        {
+            "c_hash": "62485a0a",
+            "date": "2013-11-12 23:19:24 +0000",
+            "comment": "fix date"
+        },
+        {
+            "c_hash": "2fed06f3",
+            "date": "2013-11-13 06:52:09 +0000",
+            "comment": "some more renaming to match sirona and remove as much as possible old references to [monitoring]"
+        },
+        {
+            "c_hash": "4c3c5131",
+            "date": "2013-11-13 07:07:49 +0000",
+            "comment": "extracting jdbc in its own page"
+        },
+        {
+            "c_hash": "a80187ef",
+            "date": "2013-11-13 07:08:57 +0000",
+            "comment": "removing commons logo which is no more accurate"
+        },
+        {
+            "c_hash": "450e978b",
+            "date": "2013-11-13 08:09:46 +0000",
+            "comment": "splitting Configuration in Configuration and IoCs - I dont think we need a SPI here (would induce an overhead we don't want)"
+        },
+        {
+            "c_hash": "4cacc114",
+            "date": "2013-11-13 08:24:10 +0000",
+            "comment": "using /sirona instead of /monitoring by default"
+        },
+        {
+            "c_hash": "67c82700",
+            "date": "2013-11-13 08:55:56 +0000",
+            "comment": "adding JMXAttributeGaugeBase to ease the addition of custom JMX based gauges"
+        },
+        {
+            "c_hash": "3724f8d8",
+            "date": "2013-11-13 12:37:47 +0000",
+            "comment": "we don't have auto refresh anymore so activated back update button"
+        },
+        {
+            "c_hash": "c0bc19b1",
+            "date": "2013-11-13 12:39:32 +0000",
+            "comment": "no need to go until tomorrow since we are pretty sure to not get any data"
+        },
+        {
+            "c_hash": "c975c05b",
+            "date": "2013-11-13 12:53:23 +0000",
+            "comment": "still a little issue with icon but at least it is clickable now"
+        },
+        {
+            "c_hash": "007620de",
+            "date": "2013-11-13 15:28:33 +0000",
+            "comment": "making date buttong working back"
+        },
+        {
+            "c_hash": "92be20d0",
+            "date": "2013-11-13 16:15:29 +0000",
+            "comment": "adding superKeys method since keys doesn't work in some case for super columns"
+        },
+        {
+            "c_hash": "610ac849",
+            "date": "2013-11-13 16:37:14 +0000",
+            "comment": "aggregating (applicatively) data for graph rendering to limit number of points"
+        },
+        {
+            "c_hash": "a3bb341b",
+            "date": "2013-11-13 19:47:38 +0000",
+            "comment": "back to normal column families, super column are deprecated and compiste doesn't help us that much"
+        },
+        {
+            "c_hash": "4b349a95",
+            "date": "2013-11-13 19:48:03 +0000",
+            "comment": "factorizing code"
+        },
+        {
+            "c_hash": "78a1b040",
+            "date": "2013-11-14 08:51:10 +0000",
+            "comment": "adding date to node status"
+        },
+        {
+            "c_hash": "7ea154ec",
+            "date": "2013-11-14 17:12:04 +0000",
+            "comment": "using our own velocity engine"
+        },
+        {
+            "c_hash": "d8ecb7b7",
+            "date": "2013-11-14 23:35:50 +0000",
+            "comment": "add a sys props sirona.properties to be able to configure configuration file path for folks using a provided war"
+        },
+        {
+            "c_hash": "4d414e1d",
+            "date": "2013-11-15 09:31:20 +0000",
+            "comment": "moving plugin api in its own jar + updating reporting and collector war NOTICE/LICENSE files"
+        },
+        {
+            "c_hash": "38fea0c9",
+            "date": "2013-11-15 10:53:08 +0000",
+            "comment": "revert my previous commit"
+        },
+        {
+            "c_hash": "d007f439",
+            "date": "2013-11-15 10:59:21 +0000",
+            "comment": "svn:ignore"
+        },
+        {
+            "c_hash": "5c81609a",
+            "date": "2013-11-15 11:01:41 +0000",
+            "comment": "remove empty directory"
+        },
+        {
+            "c_hash": "f00d3b21",
+            "date": "2013-11-15 15:08:14 +0000",
+            "comment": "using SortedMap for gauges values (better to get it explicitely) + adding a basic hazelcast plugins (surely to rework, ATM not sure the agent is really needed)"
+        },
+        {
+            "c_hash": "41df63a1",
+            "date": "2013-11-15 15:50:51 +0000",
+            "comment": "making few test less dependent of the jvm"
+        },
+        {
+            "c_hash": "b7e55807",
+            "date": "2013-11-15 16:15:14 +0000",
+            "comment": "adding abstract CounterGauge to be able to write custom gauge on counters quickly"
+        },
+        {
+            "c_hash": "482b324d",
+            "date": "2013-11-15 16:16:45 +0000",
+            "comment": "forgot to add MetricData param in last commit"
+        },
+        {
+            "c_hash": "90b041f0",
+            "date": "2013-11-15 16:39:19 +0000",
+            "comment": "ability to automatically add with the flag org.apache.sirona.counter.with-gauge 3 gauges by counter (sum, max, hits)"
+        },
+        {
+            "c_hash": "2b53f1be",
+            "date": "2013-11-15 16:58:34 +0000",
+            "comment": "avoiding role.toString()"
+        },
+        {
+            "c_hash": "4d410f6d",
+            "date": "2013-11-15 17:00:33 +0000",
+            "comment": "prefixing counter gauge by counter-"
+        },
+        {
+            "c_hash": "09535096",
+            "date": "2013-11-15 17:44:58 +0000",
+            "comment": "trying to be url safe + fixing the way gauge counter values were taken"
+        },
+        {
+            "c_hash": "70f1063d",
+            "date": "2013-11-15 17:57:39 +0000",
+            "comment": "fixing a locale specific test failure -- and a string parsing issue."
+        },
+        {
+            "c_hash": "3ff83fc3",
+            "date": "2013-11-18 06:43:31 +0000",
+            "comment": "rework the home with screenshots"
+        },
+        {
+            "c_hash": "99b8fa99",
+            "date": "2013-11-18 06:44:05 +0000",
+            "comment": "better with adding files"
+        },
+        {
+            "c_hash": "81f27107",
+            "date": "2013-11-18 06:45:08 +0000",
+            "comment": "fix caption"
+        },
+        {
+            "c_hash": "25bafa90",
+            "date": "2013-11-18 07:00:52 +0000",
+            "comment": "fix carrousel"
+        },
+        {
+            "c_hash": "cc818ec8",
+            "date": "2013-11-18 09:54:31 +0000",
+            "comment": "getting rid of a thread by gauge trying to use snapshots"
+        },
+        {
+            "c_hash": "c5d73302",
+            "date": "2013-11-18 10:04:18 +0000",
+            "comment": "useless implements (done by inheritance)"
+        },
+        {
+            "c_hash": "b94c713e",
+            "date": "2013-11-18 10:09:33 +0000",
+            "comment": "light optim for counter gauges"
+        },
+        {
+            "c_hash": "83a8bc7d",
+            "date": "2013-11-18 10:33:29 +0000",
+            "comment": "adding config to register counter as a MBean - deactivated by default"
+        },
+        {
+            "c_hash": "31ed36f7",
+            "date": "2013-11-18 10:37:26 +0000",
+            "comment": "comment on SironaLifecycle to think to improve our lifecycle handling in next versions"
+        },
+        {
+            "c_hash": "28117b8b",
+            "date": "2013-11-18 11:00:51 +0000",
+            "comment": "fix carousel"
+        },
+        {
+            "c_hash": "a4e164a6",
+            "date": "2013-11-18 11:01:07 +0000",
+            "comment": "really fix with adding the file..."
+        },
+        {
+            "c_hash": "f7d73887",
+            "date": "2013-11-19 00:52:19 +0000",
+            "comment": "add active thread gauge"
+        },
+        {
+            "c_hash": "e8763488",
+            "date": "2013-11-19 00:52:43 +0000",
+            "comment": "better with adding file"
+        },
+        {
+            "c_hash": "2fd0ff56",
+            "date": "2013-11-19 00:53:00 +0000",
+            "comment": "add active threads graph in jvm page"
+        },
+        {
+            "c_hash": "c7574068",
+            "date": "2013-11-19 02:15:58 +0000",
+            "comment": "all graphs in one single row. BTW need to be able to configure that"
+        },
+        {
+            "c_hash": "804b96f2",
+            "date": "2013-11-19 07:19:57 +0000",
+            "comment": "SIRONA-2 allowing to configure the fact counters are cleared after collect"
+        },
+        {
+            "c_hash": "27532e13",
+            "date": "2013-11-19 07:38:30 +0000",
+            "comment": "view statuses by app if marker has a #"
+        },
+        {
+            "c_hash": "05de843e",
+            "date": "2013-11-19 07:40:10 +0000",
+            "comment": "adding header to index.js"
+        },
+        {
+            "c_hash": "a8e86357",
+            "date": "2013-11-19 07:46:16 +0000",
+            "comment": "extracting auto set method to be able to reuse it in plugin/endpoints etc"
+        },
+        {
+            "c_hash": "44325d43",
+            "date": "2013-11-19 07:50:55 +0000",
+            "comment": "we have one more gauge now"
+        },
+        {
+            "c_hash": "e5f9268f",
+            "date": "2013-11-19 14:44:45 +0000",
+            "comment": "SIRONA-3 adding ConfiguratonProvider"
+        },
+        {
+            "c_hash": "3863ad75",
+            "date": "2013-11-19 16:54:58 +0000",
+            "comment": "mocking stats we don't use in SummaryStatistics"
+        },
+        {
+            "c_hash": "f30d936b",
+            "date": "2013-11-19 16:59:50 +0000",
+            "comment": "we can mock geometric mean too"
+        },
+        {
+            "c_hash": "63d798ce",
+            "date": "2013-11-19 17:03:30 +0000",
+            "comment": "thread safety"
+        },
+        {
+            "c_hash": "80355531",
+            "date": "2013-11-19 17:42:36 +0000",
+            "comment": "final + import"
+        },
+        {
+            "c_hash": "90f6038f",
+            "date": "2013-11-19 22:37:59 +0000",
+            "comment": "publish project maven report to an other path"
+        },
+        {
+            "c_hash": "1e832e81",
+            "date": "2013-11-19 22:39:04 +0000",
+            "comment": "add svn:ignore"
+        },
+        {
+            "c_hash": "ef343e65",
+            "date": "2013-11-19 22:56:46 +0000",
+            "comment": "docs now on the top site"
+        },
+        {
+            "c_hash": "6e460b16",
+            "date": "2013-11-19 22:57:16 +0000",
+            "comment": "fix new url"
+        },
+        {
+            "c_hash": "425bbc5b",
+            "date": "2013-11-19 22:58:09 +0000",
+            "comment": "doc moved to top site"
+        },
+        {
+            "c_hash": "979b5b66",
+            "date": "2013-11-19 23:10:48 +0000",
+            "comment": "link should go to main project"
+        },
+        {
+            "c_hash": "a411de0d",
+            "date": "2013-11-19 23:13:08 +0000",
+            "comment": "<skipGenerationDate>true</skipGenerationDate>"
+        },
+        {
+            "c_hash": "bfc35646",
+            "date": "2013-11-19 23:15:58 +0000",
+            "comment": "change version/date position"
+        },
+        {
+            "c_hash": "ec49dadc",
+            "date": "2013-11-19 23:17:40 +0000",
+            "comment": "simplify google analytics"
+        },
+        {
+            "c_hash": "aaad99e3",
+            "date": "2013-11-19 23:29:09 +0000",
+            "comment": "add breadcrumb"
+        },
+        {
+            "c_hash": "9901e474",
+            "date": "2013-11-20 00:25:11 +0000",
+            "comment": "configure tag for release"
+        },
+        {
+            "c_hash": "14ccdb14",
+            "date": "2013-11-20 00:40:41 +0000",
+            "comment": "better and simple home"
+        },
+        {
+            "c_hash": "da12d71e",
+            "date": "2013-11-20 01:00:05 +0000",
+            "comment": "correctly close inputstream"
+        },
+        {
+            "c_hash": "07177437",
+            "date": "2013-11-20 01:09:41 +0000",
+            "comment": "increase a bit this wait to fix possible issues on machines with some loads"
+        },
+        {
+            "c_hash": "610bb6b7",
+            "date": "2013-11-20 08:29:35 +0000",
+            "comment": "SIRONA-4 adding Localhosts utility + cassandra agent stores"
+        },
+        {
+            "c_hash": "a4611474",
+            "date": "2013-11-20 09:42:16 +0000",
+            "comment": "SIRONA-5 getting rid of [math3]"
+        },
+        {
+            "c_hash": "799ab909",
+            "date": "2013-11-21 02:49:50 +0000",
+            "comment": "fix displaying cassandra gauges display in reporting"
+        },
+        {
+            "c_hash": "7975ef32",
+            "date": "2013-11-21 02:50:10 +0000",
+            "comment": "remove unused imports"
+        },
+        {
+            "c_hash": "ed766c90",
+            "date": "2013-11-21 04:25:47 +0000",
+            "comment": "use last spring version"
+        },
+        {
+            "c_hash": "438615ae",
+            "date": "2013-11-21 05:24:03 +0000",
+            "comment": "add jira report"
+        },
+        {
+            "c_hash": "2fd30124",
+            "date": "2013-11-21 05:25:59 +0000",
+            "comment": "link to jira report from the home page"
+        },
+        {
+            "c_hash": "dd43cfb8",
+            "date": "2013-11-21 09:32:10 +0000",
+            "comment": "SIRONA-7 cleaning up few poms + adding jaxrs agents/counters"
+        },
+        {
+            "c_hash": "6d79eee8",
+            "date": "2013-11-21 12:06:49 +0000",
+            "comment": "svn:ignore"
+        },
+        {
+            "c_hash": "22a7e0b3",
+            "date": "2013-11-21 13:46:27 +0000",
+            "comment": "SIRONA-6 basic EhCache integration"
+        },
+        {
+            "c_hash": "545561c1",
+            "date": "2013-11-21 13:58:45 +0000",
+            "comment": "SIRONA-6 unregistring sirona gauge when cache manager is killed"
+        },
+        {
+            "c_hash": "24a3a096",
+            "date": "2013-11-21 22:24:26 +0000",
+            "comment": "update svn:ignore"
+        },
+        {
+            "c_hash": "e78a3900",
+            "date": "2013-11-21 22:33:35 +0000",
+            "comment": "more svn:ignore"
+        },
+        {
+            "c_hash": "b65714a8",
+            "date": "2013-11-21 22:51:27 +0000",
+            "comment": "make more sense to plugins module on the top"
+        },
+        {
+            "c_hash": "fbb7b8c0",
+            "date": "2013-11-21 22:51:53 +0000",
+            "comment": "update names"
+        },
+        {
+            "c_hash": "cca15d23",
+            "date": "2013-11-21 23:19:02 +0000",
+            "comment": "add link to modules"
+        },
+        {
+            "c_hash": "336d8284",
+            "date": "2013-11-22 02:48:07 +0000",
+            "comment": "fix staging site"
+        },
+        {
+            "c_hash": "a958bfbd",
+            "date": "2013-11-22 03:41:52 +0000",
+            "comment": "fix configuration"
+        },
+        {
+            "c_hash": "5a0df46b",
+            "date": "2013-11-22 04:34:42 +0000",
+            "comment": "add more time but this test fail easily depending on the machine load"
+        },
+        {
+            "c_hash": "8ab43fc2",
+            "date": "2013-11-22 09:16:20 +0000",
+            "comment": "better implementation for PerformanceServerFilter"
+        },
+        {
+            "c_hash": "d5d00c49",
+            "date": "2013-11-22 10:05:26 +0000",
+            "comment": "create some gauge for ehcache on start"
+        },
+        {
+            "c_hash": "577e4622",
+            "date": "2013-11-22 10:05:46 +0000",
+            "comment": "code cleanup"
+        },
+        {
+            "c_hash": "9b1f3777",
+            "date": "2013-11-22 10:06:20 +0000",
+            "comment": "users can be able to add their own cache Statistics to add in counter"
+        },
+        {
+            "c_hash": "f2607335",
+            "date": "2013-11-24 19:38:37 +0000",
+            "comment": "SIRONA-10 adding sirona-javaagent"
+        },
+        {
+            "c_hash": "fe25851a",
+            "date": "2013-11-24 22:39:05 +0000",
+            "comment": "svn:ignore"
+        },
+        {
+            "c_hash": "60d97c3f",
+            "date": "2013-11-24 23:29:11 +0000",
+            "comment": "headless true to avoid to many coffee cup"
+        },
+        {
+            "c_hash": "52691f81",
+            "date": "2013-11-24 23:34:40 +0000",
+            "comment": "fix missing svn:ignore"
+        },
+        {
+            "c_hash": "619a67d6",
+            "date": "2013-11-25 00:06:01 +0000",
+            "comment": "use better name for source release"
+        },
+        {
+            "c_hash": "488471f8",
+            "date": "2013-11-25 10:01:03 +0000",
+            "comment": "SIRONA-10 better javaagent handling exceptions"
+        },
+        {
+            "c_hash": "eb3effb1",
+            "date": "2013-11-25 13:09:11 +0000",
+            "comment": "SIRONA-10 adding constants for Counter.Key in instrumented classes"
+        },
+        {
+            "c_hash": "3f5643f5",
+            "date": "2013-11-25 14:20:59 +0000",
+            "comment": "cleanup of asm visitor"
+        },
+        {
+            "c_hash": "9c33ac12",
+            "date": "2013-11-25 14:41:12 +0000",
+            "comment": "adding a unit test to test Agent interceptor contract"
+        },
+        {
+            "c_hash": "7b06d4e8",
+            "date": "2013-11-25 14:47:21 +0000",
+            "comment": "adding AgentContext to be able to add logic in javaagent later"
+        },
+        {
+            "c_hash": "58f86dd7",
+            "date": "2013-11-25 16:04:33 +0000",
+            "comment": "adding InvocationListener in javaagent"
+        },
+        {
+            "c_hash": "e23cbc2e",
+            "date": "2013-11-25 16:05:49 +0000",
+            "comment": "oops typo on InvocationListener (wrong place)"
+        },
+        {
+            "c_hash": "99d12a6e",
+            "date": "2013-11-26 00:40:09 +0000",
+            "comment": "our source release will contains some javascript so add NOTICE content for that"
+        },
+        {
+            "c_hash": "c524a395",
+            "date": "2013-11-26 00:49:49 +0000",
+            "comment": "[maven-release-plugin] prepare release sirona-0.1-incubating"
+        },
+        {
+            "c_hash": "84589462",
+            "date": "2013-11-26 00:50:08 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "cb578afa",
+            "date": "2013-11-26 01:22:19 +0000",
+            "comment": "ignore"
+        },
+        {
+            "c_hash": "9d3c0101",
+            "date": "2013-11-26 11:05:27 +0000",
+            "comment": "allowing to instrument more classes and fixing the exclusion of jvm for instrumentation"
+        },
+        {
+            "c_hash": "bc25177a",
+            "date": "2013-11-26 11:18:09 +0000",
+            "comment": "adding excludes to javaagent config"
+        },
+        {
+            "c_hash": "beb6a273",
+            "date": "2013-11-26 13:57:54 +0000",
+            "comment": "SIRONA-12 SIRONA-13 allowing to use @AutoSet with InvocationListeners + config for CounterListener"
+        },
+        {
+            "c_hash": "4fa2478d",
+            "date": "2013-11-26 14:10:34 +0000",
+            "comment": "SIRONA-14 org.apache.sirona.javaagent.spi.InvocationListenerFactory"
+        },
+        {
+            "c_hash": "2de098e7",
+            "date": "2013-11-26 16:16:29 +0000",
+            "comment": "adding a test to show how to do a custom InvocationListener + adding ConfigurableListener helper"
+        },
+        {
+            "c_hash": "0e98e09e",
+            "date": "2013-11-26 16:17:41 +0000",
+            "comment": "typing ConfigurableListener"
+        },
+        {
+            "c_hash": "6d650f4c",
+            "date": "2013-11-27 08:45:35 +0000",
+            "comment": "better API for the javaagent"
+        },
+        {
+            "c_hash": "7906b813",
+            "date": "2013-12-07 17:00:16 +0000",
+            "comment": "graphite test fails too easily, making it more tolerant + fixing aspectj pom to make it space tolerant"
+        },
+        {
+            "c_hash": "b7be0538",
+            "date": "2013-12-07 18:53:19 +0000",
+            "comment": "SIRONA-16 allow to enhance jvm classes"
+        },
+        {
+            "c_hash": "88ea7c09",
+            "date": "2013-12-08 21:07:11 +0000",
+            "comment": "SIRONA-17 get rid of includes/excludes on javaagent and use listeners to instrument only if needed"
+        },
+        {
+            "c_hash": "477e6a7d",
+            "date": "2013-12-08 23:07:51 +0000",
+            "comment": "wrapping primitives to be able to call agentContext.stop(Object)"
+        },
+        {
+            "c_hash": "43272898",
+            "date": "2013-12-08 23:20:39 +0000",
+            "comment": "caching primitive wrapper info"
+        },
+        {
+            "c_hash": "cac1d7e9",
+            "date": "2013-12-08 23:40:15 +0000",
+            "comment": "allowing to get class/method from AgentContext, can be very useful for listener accept methods + hasListeners is useless now we only instrument when needed"
+        },
+        {
+            "c_hash": "61c5279b",
+            "date": "2013-12-16 18:43:33 +0000",
+            "comment": "removing empty modules (even no more built)"
+        },
+        {
+            "c_hash": "dd298b62",
+            "date": "2014-01-08 22:25:57 +0000",
+            "comment": "tomcat 7.0.50 test run faster"
+        },
+        {
+            "c_hash": "9c2de40b",
+            "date": "2014-01-23 03:50:50 +0000",
+            "comment": "ease debuging of agent"
+        },
+        {
+            "c_hash": "d9947e68",
+            "date": "2014-01-23 06:03:19 +0000",
+            "comment": "provide normal jar as default and shaded with a classifier"
+        },
+        {
+            "c_hash": "e8b3cf4f",
+            "date": "2014-01-23 06:03:27 +0000",
+            "comment": "give access to subclass"
+        },
+        {
+            "c_hash": "9d1c75dc",
+            "date": "2014-01-27 23:39:23 +0000",
+            "comment": "[SIRONA-22] provide a parameter to disable default CounterListener in javaagent"
+        },
+        {
+            "c_hash": "0fdcbbaf",
+            "date": "2014-01-27 23:39:35 +0000",
+            "comment": "missed to add new classes"
+        },
+        {
+            "c_hash": "1b6a9a9f",
+            "date": "2014-01-27 23:39:41 +0000",
+            "comment": "produce a test jar to be able to reuse JavaAgentRunner"
+        },
+        {
+            "c_hash": "2af79abe",
+            "date": "2014-01-28 00:34:24 +0000",
+            "comment": "JavaAgentRunner more reusable"
+        },
+        {
+            "c_hash": "034b84de",
+            "date": "2014-01-28 00:34:32 +0000",
+            "comment": "possible to pass sys args from main surefire process"
+        },
+        {
+            "c_hash": "eeedd0ae",
+            "date": "2014-01-28 00:39:15 +0000",
+            "comment": "add javadoc"
+        },
+        {
+            "c_hash": "6304df56",
+            "date": "2014-01-29 05:37:00 +0000",
+            "comment": "make directory configurable too"
+        },
+        {
+            "c_hash": "a7db8427",
+            "date": "2014-02-04 14:39:06 +0000",
+            "comment": "Fixing JavaAgentRunner for tests"
+        },
+        {
+            "c_hash": "7e6c6c9b",
+            "date": "2014-02-04 19:46:26 +0000",
+            "comment": "SIRONA-23 SIRONA-24 SIRONA-25 ignoring static block invocation in monitoring if our fields are defined after, better default exclusion, ignoring annotations on private method and keeping them only on proxy"
+        },
+        {
+            "c_hash": "3961a352",
+            "date": "2014-02-04 22:48:55 +0000",
+            "comment": "SIRONA-23 fixing static intrumentation"
+        },
+        {
+            "c_hash": "14a11ab0",
+            "date": "2014-02-04 23:17:52 +0000",
+            "comment": "revert r1564321 add an other condition to not include -sources jar"
+        },
+        {
+            "c_hash": "f35b1b7f",
+            "date": "2014-02-04 23:52:57 +0000",
+            "comment": "change to non static and protected to be able to override"
+        },
+        {
+            "c_hash": "b1cb9baa",
+            "date": "2014-02-05 00:16:23 +0000",
+            "comment": "change to non static and protected so users can override that"
+        },
+        {
+            "c_hash": "d5030dcd",
+            "date": "2014-02-06 03:43:27 +0000",
+            "comment": "avoid possible NPE"
+        },
+        {
+            "c_hash": "abc40e1b",
+            "date": "2014-02-07 05:33:01 +0000",
+            "comment": "SIRONA-26 typo in hibernate persistence name"
+        },
+        {
+            "c_hash": "b3459c71",
+            "date": "2014-02-09 17:36:28 +0000",
+            "comment": "SIRONA-28 jsp stats"
+        },
+        {
+            "c_hash": "b37176bb",
+            "date": "2014-02-09 17:50:33 +0000",
+            "comment": "SIRONA-28 jsp stats - handling forward too"
+        },
+        {
+            "c_hash": "78e32cfc",
+            "date": "2014-02-09 18:06:17 +0000",
+            "comment": "simplify code"
+        },
+        {
+            "c_hash": "e606aea1",
+            "date": "2014-02-10 06:53:14 +0000",
+            "comment": "SIRONA-11 basic boomerang integration, collector mode to enhance before releasing"
+        },
+        {
+            "c_hash": "c73be784",
+            "date": "2014-02-11 06:37:32 +0000",
+            "comment": "SIRONA-11 cleaning up boomerang collector mode"
+        },
+        {
+            "c_hash": "0150fdfb",
+            "date": "2014-02-12 10:13:00 +0000",
+            "comment": "svn:ignore"
+        },
+        {
+            "c_hash": "d26c24c6",
+            "date": "2014-02-13 12:20:48 +0000",
+            "comment": "complete javadoc"
+        },
+        {
+            "c_hash": "a28277ee",
+            "date": "2014-02-13 12:33:28 +0000",
+            "comment": "add package info files"
+        },
+        {
+            "c_hash": "791394b5",
+            "date": "2014-02-13 13:03:24 +0000",
+            "comment": "fix jira report"
+        },
+        {
+            "c_hash": "9ba1a015",
+            "date": "2014-02-17 11:19:11 +0000",
+            "comment": "ignore .java-version"
+        },
+        {
+            "c_hash": "e120b1d8",
+            "date": "2014-02-18 05:57:52 +0000",
+            "comment": "start of path tracking"
+        },
+        {
+            "c_hash": "80ddd78b",
+            "date": "2014-02-18 05:58:06 +0000",
+            "comment": "cleanup System.out.println to make romain happy :P"
+        },
+        {
+            "c_hash": "27eea345",
+            "date": "2014-02-18 05:58:15 +0000",
+            "comment": "fix some issues storing data"
+        },
+        {
+            "c_hash": "84dd0a8e",
+            "date": "2014-02-18 05:58:46 +0000",
+            "comment": "fix compilation with various FIXME"
+        },
+        {
+            "c_hash": "299f853d",
+            "date": "2014-02-18 05:58:54 +0000",
+            "comment": "fix unit test. I wonder why this fail now!"
+        },
+        {
+            "c_hash": "79d277cb",
+            "date": "2014-02-18 05:59:01 +0000",
+            "comment": "missing ASF header"
+        },
+        {
+            "c_hash": "917d15af",
+            "date": "2014-02-18 05:59:05 +0000",
+            "comment": "use last hazelcast version"
+        },
+        {
+            "c_hash": "44829fa5",
+            "date": "2014-02-18 05:59:11 +0000",
+            "comment": "yup I use this os :-)"
+        },
+        {
+            "c_hash": "ad04f20f",
+            "date": "2014-02-18 05:59:21 +0000",
+            "comment": "this class need to be in core"
+        },
+        {
+            "c_hash": "ca91fa9f",
+            "date": "2014-02-18 05:59:28 +0000",
+            "comment": "read this agent debug sys property in only one place"
+        },
+        {
+            "c_hash": "d4b394b2",
+            "date": "2014-02-18 05:59:35 +0000",
+            "comment": "back to UUID usage"
+        },
+        {
+            "c_hash": "08062b43",
+            "date": "2014-02-18 05:59:46 +0000",
+            "comment": "naming change"
+        },
+        {
+            "c_hash": "b86aa98c",
+            "date": "2014-02-18 06:00:04 +0000",
+            "comment": "use a Set"
+        },
+        {
+            "c_hash": "1d1d53b2",
+            "date": "2014-02-18 06:00:22 +0000",
+            "comment": "start working on PathTracking cassandra storage"
+        },
+        {
+            "c_hash": "97b27207",
+            "date": "2014-02-18 06:08:11 +0000",
+            "comment": "remove comment not needed anymore"
+        },
+        {
+            "c_hash": "ed6c11d0",
+            "date": "2014-02-18 07:03:41 +0000",
+            "comment": "+ is faster than stringbuilder since optimized by the jvm, worse case it is replaced by a stringbuilder"
+        },
+        {
+            "c_hash": "a00b8f70",
+            "date": "2014-02-18 07:04:49 +0000",
+            "comment": "enforcing level is initialized (cleanup)"
+        },
+        {
+            "c_hash": "d20aa212",
+            "date": "2014-02-18 07:38:25 +0000",
+            "comment": "reworking a bit PathTracker API, batch storage todo"
+        },
+        {
+            "c_hash": "db947a88",
+            "date": "2014-02-18 12:16:11 +0000",
+            "comment": "remove @author"
+        },
+        {
+            "c_hash": "fb9ede8f",
+            "date": "2014-02-19 04:59:45 +0000",
+            "comment": "use an extended in memory storage to get all"
+        },
+        {
+            "c_hash": "448b499c",
+            "date": "2014-02-19 04:59:53 +0000",
+            "comment": "use a better package for that"
+        },
+        {
+            "c_hash": "d26620fd",
+            "date": "2014-02-19 06:25:47 +0000",
+            "comment": "start implementing batch storage currently unit test fail so comment it"
+        },
+        {
+            "c_hash": "23bc29c8",
+            "date": "2014-02-19 06:25:54 +0000",
+            "comment": "missing asf header"
+        },
+        {
+            "c_hash": "2be225bf",
+            "date": "2014-02-19 06:26:05 +0000",
+            "comment": "I really need to modify my idea code template :-)"
+        },
+        {
+            "c_hash": "d9639d10",
+            "date": "2014-02-19 23:08:44 +0000",
+            "comment": "@AutoSet was not handling inheritance + supporting simple placeholder in properties"
+        },
+        {
+            "c_hash": "a687d0da",
+            "date": "2014-02-19 23:09:21 +0000",
+            "comment": "adding the assert to the autoset test for path listener"
+        },
+        {
+            "c_hash": "b453ba8b",
+            "date": "2014-02-19 23:25:58 +0000",
+            "comment": "moving test to let them use the config and structure done with the runner + @Ignore the test while the NPE is not fixed"
+        },
+        {
+            "c_hash": "027d4020",
+            "date": "2014-02-19 23:33:27 +0000",
+            "comment": "avoiding NPE"
+        },
+        {
+            "c_hash": "80ebdb53",
+            "date": "2014-02-20 00:32:05 +0000",
+            "comment": "fixing path entries record"
+        },
+        {
+            "c_hash": "2523ad9c",
+            "date": "2014-02-20 00:32:12 +0000",
+            "comment": "do not instance fields with InvocationListener"
+        },
+        {
+            "c_hash": "8e12cc49",
+            "date": "2014-02-20 00:32:21 +0000",
+            "comment": "extract test class"
+        },
+        {
+            "c_hash": "1920a838",
+            "date": "2014-02-20 00:32:31 +0000",
+            "comment": "fix level support add unit tests related to level"
+        },
+        {
+            "c_hash": "737eab68",
+            "date": "2014-02-20 00:32:39 +0000",
+            "comment": "add assert on executionTime minimum as we have a thread.sleep"
+        },
+        {
+            "c_hash": "29313b30",
+            "date": "2014-02-20 00:40:41 +0000",
+            "comment": "remove empty directories"
+        },
+        {
+            "c_hash": "a7a1574e",
+            "date": "2014-02-20 00:52:26 +0000",
+            "comment": "remove fixed FIXME start adding javadoc"
+        },
+        {
+            "c_hash": "17c53e56",
+            "date": "2014-02-20 01:35:39 +0000",
+            "comment": "add a convenient sirona cassandra shaded jar, if we want to use it directly in javaagent"
+        },
+        {
+            "c_hash": "dd896a01",
+            "date": "2014-02-20 01:35:45 +0000",
+            "comment": "shade plugin version in pluginManagement in top pom"
+        },
+        {
+            "c_hash": "eb97b651",
+            "date": "2014-02-20 06:44:48 +0000",
+            "comment": "using a single threadlocal + guessing node name"
+        },
+        {
+            "c_hash": "e112ca0a",
+            "date": "2014-02-20 06:47:23 +0000",
+            "comment": "cleaning up path tracking api"
+        },
+        {
+            "c_hash": "d7d482f2",
+            "date": "2014-02-20 06:58:28 +0000",
+            "comment": "cleaning the parhtracker a bit more"
+        },
+        {
+            "c_hash": "98ed9beb",
+            "date": "2014-02-21 01:14:01 +0000",
+            "comment": "upgrade netty version"
+        },
+        {
+            "c_hash": "0b44f617",
+            "date": "2014-02-21 01:14:06 +0000",
+            "comment": "arquillian upgrade"
+        },
+        {
+            "c_hash": "1ccef8cc",
+            "date": "2014-02-21 01:14:13 +0000",
+            "comment": "do not rely on order in this test"
+        },
+        {
+            "c_hash": "2bce5d06",
+            "date": "2014-02-21 04:26:52 +0000",
+            "comment": "move logging debug in only place"
+        },
+        {
+            "c_hash": "55914b39",
+            "date": "2014-02-21 04:27:01 +0000",
+            "comment": "not a great logging framework but at least small optim :-)"
+        },
+        {
+            "c_hash": "12bfb56e",
+            "date": "2014-02-21 04:27:10 +0000",
+            "comment": "missed to add a class"
+        },
+        {
+            "c_hash": "69edb3ce",
+            "date": "2014-02-23 20:40:47 +0000",
+            "comment": "adding debug option to dump in tmp generated bytecode"
+        },
+        {
+            "c_hash": "cd4703cd",
+            "date": "2014-02-23 21:26:38 +0000",
+            "comment": "tabulations"
+        },
+        {
+            "c_hash": "ebcec34b",
+            "date": "2014-02-23 21:30:24 +0000",
+            "comment": "in java 7 we need ClassWriter.COMPUTE_FRAMES"
+        },
+        {
+            "c_hash": "d1cec9b8",
+            "date": "2014-02-23 21:36:28 +0000",
+            "comment": "keep debug info to be able to debug even with sirona"
+        },
+        {
+            "c_hash": "3b3dcc39",
+            "date": "2014-02-23 21:42:03 +0000",
+            "comment": "excluding velocity since we rarely want to monitor it and it can generates a bunch of exceptions"
+        },
+        {
+            "c_hash": "69b92b06",
+            "date": "2014-02-23 21:53:27 +0000",
+            "comment": "excluding eclipse jdt"
+        },
+        {
+            "c_hash": "f2533487",
+            "date": "2014-02-23 21:56:06 +0000",
+            "comment": "excluding eclipse jdt for tomee AND tomcat to keep it consistent"
+        },
+        {
+            "c_hash": "b0fc1ee3",
+            "date": "2014-02-23 22:07:20 +0000",
+            "comment": "it is late...missed the first if so putting the code in the right place to get the exclusion used"
+        },
+        {
+            "c_hash": "53c40eb1",
+            "date": "2014-02-23 22:11:46 +0000",
+            "comment": "wrong variable + removing copy of agentParameters to avoid to create a bunch of useless instances"
+        },
+        {
+            "c_hash": "08724215",
+            "date": "2014-02-23 22:23:12 +0000",
+            "comment": "limiting text used for exceptions (counters), we should surely rework a bit it later"
+        },
+        {
+            "c_hash": "4d982a80",
+            "date": "2014-02-24 07:42:04 +0000",
+            "comment": "ensuring to get a new line in csv report"
+        },
+        {
+            "c_hash": "cb3d0ce9",
+            "date": "2014-02-24 12:42:04 +0000",
+            "comment": "no author tag"
+        },
+        {
+            "c_hash": "b73607e6",
+            "date": "2014-02-24 12:42:12 +0000",
+            "comment": "add disabled flag to be able to configure within sirona.properties"
+        },
+        {
+            "c_hash": "e88bcc86",
+            "date": "2014-02-24 12:42:29 +0000",
+            "comment": "improve a bit path tracking: prevent npe"
+        },
+        {
+            "c_hash": "241d1f66",
+            "date": "2014-02-27 01:47:18 +0000",
+            "comment": "fix possible issues in path tracking when Sirona is not yet initialized yup that's a bit chicken and eggs prevent issue with debugging as we can instrument classes to which System.out/err is redirect the current case is Tomcat TODO find something more generic!"
+        },
+        {
+            "c_hash": "c48a0187",
+            "date": "2014-02-27 01:47:26 +0000",
+            "comment": "remove crappy hack, so study stack trace to detect if we are in a recursive path"
+        },
+        {
+            "c_hash": "03f8aa6d",
+            "date": "2014-02-27 01:48:13 +0000",
+            "comment": "remove commented code"
+        },
+        {
+            "c_hash": "3df5bdd0",
+            "date": "2014-02-27 02:58:37 +0000",
+            "comment": "add unit test to be sure we detect recursive call and prevent Stackoverflow when using debug mode"
+        },
+        {
+            "c_hash": "b6dcfb05",
+            "date": "2014-02-27 02:58:47 +0000",
+            "comment": "better with adding test class :-)"
+        },
+        {
+            "c_hash": "76fc327b",
+            "date": "2014-02-27 04:08:28 +0000",
+            "comment": "downgrade tomcat version not my goal currently to search what has changed in 7.0.52 :-)"
+        },
+        {
+            "c_hash": "09c79a0b",
+            "date": "2014-02-27 04:08:49 +0000",
+            "comment": "start adding batch storing for PathTracking"
+        },
+        {
+            "c_hash": "d8491c8a",
+            "date": "2014-02-27 04:40:52 +0000",
+            "comment": "use a more up2date commons-codec version"
+        },
+        {
+            "c_hash": "bcf568f5",
+            "date": "2014-03-02 23:01:35 +0000",
+            "comment": "collecting path tracking entries"
+        },
+        {
+            "c_hash": "e2cc905d",
+            "date": "2014-03-02 23:02:01 +0000",
+            "comment": "store path tracking via collector/cube"
+        },
+        {
+            "c_hash": "e105147c",
+            "date": "2014-03-02 23:02:16 +0000",
+            "comment": "use gzip compression to transport data"
+        },
+        {
+            "c_hash": "a8b93c65",
+            "date": "2014-03-02 23:02:28 +0000",
+            "comment": "using compression must be configurable and off per default"
+        },
+        {
+            "c_hash": "578f427e",
+            "date": "2014-03-03 06:04:59 +0000",
+            "comment": "unit update need to think about performance for that"
+        },
+        {
+            "c_hash": "c9c526f1",
+            "date": "2014-03-03 06:05:08 +0000",
+            "comment": "more details on error"
+        },
+        {
+            "c_hash": "993b6d74",
+            "date": "2014-03-03 06:05:19 +0000",
+            "comment": "add method to send unit update, ignore some test files, add possibility to use a test file"
+        },
+        {
+            "c_hash": "20deab52",
+            "date": "2014-03-03 06:05:25 +0000",
+            "comment": "use a property for more custom configuration"
+        },
+        {
+            "c_hash": "7e3a8efa",
+            "date": "2014-03-04 02:46:11 +0000",
+            "comment": "store path tracking as byte buffer to avoid memory usage"
+        },
+        {
+            "c_hash": "6c3bcde4",
+            "date": "2014-03-04 02:46:37 +0000",
+            "comment": "start working on path tracking reporting"
+        },
+        {
+            "c_hash": "92c9b888",
+            "date": "2014-03-04 02:47:03 +0000",
+            "comment": "fix reporting unit test issues with adding an easy to setup DefaultPathTrackingDataStore"
+        },
+        {
+            "c_hash": "227a97aa",
+            "date": "2014-03-04 02:47:12 +0000",
+            "comment": "send directly data to remote storage, do not disconnect httpurl connection to be able to reuse connections and not creating so many sockets"
+        },
+        {
+            "c_hash": "c1d6dc46",
+            "date": "2014-03-06 00:02:20 +0000",
+            "comment": "really use temporary port"
+        },
+        {
+            "c_hash": "1721351b",
+            "date": "2014-03-06 00:02:28 +0000",
+            "comment": "fix test random http port usage"
+        },
+        {
+            "c_hash": "6c2d5748",
+            "date": "2014-03-06 00:02:45 +0000",
+            "comment": "using unsafe to store path tracking entries"
+        },
+        {
+            "c_hash": "0ce17102",
+            "date": "2014-03-06 00:02:54 +0000",
+            "comment": "use a static field for unsafe"
+        },
+        {
+            "c_hash": "0131afdf",
+            "date": "2014-03-06 00:03:18 +0000",
+            "comment": "post PathTracking entries as bytes to the Collector to avoid huge amount of String creation"
+        },
+        {
+            "c_hash": "a782a563",
+            "date": "2014-03-06 01:04:08 +0000",
+            "comment": "as we record Path tracking entries regulary we can free pointer already sended"
+        },
+        {
+            "c_hash": "9461c0ae",
+            "date": "2014-03-07 06:07:43 +0000",
+            "comment": "use send single store send directly to the collector no local storage of PathTracking entries"
+        },
+        {
+            "c_hash": "054b4c70",
+            "date": "2014-03-07 06:07:56 +0000",
+            "comment": "use disruptor to handle amount of messages and not block the application when sending path tracking entries"
+        },
+        {
+            "c_hash": "2ba3944e",
+            "date": "2014-03-07 06:08:05 +0000",
+            "comment": "minor cleanup"
+        },
+        {
+            "c_hash": "f9a4f7b5",
+            "date": "2014-03-07 06:08:13 +0000",
+            "comment": "do not flood logs weird issues I have on osx"
+        },
+        {
+            "c_hash": "a7471afc",
+            "date": "2014-03-11 12:01:47 +0000",
+            "comment": "no need of fqcn here"
+        },
+        {
+            "c_hash": "b9fc6b14",
+            "date": "2014-03-11 12:02:06 +0000",
+            "comment": "rename to add later a listener for path tracking invocation"
+        },
+        {
+            "c_hash": "23ee3d22",
+            "date": "2014-03-11 12:02:18 +0000",
+            "comment": "extract classes"
+        },
+        {
+            "c_hash": "ff8e3704",
+            "date": "2014-03-11 12:02:26 +0000",
+            "comment": "more class extract"
+        },
+        {
+            "c_hash": "f79a035c",
+            "date": "2014-03-11 12:02:36 +0000",
+            "comment": "package move"
+        },
+        {
+            "c_hash": "b0b7aa53",
+            "date": "2014-03-11 12:02:54 +0000",
+            "comment": "implement a PathTrackingInvocationListener for users being able to do their own"
+        },
+        {
+            "c_hash": "487572a9",
+            "date": "2014-03-11 12:03:03 +0000",
+            "comment": "make disruptor optional"
+        },
+        {
+            "c_hash": "9558497c",
+            "date": "2014-03-11 12:03:12 +0000",
+            "comment": "start a cube collector using httpclient (dependency optional and not the default one!! :P )"
+        },
+        {
+            "c_hash": "c3bae9e6",
+            "date": "2014-03-12 01:48:23 +0000",
+            "comment": "more configurable better connection management for http client"
+        },
+        {
+            "c_hash": "51cc5d20",
+            "date": "2014-03-12 01:48:34 +0000",
+            "comment": "make this more configurable"
+        },
+        {
+            "c_hash": "25ee53b1",
+            "date": "2014-03-12 01:48:44 +0000",
+            "comment": "add an async httpclient more configuration No need to build so many Cube instances"
+        },
+        {
+            "c_hash": "50b4afac",
+            "date": "2014-03-12 06:52:12 +0000",
+            "comment": "logging a warning when using cassandara on client side for perf + processing collector cassandra stores to avoid future issues"
+        },
+        {
+            "c_hash": "4737807a",
+            "date": "2014-03-12 13:20:27 +0000",
+            "comment": "this has been done"
+        },
+        {
+            "c_hash": "f28d125b",
+            "date": "2014-03-17 13:46:33 +0000",
+            "comment": "fix reading int and long values from Cassandra"
+        },
+        {
+            "c_hash": "f743202b",
+            "date": "2014-03-17 13:46:52 +0000",
+            "comment": "start working on path tracking cassandra data retrieve"
+        },
+        {
+            "c_hash": "128d727e",
+            "date": "2014-03-17 13:47:03 +0000",
+            "comment": "fix retrieving all path track entries for a trackingId"
+        },
+        {
+            "c_hash": "c9155789",
+            "date": "2014-03-17 13:47:11 +0000",
+            "comment": "fix possible insertion issue on non embeded cassandra"
+        },
+        {
+            "c_hash": "f4c36806",
+            "date": "2014-03-17 13:47:17 +0000",
+            "comment": "exclude servlet-api: seriously this must be provided!!!"
+        },
+        {
+            "c_hash": "d5d78f45",
+            "date": "2014-03-18 00:29:43 +0000",
+            "comment": "start working on the pathtracking detail screen"
+        },
+        {
+            "c_hash": "5d4fdd4d",
+            "date": "2014-03-18 00:29:51 +0000",
+            "comment": "oups missed to add this file"
+        },
+        {
+            "c_hash": "3a942659",
+            "date": "2014-03-18 00:29:57 +0000",
+            "comment": "apply formating on this code, yup I only have a 15' screen size :-)"
+        },
+        {
+            "c_hash": "f782806e",
+            "date": "2014-03-18 00:30:20 +0000",
+            "comment": "add a bean to have information on Path tracking"
+        },
+        {
+            "c_hash": "20c74ad9",
+            "date": "2014-03-18 00:30:28 +0000",
+            "comment": "fix date display"
+        },
+        {
+            "c_hash": "48d66040",
+            "date": "2014-03-18 06:35:33 +0000",
+            "comment": "use last surefire version and fix compilation: my bad!!!!"
+        },
+        {
+            "c_hash": "4cc2e22e",
+            "date": "2014-03-19 06:44:49 +0000",
+            "comment": "SIRONA-32 asm 5"
+        },
+        {
+            "c_hash": "0f8825fd",
+            "date": "2014-03-19 18:20:29 +0000",
+            "comment": "SIRONA-32 skip interface (short term fix for java 8, will be enhanced soon)"
+        },
+        {
+            "c_hash": "7bb696f3",
+            "date": "2014-03-20 18:52:00 +0000",
+            "comment": "adding a comment (todo) for java 8"
+        },
+        {
+            "c_hash": "737c855a",
+            "date": "2014-03-22 14:46:37 +0000",
+            "comment": "SIRONA-33 rewrite javaagent with real in place interception"
+        },
+        {
+            "c_hash": "98256dee",
+            "date": "2014-03-22 14:51:00 +0000",
+            "comment": "adding tostring in stats"
+        },
+        {
+            "c_hash": "cca60fb1",
+            "date": "2014-03-22 15:11:41 +0000",
+            "comment": "inner class instead of inline one"
+        },
+        {
+            "c_hash": "2025b420",
+            "date": "2014-03-22 15:23:40 +0000",
+            "comment": "debug only nstrumented classes + syst prop to activate debugging without using javaagent param"
+        },
+        {
+            "c_hash": "3b2e2b1d",
+            "date": "2014-03-23 04:32:54 +0000",
+            "comment": "make this accessible externally"
+        },
+        {
+            "c_hash": "8f001d11",
+            "date": "2014-03-23 16:21:23 +0000",
+            "comment": "adding few more tests"
+        },
+        {
+            "c_hash": "d1b1f8b4",
+            "date": "2014-03-23 16:43:23 +0000",
+            "comment": "asm 5.0.1"
+        },
+        {
+            "c_hash": "8860faad",
+            "date": "2014-03-23 16:50:00 +0000",
+            "comment": "formatting + tccl first"
+        },
+        {
+            "c_hash": "2fa24685",
+            "date": "2014-03-23 17:08:54 +0000",
+            "comment": "wrong classloader impl, fixing reloading"
+        },
+        {
+            "c_hash": "1d346922",
+            "date": "2014-03-23 17:16:39 +0000",
+            "comment": "extracting sironaclassloader"
+        },
+        {
+            "c_hash": "698b05a6",
+            "date": "2014-03-23 17:25:16 +0000",
+            "comment": "logging debug is activated in agent"
+        },
+        {
+            "c_hash": "e0b6bed1",
+            "date": "2014-03-23 17:58:37 +0000",
+            "comment": "error keys shouldn't be the full stacktrace"
+        },
+        {
+            "c_hash": "801aefc4",
+            "date": "2014-03-24 06:17:13 +0000",
+            "comment": "ok error was due to eager visit of label which was wrongly generating frames. Thanks Matt for your weaver ;)"
+        },
+        {
+            "c_hash": "71110cab",
+            "date": "2014-03-28 01:06:24 +0000",
+            "comment": "system.out at least className and exception message"
+        },
+        {
+            "c_hash": "6028002a",
+            "date": "2014-03-28 01:28:39 +0000",
+            "comment": "simply catch Throwable to avoid class loading issues"
+        },
+        {
+            "c_hash": "33fba689",
+            "date": "2014-03-28 05:15:05 +0000",
+            "comment": "thread count should be configurable"
+        },
+        {
+            "c_hash": "e9148ac9",
+            "date": "2014-03-28 05:28:27 +0000",
+            "comment": "fix connectionTimeout configuration for async"
+        },
+        {
+            "c_hash": "c8f24189",
+            "date": "2014-03-28 06:08:04 +0000",
+            "comment": "only one execute call when receiving collection of datas"
+        },
+        {
+            "c_hash": "a53ae3ce",
+            "date": "2014-03-28 06:08:16 +0000",
+            "comment": "possible to record pathtracking event as async in cassandra, add multiple consumers for disruptor"
+        },
+        {
+            "c_hash": "1fcf3386",
+            "date": "2014-03-28 06:18:03 +0000",
+            "comment": "numberOfConsumers must be configurable"
+        },
+        {
+            "c_hash": "fb598721",
+            "date": "2014-03-29 18:30:17 +0000",
+            "comment": "excluding jdk package (java 8) in jvm predicate"
+        },
+        {
+            "c_hash": "c8da7e7d",
+            "date": "2014-04-06 11:11:43 +0000",
+            "comment": "SIRONA-35 ignoring counter and role columns in csv format since they are forced as first"
+        },
+        {
+            "c_hash": "0561bfd3",
+            "date": "2014-04-06 12:04:12 +0000",
+            "comment": "getting rid of velocity-tools"
+        },
+        {
+            "c_hash": "411c2185",
+            "date": "2014-04-15 04:27:04 +0000",
+            "comment": "use disruptor in collector for path tracking yup faster and avoid waiting for response in agent as we do not care :-)"
+        },
+        {
+            "c_hash": "d9ff03be",
+            "date": "2014-04-15 04:27:12 +0000",
+            "comment": "shutdown disruptor"
+        },
+        {
+            "c_hash": "e621704e",
+            "date": "2014-04-15 04:27:20 +0000",
+            "comment": "fix FIXME :-) make some configuration values really configurable"
+        },
+        {
+            "c_hash": "f32f6adc",
+            "date": "2014-04-15 12:38:38 +0000",
+            "comment": "add a cube sender for path tracking based on async http client"
+        },
+        {
+            "c_hash": "4c37691b",
+            "date": "2014-04-15 12:41:57 +0000",
+            "comment": "ouppss my bad"
+        },
+        {
+            "c_hash": "2f779ee5",
+            "date": "2014-05-29 00:08:25 +0000",
+            "comment": "maven-scm-publish-plugin 1.1"
+        },
+        {
+            "c_hash": "61a1b638",
+            "date": "2014-05-29 00:10:06 +0000",
+            "comment": "release plugin 2.5"
+        },
+        {
+            "c_hash": "b8dc3490",
+            "date": "2014-05-29 01:06:22 +0000",
+            "comment": "[maven-release-plugin] prepare release sirona-0.2-incubating"
+        },
+        {
+            "c_hash": "644c76ab",
+            "date": "2014-05-29 01:06:43 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "58b019f6",
+            "date": "2014-06-02 16:51:31 +0000",
+            "comment": "SIRONA-38 LimitedInMemoryCounterDataStore to be able to remove not used counters"
+        },
+        {
+            "c_hash": "22e02006",
+            "date": "2014-06-02 16:52:32 +0000",
+            "comment": "typo when alt+tab, sorry"
+        },
+        {
+            "c_hash": "e4e9fe74",
+            "date": "2014-06-27 13:02:59 +0000",
+            "comment": "add an abstract class for path tracking storage to avoid breaking compat in the future"
+        },
+        {
+            "c_hash": "1b4d7357",
+            "date": "2014-07-11 01:53:27 +0000",
+            "comment": "starting new directories tree"
+        },
+        {
+            "c_hash": "b98ba15d",
+            "date": "2014-07-11 01:53:43 +0000",
+            "comment": "continue new directory structure with the build still working"
+        },
+        {
+            "c_hash": "34adc588",
+            "date": "2014-07-11 01:53:51 +0000",
+            "comment": "temporary to have the build still working"
+        },
+        {
+            "c_hash": "8e0189ff",
+            "date": "2014-07-11 04:11:04 +0000",
+            "comment": "fix artifactId"
+        },
+        {
+            "c_hash": "d3b03d4c",
+            "date": "2014-07-11 04:13:07 +0000",
+            "comment": "add svn:ignore"
+        },
+        {
+            "c_hash": "3038e82d",
+            "date": "2014-07-15 06:40:50 +0000",
+            "comment": "pull request #1 https://github.com/apache/sirona/pull/1"
+        },
+        {
+            "c_hash": "5e0dd15d",
+            "date": "2014-07-18 07:05:53 +0000",
+            "comment": "better use of dependencyManagement"
+        },
+        {
+            "c_hash": "c35fd856",
+            "date": "2014-07-24 23:30:52 +0000",
+            "comment": "https://github.com/apache/sirona/pull/2 Added .classpath, .settings/ and .project eclipse-related files to .gitignore"
+        },
+        {
+            "c_hash": "2b12f5ef",
+            "date": "2014-08-06 12:22:18 +0000",
+            "comment": "start implementing jaxrs"
+        },
+        {
+            "c_hash": "daf8622e",
+            "date": "2014-08-06 12:22:30 +0000",
+            "comment": "start introducing jaxrs dependency"
+        },
+        {
+            "c_hash": "d6093973",
+            "date": "2014-08-06 12:22:38 +0000",
+            "comment": "add cxf spring configuration"
+        },
+        {
+            "c_hash": "889ee517",
+            "date": "2014-08-06 12:22:49 +0000",
+            "comment": "servlet 3.0 and use web fragments"
+        },
+        {
+            "c_hash": "9c0bd699",
+            "date": "2014-08-06 12:23:06 +0000",
+            "comment": "fixing web-fragment.xml configuration"
+        },
+        {
+            "c_hash": "801e5472",
+            "date": "2014-08-06 12:24:29 +0000",
+            "comment": "introduce sb admin part"
+        },
+        {
+            "c_hash": "a12b91f1",
+            "date": "2014-08-06 12:24:43 +0000",
+            "comment": "cleanup non used file"
+        },
+        {
+            "c_hash": "a7f8ce40",
+            "date": "2014-08-06 12:25:34 +0000",
+            "comment": "adding structure for angular with requirejs"
+        },
+        {
+            "c_hash": "c048f451",
+            "date": "2014-08-06 12:25:53 +0000",
+            "comment": "adding hack to be able to develop the UI without having dependency this is really a pain this decoupling this."
+        },
+        {
+            "c_hash": "39bf76f9",
+            "date": "2014-08-06 12:26:04 +0000",
+            "comment": "start with jvm report"
+        },
+        {
+            "c_hash": "2c3e412c",
+            "date": "2014-08-06 12:26:17 +0000",
+            "comment": "the reporting ui web.xml must be empty && fix missing license header"
+        },
+        {
+            "c_hash": "cf2c85fc",
+            "date": "2014-08-06 12:26:30 +0000",
+            "comment": "fix rat check"
+        },
+        {
+            "c_hash": "3f0a4b26",
+            "date": "2014-08-06 12:26:55 +0000",
+            "comment": "fix dependencies"
+        },
+        {
+            "c_hash": "21010d68",
+            "date": "2014-08-06 12:27:08 +0000",
+            "comment": "start cpu"
+        },
+        {
+            "c_hash": "f6c8cdb6",
+            "date": "2014-08-06 12:27:23 +0000",
+            "comment": "add versioning for js files"
+        },
+        {
+            "c_hash": "c822a619",
+            "date": "2014-08-06 12:27:35 +0000",
+            "comment": "versioning for css files as well"
+        },
+        {
+            "c_hash": "bd237fc2",
+            "date": "2014-08-06 12:27:44 +0000",
+            "comment": "cleanup display"
+        },
+        {
+            "c_hash": "d6da6675",
+            "date": "2014-08-06 12:27:56 +0000",
+            "comment": "add memory"
+        },
+        {
+            "c_hash": "d9c17f8d",
+            "date": "2014-08-07 11:17:39 +0000",
+            "comment": "rat fix"
+        },
+        {
+            "c_hash": "7574b6df",
+            "date": "2014-08-08 13:16:44 +0000",
+            "comment": "more data in jvm report"
+        },
+        {
+            "c_hash": "f882b728",
+            "date": "2014-08-08 13:16:50 +0000",
+            "comment": "improve rendering"
+        },
+        {
+            "c_hash": "0c5eed73",
+            "date": "2014-08-08 13:16:58 +0000",
+            "comment": "add spinner during loading time"
+        },
+        {
+            "c_hash": "1362ad43",
+            "date": "2014-08-08 13:17:06 +0000",
+            "comment": "move jvm controllers to a separate js file"
+        },
+        {
+            "c_hash": "d4e27ea8",
+            "date": "2014-08-08 13:17:14 +0000",
+            "comment": "add environment infos"
+        },
+        {
+            "c_hash": "5cf0981c",
+            "date": "2014-08-08 13:17:23 +0000",
+            "comment": "better with adding the file"
+        },
+        {
+            "c_hash": "c9f10068",
+            "date": "2014-08-08 13:17:37 +0000",
+            "comment": "remove @author"
+        },
+        {
+            "c_hash": "312f2d2b",
+            "date": "2014-08-19 06:08:02 +0000",
+            "comment": "datetimepicker"
+        },
+        {
+            "c_hash": "aa82b077",
+            "date": "2014-08-19 06:08:09 +0000",
+            "comment": "configure tomee plugin"
+        },
+        {
+            "c_hash": "ae70d104",
+            "date": "2014-08-19 06:08:18 +0000",
+            "comment": "fix layout"
+        },
+        {
+            "c_hash": "a6decf6c",
+            "date": "2014-08-19 06:08:25 +0000",
+            "comment": "fix label"
+        },
+        {
+            "c_hash": "7b7ba495",
+            "date": "2014-08-19 06:08:42 +0000",
+            "comment": "use datetimepicker finally to be able to select time as well"
+        },
+        {
+            "c_hash": "c3489880",
+            "date": "2014-08-19 06:08:51 +0000",
+            "comment": "fix ui for start/end date"
+        },
+        {
+            "c_hash": "877f0716",
+            "date": "2014-08-19 06:08:59 +0000",
+            "comment": "fix update graphs"
+        },
+        {
+            "c_hash": "8d8e625b",
+            "date": "2014-08-19 06:09:07 +0000",
+            "comment": "fix x date label"
+        },
+        {
+            "c_hash": "6851d66f",
+            "date": "2014-08-19 23:48:43 +0000",
+            "comment": "add missing license headers"
+        },
+        {
+            "c_hash": "80766c1d",
+            "date": "2014-08-19 23:48:47 +0000",
+            "comment": "more rat exclude"
+        },
+        {
+            "c_hash": "e7e96216",
+            "date": "2014-08-20 05:54:27 +0000",
+            "comment": "finish thread detail display"
+        },
+        {
+            "c_hash": "b1402aa8",
+            "date": "2014-08-22 07:06:08 +0000",
+            "comment": "start structure for counters report"
+        },
+        {
+            "c_hash": "068c2463",
+            "date": "2014-08-22 07:06:30 +0000",
+            "comment": "start structure for counters report"
+        },
+        {
+            "c_hash": "e12e8efd",
+            "date": "2014-08-22 07:06:37 +0000",
+            "comment": "upgrade some deps"
+        },
+        {
+            "c_hash": "1f55479b",
+            "date": "2014-08-22 07:06:42 +0000",
+            "comment": "fix rat configuration"
+        },
+        {
+            "c_hash": "6897e433",
+            "date": "2014-08-22 07:06:52 +0000",
+            "comment": "counters grid start working"
+        },
+        {
+            "c_hash": "7ebbbc34",
+            "date": "2014-08-22 07:07:06 +0000",
+            "comment": "fix display"
+        },
+        {
+            "c_hash": "107cc9af",
+            "date": "2014-08-22 07:07:15 +0000",
+            "comment": "csv export and paging"
+        },
+        {
+            "c_hash": "43de2dd7",
+            "date": "2014-08-25 05:27:44 +0000",
+            "comment": "add conversion parameter"
+        },
+        {
+            "c_hash": "12305ac5",
+            "date": "2014-08-26 07:09:37 +0000",
+            "comment": "start structure for gauges"
+        },
+        {
+            "c_hash": "911bcce9",
+            "date": "2014-08-26 07:10:00 +0000",
+            "comment": "gauge details"
+        },
+        {
+            "c_hash": "6ea806cd",
+            "date": "2014-08-27 00:28:46 +0000",
+            "comment": "remove debug statement"
+        },
+        {
+            "c_hash": "34d73489",
+            "date": "2014-08-27 00:28:55 +0000",
+            "comment": "add date search for gauge detail graph"
+        },
+        {
+            "c_hash": "2452483a",
+            "date": "2014-08-27 00:29:02 +0000",
+            "comment": "disabled input text box when using datetimepicker"
+        },
+        {
+            "c_hash": "273d32bc",
+            "date": "2014-08-27 00:34:52 +0000",
+            "comment": "missing ASF license header"
+        },
+        {
+            "c_hash": "d0c15d5d",
+            "date": "2014-08-28 00:38:20 +0000",
+            "comment": "start status with rest api"
+        },
+        {
+            "c_hash": "18f468f8",
+            "date": "2014-08-28 00:38:30 +0000",
+            "comment": "this js file is a minified version so fix the name"
+        },
+        {
+            "c_hash": "4300fe06",
+            "date": "2014-08-28 00:38:45 +0000",
+            "comment": "add a status service"
+        },
+        {
+            "c_hash": "b1bcbd90",
+            "date": "2014-08-28 00:38:54 +0000",
+            "comment": "add comment"
+        },
+        {
+            "c_hash": "8174786d",
+            "date": "2014-09-01 12:25:17 +0000",
+            "comment": "start status pages"
+        },
+        {
+            "c_hash": "c60a4eaf",
+            "date": "2014-09-01 12:25:25 +0000",
+            "comment": "use a better naming"
+        },
+        {
+            "c_hash": "7a8e3e4b",
+            "date": "2014-09-01 12:25:32 +0000",
+            "comment": "fix services"
+        },
+        {
+            "c_hash": "f87cea04",
+            "date": "2014-09-02 04:54:41 +0000",
+            "comment": "improve status rendering"
+        },
+        {
+            "c_hash": "303db4e6",
+            "date": "2014-09-02 04:54:53 +0000",
+            "comment": "status display done"
+        },
+        {
+            "c_hash": "57ac436c",
+            "date": "2014-09-02 04:55:02 +0000",
+            "comment": "cleanup"
+        },
+        {
+            "c_hash": "069c6a1a",
+            "date": "2014-09-02 05:22:22 +0000",
+            "comment": "add missing license header"
+        },
+        {
+            "c_hash": "36871436",
+            "date": "2014-09-02 05:37:07 +0000",
+            "comment": "cleanup"
+        },
+        {
+            "c_hash": "d2d0a69c",
+            "date": "2014-09-05 09:23:34 +0000",
+            "comment": "start jmx part"
+        },
+        {
+            "c_hash": "5257c440",
+            "date": "2014-09-05 09:23:49 +0000",
+            "comment": "starting jmx tree"
+        },
+        {
+            "c_hash": "3ce387f5",
+            "date": "2014-09-05 09:24:00 +0000",
+            "comment": "fix tree display"
+        },
+        {
+            "c_hash": "d762350b",
+            "date": "2014-09-05 09:24:16 +0000",
+            "comment": "more work on jmx detail"
+        },
+        {
+            "c_hash": "280b7fdd",
+            "date": "2014-09-05 09:24:41 +0000",
+            "comment": "rename"
+        },
+        {
+            "c_hash": "ab5f9429",
+            "date": "2014-09-05 09:24:50 +0000",
+            "comment": "rename"
+        },
+        {
+            "c_hash": "92314d44",
+            "date": "2014-09-05 09:25:00 +0000",
+            "comment": "rename"
+        },
+        {
+            "c_hash": "a83513b8",
+            "date": "2014-09-05 09:25:19 +0000",
+            "comment": "refactor to not return jvm beans"
+        },
+        {
+            "c_hash": "067d5a38",
+            "date": "2014-09-05 09:25:27 +0000",
+            "comment": "fix rat"
+        },
+        {
+            "c_hash": "7dab1c43",
+            "date": "2014-09-08 02:50:05 +0000",
+            "comment": "display attributes and operations"
+        },
+        {
+            "c_hash": "96fb9b08",
+            "date": "2014-09-08 02:50:13 +0000",
+            "comment": "add type in placeholder"
+        },
+        {
+            "c_hash": "624d0f0c",
+            "date": "2014-09-08 02:50:33 +0000",
+            "comment": "jmx operation invocation"
+        },
+        {
+            "c_hash": "bee57081",
+            "date": "2014-09-09 02:12:42 +0000",
+            "comment": "missing license header"
+        },
+        {
+            "c_hash": "7db7f348",
+            "date": "2014-09-09 05:21:17 +0000",
+            "comment": "better display for result"
+        },
+        {
+            "c_hash": "881f008c",
+            "date": "2014-09-09 05:21:30 +0000",
+            "comment": "FIXME fixed :-)"
+        },
+        {
+            "c_hash": "9578a450",
+            "date": "2014-09-09 06:42:40 +0000",
+            "comment": "jta part"
+        },
+        {
+            "c_hash": "20edfc0d",
+            "date": "2014-09-09 06:42:55 +0000",
+            "comment": "better with adding files"
+        },
+        {
+            "c_hash": "ad3159e9",
+            "date": "2014-09-09 12:00:32 +0000",
+            "comment": "sessions report"
+        },
+        {
+            "c_hash": "2d37a588",
+            "date": "2014-09-09 12:00:41 +0000",
+            "comment": "license header"
+        },
+        {
+            "c_hash": "e2488f34",
+            "date": "2014-10-06 00:38:28 +0000",
+            "comment": "remove test part"
+        },
+        {
+            "c_hash": "2bca7425",
+            "date": "2014-10-15 10:43:55 +0000",
+            "comment": "use angular 1.3.0"
+        },
+        {
+            "c_hash": "c049233a",
+            "date": "2014-11-27 09:42:13 +0000",
+            "comment": "let our javaagent runner taking sirona from classpath"
+        },
+        {
+            "c_hash": "dc4d7eda",
+            "date": "2014-11-27 10:03:23 +0000",
+            "comment": "allow javaagent runner to not remove target/classes"
+        },
+        {
+            "c_hash": "91d3baa0",
+            "date": "2014-11-27 10:18:34 +0000",
+            "comment": "using file.Sep for windows"
+        },
+        {
+            "c_hash": "01ac7463",
+            "date": "2014-11-27 10:37:54 +0000",
+            "comment": "adding @Before/@AfterFork"
+        },
+        {
+            "c_hash": "bbdd9f42",
+            "date": "2014-11-27 14:32:57 +0000",
+            "comment": "finer config for javaagent runner + forcing fallback classloader for Configuration + upgrading asm + using system classloader for libs and not bootstrap one (to validate)"
+        },
+        {
+            "c_hash": "3343504c",
+            "date": "2014-11-27 14:37:02 +0000",
+            "comment": "don't package configuration otherwise users inherit from it"
+        },
+        {
+            "c_hash": "be2aa104",
+            "date": "2014-11-27 16:00:37 +0000",
+            "comment": "SIRONA-41 add parameters to javaagent keys"
+        }
+    ]
+}

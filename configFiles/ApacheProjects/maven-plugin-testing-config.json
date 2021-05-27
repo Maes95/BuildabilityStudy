@@ -1,0 +1,498 @@
+{
+    "project": "maven-plugin-testing",
+    "git_url": "https://github.com/apache/maven-plugin-testing.git",
+    "last_commit": "e5d700dc",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "bf68c68f",
+            "date": "2008-03-11 21:30:44 +0000",
+            "comment": "o added svn structure"
+        },
+        {
+            "c_hash": "c28349d7",
+            "date": "2008-03-11 23:06:04 +0000",
+            "comment": "o moved maven-plugin-testing-harness, maven-plugin-testing-tools, maven-test-tools projects from shared see http://www.nabble.com/-proposal--Plugin-tools-and-shared-reorganization-td15916254s177.html"
+        },
+        {
+            "c_hash": "4cca3c20",
+            "date": "2008-03-11 23:22:54 +0000",
+            "comment": "o first add due to r636142"
+        },
+        {
+            "c_hash": "525f474a",
+            "date": "2008-03-11 23:24:40 +0000",
+            "comment": "o using parent pom due to r636145 o improved readingness o updated scm url"
+        },
+        {
+            "c_hash": "f3a14ac8",
+            "date": "2008-03-11 23:26:28 +0000",
+            "comment": "o ignored target and IDE files"
+        },
+        {
+            "c_hash": "0d8c2d41",
+            "date": "2008-03-11 23:27:04 +0000",
+            "comment": "o aligned version to 1.2-SNAPSHOT"
+        },
+        {
+            "c_hash": "068c124d",
+            "date": "2008-03-14 19:45:37 +0000",
+            "comment": "o Added svn:eol-style=native"
+        },
+        {
+            "c_hash": "31c105de",
+            "date": "2008-03-14 19:46:27 +0000",
+            "comment": "o Removed svn:executable"
+        },
+        {
+            "c_hash": "314df0ea",
+            "date": "2008-03-18 11:39:00 +0000",
+            "comment": "o Fixed svn:keywords"
+        },
+        {
+            "c_hash": "2540e4b3",
+            "date": "2008-03-24 11:04:26 +0000",
+            "comment": "o Added bin to svn:ignore"
+        },
+        {
+            "c_hash": "388bcb92",
+            "date": "2008-04-03 22:53:54 +0000",
+            "comment": "[MPLUGINTESTING-1] Add convenience methods to MavenProjectStub to easily populate model from test resource"
+        },
+        {
+            "c_hash": "241f13e2",
+            "date": "2008-04-25 22:26:20 +0000",
+            "comment": "o Fixed javadoc"
+        },
+        {
+            "c_hash": "e65483fa",
+            "date": "2008-04-27 12:29:52 +0000",
+            "comment": "o using Jira MPLUGINTESTING due to MPA-110"
+        },
+        {
+            "c_hash": "79548049",
+            "date": "2008-05-14 18:24:09 +0000",
+            "comment": "[MPLUGINTESTING-5] Respect file encoding of POMs"
+        },
+        {
+            "c_hash": "a2bb9904",
+            "date": "2008-06-18 15:46:22 +0000",
+            "comment": "Applying patch to make the testing harness compatible with new plexus classes used in 2.1"
+        },
+        {
+            "c_hash": "9d7d87d7",
+            "date": "2008-07-16 00:16:13 +0000",
+            "comment": "o fixed javadoc o push license header in the correct way"
+        },
+        {
+            "c_hash": "69b16061",
+            "date": "2008-07-16 00:18:20 +0000",
+            "comment": "o removed unused package"
+        },
+        {
+            "c_hash": "8af868d9",
+            "date": "2008-07-16 00:29:56 +0000",
+            "comment": "o added a minimal javadoc o push license header in the correct way"
+        },
+        {
+            "c_hash": "e6af350c",
+            "date": "2008-07-16 00:53:29 +0000",
+            "comment": "o upgraded to some latest plugins o fixed stagingSiteURL"
+        },
+        {
+            "c_hash": "09cd69ed",
+            "date": "2008-07-16 00:58:32 +0000",
+            "comment": "o provided minimalist site.xml and apt files o using <menu/> tag in site.xml"
+        },
+        {
+            "c_hash": "57c69927",
+            "date": "2008-07-18 13:02:03 +0000",
+            "comment": "[maven-release-plugin] prepare release maven-plugin-testing-1.2"
+        },
+        {
+            "c_hash": "4bcb5b4c",
+            "date": "2008-07-18 13:02:17 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "cbe286ae",
+            "date": "2008-07-18 15:13:08 +0000",
+            "comment": "o fixed some minor checkstyle errors"
+        },
+        {
+            "c_hash": "d274cdbd",
+            "date": "2008-08-06 21:53:33 +0000",
+            "comment": "Check that maven-parent 9 works with all projects"
+        },
+        {
+            "c_hash": "e8f1f97c",
+            "date": "2008-08-10 21:08:37 +0000",
+            "comment": "o Updated SCM web url"
+        },
+        {
+            "c_hash": "9dd08932",
+            "date": "2008-08-27 22:52:11 +0000",
+            "comment": "o fixed groupId in the documentation"
+        },
+        {
+            "c_hash": "18f79fe7",
+            "date": "2008-08-28 16:34:11 +0000",
+            "comment": "o Changed file encoding to UTF-8"
+        },
+        {
+            "c_hash": "cc0922f6",
+            "date": "2008-09-12 09:13:29 +0000",
+            "comment": "o Inherited from maven-parent:9"
+        },
+        {
+            "c_hash": "2e0360a2",
+            "date": "2008-09-12 09:30:54 +0000",
+            "comment": "o Polished site"
+        },
+        {
+            "c_hash": "b366d6d0",
+            "date": "2008-09-12 09:39:24 +0000",
+            "comment": "o Reordered POM"
+        },
+        {
+            "c_hash": "6f087035",
+            "date": "2008-12-23 16:17:32 +0000",
+            "comment": "o using latest parent"
+        },
+        {
+            "c_hash": "533be4b3",
+            "date": "2008-12-23 16:17:49 +0000",
+            "comment": "o using maven-stylus-skin snap due to r728944"
+        },
+        {
+            "c_hash": "20d521bb",
+            "date": "2008-12-29 12:01:20 +0000",
+            "comment": "o Put back breadcrumbs that were removed in r729025."
+        },
+        {
+            "c_hash": "de61d622",
+            "date": "2009-01-16 13:53:50 +0000",
+            "comment": "o bump to maven-stylus-skin:1.1"
+        },
+        {
+            "c_hash": "705fdc7a",
+            "date": "2009-02-14 01:19:22 +0000",
+            "comment": "use the new parent"
+        },
+        {
+            "c_hash": "2115422d",
+            "date": "2009-02-21 09:30:35 +0000",
+            "comment": "o Inherited from maven-parent:11"
+        },
+        {
+            "c_hash": "b9603348",
+            "date": "2009-02-28 13:08:14 +0000",
+            "comment": "o Used http://maven.apache.org/xsd/* for schema location"
+        },
+        {
+            "c_hash": "a7f084f4",
+            "date": "2009-05-21 15:41:22 +0000",
+            "comment": "[MPLUGINTESTING-9] BuildTool.executeMaven fails when local repository path contains spaces"
+        },
+        {
+            "c_hash": "bdb8ab27",
+            "date": "2009-06-16 20:57:22 +0000",
+            "comment": "ignore eclipse files"
+        },
+        {
+            "c_hash": "8e262575",
+            "date": "2009-06-16 21:08:22 +0000",
+            "comment": "delete bad commit"
+        },
+        {
+            "c_hash": "3674fd61",
+            "date": "2009-06-16 21:09:51 +0000",
+            "comment": "really ignore eclipse files :-)"
+        },
+        {
+            "c_hash": "1c22e4e7",
+            "date": "2011-03-26 21:40:19 +0000",
+            "comment": "[MPLUGINTESTING-18] fixed file handle leaks"
+        },
+        {
+            "c_hash": "2737998f",
+            "date": "2011-04-17 12:43:47 +0000",
+            "comment": "added .settings to svn:ignore"
+        },
+        {
+            "c_hash": "46aa8f41",
+            "date": "2011-05-15 20:16:44 +0000",
+            "comment": "Add ciManagement for Jenkins."
+        },
+        {
+            "c_hash": "10b8472d",
+            "date": "2011-11-25 20:42:32 +0000",
+            "comment": "basic .gitignore"
+        },
+        {
+            "c_hash": "1bc3d4be",
+            "date": "2011-11-25 20:42:45 +0000",
+            "comment": "upgrade to parent 21"
+        },
+        {
+            "c_hash": "0d3a2247",
+            "date": "2011-11-25 20:43:01 +0000",
+            "comment": "remove old surefire plugin version usage, upgrade to site plugin 3.0"
+        },
+        {
+            "c_hash": "0666f214",
+            "date": "2011-11-25 20:43:15 +0000",
+            "comment": "fix ci url"
+        },
+        {
+            "c_hash": "6afc41c2",
+            "date": "2011-11-25 20:43:27 +0000",
+            "comment": "fix expression warning with using project."
+        },
+        {
+            "c_hash": "fd2d5253",
+            "date": "2011-11-25 20:43:51 +0000",
+            "comment": "move plexus-utils declaration in top pom dptMngt"
+        },
+        {
+            "c_hash": "73ab3250",
+            "date": "2011-11-25 20:44:25 +0000",
+            "comment": "move version of maven artifact in deptMngt in top level pom"
+        },
+        {
+            "c_hash": "498b0b81",
+            "date": "2012-05-20 13:27:25 +0000",
+            "comment": "made mvn 3.x compatible code the new trunk"
+        },
+        {
+            "c_hash": "529c5337",
+            "date": "2012-05-20 14:31:57 +0000",
+            "comment": "ignore .idea"
+        },
+        {
+            "c_hash": "9525a242",
+            "date": "2012-05-20 14:32:04 +0000",
+            "comment": "fix scm urls"
+        },
+        {
+            "c_hash": "30c51272",
+            "date": "2012-05-20 14:32:12 +0000",
+            "comment": "last compiler javadoc plugin version"
+        },
+        {
+            "c_hash": "472b726b",
+            "date": "2012-05-20 14:43:25 +0000",
+            "comment": "added classical javadoc and source xref links"
+        },
+        {
+            "c_hash": "272a6149",
+            "date": "2012-05-20 14:48:44 +0000",
+            "comment": "added generics"
+        },
+        {
+            "c_hash": "0c16718a",
+            "date": "2012-05-20 14:52:12 +0000",
+            "comment": "added generics"
+        },
+        {
+            "c_hash": "5e0c1f1a",
+            "date": "2012-05-20 15:20:59 +0000",
+            "comment": "added generics"
+        },
+        {
+            "c_hash": "7155b42f",
+            "date": "2012-05-20 15:40:01 +0000",
+            "comment": "added a link to m-invoker-p (should add a back-link)"
+        },
+        {
+            "c_hash": "e33059b7",
+            "date": "2012-05-20 21:27:50 +0000",
+            "comment": "fixed links"
+        },
+        {
+            "c_hash": "174e13da",
+            "date": "2012-05-20 21:32:30 +0000",
+            "comment": "removed plugin configuration already inherited from parent"
+        },
+        {
+            "c_hash": "ed3dfc2e",
+            "date": "2012-05-23 02:42:46 +0000",
+            "comment": "added maven 2.x compatibility faq entry"
+        },
+        {
+            "c_hash": "3a97bfc6",
+            "date": "2012-05-23 03:16:04 +0000",
+            "comment": "fixed faq.fml markup"
+        },
+        {
+            "c_hash": "f8efc492",
+            "date": "2012-05-23 10:38:53 +0000",
+            "comment": "[maven-release-plugin] prepare release maven-plugin-testing-2.0"
+        },
+        {
+            "c_hash": "929589f4",
+            "date": "2012-05-23 10:39:04 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "764d12ff",
+            "date": "2012-06-02 04:41:19 +0000",
+            "comment": "minor improvements"
+        },
+        {
+            "c_hash": "befa2fc8",
+            "date": "2012-06-02 04:53:53 +0000",
+            "comment": "updated examples to use new plugin-tools' java annotations"
+        },
+        {
+            "c_hash": "892187b6",
+            "date": "2012-06-02 04:57:05 +0000",
+            "comment": "missing generics"
+        },
+        {
+            "c_hash": "f0d50b9f",
+            "date": "2012-06-02 05:26:01 +0000",
+            "comment": "more generics and Java 5 constructs"
+        },
+        {
+            "c_hash": "0c71844c",
+            "date": "2012-06-02 05:36:05 +0000",
+            "comment": "use generics"
+        },
+        {
+            "c_hash": "7c5a4c63",
+            "date": "2012-06-02 05:36:33 +0000",
+            "comment": "removed dead code"
+        },
+        {
+            "c_hash": "a4ce7f08",
+            "date": "2012-06-02 05:52:30 +0000",
+            "comment": "added @since info for new methods introduced in 2.0"
+        },
+        {
+            "c_hash": "3f995412",
+            "date": "2012-09-22 19:54:25 +0000",
+            "comment": "o Updated easymock to later version that works post jdk 1.5. Upped other deps too"
+        },
+        {
+            "c_hash": "4c4896ed",
+            "date": "2012-09-22 19:59:49 +0000",
+            "comment": "[maven-release-plugin] prepare release maven-plugin-testing-2.1"
+        },
+        {
+            "c_hash": "5c8d0768",
+            "date": "2012-09-22 20:00:04 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "9a6269bc",
+            "date": "2012-09-23 18:53:49 +0000",
+            "comment": "o Modified scope of all maven artifact."
+        },
+        {
+            "c_hash": "238a6cac",
+            "date": "2012-09-23 18:59:07 +0000",
+            "comment": "[maven-release-plugin] prepare release maven-plugin-testing-2.1"
+        },
+        {
+            "c_hash": "0af3f256",
+            "date": "2012-09-23 18:59:22 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "b8fbe7d9",
+            "date": "2012-10-09 20:10:04 +0000",
+            "comment": "o Updated to commons-io XmlReader"
+        },
+        {
+            "c_hash": "b45539f3",
+            "date": "2012-11-19 22:25:56 +0000",
+            "comment": "use last parent pom"
+        },
+        {
+            "c_hash": "a6ed670d",
+            "date": "2012-11-19 22:32:19 +0000",
+            "comment": "last compiler plugin 3.0 and site plugin 3.2"
+        },
+        {
+            "c_hash": "4f07b578",
+            "date": "2012-11-19 22:32:30 +0000",
+            "comment": "javadoc plugin 2.9"
+        },
+        {
+            "c_hash": "eb5ea268",
+            "date": "2013-06-19 12:21:52 +0000",
+            "comment": "Update to newest maven-parent and junit version."
+        },
+        {
+            "c_hash": "1056f601",
+            "date": "2013-06-19 12:22:24 +0000",
+            "comment": "Implement MojoRule, so MojoTestcases are not forced to extend AbstractMojoTestCase."
+        },
+        {
+            "c_hash": "79d12492",
+            "date": "2013-06-19 12:22:35 +0000",
+            "comment": "Update versions of compiler and site plugin."
+        },
+        {
+            "c_hash": "325d78c6",
+            "date": "2013-06-19 12:23:00 +0000",
+            "comment": "Update documentation."
+        },
+        {
+            "c_hash": "1b5c7db1",
+            "date": "2013-06-19 12:23:12 +0000",
+            "comment": "Update maven-project-info-reports-plugin for Maven 3.1 compatibility."
+        },
+        {
+            "c_hash": "4777d9b7",
+            "date": "2013-06-19 12:23:23 +0000",
+            "comment": "use last maven 3.0.5"
+        },
+        {
+            "c_hash": "53648204",
+            "date": "2013-06-19 12:23:35 +0000",
+            "comment": "add .java-version in .gitignore"
+        },
+        {
+            "c_hash": "3dd81ef7",
+            "date": "2013-06-19 12:53:13 +0000",
+            "comment": "remove inherited from parent"
+        },
+        {
+            "c_hash": "62a3e30f",
+            "date": "2013-06-19 12:53:24 +0000",
+            "comment": "configure site deployment"
+        },
+        {
+            "c_hash": "5776bc2e",
+            "date": "2013-07-23 11:49:59 +0000",
+            "comment": "o updating for maven 3.1.0 o updating to Eclipse Aether o using new facilities in the container"
+        },
+        {
+            "c_hash": "43b055fd",
+            "date": "2013-07-25 15:44:59 +0000",
+            "comment": "o bump to 3.0.0-SNAPSHOT to account for the major change in use of 3.1.0"
+        },
+        {
+            "c_hash": "e92a15e2",
+            "date": "2013-08-01 08:08:13 +0000",
+            "comment": "bump to 3.0-SNAPSHOT for all modules (child modules omitted in 1507022)"
+        },
+        {
+            "c_hash": "80f33d2a",
+            "date": "2013-10-11 16:24:09 +0000",
+            "comment": "Updating for Maven 3.1.1 and some fixes for the Maven Android Plugin"
+        },
+        {
+            "c_hash": "11161c6a",
+            "date": "2013-11-14 03:28:30 +0000",
+            "comment": "upgrade easy mock version see https://github.com/apache/maven-plugin-testing/pull/2"
+        },
+        {
+            "c_hash": "e5d700dc",
+            "date": "2013-11-18 14:50:50 +0000",
+            "comment": "Introduced AbstractMojoTestCase#addGuiceModules to allow guice injector customization"
+        }
+    ]
+}

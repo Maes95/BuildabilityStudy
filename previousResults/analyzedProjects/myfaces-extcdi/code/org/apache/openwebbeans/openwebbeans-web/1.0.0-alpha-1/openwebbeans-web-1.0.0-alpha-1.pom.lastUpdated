@@ -1,0 +1,7 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Jan 22 16:05:40 EST 2015
+http\://repository.jboss.com/maven2/.lastUpdated=1421960740542
+@legacy-http\://download.java.net/maven/1/.lastUpdated=1421960740543
+https\://repo.maven.apache.org/maven2/.lastUpdated=1421960740609
+http\://repository.jboss.com/maven2/.error=
+http\://download.java.net/maven/1/.error=Could not transfer artifact org.apache.openwebbeans\:openwebbeans-web\:pom\:1.0.0-alpha-1 from/to maven2-repository.dev.java.net (http\://download.java.net/maven/1/)\: No connector available to access repository maven2-repository.dev.java.net (http\://download.java.net/maven/1/) of type legacy using the available factories WagonRepositoryConnectorFactory

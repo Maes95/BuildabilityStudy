@@ -1,0 +1,8 @@
+commitID;commit-type;time-to-next-release;commit-message
+f3195771c7b4ec7d5e9bc107d63c73c72d7f47a1;BREAKING_FIX;145;Adding java trunk. git-svn-id: https://svn.apache.org/repos/asf/santuario/xml-security-java/trunk@1049506 13f79535-47bb-0310-9956-ffa450edef68
+d925f0bc019b5ee2ad568e175ff3d5a90157d4de;BREAKING_CHANGES;90;Moving streaming-xml-security java code over to Santuario git-svn-id: https://svn.apache.org/repos/asf/santuario/xml-security-java/trunk@1354401 13f79535-47bb-0310-9956-ffa450edef68
+fa831cc3c26ed6bbcb2ce5e7806e1af318f03397;BREAKING_FIX;90;Fixing build git-svn-id: https://svn.apache.org/repos/asf/santuario/xml-security-java/trunk@1354415 13f79535-47bb-0310-9956-ffa450edef68
+857e07976bad8ea5916356f10c0760d8222453f9;BREAKING_CHANGES;63;Added SecurityEvents for Decryption git-svn-id: https://svn.apache.org/repos/asf/santuario/xml-security-java/trunk@1364963 13f79535-47bb-0310-9956-ffa450edef68
+14a8b42916b99ddb749706bede0888d2efb785a5;BREAKING_FIX;63;Adding missing file from last commit git-svn-id: https://svn.apache.org/repos/asf/santuario/xml-security-java/trunk@1364964 13f79535-47bb-0310-9956-ffa450edef68
+1161dafd950a3c72373fddb59d7cd68b2b88ec2f;BREAKING_CHANGES;110;Add the concept of a "required" signature part. This is to allow the situation where a message part is only signed if it is present git-svn-id: https://svn.apache.org/repos/asf/santuario/xml-security-java/trunk@1499304 13f79535-47bb-0310-9956-ffa450edef68
+384da8c3c2e073f2de89d96d1d114db656076e81;BREAKING_FIX;110;Missing file from last commit git-svn-id: https://svn.apache.org/repos/asf/santuario/xml-security-java/trunk@1499305 13f79535-47bb-0310-9956-ffa450edef68

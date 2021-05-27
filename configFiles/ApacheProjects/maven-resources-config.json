@@ -1,0 +1,753 @@
+{
+    "project": "maven-resources",
+    "git_url": "https://github.com/apache/maven-resources.git",
+    "last_commit": "572d1b51",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "392edef5",
+            "date": "2006-11-19 20:23:18 +0000",
+            "comment": "o a module to store all the remote resource bundles that can be utilized by the remote resources plugin. this   one specifically deals with licensing goodies required by all apache projects."
+        },
+        {
+            "c_hash": "7e8c90ad",
+            "date": "2006-11-19 20:43:06 +0000",
+            "comment": "o adding a parent POM for remote resources bundles o using parent in the apache resources bundle"
+        },
+        {
+            "c_hash": "71665a88",
+            "date": "2006-11-19 22:41:20 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/maven/resources/trunk@476962 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "c638ed5a",
+            "date": "2006-11-19 22:42:13 +0000",
+            "comment": "o making upper case as per the rules ..."
+        },
+        {
+            "c_hash": "470e10eb",
+            "date": "2006-11-20 03:01:30 +0000",
+            "comment": "Moved resources into the META-INF directory."
+        },
+        {
+            "c_hash": "dc902d23",
+            "date": "2006-11-20 03:33:43 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/maven/resources/trunk@477021 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "21781640",
+            "date": "2006-11-28 19:40:24 +0000",
+            "comment": "o separating out the license heading into a separate resource bundle"
+        },
+        {
+            "c_hash": "488b39ee",
+            "date": "2006-11-28 19:43:07 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/maven/resources/trunk@480173 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "cfdfea48",
+            "date": "2006-11-28 19:58:00 +0000",
+            "comment": "o create the resource manifest inside each resource bundle"
+        },
+        {
+            "c_hash": "829a0ba4",
+            "date": "2006-11-28 20:05:34 +0000",
+            "comment": "o adding incubator disclaimer resource bundle"
+        },
+        {
+            "c_hash": "5ff1a9f9",
+            "date": "2006-11-29 00:05:33 +0000",
+            "comment": "o modified the notice file template and i think it will work in most cases provided we have a POM   with decent information."
+        },
+        {
+            "c_hash": "0963f573",
+            "date": "2006-11-29 23:57:49 +0000",
+            "comment": "o update with the header in the ASF doco"
+        },
+        {
+            "c_hash": "a95fab76",
+            "date": "2006-12-04 04:51:27 +0000",
+            "comment": "o addin scm information"
+        },
+        {
+            "c_hash": "9789417a",
+            "date": "2006-12-04 04:54:54 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-resource-bundles-1"
+        },
+        {
+            "c_hash": "141b1221",
+            "date": "2006-12-04 04:58:33 +0000",
+            "comment": "o reverting as there was lock and the release said no, no"
+        },
+        {
+            "c_hash": "5d0026cb",
+            "date": "2006-12-04 05:00:10 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-resource-bundles-1"
+        },
+        {
+            "c_hash": "fa214198",
+            "date": "2006-12-04 05:00:22 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "50a8488e",
+            "date": "2007-02-09 18:39:15 +0000",
+            "comment": "o merging dan kulp's changes"
+        },
+        {
+            "c_hash": "ed3295fc",
+            "date": "2007-02-14 23:47:43 +0000",
+            "comment": "o fixing notice template"
+        },
+        {
+            "c_hash": "fbe019b2",
+            "date": "2007-02-15 16:11:55 +0000",
+            "comment": "o fix for the notice template   Submitted by: Dan Kulp"
+        },
+        {
+            "c_hash": "09f661e3",
+            "date": "2007-02-15 16:51:53 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-jar-resource-bundle-1.1"
+        },
+        {
+            "c_hash": "50799334",
+            "date": "2007-02-15 16:52:05 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "e2f380f5",
+            "date": "2007-02-15 17:04:08 +0000",
+            "comment": "fixing formatting"
+        },
+        {
+            "c_hash": "b8a971c3",
+            "date": "2007-02-27 15:40:51 +0000",
+            "comment": "Merge changes from sandbox. (MRRESOURCES-12 included)"
+        },
+        {
+            "c_hash": "2f51b105",
+            "date": "2007-03-05 16:27:44 +0000",
+            "comment": "Updates to be able to use the new release tools"
+        },
+        {
+            "c_hash": "72c7422e",
+            "date": "2007-03-05 19:43:26 +0000",
+            "comment": "Add tagBase so tagging should work correctly"
+        },
+        {
+            "c_hash": "8f7e3c6c",
+            "date": "2007-03-05 20:04:19 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-resource-bundles-2"
+        },
+        {
+            "c_hash": "1da6459f",
+            "date": "2007-03-05 20:04:29 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "299f6723",
+            "date": "2007-10-18 16:06:21 +0000",
+            "comment": "[MRRESOURCES-24] use projectsSortedByOrganization from context to make a more readable NOTICE"
+        },
+        {
+            "c_hash": "af437a34",
+            "date": "2007-10-18 16:41:36 +0000",
+            "comment": "Add addVersion property"
+        },
+        {
+            "c_hash": "d8526d51",
+            "date": "2007-10-18 17:32:38 +0000",
+            "comment": "Update for artifact adding, put license on new line"
+        },
+        {
+            "c_hash": "2cc13d6c",
+            "date": "2007-10-18 18:52:33 +0000",
+            "comment": "Use released parent"
+        },
+        {
+            "c_hash": "80111697",
+            "date": "2007-10-18 18:53:04 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-jar-resource-bundle-1.3"
+        },
+        {
+            "c_hash": "3d2a4ff2",
+            "date": "2007-10-18 18:53:10 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "a1086c6b",
+            "date": "2007-12-14 19:28:20 +0000",
+            "comment": "o Fix typo."
+        },
+        {
+            "c_hash": "e377698d",
+            "date": "2007-12-16 18:56:23 +0000",
+            "comment": "o Set EOL style to native."
+        },
+        {
+            "c_hash": "5abfdbc9",
+            "date": "2008-03-14 01:26:41 +0000",
+            "comment": "[MRRESOURCES-32] Patch from David Jencks applied"
+        },
+        {
+            "c_hash": "fd3da2e1",
+            "date": "2008-03-14 01:47:09 +0000",
+            "comment": "Remove explanation comment"
+        },
+        {
+            "c_hash": "bf5add9a",
+            "date": "2008-03-15 01:39:15 +0000",
+            "comment": "Add ability to change the header"
+        },
+        {
+            "c_hash": "90d92fd5",
+            "date": "2008-03-15 02:29:41 +0000",
+            "comment": "More fixes to allow a better header."
+        },
+        {
+            "c_hash": "eaddbcfc",
+            "date": "2008-03-17 14:57:43 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-jar-resource-bundle-1.4"
+        },
+        {
+            "c_hash": "5ee73f20",
+            "date": "2008-03-17 14:57:56 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "00c9bfdd",
+            "date": "2008-03-18 11:10:09 +0000",
+            "comment": "o fixed svn keywords o fixed svn call"
+        },
+        {
+            "c_hash": "702e366d",
+            "date": "2008-12-23 15:10:36 +0000",
+            "comment": "o added license header o using latest parent o ordering pom o using relativePath for the parent"
+        },
+        {
+            "c_hash": "649dae8a",
+            "date": "2009-02-14 02:06:05 +0000",
+            "comment": "new parent"
+        },
+        {
+            "c_hash": "fbf67999",
+            "date": "2009-05-18 01:15:18 +0000",
+            "comment": "add new component to hold the asf specific source descriptor"
+        },
+        {
+            "c_hash": "e8d34aa0",
+            "date": "2009-06-09 15:10:03 +0000",
+            "comment": "o ignore target"
+        },
+        {
+            "c_hash": "9d89ec73",
+            "date": "2009-06-11 02:00:15 +0000",
+            "comment": "updates to the source release descriptor"
+        },
+        {
+            "c_hash": "780f06ef",
+            "date": "2009-08-07 20:11:30 +0000",
+            "comment": "Consolidate the various excludes for files used by major IDEs, the release plugin, and other files that are generally excluded by SVN."
+        },
+        {
+            "c_hash": "acab1b25",
+            "date": "2009-08-07 20:19:52 +0000",
+            "comment": "Adding integration tests."
+        },
+        {
+            "c_hash": "4f489887",
+            "date": "2009-08-12 15:52:07 +0000",
+            "comment": "removing project files."
+        },
+        {
+            "c_hash": "61ed6943",
+            "date": "2009-08-12 21:21:14 +0000",
+            "comment": "Fixing IT names, and removing .diff, .patch, .bak, .log file exclusions"
+        },
+        {
+            "c_hash": "dd16465d",
+            "date": "2009-08-16 12:26:58 +0000",
+            "comment": "o Aded IDE files to svn:ignore"
+        },
+        {
+            "c_hash": "e08d5c16",
+            "date": "2009-08-17 19:18:24 +0000",
+            "comment": "moving to maven-parent 12 and adding apache-source-release-assembly-descriptor to prepare for release vote for this POM."
+        },
+        {
+            "c_hash": "da89f22f",
+            "date": "2009-08-17 19:18:48 +0000",
+            "comment": "Prepare for release deployment"
+        },
+        {
+            "c_hash": "90328f42",
+            "date": "2009-08-17 19:34:42 +0000",
+            "comment": "Rolling back until I can get permissions for deployment straightened out enough to stage a release and call a vote."
+        },
+        {
+            "c_hash": "8874a312",
+            "date": "2009-08-17 21:43:22 +0000",
+            "comment": "updating groupId to get away from polluting org.apache groupId, and leave it to listing TLPs"
+        },
+        {
+            "c_hash": "7a80af7d",
+            "date": "2009-08-17 21:44:05 +0000",
+            "comment": "getting ready to stage this parent POM for release"
+        },
+        {
+            "c_hash": "4c432256",
+            "date": "2009-08-17 21:48:44 +0000",
+            "comment": "bumping parent POM to next release snapshot, along with all unreleased module projects EXCEPT apache-source-release-assembly-descriptor, which is set to use the staged parent POM since it's next up for a release."
+        },
+        {
+            "c_hash": "e8aa707d",
+            "date": "2009-08-17 21:51:35 +0000",
+            "comment": "moving IT dependencies to profile since they're still in snapshots. This is consistent with the way maven core's ITs are run."
+        },
+        {
+            "c_hash": "9bcdb69e",
+            "date": "2009-08-17 21:56:13 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-source-release-assembly-descriptor-1.0"
+        },
+        {
+            "c_hash": "3c91485f",
+            "date": "2009-08-17 21:56:23 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "5b2f574c",
+            "date": "2009-09-11 16:06:00 +0000",
+            "comment": "[MRRESOURCES-31] Create an alternative jar-resource bundle that uses .txt file extensions for generated resources instead of their no-extension counterparts in the regular apache-jar-resource-bundle artifact."
+        },
+        {
+            "c_hash": "6fbe6ab5",
+            "date": "2009-10-18 11:24:04 +0000",
+            "comment": "o Set svn:eol-style=native"
+        },
+        {
+            "c_hash": "ef0142f3",
+            "date": "2009-10-18 12:08:33 +0000",
+            "comment": "o Fixed ITs"
+        },
+        {
+            "c_hash": "f9dec16d",
+            "date": "2009-10-18 13:43:36 +0000",
+            "comment": "o Fixed ITs"
+        },
+        {
+            "c_hash": "dad3dbaf",
+            "date": "2009-10-20 21:26:49 +0000",
+            "comment": "o Fixed assembly descriptor to exclude paths like \"target/test-classes/project/src/pom.xml\""
+        },
+        {
+            "c_hash": "12729d3b",
+            "date": "2009-10-25 13:40:52 +0000",
+            "comment": "o Changed version to 1.0.1-SNAPSHOT"
+        },
+        {
+            "c_hash": "b388a156",
+            "date": "2009-10-25 14:02:49 +0000",
+            "comment": "o Added source-release distro"
+        },
+        {
+            "c_hash": "dea38d81",
+            "date": "2009-10-25 14:16:55 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-source-release-assembly-descriptor-1.0.1"
+        },
+        {
+            "c_hash": "f6efc918",
+            "date": "2009-10-25 14:17:30 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "45ce543e",
+            "date": "2009-11-07 20:36:10 +0000",
+            "comment": "o Added license header"
+        },
+        {
+            "c_hash": "c65c65e0",
+            "date": "2009-11-07 23:49:59 +0000",
+            "comment": "o Fixed source-release descriptor to only exclude IDE files etc. if they are not part of the project source tree"
+        },
+        {
+            "c_hash": "8b6a29e2",
+            "date": "2009-11-08 13:29:32 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-source-release-assembly-descriptor-1.0.2"
+        },
+        {
+            "c_hash": "56e02a89",
+            "date": "2009-11-08 13:30:27 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "9fcd2ac0",
+            "date": "2009-12-26 11:01:01 +0000",
+            "comment": "o Updated to maven-assembly-plugin:2.2-beta-5"
+        },
+        {
+            "c_hash": "4ef1114f",
+            "date": "2010-11-23 14:35:06 +0000",
+            "comment": "Adding a zip and tar source assembly, some apache projects need zips and tars for source distributions"
+        },
+        {
+            "c_hash": "c3361063",
+            "date": "2010-11-23 15:11:17 +0000",
+            "comment": "added missing svn properties"
+        },
+        {
+            "c_hash": "5d8fbfd1",
+            "date": "2010-11-23 17:24:21 +0000",
+            "comment": "Added tests for zip and tar assembly descriptor.  Needed to update to 2.2 of the assembly plugin in order to get tests working."
+        },
+        {
+            "c_hash": "bc1bbb9d",
+            "date": "2010-11-23 17:41:54 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-source-release-assembly-descriptor-1.0.3"
+        },
+        {
+            "c_hash": "b8d8d306",
+            "date": "2010-11-23 17:42:04 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "fdf43341",
+            "date": "2010-11-23 17:48:29 +0000",
+            "comment": "[maven-release-plugin] rollback the release of apache-source-release-assembly-descriptor-1.0.3"
+        },
+        {
+            "c_hash": "2f7b9e30",
+            "date": "2010-11-23 17:49:52 +0000",
+            "comment": "needed to build this source-release differently to refernce the shared component"
+        },
+        {
+            "c_hash": "5a1b26d9",
+            "date": "2010-11-23 17:58:25 +0000",
+            "comment": "Continuing my fun with the release plugin"
+        },
+        {
+            "c_hash": "6c239c53",
+            "date": "2010-11-23 18:02:26 +0000",
+            "comment": "Continuing my fun with the release plugin, again"
+        },
+        {
+            "c_hash": "07d0a005",
+            "date": "2010-11-23 18:04:35 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-source-release-assembly-descriptor-1.0.3"
+        },
+        {
+            "c_hash": "dbf38605",
+            "date": "2010-11-23 18:04:45 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "28c4e641",
+            "date": "2010-12-04 07:58:04 +0000",
+            "comment": "updated pom xsd location to http://maven.apache.org/xsd/maven-4.0.0.xsd"
+        },
+        {
+            "c_hash": "0503c742",
+            "date": "2011-08-16 14:47:50 +0000",
+            "comment": "add README file"
+        },
+        {
+            "c_hash": "854a588a",
+            "date": "2012-06-26 11:56:13 +0000",
+            "comment": "add missing svn:ignore"
+        },
+        {
+            "c_hash": "f97d0570",
+            "date": "2012-06-26 11:56:59 +0000",
+            "comment": "ignore .idea from source releases"
+        },
+        {
+            "c_hash": "42ad0490",
+            "date": "2012-06-26 12:08:33 +0000",
+            "comment": "correctly exclude .idea directory content"
+        },
+        {
+            "c_hash": "2df96e71",
+            "date": "2012-07-01 13:19:52 +0000",
+            "comment": "use last maven parent"
+        },
+        {
+            "c_hash": "39589286",
+            "date": "2012-07-01 13:21:39 +0000",
+            "comment": "use flat layout: will be easier to release the parent"
+        },
+        {
+            "c_hash": "efa3c56c",
+            "date": "2012-07-01 13:23:58 +0000",
+            "comment": "add an aggregator pom"
+        },
+        {
+            "c_hash": "ac56b0c4",
+            "date": "2012-07-01 13:24:38 +0000",
+            "comment": "basic svn:ignore"
+        },
+        {
+            "c_hash": "361feae6",
+            "date": "2012-07-01 13:26:03 +0000",
+            "comment": "do not deploy build aggregator pom"
+        },
+        {
+            "c_hash": "7107b951",
+            "date": "2012-07-01 13:28:33 +0000",
+            "comment": "fix parent relative path"
+        },
+        {
+            "c_hash": "430dd388",
+            "date": "2012-07-01 13:34:59 +0000",
+            "comment": "add ciManagement entry"
+        },
+        {
+            "c_hash": "cda767a1",
+            "date": "2012-07-02 08:40:25 +0000",
+            "comment": "fix scm informations"
+        },
+        {
+            "c_hash": "884f6bb4",
+            "date": "2012-07-02 08:41:14 +0000",
+            "comment": "use last parent"
+        },
+        {
+            "c_hash": "5a3137db",
+            "date": "2012-07-02 08:42:16 +0000",
+            "comment": "add scm section"
+        },
+        {
+            "c_hash": "5e241fd6",
+            "date": "2012-07-02 08:45:18 +0000",
+            "comment": "add scm informations in all sub modules"
+        },
+        {
+            "c_hash": "ad31efc6",
+            "date": "2012-07-02 10:27:05 +0000",
+            "comment": "idea can generate an out directory so exclude it too"
+        },
+        {
+            "c_hash": "e70d5a84",
+            "date": "2012-07-03 13:27:08 +0000",
+            "comment": "add a simple RELEASE_NOTES.txt"
+        },
+        {
+            "c_hash": "44d241a4",
+            "date": "2012-07-03 13:28:25 +0000",
+            "comment": "svn property not needed"
+        },
+        {
+            "c_hash": "4ff9273a",
+            "date": "2012-07-03 14:59:17 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-resource-bundles-4"
+        },
+        {
+            "c_hash": "eba4f754",
+            "date": "2012-07-03 14:59:27 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "8fc416a8",
+            "date": "2012-07-03 15:01:15 +0000",
+            "comment": "use released parent"
+        },
+        {
+            "c_hash": "81b2fe21",
+            "date": "2012-07-03 15:02:03 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-source-release-assembly-descriptor-1.0.4"
+        },
+        {
+            "c_hash": "b342e786",
+            "date": "2012-07-03 15:02:14 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "f952b937",
+            "date": "2012-07-06 12:27:39 +0000",
+            "comment": "add sample of using resources bundle"
+        },
+        {
+            "c_hash": "31e7ae36",
+            "date": "2012-07-06 12:28:44 +0000",
+            "comment": "remove file adding by mistake"
+        },
+        {
+            "c_hash": "f26293d9",
+            "date": "2012-07-06 12:29:44 +0000",
+            "comment": "add basic svn:ignore"
+        },
+        {
+            "c_hash": "08b5e65b",
+            "date": "2012-07-06 12:31:13 +0000",
+            "comment": "add missing license headers"
+        },
+        {
+            "c_hash": "0e6ddd94",
+            "date": "2012-07-06 12:56:50 +0000",
+            "comment": "complete sample with apache-source-release-assembly-descriptor"
+        },
+        {
+            "c_hash": "e3c68501",
+            "date": "2012-07-06 13:22:59 +0000",
+            "comment": "remove wrong relativePath"
+        },
+        {
+            "c_hash": "f20de8ae",
+            "date": "2012-07-06 13:27:12 +0000",
+            "comment": "add some snippet for documentation purpose"
+        },
+        {
+            "c_hash": "cf789378",
+            "date": "2012-07-06 15:32:32 +0000",
+            "comment": "add a simple page with plugin samples"
+        },
+        {
+            "c_hash": "cb46fdad",
+            "date": "2012-07-06 15:32:52 +0000",
+            "comment": "add site.xml"
+        },
+        {
+            "c_hash": "0d235fcb",
+            "date": "2012-07-06 15:42:44 +0000",
+            "comment": "add distributionManagement/site"
+        },
+        {
+            "c_hash": "0e6d4553",
+            "date": "2012-07-06 15:48:35 +0000",
+            "comment": "move site deploy informations to properties"
+        },
+        {
+            "c_hash": "2f86b2d8",
+            "date": "2012-07-06 15:59:39 +0000",
+            "comment": "better banner with this skin"
+        },
+        {
+            "c_hash": "70434eee",
+            "date": "2012-07-06 16:02:03 +0000",
+            "comment": "add xsd declaration"
+        },
+        {
+            "c_hash": "16fe895b",
+            "date": "2012-07-06 16:12:25 +0000",
+            "comment": "add distrib site part on all artifacts"
+        },
+        {
+            "c_hash": "43040b24",
+            "date": "2012-07-26 13:06:35 +0000",
+            "comment": "use last maven-parent release instead of SNAPSHOT"
+        },
+        {
+            "c_hash": "6ae5f4f3",
+            "date": "2012-07-26 13:12:19 +0000",
+            "comment": "updated svn:ignore"
+        },
+        {
+            "c_hash": "d919e208",
+            "date": "2012-07-26 13:14:33 +0000",
+            "comment": "removed duplicate properties element"
+        },
+        {
+            "c_hash": "e2db6596",
+            "date": "2013-05-27 06:35:17 +0000",
+            "comment": "updated parent pom"
+        },
+        {
+            "c_hash": "701e9563",
+            "date": "2013-05-27 21:07:21 +0000",
+            "comment": "updated parent pom"
+        },
+        {
+            "c_hash": "c4dacecb",
+            "date": "2013-05-27 21:35:14 +0000",
+            "comment": "formatting"
+        },
+        {
+            "c_hash": "ca0131e5",
+            "date": "2013-07-21 13:22:14 +0000",
+            "comment": "Use <tarLongFileMode> instead of <tarLongFileFormat> which has never worked for maven-assembly-plugin."
+        },
+        {
+            "c_hash": "a5b82bde",
+            "date": "2013-07-21 13:23:02 +0000",
+            "comment": "Use <tarLongFileMode> instead of <tarLongFileFormat> which has never worked for maven-assembly-plugin."
+        },
+        {
+            "c_hash": "c2d704ef",
+            "date": "2013-07-21 13:24:37 +0000",
+            "comment": "Fix a typo in the name of one of the files which are created."
+        },
+        {
+            "c_hash": "2db9ec71",
+            "date": "2013-07-21 13:38:32 +0000",
+            "comment": "Fix typo in description."
+        },
+        {
+            "c_hash": "de50903a",
+            "date": "2013-07-21 13:39:23 +0000",
+            "comment": "Remove spurious blank lines in generated NOTICE file."
+        },
+        {
+            "c_hash": "bd8b9581",
+            "date": "2013-08-07 20:29:28 +0000",
+            "comment": "Set eol-style to native."
+        },
+        {
+            "c_hash": "78122bd9",
+            "date": "2013-08-07 21:01:42 +0000",
+            "comment": "Do not show the version, since it will always be 1-SNAPSHOT."
+        },
+        {
+            "c_hash": "29a2faf3",
+            "date": "2013-08-07 21:02:17 +0000",
+            "comment": "Tweak the documentation."
+        },
+        {
+            "c_hash": "164daebc",
+            "date": "2013-08-07 21:04:15 +0000",
+            "comment": "[MASFRES-2] apache jar resource bundle does not appear to be documented"
+        },
+        {
+            "c_hash": "e3f60500",
+            "date": "2013-08-07 21:06:02 +0000",
+            "comment": "Add bugtraq properties."
+        },
+        {
+            "c_hash": "d608dbe6",
+            "date": "2014-04-07 21:36:01 +0000",
+            "comment": "Add missing license header."
+        },
+        {
+            "c_hash": "843f12b3",
+            "date": "2014-04-07 21:42:08 +0000",
+            "comment": "Use new groupId in all places."
+        },
+        {
+            "c_hash": "a7f8a284",
+            "date": "2014-04-07 21:44:28 +0000",
+            "comment": "Use latest SNAPSHOT version of apache-source-release-assembly-descriptor."
+        },
+        {
+            "c_hash": "861209c0",
+            "date": "2014-04-07 22:41:59 +0000",
+            "comment": "Remove all traces of the old web site. The site for Apache Resource Bundles is now a part of the main Maven site."
+        },
+        {
+            "c_hash": "14da338a",
+            "date": "2014-04-27 15:49:09 +0000",
+            "comment": "update parent pom"
+        },
+        {
+            "c_hash": "ed7e1771",
+            "date": "2014-09-13 20:44:57 +0000",
+            "comment": "[MASFRES-9] Add pre-defined descriptor in apache-source-release-assembly-descriptor for tarball-only"
+        },
+        {
+            "c_hash": "1ca234ce",
+            "date": "2014-09-13 20:51:21 +0000",
+            "comment": "Use a released version of maven-parent."
+        },
+        {
+            "c_hash": "572d1b51",
+            "date": "2014-09-20 19:37:33 +0000",
+            "comment": "Add missing license headers to test files."
+        }
+    ]
+}

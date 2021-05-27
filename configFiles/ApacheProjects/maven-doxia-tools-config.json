@@ -1,0 +1,1538 @@
+{
+    "project": "maven-doxia-tools",
+    "git_url": "https://github.com/apache/maven-doxia-tools.git",
+    "last_commit": "07e5ac2f",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "c618a23a",
+            "date": "2008-02-05 12:39:01 +0000",
+            "comment": "o created initial structure"
+        },
+        {
+            "c_hash": "23f51d84",
+            "date": "2008-02-05 12:50:03 +0000",
+            "comment": "o promoted linkcheck tool and plugin out of the sandbox"
+        },
+        {
+            "c_hash": "78fa5834",
+            "date": "2008-02-05 13:31:46 +0000",
+            "comment": "o ignored target"
+        },
+        {
+            "c_hash": "b6449c21",
+            "date": "2008-02-05 13:34:40 +0000",
+            "comment": "o added parent pom o fixed file path in test cases"
+        },
+        {
+            "c_hash": "2b60907b",
+            "date": "2008-02-05 13:44:10 +0000",
+            "comment": "o fixed groupId"
+        },
+        {
+            "c_hash": "e236c281",
+            "date": "2008-02-18 13:32:53 +0000",
+            "comment": "o updated ML and added ML archives"
+        },
+        {
+            "c_hash": "4a35ce5d",
+            "date": "2008-03-04 00:16:16 +0000",
+            "comment": "DOXIA-228: Create a new tool to handle module conversion"
+        },
+        {
+            "c_hash": "17e176a4",
+            "date": "2008-03-04 00:17:19 +0000",
+            "comment": "DOXIA-228: Create a new tool to handle module conversion"
+        },
+        {
+            "c_hash": "3fe38900",
+            "date": "2008-03-08 13:05:56 +0000",
+            "comment": "o added twiki"
+        },
+        {
+            "c_hash": "f8deb26d",
+            "date": "2008-03-08 13:06:47 +0000",
+            "comment": "o improved usage"
+        },
+        {
+            "c_hash": "9c93cf85",
+            "date": "2008-03-08 13:07:47 +0000",
+            "comment": "o ignored target and ide files"
+        },
+        {
+            "c_hash": "b5f6a345",
+            "date": "2008-03-11 12:46:02 +0000",
+            "comment": "[DOXIA-216] When an empty String was added to the excludes (possible during relative-path resolution) any link was reported valid because the pattern always matched. There is still a problem with local links that needs to be resolved, added a test case."
+        },
+        {
+            "c_hash": "d89749b5",
+            "date": "2008-03-11 12:51:04 +0000",
+            "comment": "Remove unused imports, deprecated methods."
+        },
+        {
+            "c_hash": "f77f4750",
+            "date": "2008-03-12 00:34:40 +0000",
+            "comment": "o replaced modello files to wrappers o added more tests o updated doc"
+        },
+        {
+            "c_hash": "f089ae27",
+            "date": "2008-03-12 08:04:25 +0000",
+            "comment": "[DOXIA-230] the test resource file test.apt was not an apt file."
+        },
+        {
+            "c_hash": "a30edec8",
+            "date": "2008-03-12 08:05:18 +0000",
+            "comment": "fix EOLs"
+        },
+        {
+            "c_hash": "e640ce6c",
+            "date": "2008-03-12 10:42:15 +0000",
+            "comment": "Add comment about failing docbook test"
+        },
+        {
+            "c_hash": "1f87ee5b",
+            "date": "2008-03-18 09:26:57 +0000",
+            "comment": "o Added bin to svn:ignore"
+        },
+        {
+            "c_hash": "033900ca",
+            "date": "2008-03-18 09:44:10 +0000",
+            "comment": "o Fixed svn:keywords"
+        },
+        {
+            "c_hash": "19ec457f",
+            "date": "2008-03-22 23:59:04 +0000",
+            "comment": "use correct version syntax"
+        },
+        {
+            "c_hash": "f62fe7d4",
+            "date": "2008-04-07 13:14:12 +0000",
+            "comment": "DOXIA-233: Create an Eclipse plugin to edit Doxia files"
+        },
+        {
+            "c_hash": "fc126826",
+            "date": "2008-04-07 13:18:18 +0000",
+            "comment": "DOXIA-233: Create an Eclipse plugin to edit Doxia files"
+        },
+        {
+            "c_hash": "81132868",
+            "date": "2008-04-07 13:20:06 +0000",
+            "comment": "o removed unused icons"
+        },
+        {
+            "c_hash": "918d60f0",
+            "date": "2008-04-07 13:21:00 +0000",
+            "comment": "DOXIA-233: Create an Eclipse plugin to edit Doxia files"
+        },
+        {
+            "c_hash": "208641e3",
+            "date": "2008-04-07 13:22:00 +0000",
+            "comment": "DOXIA-233: Create an Eclipse plugin to edit Doxia files"
+        },
+        {
+            "c_hash": "94c0dcc0",
+            "date": "2008-04-07 13:22:50 +0000",
+            "comment": "DOXIA-233: Create an Eclipse plugin to edit Doxia files"
+        },
+        {
+            "c_hash": "3cc4d0dd",
+            "date": "2008-04-07 13:23:31 +0000",
+            "comment": "DOXIA-233: Create an Eclipse plugin to edit Doxia files"
+        },
+        {
+            "c_hash": "660e141b",
+            "date": "2008-04-07 13:24:23 +0000",
+            "comment": "DOXIA-233: Create an Eclipse plugin to edit Doxia files"
+        },
+        {
+            "c_hash": "801eaba6",
+            "date": "2008-04-07 13:25:16 +0000",
+            "comment": "DOXIA-233: Create an Eclipse plugin to edit Doxia files"
+        },
+        {
+            "c_hash": "1a7debac",
+            "date": "2008-04-07 13:25:56 +0000",
+            "comment": "DOXIA-233: Create an Eclipse plugin to edit Doxia files"
+        },
+        {
+            "c_hash": "a516b984",
+            "date": "2008-04-07 13:26:25 +0000",
+            "comment": "DOXIA-233: Create an Eclipse plugin to edit Doxia files"
+        },
+        {
+            "c_hash": "87466393",
+            "date": "2008-04-07 13:27:03 +0000",
+            "comment": "DOXIA-233: Create an Eclipse plugin to edit Doxia files"
+        },
+        {
+            "c_hash": "204601f3",
+            "date": "2008-04-07 13:27:40 +0000",
+            "comment": "DOXIA-233: Create an Eclipse plugin to edit Doxia files"
+        },
+        {
+            "c_hash": "f527cbc8",
+            "date": "2008-04-07 13:30:59 +0000",
+            "comment": "o ignored target"
+        },
+        {
+            "c_hash": "774fc446",
+            "date": "2008-04-07 13:32:10 +0000",
+            "comment": "DOXIA-233: Create an Eclipse plugin to edit Doxia files"
+        },
+        {
+            "c_hash": "4558bb80",
+            "date": "2008-04-08 11:47:32 +0000",
+            "comment": "a stub project for doxia editor support in netbeans (Lukas Theussl will hopefully add some real code)"
+        },
+        {
+            "c_hash": "35c55f3f",
+            "date": "2008-04-08 11:49:06 +0000",
+            "comment": "ignores target folder"
+        },
+        {
+            "c_hash": "285227b9",
+            "date": "2008-04-09 12:50:08 +0000",
+            "comment": "o added Plexus container to handle macros"
+        },
+        {
+            "c_hash": "c7e92130",
+            "date": "2008-04-22 12:38:03 +0000",
+            "comment": "o removed syso"
+        },
+        {
+            "c_hash": "dea71bf4",
+            "date": "2008-04-22 12:39:03 +0000",
+            "comment": "o ordered import"
+        },
+        {
+            "c_hash": "b550ef05",
+            "date": "2008-04-22 12:41:06 +0000",
+            "comment": "o removed getDefault()"
+        },
+        {
+            "c_hash": "2f4ae855",
+            "date": "2008-04-22 12:46:41 +0000",
+            "comment": "o improved javadoc"
+        },
+        {
+            "c_hash": "23b8dca4",
+            "date": "2008-04-22 12:47:54 +0000",
+            "comment": "o improved javadoc"
+        },
+        {
+            "c_hash": "39466f49",
+            "date": "2008-04-22 12:51:00 +0000",
+            "comment": "o improved javadoc"
+        },
+        {
+            "c_hash": "d8b32b60",
+            "date": "2008-04-22 12:53:42 +0000",
+            "comment": "o improved javadoc"
+        },
+        {
+            "c_hash": "a16a625d",
+            "date": "2008-04-22 12:54:18 +0000",
+            "comment": "o improved javadoc"
+        },
+        {
+            "c_hash": "5631409a",
+            "date": "2008-04-22 12:55:18 +0000",
+            "comment": "o added SinkColor and SinkToken for Doxia events o added more colors"
+        },
+        {
+            "c_hash": "eb4a7712",
+            "date": "2008-04-22 12:58:34 +0000",
+            "comment": "o added more color rules"
+        },
+        {
+            "c_hash": "059c5421",
+            "date": "2008-04-22 12:59:31 +0000",
+            "comment": "o added more color rules"
+        },
+        {
+            "c_hash": "ebffe044",
+            "date": "2008-04-22 13:00:19 +0000",
+            "comment": "o added more color rules"
+        },
+        {
+            "c_hash": "5454106d",
+            "date": "2008-04-22 13:14:13 +0000",
+            "comment": "o first try to mavenize the Eclipse features and plugins"
+        },
+        {
+            "c_hash": "9eff74e0",
+            "date": "2008-04-22 13:26:06 +0000",
+            "comment": "o removed unneeded Eclipse files due to r650510 o ignored target dir and Eclipse dir"
+        },
+        {
+            "c_hash": "70177eef",
+            "date": "2008-04-22 13:28:40 +0000",
+            "comment": "o updated README"
+        },
+        {
+            "c_hash": "217ceba1",
+            "date": "2008-04-22 18:47:08 +0000",
+            "comment": "Fix maven executable on unix"
+        },
+        {
+            "c_hash": "e7741e86",
+            "date": "2008-04-22 18:51:42 +0000",
+            "comment": "Add two remarks about java 5 prerequisite and M2_HOME"
+        },
+        {
+            "c_hash": "13f7283b",
+            "date": "2008-04-23 23:25:35 +0000",
+            "comment": "o try to find mvn in PATH and M2_HOME variable"
+        },
+        {
+            "c_hash": "414acc0b",
+            "date": "2008-04-23 23:26:52 +0000",
+            "comment": "o updated due to r651102"
+        },
+        {
+            "c_hash": "9a300c3d",
+            "date": "2008-04-23 23:30:49 +0000",
+            "comment": "o removed unneeded Eclipse files due to r650510 o ignored Eclipse dirs"
+        },
+        {
+            "c_hash": "c2922a99",
+            "date": "2008-04-26 12:45:08 +0000",
+            "comment": "o continuum is now a TLP"
+        },
+        {
+            "c_hash": "38361d57",
+            "date": "2008-04-26 12:51:08 +0000",
+            "comment": "o ignored some Eclipse files"
+        },
+        {
+            "c_hash": "918cd4d3",
+            "date": "2008-05-15 17:35:27 +0000",
+            "comment": "o Fixed case-insensitive string handling"
+        },
+        {
+            "c_hash": "5023bf89",
+            "date": "2008-05-15 17:50:11 +0000",
+            "comment": "o Set svn:eol-style=native"
+        },
+        {
+            "c_hash": "0a377d1d",
+            "date": "2008-05-17 01:05:19 +0000",
+            "comment": "use latest parent so I can override the deploy location in CI"
+        },
+        {
+            "c_hash": "00d5a89f",
+            "date": "2008-05-18 17:11:31 +0000",
+            "comment": "o Update links to Doxia APT reference."
+        },
+        {
+            "c_hash": "8a742955",
+            "date": "2008-07-26 13:09:54 +0000",
+            "comment": "o moved to its new home http://svn.sonatype.org/m2eclipse/doxia-ide"
+        },
+        {
+            "c_hash": "8aaec980",
+            "date": "2008-07-28 12:08:56 +0000",
+            "comment": "Move into the sandbox, not ready to be released with beta-1"
+        },
+        {
+            "c_hash": "bb780b4d",
+            "date": "2008-08-06 21:53:33 +0000",
+            "comment": "Check that maven-parent 9 works with all projects"
+        },
+        {
+            "c_hash": "5d781dee",
+            "date": "2008-09-10 03:40:59 +0000",
+            "comment": "o i/o encoding issue"
+        },
+        {
+            "c_hash": "c312f049",
+            "date": "2008-09-10 03:51:01 +0000",
+            "comment": "o minor improvement when creating reader"
+        },
+        {
+            "c_hash": "fccbcea0",
+            "date": "2008-09-10 13:22:19 +0000",
+            "comment": "o added input/output encoding for the cli"
+        },
+        {
+            "c_hash": "85e9af77",
+            "date": "2008-09-11 02:26:47 +0000",
+            "comment": "o add logging for parser and sink o fixed reader depending parser type"
+        },
+        {
+            "c_hash": "9b727f1a",
+            "date": "2008-09-16 21:24:21 +0000",
+            "comment": "o added serialVersionUID"
+        },
+        {
+            "c_hash": "482a587a",
+            "date": "2008-09-17 22:11:01 +0000",
+            "comment": "o updated code due to r696490"
+        },
+        {
+            "c_hash": "683d0477",
+            "date": "2008-09-18 11:14:29 +0000",
+            "comment": "o removed unused dependency"
+        },
+        {
+            "c_hash": "54ce0bef",
+            "date": "2008-09-21 14:29:09 +0000",
+            "comment": "o refactoring to better autodetect encoding and format for input files o added test cases o updated doc"
+        },
+        {
+            "c_hash": "1a3e954a",
+            "date": "2008-09-23 11:06:27 +0000",
+            "comment": "o using latest maven-parent"
+        },
+        {
+            "c_hash": "a3fa21f2",
+            "date": "2008-09-23 11:35:13 +0000",
+            "comment": "o ordering poms"
+        },
+        {
+            "c_hash": "61665279",
+            "date": "2008-09-23 22:47:44 +0000",
+            "comment": "o ordering poms and use inheritance o upgrade to latest plexus-utils"
+        },
+        {
+            "c_hash": "54441b02",
+            "date": "2008-09-23 22:48:30 +0000",
+            "comment": "o take care of closing reader"
+        },
+        {
+            "c_hash": "1af3c565",
+            "date": "2008-09-29 12:01:45 +0000",
+            "comment": "use XML encoding detection when trying to read XML content instead of platform encoding"
+        },
+        {
+            "c_hash": "f8961a0e",
+            "date": "2008-09-29 12:21:42 +0000",
+            "comment": "code simplification"
+        },
+        {
+            "c_hash": "16fe6538",
+            "date": "2008-09-29 12:25:33 +0000",
+            "comment": "XML is case sensitive: case insensitive comparison does not make sense for element names"
+        },
+        {
+            "c_hash": "b233e2af",
+            "date": "2008-09-29 12:29:00 +0000",
+            "comment": "there are multiple root element values possible for Docbook format (article, but also book, part, chapter, ...)"
+        },
+        {
+            "c_hash": "9000c527",
+            "date": "2008-09-29 12:34:32 +0000",
+            "comment": "removed unneeded InputStream"
+        },
+        {
+            "c_hash": "e8c2601f",
+            "date": "2008-09-29 17:09:08 +0000",
+            "comment": "reverted r700094: Doxia supports *Simplified* DocBook, which accepts only article as root element"
+        },
+        {
+            "c_hash": "ffd71166",
+            "date": "2008-10-02 21:56:09 +0000",
+            "comment": "o code duplication o warning about DOXIA-184 o minor javadoc typo"
+        },
+        {
+            "c_hash": "9aa79723",
+            "date": "2008-10-02 22:11:17 +0000",
+            "comment": "o be sure that generated files exist"
+        },
+        {
+            "c_hash": "1c252651",
+            "date": "2008-10-14 12:28:10 +0000",
+            "comment": "o same as r703601 about deprecated field"
+        },
+        {
+            "c_hash": "bcb8126e",
+            "date": "2008-10-14 12:30:42 +0000",
+            "comment": "o using IOUtil.close()"
+        },
+        {
+            "c_hash": "e8794407",
+            "date": "2008-10-14 12:32:40 +0000",
+            "comment": "DOXIA-216: Linkcheck broken"
+        },
+        {
+            "c_hash": "c0b03cc7",
+            "date": "2008-10-14 22:19:17 +0000",
+            "comment": "o fixed encoding to UTF-8"
+        },
+        {
+            "c_hash": "4b9b32b3",
+            "date": "2008-10-14 22:19:58 +0000",
+            "comment": "o removed unused table tag"
+        },
+        {
+            "c_hash": "e16d4be9",
+            "date": "2008-10-16 22:55:53 +0000",
+            "comment": "o using twiki sink"
+        },
+        {
+            "c_hash": "c12d92c8",
+            "date": "2008-10-17 10:49:49 +0000",
+            "comment": "o fix tests for twiki"
+        },
+        {
+            "c_hash": "8f279f9f",
+            "date": "2008-10-21 10:54:33 +0000",
+            "comment": "o added Confluence support"
+        },
+        {
+            "c_hash": "829f0c67",
+            "date": "2008-10-25 11:54:41 +0000",
+            "comment": "o startPlexusContainer() should be after parameter validation"
+        },
+        {
+            "c_hash": "1a4af048",
+            "date": "2008-10-26 15:18:15 +0000",
+            "comment": "added common IDE files to svn:ignore"
+        },
+        {
+            "c_hash": "e8f266fa",
+            "date": "2008-10-31 21:10:59 +0000",
+            "comment": "fixed typos"
+        },
+        {
+            "c_hash": "d125738b",
+            "date": "2008-10-31 21:18:10 +0000",
+            "comment": "fixed typos"
+        },
+        {
+            "c_hash": "91fdb829",
+            "date": "2008-10-31 21:51:47 +0000",
+            "comment": "improved javadoc"
+        },
+        {
+            "c_hash": "4d4447c4",
+            "date": "2008-11-01 11:06:37 +0000",
+            "comment": "o removed outencoding parameter since UTF-8 should be the default o update test case and doc"
+        },
+        {
+            "c_hash": "4e035e12",
+            "date": "2008-11-01 11:11:48 +0000",
+            "comment": "o using latest plexus utils"
+        },
+        {
+            "c_hash": "c61c5059",
+            "date": "2008-11-01 12:24:35 +0000",
+            "comment": "o added a format flag to format the XML generated files o updated documentation"
+        },
+        {
+            "c_hash": "c232385a",
+            "date": "2008-11-01 13:21:04 +0000",
+            "comment": "o added encoding support"
+        },
+        {
+            "c_hash": "897628e4",
+            "date": "2008-11-01 13:39:34 +0000",
+            "comment": "o removed unused import o fixed javadoc"
+        },
+        {
+            "c_hash": "40fb2b2f",
+            "date": "2008-11-01 13:40:46 +0000",
+            "comment": "o improve logging calls"
+        },
+        {
+            "c_hash": "5deb3a56",
+            "date": "2008-11-01 14:21:40 +0000",
+            "comment": "o added a new exception class to encapsulate Linkcheck exception o review IOExceptions"
+        },
+        {
+            "c_hash": "7caccff7",
+            "date": "2008-11-02 16:10:50 +0000",
+            "comment": "added site descriptor on every module, with parent/sub-modules references"
+        },
+        {
+            "c_hash": "e33b8e92",
+            "date": "2008-11-02 16:42:06 +0000",
+            "comment": "fixed errors reported by Checkstyle"
+        },
+        {
+            "c_hash": "8fcd4601",
+            "date": "2008-11-07 21:10:33 +0000",
+            "comment": "o fixed html"
+        },
+        {
+            "c_hash": "107c6288",
+            "date": "2008-11-07 21:11:20 +0000",
+            "comment": "o fixed test due to a Twiki parser pb"
+        },
+        {
+            "c_hash": "d6ac0efe",
+            "date": "2008-11-10 22:54:37 +0000",
+            "comment": "DOXIA-185: add back output encoding support in doxia-converter"
+        },
+        {
+            "c_hash": "0015cae6",
+            "date": "2008-11-10 23:12:36 +0000",
+            "comment": "simplified unit tests code"
+        },
+        {
+            "c_hash": "876fdd0b",
+            "date": "2008-12-08 11:59:12 +0000",
+            "comment": "o bump to latest parent"
+        },
+        {
+            "c_hash": "d644439d",
+            "date": "2008-12-15 21:39:50 +0000",
+            "comment": "o using an assembly file to remove some unused dependencies"
+        },
+        {
+            "c_hash": "2afce889",
+            "date": "2008-12-15 22:00:46 +0000",
+            "comment": "o renamed version according http://doxia-dev.markmail.org/message/k5pvjrlwadexurdr"
+        },
+        {
+            "c_hash": "70587ec9",
+            "date": "2008-12-16 01:06:23 +0000",
+            "comment": "o inherited plugins version"
+        },
+        {
+            "c_hash": "cf259b52",
+            "date": "2009-01-20 12:09:09 +0000",
+            "comment": "o using latest p-u"
+        },
+        {
+            "c_hash": "9e7d24ee",
+            "date": "2009-01-23 06:19:02 +0000",
+            "comment": "o added XSD in the test resources, I know it includes relative pathes on doxia dir but it is not a requirement for the build"
+        },
+        {
+            "c_hash": "87d304a2",
+            "date": "2009-01-27 12:59:23 +0000",
+            "comment": "o added XSD for Modello and fix it"
+        },
+        {
+            "c_hash": "1c12c73a",
+            "date": "2009-01-31 13:33:44 +0000",
+            "comment": "o using Modello release"
+        },
+        {
+            "c_hash": "c6c8895e",
+            "date": "2009-02-03 00:54:35 +0000",
+            "comment": "o comment"
+        },
+        {
+            "c_hash": "ed1db92e",
+            "date": "2009-02-03 00:55:44 +0000",
+            "comment": "o fixed assembly o add help as default parameter"
+        },
+        {
+            "c_hash": "5c71443e",
+            "date": "2009-02-13 23:52:53 +0000",
+            "comment": "use the new parent"
+        },
+        {
+            "c_hash": "5c6ab774",
+            "date": "2009-02-23 12:42:56 +0000",
+            "comment": "o latest parent"
+        },
+        {
+            "c_hash": "5d3c375a",
+            "date": "2009-03-03 18:56:18 +0000",
+            "comment": "o fixed snapshot"
+        },
+        {
+            "c_hash": "cbb6e5e6",
+            "date": "2009-03-03 18:57:42 +0000",
+            "comment": "[maven-release-plugin] prepare release doxia-tools-1.0"
+        },
+        {
+            "c_hash": "7065f389",
+            "date": "2009-03-03 18:58:11 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "b7342457",
+            "date": "2009-04-13 13:50:39 +0000",
+            "comment": "DOXIA-307: Tests fail when run with Java 1.4"
+        },
+        {
+            "c_hash": "6b8ee2a7",
+            "date": "2009-05-09 11:38:40 +0000",
+            "comment": "o Used http://maven.apache.org/xsd/* for schema location"
+        },
+        {
+            "c_hash": "914a923b",
+            "date": "2009-05-19 13:07:28 +0000",
+            "comment": "[DOXIASITETOOLS-23] Improve Documentation of Doxia Converter. Add download links for all doxia projects."
+        },
+        {
+            "c_hash": "ee7d2a93",
+            "date": "2009-05-31 11:16:20 +0000",
+            "comment": "o using latest parent"
+        },
+        {
+            "c_hash": "28df7297",
+            "date": "2009-06-09 15:12:40 +0000",
+            "comment": "o added assembly-plugin in the pluginManagement o added release profile for assembly"
+        },
+        {
+            "c_hash": "c1f5abaa",
+            "date": "2009-06-10 21:54:25 +0000",
+            "comment": "o more excludes"
+        },
+        {
+            "c_hash": "60f5f76f",
+            "date": "2009-06-10 22:44:23 +0000",
+            "comment": "DOXIA-337: Update document model due to MODELLO-199"
+        },
+        {
+            "c_hash": "b778bc43",
+            "date": "2009-06-12 11:13:03 +0000",
+            "comment": "use sdocbook v1.1"
+        },
+        {
+            "c_hash": "5519fbbd",
+            "date": "2009-06-12 11:14:35 +0000",
+            "comment": "Switch do doxia-1.1.1-snap. Docbook works on trunk now, remove warning and uncomment test case."
+        },
+        {
+            "c_hash": "e97d6436",
+            "date": "2009-06-14 11:03:43 +0000",
+            "comment": "o using p-u:1.5.15 (PLXUTILS-109 and PLXUTILS-110 are included in this release)"
+        },
+        {
+            "c_hash": "c14f0e1d",
+            "date": "2009-06-15 11:51:28 +0000",
+            "comment": "DOXIA-281: Add macro support in FML"
+        },
+        {
+            "c_hash": "3e1ba8d9",
+            "date": "2009-06-15 12:35:38 +0000",
+            "comment": "DOXIA-281: Add macro support in FML"
+        },
+        {
+            "c_hash": "a10c54db",
+            "date": "2009-06-17 13:20:36 +0000",
+            "comment": "o fixed ide exclude"
+        },
+        {
+            "c_hash": "6f7f1750",
+            "date": "2009-06-17 13:21:00 +0000",
+            "comment": "apache-release is the latest hype..."
+        },
+        {
+            "c_hash": "8bc89d23",
+            "date": "2009-06-18 07:57:01 +0000",
+            "comment": "Copy javadoc base config to pluginManagement"
+        },
+        {
+            "c_hash": "0d3bd265",
+            "date": "2009-06-21 09:59:38 +0000",
+            "comment": "Add missing type check"
+        },
+        {
+            "c_hash": "7beb3cd0",
+            "date": "2009-06-21 10:01:58 +0000",
+            "comment": "Checkstyle fixes"
+        },
+        {
+            "c_hash": "f61ed256",
+            "date": "2009-06-25 11:55:39 +0000",
+            "comment": "o bump to latest doxia"
+        },
+        {
+            "c_hash": "6f6aa348",
+            "date": "2009-08-01 11:10:18 +0000",
+            "comment": "o using latest HttpClient"
+        },
+        {
+            "c_hash": "f3217225",
+            "date": "2009-08-01 11:12:59 +0000",
+            "comment": "o added timeout and httpClientProperties fields o updated descriptions"
+        },
+        {
+            "c_hash": "11a8d6d2",
+            "date": "2009-08-01 11:17:23 +0000",
+            "comment": "o added timeout and httpClientsParameters o improved log call"
+        },
+        {
+            "c_hash": "1592f78c",
+            "date": "2009-08-01 11:23:24 +0000",
+            "comment": "o fixed checkstyle"
+        },
+        {
+            "c_hash": "9fce50b7",
+            "date": "2009-08-02 10:59:27 +0000",
+            "comment": "o revert part of r799837 to respect r709693 about logging performance"
+        },
+        {
+            "c_hash": "70456e3b",
+            "date": "2009-08-02 12:28:50 +0000",
+            "comment": "o removed links in XML comments o added test case"
+        },
+        {
+            "c_hash": "278b7301",
+            "date": "2009-08-02 12:31:33 +0000",
+            "comment": "o format license header"
+        },
+        {
+            "c_hash": "ca6a7dd9",
+            "date": "2009-08-13 21:28:21 +0000",
+            "comment": "free memory after link check is done"
+        },
+        {
+            "c_hash": "09f2fbe1",
+            "date": "2009-08-14 07:29:08 +0000",
+            "comment": "replaced model attribute by local variable in execute() method propagated in method calls"
+        },
+        {
+            "c_hash": "b2be6d5f",
+            "date": "2009-08-18 21:42:31 +0000",
+            "comment": "o using doxia snapshot"
+        },
+        {
+            "c_hash": "3185792c",
+            "date": "2009-08-27 09:48:31 +0000",
+            "comment": "o using latest parent and modello"
+        },
+        {
+            "c_hash": "cc87a81f",
+            "date": "2009-09-05 15:14:27 +0000",
+            "comment": "o using p-u:1.5.12 due to PLXUTILS-117"
+        },
+        {
+            "c_hash": "855336af",
+            "date": "2009-09-18 09:51:58 +0000",
+            "comment": "o added log4j"
+        },
+        {
+            "c_hash": "58ce156b",
+            "date": "2009-09-18 09:52:27 +0000",
+            "comment": "o be sure to set the user agent"
+        },
+        {
+            "c_hash": "7826a78b",
+            "date": "2009-12-07 23:23:42 +0000",
+            "comment": "use doxia released version"
+        },
+        {
+            "c_hash": "92dbec1d",
+            "date": "2010-05-04 09:14:53 +0000",
+            "comment": "[DOXIA-391] Fix markmail references Submitted by: Robert Scholte"
+        },
+        {
+            "c_hash": "d6a07164",
+            "date": "2010-05-09 16:31:19 +0000",
+            "comment": "Remove links from site descriptor. Those links are inherited and can be found in the left hand side navigation."
+        },
+        {
+            "c_hash": "c2f3ab4d",
+            "date": "2010-07-27 21:00:20 +0000",
+            "comment": "o Use latest parent o Fix configuration of maven-javadoc-plugin"
+        },
+        {
+            "c_hash": "5bebcf88",
+            "date": "2010-07-27 21:01:08 +0000",
+            "comment": "o Add a stagingSiteURL"
+        },
+        {
+            "c_hash": "e28bf632",
+            "date": "2010-07-28 13:42:36 +0000",
+            "comment": "o Now that we inherit from Maven parent 16 we can drop the local source-release configuration"
+        },
+        {
+            "c_hash": "269f8630",
+            "date": "2010-07-28 14:58:19 +0000",
+            "comment": "o Inject project.version from POM"
+        },
+        {
+            "c_hash": "0338c904",
+            "date": "2010-07-28 15:18:30 +0000",
+            "comment": "o Use xml schema o Remove inherited stuff from site.xml o Fix typos"
+        },
+        {
+            "c_hash": "a8540588",
+            "date": "2010-07-28 15:19:25 +0000",
+            "comment": "o Sort modules alphabetically o Improve description"
+        },
+        {
+            "c_hash": "65341973",
+            "date": "2010-07-28 15:30:17 +0000",
+            "comment": "[maven-release-plugin] prepare release doxia-tools-1.1"
+        },
+        {
+            "c_hash": "0713d54d",
+            "date": "2010-07-28 15:33:19 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "9c01d508",
+            "date": "2010-09-29 09:53:15 +0000",
+            "comment": "sanitize logger calls, formatting."
+        },
+        {
+            "c_hash": "61ab2756",
+            "date": "2010-09-29 13:09:25 +0000",
+            "comment": "[DOXIA-412] Linkcheck: Add support for wildcards in excludedPages"
+        },
+        {
+            "c_hash": "5b04c224",
+            "date": "2010-09-30 12:30:38 +0000",
+            "comment": "[MLINKCHECK-6] IllegalArgumentException for some URIs"
+        },
+        {
+            "c_hash": "85d1b0f1",
+            "date": "2010-10-05 14:09:10 +0000",
+            "comment": "[DOXIA-414] wrong pattern matching if pattern is a relative link"
+        },
+        {
+            "c_hash": "38c21608",
+            "date": "2010-11-02 13:33:03 +0000",
+            "comment": "[DOXIA-410] Link checker not handling anchors very well Submitted by: James Strachan Patch applied with minor modifs to allow for brackets in regexps as needed for links to javadoc methods"
+        },
+        {
+            "c_hash": "cabac8b2",
+            "date": "2010-11-03 09:28:43 +0000",
+            "comment": "accept upper-case html attributes"
+        },
+        {
+            "c_hash": "90b87190",
+            "date": "2010-11-09 19:28:58 +0000",
+            "comment": "[maven-release-plugin] prepare release doxia-tools-1.2"
+        },
+        {
+            "c_hash": "8f0b7ff5",
+            "date": "2010-11-09 19:31:01 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "15337d63",
+            "date": "2011-01-01 21:17:27 +0000",
+            "comment": "use latest parent and site and pir plugins"
+        },
+        {
+            "c_hash": "43266c4a",
+            "date": "2011-01-01 21:19:25 +0000",
+            "comment": "add banners and breadcrumbs"
+        },
+        {
+            "c_hash": "7412deab",
+            "date": "2011-01-01 21:24:17 +0000",
+            "comment": "add url's to all modules, add names to site descriptors"
+        },
+        {
+            "c_hash": "4593832b",
+            "date": "2011-01-07 21:33:58 +0000",
+            "comment": "fix some javadoc warnings"
+        },
+        {
+            "c_hash": "75c60a4d",
+            "date": "2011-01-12 13:57:13 +0000",
+            "comment": "revert Site plugin version to last release to test build on Windows"
+        },
+        {
+            "c_hash": "c4c54032",
+            "date": "2011-01-13 10:49:43 +0000",
+            "comment": "revert back to stable parent"
+        },
+        {
+            "c_hash": "799be030",
+            "date": "2011-01-21 13:23:34 +0000",
+            "comment": "upgrade plexus-utils"
+        },
+        {
+            "c_hash": "195e765b",
+            "date": "2011-02-10 09:45:21 +0000",
+            "comment": "add ciManagement to point to the Apache Hudson server"
+        },
+        {
+            "c_hash": "d54f1657",
+            "date": "2011-03-05 20:02:38 +0000",
+            "comment": "use latest parent"
+        },
+        {
+            "c_hash": "f1318a39",
+            "date": "2011-03-07 10:45:01 +0000",
+            "comment": "add docs about ant usage submitted to user list: http://www.mail-archive.com/users@maven.apache.org/msg117014.html Submitted by: Adrien"
+        },
+        {
+            "c_hash": "8889041a",
+            "date": "2011-04-11 11:18:23 +0000",
+            "comment": "configure cobertura and pmd plugins. Note that surefire's forkMode=never does not work with cobertura, see MCOBERTURA-70"
+        },
+        {
+            "c_hash": "2ad7753f",
+            "date": "2011-05-16 19:25:38 +0000",
+            "comment": "Use a more precise link to Jenkins."
+        },
+        {
+            "c_hash": "66ce5dfe",
+            "date": "2011-05-28 21:08:12 +0000",
+            "comment": "update mailing list info"
+        },
+        {
+            "c_hash": "618f1120",
+            "date": "2011-05-28 21:15:57 +0000",
+            "comment": "update some ci- and issueMgmnt info"
+        },
+        {
+            "c_hash": "351ed7ea",
+            "date": "2011-08-28 16:23:35 +0000",
+            "comment": "updated parent pom to maven-parent:21"
+        },
+        {
+            "c_hash": "d2c11e5f",
+            "date": "2011-09-04 21:21:40 +0000",
+            "comment": "updated info"
+        },
+        {
+            "c_hash": "65866d93",
+            "date": "2012-03-31 09:48:57 +0000",
+            "comment": "better Java 5 constructs use"
+        },
+        {
+            "c_hash": "8cb46614",
+            "date": "2012-03-31 16:42:15 +0000",
+            "comment": "Move book and plugin since they don't belong in the base of Doxia, and rename them in the process."
+        },
+        {
+            "c_hash": "94996539",
+            "date": "2012-03-31 17:00:10 +0000",
+            "comment": "Post-move clean-up: - Fix relative paths to parent, keeping the doxia-parent for now - Change artifactsIds, names and descriptions - Add/remove modules"
+        },
+        {
+            "c_hash": "a571c865",
+            "date": "2012-03-31 17:10:15 +0000",
+            "comment": "Switch over to use doxia-tools as parent. This should probably be changed to maven-parent later on."
+        },
+        {
+            "c_hash": "fcf5cf27",
+            "date": "2012-03-31 17:13:25 +0000",
+            "comment": "Move maven/shared/trunk/maven-doxia-tools to maven/doxia/doxia-tools/trunk/doxia-integration-tools."
+        },
+        {
+            "c_hash": "11e1fd4c",
+            "date": "2012-03-31 17:22:55 +0000",
+            "comment": "Post-move clean-up for doxia-integration-tools: - Fix relative path to parent - Change artifactsId, name and description - Add module"
+        },
+        {
+            "c_hash": "dc089d38",
+            "date": "2012-03-31 20:35:29 +0000",
+            "comment": "committed using svnmucc"
+        },
+        {
+            "c_hash": "b2843dfc",
+            "date": "2012-04-01 10:33:26 +0000",
+            "comment": "changes scm configuration according the move"
+        },
+        {
+            "c_hash": "d427c020",
+            "date": "2012-04-05 22:04:57 +0000",
+            "comment": "Update old SCM URL."
+        },
+        {
+            "c_hash": "1089d8b1",
+            "date": "2012-04-05 22:14:32 +0000",
+            "comment": "[DOXIATOOLS-16] NullPointerException when site URL is being generated"
+        },
+        {
+            "c_hash": "4cee7c3c",
+            "date": "2012-04-11 21:36:49 +0000",
+            "comment": "updated site urls to let automatic extrapolation from parent"
+        },
+        {
+            "c_hash": "ed7e6e2e",
+            "date": "2012-04-11 21:55:26 +0000",
+            "comment": "updated site deploy url"
+        },
+        {
+            "c_hash": "7281b7f5",
+            "date": "2012-04-12 21:15:03 +0000",
+            "comment": "fixed link to README.TXT in svn"
+        },
+        {
+            "c_hash": "98ba3a29",
+            "date": "2012-04-12 21:17:19 +0000",
+            "comment": "fixed site and scm urls"
+        },
+        {
+            "c_hash": "2824772a",
+            "date": "2012-04-12 21:21:21 +0000",
+            "comment": "fixed typos"
+        },
+        {
+            "c_hash": "df8b7cf4",
+            "date": "2012-04-12 21:25:04 +0000",
+            "comment": "updated Tycho url"
+        },
+        {
+            "c_hash": "33cc5538",
+            "date": "2012-04-13 20:37:57 +0000",
+            "comment": "The default locale (en) should not be included in the list of locales for the l10n-maven-plugin."
+        },
+        {
+            "c_hash": "b43909cd",
+            "date": "2012-04-13 21:01:22 +0000",
+            "comment": "Tweak the site."
+        },
+        {
+            "c_hash": "e6c7519b",
+            "date": "2012-04-13 21:01:56 +0000",
+            "comment": "Use released version of Doxia."
+        },
+        {
+            "c_hash": "35a1997a",
+            "date": "2012-04-13 21:07:28 +0000",
+            "comment": "Stop using deprecated syntax for Surefire plugin."
+        },
+        {
+            "c_hash": "a317bb56",
+            "date": "2012-04-13 21:07:44 +0000",
+            "comment": "Fix Javadoc error."
+        },
+        {
+            "c_hash": "ae3bba63",
+            "date": "2012-04-13 21:09:24 +0000",
+            "comment": "Use a proper name."
+        },
+        {
+            "c_hash": "4495e2f8",
+            "date": "2012-04-13 21:32:03 +0000",
+            "comment": "Use a proper name."
+        },
+        {
+            "c_hash": "78351057",
+            "date": "2012-04-13 21:37:53 +0000",
+            "comment": "Use released version of Doxia."
+        },
+        {
+            "c_hash": "7abc64d2",
+            "date": "2012-04-13 21:39:50 +0000",
+            "comment": "Update the site."
+        },
+        {
+            "c_hash": "ab0838e5",
+            "date": "2012-04-13 21:43:32 +0000",
+            "comment": "Update to Maven Plugin Plugin 2.9."
+        },
+        {
+            "c_hash": "4107368f",
+            "date": "2012-04-13 21:44:20 +0000",
+            "comment": "Use the project's name."
+        },
+        {
+            "c_hash": "0fd13fa3",
+            "date": "2012-04-14 15:36:50 +0000",
+            "comment": "updated Doxia base to latest 1.3 release"
+        },
+        {
+            "c_hash": "f1b76598",
+            "date": "2012-04-14 16:39:11 +0000",
+            "comment": "rolling back doxia-ide move to doxia-tools in r1307894, was a bad idea"
+        },
+        {
+            "c_hash": "c7b0ba73",
+            "date": "2012-06-02 21:56:03 +0000",
+            "comment": "generics"
+        },
+        {
+            "c_hash": "1988dff2",
+            "date": "2012-06-02 22:10:15 +0000",
+            "comment": "[DOXIATOOLS-37] use plexus java 5 annotations instead of old-style javadoc annotations"
+        },
+        {
+            "c_hash": "defbd4c0",
+            "date": "2012-06-03 20:42:42 +0000",
+            "comment": "[DOXIATOOLS-38] use plugin java 5 annotations instead of old-style javadoc annotations"
+        },
+        {
+            "c_hash": "1e8a0803",
+            "date": "2012-06-03 22:02:39 +0000",
+            "comment": "[DOXIATOOLS-38] use plugin java 5 annotations instead of old-style javadoc annotations: forgot one more change"
+        },
+        {
+            "c_hash": "bf8e0b1d",
+            "date": "2012-06-18 08:30:38 +0000",
+            "comment": "[MSITE-644] NullPointerException when site URL is not defined in distributionManagement"
+        },
+        {
+            "c_hash": "48b242ca",
+            "date": "2012-08-24 15:30:13 +0000",
+            "comment": "use last parent"
+        },
+        {
+            "c_hash": "0d5b8e98",
+            "date": "2012-08-24 15:31:19 +0000",
+            "comment": "ignore idea files"
+        },
+        {
+            "c_hash": "4d506445",
+            "date": "2012-09-20 20:29:18 +0000",
+            "comment": "[DOXIATOOLS-16] NullPointerException when site URL is being generated"
+        },
+        {
+            "c_hash": "5d77a8de",
+            "date": "2012-09-20 20:33:02 +0000",
+            "comment": "Update issueManagement/url."
+        },
+        {
+            "c_hash": "c6a34c09",
+            "date": "2012-09-20 20:49:05 +0000",
+            "comment": "Change the POM hierarchy to match those used for maven-plugins and maven-shared. Such a layout is suitable when the modules have different release cycles, like they do here. The parent for doxia-tools is now at the same level as the modules, instead of one level above. At the top level is now an aggregator POM that can be used for CI servers."
+        },
+        {
+            "c_hash": "3f5894bc",
+            "date": "2012-09-20 20:55:10 +0000",
+            "comment": "Fix SCM URLs."
+        },
+        {
+            "c_hash": "19624d97",
+            "date": "2012-09-20 21:02:21 +0000",
+            "comment": "Add more specific issueManagement/urls."
+        },
+        {
+            "c_hash": "5ea37be8",
+            "date": "2012-09-20 21:11:42 +0000",
+            "comment": "Add the parent to the aggregator. Remove modules from the parent and add menu items for them."
+        },
+        {
+            "c_hash": "0fbf7498",
+            "date": "2012-09-20 21:15:49 +0000",
+            "comment": "Tweak names and descriptions."
+        },
+        {
+            "c_hash": "a7ee3b98",
+            "date": "2012-09-20 21:31:21 +0000",
+            "comment": "Change the stagingSiteURL, so that it takes into account the different release cycles of the modules."
+        },
+        {
+            "c_hash": "82d01511",
+            "date": "2012-09-21 21:35:34 +0000",
+            "comment": "Add bugtraq properties."
+        },
+        {
+            "c_hash": "941bbabc",
+            "date": "2012-09-21 21:43:34 +0000",
+            "comment": "[DOXIATOOLS-41] Update to Doxia base 1.3"
+        },
+        {
+            "c_hash": "dd742d1d",
+            "date": "2012-09-21 21:45:14 +0000",
+            "comment": "[DOXIATOOLS-42] Upgrade to doxia-sitetools-1.3"
+        },
+        {
+            "c_hash": "d70d98b3",
+            "date": "2012-09-23 12:52:56 +0000",
+            "comment": "Sort out test dependencies. We should not have <dependencies> declared in a parent POM, so I moved them to the projects that actually use them."
+        },
+        {
+            "c_hash": "63be8491",
+            "date": "2012-09-23 13:02:14 +0000",
+            "comment": "Inherit plugin versions from parent."
+        },
+        {
+            "c_hash": "9a55cf0e",
+            "date": "2012-09-23 13:14:33 +0000",
+            "comment": "Use latest decoration schema. Synchronize the menus so they look the same."
+        },
+        {
+            "c_hash": "55b11e52",
+            "date": "2012-09-23 13:22:38 +0000",
+            "comment": "[maven-release-plugin] prepare release doxia-tools-2"
+        },
+        {
+            "c_hash": "2f6896a1",
+            "date": "2012-09-23 13:22:52 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "df8c7203",
+            "date": "2012-09-23 13:24:04 +0000",
+            "comment": "Use doxia-tools:2 as parent."
+        },
+        {
+            "c_hash": "868d9f34",
+            "date": "2012-09-23 13:26:06 +0000",
+            "comment": "[maven-release-plugin] prepare release doxia-integration-tools-1.5"
+        },
+        {
+            "c_hash": "73c2bb6b",
+            "date": "2012-09-23 13:26:20 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "483647f6",
+            "date": "2012-09-26 21:03:25 +0000",
+            "comment": "Update to released version of doxia-tools parent."
+        },
+        {
+            "c_hash": "2e31e773",
+            "date": "2012-10-09 19:49:26 +0000",
+            "comment": "o Switched to commons-io XmlReader"
+        },
+        {
+            "c_hash": "5948342a",
+            "date": "2012-10-10 05:42:44 +0000",
+            "comment": "o Made it compile with maven3"
+        },
+        {
+            "c_hash": "ed67599e",
+            "date": "2012-10-11 19:48:53 +0000",
+            "comment": "Add unique version numbers to the modules, which were lost when I set up the possibility to release the modules individually."
+        },
+        {
+            "c_hash": "6ef5b22d",
+            "date": "2012-10-11 21:07:43 +0000",
+            "comment": "Update to plugin-plugin 3.1 to eliminate deprecation warnings in the generated Help mojo."
+        },
+        {
+            "c_hash": "80f59095",
+            "date": "2012-11-09 15:04:08 +0000",
+            "comment": "generics"
+        },
+        {
+            "c_hash": "1c976373",
+            "date": "2012-11-09 15:12:23 +0000",
+            "comment": "o cleanup now hat parent pom is not aggregator any more o updated plexus-utils"
+        },
+        {
+            "c_hash": "7101ae80",
+            "date": "2012-12-10 13:16:55 +0000",
+            "comment": "svn:ignore"
+        },
+        {
+            "c_hash": "92f2b8ab",
+            "date": "2013-01-24 23:00:49 +0000",
+            "comment": "use last parent"
+        },
+        {
+            "c_hash": "941729df",
+            "date": "2013-01-25 08:49:59 +0000",
+            "comment": "align projects names"
+        },
+        {
+            "c_hash": "57bdf7e8",
+            "date": "2013-01-25 08:58:24 +0000",
+            "comment": "use StringBuilder rather than StringBuffer"
+        },
+        {
+            "c_hash": "b6b90685",
+            "date": "2013-01-25 09:01:23 +0000",
+            "comment": "fix javadoc"
+        },
+        {
+            "c_hash": "df47f5f9",
+            "date": "2013-03-27 10:06:33 +0000",
+            "comment": "plexus-utils 3.0.10"
+        },
+        {
+            "c_hash": "d3600d6e",
+            "date": "2013-03-28 00:01:41 +0000",
+            "comment": "added generics"
+        },
+        {
+            "c_hash": "c87700a2",
+            "date": "2013-03-30 14:39:10 +0000",
+            "comment": "added generics"
+        },
+        {
+            "c_hash": "7bbd5bc7",
+            "date": "2013-05-08 15:48:55 +0000",
+            "comment": "added classic javadoc and jxr links"
+        },
+        {
+            "c_hash": "0b56c11f",
+            "date": "2013-07-30 20:41:55 +0000",
+            "comment": "Add missing license header."
+        },
+        {
+            "c_hash": "b2c9d9d7",
+            "date": "2014-04-12 16:40:16 +0000",
+            "comment": "updated parent poms"
+        },
+        {
+            "c_hash": "6ca96e02",
+            "date": "2014-06-20 09:42:32 +0000",
+            "comment": "[DOXIATOOLS-44] don't forget to close readers"
+        },
+        {
+            "c_hash": "10fafc7f",
+            "date": "2014-06-21 14:14:06 +0000",
+            "comment": "[MNG-152]  add license and download links"
+        },
+        {
+            "c_hash": "e76025bb",
+            "date": "2014-06-21 14:20:20 +0000",
+            "comment": "improved intro"
+        },
+        {
+            "c_hash": "183ab7b3",
+            "date": "2014-06-21 14:20:41 +0000",
+            "comment": "updated parent pom"
+        },
+        {
+            "c_hash": "b80eb6d1",
+            "date": "2014-06-21 14:30:46 +0000",
+            "comment": "reduce copy/paste"
+        },
+        {
+            "c_hash": "2799f8e9",
+            "date": "2014-06-21 14:36:51 +0000",
+            "comment": "remove XML encoding parametrization, since it doesn't have meaning"
+        },
+        {
+            "c_hash": "2554a25a",
+            "date": "2014-06-21 14:38:06 +0000",
+            "comment": "[DOXIATOOLS-44] don't forget to close inputstream"
+        },
+        {
+            "c_hash": "23c1de61",
+            "date": "2014-06-21 15:34:44 +0000",
+            "comment": "[DOXIATOOLS-47] removed encoding parameters from site descriptor methods"
+        },
+        {
+            "c_hash": "639756c9",
+            "date": "2014-06-21 15:42:51 +0000",
+            "comment": "[DOXIATOOLS-48] don't read parent site.xml if inheritance not expected"
+        },
+        {
+            "c_hash": "15b47164",
+            "date": "2014-06-21 15:47:12 +0000",
+            "comment": "code simplification"
+        },
+        {
+            "c_hash": "19eace75",
+            "date": "2014-06-21 15:50:39 +0000",
+            "comment": "code simplification"
+        },
+        {
+            "c_hash": "5e7f22d3",
+            "date": "2014-06-21 15:51:53 +0000",
+            "comment": "fix when decoration is null"
+        },
+        {
+            "c_hash": "d7275e98",
+            "date": "2014-06-22 07:24:19 +0000",
+            "comment": "[DOXIASITETOOLS-90] updated unit tests"
+        },
+        {
+            "c_hash": "a84d739d",
+            "date": "2014-06-22 07:25:04 +0000",
+            "comment": "use managed version"
+        },
+        {
+            "c_hash": "28a4bc0f",
+            "date": "2014-06-22 07:27:08 +0000",
+            "comment": "reverted \"use managed version\": doesn't work, need to investigate..."
+        },
+        {
+            "c_hash": "a9558067",
+            "date": "2014-06-22 08:25:47 +0000",
+            "comment": "mark Maven 2 internals as provided to avoid later exclusions in m-site-p"
+        },
+        {
+            "c_hash": "92d55bda",
+            "date": "2014-06-27 20:28:05 +0000",
+            "comment": "reverted modification done inadvertently in r1604427"
+        },
+        {
+            "c_hash": "58735185",
+            "date": "2014-06-30 18:45:07 +0000",
+            "comment": "[maven-release-plugin] prepare release doxia-tools-3"
+        },
+        {
+            "c_hash": "8582903f",
+            "date": "2014-06-30 18:45:12 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "6c665001",
+            "date": "2014-06-30 18:47:02 +0000",
+            "comment": "prepare release"
+        },
+        {
+            "c_hash": "cb6a8de4",
+            "date": "2014-06-30 18:47:35 +0000",
+            "comment": "[maven-release-plugin] prepare release doxia-integration-tools-1.6"
+        },
+        {
+            "c_hash": "3ea22e65",
+            "date": "2014-06-30 18:47:39 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "f754bce9",
+            "date": "2014-06-30 19:01:08 +0000",
+            "comment": "reverted release and fixed maven.site.path"
+        },
+        {
+            "c_hash": "30ba4dbe",
+            "date": "2014-06-30 19:01:31 +0000",
+            "comment": "reverted release"
+        },
+        {
+            "c_hash": "eeaf1e73",
+            "date": "2014-06-30 19:13:49 +0000",
+            "comment": "prepared site publication"
+        },
+        {
+            "c_hash": "36695083",
+            "date": "2014-06-30 19:46:17 +0000",
+            "comment": "removed cobertura reporting"
+        },
+        {
+            "c_hash": "2819ab44",
+            "date": "2014-06-30 19:51:47 +0000",
+            "comment": "fixed svnpubsub"
+        },
+        {
+            "c_hash": "485ecd9b",
+            "date": "2014-06-30 19:59:26 +0000",
+            "comment": "[maven-release-plugin] prepare release doxia-tools-3"
+        },
+        {
+            "c_hash": "cde3ef36",
+            "date": "2014-06-30 19:59:30 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "f9d93ec3",
+            "date": "2014-06-30 20:00:16 +0000",
+            "comment": "[maven-release-plugin] prepare release doxia-integration-tools-1.6"
+        },
+        {
+            "c_hash": "87ec78b4",
+            "date": "2014-06-30 20:00:21 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "a4e6f22f",
+            "date": "2014-06-30 20:10:56 +0000",
+            "comment": "reverted releases"
+        },
+        {
+            "c_hash": "b9da6709",
+            "date": "2014-06-30 20:11:42 +0000",
+            "comment": "[maven-release-plugin] prepare release doxia-tools-3"
+        },
+        {
+            "c_hash": "6fb21c85",
+            "date": "2014-06-30 20:11:46 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "8acb9305",
+            "date": "2014-06-30 20:12:28 +0000",
+            "comment": "[maven-release-plugin] prepare release doxia-integration-tools-1.6"
+        },
+        {
+            "c_hash": "a6ac887c",
+            "date": "2014-06-30 20:12:33 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "efb72e1f",
+            "date": "2014-07-21 15:24:16 +0000",
+            "comment": "configured license check"
+        },
+        {
+            "c_hash": "07e5ac2f",
+            "date": "2014-11-03 22:45:01 +0000",
+            "comment": "add info message when loading project from relative path"
+        }
+    ]
+}

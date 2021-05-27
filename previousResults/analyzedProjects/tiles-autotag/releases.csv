@@ -1,0 +1,6 @@
+commitID;commit-type;time-to-next-release;commit-message
+21586bb495860cd1a6de717d95e31759b2d24958;BREAKING_FIX;845;TILESSB-20 First files for Autotag. git-svn-id: https://svn.apache.org/repos/asf/tiles/sandbox/trunk/tiles-autotag@897448 13f79535-47bb-0310-9956-ffa450edef68
+470c3ed4538964f851068ffc511d447bd9f01fe3;BREAKING_CHANGES;845;TILESSB-21 Added ANTLR generation of Java parser. git-svn-id: https://svn.apache.org/repos/asf/tiles/sandbox/trunk/tiles-autotag@897523 13f79535-47bb-0310-9956-ffa450edef68
+10dacef43a6f79e2602102e0b8797a699f3716f8;BREAKING_FIX;821;TILESSB-21 Added code that uses QDox to create the model. Removed Antlr stuff and dependency on Java compiler tools. git-svn-id: https://svn.apache.org/repos/asf/tiles/sandbox/trunk/tiles-autotag@905568 13f79535-47bb-0310-9956-ffa450edef68
+31a106fee7506001d9ab3dd8e2870946aa80c116;BREAKING_CHANGES;702;TILES-508 Merge from trunk to sandboxed Tiles 3. Removed repository configuration. Fixed release plugin configuration. Fixed some artifact and plugin versions. git-svn-id: https://svn.apache.org/repos/asf/tiles/sandbox/trunk/tiles-autotag@950198 13f79535-47bb-0310-9956-ffa450edef68
+1aafd211eb96941bd6ab4a822f0341d895d49de2;BREAKING_FIX;67;moved to non-snapshot version of the Request API git-svn-id: https://svn.apache.org/repos/asf/tiles/autotag/trunk@1334224 13f79535-47bb-0310-9956-ffa450edef68

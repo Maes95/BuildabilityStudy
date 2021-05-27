@@ -1,0 +1,278 @@
+{
+    "project": "maven-app-engine",
+    "git_url": "https://github.com/apache/maven-app-engine.git",
+    "last_commit": "4b8268d5",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "b77ad9e8",
+            "date": "2011-05-17 16:57:50 +0000",
+            "comment": "Adding Maven App Engine (MAE) preliminary code, adapted from EMB code at http://github.com/jdcasey/EMB"
+        },
+        {
+            "c_hash": "4b0475c4",
+            "date": "2011-05-17 16:58:42 +0000",
+            "comment": "removing old files."
+        },
+        {
+            "c_hash": "16efa94d",
+            "date": "2011-05-17 17:03:11 +0000",
+            "comment": "Removing sisuVersion property, and updating plexusVersion property, to get any latest changes in the component annotations dependency."
+        },
+        {
+            "c_hash": "a50ab5d9",
+            "date": "2011-05-17 17:03:45 +0000",
+            "comment": "removing old EMB modules that aren't relevant (yet)"
+        },
+        {
+            "c_hash": "4e97c14b",
+            "date": "2011-05-17 17:07:19 +0000",
+            "comment": "carving out other unnecessary stuff."
+        },
+        {
+            "c_hash": "b03a4a72",
+            "date": "2011-05-17 17:08:03 +0000",
+            "comment": "one more old comment..."
+        },
+        {
+            "c_hash": "d38ba4e2",
+            "date": "2011-05-17 17:10:15 +0000",
+            "comment": "align with latest maven release, but as snapshot to indicate that this will be compatible with that maven release."
+        },
+        {
+            "c_hash": "341279b2",
+            "date": "2011-05-17 22:08:49 +0000",
+            "comment": "renaming some lingering classes to MAE"
+        },
+        {
+            "c_hash": "96c7e0f5",
+            "date": "2011-05-17 22:31:50 +0000",
+            "comment": "renaming some more classes"
+        },
+        {
+            "c_hash": "73a8f0f6",
+            "date": "2011-05-20 20:50:34 +0000",
+            "comment": "fixing up population of repository system session from execution request."
+        },
+        {
+            "c_hash": "38ae1250",
+            "date": "2011-05-27 00:12:38 +0000",
+            "comment": "Fixing license headers."
+        },
+        {
+            "c_hash": "a7fb2fb7",
+            "date": "2011-05-27 00:19:56 +0000",
+            "comment": "moving mae-app classes into mae-booter, and switching the version to 1.0-alpha-1-SNAPSHOT, since I'm not sure it's appropriate to peg this to a maven version."
+        },
+        {
+            "c_hash": "4a94c734",
+            "date": "2011-05-27 02:50:04 +0000",
+            "comment": "Adding documentation and removing vestigial code from early days."
+        },
+        {
+            "c_hash": "0aa2dfac",
+            "date": "2011-05-27 15:34:21 +0000",
+            "comment": "move MAEPrompter out to a separate module, to allow the use of mae-api without the need to depend on jline unless you have a use case that requires prompting from the CLI."
+        },
+        {
+            "c_hash": "5d1811aa",
+            "date": "2011-05-27 15:45:32 +0000",
+            "comment": "Cleaning up BOMs, adding mae-prompter-cli to BOMs."
+        },
+        {
+            "c_hash": "cf49d03f",
+            "date": "2011-05-27 23:59:20 +0000",
+            "comment": "fixing component metadata generation for prompter"
+        },
+        {
+            "c_hash": "4fb3c3b5",
+            "date": "2011-05-31 16:03:59 +0000",
+            "comment": "remove dependency on plexus-interactivity-api, and refactor mae-prompter-cli to stand on its own."
+        },
+        {
+            "c_hash": "8666eea9",
+            "date": "2011-05-31 20:14:21 +0000",
+            "comment": "minor adjustment"
+        },
+        {
+            "c_hash": "a9e28ffc",
+            "date": "2011-06-01 00:53:38 +0000",
+            "comment": "Adding test for prompter, and adjusting getSelection(..) methods of MAEPrompt."
+        },
+        {
+            "c_hash": "a1adc65c",
+            "date": "2011-06-21 21:48:35 +0000",
+            "comment": "Adding project-tools from EMB, which provides some convenience wrappers around the ProjectBuilder and related components."
+        },
+        {
+            "c_hash": "3cd48f87",
+            "date": "2011-06-21 22:16:36 +0000",
+            "comment": "simplify the construction options for the simple project tools session, and remove the (unused) getWorkdir() method."
+        },
+        {
+            "c_hash": "105969f3",
+            "date": "2011-06-21 22:21:03 +0000",
+            "comment": "fixing test fixture."
+        },
+        {
+            "c_hash": "7d4d756d",
+            "date": "2011-06-21 23:02:02 +0000",
+            "comment": "allow control over whether project modules are processed while building project instances."
+        },
+        {
+            "c_hash": "34aac07b",
+            "date": "2011-06-22 22:42:42 +0000",
+            "comment": "fixing memory issue with erroneously and recursively appending a stringbuilder to itself."
+        },
+        {
+            "c_hash": "86b6e703",
+            "date": "2011-07-21 18:32:58 +0000",
+            "comment": "adding ability to control pom validation level to the ProjectToolsSession interface, and eliminating unnecessary constructors from MAEException."
+        },
+        {
+            "c_hash": "26df28bf",
+            "date": "2011-07-22 15:50:39 +0000",
+            "comment": "enable the MAEServiceManager to create a new ProjectBuildingRequest based on a template, from the execution request, if available, or even just another project-building request if that's available."
+        },
+        {
+            "c_hash": "9e0613cd",
+            "date": "2011-07-29 22:54:19 +0000",
+            "comment": "Removing mae-container and switching to rely on modified version of sisu, which is explained in the README.markdown file"
+        },
+        {
+            "c_hash": "e39c0bd5",
+            "date": "2011-08-03 15:33:28 +0000",
+            "comment": "adding sisu-inject-plexus version modification"
+        },
+        {
+            "c_hash": "52d9b6b2",
+            "date": "2011-08-03 20:19:54 +0000",
+            "comment": "added IDE files to svn:ignore"
+        },
+        {
+            "c_hash": "1b47a737",
+            "date": "2011-08-03 21:03:25 +0000",
+            "comment": "renamed boms directory to mae-bom to match artifactId"
+        },
+        {
+            "c_hash": "e6775bb7",
+            "date": "2011-08-03 21:05:30 +0000",
+            "comment": "renamed mae-bom directory to mae-boms to match artifactId"
+        },
+        {
+            "c_hash": "983b13f7",
+            "date": "2011-08-04 20:30:17 +0000",
+            "comment": "removing mae-app, which has been consolidated with mae-booter...and adjusting to use sisu variant that supports ComponentSelector and InstanceRegistry - remapping components at the application entry point."
+        },
+        {
+            "c_hash": "9d178e99",
+            "date": "2011-08-04 20:38:16 +0000",
+            "comment": "removing duplicated directory (boms) and updating the sisu version in mae-boms"
+        },
+        {
+            "c_hash": "09baea00",
+            "date": "2011-08-04 20:41:50 +0000",
+            "comment": "put the mae-library-bom first, so the proper version of sisu gets used...then, remove the version here and let the BOM manage it."
+        },
+        {
+            "c_hash": "2eb7b6c6",
+            "date": "2011-08-04 20:45:33 +0000",
+            "comment": "still trying to remove obsolete mae-app module...maybe this one will be the commit that does it"
+        },
+        {
+            "c_hash": "2e2c376e",
+            "date": "2011-08-04 20:51:55 +0000",
+            "comment": "now, rearranging BOM usage to streamline a bit more, and removing one final reference to sisu that doesn't use the BOM version"
+        },
+        {
+            "c_hash": "5a9525b6",
+            "date": "2011-08-04 21:12:28 +0000",
+            "comment": "adding project-tools to BOM"
+        },
+        {
+            "c_hash": "e7587b83",
+            "date": "2011-08-12 23:02:14 +0000",
+            "comment": "Adding components and classes for resolving/loading models more easily."
+        },
+        {
+            "c_hash": "65b073ff",
+            "date": "2011-08-15 17:29:22 +0000",
+            "comment": "correct for the most common module reference, which has implied pom.xml file and simply references the module directory."
+        },
+        {
+            "c_hash": "c19aa09c",
+            "date": "2011-08-17 21:51:15 +0000",
+            "comment": "wrong groupId for project-tools dependency"
+        },
+        {
+            "c_hash": "076be846",
+            "date": "2011-08-18 02:25:18 +0000",
+            "comment": "reverting to vanilla sisu, and starting to work out how to use guice modules and typelisteners to avoid the need for a customized plexus container implementation."
+        },
+        {
+            "c_hash": "8368f109",
+            "date": "2011-08-18 02:33:53 +0000",
+            "comment": "enabling a couple more tests (that don't work), and annotating sites to fix in the component-selection module"
+        },
+        {
+            "c_hash": "6b7fd3a6",
+            "date": "2011-08-19 18:58:10 +0000",
+            "comment": "component selection still not working...at least, in tests. Needs more work"
+        },
+        {
+            "c_hash": "90b601c8",
+            "date": "2011-08-21 21:10:18 +0000",
+            "comment": "use http://maven.apache.org/xsd/maven-4.0.0.xsd"
+        },
+        {
+            "c_hash": "d3da6282",
+            "date": "2011-08-21 21:13:35 +0000",
+            "comment": "updated parent pom"
+        },
+        {
+            "c_hash": "e7b175ca",
+            "date": "2011-08-23 21:45:04 +0000",
+            "comment": "initialize remote repositories before attempting to load projects"
+        },
+        {
+            "c_hash": "b75f31d6",
+            "date": "2011-08-24 19:57:39 +0000",
+            "comment": "renaming *SessionInjector to *SessionInitializer, and consolidating all the methods within into one coordinated initializeSessionComponents method...then, adjusting that method implementation until it works."
+        },
+        {
+            "c_hash": "6680cccd",
+            "date": "2011-08-25 20:03:54 +0000",
+            "comment": "* move back to using hacked mae-container plexus variant, to avoid the need to maintain all of sisu with component selectors...which isn't all that useful for MAE, really"
+        },
+        {
+            "c_hash": "97baa5fc",
+            "date": "2011-10-26 20:32:38 +0000",
+            "comment": "fixing license and adding RAT plugin"
+        },
+        {
+            "c_hash": "ee5e5b69",
+            "date": "2011-10-26 20:36:49 +0000",
+            "comment": "adding maven default excludes...not sure, but seems like this isn't enabled by default"
+        },
+        {
+            "c_hash": "6089dd1c",
+            "date": "2011-10-26 21:14:41 +0000",
+            "comment": "remove maeVersion reference"
+        },
+        {
+            "c_hash": "06b33b30",
+            "date": "2011-10-26 21:20:47 +0000",
+            "comment": "[maven-release-plugin] prepare release mae-1.0-alpha-1"
+        },
+        {
+            "c_hash": "0f8e8d2e",
+            "date": "2011-10-26 21:21:01 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "4b8268d5",
+            "date": "2011-11-01 17:08:55 +0000",
+            "comment": "Promoting out of sandbox"
+        }
+    ]
+}

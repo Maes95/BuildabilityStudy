@@ -1,0 +1,2848 @@
+{
+    "project": "whirr",
+    "git_url": "https://github.com/apache/whirr.git",
+    "last_commit": "79042f4d",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "0144658b",
+            "date": "2010-06-01 04:41:54 +0000",
+            "comment": "Add Whirr trunk."
+        },
+        {
+            "c_hash": "f82db29c",
+            "date": "2010-06-04 22:24:20 +0000",
+            "comment": "Create contrib directory."
+        },
+        {
+            "c_hash": "5c782db3",
+            "date": "2010-06-04 22:24:53 +0000",
+            "comment": "HADOOP-6780. Move Hadoop cloud scripts to Whirr."
+        },
+        {
+            "c_hash": "98372a95",
+            "date": "2010-06-04 23:58:57 +0000",
+            "comment": "WHIRR-1. Import initial source code from Hadoop contrib."
+        },
+        {
+            "c_hash": "16dae7df",
+            "date": "2010-06-09 20:13:19 +0000",
+            "comment": "WHIRR-2. Import initial Java source code."
+        },
+        {
+            "c_hash": "998f0482",
+            "date": "2010-06-15 16:34:16 +0000",
+            "comment": "WHIRR-20. Generate RAT report. Contributed by phunt."
+        },
+        {
+            "c_hash": "95d1029f",
+            "date": "2010-06-17 04:26:47 +0000",
+            "comment": "WHIRR-29. Add target directories to svn ignore."
+        },
+        {
+            "c_hash": "df022883",
+            "date": "2010-06-20 17:24:31 +0000",
+            "comment": "WHIRR-32. Update POM to point to Apache RAT 0.8-SNAPSHOT. Contributed by Jeff Hammerbacher."
+        },
+        {
+            "c_hash": "9dfb450c",
+            "date": "2010-06-21 04:35:36 +0000",
+            "comment": "WHIRR-21. Enforce source code style."
+        },
+        {
+            "c_hash": "3351342e",
+            "date": "2010-06-22 04:12:09 +0000",
+            "comment": "WHIRR-34. Open up ports 50010 (JobTracker) and 50070 (NameNode) for the Hadoop Service. Contributed by Jeff Hammerbacher."
+        },
+        {
+            "c_hash": "56e6e601",
+            "date": "2010-06-23 04:05:49 +0000",
+            "comment": "WHIRR-26. Allow script locations to be overridden. Contributed by Jeff Hammerbacher."
+        },
+        {
+            "c_hash": "ea2cff32",
+            "date": "2010-06-23 17:47:32 +0000",
+            "comment": "WHIRR-22. Separate unit and integration (system) tests."
+        },
+        {
+            "c_hash": "d0fe51df",
+            "date": "2010-06-23 18:15:32 +0000",
+            "comment": "Added missing Apache License header."
+        },
+        {
+            "c_hash": "f1ba0124",
+            "date": "2010-06-23 18:54:01 +0000",
+            "comment": "WHIRR-37. Don't require manual installation of Apache RAT to compile."
+        },
+        {
+            "c_hash": "ec2975e6",
+            "date": "2010-06-25 16:49:15 +0000",
+            "comment": "WHIRR-19: Create project website"
+        },
+        {
+            "c_hash": "b97db404",
+            "date": "2010-06-25 19:01:50 +0000",
+            "comment": "WHIRR-27. Add Cassandra service."
+        },
+        {
+            "c_hash": "aec7762c",
+            "date": "2010-06-25 19:15:39 +0000",
+            "comment": "Adding the missing jars required for WHIRR-27."
+        },
+        {
+            "c_hash": "29d51730",
+            "date": "2010-06-26 17:00:59 +0000",
+            "comment": "WHIRR-38. Add core javadoc."
+        },
+        {
+            "c_hash": "4935e3b5",
+            "date": "2010-06-26 17:13:04 +0000",
+            "comment": "Set svn:ignore on services/cassandra and site directories."
+        },
+        {
+            "c_hash": "b8544b88",
+            "date": "2010-06-28 20:06:55 +0000",
+            "comment": "Add svn and git ignores."
+        },
+        {
+            "c_hash": "79163508",
+            "date": "2010-06-29 01:08:45 +0000",
+            "comment": "WHIRR-47. Create a Service factory."
+        },
+        {
+            "c_hash": "cf616601",
+            "date": "2010-06-29 01:24:57 +0000",
+            "comment": "Cassandra POM should depend on top-level."
+        },
+        {
+            "c_hash": "92309886",
+            "date": "2010-07-01 05:37:04 +0000",
+            "comment": "WHIRR-51. Allow the Hadoop service to be run on Rackspace Cloud servers. (Jeff Hammerbacher via tomwhite)"
+        },
+        {
+            "c_hash": "ecdad5e3",
+            "date": "2010-07-06 18:27:49 +0000",
+            "comment": "WHIRR-48. Fix RAT warnings due to site files."
+        },
+        {
+            "c_hash": "67673086",
+            "date": "2010-07-06 18:40:15 +0000",
+            "comment": "WHIRR-53. Adopt the standard Java SPI interface."
+        },
+        {
+            "c_hash": "8ce9cb8c",
+            "date": "2010-08-09 21:56:14 +0000",
+            "comment": "Workaround bug 331 in jclouds (Some EC2ComputeService operations fail for stopped instances)"
+        },
+        {
+            "c_hash": "cf9fb6b2",
+            "date": "2010-08-11 23:59:02 +0000",
+            "comment": "WHIRR-23. Upgrade to jclouds 1.0-beta-6. Contributed by Adrian Cole."
+        },
+        {
+            "c_hash": "40e86877",
+            "date": "2010-08-12 21:07:21 +0000",
+            "comment": "WHIRR-64. Unify ClusterSpec and ServiceSpec."
+        },
+        {
+            "c_hash": "3eb7f0ed",
+            "date": "2010-08-12 23:04:20 +0000",
+            "comment": "WHIRR-58. Introduce naming consistency for cloud service providers. Contributed by Adrian Cole."
+        },
+        {
+            "c_hash": "15d4e6c5",
+            "date": "2010-08-17 16:53:11 +0000",
+            "comment": "WHIRR-33. Add a CLI."
+        },
+        {
+            "c_hash": "95d69e5a",
+            "date": "2010-08-17 22:25:43 +0000",
+            "comment": "WHIRR-71. Only allow access to clusters from defined networks."
+        },
+        {
+            "c_hash": "d30df502",
+            "date": "2010-08-18 21:22:21 +0000",
+            "comment": "Added svn:ignore properties to new cli module."
+        },
+        {
+            "c_hash": "c9935e02",
+            "date": "2010-08-20 22:22:46 +0000",
+            "comment": "WHIRR-75. Use Commons Configuration to manage cluster specs."
+        },
+        {
+            "c_hash": "f1f6c968",
+            "date": "2010-08-23 23:14:03 +0000",
+            "comment": "WHIRR-40. Fill in getting started documentation."
+        },
+        {
+            "c_hash": "42d2b22d",
+            "date": "2010-08-30 19:54:26 +0000",
+            "comment": "WHIRR-54. Implement service/cdh."
+        },
+        {
+            "c_hash": "afc0f59a",
+            "date": "2010-08-31 23:57:11 +0000",
+            "comment": "WHIRR-77. Document and implement release process."
+        },
+        {
+            "c_hash": "f6eed434",
+            "date": "2010-09-01 04:57:27 +0000",
+            "comment": "WHIRR-79. Hadoop service is broken."
+        },
+        {
+            "c_hash": "4024f750",
+            "date": "2010-09-01 17:24:36 +0000",
+            "comment": "Remove top level site directory, since its src directory was moved in WHIRR-77."
+        },
+        {
+            "c_hash": "2c31bd30",
+            "date": "2010-09-01 21:37:57 +0000",
+            "comment": "WHIRR-70. decouple keypairs from the files that hold them. Contributed by Adrian Cole."
+        },
+        {
+            "c_hash": "7796bc9c",
+            "date": "2010-09-01 22:35:05 +0000",
+            "comment": "WHIRR-80. Clean up POM dependencies."
+        },
+        {
+            "c_hash": "c68364f6",
+            "date": "2010-09-01 22:45:19 +0000",
+            "comment": "WHIRR-82. Integration tests should not run on \"mvn install\"."
+        },
+        {
+            "c_hash": "87d87dbd",
+            "date": "2010-09-02 20:08:45 +0000",
+            "comment": "Preparing for release 0.1.0"
+        },
+        {
+            "c_hash": "30137cc6",
+            "date": "2010-09-02 20:28:36 +0000",
+            "comment": "Prepare for 0.2.0 development."
+        },
+        {
+            "c_hash": "3dbaecb4",
+            "date": "2010-09-03 03:03:08 +0000",
+            "comment": "WHIRR-84. Log4j is missing from the CLI JAR."
+        },
+        {
+            "c_hash": "d518cc20",
+            "date": "2010-09-09 22:57:27 +0000",
+            "comment": "WHIRR-85. Publish Maven artifacts to http://repository.apache.org."
+        },
+        {
+            "c_hash": "580a9c0b",
+            "date": "2010-09-10 17:06:44 +0000",
+            "comment": "WHIRR-86. Update quick start documentation to work with release 0.1.0."
+        },
+        {
+            "c_hash": "e11b25c8",
+            "date": "2010-09-16 22:19:40 +0000",
+            "comment": "WHIRR-89. Support maven 3 builds. Contributed by Adrian Cole."
+        },
+        {
+            "c_hash": "d164e060",
+            "date": "2010-09-20 16:59:04 +0000",
+            "comment": "WHIRR-93. Fail on checkstyle violation."
+        },
+        {
+            "c_hash": "edbc1d5d",
+            "date": "2010-09-21 21:43:32 +0000",
+            "comment": "WHIRR-90. Scripts should be versioned."
+        },
+        {
+            "c_hash": "6886dbe5",
+            "date": "2010-09-22 19:10:58 +0000",
+            "comment": "WHIRR-66. Upgrade to jclouds 1.0-beta-7. Contributed by Adrian Cole."
+        },
+        {
+            "c_hash": "fd2bbdf8",
+            "date": "2010-09-28 03:28:40 +0000",
+            "comment": "WHIRR-97. Lucid is not stable on EC2."
+        },
+        {
+            "c_hash": "9a7e3f07",
+            "date": "2010-09-28 03:33:32 +0000",
+            "comment": "WHIRR-103. Add more to .gitignore. Contributed by phunt."
+        },
+        {
+            "c_hash": "99d9fa6d",
+            "date": "2010-09-28 16:30:36 +0000",
+            "comment": "WHIRR-100. Create a binary distribution of Whirr."
+        },
+        {
+            "c_hash": "93ab02e1",
+            "date": "2010-09-29 23:17:01 +0000",
+            "comment": "WHIRR-105. Add version command to the CLI."
+        },
+        {
+            "c_hash": "a8abb71c",
+            "date": "2010-09-30 20:19:17 +0000",
+            "comment": "WHIRR-102. unknown service NPEs cli, should print the bad service to console"
+        },
+        {
+            "c_hash": "15ca3e36",
+            "date": "2010-09-30 21:02:36 +0000",
+            "comment": "WHIRR-104. print available services in cli help string"
+        },
+        {
+            "c_hash": "8dc08b0c",
+            "date": "2010-10-01 04:07:36 +0000",
+            "comment": "WHIRR-73. Add a list command to the CLI."
+        },
+        {
+            "c_hash": "62b91c80",
+            "date": "2010-10-01 04:38:23 +0000",
+            "comment": "WHIRR-108. Fix checkstyle and rat violations."
+        },
+        {
+            "c_hash": "496def90",
+            "date": "2010-10-04 04:30:13 +0000",
+            "comment": "WHIRR-101. Hadoop on EC2 does not use the /mnt partition."
+        },
+        {
+            "c_hash": "48bc4cd1",
+            "date": "2010-10-04 05:09:02 +0000",
+            "comment": "WHIRR-109. Unit tests fail if there is no private key found at ~/.ssh/id_rsa. Contributed by Adrian Cole."
+        },
+        {
+            "c_hash": "4dbaadb0",
+            "date": "2010-10-04 17:31:34 +0000",
+            "comment": "WHIRR-107. Test failing due to not matching Amazon Linux AMI on EC2."
+        },
+        {
+            "c_hash": "735392f2",
+            "date": "2010-10-04 19:29:23 +0000",
+            "comment": "WHIRR-106. Improve logging in whirr cli."
+        },
+        {
+            "c_hash": "50f733da",
+            "date": "2010-10-05 16:22:47 +0000",
+            "comment": "WHIRR-110. Create client-side Hadoop configuration file during cluster launch."
+        },
+        {
+            "c_hash": "8563d20a",
+            "date": "2010-10-05 20:36:21 +0000",
+            "comment": "WHIRR-113. Hadoop cluster instances should all start in the same location."
+        },
+        {
+            "c_hash": "b543c0c2",
+            "date": "2010-10-07 18:30:54 +0000",
+            "comment": "WHIRR-112. Expand documentation."
+        },
+        {
+            "c_hash": "5803de80",
+            "date": "2010-10-26 16:39:35 +0000",
+            "comment": "WHIRR-114. Support + character in version number."
+        },
+        {
+            "c_hash": "4683deb1",
+            "date": "2010-10-27 17:03:08 +0000",
+            "comment": "WHIRR-52. Support all services on Rackspace Cloud Servers."
+        },
+        {
+            "c_hash": "451ff8a7",
+            "date": "2010-11-01 22:59:27 +0000",
+            "comment": "WHIRR-91. Add DISCLAIMER file to CLI JAR"
+        },
+        {
+            "c_hash": "2523b4a8",
+            "date": "2010-11-01 23:08:01 +0000",
+            "comment": "Preparing for release 0.2.0-incubating"
+        },
+        {
+            "c_hash": "5e2f2872",
+            "date": "2010-11-01 23:13:12 +0000",
+            "comment": "Preparing for release 0.2.0-incubating"
+        },
+        {
+            "c_hash": "446a0b23",
+            "date": "2010-11-02 05:22:51 +0000",
+            "comment": "WHIRR-122. whirr site has two FAQ links"
+        },
+        {
+            "c_hash": "3c7378d1",
+            "date": "2010-11-04 03:16:34 +0000",
+            "comment": "WHIRR-126. Deployment process does not deploy required test JARs"
+        },
+        {
+            "c_hash": "fd20607e",
+            "date": "2010-11-09 04:57:23 +0000",
+            "comment": "WHIRR-128. Fix DNS resolution for clients running within EC2. Contributed by Tibor Kiss."
+        },
+        {
+            "c_hash": "05f9937a",
+            "date": "2010-11-23 18:00:18 +0000",
+            "comment": "WHIRR-137. Allow use of an arbitrary AMI on EC2."
+        },
+        {
+            "c_hash": "6d14493f",
+            "date": "2010-11-30 05:11:33 +0000",
+            "comment": "WHIRR-87. Parallelize Hadoop cluster creation."
+        },
+        {
+            "c_hash": "902d15b7",
+            "date": "2010-11-30 16:29:56 +0000",
+            "comment": "WHIRR-146. Changing the mapred.child.java.opts value does not change the heap size from a default one. Contributed by Tibor Kiss."
+        },
+        {
+            "c_hash": "02096ba3",
+            "date": "2010-12-01 17:29:08 +0000",
+            "comment": "Reverted changes to scripts/apache/hadoop/post-configure from WHIRR-146"
+        },
+        {
+            "c_hash": "4a08a5f7",
+            "date": "2010-12-01 19:15:53 +0000",
+            "comment": "WHIRR-147. Regression on launching clusters from EC2."
+        },
+        {
+            "c_hash": "0f08c42c",
+            "date": "2010-12-02 05:39:07 +0000",
+            "comment": "WHIRR-151. Credentials not set correctly for Hadoop service configure step."
+        },
+        {
+            "c_hash": "d8dabd7c",
+            "date": "2010-12-03 17:53:17 +0000",
+            "comment": "WHIRR-92. Add a benchmark for Hadoop clusters."
+        },
+        {
+            "c_hash": "125c06b4",
+            "date": "2010-12-07 21:17:12 +0000",
+            "comment": "WHIRR-117. Composable services."
+        },
+        {
+            "c_hash": "ed1db279",
+            "date": "2010-12-09 16:59:46 +0000",
+            "comment": "WHIRR-153. Add documentation for WHIRR-87 (Parallelize Hadoop cluster creation)."
+        },
+        {
+            "c_hash": "f410e8f6",
+            "date": "2010-12-09 17:25:38 +0000",
+            "comment": "WHIRR-115. Distribution should include documentation."
+        },
+        {
+            "c_hash": "55763527",
+            "date": "2010-12-09 18:19:49 +0000",
+            "comment": "WHIRR-123. Cassandra integration tests hang if whirr's scripts bucket is missing."
+        },
+        {
+            "c_hash": "38fcc162",
+            "date": "2010-12-10 00:26:38 +0000",
+            "comment": "Reverted WHIRR-123"
+        },
+        {
+            "c_hash": "1f9dab0a",
+            "date": "2010-12-10 18:51:02 +0000",
+            "comment": "WHIRR-154. Cassandra: expose JMX port. Contributed by Kelvin Kakugawa."
+        },
+        {
+            "c_hash": "73e9cd04",
+            "date": "2010-12-13 19:24:44 +0000",
+            "comment": "WHIRR-159. Cassandra and ZooKeeper fail on Ubuntu on Rackspace."
+        },
+        {
+            "c_hash": "e8ea2492",
+            "date": "2010-12-15 04:52:51 +0000",
+            "comment": "WHIRR-160. Improve SSH key diagnostics. Contributed by Andrei Savu."
+        },
+        {
+            "c_hash": "0ab8bf16",
+            "date": "2010-12-15 05:02:46 +0000",
+            "comment": "Fix broken imports from WHIRR-160."
+        },
+        {
+            "c_hash": "4fe79b08",
+            "date": "2010-12-16 21:19:30 +0000",
+            "comment": "WHIRR-123. Cassandra integration tests hang if whirr's scripts bucket is missing."
+        },
+        {
+            "c_hash": "536faa36",
+            "date": "2010-12-16 21:24:46 +0000",
+            "comment": "WHIRR-150. Allow retrieval of instance roles."
+        },
+        {
+            "c_hash": "f3827841",
+            "date": "2010-12-16 22:20:22 +0000",
+            "comment": "WHIRR-163. Support environment variable interpolation in configuration properties."
+        },
+        {
+            "c_hash": "ed3bd38e",
+            "date": "2010-12-17 19:22:29 +0000",
+            "comment": "WHIRR-156. Cli script doesn't launch post-modularization."
+        },
+        {
+            "c_hash": "a8cafa2c",
+            "date": "2010-12-20 22:55:36 +0000",
+            "comment": "WHIRR-157. Remove service name property."
+        },
+        {
+            "c_hash": "b085ae06",
+            "date": "2010-12-20 23:29:45 +0000",
+            "comment": "WHIRR-166. Improve docs regarding private keys. Contributed by Stu Hood."
+        },
+        {
+            "c_hash": "7efc735a",
+            "date": "2010-12-21 20:11:53 +0000",
+            "comment": "WHIRR-162. DnsUtilTest fails when offline or for slow connections. Contributed by Andrei Savu."
+        },
+        {
+            "c_hash": "c4c4ca0d",
+            "date": "2010-12-22 21:54:01 +0000",
+            "comment": "WHIRR-174. Fix ZooKeeper to allow stand-alone mode setups. Contributed by Lars George."
+        },
+        {
+            "c_hash": "9835002b",
+            "date": "2010-12-22 21:58:47 +0000",
+            "comment": "WHIRR-175. ZooKeeper service does not honor instance roles. Contributed by Lars George."
+        },
+        {
+            "c_hash": "71083aa0",
+            "date": "2010-12-23 06:01:32 +0000",
+            "comment": "WHIRR-165. Hadoop integration tests fail due to WHIRR-160 changes."
+        },
+        {
+            "c_hash": "f5c4626a",
+            "date": "2011-01-03 04:09:46 +0000",
+            "comment": "WHIRR-176. Set AWS credentials in the local site file for Hadoop S3 access. Contributed by Lars George."
+        },
+        {
+            "c_hash": "be689580",
+            "date": "2011-01-03 04:33:30 +0000",
+            "comment": "WHIRR-25. Add HBase service. Contributed by Lars George."
+        },
+        {
+            "c_hash": "2ed7015a",
+            "date": "2011-01-03 04:46:47 +0000",
+            "comment": "WHIRR-180. ListClusterCommand.run throws a NullPointerException for unrecognized service names. Contributed by Andrei Savu."
+        },
+        {
+            "c_hash": "0be3b205",
+            "date": "2011-01-03 05:07:26 +0000",
+            "comment": "WHIRR-145. Add Whirr recipes for common configurations."
+        },
+        {
+            "c_hash": "36a6b49d",
+            "date": "2011-01-03 05:24:49 +0000",
+            "comment": "WHIRR-178. [Hadoop] Guard useradd against existing user account. Contributed by Lars George."
+        },
+        {
+            "c_hash": "2d27dd54",
+            "date": "2011-01-03 19:34:54 +0000",
+            "comment": "WHIRR-179. [Hadoop] Guard /tmp mkdir call against existing directory. Contributed by Lars George."
+        },
+        {
+            "c_hash": "0e9e212e",
+            "date": "2011-01-03 19:39:18 +0000",
+            "comment": "WHIRR-184. Add HBase service to list of dependencies. Contributed by Lars George."
+        },
+        {
+            "c_hash": "47d1f951",
+            "date": "2011-01-03 21:02:07 +0000",
+            "comment": "WHIRR-185. [ZooKeeper] Fix selection of instances for getHosts() call. Contributed by Lars George."
+        },
+        {
+            "c_hash": "de260c2d",
+            "date": "2011-01-03 21:24:08 +0000",
+            "comment": "WHIRR-187. [HBase] Change hbase.tmp.dir to be in line with Hadoop service. Contributed by Lars George."
+        },
+        {
+            "c_hash": "f24a6070",
+            "date": "2011-01-03 23:26:01 +0000",
+            "comment": "WHIRR-181. Add descriptions for CLI command options. Contributed by Andrei Savu."
+        },
+        {
+            "c_hash": "82b37f35",
+            "date": "2011-01-04 00:02:22 +0000",
+            "comment": "WHIRR-161. Check that both SSH keys belong to the same pair. Contributed by Andrei Savu."
+        },
+        {
+            "c_hash": "272d4c31",
+            "date": "2011-01-04 18:28:37 +0000",
+            "comment": "WHIRR-164. Tests fail if there is no ~/.ssh/id_rsa keypair. Contributed by Andrei Savu."
+        },
+        {
+            "c_hash": "f84a6514",
+            "date": "2011-01-05 04:48:26 +0000",
+            "comment": "WHIRR-155. Support multiple versions of Cassandra. Contributed by Stu Hood."
+        },
+        {
+            "c_hash": "97baca12",
+            "date": "2011-01-05 04:56:56 +0000",
+            "comment": "WHIRR-155. Support multiple versions of Cassandra. Contributed by Stu Hood."
+        },
+        {
+            "c_hash": "83a1c4e6",
+            "date": "2011-01-07 17:17:27 +0000",
+            "comment": "WHIRR-190. Create /tmp in HDFS for Pig. Contributed by Andrei Savu and tomwhite."
+        },
+        {
+            "c_hash": "f0b39c16",
+            "date": "2011-01-13 22:42:59 +0000",
+            "comment": "WHIRR-202. Improve instance template syntax checking."
+        },
+        {
+            "c_hash": "7ad7aead",
+            "date": "2011-01-14 17:58:16 +0000",
+            "comment": "WHIRR-200. Cassandra integration test hangs. Contributed by Stu Hood."
+        },
+        {
+            "c_hash": "ceb966f5",
+            "date": "2011-01-14 18:05:17 +0000",
+            "comment": "WHIRR-205. Override service.provider for integration tests. Contributed by Andrei Savu."
+        },
+        {
+            "c_hash": "23c8ede7",
+            "date": "2011-01-14 18:40:59 +0000",
+            "comment": "Reverted WHIRR-184 since it was an invalid change."
+        },
+        {
+            "c_hash": "941f6a93",
+            "date": "2011-01-14 19:26:32 +0000",
+            "comment": "WHIRR-204. CDH Hadoop integration test fails on Rackspace."
+        },
+        {
+            "c_hash": "4d21cb48",
+            "date": "2011-01-14 19:34:18 +0000",
+            "comment": "WHIRR-203. General documentation improvements for 0.3.0."
+        },
+        {
+            "c_hash": "3270c5f1",
+            "date": "2011-01-14 23:09:42 +0000",
+            "comment": "WHIRR-206. [HBase] Extract strings to a HBaseServiceConstants interface. Contributed by Lars George."
+        },
+        {
+            "c_hash": "673307ff",
+            "date": "2011-01-15 00:12:15 +0000",
+            "comment": "WHIRR-210. Remove unneeded dependent libraries."
+        },
+        {
+            "c_hash": "ba9f5b4d",
+            "date": "2011-01-16 06:47:10 +0000",
+            "comment": "WHIRR-211. Fix checkstyle errors for 0.3.0."
+        },
+        {
+            "c_hash": "b3dc7a9d",
+            "date": "2011-01-16 06:51:21 +0000",
+            "comment": "Preparing for release 0.3.0-incubating"
+        },
+        {
+            "c_hash": "bf9b4bae",
+            "date": "2011-01-16 07:01:35 +0000",
+            "comment": "Updating trunk after branching for 0.3.0-incubating"
+        },
+        {
+            "c_hash": "f8bee38f",
+            "date": "2011-01-18 18:11:13 +0000",
+            "comment": "Added myself as a committer to the top-level pom.xml"
+        },
+        {
+            "c_hash": "d927e2b2",
+            "date": "2011-01-18 20:42:30 +0000",
+            "comment": "Added larsgeorge to developers"
+        },
+        {
+            "c_hash": "fb43cbb8",
+            "date": "2011-01-19 04:59:42 +0000",
+            "comment": "WHIRR-194. Update the list of supported services on the home page. Contributed by asavu."
+        },
+        {
+            "c_hash": "aec72b87",
+            "date": "2011-01-19 05:13:22 +0000",
+            "comment": "Update release notes with 0.3.0 issues."
+        },
+        {
+            "c_hash": "84acce5e",
+            "date": "2011-01-21 08:30:38 +0000",
+            "comment": "WHIRR-139. upgrade to version 1 of the enforcer plugin (Jakob Homan via asavu)"
+        },
+        {
+            "c_hash": "87bfa041",
+            "date": "2011-01-24 20:49:13 +0000",
+            "comment": "WHIRR-193. Recipe for a HBase Cluster. (asavu)"
+        },
+        {
+            "c_hash": "5087979a",
+            "date": "2011-01-27 09:31:15 +0000",
+            "comment": "WHIRR-170. Instances should be started in the order specified in the template (tomwhite via asavu)"
+        },
+        {
+            "c_hash": "4e454c1f",
+            "date": "2011-01-27 17:27:41 +0000",
+            "comment": "WHIRR-186. [HBase] Add version support configurable in properties file."
+        },
+        {
+            "c_hash": "8119f725",
+            "date": "2011-01-27 17:32:13 +0000",
+            "comment": "WHIRR-186. Adds missing properties."
+        },
+        {
+            "c_hash": "7b390bea",
+            "date": "2011-01-28 19:42:58 +0000",
+            "comment": "WHIRR-201. [HBase] Integration test fails. Contributed by largsgeorge."
+        },
+        {
+            "c_hash": "270bacd5",
+            "date": "2011-01-28 21:12:11 +0000",
+            "comment": "WHIRR-219. Support dynamic addition of services to CLI."
+        },
+        {
+            "c_hash": "3418b47c",
+            "date": "2011-01-29 00:21:35 +0000",
+            "comment": "WHIRR-217. Log files should not be included in tarball or checked by RAT (tomwhite via asavu)"
+        },
+        {
+            "c_hash": "74a14f74",
+            "date": "2011-01-30 03:58:32 +0000",
+            "comment": "WHIRR-195. Display available roles instead of service names when running ./bin/whirr"
+        },
+        {
+            "c_hash": "85a3d66d",
+            "date": "2011-01-31 05:36:18 +0000",
+            "comment": "WHIRR-199. Add aliases for short role names like nn, jt, tt, dn, zk. Contributed by asuvu."
+        },
+        {
+            "c_hash": "bbc94b1a",
+            "date": "2011-01-31 21:52:15 +0000",
+            "comment": "WHIRR-183. ZooKeeper Data Directory Cleanup. Contributed by asavu."
+        },
+        {
+            "c_hash": "c8cc7f0c",
+            "date": "2011-02-07 07:59:42 +0000",
+            "comment": "WHIRR-124. Upgrade to jclouds 1.0-beta-9 (Adrian Cole via larsgeorge)"
+        },
+        {
+            "c_hash": "cbfc39e6",
+            "date": "2011-02-07 21:08:47 +0000",
+            "comment": "Reverted WHIRR-124 since the change is breaking the integration tests"
+        },
+        {
+            "c_hash": "6613e101",
+            "date": "2011-02-07 21:35:30 +0000",
+            "comment": "WHIRR-226. Add the ability to destroy a cluster instance (asavu)"
+        },
+        {
+            "c_hash": "164f3b2a",
+            "date": "2011-02-07 23:47:59 +0000",
+            "comment": "WHIRR-124. Upgrade to jclouds 1.0-beta-9 (Adrian Cole via larsgeorge)"
+        },
+        {
+            "c_hash": "302939cb",
+            "date": "2011-02-08 05:35:02 +0000",
+            "comment": "WHIRR-232. NPE for stopped instances on EC2."
+        },
+        {
+            "c_hash": "8d3293e7",
+            "date": "2011-02-08 10:10:29 +0000",
+            "comment": "WHIRR-124. Show warning messages before converting ec2->aws-ec2 and cloudservers -> clouservers-us (Adrian Cole via asavu)"
+        },
+        {
+            "c_hash": "2a5435c7",
+            "date": "2011-02-09 18:18:48 +0000",
+            "comment": "WHIRR-225. Support locally-supplied scripts."
+        },
+        {
+            "c_hash": "b3f0d794",
+            "date": "2011-02-09 18:28:08 +0000",
+            "comment": "Remove empty directories."
+        },
+        {
+            "c_hash": "80f3ff62",
+            "date": "2011-02-10 13:37:05 +0000",
+            "comment": "Fixed a typo from WHIRR-225. Renamed installRunUrl to install_runurl."
+        },
+        {
+            "c_hash": "b7522335",
+            "date": "2011-02-10 14:29:02 +0000",
+            "comment": "WHIRR-167. Improve bootstrapping and configuration to be able to isolate and repair or evict failing nodes on EC2 (Tibor Kiss via asavu)"
+        },
+        {
+            "c_hash": "fe742dd2",
+            "date": "2011-02-10 18:42:29 +0000",
+            "comment": "WHIRR-55. Users should be able to override an arbitrary Hadoop property before launch."
+        },
+        {
+            "c_hash": "a0a73866",
+            "date": "2011-02-11 12:22:29 +0000",
+            "comment": "WHIRR-234. Resource functions/install_cdh_hadoop.sh not found when running from the CLI (tomwhite)"
+        },
+        {
+            "c_hash": "8b4fc495",
+            "date": "2011-02-13 16:21:04 +0000",
+            "comment": "WHIRR-235. fix whirr.provider in recipes/* (Eugene Koontz via asavu)"
+        },
+        {
+            "c_hash": "8278bf85",
+            "date": "2011-02-19 19:51:08 +0000",
+            "comment": "WHIRR-207. Handle curl timeouts better (asavu)"
+        },
+        {
+            "c_hash": "7e414c06",
+            "date": "2011-02-19 22:53:38 +0000",
+            "comment": "WHIRR-198. Support user-defined images (Adrian Cole via asavu)"
+        },
+        {
+            "c_hash": "8cda1550",
+            "date": "2011-02-24 00:03:51 +0000",
+            "comment": "WHIRR-241. Update to use CDH3B4."
+        },
+        {
+            "c_hash": "e28f2d3a",
+            "date": "2011-02-26 08:21:29 +0000",
+            "comment": "WHIRR-242. Update documentation for overriding locally supplied scripts (tomwhite via asavu)"
+        },
+        {
+            "c_hash": "6d274af8",
+            "date": "2011-02-28 15:05:11 +0000",
+            "comment": "Preparing for release 0.4.0-incubating"
+        },
+        {
+            "c_hash": "fb827c09",
+            "date": "2011-02-28 15:09:15 +0000",
+            "comment": "Added Trunk (unreleased changes) to CHANGES.txt"
+        },
+        {
+            "c_hash": "ded2a0c3",
+            "date": "2011-02-28 15:15:14 +0000",
+            "comment": "Updated version number in pom files"
+        },
+        {
+            "c_hash": "3a3848a5",
+            "date": "2011-02-28 15:56:37 +0000",
+            "comment": "Added Release Notes for 0.4.0"
+        },
+        {
+            "c_hash": "b4b9f0a7",
+            "date": "2011-03-03 23:01:03 +0000",
+            "comment": "WHIRR-244. Add package-level javadoc."
+        },
+        {
+            "c_hash": "bf6b7858",
+            "date": "2011-03-05 16:02:22 +0000",
+            "comment": "WHIRR-247. Add license headers to service install and configure scripts (asavu)"
+        },
+        {
+            "c_hash": "6c529718",
+            "date": "2011-03-07 21:20:26 +0000",
+            "comment": "WHIRR-248 Update to jclouds-1.0-beta9b"
+        },
+        {
+            "c_hash": "43e9c8ca",
+            "date": "2011-03-07 22:20:08 +0000",
+            "comment": "updated changelog"
+        },
+        {
+            "c_hash": "90021812",
+            "date": "2011-03-07 22:29:54 +0000",
+            "comment": "WHIRR-129 Add Adrian Cole as a committer in the whirr pom.xml and site"
+        },
+        {
+            "c_hash": "6fe0e9b9",
+            "date": "2011-03-10 15:12:43 +0000",
+            "comment": "Updated CHANGES.txt, we will recut 0.4.0 from the current trunk"
+        },
+        {
+            "c_hash": "818d12d4",
+            "date": "2011-03-10 15:17:43 +0000",
+            "comment": "WHIRR-251. Handle Apache cryptography requirements for release (tomwhite via asavu)"
+        },
+        {
+            "c_hash": "4eed6071",
+            "date": "2011-03-10 20:24:08 +0000",
+            "comment": "WHIRR-250. Ensure all libraries in binary distribution have associated licenses where stipulated (tomwhite via asavu)"
+        },
+        {
+            "c_hash": "80c4342b",
+            "date": "2011-03-13 20:41:27 +0000",
+            "comment": "WHIRR-254. Document limitation that a role may only appear in one instance template group (tomwhite via asavu)"
+        },
+        {
+            "c_hash": "23104f87",
+            "date": "2011-03-14 06:28:39 +0000",
+            "comment": "WHIRR-259. Disable configuration list handling for Hadoop properties"
+        },
+        {
+            "c_hash": "369f9f48",
+            "date": "2011-03-15 17:19:51 +0000",
+            "comment": "WHIRR-198. support user-defined images (rewrote to fix classpath ordering issues) (Adrian Cole via asavu)"
+        },
+        {
+            "c_hash": "eb8ed1ba",
+            "date": "2011-03-15 17:29:17 +0000",
+            "comment": "Preparing for release 0.4.0-incubating"
+        },
+        {
+            "c_hash": "06de65aa",
+            "date": "2011-03-15 17:32:40 +0000",
+            "comment": "Preparing trunk for more development"
+        },
+        {
+            "c_hash": "6f12c7d4",
+            "date": "2011-03-15 17:43:53 +0000",
+            "comment": "Updated release notes for 0.4.0-incubating"
+        },
+        {
+            "c_hash": "7d51a1bb",
+            "date": "2011-03-16 13:46:10 +0000",
+            "comment": "WHIRR-263. Default tarball not found for Cassandra (broken link in install_cassandra.sh)"
+        },
+        {
+            "c_hash": "659c7f3f",
+            "date": "2011-03-16 13:57:21 +0000",
+            "comment": "Updated release notes for 0.4.0-incubating"
+        },
+        {
+            "c_hash": "9463ccf1",
+            "date": "2011-03-17 17:00:24 +0000",
+            "comment": "WHIRR-158. Allow users to log into clusters as themselves"
+        },
+        {
+            "c_hash": "e62ca8cd",
+            "date": "2011-03-17 22:07:51 +0000",
+            "comment": "WHIRR-233. Change test properties to be less provider bound and improve TemplateBuilder defaults"
+        },
+        {
+            "c_hash": "4dadc4c6",
+            "date": "2011-03-17 22:19:19 +0000",
+            "comment": "Updated release notes for 0.4.0-incubating release"
+        },
+        {
+            "c_hash": "c5d891bf",
+            "date": "2011-03-17 22:24:18 +0000",
+            "comment": "Fixed typo in release notes"
+        },
+        {
+            "c_hash": "3dacf455",
+            "date": "2011-03-20 19:48:35 +0000",
+            "comment": "WHIRR-265. Missing SVN EOL properties (Sebb via asavu)"
+        },
+        {
+            "c_hash": "36ab77a0",
+            "date": "2011-03-21 19:36:18 +0000",
+            "comment": "Remove empty (unused) license files. (Part of WHIRR-250.)"
+        },
+        {
+            "c_hash": "b8fc231e",
+            "date": "2011-03-22 15:49:31 +0000",
+            "comment": "WHIRR-253. ZooKeeper service should only authorize ingress to ZooKeeper instances (tomwhite via asavu)"
+        },
+        {
+            "c_hash": "22ce5ab3",
+            "date": "2011-03-23 19:06:08 +0000",
+            "comment": "WHIRR-267. Update NOTICE and LICENSE files to mention 3rd party products (tomwhite via asavu)"
+        },
+        {
+            "c_hash": "4dde4487",
+            "date": "2011-03-23 19:22:58 +0000",
+            "comment": "Updated release notes for 0.4.0-incubating"
+        },
+        {
+            "c_hash": "af0ee11a",
+            "date": "2011-03-29 12:13:27 +0000",
+            "comment": "WHIRR-261. Add ElasticSearch as a service"
+        },
+        {
+            "c_hash": "0fade68e",
+            "date": "2011-03-31 12:01:29 +0000",
+            "comment": "WHIRR-268. whirr hangs when the file '/home/andrei/.ssh/known_hosts' includes an obsolete identifier for a certain ip address host."
+        },
+        {
+            "c_hash": "89891a2e",
+            "date": "2011-03-31 12:15:28 +0000",
+            "comment": "WHIRR-271. Classpath needs to be quoted in whirr script"
+        },
+        {
+            "c_hash": "3fe8f571",
+            "date": "2011-04-04 20:53:54 +0000",
+            "comment": "WHIRR-274. Add wagon-ssh-external as a maven build extension"
+        },
+        {
+            "c_hash": "12c70d96",
+            "date": "2011-04-05 16:11:04 +0000",
+            "comment": "WHIRR-222. Support multiple versions of Hadoop."
+        },
+        {
+            "c_hash": "2e7aa260",
+            "date": "2011-04-05 16:35:00 +0000",
+            "comment": "Update svn:ignore properties for elastic search with hidden Eclipse files."
+        },
+        {
+            "c_hash": "b12451ad",
+            "date": "2011-04-06 16:33:53 +0000",
+            "comment": "WHIRR-262. Services should not have to do reverse DNS lookups."
+        },
+        {
+            "c_hash": "a17cab7d",
+            "date": "2011-04-11 21:40:55 +0000",
+            "comment": "WHIRR-275. Improve firewall API for services."
+        },
+        {
+            "c_hash": "b6f13c6d",
+            "date": "2011-04-12 08:16:58 +0000",
+            "comment": "Ignoring log files generated by running whirr"
+        },
+        {
+            "c_hash": "010f34a5",
+            "date": "2011-04-12 10:37:24 +0000",
+            "comment": "WHIRR-237. Add Voldemort as a service. (Kirk True via asavu)"
+        },
+        {
+            "c_hash": "ecfccce3",
+            "date": "2011-04-12 17:33:18 +0000",
+            "comment": "Update svn:ignore properties for cli and voldermort"
+        },
+        {
+            "c_hash": "e9a1dd9f",
+            "date": "2011-04-12 18:32:28 +0000",
+            "comment": "WHIRR-278. Refactor ClusterSpec and extract InstanceTemplate class"
+        },
+        {
+            "c_hash": "2b8be813",
+            "date": "2011-04-13 04:45:06 +0000",
+            "comment": "WHIRR-245. Clearly demarcate the user and service provider APIs."
+        },
+        {
+            "c_hash": "d916b7aa",
+            "date": "2011-04-13 14:30:42 +0000",
+            "comment": "Removed some empty folders"
+        },
+        {
+            "c_hash": "d2c78990",
+            "date": "2011-04-13 16:21:17 +0000",
+            "comment": "Removed more empty directories."
+        },
+        {
+            "c_hash": "00d63b94",
+            "date": "2011-04-14 06:46:29 +0000",
+            "comment": "WHIRR-269. Improve error msg \"Key pair is encrypted\" (tomwhite via asavu)"
+        },
+        {
+            "c_hash": "5bcf4795",
+            "date": "2011-04-14 07:17:10 +0000",
+            "comment": "WHIRR-277. Support multiple versions of ZooKeeper"
+        },
+        {
+            "c_hash": "38f195da",
+            "date": "2011-04-14 16:27:43 +0000",
+            "comment": "WHIRR-172. Log warning for unrecognized service names."
+        },
+        {
+            "c_hash": "a31e8142",
+            "date": "2011-04-14 21:16:37 +0000",
+            "comment": "WHIRR-282. Set number of Hadoop slots based on hardware (tomwhite via asavu)"
+        },
+        {
+            "c_hash": "261ef43e",
+            "date": "2011-04-15 09:38:49 +0000",
+            "comment": "WHIRR-284. Runurl should only be installed when needed (tomwhite via asavu)"
+        },
+        {
+            "c_hash": "5c885767",
+            "date": "2011-04-15 17:22:55 +0000",
+            "comment": "WHIRR-283. Whirr in 5 minutes."
+        },
+        {
+            "c_hash": "1b8572f5",
+            "date": "2011-04-18 19:41:30 +0000",
+            "comment": "WHIRR-279. Create ClusterSpec aware BlobStoreContext factory class (asavu)"
+        },
+        {
+            "c_hash": "794b6f5a",
+            "date": "2011-04-18 20:02:02 +0000",
+            "comment": "WHIRR-280. Create a blob cache that could be used for storing local files (asavu)"
+        },
+        {
+            "c_hash": "151813c3",
+            "date": "2011-04-18 20:41:57 +0000",
+            "comment": "WHIRR-220. Support local tarball upload (asavu)"
+        },
+        {
+            "c_hash": "2097f6ae",
+            "date": "2011-04-27 04:07:02 +0000",
+            "comment": "WHIRR-285. Add support for BYON."
+        },
+        {
+            "c_hash": "1dc364b9",
+            "date": "2011-04-27 21:13:34 +0000",
+            "comment": "WHIRR-173. Add ClusterAction for generic script execution (asavu)"
+        },
+        {
+            "c_hash": "1efe9597",
+            "date": "2011-04-28 21:18:59 +0000",
+            "comment": "WHIRR-246. Single place to store/load cluster state (David Alves and asavu)"
+        },
+        {
+            "c_hash": "a0a2abdb",
+            "date": "2011-04-28 21:31:08 +0000",
+            "comment": "WHIRR-289. Display role names in list-cluster command (asavu)"
+        },
+        {
+            "c_hash": "c92a093e",
+            "date": "2011-05-03 21:51:56 +0000",
+            "comment": "WHIRR-287. Script for running YCSB on HBase (asavu)"
+        },
+        {
+            "c_hash": "ab5baaf3",
+            "date": "2011-05-05 06:57:51 +0000",
+            "comment": "WHIRR-291. Add \"noop\" role useful just for provisioning (asavu)"
+        },
+        {
+            "c_hash": "b641a720",
+            "date": "2011-05-05 08:35:11 +0000",
+            "comment": "WHIRR-297. Separate ZooKeeper and ElasticSearch install and configuration scripts into more generic functions (asavu)"
+        },
+        {
+            "c_hash": "fb826a90",
+            "date": "2011-05-05 14:02:10 +0000",
+            "comment": "WHIRR-288. Add blob store persistence for cluster state (asavu)"
+        },
+        {
+            "c_hash": "a1a877df",
+            "date": "2011-05-06 03:36:48 +0000",
+            "comment": "WHIRR-191. Start other services based on CDH, not just HDFS and MR."
+        },
+        {
+            "c_hash": "6b6a3cae",
+            "date": "2011-05-06 13:21:59 +0000",
+            "comment": "WHIRR-298. Use all cluster spec properties for hash and equality (tomwhite and asavu)"
+        },
+        {
+            "c_hash": "55c461fc",
+            "date": "2011-05-09 15:56:33 +0000",
+            "comment": "WHIRR-300. FAQ entry for noop role. Contributed by asavu."
+        },
+        {
+            "c_hash": "fb8e6e81",
+            "date": "2011-05-09 16:02:22 +0000",
+            "comment": "WHIRR-216. Improve error message if whirr.instance-templates left out of config. Contributed by asavu."
+        },
+        {
+            "c_hash": "98f38356",
+            "date": "2011-05-11 14:50:10 +0000",
+            "comment": "WHIRR-299. Recipe for BYON provider (asavu)"
+        },
+        {
+            "c_hash": "6b8b4548",
+            "date": "2011-05-11 14:55:47 +0000",
+            "comment": "WHIRR-292. Separate Cassandra install and configuration scripts into more generic functions (asavu)"
+        },
+        {
+            "c_hash": "9e4eedfb",
+            "date": "2011-05-13 04:46:40 +0000",
+            "comment": "WHIRR-296. Separate Voldemort install and configuration scripts into more generic functions. Contributed by asavu"
+        },
+        {
+            "c_hash": "84b4de91",
+            "date": "2011-05-15 04:55:19 +0000",
+            "comment": "WHIRR-61. Make more efficient use of ComputeServiceContext. Contributed by Adrian Cole and Andrei Savu."
+        },
+        {
+            "c_hash": "3fbf9077",
+            "date": "2011-05-15 05:19:35 +0000",
+            "comment": "WHIRR-304. Upgrade to jclouds 1.0-beta-9c. Contributed by Adrian Cole."
+        },
+        {
+            "c_hash": "d566c578",
+            "date": "2011-05-15 21:51:17 +0000",
+            "comment": "WHIRR-236. Update Configuration Guides with Recipe Info."
+        },
+        {
+            "c_hash": "e4d6afb3",
+            "date": "2011-05-17 04:15:14 +0000",
+            "comment": "WHIRR-141. Create a logo. Contributed by Alison Wong."
+        },
+        {
+            "c_hash": "5a2eac47",
+            "date": "2011-05-17 04:22:05 +0000",
+            "comment": "Preparing for release 0.5.0-incubating"
+        },
+        {
+            "c_hash": "6c71075f",
+            "date": "2011-05-17 04:31:55 +0000",
+            "comment": "Preparing for release 0.5.0-incubating"
+        },
+        {
+            "c_hash": "f5714ccd",
+            "date": "2011-05-24 04:00:35 +0000",
+            "comment": "Re-instated commented out @AfterClass in test."
+        },
+        {
+            "c_hash": "caaa9cd4",
+            "date": "2011-05-24 04:58:37 +0000",
+            "comment": "WHIRR-310. Improve Configuration Guide. Contributed by Andrei Savu."
+        },
+        {
+            "c_hash": "53c79345",
+            "date": "2011-05-24 05:10:39 +0000",
+            "comment": "WHIRR-312. Destroy instance removes all entries from the instances file except the one that is being terminated. Contributed by Andrei Savu."
+        },
+        {
+            "c_hash": "81c04fda",
+            "date": "2011-05-25 04:03:14 +0000",
+            "comment": "Add release notes for 0.5.0"
+        },
+        {
+            "c_hash": "94011190",
+            "date": "2011-05-25 21:20:16 +0000",
+            "comment": "WHIRR-314. HBase integration test can fail due to Thrift server race."
+        },
+        {
+            "c_hash": "cdc64dbf",
+            "date": "2011-05-26 03:41:32 +0000",
+            "comment": "Preparing for release 0.5.0-incubating"
+        },
+        {
+            "c_hash": "5e91fa95",
+            "date": "2011-05-27 06:41:15 +0000",
+            "comment": "tibor added as a commiter"
+        },
+        {
+            "c_hash": "2492ed6a",
+            "date": "2011-05-27 07:05:25 +0000",
+            "comment": "WHIRR-28. Add examples module (asavu)"
+        },
+        {
+            "c_hash": "c0485430",
+            "date": "2011-06-01 16:47:47 +0000",
+            "comment": "WHIRR-319. Run rat & checkstyle before packaging (tomwhite and asavu)"
+        },
+        {
+            "c_hash": "4c4f1571",
+            "date": "2011-06-02 11:56:54 +0000",
+            "comment": "Temporary override Providers#withIds until jclouds beta-10 is out (asavu and Adrian Cole)"
+        },
+        {
+            "c_hash": "7b6ca739",
+            "date": "2011-06-02 12:43:47 +0000",
+            "comment": "WHIRR-311. Allow services to register new CLI commands (asavu)"
+        },
+        {
+            "c_hash": "6a6d65b2",
+            "date": "2011-06-02 22:13:46 +0000",
+            "comment": "WHIRR-249. Firewall authorization should be idempotent (asavu)"
+        },
+        {
+            "c_hash": "b889531f",
+            "date": "2011-06-02 22:46:51 +0000",
+            "comment": "WHIRR-320. Convert site documentation to xdoc format (asavu)"
+        },
+        {
+            "c_hash": "f3f187f8",
+            "date": "2011-06-06 19:58:21 +0000",
+            "comment": "WHIRR-323. Allow user to specify a blobstore container to be used for caching local files (asavu)"
+        },
+        {
+            "c_hash": "9df6528e",
+            "date": "2011-06-06 22:21:05 +0000",
+            "comment": "WHIRR-327. Upgrade to jclouds 1.0.0 (Adrian Cole and asavu)"
+        },
+        {
+            "c_hash": "cbe8617f",
+            "date": "2011-06-08 04:54:42 +0000",
+            "comment": "WHIRR-313. Add Hama as a Service. Contributed by Edward J. Yoon."
+        },
+        {
+            "c_hash": "50b408f0",
+            "date": "2011-06-09 09:48:03 +0000",
+            "comment": "WHIRR-326. Use jclouds provider metadata to help with cloud provider configuration (asavu)"
+        },
+        {
+            "c_hash": "00b6cca8",
+            "date": "2011-06-16 19:43:29 +0000",
+            "comment": "WHIRR-330. BYON doesn't work with HadoopConfigurationBuilder (John Amos and asavu)"
+        },
+        {
+            "c_hash": "dc755159",
+            "date": "2011-06-27 20:50:32 +0000",
+            "comment": "WHIRR-331. Add the ability to specify tarball URLs that are local to the remote machine (asavu)"
+        },
+        {
+            "c_hash": "fe693103",
+            "date": "2011-07-14 00:24:28 +0000",
+            "comment": "WHIRR-76. Support spot instances in python scripts (Soren Macbeth via  asavu)"
+        },
+        {
+            "c_hash": "54bb4147",
+            "date": "2011-07-15 05:55:35 +0000",
+            "comment": "WHIRR-260. Support Spot Instances (asavu)"
+        },
+        {
+            "c_hash": "96f8bde7",
+            "date": "2011-07-15 17:27:48 +0000",
+            "comment": "I'm now working for Facebook"
+        },
+        {
+            "c_hash": "f70166e0",
+            "date": "2011-07-15 18:18:43 +0000",
+            "comment": "WHIRR-338. byon cluster with hostnames defined in /etc/hosts. Contributed by Bruno Dumon."
+        },
+        {
+            "c_hash": "f0f50c15",
+            "date": "2011-07-22 01:13:54 +0000",
+            "comment": "WHIRR-345. Add Hama service information to the website. Contributed by Edward J. Yoon"
+        },
+        {
+            "c_hash": "3912b5c3",
+            "date": "2011-07-25 20:26:50 +0000",
+            "comment": "WHIRR-334. Support for CDH3u0 HBase (Geoff Black, Andrei Savu, Bruno Dumon)"
+        },
+        {
+            "c_hash": "c78a968c",
+            "date": "2011-08-03 05:16:09 +0000",
+            "comment": "WHIRR-350. Update Hama service to 0.3 version (Edward J. Yoon via asavu)"
+        },
+        {
+            "c_hash": "d5984ad7",
+            "date": "2011-08-04 05:36:38 +0000",
+            "comment": "WHIRR-240. [HBase] Enable support for HBase 0.90.x (Bruno Dumon via asavu)"
+        },
+        {
+            "c_hash": "c6e9e923",
+            "date": "2011-08-07 20:32:54 +0000",
+            "comment": "WHIRR-354. Upgrade to jclouds 1.1.0 (Adrian Cole via asavu)"
+        },
+        {
+            "c_hash": "d2fc231d",
+            "date": "2011-08-07 20:53:23 +0000",
+            "comment": "WHIRR-257. Remove outdated Python contrib"
+        },
+        {
+            "c_hash": "0d0d467c",
+            "date": "2011-08-07 21:00:53 +0000",
+            "comment": "WHIRR-257. Remove outdated Python contrib (Tom White via asavu)"
+        },
+        {
+            "c_hash": "4c4b1f7a",
+            "date": "2011-08-07 22:04:54 +0000",
+            "comment": "WHIRR-339. Allow to specify hbase-site.xml properties through cluster configuration file (Bruno Dumon via asavu)"
+        },
+        {
+            "c_hash": "7ee9dc87",
+            "date": "2011-08-13 05:11:23 +0000",
+            "comment": "WHIRR-349. Retry if blobstore put fails (Karel Vervaeke and asavu)"
+        },
+        {
+            "c_hash": "7cb3fa42",
+            "date": "2011-08-14 05:06:28 +0000",
+            "comment": "WHIRR-361. refactor jclouds dependencies (Adrian Cole via asavu)"
+        },
+        {
+            "c_hash": "c1476c44",
+            "date": "2011-08-14 06:58:52 +0000",
+            "comment": "WHIRR-363. ComputeCache redundantly creates ComputeServiceContexts (Adrian Cole via asavu)"
+        },
+        {
+            "c_hash": "23e9f070",
+            "date": "2011-08-14 07:11:55 +0000",
+            "comment": "WHIRR-362. BlobStore contexts are redundantly created (Adrian Cole via asavu)"
+        },
+        {
+            "c_hash": "390a4269",
+            "date": "2011-08-14 08:56:01 +0000",
+            "comment": "WHIRR-349. Test that blobstore put works outside US with a configuration workaround (asavu)"
+        },
+        {
+            "c_hash": "ebcf60e6",
+            "date": "2011-08-14 19:02:06 +0000",
+            "comment": "WHIRR-359. Document known limitations for Whirr 0.6.0 (Adrian Cole and asavu)"
+        },
+        {
+            "c_hash": "093f7ce8",
+            "date": "2011-08-14 20:30:38 +0000",
+            "comment": "WHIRR-364. [voldemort] 0.90.RC3 build artifact no longer available (asavu)"
+        },
+        {
+            "c_hash": "26898f8f",
+            "date": "2011-08-15 23:13:30 +0000",
+            "comment": "WHIRR-361. Add Guava as an explicit dependency (Adrian Cole via asavu)"
+        },
+        {
+            "c_hash": "6359558d",
+            "date": "2011-08-18 03:41:34 +0000",
+            "comment": "WHIRR-341. Improve automatic OS image selection (Adrian Cole via asavu)"
+        },
+        {
+            "c_hash": "a5396d46",
+            "date": "2011-08-18 03:51:07 +0000",
+            "comment": "WHIRR-361. Emergency upgrade to jclouds 1.1.1 and improved configure phase logging (Adrian Cole via asavu)"
+        },
+        {
+            "c_hash": "60c969fa",
+            "date": "2011-08-18 05:08:00 +0000",
+            "comment": "WHIRR-365. Too verbose command line interface logging (asavu)"
+        },
+        {
+            "c_hash": "b8dc4353",
+            "date": "2011-08-18 05:26:07 +0000",
+            "comment": "Preparing for release 0.6.0-incubating"
+        },
+        {
+            "c_hash": "880a8bce",
+            "date": "2011-08-18 05:33:17 +0000",
+            "comment": "Bump version number to 0.7.0"
+        },
+        {
+            "c_hash": "625cc061",
+            "date": "2011-08-18 05:49:49 +0000",
+            "comment": "Added release notes for 0.6.0-incubating"
+        },
+        {
+            "c_hash": "9d4929de",
+            "date": "2011-08-20 17:25:35 +0000",
+            "comment": "WHIRR-359. Document known limitations for Whirr 0.6.0 (Adrian Cole and asavu)"
+        },
+        {
+            "c_hash": "27a0d345",
+            "date": "2011-08-22 18:15:43 +0000",
+            "comment": "WHIRR-365. Too verbose command line interface logging"
+        },
+        {
+            "c_hash": "ddec83c2",
+            "date": "2011-08-23 07:55:36 +0000",
+            "comment": "WHIRR-258. Add Ganglia as a service (Karel Vervaeke via asavu)"
+        },
+        {
+            "c_hash": "0cae87b4",
+            "date": "2011-08-29 04:08:24 +0000",
+            "comment": "Moving whirr to tlp status, completes INFRA-3881"
+        },
+        {
+            "c_hash": "82b4170a",
+            "date": "2011-08-29 15:58:31 +0000",
+            "comment": "WHIRR-377. Fix broken CLI logging config. Contributed by asavu."
+        },
+        {
+            "c_hash": "549d7b9d",
+            "date": "2011-08-29 21:04:58 +0000",
+            "comment": "WHIRR-116. Site should have docs for each released version."
+        },
+        {
+            "c_hash": "0a27a89a",
+            "date": "2011-08-30 04:41:05 +0000",
+            "comment": "WHIRR-356. Upgrade elasticsearch to 0.17.4 (asavu)"
+        },
+        {
+            "c_hash": "f5e57a44",
+            "date": "2011-08-30 04:43:59 +0000",
+            "comment": "WHIRR-357. Run elasticsearch as a non-root-user (asavu)"
+        },
+        {
+            "c_hash": "67d373d7",
+            "date": "2011-09-15 21:28:50 +0000",
+            "comment": "WHIRR-386. Remove references to the Apache Incubator (asavu)"
+        },
+        {
+            "c_hash": "68418d16",
+            "date": "2011-09-16 11:28:07 +0000",
+            "comment": "WHIRR-371. Allow defining additional firewall rules"
+        },
+        {
+            "c_hash": "6ffbff63",
+            "date": "2011-09-20 00:44:22 +0000",
+            "comment": "WHIRR-385: masterless puppet service support"
+        },
+        {
+            "c_hash": "a6bb659b",
+            "date": "2011-09-20 15:49:40 +0000",
+            "comment": "Replaced firewall-rules-serviceA with firewall-rules.serviceA"
+        },
+        {
+            "c_hash": "2561e81b",
+            "date": "2011-10-04 14:04:22 +0000",
+            "comment": "fix for WHIRR-376: Launching a BYON cluster doesn't produce an instances file."
+        },
+        {
+            "c_hash": "21d50749",
+            "date": "2011-10-04 14:37:32 +0000",
+            "comment": "WHIRR-382. Upgrade to Commons Configuration 1.7 (asavu)"
+        },
+        {
+            "c_hash": "b279a13b",
+            "date": "2011-10-04 21:24:42 +0000",
+            "comment": "WHIRR-340. Use spot instances for testing (asavu)"
+        },
+        {
+            "c_hash": "89219896",
+            "date": "2011-10-04 21:36:13 +0000",
+            "comment": "Removed some unused imports that I missed in WHIRR-382"
+        },
+        {
+            "c_hash": "332fdd46",
+            "date": "2011-10-05 16:41:45 +0000",
+            "comment": "WHIRR-387. Add Website Navigation Links"
+        },
+        {
+            "c_hash": "cfba3541",
+            "date": "2011-10-10 22:34:15 +0000",
+            "comment": "WHIRR-395. Less verbose logging when setting firewall rules. Contributed by asavu."
+        },
+        {
+            "c_hash": "6a29691d",
+            "date": "2011-10-11 10:36:36 +0000",
+            "comment": "WHIRR-368. Add the ability to adjust contents of hadoop-env.sh from a cluster properties file. Contributed by Karel Vervaeke"
+        },
+        {
+            "c_hash": "0edede0b",
+            "date": "2011-10-12 09:36:31 +0000",
+            "comment": "WHIRR-325. Reduce cloud provider-specific code in scripts (asavu)"
+        },
+        {
+            "c_hash": "a61b7207",
+            "date": "2011-10-12 09:37:41 +0000",
+            "comment": "Updated CHANGES.txt for last commit"
+        },
+        {
+            "c_hash": "7f122af7",
+            "date": "2011-10-12 19:07:07 +0000",
+            "comment": "WHIRR-214. First iteration on refactoring the core to support the addition of nodes to running clusters (asavu)"
+        },
+        {
+            "c_hash": "f7049ac3",
+            "date": "2011-10-14 15:03:32 +0000",
+            "comment": "WHIRR-394. NPE used for flow control (David Alves via asavu)"
+        },
+        {
+            "c_hash": "c32cbc80",
+            "date": "2011-10-19 12:42:00 +0000",
+            "comment": "WHIRR-243. Allow to run component tests in memory (David Alves, Adrian Cole via asavu)"
+        },
+        {
+            "c_hash": "4d4c7938",
+            "date": "2011-10-19 17:05:04 +0000",
+            "comment": "WHIRR-401. Use regular instances for testing on aws-ec2 (asavu)"
+        },
+        {
+            "c_hash": "f3bf1e42",
+            "date": "2011-10-19 17:44:09 +0000",
+            "comment": "WHIRR-397. Automatic template selection is too restrictive (asavu)"
+        },
+        {
+            "c_hash": "edaa8f25",
+            "date": "2011-10-22 17:05:07 +0000",
+            "comment": "WHIRR-342. hadoop/hbase configuration & active roles on a node (kve via asavu)"
+        },
+        {
+            "c_hash": "76f969e3",
+            "date": "2011-10-22 17:11:37 +0000",
+            "comment": "WHIRR-342. Use regular instances for integration testing on aws-ec2 (asavu)"
+        },
+        {
+            "c_hash": "b1aec78a",
+            "date": "2011-10-23 07:18:18 +0000",
+            "comment": "Fix: Setting the right firewall rules for MR"
+        },
+        {
+            "c_hash": "80ede066",
+            "date": "2011-10-24 18:39:50 +0000",
+            "comment": "WHIRR-400. Upgrade to jclouds 1.2.1 (Adrian Cole and asavu)"
+        },
+        {
+            "c_hash": "24a249a5",
+            "date": "2011-10-25 10:51:47 +0000",
+            "comment": "WHIRR-411. Put install_git, install_ruby scripts in core (Alex Heneveld via asavu)"
+        },
+        {
+            "c_hash": "23a6171d",
+            "date": "2011-10-28 00:34:48 +0000",
+            "comment": "WHIRR-49 Allow Whirr to use Chef for configuration management"
+        },
+        {
+            "c_hash": "d5136b7d",
+            "date": "2011-10-31 22:38:37 +0000",
+            "comment": "WHIRR-49. Ignore service/chef/target"
+        },
+        {
+            "c_hash": "a7e3214a",
+            "date": "2011-10-31 22:51:31 +0000",
+            "comment": "WHIRR-418. Add ssh debug logs to tests (Adrian Cole via asavu)"
+        },
+        {
+            "c_hash": "a8ffe7b5",
+            "date": "2011-11-01 06:31:00 +0000",
+            "comment": "WHIRR-423. Refactor StartupProcess.cleanupFailedNodes (Adrian Cole via asavu)"
+        },
+        {
+            "c_hash": "42aa66d1",
+            "date": "2011-11-07 10:05:09 +0000",
+            "comment": "WHIRR-398. Implement the execution of scripts on DestroyClusterAction (David Alves via asavu)"
+        },
+        {
+            "c_hash": "3df929bc",
+            "date": "2011-11-07 10:50:52 +0000",
+            "comment": "WHIRR-399. Move common script setup and script execution fork/join outside of ConfigureClusterAction and DestroyClusterAction (David Alves via asavu)"
+        },
+        {
+            "c_hash": "97a62dca",
+            "date": "2011-11-07 20:45:39 +0000",
+            "comment": "WHIRR-417. Allow users to choose their own jclouds modules with properties (Adrian Cole via asavu)"
+        },
+        {
+            "c_hash": "c3af8a78",
+            "date": "2011-11-08 12:48:43 +0000",
+            "comment": "WHIRR-420. Document jclouds specific configuration options (David Alves via asavu)"
+        },
+        {
+            "c_hash": "a85c6122",
+            "date": "2011-11-08 15:41:50 +0000",
+            "comment": "WHIRR-419. Display how to connect to remote machines (David Alves via asavu)"
+        },
+        {
+            "c_hash": "ba6ad30c",
+            "date": "2011-11-09 02:11:22 +0000",
+            "comment": "WHIRR-410. Review automatic image selection (Adrian Cole, Alex Heneveld, David Alves, Andrei Savu)"
+        },
+        {
+            "c_hash": "6d8d691e",
+            "date": "2011-11-09 03:59:02 +0000",
+            "comment": "WHIRR-426. Create a convention for naming clusters used for integration tests (asavu)"
+        },
+        {
+            "c_hash": "c5b63333",
+            "date": "2011-11-09 09:09:45 +0000",
+            "comment": "WHIRR-409. Add an integration test that shows that there is no overlap between install & configure scripts on the remote machine (asavu)"
+        },
+        {
+            "c_hash": "11c31f8a",
+            "date": "2011-11-09 15:18:42 +0000",
+            "comment": "WHIRR-352. mvn package assembly:assembly fails (David Alves via asavu)"
+        },
+        {
+            "c_hash": "a898ec81",
+            "date": "2011-11-09 20:43:15 +0000",
+            "comment": "WHIRR-408. Upgrade elasticsearch to 0.18.2 (asavu)"
+        },
+        {
+            "c_hash": "f5fba44e",
+            "date": "2011-11-10 11:25:45 +0000",
+            "comment": "WHIRR-414. Wirr can have a non-zero return code and unterminated (orphaned) host instances (David Alves and asavu)"
+        },
+        {
+            "c_hash": "66552bb4",
+            "date": "2011-11-13 07:36:48 +0000",
+            "comment": "WHIRR-414. Ignore missing instances file on partial failures (asavu)"
+        },
+        {
+            "c_hash": "2f1fb5d6",
+            "date": "2011-11-14 16:32:18 +0000",
+            "comment": "WHIRR-396. service/ganglia needs non-zero send_metadata_interval= in gmond.conf (Joris Bontje via asavu)"
+        },
+        {
+            "c_hash": "6a22886d",
+            "date": "2011-11-14 19:37:45 +0000",
+            "comment": "WHIRR-416. Enable lazy image fetching when the image-id is known (asavu)"
+        },
+        {
+            "c_hash": "4f0a8d66",
+            "date": "2011-11-17 17:37:36 +0000",
+            "comment": "WHIRR-432. Puppet integration tests failing (Alex Heneveld via asavu)"
+        },
+        {
+            "c_hash": "12f832bd",
+            "date": "2011-11-18 21:47:03 +0000",
+            "comment": "WHIRR-415. Let users specify the CDH release (cdh3u1, cdh3u2) (Alex Heneveld and asavu)"
+        },
+        {
+            "c_hash": "abc25693",
+            "date": "2011-11-21 21:37:38 +0000",
+            "comment": "WHIRR-404. Add Project Metadata (Jean-Baptiste Onofr\u00e9 and asavu)"
+        },
+        {
+            "c_hash": "9b717882",
+            "date": "2011-12-07 17:14:59 +0000",
+            "comment": "WHIRR-440. Unit tests improvements (less bound to external services) (asavu)"
+        },
+        {
+            "c_hash": "17392b48",
+            "date": "2011-12-08 12:18:04 +0000",
+            "comment": "WHIRR-403. Add Trademark Attributions (Tom White via asavu)"
+        },
+        {
+            "c_hash": "93e3caaf",
+            "date": "2011-12-08 14:07:56 +0000",
+            "comment": "WHIRR-442. Release 0.6.0 is in breach of the AL2.0 and general Apache rules in regards to the inclusion of Voldemort (Tom White via asavu)"
+        },
+        {
+            "c_hash": "4d54f99c",
+            "date": "2011-12-08 18:37:25 +0000",
+            "comment": "WHIRR-446. Upgrade all maven plugins to latest stable release (asavu)"
+        },
+        {
+            "c_hash": "abe4936e",
+            "date": "2011-12-10 23:05:02 +0000",
+            "comment": "WHIRR-447. FastDnsResolver fails with SocketTimeoutException (asavu)"
+        },
+        {
+            "c_hash": "4bc3d7da",
+            "date": "2011-12-10 23:11:07 +0000",
+            "comment": "WHIRR-437, Cassandra integration test is failing (asavu)"
+        },
+        {
+            "c_hash": "c14ad428",
+            "date": "2011-12-10 23:23:33 +0000",
+            "comment": "WHIRR-384. Add Mahout as a service (Frank Scholten via asavu)"
+        },
+        {
+            "c_hash": "e36479e8",
+            "date": "2011-12-10 23:35:32 +0000",
+            "comment": "WHIRR-442. Ignore the voldemort test .jar when building the binary release (asavu)"
+        },
+        {
+            "c_hash": "3081eb18",
+            "date": "2011-12-10 23:43:48 +0000",
+            "comment": "Preparing for release 0.7.0"
+        },
+        {
+            "c_hash": "c15d51ef",
+            "date": "2011-12-10 23:56:37 +0000",
+            "comment": "Version bump from 0.7.0-SNAPSHOT to 0.8.0-SNAPSHOT"
+        },
+        {
+            "c_hash": "8951fa0e",
+            "date": "2011-12-11 00:08:55 +0000",
+            "comment": "Disable the site plugin for the mahout project"
+        },
+        {
+            "c_hash": "ee17b691",
+            "date": "2011-12-11 00:18:52 +0000",
+            "comment": "Added release notes for 0.7.0"
+        },
+        {
+            "c_hash": "8617f3f8",
+            "date": "2011-12-11 01:01:08 +0000",
+            "comment": "Quick fix to make maven deploy work"
+        },
+        {
+            "c_hash": "2f6673ed",
+            "date": "2011-12-11 01:38:54 +0000",
+            "comment": "Make sure we also sign all the build-tools artifacts"
+        },
+        {
+            "c_hash": "fcd300f4",
+            "date": "2011-12-14 22:11:50 +0000",
+            "comment": "WHIRR-449. slf4j impl is not being copied to the lib dir when executing the binary assembly (David Alves via asavu)"
+        },
+        {
+            "c_hash": "c5377344",
+            "date": "2011-12-14 22:14:23 +0000",
+            "comment": "Updated release notes for 0.7.0"
+        },
+        {
+            "c_hash": "5833a616",
+            "date": "2011-12-20 09:21:08 +0000",
+            "comment": "Updated links still referencing incubator"
+        },
+        {
+            "c_hash": "8a6bc237",
+            "date": "2011-12-20 09:36:57 +0000",
+            "comment": "Updated PMC reference in DOAP file"
+        },
+        {
+            "c_hash": "7e1d9cf0",
+            "date": "2011-12-21 12:21:05 +0000",
+            "comment": "Fixed build-tools/pom.xml to allow site deployment"
+        },
+        {
+            "c_hash": "8d924c0b",
+            "date": "2011-12-21 14:00:57 +0000",
+            "comment": "Maven site config updated to keep absolute URLs absolute."
+        },
+        {
+            "c_hash": "0d48578c",
+            "date": "2011-12-21 14:59:04 +0000",
+            "comment": "Restored maven site skin"
+        },
+        {
+            "c_hash": "95de450a",
+            "date": "2011-12-28 18:38:29 +0000",
+            "comment": "WHIRR-421. Handle more role / service lifecycle events as part of the core functionality (asavu)"
+        },
+        {
+            "c_hash": "0db700d0",
+            "date": "2011-12-29 21:38:14 +0000",
+            "comment": "WHIRR-457. Upgrade to jclouds 1.2.2 (asavu)"
+        },
+        {
+            "c_hash": "d5885391",
+            "date": "2011-12-29 21:50:15 +0000",
+            "comment": "WHIRR-458. Remove deprecated code and aliasing mechanism (asavu)"
+        },
+        {
+            "c_hash": "76cfcb89",
+            "date": "2011-12-29 22:11:31 +0000",
+            "comment": "WHIRR-367. Wrong groupId for zookeeper (Joe Crobak via asavu)"
+        },
+        {
+            "c_hash": "b0ce8cc8",
+            "date": "2012-01-02 13:48:51 +0000",
+            "comment": "WHIRR-332. Need to specify different instance size/type depending on role (asavu)"
+        },
+        {
+            "c_hash": "c2c5bffe",
+            "date": "2012-01-05 18:29:44 +0000",
+            "comment": "WHIRR-421. Fetch NodeMetadata using API calls"
+        },
+        {
+            "c_hash": "a3bbc527",
+            "date": "2012-01-05 18:57:29 +0000",
+            "comment": "WHIRR-461. Allow user to specify spot instance price per instance template group (asavu)"
+        },
+        {
+            "c_hash": "b38831be",
+            "date": "2012-01-05 19:13:10 +0000",
+            "comment": "WHIRR-460. Error while running whirr on Cygwin (Akash Ashok via asavu)"
+        },
+        {
+            "c_hash": "54d214bc",
+            "date": "2012-01-14 21:40:50 +0000",
+            "comment": "WHIRR-407. Upgrade Cassandra to 1.0.6 (Nathan Milford and Andrei Savu)"
+        },
+        {
+            "c_hash": "74311b6e",
+            "date": "2012-01-16 22:05:12 +0000",
+            "comment": "WHIRR-475. Rename login-user to bootstrap-user to avoid confusions (asavu)"
+        },
+        {
+            "c_hash": "017a5350",
+            "date": "2012-01-17 10:04:33 +0000",
+            "comment": "WHIRR-456. Upgrade to jclouds 1.3.0 (asavu)"
+        },
+        {
+            "c_hash": "f1b8e214",
+            "date": "2012-01-18 12:23:44 +0000",
+            "comment": "WHIRR-473. HadoopServiceController.getInstance(String config) does not update instances correctly (Frank Scholten via asavu)"
+        },
+        {
+            "c_hash": "93c95208",
+            "date": "2012-01-18 12:46:16 +0000",
+            "comment": "WHIRR-477. Upgrade Cassandra service to 1.0.7 (asavu)"
+        },
+        {
+            "c_hash": "278b3166",
+            "date": "2012-01-21 17:00:19 +0000",
+            "comment": "Added release 0.7.0 to the DOAP file"
+        },
+        {
+            "c_hash": "4a37ef81",
+            "date": "2012-01-23 08:52:32 +0000",
+            "comment": "WHIRR-486. doap_Whirr.rdf incorrect XML syntax"
+        },
+        {
+            "c_hash": "6e24612f",
+            "date": "2012-01-23 13:56:49 +0000",
+            "comment": "the hbase pid dir should be owned by hbase:hbase instead of hadoop:hadoop"
+        },
+        {
+            "c_hash": "803c8a7e",
+            "date": "2012-01-25 12:13:10 +0000",
+            "comment": "WHIRR-483. Upgrade to jclouds 1.3.1 (asavu)"
+        },
+        {
+            "c_hash": "37e40695",
+            "date": "2012-01-25 13:22:35 +0000",
+            "comment": "WHIRR-479. ScriptBasedClusterAction should allow filtering by role and instance-id (asavu)"
+        },
+        {
+            "c_hash": "ec0fa7ec",
+            "date": "2012-01-25 15:19:29 +0000",
+            "comment": "WHIRR-484. Add restart-services command (asavu)"
+        },
+        {
+            "c_hash": "1907d790",
+            "date": "2012-02-02 11:18:22 +0000",
+            "comment": "WHIRR-490. hadoop-mapreduce.mapred.child.ulimit should be unlimited by default (asavu)"
+        },
+        {
+            "c_hash": "3c9e627c",
+            "date": "2012-02-02 11:37:55 +0000",
+            "comment": "WHIRR-497. Update maven plugins & project deps (asavu)"
+        },
+        {
+            "c_hash": "fcb0855e",
+            "date": "2012-02-02 11:44:32 +0000",
+            "comment": "WHIRR-493. Test override number of mappers for Hadoop (asavu)"
+        },
+        {
+            "c_hash": "68813d6b",
+            "date": "2012-02-03 13:34:24 +0000",
+            "comment": "The jclouds endpoint url was wrong. Copied ${sys:user.dir} from the ganglia example."
+        },
+        {
+            "c_hash": "bddc3578",
+            "date": "2012-02-04 23:50:53 +0000",
+            "comment": "WHIRR-454. Allow openjdk to be installed as an alternative to sun-java-6 (Karel Vervaeke via asavu)"
+        },
+        {
+            "c_hash": "217df82e",
+            "date": "2012-02-05 11:09:15 +0000",
+            "comment": "WHIRR-439. Make proxy files executable (Marco Didonna via asavu)"
+        },
+        {
+            "c_hash": "d9c51d7a",
+            "date": "2012-02-05 20:38:49 +0000",
+            "comment": "WHIRR-495. bin/whirr is does not have executable permissions in the 0.7.0 pre-built download (asavu)"
+        },
+        {
+            "c_hash": "3bed6c28",
+            "date": "2012-02-05 20:42:10 +0000",
+            "comment": "WHIRR-496. Documentation in 5-Minute guide is missing key option for destroy step (asavu)"
+        },
+        {
+            "c_hash": "3daf16c9",
+            "date": "2012-02-05 20:44:43 +0000",
+            "comment": "WHIRR-498. Update the list of known limitations (asavu)"
+        },
+        {
+            "c_hash": "6ca339f3",
+            "date": "2012-02-05 23:09:59 +0000",
+            "comment": "WHIRR-436. Allow Whirr to run from inside OSGi (Ioannis Canellos via asavu)"
+        },
+        {
+            "c_hash": "5c6ba210",
+            "date": "2012-02-05 23:41:05 +0000",
+            "comment": "WHIRR-500. Let users control which hardware is used for each instance template (Karel Vervaeke via asavu)"
+        },
+        {
+            "c_hash": "c473e766",
+            "date": "2012-02-07 21:22:45 +0000",
+            "comment": "WHIRR-422. Integration tests should fail or succeed in a limited amount of time (asavu)"
+        },
+        {
+            "c_hash": "a9a7c35e",
+            "date": "2012-02-07 21:38:19 +0000",
+            "comment": "WHIRR-502. configure_cdh_hadoop.sh: syntax error trying to modify permissions on $HADOOP_LOG_DIR (asavu)"
+        },
+        {
+            "c_hash": "e5c89609",
+            "date": "2012-02-11 17:39:36 +0000",
+            "comment": "WHIRR-510. Get ZooKeeper ensemble with internal addresses (David Arthur via asavu)"
+        },
+        {
+            "c_hash": "dcad614d",
+            "date": "2012-02-14 09:30:22 +0000",
+            "comment": "WHIRR-347. Support provider-independent environment variables for cloud credentials (asavu)"
+        },
+        {
+            "c_hash": "7591ed09",
+            "date": "2012-02-14 10:22:40 +0000",
+            "comment": "WHIRR-463. Fail fast when running as root (asavu)"
+        },
+        {
+            "c_hash": "95736331",
+            "date": "2012-02-15 07:00:03 +0000",
+            "comment": "WHIRR-35. Include .pac file for browsing to Hadoop clusters started on EC2 (asavu)"
+        },
+        {
+            "c_hash": "100dd3a9",
+            "date": "2012-02-16 20:03:24 +0000",
+            "comment": "Fix update-versions script. fixes WHIRR-514"
+        },
+        {
+            "c_hash": "44fb39fc",
+            "date": "2012-02-16 20:38:09 +0000",
+            "comment": "WHIRR-507. Make whirr script executable from any path (Marco Didonna via asavu)"
+        },
+        {
+            "c_hash": "c45535f0",
+            "date": "2012-02-17 08:40:48 +0000",
+            "comment": "The update-versions script should also update profile-activated modules."
+        },
+        {
+            "c_hash": "756c59e1",
+            "date": "2012-02-17 09:09:41 +0000",
+            "comment": "Don't update /project/parent/version for the root pom"
+        },
+        {
+            "c_hash": "5ac6e03d",
+            "date": "2012-02-20 11:33:58 +0000",
+            "comment": "WHIRR-518. Change to OpenJDK (Frank Scholten via asavu)"
+        },
+        {
+            "c_hash": "18cceb0b",
+            "date": "2012-02-20 12:26:36 +0000",
+            "comment": "Avoid hardcoded whirr version number in karaf test."
+        },
+        {
+            "c_hash": "b1367339",
+            "date": "2012-02-20 13:00:23 +0000",
+            "comment": "Added missing license header to whirr-karaf-itests.properties"
+        },
+        {
+            "c_hash": "cc3424ee",
+            "date": "2012-02-21 11:55:20 +0000",
+            "comment": "WHIRR-520. Using OAB script to install sun jdk (Marco Didonna via asavu)"
+        },
+        {
+            "c_hash": "46c26613",
+            "date": "2012-02-21 13:28:58 +0000",
+            "comment": "WHIRR-518. Make sure JAVA_HOME is set for the Hadoop cluster"
+        },
+        {
+            "c_hash": "6d97a6cf",
+            "date": "2012-02-22 10:11:45 +0000",
+            "comment": "WHIRR-524. Change confusing 'Starting cluster' message (Frank Scholten via asavu)"
+        },
+        {
+            "c_hash": "e4a4c6ea",
+            "date": "2012-02-23 05:19:13 +0000",
+            "comment": "WHIRR-518. Replace 'source' (bash only) with '.'"
+        },
+        {
+            "c_hash": "06a2ea3d",
+            "date": "2012-02-23 20:57:14 +0000",
+            "comment": "WHIRR-526. Don't log harmless sshj errors to console (asavu)"
+        },
+        {
+            "c_hash": "acfd70e9",
+            "date": "2012-02-23 22:16:17 +0000",
+            "comment": "WHIRR-490. Remove mapred.child.ulimit entry from defaults to make it unlimited (asavu)"
+        },
+        {
+            "c_hash": "f5fd55ef",
+            "date": "2012-02-24 12:06:34 +0000",
+            "comment": "Updated CHANGES.txt and Release Notes for 0.7.1"
+        },
+        {
+            "c_hash": "04243c4b",
+            "date": "2012-02-28 15:19:10 +0000",
+            "comment": "Use update-alternatives and introduce install_oracle_jdk[67] scripts"
+        },
+        {
+            "c_hash": "3d8a4e2d",
+            "date": "2012-02-29 10:12:43 +0000",
+            "comment": "WHIRR-536. Using SNAPSHOT versions of jclouds breaks OSGi support (Ioannis Canellos, Andrei Savu)"
+        },
+        {
+            "c_hash": "ac291394",
+            "date": "2012-03-01 17:58:29 +0000",
+            "comment": "WHIRR-509. Provide live OSGi integration tests (Ioannis Canellos, Andrei Savu)"
+        },
+        {
+            "c_hash": "30ab35ff",
+            "date": "2012-03-07 09:24:29 +0000",
+            "comment": "WHIRR-542. Only expose start / stop / restart as new CLI commands (Andrei Savu)"
+        },
+        {
+            "c_hash": "0459e90d",
+            "date": "2012-03-07 13:28:37 +0000",
+            "comment": "Removed build warning. Added version 3.0 to maven-site-plugin"
+        },
+        {
+            "c_hash": "0e176956",
+            "date": "2012-03-07 21:14:32 +0000",
+            "comment": "WHIRR-549. Remove dependency on system SSH keys in tests"
+        },
+        {
+            "c_hash": "b30d0b16",
+            "date": "2012-03-07 21:26:19 +0000",
+            "comment": "Updated default Mahout version to 0.6"
+        },
+        {
+            "c_hash": "df5b2bf8",
+            "date": "2012-03-07 21:30:39 +0000",
+            "comment": "Reverted Mahout version back to 0.5. Needs JIRA ticket + proper testing"
+        },
+        {
+            "c_hash": "ca7d73b1",
+            "date": "2012-03-07 22:24:32 +0000",
+            "comment": "WIHRR-549. Updated CHANGES.txt as needed"
+        },
+        {
+            "c_hash": "12ec9f55",
+            "date": "2012-03-08 08:50:59 +0000",
+            "comment": "WHIRR-531. Add Pig as a service (Marco Didonna, Andrei Savu)"
+        },
+        {
+            "c_hash": "06fba9e8",
+            "date": "2012-03-08 10:22:07 +0000",
+            "comment": "WHIRR-550. Upgrade Mahout service to 0.6"
+        },
+        {
+            "c_hash": "42e40997",
+            "date": "2012-03-08 10:31:45 +0000",
+            "comment": "WHIRR-550. Updated CHANGES"
+        },
+        {
+            "c_hash": "58805057",
+            "date": "2012-03-08 14:42:12 +0000",
+            "comment": "WHIRR0-531. Replace jclouds.version with jclouds.osgi.version.clean"
+        },
+        {
+            "c_hash": "6da64a64",
+            "date": "2012-03-12 13:05:24 +0000",
+            "comment": "WHIRR-554. Upgrade elasticsearch to 0.19.0 (Andrei Savu)"
+        },
+        {
+            "c_hash": "421ab20b",
+            "date": "2012-03-12 14:54:07 +0000",
+            "comment": "WHIRR-553. Upgrade Cassandra to 1.0.8 (Andrei Savu)"
+        },
+        {
+            "c_hash": "b96266da",
+            "date": "2012-03-12 16:04:26 +0000",
+            "comment": "WHIRR-551. Upgrade to jclouds 1.3.2 (Andrei Savu)"
+        },
+        {
+            "c_hash": "3c390141",
+            "date": "2012-03-15 17:38:11 +0000",
+            "comment": "WHIRR-391. Write a YARN (Hadoop MR2) service for Whirr."
+        },
+        {
+            "c_hash": "13a6a574",
+            "date": "2012-03-15 21:51:59 +0000",
+            "comment": "WHIRR-335. Update Hama service to Hama 0.4-incubating"
+        },
+        {
+            "c_hash": "8fad4478",
+            "date": "2012-03-20 10:21:03 +0000",
+            "comment": "WHIRR-555: Fix Java install scripts"
+        },
+        {
+            "c_hash": "a340fde2",
+            "date": "2012-03-20 10:26:31 +0000",
+            "comment": "Added credits for WHIRR-555"
+        },
+        {
+            "c_hash": "6457e311",
+            "date": "2012-03-20 10:33:55 +0000",
+            "comment": "WHIRR-556: Improve 'Running on $PROVIDER using identity $IDENTITY' message"
+        },
+        {
+            "c_hash": "7780502f",
+            "date": "2012-03-20 12:24:26 +0000",
+            "comment": "Fix the test case"
+        },
+        {
+            "c_hash": "34750134",
+            "date": "2012-03-21 15:56:39 +0000",
+            "comment": "WHIRR-464. Do not fail if whirr.cluster-user already exists on the remote machine (Rodrigo Duarte Sousa via Andrei Savu)"
+        },
+        {
+            "c_hash": "558528b3",
+            "date": "2012-03-22 16:05:00 +0000",
+            "comment": "WHIRR-374. Enforce Maven 3 (Tom White via Andrei Savu)"
+        },
+        {
+            "c_hash": "1cd6b415",
+            "date": "2012-03-23 15:04:50 +0000",
+            "comment": "WHIRR-565. Add .checktyle files created by eclipse-checkstyle-plugin to rat excludes (David Alves)"
+        },
+        {
+            "c_hash": "5a7ffe01",
+            "date": "2012-03-24 12:00:34 +0000",
+            "comment": "WHIRR-563. Disable password based authentication (Rodrigo Duarte Sousa via Andrei Savu)"
+        },
+        {
+            "c_hash": "ddd93135",
+            "date": "2012-03-26 23:38:54 +0000",
+            "comment": "WHIRR-570. Site generation fails for YARN."
+        },
+        {
+            "c_hash": "29590286",
+            "date": "2012-03-27 17:31:02 +0000",
+            "comment": "WHIRR-572. Ensure ZooKeeper data directories are created."
+        },
+        {
+            "c_hash": "9ba7443f",
+            "date": "2012-03-27 22:00:24 +0000",
+            "comment": "WHIRR-504. Upgrade to jclouds 1.4.0 (Adrian Cole, Andrei Savu)"
+        },
+        {
+            "c_hash": "8a6ca171",
+            "date": "2012-03-29 08:31:56 +0000",
+            "comment": "Templating for configuration files (WHIRR-370)"
+        },
+        {
+            "c_hash": "46a9a7af",
+            "date": "2012-04-26 18:43:31 +0000",
+            "comment": "Fixing the build. TemplateUtilsTest now uses temporary keys."
+        },
+        {
+            "c_hash": "6e1706c6",
+            "date": "2012-04-26 22:11:47 +0000",
+            "comment": "WHIRR-494. Update the BYON cluster controller to support all the operations the regular controller supports (Cosmin Dumitrache via asavu)"
+        },
+        {
+            "c_hash": "40377345",
+            "date": "2012-04-27 07:31:11 +0000",
+            "comment": "Fixing the build. Doubled the service timeout for WhirrKarafTestSupport"
+        },
+        {
+            "c_hash": "f029f4e9",
+            "date": "2012-04-27 07:57:19 +0000",
+            "comment": "Fixing the build. Changed the installation order of services in WhirrKarafTestSupport"
+        },
+        {
+            "c_hash": "b7773baa",
+            "date": "2012-05-02 08:17:47 +0000",
+            "comment": "Fixing the build. Removed installation of pig-client service from WhirrKarafTestSupport to get back to a stable situation."
+        },
+        {
+            "c_hash": "5687769a",
+            "date": "2012-05-04 14:32:03 +0000",
+            "comment": "Fixing the build. Reverted timeout."
+        },
+        {
+            "c_hash": "f0ceeab9",
+            "date": "2012-05-04 14:52:17 +0000",
+            "comment": "Fixing the build. Reverted pig-client service."
+        },
+        {
+            "c_hash": "51dbd4a6",
+            "date": "2012-05-04 15:40:41 +0000",
+            "comment": "Fixing the build. Commented out all services in WhirrServicesTest except pig-client."
+        },
+        {
+            "c_hash": "4f9a2d77",
+            "date": "2012-05-04 16:31:34 +0000",
+            "comment": "Fixed duplicated Yarn dependency in whirr pom. Changed tarLongFileFormat to tarLongFileMode"
+        },
+        {
+            "c_hash": "8928835d",
+            "date": "2012-05-04 17:12:55 +0000",
+            "comment": "Fixing the build. Put WhirrServicesTest on ignore."
+        },
+        {
+            "c_hash": "269860f6",
+            "date": "2012-05-04 17:35:57 +0000",
+            "comment": "Reverted WhirrServicesTest to see if it works this time."
+        },
+        {
+            "c_hash": "364e0db2",
+            "date": "2012-05-08 08:55:51 +0000",
+            "comment": "WHIRR-586 Fixing the build. Closing the tracker and aligned order of services."
+        },
+        {
+            "c_hash": "f0d7149a",
+            "date": "2012-05-08 12:33:20 +0000",
+            "comment": "WHIRR-585 bin/whirr version command does not work."
+        },
+        {
+            "c_hash": "ebed6311",
+            "date": "2012-05-08 12:35:20 +0000",
+            "comment": "WHIRR-586 Updated CHANGES"
+        },
+        {
+            "c_hash": "c206a13d",
+            "date": "2012-05-08 12:48:14 +0000",
+            "comment": "WHIRR-554. Fixed install command for AWS plugin (Frank Scholten via asavu)"
+        },
+        {
+            "c_hash": "f0da97c6",
+            "date": "2012-05-09 11:18:48 +0000",
+            "comment": "WHIRR-465. Add solr as a service"
+        },
+        {
+            "c_hash": "da1e0683",
+            "date": "2012-05-09 11:53:23 +0000",
+            "comment": "WHIRR-465. Add solr as a service. Added missing commons-compress dependency and added solr to whirr-cli."
+        },
+        {
+            "c_hash": "def4da74",
+            "date": "2012-05-10 19:29:24 +0000",
+            "comment": "WHIRR-582. Yarn service does not build in IntelliJ because of missing Hadoop test dependencies (Frank Scholten)"
+        },
+        {
+            "c_hash": "fcfd11ab",
+            "date": "2012-05-13 18:03:17 +0000",
+            "comment": "WHIRR-590. ssh port timeout fails the whole cluster (Doug Daniels via asavu)"
+        },
+        {
+            "c_hash": "7a13a61e",
+            "date": "2012-05-13 19:48:49 +0000",
+            "comment": "WHIRR-459. DNS Failure when trying to spawn HBase cluster (Alex Heneveld via asavu)"
+        },
+        {
+            "c_hash": "f0a88325",
+            "date": "2012-05-16 06:21:16 +0000",
+            "comment": "WHIRR-591. Maven profile for Karaf itests (inactive by default) (asavu)"
+        },
+        {
+            "c_hash": "e002ebfd",
+            "date": "2012-05-17 18:50:51 +0000",
+            "comment": "WHIRR-587. Update version of jopt-simple (from 3.2 to 4.3) (asavu)"
+        },
+        {
+            "c_hash": "997824e2",
+            "date": "2012-05-29 18:20:41 +0000",
+            "comment": "WHIRR-511. Instance.getPrivateHostName returns an IP address (asavu)"
+        },
+        {
+            "c_hash": "5b30542b",
+            "date": "2012-07-11 19:03:19 +0000",
+            "comment": "WHIRR-428. Always match a stable Canonical AMI on AWS EC2. Contributed by Andrew Bayer."
+        },
+        {
+            "c_hash": "fa57aaa5",
+            "date": "2012-07-11 19:08:40 +0000",
+            "comment": "WHIRR-568. Use the correct CDH version/repository. Contributed by Andrew Bayer."
+        },
+        {
+            "c_hash": "f7b2aae1",
+            "date": "2012-07-11 19:18:59 +0000",
+            "comment": "WHIRR-584. Change confusing ssh login help message at the end of deployment. Contributed by Andrew Bayer."
+        },
+        {
+            "c_hash": "8ae12b48",
+            "date": "2012-07-20 01:52:38 +0000",
+            "comment": "WHIRR-599. Whirr CDH4 CDHHadoopServiceTest.testVersion() is broken. Contributed by Andrew Bayer."
+        },
+        {
+            "c_hash": "98a0d54f",
+            "date": "2012-07-20 02:00:16 +0000",
+            "comment": "WHIRR-600. Bump up CDH4 Maven dependencies. Contributed by Andrew Bayer."
+        },
+        {
+            "c_hash": "9256762f",
+            "date": "2012-07-25 04:49:46 +0000",
+            "comment": "WHIRR-593: update to jclouds 1.5.0-beta.8"
+        },
+        {
+            "c_hash": "d2e83490",
+            "date": "2012-07-25 10:55:04 +0000",
+            "comment": "WHIRR-601. Cassandra 1.0.8 download URL no longer valid (Andrew Bayer via asavu)"
+        },
+        {
+            "c_hash": "54218964",
+            "date": "2012-07-25 11:45:39 +0000",
+            "comment": "WHIRR-602. Cloud providers may only return private IPs (Andrew Bayer via asavu)"
+        },
+        {
+            "c_hash": "6a25e289",
+            "date": "2012-07-28 18:53:12 +0000",
+            "comment": "WHIRR-605 Upgrade Cassandra to 1.1.2"
+        },
+        {
+            "c_hash": "a5462d72",
+            "date": "2012-08-03 22:25:33 +0000",
+            "comment": "WHIRR-611: Cloud providers may only return public IPs"
+        },
+        {
+            "c_hash": "852b5993",
+            "date": "2012-08-03 23:19:12 +0000",
+            "comment": "WHIRR-608: CDH HBase configuration uses CDH3 package and service names only"
+        },
+        {
+            "c_hash": "8a70d683",
+            "date": "2012-08-04 00:01:49 +0000",
+            "comment": "WHIRR-609. Yum install of openjdk needs -y"
+        },
+        {
+            "c_hash": "da51cfb2",
+            "date": "2012-08-04 00:25:09 +0000",
+            "comment": "WHIRR-593: bumped to jclouds 1.5.0-beta.9"
+        },
+        {
+            "c_hash": "0c265d52",
+            "date": "2012-08-05 16:17:10 +0000",
+            "comment": "WHIRR-610: whirr.env.repo should be whirr.env.REPO"
+        },
+        {
+            "c_hash": "807e613c",
+            "date": "2012-08-05 18:13:57 +0000",
+            "comment": "WHIRR-613. OpenJDK JAVA_HOME detection needs to be improved"
+        },
+        {
+            "c_hash": "57394846",
+            "date": "2012-08-05 18:14:58 +0000",
+            "comment": "reverted accidental image id in tests"
+        },
+        {
+            "c_hash": "1806ba64",
+            "date": "2012-08-06 01:01:46 +0000",
+            "comment": "WHIRR-528: Add a retry loop around apt-get and yum commands to overcome transient errors"
+        },
+        {
+            "c_hash": "7deedeb2",
+            "date": "2012-08-08 18:44:08 +0000",
+            "comment": "WHIRR-63. Support EC2 Cluster Compute groups for Hadoop etc."
+        },
+        {
+            "c_hash": "d8274120",
+            "date": "2012-08-08 18:48:53 +0000",
+            "comment": "WHIRR-615. Use Hadoop 1.0.3 in HBase 0.90 tests."
+        },
+        {
+            "c_hash": "fbf7665a",
+            "date": "2012-08-08 18:49:50 +0000",
+            "comment": "WHIRR-614. Add HADOOP_HOME/lib to HBase classpath."
+        },
+        {
+            "c_hash": "b65a2594",
+            "date": "2012-08-08 18:51:17 +0000",
+            "comment": "WHIRR-603. HBase 0.89 tests won't work with Hadoop 0.20.205."
+        },
+        {
+            "c_hash": "bef16da4",
+            "date": "2012-08-08 21:53:17 +0000",
+            "comment": "WHIRR-573. Allow configuring REPO_HOST for CDH repositories."
+        },
+        {
+            "c_hash": "19d40442",
+            "date": "2012-08-09 20:09:49 +0000",
+            "comment": "WHIRR-611: Cloud providers may only return \"public\" IPs"
+        },
+        {
+            "c_hash": "3599f962",
+            "date": "2012-08-12 18:46:54 +0000",
+            "comment": "WHIRR-616. Allow multiple YARN node managers to run on a cluster. Contributed by Godwin Babu."
+        },
+        {
+            "c_hash": "e0a5904c",
+            "date": "2012-08-12 18:48:31 +0000",
+            "comment": "Update CHANGES.txt because I'd forgotten to earlier."
+        },
+        {
+            "c_hash": "396fd550",
+            "date": "2012-08-13 19:49:06 +0000",
+            "comment": "WHIRR-189. Hadoop on EC2 should use all available storage."
+        },
+        {
+            "c_hash": "f855ee7d",
+            "date": "2012-08-13 20:17:33 +0000",
+            "comment": "WHIRR-579. Switch to OpenJDK by default, as Sun/Oracle JDK doesn't install any more."
+        },
+        {
+            "c_hash": "cee83dbc",
+            "date": "2012-08-13 20:20:12 +0000",
+            "comment": "WHIRR-525. Switch to HBase 0.92."
+        },
+        {
+            "c_hash": "96f528f3",
+            "date": "2012-08-14 17:43:47 +0000",
+            "comment": "Cleaning up bad/partial commit of WHIRR-525"
+        },
+        {
+            "c_hash": "19e227a9",
+            "date": "2012-08-15 18:43:21 +0000",
+            "comment": "WHIRR-604. Non-resolvable hostnames should be reset to something resolvable"
+        },
+        {
+            "c_hash": "ea4d661d",
+            "date": "2012-08-15 18:44:29 +0000",
+            "comment": "WHIRR-612. CDH4 can be installed on Ubuntu now as well as CentOS."
+        },
+        {
+            "c_hash": "148a2710",
+            "date": "2012-08-17 17:07:07 +0000",
+            "comment": "WHIRR-630: add property endpoint"
+        },
+        {
+            "c_hash": "b54700f7",
+            "date": "2012-08-17 17:38:31 +0000",
+            "comment": "WHIRR-629. Fix YARN tests on Rackspace (contributed by Tom White)"
+        },
+        {
+            "c_hash": "d7865344",
+            "date": "2012-08-17 18:43:46 +0000",
+            "comment": "WHIRR-593: Upgrade to jclouds 1.5.0-beta.10"
+        },
+        {
+            "c_hash": "ff2207ea",
+            "date": "2012-08-17 20:59:18 +0000",
+            "comment": "WHIRR-632. CDH4 only available on 64 bit."
+        },
+        {
+            "c_hash": "10f99149",
+            "date": "2012-08-17 21:00:57 +0000",
+            "comment": "Preparing for Release 0.8.0"
+        },
+        {
+            "c_hash": "762c4af3",
+            "date": "2012-08-17 21:04:02 +0000",
+            "comment": "Preparing for 0.9.0 development"
+        },
+        {
+            "c_hash": "36255f6a",
+            "date": "2012-08-18 19:46:56 +0000",
+            "comment": "WHIRR-633: Align jclouds 1.5.0 modularity changes with Whirr"
+        },
+        {
+            "c_hash": "b460d855",
+            "date": "2012-08-21 13:17:31 +0000",
+            "comment": "WHIRR-639. Set ownership to Hadoop group on CDH hadoop data dirs"
+        },
+        {
+            "c_hash": "1ecf5529",
+            "date": "2012-08-21 13:17:34 +0000",
+            "comment": "WHIRR-640. Ensure minRam is set for CDH recipes and test properties"
+        },
+        {
+            "c_hash": "ae29d1b5",
+            "date": "2012-08-21 13:32:16 +0000",
+            "comment": "WHIRR-635. Ensure hostname update as required by AUTO_HOSTNAME_SUFFIX is consistent for RHEL derivatives. Contributed by Graham Gear"
+        },
+        {
+            "c_hash": "391ec9a5",
+            "date": "2012-08-23 19:52:34 +0000",
+            "comment": "WHIRR-641. Improved parsing of config -> TemplatebuidlerSpec. Contributed by Adrian Cole."
+        },
+        {
+            "c_hash": "9fe62bd5",
+            "date": "2012-08-23 23:24:13 +0000",
+            "comment": "WHIRR-641. Race condition between collocated namenode and jobtracker start/init services. Contributed by Graham Gear."
+        },
+        {
+            "c_hash": "65627be0",
+            "date": "2012-08-23 23:36:18 +0000",
+            "comment": "WHIRR-638. Parameterize OAB Java install. Contributed by Graham Gear."
+        },
+        {
+            "c_hash": "b2784ae8",
+            "date": "2012-08-24 17:25:52 +0000",
+            "comment": "WHIRR-593, WHIRR-641. Bumping up jclouds version"
+        },
+        {
+            "c_hash": "fed52e53",
+            "date": "2012-08-24 17:38:03 +0000",
+            "comment": "WHIRR-641. Missing piece to ensure that options are set properly"
+        },
+        {
+            "c_hash": "fd65601c",
+            "date": "2012-08-24 17:54:18 +0000",
+            "comment": "WHIRR-641. Missing unit test changes"
+        },
+        {
+            "c_hash": "b7b53b50",
+            "date": "2012-08-24 19:49:18 +0000",
+            "comment": "Fixing version in site"
+        },
+        {
+            "c_hash": "56b58a47",
+            "date": "2012-09-10 14:44:23 +0300",
+            "comment": "[WHIRR-548] Whirr can now reuse existing compute services. Misc osgi/karaf integration improvements."
+        },
+        {
+            "c_hash": "cf0dac59",
+            "date": "2012-09-11 12:53:25 +0300",
+            "comment": "Aligned jclouds and jclouds-karaf versions"
+        },
+        {
+            "c_hash": "96b8e7de",
+            "date": "2012-09-19 09:38:32 +0300",
+            "comment": "[WHIRR-659] Upgraded to jclouds and jclouds-karaf 1.5.0"
+        },
+        {
+            "c_hash": "b20f759e",
+            "date": "2012-09-19 13:50:00 +0300",
+            "comment": "WHIRR-654. Tell RAT to avoid checking atlassian-idex.xml (Steve Loughran via asavu)"
+        },
+        {
+            "c_hash": "6888c1b8",
+            "date": "2012-09-19 14:37:21 +0300",
+            "comment": "WHIRR-548. Updated CHANGES.txt"
+        },
+        {
+            "c_hash": "8c4d472b",
+            "date": "2012-09-20 21:24:05 +0100",
+            "comment": "Add section to CHANGES.txt for 0.8.1 release."
+        },
+        {
+            "c_hash": "7bd831d6",
+            "date": "2012-09-20 21:39:34 +0100",
+            "comment": "WHIRR-648. CDH repo install removes other repos with same prefix. Contributed by Graham Gear."
+        },
+        {
+            "c_hash": "a67be676",
+            "date": "2012-09-20 21:45:02 +0100",
+            "comment": "WHIRR-649. Make install_cdh_hadoop.sh idempotent, fast failing if already run. Contributed by Graham Gear."
+        },
+        {
+            "c_hash": "401c0e20",
+            "date": "2012-09-20 21:52:26 +0100",
+            "comment": "WHIRR-646. Integration tests should have failsafe timeouts. Contributed by abayer."
+        },
+        {
+            "c_hash": "cb3a3f6c",
+            "date": "2012-09-20 21:59:22 +0100",
+            "comment": "WHIRR-642. Whirr writes the AWS Secret key to the stdout. Contributed by Steve Loughran."
+        },
+        {
+            "c_hash": "36747f34",
+            "date": "2012-10-08 15:00:27 +0100",
+            "comment": "WHIRR-665. list of SSH commands should also identify host roles. Contributed by Steve Loughran."
+        },
+        {
+            "c_hash": "d7e62f38",
+            "date": "2012-10-08 15:20:21 +0100",
+            "comment": "Fix unit test for WHIRR-665."
+        },
+        {
+            "c_hash": "3ba0807e",
+            "date": "2012-10-09 11:16:01 +0100",
+            "comment": "Add JIRAs to release notes that were closed in 0.8.0."
+        },
+        {
+            "c_hash": "209b14c3",
+            "date": "2012-10-09 11:27:18 +0100",
+            "comment": "WHIRR-666. Upgrade to jclouds 1.5.1."
+        },
+        {
+            "c_hash": "f3967f26",
+            "date": "2012-09-08 16:19:32 -0700",
+            "comment": "WHIRR-120. Add option to populate /etc/hosts, and translate security groups to iptables rules."
+        },
+        {
+            "c_hash": "e9a45f90",
+            "date": "2012-10-19 10:04:39 +0100",
+            "comment": "Update release notes for 0.8.1."
+        },
+        {
+            "c_hash": "36faa809",
+            "date": "2012-10-19 10:16:59 +0100",
+            "comment": "Fix zookeeper recipe filename."
+        },
+        {
+            "c_hash": "3ab02b20",
+            "date": "2012-10-29 15:10:52 -0700",
+            "comment": "WHIRR-672 - Allow eager caching of instance hostname based on pre-provision instance metadata. Contributed by Graham Gear."
+        },
+        {
+            "c_hash": "79634bd0",
+            "date": "2012-10-29 15:40:38 -0700",
+            "comment": "WHIRR-675 - Convert all whirr.env.* environment variable labels to upper case. Contributed by Graham Gear."
+        },
+        {
+            "c_hash": "d9f302f2",
+            "date": "2012-11-01 21:43:21 -0700",
+            "comment": "WHIRR-671. Create Kerberos Service. Contributed by Graham Gear."
+        },
+        {
+            "c_hash": "d7392d0e",
+            "date": "2012-11-14 11:02:46 +0000",
+            "comment": "WHIRR-679. Switch to HBase 0.94.2. Contributed by Andrew Bayer."
+        },
+        {
+            "c_hash": "adf88711",
+            "date": "2012-11-20 11:10:42 +0000",
+            "comment": "WHIRR-680. Add python scripts to aid ssh/scp in to VMs. Contributed by Steve Loughran."
+        },
+        {
+            "c_hash": "846a291d",
+            "date": "2013-01-23 13:51:12 +0000",
+            "comment": "WHIRR-691. Java install to support Debian. Contributed by Graham Gear."
+        },
+        {
+            "c_hash": "4b88bcdc",
+            "date": "2013-01-23 13:53:32 +0000",
+            "comment": "WHIRR-673. Upgrade CDH Repos for RHEL/CentOS 6. Contributed by Graham Gear."
+        },
+        {
+            "c_hash": "ad40bd74",
+            "date": "2013-02-05 10:32:06 +0000",
+            "comment": "WHIRR-699. Fix indentation and formatting on \"Getting Started\" page. Contributed by Mark Grover"
+        },
+        {
+            "c_hash": "ef1cb094",
+            "date": "2013-02-06 11:11:58 +0000",
+            "comment": "WHIRR-696. Whirr script for Hadoop MRv2 YARN installs that supports Hadoop-2.0.x and Hadoop 3.x (trunk) branches. Contributed by Eli Reisman."
+        },
+        {
+            "c_hash": "2007d813",
+            "date": "2013-03-08 09:31:18 +0000",
+            "comment": "WHIRR-707. RunUrlStatementTest fails due to missing URL."
+        },
+        {
+            "c_hash": "d1ebe0ce",
+            "date": "2013-03-11 10:48:03 -0700",
+            "comment": "WHIRR-660. Provide useful error message/exception if empty instance templates"
+        },
+        {
+            "c_hash": "7e027bbb",
+            "date": "2013-03-11 10:57:12 -0700",
+            "comment": "WHIRR-634. Update private IP host file entry when required by AUTO_HOSTNAME_SUFFIX. Contributed by Graham Gear."
+        },
+        {
+            "c_hash": "d5689610",
+            "date": "2013-03-11 11:06:21 -0700",
+            "comment": "WHIRR-661. Upgrade to Hadoop 1.0.3. Contributed by Steve Loughran."
+        },
+        {
+            "c_hash": "32481db4",
+            "date": "2013-03-11 11:09:01 -0700",
+            "comment": "WHIRR-681. Enhance puppet service with an ability to export cluster topology to the puppet code. Contributed by Roman Shaposhnik."
+        },
+        {
+            "c_hash": "8b36d897",
+            "date": "2013-03-24 15:03:53 -0700",
+            "comment": "WHIRR-711. Add security group support for OpenStack."
+        },
+        {
+            "c_hash": "21de5937",
+            "date": "2013-03-25 09:20:45 -0700",
+            "comment": "WHIRR-712. prepare_all_disks.sh should cover xvdX as well as sdX."
+        },
+        {
+            "c_hash": "114f7502",
+            "date": "2013-03-25 16:26:25 -0700",
+            "comment": "WHIRR-546. Add destroy instructions to stdout for all create actions."
+        },
+        {
+            "c_hash": "97939f12",
+            "date": "2013-03-27 15:11:04 -0700",
+            "comment": "WHIRR-709. Bump Hadoop to latest available version at osuosl."
+        },
+        {
+            "c_hash": "4b86f8ba",
+            "date": "2013-03-27 15:14:41 -0700",
+            "comment": "Forgot CHANGES.txt for WHIRR-709."
+        },
+        {
+            "c_hash": "f9d0cd48",
+            "date": "2013-03-31 20:47:17 -0700",
+            "comment": "WHIRR-694. Install puppet from puppetlabs instead of ruby gem. Contributed by Roman Shaposhnik."
+        },
+        {
+            "c_hash": "8bc196a8",
+            "date": "2013-03-31 20:48:28 -0700",
+            "comment": "WHIRR-705. Provide better integration between parameterized classes and Hiera. Contributed by Roman Shaposhnik."
+        },
+        {
+            "c_hash": "275c35fa",
+            "date": "2013-04-01 16:02:43 -0700",
+            "comment": "WHIRR-708. Upgrade jclouds to 1.5.8."
+        },
+        {
+            "c_hash": "f4605f54",
+            "date": "2013-04-01 16:04:27 -0700",
+            "comment": "WHIRR-706. Add invalidate method to ComputeCache."
+        },
+        {
+            "c_hash": "fb40e034",
+            "date": "2013-04-07 19:13:49 -0700",
+            "comment": "WHIRR-713. Enable programmatic use of BYON via CacheNodeStoreModule."
+        },
+        {
+            "c_hash": "764e5dcc",
+            "date": "2013-04-11 13:44:16 -0700",
+            "comment": "Fixing compilation error"
+        },
+        {
+            "c_hash": "b2f197d3",
+            "date": "2013-04-11 14:57:25 -0700",
+            "comment": "WHIRR-715. Fixing Puppet unit test failure. Contributed by Roman Shaposhnik."
+        },
+        {
+            "c_hash": "b98d8856",
+            "date": "2013-04-12 17:54:36 +0300",
+            "comment": "Upgrade to jclouds-karaf 1.5.8"
+        },
+        {
+            "c_hash": "14c45ff1",
+            "date": "2013-04-12 23:27:56 +0300",
+            "comment": "[WHIRR-717] Use of the context name in the dynamic compute cache. Align karaf commands."
+        },
+        {
+            "c_hash": "8d3d385f",
+            "date": "2013-04-12 23:31:04 +0300",
+            "comment": "[WHIRR-717] Update the changes.txt."
+        },
+        {
+            "c_hash": "d48fac33",
+            "date": "2013-04-17 12:21:42 -0700",
+            "comment": "WHIRR-718. Fix copyright dates. Contributed by Patrick Hunt."
+        },
+        {
+            "c_hash": "1507d995",
+            "date": "2013-04-23 11:29:07 -0700",
+            "comment": "Updating CHANGES.txt for 0.9.0 development"
+        },
+        {
+            "c_hash": "4c45b6fe",
+            "date": "2013-05-03 08:24:03 +0100",
+            "comment": "WHIRR-721: Improve robustness of volume device detection"
+        },
+        {
+            "c_hash": "4fe7718a",
+            "date": "2013-05-03 08:45:10 +0100",
+            "comment": "WHIRR-722: Improve user and system level logging capability"
+        },
+        {
+            "c_hash": "7580b67f",
+            "date": "2013-06-23 12:31:12 -0700",
+            "comment": "WHIRR-732. Fix CDH repo for Ubuntu 12.04. Contributed by sebastien goasguen."
+        },
+        {
+            "c_hash": "5006acac",
+            "date": "2013-07-05 16:46:47 +0100",
+            "comment": "WHIRR-735. Update maven-javadoc-plugin to 2.9.1 to fix security bug."
+        },
+        {
+            "c_hash": "8683c88d",
+            "date": "2013-05-24 14:38:18 -0700",
+            "comment": "WHIRR-726. Allow customization of Kerberos user"
+        },
+        {
+            "c_hash": "800e7daf",
+            "date": "2013-05-07 13:09:10 -0700",
+            "comment": "WHIRR-724 - Add a listener to calls to ClusterActionHandlerSupport.beforeAction and .afterAction"
+        },
+        {
+            "c_hash": "8fdd6986",
+            "date": "2013-06-21 17:23:18 -0700",
+            "comment": "WHIRR-731. Switching to Apache jclouds 1.6.1-incubating"
+        },
+        {
+            "c_hash": "c1841f3b",
+            "date": "2013-09-24 12:49:34 -0700",
+            "comment": "WHIRR-747. Moving to a separate parent POM from the root-level POM."
+        },
+        {
+            "c_hash": "3544b4b3",
+            "date": "2013-10-04 10:19:18 -0700",
+            "comment": "Catching up in CHANGES.txt"
+        },
+        {
+            "c_hash": "6a1fab1b",
+            "date": "2013-10-04 10:21:20 -0700",
+            "comment": "WHIRR-738. Create a service for Druid."
+        },
+        {
+            "c_hash": "9c6ed3f1",
+            "date": "2013-10-04 10:27:19 -0700",
+            "comment": "WHIRR-748. Move to jclouds 1.6.2-incubating."
+        },
+        {
+            "c_hash": "a7863d95",
+            "date": "2013-11-12 15:09:34 +0000",
+            "comment": "WHIRR-751. Improve Kerberos service"
+        },
+        {
+            "c_hash": "454c93cf",
+            "date": "2013-11-12 15:16:54 +0000",
+            "comment": "Update CHANGES.txt for WHIRR-751"
+        },
+        {
+            "c_hash": "ff785da1",
+            "date": "2014-01-07 14:29:14 -0800",
+            "comment": "WHIRR-753 - Move to jclouds 1.7.0, use security group extension"
+        },
+        {
+            "c_hash": "959a65bf",
+            "date": "2014-02-11 16:24:30 -0800",
+            "comment": "WHIRR-757: Move to jclouds 1.7.1"
+        },
+        {
+            "c_hash": "5ef75c92",
+            "date": "2014-02-18 12:03:21 -0800",
+            "comment": "Fixing commons-io dependency in Karaf"
+        },
+        {
+            "c_hash": "b79bde84",
+            "date": "2014-02-18 12:05:49 -0800",
+            "comment": "Preparing for 0.9.0 release."
+        },
+        {
+            "c_hash": "4c37cfb3",
+            "date": "2014-02-27 14:58:32 -0800",
+            "comment": "Fixing Druid parent POM"
+        },
+        {
+            "c_hash": "f70bdf7e",
+            "date": "2014-02-27 15:00:33 -0800",
+            "comment": "Moving to 0.10.0-SNAPSHOT"
+        },
+        {
+            "c_hash": "79042f4d",
+            "date": "2014-02-27 15:13:59 -0800",
+            "comment": "Actually fixing inheritance"
+        }
+    ]
+}

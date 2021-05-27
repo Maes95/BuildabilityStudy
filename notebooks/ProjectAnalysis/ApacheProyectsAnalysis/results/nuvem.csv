@@ -1,0 +1,139 @@
+INDEX,COMMIT_ID,IS_MAVEN,OLD_BUILD_SUCCESSFUL,NEW_BUILD_SUCCESSFUL,OLD_EXCEPTION,NEW_EXCEPTION
+0,906f7807,False,False,False,,['OTHER']
+1,1e637bbc,False,False,False,,['OTHER']
+2,a0a14e49,False,False,False,,['OTHER']
+3,20e2bf4c,True,True,True,,[]
+4,c6bf86a9,True,False,False,ArtifactResolutionException,"['ArtifactResolutionException', 'ProjectBuildingException', 'UnresolvableModelException']"
+5,39891107,True,False,False,ArtifactResolutionException,"['ArtifactResolutionException', 'ProjectBuildingException', 'UnresolvableModelException']"
+6,d04197a7,True,False,False,ArtifactResolutionException,"['ArtifactResolutionException', 'ProjectBuildingException', 'UnresolvableModelException']"
+7,4065f535,True,False,False,MojoExecutionException,['MojoExecutionException']
+8,75c96958,True,False,False,MojoExecutionException,['MojoExecutionException']
+9,60b4a25b,True,False,False,MojoExecutionException,['MojoExecutionException']
+10,ab3babe3,True,False,False,MojoExecutionException,['MojoExecutionException']
+11,f2f6578c,True,False,False,MojoExecutionException,['MojoExecutionException']
+12,7c1c772d,True,False,False,MojoExecutionException,['MojoExecutionException']
+13,022f8a3a,True,False,False,MojoExecutionException,['MojoExecutionException']
+14,724d6d9d,True,False,False,MojoExecutionException,['MojoExecutionException']
+15,4917f626,True,False,False,MojoExecutionException,['MojoExecutionException']
+16,c311b0ff,True,False,False,MojoExecutionException,['MojoExecutionException']
+17,8db642b9,True,False,False,MojoExecutionException,['MojoExecutionException']
+18,25ee5922,True,False,False,MojoExecutionException,['MojoExecutionException']
+19,f56d914e,True,False,False,MojoExecutionException,['MojoExecutionException']
+20,b05344e8,True,False,False,MojoExecutionException,['MojoExecutionException']
+21,1a55d020,True,False,False,MojoExecutionException,['MojoExecutionException']
+22,0a3f7a02,True,False,False,MojoExecutionException,['MojoExecutionException']
+23,3e9d979b,True,False,False,MojoExecutionException,['MojoExecutionException']
+24,229731ec,True,False,False,MojoExecutionException,['MojoExecutionException']
+25,74521632,True,False,False,MojoExecutionException,['MojoExecutionException']
+26,7577343f,True,False,False,MojoExecutionException,['MojoExecutionException']
+27,ee570c13,True,False,False,MojoExecutionException,['MojoExecutionException']
+28,8f4dc444,True,False,False,MojoExecutionException,['MojoExecutionException']
+29,0a73370c,True,False,False,MojoExecutionException,['MojoExecutionException']
+30,0be026d4,True,False,False,MojoExecutionException,['MojoExecutionException']
+31,82956d37,True,False,False,MojoExecutionException,['MojoExecutionException']
+32,987fb8f3,True,False,False,MojoExecutionException,['MojoExecutionException']
+33,19205485,True,False,False,MojoExecutionException,['MojoExecutionException']
+34,db2558f0,True,False,False,MojoExecutionException,['MojoExecutionException']
+35,2e314911,True,False,False,MojoExecutionException,['MojoExecutionException']
+36,92721ff6,True,False,False,MojoExecutionException,['MojoExecutionException']
+37,22801038,True,False,False,MojoExecutionException,['MojoExecutionException']
+38,395c3362,True,False,False,MojoExecutionException,['MojoExecutionException']
+39,10bb203a,True,False,False,MojoExecutionException,['MojoExecutionException']
+40,68383b3b,True,False,False,MojoExecutionException,['MojoExecutionException']
+41,17bc819d,True,False,False,MojoExecutionException,['MojoExecutionException']
+42,4e0332f6,True,False,False,MojoExecutionException,['MojoExecutionException']
+43,c8199d0b,True,False,False,MojoExecutionException,['MojoExecutionException']
+44,eccb33ce,True,False,False,MojoExecutionException,['MojoExecutionException']
+45,17037ef0,True,False,False,MojoExecutionException,['MojoExecutionException']
+46,57e0edc9,True,False,False,MojoExecutionException,['MojoExecutionException']
+47,da725dd7,True,False,False,MojoExecutionException,['MojoExecutionException']
+48,525c2a67,True,False,False,MojoExecutionException,['MojoExecutionException']
+49,ecb795b2,True,False,False,MojoExecutionException,['MojoExecutionException']
+50,2b8f7700,True,False,False,MojoExecutionException,['MojoExecutionException']
+51,e25e3470,True,False,False,MojoExecutionException,['MojoExecutionException']
+52,f39ebf9d,True,False,False,MojoExecutionException,['MojoExecutionException']
+53,8f622e9e,True,False,False,MojoExecutionException,['MojoExecutionException']
+54,6af659e9,True,False,False,MojoExecutionException,['MojoExecutionException']
+55,ade617a2,True,False,False,MojoExecutionException,['MojoExecutionException']
+56,2c865fc6,True,False,False,MojoExecutionException,['MojoExecutionException']
+57,2d804420,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+58,01bb88e8,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+59,f43b5f2e,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+60,4d8b26ef,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+61,a7229f36,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+62,193d3409,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+63,a142476f,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+64,66ff272e,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+65,941bab2c,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+66,ff39668e,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+67,a196242e,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+68,8550992b,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+69,bf69113d,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+70,09e73d80,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+71,767b5ef9,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+72,0df522bb,True,False,False,MojoFailureException,"['ConnectException', 'MojoFailureException', 'CompilationFailureException']"
+73,56357117,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+74,2a9185ec,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+75,f6648c0e,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+76,311cd367,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+77,20b6b1ba,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+78,51c31c37,True,False,False,ProjectBuildingException,['ProjectBuildingException']
+79,a9296141,True,False,False,ProjectBuildingException,['ProjectBuildingException']
+80,a133dee1,True,False,False,ProjectBuildingException,['ProjectBuildingException']
+81,5b1e4fb9,True,False,False,ProjectBuildingException,['ProjectBuildingException']
+82,ce94a6f6,True,False,False,ProjectBuildingException,['ProjectBuildingException']
+83,04165833,True,False,False,ProjectBuildingException,['ProjectBuildingException']
+84,66f1b494,True,False,False,ProjectBuildingException,['ProjectBuildingException']
+85,c019e6a9,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+86,8a8ce6a8,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+87,3db9edc0,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+88,45107e0c,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+89,95a9e9fd,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+90,80668af8,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+91,4014bdc9,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+92,bbd293dc,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+93,432a82d7,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+94,cdd7ad56,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+95,5960367c,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+96,8baa33ed,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+97,9d6e4c93,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+98,5ebfde21,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+99,8b923c42,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+100,f8791837,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+101,fa9071d2,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+102,61673976,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+103,ab49c742,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+104,43764a65,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+105,69966350,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+106,d59ecd2e,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+107,4ecae67b,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+108,2f8673ea,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+109,1252e6c3,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+110,7aa7bb6d,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+111,2d8c2246,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+112,b28d00c7,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+113,746a466b,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+114,64131dc3,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+115,617d0d35,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+116,ce454c21,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+117,f1a4997b,True,False,False,ProjectBuildingException,['ProjectBuildingException']
+118,116bfcbb,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+119,5c00e1de,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+120,2a2d7bcc,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+121,70f7aa58,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+122,1d98dd6d,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+123,30f76b72,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+124,3a6c6825,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+125,b58b90d8,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+126,92fa9bfc,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+127,6f17d154,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+128,c5931fd2,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+129,e88f6472,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+130,49a7caa1,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+131,742e61ba,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+132,7dab36ae,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+133,d3978b38,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+134,6aa0ebe8,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+135,d354d61b,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+136,88b10f2b,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"
+137,b92a21dc,True,False,False,MojoExecutionException,"['ConnectException', 'MojoExecutionException']"

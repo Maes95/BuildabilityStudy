@@ -1,0 +1,2638 @@
+{
+    "project": "servicemix4-kernel",
+    "git_url": "https://github.com/apache/servicemix4-kernel.git",
+    "last_commit": "4a4caefd",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "d1594ec3",
+            "date": "2007-11-26 18:06:16 +0000",
+            "comment": "added an initial implementation of a file monitor; that watches the deploy directory for jars to deploy, config files to change or expanded bundles (which are then turned into a bundle and deployed)"
+        },
+        {
+            "c_hash": "a793b8f6",
+            "date": "2007-11-26 18:10:57 +0000",
+            "comment": "created a new runtime subdirectory; moved the main module in there -and also created a minimal servicemix distro (which hopefully we can reuse across each binary distro). Also added Camel to the distro"
+        },
+        {
+            "c_hash": "a126657e",
+            "date": "2007-11-26 18:12:15 +0000",
+            "comment": "created a new runtime subdirectory; moved the main module in there -and also created a minimal servicemix distro (which hopefully we can reuse across each binary distro). Also added Camel to the distro"
+        },
+        {
+            "c_hash": "548fa749",
+            "date": "2007-11-26 18:15:18 +0000",
+            "comment": "created a new runtime subdirectory; moved the main module in there -and also created a minimal servicemix distro (which hopefully we can reuse across each binary distro). Also added Camel to the distro"
+        },
+        {
+            "c_hash": "2aedbd14",
+            "date": "2007-11-26 19:26:53 +0000",
+            "comment": "added some link love to Peter Kriens who's FileInstall was an inspiration for the filemonitor idea"
+        },
+        {
+            "c_hash": "f7b0d8fb",
+            "date": "2007-11-27 10:25:23 +0000",
+            "comment": "added some link love to Peter Kriens who's FileInstall was an inspiration for the filemonitor idea"
+        },
+        {
+            "c_hash": "f09271cc",
+            "date": "2007-11-27 13:02:41 +0000",
+            "comment": "Add servicemix.bat to the distributions"
+        },
+        {
+            "c_hash": "d240b8bb",
+            "date": "2007-11-27 13:05:05 +0000",
+            "comment": "Ignore target directories"
+        },
+        {
+            "c_hash": "d67807fa",
+            "date": "2007-11-28 00:21:27 +0000",
+            "comment": "Use servicemix file monitor instead of pax-confman"
+        },
+        {
+            "c_hash": "91217a75",
+            "date": "2007-11-28 19:17:05 +0000",
+            "comment": "attempt to reduce some wierdness of the file monitor by using canonical paths to compare file paths with the deployed bundles etc"
+        },
+        {
+            "c_hash": "fd812964",
+            "date": "2007-11-29 12:08:26 +0000",
+            "comment": "only refresh the changed packages"
+        },
+        {
+            "c_hash": "d06ab961",
+            "date": "2007-11-29 13:05:38 +0000",
+            "comment": "patch so that all bundles are installed/reinstalled first before they are started/updated so that adding a feature (a set of inter-dependent bundles) works fine"
+        },
+        {
+            "c_hash": "d3241fb6",
+            "date": "2007-11-29 13:08:10 +0000",
+            "comment": "added a simple features option to make it easy to install, say, Camel either statically in a build or dynamically by unzipping a zip of the required bundles. Also added some handy shell scripts to test adding a feature / camel example - until we've got better tooling to make this easy"
+        },
+        {
+            "c_hash": "51c0cdea",
+            "date": "2007-11-29 21:34:16 +0000",
+            "comment": "Add OBR bundele and related gshell commands"
+        },
+        {
+            "c_hash": "485d1d8e",
+            "date": "2007-12-03 19:00:36 +0000",
+            "comment": "Add GShell to the runtime"
+        },
+        {
+            "c_hash": "f312ba24",
+            "date": "2007-12-03 19:43:15 +0000",
+            "comment": "Move GShell to runtime"
+        },
+        {
+            "c_hash": "87694643",
+            "date": "2007-12-03 20:40:49 +0000",
+            "comment": "Change config dir to etc to align with gshell which is not extensible"
+        },
+        {
+            "c_hash": "3b128f02",
+            "date": "2007-12-03 21:00:50 +0000",
+            "comment": "Use servicemix obr repo"
+        },
+        {
+            "c_hash": "5bb8af0b",
+            "date": "2007-12-05 15:25:07 +0000",
+            "comment": "Fix gshell layout, add osgi/install command, remove delay before starting gshell"
+        },
+        {
+            "c_hash": "3a9867e4",
+            "date": "2007-12-05 15:47:34 +0000",
+            "comment": "- The main boot strap now registers a MainService object so that other bundles can find out what the command line arguments were."
+        },
+        {
+            "c_hash": "c5be9699",
+            "date": "2007-12-05 16:29:45 +0000",
+            "comment": "Updated the MainService interface so that the exit code can be passed back.  We now shutdown the system when teh GShell is exited."
+        },
+        {
+            "c_hash": "7af73500",
+            "date": "2007-12-05 17:53:06 +0000",
+            "comment": " - Better Exit Support  - We now try to wait for the framework to initialize before starting up the shell.  This is still having some problems"
+        },
+        {
+            "c_hash": "612e0ab2",
+            "date": "2007-12-05 20:30:33 +0000",
+            "comment": "modified the svn:ignores"
+        },
+        {
+            "c_hash": "cff48e97",
+            "date": "2007-12-05 23:16:39 +0000",
+            "comment": "Add gshell remote support"
+        },
+        {
+            "c_hash": "398d5b66",
+            "date": "2007-12-06 21:23:26 +0000",
+            "comment": "Fix the remote console"
+        },
+        {
+            "c_hash": "b1be8a20",
+            "date": "2007-12-07 00:42:27 +0000",
+            "comment": "Implements subshells and use a dynamic layout"
+        },
+        {
+            "c_hash": "84f53911",
+            "date": "2007-12-07 03:37:23 +0000",
+            "comment": "Another way of doing subshells.  This time we actually create a whole new DefaultShell for the sub shell."
+        },
+        {
+            "c_hash": "530459d5",
+            "date": "2007-12-07 13:06:27 +0000",
+            "comment": "Improve subshells a bit"
+        },
+        {
+            "c_hash": "928c4775",
+            "date": "2007-12-07 13:24:24 +0000",
+            "comment": "Improve subshells a bit"
+        },
+        {
+            "c_hash": "075cd231",
+            "date": "2007-12-07 14:16:55 +0000",
+            "comment": "Use non patched mina version and fix the remote shell closing"
+        },
+        {
+            "c_hash": "e5659706",
+            "date": "2007-12-07 17:55:41 +0000",
+            "comment": "Added support for a startup.properties file which can provide more explict control over the run-level and what is started from the system directroy"
+        },
+        {
+            "c_hash": "665c5216",
+            "date": "2007-12-07 18:20:30 +0000",
+            "comment": "Filtering the startup.properties now"
+        },
+        {
+            "c_hash": "fed21947",
+            "date": "2007-12-07 20:24:14 +0000",
+            "comment": "Isolate ServiceMix Runtime"
+        },
+        {
+            "c_hash": "3332bf04",
+            "date": "2007-12-07 21:12:57 +0000",
+            "comment": "Rename minimum to assembly, add runtime in main package, add ASL headers"
+        },
+        {
+            "c_hash": "144936a0",
+            "date": "2007-12-07 21:18:34 +0000",
+            "comment": "Set svn:ignore"
+        },
+        {
+            "c_hash": "c6746924",
+            "date": "2007-12-07 21:25:06 +0000",
+            "comment": "Add some missing headers"
+        },
+        {
+            "c_hash": "e0acd788",
+            "date": "2007-12-08 16:41:04 +0000",
+            "comment": "Add a dependencyManagement section to avoid using several versions of the same libs"
+        },
+        {
+            "c_hash": "fe70febc",
+            "date": "2007-12-10 09:29:06 +0000",
+            "comment": "Reorg svn tree"
+        },
+        {
+            "c_hash": "c9305a98",
+            "date": "2007-12-10 09:57:20 +0000",
+            "comment": "Move OBR repo"
+        },
+        {
+            "c_hash": "03184a5d",
+            "date": "2007-12-10 11:54:46 +0000",
+            "comment": "Remove unneeded repos"
+        },
+        {
+            "c_hash": "82ea0df7",
+            "date": "2007-12-10 16:39:44 +0000",
+            "comment": "Updated the servicemix main so that in addition to the servicemix.home it also looks for a servicemix.base which defaults the the servicemix.home value.  servicemix.base is used as the base directroy for all data and config instance files."
+        },
+        {
+            "c_hash": "75cbb44e",
+            "date": "2007-12-10 17:23:30 +0000",
+            "comment": "Updated configs so that they use the servicemix.base variable"
+        },
+        {
+            "c_hash": "7b9a39d1",
+            "date": "2007-12-10 17:42:12 +0000",
+            "comment": "Updated config so that instance system directory does not need to exist also update windows bat file to that it can be used per instance too."
+        },
+        {
+            "c_hash": "e0464d16",
+            "date": "2007-12-10 19:02:18 +0000",
+            "comment": "Added eclipse-classes to svn:ignores"
+        },
+        {
+            "c_hash": "7cc140ae",
+            "date": "2007-12-10 19:35:20 +0000",
+            "comment": "Add some ASF headers, create release profile, remove unneeded repos"
+        },
+        {
+            "c_hash": "5683214d",
+            "date": "2007-12-10 20:12:01 +0000",
+            "comment": "refactored the release directory so that you can add platform specific file without having to update the assembly descriptors.  Made the final distributions slightly smaller by making the .zip file Windows specific and the .tar.gz unix specific."
+        },
+        {
+            "c_hash": "224b14b2",
+            "date": "2007-12-10 22:17:41 +0000",
+            "comment": "removed .sh extensions since it's now obvious that this is the only execuable in the dir"
+        },
+        {
+            "c_hash": "dbfa17e6",
+            "date": "2007-12-10 22:36:41 +0000",
+            "comment": "Adding a create command that allows you to create servicemix instance configuration."
+        },
+        {
+            "c_hash": "38c16dd9",
+            "date": "2007-12-10 23:53:46 +0000",
+            "comment": "Fix typo"
+        },
+        {
+            "c_hash": "37f22608",
+            "date": "2007-12-11 16:27:56 +0000",
+            "comment": "Fix JSW scripts and other things"
+        },
+        {
+            "c_hash": "84c5e2ee",
+            "date": "2007-12-11 21:06:17 +0000",
+            "comment": "Moved the java service wrapper into it's own OSGI bundle that folks can optionally install"
+        },
+        {
+            "c_hash": "211b8a58",
+            "date": "2007-12-11 21:08:21 +0000",
+            "comment": "adding ignores"
+        },
+        {
+            "c_hash": "550ad517",
+            "date": "2007-12-11 22:02:36 +0000",
+            "comment": "Fixed it up so that it works on windows too.  Renamed the service wrapper stuff to servicemix-wrapper.exe so that it's easy to spot as the servicemix proecess in a running task manager."
+        },
+        {
+            "c_hash": "c11d7e5d",
+            "date": "2007-12-12 03:05:47 +0000",
+            "comment": "Made the executeable names be based on the name specified"
+        },
+        {
+            "c_hash": "eceb6529",
+            "date": "2007-12-12 14:09:20 +0000",
+            "comment": "Add commands hooks"
+        },
+        {
+            "c_hash": "4fac23ff",
+            "date": "2007-12-12 14:35:03 +0000",
+            "comment": "Specify init and destroy methods so that the repo is set by default"
+        },
+        {
+            "c_hash": "dd22b370",
+            "date": "2007-12-12 15:07:16 +0000",
+            "comment": "We now chmod the linux/mac executables and provide better service install help."
+        },
+        {
+            "c_hash": "2d144730",
+            "date": "2007-12-12 15:17:29 +0000",
+            "comment": "Fix features repo url"
+        },
+        {
+            "c_hash": "544573b7",
+            "date": "2007-12-12 15:37:42 +0000",
+            "comment": "Moved the servicemix.jar to the lib dir.  Fixed the create command so that it chmods that servicemix shell file a+x"
+        },
+        {
+            "c_hash": "e70fa665",
+            "date": "2007-12-12 20:26:41 +0000",
+            "comment": "Add version in the bundle name"
+        },
+        {
+            "c_hash": "f2e0e283",
+            "date": "2007-12-12 20:27:31 +0000",
+            "comment": "Fix bad message when command is not found"
+        },
+        {
+            "c_hash": "b3fe79c5",
+            "date": "2007-12-13 14:54:11 +0000",
+            "comment": "Reduced intial amount of logging"
+        },
+        {
+            "c_hash": "6abecc4a",
+            "date": "2007-12-14 09:26:46 +0000",
+            "comment": "Add testing modules"
+        },
+        {
+            "c_hash": "938cae2b",
+            "date": "2007-12-14 09:31:31 +0000",
+            "comment": "Add testing modules"
+        },
+        {
+            "c_hash": "55759a48",
+            "date": "2007-12-14 17:12:49 +0000",
+            "comment": "Add testing support"
+        },
+        {
+            "c_hash": "9453dfdb",
+            "date": "2007-12-14 20:06:05 +0000",
+            "comment": "Fix test support"
+        },
+        {
+            "c_hash": "bea89c26",
+            "date": "2007-12-14 23:39:05 +0000",
+            "comment": "Fix maven snapshot resolution"
+        },
+        {
+            "c_hash": "0e5a0aa3",
+            "date": "2007-12-17 08:49:26 +0000",
+            "comment": "Use pax logging 1.0-RC1"
+        },
+        {
+            "c_hash": "0a64abc2",
+            "date": "2007-12-17 12:15:26 +0000",
+            "comment": "Fix junit use, fix main due do latest felix changes, revert to pax-logging 0.9.8 until RC is fixed"
+        },
+        {
+            "c_hash": "1c9e97d6",
+            "date": "2007-12-17 20:37:37 +0000",
+            "comment": "Add building instructions, use generated NOTICE in assembly"
+        },
+        {
+            "c_hash": "4a395a78",
+            "date": "2007-12-18 15:48:31 +0000",
+            "comment": "Add info command and remove System.out from Main"
+        },
+        {
+            "c_hash": "3c58431b",
+            "date": "2007-12-19 09:06:00 +0000",
+            "comment": "Fix LICENSE, NOTICE and other files in distro"
+        },
+        {
+            "c_hash": "b3abad18",
+            "date": "2007-12-20 11:06:06 +0000",
+            "comment": "Use felix r605854"
+        },
+        {
+            "c_hash": "7dde28c8",
+            "date": "2007-12-20 12:42:18 +0000",
+            "comment": "Fix builtins statefull commands by inheriting OsgiCommandSupport"
+        },
+        {
+            "c_hash": "d4b3c500",
+            "date": "2007-12-20 19:41:29 +0000",
+            "comment": "Fix bundles start order"
+        },
+        {
+            "c_hash": "5035cc89",
+            "date": "2007-12-20 20:38:33 +0000",
+            "comment": "Change to 1.0-m1, fix repos and fix Features service"
+        },
+        {
+            "c_hash": "f45610c1",
+            "date": "2007-12-20 20:52:50 +0000",
+            "comment": "Fix bundle url to avoid exceptions when restarting with jars in the deploy directory"
+        },
+        {
+            "c_hash": "2ef6eb93",
+            "date": "2007-12-20 21:39:26 +0000",
+            "comment": "Switch to spring-osgi 1.0-rc1"
+        },
+        {
+            "c_hash": "55cbd2cf",
+            "date": "2007-12-21 00:39:46 +0000",
+            "comment": "Make sure all commands are registered when the command line is executed by starting spring context synchronously and waiting for the framework started event"
+        },
+        {
+            "c_hash": "edbd0fdf",
+            "date": "2007-12-21 00:47:57 +0000",
+            "comment": "Remove unneeded output on the console"
+        },
+        {
+            "c_hash": "37c8dc93",
+            "date": "2007-12-21 09:26:09 +0000",
+            "comment": "Fix windows binary distribution"
+        },
+        {
+            "c_hash": "c1ef7584",
+            "date": "2007-12-21 09:27:38 +0000",
+            "comment": "Do not rely on spring internals, use felix as the default platform"
+        },
+        {
+            "c_hash": "f25ee5f2",
+            "date": "2007-12-21 19:20:06 +0000",
+            "comment": "Add maven url handler to distribution"
+        },
+        {
+            "c_hash": "149b1bc7",
+            "date": "2007-12-21 19:25:07 +0000",
+            "comment": "Ran svn propset svn:eol-style native"
+        },
+        {
+            "c_hash": "febbde62",
+            "date": "2007-12-21 21:09:11 +0000",
+            "comment": "start listening for the START event sooner so that we don't miss it"
+        },
+        {
+            "c_hash": "9a79d918",
+            "date": "2007-12-28 21:29:05 +0000",
+            "comment": "Remove snapshots dependencies"
+        },
+        {
+            "c_hash": "beda0b19",
+            "date": "2007-12-30 00:43:06 +0000",
+            "comment": "Small fixes"
+        },
+        {
+            "c_hash": "a3b23087",
+            "date": "2007-12-31 14:41:15 +0000",
+            "comment": "Fix readme link"
+        },
+        {
+            "c_hash": "daa74678",
+            "date": "2007-12-31 15:40:09 +0000",
+            "comment": "Add missing version numbers"
+        },
+        {
+            "c_hash": "1b4ee1e1",
+            "date": "2007-12-31 16:02:47 +0000",
+            "comment": "[maven-release-plugin] prepare release runtime-1.0-m1"
+        },
+        {
+            "c_hash": "57951993",
+            "date": "2007-12-31 16:03:41 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "a261c675",
+            "date": "2008-01-02 14:20:21 +0000",
+            "comment": "Switch to 1.0-m2-SNAPSHOT"
+        },
+        {
+            "c_hash": "f3c3d98c",
+            "date": "2008-01-02 15:48:02 +0000",
+            "comment": "Fixed up the annotation for the list-services"
+        },
+        {
+            "c_hash": "c9e52e9b",
+            "date": "2008-01-04 10:20:21 +0000",
+            "comment": "Add a DeploymentListener interface, patch provided by Jeff Yu"
+        },
+        {
+            "c_hash": "f00a73fb",
+            "date": "2008-01-04 20:16:07 +0000",
+            "comment": "Add ServiceReference handling in OsgiCommandSupport"
+        },
+        {
+            "c_hash": "f7762ada",
+            "date": "2008-01-07 13:16:27 +0000",
+            "comment": "Allow zip and wars to trigger deployment (we may want to use a property instead)"
+        },
+        {
+            "c_hash": "f9e70248",
+            "date": "2008-01-18 09:28:33 +0000",
+            "comment": "Rename runtime to kernel"
+        },
+        {
+            "c_hash": "841ae575",
+            "date": "2008-01-21 09:28:16 +0000",
+            "comment": "Fix release notes, readme and build instructions"
+        },
+        {
+            "c_hash": "c627c1c4",
+            "date": "2008-01-21 11:42:29 +0000",
+            "comment": "Fix features installation"
+        },
+        {
+            "c_hash": "a827ffb0",
+            "date": "2008-01-21 13:14:56 +0000",
+            "comment": "Fix jbi feature deployment"
+        },
+        {
+            "c_hash": "98088b11",
+            "date": "2008-01-21 23:48:02 +0000",
+            "comment": "Add activemq integration, upgrade to spring-osgi 1.0-rc2"
+        },
+        {
+            "c_hash": "2bd609ca",
+            "date": "2008-01-22 07:41:22 +0000",
+            "comment": "Use 2.3.1 surefire plugin"
+        },
+        {
+            "c_hash": "6d313069",
+            "date": "2008-01-22 20:09:53 +0000",
+            "comment": "SMX4KNL-14: Add a plain spring application deployer"
+        },
+        {
+            "c_hash": "95fb2068",
+            "date": "2008-01-23 10:06:14 +0000",
+            "comment": "Fix create command and move it to an 'admin' sub shell"
+        },
+        {
+            "c_hash": "026109d9",
+            "date": "2008-01-23 11:04:21 +0000",
+            "comment": "Fix poms to use pom.version because the release plugin does not work"
+        },
+        {
+            "c_hash": "898b8d7e",
+            "date": "2008-01-23 11:07:10 +0000",
+            "comment": "Small fixes to text files"
+        },
+        {
+            "c_hash": "503eee4b",
+            "date": "2008-01-23 12:09:23 +0000",
+            "comment": "Fix license / notice in binary distro"
+        },
+        {
+            "c_hash": "aa07e3b0",
+            "date": "2008-01-23 12:22:47 +0000",
+            "comment": "Do not use properties inside artifactId"
+        },
+        {
+            "c_hash": "60a5da84",
+            "date": "2008-01-23 12:42:41 +0000",
+            "comment": "Do not use properties inside artifactId"
+        },
+        {
+            "c_hash": "16f73fcb",
+            "date": "2008-01-23 13:04:46 +0000",
+            "comment": "Suppress some warning, try to fix the release"
+        },
+        {
+            "c_hash": "1b91f1ea",
+            "date": "2008-01-23 13:09:22 +0000",
+            "comment": "Use autoVersionSubmodules"
+        },
+        {
+            "c_hash": "e89250a1",
+            "date": "2008-01-23 13:37:09 +0000",
+            "comment": "Remove some warnings"
+        },
+        {
+            "c_hash": "ce019133",
+            "date": "2008-01-23 13:49:55 +0000",
+            "comment": "[maven-release-plugin] prepare release kernel-1.0-m1"
+        },
+        {
+            "c_hash": "8a24350b",
+            "date": "2008-01-23 14:22:41 +0000",
+            "comment": "Revert release"
+        },
+        {
+            "c_hash": "4c8b7d9d",
+            "date": "2008-01-23 14:27:06 +0000",
+            "comment": "[maven-release-plugin] prepare release kernel-1.0-m1"
+        },
+        {
+            "c_hash": "a8eef6da",
+            "date": "2008-01-23 14:28:24 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "f9338a8f",
+            "date": "2008-01-28 13:53:30 +0000",
+            "comment": "Fix deployment of expanded bundles"
+        },
+        {
+            "c_hash": "12a176eb",
+            "date": "2008-01-29 12:20:18 +0000",
+            "comment": "Allow sun jaxp impl to be used"
+        },
+        {
+            "c_hash": "20423180",
+            "date": "2008-02-01 12:23:52 +0000",
+            "comment": "Upgrade spring, pax, felix versions to the latest ones"
+        },
+        {
+            "c_hash": "9cdd33a1",
+            "date": "2008-02-01 13:44:02 +0000",
+            "comment": "Add EJB3 layer and upgrade to latest versions of spring"
+        },
+        {
+            "c_hash": "a0cacb03",
+            "date": "2008-02-19 15:53:52 +0000",
+            "comment": "Allow the build to work even if you don't start the build from the root dir."
+        },
+        {
+            "c_hash": "65a4b3d7",
+            "date": "2008-02-20 11:33:05 +0000",
+            "comment": "Upgrade to released mina and latest geronimo servlet jar"
+        },
+        {
+            "c_hash": "3eeeefc7",
+            "date": "2008-02-22 12:14:18 +0000",
+            "comment": "SMX4KNL-16: Bad error message when startup.properties lists a unkown file (the file name is not displayed, but 'null' instead)"
+        },
+        {
+            "c_hash": "50258139",
+            "date": "2008-02-22 12:16:15 +0000",
+            "comment": "SMX4KNL-17: Remove all the warnings when building the distribution tar.gz"
+        },
+        {
+            "c_hash": "b8fa7f61",
+            "date": "2008-02-22 12:33:39 +0000",
+            "comment": "SMX4KNL-4: Add a start option on the 'osgi install' command so that the bundle is automatically started"
+        },
+        {
+            "c_hash": "fbbed07d",
+            "date": "2008-02-22 13:34:13 +0000",
+            "comment": "SMX4KNL-13: startup issue in recognizing new files in deploy folder"
+        },
+        {
+            "c_hash": "c82a30a7",
+            "date": "2008-02-22 15:21:31 +0000",
+            "comment": "SMX4KNL-15: Display of memory size using the info command on Windows is ugly"
+        },
+        {
+            "c_hash": "68781422",
+            "date": "2008-02-25 09:41:00 +0000",
+            "comment": "Fix typo"
+        },
+        {
+            "c_hash": "31b7a6dc",
+            "date": "2008-02-25 10:38:38 +0000",
+            "comment": "Use new pax url maven support"
+        },
+        {
+            "c_hash": "1619bac7",
+            "date": "2008-02-25 20:15:31 +0000",
+            "comment": "SMX4KNL-18: Remove unused DynamicImport-Package in filemonitor"
+        },
+        {
+            "c_hash": "1f25e3e3",
+            "date": "2008-02-26 17:17:14 +0000",
+            "comment": "Rename logger to LOGGER, avoid possible NPE when closing the jar and add an exception log"
+        },
+        {
+            "c_hash": "ceb0ac8f",
+            "date": "2008-02-27 10:39:33 +0000",
+            "comment": "SMX4KNL-19: Fix the slow classloader problem by using a custom version of felix with FELIX-500 patch applied"
+        },
+        {
+            "c_hash": "ecbdd444",
+            "date": "2008-02-27 16:08:52 +0000",
+            "comment": "Use non patched version of felix"
+        },
+        {
+            "c_hash": "8670ee01",
+            "date": "2008-02-27 17:28:46 +0000",
+            "comment": "Update release notes and readme"
+        },
+        {
+            "c_hash": "8fd92baa",
+            "date": "2008-02-28 14:01:50 +0000",
+            "comment": "[maven-release-plugin] prepare release kernel-1.0-m2"
+        },
+        {
+            "c_hash": "8118bc5f",
+            "date": "2008-02-28 14:04:48 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "bbca05ea",
+            "date": "2008-03-12 09:10:31 +0000",
+            "comment": "Improve logging"
+        },
+        {
+            "c_hash": "6b2c43d8",
+            "date": "2008-03-12 09:21:05 +0000",
+            "comment": "Improve display of service properties of an unrecognized type"
+        },
+        {
+            "c_hash": "f13515b8",
+            "date": "2008-03-12 09:22:41 +0000",
+            "comment": "SMX4KNL-5: Show gshell sub-shell name in prompt"
+        },
+        {
+            "c_hash": "15aee164",
+            "date": "2008-03-14 17:17:06 +0000",
+            "comment": "added a simple maven plugin to generate the features.xml file for a pom"
+        },
+        {
+            "c_hash": "783dea57",
+            "date": "2008-03-18 03:33:49 +0000",
+            "comment": "added features.xml artifact"
+        },
+        {
+            "c_hash": "efd25498",
+            "date": "2008-03-19 14:24:19 +0000",
+            "comment": "Fix classpath by adding an exclusion"
+        },
+        {
+            "c_hash": "7258b739",
+            "date": "2008-03-19 14:26:46 +0000",
+            "comment": "Fix tab"
+        },
+        {
+            "c_hash": "fee95d9c",
+            "date": "2008-03-19 14:30:39 +0000",
+            "comment": "SMX4KNL-21, SMX4KNL-22, SMX4KNL-23"
+        },
+        {
+            "c_hash": "e909f4e5",
+            "date": "2008-03-19 16:28:11 +0000",
+            "comment": "SMX4KNL-6: Error Message improvement on Gshell console when a command is not found"
+        },
+        {
+            "c_hash": "eb6db9c5",
+            "date": "2008-03-19 16:29:58 +0000",
+            "comment": "SMX4KNL-24: Add a few utils commands: cat, java, exec, sleep"
+        },
+        {
+            "c_hash": "0038dbaa",
+            "date": "2008-03-21 16:02:34 +0000",
+            "comment": "Fix 'utils exec' command"
+        },
+        {
+            "c_hash": "76ee8da2",
+            "date": "2008-03-25 10:19:28 +0000",
+            "comment": "Add junit dependency explicitly in order to make it work with mvn eclipse:eclipse command."
+        },
+        {
+            "c_hash": "243f41b5",
+            "date": "2008-03-27 16:49:46 +0000",
+            "comment": "SMX4KNL-26: Spring URL to wrap xml spring files into bundles for direct installation"
+        },
+        {
+            "c_hash": "492b5d11",
+            "date": "2008-03-27 16:58:25 +0000",
+            "comment": "SMX4KL-20, SMX4KNL-25: feature command enhancements (work in progress)"
+        },
+        {
+            "c_hash": "7834d075",
+            "date": "2008-03-27 17:09:49 +0000",
+            "comment": "SMX4KNL-20: Command to refresh OBR repositories"
+        },
+        {
+            "c_hash": "e31f1614",
+            "date": "2008-03-27 17:12:05 +0000",
+            "comment": "Allow the features:refreshUrl to reload everything"
+        },
+        {
+            "c_hash": "04db35b0",
+            "date": "2008-03-27 19:53:25 +0000",
+            "comment": "Add compendium to the dependency management section"
+        },
+        {
+            "c_hash": "a459c59b",
+            "date": "2008-03-28 14:26:38 +0000",
+            "comment": "SMX4KNL-27: Include an implementation of the Preferences service"
+        },
+        {
+            "c_hash": "ed603c38",
+            "date": "2008-04-01 13:39:37 +0000",
+            "comment": "Allow compilation on non sun JVMs"
+        },
+        {
+            "c_hash": "ffbed6cd",
+            "date": "2008-04-01 13:40:13 +0000",
+            "comment": "Remove printing of stack trace when GShell closes"
+        },
+        {
+            "c_hash": "6e6d4424",
+            "date": "2008-04-01 13:41:40 +0000",
+            "comment": "SMX4KNL-25: Improve features service"
+        },
+        {
+            "c_hash": "240037da",
+            "date": "2008-04-02 10:55:58 +0000",
+            "comment": "SMX4KNL-29: Shell commands are not unregistered automatically when the last command is unregistered"
+        },
+        {
+            "c_hash": "901d7aa3",
+            "date": "2008-04-02 12:44:11 +0000",
+            "comment": "SMX4KNL-25: Support for features uninstallation"
+        },
+        {
+            "c_hash": "b82ae9df",
+            "date": "2008-04-03 08:04:06 +0000",
+            "comment": "Fix empty features caused by dependencies, disable proxy commands"
+        },
+        {
+            "c_hash": "1d5f53c9",
+            "date": "2008-04-17 17:23:42 +0000",
+            "comment": "Simplifying the prompt a little"
+        },
+        {
+            "c_hash": "fba6153c",
+            "date": "2008-04-22 16:40:22 +0000",
+            "comment": "Use 'Apache ServiceMix' in poms, upgrade to spring 2.5.2, fix osgi testing support, remove stax api from the distribution"
+        },
+        {
+            "c_hash": "72b9a4cb",
+            "date": "2008-04-23 14:14:49 +0000",
+            "comment": "Use legal 1.0 release"
+        },
+        {
+            "c_hash": "3a3eea8a",
+            "date": "2008-04-25 13:55:59 +0000",
+            "comment": "SMX4KNL-30: Create an history command to be able to browse previous commands easily"
+        },
+        {
+            "c_hash": "c3da1a05",
+            "date": "2008-04-25 22:52:19 +0000",
+            "comment": "Fix compilation problem and remove unused classes"
+        },
+        {
+            "c_hash": "d2325ef1",
+            "date": "2008-04-30 07:06:03 +0000",
+            "comment": "SMX4KNL-31: Aliases do not work in subshell"
+        },
+        {
+            "c_hash": "8865a94c",
+            "date": "2008-04-30 11:26:15 +0000",
+            "comment": "SMX4KNL-1: Implements a log command"
+        },
+        {
+            "c_hash": "ac1c9591",
+            "date": "2008-04-30 15:33:15 +0000",
+            "comment": "Display exceptions in the log:display command"
+        },
+        {
+            "c_hash": "3541652c",
+            "date": "2008-05-01 15:42:48 +0000",
+            "comment": "Adding some gshell commands for ActiveMQ"
+        },
+        {
+            "c_hash": "b5a3e4b8",
+            "date": "2008-05-01 18:42:52 +0000",
+            "comment": "Starting to add support for running the normal amq commands via smx gshell"
+        },
+        {
+            "c_hash": "c188c22b",
+            "date": "2008-05-02 16:31:33 +0000",
+            "comment": "added the rest of the amq commands"
+        },
+        {
+            "c_hash": "954a48b2",
+            "date": "2008-05-06 10:22:27 +0000",
+            "comment": "SMX4KNL-32: Lazy load feature repositories to avoid delay when the url can not be accessed or things like that"
+        },
+        {
+            "c_hash": "80c8da2a",
+            "date": "2008-05-06 11:55:02 +0000",
+            "comment": "Remove unused imports"
+        },
+        {
+            "c_hash": "2730f76e",
+            "date": "2008-05-06 11:56:12 +0000",
+            "comment": "Remove xstream (not used anymore)"
+        },
+        {
+            "c_hash": "7911c113",
+            "date": "2008-05-06 14:50:32 +0000",
+            "comment": "Move activemq commands to features project"
+        },
+        {
+            "c_hash": "5106158c",
+            "date": "2008-05-09 14:53:34 +0000",
+            "comment": "Fix missing headers, write release notes and fix a possible bug in the log commands"
+        },
+        {
+            "c_hash": "030e4c82",
+            "date": "2008-05-09 15:19:07 +0000",
+            "comment": "[maven-release-plugin] prepare release kernel-1.0-m3"
+        },
+        {
+            "c_hash": "ad9469ec",
+            "date": "2008-05-09 15:19:22 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "735c6c8f",
+            "date": "2008-05-20 13:06:27 +0000",
+            "comment": "SMX4KNL-38: Fix NullPointerException instead of command not found in the console"
+        },
+        {
+            "c_hash": "5ec5e00a",
+            "date": "2008-05-20 16:10:38 +0000",
+            "comment": "SMX4KNL-37: JAAS support"
+        },
+        {
+            "c_hash": "913cc182",
+            "date": "2008-05-20 18:52:28 +0000",
+            "comment": "SMX4KNL-39: Make bundle locations for SMX configurable"
+        },
+        {
+            "c_hash": "446c0b4c",
+            "date": "2008-05-20 18:57:48 +0000",
+            "comment": "Reformat code"
+        },
+        {
+            "c_hash": "ba690970",
+            "date": "2008-05-21 16:03:10 +0000",
+            "comment": "SMX4KNL-41: When using the remote command on the client from the command line, the proces does not exit correctly"
+        },
+        {
+            "c_hash": "593692a7",
+            "date": "2008-05-21 16:05:14 +0000",
+            "comment": "SMX4KNL-37: fix the remote console login"
+        },
+        {
+            "c_hash": "541829f9",
+            "date": "2008-05-21 16:05:45 +0000",
+            "comment": "SMX4KNL-40: Remote console does not display output"
+        },
+        {
+            "c_hash": "2b7bed97",
+            "date": "2008-05-22 08:31:15 +0000",
+            "comment": "Remove error when ulimit does not work"
+        },
+        {
+            "c_hash": "4de0aef2",
+            "date": "2008-05-23 12:03:37 +0000",
+            "comment": "SMX4KNL-44: Changed bundles are restarted twice"
+        },
+        {
+            "c_hash": "e00baf1a",
+            "date": "2008-05-23 19:07:10 +0000",
+            "comment": "SMX4KNL-44: Changed bundles restarted twice (take two)"
+        },
+        {
+            "c_hash": "0bc0c387",
+            "date": "2008-05-23 21:48:00 +0000",
+            "comment": "SMX4KNL-35: Secure the connection between the client and the kernel in some way"
+        },
+        {
+            "c_hash": "d720f120",
+            "date": "2008-05-26 11:34:34 +0000",
+            "comment": "Remove unused certificate and remove unused sequence from jaas xsd"
+        },
+        {
+            "c_hash": "0caca222",
+            "date": "2008-05-26 12:39:58 +0000",
+            "comment": "SMX4KNL-45: The 'log display' command does not display anything from an instance create using the 'admin create' command"
+        },
+        {
+            "c_hash": "a0149e27",
+            "date": "2008-05-26 20:14:39 +0000",
+            "comment": "SMX4KNL-46: cpu goes to 100% after running the 'admin create' command"
+        },
+        {
+            "c_hash": "9c6aa7ff",
+            "date": "2008-05-28 09:47:24 +0000",
+            "comment": "[maven-release-plugin] prepare release kernel-1.0-rc1"
+        },
+        {
+            "c_hash": "1e839ab4",
+            "date": "2008-05-28 09:48:22 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "dd7e0447",
+            "date": "2008-05-28 09:56:14 +0000",
+            "comment": "[maven-release-plugin] rollback the release of kernel-1.0-rc1"
+        },
+        {
+            "c_hash": "9416d8fd",
+            "date": "2008-05-28 10:06:53 +0000",
+            "comment": "Write release notes for rc1"
+        },
+        {
+            "c_hash": "aa629eb8",
+            "date": "2008-05-28 10:17:51 +0000",
+            "comment": "[maven-release-plugin] prepare release kernel-1.0-rc1"
+        },
+        {
+            "c_hash": "cf939804",
+            "date": "2008-05-28 11:41:05 +0000",
+            "comment": "[maven-release-plugin] rollback the release of kernel-1.0-rc1"
+        },
+        {
+            "c_hash": "e1fa70a3",
+            "date": "2008-05-28 11:49:39 +0000",
+            "comment": "[maven-release-plugin] prepare release kernel-1.0-rc1"
+        },
+        {
+            "c_hash": "8c2b3b60",
+            "date": "2008-05-28 11:53:41 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "cfbba397",
+            "date": "2008-05-29 18:39:29 +0000",
+            "comment": "SMX4KNL-48 - ulimit error on MacOS X Leopard 10.5."
+        },
+        {
+            "c_hash": "12a8809b",
+            "date": "2008-06-02 14:15:15 +0000",
+            "comment": "SMX4KNL-44 and SMX4KNL-49: Fix bundle updates and upgrade to latest spring/spring-dm"
+        },
+        {
+            "c_hash": "f26eec61",
+            "date": "2008-06-03 07:58:20 +0000",
+            "comment": "Fix the kernel boot wich has been broken for some unkown reason"
+        },
+        {
+            "c_hash": "c45d6985",
+            "date": "2008-06-04 07:31:18 +0000",
+            "comment": "Fix windows batch file"
+        },
+        {
+            "c_hash": "e07b2fd9",
+            "date": "2008-06-04 13:56:17 +0000",
+            "comment": "Fix release notes for new rc1 cut"
+        },
+        {
+            "c_hash": "5b235496",
+            "date": "2008-06-04 14:16:30 +0000",
+            "comment": "[maven-release-plugin] prepare release kernel-1.0.0-rc1"
+        },
+        {
+            "c_hash": "105df4e8",
+            "date": "2008-06-04 14:17:41 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "0c056dde",
+            "date": "2008-06-12 08:49:07 +0000",
+            "comment": "SMX4KNL-52: Deployment of pain spring files does not work when using xml extensions because these are not available in the classpath"
+        },
+        {
+            "c_hash": "4aae793f",
+            "date": "2008-06-12 11:57:44 +0000",
+            "comment": "SMX4KNL-53: During starting, files are redeployed several times, one each time a new Deployer is registered in OSGi"
+        },
+        {
+            "c_hash": "e3b89830",
+            "date": "2008-06-12 16:29:09 +0000",
+            "comment": "SMX4KNL-54: Kernel does not start if system property 'felix.cache.profiledir' is not defined"
+        },
+        {
+            "c_hash": "a94d9c17",
+            "date": "2008-06-17 10:10:33 +0000",
+            "comment": "SMX4KNL: Kernel doesn't start if profile dir is specified but profile isn't"
+        },
+        {
+            "c_hash": "efaa7fa6",
+            "date": "2008-06-17 10:14:39 +0000",
+            "comment": "SMX4KNL: Kernel doesn't start if profile dir is specified but profile isn't"
+        },
+        {
+            "c_hash": "c5284f1e",
+            "date": "2008-06-18 08:45:10 +0000",
+            "comment": "Use our servicemix parent pom, move legal dep into the plugin"
+        },
+        {
+            "c_hash": "3b7a954a",
+            "date": "2008-06-23 08:10:59 +0000",
+            "comment": "SMX4KNL-34: snapshot jar name mismatch in startup.properties and in the system folder"
+        },
+        {
+            "c_hash": "374823c7",
+            "date": "2008-06-23 09:44:06 +0000",
+            "comment": "SMX4KNL-55: Use maven shade plugin on the main module so that sources jar is correct"
+        },
+        {
+            "c_hash": "463037ca",
+            "date": "2008-06-23 12:10:47 +0000",
+            "comment": "SMX4KNL-56: Kernel does not start on Windows if classpath contains spaces"
+        },
+        {
+            "c_hash": "a12a01b0",
+            "date": "2008-06-23 12:21:12 +0000",
+            "comment": "Unpack bundle so that the build works, use felix osgi 1.0.1, specifiy the shade plugin version"
+        },
+        {
+            "c_hash": "56ef8316",
+            "date": "2008-06-23 13:27:28 +0000",
+            "comment": "SMX4KNL-51: Add a configuration file for the maven url handler so that adding default repositories is easy enough"
+        },
+        {
+            "c_hash": "658cffb2",
+            "date": "2008-06-24 06:56:48 +0000",
+            "comment": "SMX4KNL-57: extract bundles from the svn tree"
+        },
+        {
+            "c_hash": "6d6e964a",
+            "date": "2008-06-25 12:15:42 +0000",
+            "comment": "SMX4-30, SMX4-35: Fixing the ServiceMix 4 assemblies"
+        },
+        {
+            "c_hash": "ce61b3d0",
+            "date": "2008-07-01 12:24:06 +0000",
+            "comment": "Remove some unwanted warnings when generating the main jar"
+        },
+        {
+            "c_hash": "306d701b",
+            "date": "2008-07-03 08:24:41 +0000",
+            "comment": "added directory 'eclipse-classes' to ignore list"
+        },
+        {
+            "c_hash": "9bd967f4",
+            "date": "2008-07-04 14:04:32 +0000",
+            "comment": "SMX4-49: Add a Camel features.xml"
+        },
+        {
+            "c_hash": "664c4964",
+            "date": "2008-07-07 08:59:33 +0000",
+            "comment": "SMX4KNL-58: Hot-deploy capability of FileMonitor does not update bundles properly on Windows"
+        },
+        {
+            "c_hash": "8ee34a34",
+            "date": "2008-07-07 09:01:20 +0000",
+            "comment": "SMX4KNL-59: Upgrade to spring 2.5.5 / spring-dm 1.1.0"
+        },
+        {
+            "c_hash": "e4c94e16",
+            "date": "2008-07-08 09:50:21 +0000",
+            "comment": "SMX4-49: Adding a Camel features.xml -- updating the features generator"
+        },
+        {
+            "c_hash": "6fe26a39",
+            "date": "2008-07-09 14:00:35 +0000",
+            "comment": "SMX4-49: Adding Camel features for camel-saxon and camel-jetty"
+        },
+        {
+            "c_hash": "9bf3fac6",
+            "date": "2008-07-10 19:50:51 +0000",
+            "comment": "Fix startup.properies for new instances of smx"
+        },
+        {
+            "c_hash": "779ecf48",
+            "date": "2008-07-10 20:02:42 +0000",
+            "comment": "Fix config.properies for new instances of smx"
+        },
+        {
+            "c_hash": "371f4600",
+            "date": "2008-07-10 20:40:06 +0000",
+            "comment": "Make sure the shutdown method is launched in another thread when running the exit command to avoid a very long shutdown"
+        },
+        {
+            "c_hash": "b91dada0",
+            "date": "2008-07-15 07:16:02 +0000",
+            "comment": "[SMX4-60]add apache snapshots repo to org.ops4j.pax.url.mvn.cfg to avoid mvn url resolve exception"
+        },
+        {
+            "c_hash": "8c08df56",
+            "date": "2008-07-15 13:50:32 +0000",
+            "comment": "Updating to released bundle versions"
+        },
+        {
+            "c_hash": "42963c7e",
+            "date": "2008-07-22 09:13:10 +0000",
+            "comment": "Update release notes"
+        },
+        {
+            "c_hash": "808fceb9",
+            "date": "2008-07-23 13:27:08 +0000",
+            "comment": "SMX4KNL-63: Possible deadlock at startup caused by the filedeployer not running in its own thread the first time"
+        },
+        {
+            "c_hash": "03d5762e",
+            "date": "2008-07-24 14:22:08 +0000",
+            "comment": "SMX4-49: Better handling of versions and super-bundles that wrap multiple JAR files"
+        },
+        {
+            "c_hash": "ed06101a",
+            "date": "2008-07-25 07:49:17 +0000",
+            "comment": "SMX4KNL-64: The list of repositories for the features shell is not persisted across restart"
+        },
+        {
+            "c_hash": "05fbd390",
+            "date": "2008-07-25 07:56:14 +0000",
+            "comment": "SMX4-72: NPE when doing 'features install'"
+        },
+        {
+            "c_hash": "e0408cde",
+            "date": "2008-07-25 08:03:34 +0000",
+            "comment": "Removing unused variable"
+        },
+        {
+            "c_hash": "9d4c4e6a",
+            "date": "2008-07-25 10:00:18 +0000",
+            "comment": "Moving the Maven2 plugins to the maven-plugins subproject"
+        },
+        {
+            "c_hash": "c05e34d0",
+            "date": "2008-07-25 14:55:49 +0000",
+            "comment": "SMX4KNL-66: When the file monitor loads configuration for the config admin, allow the use of system properties using"
+        },
+        {
+            "c_hash": "049a5151",
+            "date": "2008-07-25 15:00:12 +0000",
+            "comment": "SMX4KNL-51: Add a configuration file for the maven url handler so that adding default repositories is easy enough"
+        },
+        {
+            "c_hash": "82c1d0d5",
+            "date": "2008-07-25 15:11:43 +0000",
+            "comment": "SMX4KNL-61, SMX4KNL-65: Organize the system folder as a maven 2 repository, After copying or moving the kernel, it does not start in a very clean way anymore"
+        },
+        {
+            "c_hash": "81141169",
+            "date": "2008-07-25 15:53:44 +0000",
+            "comment": "SMX4KNL-67: Allow the features service to obtain a list of features to install at startup"
+        },
+        {
+            "c_hash": "75e78db5",
+            "date": "2008-07-28 04:16:35 +0000",
+            "comment": "[SMX4-76]error in opening zip file when start smx4"
+        },
+        {
+            "c_hash": "b24b5bd2",
+            "date": "2008-07-28 07:35:41 +0000",
+            "comment": "Avoid exceptions when trying to convert to a maven URL"
+        },
+        {
+            "c_hash": "f937cfaf",
+            "date": "2008-07-28 07:56:17 +0000",
+            "comment": "SMX4KNL-68: try another fix"
+        },
+        {
+            "c_hash": "2d8198b8",
+            "date": "2008-07-28 08:02:34 +0000",
+            "comment": "[SMX4-76]error in opening zip file when start smx4"
+        },
+        {
+            "c_hash": "530a2f18",
+            "date": "2008-07-28 09:36:32 +0000",
+            "comment": "Revert SMX4-60, add the system folders as repositories"
+        },
+        {
+            "c_hash": "f7afba3a",
+            "date": "2008-07-30 10:26:31 +0000",
+            "comment": "Update release notes"
+        },
+        {
+            "c_hash": "1d6a0f5e",
+            "date": "2008-07-30 10:34:44 +0000",
+            "comment": "[maven-release-plugin] prepare release kernel-1.0.0-rc2"
+        },
+        {
+            "c_hash": "217fceb5",
+            "date": "2008-07-30 10:38:15 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "40358352",
+            "date": "2008-08-08 06:16:42 +0000",
+            "comment": "Fixing build failure with maven-artifact 3.0-SNAPSHOT not found"
+        },
+        {
+            "c_hash": "b36d5dba",
+            "date": "2008-08-27 03:36:12 +0000",
+            "comment": "[SMX4KNL-69]Add installation status for the 'features list' result."
+        },
+        {
+            "c_hash": "ee9ec0d2",
+            "date": "2008-08-27 13:56:29 +0000",
+            "comment": "SMX4KNL-71: Export the gshell CommandExecutor in the OSGi registry"
+        },
+        {
+            "c_hash": "be302311",
+            "date": "2008-08-28 02:43:03 +0000",
+            "comment": "[SMX4KNL-69]revise to get more clear output layout"
+        },
+        {
+            "c_hash": "3df29a60",
+            "date": "2008-09-05 16:40:06 +0000",
+            "comment": "SMX4KNL-70: Bundles in /system folder should take precendence over local Maven repository"
+        },
+        {
+            "c_hash": "987603d0",
+            "date": "2008-09-05 20:03:57 +0000",
+            "comment": "SMX4KNL-75: Modify GShell argument processing to execute multiple commands"
+        },
+        {
+            "c_hash": "1dba477d",
+            "date": "2008-09-08 07:47:26 +0000",
+            "comment": "[SMX4KNL-60]versionning of features"
+        },
+        {
+            "c_hash": "5ae36751",
+            "date": "2008-09-08 14:49:33 +0000",
+            "comment": "SMX4KNL-77: The deployer should keep a list of installed bundles that failed to start and retry those when new bundles have been resolved"
+        },
+        {
+            "c_hash": "79bb8f96",
+            "date": "2008-09-08 14:59:26 +0000",
+            "comment": "SMX4KNL-78: Small refactoring of the Feature interface"
+        },
+        {
+            "c_hash": "5dee3fd9",
+            "date": "2008-09-08 15:24:37 +0000",
+            "comment": "Move trunk to 1.1.0-SNAPSHOT"
+        },
+        {
+            "c_hash": "64ab425e",
+            "date": "2008-09-09 07:24:38 +0000",
+            "comment": "SMX4KNL-79: When starting the kernel, a log entry states \"Can not install feature ''\""
+        },
+        {
+            "c_hash": "f29d48ce",
+            "date": "2008-09-09 07:29:09 +0000",
+            "comment": "Enable the use of the release:perform goal"
+        },
+        {
+            "c_hash": "765fbc05",
+            "date": "2008-09-09 08:57:20 +0000",
+            "comment": "Add 1.0.0 release notes"
+        },
+        {
+            "c_hash": "203f1d63",
+            "date": "2008-09-10 16:46:40 +0000",
+            "comment": "SMX4KNL-83: When using the wrapper command, ServiceMix Kernel does not start correctly"
+        },
+        {
+            "c_hash": "abb20cbe",
+            "date": "2008-09-10 16:53:02 +0000",
+            "comment": "SMX4KNL-82: The installation state of a feature is not displayed correctly after a restart when using the \"features list\" command"
+        },
+        {
+            "c_hash": "ac2fa73f",
+            "date": "2008-09-10 17:12:12 +0000",
+            "comment": "SMX4KNL-81: The wrapper feature can not be installed out of the box"
+        },
+        {
+            "c_hash": "5d4950f8",
+            "date": "2008-09-10 17:21:05 +0000",
+            "comment": "Update release notes with fixed bugs"
+        },
+        {
+            "c_hash": "83882998",
+            "date": "2008-09-11 15:29:36 +0000",
+            "comment": "SMX4KNL-85: Allow more times for the system to start before running commands, patch provided by Jamie Goodyear"
+        },
+        {
+            "c_hash": "e0b0320f",
+            "date": "2008-09-11 15:33:56 +0000",
+            "comment": "Revert unwanted commit done for SMX4KNL-85"
+        },
+        {
+            "c_hash": "25fc12cb",
+            "date": "2008-09-17 13:48:02 +0000",
+            "comment": "[SMX4-102]examples-cxf-osgi fails"
+        },
+        {
+            "c_hash": "e351727e",
+            "date": "2008-09-22 06:59:57 +0000",
+            "comment": "SMX4KNL-36: Provide a client jar to connect to a servicemix kernel instance"
+        },
+        {
+            "c_hash": "873c8cd2",
+            "date": "2008-09-22 12:15:07 +0000",
+            "comment": "SMX4KNL-86: When running integration tests, the container classpath contains all the test bundles which may cause problems"
+        },
+        {
+            "c_hash": "04412de1",
+            "date": "2008-09-22 15:30:25 +0000",
+            "comment": "Add svn:ignore property"
+        },
+        {
+            "c_hash": "5f011165",
+            "date": "2008-09-23 11:05:41 +0000",
+            "comment": "SMX4KNL-62, SMX4KNL-93: extract the admin commands in their own module, enhance the create command to use a different port each time"
+        },
+        {
+            "c_hash": "b34fa681",
+            "date": "2008-09-24 03:45:42 +0000",
+            "comment": "[SMX4KNL-87]Problems with batch files on windows"
+        },
+        {
+            "c_hash": "68772fe3",
+            "date": "2008-09-24 06:59:50 +0000",
+            "comment": "Remove unneeded dependencies"
+        },
+        {
+            "c_hash": "efc41d30",
+            "date": "2008-09-24 20:58:04 +0000",
+            "comment": "SMX4KNL-87: Fix batch file used when generating new instances"
+        },
+        {
+            "c_hash": "507f2efe",
+            "date": "2008-09-25 07:30:43 +0000",
+            "comment": "[SMX4KNL-96]package missing for felix.config.properties"
+        },
+        {
+            "c_hash": "fd70a09a",
+            "date": "2008-09-25 08:48:14 +0000",
+            "comment": "SMX4KNL-33: Enhance admin shell to provide commands to start / stop / list / connect to known ServiceMix instances"
+        },
+        {
+            "c_hash": "290f4c28",
+            "date": "2008-09-25 09:27:14 +0000",
+            "comment": "Add a simple test for process management library"
+        },
+        {
+            "c_hash": "c6a9f93f",
+            "date": "2008-09-25 12:18:10 +0000",
+            "comment": "Fix use of start directory when creating processes"
+        },
+        {
+            "c_hash": "dade2764",
+            "date": "2008-09-25 13:20:46 +0000",
+            "comment": "Exclude the junit bundle from springsource"
+        },
+        {
+            "c_hash": "cf668de8",
+            "date": "2008-09-25 13:43:48 +0000",
+            "comment": "Add an additional sleep to try fix the test on some platforms"
+        },
+        {
+            "c_hash": "7bb8dd7e",
+            "date": "2008-09-25 18:58:57 +0000",
+            "comment": "SMX4KNL-100: The client shell does not close when running 'osgi shutdown' command"
+        },
+        {
+            "c_hash": "30b9a7c9",
+            "date": "2008-09-25 21:06:30 +0000",
+            "comment": "Fix start script on windows"
+        },
+        {
+            "c_hash": "569bd3b9",
+            "date": "2008-09-25 21:34:49 +0000",
+            "comment": "Try to fix test if java executable is not in the path"
+        },
+        {
+            "c_hash": "bc4e7f1c",
+            "date": "2008-09-26 08:59:38 +0000",
+            "comment": "Do not use the shell scripts to launch instances, as the pid will be the one from the script instead of the one from the java process"
+        },
+        {
+            "c_hash": "91afcf78",
+            "date": "2008-09-26 09:01:18 +0000",
+            "comment": "SMX4KNL-101: Reduce the amount of logging issued by mina"
+        },
+        {
+            "c_hash": "22deb30c",
+            "date": "2008-09-26 09:03:01 +0000",
+            "comment": "SMX4KNL-102: The file monitor should use ${servicemix.base} for default polling locations"
+        },
+        {
+            "c_hash": "8c272690",
+            "date": "2008-09-26 09:32:57 +0000",
+            "comment": "SMX4KNL-74: When using the spring deployer, allow the customization of the OSGi manifest entries"
+        },
+        {
+            "c_hash": "adb373f8",
+            "date": "2008-09-26 13:26:35 +0000",
+            "comment": "Remove asm springsource bundle dependency"
+        },
+        {
+            "c_hash": "97282409",
+            "date": "2008-09-26 14:04:20 +0000",
+            "comment": "cleaned up code passage"
+        },
+        {
+            "c_hash": "45c21b90",
+            "date": "2008-09-26 14:54:24 +0000",
+            "comment": "SMX4KNL-101: Reduce the amount of logging issued by mina"
+        },
+        {
+            "c_hash": "a0828aa7",
+            "date": "2008-09-26 15:01:32 +0000",
+            "comment": "SMX4KNL-98: Use dependency management section for all dependencies"
+        },
+        {
+            "c_hash": "2186aaff",
+            "date": "2008-09-26 15:12:14 +0000",
+            "comment": "SMX4KNL-98: Use dependency management section for all dependencies"
+        },
+        {
+            "c_hash": "7a2764d2",
+            "date": "2008-10-02 02:00:10 +0000",
+            "comment": "SMX4KNL-107: Create a new 'admin connect' command to easily connect to a named instanceof servicemix"
+        },
+        {
+            "c_hash": "a8835bdf",
+            "date": "2008-10-02 02:02:13 +0000",
+            "comment": "SMX4KNL-97: dissociate the name and the location of ServiceMix Kernel instances managed by the admin shell"
+        },
+        {
+            "c_hash": "e1234d18",
+            "date": "2008-10-02 02:06:47 +0000",
+            "comment": "SMX4KNL-108: add a new 'log de' command to display the last exception from the log"
+        },
+        {
+            "c_hash": "d0c8669e",
+            "date": "2008-10-02 11:07:05 +0000",
+            "comment": "SMX4KNL-106: Support for container level lock to support master / slave deployments"
+        },
+        {
+            "c_hash": "d4abd58d",
+            "date": "2008-10-02 11:46:52 +0000",
+            "comment": "SMX4KNL-105: features are reinstalled on restart of servicemix"
+        },
+        {
+            "c_hash": "670c09e1",
+            "date": "2008-10-02 14:56:44 +0000",
+            "comment": "Remove unneeded dependencies from gshell-core"
+        },
+        {
+            "c_hash": "471d94af",
+            "date": "2008-10-02 15:08:20 +0000",
+            "comment": "SMX4KNL-28, SMX4KNL-90: new shells for configuration admin service and packages admin service"
+        },
+        {
+            "c_hash": "280bfed9",
+            "date": "2008-10-02 18:12:03 +0000",
+            "comment": "SMX4KNL-112: gshell pom needs to include gshell-config and gshell-packages modules"
+        },
+        {
+            "c_hash": "d6e02858",
+            "date": "2008-10-03 05:32:39 +0000",
+            "comment": "SMX4-126: Upgrading to Felix 1.2.1 fixes Dynamic-Imports"
+        },
+        {
+            "c_hash": "2fdf657c",
+            "date": "2008-10-03 12:10:21 +0000",
+            "comment": "SMX4KNL-111: Add a 'starting' state to the admin list command"
+        },
+        {
+            "c_hash": "2ed67ca2",
+            "date": "2008-10-03 12:11:56 +0000",
+            "comment": "SMX4KNL-104: When using a remote connection, errors are not reported correctly"
+        },
+        {
+            "c_hash": "720a52a8",
+            "date": "2008-10-06 08:01:26 +0000",
+            "comment": "SMX4KNL-113: Upgrade to Felix 1.2.1"
+        },
+        {
+            "c_hash": "1d114701",
+            "date": "2008-10-08 16:12:11 +0000",
+            "comment": "Fix properties file used for creating new instances"
+        },
+        {
+            "c_hash": "70ae1b17",
+            "date": "2008-10-09 09:27:23 +0000",
+            "comment": "SMX4KNL-117: The Smx testing platform should take into account the boot delegation packages specified in the configuration file"
+        },
+        {
+            "c_hash": "c8bd699a",
+            "date": "2008-10-09 09:28:15 +0000",
+            "comment": "SMX4KNL-119: Use boot delegation instead of listing sun packages for jaxp / url handlers"
+        },
+        {
+            "c_hash": "8414c610",
+            "date": "2008-10-09 10:18:38 +0000",
+            "comment": "SMX4KNL-119: Use boot delegation instead of listing sun packages for jaxp / url handlers"
+        },
+        {
+            "c_hash": "84ea9c44",
+            "date": "2008-10-09 15:23:47 +0000",
+            "comment": "SMX4KNL-120: The ServiceMix Kernel testing platform should use the servicemix kernel main jar instead of the felix one"
+        },
+        {
+            "c_hash": "a2f5a4f3",
+            "date": "2008-10-10 12:08:16 +0000",
+            "comment": "SMX4KNL-121: Improve the Main class to easily embed the whole ServiceMix Kernel distribution in another web application"
+        },
+        {
+            "c_hash": "61bcf0b1",
+            "date": "2008-10-10 15:43:03 +0000",
+            "comment": "SMX4KNL-116: Allow repository descriptors to reference other repository descriptors"
+        },
+        {
+            "c_hash": "282e06d2",
+            "date": "2008-10-13 12:24:09 +0000",
+            "comment": "SMX4KNL-99: Remove ant from the kernel distribution and replace its use in the filemonitor"
+        },
+        {
+            "c_hash": "231b4e5d",
+            "date": "2008-10-13 12:31:24 +0000",
+            "comment": "SMX4KNL-109: Include the pax wrapper url handler in the kernel for ease of use of non osgi third party dependencies"
+        },
+        {
+            "c_hash": "88e16208",
+            "date": "2008-10-13 12:36:53 +0000",
+            "comment": "SMX4KNL-99: Remove ant from the kernel distribution and replace its use in the filemonitor"
+        },
+        {
+            "c_hash": "c93c4160",
+            "date": "2008-10-14 09:44:23 +0000",
+            "comment": "SMX4KNL-114: prompt should print username@instance-name when using remote shell"
+        },
+        {
+            "c_hash": "129a35c8",
+            "date": "2008-10-15 10:51:27 +0000",
+            "comment": "[SMX4-138]add sun's saaj impl package to fix testSoapHandlerOsgi failure"
+        },
+        {
+            "c_hash": "a83904c5",
+            "date": "2008-10-16 18:39:48 +0000",
+            "comment": "Revert SMX4KNL-119"
+        },
+        {
+            "c_hash": "e08d88c1",
+            "date": "2008-10-22 10:39:53 +0000",
+            "comment": "Add jaxp validation package on the boot packages"
+        },
+        {
+            "c_hash": "c13282db",
+            "date": "2008-10-22 15:20:40 +0000",
+            "comment": "Add simple tests to test JAXP"
+        },
+        {
+            "c_hash": "a429e17c",
+            "date": "2008-10-23 12:11:46 +0000",
+            "comment": "SMX4KNL-123: XML parsing does not work on non Sun JVMs and Sun's SAAJ bundle requires Sun's JAXP implementation"
+        },
+        {
+            "c_hash": "de7e7a4a",
+            "date": "2008-10-23 16:25:46 +0000",
+            "comment": "Rework gshell integration in gshell-core"
+        },
+        {
+            "c_hash": "d43281a3",
+            "date": "2008-10-23 17:45:08 +0000",
+            "comment": "Re-introduce osgi commands, making sure everything works in OSGi"
+        },
+        {
+            "c_hash": "f22de7b4",
+            "date": "2008-10-23 17:47:25 +0000",
+            "comment": "Support for remote shell"
+        },
+        {
+            "c_hash": "beddff68",
+            "date": "2008-10-23 17:54:10 +0000",
+            "comment": "Fix all remaining services"
+        },
+        {
+            "c_hash": "a4fb9f1c",
+            "date": "2008-10-23 18:04:50 +0000",
+            "comment": "Fix lots of things"
+        },
+        {
+            "c_hash": "3f8ca2ca",
+            "date": "2008-10-23 18:11:51 +0000",
+            "comment": "Various fixes and improvements"
+        },
+        {
+            "c_hash": "c827fbca",
+            "date": "2008-10-23 18:17:51 +0000",
+            "comment": "Upgrade to latest gshell trunk"
+        },
+        {
+            "c_hash": "230c4612",
+            "date": "2008-10-23 18:18:51 +0000",
+            "comment": "Upgrade to latest gshell"
+        },
+        {
+            "c_hash": "17eaa175",
+            "date": "2008-10-23 18:20:43 +0000",
+            "comment": "Add missing license headers, use our own LoginHandler to plug in security"
+        },
+        {
+            "c_hash": "c7d422d6",
+            "date": "2008-10-23 18:24:10 +0000",
+            "comment": "Upgrade to latest gshell"
+        },
+        {
+            "c_hash": "46effdb0",
+            "date": "2008-10-24 07:29:14 +0000",
+            "comment": "Fix obr bundle export packages"
+        },
+        {
+            "c_hash": "9120f27e",
+            "date": "2008-10-24 09:53:55 +0000",
+            "comment": "Remove empty dirs and fix the shell which does not start correctly"
+        },
+        {
+            "c_hash": "2deef6ac",
+            "date": "2008-10-25 18:28:30 +0000",
+            "comment": "Integration tests should include the JAXP api and ri by default"
+        },
+        {
+            "c_hash": "072fbe14",
+            "date": "2008-10-25 18:29:35 +0000",
+            "comment": "Add missing bundles for jaxp when creating new instances"
+        },
+        {
+            "c_hash": "c8cbf6b9",
+            "date": "2008-10-25 18:31:04 +0000",
+            "comment": "Remove empty folders, fix constructor arguments for CommandsCompleter"
+        },
+        {
+            "c_hash": "4e5543d8",
+            "date": "2008-10-26 09:36:48 +0000",
+            "comment": "Fix integration tests"
+        },
+        {
+            "c_hash": "e1861e0b",
+            "date": "2008-10-26 09:37:34 +0000",
+            "comment": "Fix integration tests"
+        },
+        {
+            "c_hash": "aaccf02a",
+            "date": "2008-10-26 09:43:15 +0000",
+            "comment": "SMX4KNL-127: Add osgi/update command, patch provided by David Greco"
+        },
+        {
+            "c_hash": "ec37848e",
+            "date": "2008-10-26 20:52:10 +0000",
+            "comment": "Add easymock to dependency management"
+        },
+        {
+            "c_hash": "6c2c11f0",
+            "date": "2008-10-26 22:24:31 +0000",
+            "comment": "Fix dependencies and pom generated from the shade plugin"
+        },
+        {
+            "c_hash": "c6c68bc5",
+            "date": "2008-10-26 22:53:35 +0000",
+            "comment": "SMX4KNL-128: Remove OBR support from default distribution"
+        },
+        {
+            "c_hash": "58e70cef",
+            "date": "2008-10-26 22:57:11 +0000",
+            "comment": "Add integrtion tests project"
+        },
+        {
+            "c_hash": "cfa62b0d",
+            "date": "2008-10-26 22:57:54 +0000",
+            "comment": "Fix test support"
+        },
+        {
+            "c_hash": "ff20078c",
+            "date": "2008-10-27 02:54:23 +0000",
+            "comment": "SMX4KNL-128  Preventing warnings for missing bundles on startup"
+        },
+        {
+            "c_hash": "dda30974",
+            "date": "2008-10-27 07:01:28 +0000",
+            "comment": "Add snapshot repository"
+        },
+        {
+            "c_hash": "cc5a4f9a",
+            "date": "2008-10-27 15:00:36 +0000",
+            "comment": "Add some tests to the features service"
+        },
+        {
+            "c_hash": "e381eacb",
+            "date": "2008-10-27 19:12:13 +0000",
+            "comment": "Fix command names for the features shell"
+        },
+        {
+            "c_hash": "c8e9eb9f",
+            "date": "2008-10-27 19:18:42 +0000",
+            "comment": "SMX4KNL-129: Make sure aliases and links work correctly with the new gshell integration"
+        },
+        {
+            "c_hash": "c348a98a",
+            "date": "2008-10-27 19:27:19 +0000",
+            "comment": "Use 2-SNAPSHOT of smx root pom"
+        },
+        {
+            "c_hash": "1d1cc8a4",
+            "date": "2008-10-30 13:18:26 +0000",
+            "comment": "Use released bundles/plugins versions"
+        },
+        {
+            "c_hash": "902f0272",
+            "date": "2008-11-01 14:39:27 +0000",
+            "comment": "SMX4KNL-131: Include JAXP 1.4 API"
+        },
+        {
+            "c_hash": "6270362a",
+            "date": "2008-11-01 15:01:44 +0000",
+            "comment": "Add some aliases and links.  Improve the remote stuff a bit (still need to display the instance name when logged in a remote shell"
+        },
+        {
+            "c_hash": "17d30bd9",
+            "date": "2008-11-01 20:19:39 +0000",
+            "comment": "Remove hack for scanning jaxp parsers on the classpath, as we now use the osgi enabled specs"
+        },
+        {
+            "c_hash": "370742f8",
+            "date": "2008-11-05 23:44:57 +0000",
+            "comment": "SMX4KNL-130: Support configurable lock directory for container level locking (patch submitted by Jamie Goodyear)"
+        },
+        {
+            "c_hash": "0853a9dd",
+            "date": "2008-11-11 20:10:46 +0000",
+            "comment": "SMX4-154 - Added missing resource files for help"
+        },
+        {
+            "c_hash": "99108f81",
+            "date": "2008-11-11 22:10:06 +0000",
+            "comment": "SMX4KNL-135 - Added missing resource files for remote command help"
+        },
+        {
+            "c_hash": "1139f08c",
+            "date": "2008-11-19 10:51:57 +0000",
+            "comment": "SMX4KNL-143: Provide a way to make BouncyCaste work in Smx kernel"
+        },
+        {
+            "c_hash": "09248080",
+            "date": "2008-11-19 10:53:46 +0000",
+            "comment": "SMX4KNL-143: Provide a way to make BouncyCaste work in Smx kernel"
+        },
+        {
+            "c_hash": "cdd23430",
+            "date": "2008-11-20 08:55:30 +0000",
+            "comment": "SMX4KNL-144: Integrate SSH as the remoting protocol"
+        },
+        {
+            "c_hash": "5bcbe016",
+            "date": "2008-11-20 10:10:39 +0000",
+            "comment": "SMX4KNL-136: Upgrade to pax-logging 1.2.1 and to servicemix-pom-2"
+        },
+        {
+            "c_hash": "fff98097",
+            "date": "2008-11-20 10:43:57 +0000",
+            "comment": "Fix remote shell StackOverflow"
+        },
+        {
+            "c_hash": "db0004b5",
+            "date": "2008-11-25 02:55:54 +0000",
+            "comment": "SMX4-163 exclude xom dependency from xstream"
+        },
+        {
+            "c_hash": "84e29692",
+            "date": "2008-11-25 03:06:36 +0000",
+            "comment": "SMX4KNL-150 GShell group name variable doesn't resolve"
+        },
+        {
+            "c_hash": "981ab43f",
+            "date": "2008-11-25 03:13:04 +0000",
+            "comment": "[SMX4KNL-149]Build failure due to new sshd snapshot"
+        },
+        {
+            "c_hash": "93e07ffa",
+            "date": "2008-11-25 03:19:00 +0000",
+            "comment": "[SMX4KNL-148]OPS4J maven repo missing form default search list"
+        },
+        {
+            "c_hash": "0dd7e704",
+            "date": "2008-11-25 12:46:51 +0000",
+            "comment": "fixed problem with running on non-bash shells"
+        },
+        {
+            "c_hash": "65c2c82f",
+            "date": "2008-11-26 06:45:01 +0000",
+            "comment": "[SMX4KNL-151]Update displayed version in GShell to be 1.1.0-SNAPSHOT for trunk"
+        },
+        {
+            "c_hash": "9ea0e405",
+            "date": "2008-11-27 10:49:00 +0000",
+            "comment": "Upgrade to gshell latest snapshot"
+        },
+        {
+            "c_hash": "74688fc1",
+            "date": "2008-12-02 09:45:27 +0000",
+            "comment": "[SMX4KNL-154]some Action moved from to another package cause kernel start up failed"
+        },
+        {
+            "c_hash": "e691a95c",
+            "date": "2008-12-03 08:52:35 +0000",
+            "comment": "SMX4KNL-144: Use SSH related commands from gshell"
+        },
+        {
+            "c_hash": "bac43806",
+            "date": "2008-12-03 08:58:31 +0000",
+            "comment": "Remove unused directory"
+        },
+        {
+            "c_hash": "f02c0bea",
+            "date": "2008-12-03 20:30:44 +0000",
+            "comment": "Fix to Windows batch file"
+        },
+        {
+            "c_hash": "aecc2ffa",
+            "date": "2008-12-03 22:06:39 +0000",
+            "comment": "SMX4KNL-156, SMX4KNL-157: include JMX in the kernel, add a JAAS realm for JMX / SSH authentication"
+        },
+        {
+            "c_hash": "7a929cc4",
+            "date": "2008-12-03 22:08:45 +0000",
+            "comment": "SMX4KNL-157: Add missing ASL headers"
+        },
+        {
+            "c_hash": "5752b185",
+            "date": "2008-12-03 22:51:42 +0000",
+            "comment": "SMX4-119 Startup exceptions for missing bundle"
+        },
+        {
+            "c_hash": "0872fb0e",
+            "date": "2008-12-04 12:02:26 +0000",
+            "comment": "[SM-1709]unify third party libs used across servicemix projects"
+        },
+        {
+            "c_hash": "47471f06",
+            "date": "2008-12-07 13:56:50 +0000",
+            "comment": "[SMX4KNL-158]should refer Jline bundle in gshell-core but not use it as private package"
+        },
+        {
+            "c_hash": "6b2c573b",
+            "date": "2008-12-10 03:19:49 +0000",
+            "comment": "[SM-1709]unify third party libs used across servicemix projects"
+        },
+        {
+            "c_hash": "51c16716",
+            "date": "2008-12-12 12:37:38 +0000",
+            "comment": "Use sshd-0.1 release"
+        },
+        {
+            "c_hash": "ee3a4c6f",
+            "date": "2008-12-12 22:22:25 +0000",
+            "comment": "SMX4KNL-164: features/removeUrl does not remove the repository"
+        },
+        {
+            "c_hash": "b50159ee",
+            "date": "2008-12-17 09:41:16 +0000",
+            "comment": "Upgrade to latest gshell"
+        },
+        {
+            "c_hash": "a176d145",
+            "date": "2009-01-05 09:09:06 +0000",
+            "comment": "SMX4KNL-162: do not use the config admin to store clear passwords"
+        },
+        {
+            "c_hash": "074f10e2",
+            "date": "2009-01-05 10:30:25 +0000",
+            "comment": "SMX4KNL-162: fix assembly for users configuration"
+        },
+        {
+            "c_hash": "38501bfe",
+            "date": "2009-01-05 13:16:07 +0000",
+            "comment": "SMX4KNL-162: fix the admin shell"
+        },
+        {
+            "c_hash": "397f4eaf",
+            "date": "2009-01-05 13:17:01 +0000",
+            "comment": "Fix startup.properties for instances"
+        },
+        {
+            "c_hash": "9e803d43",
+            "date": "2009-01-05 13:30:40 +0000",
+            "comment": "SMX4KNL-162: use the base directory for users config file"
+        },
+        {
+            "c_hash": "9e3d7b43",
+            "date": "2009-01-05 13:32:33 +0000",
+            "comment": "SMX4KNL-114: prompt should print username@instance-name"
+        },
+        {
+            "c_hash": "54f7f724",
+            "date": "2009-01-05 13:56:08 +0000",
+            "comment": "Fix test"
+        },
+        {
+            "c_hash": "b8a03ea5",
+            "date": "2009-01-05 15:40:11 +0000",
+            "comment": "SMX4KNL-147, SMX4KNL-167, SMX4KNL-168: upgrade to spring-dm 1.2.0-m2, spring-2.5.6, downgrade to junit-3.8.2"
+        },
+        {
+            "c_hash": "c66f9d44",
+            "date": "2009-01-06 08:57:04 +0000",
+            "comment": "SMX4KNL-147: upgrade to spring-dm 1.2.0-m2"
+        },
+        {
+            "c_hash": "d158c0b5",
+            "date": "2009-01-07 09:38:58 +0000",
+            "comment": "SMX4KNL-142: Starting a new instance that was created with admin fail on windows"
+        },
+        {
+            "c_hash": "9b0e0d84",
+            "date": "2009-01-07 11:06:37 +0000",
+            "comment": "SMX4KNL-132: osgi/list should display the spring application state"
+        },
+        {
+            "c_hash": "c1889ecc",
+            "date": "2009-01-09 08:00:37 +0000",
+            "comment": "SMX4KNL-163: Provide default jdbc lock implementation for master/slave deployments"
+        },
+        {
+            "c_hash": "7395992f",
+            "date": "2009-01-09 13:36:19 +0000",
+            "comment": "SMX4KNL-165: Initial provisioning using features is very slow especially when using snapshots"
+        },
+        {
+            "c_hash": "9b73aad4",
+            "date": "2009-01-12 10:30:19 +0000",
+            "comment": "[SMX4KNL-76]support to install/uninstall different version of features"
+        },
+        {
+            "c_hash": "4a2db8e8",
+            "date": "2009-01-12 10:33:01 +0000",
+            "comment": "revert unnecessary change"
+        },
+        {
+            "c_hash": "16d7243d",
+            "date": "2009-01-20 07:24:55 +0000",
+            "comment": "SMX4KNL-166 Move the embedded smx demo into trunk"
+        },
+        {
+            "c_hash": "6d46d418",
+            "date": "2009-01-20 15:22:36 +0000",
+            "comment": "Accidentally commited some sandbox work."
+        },
+        {
+            "c_hash": "9c56b3e9",
+            "date": "2009-01-21 07:52:08 +0000",
+            "comment": "SMX4KNL-153: Stopping one of the 'core' bundles of the servicemix engine block the server"
+        },
+        {
+            "c_hash": "fc6c0b5e",
+            "date": "2009-01-21 07:55:58 +0000",
+            "comment": "SMX4KNL-169: Use the start level to implement the container level locking"
+        },
+        {
+            "c_hash": "bfe3ac03",
+            "date": "2009-01-21 08:38:38 +0000",
+            "comment": "SMX4KNL-118: The configuration file for felix comes from 3 different places in the svn tree, only one copy should be used"
+        },
+        {
+            "c_hash": "a72d40df",
+            "date": "2009-01-21 08:44:16 +0000",
+            "comment": "Remove files for SMX4KNL-118"
+        },
+        {
+            "c_hash": "ca0e810b",
+            "date": "2009-01-21 08:48:41 +0000",
+            "comment": "SMX4KNL-171: Include RFC0139 (JMX management of OSGi)"
+        },
+        {
+            "c_hash": "299b7a92",
+            "date": "2009-01-21 09:11:13 +0000",
+            "comment": "Add svn:ignore property"
+        },
+        {
+            "c_hash": "e5851538",
+            "date": "2009-01-21 09:25:55 +0000",
+            "comment": "SMX4KNL-152: extract version from resources and allow displaying the version of the application emmbedding the kernel"
+        },
+        {
+            "c_hash": "26f2a333",
+            "date": "2009-01-22 22:16:29 +0000",
+            "comment": "SMX4-171: Use patched version of OSGi JMX jars"
+        },
+        {
+            "c_hash": "aef11ba2",
+            "date": "2009-02-03 20:32:14 +0000",
+            "comment": "SMX4KNL-174: NoClassDefFoundError jline/ConsoleReader when invoking servicemix-client"
+        },
+        {
+            "c_hash": "c3ae61c9",
+            "date": "2009-02-03 20:36:48 +0000",
+            "comment": "SMX4KNL-152: Change 'kernel' to 'Kernel' in the info command"
+        },
+        {
+            "c_hash": "dc4ead2a",
+            "date": "2009-02-05 08:57:14 +0000",
+            "comment": "SMX4KNL-140: add a test"
+        },
+        {
+            "c_hash": "330595bd",
+            "date": "2009-02-05 11:17:39 +0000",
+            "comment": "[SMX4KNL-176]features/install xxx' tries to install version 0.0.0 instead of the latest one"
+        },
+        {
+            "c_hash": "45390bce",
+            "date": "2009-02-05 11:41:21 +0000",
+            "comment": "SMX4KNL-150, SMX4KNL-177"
+        },
+        {
+            "c_hash": "8e72b7cb",
+            "date": "2009-02-05 11:48:55 +0000",
+            "comment": "SMX4KNL-170: Unknown protocol: org.apache.servicemix.kernel.gshell when installing obr feature"
+        },
+        {
+            "c_hash": "3301a0df",
+            "date": "2009-02-05 12:38:48 +0000",
+            "comment": "SMX4KNL-178: Remove debug log statements when booting"
+        },
+        {
+            "c_hash": "b00c1ecb",
+            "date": "2009-02-06 11:32:57 +0000",
+            "comment": "corrected the string for the servicemix kernel"
+        },
+        {
+            "c_hash": "c309d2e6",
+            "date": "2009-02-06 12:15:56 +0000",
+            "comment": "Get rig of some warnings when building the bundle"
+        },
+        {
+            "c_hash": "553bc279",
+            "date": "2009-02-06 13:36:49 +0000",
+            "comment": "Remove all warnings from the build and make it work offline"
+        },
+        {
+            "c_hash": "612e25ec",
+            "date": "2009-02-06 15:17:58 +0000",
+            "comment": "Use managed dependencies everywhere"
+        },
+        {
+            "c_hash": "12e86c14",
+            "date": "2009-02-10 12:53:18 +0000",
+            "comment": "SMX4KNL-180: features/install xxx barfs when using non osgi compliant versions"
+        },
+        {
+            "c_hash": "60c23cbc",
+            "date": "2009-02-10 21:20:34 +0000",
+            "comment": "Upgrade to felix 1.2.2"
+        },
+        {
+            "c_hash": "1ef3e8e2",
+            "date": "2009-02-11 04:59:33 +0000",
+            "comment": "SMX4KNL-94 Provide a JMX frontend on top of the features service"
+        },
+        {
+            "c_hash": "e1689c08",
+            "date": "2009-02-11 08:07:44 +0000",
+            "comment": "SMX4KNL-181: osgi/install -s throws a NPE if the bundle can not be resolved"
+        },
+        {
+            "c_hash": "0a325663",
+            "date": "2009-02-11 16:11:41 +0000",
+            "comment": "Log: SMX4KNL-172 - the new command optional/cat from gshell can't support mvn/http protocol LINK: https://issues.apache.org/activemq/browse/SMX4KNL-172"
+        },
+        {
+            "c_hash": "adb71730",
+            "date": "2009-02-11 17:52:28 +0000",
+            "comment": "SMX4KNL-182 Upon restart, the list of previously  installed features is not available anymore"
+        },
+        {
+            "c_hash": "600f190f",
+            "date": "2009-02-11 17:54:14 +0000",
+            "comment": "SMX4KNL-185 Features JMX view does not reload persistent state on restart"
+        },
+        {
+            "c_hash": "a353a32f",
+            "date": "2009-02-11 19:03:04 +0000",
+            "comment": "SMX4KNL-185 Features JMX view does not reload persistent state on restart - Added one more little fix"
+        },
+        {
+            "c_hash": "1c5f2ab1",
+            "date": "2009-02-11 19:35:15 +0000",
+            "comment": "SMX4KNL-186: features/uninstall should select the right version if only one version has been installed"
+        },
+        {
+            "c_hash": "0972f8c1",
+            "date": "2009-02-12 07:23:56 +0000",
+            "comment": "SMX4KNL-187 Features JMX view making too much log noise"
+        },
+        {
+            "c_hash": "b16f76e4",
+            "date": "2009-02-12 10:39:07 +0000",
+            "comment": "improved error logging"
+        },
+        {
+            "c_hash": "ddf0e4de",
+            "date": "2009-02-12 21:32:19 +0000",
+            "comment": "SMX4KNL-184: align the command names with the gshell ones"
+        },
+        {
+            "c_hash": "d866d92c",
+            "date": "2009-02-13 07:18:26 +0000",
+            "comment": "Upgrade to servicemix specs 1.2.0"
+        },
+        {
+            "c_hash": "f4007e9d",
+            "date": "2009-02-13 07:35:17 +0000",
+            "comment": "SMX4KNL-184: fix junit tests"
+        },
+        {
+            "c_hash": "fcdeb82e",
+            "date": "2009-02-13 07:51:01 +0000",
+            "comment": "SMX4KNL-184: Fix integration tests"
+        },
+        {
+            "c_hash": "d1339c57",
+            "date": "2009-02-13 16:00:12 +0000",
+            "comment": "SMX4KNL-188: Use gshell termminal classes instead of the default ones from jline"
+        },
+        {
+            "c_hash": "8021e59c",
+            "date": "2009-02-13 16:05:14 +0000",
+            "comment": "SMX4KNL-188: Use gshell termminal classes instead of the default ones from jline"
+        },
+        {
+            "c_hash": "e4fe9871",
+            "date": "2009-02-14 00:04:33 +0000",
+            "comment": "fixed SMX4KNL-190"
+        },
+        {
+            "c_hash": "deeb97e0",
+            "date": "2009-02-14 04:28:10 +0000",
+            "comment": "Removed Felix version comments"
+        },
+        {
+            "c_hash": "b7e58d36",
+            "date": "2009-02-14 09:17:49 +0000",
+            "comment": "[SMX4KNL-72] If there is no etc/startup.properties, the kernel hangs without displaying any error"
+        },
+        {
+            "c_hash": "dde507c8",
+            "date": "2009-02-14 09:54:57 +0000",
+            "comment": "SMX4KNL-188: disable gshell integration tests on windows"
+        },
+        {
+            "c_hash": "edf40f83",
+            "date": "2009-02-14 10:09:48 +0000",
+            "comment": "Upgrade to released versions of osgi bundles"
+        },
+        {
+            "c_hash": "a71b556d",
+            "date": "2009-02-14 10:26:59 +0000",
+            "comment": "[SMX4KNL-191]Upgrade to pax-logging 1.3.0"
+        },
+        {
+            "c_hash": "75126a49",
+            "date": "2009-02-16 03:03:47 +0000",
+            "comment": "SMX4KNL-187 Features JMX view making too much log noise"
+        },
+        {
+            "c_hash": "2db949cf",
+            "date": "2009-02-16 07:58:37 +0000",
+            "comment": "[SMX4KNL-197]the client source jar should include slf4j sources using shade plugin"
+        },
+        {
+            "c_hash": "8fa675bb",
+            "date": "2009-02-16 08:17:15 +0000",
+            "comment": "[SMX4KNL-196]gshell-core source jar should use the shade plugin to include the gshell sources"
+        },
+        {
+            "c_hash": "1851fe9c",
+            "date": "2009-02-16 09:24:56 +0000",
+            "comment": "[SMX4KNL-196]adding missing plexus source file into deployed source jar"
+        },
+        {
+            "c_hash": "28956170",
+            "date": "2009-02-18 10:20:48 +0000",
+            "comment": "SMX4KNL-201: the client jar does not exit when running with --help argument"
+        },
+        {
+            "c_hash": "ea16268c",
+            "date": "2009-02-18 10:35:05 +0000",
+            "comment": "SMX4KNL-199: Missing resource bundle for obr shell"
+        },
+        {
+            "c_hash": "b5bf13ad",
+            "date": "2009-02-18 10:41:54 +0000",
+            "comment": "SMX4KNL-198: The console / server / client arguments to servicemix shell script are broken"
+        },
+        {
+            "c_hash": "e9a1c4f3",
+            "date": "2009-02-18 19:16:02 +0000",
+            "comment": "Add some comment"
+        },
+        {
+            "c_hash": "a8cd9415",
+            "date": "2009-02-18 19:16:24 +0000",
+            "comment": "Fix integration tests"
+        },
+        {
+            "c_hash": "7373bdcd",
+            "date": "2009-02-18 19:16:58 +0000",
+            "comment": "Add missing default values for etc/org.apache.servicemix.shell.cfg"
+        },
+        {
+            "c_hash": "544752b7",
+            "date": "2009-02-18 19:18:06 +0000",
+            "comment": "SMX4KNL-203: When installing a feature, the service should first install all bundles, then start them all in order"
+        },
+        {
+            "c_hash": "a8487125",
+            "date": "2009-02-19 07:34:39 +0000",
+            "comment": "Upgrade to gshell 1.0-alpha-2"
+        },
+        {
+            "c_hash": "f6f8ffb2",
+            "date": "2009-02-19 08:38:02 +0000",
+            "comment": "[SMX4KNL-204]OsgiConfiguration.unregister() throw NPE"
+        },
+        {
+            "c_hash": "7f15eab9",
+            "date": "2009-02-19 10:23:52 +0000",
+            "comment": "Remove warnings from build, comment snapshot repository"
+        },
+        {
+            "c_hash": "d0b7b178",
+            "date": "2009-02-20 19:42:05 +0000",
+            "comment": "SMX4KNL-179 - Upgrade Felix dependency"
+        },
+        {
+            "c_hash": "e6259879",
+            "date": "2009-02-20 20:02:36 +0000",
+            "comment": "Fix integation tests support"
+        },
+        {
+            "c_hash": "3f8dc8af",
+            "date": "2009-02-20 21:29:12 +0000",
+            "comment": "Fix broken integration test support"
+        },
+        {
+            "c_hash": "45e66d92",
+            "date": "2009-02-23 13:30:33 +0000",
+            "comment": "SMX4KNL-205: aliases commands are not executed with the correct IO"
+        },
+        {
+            "c_hash": "8d62c2af",
+            "date": "2009-02-23 15:21:48 +0000",
+            "comment": "SMX4KNL-202: Fix osgi headers for spring generated bundles"
+        },
+        {
+            "c_hash": "457d6ada",
+            "date": "2009-02-23 19:54:10 +0000",
+            "comment": "SMX4KNL-207: features/install should use latest feature version for unversioned dependency"
+        },
+        {
+            "c_hash": "680ebaea",
+            "date": "2009-02-24 08:27:52 +0000",
+            "comment": "Rename the snapshot repo to avoid checking it twice (the repo is included through gshell / genesis)"
+        },
+        {
+            "c_hash": "c92ffd35",
+            "date": "2009-02-24 15:16:35 +0000",
+            "comment": "Remove some unneeded transitive deps"
+        },
+        {
+            "c_hash": "5b39abc2",
+            "date": "2009-02-25 08:48:16 +0000",
+            "comment": "Remove mina dependency as we use the osgi bundle instead"
+        },
+        {
+            "c_hash": "6a4da583",
+            "date": "2009-02-26 10:13:15 +0000",
+            "comment": "SMX4KNL-211: remove jmock dependency"
+        },
+        {
+            "c_hash": "fe5771b9",
+            "date": "2009-02-26 11:01:22 +0000",
+            "comment": "[SMX4-227]add user.dir property to work around xmlresolver bug"
+        },
+        {
+            "c_hash": "9fbf6cfe",
+            "date": "2009-02-26 13:14:54 +0000",
+            "comment": "[SMX4-227]add xml.catalog.files= to work around xmlresolver bug"
+        },
+        {
+            "c_hash": "b717d02e",
+            "date": "2009-02-27 16:08:36 +0000",
+            "comment": "SMX4KNL-214: Hot deployment of features through the deploy folder"
+        },
+        {
+            "c_hash": "13ad6332",
+            "date": "2009-03-02 05:56:32 +0000",
+            "comment": "SMX4KNL-215 - Don't attempt to stop fragments in filemonitor"
+        },
+        {
+            "c_hash": "72e6d459",
+            "date": "2009-03-02 06:06:55 +0000",
+            "comment": "SMX4KNL-216 - Add support for fragments in osgi commands"
+        },
+        {
+            "c_hash": "c6235069",
+            "date": "2009-03-02 12:14:49 +0000",
+            "comment": "SMX4KNL-218: Missing command description properties"
+        },
+        {
+            "c_hash": "73b69cec",
+            "date": "2009-03-03 13:34:37 +0000",
+            "comment": "SMX4KNL-220: The org.apache.servicemix.kernel.management bundle should not use DynamicImport-Package=*"
+        },
+        {
+            "c_hash": "19f50a2f",
+            "date": "2009-03-04 14:12:43 +0000",
+            "comment": "Remove unneeded dynamic import package from gshell-core on sun.misc.*"
+        },
+        {
+            "c_hash": "011b30d5",
+            "date": "2009-03-05 12:03:38 +0000",
+            "comment": "Upgrade to timestamped version of felix"
+        },
+        {
+            "c_hash": "0f9e2b68",
+            "date": "2009-03-05 13:45:50 +0000",
+            "comment": "Update readme and release notes for 1.1.0 release"
+        },
+        {
+            "c_hash": "01b3d97f",
+            "date": "2009-03-05 14:17:11 +0000",
+            "comment": "Fix all licenses for release"
+        },
+        {
+            "c_hash": "2a6c456c",
+            "date": "2009-03-05 15:27:09 +0000",
+            "comment": "Fix missing config.properties file in gshell-admin"
+        },
+        {
+            "c_hash": "3e0c6252",
+            "date": "2009-03-05 15:34:48 +0000",
+            "comment": "Fix the admin/connect command"
+        },
+        {
+            "c_hash": "b42da2bc",
+            "date": "2009-03-05 17:07:52 +0000",
+            "comment": "Fix startLocalShell / startRemoteShell properties so that they don't go through the ConfigAdmin because if so they are not overriden by the system property values."
+        },
+        {
+            "c_hash": "d6f55eac",
+            "date": "2009-03-05 17:19:49 +0000",
+            "comment": "Try to avoid an exception when shutting down"
+        },
+        {
+            "c_hash": "254633f7",
+            "date": "2009-03-06 08:26:39 +0000",
+            "comment": "Optimize import statements"
+        },
+        {
+            "c_hash": "9c0ea6aa",
+            "date": "2009-03-06 09:13:05 +0000",
+            "comment": "Add a known issues section to the release notes"
+        },
+        {
+            "c_hash": "a3913858",
+            "date": "2009-03-06 09:29:16 +0000",
+            "comment": "Add SMX4KNL-232 to the list of known issues"
+        },
+        {
+            "c_hash": "82035fea",
+            "date": "2009-03-06 09:31:38 +0000",
+            "comment": "[SMX4KNL-230]Log statements using java.util.logging are logged into both stderr and data/log/servicemix.log file"
+        },
+        {
+            "c_hash": "575bd93c",
+            "date": "2009-03-06 09:43:17 +0000",
+            "comment": "Add license to the java.util.logging.properties configuration file"
+        },
+        {
+            "c_hash": "2b4c1dae",
+            "date": "2009-03-06 10:00:27 +0000",
+            "comment": "Remove warnings at build time"
+        },
+        {
+            "c_hash": "0e16aa19",
+            "date": "2009-03-09 06:17:18 +0000",
+            "comment": "SMX4KNL-233 - Add argument completion for core gshell commands"
+        },
+        {
+            "c_hash": "b3fc3fa8",
+            "date": "2009-03-09 06:21:39 +0000",
+            "comment": "SMX4KNL-233 - Add argument completion for core gshell commands"
+        },
+        {
+            "c_hash": "5b54b8f4",
+            "date": "2009-03-09 06:30:38 +0000",
+            "comment": "SMX4KNL-233 - Add argument completion for core gshell commands"
+        },
+        {
+            "c_hash": "80d34305",
+            "date": "2009-03-10 19:43:54 +0000",
+            "comment": "Fix compile errors with JDK 5"
+        },
+        {
+            "c_hash": "6cef32ab",
+            "date": "2009-03-10 20:56:15 +0000",
+            "comment": "SMX4KNL-235 - Kernel 1.1.0 release canidate has 1.1.0-SNAPSHOT dependency in smx4web demo"
+        },
+        {
+            "c_hash": "8b83e5e6",
+            "date": "2009-03-11 16:09:41 +0000",
+            "comment": "SMX4KNL-135: Kernel 1.1.0 release canidate has 1.1.0-SNAPSHOT dependency in smx4web demo"
+        },
+        {
+            "c_hash": "4ee0eacb",
+            "date": "2009-03-12 07:30:22 +0000",
+            "comment": "[SMX4KNL-213]Improve testing framework to support easily installation of features"
+        },
+        {
+            "c_hash": "6eb7b083",
+            "date": "2009-03-12 08:35:29 +0000",
+            "comment": "fixed problem that pending uninstalled bundles waiting for deps will be started as soon as the deps are available. That led to an exception that the bundle was already uninstalled. Now the file monitor is watching for bundle uninstall events and will remove those bundles from the list of pending bundles."
+        },
+        {
+            "c_hash": "c7ed0070",
+            "date": "2009-03-12 17:24:08 +0000",
+            "comment": "Use 1.3 version of specs which fixes a few problems"
+        },
+        {
+            "c_hash": "900e67ab",
+            "date": "2009-03-12 20:36:32 +0000",
+            "comment": "Use non patched version of felix"
+        },
+        {
+            "c_hash": "26f8d76a",
+            "date": "2009-03-13 09:28:23 +0000",
+            "comment": "SMX4-249: Unnecessary dependency in kernel assembly breaks camel-cxf feature generation"
+        },
+        {
+            "c_hash": "b0c616c4",
+            "date": "2009-03-14 14:03:05 +0000",
+            "comment": "SMX4KNL-242: GShell itests fail when maven.repo.local is specified"
+        },
+        {
+            "c_hash": "e5998de8",
+            "date": "2009-03-16 05:01:35 +0000",
+            "comment": "SMX4KNL-233 - Add argument completion for core gshell commands - Added config properties"
+        },
+        {
+            "c_hash": "ae54e815",
+            "date": "2009-03-16 05:51:33 +0000",
+            "comment": "SMX4KNL-233 - Add argument completion for core gshell commands - Added admin commands"
+        },
+        {
+            "c_hash": "07d6acbd",
+            "date": "2009-03-18 08:31:15 +0000",
+            "comment": "Bump version to 1.2.0-SNAPSHOT"
+        },
+        {
+            "c_hash": "93d2c945",
+            "date": "2009-03-19 05:24:42 +0000",
+            "comment": "[SMX4-250]use snapshot cglib bundle version to pick up the changes"
+        },
+        {
+            "c_hash": "778b8ea8",
+            "date": "2009-03-19 13:54:24 +0000",
+            "comment": "SMX4KNL-241: When creating a new instance through admin/create, the list of default features repositories is wrong"
+        },
+        {
+            "c_hash": "fced8fde",
+            "date": "2009-03-23 09:36:32 +0000",
+            "comment": "Use latest maven war plugin"
+        },
+        {
+            "c_hash": "a201b7b5",
+            "date": "2009-03-23 15:16:11 +0000",
+            "comment": "SMX4KNL-140: GShell commands references not cleaned up when bundle uninstalled"
+        },
+        {
+            "c_hash": "54bc8ac3",
+            "date": "2009-03-23 15:50:49 +0000",
+            "comment": "SMX4KNL-247: Running \"find system\" command leads to a stack overflow"
+        },
+        {
+            "c_hash": "b747addd",
+            "date": "2009-03-25 15:15:22 +0000",
+            "comment": "SMX4KNL-254: In the osgi/list output, the spring state is only valid when the bundle is started and should not be displayed otherwise"
+        },
+        {
+            "c_hash": "eaf8a963",
+            "date": "2009-03-25 15:17:40 +0000",
+            "comment": "SMX4KNL-246: Add an osgi/restart command for a bundle"
+        },
+        {
+            "c_hash": "0a40bf26",
+            "date": "2009-03-25 15:37:46 +0000",
+            "comment": "SMX4KNL-71: export the gshell CommandLineExecutor in the OSGi registry"
+        },
+        {
+            "c_hash": "f5d1e3c1",
+            "date": "2009-03-25 15:41:09 +0000",
+            "comment": "SMX4KNL-252: Create a sort command"
+        },
+        {
+            "c_hash": "d1941b8f",
+            "date": "2009-03-29 06:47:41 +0000",
+            "comment": "SMX4KNL-243 - Start using https://repository.apache.org for Apache snapshots"
+        },
+        {
+            "c_hash": "af5e49b1",
+            "date": "2009-03-31 12:51:36 +0000",
+            "comment": "Log: Install/Un-install of a features repository through JMX Frontend https://issues.apache.org/activemq/browse/SMX4KNL-239"
+        },
+        {
+            "c_hash": "4d0f3e39",
+            "date": "2009-04-02 13:26:31 +0000",
+            "comment": "SMX4KNL-248: Upgrade to spring-dm-1.2.0-rc1"
+        },
+        {
+            "c_hash": "7a3e3fa8",
+            "date": "2009-04-07 16:15:56 +0000",
+            "comment": "SMX4KNL-259 - The client does not process the -h [host] option"
+        },
+        {
+            "c_hash": "35e6032b",
+            "date": "2009-04-10 06:54:44 +0000",
+            "comment": "[SMX4KNL-245]Warn user in the console/log when bundle(s) declared in the features.xml file are not retrieved"
+        },
+        {
+            "c_hash": "20da0f33",
+            "date": "2009-04-21 19:55:29 +0000",
+            "comment": "SMX4KNL-265: Improve message on exceptions thrown for wrong URI in features"
+        },
+        {
+            "c_hash": "00155cdd",
+            "date": "2009-04-21 20:09:59 +0000",
+            "comment": "SMX4KNL-265: Improve message on exceptions thrown for wrong URI in features"
+        },
+        {
+            "c_hash": "959893a4",
+            "date": "2009-04-21 20:29:56 +0000",
+            "comment": "SMX4KNL-264: Switch to Apache SSHD"
+        },
+        {
+            "c_hash": "06fd4b4f",
+            "date": "2009-04-22 03:13:40 +0000",
+            "comment": "[SMX4KNL-261]Missing system property replacement in feature configurations"
+        },
+        {
+            "c_hash": "bbec37b6",
+            "date": "2009-04-23 13:12:14 +0000",
+            "comment": "SMX4KNL-266: features/install -i throws ArrayStoreException"
+        },
+        {
+            "c_hash": "3a3ee160",
+            "date": "2009-04-23 13:47:08 +0000",
+            "comment": "SMX4KNL-268: FeaturesService throws exceptions when started before ConfigAdmin properties are available"
+        },
+        {
+            "c_hash": "92c34ac2",
+            "date": "2009-04-23 17:31:32 +0000",
+            "comment": "SMX4KNL-270 - Starting sshd from command console blocks by default"
+        },
+        {
+            "c_hash": "4a4caefd",
+            "date": "2009-04-23 17:37:01 +0000",
+            "comment": "SMX4KNL-269 - Default port for sshd started from console is different from default at startup"
+        }
+    ]
+}

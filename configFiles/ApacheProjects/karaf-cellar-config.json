@@ -1,0 +1,2308 @@
+{
+    "project": "karaf-cellar",
+    "git_url": "https://github.com/apache/karaf-cellar.git",
+    "last_commit": "d16c37c7",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "b3b410b8",
+            "date": "2011-05-06 17:55:35 +0000",
+            "comment": "[KARAF-615] Create Cellar subproject"
+        },
+        {
+            "c_hash": "7d3a8aee",
+            "date": "2011-05-07 12:04:24 +0000",
+            "comment": "[617] Cellar now uses Hazelcast"
+        },
+        {
+            "c_hash": "11e6fdaa",
+            "date": "2011-05-08 06:41:10 +0000",
+            "comment": "[KARAF-615] Fixed wrong artifact id for cellar cfg artifacts."
+        },
+        {
+            "c_hash": "17718b9b",
+            "date": "2011-05-08 08:03:44 +0000",
+            "comment": "Add .gitignore."
+        },
+        {
+            "c_hash": "21e2a721",
+            "date": "2011-05-08 09:03:24 +0000",
+            "comment": "[KARAF-618] Align Cellar major version with the Karaf one [KARAF-620] Use Karaf parent POM Start to cleanup java to apply Apache checkstyle convention."
+        },
+        {
+            "c_hash": "e3e83ff8",
+            "date": "2011-05-09 07:26:13 +0000",
+            "comment": "[KARAF-620] Cellar use the parent Karaf POM. [KARAF-618] Align Cellar major (and only major) with the Karaf one."
+        },
+        {
+            "c_hash": "a46f25a7",
+            "date": "2011-05-09 10:53:06 +0000",
+            "comment": "Apply Apache checkstyle convertion in all file. Fix some type mistakes."
+        },
+        {
+            "c_hash": "e74ed9e4",
+            "date": "2011-05-09 12:16:18 +0000",
+            "comment": "Fix the Karaf features version in Cellar features descriptor."
+        },
+        {
+            "c_hash": "449f1c2d",
+            "date": "2011-05-09 13:04:29 +0000",
+            "comment": "Fix OSGi package statements."
+        },
+        {
+            "c_hash": "c266cd34",
+            "date": "2011-05-11 17:28:18 +0000",
+            "comment": "[KARAF-631] Removed properties that hide each other. Changed uses of keySet to entrySet. Fixed handling of handler names."
+        },
+        {
+            "c_hash": "b388a3f6",
+            "date": "2011-05-11 17:54:43 +0000",
+            "comment": "Applied some findBugs and PMD hints. Also refactored some of the packages to match the existing package naming scheme."
+        },
+        {
+            "c_hash": "584be701",
+            "date": "2011-05-15 16:27:07 +0000",
+            "comment": "[KARAF-640] Added configuration file, which contains hazelcast instance configuration (mutlicast,tcpip etc). Added a factory for creating Hazelcast service configuration."
+        },
+        {
+            "c_hash": "8260ee8a",
+            "date": "2011-05-15 16:50:42 +0000",
+            "comment": "[KARAF-640] Removed HazelcastConfigurationFactory, which is now obsolete."
+        },
+        {
+            "c_hash": "2cd8734a",
+            "date": "2011-05-19 07:20:57 +0000",
+            "comment": "[KARAF-649] Use maven-enforcer-plugin."
+        },
+        {
+            "c_hash": "d3d74fe4",
+            "date": "2011-05-19 17:37:41 +0000",
+            "comment": "[KARAF-652] HazelcastServiceFactory now checks for null value the properties passed for building an instance. The test now properly initializes the factory."
+        },
+        {
+            "c_hash": "9946a27c",
+            "date": "2011-05-19 18:20:02 +0000",
+            "comment": "[KARAF-628] Added cellar event,synchronizer,listener and handler for replicating bundle states"
+        },
+        {
+            "c_hash": "69d7ddfe",
+            "date": "2011-05-21 18:17:25 +0000",
+            "comment": "[KARAF-628] Bundle listener is now properly registered. Hazelcast module now dynamically imports karaf/cellar packages, so that the user can unistall parts of cellar."
+        },
+        {
+            "c_hash": "368bb0d7",
+            "date": "2011-06-04 19:42:18 +0000",
+            "comment": "[KARAF-616] Added a webconsole plugin for Cellar. Added Group and Node listing to the webconsole plugin. Added the abilitiy to create groups via webconsole."
+        },
+        {
+            "c_hash": "d0bdf1f7",
+            "date": "2011-06-07 07:41:07 +0000",
+            "comment": "Fix features descriptor and style"
+        },
+        {
+            "c_hash": "6766924c",
+            "date": "2011-06-19 05:30:19 +0000",
+            "comment": "[KARAF-674] Fix Karaf version used in Cellar."
+        },
+        {
+            "c_hash": "9459d02e",
+            "date": "2011-06-19 19:43:15 +0000",
+            "comment": "Prepare Cellar POM for the release."
+        },
+        {
+            "c_hash": "9e861e7b",
+            "date": "2011-06-21 12:39:27 +0000",
+            "comment": "Add Cellar documentation layout."
+        },
+        {
+            "c_hash": "ea81476f",
+            "date": "2011-06-22 10:19:30 +0000",
+            "comment": "[KARAF-619] Starting the Cellar documentation."
+        },
+        {
+            "c_hash": "aa53e197",
+            "date": "2011-06-22 12:24:09 +0000",
+            "comment": "[KARAF-619] Resume the Cellar documentation."
+        },
+        {
+            "c_hash": "74385f4e",
+            "date": "2011-06-22 12:32:38 +0000",
+            "comment": "[KARAF-619] Append user guide in the Cellar manual."
+        },
+        {
+            "c_hash": "cb42715e",
+            "date": "2011-06-22 13:53:28 +0000",
+            "comment": "[KARAF-619] Add Cellar architecture documentation."
+        },
+        {
+            "c_hash": "13172990",
+            "date": "2011-06-28 13:10:54 +0000",
+            "comment": "Add Apache Karaf Cellar release files."
+        },
+        {
+            "c_hash": "8275dc7a",
+            "date": "2011-06-28 13:49:56 +0000",
+            "comment": "[KARAF-692] HazelcastServiceFactoryTest stuck waiting the second node."
+        },
+        {
+            "c_hash": "169ff77a",
+            "date": "2011-07-03 14:31:13 +0000",
+            "comment": "[KARAF-616] Added missing javascript files."
+        },
+        {
+            "c_hash": "b8b9e70c",
+            "date": "2011-07-05 08:42:39 +0000",
+            "comment": "[KARAF-701] Add Cellar source distribution and refactoring of the features artifact."
+        },
+        {
+            "c_hash": "51829928",
+            "date": "2011-07-05 09:16:04 +0000",
+            "comment": "[KARAF-701] Fix groups, node, and instance artifacts."
+        },
+        {
+            "c_hash": "3a099c25",
+            "date": "2011-07-05 13:44:32 +0000",
+            "comment": "[KARAF-703] Include correct NOTICE file in Cellar artifacts."
+        },
+        {
+            "c_hash": "c626baa6",
+            "date": "2011-07-07 09:02:30 +0000",
+            "comment": "[KARAF-714] Cellar features descriptor is not correct."
+        },
+        {
+            "c_hash": "fac2bd5b",
+            "date": "2011-07-07 10:05:26 +0000",
+            "comment": "[KARAF-715] Remove Karaf logo from the Cellar manual."
+        },
+        {
+            "c_hash": "2b40ecef",
+            "date": "2011-07-07 10:15:47 +0000",
+            "comment": "[KARAF-716] Fix broken links on Cellar user and architecture guides."
+        },
+        {
+            "c_hash": "92151a99",
+            "date": "2011-07-11 06:11:25 +0000",
+            "comment": "[KARAF-724] cluster:config-propset value argument is not correctly named."
+        },
+        {
+            "c_hash": "4afbcb1e",
+            "date": "2011-07-11 17:42:11 +0000",
+            "comment": "Update the manual upload directory."
+        },
+        {
+            "c_hash": "71a78088",
+            "date": "2011-07-12 08:35:50 +0000",
+            "comment": "[KARAF-732] Fixes to Cellar architecture guide and Cellar user's guide."
+        },
+        {
+            "c_hash": "ad34448d",
+            "date": "2011-07-12 15:00:41 +0000",
+            "comment": "Fix type mistake in under guide."
+        },
+        {
+            "c_hash": "4e2b42d7",
+            "date": "2011-07-22 18:58:41 +0000",
+            "comment": "[KARAF-642] Create an interface for DiscoveryServices. Added a module that provides a cloud discovery service (using blobstore blackboard pattern). Added a recurring task that uses available discovery services to update the tcp/ip member list."
+        },
+        {
+            "c_hash": "1b87b440",
+            "date": "2011-07-23 14:15:17 +0000",
+            "comment": "[KARAF-642] Added a section in the manual that describes cloud discovery."
+        },
+        {
+            "c_hash": "a49c23fb",
+            "date": "2011-07-25 07:40:51 +0000",
+            "comment": "[KARAF-763] Editorial fixes to Cellar documentation."
+        },
+        {
+            "c_hash": "a940b06f",
+            "date": "2011-07-25 10:05:02 +0000",
+            "comment": "[KARAF-761] Update cloud discovery documentation"
+        },
+        {
+            "c_hash": "e8ae4206",
+            "date": "2011-07-26 13:34:00 +0000",
+            "comment": "[KARAF-721] Add Cellar logging statements and source cleanup."
+        },
+        {
+            "c_hash": "f84ea655",
+            "date": "2011-07-27 09:49:59 +0000",
+            "comment": "[KARAF-723] Start the JMX structure for Cellar MBean and JMX support."
+        },
+        {
+            "c_hash": "fbf05d7f",
+            "date": "2011-07-27 09:59:43 +0000",
+            "comment": "[KARAF-777] Extend Karaf version range support."
+        },
+        {
+            "c_hash": "20563fcf",
+            "date": "2011-07-28 08:14:25 +0000",
+            "comment": "[KARAF-723] Add new MBeans in Karaf Cellar."
+        },
+        {
+            "c_hash": "e3abab45",
+            "date": "2011-07-28 12:20:43 +0000",
+            "comment": "[KARAF-723] Remove the local attribute in the Cellar node MBean."
+        },
+        {
+            "c_hash": "2c748720",
+            "date": "2011-07-29 16:24:22 +0000",
+            "comment": "[KARAF-723] Fix issues with codec classes."
+        },
+        {
+            "c_hash": "d0c9780e",
+            "date": "2011-07-29 21:22:02 +0000",
+            "comment": "[KARAF-723] Complete the Cellar MBeans with the config support."
+        },
+        {
+            "c_hash": "f6448dc7",
+            "date": "2011-08-02 05:05:29 +0000",
+            "comment": "[KARAF-723] Add Cellar core MBean to manipulate handler, consumer and producer."
+        },
+        {
+            "c_hash": "e9c55c1e",
+            "date": "2011-08-02 08:12:31 +0000",
+            "comment": "[KARAF-801] Update Cellar NOTICE file to mention jclouds."
+        },
+        {
+            "c_hash": "f21a97ec",
+            "date": "2011-08-02 11:54:01 +0000",
+            "comment": "[KARAF-723] Cleanup Cellar group MBean."
+        },
+        {
+            "c_hash": "1eabeeda",
+            "date": "2011-08-05 02:18:37 +0000",
+            "comment": "[KARAF-804] Fix \"Start Karaf Cellar\" link"
+        },
+        {
+            "c_hash": "94447414",
+            "date": "2011-08-06 10:04:17 +0000",
+            "comment": "[KARAF-807] Add a name to the cellar features.xml"
+        },
+        {
+            "c_hash": "4860a786",
+            "date": "2011-08-13 18:40:36 +0000",
+            "comment": "Fixed a typo inside the cellar bundle event handler."
+        },
+        {
+            "c_hash": "ab4bd0fe",
+            "date": "2011-08-23 22:06:54 +0000",
+            "comment": "[KARAF-821] Added exception handling and logging on local bundle listener when uninstalling cellar."
+        },
+        {
+            "c_hash": "84ca0024",
+            "date": "2011-08-24 12:41:18 +0000",
+            "comment": "[KARAF-825] EventHandlerServiceRegistry now uses reference-listeners instead of looking up all EventHandlers for each invocation."
+        },
+        {
+            "c_hash": "1f44f3c5",
+            "date": "2011-08-25 09:44:44 +0000",
+            "comment": "Fix mistakes in BUILDING and README files"
+        },
+        {
+            "c_hash": "05e58af6",
+            "date": "2011-08-25 10:51:54 +0000",
+            "comment": "[KARAF-830] Splitted cellar feature into cellar and cellar-core features. This is done so that the feature can be resolved by the ObrResolver, which otherwise fails due to service dependencies."
+        },
+        {
+            "c_hash": "d2e5f96c",
+            "date": "2011-08-25 11:37:06 +0000",
+            "comment": "[KARAF-830] Rolled back previous change. Added export service headers for cellar hazelcast module."
+        },
+        {
+            "c_hash": "662d5a46",
+            "date": "2011-08-25 21:42:43 +0000",
+            "comment": "[KARAF-831] Added cluster:group-pick command. Also added output suppression support for all group commands. This is really useful for command composition."
+        },
+        {
+            "c_hash": "422aac3d",
+            "date": "2011-08-26 20:52:08 +0000",
+            "comment": "[KARAF-823] Added a basic implementation of remote services (dosgi)."
+        },
+        {
+            "c_hash": "a73de369",
+            "date": "2011-08-26 20:54:22 +0000",
+            "comment": "[KARAF-823] Added a event transport factory class."
+        },
+        {
+            "c_hash": "1a9faef5",
+            "date": "2011-08-27 10:40:15 +0000",
+            "comment": "[KARAF-823] Added NOTICE file."
+        },
+        {
+            "c_hash": "21e259a3",
+            "date": "2011-08-27 11:58:58 +0000",
+            "comment": "[KARAF-823] Added HazelcastEventTransportFactory, QueueConsumer, QueueProducer and QueueConsumeTask."
+        },
+        {
+            "c_hash": "4f40c436",
+            "date": "2011-08-27 13:54:04 +0000",
+            "comment": "[KARAF-837] Added samples. Added dosgi-greeter sample. Added hazelcast-app sample."
+        },
+        {
+            "c_hash": "82d609de",
+            "date": "2011-08-27 14:09:54 +0000",
+            "comment": "[KARAF-837] Added missing files."
+        },
+        {
+            "c_hash": "d4ca133a",
+            "date": "2011-08-27 16:14:12 +0000",
+            "comment": "[KARAF-837] Fixed some typos in the hazelcast sample README ."
+        },
+        {
+            "c_hash": "9b177fbc",
+            "date": "2011-08-27 16:38:41 +0000",
+            "comment": "[KARAF-837] Removed @author tags from samples."
+        },
+        {
+            "c_hash": "86d844b7",
+            "date": "2011-08-27 16:43:33 +0000",
+            "comment": "[KARAF-837] Fixed some spelling/syntax errors ."
+        },
+        {
+            "c_hash": "82136599",
+            "date": "2011-08-30 16:25:48 +0000",
+            "comment": "[KARAF-823] Added feature dosgi bundle in the cellar feature."
+        },
+        {
+            "c_hash": "ac084a49",
+            "date": "2011-08-31 09:47:02 +0000",
+            "comment": "[KARAF-841] Cellar commands are now available using Equinox"
+        },
+        {
+            "c_hash": "f036bebd",
+            "date": "2011-08-31 14:37:36 +0000",
+            "comment": "[KARAF-839] Fix a NPE raised when pinging an unknown node."
+        },
+        {
+            "c_hash": "b01131af",
+            "date": "2011-09-01 07:45:24 +0000",
+            "comment": "[KARAF-839] Add style enhancements for clearer code."
+        },
+        {
+            "c_hash": "07588eb0",
+            "date": "2011-09-01 13:37:55 +0000",
+            "comment": "[KARAF-843] ImportServiceListener, ExportServiceListener and GroupManager now properly cache consumers & producers and properly remove them when no longer needed\""
+        },
+        {
+            "c_hash": "1466665e",
+            "date": "2011-09-01 19:22:05 +0000",
+            "comment": "[KARAF-844] Removed the global dynamic import on karaf packages and replaced it with dynamic imports per cellar module."
+        },
+        {
+            "c_hash": "39811538",
+            "date": "2011-09-01 20:20:39 +0000",
+            "comment": "[KARAF-844] Removed all karaf related dynamic imports from cellar."
+        },
+        {
+            "c_hash": "c265fcc7",
+            "date": "2011-09-01 20:22:16 +0000",
+            "comment": "[KARAF-844] Fixed karaf.version property."
+        },
+        {
+            "c_hash": "73c8053c",
+            "date": "2011-09-02 13:27:13 +0000",
+            "comment": "[KARAF-842] Added a combined class loader which delegates class loading to bundles that have registered themselves to the class loader. Added a bundle listener that register/unregisters bundles that import hazelcast or cellar packages to the comined class loader."
+        },
+        {
+            "c_hash": "f9600b3b",
+            "date": "2011-09-04 11:15:07 +0000",
+            "comment": "[KARAF-823] ExportServiceListener now properly updates the set of nodes that export each service class."
+        },
+        {
+            "c_hash": "35ac7a31",
+            "date": "2011-09-04 11:18:36 +0000",
+            "comment": "[KARAF-823] Added a shell command which lists the distributed services and the nodes that export each service."
+        },
+        {
+            "c_hash": "15059266",
+            "date": "2011-09-06 11:42:29 +0000",
+            "comment": "[KARAF-851] Upgrade and cleanup Maven plugins"
+        },
+        {
+            "c_hash": "2c7bb96b",
+            "date": "2011-09-07 07:00:55 +0000",
+            "comment": "[KARAF-851] Update and cleanup Maven plugins version"
+        },
+        {
+            "c_hash": "2b434a97",
+            "date": "2011-09-07 07:52:41 +0000",
+            "comment": "Cleanup Cellar POM (checkstyle) and check the dynamic imports."
+        },
+        {
+            "c_hash": "0c2b6601",
+            "date": "2011-09-07 21:19:29 +0000",
+            "comment": "[KARAF-842] Converted LinkedHashMap to ConcurrentHashMap in Cellars combined class loader."
+        },
+        {
+            "c_hash": "e2d3c4b7",
+            "date": "2011-09-07 22:00:46 +0000",
+            "comment": "[KARAF-856] Cellar discovery task now uses a new property for storing the discovered member IPs. Added some checks for avoiding overwrites on the properties used for unicast discovery."
+        },
+        {
+            "c_hash": "b8452026",
+            "date": "2011-09-08 14:12:03 +0000",
+            "comment": "Apply checkstyle, cleanup and minor fix on the DOSGi module."
+        },
+        {
+            "c_hash": "7b318748",
+            "date": "2011-09-12 14:31:03 +0000",
+            "comment": "[KARAF-857] Begin Cellar OBR support."
+        },
+        {
+            "c_hash": "64b6fbe0",
+            "date": "2011-09-12 14:43:39 +0000",
+            "comment": "[KARAF-862] Upgrade to Hazelcast 1.9.4"
+        },
+        {
+            "c_hash": "8a47a843",
+            "date": "2011-09-12 17:56:16 +0000",
+            "comment": "[KARAF-857] Fix OBR import packages."
+        },
+        {
+            "c_hash": "154f8af0",
+            "date": "2011-09-12 19:20:00 +0000",
+            "comment": "[KARAF-857] Move the blueprint descriptors in the right location."
+        },
+        {
+            "c_hash": "1fb7d898",
+            "date": "2011-09-13 03:42:31 +0000",
+            "comment": "[KARAF-857] Begin of the OBR URL support."
+        },
+        {
+            "c_hash": "5af4ac45",
+            "date": "2011-09-13 21:00:11 +0000",
+            "comment": "[KARAF-857] Complete the cluster OBR commands."
+        },
+        {
+            "c_hash": "6d379718",
+            "date": "2011-09-14 08:58:41 +0000",
+            "comment": "[KARAF-857] Fix OBR URL and deploy commands."
+        },
+        {
+            "c_hash": "69a5ab70",
+            "date": "2011-09-14 13:34:25 +0000",
+            "comment": "[KARAF-857] Complete the OBR support by maintaining a bundle distributed set."
+        },
+        {
+            "c_hash": "b0103ba2",
+            "date": "2011-09-14 14:28:45 +0000",
+            "comment": "[KARAF-857] Add the OBR command support."
+        },
+        {
+            "c_hash": "2c7a42b2",
+            "date": "2011-09-15 07:04:43 +0000",
+            "comment": "[KARAF-857] Update the Cellar manual with the OBR support."
+        },
+        {
+            "c_hash": "643a6040",
+            "date": "2011-09-15 08:48:12 +0000",
+            "comment": "[KARAF-857] Add a synchronizer on the OBR URL."
+        },
+        {
+            "c_hash": "62aa5dc0",
+            "date": "2011-09-16 14:10:55 +0000",
+            "comment": "[KARAF-857] Cleanup logging message with consistent severity."
+        },
+        {
+            "c_hash": "ac6faaaf",
+            "date": "2011-09-16 14:47:46 +0000",
+            "comment": "[KARAF-857] Fix the OBR handler name."
+        },
+        {
+            "c_hash": "0db40f1c",
+            "date": "2011-09-16 15:03:39 +0000",
+            "comment": "[KARAF-865] Set HazelcastBundleListener as a SynchronousBundleListener"
+        },
+        {
+            "c_hash": "c6daa8bf",
+            "date": "2011-09-19 07:13:02 +0000",
+            "comment": "[KARAF-863] Rename Cellar commands for consistency"
+        },
+        {
+            "c_hash": "0ca29692",
+            "date": "2011-09-19 07:47:56 +0000",
+            "comment": "[KARAF-863] Cleanup Cellar commands description"
+        },
+        {
+            "c_hash": "10b2d060",
+            "date": "2011-09-20 06:27:52 +0000",
+            "comment": "[KARAF-877] Typo fixes on the Cellar OBR support documentation"
+        },
+        {
+            "c_hash": "81014f78",
+            "date": "2011-09-20 06:35:05 +0000",
+            "comment": "[KARAF-877] Typo fix on the Cellar OBR support documentation"
+        },
+        {
+            "c_hash": "2e5e06c2",
+            "date": "2011-09-28 13:04:36 +0000",
+            "comment": "[KARAF-887] Reference PrinceXML in the Karaf Cellar manual"
+        },
+        {
+            "c_hash": "390e7fa8",
+            "date": "2011-10-04 07:58:25 +0000",
+            "comment": "[KARAF-819] Use full qualified feature name in Cellar"
+        },
+        {
+            "c_hash": "e90ae4da",
+            "date": "2011-10-10 23:00:15 +0000",
+            "comment": "[KARAF-859] Added support for feature repository removal from cellar."
+        },
+        {
+            "c_hash": "bd6164f1",
+            "date": "2011-10-19 10:50:37 +0000",
+            "comment": "[KARAF-949] Upgraded to jclouds 1.1.1."
+        },
+        {
+            "c_hash": "44605e38",
+            "date": "2011-10-19 13:22:41 +0000",
+            "comment": "[KARAF-943] Inject groupManager in the UninstallFeatureCommand to avoid NPE"
+        },
+        {
+            "c_hash": "750d5467",
+            "date": "2011-11-15 08:41:29 +0000",
+            "comment": "[ KARAF-1011] Replaced springdm with blueprint in cellar-hazelcast."
+        },
+        {
+            "c_hash": "77e6005f",
+            "date": "2011-11-15 09:12:13 +0000",
+            "comment": "Changing feature names back to the old style, since the fqn style is not going to be adopted."
+        },
+        {
+            "c_hash": "97c3a6b7",
+            "date": "2011-11-15 09:14:00 +0000",
+            "comment": "[KARAF-1011] Removed springdm from dependency management."
+        },
+        {
+            "c_hash": "06868b1d",
+            "date": "2011-11-15 09:36:38 +0000",
+            "comment": "[KARAF-1012] Updated jclouds to 1.2.1 and jclouds-karaf to 1.2.1_1."
+        },
+        {
+            "c_hash": "c70d3168",
+            "date": "2011-11-15 09:44:52 +0000",
+            "comment": "[KARAF-1012] Replaced jclouds.version with jclouds.karaf.version for jclouds feature."
+        },
+        {
+            "c_hash": "73ff525a",
+            "date": "2011-11-19 13:23:33 +0000",
+            "comment": "Improved shell completion support for cellar group commands."
+        },
+        {
+            "c_hash": "33fe4ac9",
+            "date": "2011-11-20 14:21:57 +0000",
+            "comment": "[KARAF-1011] Fixed a bug that prevented the cellar instance to be propely initialized after restarts."
+        },
+        {
+            "c_hash": "ee5cbfbb",
+            "date": "2011-11-20 14:25:10 +0000",
+            "comment": "Cellar should avoid synching karaf core configuration, by default."
+        },
+        {
+            "c_hash": "0f833049",
+            "date": "2011-11-20 16:50:23 +0000",
+            "comment": "[KARAF-850] Cellar now uses hazelcast.xml under etc folder to provide default Hazelcast configuration. Group and Network configuration are overrided by the configuration Admin."
+        },
+        {
+            "c_hash": "8a931720",
+            "date": "2011-11-20 19:00:57 +0000",
+            "comment": "[KARAF-1026] Added integration tests for installation, multiple instances and basic group actions."
+        },
+        {
+            "c_hash": "3745d3d0",
+            "date": "2011-11-22 21:47:46 +0000",
+            "comment": "[KARAF-1026] Added integration test for cellar features synchronization and commands."
+        },
+        {
+            "c_hash": "c303db02",
+            "date": "2011-11-24 00:23:55 +0000",
+            "comment": "[KARAF-1026] Uninstall cellar feature before destroying child instances."
+        },
+        {
+            "c_hash": "75ca7459",
+            "date": "2011-11-24 11:16:56 +0000",
+            "comment": "Fix the Cellar features name"
+        },
+        {
+            "c_hash": "8fddddeb",
+            "date": "2011-12-01 21:47:45 +0000",
+            "comment": "[KARAF-1076] Fixed issue with group configurations and whitespaces. Added unit tests that checks this case."
+        },
+        {
+            "c_hash": "ed8e3824",
+            "date": "2011-12-02 22:42:10 +0000",
+            "comment": "[KARAF-1079] Fixed Hazlecast configuration manager to properly create sets from configuration properties. Added a unit tests that checks the isUpdated method of the configuratio manager. Added missing license headers."
+        },
+        {
+            "c_hash": "98570a0e",
+            "date": "2011-12-02 22:43:57 +0000",
+            "comment": "[KARAF-1034] Fixed destroy methods so that cellar can cleanly uninstall. Added some lifecycle and npe checks."
+        },
+        {
+            "c_hash": "de072d45",
+            "date": "2011-12-02 22:48:09 +0000",
+            "comment": "[KARAF-1026] Added dosgi integration test. Enhanced operations such as create child, execute command etc. Removed obsolete cluster setup calls. Added missing license headers."
+        },
+        {
+            "c_hash": "458ddcab",
+            "date": "2011-12-03 18:23:54 +0000",
+            "comment": "[KARAF-1081] Added a merge policy for cellar. The merge policy will merge string (comma separated & specially tagged), sets, list and multinode entries."
+        },
+        {
+            "c_hash": "2484132e",
+            "date": "2011-12-03 18:25:24 +0000",
+            "comment": "[KARAF-1081] Reuse CellarUtils inside HazelcastConfigurationManager."
+        },
+        {
+            "c_hash": "d06d81fa",
+            "date": "2011-12-03 18:34:30 +0000",
+            "comment": "[KARAF-1082] HazelcastGroupManager now properlly syncs the group configuration from hazelcast to config admin and vice versa."
+        },
+        {
+            "c_hash": "8b1b20bf",
+            "date": "2011-12-03 18:37:16 +0000",
+            "comment": "[KARAF-1034] Caught an exception that occurs when uninstalling and added a warning message."
+        },
+        {
+            "c_hash": "3caa4eed",
+            "date": "2011-12-03 18:41:43 +0000",
+            "comment": "[KARAF-1083] Blacklisted pax-logging from default cellar sync."
+        },
+        {
+            "c_hash": "d0d92835",
+            "date": "2011-12-03 18:45:22 +0000",
+            "comment": "[KARAF-1082] Added a unit test for the Hazlecast configuration manager that tests isUpdated method. Also removed tests that now belong to CellarUtilsTest."
+        },
+        {
+            "c_hash": "e7a50a89",
+            "date": "2011-12-03 18:49:05 +0000",
+            "comment": "[KARAF-1081] Refactored Group to implement MultiNode interface used by the merge policy."
+        },
+        {
+            "c_hash": "a9218234",
+            "date": "2011-12-03 18:57:55 +0000",
+            "comment": "[KARAF-1026] Fixed the dosgi itest to test 1 and 2 service nodes and also assert loadbalancing is correct."
+        },
+        {
+            "c_hash": "18978b3a",
+            "date": "2011-12-04 18:05:01 +0000",
+            "comment": "[KARAF-1084] Added a simple camel-hazelcast application sample to cellar. Added an integrationt test based on that sample."
+        },
+        {
+            "c_hash": "bb721fbe",
+            "date": "2011-12-05 21:04:58 +0000",
+            "comment": "Checkstyle fix on the Cellar itests POM"
+        },
+        {
+            "c_hash": "4cdc4477",
+            "date": "2011-12-26 16:06:25 +0000",
+            "comment": "[KARAF-823] Cellar will import remote services, even if they are not present at the time of the listener registration."
+        },
+        {
+            "c_hash": "84b0f782",
+            "date": "2011-12-26 16:08:07 +0000",
+            "comment": "[KARAF-1026] Upgraded to Karaf 2.2.5 for the integration tests. Added integration test for cellar configuration sync."
+        },
+        {
+            "c_hash": "73a5627e",
+            "date": "2012-01-03 08:26:00 +0000",
+            "comment": "Add a missing NOTICE file in a sample"
+        },
+        {
+            "c_hash": "11b4f929",
+            "date": "2012-01-16 10:07:46 +0000",
+            "comment": "[KARAF-1155] Upgrade to Apache POM 10"
+        },
+        {
+            "c_hash": "3ed11213",
+            "date": "2012-01-16 13:55:06 +0000",
+            "comment": "Fix Hazelcast configuration manager unit test failure"
+        },
+        {
+            "c_hash": "b8ae2870",
+            "date": "2012-01-16 14:01:32 +0000",
+            "comment": "Typo fix"
+        },
+        {
+            "c_hash": "2a137452",
+            "date": "2012-01-16 14:46:45 +0000",
+            "comment": "Fiwed HazelcastServiceFactoryTest"
+        },
+        {
+            "c_hash": "06a9a9ea",
+            "date": "2012-01-16 15:40:34 +0000",
+            "comment": "Typo fix"
+        },
+        {
+            "c_hash": "3e799f3b",
+            "date": "2012-01-17 13:56:53 +0000",
+            "comment": "Fix checkstyle and reactor order"
+        },
+        {
+            "c_hash": "17ae7a1c",
+            "date": "2012-01-17 13:58:44 +0000",
+            "comment": "Upgrade to Karaf 2.2.5 and align Felix dependencies"
+        },
+        {
+            "c_hash": "f0cc995f",
+            "date": "2012-01-18 08:45:07 +0000",
+            "comment": "Fix the itests"
+        },
+        {
+            "c_hash": "76670b94",
+            "date": "2012-01-18 10:58:33 +0000",
+            "comment": "[KARAF-1156] Upgrade to Hazelcast 1.9.4.6"
+        },
+        {
+            "c_hash": "71d5ed47",
+            "date": "2012-01-19 07:04:05 +0000",
+            "comment": "Various checkstyle fixes"
+        },
+        {
+            "c_hash": "338607b8",
+            "date": "2012-01-25 18:24:36 +0000",
+            "comment": "[KARAF-1147] Fix ClassCastException in Cellar config"
+        },
+        {
+            "c_hash": "ff98972e",
+            "date": "2012-01-25 20:21:03 +0000",
+            "comment": "[KARAF-1170] Upgrade to jclouds 1.3.1"
+        },
+        {
+            "c_hash": "f75282a5",
+            "date": "2012-02-01 07:22:19 +0000",
+            "comment": "[KARAF-861] Add cluster group support for bundle"
+        },
+        {
+            "c_hash": "64fa27b2",
+            "date": "2012-02-01 09:36:22 +0000",
+            "comment": "[KARAF-1171] Console cluster:* commands (naming)"
+        },
+        {
+            "c_hash": "1ecd2336",
+            "date": "2012-02-01 14:49:36 +0000",
+            "comment": "[KARAF-1176] Add support of OSGi events broadcasting"
+        },
+        {
+            "c_hash": "da0c85fd",
+            "date": "2012-02-01 16:09:22 +0000",
+            "comment": "Add cellar-obr feature install itest"
+        },
+        {
+            "c_hash": "e3e01b4d",
+            "date": "2012-02-02 16:18:46 +0000",
+            "comment": "Update itests in order to use \"dynamic\" version for Cellar feature"
+        },
+        {
+            "c_hash": "edf8a896",
+            "date": "2012-02-21 14:01:24 +0000",
+            "comment": "[KARAF-1205] Upgrade to maven-bundle-plugin 2.3.7"
+        },
+        {
+            "c_hash": "65336437",
+            "date": "2012-02-27 08:11:23 +0000",
+            "comment": "Add a topology section in the Cellar manual and fix the manual build"
+        },
+        {
+            "c_hash": "3875e4b9",
+            "date": "2012-02-27 08:36:59 +0000",
+            "comment": "Complete the DOSGi section of the manual"
+        },
+        {
+            "c_hash": "13dc4c84",
+            "date": "2012-02-28 10:50:41 +0000",
+            "comment": "[KARAF-1237] Fix the Cellar bundle OSGi statements for Equinox framework"
+        },
+        {
+            "c_hash": "abe9fbec",
+            "date": "2012-04-11 19:40:09 +0000",
+            "comment": "Remove attic folder"
+        },
+        {
+            "c_hash": "597ab729",
+            "date": "2012-04-11 19:40:46 +0000",
+            "comment": "Remove attic folder"
+        },
+        {
+            "c_hash": "eab6831b",
+            "date": "2012-04-11 19:41:38 +0000",
+            "comment": "Remove attic folder"
+        },
+        {
+            "c_hash": "bc53a88e",
+            "date": "2012-04-11 19:42:32 +0000",
+            "comment": "Remove attic folder"
+        },
+        {
+            "c_hash": "30c6f580",
+            "date": "2012-04-11 19:43:31 +0000",
+            "comment": "Remove attic folder"
+        },
+        {
+            "c_hash": "4dfce8b7",
+            "date": "2012-04-11 19:45:51 +0000",
+            "comment": "Remove attic folder"
+        },
+        {
+            "c_hash": "8cd9dc94",
+            "date": "2012-04-11 19:49:57 +0000",
+            "comment": "Remove attic folder"
+        },
+        {
+            "c_hash": "feca36f3",
+            "date": "2012-04-11 19:51:06 +0000",
+            "comment": "Remove attic folder"
+        },
+        {
+            "c_hash": "7194a278",
+            "date": "2012-04-11 19:54:00 +0000",
+            "comment": "Remove attic folder"
+        },
+        {
+            "c_hash": "eac47060",
+            "date": "2012-04-11 19:55:18 +0000",
+            "comment": "Remove attic folder"
+        },
+        {
+            "c_hash": "2ea0ad4d",
+            "date": "2012-04-11 19:56:26 +0000",
+            "comment": "Remove attic folder"
+        },
+        {
+            "c_hash": "af6ce176",
+            "date": "2012-04-11 19:58:12 +0000",
+            "comment": "Remove attic folder"
+        },
+        {
+            "c_hash": "88b769f1",
+            "date": "2012-04-12 12:18:22 +0000",
+            "comment": "[KARAF-1320] Group argument is now mandatory in the cluster:group-quite command"
+        },
+        {
+            "c_hash": "70b6510b",
+            "date": "2012-04-12 13:03:22 +0000",
+            "comment": "[KARAF-1358] Upgrade to Hazelcast 1.9.4.8"
+        },
+        {
+            "c_hash": "c8573a20",
+            "date": "2012-04-13 13:55:04 +0000",
+            "comment": "[KARAF-1364] Upgrade to slf4j 1.6.4"
+        },
+        {
+            "c_hash": "1eea181a",
+            "date": "2012-04-16 06:56:21 +0000",
+            "comment": "[KARAF-1248] Remove the instance config file to use only hazelcast.xml file"
+        },
+        {
+            "c_hash": "d711e5aa",
+            "date": "2012-04-16 06:57:16 +0000",
+            "comment": "[KARAF-1248] Remove the instance cfg file"
+        },
+        {
+            "c_hash": "c6f388fe",
+            "date": "2012-04-16 08:52:03 +0000",
+            "comment": "[KARAF-1355] Upgrade Cellar trunk to Karaf trunk"
+        },
+        {
+            "c_hash": "6be72b91",
+            "date": "2012-04-16 12:07:51 +0000",
+            "comment": "[KARAF-1355] Update itests for Karaf 3.0.0"
+        },
+        {
+            "c_hash": "5cf522de",
+            "date": "2012-04-16 13:31:27 +0000",
+            "comment": "[KARAF-1355] Use the MBean registration as service instead of the MBeanRegistrer"
+        },
+        {
+            "c_hash": "a7d6eeee",
+            "date": "2012-04-16 14:00:22 +0000",
+            "comment": "[KARAF-1361] Upgrade to Hazelcast 2.0.2"
+        },
+        {
+            "c_hash": "6b8bf656",
+            "date": "2012-04-17 19:31:02 +0000",
+            "comment": "[KARAF-1375] Left justify the feature version"
+        },
+        {
+            "c_hash": "a6342bed",
+            "date": "2012-04-18 12:32:36 +0000",
+            "comment": "[KARAF-1361] Fix fragment host name for Hazelcast 2.0.2"
+        },
+        {
+            "c_hash": "39950885",
+            "date": "2012-04-18 12:42:11 +0000",
+            "comment": "[KARAF-1371] Upgrade to jclouds 1.4.0"
+        },
+        {
+            "c_hash": "e70aec42",
+            "date": "2012-04-18 15:12:31 +0000",
+            "comment": "[KARAF-1236] Update the groups member during group manager destroy"
+        },
+        {
+            "c_hash": "a06006b1",
+            "date": "2012-04-18 17:04:35 +0000",
+            "comment": "[KARAF-1194] Improve the message displayed in case of timeout during a ping"
+        },
+        {
+            "c_hash": "b04d641c",
+            "date": "2012-04-19 12:37:32 +0000",
+            "comment": "[KARAF-1308] Refactoring of the group-pick command"
+        },
+        {
+            "c_hash": "8db6de64",
+            "date": "2012-04-19 13:03:16 +0000",
+            "comment": "[KARAF-1332] Fix usage of the group-pick count option"
+        },
+        {
+            "c_hash": "2192904a",
+            "date": "2012-04-20 15:20:37 +0000",
+            "comment": "[KARAF-1383] Fix warning messages in Cellar bundle bundle"
+        },
+        {
+            "c_hash": "df1cbed8",
+            "date": "2012-04-20 15:20:46 +0000",
+            "comment": "[KARAF-1383] Fix warning messages in Cellar cloud bundle"
+        },
+        {
+            "c_hash": "1ba9c61f",
+            "date": "2012-04-20 15:20:54 +0000",
+            "comment": "[KARAF-1383] Fix warning messages in Cellar config bundle"
+        },
+        {
+            "c_hash": "f78fe9d9",
+            "date": "2012-04-20 15:21:03 +0000",
+            "comment": "[KARAF-1383] Fix warning messages in Cellar core bundle"
+        },
+        {
+            "c_hash": "e3205795",
+            "date": "2012-04-20 15:21:10 +0000",
+            "comment": "[KARAF-1383] Fix warning messages in Cellar DOSGi bundle"
+        },
+        {
+            "c_hash": "e24f5364",
+            "date": "2012-04-20 15:21:19 +0000",
+            "comment": "[KARAF-1383] Fix warning messages in Cellar Event bundle"
+        },
+        {
+            "c_hash": "e184d896",
+            "date": "2012-04-20 15:21:27 +0000",
+            "comment": "[KARAF-1383] Fix warning messages in Cellar Features bundle"
+        },
+        {
+            "c_hash": "d79c52ad",
+            "date": "2012-04-20 15:21:35 +0000",
+            "comment": "[KARAF-1383] Fix warning messages in Cellar Hazelcast bundle"
+        },
+        {
+            "c_hash": "2373f1c3",
+            "date": "2012-04-20 15:21:43 +0000",
+            "comment": "[KARAF-1383] Fix warning messages in Cellar Management bundle"
+        },
+        {
+            "c_hash": "2db2e0d0",
+            "date": "2012-04-20 15:21:51 +0000",
+            "comment": "[KARAF-1383] Fix warning messages in Cellar OBR bundle"
+        },
+        {
+            "c_hash": "b27454a0",
+            "date": "2012-04-20 15:22:00 +0000",
+            "comment": "[KARAF-1383] Fix warning messages in Cellar shell bundle"
+        },
+        {
+            "c_hash": "67a85a20",
+            "date": "2012-04-21 12:40:49 +0000",
+            "comment": "[KARAF-1383] Fix warning messages in Cellar utils bundle"
+        },
+        {
+            "c_hash": "37c125ae",
+            "date": "2012-04-21 12:41:16 +0000",
+            "comment": "[KARAF-1383] Fix warning messages in Cellar webconsole bundle"
+        },
+        {
+            "c_hash": "b8b0c7c7",
+            "date": "2012-04-21 12:42:04 +0000",
+            "comment": "[KARAF-1383] Fix warning messages in Cellar samples bundles"
+        },
+        {
+            "c_hash": "136fe562",
+            "date": "2012-04-25 12:00:29 +0000",
+            "comment": "[KARAF-1310] Fox CellarNodeMBean to display all cluster nodes in getNodes()"
+        },
+        {
+            "c_hash": "787d6657",
+            "date": "2012-04-25 12:44:59 +0000",
+            "comment": "[KARAF-1313] Set group argument as required in cluster:group-create command"
+        },
+        {
+            "c_hash": "86942b76",
+            "date": "2012-04-25 14:21:55 +0000",
+            "comment": "[KARAF-1325] Fix wildcard when pattern is null or empty"
+        },
+        {
+            "c_hash": "934d8d95",
+            "date": "2012-04-25 14:49:04 +0000",
+            "comment": "[KARAF-1325] Refactore the wildcard matcher to use regex"
+        },
+        {
+            "c_hash": "a22c11a7",
+            "date": "2012-04-25 16:28:17 +0000",
+            "comment": "[KARAF-1397] Add cluster group check in all Cellar commands"
+        },
+        {
+            "c_hash": "4469169b",
+            "date": "2012-04-26 06:12:36 +0000",
+            "comment": "[KARAF-1399] Apply consistent cinematic in Cellar OBR"
+        },
+        {
+            "c_hash": "d71737b6",
+            "date": "2012-04-26 07:29:34 +0000",
+            "comment": "[KARAF-1345] Check the feature handler switch status"
+        },
+        {
+            "c_hash": "d7138c89",
+            "date": "2012-04-26 13:42:36 +0000",
+            "comment": "[KARAF-1383] Fix build warning messages in Cellar webconsole"
+        },
+        {
+            "c_hash": "8730303f",
+            "date": "2012-04-27 08:48:12 +0000",
+            "comment": "[KARAF-1412] Handler argument is required in cluster:handler-stop and cluster:handler-start commands"
+        },
+        {
+            "c_hash": "b197304b",
+            "date": "2012-04-27 13:33:53 +0000",
+            "comment": "[KARAF-1417] Mimic feature:list in cluster:feature-list command"
+        },
+        {
+            "c_hash": "a2b3f812",
+            "date": "2012-04-27 15:17:39 +0000",
+            "comment": "[KARAF-1419] Populate bundle location in cluster:bundle-* commands in order to avoid a NPE in the BundleEventHandler"
+        },
+        {
+            "c_hash": "a8038cf4",
+            "date": "2012-04-27 16:03:11 +0000",
+            "comment": "Fix checkstype typo"
+        },
+        {
+            "c_hash": "4d604e2e",
+            "date": "2012-04-28 19:55:44 +0000",
+            "comment": "[KARAF-1401] Warn when switch is OFF, event are not forced anymore"
+        },
+        {
+            "c_hash": "940626c8",
+            "date": "2012-04-30 08:35:03 +0000",
+            "comment": "[KARAF-1239] Use the local node event producer and check the producer status"
+        },
+        {
+            "c_hash": "dbfd0b63",
+            "date": "2012-04-30 08:59:44 +0000",
+            "comment": "[KARAF-1426] Handler checks if the cluster events is for the local node/group"
+        },
+        {
+            "c_hash": "e6c8868c",
+            "date": "2012-04-30 14:04:52 +0000",
+            "comment": "[KARAF-1426] Add check in the handlers"
+        },
+        {
+            "c_hash": "49c49e59",
+            "date": "2012-04-30 15:50:22 +0000",
+            "comment": "[KARAF-1420] cluster:bundle-* commands look like bundle:* commands"
+        },
+        {
+            "c_hash": "b7db04d8",
+            "date": "2012-04-30 17:19:01 +0000",
+            "comment": "[KARAF-1413] Fix handler status rendering and check"
+        },
+        {
+            "c_hash": "ff41934a",
+            "date": "2012-04-30 19:30:33 +0000",
+            "comment": "[KARAF-1409] Fix the ManageGroupCommandHandler when the event source group is not set"
+        },
+        {
+            "c_hash": "6d85db86",
+            "date": "2012-05-03 12:53:31 +0000",
+            "comment": "[KARAF-1405] Refactore of the config layer [KARAF-1190] Remove property filtering"
+        },
+        {
+            "c_hash": "dad46688",
+            "date": "2012-05-03 15:40:27 +0000",
+            "comment": "[KARAF-1344] Manager config deletion event"
+        },
+        {
+            "c_hash": "8370f787",
+            "date": "2012-05-03 17:28:08 +0000",
+            "comment": "[KARAF-1314] Check if a feature exists in the given group for cluster:feature-* commands"
+        },
+        {
+            "c_hash": "ffb62e61",
+            "date": "2012-05-04 07:32:58 +0000",
+            "comment": "[KARAF-1316] Check if nodes exist in the cluster:consumer-* commands"
+        },
+        {
+            "c_hash": "fb433597",
+            "date": "2012-05-04 07:50:57 +0000",
+            "comment": "[KARAF-1316] Check if nodes exists in the cluster:handler-* commands"
+        },
+        {
+            "c_hash": "cc0daa8f",
+            "date": "2012-05-04 08:02:48 +0000",
+            "comment": "[KARAF-1316] Check if nodes exists in the cluster:producer-* commands"
+        },
+        {
+            "c_hash": "22911b60",
+            "date": "2012-05-04 08:30:55 +0000",
+            "comment": "[KARAF-1316] Check if groups exist in the cluster:group-* commands"
+        },
+        {
+            "c_hash": "04d39ffc",
+            "date": "2012-05-04 12:52:46 +0000",
+            "comment": "[KARAF-1316] Apply the same checks in the MBeans"
+        },
+        {
+            "c_hash": "228fa001",
+            "date": "2012-05-04 13:00:40 +0000",
+            "comment": "[KARAF-1176] Filter log warn message in Cellar event"
+        },
+        {
+            "c_hash": "0478bd5d",
+            "date": "2012-05-04 13:31:12 +0000",
+            "comment": "[KARAF-1319] Check if a group is empty (no node) before deleting"
+        },
+        {
+            "c_hash": "399e7541",
+            "date": "2012-05-05 06:36:58 +0000",
+            "comment": "[KARAF-1321] Improve the display of cluster groups"
+        },
+        {
+            "c_hash": "80d821b5",
+            "date": "2012-05-05 16:29:53 +0000",
+            "comment": "[KARAF-1437] Check if a group already exists before creating"
+        },
+        {
+            "c_hash": "3c6fb2ad",
+            "date": "2012-05-06 06:32:45 +0000",
+            "comment": "[KARAF-1330] Fix the status sent by cluster:uninstall-feature command"
+        },
+        {
+            "c_hash": "795077a5",
+            "date": "2012-05-06 18:46:46 +0000",
+            "comment": "[KARAF-1403] Add cluster:config-propappend command"
+        },
+        {
+            "c_hash": "3572c785",
+            "date": "2012-05-07 11:47:14 +0000",
+            "comment": "[KARAF-1294] Improve features/repositories management and add related commands"
+        },
+        {
+            "c_hash": "737c2b82",
+            "date": "2012-05-07 11:47:30 +0000",
+            "comment": "[KARAF-1294] Fix cluster feature commands"
+        },
+        {
+            "c_hash": "aed5352b",
+            "date": "2012-05-07 12:54:49 +0000",
+            "comment": "[KARAF-1337] Mimic config:list output in cluster:config-list"
+        },
+        {
+            "c_hash": "3a949bdd",
+            "date": "2012-05-07 12:55:03 +0000",
+            "comment": "[KARAF-1337] Fix cluster:config-list command option"
+        },
+        {
+            "c_hash": "0c9a7409",
+            "date": "2012-05-07 16:48:38 +0000",
+            "comment": "[KARAF-1424] Add CellarOBRMBean and fix issues in cluster:obr* commands"
+        },
+        {
+            "c_hash": "ead59278",
+            "date": "2012-05-07 17:27:08 +0000",
+            "comment": "[KARAF-1435] Fix TCCL in bundle module [KARAF-1423] Add the CellarBundleMBean"
+        },
+        {
+            "c_hash": "444c460a",
+            "date": "2012-05-07 17:32:06 +0000",
+            "comment": "[KARAF-1428] Remove org.apache.karaf.cellar.instance config from the blacklist set (no more used)"
+        },
+        {
+            "c_hash": "c1354ca7",
+            "date": "2012-05-07 20:20:14 +0000",
+            "comment": "[KARAF-1436] CellarFeatureMBean now updates the distributed map"
+        },
+        {
+            "c_hash": "95201691",
+            "date": "2012-05-08 07:01:09 +0000",
+            "comment": "[KARAF-1433] Fix listConfig operation in the CellarConfigMBean"
+        },
+        {
+            "c_hash": "4f051d32",
+            "date": "2012-05-09 08:07:35 +0000",
+            "comment": "Improve cluster:node-ping output"
+        },
+        {
+            "c_hash": "0aa1e400",
+            "date": "2012-05-09 08:41:01 +0000",
+            "comment": "[KARAF-1453] Fix handler command handler to turn on/off the given handler"
+        },
+        {
+            "c_hash": "0f4b2c32",
+            "date": "2012-05-09 09:17:38 +0000",
+            "comment": "[KARAF-1413] Improve cluster:handler-status output"
+        },
+        {
+            "c_hash": "6e9c4a35",
+            "date": "2012-05-09 09:23:46 +0000",
+            "comment": "[KARAF-1413] Fix align of handler name in the cluster:handler-* output"
+        },
+        {
+            "c_hash": "00b288fd",
+            "date": "2012-05-09 11:50:31 +0000",
+            "comment": "[KARAF-1429] Check if a feature cluster event is allowed outbound in cluster:feature-* commands"
+        },
+        {
+            "c_hash": "974bbff8",
+            "date": "2012-05-09 12:46:21 +0000",
+            "comment": "[KARAF-1429] cluster:bundle-* commands check if the cluster event is allowed outbound"
+        },
+        {
+            "c_hash": "bfff789e",
+            "date": "2012-05-09 13:15:20 +0000",
+            "comment": "[KARAF-1429] cluster:config-* commands now check if the pid is allowed outbound"
+        },
+        {
+            "c_hash": "a1d10f70",
+            "date": "2012-05-09 14:22:42 +0000",
+            "comment": "[KARAF-1429] Check if URL/bundle ID are allowed outbound in cluster:obr* commands"
+        },
+        {
+            "c_hash": "89dc36f3",
+            "date": "2012-05-09 17:55:32 +0000",
+            "comment": "[KARAF-1429] Check is the bundle location is allowed outbound in the CellarBundleMBean"
+        },
+        {
+            "c_hash": "abeeac54",
+            "date": "2012-05-10 06:03:23 +0000",
+            "comment": "[KARAF-1429] CellarConfigMBean now check if pid is allowed outbound"
+        },
+        {
+            "c_hash": "531b4c35",
+            "date": "2012-05-10 06:19:57 +0000",
+            "comment": "[KARAF-1429] CellarFeatureMBean now checks if feature is allowed outbound"
+        },
+        {
+            "c_hash": "6f072cdc",
+            "date": "2012-05-10 07:37:25 +0000",
+            "comment": "[KARAF-1429] CellarOBRMBean now check if the URL or bundle ID is allowed outbound"
+        },
+        {
+            "c_hash": "29723dfe",
+            "date": "2012-05-10 09:43:58 +0000",
+            "comment": "[KARAF-1460] CellarFeatureMBean now provides repository operations"
+        },
+        {
+            "c_hash": "9e299a0a",
+            "date": "2012-05-11 08:00:42 +0000",
+            "comment": "[KARAF-1463] Reintroduce config filtering, specially for the karaf.home property"
+        },
+        {
+            "c_hash": "f21621d1",
+            "date": "2012-05-11 08:57:18 +0000",
+            "comment": "[KARAF-1465] Populate the local group in cluster:group-set command"
+        },
+        {
+            "c_hash": "fbde3b76",
+            "date": "2012-05-11 11:55:41 +0000",
+            "comment": "Cleanup some cluster:* commands output"
+        },
+        {
+            "c_hash": "f8fffc5c",
+            "date": "2012-05-11 12:57:56 +0000",
+            "comment": "[KARAF-1463] Exclude some config properties from the sync"
+        },
+        {
+            "c_hash": "457d2af7",
+            "date": "2012-05-11 13:23:44 +0000",
+            "comment": "Minor fix on the cluster:node-list output"
+        },
+        {
+            "c_hash": "2d4477c5",
+            "date": "2012-05-11 13:40:02 +0000",
+            "comment": "[KARAF-1464] Tweak Cellar bundles start-level"
+        },
+        {
+            "c_hash": "5a551fc8",
+            "date": "2012-05-11 14:59:21 +0000",
+            "comment": "Ignore InterruptedException in the cluster:node-ping command"
+        },
+        {
+            "c_hash": "749abd9c",
+            "date": "2012-05-11 15:50:46 +0000",
+            "comment": "[KARAF-1321] cluster:group-* commands now display a complete summary of the group map"
+        },
+        {
+            "c_hash": "57ab939c",
+            "date": "2012-05-11 17:07:49 +0000",
+            "comment": "[KARAF-1332] Fix an issue when the user define a count greater than the source group nodes"
+        },
+        {
+            "c_hash": "afa7b8a0",
+            "date": "2012-05-14 06:58:40 +0000",
+            "comment": "[KARAF-1434] Introduce the karaf.cellar.sync property to broadcast cluster event depending of the origin"
+        },
+        {
+            "c_hash": "c266fcda",
+            "date": "2012-05-15 08:10:48 +0000",
+            "comment": "[KARAF-1465] Fix cluster:group-set command for remote node"
+        },
+        {
+            "c_hash": "1469873a",
+            "date": "2012-05-15 11:36:15 +0000",
+            "comment": "Fix issue with config delete event"
+        },
+        {
+            "c_hash": "1a1adeb6",
+            "date": "2012-05-15 13:32:24 +0000",
+            "comment": "Populate config properties instead of overriding the whole config"
+        },
+        {
+            "c_hash": "98d5f3f2",
+            "date": "2012-05-15 16:47:56 +0000",
+            "comment": "Avoid to override definition when adding a feature repository"
+        },
+        {
+            "c_hash": "a213b2f6",
+            "date": "2012-05-16 07:57:22 +0000",
+            "comment": "[KARAF-1480] Add creation of the cfg file"
+        },
+        {
+            "c_hash": "ecec49e1",
+            "date": "2012-05-16 11:56:37 +0000",
+            "comment": "Ignore fileinstall UUID temp files"
+        },
+        {
+            "c_hash": "a1c6e8d3",
+            "date": "2012-05-16 15:21:30 +0000",
+            "comment": "[KARAF-1474] Fix the child node extraction in itests"
+        },
+        {
+            "c_hash": "6265408f",
+            "date": "2012-08-04 16:13:43 +0000",
+            "comment": "[KARAF-1707] CellarNodeMBean now populates a local flag in the node list"
+        },
+        {
+            "c_hash": "3bbc494c",
+            "date": "2012-08-13 01:22:23 +0000",
+            "comment": "[KARAF-1708] Fix Cellar management for Karaf 3.0"
+        },
+        {
+            "c_hash": "e953abe9",
+            "date": "2012-08-14 03:22:21 +0000",
+            "comment": "[KARAF-1720] Upgrade to joda-time 2.1"
+        },
+        {
+            "c_hash": "29b1897a",
+            "date": "2012-08-14 03:23:29 +0000",
+            "comment": "[KARAF-1721] Upgrade to Hazelcast 2.2"
+        },
+        {
+            "c_hash": "4cf0175c",
+            "date": "2012-09-03 15:09:02 +0000",
+            "comment": "[KARAF-1726] Support noClean and noRefresh options for Cellar features installation"
+        },
+        {
+            "c_hash": "dcad6037",
+            "date": "2012-10-12 14:05:08 +0000",
+            "comment": "[KARAF-1918] Upgrade to OSGi Compendium 4.3.0"
+        },
+        {
+            "c_hash": "83e252cc",
+            "date": "2012-10-16 13:53:11 +0000",
+            "comment": "Update .gitignore"
+        },
+        {
+            "c_hash": "b1e47abc",
+            "date": "2012-10-18 08:30:13 +0000",
+            "comment": "[KARAF-1948] Upgrade to Apache 11"
+        },
+        {
+            "c_hash": "21242f10",
+            "date": "2012-10-24 11:42:43 +0000",
+            "comment": "[KARAF-1971] Fix bundle whitelist/blacklist"
+        },
+        {
+            "c_hash": "10605bb5",
+            "date": "2012-10-24 11:51:41 +0000",
+            "comment": "[KARAF-1971] Style fix in Cellar groups configuration file"
+        },
+        {
+            "c_hash": "9477072b",
+            "date": "2012-10-25 15:11:04 +0000",
+            "comment": "[KARAF-1974] Fix bundle state in the distributed map"
+        },
+        {
+            "c_hash": "ec58af62",
+            "date": "2012-10-25 17:09:52 +0000",
+            "comment": "[KARAF-1975] Fix CellarBundleMBean getBundles() operation"
+        },
+        {
+            "c_hash": "561842a5",
+            "date": "2012-10-29 09:45:57 +0000",
+            "comment": "[KARAF-1492] Avoid to attach a config PID to the Cellar config bundle"
+        },
+        {
+            "c_hash": "159e8719",
+            "date": "2012-10-29 20:44:48 +0000",
+            "comment": "[KARAF-1982] Cellar features handler now updates the bundles distributed map"
+        },
+        {
+            "c_hash": "962b9c4b",
+            "date": "2012-10-30 17:19:52 +0000",
+            "comment": "[KARAF-1414] Add persistency of the producer"
+        },
+        {
+            "c_hash": "111dd88e",
+            "date": "2012-10-31 07:17:04 +0000",
+            "comment": "[KARAF-1414] Add loading of producer status from configuration admin"
+        },
+        {
+            "c_hash": "b2743b4d",
+            "date": "2012-10-31 09:48:10 +0000",
+            "comment": "[KARAF-1414] Remove warning log in the producer getSwitch()"
+        },
+        {
+            "c_hash": "9e7c978d",
+            "date": "2012-10-31 10:53:36 +0000",
+            "comment": "[KARAF-1414] Add persistence for cluster consumer"
+        },
+        {
+            "c_hash": "192ecc28",
+            "date": "2012-11-02 08:59:18 +0000",
+            "comment": "[KARAF-1414] Add persistence for event handlers"
+        },
+        {
+            "c_hash": "8174544f",
+            "date": "2012-11-03 12:44:15 +0000",
+            "comment": "[KARAF-1466] Persist group in configuration admin"
+        },
+        {
+            "c_hash": "74e093f0",
+            "date": "2012-11-05 11:49:16 +0000",
+            "comment": "[KARAF-1998] Remove the karaf.cellar.sync property and compare the distributed and local configurations"
+        },
+        {
+            "c_hash": "b3d06e29",
+            "date": "2012-11-05 14:03:40 +0000",
+            "comment": "[KARAF-1484] Add cluster:config-propdel command (and corresponding operation in the CellarConfigMBean)"
+        },
+        {
+            "c_hash": "6c45f227",
+            "date": "2012-11-05 14:23:32 +0000",
+            "comment": "Checkstyle fix"
+        },
+        {
+            "c_hash": "0c94dca3",
+            "date": "2012-11-05 17:54:23 +0000",
+            "comment": "[KARAF-1999] Fix classloader issue around BundleState"
+        },
+        {
+            "c_hash": "6d912425",
+            "date": "2012-11-05 18:18:28 +0000",
+            "comment": "Improve the default Cellar configuration files"
+        },
+        {
+            "c_hash": "286512a5",
+            "date": "2012-11-06 19:26:08 +0000",
+            "comment": "[KARAF-2001] Add PID filtering on cluster:config-list command"
+        },
+        {
+            "c_hash": "9b8b8eeb",
+            "date": "2012-11-07 07:17:52 +0000",
+            "comment": "[KARAF-1971] Fix default bundle whitelist/blacklist"
+        },
+        {
+            "c_hash": "e23a4fa5",
+            "date": "2012-11-07 11:59:56 +0000",
+            "comment": "[KARAF-2004] Add support of Cellar bundles selector"
+        },
+        {
+            "c_hash": "28b7a851",
+            "date": "2012-11-09 16:55:26 +0000",
+            "comment": "Fix CellarBundleMBean if the bundle name/version is malformed"
+        },
+        {
+            "c_hash": "28dbe3ed",
+            "date": "2012-11-20 08:51:10 +0000",
+            "comment": "Ignore eclipse and maven resources"
+        },
+        {
+            "c_hash": "13ea58d3",
+            "date": "2012-11-21 13:54:58 +0000",
+            "comment": "[KARAF-2021] Change the log level of the local group check messages"
+        },
+        {
+            "c_hash": "fc0526e1",
+            "date": "2012-11-21 21:19:06 +0000",
+            "comment": "[KARAF-2023] Add cluster:sync command and sync operation in the CellarMBean"
+        },
+        {
+            "c_hash": "72a3b3c4",
+            "date": "2012-11-26 09:43:23 +0000",
+            "comment": "[KARAF-2031] Use Bundle-Name and Bundle-SymbolicName and mimic Karaf bundle:* commands"
+        },
+        {
+            "c_hash": "503ad1ed",
+            "date": "2012-11-26 10:46:28 +0000",
+            "comment": "[KARAF-2032] Add Cellar bundles in the default blacklist to avoid restart issue"
+        },
+        {
+            "c_hash": "d40241df",
+            "date": "2012-11-26 17:53:17 +0000",
+            "comment": "[KARAF-2033] Local listeners now check if sync is enable"
+        },
+        {
+            "c_hash": "449c6022",
+            "date": "2012-11-26 21:30:44 +0000",
+            "comment": "Remove sync check in the local listeners (postponed to next Cellar release)"
+        },
+        {
+            "c_hash": "1082598f",
+            "date": "2012-11-26 21:37:08 +0000",
+            "comment": "Exclude apache, ops4j, codehaus, springframeworks bundle from sync by default"
+        },
+        {
+            "c_hash": "2adc8a2a",
+            "date": "2012-11-28 13:23:46 +0000",
+            "comment": "[KARAF-2038] Do not register the default group by default"
+        },
+        {
+            "c_hash": "28d9285b",
+            "date": "2012-11-29 14:16:42 +0000",
+            "comment": "[KARAF-2041] Refactore the Cellar LocalBundleListener to use a SynchronousBundleListener and unregister itself when receiving STOPPED or STOPPING event from the framework (bundle ID 0)."
+        },
+        {
+            "c_hash": "25137bcd",
+            "date": "2012-11-29 21:12:58 +0000",
+            "comment": "[KARAF-2042] Add org.apache.felix.fileinstall* PID in the default config.blacklist"
+        },
+        {
+            "c_hash": "89da4bfc",
+            "date": "2012-12-11 15:08:18 +0000",
+            "comment": "[KARAF-2055] Upgrade to Apache POM 12"
+        },
+        {
+            "c_hash": "12e4e45c",
+            "date": "2012-12-18 14:30:50 +0000",
+            "comment": "[KARAF-2057] Fix LICENSE and NOTICE files"
+        },
+        {
+            "c_hash": "3525b58a",
+            "date": "2013-01-13 18:18:59 +0000",
+            "comment": "[KARAF-2106] Remove hazelcast-monitor feature as the hazelcast monitoring bundle is no more maintained"
+        },
+        {
+            "c_hash": "d88f3f19",
+            "date": "2013-01-13 18:44:47 +0000",
+            "comment": "[KARAF-2107] Upgrade to slf4j 1.7.2"
+        },
+        {
+            "c_hash": "812fae9c",
+            "date": "2013-01-14 01:51:57 +0000",
+            "comment": "Update to Easymock 3.1"
+        },
+        {
+            "c_hash": "e7290bf6",
+            "date": "2013-01-14 02:08:45 +0000",
+            "comment": "Update to Felix Bundlerepository 1.6.6"
+        },
+        {
+            "c_hash": "0d900e65",
+            "date": "2013-01-14 19:49:00 +0000",
+            "comment": "[KARAF-1981] Upgrade to Felix ConfigAdmin 1.6.0"
+        },
+        {
+            "c_hash": "b4ea99ab",
+            "date": "2013-01-14 21:39:30 +0000",
+            "comment": "[KARAF-1535] Upgrade to Felix Utils 1.2.0"
+        },
+        {
+            "c_hash": "60c7bab6",
+            "date": "2013-01-14 21:50:24 +0000",
+            "comment": "[KARAF-1745] Upgrade to Felix WebConsole 4.0.0"
+        },
+        {
+            "c_hash": "bbf1a4b9",
+            "date": "2013-01-14 22:35:33 +0000",
+            "comment": "[KARAF-1184] Upgrade to JUnit 4.10"
+        },
+        {
+            "c_hash": "ff7ea461",
+            "date": "2013-01-14 22:47:44 +0000",
+            "comment": "[KARAF-1977] Upgrade to OSGi 4.3.1"
+        },
+        {
+            "c_hash": "596654f1",
+            "date": "2013-01-14 23:04:15 +0000",
+            "comment": "[KARAF-2096] Upgrade to Pax Exam 2.6.0"
+        },
+        {
+            "c_hash": "a633ae45",
+            "date": "2013-01-23 03:13:18 +0000",
+            "comment": "[KARAF-2133] Fix version filtering in the manual title"
+        },
+        {
+            "c_hash": "678e62cd",
+            "date": "2013-01-29 15:24:50 +0000",
+            "comment": "[KARAF-2141] cluster:producer/handler/consumer now display the local node"
+        },
+        {
+            "c_hash": "05f5c171",
+            "date": "2013-02-11 14:28:32 +0000",
+            "comment": "Remove empty folder"
+        },
+        {
+            "c_hash": "8f430ba1",
+            "date": "2013-02-11 14:29:28 +0000",
+            "comment": "Remove empty folder"
+        },
+        {
+            "c_hash": "71e3b834",
+            "date": "2013-02-11 14:30:12 +0000",
+            "comment": "Remove empty folder"
+        },
+        {
+            "c_hash": "dc773fa7",
+            "date": "2013-02-11 14:32:30 +0000",
+            "comment": "Remove empty folder"
+        },
+        {
+            "c_hash": "7a698a21",
+            "date": "2013-02-11 14:33:17 +0000",
+            "comment": "Remove empty folder"
+        },
+        {
+            "c_hash": "9b859d60",
+            "date": "2013-02-11 14:34:38 +0000",
+            "comment": "Remove empty folder"
+        },
+        {
+            "c_hash": "4742023a",
+            "date": "2013-02-11 14:35:31 +0000",
+            "comment": "Remove empty folder"
+        },
+        {
+            "c_hash": "a0ffbcab",
+            "date": "2013-02-11 14:37:46 +0000",
+            "comment": "Remove empty folder"
+        },
+        {
+            "c_hash": "094cd480",
+            "date": "2013-02-11 14:38:29 +0000",
+            "comment": "Remove empty folder"
+        },
+        {
+            "c_hash": "57ad92a2",
+            "date": "2013-02-11 14:39:12 +0000",
+            "comment": "Remove empty folder"
+        },
+        {
+            "c_hash": "579e43ec",
+            "date": "2013-02-21 15:56:17 +0000",
+            "comment": "[KARAF-2113] In the RepositoryEventHandler, check the local status of a features repository before modifying the features service"
+        },
+        {
+            "c_hash": "25e3e6c2",
+            "date": "2013-02-21 16:25:43 +0000",
+            "comment": "[KARAF-2126] Remove references to pax-url-* dependencies"
+        },
+        {
+            "c_hash": "09c6aab0",
+            "date": "2013-02-21 16:39:30 +0000",
+            "comment": "[KARAF-2202] Define the Felix WebConsole version range"
+        },
+        {
+            "c_hash": "0f60b3e8",
+            "date": "2013-02-26 17:10:18 +0000",
+            "comment": "Cleanup OSGi statements in DOSGi and Cellar Hazelcast bundles"
+        },
+        {
+            "c_hash": "87b9905d",
+            "date": "2013-02-27 10:49:21 +0000",
+            "comment": "[KARAF-2210] Upgrade to Hazelcast 2.5"
+        },
+        {
+            "c_hash": "9cff10ea",
+            "date": "2013-03-15 11:02:17 +0000",
+            "comment": "[KARAF-2218] Manual now publish to main site"
+        },
+        {
+            "c_hash": "61b2ccae",
+            "date": "2013-03-19 21:06:33 +0000",
+            "comment": "[KARAF-2111] - Cellar should use karaf-pax-exam --- also added svn:ignore for .classpath"
+        },
+        {
+            "c_hash": "2e1c74e1",
+            "date": "2013-03-19 22:36:11 +0000",
+            "comment": "[KARAF-1249] - Provide more fine grained Cellar features ---- [KARAF-2203] - hazelcast.xml file should be installed by the hazelcast feature"
+        },
+        {
+            "c_hash": "e626544f",
+            "date": "2013-03-19 22:48:23 +0000",
+            "comment": "[KARAF-1474] - Fix Cellar itests ---- first steps to fix the itests ...."
+        },
+        {
+            "c_hash": "4c28932a",
+            "date": "2013-03-19 23:40:13 +0000",
+            "comment": "[KARAF-1474] - Fix Cellar itests ---- some more ..."
+        },
+        {
+            "c_hash": "849aae20",
+            "date": "2013-03-20 00:21:30 +0000",
+            "comment": "Minor tweaks for better logging"
+        },
+        {
+            "c_hash": "1b97fe24",
+            "date": "2013-03-26 16:35:35 +0000",
+            "comment": "[KARAF-2251] - Cellar: features:install ignores incoming and outgoing blacklist"
+        },
+        {
+            "c_hash": "1593330a",
+            "date": "2013-03-26 22:27:06 +0000",
+            "comment": "[KARAF-2251] - Cellar: features:install ignores incoming and outgoing blacklist"
+        },
+        {
+            "c_hash": "914413be",
+            "date": "2013-04-15 09:18:08 +0000",
+            "comment": "ported changes from 2.2.x for [KARAF-2262] - cellar-cloud: The IP is not enough, sometimes the IP is hidden but a valid dns name is available and [KARAF-2263] - Cellar-Cloud: discover member removes member information which isn't re-generated"
+        },
+        {
+            "c_hash": "3f5d509a",
+            "date": "2013-04-16 10:47:00 +0000",
+            "comment": "[KARAF-1249] Provide fine grained Cellar features"
+        },
+        {
+            "c_hash": "1480828d",
+            "date": "2013-04-16 11:52:00 +0000",
+            "comment": "[KARAF-2268] - cellar-cloud: If other \"Objects\" are available at the bucket they sometimes are not \"readable\""
+        },
+        {
+            "c_hash": "e7f71ea7",
+            "date": "2013-04-17 14:36:11 +0000",
+            "comment": "[KARAF-2271] Update blacklist for features and bundles and fix build"
+        },
+        {
+            "c_hash": "6e86691a",
+            "date": "2013-04-19 08:09:13 +0000",
+            "comment": "[KARAF-2274] Fix TCCL in HazelcastGroupManager"
+        },
+        {
+            "c_hash": "a4acc878",
+            "date": "2013-04-19 08:34:01 +0000",
+            "comment": "[KARAF-2210] Upgrade to Hazelcast 2.5"
+        },
+        {
+            "c_hash": "cf3965ac",
+            "date": "2013-04-19 14:54:31 +0000",
+            "comment": "[KARAF-2277] Embed json dependency in the Cellar WebConsole plugin"
+        },
+        {
+            "c_hash": "196cf610",
+            "date": "2013-04-20 05:58:35 +0000",
+            "comment": "Update default bundle blacklist"
+        },
+        {
+            "c_hash": "7d3573b1",
+            "date": "2013-04-23 08:43:57 +0000",
+            "comment": "[KARAF-2287] FeaturesSynchronizer now check the local status of a features repository before adding"
+        },
+        {
+            "c_hash": "0fad9d3f",
+            "date": "2013-04-23 13:19:33 +0000",
+            "comment": "Cellar code cleanup"
+        },
+        {
+            "c_hash": "13fddff0",
+            "date": "2013-04-23 14:43:42 +0000",
+            "comment": "Code cleanup"
+        },
+        {
+            "c_hash": "6896284c",
+            "date": "2013-04-23 14:53:44 +0000",
+            "comment": "Code cleanup"
+        },
+        {
+            "c_hash": "01d391c1",
+            "date": "2013-04-23 15:06:38 +0000",
+            "comment": "Code cleanup"
+        },
+        {
+            "c_hash": "d9fa50ee",
+            "date": "2013-04-23 16:19:27 +0000",
+            "comment": "Code cleanup."
+        },
+        {
+            "c_hash": "ad5bf4ba",
+            "date": "2013-04-23 17:12:32 +0000",
+            "comment": "Fix config blueprint descriptor"
+        },
+        {
+            "c_hash": "2831c771",
+            "date": "2013-04-24 09:39:25 +0000",
+            "comment": "Code cleanup"
+        },
+        {
+            "c_hash": "ffcb9115",
+            "date": "2013-04-24 13:30:23 +0000",
+            "comment": "Code cleanup."
+        },
+        {
+            "c_hash": "db180d62",
+            "date": "2013-04-24 13:30:54 +0000",
+            "comment": "Remove empty folder."
+        },
+        {
+            "c_hash": "a239185c",
+            "date": "2013-04-24 13:58:25 +0000",
+            "comment": "Code cleanup."
+        },
+        {
+            "c_hash": "e5278168",
+            "date": "2013-04-24 14:11:12 +0000",
+            "comment": "Code cleanup."
+        },
+        {
+            "c_hash": "675bec7c",
+            "date": "2013-04-24 14:32:30 +0000",
+            "comment": "Code cleanup."
+        },
+        {
+            "c_hash": "8002d197",
+            "date": "2013-04-24 15:35:47 +0000",
+            "comment": "Code cleanup"
+        },
+        {
+            "c_hash": "e925db50",
+            "date": "2013-04-24 17:23:48 +0000",
+            "comment": "Code cleanup."
+        },
+        {
+            "c_hash": "8986a3d4",
+            "date": "2013-04-26 07:23:47 +0000",
+            "comment": "Code cleanup."
+        },
+        {
+            "c_hash": "60b9d8aa",
+            "date": "2013-04-29 06:02:19 +0000",
+            "comment": "Code cleanup."
+        },
+        {
+            "c_hash": "81bce0e8",
+            "date": "2013-04-29 07:40:38 +0000",
+            "comment": "Code cleanup."
+        },
+        {
+            "c_hash": "0864debf",
+            "date": "2013-04-29 08:24:32 +0000",
+            "comment": "Code cleanup."
+        },
+        {
+            "c_hash": "138736ca",
+            "date": "2013-04-29 09:39:22 +0000",
+            "comment": "Code cleanup."
+        },
+        {
+            "c_hash": "3d36c1e7",
+            "date": "2013-05-01 19:19:24 +0000",
+            "comment": "[KARAF-2281] Add Cellar configurations in blacklist"
+        },
+        {
+            "c_hash": "bca0abb4",
+            "date": "2013-05-02 05:19:50 +0000",
+            "comment": "[KARAF-2280] Add org.ops4j.pax.web in config blacklist by default"
+        },
+        {
+            "c_hash": "ee4ab694",
+            "date": "2013-05-03 06:58:28 +0000",
+            "comment": "[KARAF-2277] Fix Cellar WebConsole plugin with Equinox"
+        },
+        {
+            "c_hash": "447a7d70",
+            "date": "2013-05-14 11:13:32 +0000",
+            "comment": "Use new FeaturesService method"
+        },
+        {
+            "c_hash": "a3f31e05",
+            "date": "2013-05-16 08:50:52 +0000",
+            "comment": "[KARAF-2111] Use karaf-pax-exam for itests"
+        },
+        {
+            "c_hash": "1aa7dd6a",
+            "date": "2013-05-16 11:39:33 +0000",
+            "comment": "[KARAF-2127] Create a kar file for Cellar"
+        },
+        {
+            "c_hash": "47b31040",
+            "date": "2013-05-16 15:39:02 +0000",
+            "comment": "[KARAF-2142] Change the state only of the local node when using producer, consumer, handler commands or MBeans"
+        },
+        {
+            "c_hash": "09986e3c",
+            "date": "2013-05-16 16:11:46 +0000",
+            "comment": "[KARAF-2142] Simplify consumer, handlers, producer commands code"
+        },
+        {
+            "c_hash": "73f8e3e5",
+            "date": "2013-05-17 07:46:31 +0000",
+            "comment": "[KARAF-2318] Exclude service.factoryPid property from the Cellar sync"
+        },
+        {
+            "c_hash": "b4675dd5",
+            "date": "2013-05-18 06:24:24 +0000",
+            "comment": "[KARAF-2272] Populate the bundle name in the cluster"
+        },
+        {
+            "c_hash": "ef9c1cda",
+            "date": "2013-05-18 06:29:50 +0000",
+            "comment": "Fix bundle synchronizer"
+        },
+        {
+            "c_hash": "49dda969",
+            "date": "2013-05-18 11:42:23 +0000",
+            "comment": "[KARAF-2286] Change log level of some messages"
+        },
+        {
+            "c_hash": "b921ab5d",
+            "date": "2013-05-22 19:34:07 +0000",
+            "comment": "[KARAF-2337] Upgrade to Apache POM 13"
+        },
+        {
+            "c_hash": "9ab91641",
+            "date": "2013-06-05 06:10:16 +0000",
+            "comment": "[KARAF-2353] Upgrade to Hazelcast 2.6"
+        },
+        {
+            "c_hash": "c0ad8097",
+            "date": "2013-06-06 06:45:25 +0000",
+            "comment": "[KARAF-2340] Cellar LocalBundleListener now ignores the local bundle event coming from the framework (bundle ID 0)"
+        },
+        {
+            "c_hash": "70673785",
+            "date": "2013-06-16 07:02:02 +0000",
+            "comment": "[KARAF-2343] Fixed cellar-event support"
+        },
+        {
+            "c_hash": "aa21a0a6",
+            "date": "2013-06-16 07:04:49 +0000",
+            "comment": "[KARAF-2354] Rename cellar-event feature to cellar-eventadmin"
+        },
+        {
+            "c_hash": "3ca24899",
+            "date": "2013-06-23 19:30:07 +0000",
+            "comment": "[KARAF-2349] Add debug support in itests"
+        },
+        {
+            "c_hash": "d820275f",
+            "date": "2013-06-24 19:32:37 +0000",
+            "comment": "[KARAF-2347] Small improvements on the Cellar configuration"
+        },
+        {
+            "c_hash": "11631a4d",
+            "date": "2013-06-25 10:02:39 +0000",
+            "comment": "[KARAF-2317] Display only up and running nodes in cluster:group-list command and CellarGroupMBean"
+        },
+        {
+            "c_hash": "de05d84e",
+            "date": "2013-06-25 19:19:50 +0000",
+            "comment": "[KARAF-2204] cluster:feature-url-add, cluster:feature-url-remove and corresponding MBeans now support installAll and uninstallAll option"
+        },
+        {
+            "c_hash": "38d5781f",
+            "date": "2013-10-03 08:22:48 +0000",
+            "comment": "[KARAF-2480] Fix dynamic import in Cellar modules"
+        },
+        {
+            "c_hash": "7eb35a43",
+            "date": "2013-10-03 10:51:27 +0000",
+            "comment": "[KARAF-2478] Producer and consumer status is updated when configuration is changed on the cluster"
+        },
+        {
+            "c_hash": "498ee6ec",
+            "date": "2013-10-03 11:10:55 +0000",
+            "comment": "[KARAF-2478] Fix hazelcast blueprint descriptor"
+        },
+        {
+            "c_hash": "66e53257",
+            "date": "2013-10-03 13:22:25 +0000",
+            "comment": "[KARAF-2477] Inject the groupManager in the Cellar config blueprint"
+        },
+        {
+            "c_hash": "ce09bf1d",
+            "date": "2013-10-04 12:18:21 +0000",
+            "comment": "[KARAF-2498] Change log level to DEBUG for blocked resources"
+        },
+        {
+            "c_hash": "66f615e3",
+            "date": "2013-10-11 16:23:41 +0000",
+            "comment": "[KARAF-2514] Improve Cellar config, especially around configuration deletion"
+        },
+        {
+            "c_hash": "e4609aa5",
+            "date": "2013-10-11 16:53:17 +0000",
+            "comment": "[KARAF-2432] Remove the dependency attribute on the hazelcast bundle"
+        },
+        {
+            "c_hash": "0e15a67b",
+            "date": "2013-12-18 13:21:44 +0100",
+            "comment": "Merge branch 'trunk'"
+        },
+        {
+            "c_hash": "43c8010a",
+            "date": "2013-12-18 13:46:44 +0100",
+            "comment": "Use git scm instead of svn"
+        },
+        {
+            "c_hash": "a0fa1df2",
+            "date": "2014-02-23 21:37:59 +0100",
+            "comment": "Upgrade copyright dates in NOTICE files"
+        },
+        {
+            "c_hash": "7986ab85",
+            "date": "2014-05-29 21:29:47 +0200",
+            "comment": "Upgrade to Karaf 3.0.1, starting the preparation of Cellar 3.0.0"
+        },
+        {
+            "c_hash": "73a525d7",
+            "date": "2014-05-30 13:57:02 +0200",
+            "comment": "Upgrade to slf4j 1.7.5"
+        },
+        {
+            "c_hash": "d8be1ea0",
+            "date": "2014-06-12 21:35:07 +0200",
+            "comment": "[KARAF-3014] Disable multicast and use loopback interface in hazelcast test"
+        },
+        {
+            "c_hash": "c056a851",
+            "date": "2014-06-12 21:43:22 +0200",
+            "comment": "Upgrade to Apache POM 14"
+        },
+        {
+            "c_hash": "52a950a1",
+            "date": "2014-06-12 21:58:41 +0200",
+            "comment": "[KARAF-3036] Upgrade to Felix Utils 1.6.0"
+        },
+        {
+            "c_hash": "ed30a63c",
+            "date": "2014-06-12 22:12:31 +0200",
+            "comment": "[KARAF-3038] Upgrade to Felix WebConsole 4.2.0"
+        },
+        {
+            "c_hash": "5adaf753",
+            "date": "2014-06-12 22:21:48 +0200",
+            "comment": "[KARAF-3039] Upgrade to JUnit 4.11"
+        },
+        {
+            "c_hash": "296d0cf0",
+            "date": "2014-06-12 22:25:47 +0200",
+            "comment": "[KARAF-3040] Upgrade to slf4j 1.7.7"
+        },
+        {
+            "c_hash": "d92c546e",
+            "date": "2014-06-15 21:18:09 +0200",
+            "comment": "[KARAF-2550] Fix NPE in the handler at first sync"
+        },
+        {
+            "c_hash": "a8eb9e6f",
+            "date": "2014-06-16 08:01:54 +0200",
+            "comment": "[KARAF-2892] Inject groupManager service in the event handler"
+        },
+        {
+            "c_hash": "8b1f3409",
+            "date": "2014-06-16 08:08:55 +0200",
+            "comment": "[KARAF-3047] Inject the groupManager service in the feature/feature repository event handler"
+        },
+        {
+            "c_hash": "2c342264",
+            "date": "2014-06-16 15:48:19 +0200",
+            "comment": "[KARAF-3050] Fix Cellar ObrUrlSynchronizer"
+        },
+        {
+            "c_hash": "426b8c2b",
+            "date": "2014-06-16 15:58:57 +0200",
+            "comment": "Use JMX service in Cellar OBR"
+        },
+        {
+            "c_hash": "6f4a1f0b",
+            "date": "2014-06-16 21:46:27 +0200",
+            "comment": "Remove the management bundle and use the JMX service"
+        },
+        {
+            "c_hash": "faa01536",
+            "date": "2014-06-16 21:58:59 +0200",
+            "comment": "[KARAF-2648] Rename features config category to feature (in order to be aligned with config, bundle categories)"
+        },
+        {
+            "c_hash": "529c1608",
+            "date": "2014-06-17 16:33:47 +0200",
+            "comment": "[KARAF-3051] Refactore Cellar bundle module (commands and MBean) to use \"look'n feel\" from Karaf 3.x"
+        },
+        {
+            "c_hash": "5e97cb14",
+            "date": "2014-06-17 16:48:45 +0200",
+            "comment": "[KARAF-3051] Refactoring of Cellar config module (commands/MBean) to use the Karaf 3.x syntax."
+        },
+        {
+            "c_hash": "38af3d0c",
+            "date": "2014-06-17 21:39:16 +0200",
+            "comment": "[KARAF-3051] Refactoring of dosgi module to use shell table and add ServiceMBean"
+        },
+        {
+            "c_hash": "010d7abf",
+            "date": "2014-06-18 08:40:23 +0200",
+            "comment": "[KARAF-3051] Refactoring of features module (commands/MBean) to use Karaf 3.x syntax/wording"
+        },
+        {
+            "c_hash": "5379aef3",
+            "date": "2014-06-19 07:11:02 +0200",
+            "comment": "[KARAF-3051] Refactoring of the obr module to use Karaf 3.x syntax"
+        },
+        {
+            "c_hash": "a1233c36",
+            "date": "2014-06-19 07:41:16 +0200",
+            "comment": "[KARAF-3051] Use shell table in Cellar core commands"
+        },
+        {
+            "c_hash": "82c47ee9",
+            "date": "2014-06-20 17:16:34 +0200",
+            "comment": "[KARAF-3062] Upgrade to Hazelcast 3.2.3 and better import range"
+        },
+        {
+            "c_hash": "6e2af123",
+            "date": "2014-06-22 21:07:15 +0200",
+            "comment": "[KARAF-1474] In preparation for the new itests, upgrade to Pax Exam 3.4.0"
+        },
+        {
+            "c_hash": "5dd42113",
+            "date": "2014-06-23 10:34:30 +0200",
+            "comment": "Upgrade to easymock 3.2"
+        },
+        {
+            "c_hash": "a7c3ce45",
+            "date": "2014-06-23 10:43:13 +0200",
+            "comment": "Cleanup Felix ConfigAdmin dependency"
+        },
+        {
+            "c_hash": "91f8dea9",
+            "date": "2014-06-23 11:09:02 +0200",
+            "comment": "Cleanup in Cellar dependencies"
+        },
+        {
+            "c_hash": "c03dabb7",
+            "date": "2014-06-23 14:35:02 +0200",
+            "comment": "Align Maven plugins version with Karaf 3.0.x"
+        },
+        {
+            "c_hash": "a22d7c40",
+            "date": "2014-06-23 15:14:00 +0200",
+            "comment": "[KARAF-3062] Upgrade the default etc/hazelcast.xml for 3.2.3 version and fix config private package statement"
+        },
+        {
+            "c_hash": "f5ba4205",
+            "date": "2014-06-23 16:02:13 +0200",
+            "comment": "[KARAF-3057] Unproxy the handler class name"
+        },
+        {
+            "c_hash": "1be0b2d0",
+            "date": "2014-06-23 18:33:53 +0200",
+            "comment": "Update the manual with the new commands syntax and output"
+        },
+        {
+            "c_hash": "ab2aa4cc",
+            "date": "2014-06-23 18:35:08 +0200",
+            "comment": "Upgrade to shell namespace 1.1.0"
+        },
+        {
+            "c_hash": "6f76c3db",
+            "date": "2014-06-23 18:41:50 +0200",
+            "comment": "Update the RELEASE-NOTES in preparation for the release"
+        },
+        {
+            "c_hash": "45ba5189",
+            "date": "2014-06-23 20:59:04 +0200",
+            "comment": "Extend Maven and Java version in enforcer plugin"
+        },
+        {
+            "c_hash": "d3cb8edd",
+            "date": "2014-06-23 21:03:30 +0200",
+            "comment": "Extend Maven version in enforcer plugin for release profile"
+        },
+        {
+            "c_hash": "d527e4c0",
+            "date": "2014-06-23 21:25:03 +0200",
+            "comment": "Update the samples README with Karaf/Cellar 3 instructions"
+        },
+        {
+            "c_hash": "84f1bc03",
+            "date": "2014-06-23 21:36:24 +0200",
+            "comment": "Remove camel-hazelcast-app feature (explained in README)"
+        },
+        {
+            "c_hash": "6269e98e",
+            "date": "2014-06-23 21:45:04 +0200",
+            "comment": "Update README file with Karaf 3 commands"
+        },
+        {
+            "c_hash": "98e41954",
+            "date": "2014-06-23 21:49:20 +0200",
+            "comment": "[maven-release-plugin] prepare release cellar-3.0.0"
+        },
+        {
+            "c_hash": "6c02eda8",
+            "date": "2014-06-23 21:50:08 +0200",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "44b00773",
+            "date": "2014-06-28 09:48:14 +0200",
+            "comment": "Cellar manual 3.0.0 published, updated to 3.0.1-SNAPSHOT"
+        },
+        {
+            "c_hash": "e30bcca2",
+            "date": "2014-06-29 21:44:25 +0200",
+            "comment": "Update the Karaf features namespace to 1.2.0"
+        },
+        {
+            "c_hash": "73078379",
+            "date": "2014-11-11 05:23:21 +0100",
+            "comment": "[KARAF-3296] Upgrade to joda-time 2.5"
+        },
+        {
+            "c_hash": "46b5e0e6",
+            "date": "2014-11-11 05:24:35 +0100",
+            "comment": "[KARAF-3297] Upgrade to Felix BundleRepository 2.0.2"
+        },
+        {
+            "c_hash": "85f343b8",
+            "date": "2014-11-11 09:03:02 +0100",
+            "comment": "[KARAF-3341] - Blacklist \"XML bundles\" by default --- this makes sure all xml generated bundles, like datasource configuration are not propagated to the other nodes."
+        },
+        {
+            "c_hash": "87736e80",
+            "date": "2014-11-18 19:14:38 +0100",
+            "comment": "[KARAF-2169] Introduce the *.listener properties to disable the local resources listeners"
+        },
+        {
+            "c_hash": "d9c6169e",
+            "date": "2014-11-19 20:59:12 +0100",
+            "comment": "[KARAF-2169] Cleanup in the *.listener properties location and resolution"
+        },
+        {
+            "c_hash": "732fc6e7",
+            "date": "2014-11-20 21:15:10 +0100",
+            "comment": "[KARAF-2168] Rename sync properties and usage"
+        },
+        {
+            "c_hash": "d16c37c7",
+            "date": "2014-11-24 08:17:48 +0100",
+            "comment": "[KARAF-2168] Cleanup and refactoring after the change on the sync property"
+        }
+    ]
+}

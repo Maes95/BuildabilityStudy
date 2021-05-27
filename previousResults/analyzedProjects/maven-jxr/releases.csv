@@ -1,0 +1,8 @@
+commitID;commit-type;time-to-next-release;commit-message
+4528836445f1944088f488a1675db41744da927a;BREAKING_FIX;5;initial pom git-svn-id: https://svn.apache.org/repos/asf/maven/jxr/trunk@292618 13f79535-47bb-0310-9956-ffa450edef68
+0036237c0261c27e20c58095d7449e84479c4e92;BREAKING_CHANGES;4;initial copy git-svn-id: https://svn.apache.org/repos/asf/maven/jxr/trunk@292619 13f79535-47bb-0310-9956-ffa450edef68
+13d972cce1a51ab73c6a5dfeddf6443afd197c24;BREAKING_FIX;4;reformat code git-svn-id: https://svn.apache.org/repos/asf/maven/jxr/trunk@292625 13f79535-47bb-0310-9956-ffa450edef68
+de4f5ca4adc7793b5a8285b981693d1fc32c13db;BREAKING_FIX;19;o Add a jxr-parent and make the modules inherit from that. git-svn-id: https://svn.apache.org/repos/asf/maven/jxr/trunk@517001 13f79535-47bb-0310-9956-ffa450edef68
+354ebf398e69f992c00b767f92d386e6ccfe46bb;BREAKING_CHANGES;473;use new parent git-svn-id: https://svn.apache.org/repos/asf/maven/jxr/trunk@744354 13f79535-47bb-0310-9956-ffa450edef68
+2ef9d1ff7030c7e820a64cf40cfde927d22dddaf;BREAKING_FIX;465;o Inherited from maven-parent:11 git-svn-id: https://svn.apache.org/repos/asf/maven/jxr/trunk@746464 13f79535-47bb-0310-9956-ffa450edef68
+32dd797460bc40f3d3b9146b899a20f8e9573ed6;BREAKING_CHANGES;6;[JXR-119]  - Upgrade org.apache.maven:maven-parent:24 to 25 git-svn-id: https://svn.apache.org/repos/asf/maven/jxr/trunk@1634368 13f79535-47bb-0310-9956-ffa450edef68

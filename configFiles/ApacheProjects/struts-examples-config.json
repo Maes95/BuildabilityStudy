@@ -1,0 +1,348 @@
+{
+    "project": "struts-examples",
+    "git_url": "https://github.com/apache/struts-examples.git",
+    "last_commit": "c4e10093",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "b8f34068",
+            "date": "2013-06-28 21:01:43 +0000",
+            "comment": "Initial import."
+        },
+        {
+            "c_hash": "57025e10",
+            "date": "2013-06-28 21:03:13 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/struts/sandbox/trunk/struts2examples@1497921 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "e30d928f",
+            "date": "2013-06-28 21:19:02 +0000",
+            "comment": "update svn ignore"
+        },
+        {
+            "c_hash": "ca3b6266",
+            "date": "2013-06-28 21:37:11 +0000",
+            "comment": "initial commit of Hello World Struts 2 Example Application"
+        },
+        {
+            "c_hash": "d7a11956",
+            "date": "2013-06-28 21:38:26 +0000",
+            "comment": "added Eclipse project specific files to SVN ignore"
+        },
+        {
+            "c_hash": "ba6b5aa2",
+            "date": "2013-06-28 21:38:56 +0000",
+            "comment": "added helloworld as module"
+        },
+        {
+            "c_hash": "5a795c99",
+            "date": "2013-06-28 21:46:04 +0000",
+            "comment": "Added Struts 2 and log4j dependencies"
+        },
+        {
+            "c_hash": "a8663e00",
+            "date": "2013-06-28 21:46:52 +0000",
+            "comment": "added target folder to svn ignore"
+        },
+        {
+            "c_hash": "3f1e5c57",
+            "date": "2013-06-30 20:29:33 +0000",
+            "comment": "Added additional example applications"
+        },
+        {
+            "c_hash": "85089d1b",
+            "date": "2013-07-01 14:18:54 +0000",
+            "comment": "initial commit of form validation example application for the Struts 2 Getting Started tutorials"
+        },
+        {
+            "c_hash": "ccb97a17",
+            "date": "2013-07-01 14:19:34 +0000",
+            "comment": "added form_validation child module"
+        },
+        {
+            "c_hash": "b0b4b742",
+            "date": "2013-07-01 14:21:28 +0000",
+            "comment": "initial commit of ReadMe.txt file"
+        },
+        {
+            "c_hash": "2c35c2d2",
+            "date": "2013-07-01 14:26:20 +0000",
+            "comment": "added instructions for how to build all child modules."
+        },
+        {
+            "c_hash": "69a12d0e",
+            "date": "2013-07-01 14:39:58 +0000",
+            "comment": "added message resource child module"
+        },
+        {
+            "c_hash": "69788e45",
+            "date": "2013-07-01 14:42:21 +0000",
+            "comment": "initial commit of Struts 2 Message Resource example application that goes with the Getting Started Struts 2 tutorials"
+        },
+        {
+            "c_hash": "b3fb3187",
+            "date": "2013-07-01 14:55:56 +0000",
+            "comment": "initial commit of Exception handling example application that goes with the Struts 2 Getting Started tutorials"
+        },
+        {
+            "c_hash": "0d9a6033",
+            "date": "2013-07-01 14:56:33 +0000",
+            "comment": "added child module for exception handling application"
+        },
+        {
+            "c_hash": "48c9216b",
+            "date": "2013-07-01 15:24:51 +0000",
+            "comment": "initial commit of debugging struts example application that goes with the Struts 2 Getting Started tutorials"
+        },
+        {
+            "c_hash": "04696c95",
+            "date": "2013-07-01 15:25:14 +0000",
+            "comment": "added debugging struts child module"
+        },
+        {
+            "c_hash": "87dcca3f",
+            "date": "2013-07-02 19:11:49 +0000",
+            "comment": "Added form tags example application as child module"
+        },
+        {
+            "c_hash": "cee3ebe0",
+            "date": "2013-07-02 19:20:56 +0000",
+            "comment": "Added forms XML validation application as a child module"
+        },
+        {
+            "c_hash": "c4cda236",
+            "date": "2013-07-02 20:06:48 +0000",
+            "comment": "Added wildcard method selection child module"
+        },
+        {
+            "c_hash": "064c556d",
+            "date": "2013-07-03 11:47:11 +0000",
+            "comment": "update svn ignore"
+        },
+        {
+            "c_hash": "865270bd",
+            "date": "2013-07-03 13:48:52 +0000",
+            "comment": "Added Struts 2 themes example application"
+        },
+        {
+            "c_hash": "435fe357",
+            "date": "2013-07-03 13:56:31 +0000",
+            "comment": "removed unused test folders"
+        },
+        {
+            "c_hash": "708be288",
+            "date": "2013-07-03 14:56:09 +0000",
+            "comment": "Added Spring Struts 2 example application"
+        },
+        {
+            "c_hash": "308207e0",
+            "date": "2013-07-03 16:06:47 +0000",
+            "comment": "changes to try to figure out why a custom theme is not working"
+        },
+        {
+            "c_hash": "34f5e13d",
+            "date": "2013-07-03 17:15:09 +0000",
+            "comment": "Added annotations example app"
+        },
+        {
+            "c_hash": "ab7b1eb9",
+            "date": "2013-07-03 20:38:14 +0000",
+            "comment": "Added interceptors module"
+        },
+        {
+            "c_hash": "0903699b",
+            "date": "2013-07-05 13:55:56 +0000",
+            "comment": "added unit testing example application"
+        },
+        {
+            "c_hash": "25d3f45e",
+            "date": "2013-07-06 12:32:39 +0000",
+            "comment": "added http session example app"
+        },
+        {
+            "c_hash": "f82c1429",
+            "date": "2013-07-08 14:04:14 +0000",
+            "comment": "Added preparable interface example"
+        },
+        {
+            "c_hash": "f242be81",
+            "date": "2013-07-08 15:32:42 +0000",
+            "comment": "Added exclude parameters example"
+        },
+        {
+            "c_hash": "1c7cd4d7",
+            "date": "2013-07-15 14:23:23 +0000",
+            "comment": "changed package name as annotations are ignored when in package org.apache.struts"
+        },
+        {
+            "c_hash": "c898e612",
+            "date": "2013-07-17 13:26:32 +0000",
+            "comment": "theme attribute must be on the s:form tag with a value of xhtml and then also on the s:checkboxlist tag with a value of KUTheme"
+        },
+        {
+            "c_hash": "d55a0e8f",
+            "date": "2013-07-17 20:20:00 +0000",
+            "comment": "initial commit of example application that shows how to use REST style URLs with Struts 2"
+        },
+        {
+            "c_hash": "a64aee49",
+            "date": "2013-09-16 11:49:06 +0000",
+            "comment": "Uses proper param name"
+        },
+        {
+            "c_hash": "e399cfc0",
+            "date": "2013-09-22 13:38:01 +0000",
+            "comment": "Initial import."
+        },
+        {
+            "c_hash": "8b476b0a",
+            "date": "2013-09-22 13:39:23 +0000",
+            "comment": "initial commit of control tags example app"
+        },
+        {
+            "c_hash": "5cab44a0",
+            "date": "2013-09-22 14:35:02 +0000",
+            "comment": "updated to use parent pom"
+        },
+        {
+            "c_hash": "a7f6ecd6",
+            "date": "2013-09-22 14:47:29 +0000",
+            "comment": "updated struts version to 2.3.15.2 and added control_tags module"
+        },
+        {
+            "c_hash": "d778440f",
+            "date": "2013-09-22 14:53:27 +0000",
+            "comment": "added target to svn ignore"
+        },
+        {
+            "c_hash": "73fb6524",
+            "date": "2013-09-25 17:04:24 +0000",
+            "comment": "updated name value"
+        },
+        {
+            "c_hash": "debc790b",
+            "date": "2013-09-25 17:05:00 +0000",
+            "comment": "updated URL to start web app"
+        },
+        {
+            "c_hash": "3b802217",
+            "date": "2013-10-28 17:32:19 +0000",
+            "comment": "initial commit of JSR 303 Bean Validation example project"
+        },
+        {
+            "c_hash": "f8f93662",
+            "date": "2013-10-28 17:32:48 +0000",
+            "comment": "Updated Struts 2 version to 2.3.15.3"
+        },
+        {
+            "c_hash": "71679337",
+            "date": "2013-10-30 17:27:03 +0000",
+            "comment": "removed old version of register.jsp that was in the wrong place"
+        },
+        {
+            "c_hash": "7299db74",
+            "date": "2013-10-31 15:31:12 +0000",
+            "comment": "Changed name type for regex validation to be regex"
+        },
+        {
+            "c_hash": "68429e0b",
+            "date": "2013-10-31 15:32:47 +0000",
+            "comment": "updated what files to ignore for svn"
+        },
+        {
+            "c_hash": "6f2f2df6",
+            "date": "2013-10-31 15:33:19 +0000",
+            "comment": "updated what files to ignore for svn"
+        },
+        {
+            "c_hash": "1771c4a1",
+            "date": "2013-12-02 17:46:28 +0000",
+            "comment": "removed references to custom theme"
+        },
+        {
+            "c_hash": "e6f5ae33",
+            "date": "2013-12-12 18:33:57 +0000",
+            "comment": "updated to Struts 2.3.16 from Maven Central - updated to latest version of log4j"
+        },
+        {
+            "c_hash": "9d5f3435",
+            "date": "2013-12-12 19:10:45 +0000",
+            "comment": "updated struts tags declaration"
+        },
+        {
+            "c_hash": "98b98829",
+            "date": "2013-12-12 19:11:04 +0000",
+            "comment": "added theme properties"
+        },
+        {
+            "c_hash": "cd4de014",
+            "date": "2013-12-12 19:11:19 +0000",
+            "comment": "added theme properties"
+        },
+        {
+            "c_hash": "21555057",
+            "date": "2013-12-12 21:37:20 +0000",
+            "comment": "Changes default theme to use theme defined in the project"
+        },
+        {
+            "c_hash": "472fe0cb",
+            "date": "2013-12-12 21:38:08 +0000",
+            "comment": "Removes unneeded theme attribute"
+        },
+        {
+            "c_hash": "2f2fb269",
+            "date": "2013-12-12 21:38:48 +0000",
+            "comment": "Adds jetty plugin to simplify debugging"
+        },
+        {
+            "c_hash": "4dddc647",
+            "date": "2013-12-12 21:39:39 +0000",
+            "comment": "Moves template directory under resources to finally put it on the classpath and uses proper theme hierarchy"
+        },
+        {
+            "c_hash": "0bfd6f9e",
+            "date": "2014-02-23 18:37:22 +0000",
+            "comment": "excluded transitive dependency to commons-fileupload version 1.3 and added dependency to commons-fileupload 1.3.1 to address security issue in older versions of commons-fileupload"
+        },
+        {
+            "c_hash": "f4aaa63e",
+            "date": "2014-03-10 17:36:35 +0000",
+            "comment": "INFRA-7401 Moves to match standard Svn repo schema"
+        },
+        {
+            "c_hash": "d01f9cef",
+            "date": "2014-03-10 21:41:49 +0100",
+            "comment": "Adds ignore patterns"
+        },
+        {
+            "c_hash": "c73eae6a",
+            "date": "2014-03-10 21:42:09 +0100",
+            "comment": "Updates Struts version to latest release"
+        },
+        {
+            "c_hash": "f818e0ea",
+            "date": "2014-03-15 09:16:10 -0500",
+            "comment": "corrected grammer"
+        },
+        {
+            "c_hash": "b4173289",
+            "date": "2014-04-16 06:10:56 -0500",
+            "comment": "initial commit"
+        },
+        {
+            "c_hash": "b659700f",
+            "date": "2014-04-16 06:11:17 -0500",
+            "comment": "initial commit"
+        },
+        {
+            "c_hash": "309a18aa",
+            "date": "2014-04-28 08:54:35 -0500",
+            "comment": "updated to use 2.3.16.2 version of struts 2"
+        },
+        {
+            "c_hash": "c4e10093",
+            "date": "2014-07-10 09:55:48 +0200",
+            "comment": "Upgrades Struts to latest release version"
+        }
+    ]
+}

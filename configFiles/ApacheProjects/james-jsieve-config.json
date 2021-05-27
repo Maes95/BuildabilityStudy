@@ -1,0 +1,2643 @@
+{
+    "project": "james-jsieve",
+    "git_url": "https://github.com/apache/james-jsieve.git",
+    "last_commit": "c894d3a8",
+    "experiment": 1,
+    "commits": [
+        {
+            "c_hash": "7d7bd006",
+            "date": "2004-02-06 15:08:17 +0000",
+            "comment": "Initial Layout"
+        },
+        {
+            "c_hash": "4af3b02f",
+            "date": "2004-02-06 15:18:44 +0000",
+            "comment": "Initial import of jSieve"
+        },
+        {
+            "c_hash": "f2c8a9fe",
+            "date": "2004-02-06 19:39:12 +0000",
+            "comment": "Added content"
+        },
+        {
+            "c_hash": "76cda996",
+            "date": "2004-02-06 19:54:12 +0000",
+            "comment": "Added link to jSieve project in Jira"
+        },
+        {
+            "c_hash": "64e7a67a",
+            "date": "2004-02-06 21:57:21 +0000",
+            "comment": "Deleted empty ./dist directory. This is a build element, and should not have been a source element."
+        },
+        {
+            "c_hash": "249601bb",
+            "date": "2004-02-06 22:01:59 +0000",
+            "comment": "The Ant build now generates all JavaCC artifacts from src/javacc/sieve.jjt."
+        },
+        {
+            "c_hash": "a36a91a6",
+            "date": "2004-02-16 16:35:43 +0000",
+            "comment": "Updated to Apache License 2.0. Tidied imports."
+        },
+        {
+            "c_hash": "319fdfe4",
+            "date": "2004-02-16 16:54:22 +0000",
+            "comment": "Changed file format to Un*x"
+        },
+        {
+            "c_hash": "355e5ace",
+            "date": "2004-02-16 17:46:24 +0000",
+            "comment": "Fixed syntax error: ASF license can't use be inserted as an XML comment without removing the '--'s Updated entity definition so that the Eclipse v3-M7 Ant build tool understands it."
+        },
+        {
+            "c_hash": "d0efbb8f",
+            "date": "2004-04-18 17:50:58 +0000",
+            "comment": "Added a samples package containing a Mailet for use in James. This invokes jSieve to perform local delivery processing, replacing the normal LocalDelivery Mailet."
+        },
+        {
+            "c_hash": "da43ecce",
+            "date": "2004-04-18 20:46:24 +0000",
+            "comment": "Tidied up some line ending and license format problems."
+        },
+        {
+            "c_hash": "b89e3c26",
+            "date": "2006-08-25 15:25:03 +0000",
+            "comment": "Few steps for JSIEVE-12 Removed ant, added a BUILDING.txt file explaining how to build (like we did for James trunk) Upgraded JavaCC to 4.0. JavaCC 4.0 supports base class for SimpleNode and this simplify the build. Added Sun Javamail/Activation libraries to the repository as they are now CDDL."
+        },
+        {
+            "c_hash": "bef978de",
+            "date": "2006-08-25 15:49:05 +0000",
+            "comment": "Further steps for JSIEVE-12 Added .txt to NOTICE/LICENSE/README (like we did in James) Completed the LICENSE/NOTICE/README for latest legal requirement Updated sources to include latest ASL2.0 licensing header Updated build script to create packages with all the needed files (*.properties, notice, and so on) so that we can now succesfully build from the source distribution."
+        },
+        {
+            "c_hash": "e18db59d",
+            "date": "2006-08-25 15:54:07 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/james/jsieve/trunk@436838 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "b62675ca",
+            "date": "2006-08-25 15:55:59 +0000",
+            "comment": "Move xdocs to the maven2 standard location to simplify site generation"
+        },
+        {
+            "c_hash": "d915b4b7",
+            "date": "2006-08-26 17:07:49 +0000",
+            "comment": "Created main folder (m2 structure) JSIEVE-12"
+        },
+        {
+            "c_hash": "c8e7a411",
+            "date": "2006-08-26 17:17:50 +0000",
+            "comment": "moved java sources to main/java (m2 structure) JSIEVE-12"
+        },
+        {
+            "c_hash": "bb54eea4",
+            "date": "2006-08-26 17:19:52 +0000",
+            "comment": "git-svn-id: https://svn.apache.org/repos/asf/james/jsieve/trunk@437185 13f79535-47bb-0310-9956-ffa450edef68"
+        },
+        {
+            "c_hash": "a2334529",
+            "date": "2006-08-26 17:22:41 +0000",
+            "comment": "moved jjt file to main/jjtree (m2 structure) JSIEVE-12"
+        },
+        {
+            "c_hash": "54f4616a",
+            "date": "2006-08-26 17:39:28 +0000",
+            "comment": "m2 site generation xml, ant updates due to m2 structure changes (JSIEVE-12)"
+        },
+        {
+            "c_hash": "ed93657c",
+            "date": "2006-08-27 01:43:02 +0000",
+            "comment": "Prepare folders for SDL tests (JSIEVE-12)"
+        },
+        {
+            "c_hash": "cce3551c",
+            "date": "2006-08-27 01:45:56 +0000",
+            "comment": "Move unit tests to the standard SDL test folder (JSIEVE-12)"
+        },
+        {
+            "c_hash": "2d036dec",
+            "date": "2006-08-27 01:46:47 +0000",
+            "comment": "Move testing resources to the standard SDL folder (JSIEVE-12)"
+        },
+        {
+            "c_hash": "d15dfc50",
+            "date": "2006-08-27 01:49:38 +0000",
+            "comment": "Prepare folders for SDL tests (JSIEVE-12)"
+        },
+        {
+            "c_hash": "32bd0f73",
+            "date": "2006-08-27 01:51:17 +0000",
+            "comment": "Move testing resources to the standard SDL folder (JSIEVE-12)"
+        },
+        {
+            "c_hash": "c0566837",
+            "date": "2006-08-27 01:57:12 +0000",
+            "comment": "build.xml and default.properties updates according to previous SDL structure moves (JSIEVE-12)"
+        },
+        {
+            "c_hash": "458f3aab",
+            "date": "2006-08-27 02:02:57 +0000",
+            "comment": "Fix failing test (it was not ran from previous tests)"
+        },
+        {
+            "c_hash": "11f9ebd3",
+            "date": "2006-08-27 02:04:41 +0000",
+            "comment": "Introduce a first working version of pom.xml for maven2 site creation (JSIEVE-12)"
+        },
+        {
+            "c_hash": "7ced863d",
+            "date": "2006-08-27 02:12:25 +0000",
+            "comment": "Renamed TestUtils to JUnitUtils to simplify unittest running (this class is not a test and the \"Test\" in the name make some junit runner to fail)"
+        },
+        {
+            "c_hash": "d0d47d0f",
+            "date": "2006-09-08 20:21:48 +0000",
+            "comment": "Updated repository references in pom.xml"
+        },
+        {
+            "c_hash": "f6aa2c52",
+            "date": "2006-09-26 16:49:16 +0000",
+            "comment": "Updated jSieve pom to depend on James Server SNAPSHOT and to use the apache snapshot repositories by default."
+        },
+        {
+            "c_hash": "4611bcd0",
+            "date": "2006-09-26 16:51:00 +0000",
+            "comment": "Fix tab to spaces for previous commit"
+        },
+        {
+            "c_hash": "20ec0d22",
+            "date": "2006-09-26 17:47:14 +0000",
+            "comment": "Fixed project url for relative paths (JAMES-634)"
+        },
+        {
+            "c_hash": "74d20884",
+            "date": "2007-01-17 13:16:57 +0000",
+            "comment": "Updated commons-digester to 1.8, changed pom artifactid from james-jsieve to jsieve"
+        },
+        {
+            "c_hash": "48de7e21",
+            "date": "2007-03-24 19:12:16 +0000",
+            "comment": "Added more detail to the jSieve documentation. Hopefully people will jump in and correct any mistakes."
+        },
+        {
+            "c_hash": "b8bcaeab",
+            "date": "2007-03-26 20:30:16 +0000",
+            "comment": "Corrected typo and replaced defunct header with current one."
+        },
+        {
+            "c_hash": "8160a781",
+            "date": "2007-03-26 20:30:57 +0000",
+            "comment": "Javadoc qualifications."
+        },
+        {
+            "c_hash": "1b299865",
+            "date": "2007-03-26 20:33:08 +0000",
+            "comment": "Utility that helps test sieve scripts before upload."
+        },
+        {
+            "c_hash": "b4d95665",
+            "date": "2007-03-27 01:09:41 +0000",
+            "comment": "(1) Force JDK 1.4 compatibility.  (2) Fix so that Ant builds with local junit."
+        },
+        {
+            "c_hash": "c56b4478",
+            "date": "2007-03-31 12:01:53 +0000",
+            "comment": "Added methods allowing results to be easily checked against expectations."
+        },
+        {
+            "c_hash": "e42e17f3",
+            "date": "2007-03-31 12:04:48 +0000",
+            "comment": "Added contextual information about position within the script being execute to exceptions. Note that this changes key interfaces in a way that is not backwards compatible."
+        },
+        {
+            "c_hash": "f75327f0",
+            "date": "2007-03-31 12:05:04 +0000",
+            "comment": "Added contextual information about position within the script being execute to exceptions. Note that this changes key interfaces in a way that is not backwards compatible."
+        },
+        {
+            "c_hash": "d8a8f3ed",
+            "date": "2007-04-07 06:28:55 +0000",
+            "comment": "Added RFCs (included already in docs) to web site."
+        },
+        {
+            "c_hash": "f5c50316",
+            "date": "2007-04-07 06:29:54 +0000",
+            "comment": "Ignore logs created by generating website"
+        },
+        {
+            "c_hash": "b917c86e",
+            "date": "2007-04-07 06:43:13 +0000",
+            "comment": "Fixed javadoc warnings."
+        },
+        {
+            "c_hash": "676ed0d5",
+            "date": "2007-04-08 16:30:22 +0000",
+            "comment": "Added line and column information to command information."
+        },
+        {
+            "c_hash": "8bf87f73",
+            "date": "2007-04-09 06:25:55 +0000",
+            "comment": "When debugging scripts it's useful to be able to see the coordinates when a command executes. Commands are executed after the parse so it's necessary to store the coordinate in the command."
+        },
+        {
+            "c_hash": "27680719",
+            "date": "2007-04-15 07:35:13 +0000",
+            "comment": "Updated license header to current wording."
+        },
+        {
+            "c_hash": "83622e73",
+            "date": "2007-04-15 08:22:36 +0000",
+            "comment": "Set source and target to values in include.properties."
+        },
+        {
+            "c_hash": "b40c6eea",
+            "date": "2007-04-15 09:37:16 +0000",
+            "comment": "Added extra information to MANIFEST."
+        },
+        {
+            "c_hash": "a407a7e2",
+            "date": "2007-04-15 09:48:00 +0000",
+            "comment": "Copy license and notice into jar. This allows the JSieve jar to the distributed indepedently."
+        },
+        {
+            "c_hash": "92bd67f1",
+            "date": "2007-04-15 09:49:04 +0000",
+            "comment": "Ignore logs."
+        },
+        {
+            "c_hash": "a631b897",
+            "date": "2007-04-15 09:50:44 +0000",
+            "comment": "Copyright here is for the collective work. This should be dated this year."
+        },
+        {
+            "c_hash": "fdd7ba5d",
+            "date": "2007-05-12 11:23:21 +0000",
+            "comment": "Default to UTF-8 as per RFC."
+        },
+        {
+            "c_hash": "69c4e319",
+            "date": "2007-06-30 13:14:21 +0000",
+            "comment": "Corrected typo"
+        },
+        {
+            "c_hash": "46d6622d",
+            "date": "2007-06-30 13:14:59 +0000",
+            "comment": "Restore manager when exception thrown"
+        },
+        {
+            "c_hash": "057fb185",
+            "date": "2007-06-30 13:21:50 +0000",
+            "comment": "Factory resets for ConditionManager and CommandStateManager into separate method. Ensure reset called upon method termination so that thread local variables are cleaned up."
+        },
+        {
+            "c_hash": "6ab334c3",
+            "date": "2007-08-09 19:04:48 +0000",
+            "comment": "Reset should aply only to instance in the thread and not to every thread."
+        },
+        {
+            "c_hash": "4150f01d",
+            "date": "2007-08-09 19:41:39 +0000",
+            "comment": "Prevent race conditions. https://issues.apache.org/jira/browse/JSIEVE-10. Better late than never."
+        },
+        {
+            "c_hash": "cada8fe6",
+            "date": "2007-08-09 21:47:01 +0000",
+            "comment": "Partial implementation of http://tools.ietf.org/html/draft-ietf-sieve-body-00. https://issues.apache.org/jira/browse/JSIEVE-15. Contributed by Steve Smith."
+        },
+        {
+            "c_hash": "0944180e",
+            "date": "2007-08-10 06:27:12 +0000",
+            "comment": "Support for context classloader. https://issues.apache.org/jira/browse/JSIEVE-5."
+        },
+        {
+            "c_hash": "1c4616ae",
+            "date": "2007-08-10 08:55:29 +0000",
+            "comment": "Added test to demonstrate that https://issues.apache.org/jira/browse/JSIEVE-14 is invalid."
+        },
+        {
+            "c_hash": "7e839f58",
+            "date": "2007-08-15 16:52:26 +0000",
+            "comment": "This is to save writing a new parser for addresses for the test implementations etc of MailAdapter contained with JSieve. When used from JAMES, Mime4J implementation will be used."
+        },
+        {
+            "c_hash": "ca3203e4",
+            "date": "2007-09-13 20:28:31 +0000",
+            "comment": "Support for matching headers containing more than one address. Resolves JSIEVE-6 (https://issues.apache.org/jira/browse/JSIEVE-6). JTree schema forked from Mime4J."
+        },
+        {
+            "c_hash": "af740d4d",
+            "date": "2007-09-13 20:46:52 +0000",
+            "comment": "Fixed javadoc complaints"
+        },
+        {
+            "c_hash": "ba60c0be",
+            "date": "2007-09-17 20:39:31 +0000",
+            "comment": "Fix site generation."
+        },
+        {
+            "c_hash": "411c889e",
+            "date": "2007-09-18 07:59:19 +0000",
+            "comment": "use different jjtree generated folder so to not overlap generated classes. Updates repositories configuration to match other JAMES products."
+        },
+        {
+            "c_hash": "ec98d3c6",
+            "date": "2007-09-19 20:04:43 +0000",
+            "comment": "Style is now deprecated"
+        },
+        {
+            "c_hash": "792ee8cc",
+            "date": "2007-09-20 13:41:30 +0000",
+            "comment": "Removed cyclic dependencies: - Created an \"jsieve.exception\" package to include exception classes from the jsieve main package (jsieve.*Exception) - Moved MatchTypeTags from test to comparators - Moved CommandStateManager, ConditionManager and ExecutableCommand from \"commands\" to the main package."
+        },
+        {
+            "c_hash": "ce20ba6a",
+            "date": "2007-09-21 09:22:30 +0000",
+            "comment": "Test sources reformatted (JSIEVE-17)"
+        },
+        {
+            "c_hash": "dc9a5be4",
+            "date": "2007-09-21 09:32:00 +0000",
+            "comment": "Main sources reformatted (JSIEVE-17)"
+        },
+        {
+            "c_hash": "e588c6b5",
+            "date": "2007-09-21 09:54:42 +0000",
+            "comment": "Fix compilation bug I forgot while moving exceptions to their own package."
+        },
+        {
+            "c_hash": "b9abd60a",
+            "date": "2007-09-21 10:04:30 +0000",
+            "comment": "Restore java 1.4 compatibility. new StringBuffer(CharSequence) is a java5 constructor."
+        },
+        {
+            "c_hash": "1b68386a",
+            "date": "2007-09-21 10:10:50 +0000",
+            "comment": "The XML APIs we use are part of the standard J2SE 1.4, so there's no need to use and bundle them."
+        },
+        {
+            "c_hash": "ab6e0657",
+            "date": "2007-09-21 10:36:30 +0000",
+            "comment": "check-targets for javamail and activation is not needed anymore as SUN released that jars under the CDDL and we added them to our lib folder since months."
+        },
+        {
+            "c_hash": "d995dbe9",
+            "date": "2007-09-21 10:43:06 +0000",
+            "comment": "Refactored lib folder to stage folder like we have in other JAMES product. This allow us to easily share the dependencies between the ant build and the maven build."
+        },
+        {
+            "c_hash": "e20f7580",
+            "date": "2007-09-21 10:45:56 +0000",
+            "comment": "Refactored lib folder to stage folder like we have in other JAMES product. This allow us to easily share the dependencies between the ant build and the maven build."
+        },
+        {
+            "c_hash": "ab2676c2",
+            "date": "2007-09-21 10:46:55 +0000",
+            "comment": "Refactored lib folder to stage folder like we have in other JAMES product. This allow us to easily share the dependencies between the ant build and the maven build."
+        },
+        {
+            "c_hash": "a5d470f7",
+            "date": "2007-09-21 11:09:06 +0000",
+            "comment": "added eclipse instructions to BUILDING.txt"
+        },
+        {
+            "c_hash": "940f925f",
+            "date": "2007-09-21 11:09:21 +0000",
+            "comment": "fixed a minor dependency issue in pom.xml"
+        },
+        {
+            "c_hash": "f269b626",
+            "date": "2007-09-21 11:10:48 +0000",
+            "comment": "svn ignoring eclipse resources"
+        },
+        {
+            "c_hash": "0c746751",
+            "date": "2007-09-25 20:03:55 +0000",
+            "comment": "Clean should delete all distributions not just perviously built one."
+        },
+        {
+            "c_hash": "408f44b8",
+            "date": "2007-09-25 20:04:44 +0000",
+            "comment": "Ignore www directory"
+        },
+        {
+            "c_hash": "cdecc58f",
+            "date": "2007-09-25 20:08:23 +0000",
+            "comment": "Conventionally, jars have all-lower-case names."
+        },
+        {
+            "c_hash": "3a36121a",
+            "date": "2007-09-25 21:20:52 +0000",
+            "comment": "Fixed speiling."
+        },
+        {
+            "c_hash": "f54fba14",
+            "date": "2007-09-26 10:08:32 +0000",
+            "comment": "Updated m2 parent to the just release james-project-1.2: this should fix a website building skin issue."
+        },
+        {
+            "c_hash": "af4fa93f",
+            "date": "2007-09-29 08:34:07 +0000",
+            "comment": "Clean up maven build directory"
+        },
+        {
+            "c_hash": "de680b09",
+            "date": "2007-09-29 08:35:55 +0000",
+            "comment": "Include and default files should have license headers."
+        },
+        {
+            "c_hash": "c0b614dc",
+            "date": "2007-09-29 09:46:20 +0000",
+            "comment": "This example is taked from RFC3028. My reading of the license is that it allows distribution but not the creation of derived works. So, I'm removing this from the repository."
+        },
+        {
+            "c_hash": "e4285deb",
+            "date": "2007-09-29 09:48:47 +0000",
+            "comment": "Added missing license header."
+        },
+        {
+            "c_hash": "e8e43d69",
+            "date": "2007-09-29 09:50:28 +0000",
+            "comment": "Added missing license header."
+        },
+        {
+            "c_hash": "12bc7d78",
+            "date": "2007-09-29 16:58:21 +0000",
+            "comment": "Added missing license header"
+        },
+        {
+            "c_hash": "f77d050d",
+            "date": "2007-09-29 17:09:30 +0000",
+            "comment": "JavaCC 4.0 is not open source. Policy dictates that it cannot remain in the repository. In order to build JSieve, it is neccessary to download the jar and set javacc.jar in include.properties."
+        },
+        {
+            "c_hash": "566fccad",
+            "date": "2007-09-29 17:10:41 +0000",
+            "comment": "Removed commented out code"
+        },
+        {
+            "c_hash": "19b6f739",
+            "date": "2007-09-30 09:36:48 +0000",
+            "comment": "Added missing license header"
+        },
+        {
+            "c_hash": "e52d5bab",
+            "date": "2007-10-03 19:19:06 +0000",
+            "comment": "Easier just to have jar in root"
+        },
+        {
+            "c_hash": "e5a76a48",
+            "date": "2007-10-03 19:19:29 +0000",
+            "comment": "JUnit is also distributed"
+        },
+        {
+            "c_hash": "246f21de",
+            "date": "2007-10-03 21:18:39 +0000",
+            "comment": "Best practice to indicate to the user the licenses for every artifact included. Best to included full license text."
+        },
+        {
+            "c_hash": "a4ae6cb2",
+            "date": "2007-10-03 21:19:21 +0000",
+            "comment": "Plain license and notice files should be used for the jar."
+        },
+        {
+            "c_hash": "364e6d1b",
+            "date": "2007-10-03 21:36:39 +0000",
+            "comment": "Updated building instructions since JavaCC must now be downloaded."
+        },
+        {
+            "c_hash": "7d03a78b",
+            "date": "2007-10-03 21:38:21 +0000",
+            "comment": "Include LICENSE and NOTICE in the tests jar. Prefer unit-testing to junit in the name."
+        },
+        {
+            "c_hash": "7b7f283a",
+            "date": "2007-10-03 21:56:21 +0000",
+            "comment": "Best practice to include apache in the name. This gives some opertunity of trademark traction against fakers. Also good guerilla advertising."
+        },
+        {
+            "c_hash": "b2650a06",
+            "date": "2007-10-04 09:27:46 +0000",
+            "comment": "Use apache- prefix for the artifactId"
+        },
+        {
+            "c_hash": "81672ccb",
+            "date": "2007-10-10 21:21:30 +0000",
+            "comment": "Remove poms (due to lack of explicit licensing information). Remove dependencies used only by samples."
+        },
+        {
+            "c_hash": "bfbe7095",
+            "date": "2007-10-10 21:22:55 +0000",
+            "comment": "Move samples into separate directory. Remove local repository from pom. Remove sample dependencies from pom."
+        },
+        {
+            "c_hash": "7aade020",
+            "date": "2007-10-10 21:57:31 +0000",
+            "comment": "enable central that is otherwise disabled by the parent pom"
+        },
+        {
+            "c_hash": "5397dabd",
+            "date": "2007-10-24 18:16:38 +0000",
+            "comment": "Support escaping within quoted strings as per RFC3028. https://issues.apache.org/jira/browse/JSIEVE-18. Contributed by Dennis Sieben, JSIEVE-18."
+        },
+        {
+            "c_hash": "560194aa",
+            "date": "2007-10-26 17:09:36 +0000",
+            "comment": "pom.xml is suitable for upload to repository."
+        },
+        {
+            "c_hash": "9017c836",
+            "date": "2008-04-04 20:12:48 +0000",
+            "comment": "JSieve no longer depends on JavaMail"
+        },
+        {
+            "c_hash": "9a64a508",
+            "date": "2008-04-16 16:47:18 +0000",
+            "comment": "Minor fixes"
+        },
+        {
+            "c_hash": "9c17e99b",
+            "date": "2008-04-16 16:49:38 +0000",
+            "comment": "Fixed javadocs errors"
+        },
+        {
+            "c_hash": "904e314f",
+            "date": "2008-04-16 20:19:59 +0000",
+            "comment": "Addressed JSIEVE-8 (https://issues.apache.org/jira/browse/JSIEVE-8). I think that the raiser of the issue is right that throwing an exception during parsing is more specification compliant. If anyone disagrees with this reading please jump in."
+        },
+        {
+            "c_hash": "18ef8448",
+            "date": "2008-05-07 20:16:22 +0000",
+            "comment": "Build test classes"
+        },
+        {
+            "c_hash": "a9521057",
+            "date": "2008-05-07 20:17:01 +0000",
+            "comment": "Envelope does not need to be a complete address."
+        },
+        {
+            "c_hash": "41e7e380",
+            "date": "2008-05-07 20:18:32 +0000",
+            "comment": "Remove dependency of core library on java mail."
+        },
+        {
+            "c_hash": "0ed30b0b",
+            "date": "2008-05-07 20:18:55 +0000",
+            "comment": "Move check scripts into samples"
+        },
+        {
+            "c_hash": "32290239",
+            "date": "2008-05-07 20:20:18 +0000",
+            "comment": "Move checker into samples"
+        },
+        {
+            "c_hash": "ed37016a",
+            "date": "2008-05-07 20:21:46 +0000",
+            "comment": "Parser generated only allows messages"
+        },
+        {
+            "c_hash": "f5ef968e",
+            "date": "2008-05-07 21:14:35 +0000",
+            "comment": "Fixed test build"
+        },
+        {
+            "c_hash": "b8de022f",
+            "date": "2008-05-07 21:16:12 +0000",
+            "comment": "Jars for generation and testing are by default stored right in the top directory."
+        },
+        {
+            "c_hash": "1d31980b",
+            "date": "2008-05-08 19:39:00 +0000",
+            "comment": "Collective copyright should be for current year."
+        },
+        {
+            "c_hash": "a6552be5",
+            "date": "2008-05-08 19:44:34 +0000",
+            "comment": "Missed a header when I originally committed this file."
+        },
+        {
+            "c_hash": "13286057",
+            "date": "2008-05-08 19:57:54 +0000",
+            "comment": "Maven knows only about 1.1 and 1.4"
+        },
+        {
+            "c_hash": "0b592024",
+            "date": "2008-05-10 10:30:49 +0000",
+            "comment": "Removed empty \"samples\" folder. Removed src/doc/rfc*.txt because we already have a copu in src/site/resources and it is only used by the m2 website build."
+        },
+        {
+            "c_hash": "1d4c13ad",
+            "date": "2008-05-10 10:31:34 +0000",
+            "comment": "Added jdk 1.4 \"restriction\" for the compiler plugin. Added rat plugin to automatically check the license headers."
+        },
+        {
+            "c_hash": "87cbc4cb",
+            "date": "2008-05-10 10:49:18 +0000",
+            "comment": "Add remote-resources plugin configuration for better m2 notice generation. (not used ATM, but doesn't hurt)"
+        },
+        {
+            "c_hash": "7f2b875d",
+            "date": "2008-05-10 11:31:03 +0000",
+            "comment": "Made TestManager not directly instantiable (private constructor) like the ComparatorManager. Removed the isSupported method from TestManager and Comparator manager: they was not used and duplicate code for PMD"
+        },
+        {
+            "c_hash": "ac3433bf",
+            "date": "2008-05-10 11:33:31 +0000",
+            "comment": "Build site using maven"
+        },
+        {
+            "c_hash": "ab92c981",
+            "date": "2008-05-10 11:35:57 +0000",
+            "comment": "PMD told me to remove this ComparatorUtils: this is already in the comparator package. Maybe I forgot to remove this when I reorganized the code."
+        },
+        {
+            "c_hash": "1f873669",
+            "date": "2008-05-10 11:36:42 +0000",
+            "comment": "Few unused imports, you know I hate them ;-)"
+        },
+        {
+            "c_hash": "943b5190",
+            "date": "2008-05-10 11:42:42 +0000",
+            "comment": "This is 2008"
+        },
+        {
+            "c_hash": "ff929310",
+            "date": "2008-05-10 11:50:22 +0000",
+            "comment": "Extracted common validation code (validateSingleStringArguments) to AbstractActionCommand (thanx to PMD)"
+        },
+        {
+            "c_hash": "32ca7650",
+            "date": "2008-05-10 11:51:40 +0000",
+            "comment": "Splitted the main page into 3 separate pages, introduced a news section."
+        },
+        {
+            "c_hash": "2a747124",
+            "date": "2008-05-10 11:53:11 +0000",
+            "comment": "Fix line endings for new site pages"
+        },
+        {
+            "c_hash": "eebe0ece",
+            "date": "2008-05-10 11:53:50 +0000",
+            "comment": "Remove resources only used by the old ant based website build (already removed from the build script)"
+        },
+        {
+            "c_hash": "26e9c2dd",
+            "date": "2008-05-10 12:22:20 +0000",
+            "comment": "Not news just yet"
+        },
+        {
+            "c_hash": "6c79b90b",
+            "date": "2008-05-10 12:27:04 +0000",
+            "comment": "Build in target. Build tests in separate folder."
+        },
+        {
+            "c_hash": "1fa5a613",
+            "date": "2008-05-10 12:29:54 +0000",
+            "comment": "Tentative test to prove JSIEVE-19. Not sure this should work this way but I wrote it so I preferred to commit it before leaving, so others (with better sieve knowledge) can better overview the issue."
+        },
+        {
+            "c_hash": "9238fa6a",
+            "date": "2008-05-10 12:37:12 +0000",
+            "comment": "Just use links instead"
+        },
+        {
+            "c_hash": "d63372b4",
+            "date": "2008-05-10 12:48:40 +0000",
+            "comment": "Uncertain of provenance so easier to remove."
+        },
+        {
+            "c_hash": "6c3d97fd",
+            "date": "2008-05-10 12:51:27 +0000",
+            "comment": "No need to rat-ignore removed resources."
+        },
+        {
+            "c_hash": "335f9598",
+            "date": "2008-05-10 16:21:34 +0000",
+            "comment": "First attempt at solving JSIEVE-19: replaced ORO Glob patterncompiler with custom translator for java builtin regex. To be tested!"
+        },
+        {
+            "c_hash": "11d049ec",
+            "date": "2008-05-10 16:22:08 +0000",
+            "comment": "ORO is no more needed as a depedency because we now use java regex."
+        },
+        {
+            "c_hash": "8583252a",
+            "date": "2008-05-10 16:22:13 +0000",
+            "comment": "ORO is no more needed as a depedency because we now use java regex."
+        },
+        {
+            "c_hash": "04c07a50",
+            "date": "2008-05-10 16:26:37 +0000",
+            "comment": "ORO is no more needed as a depedency because we now use java regex."
+        },
+        {
+            "c_hash": "bd398acd",
+            "date": "2008-05-11 21:04:36 +0000",
+            "comment": "Remove debug output"
+        },
+        {
+            "c_hash": "a6a0101a",
+            "date": "2008-05-11 21:07:01 +0000",
+            "comment": "Few tests for the new :matches sieve to java regex comparator."
+        },
+        {
+            "c_hash": "5b6d73f0",
+            "date": "2008-05-12 09:24:23 +0000",
+            "comment": "ComparatorUtils.match should be case sensitive. Added a test for special chars escaping (JSIEVE-19)"
+        },
+        {
+            "c_hash": "1ffbdac5",
+            "date": "2008-05-12 18:56:25 +0000",
+            "comment": "Removed commons-digester/commons-beanutils dependencies by moving from xml to properties for jsieve assemblage (JSIEVE-20)"
+        },
+        {
+            "c_hash": "c74857c0",
+            "date": "2008-05-12 18:56:31 +0000",
+            "comment": "Removed commons-digester/commons-beanutils dependencies by moving from xml to properties for jsieve assemblage (JSIEVE-20)"
+        },
+        {
+            "c_hash": "02280f39",
+            "date": "2008-05-12 19:12:57 +0000",
+            "comment": "Remove references to the www/website/xdocs/tools folders/properties in ant build."
+        },
+        {
+            "c_hash": "8a0af01b",
+            "date": "2008-05-12 19:17:35 +0000",
+            "comment": "Updated commons-logging dependency to 1.1.1"
+        },
+        {
+            "c_hash": "dcb9bcb3",
+            "date": "2008-06-14 15:11:43 +0000",
+            "comment": "Add OSGi support to maven build"
+        },
+        {
+            "c_hash": "3a044615",
+            "date": "2008-06-14 15:41:28 +0000",
+            "comment": "Enable OSGi in Ant build"
+        },
+        {
+            "c_hash": "05d914e5",
+            "date": "2008-06-14 15:44:05 +0000",
+            "comment": "Fixed javadoc error"
+        },
+        {
+            "c_hash": "4e36f2dc",
+            "date": "2008-06-15 11:31:45 +0000",
+            "comment": "ant dist-lite-test was not running tests: fixed it to point to the right compiled tests folder (JSIEVE-22)"
+        },
+        {
+            "c_hash": "c6e9c32c",
+            "date": "2008-06-15 11:39:22 +0000",
+            "comment": "use biz.aQute as it is its m2 repository groupId."
+        },
+        {
+            "c_hash": "8aec5f1e",
+            "date": "2008-06-15 11:53:57 +0000",
+            "comment": "use biz.aQute as it is its m2 repository groupId. moved jar reference to the include.properties (no versions in the build.xml)."
+        },
+        {
+            "c_hash": "9c07bb4e",
+            "date": "2008-06-15 12:45:55 +0000",
+            "comment": "definitions should be a folder. probably bndwrap was ignoring this because it didn't find the named folder."
+        },
+        {
+            "c_hash": "bbaf1cac",
+            "date": "2008-06-16 08:21:59 +0000",
+            "comment": "removed maven-build.bnd: I tested both the ant build and the m2 build and they output the same jar even without this file."
+        },
+        {
+            "c_hash": "c3251687",
+            "date": "2008-06-16 12:10:09 +0000",
+            "comment": "Update README.txt because of changes in the build stuff and in our infrastructure."
+        },
+        {
+            "c_hash": "792ab908",
+            "date": "2008-06-16 12:11:59 +0000",
+            "comment": "Updates/fixes for the maven based build (includes JSIEVE-23 changes)"
+        },
+        {
+            "c_hash": "dc14ec82",
+            "date": "2008-06-16 12:13:23 +0000",
+            "comment": "Updates/fixes for the maven based build (includes JSIEVE-23 changes)"
+        },
+        {
+            "c_hash": "5eb1d45b",
+            "date": "2008-06-16 12:25:47 +0000",
+            "comment": "Uncomment news about jsieve 0.2 release"
+        },
+        {
+            "c_hash": "214ccb88",
+            "date": "2008-06-19 21:19:41 +0000",
+            "comment": "Improve POM by excluding transitive dependencies"
+        },
+        {
+            "c_hash": "4da567b7",
+            "date": "2008-06-19 21:24:10 +0000",
+            "comment": "Upgraded apache-jar-resource-bundle"
+        },
+        {
+            "c_hash": "14b198d2",
+            "date": "2008-06-19 21:34:25 +0000",
+            "comment": "Deleted unneccessary verbage"
+        },
+        {
+            "c_hash": "b977727d",
+            "date": "2008-06-19 21:56:35 +0000",
+            "comment": "Use LICENSE and NOTICE from source"
+        },
+        {
+            "c_hash": "b8149eab",
+            "date": "2008-06-19 21:59:17 +0000",
+            "comment": "Ignore jars just in case JavaCC is installed at top level"
+        },
+        {
+            "c_hash": "a52415a9",
+            "date": "2008-06-19 22:03:13 +0000",
+            "comment": "BND missing from license"
+        },
+        {
+            "c_hash": "31743647",
+            "date": "2008-06-19 22:10:35 +0000",
+            "comment": "Use generated dependencies, LICENSE, NOTICE for binary"
+        },
+        {
+            "c_hash": "69f15b8c",
+            "date": "2008-06-21 08:28:52 +0000",
+            "comment": "Don't place release jar into lib directory"
+        },
+        {
+            "c_hash": "4c9748b2",
+            "date": "2008-08-12 20:24:06 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-jsieve-0.2RC1"
+        },
+        {
+            "c_hash": "962fa6dc",
+            "date": "2008-08-12 20:24:16 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "865ccb5c",
+            "date": "2008-08-14 11:21:40 +0000",
+            "comment": "Added bnd to the NOTICE.txt included in the src distribution. Added javadocs folder to the bin distribution. Added NOTICE.base and LICENSE.apache to the src distribution (it must include anything we have in svn, to be reproducible) Fixed/Updated some maven plugin dependency."
+        },
+        {
+            "c_hash": "615daaa8",
+            "date": "2008-08-14 19:03:00 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-jsieve-0.2RC2"
+        },
+        {
+            "c_hash": "cb72bbdd",
+            "date": "2008-08-14 19:03:13 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "f64c7ccd",
+            "date": "2008-08-19 18:54:27 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-jsieve-0.2"
+        },
+        {
+            "c_hash": "f192d0fd",
+            "date": "2008-08-19 18:54:42 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "ce3692f9",
+            "date": "2008-08-26 20:58:11 +0000",
+            "comment": "Added DOAP"
+        },
+        {
+            "c_hash": "56c25bac",
+            "date": "2008-08-26 21:10:22 +0000",
+            "comment": "Released in August and added link to download."
+        },
+        {
+            "c_hash": "b0cdee21",
+            "date": "2008-08-27 19:02:36 +0000",
+            "comment": "Update version"
+        },
+        {
+            "c_hash": "fff57d39",
+            "date": "2008-08-27 19:03:22 +0000",
+            "comment": "Upgrade JavaCC. Now under BSD license :-)"
+        },
+        {
+            "c_hash": "8e250704",
+            "date": "2008-08-27 19:05:58 +0000",
+            "comment": "Now use output directory instructions in parser generation documents."
+        },
+        {
+            "c_hash": "2070760f",
+            "date": "2008-08-27 21:30:28 +0000",
+            "comment": "JSIEVE-24 added dependencies to allow easy building"
+        },
+        {
+            "c_hash": "4d697b6c",
+            "date": "2008-08-27 21:42:23 +0000",
+            "comment": "Added licenses"
+        },
+        {
+            "c_hash": "ca05fd78",
+            "date": "2008-08-28 17:26:46 +0000",
+            "comment": "Helper class for MailAdapter implementors"
+        },
+        {
+            "c_hash": "d9b10fd6",
+            "date": "2008-08-28 17:27:03 +0000",
+            "comment": "API changes TODO"
+        },
+        {
+            "c_hash": "48ca154e",
+            "date": "2008-08-28 17:44:50 +0000",
+            "comment": "Added code snippet for parseAddresses implementation"
+        },
+        {
+            "c_hash": "e0827265",
+            "date": "2008-08-31 15:13:54 +0000",
+            "comment": "CommandStateManager is no longer a pseudo-singleton. JSIEVE-26"
+        },
+        {
+            "c_hash": "cbe744e3",
+            "date": "2008-08-31 16:11:23 +0000",
+            "comment": "JSIEVE-28 ConditionManager is no longer a singleton. https://issues.apache.org/jira/browse/JSIEVE-28"
+        },
+        {
+            "c_hash": "49877e59",
+            "date": "2008-08-31 16:18:15 +0000",
+            "comment": "Remove unused context."
+        },
+        {
+            "c_hash": "25fa12e1",
+            "date": "2008-08-31 16:21:36 +0000",
+            "comment": "Consolidate by removing unneccessary indirection."
+        },
+        {
+            "c_hash": "a1d94884",
+            "date": "2008-08-31 16:35:17 +0000",
+            "comment": "Consolidated CommandManager.getInstance() into SieveFactory. JSIEVE-29."
+        },
+        {
+            "c_hash": "31ccce81",
+            "date": "2008-08-31 18:27:43 +0000",
+            "comment": "Moved ComparatorManager usage into SieveFactory"
+        },
+        {
+            "c_hash": "dc5afb6a",
+            "date": "2008-08-31 18:36:01 +0000",
+            "comment": "Consolidated calls"
+        },
+        {
+            "c_hash": "ae890879",
+            "date": "2008-08-31 18:38:48 +0000",
+            "comment": "Removed unnecessary field."
+        },
+        {
+            "c_hash": "6391b11e",
+            "date": "2008-08-31 18:51:53 +0000",
+            "comment": "Moved TestManager into SieveFactory"
+        },
+        {
+            "c_hash": "90c3dfe8",
+            "date": "2008-08-31 19:29:57 +0000",
+            "comment": "JSIEVE-30 Inject Log rather than call singleton"
+        },
+        {
+            "c_hash": "29fa102b",
+            "date": "2008-08-31 19:52:36 +0000",
+            "comment": "ConfigurationManager builds ComparatorManager"
+        },
+        {
+            "c_hash": "a9e551a3",
+            "date": "2008-09-01 18:34:29 +0000",
+            "comment": "Switch CommandManager from singleton to configured instance. JSIEVE-25"
+        },
+        {
+            "c_hash": "ba4386c6",
+            "date": "2008-09-01 18:44:36 +0000",
+            "comment": "Switch TestManager from singleton into configuration. JSIEVE-32"
+        },
+        {
+            "c_hash": "bf704bb9",
+            "date": "2008-09-01 19:55:52 +0000",
+            "comment": "SieveFactory is no longer a singleton. JSIEVE-31."
+        },
+        {
+            "c_hash": "3a7691ec",
+            "date": "2008-09-01 20:32:11 +0000",
+            "comment": "Factored out interfaces. JSIEVE-25 JSIEVE-27 JSIEVE-32"
+        },
+        {
+            "c_hash": "424dae12",
+            "date": "2008-09-01 21:03:12 +0000",
+            "comment": "SieveFactory is no longer a singleton. JSIEVE-31"
+        },
+        {
+            "c_hash": "2dd3397e",
+            "date": "2008-09-01 21:59:15 +0000",
+            "comment": "Add build method to configuration manager"
+        },
+        {
+            "c_hash": "afe97f50",
+            "date": "2008-09-02 10:34:49 +0000",
+            "comment": "Clean-up junit tests from unnecessary setup/teardown/constructor/main methods."
+        },
+        {
+            "c_hash": "a5ac7c24",
+            "date": "2008-09-04 21:49:51 +0000",
+            "comment": "Ran a reformat and optimise imports in Eclipse as suggested on list. If anyone has any outstanding patches which are now fried, apologies."
+        },
+        {
+            "c_hash": "2b1de83f",
+            "date": "2008-09-27 16:58:00 +0000",
+            "comment": "Removed .junit. package name from tests. (JSIEVE-33)"
+        },
+        {
+            "c_hash": "ee0d73f6",
+            "date": "2008-09-27 16:59:00 +0000",
+            "comment": "Removed .junit. package name from tests. (JSIEVE-33)"
+        },
+        {
+            "c_hash": "acb4664b",
+            "date": "2008-09-27 17:00:06 +0000",
+            "comment": "Removed .junit. package name from tests. (JSIEVE-33)"
+        },
+        {
+            "c_hash": "392a0662",
+            "date": "2008-09-27 17:18:46 +0000",
+            "comment": "Remove unused sieveConfig.xml. Fixed test class path in commandsmap.properties. Removed test command from official commandsmap and added a custom commandsmap for the test suite."
+        },
+        {
+            "c_hash": "bfab4bf2",
+            "date": "2008-09-27 17:21:14 +0000",
+            "comment": "Remove unused folders"
+        },
+        {
+            "c_hash": "15392cd2",
+            "date": "2008-09-27 17:21:54 +0000",
+            "comment": "Remove unused folders"
+        },
+        {
+            "c_hash": "33f18153",
+            "date": "2008-10-06 20:21:44 +0000",
+            "comment": "JSIEVE-37 Push main source down a level to allow space for other modules."
+        },
+        {
+            "c_hash": "abb73794",
+            "date": "2008-10-06 21:21:34 +0000",
+            "comment": "Added basic modular build file. JSIEVE-38."
+        },
+        {
+            "c_hash": "845f31e8",
+            "date": "2008-10-06 21:22:59 +0000",
+            "comment": "Ignore Eclipse files"
+        },
+        {
+            "c_hash": "10d60e52",
+            "date": "2008-10-26 06:36:17 +0000",
+            "comment": "First step towards separating out a samples module (copy stage of copy-then-prune). JSIEVE-40"
+        },
+        {
+            "c_hash": "c942dd7e",
+            "date": "2008-10-26 06:49:56 +0000",
+            "comment": "Prune source. JSIEVE-40"
+        },
+        {
+            "c_hash": "4057a54a",
+            "date": "2008-10-26 07:18:29 +0000",
+            "comment": "Move samples into correct locations. Some require updates and have difficult dependencies. Commenting out build for now. JSIEVE-40"
+        },
+        {
+            "c_hash": "0b4464d4",
+            "date": "2008-10-26 07:22:04 +0000",
+            "comment": "Move samples into correct locations. JSIEVE-40"
+        },
+        {
+            "c_hash": "3dc0e880",
+            "date": "2008-10-26 07:25:21 +0000",
+            "comment": "Correct typo. JSIEVE-40"
+        },
+        {
+            "c_hash": "785a629d",
+            "date": "2008-10-26 07:25:49 +0000",
+            "comment": "Remove unused directories. JSIEVE-40"
+        },
+        {
+            "c_hash": "ad5a3b50",
+            "date": "2008-10-26 07:28:46 +0000",
+            "comment": "Move checker into utility module. JSIEVE-44"
+        },
+        {
+            "c_hash": "05780092",
+            "date": "2008-10-26 07:35:12 +0000",
+            "comment": "Move checker into utility module. JSIEVE-44"
+        },
+        {
+            "c_hash": "91ab8505",
+            "date": "2008-10-27 20:55:24 +0000",
+            "comment": "Fixed up dependencies for check code. JSIEVE-44"
+        },
+        {
+            "c_hash": "323a582b",
+            "date": "2008-11-09 16:47:44 +0000",
+            "comment": "Moving sieve mailet by copy-then-prune."
+        },
+        {
+            "c_hash": "f7d18cd1",
+            "date": "2008-11-09 17:05:48 +0000",
+            "comment": "Prune other classes copied over."
+        },
+        {
+            "c_hash": "53390a5e",
+            "date": "2008-11-09 17:36:43 +0000",
+            "comment": "Samples just contained an earlier version of the mailet."
+        },
+        {
+            "c_hash": "6a354b82",
+            "date": "2008-11-15 11:02:05 +0000",
+            "comment": "Upgrade to new mailet base including references."
+        },
+        {
+            "c_hash": "626fcd0f",
+            "date": "2008-11-15 11:04:05 +0000",
+            "comment": "Mailet API belongs in group org.apache.james"
+        },
+        {
+            "c_hash": "5424c954",
+            "date": "2008-11-15 17:17:17 +0000",
+            "comment": "Remove unused directory"
+        },
+        {
+            "c_hash": "fa718d63",
+            "date": "2008-11-16 12:02:08 +0000",
+            "comment": "Repackage mailet"
+        },
+        {
+            "c_hash": "df6dc081",
+            "date": "2008-11-16 18:11:15 +0000",
+            "comment": "Fix jar naming"
+        },
+        {
+            "c_hash": "f03480f2",
+            "date": "2008-11-16 18:18:09 +0000",
+            "comment": "Should just use svn export to create source distributions."
+        },
+        {
+            "c_hash": "b6561901",
+            "date": "2008-11-16 18:29:23 +0000",
+            "comment": "Add javadocs for util and mailet"
+        },
+        {
+            "c_hash": "8095641c",
+            "date": "2008-11-16 18:33:31 +0000",
+            "comment": "Create jars in root of target"
+        },
+        {
+            "c_hash": "5e87476c",
+            "date": "2008-11-16 18:40:26 +0000",
+            "comment": "Adopt more conventional name for test jar"
+        },
+        {
+            "c_hash": "accc8184",
+            "date": "2008-11-19 20:02:56 +0000",
+            "comment": "Maven build for mailet"
+        },
+        {
+            "c_hash": "f666e8ac",
+            "date": "2008-11-19 20:06:27 +0000",
+            "comment": "Maven build for mailet"
+        },
+        {
+            "c_hash": "a23f69b2",
+            "date": "2008-11-19 20:08:45 +0000",
+            "comment": "Corrected documentation"
+        },
+        {
+            "c_hash": "be98cb90",
+            "date": "2008-11-19 20:12:37 +0000",
+            "comment": "My Maven-foo is weak so let's start with a template."
+        },
+        {
+            "c_hash": "3e87ffa6",
+            "date": "2008-11-19 20:24:56 +0000",
+            "comment": "Working multi-module maven pom"
+        },
+        {
+            "c_hash": "18e6e0ea",
+            "date": "2008-11-19 21:16:49 +0000",
+            "comment": "Basic top level site"
+        },
+        {
+            "c_hash": "1caf47d1",
+            "date": "2008-11-19 21:30:28 +0000",
+            "comment": "Add resources for mailet site"
+        },
+        {
+            "c_hash": "3219b2b7",
+            "date": "2008-11-19 21:36:35 +0000",
+            "comment": "Added foundation links"
+        },
+        {
+            "c_hash": "09dd7932",
+            "date": "2008-11-19 21:54:36 +0000",
+            "comment": "Fork util subsite"
+        },
+        {
+            "c_hash": "5ed2b747",
+            "date": "2008-11-19 22:00:06 +0000",
+            "comment": "Convenient to link site"
+        },
+        {
+            "c_hash": "912586a5",
+            "date": "2008-11-20 23:13:22 +0000",
+            "comment": "Phoenix doesn't like specification versions with letters in"
+        },
+        {
+            "c_hash": "9cd84fc4",
+            "date": "2008-11-27 22:49:41 +0000",
+            "comment": "Prune unused directories"
+        },
+        {
+            "c_hash": "22eb23e7",
+            "date": "2008-11-27 22:52:18 +0000",
+            "comment": "Improve mailet naming"
+        },
+        {
+            "c_hash": "7a91e86c",
+            "date": "2008-11-29 11:56:50 +0000",
+            "comment": "Fixed typo"
+        },
+        {
+            "c_hash": "3ac80a52",
+            "date": "2008-11-30 14:51:51 +0000",
+            "comment": "Switch to absolute URLs"
+        },
+        {
+            "c_hash": "b9582321",
+            "date": "2008-11-30 16:54:14 +0000",
+            "comment": "Modules should use super POM"
+        },
+        {
+            "c_hash": "5a66f5ba",
+            "date": "2008-11-30 17:25:27 +0000",
+            "comment": "Corrected some names"
+        },
+        {
+            "c_hash": "0b18ebfc",
+            "date": "2008-12-01 22:08:20 +0000",
+            "comment": "Added subsite for Sieve Mailet"
+        },
+        {
+            "c_hash": "49a5e946",
+            "date": "2008-12-01 22:27:58 +0000",
+            "comment": "Add some appropriate javadocs"
+        },
+        {
+            "c_hash": "0fb98acb",
+            "date": "2008-12-02 22:21:27 +0000",
+            "comment": "Corrected javadocs"
+        },
+        {
+            "c_hash": "aa8d519e",
+            "date": "2008-12-03 10:15:44 +0000",
+            "comment": "Move from file to URI for script loading"
+        },
+        {
+            "c_hash": "bca293eb",
+            "date": "2008-12-03 10:24:46 +0000",
+            "comment": "Introduced control over verbose logging"
+        },
+        {
+            "c_hash": "9f7296dc",
+            "date": "2008-12-04 22:32:39 +0000",
+            "comment": "Allow subclasses to override"
+        },
+        {
+            "c_hash": "e543d5f8",
+            "date": "2008-12-07 08:00:35 +0000",
+            "comment": "Add API for generating a Sieve script from a parse tree (https://issues.apache.org/jira/browse/JSIEVE-43). AStart implementation by creating low level API. Starting to work in util for now, but this will need to be reviewed later JSIEVE-43"
+        },
+        {
+            "c_hash": "7875adc0",
+            "date": "2008-12-07 17:31:54 +0000",
+            "comment": "https://issues.apache.org/jira/browse/JSIEVE-42 SieveNode.getValue() should escape value JSIEVE-42."
+        },
+        {
+            "c_hash": "7a2d3bdd",
+            "date": "2008-12-07 19:23:15 +0000",
+            "comment": "High level API for JSIEVE-43 Add API for generating a Sieve script from a parse tree (https://issues.apache.org/jira/browse/JSIEVE-43)"
+        },
+        {
+            "c_hash": "41347a31",
+            "date": "2008-12-17 20:49:59 +0000",
+            "comment": "Allow optional consumption. This should allow messages to be delivery to IMAP and also to LocalDelivery."
+        },
+        {
+            "c_hash": "1d0ff53f",
+            "date": "2008-12-20 09:24:16 +0000",
+            "comment": "Upgrade to latest base mailet. Allow verbose to be set as an init parameter."
+        },
+        {
+            "c_hash": "727e943f",
+            "date": "2008-12-22 19:56:12 +0000",
+            "comment": "Clearly and cleanly fail on init() to indicate that mailet requires locator."
+        },
+        {
+            "c_hash": "9533d18b",
+            "date": "2008-12-23 19:46:37 +0000",
+            "comment": "Added quiet parameter (for minimal logging). Added adapter to allow Sieve to log to the mailet log system."
+        },
+        {
+            "c_hash": "e1ede166",
+            "date": "2008-12-23 19:50:43 +0000",
+            "comment": "Allow log to be set on the configuration."
+        },
+        {
+            "c_hash": "09bcccc6",
+            "date": "2008-12-23 20:41:35 +0000",
+            "comment": "Avoid losing information about the exception thrown."
+        },
+        {
+            "c_hash": "e8be03f1",
+            "date": "2008-12-23 21:04:14 +0000",
+            "comment": "Replace singleton."
+        },
+        {
+            "c_hash": "990bf9b0",
+            "date": "2008-12-23 21:06:19 +0000",
+            "comment": "Remove unused class"
+        },
+        {
+            "c_hash": "c18c01a2",
+            "date": "2008-12-23 21:10:26 +0000",
+            "comment": "Initialise ActionDispatcher in mailet. Better to throw MessagingException since ActionDispatcher is a mailet class."
+        },
+        {
+            "c_hash": "5d04a7eb",
+            "date": "2008-12-23 22:33:48 +0000",
+            "comment": "Revise dispatch in favour of a system that uses interfaces (rather than reflection). Introduced ActionContext to group minor parameters together."
+        },
+        {
+            "c_hash": "9bab8b7e",
+            "date": "2008-12-23 22:34:54 +0000",
+            "comment": "Update reference"
+        },
+        {
+            "c_hash": "ce531cb0",
+            "date": "2008-12-23 22:58:29 +0000",
+            "comment": "Check for case when mailbox starts with delimiter"
+        },
+        {
+            "c_hash": "1c043948",
+            "date": "2008-12-26 17:50:37 +0000",
+            "comment": "Next stage in XML pipeline"
+        },
+        {
+            "c_hash": "82fb19f9",
+            "date": "2008-12-26 19:04:07 +0000",
+            "comment": "Too tedious to create XML escaping from scratch so start from existing code (from RAT)."
+        },
+        {
+            "c_hash": "27024c54",
+            "date": "2008-12-26 19:13:12 +0000",
+            "comment": "Correct name, package and basic references"
+        },
+        {
+            "c_hash": "bea8b7cd",
+            "date": "2008-12-27 08:49:35 +0000",
+            "comment": "Implement Out interface"
+        },
+        {
+            "c_hash": "5e8733eb",
+            "date": "2009-01-05 22:33:55 +0000",
+            "comment": "Upgrade to Mailet 2.4"
+        },
+        {
+            "c_hash": "22ca3e52",
+            "date": "2009-01-18 09:11:41 +0000",
+            "comment": "Renumbered MailetDocs"
+        },
+        {
+            "c_hash": "e3345ef9",
+            "date": "2009-01-18 11:06:52 +0000",
+            "comment": "Corrected speiling mistake"
+        },
+        {
+            "c_hash": "8fa181a3",
+            "date": "2009-01-18 11:07:08 +0000",
+            "comment": "Added missing jmock dependencies"
+        },
+        {
+            "c_hash": "f97532ba",
+            "date": "2009-01-18 11:09:37 +0000",
+            "comment": "Removed unused pheonix mappings"
+        },
+        {
+            "c_hash": "448a7617",
+            "date": "2009-01-18 11:17:40 +0000",
+            "comment": "Removed unused directory"
+        },
+        {
+            "c_hash": "e528053e",
+            "date": "2009-01-18 11:25:02 +0000",
+            "comment": "Removed individual distributions"
+        },
+        {
+            "c_hash": "a998f27b",
+            "date": "2009-01-18 13:55:06 +0000",
+            "comment": "Upgrade to JavaCC 4"
+        },
+        {
+            "c_hash": "3e425a8b",
+            "date": "2009-01-18 14:56:20 +0000",
+            "comment": "Add JIRA change reports"
+        },
+        {
+            "c_hash": "562a86f4",
+            "date": "2009-01-18 16:17:30 +0000",
+            "comment": "These are used only by sieve and are not appropriate for a generic library"
+        },
+        {
+            "c_hash": "cf6435aa",
+            "date": "2009-01-18 16:29:55 +0000",
+            "comment": "Correct packaging after move of mdn to sieve from base."
+        },
+        {
+            "c_hash": "19d555fc",
+            "date": "2009-01-18 21:49:46 +0000",
+            "comment": "JSIEVE-47 Added access for comments from scripts."
+        },
+        {
+            "c_hash": "bd78cccf",
+            "date": "2009-02-11 21:42:40 +0000",
+            "comment": "Just applied standard formatting. JSIEVE-45."
+        },
+        {
+            "c_hash": "da129052",
+            "date": "2009-02-11 22:00:24 +0000",
+            "comment": "No need to generate javadocs every time."
+        },
+        {
+            "c_hash": "d357baee",
+            "date": "2009-02-11 22:13:28 +0000",
+            "comment": "Clean up build. JSIEVE-45"
+        },
+        {
+            "c_hash": "4c11a4d8",
+            "date": "2009-02-11 22:35:03 +0000",
+            "comment": "Move common compilation code into macro. JSIEVE-45"
+        },
+        {
+            "c_hash": "720c4659",
+            "date": "2009-02-11 22:47:56 +0000",
+            "comment": "Move duplicated jar into macro. JSIEVE-45"
+        },
+        {
+            "c_hash": "3bde76fa",
+            "date": "2009-02-11 22:51:49 +0000",
+            "comment": "Simplify build by removing assembly code. JSIEVE-45"
+        },
+        {
+            "c_hash": "5e876422",
+            "date": "2009-02-11 22:55:15 +0000",
+            "comment": "Simplify build by source preparation. JSIEVE-45"
+        },
+        {
+            "c_hash": "86fa2486",
+            "date": "2009-02-11 23:05:17 +0000",
+            "comment": "Move duplicated clean into macro. JSIEVE-45"
+        },
+        {
+            "c_hash": "3d102619",
+            "date": "2009-02-11 23:37:45 +0000",
+            "comment": "Move duplicated test runner into macro. JSIEVE-45"
+        },
+        {
+            "c_hash": "0da7f9cd",
+            "date": "2009-02-12 17:53:39 +0000",
+            "comment": "Consolidate duplicate check. JSIEVE-45"
+        },
+        {
+            "c_hash": "42a99e08",
+            "date": "2009-02-12 18:46:30 +0000",
+            "comment": "Corrected message. JSIEVE-45"
+        },
+        {
+            "c_hash": "1f0c51e3",
+            "date": "2009-02-12 20:18:18 +0000",
+            "comment": "Move usage into macro. JSIEVE-45"
+        },
+        {
+            "c_hash": "c194ec09",
+            "date": "2009-02-12 20:31:23 +0000",
+            "comment": "Move documentation into description attributes. Improve 'ant usage'."
+        },
+        {
+            "c_hash": "4adbd873",
+            "date": "2009-02-21 14:05:39 +0000",
+            "comment": "First cut at a multi module assembly JSIEVE-48 https://issues.apache.org/jira/browse/JSIEVE-48"
+        },
+        {
+            "c_hash": "ed9ec7a8",
+            "date": "2009-02-21 14:19:58 +0000",
+            "comment": "JMock should be test only JSIEVE-48 https://issues.apache.org/jira/browse/JSIEVE-48"
+        },
+        {
+            "c_hash": "c33c5bea",
+            "date": "2009-02-21 15:13:03 +0000",
+            "comment": "Upgrade to latest release candidate"
+        },
+        {
+            "c_hash": "c0ac5c55",
+            "date": "2009-02-21 15:47:40 +0000",
+            "comment": "Include aggregate on site. JSIEVE-48 https://issues.apache.org/jira/browse/JSIEVE-48"
+        },
+        {
+            "c_hash": "4afb2aa6",
+            "date": "2009-02-22 14:34:26 +0000",
+            "comment": "Switching to assembly module JSIEVE-48 https://issues.apache.org/jira/browse/JSIEVE-48"
+        },
+        {
+            "c_hash": "59a46a17",
+            "date": "2009-02-22 14:35:29 +0000",
+            "comment": "Switching to assembly module JSIEVE-48 https://issues.apache.org/jira/browse/JSIEVE-48"
+        },
+        {
+            "c_hash": "36404df3",
+            "date": "2009-02-23 21:29:56 +0000",
+            "comment": "Basic source and binary distributions JSIEVE-48 https://issues.apache.org/jira/browse/JSIEVE-48"
+        },
+        {
+            "c_hash": "1a9d9e4f",
+            "date": "2009-02-23 21:32:29 +0000",
+            "comment": "Remove assembles from top level. ATM Maven assembly has issues with complex multiproject assemblies caused by the parent lifecycle completing before any children. JSIEVE-48 https://issues.apache.org/jira/browse/JSIEVE-48"
+        },
+        {
+            "c_hash": "57cc46a2",
+            "date": "2009-02-23 21:33:57 +0000",
+            "comment": "Only assemble module should assemble. JSIEVE-48 https://issues.apache.org/jira/browse/JSIEVE-48"
+        },
+        {
+            "c_hash": "20dfa035",
+            "date": "2009-02-23 21:53:47 +0000",
+            "comment": "Wonder why that wasn't removed :-/ JSIEVE-48 https://issues.apache.org/jira/browse/JSIEVE-48"
+        },
+        {
+            "c_hash": "8622e3d6",
+            "date": "2009-02-23 21:54:35 +0000",
+            "comment": "Fix licenses and notices JSIEVE-48 https://issues.apache.org/jira/browse/JSIEVE-48"
+        },
+        {
+            "c_hash": "e09d6779",
+            "date": "2009-02-23 22:42:16 +0000",
+            "comment": "Only assemble in assemble JSIEVE-48 https://issues.apache.org/jira/browse/JSIEVE-48"
+        },
+        {
+            "c_hash": "922e0f9c",
+            "date": "2009-02-24 21:39:30 +0000",
+            "comment": "It's now 2009 JSIEVE-48 https://issues.apache.org/jira/browse/JSIEVE-48"
+        },
+        {
+            "c_hash": "f4e6166a",
+            "date": "2009-02-24 22:05:13 +0000",
+            "comment": "Use README to start release notes JSIEVE-48 https://issues.apache.org/jira/browse/JSIEVE-48"
+        },
+        {
+            "c_hash": "cb107c90",
+            "date": "2009-02-25 20:02:31 +0000",
+            "comment": "Upgrade to released version of mailetdocs https://issues.apache.org/jira/browse/JSIEVE-48 JSIEVE-48"
+        },
+        {
+            "c_hash": "992c16f6",
+            "date": "2009-02-27 15:07:25 +0000",
+            "comment": "Exclude hidden files JSIEVE-48 https://issues.apache.org/jira/browse/JSIEVE-48"
+        },
+        {
+            "c_hash": "2f4f7df7",
+            "date": "2009-02-28 20:27:26 +0000",
+            "comment": "Include javadocs JSIEVE-48 https://issues.apache.org/jira/browse/JSIEVE-48"
+        },
+        {
+            "c_hash": "51355821",
+            "date": "2009-04-01 21:22:03 +0000",
+            "comment": "Upgrade to release"
+        },
+        {
+            "c_hash": "8d1f0d37",
+            "date": "2009-04-06 15:24:09 +0000",
+            "comment": "Upgrade to release"
+        },
+        {
+            "c_hash": "6ec69269",
+            "date": "2009-04-07 20:47:11 +0000",
+            "comment": "Move dependency management into parent project"
+        },
+        {
+            "c_hash": "58a3fb41",
+            "date": "2009-04-07 21:00:58 +0000",
+            "comment": "Upgrade to latest Mime4J release"
+        },
+        {
+            "c_hash": "1cd2ac7b",
+            "date": "2009-04-08 16:22:55 +0000",
+            "comment": "Added workaround for issue with Pattern. SIEVE-49"
+        },
+        {
+            "c_hash": "8b6fa4ca",
+            "date": "2009-04-08 21:23:36 +0000",
+            "comment": "Added integration test. JSIEVE-43 https://issues.apache.org/jira/browse/JSIEVE-43"
+        },
+        {
+            "c_hash": "dfe6effb",
+            "date": "2009-04-09 09:23:14 +0000",
+            "comment": "Document progress on sieve-in-xml JSIEVE-50 https://issues.apache.org/jira/browse/JSIEVE-50"
+        },
+        {
+            "c_hash": "211698c9",
+            "date": "2009-04-09 11:23:26 +0000",
+            "comment": "Basic support for output to Sieve script JSIEVE-43 https://issues.apache.org/jira/browse/JSIEVE-43"
+        },
+        {
+            "c_hash": "fbeace39",
+            "date": "2009-04-09 17:52:50 +0000",
+            "comment": "Integration tests. Short of good test scripts :-/ JSIEVE-43 https://issues.apache.org/jira/browse/JSIEVE-43"
+        },
+        {
+            "c_hash": "dd35e23d",
+            "date": "2009-04-09 19:52:30 +0000",
+            "comment": "Added integration test JSIEVE-52 https://issues.apache.org/jira/browse/JSIEVE-52"
+        },
+        {
+            "c_hash": "a6fe58e8",
+            "date": "2009-04-09 21:04:06 +0000",
+            "comment": "Improved release notes"
+        },
+        {
+            "c_hash": "16bf3165",
+            "date": "2009-04-17 11:31:21 +0000",
+            "comment": "Upgrade to matching version. However, JJDoc no longer seems to work with pipelined jjtree. Will raise issue on this at plugin."
+        },
+        {
+            "c_hash": "1370d34f",
+            "date": "2009-04-17 17:22:47 +0000",
+            "comment": "Updated NOTICE"
+        },
+        {
+            "c_hash": "f7a176da",
+            "date": "2009-04-18 07:13:59 +0000",
+            "comment": "Include licenses in binary distribution"
+        },
+        {
+            "c_hash": "cb5599ec",
+            "date": "2009-04-18 07:58:13 +0000",
+            "comment": "Move plugin definition to top level. This ensures that aggregate javadocs are available for assemble during packaging."
+        },
+        {
+            "c_hash": "847296b7",
+            "date": "2009-04-18 08:01:23 +0000",
+            "comment": "Echo note that Maven is the primary build tool"
+        },
+        {
+            "c_hash": "5a58d156",
+            "date": "2009-04-22 10:19:02 +0000",
+            "comment": "JSIEVE-53 Upgrade to 1.5 for Ant build. https://issues.apache.org/jira/browse/JSIEVE-53"
+        },
+        {
+            "c_hash": "f272af2d",
+            "date": "2009-04-22 10:19:45 +0000",
+            "comment": "Consolidate compiler plugin into parent build and upgrade to Java 1.5. https://issues.apache.org/jira/browse/JSIEVE-53"
+        },
+        {
+            "c_hash": "c6a82f13",
+            "date": "2009-04-22 12:13:42 +0000",
+            "comment": "Ensure Ant build copies jars to stage."
+        },
+        {
+            "c_hash": "e41cc2ec",
+            "date": "2009-04-22 12:30:07 +0000",
+            "comment": "Intermediary build should be in target."
+        },
+        {
+            "c_hash": "c8c7b26b",
+            "date": "2009-04-22 12:43:41 +0000",
+            "comment": "Add note about change to require Java 1.5 JSIEVE-36"
+        },
+        {
+            "c_hash": "e0a30ed4",
+            "date": "2009-04-22 14:29:09 +0000",
+            "comment": "[maven-release-plugin] prepare release jsieve-project-0.3RC1"
+        },
+        {
+            "c_hash": "887253d4",
+            "date": "2009-04-22 15:42:09 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "5439dfef",
+            "date": "2009-04-22 18:08:53 +0000",
+            "comment": "Introduce variables to allow local staging of website"
+        },
+        {
+            "c_hash": "02d9535a",
+            "date": "2009-04-22 18:18:14 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-jsieve-0.3RC2"
+        },
+        {
+            "c_hash": "e3c4459d",
+            "date": "2009-04-22 18:19:26 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "5448c359",
+            "date": "2009-04-22 18:25:20 +0000",
+            "comment": "Fixed typo :-/"
+        },
+        {
+            "c_hash": "7ba0e7f3",
+            "date": "2009-04-22 18:32:16 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-jsieve-0.3RC3"
+        },
+        {
+            "c_hash": "3b3ce98a",
+            "date": "2009-04-22 18:51:29 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "0595f378",
+            "date": "2009-04-22 20:39:45 +0000",
+            "comment": "Inherit distribution from parent."
+        },
+        {
+            "c_hash": "ed1618ed",
+            "date": "2009-04-22 20:54:23 +0000",
+            "comment": "Inheritance didn't work very well :-/"
+        },
+        {
+            "c_hash": "7a8d2a43",
+            "date": "2009-04-22 21:04:56 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-jsieve-0.3RC4"
+        },
+        {
+            "c_hash": "bb413544",
+            "date": "2009-04-22 21:40:39 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "42a613b8",
+            "date": "2009-04-27 08:05:53 +0000",
+            "comment": "These files are duplicates of those in the main jar. Thanks for Stefano for spotting this one."
+        },
+        {
+            "c_hash": "294a6ffb",
+            "date": "2009-04-27 11:00:18 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-jsieve-0.3RC5"
+        },
+        {
+            "c_hash": "bd3a0c99",
+            "date": "2009-04-27 11:38:08 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "9ffb9fd3",
+            "date": "2009-05-12 17:01:16 +0000",
+            "comment": "[maven-release-plugin] prepare release jsieve-project-0.3"
+        },
+        {
+            "c_hash": "39c56510",
+            "date": "2009-05-12 17:08:48 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "4abd106f",
+            "date": "2009-06-18 15:25:30 +0000",
+            "comment": "Upgrade to latest version of project pom"
+        },
+        {
+            "c_hash": "e513edba",
+            "date": "2009-06-18 15:26:04 +0000",
+            "comment": "Announce JSieve 0.3"
+        },
+        {
+            "c_hash": "a5b88617",
+            "date": "2009-06-18 15:32:24 +0000",
+            "comment": "Inherit these menus from parent pom"
+        },
+        {
+            "c_hash": "a2c21952",
+            "date": "2009-06-18 17:20:44 +0000",
+            "comment": "Need to specify subdirectories"
+        },
+        {
+            "c_hash": "d9fed2ae",
+            "date": "2009-07-23 10:17:46 +0000",
+            "comment": "Improve test coverage"
+        },
+        {
+            "c_hash": "f0b594d5",
+            "date": "2009-07-23 10:37:36 +0000",
+            "comment": "JSIEVE-53 Switch from StringBuffer to StringBuilder to improve performance https://issues.apache.org/jira/browse/JSIEVE-53"
+        },
+        {
+            "c_hash": "bcfd56b9",
+            "date": "2009-07-23 11:00:34 +0000",
+            "comment": "JSIEVE-57 Multiline and quoted strings require different pruning https://issues.apache.org/jira/browse/JSIEVE-57"
+        },
+        {
+            "c_hash": "76274117",
+            "date": "2009-07-23 11:14:27 +0000",
+            "comment": "JSIEVE-57 Ensure whitespace prefixing is removed from string https://issues.apache.org/jira/browse/JSIEVE-57"
+        },
+        {
+            "c_hash": "654805e9",
+            "date": "2009-07-23 11:32:12 +0000",
+            "comment": "JSIEVE-57 Decode dot stuffing https://issues.apache.org/jira/browse/JSIEVE-57"
+        },
+        {
+            "c_hash": "c3dbcea5",
+            "date": "2009-07-23 11:36:06 +0000",
+            "comment": "JSIEVE-57 Check that missed dot stuffing is correctly handled https://issues.apache.org/jira/browse/JSIEVE-57"
+        },
+        {
+            "c_hash": "9c1bfa49",
+            "date": "2009-07-23 11:46:40 +0000",
+            "comment": "JSIEVE-54 Remove ant build https://issues.apache.org/jira/browse/JSIEVE-54"
+        },
+        {
+            "c_hash": "2afc3bda",
+            "date": "2009-07-23 16:16:37 +0000",
+            "comment": "Remove externals"
+        },
+        {
+            "c_hash": "6d8db4ee",
+            "date": "2009-07-23 16:29:01 +0000",
+            "comment": "JSIEVE-55 Preparing to remove staging directory by switch to parent pom https://issues.apache.org/jira/browse/JSIEVE-55"
+        },
+        {
+            "c_hash": "346969f8",
+            "date": "2009-07-23 16:30:49 +0000",
+            "comment": "JSIEVE-55 Remove stage directory https://issues.apache.org/jira/browse/JSIEVE-55"
+        },
+        {
+            "c_hash": "1706e737",
+            "date": "2009-07-23 16:32:44 +0000",
+            "comment": "JSIEVE-55 Vanilla licenses now that stage has been removed https://issues.apache.org/jira/browse/JSIEVE-55"
+        },
+        {
+            "c_hash": "31d054a7",
+            "date": "2009-07-23 17:29:27 +0000",
+            "comment": "JSIEVE-59 Generification https://issues.apache.org/jira/browse/JSIEVE-59"
+        },
+        {
+            "c_hash": "d273c5e5",
+            "date": "2009-07-23 17:43:46 +0000",
+            "comment": "JSIEVE-59 Generification https://issues.apache.org/jira/browse/JSIEVE-59"
+        },
+        {
+            "c_hash": "055e57a3",
+            "date": "2009-07-23 22:04:11 +0000",
+            "comment": "JSIEVE-35 Replaced getContent with isInBodyText https://issues.apache.org/jira/browse/JSIEVE-35"
+        },
+        {
+            "c_hash": "c9da632e",
+            "date": "2009-07-24 06:38:40 +0000",
+            "comment": "JSIEVE-56 Add setter for context, to allow MailAdapter implementations to access the environment of the current script execution https://issues.apache.org/jira/browse/JSIEVE-56"
+        },
+        {
+            "c_hash": "7fd027c9",
+            "date": "2009-07-24 13:08:59 +0000",
+            "comment": "JSIEVE-59 Switch to use alternative method https://issues.apache.org/jira/browse/JSIEVE-59"
+        },
+        {
+            "c_hash": "e140626c",
+            "date": "2009-07-24 13:09:31 +0000",
+            "comment": "JSIEVE-59 Optimise imports https://issues.apache.org/jira/browse/JSIEVE-59"
+        },
+        {
+            "c_hash": "a421524e",
+            "date": "2009-07-24 13:42:51 +0000",
+            "comment": "JSIEVE-53 Generified TestList https://issues.apache.org/jira/browse/JSIEVE-53"
+        },
+        {
+            "c_hash": "a1a87cc9",
+            "date": "2009-07-24 13:52:55 +0000",
+            "comment": "JSIEVE-53 Generified TestList https://issues.apache.org/jira/browse/JSIEVE-53"
+        },
+        {
+            "c_hash": "f4a8ae1a",
+            "date": "2009-07-24 14:01:10 +0000",
+            "comment": "JSIEVE-53 Avoid casting by factoring out method https://issues.apache.org/jira/browse/JSIEVE-53"
+        },
+        {
+            "c_hash": "2190b6a5",
+            "date": "2009-07-24 14:21:57 +0000",
+            "comment": "JSIEVE-53 Optimise imports https://issues.apache.org/jira/browse/JSIEVE-53"
+        },
+        {
+            "c_hash": "476cf8bb",
+            "date": "2009-07-24 14:24:49 +0000",
+            "comment": "JSIEVE-53 Reuse call rather than duplicate method https://issues.apache.org/jira/browse/JSIEVE-53"
+        },
+        {
+            "c_hash": "cd8faff7",
+            "date": "2009-07-24 14:34:55 +0000",
+            "comment": "JSIEVE-53 Generify https://issues.apache.org/jira/browse/JSIEVE-53"
+        },
+        {
+            "c_hash": "a16fcfa5",
+            "date": "2009-07-24 14:35:13 +0000",
+            "comment": "JSIEVE-53 Avoid casting by pushing method into TestList https://issues.apache.org/jira/browse/JSIEVE-53"
+        },
+        {
+            "c_hash": "6a4894e3",
+            "date": "2009-07-24 15:14:52 +0000",
+            "comment": "JSIEVE-53 Generify Argument https://issues.apache.org/jira/browse/JSIEVE-53"
+        },
+        {
+            "c_hash": "b76d86c4",
+            "date": "2009-07-24 15:19:31 +0000",
+            "comment": "JSIEVE-53 Generify Argument https://issues.apache.org/jira/browse/JSIEVE-53"
+        },
+        {
+            "c_hash": "a49931a4",
+            "date": "2009-07-24 15:23:29 +0000",
+            "comment": "JSIEVE-53 Generify iteartor https://issues.apache.org/jira/browse/JSIEVE-53"
+        },
+        {
+            "c_hash": "1e9e62b2",
+            "date": "2009-07-24 15:29:39 +0000",
+            "comment": "JSIEVE-53 Generify  https://issues.apache.org/jira/browse/JSIEVE-53"
+        },
+        {
+            "c_hash": "c2fb17ca",
+            "date": "2009-07-24 15:35:33 +0000",
+            "comment": "JSIEVE-53 Generify https://issues.apache.org/jira/browse/JSIEVE-53"
+        },
+        {
+            "c_hash": "466bcaf2",
+            "date": "2009-07-24 15:35:50 +0000",
+            "comment": "JSIEVE-53 Optimise imports https://issues.apache.org/jira/browse/JSIEVE-53"
+        },
+        {
+            "c_hash": "83ac1595",
+            "date": "2009-07-24 15:43:24 +0000",
+            "comment": "JSIEVE-53 Generify https://issues.apache.org/jira/browse/JSIEVE-53"
+        },
+        {
+            "c_hash": "d3bfc984",
+            "date": "2009-07-24 15:47:24 +0000",
+            "comment": "JSIEVE-53 Generify https://issues.apache.org/jira/browse/JSIEVE-53"
+        },
+        {
+            "c_hash": "a162e574",
+            "date": "2009-07-24 16:44:43 +0000",
+            "comment": "JSIEVE-53 Generify https://issues.apache.org/jira/browse/JSIEVE-53"
+        },
+        {
+            "c_hash": "4bb3c402",
+            "date": "2009-07-24 19:11:16 +0000",
+            "comment": "JSIEVE-53 Generify https://issues.apache.org/jira/browse/JSIEVE-53"
+        },
+        {
+            "c_hash": "ce5e394f",
+            "date": "2009-07-24 19:20:11 +0000",
+            "comment": "JSIEVE-53 Suppress warnings about serialization in exceptions https://issues.apache.org/jira/browse/JSIEVE-53"
+        },
+        {
+            "c_hash": "4f810c1b",
+            "date": "2009-07-24 19:21:34 +0000",
+            "comment": "JSIEVE-53 Suppress warnings about serialization in exceptions https://issues.apache.org/jira/browse/JSIEVE-53"
+        },
+        {
+            "c_hash": "08a4b7f3",
+            "date": "2009-07-24 19:22:11 +0000",
+            "comment": "JSIEVE-53 Added missing comments https://issues.apache.org/jira/browse/JSIEVE-53"
+        },
+        {
+            "c_hash": "d0092d21",
+            "date": "2009-07-24 19:35:41 +0000",
+            "comment": "JSIEVE-59 Remove action iterator https://issues.apache.org/jira/browse/JSIEVE-59"
+        },
+        {
+            "c_hash": "887dd922",
+            "date": "2009-07-24 19:38:48 +0000",
+            "comment": "JSIEVE-59 Reuse main class https://issues.apache.org/jira/browse/JSIEVE-59"
+        },
+        {
+            "c_hash": "81816348",
+            "date": "2009-07-24 20:25:53 +0000",
+            "comment": "JSIEVE-53 Generification https://issues.apache.org/jira/browse/JSIEVE-53"
+        },
+        {
+            "c_hash": "4be5e4ba",
+            "date": "2009-07-25 09:02:46 +0000",
+            "comment": "JSIEVE-53 Generification https://issues.apache.org/jira/browse/JSIEVE-53"
+        },
+        {
+            "c_hash": "0a47e472",
+            "date": "2009-07-25 11:16:45 +0000",
+            "comment": "JSIEVE-53 Add comments https://issues.apache.org/jira/browse/JSIEVE-53"
+        },
+        {
+            "c_hash": "b216e2d1",
+            "date": "2009-07-25 11:17:21 +0000",
+            "comment": "JSIEVE-53 Suppress serialization warnings on exceptions https://issues.apache.org/jira/browse/JSIEVE-53"
+        },
+        {
+            "c_hash": "8d08bb68",
+            "date": "2009-07-25 11:18:40 +0000",
+            "comment": "JSIEVE-53 Add TODOs https://issues.apache.org/jira/browse/JSIEVE-53"
+        },
+        {
+            "c_hash": "a75ab880",
+            "date": "2009-07-25 11:19:36 +0000",
+            "comment": "JSIEVE-53 Generification https://issues.apache.org/jira/browse/JSIEVE-53"
+        },
+        {
+            "c_hash": "b432bc99",
+            "date": "2009-07-30 14:50:03 +0000",
+            "comment": "JSIEVE-57 Fix bug introduced by failure to start from end of last match https://issues.apache.org/jira/browse/JSIEVE-57"
+        },
+        {
+            "c_hash": "56e9956d",
+            "date": "2009-07-30 15:12:28 +0000",
+            "comment": "JSIEVE-64 JSIEVE-63 Speed up normal builds by creating source and javadoc jars when using release profile  https://issues.apache.org/jira/browse/JSIEVE-63 https://issues.apache.org/jira/browse/JSIEVE-64"
+        },
+        {
+            "c_hash": "c8477a5b",
+            "date": "2009-07-30 15:15:21 +0000",
+            "comment": "JSIEVE-64 Inherit resources build from Apache parent pom https://issues.apache.org/jira/browse/JSIEVE-64"
+        },
+        {
+            "c_hash": "49052fb9",
+            "date": "2009-07-30 15:20:58 +0000",
+            "comment": "JSIEVE-65 Inherit plug management https://issues.apache.org/jira/browse/JSIEVE-65"
+        },
+        {
+            "c_hash": "85918abc",
+            "date": "2009-07-30 15:24:39 +0000",
+            "comment": "JSIEVE-65 Inherit plugin management https://issues.apache.org/jira/browse/JSIEVE-65"
+        },
+        {
+            "c_hash": "79eb3bec",
+            "date": "2009-07-30 15:26:02 +0000",
+            "comment": "JSIEVE-65 Inherit plugin management https://issues.apache.org/jira/browse/JSIEVE-65"
+        },
+        {
+            "c_hash": "e462579f",
+            "date": "2009-07-30 15:27:43 +0000",
+            "comment": "JSIEVE-65 Inherit plugin management https://issues.apache.org/jira/browse/JSIEVE-65"
+        },
+        {
+            "c_hash": "962e22cc",
+            "date": "2009-07-30 16:50:28 +0000",
+            "comment": "JSIEVE-65 Inherit plugin management https://issues.apache.org/jira/browse/JSIEVE-65"
+        },
+        {
+            "c_hash": "c6024673",
+            "date": "2009-07-30 17:00:46 +0000",
+            "comment": "JSIEVE-65 Inherit plugin management. Only generate JJDoc reports on modules that use JavaCC https://issues.apache.org/jira/browse/JSIEVE-65"
+        },
+        {
+            "c_hash": "9208f995",
+            "date": "2009-07-30 17:18:23 +0000",
+            "comment": "JSIEVE-53 Upgrade JDK version https://issues.apache.org/jira/browse/JSIEVE-53"
+        },
+        {
+            "c_hash": "d60b7e10",
+            "date": "2009-07-30 17:35:30 +0000",
+            "comment": "JSIEVE-53 Upgrade JDK version https://issues.apache.org/jira/browse/JSIEVE-53"
+        },
+        {
+            "c_hash": "b9efdd5a",
+            "date": "2009-07-31 14:51:29 +0000",
+            "comment": "JSIEVE-66 Ensure thread safety of default Manager implementations https://issues.apache.org/jira/browse/JSIEVE-66"
+        },
+        {
+            "c_hash": "915d13a0",
+            "date": "2009-07-31 15:03:50 +0000",
+            "comment": "Improved javadocs"
+        },
+        {
+            "c_hash": "689d4c75",
+            "date": "2009-07-31 15:10:48 +0000",
+            "comment": "JSIEVE-58 Describe concurrency characteristics https://issues.apache.org/jira/browse/JSIEVE-58"
+        },
+        {
+            "c_hash": "b5679d27",
+            "date": "2009-07-31 15:16:26 +0000",
+            "comment": "JSIEVE-67 Fix typo and add links to the methods in question https://issues.apache.org/jira/browse/JSIEVE-67"
+        },
+        {
+            "c_hash": "0bd5006d",
+            "date": "2009-07-31 15:29:35 +0000",
+            "comment": "JSIEVE-67 Fix bugs https://issues.apache.org/jira/browse/JSIEVE-67"
+        },
+        {
+            "c_hash": "fc24d68f",
+            "date": "2009-07-31 15:38:01 +0000",
+            "comment": "JSIEVE-67 Fix some javadoc warnings https://issues.apache.org/jira/browse/JSIEVE-67"
+        },
+        {
+            "c_hash": "a565c1e7",
+            "date": "2009-07-31 15:46:29 +0000",
+            "comment": "JSIEVE-67 Fix some javadoc warnings https://issues.apache.org/jira/browse/JSIEVE-67"
+        },
+        {
+            "c_hash": "614312c3",
+            "date": "2009-07-31 15:51:54 +0000",
+            "comment": "JSIEVE-67 Fix some javadoc warnings https://issues.apache.org/jira/browse/JSIEVE-67"
+        },
+        {
+            "c_hash": "0f1561b3",
+            "date": "2009-08-01 11:00:12 +0000",
+            "comment": "JSIEVE-68 Switch to thread safe map https://issues.apache.org/jira/browse/JSIEVE-68"
+        },
+        {
+            "c_hash": "a6253c3a",
+            "date": "2009-08-01 11:05:22 +0000",
+            "comment": "JSIEVE-68 Clarify thread safety https://issues.apache.org/jira/browse/JSIEVE-68"
+        },
+        {
+            "c_hash": "e7084e0e",
+            "date": "2009-08-01 11:16:42 +0000",
+            "comment": "JSIEVE-53 Generify https://issues.apache.org/jira/browse/JSIEVE-53"
+        },
+        {
+            "c_hash": "913fb417",
+            "date": "2009-08-01 11:35:08 +0000",
+            "comment": "JSIEVE-67 Add package descriptions https://issues.apache.org/jira/browse/JSIEVE-67"
+        },
+        {
+            "c_hash": "ee2b93f3",
+            "date": "2009-08-03 14:02:42 +0000",
+            "comment": "Inherit common menus from james project"
+        },
+        {
+            "c_hash": "8bea9a10",
+            "date": "2009-08-03 14:23:44 +0000",
+            "comment": "Inherit standards from parent"
+        },
+        {
+            "c_hash": "04e6da7c",
+            "date": "2009-08-03 14:32:50 +0000",
+            "comment": "Improve naming for modules on site"
+        },
+        {
+            "c_hash": "cde0ae8e",
+            "date": "2009-08-04 06:54:51 +0000",
+            "comment": "JSIEVE-67 Update specification list https://issues.apache.org/jira/browse/JSIEVE-67"
+        },
+        {
+            "c_hash": "0792df48",
+            "date": "2009-08-04 06:57:00 +0000",
+            "comment": "JSIEVE-53 Generification https://issues.apache.org/jira/browse/JSIEVE-53"
+        },
+        {
+            "c_hash": "9a44ac4b",
+            "date": "2009-08-04 12:05:43 +0000",
+            "comment": "JSIEVE-71 Include comparator in default properties https://issues.apache.org/jira/browse/JSIEVE-71"
+        },
+        {
+            "c_hash": "1edfc8a4",
+            "date": "2009-08-04 12:15:00 +0000",
+            "comment": "JSIEVE-71 Improve readability by factoring methods directly into subjects https://issues.apache.org/jira/browse/JSIEVE-71"
+        },
+        {
+            "c_hash": "fc735e01",
+            "date": "2009-08-04 12:16:39 +0000",
+            "comment": "JSIEVE-71 Add test case https://issues.apache.org/jira/browse/JSIEVE-71"
+        },
+        {
+            "c_hash": "6b516618",
+            "date": "2009-08-04 12:17:36 +0000",
+            "comment": "JSIEVE-72 Validate comparators that must be explicitly be declared https://issues.apache.org/jira/browse/JSIEVE-72"
+        },
+        {
+            "c_hash": "0f7e4f65",
+            "date": "2009-08-04 12:22:50 +0000",
+            "comment": "JSIEVE-72 Add tests for implicitly declared mandatory comparators https://issues.apache.org/jira/browse/JSIEVE-72"
+        },
+        {
+            "c_hash": "7bfed3db",
+            "date": "2009-08-04 13:12:45 +0000",
+            "comment": "JSIEVE-72 Pass those comparators which are supported and have been explicitly defined https://issues.apache.org/jira/browse/JSIEVE-72"
+        },
+        {
+            "c_hash": "94f2f0f9",
+            "date": "2009-08-04 14:54:14 +0000",
+            "comment": "JSIEVE-69 Create tests based on specification and then fix bugs in implementation https://issues.apache.org/jira/browse/JSIEVE-69"
+        },
+        {
+            "c_hash": "2a0330d2",
+            "date": "2009-08-04 16:47:47 +0000",
+            "comment": "JSIEVE-62 Can't see an obvious and simple way to reuse compiled patterns https://issues.apache.org/jira/browse/JSIEVE-62"
+        },
+        {
+            "c_hash": "f4f7d082",
+            "date": "2009-08-05 10:16:12 +0000",
+            "comment": "JSIEVE-62 Not particularly satisfied with the API but can't see an obvious improvement https://issues.apache.org/jira/browse/JSIEVE-62"
+        },
+        {
+            "c_hash": "c92b7f10",
+            "date": "2009-08-05 10:26:28 +0000",
+            "comment": "JSIEVE-62 Expose managers directly rather than delegate to them https://issues.apache.org/jira/browse/JSIEVE-62"
+        },
+        {
+            "c_hash": "33e498d7",
+            "date": "2009-08-05 15:47:30 +0000",
+            "comment": "JSIEVE-67 Add link to body extension specification https://issues.apache.org/jira/browse/JSIEVE-67"
+        },
+        {
+            "c_hash": "08e14f8b",
+            "date": "2009-08-05 16:46:03 +0000",
+            "comment": "JSIEVE-67 Add description of body extension https://issues.apache.org/jira/browse/JSIEVE-67"
+        },
+        {
+            "c_hash": "e695655d",
+            "date": "2009-08-05 19:22:47 +0000",
+            "comment": "JSIEVE-62 Improve readability by explicitly setting implicit keep. This is already called in the super class but it's more readable here. https://issues.apache.org/jira/browse/JSIEVE-62"
+        },
+        {
+            "c_hash": "d20c6a31",
+            "date": "2009-08-24 12:28:57 +0000",
+            "comment": "JSIEVE-73 Body extension is now an RFC https://issues.apache.org/jira/browse/JSIEVE-73"
+        },
+        {
+            "c_hash": "85d37813",
+            "date": "2009-11-15 18:28:30 +0000",
+            "comment": "Steve sometimes had his IDE misconfigured. This should have been picked up in the initial import but wasn't."
+        },
+        {
+            "c_hash": "65d39d33",
+            "date": "2009-11-15 18:47:34 +0000",
+            "comment": "JSIEVE-74 Added test case. https://issues.apache.org/jira/browse/JSIEVE-74"
+        },
+        {
+            "c_hash": "7301a572",
+            "date": "2009-11-29 15:06:05 +0000",
+            "comment": "add protected method to be able to override for james server"
+        },
+        {
+            "c_hash": "495fd555",
+            "date": "2010-01-19 12:25:30 +0000",
+            "comment": "upgrade to james-project 1.5"
+        },
+        {
+            "c_hash": "2fd757f3",
+            "date": "2010-01-21 06:57:07 +0000",
+            "comment": "only some pom.xml cleanup"
+        },
+        {
+            "c_hash": "5a3338e7",
+            "date": "2010-05-02 18:21:31 +0000",
+            "comment": "[maven-release-plugin] prepare release jsieve-project-0.4"
+        },
+        {
+            "c_hash": "01ad27e8",
+            "date": "2010-05-02 18:27:15 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "69d34797",
+            "date": "2010-05-03 19:27:17 +0000",
+            "comment": "[maven-release-plugin] prepare release jsieve-project-0.4"
+        },
+        {
+            "c_hash": "806a8a5f",
+            "date": "2010-05-03 19:31:23 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "66a4aebb",
+            "date": "2010-05-04 18:57:48 +0000",
+            "comment": "Try to adjust the build to add needed licenses etc"
+        },
+        {
+            "c_hash": "67f4bcaf",
+            "date": "2010-05-04 20:07:15 +0000",
+            "comment": "some more build adjustments"
+        },
+        {
+            "c_hash": "43a12b51",
+            "date": "2010-05-06 17:20:43 +0000",
+            "comment": "fix assembly binary build"
+        },
+        {
+            "c_hash": "7ef2fbbe",
+            "date": "2010-05-06 17:24:27 +0000",
+            "comment": "[maven-release-plugin] prepare release jsieve-project-0.4"
+        },
+        {
+            "c_hash": "197dba84",
+            "date": "2010-05-06 17:27:14 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "911816be",
+            "date": "2010-05-14 12:41:34 +0000",
+            "comment": "reflect jsieve 0.4 release"
+        },
+        {
+            "c_hash": "02e2a28a",
+            "date": "2011-03-15 19:50:44 +0000",
+            "comment": "Switch to and force maven 3. Add generation of technical reports using the -Psite-reports profile"
+        },
+        {
+            "c_hash": "7d1ebebb",
+            "date": "2011-03-21 10:48:32 +0000",
+            "comment": "Next version fixes various issues when used with maven 3"
+        },
+        {
+            "c_hash": "d4444c7f",
+            "date": "2011-03-24 18:54:31 +0000",
+            "comment": "Update to maven-skin-1.6"
+        },
+        {
+            "c_hash": "02b3b0ab",
+            "date": "2011-03-24 19:21:32 +0000",
+            "comment": "Update to james-project-1.6"
+        },
+        {
+            "c_hash": "3bb181a4",
+            "date": "2011-03-31 10:52:09 +0000",
+            "comment": "RFC 3028 says newline is CRLF, so changed parser and tests to follow the rule (JSIEVE-75). Patch contributed by Vishal Mahajan: thank you."
+        },
+        {
+            "c_hash": "378dfd7d",
+            "date": "2011-03-31 11:07:54 +0000",
+            "comment": "Fix backslash parsing inside quoted text (JSIEVE-74). Patch contributed by Vishal Mahajan: thank you."
+        },
+        {
+            "c_hash": "6f959675",
+            "date": "2011-07-18 06:33:21 +0000",
+            "comment": "Cleanup / Use skin for Apache Branding in Navigation. See JAMES-1289"
+        },
+        {
+            "c_hash": "755273e6",
+            "date": "2011-10-07 15:29:08 +0000",
+            "comment": "Add javadoc generation for 'normal' site generation"
+        },
+        {
+            "c_hash": "c69f0c4e",
+            "date": "2011-10-17 14:25:23 +0000",
+            "comment": "Use renamed james-skin (JAMES-1334)"
+        },
+        {
+            "c_hash": "8e27100e",
+            "date": "2011-10-19 12:16:38 +0000",
+            "comment": "Reformat (JAMES-1339)"
+        },
+        {
+            "c_hash": "bb01db7c",
+            "date": "2011-11-10 17:50:31 +0000",
+            "comment": "Move to james-project-1.7"
+        },
+        {
+            "c_hash": "b42afffb",
+            "date": "2011-11-25 21:00:00 +0000",
+            "comment": "Update to james-project 1.8"
+        },
+        {
+            "c_hash": "c4ff6f31",
+            "date": "2012-01-25 17:28:47 +0000",
+            "comment": "JSIEVE-78 Add a Mail notification mechanism for when Sieve scripts failAdd a Mail notification mechanism for when Sieve scripts fail JSIEVE-80 Add the ability to advertise the available Sieve extensions"
+        },
+        {
+            "c_hash": "45b89046",
+            "date": "2012-02-14 14:59:04 +0000",
+            "comment": "Upgrade jsieve from mime4j-0.6 to mime4j-0.7.2 (JSIEVE-81)"
+        },
+        {
+            "c_hash": "767b02a9",
+            "date": "2012-02-14 15:41:51 +0000",
+            "comment": "Use key and not headerName in Address (JSIEVE-82)"
+        },
+        {
+            "c_hash": "ca15f2e2",
+            "date": "2012-02-14 15:44:29 +0000",
+            "comment": "fix typo, Compatator should be Comparator"
+        },
+        {
+            "c_hash": "4c189f30",
+            "date": "2012-02-16 15:22:37 +0000",
+            "comment": "Rever the patch (JSIEVE-82)"
+        },
+        {
+            "c_hash": "9228f20b",
+            "date": "2012-02-20 11:36:11 +0000",
+            "comment": "move managesieve under jSieve trunk (JSIEVE-83)"
+        },
+        {
+            "c_hash": "4835c94f",
+            "date": "2012-02-20 13:14:40 +0000",
+            "comment": "Integrate managesieve in the current jSieve modules (JSIEVE-83) + Parent jSieve should be apache-sieve and not sieve-project (JSIEVE-84)"
+        },
+        {
+            "c_hash": "41e3ac4d",
+            "date": "2012-02-20 13:18:13 +0000",
+            "comment": "Add svn:ignore to apache-jsieve-manager"
+        },
+        {
+            "c_hash": "79985ee7",
+            "date": "2012-02-20 13:41:38 +0000",
+            "comment": "JAMES is James (capital, then lower cases)"
+        },
+        {
+            "c_hash": "38ba4207",
+            "date": "2012-02-20 13:47:53 +0000",
+            "comment": "Add name to jSieve manager poms (JSIEVE-83)"
+        },
+        {
+            "c_hash": "1df7dedb",
+            "date": "2012-02-20 13:51:34 +0000",
+            "comment": "jSieve core module should reside in a folder named cored, relatd to JSIEVE-84"
+        },
+        {
+            "c_hash": "3b04e7be",
+            "date": "2012-02-20 14:04:19 +0000",
+            "comment": "Add build-helper-maven-plugin on apache-jsieve-core pom for generated src (JSIEVE-85)"
+        },
+        {
+            "c_hash": "6f299417",
+            "date": "2012-02-20 14:14:30 +0000",
+            "comment": "Use james-project 1.8.1 release as parent"
+        },
+        {
+            "c_hash": "1c1947c3",
+            "date": "2012-02-20 14:18:09 +0000",
+            "comment": "jsieve manager depends on a server snapshot, comment it for the release process"
+        },
+        {
+            "c_hash": "ba1f8f0b",
+            "date": "2012-02-20 14:20:08 +0000",
+            "comment": "Use new parent pom for jsieve assembly"
+        },
+        {
+            "c_hash": "e9fa0030",
+            "date": "2012-02-20 14:20:48 +0000",
+            "comment": "Use new parent pom for jsieve assembly"
+        },
+        {
+            "c_hash": "cc4ba458",
+            "date": "2012-02-20 14:30:16 +0000",
+            "comment": "fix jsieve assembly module name, related to JSIEVE-84"
+        },
+        {
+            "c_hash": "3c37e077",
+            "date": "2012-02-20 14:34:34 +0000",
+            "comment": "Revert failed release attempt on jSieve"
+        },
+        {
+            "c_hash": "4c0e5e32",
+            "date": "2012-02-20 14:39:42 +0000",
+            "comment": "Correctly name jsieve core pom"
+        },
+        {
+            "c_hash": "7a6dc37b",
+            "date": "2012-02-20 14:43:26 +0000",
+            "comment": "Revert failed release attempt on jSieve"
+        },
+        {
+            "c_hash": "a46cd01c",
+            "date": "2012-02-20 14:47:25 +0000",
+            "comment": "Remove the jsieve assemble module, just like before, it seems to give issue on release process"
+        },
+        {
+            "c_hash": "bfb53e2c",
+            "date": "2012-02-20 14:49:47 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-jsieve-0.5"
+        },
+        {
+            "c_hash": "752e22d1",
+            "date": "2012-02-20 14:53:32 +0000",
+            "comment": "Revert failed release attempt on jSieve, this time the svn tag has failed"
+        },
+        {
+            "c_hash": "21011b90",
+            "date": "2012-02-20 14:56:06 +0000",
+            "comment": "Reset the svn url in the jsieve parent pom to be able to complete a release"
+        },
+        {
+            "c_hash": "987be47a",
+            "date": "2012-02-20 14:57:54 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-jsieve-0.5"
+        },
+        {
+            "c_hash": "08afe17a",
+            "date": "2012-02-20 14:58:43 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "34868513",
+            "date": "2012-02-20 16:08:28 +0000",
+            "comment": "Update jsieve website to the latest changes + migrate to james-project 1.8.2-SNAPSHOT to inherit from the maven-helper version number."
+        },
+        {
+            "c_hash": "089cc5e3",
+            "date": "2012-02-21 16:02:07 +0000",
+            "comment": "Set parent as 0.6-SNAPSHOT and define jsieve-core dependency to make it compile"
+        },
+        {
+            "c_hash": "df38d72b",
+            "date": "2012-02-22 08:30:50 +0000",
+            "comment": "Rollback to 0.5-SNAPSHOT (release cancelled) + rename assembly to all (JSIEVE-88)"
+        },
+        {
+            "c_hash": "e89c3800",
+            "date": "2012-02-22 08:33:19 +0000",
+            "comment": "Release notes for 0.5 release"
+        },
+        {
+            "c_hash": "b89bb6bc",
+            "date": "2012-02-22 08:35:46 +0000",
+            "comment": "move sieve manager file repo to a server module"
+        },
+        {
+            "c_hash": "3f9583c0",
+            "date": "2012-02-22 08:36:36 +0000",
+            "comment": "move sieve manager file repo test to a server module"
+        },
+        {
+            "c_hash": "fb0b6623",
+            "date": "2012-02-22 08:39:18 +0000",
+            "comment": "Remove jsieve manager server to get rid of the bidirectional dependency between jsieve manager and server (JSIEVE-86)"
+        },
+        {
+            "c_hash": "41a471f7",
+            "date": "2012-02-22 09:54:08 +0000",
+            "comment": "Set jsieve parent to 1.8.1 release and integrate jsieve manage into the src/bin distribution"
+        },
+        {
+            "c_hash": "0a0c3add",
+            "date": "2012-02-22 10:00:37 +0000",
+            "comment": "Remove generated folders"
+        },
+        {
+            "c_hash": "60658a32",
+            "date": "2012-02-22 10:07:18 +0000",
+            "comment": "Simply declare the needed dependecies for the distribution, voodoo maven will pick the transitive ones - Still NOTICE and LICENCE to fix for jsieve 0.5 release."
+        },
+        {
+            "c_hash": "71275ac5",
+            "date": "2012-02-22 11:41:23 +0000",
+            "comment": "Fix EOL chars in test file. I believe \\r\\f is not a valid EOL and is strange that javamail did support this."
+        },
+        {
+            "c_hash": "c7944aa8",
+            "date": "2012-02-22 12:37:35 +0000",
+            "comment": "Make sure to set the right content type when creating test messages (application/sieve is not declared/added to the mailcap so oracle javamail allow an undocumented behaviour, while geronimo is more strict and remove the unknown content type)."
+        },
+        {
+            "c_hash": "254dd20b",
+            "date": "2012-02-22 12:38:56 +0000",
+            "comment": "move to geronimo / remove oracle dependencies and licensing stuff (JSIEVE-89) Clean up build configuration, assembly, notice/license attachment, ant build (JSIEVE-90)"
+        },
+        {
+            "c_hash": "daea017d",
+            "date": "2012-02-22 12:39:16 +0000",
+            "comment": "move to geronimo / remove oracle dependencies and licensing stuff (JSIEVE-89) Clean up build configuration, assembly, notice/license attachment, ant build (JSIEVE-90)"
+        },
+        {
+            "c_hash": "f0cc548e",
+            "date": "2012-02-22 13:24:45 +0000",
+            "comment": "Document how to release jsieve in the README.txt"
+        },
+        {
+            "c_hash": "65cde3d8",
+            "date": "2012-02-22 13:34:02 +0000",
+            "comment": "[maven-release-plugin] prepare release apache-jsieve-0.5"
+        },
+        {
+            "c_hash": "280f97f0",
+            "date": "2012-02-22 13:35:19 +0000",
+            "comment": "[maven-release-plugin] prepare for next development iteration"
+        },
+        {
+            "c_hash": "34dc794c",
+            "date": "2012-12-25 00:03:45 +0000",
+            "comment": "JSIEVE-91 Updated dependency for apache-mailet, moved to bundle packageing, etc"
+        },
+        {
+            "c_hash": "542d000e",
+            "date": "2012-12-25 11:13:00 +0000",
+            "comment": "JUNIT-92 Moved all tests to junit-4"
+        },
+        {
+            "c_hash": "0ec0466d",
+            "date": "2012-12-25 13:35:31 +0000",
+            "comment": "JSIEVE-92 Removed useless files and plugin configurations"
+        },
+        {
+            "c_hash": "a69ca25b",
+            "date": "2012-12-26 12:05:08 +0000",
+            "comment": "JSIEVE-92 Code analisys improvements"
+        },
+        {
+            "c_hash": "8808744a",
+            "date": "2012-12-26 12:12:59 +0000",
+            "comment": "JSIEVE-92 More pom simplification"
+        },
+        {
+            "c_hash": "c894d3a8",
+            "date": "2013-01-08 10:27:56 +0000",
+            "comment": "upgrade to mailet 2.5.1-SNAPSHOT (JSIEVE-95)"
+        }
+    ]
+}
