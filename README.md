@@ -1,8 +1,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4002023.svg)](https://doi.org/10.5281/zenodo.4002023)
 # Reproducing open-projects software builds experiment
 
-Reproduction package for the paper "Back and There Once Again: Revisiting the
-Compilation of Past Snapshots", presented to EMSE 2021 (still under review). This package contains:
+Reproduction package for the paper "Revisiting the Building of Past Snapshots – A Replication and Reproduction Study", presented to EMSE 2021 (still under review). This package contains:
 
 ```bash
 .
