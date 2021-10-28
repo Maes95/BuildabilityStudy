@@ -31,7 +31,7 @@ In addition, the rest of this file describe methodological details of the studie
     - [Step 2. Buildability experiment](#step-2-buildability-experiment-reproduction-study)
     - [Step 3. Results analysis](#step-3-results-analysis-reproduction-study)
 
-Some data needed to correctly reproduce the experiment is hosted in Zenodo (https://zenodo.org/record/4002023), due to the limitations of the GitHub file size (the size of the dataset >250GB). The dataset hosted in Zenodo contains the following zip files:
+Some data needed to correctly reproduce the experiment is hosted in Zenodo (https://zenodo.org/record/5596333), due to the limitations of the GitHub file size (the size of the dataset >250GB). The dataset hosted in Zenodo contains the following zip files:
 
 - ApacheProjects.zip
 - ApacheProjects-SoftwareHeritage.zip
