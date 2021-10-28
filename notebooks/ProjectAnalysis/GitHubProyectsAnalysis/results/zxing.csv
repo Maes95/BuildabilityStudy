@@ -2373,78 +2373,78 @@ INDEX,COMMIT_ID,BUILD_SYSTEM,BUILD_STATUS,ERROR,ACTION
 2371,7425bf3c,Maven,SUCCESS,,
 2372,28751276,Maven,SUCCESS,,
 2373,ce8f3395,Maven,SUCCESS,,
-2374,f4ae6f06,Maven,FAIL,Other Maven error,Other
-2375,6a59c77f,Maven,FAIL,Other Maven error,Other
-2376,c1b0d96d,Maven,FAIL,Other Maven error,Other
-2377,3d7367d3,Maven,FAIL,Other Maven error,Other
-2378,d245a5cc,Maven,FAIL,Other Maven error,Other
-2379,b549267e,Maven,FAIL,Other Maven error,Other
-2380,64a5f4a6,Maven,FAIL,Other Maven error,Other
-2381,c8a81898,Maven,FAIL,Other Maven error,Other
-2382,2f104277,Maven,FAIL,Other Maven error,Other
-2383,dc7aa461,Maven,FAIL,Other Maven error,Other
-2384,96e0bdb3,Maven,FAIL,Other Maven error,Other
-2385,e6c6c298,Maven,FAIL,Other Maven error,Other
-2386,a1ed3705,Maven,FAIL,Other Maven error,Other
-2387,04289c00,Maven,FAIL,Other Maven error,Other
-2388,13d97af6,Maven,FAIL,Other Maven error,Other
-2389,57dc2ca7,Maven,FAIL,Other Maven error,Other
-2390,71a01f15,Maven,FAIL,Other Maven error,Other
-2391,aae83e52,Maven,FAIL,Other Maven error,Other
-2392,12e78cfa,Maven,FAIL,Other Maven error,Other
-2393,7c6ac647,Maven,FAIL,Other Maven error,Other
-2394,82e05d1c,Maven,FAIL,Other Maven error,Other
-2395,25f00bfd,Maven,FAIL,Other Maven error,Other
-2396,9d1497fd,Maven,FAIL,Other Maven error,Other
-2397,a3228a81,Maven,FAIL,Other Maven error,Other
-2398,3fe14119,Maven,FAIL,Other Maven error,Other
-2399,4d8700bf,Maven,FAIL,Other Maven error,Other
-2400,e320bdad,Maven,FAIL,Other Maven error,Other
-2401,99e41ef7,Maven,FAIL,Other Maven error,Other
-2402,c2ddf95c,Maven,FAIL,Other Maven error,Other
-2403,5d3a52df,Maven,FAIL,Other Maven error,Other
-2404,87586028,Maven,FAIL,Other Maven error,Other
-2405,82d0101e,Maven,FAIL,Other Maven error,Other
-2406,99db7dab,Maven,FAIL,Other Maven error,Other
-2407,250ee354,Maven,FAIL,Other Maven error,Other
-2408,1f054946,Maven,FAIL,Other Maven error,Other
-2409,44c6b383,Maven,FAIL,Other Maven error,Other
-2410,a47790e2,Maven,FAIL,Other Maven error,Other
-2411,90ba467f,Maven,FAIL,Other Maven error,Other
-2412,a6f85594,Maven,FAIL,Other Maven error,Other
-2413,8fbcb531,Maven,FAIL,Other Maven error,Other
-2414,4cbc5154,Maven,FAIL,Other Maven error,Other
-2415,d722038c,Maven,FAIL,Other Maven error,Other
-2416,ad1a305c,Maven,FAIL,Other Maven error,Other
-2417,2cdcc424,Maven,FAIL,Other Maven error,Other
-2418,ff1ecd97,Maven,FAIL,Other Maven error,Other
-2419,93b0774a,Maven,FAIL,Other Maven error,Other
-2420,a022a3bb,Maven,FAIL,Other Maven error,Other
-2421,3d1f0733,Maven,FAIL,Other Maven error,Other
-2422,b4d46efb,Maven,FAIL,Other Maven error,Other
-2423,091c57a0,Maven,FAIL,Other Maven error,Other
-2424,881e2cb7,Maven,FAIL,Other Maven error,Other
-2425,f6eb3543,Maven,FAIL,Other Maven error,Other
-2426,43d5f359,Maven,FAIL,Other Maven error,Other
-2427,40416935,Maven,FAIL,Other Maven error,Other
-2428,939ff355,Maven,FAIL,Other Maven error,Other
-2429,b847ac99,Maven,FAIL,Other Maven error,Other
-2430,175ed9ad,Maven,FAIL,Other Maven error,Other
-2431,3a3474ae,Maven,FAIL,Other Maven error,Other
-2432,0822399d,Maven,FAIL,Other Maven error,Other
-2433,a63c6de8,Maven,FAIL,Other Maven error,Other
-2434,87cf1ac8,Maven,FAIL,Other Maven error,Other
-2435,c275486d,Maven,FAIL,Other Maven error,Other
-2436,70ec4323,Maven,FAIL,Other Maven error,Other
+2374,f4ae6f06,Maven,FAIL,ArtifactResolutionException,Resolution
+2375,6a59c77f,Maven,FAIL,ArtifactResolutionException,Resolution
+2376,c1b0d96d,Maven,FAIL,ArtifactResolutionException,Resolution
+2377,3d7367d3,Maven,FAIL,ArtifactResolutionException,Resolution
+2378,d245a5cc,Maven,FAIL,ArtifactResolutionException,Resolution
+2379,b549267e,Maven,FAIL,ArtifactResolutionException,Resolution
+2380,64a5f4a6,Maven,FAIL,ArtifactResolutionException,Resolution
+2381,c8a81898,Maven,FAIL,ArtifactResolutionException,Resolution
+2382,2f104277,Maven,FAIL,ArtifactResolutionException,Resolution
+2383,dc7aa461,Maven,FAIL,ArtifactResolutionException,Resolution
+2384,96e0bdb3,Maven,FAIL,ArtifactResolutionException,Resolution
+2385,e6c6c298,Maven,FAIL,ArtifactResolutionException,Resolution
+2386,a1ed3705,Maven,FAIL,ArtifactResolutionException,Resolution
+2387,04289c00,Maven,FAIL,ArtifactResolutionException,Resolution
+2388,13d97af6,Maven,FAIL,ArtifactResolutionException,Resolution
+2389,57dc2ca7,Maven,FAIL,ArtifactResolutionException,Resolution
+2390,71a01f15,Maven,FAIL,ArtifactResolutionException,Resolution
+2391,aae83e52,Maven,FAIL,ArtifactResolutionException,Resolution
+2392,12e78cfa,Maven,FAIL,ArtifactResolutionException,Resolution
+2393,7c6ac647,Maven,FAIL,ArtifactResolutionException,Resolution
+2394,82e05d1c,Maven,FAIL,ArtifactResolutionException,Resolution
+2395,25f00bfd,Maven,FAIL,ArtifactResolutionException,Resolution
+2396,9d1497fd,Maven,FAIL,ArtifactResolutionException,Resolution
+2397,a3228a81,Maven,FAIL,ArtifactResolutionException,Resolution
+2398,3fe14119,Maven,FAIL,ArtifactResolutionException,Resolution
+2399,4d8700bf,Maven,FAIL,ArtifactResolutionException,Resolution
+2400,e320bdad,Maven,FAIL,ArtifactResolutionException,Resolution
+2401,99e41ef7,Maven,FAIL,ArtifactResolutionException,Resolution
+2402,c2ddf95c,Maven,FAIL,ArtifactResolutionException,Resolution
+2403,5d3a52df,Maven,FAIL,ArtifactResolutionException,Resolution
+2404,87586028,Maven,FAIL,ArtifactResolutionException,Resolution
+2405,82d0101e,Maven,FAIL,ArtifactResolutionException,Resolution
+2406,99db7dab,Maven,FAIL,ArtifactResolutionException,Resolution
+2407,250ee354,Maven,FAIL,ArtifactResolutionException,Resolution
+2408,1f054946,Maven,FAIL,ArtifactResolutionException,Resolution
+2409,44c6b383,Maven,FAIL,ArtifactResolutionException,Resolution
+2410,a47790e2,Maven,FAIL,ArtifactResolutionException,Resolution
+2411,90ba467f,Maven,FAIL,ArtifactResolutionException,Resolution
+2412,a6f85594,Maven,FAIL,ArtifactResolutionException,Resolution
+2413,8fbcb531,Maven,FAIL,ArtifactResolutionException,Resolution
+2414,4cbc5154,Maven,FAIL,ArtifactResolutionException,Resolution
+2415,d722038c,Maven,FAIL,ArtifactResolutionException,Resolution
+2416,ad1a305c,Maven,FAIL,ArtifactResolutionException,Resolution
+2417,2cdcc424,Maven,FAIL,ArtifactResolutionException,Resolution
+2418,ff1ecd97,Maven,FAIL,ArtifactResolutionException,Resolution
+2419,93b0774a,Maven,FAIL,ArtifactResolutionException,Resolution
+2420,a022a3bb,Maven,FAIL,ArtifactResolutionException,Resolution
+2421,3d1f0733,Maven,FAIL,ArtifactResolutionException,Resolution
+2422,b4d46efb,Maven,FAIL,ArtifactResolutionException,Resolution
+2423,091c57a0,Maven,FAIL,ArtifactResolutionException,Resolution
+2424,881e2cb7,Maven,FAIL,ArtifactResolutionException,Resolution
+2425,f6eb3543,Maven,FAIL,ArtifactResolutionException,Resolution
+2426,43d5f359,Maven,FAIL,ArtifactResolutionException,Resolution
+2427,40416935,Maven,FAIL,ArtifactResolutionException,Resolution
+2428,939ff355,Maven,FAIL,ArtifactResolutionException,Resolution
+2429,b847ac99,Maven,FAIL,ArtifactResolutionException,Resolution
+2430,175ed9ad,Maven,FAIL,ArtifactResolutionException,Resolution
+2431,3a3474ae,Maven,FAIL,ArtifactResolutionException,Resolution
+2432,0822399d,Maven,FAIL,ArtifactResolutionException,Resolution
+2433,a63c6de8,Maven,FAIL,ArtifactResolutionException,Resolution
+2434,87cf1ac8,Maven,FAIL,ArtifactResolutionException,Resolution
+2435,c275486d,Maven,FAIL,ArtifactResolutionException,Resolution
+2436,70ec4323,Maven,FAIL,ArtifactResolutionException,Resolution
 2437,aa73f6a4,Maven,SUCCESS,,
 2438,49e82178,Maven,SUCCESS,,
 2439,29984b0e,Maven,SUCCESS,,
-2440,1dfabfae,Maven,FAIL,Other Maven error,Other
-2441,b97900f5,Maven,FAIL,Other Maven error,Other
-2442,7d1c354a,Maven,FAIL,Other Maven error,Other
-2443,75ebbc14,Maven,FAIL,Other Maven error,Other
-2444,b3226e8e,Maven,FAIL,Other Maven error,Other
-2445,83440333,Maven,FAIL,Other Maven error,Other
+2440,1dfabfae,Maven,FAIL,ArtifactResolutionException,Resolution
+2441,b97900f5,Maven,FAIL,ArtifactResolutionException,Resolution
+2442,7d1c354a,Maven,FAIL,ArtifactResolutionException,Resolution
+2443,75ebbc14,Maven,FAIL,ArtifactResolutionException,Resolution
+2444,b3226e8e,Maven,FAIL,ArtifactResolutionException,Resolution
+2445,83440333,Maven,FAIL,ArtifactResolutionException,Resolution
 2446,3a605418,Ant,FAIL,"Target ""compile"" does not exist in the project", Other
 2447,d5194b86,Ant,FAIL,"Target ""compile"" does not exist in the project", Other
 2448,f50b14af,Ant,FAIL,"Target ""compile"" does not exist in the project", Other
@@ -2580,49 +2580,49 @@ INDEX,COMMIT_ID,BUILD_SYSTEM,BUILD_STATUS,ERROR,ACTION
 2578,93442dcb,Ant,FAIL,"Target ""compile"" does not exist in the project", Other
 2579,cc8a8792,Ant,FAIL,"Target ""compile"" does not exist in the project", Other
 2580,4eb503ee,Ant,FAIL,"Target ""compile"" does not exist in the project", Other
-2581,59ea393a,Maven,FAIL,Other Maven error,Other
-2582,dbe18261,Maven,FAIL,Other Maven error,Other
-2583,a50e73ad,Maven,FAIL,Other Maven error,Other
-2584,8e909ddb,Maven,FAIL,Other Maven error,Other
-2585,cc8254bf,Maven,FAIL,Other Maven error,Other
-2586,1bcc298a,Maven,FAIL,Other Maven error,Other
-2587,bcda4676,Maven,FAIL,Other Maven error,Other
-2588,aa19cb25,Maven,FAIL,Other Maven error,Other
+2581,59ea393a,Maven,FAIL,ArtifactResolutionException,Resolution
+2582,dbe18261,Maven,FAIL,ArtifactResolutionException,Resolution
+2583,a50e73ad,Maven,FAIL,ArtifactResolutionException,Resolution
+2584,8e909ddb,Maven,FAIL,ArtifactResolutionException,Resolution
+2585,cc8254bf,Maven,FAIL,ArtifactResolutionException,Resolution
+2586,1bcc298a,Maven,FAIL,ArtifactResolutionException,Resolution
+2587,bcda4676,Maven,FAIL,ArtifactResolutionException,Resolution
+2588,aa19cb25,Maven,FAIL,ArtifactResolutionException,Resolution
 2589,1a772260,Maven,FAIL,MojoExecutionException,Other
-2590,65747f51,Maven,FAIL,Other Maven error,Other
-2591,52e12eee,Maven,FAIL,Other Maven error,Other
-2592,5b3495e2,Maven,FAIL,Other Maven error,Other
-2593,0abfdd65,Maven,FAIL,Other Maven error,Other
-2594,77ac7e67,Maven,FAIL,Other Maven error,Other
-2595,28d33782,Maven,FAIL,Other Maven error,Other
-2596,4c642283,Maven,FAIL,Other Maven error,Other
-2597,d1ef2a90,Maven,FAIL,Other Maven error,Other
-2598,6cf76e38,Maven,FAIL,Other Maven error,Other
-2599,e51ee2fc,Maven,FAIL,Other Maven error,Other
-2600,7404c892,Maven,FAIL,Other Maven error,Other
-2601,e429d205,Maven,FAIL,Other Maven error,Other
-2602,d935b0bc,Maven,FAIL,Other Maven error,Other
-2603,c0809015,Maven,FAIL,Other Maven error,Other
-2604,e7400da7,Maven,FAIL,Other Maven error,Other
+2590,65747f51,Maven,FAIL,ArtifactResolutionException,Resolution
+2591,52e12eee,Maven,FAIL,ArtifactResolutionException,Resolution
+2592,5b3495e2,Maven,FAIL,ArtifactResolutionException,Resolution
+2593,0abfdd65,Maven,FAIL,ArtifactResolutionException,Resolution
+2594,77ac7e67,Maven,FAIL,ArtifactResolutionException,Resolution
+2595,28d33782,Maven,FAIL,ArtifactResolutionException,Resolution
+2596,4c642283,Maven,FAIL,ArtifactResolutionException,Resolution
+2597,d1ef2a90,Maven,FAIL,ArtifactResolutionException,Resolution
+2598,6cf76e38,Maven,FAIL,ArtifactResolutionException,Resolution
+2599,e51ee2fc,Maven,FAIL,ArtifactResolutionException,Resolution
+2600,7404c892,Maven,FAIL,ArtifactResolutionException,Resolution
+2601,e429d205,Maven,FAIL,ArtifactResolutionException,Resolution
+2602,d935b0bc,Maven,FAIL,ArtifactResolutionException,Resolution
+2603,c0809015,Maven,FAIL,ArtifactResolutionException,Resolution
+2604,e7400da7,Maven,FAIL,ArtifactResolutionException,Resolution
 2605,8d846457,Maven,SUCCESS,,
 2606,fc705e85,Maven,SUCCESS,,
-2607,13a09226,Maven,FAIL,Other Maven error,Other
-2608,2a6a928d,Maven,FAIL,Other Maven error,Other
+2607,13a09226,Maven,FAIL,ArtifactResolutionException,Resolution
+2608,2a6a928d,Maven,FAIL,ArtifactResolutionException,Resolution
 2609,afe159b2,Maven,SUCCESS,,
-2610,a741181e,Maven,FAIL,Other Maven error,Other
-2611,c1d7c521,Maven,FAIL,Other Maven error,Other
+2610,a741181e,Maven,FAIL,ArtifactResolutionException,Resolution
+2611,c1d7c521,Maven,FAIL,ArtifactResolutionException,Resolution
 2612,d01ddc6d,Maven,SUCCESS,,
-2613,7d988572,Maven,FAIL,Other Maven error,Other
+2613,7d988572,Maven,FAIL,ArtifactResolutionException,Resolution
 2614,39899fd9,Maven,SUCCESS,,
-2615,a7f213f0,Maven,FAIL,Other Maven error,Other
-2616,eb4690b5,Maven,FAIL,Other Maven error,Other
+2615,a7f213f0,Maven,FAIL,ArtifactResolutionException,Resolution
+2616,eb4690b5,Maven,FAIL,ArtifactResolutionException,Resolution
 2617,e1949f05,Maven,SUCCESS,,
-2618,d7f11da9,Maven,FAIL,Other Maven error,Other
-2619,1b6986ab,Maven,FAIL,Other Maven error,Other
-2620,c1411513,Maven,FAIL,Other Maven error,Other
+2618,d7f11da9,Maven,FAIL,ArtifactResolutionException,Resolution
+2619,1b6986ab,Maven,FAIL,ArtifactResolutionException,Resolution
+2620,c1411513,Maven,FAIL,ArtifactResolutionException,Resolution
 2621,5fc526df,Maven,SUCCESS,,
-2622,b852b820,Maven,FAIL,Other Maven error,Other
-2623,0a89cddd,Maven,FAIL,Other Maven error,Other
+2622,b852b820,Maven,FAIL,ArtifactResolutionException,Resolution
+2623,0a89cddd,Maven,FAIL,ArtifactResolutionException,Resolution
 2624,979d3827,Maven,SUCCESS,,
 2625,ca14065f,Maven,SUCCESS,,
 2626,54a3bfab,Maven,SUCCESS,,
@@ -2632,61 +2632,61 @@ INDEX,COMMIT_ID,BUILD_SYSTEM,BUILD_STATUS,ERROR,ACTION
 2630,1a2a011c,Maven,SUCCESS,,
 2631,e281559c,Maven,SUCCESS,,
 2632,092e0e95,Maven,SUCCESS,,
-2633,00f63402,Maven,FAIL,Other Maven error,Other
-2634,4856e86a,Maven,FAIL,Other Maven error,Other
-2635,1b0c3c7b,Maven,FAIL,Other Maven error,Other
-2636,a53c659b,Maven,FAIL,Other Maven error,Other
-2637,3de3374d,Maven,FAIL,Other Maven error,Other
-2638,8d7eb91f,Maven,FAIL,Other Maven error,Other
-2639,6ece248e,Maven,FAIL,Other Maven error,Other
-2640,b2f2615b,Maven,FAIL,Other Maven error,Other
-2641,cf6cbcd8,Maven,FAIL,Other Maven error,Other
-2642,f4329e7d,Maven,FAIL,Other Maven error,Other
-2643,49e2bca2,Maven,FAIL,Other Maven error,Other
-2644,da9d3284,Maven,FAIL,Other Maven error,Other
-2645,4550d1d7,Maven,FAIL,Other Maven error,Other
-2646,4aa53485,Maven,FAIL,Other Maven error,Other
-2647,cce6d806,Maven,FAIL,Other Maven error,Other
-2648,21d22400,Maven,FAIL,Other Maven error,Other
-2649,9a5391b6,Maven,FAIL,Other Maven error,Other
-2650,fe555e00,Maven,FAIL,Other Maven error,Other
-2651,17f3ab9c,Maven,FAIL,Other Maven error,Other
-2652,373f4f5c,Maven,FAIL,Other Maven error,Other
-2653,8a1d4a7f,Maven,FAIL,Other Maven error,Other
-2654,de6e4bca,Maven,FAIL,Other Maven error,Other
-2655,10c2f716,Maven,FAIL,Other Maven error,Other
-2656,6463455d,Maven,FAIL,Other Maven error,Other
-2657,1b79e974,Maven,FAIL,Other Maven error,Other
-2658,5ae06160,Maven,FAIL,Other Maven error,Other
-2659,e17d73cc,Maven,FAIL,Other Maven error,Other
-2660,c5a1861b,Maven,FAIL,Other Maven error,Other
-2661,7ead18d1,Maven,FAIL,Other Maven error,Other
-2662,caa4ee02,Maven,FAIL,Other Maven error,Other
-2663,a0fcecfc,Maven,FAIL,Other Maven error,Other
-2664,3a570f69,Maven,FAIL,Other Maven error,Other
-2665,faa2099e,Maven,FAIL,Other Maven error,Other
-2666,83277b92,Maven,FAIL,Other Maven error,Other
-2667,dfd6fe71,Maven,FAIL,Other Maven error,Other
-2668,ee68feb5,Maven,FAIL,Other Maven error,Other
-2669,50ea2468,Maven,FAIL,Other Maven error,Other
-2670,800fee34,Maven,FAIL,Other Maven error,Other
-2671,a3f4060b,Maven,FAIL,Other Maven error,Other
-2672,2b437851,Maven,FAIL,Other Maven error,Other
-2673,73ebc3fc,Maven,FAIL,Other Maven error,Other
-2674,77d50974,Maven,FAIL,Other Maven error,Other
-2675,fbb30574,Maven,FAIL,Other Maven error,Other
-2676,3bd1c7c5,Maven,FAIL,Other Maven error,Other
-2677,6b0507af,Maven,FAIL,Other Maven error,Other
-2678,4d4a9a11,Maven,FAIL,Other Maven error,Other
-2679,3f6ee7f7,Maven,FAIL,Timeout,
-2680,9983ccc4,Maven,FAIL,Timeout,
-2681,542319c1,Maven,FAIL,Timeout,
-2682,59e4708c,Maven,FAIL,Timeout,
-2683,ed760e2e,Maven,FAIL,Timeout,
-2684,a17ea974,Maven,FAIL,Timeout,
-2685,1fa90e70,Maven,FAIL,Timeout,
-2686,8d858df1,Maven,FAIL,Timeout,
-2687,1ea0b66b,Maven,FAIL,Timeout,
+2633,00f63402,Maven,FAIL,ArtifactResolutionException,Resolution
+2634,4856e86a,Maven,FAIL,ArtifactResolutionException,Resolution
+2635,1b0c3c7b,Maven,FAIL,ArtifactResolutionException,Resolution
+2636,a53c659b,Maven,FAIL,ArtifactResolutionException,Resolution
+2637,3de3374d,Maven,FAIL,ArtifactResolutionException,Resolution
+2638,8d7eb91f,Maven,FAIL,ArtifactResolutionException,Resolution
+2639,6ece248e,Maven,FAIL,ArtifactResolutionException,Resolution
+2640,b2f2615b,Maven,FAIL,ArtifactResolutionException,Resolution
+2641,cf6cbcd8,Maven,FAIL,ArtifactResolutionException,Resolution
+2642,f4329e7d,Maven,FAIL,ArtifactResolutionException,Resolution
+2643,49e2bca2,Maven,FAIL,ArtifactResolutionException,Resolution
+2644,da9d3284,Maven,FAIL,ArtifactResolutionException,Resolution
+2645,4550d1d7,Maven,FAIL,ArtifactResolutionException,Resolution
+2646,4aa53485,Maven,FAIL,ArtifactResolutionException,Resolution
+2647,cce6d806,Maven,FAIL,ArtifactResolutionException,Resolution
+2648,21d22400,Maven,FAIL,ArtifactResolutionException,Resolution
+2649,9a5391b6,Maven,FAIL,ArtifactResolutionException,Resolution
+2650,fe555e00,Maven,FAIL,ArtifactResolutionException,Resolution
+2651,17f3ab9c,Maven,FAIL,ArtifactResolutionException,Resolution
+2652,373f4f5c,Maven,FAIL,ArtifactResolutionException,Resolution
+2653,8a1d4a7f,Maven,FAIL,ArtifactResolutionException,Resolution
+2654,de6e4bca,Maven,FAIL,ArtifactResolutionException,Resolution
+2655,10c2f716,Maven,FAIL,ArtifactResolutionException,Resolution
+2656,6463455d,Maven,FAIL,ArtifactResolutionException,Resolution
+2657,1b79e974,Maven,FAIL,ArtifactResolutionException,Resolution
+2658,5ae06160,Maven,FAIL,ArtifactResolutionException,Resolution
+2659,e17d73cc,Maven,FAIL,ArtifactResolutionException,Resolution
+2660,c5a1861b,Maven,FAIL,ArtifactResolutionException,Resolution
+2661,7ead18d1,Maven,FAIL,ArtifactResolutionException,Resolution
+2662,caa4ee02,Maven,FAIL,ArtifactResolutionException,Resolution
+2663,a0fcecfc,Maven,FAIL,ArtifactResolutionException,Resolution
+2664,3a570f69,Maven,FAIL,ArtifactResolutionException,Resolution
+2665,faa2099e,Maven,FAIL,ArtifactResolutionException,Resolution
+2666,83277b92,Maven,FAIL,ArtifactResolutionException,Resolution
+2667,dfd6fe71,Maven,FAIL,ArtifactResolutionException,Resolution
+2668,ee68feb5,Maven,FAIL,ArtifactResolutionException,Resolution
+2669,50ea2468,Maven,FAIL,ArtifactResolutionException,Resolution
+2670,800fee34,Maven,FAIL,ArtifactResolutionException,Resolution
+2671,a3f4060b,Maven,FAIL,ArtifactResolutionException,Resolution
+2672,2b437851,Maven,FAIL,ArtifactResolutionException,Resolution
+2673,73ebc3fc,Maven,FAIL,ArtifactResolutionException,Resolution
+2674,77d50974,Maven,FAIL,ArtifactResolutionException,Resolution
+2675,fbb30574,Maven,FAIL,ArtifactResolutionException,Resolution
+2676,3bd1c7c5,Maven,FAIL,ArtifactResolutionException,Resolution
+2677,6b0507af,Maven,FAIL,ArtifactResolutionException,Resolution
+2678,4d4a9a11,Maven,FAIL,ArtifactResolutionException,Resolution
+2679,3f6ee7f7,Maven,FAIL,ArtifactResolutionException,Resolution
+2680,9983ccc4,Maven,FAIL,ArtifactResolutionException,Resolution
+2681,542319c1,Maven,FAIL,ArtifactResolutionException,Resolution
+2682,59e4708c,Maven,FAIL,ArtifactResolutionException,Resolution
+2683,ed760e2e,Maven,FAIL,ArtifactResolutionException,Resolution
+2684,a17ea974,Maven,FAIL,ArtifactResolutionException,Resolution
+2685,1fa90e70,Maven,FAIL,ArtifactResolutionException,Resolution
+2686,8d858df1,Maven,FAIL,ArtifactResolutionException,Resolution
+2687,1ea0b66b,Maven,FAIL,ArtifactResolutionException,Resolution
 2688,33b6d4b1,Maven,SUCCESS,,
 2689,f56365c0,Maven,SUCCESS,,
 2690,c1df162b,Maven,SUCCESS,,
@@ -3526,3 +3526,85 @@ INDEX,COMMIT_ID,BUILD_SYSTEM,BUILD_STATUS,ERROR,ACTION
 3524,24a5f9c6,Maven,SUCCESS,,
 3525,54d0a378,Maven,SUCCESS,,
 3526,639f51d3,Maven,SUCCESS,,
+3527,78ccf232,Maven,SUCCESS,,
+3528,05abe0f7,Maven,SUCCESS,,
+3529,f8df5f0c,Maven,SUCCESS,,
+3530,3c969232,Maven,SUCCESS,,
+3531,9068f64e,Maven,SUCCESS,,
+3532,c89470b2,Maven,SUCCESS,,
+3533,9aa4db5c,Maven,SUCCESS,,
+3534,64ff8012,Maven,SUCCESS,,
+3535,0797e6ad,Maven,SUCCESS,,
+3536,b3c9107c,Maven,SUCCESS,,
+3537,1b77f8a8,Maven,SUCCESS,,
+3538,549e0d17,Maven,SUCCESS,,
+3539,1903b130,Maven,SUCCESS,,
+3540,a826fbd3,Maven,SUCCESS,,
+3541,9c181f2d,Maven,SUCCESS,,
+3542,07fdff4d,Maven,SUCCESS,,
+3543,85e37821,Maven,SUCCESS,,
+3544,da049f21,Maven,SUCCESS,,
+3545,40c2e2e9,Maven,SUCCESS,,
+3546,6fe3a775,Maven,SUCCESS,,
+3547,3d806800,Maven,SUCCESS,,
+3548,3eafc5d4,Maven,SUCCESS,,
+3549,09f1a7ee,Maven,SUCCESS,,
+3550,06e3cd49,Maven,SUCCESS,,
+3551,41cbab0b,Maven,SUCCESS,,
+3552,c30aa535,Maven,SUCCESS,,
+3553,cff1a212,Maven,SUCCESS,,
+3554,272d9561,Maven,SUCCESS,,
+3555,32158ee5,Maven,SUCCESS,,
+3556,09b0bdd3,Maven,SUCCESS,,
+3557,c7cb5904,Maven,SUCCESS,,
+3558,e82fbab5,Maven,SUCCESS,,
+3559,d3922dff,Maven,SUCCESS,,
+3560,b1c85db6,Maven,SUCCESS,,
+3561,6e349275,Maven,SUCCESS,,
+3562,28d339e6,Maven,SUCCESS,,
+3563,51568899,Maven,SUCCESS,,
+3564,20405981,Maven,SUCCESS,,
+3565,5e689afc,Maven,SUCCESS,,
+3566,820d0910,Maven,SUCCESS,,
+3567,e7ed6aee,Maven,SUCCESS,,
+3568,fd364d93,Maven,SUCCESS,,
+3569,6dd0776b,Maven,SUCCESS,,
+3570,3374aed3,Maven,SUCCESS,,
+3571,395dc6b8,Maven,SUCCESS,,
+3572,44267115,Maven,SUCCESS,,
+3573,a7c35168,Maven,SUCCESS,,
+3574,5fb2cf8e,Maven,SUCCESS,,
+3575,3bf945e4,Maven,SUCCESS,,
+3576,ef498941,Maven,SUCCESS,,
+3577,547e58a2,Maven,SUCCESS,,
+3578,f05963d6,Maven,SUCCESS,,
+3579,cad70351,Maven,SUCCESS,,
+3580,99e9b34f,Maven,SUCCESS,,
+3581,d4c3d735,Maven,SUCCESS,,
+3582,adbf17d7,Maven,SUCCESS,,
+3583,ad061f05,Maven,SUCCESS,,
+3584,32331c07,Maven,SUCCESS,,
+3585,1499c921,Maven,SUCCESS,,
+3586,0d089156,Maven,SUCCESS,,
+3587,d2027d0e,Maven,SUCCESS,,
+3588,2b48aec2,Maven,SUCCESS,,
+3589,b3941e25,Maven,SUCCESS,,
+3590,73a3c3a7,Maven,SUCCESS,,
+3591,dc6c8ea4,Maven,SUCCESS,,
+3592,629ce38a,Maven,SUCCESS,,
+3593,f6087eea,Maven,SUCCESS,,
+3594,490769e7,Maven,SUCCESS,,
+3595,50ead4f6,Maven,SUCCESS,,
+3596,6bcae2e5,Maven,SUCCESS,,
+3597,5b003644,Maven,SUCCESS,,
+3598,aeeec7b0,Maven,SUCCESS,,
+3599,f04ab98f,Maven,SUCCESS,,
+3600,895775ef,Maven,SUCCESS,,
+3601,8761b26a,Maven,SUCCESS,,
+3602,0235f355,Maven,SUCCESS,,
+3603,91a423b0,Maven,SUCCESS,,
+3604,f5ef61ec,Maven,SUCCESS,,
+3605,c6a4e0fa,Maven,SUCCESS,,
+3606,be2c5bdd,Maven,SUCCESS,,
+3607,83650ce3,Maven,SUCCESS,,
+3608,fc50fca1,Maven,SUCCESS,,

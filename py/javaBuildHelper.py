@@ -5,7 +5,7 @@ from utils import GitManager, DockerManager
 
 NO_BUILD_MESSAGE="BuildAnalycer: No build system detected"
 
-DOCKER_IMAGE = "java-maven-ant:0.1"
+DOCKER_IMAGE = "java-maven-ant:0.2"
 
 BUILD_SYSTEMS=[
     { "build_system": "Maven", "build_file": "mvnw", "build_command": lambda build_file : "unset MAVEN_CONFIG && ./mvnw clean compile -X"},

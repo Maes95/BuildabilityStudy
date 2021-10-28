@@ -2317,3 +2317,5 @@ INDEX,COMMIT_ID,BUILD_SYSTEM,BUILD_STATUS,ERROR,ACTION
 2315,33ecf056,Maven,SUCCESS,,
 2316,e8ac51da,Maven,SUCCESS,,
 2317,8376fade,Maven,FAIL,MojoFailureException,Other
+2318,c7f6774b,Maven,FAIL,MojoFailureException,Other
+2319,51a74144,Maven,FAIL,MojoFailureException,Other

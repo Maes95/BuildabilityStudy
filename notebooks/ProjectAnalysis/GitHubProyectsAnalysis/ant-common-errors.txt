@@ -3,3 +3,8 @@ UnknownHostException,Resolution
 No such file or directory, Other
 Source resource does not exist, Other
 Target "compile" does not exist in the project, Other
+kotlin-runtime.jar from path as it doesn't exist, Resolution
+impossible to resolve dependencies,Resolution
+Unable to find property file, Other
+(.*) does not exist, Other
+(.*) cannot be found, Resolution

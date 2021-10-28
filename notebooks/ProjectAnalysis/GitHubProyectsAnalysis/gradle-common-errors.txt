@@ -2,8 +2,18 @@ compile errors:,Compilation
 Compilation failed,Compilation
 Could not resolve all dependencies,Resolution
 Could not resolve,Resolution
-IOException: Server returned HTTP response code: 403 for URL:,Resolution
+IOException: Server returned HTTP response code,Resolution
 Permission denied,Permission denied error
 Javadoc generation failed,Documentation error
 Execution failed for task ':test', Other
 Unable to retrieve secret key, Other
+ExceptionInInitializerError, Other
+Java 11 is required, Other
+git-lfs is required to build,Other
+Execution failed for task, Other
+Could not find, Resolution
+Could not find or load main class, Other
+SDK location not found, Other
+The ANDROID_HOME environment variable is not set, Other
+Cannot run program, Other
+Task 'test' not found in root project, Other

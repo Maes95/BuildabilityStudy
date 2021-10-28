@@ -184,9 +184,13 @@ class BuildChecker():
             if 'commits' in self.config:
                 rawCommits = [(commit["c_hash"], commit['date'], commit['comment']) for commit in self.config['commits']]
             else:
+                self.process_manager.log("STEP 0")
                 rawCommits = [ commit.split(DELIMITER) for commit in self.git_manager.getAllCommits()]
 
             for commit in rawCommits:
+
+                if len(commit) != 3: continue # This line prevents from errors due to strange format of comment
+
                 commit_hash, date, comment = commit
                 commits.append({
                     "id": n,
@@ -230,8 +234,7 @@ if __name__ == "__main__":
     except KeyboardInterrupt as e:
         bcheck.finish("FINISHED EXPERIMENT WITH KeyboardInterrupt")
     except Exception as e:
-        bcheck.pm.log("Exception: %s"%e)
-        bcheck.finish("FINISHED EXPERIMENT WITH AN EXCEPTION")
+        bcheck.finish("FINISHED EXPERIMENT WITH AN EXCEPTION: %s"%e)
     else:
         bcheck.finish("FINISHED EXPERIMENT SUCCESSFULLY")
 

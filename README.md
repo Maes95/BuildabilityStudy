@@ -1,7 +1,8 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4002023.svg)](https://doi.org/10.5281/zenodo.4002023)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5596333.svg)](https://doi.org/10.5281/zenodo.5596333)
 # Reproducing open-projects software builds experiment
 
-Reproduction package for the paper "Revisiting the Building of Past Snapshots – A Replication and Reproduction Study", presented to EMSE 2021 (still under review). This package contains:
+Reproduction package for the paper "Back and There Once Again: Revisiting the
+Compilation of Past Snapshots", presented to EMSE 2021 (still under review). This package contains:
 
 ```bash
 .
@@ -39,6 +40,8 @@ Some data needed to correctly reproduce the experiment is hosted in Zenodo (http
 - ReproductionResults.zip
 
 The use of these datasets will be discussed in the following sections.
+
+> **IMPORTANT NOTE**: In this reproduction package, the term "buildability" is used equivalently to the term "compilability".
 
 ## Original study
 
@@ -80,7 +83,7 @@ First of all, clone the repo:
 
 ```
   $ git clone https://github.com/BuildabilityResearcher/BuildabilityStudy.git
-  $ cd BuildabilityStudy/
+  $ cd bugs/
 ```
 
 ## Replication Study
@@ -451,11 +454,11 @@ Among the other projects, it is possible that we find Android libraries or appli
 
 ##### Random selection
 
-From the 252 projects that meet our requirements, we have chosen a random sample of 37 projects.
+From the 252 projects that meet our requirements, we have chosen a random sample of 80 projects.
 
 ##### Generate build configuration files
 
-For each of these 37 projects, a configuration file is generated in order to perform the snapshot compilation experiment
+For each of these 80 projects, a configuration file is generated in order to perform the snapshot compilation experiment
 
 The configuration file is quite similar to the Original Study, but in this case, we consider the entire commit history down to the most recently defined commit:
 
@@ -468,7 +471,7 @@ The configuration file is quite similar to the Original Study, but in this case,
 }
 ```
 
-The 37 projects on which the Reproduction Experiment will be performed can be found in the `configFiles/GitHubProjects` folder
+The 80 projects on which the Reproduction Experiment will be performed can be found in the `configFiles/GitHubProjects` folder
 
 #### To execute this step
 
@@ -538,7 +541,7 @@ _Example of build configuration_
 
 #### 3.1 Buildability analysis - Reproduction Study
 
-We will replicate the format of the compilability results used in the Original Study. The quartile values for the 37 projects are Q1=1791 and Q3=3693 commits. The number of projects for each category would be 9 (short history), 18 (medium history) and 10 (long history).
+We will replicate the format of the compilability results used in the Original Study. The quartile values for the 37 projects are Q1=1791 and Q3=3693 commits. The number of projects for each category would be 20 (short history), 40 (medium history) and 20 (long history).
 
 A summary of the results of buildability is provided in the following file: 
 - _results/reproduction_experiment_buildability_summary.csv_

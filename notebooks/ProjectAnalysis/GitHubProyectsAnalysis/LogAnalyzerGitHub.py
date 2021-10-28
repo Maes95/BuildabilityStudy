@@ -1,13 +1,12 @@
 import csv
-import pandas as pd
 import re
-import hashlib
+import sys
 import os
 import json
 import subprocess
 
 MAVEN_COMMON_ERRORS_MAP = {}
-with open('/home/previousResults/maven-common-errors.txt', "r") as f:
+with open('/home/notebooks/ProjectAnalysis/GitHubProyectsAnalysis/maven-common-errors.txt', "r") as f:
     for line in f.readlines():
         exception, action = line.rstrip("\n").split(",")
         MAVEN_COMMON_ERRORS_MAP[exception] = action
@@ -34,7 +33,6 @@ class LogAnalyzerGitHub:
         self.path= "%s/%s/experiment_%d"%(root, project_name, experiment)
         self.logs_path = self.path+'/logs/'
         report="%s/report_experiment_%d.csv"%(self.path, experiment)
-        data= pd.read_csv(report)
         self.csvList = dict()
         with open(report) as csvfile:
             reader = csv.DictReader(csvfile)
@@ -46,15 +44,15 @@ class LogAnalyzerGitHub:
         with open(build_file_path) as f: 
             data = json.load(f)
             return data
+    
+    def check_error(self, error, log):
 
-    def get_maven_errors(self, log_path):
-        detectedErrors = []
-        last_lines = subprocess.check_output(['cat', self.logs_path+log_path])
-        for error in MAVEN_COMMON_ERRORS_MAP.keys():
-            if error in str(last_lines):
-                detectedErrors.append(error)
-        return detectedErrors
-
+        if "(.*)" in error:
+            # Use regex
+            for e in re.finditer(error, log):
+                return e.group(0)
+        else:
+            if error in log: return error
 
     def get_error(self, build_system, commit_id, commit_hash):
         # First log Only ( Maven > Gradle > Ant )
@@ -74,8 +72,9 @@ class LogAnalyzerGitHub:
 
         if build_system == "Gradle":
             for error in GRADLE_COMMON_ERRORS:
-                if error[0] in log:
-                    return error[0], error[1]
+                real_error = self.check_error(error[0], log)
+                if real_error is not None:
+                    return real_error, error[1]
             #print("%d - Other Gradle error" % commit_id)
             return "Other Gradle error", "Other"
 
@@ -83,8 +82,9 @@ class LogAnalyzerGitHub:
 
         if build_system == "Ant":
             for error in ANT_COMMON_ERRORS:
-                if error[0] in log:
-                    return error[0], error[1]
+                real_error = self.check_error(error[0], log)
+                if real_error is not None:
+                    return real_error, error[1]
             #print("%d - Other Ant error" % commit_id)
             return "Other Ant error", "Other"
         if build_system == "NOT_FOUND":
@@ -95,7 +95,7 @@ class LogAnalyzerGitHub:
     def analyze(self):
 
         # Create results folder (if not exist)
-        analyze_results_path = "results/"
+        analyze_results_path = "/home/notebooks/ProjectAnalysis/GitHubProyectsAnalysis/results/"
         if not os.path.exists(analyze_results_path):
             os.mkdir(analyze_results_path)
 
@@ -114,6 +114,7 @@ class LogAnalyzerGitHub:
             build_system = build_file['build_system']
             error = ""
             action = ""
+
             if project['build'] != "SUCCESS":
                 if int(project['exec_time']) >= 300:
                     error = "Timeout"
@@ -139,28 +140,11 @@ class LogAnalyzerGitHub:
         
 
 if __name__ == "__main__":
-    la = LogAnalyzerGitHub('mockito', root="/home/results/GitHub_old/")
+    la = LogAnalyzerGitHub(sys.argv[1], root="/home/results/GitHub/")
     la.analyze()
+    # error = la.get_error("Gradle", "1000","33fd9591")
+    # print(error)
 
-    # from os import listdir
-    # from os.path import isfile, join
-
-    # from collections import Counter
-
-    # projects = [f for f in listdir("/home/results/GitHub/")]
-
-    # build_systems = []
-
-    # for project in projects:
-    #     path = join("/home/results/GitHub/", project)
-    #     build_path = join(path, "experiment_1/build_files/")
-    #     for build_file in listdir(build_path):
-    #         with open(join(build_path, build_file)) as f:
-    #             bs = json.load(f)
-    #             build_systems.append((bs['build_system']))
-    # print(Counter(build_systems))
-    
-    # Counter({'Maven': 83951, 'Ant': 15227, 'Gradle': 11416, 'NOT_FOUND': 4518})
 
     
 

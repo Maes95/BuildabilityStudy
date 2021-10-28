@@ -376,399 +376,399 @@ INDEX,COMMIT_ID,BUILD_SYSTEM,BUILD_STATUS,ERROR,ACTION
 374,cfbe96fc,Gradle,FAIL,Permission denied,Permission denied error
 375,c1eaed22,Gradle,FAIL,Permission denied,Permission denied error
 376,cd30768f,Gradle,FAIL,Permission denied,Permission denied error
-377,2cb294f4,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-378,f59de758,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-379,d6987ea1,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-380,7b52e2a6,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-381,5d88ab0a,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-382,ca4b7d42,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-383,ce313e04,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-384,deb24cf9,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-385,7d7c1b5d,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-386,d8e9d3f0,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-387,38406015,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-388,834999f0,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-389,f6aecc2a,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-390,0d5ba309,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-391,91ce9944,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-392,e87467d4,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-393,6b0ab2bc,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-394,abfc03f8,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-395,af1f98d5,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-396,244d8a0b,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-397,5d0d6f89,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-398,824b164a,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-399,946b3e49,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-400,6b2fe2be,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-401,e25b8ba8,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-402,5b619fc5,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-403,e57e24af,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-404,07d89ddb,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-405,04e6bc57,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-406,44630817,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-407,cd5f9e38,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-408,c8d83f61,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-409,f4c99821,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-410,4c863e73,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-411,a5d52953,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-412,9411351c,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-413,d140c8a0,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-414,ed84d86c,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-415,75067768,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-416,c7aeadad,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-417,cdb81852,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-418,1d0b1b98,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-419,e780a4ec,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-420,64387389,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-421,398ef9ca,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-422,30acd933,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-423,61fa5e04,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-424,af824fec,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-425,575ab9dd,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-426,d62d46e5,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-427,4fcdfae7,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-428,e8cee57c,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-429,e375e60c,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-430,d7499e94,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-431,fd477dde,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-432,819f5d34,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-433,97ac0958,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-434,0096fa86,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-435,026f6d97,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-436,34956384,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-437,369547bb,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-438,25969a8e,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-439,d71c42d3,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-440,b2c50904,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-441,6c4518b6,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-442,1333d534,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-443,c6327839,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-444,1bdbdc51,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-445,45e95ab5,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-446,56fde610,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-447,5acce28d,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-448,a72cbdca,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-449,fe7d4cd1,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-450,9bfb7525,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-451,647e34e0,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-452,ff21ab7c,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-453,114f8c12,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-454,60542c12,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-455,26313da1,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-456,11dd532b,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-457,4e155ca5,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-458,0eb3dc10,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-459,96dafa72,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-460,302890a0,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-461,80f30e6f,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-462,25b531d5,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-463,d79cfd34,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-464,f0fc4c83,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-465,445cc77f,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-466,113ab422,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-467,509730ef,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-468,aea68241,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-469,0f8a51c4,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-470,c5ec6cb4,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-471,a68df36b,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-472,5ebf3ccc,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-473,f0723e41,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-474,1a72bc64,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-475,4b1afeef,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-476,611a49c3,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-477,0e029e32,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-478,00105715,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-479,aacab558,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-480,06fc67c1,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-481,82f3646f,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-482,21250873,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-483,c916e5e3,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-484,b21dd975,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-485,1d66c6cc,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-486,e2c9a987,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-487,38b96130,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-488,4fe65db6,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-489,46cc2bfa,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-490,01d6d04f,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-491,f827b1cc,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-492,bdfa22a1,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-493,d76bca58,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-494,088aa8df,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-495,20591a4f,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-496,3ffa8d42,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-497,c7cc5a74,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-498,9f24a752,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-499,fb901e9b,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-500,45d6acde,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-501,b2e298f4,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-502,ef345b90,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-503,fe872d8b,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-504,f1fd796d,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-505,86a0a9c6,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-506,3567a6ea,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-507,1b384a11,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-508,5475a7c3,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-509,8ee3335e,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-510,f32ffc23,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-511,917c4324,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-512,76c86d3e,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-513,76e94fec,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-514,b9002b08,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-515,7595a321,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-516,57ffc1b0,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-517,c3cf3cb1,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-518,165a251b,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-519,afacdc4c,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-520,d6a4937a,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-521,e8926db8,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-522,94909410,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-523,466e43b9,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-524,b05af7b1,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-525,c4f427c0,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-526,4d1e3790,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-527,a448313d,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-528,7dffb004,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-529,f8c6a025,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-530,1f06d987,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-531,899e2bb5,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-532,ba927831,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-533,10b1b9dd,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-534,7cc65b1e,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-535,607ec87b,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-536,113eb09a,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-537,5e8012b5,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-538,07f8ba52,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-539,8293154f,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-540,13f4a799,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-541,c6bd2332,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-542,661f91bd,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-543,ce3f46d8,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-544,b04a2e4e,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-545,563a342e,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-546,06eb7f8e,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-547,bf142c44,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-548,86d70508,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-549,3dfe0b27,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-550,3d372b62,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-551,47ecfb89,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-552,8d7e7799,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-553,574f0ea9,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-554,c80346a7,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-555,db9da8a5,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-556,930ce83f,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-557,c36aeefb,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-558,108fc943,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-559,e127d09b,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-560,0b7e7f44,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-561,a5367b2a,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-562,978deda9,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-563,d05788c6,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-564,2708cca6,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-565,3c822da1,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-566,3a353316,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-567,01893aba,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-568,c1fbd690,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-569,08042648,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-570,1c74bdae,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-571,26df9252,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-572,c8833682,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-573,ce796ccb,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-574,e0775d89,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-575,aadc5f72,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-576,c35e0011,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-577,60b3df67,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-578,92818626,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-579,6f1d62c3,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-580,ddc7c6e7,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-581,f5f8576c,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-582,630fabc1,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-583,dfd583aa,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-584,2a7289f1,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-585,b48bcd96,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-586,3261c8db,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-587,ea01e8de,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-588,2726f4c2,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-589,16cc2a1e,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-590,d6f7e967,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-591,3625c87a,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-592,e2fa765c,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-593,b30c013a,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-594,51743bea,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-595,98cb8c88,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-596,129854da,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-597,7f3fbe89,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-598,26c79be1,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-599,e1a4fe49,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-600,c21b0191,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-601,d3bafdda,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-602,59814f44,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-603,0d21793b,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-604,5254548f,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-605,476d1c51,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-606,76580e41,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-607,35656188,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-608,25341b3c,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-609,85c68f71,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-610,b1e960a1,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-611,0f60519c,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-612,369cbc8f,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-613,54177dbb,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-614,9365e143,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-615,76725497,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-616,e9021543,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-617,aec7534c,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-618,2a047a3b,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-619,1284ee2c,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-620,d8c39100,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-621,c4a93622,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-622,4d94f50f,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-623,f01d387d,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-624,cf49ea29,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-625,0de27926,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-626,a1ce571c,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-627,eb93c8fc,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-628,b31e00f7,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-629,e6917f8f,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-630,a9edcbc2,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-631,295e14c5,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-632,13db8d09,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-633,a5b4b4c7,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-634,43c95075,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-635,26e30276,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-636,9a9ea629,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-637,d2ab67e8,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-638,2f149f21,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-639,0a7ceea1,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-640,fb8386d8,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-641,3b41c07c,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-642,803df80a,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-643,5de61ccf,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-644,65f5a6c4,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-645,94d0201f,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-646,31daac0d,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-647,29b0b475,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-648,26fd9906,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-649,52bec5f3,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-650,2d589f7f,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-651,7c73c12c,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-652,b9f05e60,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-653,68cd50ea,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-654,d940e19a,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-655,ab246d03,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-656,263ebe3d,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-657,8ac7161d,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-658,fb68fe18,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-659,ee72bb35,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-660,26ff9a9c,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-661,6c796c5f,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-662,d5b3f597,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-663,b9a60745,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-664,c98375ad,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-665,9a01cd4c,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-666,90e05270,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-667,1c6cfe5d,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-668,4c5474d4,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-669,32d9089c,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-670,222d4d71,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-671,44b27485,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-672,70bf7634,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-673,710ac5ca,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-674,2b80a3a2,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-675,a7c65760,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-676,286864e6,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-677,372a2076,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-678,29b72225,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-679,e7ee5df0,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-680,8dfbde6a,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-681,98c5a6cd,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-682,3bf45e8e,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-683,cdc2524b,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-684,1b96d51b,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-685,73175fff,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-686,9db0317e,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-687,f46cef86,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-688,63903c4f,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-689,7c34e987,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-690,ea01f89f,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-691,2c97c8fc,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-692,b6b62bf1,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-693,cdee7969,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-694,e90d9fc4,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-695,aa37159d,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-696,a2e117f6,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-697,f5cb7b4a,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-698,29f66c08,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-699,f91e92c0,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-700,854965f7,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-701,daf677f5,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-702,8097d971,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-703,9d36b2f3,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-704,38a20a6b,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-705,65aecc80,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-706,e66806bc,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-707,149efcbc,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-708,f1355e45,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-709,e2d11581,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-710,6493487d,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-711,146a6c17,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-712,59819a8c,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-713,56f2f96b,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-714,1f8c5216,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-715,f1f13d0c,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-716,dd40a35f,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-717,03a800eb,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-718,333dbda6,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-719,d1a02ee9,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-720,1b591044,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-721,c02b47e7,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-722,b012531e,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-723,227968c6,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-724,2830ad86,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-725,990a96cf,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-726,5e0daf5f,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-727,787fef08,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-728,3ea87599,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-729,2e0d05e5,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-730,66082ccb,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-731,4c0a4a4f,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-732,00b2e1f5,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-733,de206f9f,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-734,c8baae84,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-735,7edf46cf,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-736,cb74051c,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-737,6646714b,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-738,31122c30,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-739,f340fbd0,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-740,b5e6b068,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-741,621e8637,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-742,8487631e,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-743,4e3e5c76,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-744,1f02179d,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-745,43f83c0c,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-746,28f339d5,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-747,c2289146,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-748,70ec178c,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-749,1c25b0b7,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-750,6c10c024,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-751,2c9b7fa1,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-752,f4e09546,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-753,f73f75c2,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-754,02f02330,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-755,5fe0c94c,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-756,7de480ff,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-757,20f859e6,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-758,e4e05d14,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-759,294dc31b,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-760,16e93016,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-761,0d2689c6,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-762,72875ed6,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-763,8fbc5240,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-764,18ef3c51,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-765,404ecb6f,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-766,300c8228,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-767,bbb8d731,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-768,ec86a57d,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
-769,cd8609d3,Gradle,FAIL,IOException: Server returned HTTP response code: 403 for URL:,Resolution
+377,2cb294f4,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+378,f59de758,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+379,d6987ea1,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+380,7b52e2a6,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+381,5d88ab0a,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+382,ca4b7d42,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+383,ce313e04,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+384,deb24cf9,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+385,7d7c1b5d,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+386,d8e9d3f0,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+387,38406015,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+388,834999f0,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+389,f6aecc2a,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+390,0d5ba309,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+391,91ce9944,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+392,e87467d4,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+393,6b0ab2bc,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+394,abfc03f8,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+395,af1f98d5,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+396,244d8a0b,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+397,5d0d6f89,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+398,824b164a,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+399,946b3e49,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+400,6b2fe2be,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+401,e25b8ba8,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+402,5b619fc5,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+403,e57e24af,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+404,07d89ddb,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+405,04e6bc57,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+406,44630817,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+407,cd5f9e38,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+408,c8d83f61,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+409,f4c99821,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+410,4c863e73,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+411,a5d52953,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+412,9411351c,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+413,d140c8a0,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+414,ed84d86c,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+415,75067768,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+416,c7aeadad,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+417,cdb81852,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+418,1d0b1b98,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+419,e780a4ec,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+420,64387389,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+421,398ef9ca,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+422,30acd933,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+423,61fa5e04,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+424,af824fec,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+425,575ab9dd,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+426,d62d46e5,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+427,4fcdfae7,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+428,e8cee57c,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+429,e375e60c,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+430,d7499e94,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+431,fd477dde,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+432,819f5d34,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+433,97ac0958,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+434,0096fa86,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+435,026f6d97,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+436,34956384,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+437,369547bb,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+438,25969a8e,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+439,d71c42d3,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+440,b2c50904,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+441,6c4518b6,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+442,1333d534,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+443,c6327839,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+444,1bdbdc51,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+445,45e95ab5,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+446,56fde610,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+447,5acce28d,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+448,a72cbdca,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+449,fe7d4cd1,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+450,9bfb7525,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+451,647e34e0,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+452,ff21ab7c,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+453,114f8c12,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+454,60542c12,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+455,26313da1,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+456,11dd532b,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+457,4e155ca5,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+458,0eb3dc10,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+459,96dafa72,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+460,302890a0,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+461,80f30e6f,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+462,25b531d5,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+463,d79cfd34,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+464,f0fc4c83,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+465,445cc77f,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+466,113ab422,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+467,509730ef,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+468,aea68241,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+469,0f8a51c4,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+470,c5ec6cb4,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+471,a68df36b,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+472,5ebf3ccc,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+473,f0723e41,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+474,1a72bc64,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+475,4b1afeef,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+476,611a49c3,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+477,0e029e32,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+478,00105715,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+479,aacab558,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+480,06fc67c1,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+481,82f3646f,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+482,21250873,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+483,c916e5e3,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+484,b21dd975,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+485,1d66c6cc,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+486,e2c9a987,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+487,38b96130,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+488,4fe65db6,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+489,46cc2bfa,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+490,01d6d04f,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+491,f827b1cc,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+492,bdfa22a1,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+493,d76bca58,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+494,088aa8df,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+495,20591a4f,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+496,3ffa8d42,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+497,c7cc5a74,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+498,9f24a752,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+499,fb901e9b,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+500,45d6acde,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+501,b2e298f4,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+502,ef345b90,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+503,fe872d8b,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+504,f1fd796d,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+505,86a0a9c6,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+506,3567a6ea,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+507,1b384a11,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+508,5475a7c3,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+509,8ee3335e,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+510,f32ffc23,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+511,917c4324,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+512,76c86d3e,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+513,76e94fec,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+514,b9002b08,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+515,7595a321,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+516,57ffc1b0,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+517,c3cf3cb1,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+518,165a251b,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+519,afacdc4c,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+520,d6a4937a,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+521,e8926db8,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+522,94909410,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+523,466e43b9,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+524,b05af7b1,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+525,c4f427c0,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+526,4d1e3790,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+527,a448313d,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+528,7dffb004,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+529,f8c6a025,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+530,1f06d987,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+531,899e2bb5,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+532,ba927831,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+533,10b1b9dd,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+534,7cc65b1e,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+535,607ec87b,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+536,113eb09a,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+537,5e8012b5,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+538,07f8ba52,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+539,8293154f,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+540,13f4a799,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+541,c6bd2332,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+542,661f91bd,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+543,ce3f46d8,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+544,b04a2e4e,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+545,563a342e,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+546,06eb7f8e,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+547,bf142c44,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+548,86d70508,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+549,3dfe0b27,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+550,3d372b62,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+551,47ecfb89,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+552,8d7e7799,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+553,574f0ea9,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+554,c80346a7,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+555,db9da8a5,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+556,930ce83f,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+557,c36aeefb,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+558,108fc943,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+559,e127d09b,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+560,0b7e7f44,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+561,a5367b2a,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+562,978deda9,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+563,d05788c6,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+564,2708cca6,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+565,3c822da1,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+566,3a353316,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+567,01893aba,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+568,c1fbd690,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+569,08042648,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+570,1c74bdae,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+571,26df9252,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+572,c8833682,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+573,ce796ccb,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+574,e0775d89,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+575,aadc5f72,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+576,c35e0011,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+577,60b3df67,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+578,92818626,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+579,6f1d62c3,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+580,ddc7c6e7,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+581,f5f8576c,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+582,630fabc1,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+583,dfd583aa,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+584,2a7289f1,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+585,b48bcd96,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+586,3261c8db,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+587,ea01e8de,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+588,2726f4c2,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+589,16cc2a1e,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+590,d6f7e967,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+591,3625c87a,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+592,e2fa765c,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+593,b30c013a,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+594,51743bea,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+595,98cb8c88,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+596,129854da,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+597,7f3fbe89,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+598,26c79be1,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+599,e1a4fe49,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+600,c21b0191,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+601,d3bafdda,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+602,59814f44,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+603,0d21793b,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+604,5254548f,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+605,476d1c51,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+606,76580e41,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+607,35656188,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+608,25341b3c,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+609,85c68f71,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+610,b1e960a1,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+611,0f60519c,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+612,369cbc8f,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+613,54177dbb,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+614,9365e143,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+615,76725497,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+616,e9021543,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+617,aec7534c,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+618,2a047a3b,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+619,1284ee2c,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+620,d8c39100,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+621,c4a93622,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+622,4d94f50f,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+623,f01d387d,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+624,cf49ea29,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+625,0de27926,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+626,a1ce571c,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+627,eb93c8fc,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+628,b31e00f7,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+629,e6917f8f,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+630,a9edcbc2,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+631,295e14c5,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+632,13db8d09,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+633,a5b4b4c7,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+634,43c95075,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+635,26e30276,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+636,9a9ea629,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+637,d2ab67e8,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+638,2f149f21,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+639,0a7ceea1,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+640,fb8386d8,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+641,3b41c07c,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+642,803df80a,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+643,5de61ccf,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+644,65f5a6c4,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+645,94d0201f,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+646,31daac0d,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+647,29b0b475,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+648,26fd9906,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+649,52bec5f3,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+650,2d589f7f,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+651,7c73c12c,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+652,b9f05e60,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+653,68cd50ea,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+654,d940e19a,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+655,ab246d03,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+656,263ebe3d,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+657,8ac7161d,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+658,fb68fe18,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+659,ee72bb35,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+660,26ff9a9c,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+661,6c796c5f,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+662,d5b3f597,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+663,b9a60745,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+664,c98375ad,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+665,9a01cd4c,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+666,90e05270,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+667,1c6cfe5d,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+668,4c5474d4,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+669,32d9089c,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+670,222d4d71,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+671,44b27485,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+672,70bf7634,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+673,710ac5ca,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+674,2b80a3a2,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+675,a7c65760,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+676,286864e6,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+677,372a2076,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+678,29b72225,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+679,e7ee5df0,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+680,8dfbde6a,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+681,98c5a6cd,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+682,3bf45e8e,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+683,cdc2524b,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+684,1b96d51b,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+685,73175fff,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+686,9db0317e,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+687,f46cef86,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+688,63903c4f,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+689,7c34e987,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+690,ea01f89f,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+691,2c97c8fc,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+692,b6b62bf1,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+693,cdee7969,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+694,e90d9fc4,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+695,aa37159d,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+696,a2e117f6,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+697,f5cb7b4a,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+698,29f66c08,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+699,f91e92c0,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+700,854965f7,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+701,daf677f5,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+702,8097d971,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+703,9d36b2f3,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+704,38a20a6b,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+705,65aecc80,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+706,e66806bc,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+707,149efcbc,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+708,f1355e45,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+709,e2d11581,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+710,6493487d,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+711,146a6c17,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+712,59819a8c,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+713,56f2f96b,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+714,1f8c5216,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+715,f1f13d0c,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+716,dd40a35f,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+717,03a800eb,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+718,333dbda6,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+719,d1a02ee9,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+720,1b591044,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+721,c02b47e7,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+722,b012531e,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+723,227968c6,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+724,2830ad86,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+725,990a96cf,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+726,5e0daf5f,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+727,787fef08,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+728,3ea87599,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+729,2e0d05e5,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+730,66082ccb,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+731,4c0a4a4f,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+732,00b2e1f5,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+733,de206f9f,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+734,c8baae84,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+735,7edf46cf,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+736,cb74051c,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+737,6646714b,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+738,31122c30,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+739,f340fbd0,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+740,b5e6b068,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+741,621e8637,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+742,8487631e,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+743,4e3e5c76,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+744,1f02179d,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+745,43f83c0c,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+746,28f339d5,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+747,c2289146,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+748,70ec178c,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+749,1c25b0b7,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+750,6c10c024,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+751,2c9b7fa1,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+752,f4e09546,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+753,f73f75c2,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+754,02f02330,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+755,5fe0c94c,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+756,7de480ff,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+757,20f859e6,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+758,e4e05d14,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+759,294dc31b,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+760,16e93016,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+761,0d2689c6,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+762,72875ed6,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+763,8fbc5240,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+764,18ef3c51,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+765,404ecb6f,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+766,300c8228,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+767,bbb8d731,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+768,ec86a57d,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
+769,cd8609d3,Gradle,FAIL,IOException: Server returned HTTP response code,Resolution
 770,c4ac5a83,Gradle,FAIL,Could not resolve all dependencies,Resolution
 771,a6492dfc,Gradle,FAIL,Could not resolve all dependencies,Resolution
 772,056dfe79,Gradle,FAIL,Could not resolve all dependencies,Resolution
@@ -1872,56 +1872,56 @@ INDEX,COMMIT_ID,BUILD_SYSTEM,BUILD_STATUS,ERROR,ACTION
 1870,67ba28ca,Gradle,FAIL,Could not resolve,Resolution
 1871,28cddab8,Gradle,FAIL,Could not resolve,Resolution
 1872,52a3b93e,Gradle,FAIL,Could not resolve,Resolution
-1873,86f569ce,Gradle,FAIL,Could not resolve,Resolution
-1874,19395748,Gradle,FAIL,Could not resolve,Resolution
-1875,320153a1,Gradle,FAIL,Could not resolve,Resolution
-1876,8fe82512,Gradle,FAIL,Could not resolve,Resolution
-1877,91ff1d71,Gradle,FAIL,Could not resolve,Resolution
-1878,d8fc5895,Gradle,FAIL,Could not resolve,Resolution
-1879,b3547fc4,Gradle,FAIL,Could not resolve,Resolution
-1880,c343e999,Gradle,FAIL,Could not resolve,Resolution
-1881,4f9166bb,Gradle,FAIL,Could not resolve,Resolution
-1882,58897949,Gradle,FAIL,Could not resolve,Resolution
-1883,60399fab,Gradle,FAIL,Could not resolve,Resolution
-1884,e8edb5a4,Gradle,FAIL,Could not resolve,Resolution
-1885,9245d1d9,Gradle,FAIL,Could not resolve,Resolution
-1886,dec36d61,Gradle,FAIL,Could not resolve,Resolution
-1887,d26dc6cb,Gradle,FAIL,Could not resolve,Resolution
-1888,9650205e,Gradle,FAIL,Could not resolve,Resolution
-1889,f61227ca,Gradle,FAIL,Could not resolve,Resolution
-1890,583af972,Gradle,FAIL,Could not resolve,Resolution
-1891,38863c1e,Gradle,FAIL,Could not resolve,Resolution
-1892,e0d58349,Gradle,FAIL,Could not resolve,Resolution
-1893,4de58b56,Gradle,FAIL,Could not resolve,Resolution
-1894,7b082451,Gradle,FAIL,Could not resolve,Resolution
-1895,f34b027c,Gradle,FAIL,Could not resolve,Resolution
-1896,851b22bf,Gradle,FAIL,Could not resolve,Resolution
-1897,92583636,Gradle,FAIL,Could not resolve,Resolution
-1898,7fb202d2,Gradle,FAIL,Could not resolve,Resolution
-1899,486ebf85,Gradle,FAIL,Could not resolve,Resolution
-1900,2c980d5c,Gradle,FAIL,Could not resolve,Resolution
-1901,7cfc60c0,Gradle,FAIL,Could not resolve,Resolution
+1873,86f569ce,Gradle,FAIL,Execution failed for task, Other
+1874,19395748,Gradle,FAIL,Execution failed for task, Other
+1875,320153a1,Gradle,FAIL,Execution failed for task, Other
+1876,8fe82512,Gradle,FAIL,Execution failed for task, Other
+1877,91ff1d71,Gradle,FAIL,Execution failed for task, Other
+1878,d8fc5895,Gradle,FAIL,Execution failed for task, Other
+1879,b3547fc4,Gradle,FAIL,Execution failed for task, Other
+1880,c343e999,Gradle,FAIL,Compilation failed,Compilation
+1881,4f9166bb,Gradle,FAIL,Compilation failed,Compilation
+1882,58897949,Gradle,FAIL,Execution failed for task, Other
+1883,60399fab,Gradle,FAIL,Execution failed for task, Other
+1884,e8edb5a4,Gradle,FAIL,Execution failed for task, Other
+1885,9245d1d9,Gradle,FAIL,Execution failed for task, Other
+1886,dec36d61,Gradle,FAIL,Execution failed for task, Other
+1887,d26dc6cb,Gradle,FAIL,Execution failed for task, Other
+1888,9650205e,Gradle,FAIL,Execution failed for task, Other
+1889,f61227ca,Gradle,FAIL,Execution failed for task, Other
+1890,583af972,Gradle,FAIL,Execution failed for task, Other
+1891,38863c1e,Gradle,FAIL,Execution failed for task, Other
+1892,e0d58349,Gradle,FAIL,Execution failed for task, Other
+1893,4de58b56,Gradle,FAIL,Execution failed for task, Other
+1894,7b082451,Gradle,FAIL,Execution failed for task, Other
+1895,f34b027c,Gradle,FAIL,Execution failed for task, Other
+1896,851b22bf,Gradle,FAIL,Execution failed for task, Other
+1897,92583636,Gradle,FAIL,Execution failed for task, Other
+1898,7fb202d2,Gradle,FAIL,Execution failed for task, Other
+1899,486ebf85,Gradle,FAIL,Execution failed for task, Other
+1900,2c980d5c,Gradle,FAIL,Execution failed for task, Other
+1901,7cfc60c0,Gradle,FAIL,Execution failed for task, Other
 1902,f3acaba2,Gradle,FAIL,Could not resolve,Resolution
 1903,f19b0790,Gradle,FAIL,Could not resolve,Resolution
-1904,e8916897,Gradle,FAIL,Could not resolve,Resolution
-1905,b74f8cc8,Gradle,FAIL,Could not resolve,Resolution
-1906,6c21b050,Gradle,FAIL,Could not resolve,Resolution
-1907,a2da4f41,Gradle,FAIL,Could not resolve,Resolution
-1908,35bc95e2,Gradle,FAIL,Could not resolve,Resolution
-1909,04ef68f3,Gradle,FAIL,Could not resolve,Resolution
-1910,5da42774,Gradle,FAIL,Could not resolve,Resolution
-1911,25a67d00,Gradle,FAIL,Could not resolve,Resolution
-1912,d4340b85,Gradle,FAIL,Could not resolve,Resolution
-1913,af8267ae,Gradle,FAIL,Could not resolve,Resolution
-1914,02b78cbe,Gradle,FAIL,Could not resolve,Resolution
-1915,ccdd23dd,Gradle,FAIL,Could not resolve,Resolution
-1916,00617e12,Gradle,FAIL,Could not resolve,Resolution
-1917,3b3f9ba3,Gradle,FAIL,Could not resolve,Resolution
-1918,edbb3e88,Gradle,FAIL,Could not resolve,Resolution
-1919,5a913869,Gradle,FAIL,Could not resolve,Resolution
-1920,d624e0ee,Gradle,FAIL,Could not resolve,Resolution
-1921,92acbcd3,Gradle,FAIL,Could not resolve,Resolution
-1922,d59972c3,Gradle,FAIL,Could not resolve,Resolution
+1904,e8916897,Gradle,FAIL,Timeout,
+1905,b74f8cc8,Gradle,FAIL,Timeout,
+1906,6c21b050,Gradle,FAIL,Timeout,
+1907,a2da4f41,Gradle,FAIL,Timeout,
+1908,35bc95e2,Gradle,FAIL,Timeout,
+1909,04ef68f3,Gradle,FAIL,Timeout,
+1910,5da42774,Gradle,FAIL,Timeout,
+1911,25a67d00,Gradle,FAIL,Timeout,
+1912,d4340b85,Gradle,FAIL,Timeout,
+1913,af8267ae,Gradle,FAIL,Timeout,
+1914,02b78cbe,Gradle,FAIL,Timeout,
+1915,ccdd23dd,Gradle,FAIL,Timeout,
+1916,00617e12,Gradle,FAIL,Timeout,
+1917,3b3f9ba3,Gradle,FAIL,Timeout,
+1918,edbb3e88,Gradle,FAIL,Timeout,
+1919,5a913869,Gradle,FAIL,Timeout,
+1920,d624e0ee,Gradle,FAIL,Timeout,
+1921,92acbcd3,Gradle,FAIL,Timeout,
+1922,d59972c3,Gradle,FAIL,Timeout,
 1923,8d4bdb82,Gradle,FAIL,Could not resolve,Resolution
 1924,109d6376,Gradle,FAIL,Could not resolve,Resolution
 1925,b4a7208f,Gradle,FAIL,Could not resolve,Resolution
@@ -1933,52 +1933,140 @@ INDEX,COMMIT_ID,BUILD_SYSTEM,BUILD_STATUS,ERROR,ACTION
 1931,be7cc378,Gradle,FAIL,Could not resolve,Resolution
 1932,8a8e54ca,Gradle,FAIL,Could not resolve,Resolution
 1933,9a5430d0,Gradle,FAIL,Could not resolve,Resolution
-1934,42f33552,Gradle,FAIL,Other Gradle error,Other
-1935,3c939952,Gradle,FAIL,Other Gradle error,Other
-1936,5b911779,Gradle,FAIL,Other Gradle error,Other
-1937,301048ea,Gradle,FAIL,Other Gradle error,Other
-1938,8723e64c,Gradle,FAIL,Other Gradle error,Other
-1939,b27ee6f4,Gradle,FAIL,Other Gradle error,Other
-1940,bb97ac43,Gradle,FAIL,Other Gradle error,Other
-1941,ab6c4786,Gradle,FAIL,Other Gradle error,Other
-1942,f54c5e86,Gradle,FAIL,Other Gradle error,Other
-1943,6c6e25e7,Gradle,FAIL,Other Gradle error,Other
-1944,89ca326b,Gradle,FAIL,Other Gradle error,Other
-1945,12c906dd,Gradle,FAIL,Other Gradle error,Other
-1946,034d07ad,Gradle,FAIL,Other Gradle error,Other
-1947,7199b371,Gradle,FAIL,Other Gradle error,Other
-1948,7573e5ee,Gradle,FAIL,Other Gradle error,Other
-1949,e672f8bd,Gradle,FAIL,Other Gradle error,Other
-1950,8cc42a45,Gradle,FAIL,Other Gradle error,Other
-1951,34346475,Gradle,FAIL,Other Gradle error,Other
-1952,ab63cc62,Gradle,FAIL,Other Gradle error,Other
-1953,e14c1009,Gradle,FAIL,Other Gradle error,Other
-1954,3d3f033d,Gradle,FAIL,Other Gradle error,Other
-1955,9d7f39cc,Gradle,FAIL,Other Gradle error,Other
-1956,4a4e94b1,Gradle,FAIL,Other Gradle error,Other
-1957,9d0dd7f0,Gradle,FAIL,Other Gradle error,Other
-1958,bc65f897,Gradle,FAIL,Other Gradle error,Other
-1959,0302dca9,Gradle,FAIL,Other Gradle error,Other
-1960,f9fc2403,Gradle,FAIL,Other Gradle error,Other
-1961,fbc52bcb,Gradle,FAIL,Other Gradle error,Other
-1962,41cfc5e1,Gradle,FAIL,Other Gradle error,Other
-1963,84735d22,Gradle,FAIL,Other Gradle error,Other
-1964,d29400b3,Gradle,FAIL,Other Gradle error,Other
-1965,21740568,Gradle,FAIL,Other Gradle error,Other
-1966,98658e6f,Gradle,FAIL,Other Gradle error,Other
-1967,0afe3662,Gradle,FAIL,Other Gradle error,Other
-1968,563060be,Gradle,FAIL,Other Gradle error,Other
-1969,3438a083,Gradle,FAIL,Other Gradle error,Other
-1970,7f36061d,Gradle,FAIL,Other Gradle error,Other
-1971,b34e112a,Gradle,FAIL,Other Gradle error,Other
-1972,152ee2e9,Gradle,FAIL,Other Gradle error,Other
-1973,335043e6,Gradle,FAIL,Other Gradle error,Other
-1974,3b7380d6,Gradle,FAIL,Other Gradle error,Other
-1975,b838ff8a,Gradle,FAIL,Other Gradle error,Other
-1976,259ed4d9,Gradle,FAIL,Other Gradle error,Other
-1977,023d4299,Gradle,FAIL,Other Gradle error,Other
-1978,c831fc6f,Gradle,FAIL,Other Gradle error,Other
-1979,c794b2b0,Gradle,FAIL,Other Gradle error,Other
-1980,59a48c48,Gradle,FAIL,Other Gradle error,Other
-1981,66354d40,Gradle,FAIL,Other Gradle error,Other
-1982,796286b8,Gradle,FAIL,Other Gradle error,Other
+1934,42f33552,Gradle,FAIL,Java 11 is required, Other
+1935,3c939952,Gradle,FAIL,Java 11 is required, Other
+1936,5b911779,Gradle,FAIL,Java 11 is required, Other
+1937,301048ea,Gradle,FAIL,Java 11 is required, Other
+1938,8723e64c,Gradle,FAIL,Java 11 is required, Other
+1939,b27ee6f4,Gradle,FAIL,Java 11 is required, Other
+1940,bb97ac43,Gradle,FAIL,Java 11 is required, Other
+1941,ab6c4786,Gradle,FAIL,Java 11 is required, Other
+1942,f54c5e86,Gradle,FAIL,Java 11 is required, Other
+1943,6c6e25e7,Gradle,FAIL,Java 11 is required, Other
+1944,89ca326b,Gradle,FAIL,Java 11 is required, Other
+1945,12c906dd,Gradle,FAIL,Java 11 is required, Other
+1946,034d07ad,Gradle,FAIL,Java 11 is required, Other
+1947,7199b371,Gradle,FAIL,Java 11 is required, Other
+1948,7573e5ee,Gradle,FAIL,Java 11 is required, Other
+1949,e672f8bd,Gradle,FAIL,Java 11 is required, Other
+1950,8cc42a45,Gradle,FAIL,Java 11 is required, Other
+1951,34346475,Gradle,FAIL,Java 11 is required, Other
+1952,ab63cc62,Gradle,FAIL,Java 11 is required, Other
+1953,e14c1009,Gradle,FAIL,Java 11 is required, Other
+1954,3d3f033d,Gradle,FAIL,Java 11 is required, Other
+1955,9d7f39cc,Gradle,FAIL,Java 11 is required, Other
+1956,4a4e94b1,Gradle,FAIL,Java 11 is required, Other
+1957,9d0dd7f0,Gradle,FAIL,Java 11 is required, Other
+1958,bc65f897,Gradle,FAIL,Java 11 is required, Other
+1959,0302dca9,Gradle,FAIL,Java 11 is required, Other
+1960,f9fc2403,Gradle,FAIL,Java 11 is required, Other
+1961,fbc52bcb,Gradle,FAIL,Java 11 is required, Other
+1962,41cfc5e1,Gradle,FAIL,Java 11 is required, Other
+1963,84735d22,Gradle,FAIL,Java 11 is required, Other
+1964,d29400b3,Gradle,FAIL,Java 11 is required, Other
+1965,21740568,Gradle,FAIL,Java 11 is required, Other
+1966,98658e6f,Gradle,FAIL,Java 11 is required, Other
+1967,0afe3662,Gradle,FAIL,Java 11 is required, Other
+1968,563060be,Gradle,FAIL,Java 11 is required, Other
+1969,3438a083,Gradle,FAIL,Java 11 is required, Other
+1970,7f36061d,Gradle,FAIL,Java 11 is required, Other
+1971,b34e112a,Gradle,FAIL,Java 11 is required, Other
+1972,152ee2e9,Gradle,FAIL,Java 11 is required, Other
+1973,335043e6,Gradle,FAIL,Java 11 is required, Other
+1974,3b7380d6,Gradle,FAIL,Java 11 is required, Other
+1975,b838ff8a,Gradle,FAIL,Java 11 is required, Other
+1976,259ed4d9,Gradle,FAIL,Java 11 is required, Other
+1977,023d4299,Gradle,FAIL,Java 11 is required, Other
+1978,c831fc6f,Gradle,FAIL,Java 11 is required, Other
+1979,c794b2b0,Gradle,FAIL,Java 11 is required, Other
+1980,59a48c48,Gradle,FAIL,Java 11 is required, Other
+1981,66354d40,Gradle,FAIL,Java 11 is required, Other
+1982,796286b8,Gradle,FAIL,Java 11 is required, Other
+1983,d596cc84,Gradle,FAIL,Java 11 is required, Other
+1984,417e7873,Gradle,FAIL,Java 11 is required, Other
+1985,5c90e6da,Gradle,FAIL,Java 11 is required, Other
+1986,aca104c9,Gradle,FAIL,Java 11 is required, Other
+1987,169be30e,Gradle,FAIL,Java 11 is required, Other
+1988,fd2e6fa6,Gradle,FAIL,Java 11 is required, Other
+1989,97a86907,Gradle,FAIL,Java 11 is required, Other
+1990,4210d64a,Gradle,FAIL,Java 11 is required, Other
+1991,078e1ee1,Gradle,FAIL,Java 11 is required, Other
+1992,17cf1f19,Gradle,FAIL,Java 11 is required, Other
+1993,ffa818a9,Gradle,FAIL,Java 11 is required, Other
+1994,e4f8fd5b,Gradle,FAIL,Java 11 is required, Other
+1995,db7d6636,Gradle,FAIL,Java 11 is required, Other
+1996,d0c91e2e,Gradle,FAIL,Java 11 is required, Other
+1997,7ef79a4b,Gradle,FAIL,Java 11 is required, Other
+1998,5b57ea7d,Gradle,FAIL,Java 11 is required, Other
+1999,fb79a1be,Gradle,FAIL,Java 11 is required, Other
+2000,3987569a,Gradle,FAIL,Java 11 is required, Other
+2001,0b5257e7,Gradle,FAIL,Java 11 is required, Other
+2002,f92fe5a0,Gradle,FAIL,Java 11 is required, Other
+2003,57d5e7eb,Gradle,FAIL,Java 11 is required, Other
+2004,248f7651,Gradle,FAIL,Java 11 is required, Other
+2005,84602df9,Gradle,FAIL,Java 11 is required, Other
+2006,b110d37c,Gradle,FAIL,Java 11 is required, Other
+2007,2a0eec27,Gradle,FAIL,Java 11 is required, Other
+2008,1baa4f77,Gradle,FAIL,Java 11 is required, Other
+2009,a56d9a77,Gradle,FAIL,Java 11 is required, Other
+2010,f491a429,Gradle,FAIL,Java 11 is required, Other
+2011,27e6b005,Gradle,FAIL,Java 11 is required, Other
+2012,31a8204c,Gradle,FAIL,Java 11 is required, Other
+2013,42d9ab59,Gradle,FAIL,Java 11 is required, Other
+2014,55ff26f6,Gradle,FAIL,Java 11 is required, Other
+2015,2bf0b052,Gradle,FAIL,Java 11 is required, Other
+2016,84008463,Gradle,FAIL,Java 11 is required, Other
+2017,8283a3d1,Gradle,FAIL,Java 11 is required, Other
+2018,7d4a6cae,Gradle,FAIL,Java 11 is required, Other
+2019,97a81f5b,Gradle,FAIL,Java 11 is required, Other
+2020,016e0972,Gradle,FAIL,Java 11 is required, Other
+2021,6e36dd7c,Gradle,FAIL,Java 11 is required, Other
+2022,3cf827a9,Gradle,FAIL,Java 11 is required, Other
+2023,c7f7d09a,Gradle,FAIL,Java 11 is required, Other
+2024,3f9ddf61,Gradle,FAIL,Java 11 is required, Other
+2025,a74ae887,Gradle,FAIL,Java 11 is required, Other
+2026,e9ce14a8,Gradle,FAIL,Java 11 is required, Other
+2027,044ed2e9,Gradle,FAIL,Java 11 is required, Other
+2028,613157d5,Gradle,FAIL,Java 11 is required, Other
+2029,0db74fdf,Gradle,FAIL,Java 11 is required, Other
+2030,fa1e9c51,Gradle,FAIL,Java 11 is required, Other
+2031,2906be4e,Gradle,FAIL,Java 11 is required, Other
+2032,910d83ba,Gradle,FAIL,Java 11 is required, Other
+2033,1e86b1f8,Gradle,FAIL,Java 11 is required, Other
+2034,fd8a9803,Gradle,FAIL,Java 11 is required, Other
+2035,0288c807,Gradle,FAIL,Java 11 is required, Other
+2036,71c701b4,Gradle,FAIL,Java 11 is required, Other
+2037,0212048c,Gradle,FAIL,Java 11 is required, Other
+2038,58f70d14,Gradle,FAIL,Java 11 is required, Other
+2039,cd47e5ec,Gradle,FAIL,Java 11 is required, Other
+2040,52e9fc80,Gradle,FAIL,Java 11 is required, Other
+2041,28ad4053,Gradle,FAIL,Java 11 is required, Other
+2042,4699d39b,Gradle,FAIL,Java 11 is required, Other
+2043,22380063,Gradle,FAIL,Java 11 is required, Other
+2044,cf84b587,Gradle,FAIL,Java 11 is required, Other
+2045,3ab5fcce,Gradle,FAIL,Java 11 is required, Other
+2046,b93f6eec,Gradle,FAIL,Java 11 is required, Other
+2047,55a16b82,Gradle,FAIL,Java 11 is required, Other
+2048,262d989b,Gradle,FAIL,Java 11 is required, Other
+2049,ddf17b0f,Gradle,FAIL,Java 11 is required, Other
+2050,cc0f91b9,Gradle,FAIL,Java 11 is required, Other
+2051,bed82fab,Gradle,FAIL,Java 11 is required, Other
+2052,0117fb11,Gradle,FAIL,Java 11 is required, Other
+2053,42dfee6a,Gradle,FAIL,Java 11 is required, Other
+2054,4dab55a8,Gradle,FAIL,Java 11 is required, Other
+2055,5ba37836,Gradle,FAIL,Java 11 is required, Other
+2056,2ad6e3f2,Gradle,FAIL,Java 11 is required, Other
+2057,5b87e92b,Gradle,FAIL,Java 11 is required, Other
+2058,f76bb95e,Gradle,FAIL,Java 11 is required, Other
+2059,4bf5b6da,Gradle,FAIL,Java 11 is required, Other
+2060,41c06ade,Gradle,FAIL,Java 11 is required, Other
+2061,3e805d60,Gradle,FAIL,Java 11 is required, Other
+2062,84262a9c,Gradle,FAIL,Java 11 is required, Other
+2063,aa63e915,Gradle,FAIL,Java 11 is required, Other
+2064,fddb11c2,Gradle,FAIL,Java 11 is required, Other
+2065,3587226e,Gradle,FAIL,Java 11 is required, Other
+2066,3c7d31ba,Gradle,FAIL,Java 11 is required, Other
+2067,014b2285,Gradle,FAIL,Java 11 is required, Other
+2068,66909c8d,Gradle,FAIL,Java 11 is required, Other
+2069,a9691f1a,Gradle,FAIL,Java 11 is required, Other
+2070,e4c14bcc,Gradle,FAIL,Java 11 is required, Other

@@ -1,4 +1,4 @@
-docker run -d --rm\
+docker run -d \
     -v $PWD/results:/home/bugs/results \
     -v $PWD/py:/home/bugs/py \
     -v $PWD/projects:/home/bugs/projects \

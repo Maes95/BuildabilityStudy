@@ -28,9 +28,9 @@ class ProcessManager(ExecutorManager):
     def execute(self, command, output=None, returnOutput=False):
         
         if returnOutput:
-            with open('/tmp/run', 'w+') as out:
+            with open('/tmp/run', 'w+', encoding="ISO-8859-1") as out:
                 exit_code, _ = self.execute(command, output=out)
-            with open('/tmp/run', 'r+') as out:
+            with open('/tmp/run', 'r+', encoding="ISO-8859-1") as out:
                 text = out.read()
             self.execute("rm /tmp/run")
             return exit_code, text
@@ -53,18 +53,18 @@ class ProcessManager(ExecutorManager):
 
 class GitManager:
 
-    def __init__(self, executor_manager, base_commit):
-        self.executor_manager = executor_manager
+    def __init__(self, process_manager, base_commit):
+        self.process_manager = process_manager
         self.base_commit = base_commit
-        #self.executor_manager.execute("git checkout -f %s" % base_commit)
+        #self.process_manager.execute("git checkout -f %s" % base_commit)
 
     def change_commit(self,commit_hash):
         with open(os.devnull) as out:
-            self.executor_manager.execute("git clean -fdx", out)
-        self.executor_manager.execute("git checkout -f %s" % commit_hash)
+            self.process_manager.execute("git clean -fdx", out)
+        self.process_manager.execute("git checkout -f %s" % commit_hash)
 
     def getAllCommits(self):
-        _, out = self.executor_manager.execute('git log %s --pretty=format:"%%h%s%%ad%s%%s" --date=iso8601 --reverse'%(self.base_commit, DELIMITER, DELIMITER), returnOutput=True)
+        _, out = self.process_manager.execute('git log %s --pretty=format:"%%h%s%%ad%s%%s" --date=iso8601 --reverse'%(self.base_commit, DELIMITER, DELIMITER), returnOutput=True)
         return out.strip().split('\n')
 
 # DOCKER
