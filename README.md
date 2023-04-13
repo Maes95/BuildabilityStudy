@@ -1,8 +1,13 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5596333.svg)](https://doi.org/10.5281/zenodo.5596333)
 # Reproducing open-projects software builds experiment
 
-Reproduction package for the paper "Back and There Once Again: Revisiting the
-Compilation of Past Snapshots", presented to EMSE 2021 (still under review). This package contains:
+> This repository constitutes the reproduction package of Chapter 3 of the PhD. Thesis titled `Hunting Bugs: A study of the change history of open-source software projects and its application to the detection of how these changes introduce bugs`, written by Michel Maes Bermejo. This repository is a fork of the repository that contained the original reproduction package published in Empirical Software Engineering (to avoid altering it for preservation).
+
+Reproduction package for the paper "Back and There Once Again: Revisiting the Compilation of Past Snapshots", published at Empirical Software Engineering in 2022.
+
+DOI of Publication: [https://doi.org/10.1007/s10664-022-10117-6](https://doi.org/10.1007/s10664-022-10117-6)
+
+This package contains:
 
 ```bash
 .
